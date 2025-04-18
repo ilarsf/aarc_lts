@@ -1,0 +1,14 @@
+title: AARC Learn to Scull Program
+description: Training materials for the Austin Area Rowing Club's Learn to Scull program
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+- jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Optional settings
+show_downloads: false
+google_analytics: 
