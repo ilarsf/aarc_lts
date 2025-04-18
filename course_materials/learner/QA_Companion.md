@@ -94,6 +94,17 @@
     </ul></p>
 
     <h3>Program Questions</h3>
+    <h4>Why is the program organized as a weekend intensive format?</h4>
+    <p>The weekend format offers several advantages:
+    <ul>
+      <li><strong>Time Efficiency:</strong> Complete the program in just two weekends</li>
+      <li><strong>Skill Retention:</strong> Less time between sessions means better retention of techniques</li>
+      <li><strong>Immersive Learning:</strong> Concentrated practice periods accelerate skill development</li>
+      <li><strong>Scheduling Flexibility:</strong> Easier to commit to two weekends than multiple weekday sessions</li>
+      <li><strong>Community Building:</strong> Intensive format fosters stronger connections among participants</li>
+    </ul>
+    The weekend format is physically demanding but delivers the complete curriculum in a compact timeframe. For details, see the <a href="Program_Schedule.html">Program Schedule</a> page.</p>
+
     <h4>What happens after Learn to Scull?</h4>
     <p>After completing the program, several options are available:
     <ul>

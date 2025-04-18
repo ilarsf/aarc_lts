@@ -6,6 +6,7 @@
 // Ann Arbor Rowing Club styling
 // Color scheme
 $aarc-blue: #1E73BE;
+$aarc-red: #C00000;
 $aarc-dark-gray: #333333;
 $aarc-light-gray: #777777;
 $aarc-white: #ffffff;
@@ -569,6 +570,19 @@ table {
       color: #3498db;
       &:before {
         content: "📝";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  
+  &.aarc {
+    background-color: rgba(192, 0, 0, 0.05);
+    border-left-color: $aarc-red;
+    
+    h4 {
+      color: $aarc-red;
+      &:before {
+        content: "🚣";
         margin-right: 0.5rem;
       }
     }

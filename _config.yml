@@ -34,6 +34,8 @@ navigation:
     subitems:
       - title: Learner Guide
         url: /course_materials/learner/Learner_Guide.html
+      - title: Program Schedule
+        url: /course_materials/learner/Program_Schedule.html
       - title: Q&A Companion
         url: /course_materials/learner/QA_Companion.html
   - title: Technical Guides

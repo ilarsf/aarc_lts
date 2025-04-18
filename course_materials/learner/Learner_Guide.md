@@ -30,7 +30,7 @@
 
     <h3>Program Structure</h3>
     <ul>
-      <li>6 sessions, each approximately 2 hours</li>
+      <li>4 sessions, each approximately 3 hours</li>
       <li>Progressive skill development</li>
       <li>Supportive, small-group instruction</li>
       <li>Focus on safety, technique, and enjoyment</li>
@@ -238,6 +238,16 @@
     <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.html">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
 
     <h3>Water Safety Rules</h3>
+    <div class="info-box tip">
+      <h4>AARC Policy Resources</h4>
+      <p>We recommend reviewing these official AARC policy documents at your convenience:</p>
+      <ul class="mb-0">
+        <li><a href="../../src/AARC_Safety_Rules.pdf" target="_blank"><strong>AARC Safety Rules</strong></a> - Complete safety guidelines for all AARC rowers</li>
+        <li><a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank"><strong>Code of Conduct</strong></a> - Behavioral expectations for all members</li>
+        <li><a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank"><strong>SafeSport Policy</strong></a> - Guidelines for maintaining a safe sporting environment</li>
+      </ul>
+    </div>
+    
     <ul>
       <li><strong>Always wear appropriate safety gear:</strong> Use PFDs (life jackets) when required by club policy, especially for beginners</li>
       <li><strong>Check weather and water conditions before rowing:</strong>

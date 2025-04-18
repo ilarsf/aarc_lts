@@ -10,7 +10,8 @@ Dear [Participant Name],
 We're excited to welcome you to the Ann Arbor Rowing Club's Learn to Scull program beginning [Start Date]! This email contains important information to help you prepare for your first session.
 
 **Schedule Confirmation:**
-- Six sessions: [List dates and times]
+- Four sessions: [List dates and times]
+- Each session is 3 hours (8:00-11:00am) with a 30-minute break
 - Location: [Boathouse address and specific meeting point]
 - Please arrive 15 minutes early for the first session
 
@@ -126,7 +127,7 @@ Keep up the great work!
 
 Dear [Participant Name],
 
-Congratulations on successfully completing the AARC Learn to Scull program! Over the past six sessions, you've progressed from complete beginner to a sculler with a solid foundation of skills. You should be proud of your accomplishment.
+Congratulations on successfully completing the AARC Learn to Scull program! Over the past four sessions, you've progressed from complete beginner to a sculler with a solid foundation of skills. You should be proud of your accomplishment.
 
 **Your Achievement:**
 You've learned essential skills including:

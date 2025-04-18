@@ -28,7 +28,7 @@
 
     <h2 id="program-structure">Program Structure</h2>
     <ul>
-      <li><strong>Duration</strong>: 6 sessions (2 hours each)</li>
+      <li><strong>Duration</strong>: 4 sessions (3 hours each)</li>
       <li><strong>Class Size</strong>: Maximum 8-12 participants</li>
       <li><strong>Instructor Ratio</strong>: 1:4 (coach to student)</li>
       <li><strong>Equipment</strong>: Single sculls, oars, safety gear</li>
@@ -565,31 +565,31 @@
       </li>
     </ul>
 
-    <h3>Remaining Two Sessions: Expanding and Integrating Skills</h3>
-    <p>Building on the four-day foundation, sessions 5 and 6 should continue to integrate and refine these skills while adding:</p>
+    <h3>Advanced Skills and Integration</h3>
+    <p>In Sessions 3 and 4, we continue to integrate and refine the fundamental skills while adding more advanced techniques:</p>
 
-    <h4>Session 5: Building Endurance and Confidence</h4>
+    <h4>Session 3: Building Endurance and Learning to Push</h4>
     <ul>
-      <li><strong>Goals</strong>: Extended rowing, developing rhythm, increasing independence</li>
+      <li><strong>Goals</strong>: Developing power application, navigation, and increasing independence</li>
       <li><strong>Key Activities</strong>:
         <ul>
-          <li>Longer continuous rowing periods with emphasis on consistent technique</li>
-          <li>Introduction to rate and pressure variations</li>
-          <li>Group formation rowing (following experienced sculler)</li>
-          <li>Advanced troubleshooting of individual technique issues</li>
+          <li>Focus on leg drive and power application</li>
+          <li>Learning traffic patterns and river geography</li>
+          <li>Practicing turns and maneuvering</li>
+          <li>Troubleshooting individual technique issues</li>
         </ul>
       </li>
-      <li><strong>Key Drills</strong>: Rate changes (control pace while maintaining technique), longer-distance pieces with technical focus points</li>
+      <li><strong>Key Drills</strong>: Reverse Pick Drill (isolating leg drive), pivot turns, continuous rowing with technical focus points</li>
     </ul>
 
-    <h4>Session 6: Integration and Next Steps</h4>
+    <h4>Session 4: Integration and Assessment</h4>
     <ul>
-      <li><strong>Goals</strong>: Independent sculling, preparation for continued practice, assessment</li>
+      <li><strong>Goals</strong>: Independent sculling, navigation mastery, preparation for continued practice</li>
       <li><strong>Key Activities</strong>:
         <ul>
           <li>Review of all techniques and traffic patterns</li>
-          <li>Completely independent launching, rowing, and recovery with minimal coaching intervention</li>
-          <li>Comprehensive safety protocols review</li>
+          <li>Practice navigating bridges and upriver rowing (for ready participants)</li>
+          <li>Continued skills development for those who need it</li>
           <li>Introduction to club rowing options and post-program pathways</li>
           <li>Final assessment using Rower Checklist (see below)</li>
           <li>Graduation celebration</li>
@@ -672,6 +672,17 @@
     </ul>
 
     <h3>Critical Safety Skills</h3>
+    <div class="info-box">
+      <h4>Club Policy Resources</h4>
+      <p>Direct participants to these AARC policy documents for independent review:</p>
+      <ul>
+        <li><a href="../../src/AARC_Safety_Rules.pdf" target="_blank"><strong>AARC Safety Rules</strong></a> - Essential safety guidelines for all rowers</li>
+        <li><a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank"><strong>Code of Conduct</strong></a> - Standards of behavior expected at AARC</li>
+        <li><a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank"><strong>SafeSport Policy</strong></a> - Club commitment to a safe environment</li>
+      </ul>
+      <p>Briefly mention these resources at the start of the program, encouraging participants to review them on their own time.</p>
+    </div>
+    
     <ul>
       <li><strong>Flip test protocol</strong>: Step-by-step procedure for teaching capsizing recovery
         <ul>

@@ -57,6 +57,13 @@
       <li>[ ] Review participant notes from previous session</li>
       <li>[ ] Prepare session plan with timing estimates</li>
       <li>[ ] Brief assistant coaches on daily objectives and assignments</li>
+      <li>[ ] Prepare handout with links to AARC policy documents for participants' independent review:
+        <ul>
+          <li>[ ] <a href="../../src/AARC_Safety_Rules.pdf" target="_blank">Safety Rules</a></li>
+          <li>[ ] <a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank">Code of Conduct</a></li>
+          <li>[ ] <a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank">SafeSport Policy</a></li>
+        </ul>
+      </li>
       <li>[ ] Prepare area for participant check-in</li>
     </ul>
 
@@ -168,6 +175,13 @@
 
     <h3>Session 1: Learning the Motion and Getting Wet</h3>
     <ul>
+      <li>[ ] Mention AARC policy documents for participants to review independently:
+        <ul>
+          <li>[ ] <a href="../../src/AARC_Safety_Rules.pdf" target="_blank">Safety Rules</a></li>
+          <li>[ ] <a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank">Code of Conduct</a></li>
+          <li>[ ] <a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank">SafeSport Policy</a></li>
+        </ul>
+      </li>
       <li>[ ] Conduct erg session (grip, basic stroke, sequencing)</li>
       <li>[ ] Teach boat parts and equipment overview</li>
       <li>[ ] Practice safe boat handling (carrying, placing in slings)</li>
@@ -217,38 +231,7 @@
       <li>[ ] Discuss pathways after program completion</li>
     </ul>
 
-    <h3>Session 5: Building Endurance and Confidence</h3>
-    <ul>
-      <li>[ ] Assess continuous rowing capability</li>
-      <li>[ ] Introduce rate and pressure variations</li>
-      <li>[ ] Organize group formation rowing with experienced scullers</li>
-      <li>[ ] Provide individual feedback on technique refinement</li>
-      <li>[ ] Practice steering while maintaining technique</li>
-      <li>[ ] Observe handling of longer rowing pieces (fatigue management)</li>
-      <li>[ ] Evaluate independence in boat handling and navigation</li>
-      <li>[ ] Discuss graduation requirements and assessment areas</li>
-      <li>[ ] Prepare participants for final session expectations</li>
-    </ul>
-
-    <h3>Session 6: Integration and Assessment</h3>
-    <ul>
-      <li>[ ] Review all safety protocols and traffic patterns</li>
-      <li>[ ] Observe completely independent launching and rowing</li>
-      <li>[ ] Complete final skills assessment using Rower Checklist</li>
-      <li>[ ] Assess each component:
-        <ul>
-          <li>[ ] Equipment handling</li>
-          <li>[ ] Launching/landing</li>
-          <li>[ ] Basic boat control</li>
-          <li>[ ] Navigation & safety awareness</li>
-          <li>[ ] Capsize recovery competence</li>
-          <li>[ ] Equipment care and maintenance</li>
-        </ul>
-      </li>
-      <li>[ ] Present continuation options (Open Sculling Program)</li>
-      <li>[ ] Discuss club membership process and requirements</li>
-      <li>[ ] Collect program feedback for improvement</li>
-      <li>[ ] Celebrate program completion and achievements</li>
-    </ul>
+    <h3 style="text-decoration: line-through;">Sessions 5-6: Not used in current program format</h3>
+    <p><em>NOTE: The program now uses a 4-session format (3 hours each) rather than the previous 6-session format. Sessions 3 and 4 cover the integration and assessment components previously scheduled for Sessions 5-6.</em></p>
   </div>
 </div>
