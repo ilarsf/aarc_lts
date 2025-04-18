@@ -129,8 +129,8 @@
     </div>
     
     <div class="video-item">
-      <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure with clear steps</p>
-      <p><strong>Right:</strong> Lars Flip Test Demo - Alternative technique for re-entry</p>
+      <p><strong>Left:</strong> Lars Flip Test Demo - Standard flip test procedure with clear steps</p>
+      <p><strong>Right:</strong> Johanna Flip Test Demo - Alternative technique for re-entry</p>
       <p>Related resource: <a href="../../src/Sculling_Self_Rescue_Guide.html">Complete Sculling Self-Rescue Guide</a></p>
     </div>
     

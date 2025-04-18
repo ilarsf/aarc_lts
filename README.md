@@ -1,87 +1,76 @@
 # AARC Learn to Scull Program
 
-This repository contains materials for the Ann Arbor Rowing Club's Learn to Scull program. It's built as a Jekyll site with the Cayman theme, customized to match AARC branding.
+This repository contains the website and training materials for the Ann Arbor Rowing Club's Learn to Scull program.
 
-## Repository Structure
+## Site Structure
 
-### `/course_materials/`
-Contains the final, polished materials ready for use in the program.
+The site is organized into the following main sections:
 
-#### `/course_materials/coach/`
-- **Coach_Manual.md**: Comprehensive guide for coaches with program structure, session goals, and teaching methodologies
-- **Daily_Coach_Checklist.md**: Operational checklist for coaches to use before, during, and after each session
+- **Home Page**: Overview of the program and resources
+- **Coach Resources**: Materials for program instructors
+- **Learner Resources**: Guides and references for participants
+- **Technical Guides**: Detailed instructions for specific skills
+- **Communication Templates**: Email and announcement templates
 
-#### `/course_materials/learner/`
-- **Learner_Guide.md**: Beginner-friendly guide explaining sculling concepts, techniques, and progression
-- **QA_Companion.md**: Collection of frequently asked questions and expert answers for participants
+## Content Organization
 
-#### `/course_materials/communication/`
-- **Email_Templates.md**: Templates for pre-course, daily, and post-course communications
+Content is stored in markdown files organized by audience:
 
-### `/assets/`
-Contains theme customization files:
-- **css/style.scss**: Main stylesheet that overrides the Cayman theme
-- **images/**: Directory for storing site images and branding elements
+- `/course_materials/coach/` - Coach-facing resources
+- `/course_materials/learner/` - Participant-facing materials
+- `/course_materials/communication/` - Templates for program communications
+- `/src/` - Technical guides and reference materials
 
-### Theme Files
-- **_layouts/default.html**: Custom layout template
-- **_includes/head-custom.html**: Custom head includes
-- **_config.yml**: Site configuration including custom theme settings
+## Site Features
 
-## Theme Customization
+The site includes:
 
-### Page Front Matter Options
+- Responsive layout for desktop and mobile devices
+- Drop-down navigation menus
+- Tabbed content organization
+- Automatic table of contents generation
+- PDF export for printable materials
+- Video embeds and galleries
+- Interactive information boxes
+- Responsive tables
+- Grid layouts for content organization
 
-You can customize individual pages by adding these options to the front matter:
+## Visual Element Recommendations
 
-```yaml
----
-layout: default
-title: Custom Page Title
-description: Custom page description
-custom_class: your-custom-class
-header_image: /assets/images/your-header-image.jpg
-actions:
-  - label: Button Text
-    url: /link/to/page/
----
-```
+The following visual elements would significantly enhance the learning materials:
 
-- **custom_class**: Adds a CSS class to the page for custom styling
-- **header_image**: Adds a background image to the page header
-- **actions**: Adds custom buttons to the page header
+### Technique Illustrations
+- **Rowing Stroke Sequence**: Step-by-step illustrations of the proper sculling stroke
+- **Hand Position Diagrams**: Close-up views of correct grip and feathering technique
+- **Body Position Reference**: Side-view illustrations of proper posture at different points in the stroke
 
-### Global Theme Settings
+### Safety Visuals
+- **Flip Test Process**: Sequential photographs of the capsize recovery procedure
+- **Equipment Safety Checks**: Visual guide to boat parts requiring inspection
+- **Traffic Pattern Maps**: Bird's-eye view diagrams of local waterway navigation rules
 
-Edit these settings in `_config.yml`:
+### Equipment References
+- **Boat Parts Labeled Diagram**: Annotated illustration of sculling shell components
+- **Oar Anatomy Guide**: Detailed view of sculling oars with part names
+- **Rigging Adjustment Visuals**: Examples of proper foot stretcher and oarlock settings
 
-```yaml
-# Custom theme settings
-theme_color: "#0066cc"  # Primary blue color
-theme_color_secondary: "#004c99"  # Secondary blue color
-footer_text_color: "#7c7c7c"  # Light gray for footer text
+### Practical Guides
+- **Weather Condition Visual Guide**: Examples of safe vs. unsafe water conditions
+- **Launching Sequence Photos**: Step-by-step visual guide to boat launching
+- **Hand Care Illustrations**: Visual guide to blister prevention and treatment
 
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: Coach Resources
-    url: /course_materials/coach/
-```
+## Development
 
-### Custom CSS
+The site uses:
+- Jekyll static site generator
+- GitHub Pages for hosting
+- Markdown content with HTML/CSS enhancements
+- Custom JavaScript for interactive components
 
-Add custom styles in `assets/css/style.scss`. Page-specific styles can be added using the custom class:
+## Recommended Next Steps
 
-```scss
-.your-custom-class .main-content {
-  /* Custom styles */
-}
-```
-
-## Development Guide
-
-1. Follow the Jekyll organization patterns when adding new content
-2. Use Markdown for content files
-3. Test changes locally before deploying
-4. See `assets/README.md` for detailed customization instructions
+1. Create and integrate recommended visual elements
+2. Consider adding interactive technique demos (e.g., animated stroke sequence)
+3. Expand video resources with embedded technique demonstrations
+4. Add printable quick-reference cards for key concepts
+5. Consider implementing a search feature for larger content sections

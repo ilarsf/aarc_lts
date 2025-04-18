@@ -24,8 +24,25 @@ navigation:
     url: /
   - title: Coach Resources
     url: /course_materials/coach/
+    subitems:
+      - title: Coach Manual
+        url: /course_materials/coach/Coach_Manual.html
+      - title: Daily Checklist
+        url: /course_materials/coach/Daily_Coach_Checklist.html
   - title: Learner Resources
     url: /course_materials/learner/
+    subitems:
+      - title: Learner Guide
+        url: /course_materials/learner/Learner_Guide.html
+      - title: Q&A Companion
+        url: /course_materials/learner/QA_Companion.html
+  - title: Technical Guides
+    url: /src/
+    subitems:
+      - title: Self-Rescue Guide
+        url: /src/Sculling_Self_Rescue_Guide.html
+      - title: Flip Test Instructions
+        url: /src/AARC_Flip_Test_Instructions_20240803.html
   - title: Communication
     url: /course_materials/communication/
 

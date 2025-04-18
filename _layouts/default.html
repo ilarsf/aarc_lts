@@ -24,10 +24,18 @@
     <div class="container-lg px-3 my-5 markdown-body">
       <nav class="site-nav">
         <ul>
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a></li>
-          <li><a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a></li>
-          <li><a href="{{ site.baseurl }}/course_materials/communication/">Communication</a></li>
+          {% for item in site.navigation %}
+            <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
+              <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              {% if item.subitems %}
+                <ul class="dropdown-menu">
+                  {% for subitem in item.subitems %}
+                    <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
         </ul>
       </nav>
 
@@ -51,7 +59,20 @@
       document.addEventListener('DOMContentLoaded', function() {
         const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
         const siteNav = document.querySelector('.site-nav');
+        const dropdownItems = document.querySelectorAll('.has-dropdown');
         
+        // Set active nav item based on current page URL
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.site-nav a');
+        
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPath || 
+              (currentPath.includes(link.getAttribute('href')) && link.getAttribute('href') !== '/')) {
+            link.closest('li').classList.add('active-nav-item');
+          }
+        });
+        
+        // Mobile navigation toggle
         if (mobileNavToggle && siteNav) {
           mobileNavToggle.addEventListener('click', function() {
             siteNav.classList.toggle('active');
@@ -66,6 +87,26 @@
                 icon.classList.add('fa-bars');
               }
             }
+          });
+        }
+        
+        // Mobile dropdown handling
+        if (window.innerWidth <= 600) {
+          dropdownItems.forEach(item => {
+            const link = item.querySelector('a');
+            const dropdown = item.querySelector('.dropdown-menu');
+            
+            // Create dropdown toggle for mobile
+            const toggleBtn = document.createElement('button');
+            toggleBtn.classList.add('dropdown-toggle');
+            toggleBtn.innerHTML = '+';
+            link.after(toggleBtn);
+            
+            toggleBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+              toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+            });
           });
         }
       });

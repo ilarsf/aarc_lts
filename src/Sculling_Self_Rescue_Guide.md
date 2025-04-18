@@ -1,6 +1,6 @@
 # Sculling Self-Rescue Guide
 
-<div class="page-toc">
+<div class="page-toc float-right">
   <h4>Quick Navigation</h4>
   <ul>
     <li><a href="#introduction">Introduction</a></li>
@@ -18,6 +18,11 @@ Sculling, with its sleek boats and dual oars, offers a unique blend of physical 
 
 This guide provides comprehensive instructions on how to safely recover from a capsize and re-enter your shell using low-exertion techniques that don't require significant upper body strength. By understanding and practicing these skills, you'll build confidence to enjoy sculling with less anxiety about the possibility of an unexpected swim.
 
+<div class="info-box note">
+  <h4>What You'll Learn</h4>
+  <p>This guide covers the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
+</div>
+
 ## Understanding Capsizing
 
 Capsizing can happen for several reasons, and it's something many experienced rowers have encountered at some point:
@@ -30,16 +35,39 @@ Capsizing can happen for several reasons, and it's something many experienced ro
 
 Recognizing these common causes helps demystify the capsize. It's rarely a dramatic failure, but rather a consequence of the boat's design interacting with the learning process.
 
+<div class="image-placeholder">
+  <div class="icon"><i class="fas fa-image"></i></div>
+  <div class="title">Balance Points in a Sculling Shell</div>
+  <div class="description">Illustration showing key balance points in a single scull, including center of gravity, waterline, and how weight shifts affect stability.</div>
+</div>
+
 ## The Flip Test
 
 The "Flip Test" is an intentional capsize performed in a controlled environment (typically close to a dock under supervision) that serves several important purposes:
 
-1. **Familiarization:** Experiencing a capsize in a safe setting removes the element of surprise
-2. **Skill Practice:** Provides opportunity to practice self-rescue without the stress of a real emergency
-3. **Reducing Panic:** Knowing you *can* get back in builds confidence and reduces fear
-4. **Safety Preparedness:** Ensures scullers have demonstrated essential self-rescue skills
+<div class="two-col-grid">
+  <div>
+    <ol>
+      <li><strong>Familiarization:</strong> Experiencing a capsize in a safe setting removes the element of surprise</li>
+      <li><strong>Skill Practice:</strong> Provides opportunity to practice self-rescue without the stress of a real emergency</li>
+      <li><strong>Reducing Panic:</strong> Knowing you <em>can</em> get back in builds confidence and reduces fear</li>
+      <li><strong>Safety Preparedness:</strong> Ensures scullers have demonstrated essential self-rescue skills</li>
+    </ol>
+    
+    <p>Successfully completing the Flip Test is a significant milestone for novice scullers, proving capability and enhancing enjoyment of the sport. Even experienced scullers may practice this drill periodically, especially when using a new boat.</p>
+  </div>
+  
+  <div class="image-placeholder">
+    <div class="icon"><i class="fas fa-image"></i></div>
+    <div class="title">Flip Test Setup</div>
+    <div class="description">Photo showing the ideal supervised flip test setup with safety measures in place. The test should be done close to a dock with coach assistance.</div>
+  </div>
+</div>
 
-Successfully completing the Flip Test is a significant milestone for novice scullers, proving capability and enhancing enjoyment of the sport. Even experienced scullers may practice this drill periodically, especially when using a new boat.
+<div class="info-box warning">
+  <h4>Safety First</h4>
+  <p>Always perform your first flip test under the supervision of a qualified coach and in a controlled environment. Wear appropriate clothing, and ensure the water is a reasonable temperature. Never practice capsizing alone.</p>
+</div>
 
 ## Self-Rescue Process
 
@@ -49,42 +77,126 @@ Successfully completing the Flip Test is a significant milestone for novice scul
 2. **Manage Your Oars:** Locate both oars immediately – they will float. Keep them nearby, as they are essential tools for stabilizing the boat during re-entry.
 3. **Assess the Situation:** Note your position relative to shore and check for any immediate hazards.
 
+<div class="image-placeholder">
+  <div class="icon"><i class="fas fa-image"></i></div>
+  <div class="title">Immediate Post-Capsize Position</div>
+  <div class="description">Illustration showing the proper position immediately after capsizing, with the rower maintaining contact with the boat and securing the oars.</div>
+</div>
+
 ### Preparing for Re-entry
 
-1. **Right the Shell (if upside down):**
-   - Approach the overturned scull from the side
-   - Reach across the hull (bottom) of the boat to the far side and grab the gunwale (top edge)
-   - Slowly pull the boat towards you to right it, watching out for the oars as it flips
+<div class="two-col-grid">
+  <div>
+    <h4>1. Right the Shell (if upside down)</h4>
+    <ul>
+      <li>Approach the overturned scull from the side</li>
+      <li>Reach across the hull (bottom) of the boat to the far side and grab the gunwale (top edge)</li>
+      <li>Slowly pull the boat towards you to right it, watching out for the oars as it flips</li>
+    </ul>
+  </div>
+  
+  <div class="image-placeholder">
+    <div class="icon"><i class="fas fa-image"></i></div>
+    <div class="title">Righting the Shell</div>
+    <div class="description">Step-by-step photos showing the proper technique for flipping an overturned shell back to its upright position.</div>
+  </div>
+</div>
 
-2. **Position the Oars for Stability:**
-   - Arrange both oars perpendicular to the boat (T-position)
-   - Ensure blades are flat on the water surface (feathered)
-   - This creates an outrigger system that dramatically improves stability
+<div class="two-col-grid">
+  <div class="image-placeholder">
+    <div class="icon"><i class="fas fa-image"></i></div>
+    <div class="title">Oar T-Position Setup</div>
+    <div class="description">Diagram illustrating the proper positioning of oars perpendicular to the shell to create a stabilizing outrigger effect.</div>
+  </div>
+  
+  <div>
+    <h4>2. Position the Oars for Stability</h4>
+    <ul>
+      <li>Arrange both oars perpendicular to the boat (T-position)</li>
+      <li>Ensure blades are flat on the water surface (feathered)</li>
+      <li>This creates an outrigger system that dramatically improves stability</li>
+    </ul>
+  </div>
+</div>
 
 ### Re-entering the Boat: Side Entry Method
 
-1. **Position Yourself:** Swim to the middle of the boat (near the rigger). Face the shell, holding onto the overlapping oar handles or the near gunwale.
+<div class="info-box tip">
+  <h4>Key Technique Point</h4>
+  <p>The re-entry technique relies primarily on leg power, not upper body strength. The key is to use a strong kick to propel your hips up onto the gunwale, then roll into the boat. Think of it as a swimming dolphin kick followed by a controlled roll.</p>
+</div>
 
-2. **The Kick & Hip Lift:**
-   - Take a breath, dip slightly underwater
-   - Execute a powerful kick (dolphin or scissor) with your legs
-   - Focus on driving your hips up onto the gunwale
-   - This step relies on leg power, not upper body strength
+<div class="three-col-grid">
+  <div>
+    <h4>Step 1: Position Yourself</h4>
+    <p>Swim to the middle of the boat (near the rigger). Face the shell, holding onto the overlapping oar handles or the near gunwale.</p>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Position</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>Step 2: The Kick & Hip Lift</h4>
+    <ul>
+      <li>Take a breath, dip slightly underwater</li>
+      <li>Execute a powerful kick (dolphin or scissor) with your legs</li>
+      <li>Focus on driving your hips up onto the gunwale</li>
+    </ul>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Kick & Lift</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>Step 3: The Tummy Flop & Roll</h4>
+    <ul>
+      <li>Once your hips/stomach are across the gunwale, pause briefly to balance</li>
+      <li>The boat will wobble – rely on the oar stability system</li>
+    </ul>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Tummy Flop</div>
+    </div>
+  </div>
+</div>
 
-3. **The Tummy Flop & Roll:**
-   - Once your hips/stomach are across the gunwale, pause briefly to balance
-   - The boat will wobble – rely on the oar stability system
-
-4. **Swing a Leg Over:** Carefully swing the leg furthest from the boat over the hull and into the cockpit area.
-
-5. **Sit Up Slowly:**
-   - Bring the other leg over (you might straddle the boat initially)
-   - Slowly and carefully shift your weight to sit down on the seat
-
-6. **Regain Control:**
-   - Immediately check oar handles – keep them slightly elevated with blades flat on water
-   - The boat will have some water in it – this is normal
-   - Begin gentle rowing to shore or continue your session
+<div class="three-col-grid">
+  <div>
+    <h4>Step 4: Swing a Leg Over</h4>
+    <p>Carefully swing the leg furthest from the boat over the hull and into the cockpit area.</p>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Leg Swing</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>Step 5: Sit Up Slowly</h4>
+    <ul>
+      <li>Bring the other leg over (you might straddle the boat initially)</li>
+      <li>Slowly and carefully shift your weight to sit down on the seat</li>
+    </ul>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Sitting Up</div>
+    </div>
+  </div>
+  
+  <div>
+    <h4>Step 6: Regain Control</h4>
+    <ul>
+      <li>Immediately check oar handles – keep them slightly elevated with blades flat on water</li>
+      <li>The boat will have some water in it – this is normal</li>
+      <li>Begin gentle rowing to shore or continue your session</li>
+    </ul>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Regaining Control</div>
+    </div>
+  </div>
+</div>
 
 ### Tips for Success
 
@@ -95,8 +207,17 @@ Successfully completing the Flip Test is a significant milestone for novice scul
 
 ### Alternative Approaches
 
-* If re-entry is difficult, swim towards shore to a shallow area where you can stand. This can make re-entry easier, though the riverbed may be muddy and soft.
-* Some resources mention entering over the stern (back) of the boat. However, for most beginners, the side-entry method with oar stabilization is the most reliable approach.
+<div class="two-col-grid">
+  <div>
+    <h4>Shallow Water Re-entry</h4>
+    <p>If re-entry is difficult, swim towards shore to a shallow area where you can stand. This can make re-entry easier, though the riverbed may be muddy and soft.</p>
+  </div>
+  
+  <div>
+    <h4>Stern Entry Method</h4>
+    <p>Some resources mention entering over the stern (back) of the boat. However, for most beginners, the side-entry method with oar stabilization is the most reliable approach.</p>
+  </div>
+</div>
 
 ## Video Demonstrations
 
@@ -120,21 +241,43 @@ Successfully completing the Flip Test is a significant milestone for novice scul
 
 A few minutes spent checking before heading out can prevent significant problems:
 
-**Weather/Water Conditions:**
-* Check forecast (wind speed/direction, temperature, thunderstorms)
-* Assess current conditions (whitecaps, fog visibility, lightning)
-* Note water temperature (hypothermia risk)
-* Check for river debris or unusual flow
+<div class="two-col-grid">
+  <div>
+    <h4>Weather/Water Conditions</h4>
+    <ul>
+      <li>Check forecast (wind speed/direction, temperature, thunderstorms)</li>
+      <li>Assess current conditions (whitecaps, fog visibility, lightning)</li>
+      <li>Note water temperature (hypothermia risk)</li>
+      <li>Check for river debris or unusual flow</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h4>Equipment Checks</h4>
+    <ul>
+      <li>Bow ball secure (minimum 4cm diameter)</li>
+      <li>Hull integrity (no damage)</li>
+      <li>Riggers and hardware tight</li>
+      <li>Foot stretchers properly adjusted</li>
+      <li>Heel restraints functional (quick-release mechanism)</li>
+      <li>Oarlock gates close properly</li>
+    </ul>
+  </div>
+</div>
 
-**Equipment Checks:**
-* Bow ball secure (minimum 4cm diameter)
-* Hull integrity (no damage)
-* Riggers and hardware tight
-* Foot stretchers properly adjusted
-* Heel restraints functional (quick-release mechanism)
-* Oarlock gates close properly
+<div class="info-box note">
+  <h4>Heel Restraints Are Critical</h4>
+  <p>Always check that your heel restraints are functioning properly. These simple straps prevent your feet from becoming trapped in the foot stretchers during a capsize, allowing you to exit the boat quickly and safely.</p>
+</div>
 
-**On-Water Safety:**
+### On-Water Safety
+
+<div class="image-placeholder">
+  <div class="icon"><i class="fas fa-image"></i></div>
+  <div class="title">Traffic Pattern Diagram</div>
+  <div class="description">Illustration of typical rowing traffic pattern on a waterway, showing proper positioning, passing procedures, and navigation around obstacles.</div>
+</div>
+
 * **Traffic Pattern:** Know and follow the local traffic rules (typically stay to the starboard/right side of waterways)
 * **Look Around Frequently:** Turn to look over your shoulder every 5-10 strokes to check your course and be aware of other boats
 * **Maintain Awareness:** Be constantly alert to changing conditions, approaching boats, and fixed hazards
@@ -142,7 +285,10 @@ A few minutes spent checking before heading out can prevent significant problems
 
 ### When to Stay Ashore
 
-Exercise good judgment. If conditions seem questionable (threatening weather, cold water, poor visibility), make the conservative choice and stay on land. Missing one outing is always better than risking a dangerous situation.
+<div class="info-box warning">
+  <h4>Exercise Good Judgment</h4>
+  <p>If conditions seem questionable (threatening weather, cold water, poor visibility), make the conservative choice and stay on land. Missing one outing is always better than risking a dangerous situation.</p>
+</div>
 
 ## Conclusion
 

@@ -1,4 +1,7 @@
 <!-- Additional head content -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
   /* Mobile-specific additional styles */
   @media screen and (max-width: 600px) {
@@ -9,7 +12,7 @@
     }
     
     .site-nav.active {
-      max-height: 300px;
+      max-height: 500px;
     }
   }
   
@@ -19,23 +22,48 @@
     background-color: #1E73BE;
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 600;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 2rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
   }
   
   .cta-large:hover {
     background-color: #165c98;
     text-decoration: none;
     color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* Image placeholder icon */
+  .image-placeholder .icon i {
+    font-size: 2.5rem;
+    color: #aaaaaa;
+  }
+  
+  /* Smooth scroll for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Highlight current section */
+  .section-highlight {
+    animation: highlightFade 2s ease-out;
+  }
+  
+  @keyframes highlightFade {
+    0% { background-color: rgba(30, 115, 190, 0.2); }
+    100% { background-color: transparent; }
   }
 </style>
 
-<!-- Tab Navigation JavaScript -->
+<!-- Tab and Navigation JavaScript -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Initialize tabs
@@ -45,12 +73,16 @@
       const tabLinks = container.querySelectorAll('.tab-link');
       const tabContents = container.querySelectorAll('.tab-content');
       
+      // Check for hash in URL to activate specific tab
+      const hash = window.location.hash;
+      let activeTabSet = false;
+      
       // Set first tab as active by default
-      if (tabLinks.length > 0) {
+      if (tabLinks.length > 0 && !activeTabSet) {
         tabLinks[0].classList.add('active');
       }
       
-      if (tabContents.length > 0) {
+      if (tabContents.length > 0 && !activeTabSet) {
         tabContents[0].classList.add('active');
       }
       
@@ -69,6 +101,13 @@
           // Add active class to current tab and content
           this.classList.add('active');
           document.getElementById(targetId).classList.add('active');
+          
+          // Update URL hash for direct linking
+          if (history.pushState) {
+            history.pushState(null, null, '#' + targetId);
+          } else {
+            location.hash = '#' + targetId;
+          }
         });
       });
     });
@@ -102,5 +141,33 @@
       
       tocContainer.appendChild(tocList);
     }
+    
+    // Handle anchor link highlighting
+    if (window.location.hash) {
+      const targetElement = document.querySelector(window.location.hash);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.classList.add('section-highlight');
+          
+          // Scroll to element with offset for fixed header
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }, 100);
+      }
+    }
+    
+    // Add icons to image placeholders
+    const imagePlaceholders = document.querySelectorAll('.image-placeholder .icon');
+    imagePlaceholders.forEach(placeholder => {
+      if (!placeholder.querySelector('i')) {
+        placeholder.innerHTML = '<i class="fas fa-image"></i>';
+      }
+    });
   });
 </script>
