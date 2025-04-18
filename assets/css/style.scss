@@ -1007,12 +1007,23 @@ table {
   border-radius: 8px;
   border-left: 5px solid;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  height: 100%; /* Make all info boxes the same height */
   display: flex;
   flex-direction: column;
+  overflow: auto; /* Prevent content overflow */
+  width: 100%; /* Ensure box takes full width of its container */
+  box-sizing: border-box; /* Include padding in width calculation */
+  
+  /* Remove height: 100% to prevent stretching and overlap */
   
   @media screen and (min-width: 768px) {
     padding: 1.75rem;
+  }
+  
+  /* When inside grid layouts, prevent overflow */
+  .two-col-grid &,
+  .three-col-grid & {
+    height: auto;
+    min-height: 0;
   }
   
   &.tip {
@@ -1205,6 +1216,16 @@ table {
   > * {
     min-width: 0;
     width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    overflow: visible; /* Allow nested content to be visible */
+    position: relative; /* Establish a positioning context */
+    height: auto; /* Allow height to be determined by content */
+  }
+  
+  // Fix for direct info-box children in grids
+  > .info-box {
+    height: auto;
+    align-self: stretch;
   }
   
   // Fix for images in grid cells
@@ -1216,6 +1237,11 @@ table {
       height: auto;
     }
   }
+  
+  // Additional fix for very small screens
+  @media screen and (max-width: 576px) {
+    grid-gap: 1rem;
+  }
 }
 
 // Three-column layout
@@ -1224,7 +1250,7 @@ table {
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
   margin: 2rem 0;
-  align-items: stretch; /* Ensure all columns stretch to match */
+  align-items: start; /* Changed from stretch to start to avoid forced height */
   
   @media screen and (min-width: 576px) and (max-width: 991px) {
     grid-template-columns: repeat(2, 1fr);
@@ -1239,10 +1265,20 @@ table {
     grid-gap: 2.5rem;
   }
   
-  // All grids have equal height columns by default
+  // All grid cells should handle their content properly
   > * {
     min-width: 0;
     width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: visible; /* Prevent clipping of content */
+    position: relative; /* Establish position context */
+    height: auto; /* Let content determine height */
+  }
+  
+  // Fix for direct info-box children
+  > .info-box {
+    height: auto;
+    align-self: stretch;
   }
   
   // Ensure all content in grid cells has proper spacing
@@ -1258,6 +1294,11 @@ table {
   img {
     max-width: 100%;
     height: auto;
+  }
+  
+  // Additional fix for very small screens
+  @media screen and (max-width: 576px) {
+    grid-gap: 1rem;
   }
 }
 

@@ -28,7 +28,7 @@ layout: default
 <section class="program-overview">
   <h2>Program Overview</h2>
 
-<div class="two-col-grid">
+<div class="two-col-grid align-center">
   <div>
     <p>The Learn to Scull program is a weekend intensive format designed to introduce beginners to the sport of sculling. Through four sessions over two weekends, participants develop the skills and confidence to safely navigate a sculling boat and enjoy this rewarding sport.</p>
     
@@ -40,31 +40,32 @@ layout: default
       <li><strong>Technical Focus</strong>: Develop proper technique from the beginning</li>
       <li><strong>Pathway to Membership</strong>: Clear next steps for continued rowing after the program</li>
     </ul>
-    
-    <p>After completing the LTS class, scullers are invited to become Full Members of AARC and participate in our coached Open Sculling Program, with a four-week trial period offered at a discounted rate. This continuation program provides additional coaching to refine your skills and build confidence as you transition to independent sculling.</p>
-    
-    <div class="info-box warning">
-      <h4>Physical Requirements</h4>
-      <p>While there is no specific fitness level required, sculling does require mobility to enter/exit the boat safely:</p>
-      <ul class="mb-0">
-        <li>Ability to get down to the floor and back up using only one hand</li>
-        <li>Ability to turn your head to look over both shoulders</li>
-        <li>Ability to move a 40-50 pound, 27' single scull</li>
-        <li>Swimming ability (adults over 18 must attest that they can swim)</li>
-      </ul>
-    </div>
   </div>
   
-  <div class="info-box tip">
-    <h4>Weekend Intensive Format</h4>
-    <p>Classes are held over two consecutive weekends:</p>
-    <ul class="mb-0">
-      <li><strong>Weekend 1:</strong> Saturday and Sunday, 8:00-11:00am</li>
-      <li><strong>Weekend 2:</strong> Saturday and Sunday, 8:00-11:00am</li>
-    </ul>
-    <p>Each class is 3 hours with a 30-minute break. Bring your own water and snacks.</p>
-    <p>For complete details, see our <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program Schedule</a> page.</p>
+  <div>
+    <div class="info-box tip mb-2">
+      <h4>Weekend Intensive Format</h4>
+      <p>Four sessions over two consecutive weekends:</p>
+      <ul class="mb-0">
+        <li><strong>Weekend 1:</strong> Saturday & Sunday, 8:00-11:00am</li>
+        <li><strong>Weekend 2:</strong> Saturday & Sunday, 8:00-11:00am</li>
+      </ul>
+      <p>Each session is 3 hours with a break. See our <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program Schedule</a> for details.</p>
+    </div>
+    
+    <p>After completing the LTS class, scullers are invited to become Full Members of AARC and participate in our coached Open Sculling Program, with a four-week trial period offered at a discounted rate.</p>
   </div>
+</div>
+
+<div class="info-box warning">
+  <h4>Physical Requirements</h4>
+  <p>While there is no specific fitness level required, sculling does require mobility to enter/exit the boat safely:</p>
+  <ul class="mb-0">
+    <li>Ability to get down to the floor and back up using only one hand</li>
+    <li>Ability to turn your head to look over both shoulders</li>
+    <li>Ability to move a 40-50 pound, 27' single scull</li>
+    <li>Swimming ability (adults over 18 must attest that they can swim)</li>
+  </ul>
 </div>
 
 <div class="info-box aarc">
