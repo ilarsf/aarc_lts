@@ -166,58 +166,89 @@
   <div id="session-tab" class="tab-content">
     <h2 id="session-specific-notes">Session-Specific Notes</h2>
 
-    <h3>Session 1: Orientation and Fundamentals</h3>
+    <h3>Session 1: Learning the Motion and Getting Wet</h3>
     <ul>
-      <li>[ ] Complete flip test for all participants</li>
+      <li>[ ] Conduct erg session (grip, basic stroke, sequencing)</li>
+      <li>[ ] Teach boat parts and equipment overview</li>
+      <li>[ ] Practice safe boat handling (carrying, placing in slings)</li>
+      <li>[ ] Demonstrate and conduct flip test for all participants</li>
       <li>[ ] Record flip test completion in participant files</li>
-      <li>[ ] Verify all waivers and paperwork complete</li>
-      <li>[ ] Take participant photos for program records</li>
-      <li>[ ] Distribute any program materials</li>
+      <li>[ ] Practice dockside skills (getting in/out, stability)</li>
+      <li>[ ] Teach ghost strokes while stabilized at dock</li>
+      <li>[ ] Introduce equipment maintenance and storage</li>
     </ul>
 
-    <h3>Session 2: Building the Foundation</h3>
+    <h3>Session 2: Basic Stroke Sequencing</h3>
     <ul>
-      <li>[ ] Check every participant demonstrates proper entry/exit</li>
-      <li>[ ] Assess basic balance and confidence in boat</li>
-      <li>[ ] Note participants requiring extra supervision</li>
-      <li>[ ] Begin tracking stroke technique development</li>
-      <li>[ ] Verify understanding of basic commands</li>
+      <li>[ ] Review Day 1 learning points</li>
+      <li>[ ] Conduct erg warm-up focusing on sequencing</li>
+      <li>[ ] Teach equipment prep and oars-first approach</li>
+      <li>[ ] Demonstrate and practice launching procedures</li>
+      <li>[ ] Teach Pick Drill on water and recovery sequence</li>
+      <li>[ ] Introduce pause drills for body awareness and control</li>
+      <li>[ ] Practice basic turning using one-arm technique</li>
+      <li>[ ] Teach proper landing procedure (approach, docking)</li>
+      <li>[ ] Supervise post-row maintenance of equipment</li>
     </ul>
 
-    <h3>Session 3: Developing Technique</h3>
+    <h3>Session 3: Learning How to Push</h3>
     <ul>
-      <li>[ ] Assess feathering technique introduction</li>
-      <li>[ ] Verify understanding of stroke sequence</li>
-      <li>[ ] Track progress on steering control</li>
-      <li>[ ] Note blade depth consistency</li>
-      <li>[ ] Begin independent skills evaluation</li>
+      <li>[ ] Review sequencing from previous session</li>
+      <li>[ ] Conduct leg drive focus on ergs (Reverse Pick Drill)</li>
+      <li>[ ] Teach river geography and traffic patterns</li>
+      <li>[ ] Explain steering concepts and navigation awareness</li>
+      <li>[ ] Contrast "good push" vs. "soft push" on water</li>
+      <li>[ ] Practice applying leg drive on water</li>
+      <li>[ ] Teach pivot turns for tighter maneuvering</li>
+      <li>[ ] Check for appropriate looking frequency (3-5 strokes)</li>
+      <li>[ ] Reinforce proper traffic pattern adherence</li>
     </ul>
 
-    <h3>Session 4: Refining Skills</h3>
+    <h3>Session 4: Navigation and Integration</h3>
     <ul>
-      <li>[ ] Evaluate competency with full stroke</li>
-      <li>[ ] Assess comfort with various drills</li>
-      <li>[ ] Note improvements in boat stability</li>
-      <li>[ ] Verify understanding of traffic patterns</li>
-      <li>[ ] Begin discussion of post-program options</li>
+      <li>[ ] Review leg drive and navigation rules</li>
+      <li>[ ] Explain bridge passage protocols and safety</li>
+      <li>[ ] Assess rower control/confidence during warm-up</li>
+      <li>[ ] Divide into appropriate skill groups if necessary</li>
+      <li>[ ] Guide ready group through upriver navigation/bridges</li>
+      <li>[ ] Continue skill development with developing group</li>
+      <li>[ ] Conduct flip test re-takes for those who need it</li>
+      <li>[ ] Observe ability to integrate steering with rowing</li>
+      <li>[ ] Discuss pathways after program completion</li>
     </ul>
 
     <h3>Session 5: Building Endurance and Confidence</h3>
     <ul>
-      <li>[ ] Assess ability to row continuously</li>
-      <li>[ ] Evaluate overall progress and confidence</li>
-      <li>[ ] Note areas for final session focus</li>
-      <li>[ ] Discuss graduation requirements</li>
+      <li>[ ] Assess continuous rowing capability</li>
+      <li>[ ] Introduce rate and pressure variations</li>
+      <li>[ ] Organize group formation rowing with experienced scullers</li>
+      <li>[ ] Provide individual feedback on technique refinement</li>
+      <li>[ ] Practice steering while maintaining technique</li>
+      <li>[ ] Observe handling of longer rowing pieces (fatigue management)</li>
+      <li>[ ] Evaluate independence in boat handling and navigation</li>
+      <li>[ ] Discuss graduation requirements and assessment areas</li>
       <li>[ ] Prepare participants for final session expectations</li>
     </ul>
 
-    <h3>Session 6: Integration and Next Steps</h3>
+    <h3>Session 6: Integration and Assessment</h3>
     <ul>
-      <li>[ ] Complete final skills assessment for each participant</li>
-      <li>[ ] Prepare completion certificates</li>
-      <li>[ ] Discuss individual next steps with each participant</li>
-      <li>[ ] Collect program feedback</li>
-      <li>[ ] Ensure all equipment is left in perfect condition</li>
+      <li>[ ] Review all safety protocols and traffic patterns</li>
+      <li>[ ] Observe completely independent launching and rowing</li>
+      <li>[ ] Complete final skills assessment using Rower Checklist</li>
+      <li>[ ] Assess each component:
+        <ul>
+          <li>[ ] Equipment handling</li>
+          <li>[ ] Launching/landing</li>
+          <li>[ ] Basic boat control</li>
+          <li>[ ] Navigation & safety awareness</li>
+          <li>[ ] Capsize recovery competence</li>
+          <li>[ ] Equipment care and maintenance</li>
+        </ul>
+      </li>
+      <li>[ ] Present continuation options (Open Sculling Program)</li>
+      <li>[ ] Discuss club membership process and requirements</li>
+      <li>[ ] Collect program feedback for improvement</li>
+      <li>[ ] Celebrate program completion and achievements</li>
     </ul>
   </div>
 </div>
