@@ -161,29 +161,12 @@ layout: default
 </section>
 
 <div class="info-box aarc">
+  <h4>Meet Our Team</h4>
+  <p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="/team/">Meet our Instructors, Director, and Coaches</a> who will guide you through your rowing journey.</p>
+</div>
+
+<div class="info-box note">
   <h4>Questions?</h4>
   <p>For more information about the Learn to Scull program, please email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">official AARC website</a>.</p>
 </div>
 
-<style>
-  h1 {
-    color: #333;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-  }
-  h2 {
-    color: #1E73BE;
-    font-family: Verdana, Geneva, sans-serif;
-  }
-  h3, h4 {
-    color: #333;
-    font-family: Verdana, Geneva, sans-serif;
-  }
-  p, li {
-    font-family: Verdana, Geneva, sans-serif;
-  }
-  .page-header {
-    background-color: #1E73BE;
-    background-image: linear-gradient(120deg, #1E73BE, #004c99);
-  }
-</style>

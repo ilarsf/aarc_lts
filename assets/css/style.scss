@@ -1241,79 +1241,102 @@ table {
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
 
-// Footer - Redesigned to match AARC website and be more compact
-.site-footer {
-  background-color: $aarc-footer-bg;
-  padding: 1.5rem 0;
-  margin-top: 3rem;
-  color: $aarc-light-gray;
+// Team Section
+.team-section {
+  margin: 2rem 0 3rem;
   
-  a {
-    color: $aarc-light-gray;
-    font-size: 0.875rem;
+  .team-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
     
-    &:hover {
-      color: $aarc-blue;
+    p {
+      font-size: 1.1rem;
+      color: $aarc-dark-gray;
+      line-height: 1.6;
     }
   }
   
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    gap: 1.5rem;
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     
-    .footer-section {
-      flex: 1;
-      min-width: 250px;
+    @media screen and (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    }
+    
+    .team-member-image {
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.6s ease;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+    
+    .team-member-info {
+      padding: 1.25rem;
+      
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        font-size: 1.2rem;
+        color: $aarc-dark-gray;
+      }
       
       h4 {
-        color: $aarc-dark-gray;
         margin-top: 0;
         margin-bottom: 0.75rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        color: $aarc-blue;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
       
       p {
-        margin-bottom: 0.75rem;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+        color: $aarc-light-gray;
         line-height: 1.5;
-        font-size: 0.875rem;
-      }
-    }
-    
-    .footer-links {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      
-      li {
-        margin-bottom: 0.5rem;
-        
-        a {
-          display: inline-block;
-          
-          &:hover {
-            text-decoration: underline;
-          }
-        }
       }
     }
   }
+}
+
+// Footer - Minimal copyright only
+.site-footer {
+  background-color: $aarc-footer-bg;
+  padding: 1rem 0;
+  margin-top: 3rem;
   
   .copyright {
     font-size: 0.75rem;
     text-align: center;
-    padding-top: 0.75rem;
-    border-top: 1px solid $aarc-border-gray;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      
-      .footer-section {
-        margin-bottom: 1rem;
-      }
-    }
+    color: $aarc-light-gray;
   }
 }

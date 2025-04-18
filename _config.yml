@@ -49,6 +49,12 @@ navigation:
         url: /src/Rowers_Hand_Blister_Treatment.html
   - title: Communication
     url: /course_materials/communication/
+  - title: Meet the Team
+    url: /team/
+  - title: About AARC
+    url: /about/
+  - title: Resources
+    url: /resources/
 
 # Site info
 organization: "Ann Arbor Rowing Club"
