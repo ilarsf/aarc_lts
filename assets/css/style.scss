@@ -98,10 +98,11 @@ a {
 // Page header
 .page-header {
   background-color: $aarc-blue;
-  background-image: linear-gradient(120deg, lighten($aarc-blue, 10%), darken($aarc-blue, 10%));
+  background-image: linear-gradient(120deg, lighten($aarc-blue, 10%), darken($aarc-blue, 20%));
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem 0;
   
   &::before {
     content: '';
@@ -117,12 +118,17 @@ a {
   .container-lg {
     position: relative;
     z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
   }
   
   .project-name {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    color: $aarc-white;
     
     @media screen and (max-width: 768px) {
       font-size: 2rem;
@@ -131,9 +137,10 @@ a {
   }
   
   .project-tagline {
-    opacity: 0.9;
+    opacity: 0.95;
     margin-top: 0;
     font-size: 1.25rem;
+    color: $aarc-white;
     
     @media screen and (max-width: 768px) {
       font-size: 1rem;
@@ -275,11 +282,12 @@ a {
 // Navigation
 .site-nav {
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   padding: 0.5rem;
+  border-bottom: 3px solid $aarc-blue;
   
   ul {
     list-style-type: none;
@@ -304,6 +312,11 @@ a {
         transition: all 0.2s ease;
         text-decoration: none;
         border-radius: 4px;
+        font-size: 1.05rem;
+        
+        @media screen and (min-width: 992px) {
+          font-size: 1.1rem;
+        }
         
         &:hover {
           color: $aarc-blue;
@@ -524,8 +537,20 @@ a {
   to { opacity: 1; }
 }
 
+// Main container
+.main-container {
+  max-width: 1200px !important;
+  padding: 0 2rem !important;
+  margin: 0 auto;
+  width: 100%;
+}
+
 // Main content
 .main-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  
   h1, h2, h3, h4, h5, h6 {
     color: $aarc-dark-gray;
     margin-top: 2rem;
@@ -547,6 +572,10 @@ a {
       width: 60px;
       background-color: $aarc-blue;
     }
+    
+    @media screen and (min-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
   
   h2 {
@@ -566,20 +595,37 @@ a {
       width: 100%;
       background-color: rgba($aarc-border-gray, 0.5);
     }
+    
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   
   h3 {
     font-size: 1.4rem;
     margin-top: 1.75rem;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
   
   h4 {
     font-size: 1.15rem;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
   
   p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
   }
   
   hr {
@@ -625,6 +671,10 @@ a {
     
     li {
       margin-bottom: 0.5rem;
+      
+      @media screen and (min-width: 768px) {
+        font-size: 1.05rem;
+      }
     }
     
     ul, ol {
@@ -881,10 +931,21 @@ table {
     // For larger screens, let's float it to the right for some layouts
     &.float-right {
       float: right;
-      width: 280px;
+      width: 300px;
       margin-left: 2rem;
       margin-bottom: 1rem;
     }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    &.float-right {
+      width: 320px;
+      margin-left: 2.5rem;
+    }
+  }
+  
+  &.float-right + h2 {
+    clear: none;
   }
 }
 
@@ -941,7 +1002,11 @@ table {
   margin: 2rem 0;
   border-radius: 8px;
   border-left: 5px solid;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  
+  @media screen and (min-width: 768px) {
+    padding: 1.75rem;
+  }
   
   &.tip {
     background-color: rgba(39, 174, 96, 0.05);
@@ -999,10 +1064,23 @@ table {
     margin-top: 0;
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
   
   p:last-child {
     margin-bottom: 0;
+  }
+  
+  ul, ol {
+    margin-bottom: 0;
+    
+    li:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -1047,6 +1125,10 @@ table {
     grid-gap: 2.5rem;
   }
   
+  @media screen and (min-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  
   // Column alignment options
   &.align-center {
     align-items: center;
@@ -1058,6 +1140,31 @@ table {
   
   &.align-end {
     align-items: end;
+  }
+  
+  // Column width options
+  &.col-60-40 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 60% 40%;
+    }
+  }
+  
+  &.col-40-60 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 40% 60%;
+    }
+  }
+  
+  &.col-70-30 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 70% 30%;
+    }
+  }
+  
+  &.col-30-70 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 30% 70%;
+    }
   }
   
   // Responsive overrides
@@ -1077,6 +1184,15 @@ table {
       }
     }
   }
+  
+  // Ensure all content in grid cells has proper spacing
+  > * > *:first-child {
+    margin-top: 0;
+  }
+  
+  > * > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Three-column layout
@@ -1095,9 +1211,22 @@ table {
     grid-gap: 2rem;
   }
   
+  @media screen and (min-width: 1200px) {
+    grid-gap: 2.5rem;
+  }
+  
   // Equal height columns
   &.equal-height > * {
     height: 100%;
+  }
+  
+  // Ensure all content in grid cells has proper spacing
+  > * > *:first-child {
+    margin-top: 0;
+  }
+  
+  > * > *:last-child {
+    margin-bottom: 0;
   }
 }
 
