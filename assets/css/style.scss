@@ -249,6 +249,53 @@ table {
   }
 }
 
+// Video embedding and responsive iframes
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+// Video library section
+.video-library {
+  margin: 2rem 0;
+  
+  .video-item {
+    margin-bottom: 2rem;
+    
+    h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: $aarc-light-gray;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
 // Footer
 .site-footer {
   border-top: 1px solid $aarc-border-gray;

@@ -41,7 +41,7 @@
     <h3>Core Concepts: Key Technical Frameworks</h3>
     <p>Throughout all sessions, continuously reinforce these essential frameworks:</p>
     
-    <h4>Kraft's Keys</h4>
+    <h4 id="krafts-keys">Kraft's Keys</h4>
     <ul>
       <li><strong>K</strong>: Keep shoulders relaxed and down</li>
       <li><strong>R</strong>: Reach from hips, not shoulders</li>
@@ -50,7 +50,7 @@
       <li><strong>T</strong>: Tap down before extraction</li>
     </ul>
     
-    <h4>Black Bear Sequence</h4>
+    <h4 id="black-bear-sequence">Black Bear Sequence</h4>
     <ul>
       <li><strong>Grip and feather:</strong> Maintain proper hand position and blade control</li>
       <li><strong>Release:</strong> Clean exit with light tap down</li>
@@ -58,6 +58,8 @@
       <li><strong>Drive:</strong> Connected power application (legs → back → arms)</li>
       <li><strong>Steering:</strong> Frequent looks with subtle corrections</li>
     </ul>
+    
+    <p>Help learners understand these concepts by directing them to the <a href="../learner/QA_Companion.html#resources-tab">Technical Frameworks</a> reference guide and the embedded video demonstrations.</p>
 
     <h3>Session 1: Learning the Motion and Getting Wet</h3>
     <table>
@@ -1055,23 +1057,42 @@
     <h2 id="resources">Resources</h2>
     
     <h3>Instructional Videos</h3>
-    <ul>
-      <li><strong>Flip Test Demonstrations:</strong>
-        <ul>
-          <li>Johanna Flip Test Demo: <a href="https://youtu.be/lznN4_uCz9c">https://youtu.be/lznN4_uCz9c</a></li>
-          <li>Lars Flip Test Demo: <a href="https://youtu.be/bfJR2K18GZo">https://youtu.be/bfJR2K18GZo</a></li>
-        </ul>
-      </li>
-      <li><strong>Technical Drill Demonstrations:</strong>
-        <ul>
-          <li>Pick Drill (USRowing technique video)</li>
-          <li>Pause Drills for rowing technique</li>
-          <li>Blade work and feathering technique</li>
-        </ul>
-      </li>
-    </ul>
-
+    
+    <h4>Flip Test Demonstrations</h4>
+    <div class="video-grid">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="video-item">
+      <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure with clear steps</p>
+      <p><strong>Right:</strong> Lars Flip Test Demo - Shows alternative re-entry technique for smaller rowers</p>
+      <p>For detailed instructions to share with learners, direct them to our <a href="../../src/Sculling_Self_Rescue_Guide.html">Sculling Self-Rescue Guide</a>.</p>
+    </div>
+    
+    <h4>Technical Drills and Grip Technique</h4>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <p><strong>Correct Grip Tutorial</strong> - Demonstrates proper hand position and grip technique for sculling</p>
+    </div>
+    
     <h3>Safety Resources</h3>
+    
+    <h4>USRowing Safety Video</h4>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Rx5SUe_RdgQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <p><strong>USRowing Safety Guidelines</strong> - Comprehensive overview of rowing safety practices</p>
+      <p>See our complete collection of instructional videos in the <a href="../learner/QA_Companion.html#videos-tab">Video Library</a></p>
+    </div>
+    
     <ul>
       <li><strong>Weather Assessment Tools:</strong>
         <ul>
@@ -1080,11 +1101,11 @@
           <li>Lightning tracking apps and resources</li>
         </ul>
       </li>
-      <li><strong>Safety Guidelines:</strong>
+      <li><strong>Additional Safety Resources:</strong>
         <ul>
-          <li>USRowing Safety Video: <a href="https://youtu.be/Rx5SUe_RdgQ">https://youtu.be/Rx5SUe_RdgQ</a></li>
           <li>Club emergency action plan</li>
           <li>River hazard map and traffic pattern guide</li>
+          <li><a href="../learner/QA_Companion.html">Learner FAQ & Troubleshooting Guide</a> - Helpful for answering common questions</li>
         </ul>
       </li>
     </ul>

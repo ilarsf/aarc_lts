@@ -11,6 +11,7 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
 
 - [**Learner's Guide**](Learner_Guide.md) - A comprehensive guide to sculling concepts, techniques, and progression
 - [**Q&A Companion**](QA_Companion.md) - Answers to frequently asked questions about sculling, equipment, and safety
+- [**Video Library**](QA_Companion.md#videos-tab) - Collection of instructional videos covering safety, technique, and skills
 
 ## How to Use These Resources
 
@@ -21,6 +22,6 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
 
 ## Video Resources
 
-Your coach may share additional video resources during the program to help visualize techniques described in these materials.
+Check out our [Video Library](QA_Companion.md#videos-tab) for demonstrations of flip tests, safety procedures, and proper technique. These visual guides will help reinforce what you learn during the program.
 
 [← Back to Main Page](../../index.md)

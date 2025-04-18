@@ -10,6 +10,7 @@ Welcome to the coaching resources for the AARC Learn to Scull program. These mat
 
 - [**Coach's Manual**](Coach_Manual.md) - Comprehensive guide with session goals, teaching points, and class management strategies
 - [**Daily Coach Checklist**](Daily_Coach_Checklist.md) - Operational checklist for before, during, and after each session
+- [**Video Library**](../learner/QA_Companion.md#videos-tab) - Instructional videos for demonstrations and coaching reference
 
 ## Tips for Using These Resources
 

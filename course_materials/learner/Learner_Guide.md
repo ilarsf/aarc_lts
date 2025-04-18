@@ -218,12 +218,24 @@
       </li>
     </ol>
 
-    <h4>Video References</h4>
-    <p>The club has instructional videos available showing the proper flip test procedure:</p>
-    <ul>
-      <li>Johanna Flip Test Demo: <a href="https://youtu.be/lznN4_uCz9c">https://youtu.be/lznN4_uCz9c</a></li>
-      <li>Lars Flip Test Demo: <a href="https://youtu.be/bfJR2K18GZo">https://youtu.be/bfJR2K18GZo</a></li>
-    </ul>
+    <h4>Video Demonstrations</h4>
+    <p>Watch these instructional videos showing the proper flip test procedure:</p>
+    
+    <div class="video-grid">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="video-item">
+      <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure</p>
+      <p><strong>Right:</strong> Lars Flip Test Demo - Alternative re-entry technique</p>
+    </div>
+    
+    <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.html">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
 
     <h3>Water Safety Rules</h3>
     <ul>
@@ -257,6 +269,14 @@
 
     <h3>Caring for Your Hands</h3>
     <p>Rowing can cause blisters, especially for beginners. This is a normal part of the learning process as your hands adapt to the unique demands of the sport.</p>
+    
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="video-item">
+      <p><strong>Correct Grip Tutorial</strong> - The proper grip technique is the first step in preventing blisters</p>
+    </div>
 
     <h4>Prevention Strategies</h4>
     <ul>
@@ -282,6 +302,8 @@
         </ul>
       </li>
     </ul>
+    
+    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatments_.html">Rower's Hand Blister Treatments</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
 
     <h4>Blister Treatment</h4>
     <ul>
