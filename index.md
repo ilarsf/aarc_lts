@@ -162,7 +162,7 @@ layout: default
 
 <div class="info-box aarc">
   <h4>Meet Our Team</h4>
-  <p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="/team/">Meet our Instructors, Director, and Coaches</a> who will guide you through your rowing journey.</p>
+<p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="{{ site.baseurl }}/team/">Meet our Instructors, Director, and Coaches</a> who will guide you through your rowing journey.</p>
 </div>
 
 <div class="info-box note">
