@@ -1,6 +1,7 @@
-title: AARC Learn to Scull Program
-description: Training materials for the Ann Arbor Rowing Club's Learn to Scull program
-remote_theme: pages-themes/cayman@v0.2.0
+ title: AARC Learn to Scull Program
+ description: Training materials for the Ann Arbor Rowing Club's Learn to Scull program
+ baseurl: /aarc_lts
+ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
 - jekyll-relative-links

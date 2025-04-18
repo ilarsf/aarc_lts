@@ -3,11 +3,11 @@ layout: default
 title: Meet the Team - AARC Learn to Scull Program
 ---
 
-# Meet Our Instructors, Director, and Coaches
+# Meet Our Team
 
 <div class="team-section">
   <div class="team-intro">
-    <p>Our dedicated team of instructors, coaches, and program directors are committed to providing an exceptional learning experience for all AARC Learn to Scull participants. With years of rowing experience and a passion for the sport, they are here to guide you every step of the way on your rowing journey.</p>
+    <p>Our dedicated team of director, coaches and instructors are committed to providing an exceptional learning experience for all AARC Learn to Scull participants. With years of rowing experience and a passion for the sport, they are here to guide you every step of the way on your rowing journey.</p>
   </div>
 
   <div class="team-grid">
