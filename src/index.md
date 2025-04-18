@@ -23,19 +23,19 @@ These guides provide detailed instructions on essential techniques and safety pr
   <div class="info-box note">
     <h4>Self-Rescue Guide</h4>
     <p>Comprehensive instructions for recovering from a capsize and re-entering your shell safely.</p>
-    <p><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a></div>
   </div>
   
   <div class="info-box tip">
     <h4>Flip Test Instructions</h4>
     <p>Step-by-step guide for completing the capsize recovery test required for all AARC scullers.</p>
-    <p><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="cta-button">View Guide</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="cta-button">View Guide</a></div>
   </div>
   
   <div class="info-box">
     <h4>Hand Care Guide</h4>
     <p>Prevention and treatment of rowing blisters, with tips for maintaining healthy hands.</p>
-    <p><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a></div>
   </div>
 </div>
 
@@ -47,19 +47,19 @@ These official AARC documents outline important policies and guidelines that all
   <div class="info-box warning">
     <h4>Safety Rules</h4>
     <p>Essential safety guidelines that all AARC rowers must follow.</p>
-    <p><a href="AARC_Safety_Rules.pdf" target="_blank" class="cta-button">View PDF</a></p>
+    <div class="mt-auto"><a href="AARC_Safety_Rules.pdf" target="_blank" class="cta-button">View PDF</a></div>
   </div>
   
   <div class="info-box">
     <h4>Code of Conduct</h4>
     <p>Standards of behavior and conduct expected of all AARC members.</p>
-    <p><a href="AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank" class="cta-button">View PDF</a></p>
+    <div class="mt-auto"><a href="AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank" class="cta-button">View PDF</a></div>
   </div>
   
   <div class="info-box tip">
     <h4>SafeSport Policy</h4>
     <p>AARC's commitment to providing a safe environment for all participants.</p>
-    <p><a href="AARCSafeSport_2015-01-18.pdf" target="_blank" class="cta-button">View PDF</a></p>
+    <div class="mt-auto"><a href="AARCSafeSport_2015-01-18.pdf" target="_blank" class="cta-button">View PDF</a></div>
   </div>
 </div>
 
@@ -69,19 +69,19 @@ These official AARC documents outline important policies and guidelines that all
   <div class="info-box">
     <h4>Learner Resources</h4>
     <p>Comprehensive guide for participants in the Learn to Scull program.</p>
-    <p><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-button">Learner's Guide</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-button">Learner's Guide</a></div>
   </div>
   
   <div class="info-box">
     <h4>Coach Resources</h4>
     <p>Detailed information for program coaches and instructors.</p>
-    <p><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html" class="cta-button">Coach's Manual</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html" class="cta-button">Coach's Manual</a></div>
   </div>
   
   <div class="info-box">
     <h4>Q&A Resources</h4>
     <p>Answers to frequently asked questions about the program.</p>
-    <p><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="cta-button">Q&A Companion</a></p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="cta-button">Q&A Companion</a></div>
   </div>
 </div>
 
