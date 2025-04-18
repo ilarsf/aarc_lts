@@ -26,17 +26,17 @@ navigation:
     url: /textbook/
     subitems:
       - title: "Part 1: Getting Started"
-        url: /textbook/chapters/part1.html
+        url: /textbook/chapters/part1.md
       - title: "Part 2: For the Learner"
-        url: /textbook/chapters/part2.html
+        url: /textbook/chapters/part2.md
       - title: "Part 3: Safety"
-        url: /textbook/chapters/part3.html
+        url: /textbook/chapters/part3.md
       - title: "Part 4: For the Coach"
-        url: /textbook/chapters/part4.html
+        url: /textbook/chapters/part4.md
       - title: "Part 5: Appendices"
-        url: /textbook/chapters/part5.html
+        url: /textbook/chapters/part5.md
       - title: "View All Chapters"
-        url: /textbook/all.html
+        url: /textbook/all.md
   - title: Coach Resources
     url: /course_materials/coach/
     subitems:
