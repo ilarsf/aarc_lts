@@ -104,9 +104,9 @@
         const siteNav = document.querySelector('.site-nav');
         const dropdownItems = document.querySelectorAll('.has-dropdown');
         
-        // Ensure desktop navigation is visible by default (fix for CSS issue)
-        if (window.innerWidth > 768) {
-          siteNav.style.display = 'block';
+        // Menu should always start hidden on mobile
+        if (window.innerWidth <= 768) {
+          siteNav.style.display = 'none';
         }
         
         // Set active nav item based on current page URL

@@ -286,7 +286,10 @@ a {
   box-shadow: 0 0 4px rgba(0,0,0,0.05);
   padding: 0.5rem;
   border-bottom: 1px solid $aarc-border-gray;
-  display: block !important; /* Force navigation to always be visible, overriding any conflicting rules */
+  
+  @media screen and (min-width: 769px) {
+    display: block !important; /* Force navigation to always be visible on desktop */
+  }
   
   ul {
     list-style-type: none;
@@ -456,15 +459,13 @@ a {
 // Mobile menu style
 .site-nav {
   @media screen and (max-width: 768px) {
-    display: block !important; /* Always show navigation in mobile */
+    display: none; /* Hide by default on mobile, toggle with JavaScript */
     width: 100%;
     background-color: $aarc-white;
     padding: 0.75rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 1rem;
-    
-    /* Removed the toggle display for now since we want it always visible */
     
     ul {
       flex-direction: column;
