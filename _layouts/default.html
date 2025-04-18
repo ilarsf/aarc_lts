@@ -23,6 +23,7 @@
 
     <div class="container-lg px-3 my-5 markdown-body main-container">
       <nav class="site-nav">
+        <!-- Dynamic navigation from _config.yml -->
         <ul>
           {% for item in site.navigation %}
             <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
@@ -37,7 +38,33 @@
             </li>
           {% endfor %}
         </ul>
+        
+        <!-- Fallback static navigation (shown if dynamic navigation fails) -->
+        {% if site.navigation.size == 0 %}
+        <ul class="fallback-nav">
+          <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="{{ site.baseurl }}/textbook/">Textbook</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/textbook/chapters/part1.html">Part 1: Getting Started</a></li>
+              <li><a href="{{ site.baseurl }}/textbook/chapters/part2.html">Part 2: For the Learner</a></li>
+              <li><a href="{{ site.baseurl }}/textbook/chapters/part3.html">Part 3: Safety</a></li>
+              <li><a href="{{ site.baseurl }}/textbook/chapters/part4.html">Part 4: For the Coach</a></li>
+              <li><a href="{{ site.baseurl }}/textbook/chapters/part5.html">Part 5: Appendices</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/src/">Technical Guides</a></li>
+        </ul>
+        {% endif %}
       </nav>
+      
+      <!-- Debug Navigation -->
+      <div style="display: none;">
+        <p>Navigation Debugging:</p>
+        <p>Number of nav items: {{ site.navigation | size }}</p>
+      </div>
 
       <main class="main-content">
         {{ content }}
@@ -56,6 +83,11 @@
         const siteNav = document.querySelector('.site-nav');
         const dropdownItems = document.querySelectorAll('.has-dropdown');
         
+        // Ensure desktop navigation is visible by default (fix for CSS issue)
+        if (window.innerWidth > 768) {
+          siteNav.style.display = 'block';
+        }
+        
         // Set active nav item based on current page URL
         const currentPath = window.location.pathname;
         const navLinks = document.querySelectorAll('.site-nav a');
@@ -70,8 +102,17 @@
         // Mobile navigation toggle
         if (mobileNavToggle && siteNav) {
           mobileNavToggle.addEventListener('click', function() {
+            // Toggle active class
             siteNav.classList.toggle('active');
             
+            // Explicitly toggle display property as well
+            if (siteNav.classList.contains('active')) {
+              siteNav.style.display = 'block';
+            } else if (window.innerWidth <= 768) {
+              siteNav.style.display = 'none';
+            }
+            
+            // Toggle icon
             const icon = mobileNavToggle.querySelector('i');
             if (icon) {
               if (icon.classList.contains('fa-bars')) {

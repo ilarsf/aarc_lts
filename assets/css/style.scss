@@ -286,6 +286,7 @@ a {
   box-shadow: 0 0 4px rgba(0,0,0,0.05);
   padding: 0.5rem;
   border-bottom: 1px solid $aarc-border-gray;
+  display: block; /* Ensure navigation is shown by default on desktop */
   
   ul {
     list-style-type: none;
@@ -455,13 +456,17 @@ a {
 // Mobile menu active state
 .site-nav {
   @media screen and (max-width: 768px) {
-    display: none;
+    display: none; /* Hidden by default on mobile */
     width: 100%;
     background-color: $aarc-white;
     padding: 0.75rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 1rem;
+    
+    &.active {
+      display: block; /* Show when active class is applied */
+    }
     
     ul {
       flex-direction: column;
