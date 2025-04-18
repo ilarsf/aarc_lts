@@ -17,9 +17,9 @@ title: Resources - AARC Learn to Scull Program
 - [Code of Conduct (PDF)](/assets/pdf/AARC_Code_of_Conduct_2025-02-26.pdf)
 
 ## Technical Guides
-- [Sculling Self-Rescue Guide](/src/Sculling_Self_Rescue_Guide.html)
-- [Flip Test Instructions](/src/AARC_Flip_Test_Instructions_20240803.html)
-- [Rower's Hand Care Guide](/src/Rowers_Hand_Blister_Treatment.html)
+- [Sculling Self-Rescue Guide](/src/Sculling_Self_Rescue_Guide.md)
+- [Flip Test Instructions](/src/AARC_Flip_Test_Instructions_20240803.md)
+- [Rower's Hand Care Guide](/src/Rowers_Hand_Blister_Treatment.md)
 
 ## Educational Resources
 

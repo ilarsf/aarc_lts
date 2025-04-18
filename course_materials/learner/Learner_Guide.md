@@ -235,7 +235,7 @@
       <p><strong>Right:</strong> Lars Flip Test Demo - Alternative re-entry technique</p>
     </div>
     
-    <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.html">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
+    <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.md">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
 
     <h3>Water Safety Rules</h3>
     <div class="info-box tip">
@@ -313,7 +313,7 @@
       </li>
     </ul>
     
-    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatment.html">Rower's Hand Blister Treatment</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
+    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatment.md">Rower's Hand Blister Treatment</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
 
     <h4>Blister Treatment</h4>
     <ul>

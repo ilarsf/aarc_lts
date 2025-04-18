@@ -147,7 +147,7 @@ Watching the process can be very helpful. Refer to these videos (links typically
 **Left:** Johanna Flip Test Demo - Standard procedure  
 **Right:** Lars Flip Test Demo - Alternative technique
 
-**You can also find detailed written steps in the [Sculling Self-Rescue Guide](../src/Sculling_Self_Rescue_Guide.html) and the [Flip Test Instructions](../src/AARC_Flip_Test_Instructions_20240803.html).**
+**You can also find detailed written steps in the [Sculling Self-Rescue Guide](../src/Sculling_Self_Rescue_Guide.md) and the [Flip Test Instructions](../src/AARC_Flip_Test_Instructions_20240803.md).**
 
 ---
 
