@@ -185,4 +185,4 @@ title: Resources - AARC Learn to Scull Program
 
 AARC is committed to making rowing accessible to everyone in our community. We offer scholarship opportunities for those who may need financial assistance to participate in our Learn to Scull program.
 
-For more information about scholarships, please visit the [AARC Scholarship Page](https://www.a2crew.org/scholarships).
+For more information about scholarships, please visit the [AARC Scholarship Page](https://aarc.clubexpress.com/scholarships).

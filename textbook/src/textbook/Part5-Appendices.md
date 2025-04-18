@@ -123,7 +123,7 @@ Learning to scull is just the beginning! AARC offers several pathways for you to
 * **Intermediate Technique Sessions/Clinics:** AARC sometimes offers focused coaching sessions on specific aspects of technique (e.g., improving blade work, power application). These are great for targeted skill refinement.
 * **Private Coaching:** One-on-one lessons with experienced coaches are available for personalized feedback and accelerated development.
 * **Volunteer Opportunities:** Getting involved with club activities, maintenance, or events is a great way to meet people and contribute to the AARC community.
-* **Scholarships:** AARC is committed to making rowing accessible. Financial assistance scholarships may be available for programs and membership. Visit the [AARC Scholarship Page](https://www.a2crew.org/scholarships) for more information.
+* **Scholarships:** AARC is committed to making rowing accessible. Financial assistance scholarships may be available for programs and membership. Visit the [AARC Scholarship Page](https://aarc.clubexpress.com/scholarships) for more information.
 
 💡 **Tip:** Talk to your LTS coach during the final session about which next step might be best suited for you based on your progress and goals.
 
@@ -141,7 +141,7 @@ Refer back to the links provided in the `QA_Companion.md` or other online resour
 
 Explore these resources for more information about rowing:
 
-* **Ann Arbor Rowing Club (AARC) Official Website:** [https://www.a2crew.org](https://www.a2crew.org) - Find information on membership, programs, events, and more.
+* **Ann Arbor Rowing Club (AARC) Official Website:** [https://aarc.clubexpress.com](https://aarc.clubexpress.com) - Find information on membership, programs, events, and more.
 * **USRowing Official Website:** [https://usrowing.org](https://usrowing.org) - The national governing body for rowing in the United States. Offers resources, safety guidelines, and event information.
 * **USRowing Safety Guidelines:** [https://usrowing.org/sports/2016/6/19/1134_132107028574772912.aspx](https://usrowing.org/sports/2016/6/19/1134_132107028574772912.aspx) - Detailed safety information from the national governing body.
 * **Concept2 Technique Videos:** [https://www.concept2.com/indoor-rowers/training/technique-videos](https://www.concept2.com/indoor-rowers/training/technique-videos) - While focused on indoor rowing, many technique principles (like sequencing) are relevant and clearly demonstrated.
