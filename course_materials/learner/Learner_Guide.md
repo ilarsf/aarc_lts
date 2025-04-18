@@ -1,27 +1,5 @@
 # Learner's Guide: Learn to Scull Program
 
-<div class="page-toc">
-  <h4>Quick Navigation</h4>
-  <p class="mb-1"><small>Jump directly to specific sections of this guide:</small></p>
-  <ul>
-    <li><a href="#welcome-to-sculling">Welcome to Sculling</a></li>
-    <li><a href="#what-to-expect">What to Expect</a></li>
-    <li><a href="#your-sculling-journey">Your Sculling Journey</a></li>
-    <li><a href="#the-rowing-stroke-a-beginners-guide">The Rowing Stroke</a></li>
-    <li><a href="#essential-sculling-techniques">Essential Techniques</a></li>
-    <li><a href="#safety-first-the-flip-test-and-self-rescue">Safety First</a></li>
-    <li><a href="#next-steps-after-the-course">Next Steps</a></li>
-  </ul>
-</div>
-
-<div class="info-box note">
-  <h4>Navigation Options</h4>
-  <p>This guide offers two ways to navigate the content:</p>
-  <ul class="mb-0">
-    <li><strong>Quick Links</strong> above for direct access to specific topics</li>
-    <li><strong>Topic Tabs</strong> below to browse content by general category</li>
-  </ul>
-</div>
 
 <div class="tab-container">
   <div class="tab-nav">

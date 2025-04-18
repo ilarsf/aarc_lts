@@ -19,7 +19,7 @@ The textbook version offers several advantages:
 {% include textbook-nav.html %}
 
 <div class="info-box tip">
-  <h4>Navigation Options</h4>
+  <h4>Textbook Options</h4>
   <p>You can read the textbook in two ways:</p>
   <ul>
     <li><strong>Online version:</strong> Navigate through the chapters using the links above</li>

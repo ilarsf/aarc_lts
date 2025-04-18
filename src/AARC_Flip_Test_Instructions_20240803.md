@@ -4,19 +4,6 @@ layout: default
 
 # Flip Test Instructions
 
-<div class="page-toc float-right">
-  <h4>Quick Navigation</h4>
-  <ul>
-    <li><a href="#objective">Objective</a></li>
-    <li><a href="#capsize">Capsize</a></li>
-    <li><a href="#right-the-boat">Right the Boat</a></li>
-    <li><a href="#position-the-oars">Position the Oars</a></li>
-    <li><a href="#re-entering-the-boat">Re-entering the Boat</a></li>
-    <li><a href="#post-recovery">Post-Recovery</a></li>
-    <li><a href="#additional-tips">Additional Tips</a></li>
-    <li><a href="#videos">Videos</a></li>
-  </ul>
-</div>
 
 ## Objective
 

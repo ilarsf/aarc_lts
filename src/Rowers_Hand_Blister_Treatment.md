@@ -4,16 +4,6 @@ layout: default
 
 # Rower's Hand Blister Treatment Guide
 
-<div class="page-toc float-right">
-  <h4>Quick Navigation</h4>
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#prevention">Prevention</a></li>
-    <li><a href="#treatment">Treatment</a></li>
-    <li><a href="#rowing-with-blisters">Rowing with Blisters</a></li>
-    <li><a href="#long-term-management">Long-term Management</a></li>
-  </ul>
-</div>
 
 ## Introduction
 

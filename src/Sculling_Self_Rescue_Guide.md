@@ -4,17 +4,6 @@ layout: default
 
 # Sculling Self-Rescue Guide
 
-<div class="page-toc float-right">
-  <h4>Quick Navigation</h4>
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#understanding-capsizing">Understanding Capsizing</a></li>
-    <li><a href="#the-flip-test">The Flip Test</a></li>
-    <li><a href="#self-rescue-process">Self-Rescue Process</a></li>
-    <li><a href="#video-demonstrations">Video Demonstrations</a></li>
-    <li><a href="#safety-practices">Safety Practices</a></li>
-  </ul>
-</div>
 
 ## Introduction
 

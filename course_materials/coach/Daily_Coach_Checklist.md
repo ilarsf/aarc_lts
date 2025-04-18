@@ -1,16 +1,5 @@
 # Daily Coach Checklist: Learn to Scull Program
 
-<div class="page-toc">
-  <h4>Quick Navigation</h4>
-  <ul>
-    <li><a href="#pre-session">Pre-Session</a></li>
-    <li><a href="#participant-arrival">Participant Arrival</a></li>
-    <li><a href="#on-water-session">On-Water Session</a></li>
-    <li><a href="#return-to-dock">Return to Dock</a></li>
-    <li><a href="#post-session">Post-Session</a></li>
-    <li><a href="#session-specific-notes">Session-Specific Notes</a></li>
-  </ul>
-</div>
 
 <div class="pdf-downloads" style="background-color: #f0f7ff; padding: 20px; margin-bottom: 30px; border-radius: 4px; border: 1px solid #1E73BE;">
   <h3 style="margin-top: 0; color: #1E73BE;">Downloadable Checklists</h3>

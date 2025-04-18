@@ -23,24 +23,6 @@
 
     <div class="container-lg px-3 my-5 markdown-body main-container">
       <nav class="site-nav">
-        <!-- Dynamic navigation from _config.yml -->
-        <ul>
-          {% for item in site.navigation %}
-            <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
-              <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-              {% if item.subitems %}
-                <ul class="dropdown-menu">
-                  {% for subitem in item.subitems %}
-                    <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-        
-        <!-- Fallback static navigation (always shown) -->
-        {% if true %}
         <ul class="fallback-nav">
           <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
           <li class="nav-item has-dropdown">
@@ -59,6 +41,7 @@
             <ul class="dropdown-menu">
               <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html">Coach Manual</a></li>
               <li><a href="{{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html">Daily Checklist</a></li>
+              <li><a href="{{ site.baseurl }}/course_materials/communication/">Communication</a></li>
             </ul>
           </li>
           <li class="nav-item has-dropdown">
@@ -77,15 +60,11 @@
               <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/communication/">Communication</a></li>
           <li class="nav-item"><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
           <li class="nav-item"><a href="{{ site.baseurl }}/about/">About AARC</a></li>
           <li class="nav-item"><a href="{{ site.baseurl }}/resources/">Resources</a></li>
         </ul>
-        {% endif %}
       </nav>
-      
-      <!-- Navigation debugging removed -->
 
       <main class="main-content">
         {{ content }}
@@ -270,52 +249,7 @@
             });
           });
           
-          // Add click handlers for quick navigation links
-          const quickNavLinks = document.querySelectorAll('.page-toc a');
-          quickNavLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-              // Get the section ID from the href
-              const href = this.getAttribute('href');
-              if (href && href.startsWith('#')) {
-                const sectionId = href.substring(1);
-                
-                // Only handle sections that map to tabs
-                const sectionToTabMap = {
-                  // Learner Guide
-                  'welcome-to-sculling': 'welcome-tab',
-                  'what-to-expect': 'welcome-tab',
-                  'your-sculling-journey': 'journey-tab',
-                  'the-rowing-stroke-a-beginners-guide': 'technique-tab',
-                  'essential-sculling-techniques': 'technique-tab',
-                  'safety-first-the-flip-test-and-self-rescue': 'safety-tab',
-                  'next-steps-after-the-course': 'reference-tab',
-                  
-                  // Coach Manual
-                  'program-overview': 'overview-tab',
-                  'program-structure': 'overview-tab',
-                  'session-goals-and-progression': 'sessions-tab',
-                  'technical-teaching-points': 'technical-tab',
-                  'class-management': 'management-tab',
-                  'coaching-tips': 'management-tab',
-                  'resources': 'resources-tab'
-                };
-                
-                if (sectionToTabMap[sectionId]) {
-                  e.preventDefault();
-                  activateTab(sectionId);
-                  
-                  // Update URL hash and scroll to section
-                  history.pushState(null, null, href);
-                  setTimeout(() => {
-                    const section = document.getElementById(sectionId);
-                    if (section) {
-                      window.scrollTo(0, section.offsetTop - 20);
-                    }
-                  }, 100);
-                }
-              }
-            });
-          });
+          // Quick navigation links removed
         }
       });
     </script>

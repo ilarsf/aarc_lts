@@ -1,27 +1,5 @@
 # Coach's Manual: Learn to Scull Program
 
-<div class="page-toc">
-  <h4>Quick Navigation</h4>
-  <p class="mb-1"><small>Jump directly to specific sections of this guide:</small></p>
-  <ul>
-    <li><a href="#program-overview">Program Overview</a></li>
-    <li><a href="#program-structure">Program Structure</a></li>
-    <li><a href="#session-goals-and-progression">Session Goals and Progression</a></li>
-    <li><a href="#technical-teaching-points">Technical Teaching Points</a></li>
-    <li><a href="#class-management">Class Management</a></li>
-    <li><a href="#coaching-tips">Coaching Tips</a></li>
-    <li><a href="#resources">Resources</a></li>
-  </ul>
-</div>
-
-<div class="info-box note">
-  <h4>Navigation Options</h4>
-  <p>This guide offers two ways to navigate the content:</p>
-  <ul class="mb-0">
-    <li><strong>Quick Links</strong> above for direct access to specific topics</li>
-    <li><strong>Topic Tabs</strong> below to browse content by general category</li>
-  </ul>
-</div>
 
 <div class="tab-container">
   <div class="tab-nav">
