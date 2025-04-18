@@ -2,28 +2,31 @@
 layout: default
 ---
 
-<div class="two-col-grid">
-  <div>
-    <h1>AARC Learn to Scull Program</h1>
-    
-    <div class="info-box note">
-      <h4>Welcome!</h4>
-      <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
-    </div>
-    
-    <p>Sculling is a type of rowing where a rower uses two oars to propel their boat through the water. Sculling is typically done in smaller boats of one or two people who navigate the water without a coxswain. Sculling allows for greater independence. In a scull, rowers can feel the impact of their own movement and connect to the water.</p>
-    
-    <p>Our Learn to Scull program is an introductory program for those who are new to rowing, have previous sculling experience and are in need of "refresher" lessons, or are sweep rowers who would like to learn how to scull. The class will teach you the basics and get you comfortable with sculling, preparing you for the next step in your rowing journey.</p>
-  </div>
+<header class="page-intro">
+  <h1>Learn to Scull Program</h1>
   
-  <div>
-    <div class="image-placeholder" style="height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="AARC Learn to Scull" style="max-width: 100%; max-height: 380px; border: none;">
+  <div class="two-col-grid align-center">
+    <div>
+      <div class="info-box note">
+        <h4>Welcome to AARC!</h4>
+        <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
+      </div>
+      
+      <p>Sculling is a type of rowing where a rower uses two oars to propel their boat through the water. Sculling is typically done in smaller boats of one or two people who navigate the water without a coxswain. Sculling allows for greater independence. In a scull, rowers can feel the impact of their own movement and connect to the water.</p>
+      
+      <p>Our Learn to Scull program is an introductory program for those who are new to rowing, have previous sculling experience and are in need of "refresher" lessons, or are sweep rowers who would like to learn how to scull. The class will teach you the basics and get you comfortable with sculling, preparing you for the next step in your rowing journey.</p>
+    </div>
+    
+    <div>
+      <div class="featured-image">
+        <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="AARC Learn to Scull" loading="lazy">
+      </div>
     </div>
   </div>
-</div>
+</header>
 
-## Program Overview
+<section class="program-overview">
+  <h2>Program Overview</h2>
 
 <div class="two-col-grid">
   <div>
@@ -72,38 +75,39 @@ layout: default
   </ul>
 </div>
 
-## Resource Library
+<section class="resource-library">
+  <h2>Resource Library</h2>
 
-<div class="three-col-grid">
-  <div class="info-box note mb-3">
-    <h4>For Learners</h4>
-    <p>Resources to support your journey from beginner to confident sculler:</p>
-    <ul class="mb-0">
-      <li><a href="course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
-      <li><a href="course_materials/learner/Program_Schedule.html"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
-      <li><a href="course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
-    </ul>
+  <div class="three-col-grid">
+    <div class="info-box note mb-3">
+      <h4>For Learners</h4>
+      <p>Resources to support your journey from beginner to confident sculler:</p>
+      <ul class="mb-0">
+        <li><a href="course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
+        <li><a href="course_materials/learner/Program_Schedule.html"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
+        <li><a href="course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
+      </ul>
+    </div>
+    
+    <div class="info-box tip mb-3">
+      <h4>For Coaches</h4>
+      <p>Access coaching resources to deliver a consistent, high-quality learning experience:</p>
+      <ul class="mb-0">
+        <li><a href="course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a> - Comprehensive program guide with session plans</li>
+        <li><a href="course_materials/coach/Daily_Coach_Checklist.html"><strong>Daily Coach Checklist</strong></a> - Operational checklist for sessions</li>
+      </ul>
+    </div>
+    
+    <div class="info-box mb-3">
+      <h4>Technical Resources</h4>
+      <p>Detailed guides for specific techniques and safety procedures:</p>
+      <ul class="mb-0">
+        <li><a href="src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Instructions for safely recovering from a capsize</li>
+        <li><a href="src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
+        <li><a href="src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
+      </ul>
+    </div>
   </div>
-  
-  <div class="info-box tip mb-3">
-    <h4>For Coaches</h4>
-    <p>Access coaching resources to deliver a consistent, high-quality learning experience:</p>
-    <ul class="mb-0">
-      <li><a href="course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a> - Comprehensive program guide with session plans</li>
-      <li><a href="course_materials/coach/Daily_Coach_Checklist.html"><strong>Daily Coach Checklist</strong></a> - Operational checklist for sessions</li>
-    </ul>
-  </div>
-  
-  <div class="info-box mb-3">
-    <h4>Technical Resources</h4>
-    <p>Detailed guides for specific techniques and safety procedures:</p>
-    <ul class="mb-0">
-      <li><a href="src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Instructions for safely recovering from a capsize</li>
-      <li><a href="src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
-      <li><a href="src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
-    </ul>
-  </div>
-</div>
 
 <div class="two-col-grid">
   <div class="info-box mb-3">
@@ -125,34 +129,36 @@ layout: default
   </div>
 </div>
 
-### Learning Journey
-
-<div class="two-col-grid">
-  <div>
-    <h4>Sessions 1-2: Fundamentals</h4>
-    <ul>
-      <li>Water safety and boat familiarity</li>
-      <li>Basic rowing motion</li>
-      <li>Boat handling on land and water</li>
-      <li>Flip test and self-rescue practice</li>
-      <li>Basic stroke sequencing</li>
-      <li>Learning to balance the boat</li>
-    </ul>
-  </div>
+<section class="learning-journey">
+  <h2>Learning Journey</h2>
   
-  <div>
-    <h4>Sessions 3-4: Integration and Application</h4>
-    <ul>
-      <li>Developing proper technique</li>
-      <li>Applying power with the legs</li>
-      <li>Navigation and steering mastery</li>
-      <li>Refining stroke technique</li>
-      <li>Building endurance and confidence</li>
-      <li>Practicing independent sculling</li>
-      <li>Preparing for continued rowing</li>
-    </ul>
+  <div class="two-col-grid">
+    <div class="journey-stage">
+      <h4>Sessions 1-2: Fundamentals</h4>
+      <ul>
+        <li>Water safety and boat familiarity</li>
+        <li>Basic rowing motion</li>
+        <li>Boat handling on land and water</li>
+        <li>Flip test and self-rescue practice</li>
+        <li>Basic stroke sequencing</li>
+        <li>Learning to balance the boat</li>
+      </ul>
+    </div>
+    
+    <div class="journey-stage">
+      <h4>Sessions 3-4: Integration and Application</h4>
+      <ul>
+        <li>Developing proper technique</li>
+        <li>Applying power with the legs</li>
+        <li>Navigation and steering mastery</li>
+        <li>Refining stroke technique</li>
+        <li>Building endurance and confidence</li>
+        <li>Practicing independent sculling</li>
+        <li>Preparing for continued rowing</li>
+      </ul>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="info-box aarc">
   <h4>Questions?</h4>
