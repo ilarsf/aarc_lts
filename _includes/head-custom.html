@@ -1,0 +1,36 @@
+<!-- Additional head content -->
+<style>
+  /* Mobile-specific additional styles */
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+    
+    .site-nav.active {
+      max-height: 300px;
+    }
+  }
+  
+  /* Custom CTA button styles */
+  .cta-large {
+    display: inline-block;
+    background-color: #1E73BE;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .cta-large:hover {
+    background-color: #165c98;
+    text-decoration: none;
+    color: #ffffff;
+  }
+</style>

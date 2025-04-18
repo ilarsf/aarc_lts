@@ -7,7 +7,7 @@
 
 Dear [Participant Name],
 
-We're excited to welcome you to the Austin Area Rowing Club's Learn to Scull program beginning [Start Date]! This email contains important information to help you prepare for your first session.
+We're excited to welcome you to the Ann Arbor Rowing Club's Learn to Scull program beginning [Start Date]! This email contains important information to help you prepare for your first session.
 
 **Schedule Confirmation:**
 - Six sessions: [List dates and times]
@@ -157,7 +157,7 @@ Thank you for your participation, enthusiasm, and dedication. We hope this is ju
 
 Best regards,
 [Coach Name and Program Director Name]
-Austin Area Rowing Club
+Ann Arbor Rowing Club
 
 ---
 

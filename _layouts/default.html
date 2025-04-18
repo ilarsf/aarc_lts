@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container-lg px-3 my-5">
+        <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        <button class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 my-5 markdown-body">
+      <nav class="site-nav">
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a></li>
+          <li><a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a></li>
+          <li><a href="{{ site.baseurl }}/course_materials/communication/">Communication</a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="copyright">
+          © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club – All Rights Reserved
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const siteNav = document.querySelector('.site-nav');
+        
+        if (mobileNavToggle && siteNav) {
+          mobileNavToggle.addEventListener('click', function() {
+            siteNav.classList.toggle('active');
+            
+            const icon = mobileNavToggle.querySelector('i');
+            if (icon) {
+              if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+              } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+              }
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

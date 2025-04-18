@@ -1,5 +1,5 @@
 title: AARC Learn to Scull Program
-description: Training materials for the Austin Area Rowing Club's Learn to Scull program
+description: Training materials for the Ann Arbor Rowing Club's Learn to Scull program
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
@@ -12,3 +12,23 @@ relative_links:
 # Optional settings
 show_downloads: false
 google_analytics: 
+
+# Custom theme settings
+theme_color: "#0066cc"  # Primary blue color
+theme_color_secondary: "#004c99"  # Secondary blue color
+footer_text_color: "#7c7c7c"  # Light gray for footer text
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Coach Resources
+    url: /course_materials/coach/
+  - title: Learner Resources
+    url: /course_materials/learner/
+  - title: Communication
+    url: /course_materials/communication/
+
+# Site info
+organization: "Ann Arbor Rowing Club"
+copyright_year: 2025

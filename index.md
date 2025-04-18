@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Austin Area Rowing Club: Learn to Scull Program
+# Ann Arbor Rowing Club: Learn to Scull Program
 
 Welcome to the comprehensive resource center for the AARC Learn to Scull program. This site provides structured materials for both coaches and participants.
 
@@ -29,6 +29,8 @@ Templates for program communications:
 ## Program Overview
 
 The Learn to Scull program is a structured introduction to the sport of sculling, designed for beginners with no prior rowing experience. Through six sessions, participants develop the skills and confidence to safely navigate a sculling boat and enjoy this rewarding sport.
+
+<a href="course_materials/learner/Learner_Guide.md" class="cta-large">LEARN MORE ABOUT THE PROGRAM</a>
 
 ### Key Program Features:
 

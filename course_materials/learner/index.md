@@ -1,10 +1,11 @@
 ---
 layout: default
+custom_class: learner-page
 ---
 
 # Learner Resources: Learn to Scull Program
 
-Welcome to the Austin Area Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.
+Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.
 
 ## Available Resources
 
