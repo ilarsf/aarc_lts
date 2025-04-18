@@ -44,10 +44,22 @@
       </main>
 
       <footer class="site-footer">
-        <div class="footer-links">
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>About AARC</h4>
+            <p>AARC endeavors to make rowing accessible to the broad community. <a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html#scholarships">Scholarships</a> are available to those with financial need to support participation.</p>
+            <p>AARC is a 501(c)3 organization. Donations made to AARC may be eligible for tax deduction. Please check with your tax consultant.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:info@a2crew.com">Contact Us</a></li>
+              <li><a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=130908" target="_blank">Club Location</a></li>
+              <li><a href="https://aarc.clubexpress.com" target="_blank">Official Website</a></li>
+              <li><a href="{{ site.baseurl }}/src/AARC_Safety_Rules.pdf" target="_blank">Safety Rules</a></li>
+              <li><a href="{{ site.baseurl }}/src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank">Code of Conduct</a></li>
+            </ul>
+          </div>
         </div>
         <div class="copyright">
           © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club – All Rights Reserved
@@ -106,6 +118,61 @@
               e.preventDefault();
               dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
               toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+            });
+          });
+        }
+        
+        // Tab navigation functionality
+        const tabLinks = document.querySelectorAll('.tab-link');
+        if (tabLinks.length > 0) {
+          // Set first tab as active by default
+          const firstTabId = tabLinks[0].getAttribute('data-tab');
+          document.getElementById(firstTabId).classList.add('active');
+          tabLinks[0].classList.add('active');
+          
+          // Check for hash in URL to activate specific tab
+          if (window.location.hash) {
+            const hash = window.location.hash.substring(1);
+            const tabLink = document.querySelector(`.tab-link[data-tab="${hash}"]`);
+            if (tabLink) {
+              // Deactivate current tabs
+              document.querySelector('.tab-content.active').classList.remove('active');
+              document.querySelector('.tab-link.active').classList.remove('active');
+              
+              // Activate new tab
+              document.getElementById(hash).classList.add('active');
+              tabLink.classList.add('active');
+              
+              // Scroll to tab
+              setTimeout(() => {
+                window.scrollTo(0, tabLink.offsetTop - 100);
+              }, 100);
+            }
+          }
+          
+          // Tab click handling
+          tabLinks.forEach(tabLink => {
+            tabLink.addEventListener('click', function(e) {
+              e.preventDefault();
+              
+              // Get active elements
+              const activeTab = document.querySelector('.tab-content.active');
+              const activeLink = document.querySelector('.tab-link.active');
+              
+              // Get tab to activate
+              const tabId = this.getAttribute('data-tab');
+              const tabContent = document.getElementById(tabId);
+              
+              // Remove active classes
+              if (activeTab) activeTab.classList.remove('active');
+              if (activeLink) activeLink.classList.remove('active');
+              
+              // Add active classes
+              tabContent.classList.add('active');
+              this.classList.add('active');
+              
+              // Update URL hash without scrolling
+              history.pushState(null, null, `#${tabId}`);
             });
           });
         }
