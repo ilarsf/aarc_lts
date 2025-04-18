@@ -55,23 +55,23 @@ title: "Complete Textbook - AARC Learn to Scull"
 
 <hr class="section-divider">
 
-{% include_relative ../src/textbook/Part1-GettingStarted.md %}
+{% include_relative src/textbook/Part1-GettingStarted.md %}
 
 <hr class="section-divider">
 
-{% include_relative ../src/textbook/Part2-ForTheLearner.md %}
+{% include_relative src/textbook/Part2-ForTheLearner.md %}
 
 <hr class="section-divider">
 
-{% include_relative ../src/textbook/Part3-Safety.md %}
+{% include_relative src/textbook/Part3-Safety.md %}
 
 <hr class="section-divider">
 
-{% include_relative ../src/textbook/Part4-ForTheCoach.md %}
+{% include_relative src/textbook/Part4-ForTheCoach.md %}
 
 <hr class="section-divider">
 
-{% include_relative ../src/textbook/Part5-Appendices.md %}
+{% include_relative src/textbook/Part5-Appendices.md %}
 
 <div class="textbook-footer">
   <a href="/textbook/" class="textbook-home-link">« Back to Textbook Home</a>

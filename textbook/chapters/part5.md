@@ -12,7 +12,7 @@ title: "Part 5: Appendices - AARC Learn to Scull Textbook"
   </div>
 </div>
 
-{% include_relative ../../src/textbook/Part5-Appendices.md %}
+{% include_relative ../src/textbook/Part5-Appendices.md %}
 
 <div class="textbook-footer">
   <div class="textbook-navigation-compact">

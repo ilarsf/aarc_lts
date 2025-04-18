@@ -10,20 +10,34 @@ Dear [Participant Name],
 We're excited to welcome you to the Ann Arbor Rowing Club's Learn to Scull program beginning [Start Date]! This email contains important information to help you prepare for your first session.
 
 **Schedule Confirmation:**
-- Four sessions: [List dates and times]
+- Four sessions: [Your specific dates, e.g., May 31, June 1, 7, 8 for LTS1]
 - Each session is 3 hours (8:00-11:00am) with a 30-minute break
-- Location: [Boathouse address and specific meeting point]
+- Small group instruction with maximum 6 participants and a 1:3 coach-to-student ratio
+- Location: Bandemer Park boathouse [specific meeting point details]
 - Please arrive 15 minutes early for the first session
 
-**What to Bring:**
+**Required Before First Class:**
+- USRowing Learn-to-Row membership ($10) - sign up at [USRowing link]
+- Completed AARC waiver form (attached)
+
+**What to Bring to Each Session:**
 - Athletic clothing (shorts/leggings and t-shirt)
-- Water bottle
+- Water bottle (at least 32 oz/1 liter)
 - Sunscreen, hat, and sunglasses
-- Towel and change of clothes (just in case)
-- Completed waiver form (attached)
+- Towel and change of clothes (you will get wet during the flip test)
+- Hand tape or blister care supplies (optional but recommended)
 
 **Weather Policy:**
 Classes may be rescheduled due to unsafe weather conditions (lightning, excessive wind, heavy rain). We will notify you by email and text at least 2 hours before the scheduled start time if a session needs to be rescheduled.
+
+**Physical Requirements:**
+For your safety and enjoyment, please note that sculling requires:
+- Ability to get down to the floor and back up using only one hand
+- Ability to turn your head to look over both shoulders
+- Ability to move a 40-50 pound, 27' single scull (with guidance)
+- Swimming ability (required for all participants)
+
+The first session includes a "flip test" where you'll practice exiting and re-entering a boat in case of capsize. This is done in a controlled environment with coaches ready to assist.
 
 **Recommended Videos:**
 To help you visualize what you'll be learning, we suggest watching these short introduction videos before your first class:
@@ -144,12 +158,20 @@ We value your input! Please take a few minutes to complete our program survey: [
 
 **Next Steps:**
 To continue your rowing development, we offer several options:
-1. **Open Sculling Program:** Practice sessions with experienced scullers present
-2. **Club Membership:** For regular independent rowing once you've demonstrated proficiency
+1. **Open Sculling Program:** Supervised practice sessions with coaches present
+2. **Full Club Membership:** For regular independent rowing once you've demonstrated proficiency
 3. **Intermediate Technique Clinics:** Focused sessions on specific aspects of technique
 
-**Special Offer:**
-As a Learn to Scull graduate, you're eligible for a complimentary Open Sculling session. To schedule this session, please reply to this email with your preferred date from the following options:
+**Special Trial Offer:**
+As a Learn to Scull graduate, you're invited to join the AARC Open Sculling Program with a four-week trial period at a discounted rate. This program provides:
+- Supervised practice sessions three times weekly
+- Access to club equipment
+- Safety launch supervision
+- Continued coaching to build confidence
+- Clear pathway to independent sculling
+
+To take advantage of this offer, please complete the application form: [Link to form]
+Available start dates:
 - [Date Option 1]
 - [Date Option 2]
 - [Date Option 3]
@@ -169,7 +191,7 @@ Dear [Participant Name],
 
 We hope you've had time to reflect on your Learn to Scull experience. Many graduates tell us they miss being on the water regularly after the program ends!
 
-If you're ready to continue developing your sculling skills, now is the perfect time to join our Open Sculling Program. This program provides:
+If you're ready to continue developing your sculling skills, now is the perfect time to join our Open Sculling Program as a Full Member of AARC. This program provides:
 
 - Supervised practice sessions three times weekly
 - Access to club single sculls
@@ -177,15 +199,18 @@ If you're ready to continue developing your sculling skills, now is the perfect 
 - Community of supportive rowers at similar skill levels
 - Gradual pathway to independent rowing
 
-**Special Offer for Recent Graduates:**
-Sign up for the Open Sculling Program by [date] and receive:
-- Waived initiation fee ($[amount] value)
-- One complimentary private coaching session to reinforce skills
-- AARC branded water bottle
+**Special Four-Week Trial for LTS Graduates:**
+As a recent graduate, you're eligible for our special four-week trial offer:
+- Discounted trial rate of $[amount]
+- No commitment beyond the trial period
+- Full access to the Open Sculling Program
+- Mentoring from experienced scullers
+- Option to continue as a Full Member after the trial
 
-**Program Details:**
+**Program Details for 2025:**
 - Sessions: [Days and times]
-- Monthly fee: $[amount]
+- Trial fee: $[amount]
+- Full membership after trial: $[amount]
 - Registration link: [URL]
 
 **Testimonial:**
