@@ -147,6 +147,108 @@ a {
   }
 }
 
+// Tab Navigation
+.tab-container {
+  margin: 2rem 0;
+}
+
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $aarc-border-gray;
+  margin-bottom: 1rem;
+  
+  .tab-link {
+    padding: 0.75rem 1.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: $aarc-dark-gray;
+    cursor: pointer;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: rgba($aarc-blue, 0.05);
+      text-decoration: none;
+    }
+    
+    &.active {
+      border: 1px solid $aarc-border-gray;
+      border-bottom-color: $aarc-white;
+      color: $aarc-blue;
+      background-color: $aarc-white;
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+  
+  &.active {
+    display: block;
+  }
+}
+
+// Table styles
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  
+  th {
+    background-color: $aarc-blue;
+    color: $aarc-white;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem;
+  }
+  
+  td {
+    border: 1px solid $aarc-border-gray;
+    padding: 0.75rem;
+    vertical-align: top;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba($aarc-border-gray, 0.3);
+  }
+  
+  tr:hover {
+    background-color: rgba($aarc-blue, 0.05);
+  }
+}
+
+// Page TOC navigation
+.page-toc {
+  background-color: rgba($aarc-blue, 0.05);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: $aarc-blue;
+  }
+  
+  ul {
+    margin-bottom: 0;
+    
+    li {
+      margin-bottom: 0.25rem;
+      
+      a {
+        color: $aarc-dark-gray;
+        
+        &:hover {
+          color: $aarc-blue;
+        }
+      }
+    }
+  }
+}
+
 // Footer
 .site-footer {
   border-top: 1px solid $aarc-border-gray;
