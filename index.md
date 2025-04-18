@@ -62,7 +62,7 @@ layout: default
       <li><strong>Weekend 2:</strong> Saturday and Sunday, 8:00-11:00am</li>
     </ul>
     <p>Each class is 3 hours with a 30-minute break. Bring your own water and snacks.</p>
-    <p>For complete details, see our <a href="course_materials/learner/Program_Schedule.html">Program Schedule</a> page.</p>
+    <p>For complete details, see our <a href="course_materials/learner/Program_Schedule.md">Program Schedule</a> page.</p>
   </div>
 </div>
 
@@ -97,7 +97,7 @@ layout: default
       <p>Resources to support your journey from beginner to confident sculler:</p>
       <ul class="mb-0">
         <li><a href="course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
-        <li><a href="course_materials/learner/Program_Schedule.html"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
+        <li><a href="course_materials/learner/Program_Schedule.md"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
         <li><a href="course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
       </ul>
     </div>
