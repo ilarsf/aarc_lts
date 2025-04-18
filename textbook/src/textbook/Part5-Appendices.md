@@ -123,7 +123,7 @@ Learning to scull is just the beginning! AARC offers several pathways for you to
 * **Intermediate Technique Sessions/Clinics:** AARC sometimes offers focused coaching sessions on specific aspects of technique (e.g., improving blade work, power application). These are great for targeted skill refinement.
 * **Private Coaching:** One-on-one lessons with experienced coaches are available for personalized feedback and accelerated development.
 * **Volunteer Opportunities:** Getting involved with club activities, maintenance, or events is a great way to meet people and contribute to the AARC community.
-* **Scholarships:** AARC is committed to making rowing accessible. Financial assistance scholarships may be available for programs and membership. Visit the [AARC Scholarship Page](https://aarc.clubexpress.com/scholarships) for more information.
+* **Scholarships:** AARC is committed to making rowing accessible. Financial assistance scholarships may be available for programs and membership. Visit the [AARC Scholarship Page](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=153833) for more information.
 
 💡 **Tip:** Talk to your LTS coach during the final session about which next step might be best suited for you based on your progress and goals.
 
