@@ -149,5 +149,5 @@ Learn how to recover from a capsize and re-enter the scull safely.
 
 <div class="info-box tip">
   <h4>Review the Full Guide</h4>
-  <p>For more detailed information on the self-rescue process, see our comprehensive <a href="Sculling_Self_Rescue_Guide.md">Sculling Self-Rescue Guide</a>.</p>
+  <p>For more detailed information on the self-rescue process, see our comprehensive <a href="Sculling_Self_Rescue_Guide.html">Sculling Self-Rescue Guide</a>.</p>
 </div>

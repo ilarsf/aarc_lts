@@ -12,14 +12,14 @@ title: Resources - AARC Learn to Scull Program
 ## AARC Policies and Procedures
 
 ### Safety Guidelines
-- [AARC Safety Rules (PDF)](/assets/pdf/AARC_Safety_Rules.pdf)
-- [SafeSport Policy (PDF)](/assets/pdf/AARCSafeSport_2015-01-18.pdf)
-- [Code of Conduct (PDF)](/assets/pdf/AARC_Code_of_Conduct_2025-02-26.pdf)
+- [AARC Safety Rules (PDF)](/src/AARC_Safety_Rules.pdf)
+- [SafeSport Policy (PDF)](/src/AARCSafeSport_2015-01-18.pdf)
+- [Code of Conduct (PDF)](/src/AARC_Code_of_Conduct_2025-02-26.pdf)
 
 ## Technical Guides
-- [Sculling Self-Rescue Guide](/src/Sculling_Self_Rescue_Guide.md)
-- [Flip Test Instructions](/src/AARC_Flip_Test_Instructions_20240803.md)
-- [Rower's Hand Care Guide](/src/Rowers_Hand_Blister_Treatment.md)
+- [Sculling Self-Rescue Guide](/src/Sculling_Self_Rescue_Guide.html)
+- [Flip Test Instructions](/src/AARC_Flip_Test_Instructions_20240803.html)
+- [Rower's Hand Care Guide](/src/Rowers_Hand_Blister_Treatment.html)
 
 ## Educational Resources
 
