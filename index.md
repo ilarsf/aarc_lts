@@ -41,7 +41,7 @@ layout: default
       <li><strong>Pathway to Membership</strong>: Clear next steps for continued rowing after the program</li>
     </ul>
     
-    <p>After completing the LTS class, scullers are invited to become Full Members of AARC and participate in our coached Open Sculling Program, with a four-week trial period offered at a discounted rate.</p>
+    <p>After completing the LTS class, scullers are invited to become Full Members of AARC and participate in our coached Open Sculling Program, with a four-week trial period offered at a discounted rate. This continuation program provides additional coaching to refine your skills and build confidence as you transition to independent sculling.</p>
     
     <div class="info-box warning">
       <h4>Physical Requirements</h4>
@@ -49,6 +49,7 @@ layout: default
       <ul class="mb-0">
         <li>Ability to get down to the floor and back up using only one hand</li>
         <li>Ability to turn your head to look over both shoulders</li>
+        <li>Ability to move a 40-50 pound, 27' single scull</li>
         <li>Swimming ability (adults over 18 must attest that they can swim)</li>
       </ul>
     </div>
@@ -67,10 +68,16 @@ layout: default
 </div>
 
 <div class="info-box aarc">
-  <h4>Sign up early, Classes fill fast!</h4>
+  <h4>2025 Class Schedule - Registration Opens April 30th!</h4>
   <ul class="mb-0">
+    <li><strong>LTS1:</strong> May 31/June 1 & 7/8</li>
+    <li><strong>LTS2:</strong> June 14/15 & 21/22</li>
+    <li><strong>LTS3:</strong> June 28/29 & July 12/13</li>
+    <li><strong>LTS4:</strong> July 26/27 & Aug 2/3</li>
+    <li><strong>Class Size:</strong> Maximum 6 participants (1:3 coach-to-student ratio)</li>
     <li><strong>$300</strong> for the 4-class program</li>
     <li><strong>$225</strong> for Students (college, professional & graduate students) and Veterans</li>
+    <li><strong>Required:</strong> USRowing Learn-to-Row membership ($10)</li>
     <li>AARC endeavors to make rowing accessible to the broad community. Scholarships are available to those with financial need.</li>
   </ul>
 </div>
