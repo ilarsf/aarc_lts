@@ -74,3 +74,18 @@ The site uses:
 3. Expand video resources with embedded technique demonstrations
 4. Add printable quick-reference cards for key concepts
 5. Consider implementing a search feature for larger content sections
+
+## Textbook Materials
+
+The repository also includes comprehensive textbook materials, located in the `/textbook` directory. These materials are organized as follows:
+
+  - **Chapters**: Found in `/textbook/chapters/`, these markdown files are divided into:
+      - **Part 1: Getting Started**
+      - **Part 2: For the Learner**
+      - **Part 3: Safety**
+      - **Part 4: For the Coach**
+      - **Part 5: Appendices**
+
+  - **Includes**: Shared content for the chapters is stored in the `_includes/textbook/` directory. This structure ensures compatibility with GitHub Pages and avoids include path issues.
+
+Deploying the site on GitHub Pages will now correctly build and render the textbook as part of the overall site.
