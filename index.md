@@ -63,7 +63,7 @@ layout: default
       <li><strong>Weekend 2:</strong> Saturday and Sunday, 8:00-11:00am</li>
     </ul>
     <p>Each class is 3 hours with a 30-minute break. Bring your own water and snacks.</p>
-    <p>For complete details, see our <a href="course_materials/learner/Program_Schedule.md">Program Schedule</a> page.</p>
+    <p>For complete details, see our <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program Schedule</a> page.</p>
   </div>
 </div>
 
@@ -89,12 +89,12 @@ layout: default
     <h4>New! Complete Textbook Format</h4>
     <p>For those who prefer a sequential learning experience, we now offer a comprehensive textbook version of all course materials:</p>
     <ul>
-      <li><a href="/textbook/"><strong>AARC Learn to Scull Textbook</strong></a> - Complete course materials in a traditional textbook format</li>
+      <li><a href="{{ site.baseurl }}/textbook/"><strong>AARC Learn to Scull Textbook</strong></a> - Complete course materials in a traditional textbook format</li>
       <li>Perfect for reading in sequence or printing for offline reference</li>
       <li>Includes materials for both learners and coaches in a logical progression</li>
     </ul>
     <div class="text-center mt-3">
-      <a href="/textbook/" class="cta-button">Access the Textbook</a>
+      <a href="{{ site.baseurl }}/textbook/" class="cta-button">Access the Textbook</a>
     </div>
   </div>
 
@@ -103,9 +103,9 @@ layout: default
       <h4>For Learners</h4>
       <p>Resources to support your journey from beginner to confident sculler:</p>
       <ul class="mb-0">
-        <li><a href="course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
-        <li><a href="course_materials/learner/Program_Schedule.md"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
-        <li><a href="course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
+        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
+        <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
+        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
       </ul>
     </div>
     
@@ -113,8 +113,8 @@ layout: default
       <h4>For Coaches</h4>
       <p>Access coaching resources to deliver a consistent, high-quality learning experience:</p>
       <ul class="mb-0">
-        <li><a href="course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a> - Comprehensive program guide with session plans</li>
-        <li><a href="course_materials/coach/Daily_Coach_Checklist.html"><strong>Daily Coach Checklist</strong></a> - Operational checklist for sessions</li>
+        <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a> - Comprehensive program guide with session plans</li>
+        <li><a href="{{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html"><strong>Daily Coach Checklist</strong></a> - Operational checklist for sessions</li>
       </ul>
     </div>
     
@@ -122,9 +122,9 @@ layout: default
       <h4>Technical Resources</h4>
       <p>Detailed guides for specific techniques and safety procedures:</p>
       <ul class="mb-0">
-        <li><a href="src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Instructions for safely recovering from a capsize</li>
-        <li><a href="src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
-        <li><a href="src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
+        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Instructions for safely recovering from a capsize</li>
+        <li><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
+        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
       </ul>
     </div>
   </div>
@@ -134,7 +134,7 @@ layout: default
     <h4>Communication Resources</h4>
     <p>Templates for program communications:</p>
     <ul class="mb-0">
-      <li><a href="course_materials/communication/Email_Templates.html"><strong>Email Templates</strong></a> - Pre-course, daily, and post-course communication templates</li>
+      <li><a href="{{ site.baseurl }}/course_materials/communication/Email_Templates.html"><strong>Email Templates</strong></a> - Pre-course, daily, and post-course communication templates</li>
     </ul>
   </div>
 

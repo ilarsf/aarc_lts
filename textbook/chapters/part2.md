@@ -4,11 +4,11 @@ title: "Part 2: For the Learner - AARC Learn to Scull Textbook"
 ---
 
 <div class="textbook-header">
-  <a href="/textbook/" class="textbook-home-link">« Textbook Home</a>
+  <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Textbook Home</a>
   <div class="textbook-navigation-compact">
-    <a href="/textbook/chapters/part1.md" class="prev-chapter">« Part 1: Getting Started</a>
+    <a href="{{ site.baseurl }}/textbook/chapters/part1.html" class="prev-chapter">« Part 1: Getting Started</a>
     <span class="current-part">Part 2: For the Learner</span>
-    <a href="/textbook/chapters/part3.md" class="next-chapter">Part 3: Safety »</a>
+    <a href="{{ site.baseurl }}/textbook/chapters/part3.html" class="next-chapter">Part 3: Safety »</a>
   </div>
 </div>
 
@@ -16,8 +16,8 @@ title: "Part 2: For the Learner - AARC Learn to Scull Textbook"
 
 <div class="textbook-footer">
   <div class="textbook-navigation-compact">
-    <a href="/textbook/chapters/part1.md" class="prev-chapter">« Part 1: Getting Started</a>
-    <a href="/textbook/" class="textbook-home-link">« Textbook Home</a>
-    <a href="/textbook/chapters/part3.md" class="next-chapter">Part 3: Safety »</a>
+    <a href="{{ site.baseurl }}/textbook/chapters/part1.html" class="prev-chapter">« Part 1: Getting Started</a>
+    <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Textbook Home</a>
+    <a href="{{ site.baseurl }}/textbook/chapters/part3.html" class="next-chapter">Part 3: Safety »</a>
   </div>
 </div>

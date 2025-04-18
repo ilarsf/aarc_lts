@@ -23,7 +23,7 @@ The textbook version offers several advantages:
   <p>You can read the textbook in two ways:</p>
   <ul>
     <li><strong>Online version:</strong> Navigate through the chapters using the links above</li>
-    <li><strong>PDF version:</strong> <a href="/assets/pdf/AARC_LTS_Complete_Textbook.pdf">Download the complete textbook</a> (coming soon)</li>
+    <li><strong>PDF version:</strong> <a href="{{ site.baseurl }}/assets/pdf/AARC_LTS_Complete_Textbook.pdf">Download the complete textbook</a> (coming soon)</li>
   </ul>
 </div>
 

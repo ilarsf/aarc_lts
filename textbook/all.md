@@ -4,7 +4,7 @@ title: "Complete Textbook - AARC Learn to Scull"
 ---
 
 <div class="textbook-header">
-  <a href="/textbook/" class="textbook-home-link">« Textbook Home</a>
+  <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Textbook Home</a>
   <h1>AARC Learn to Scull - Complete Textbook</h1>
 </div>
 
@@ -74,5 +74,5 @@ title: "Complete Textbook - AARC Learn to Scull"
 {% include_relative src/textbook/Part5-Appendices.md %}
 
 <div class="textbook-footer">
-  <a href="/textbook/" class="textbook-home-link">« Back to Textbook Home</a>
+  <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Back to Textbook Home</a>
 </div>
