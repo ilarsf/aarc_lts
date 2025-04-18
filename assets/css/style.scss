@@ -1241,6 +1241,181 @@ table {
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
 
+// Textbook specific styling
+.textbook-navigation {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba($aarc-blue, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba($aarc-blue, 0.2);
+
+  h3 {
+    margin-top: 0;
+    color: $aarc-blue;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba($aarc-blue, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .toc-part {
+    margin-bottom: 1.5rem;
+    
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    ul {
+      margin-bottom: 0;
+      
+      li {
+        margin-bottom: 0.3rem;
+        
+        a {
+          font-size: 0.95rem;
+        }
+      }
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .textbook-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba($aarc-blue, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .btn {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.textbook-header, 
+.textbook-footer {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  
+  .textbook-home-link {
+    font-weight: 600;
+    color: $aarc-blue;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .textbook-navigation-compact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .current-part {
+      font-weight: 600;
+      color: $aarc-dark-gray;
+    }
+    
+    .prev-chapter,
+    .next-chapter {
+      font-weight: 600;
+    }
+  }
+}
+
+.textbook-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $aarc-border-gray;
+}
+
+.textbook-full-toc {
+  margin: 2rem 0;
+  
+  h2 {
+    color: $aarc-blue;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .toc-main {
+    list-style-type: none;
+    padding-left: 0;
+    
+    > li {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      
+      > a {
+        color: $aarc-dark-gray;
+      }
+      
+      > ul {
+        margin-top: 0.5rem;
+        padding-left: 1.5rem;
+        
+        > li {
+          font-weight: normal;
+          font-size: 1rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+// Printing adjustments
+@media print {
+  .page-header,
+  .site-nav,
+  .site-footer {
+    display: none !important;
+  }
+  
+  .main-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .textbook-header .textbook-home-link,
+  .textbook-footer {
+    display: none !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  p, li, blockquote, table {
+    page-break-inside: avoid;
+  }
+  
+  img, figure {
+    max-width: 500px !important;
+    max-height: 300px !important;
+  }
+  
+  .info-box {
+    break-inside: avoid;
+    border: 1px solid #ccc !important;
+    background-color: #f8f8f8 !important;
+  }
+  
+  hr.section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
+  }
+}
+
 // Team Section
 .team-section {
   margin: 2rem 0 3rem;

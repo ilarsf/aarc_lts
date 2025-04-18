@@ -22,6 +22,21 @@ footer_text_color: "#7c7c7c"  # Light gray for footer text
 navigation:
   - title: Home
     url: /
+  - title: Textbook
+    url: /textbook/
+    subitems:
+      - title: "Part 1: Getting Started"
+        url: /textbook/chapters/part1.html
+      - title: "Part 2: For the Learner"
+        url: /textbook/chapters/part2.html
+      - title: "Part 3: Safety"
+        url: /textbook/chapters/part3.html
+      - title: "Part 4: For the Coach"
+        url: /textbook/chapters/part4.html
+      - title: "Part 5: Appendices"
+        url: /textbook/chapters/part5.html
+      - title: "View All Chapters"
+        url: /textbook/all.html
   - title: Coach Resources
     url: /course_materials/coach/
     subitems:

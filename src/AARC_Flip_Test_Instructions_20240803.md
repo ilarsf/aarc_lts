@@ -146,17 +146,18 @@ Learn how to recover from a capsize and re-enter the scull safely.
 ## Videos
 
 <div class="video-grid">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p><strong>Johanna Flip Test Demo</strong> - Shows the standard flip test procedure</p>
   </div>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p><strong>Lars Flip Test Demo</strong> - Alternative technique for re-entry</p>
   </div>
-</div>
-
-<div class="video-item">
-  <p><strong>Left:</strong> Johanna Flip Test Demo - Shows the standard flip test procedure</p>
-  <p><strong>Right:</strong> Lars Flip Test Demo - Alternative technique for re-entry</p>
 </div>
 
 <div class="info-box tip">

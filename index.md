@@ -78,6 +78,19 @@ layout: default
 <section class="resource-library">
   <h2>Resource Library</h2>
 
+  <div class="info-box aarc mb-4">
+    <h4>New! Complete Textbook Format</h4>
+    <p>For those who prefer a sequential learning experience, we now offer a comprehensive textbook version of all course materials:</p>
+    <ul>
+      <li><a href="/textbook/"><strong>AARC Learn to Scull Textbook</strong></a> - Complete course materials in a traditional textbook format</li>
+      <li>Perfect for reading in sequence or printing for offline reference</li>
+      <li>Includes materials for both learners and coaches in a logical progression</li>
+    </ul>
+    <div class="text-center mt-3">
+      <a href="/textbook/" class="cta-button">Access the Textbook</a>
+    </div>
+  </div>
+
   <div class="three-col-grid">
     <div class="info-box note mb-3">
       <h4>For Learners</h4>
