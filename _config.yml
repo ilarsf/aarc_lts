@@ -26,8 +26,8 @@ navigation:
   - title: Textbook
     url: /textbook/
     subitems:
-  - title: "Part 1: Getting Started"
-    url: /textbook/chapters/part1.html
+      - title: "Part 1: Getting Started"
+        url: /textbook/chapters/part1.html
       - title: "Part 2: For the Learner"
         url: /textbook/chapters/part2.html
       - title: "Part 3: Safety"
