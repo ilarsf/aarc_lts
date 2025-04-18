@@ -51,11 +51,36 @@
               <li><a href="{{ site.baseurl }}/textbook/chapters/part3.html">Part 3: Safety</a></li>
               <li><a href="{{ site.baseurl }}/textbook/chapters/part4.html">Part 4: For the Coach</a></li>
               <li><a href="{{ site.baseurl }}/textbook/chapters/part5.html">Part 5: Appendices</a></li>
+              <li><a href="{{ site.baseurl }}/textbook/all.html">View All Chapters</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a></li>
-          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a></li>
-          <li class="nav-item"><a href="{{ site.baseurl }}/src/">Technical Guides</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html">Coach Manual</a></li>
+              <li><a href="{{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html">Daily Checklist</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html">Learner Guide</a></li>
+              <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program Schedule</a></li>
+              <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html">Q&A Companion</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="{{ site.baseurl }}/src/">Technical Guides</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a></li>
+              <li><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html">Flip Test Instructions</a></li>
+              <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/course_materials/communication/">Communication</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/about/">About AARC</a></li>
+          <li class="nav-item"><a href="{{ site.baseurl }}/resources/">Resources</a></li>
         </ul>
         {% endif %}
       </nav>
@@ -122,23 +147,41 @@
           });
         }
         
-        // Mobile dropdown handling
-        if (window.innerWidth <= 600) {
-          dropdownItems.forEach(item => {
+        // Mobile dropdown handling for all dropdown menus
+        if (window.innerWidth <= 768) {
+          // This applies to both dynamic and fallback navigation
+          const allDropdownItems = document.querySelectorAll('.has-dropdown');
+          
+          allDropdownItems.forEach(item => {
             const link = item.querySelector('a');
             const dropdown = item.querySelector('.dropdown-menu');
             
-            // Create dropdown toggle for mobile
-            const toggleBtn = document.createElement('button');
-            toggleBtn.classList.add('dropdown-toggle');
-            toggleBtn.innerHTML = '+';
-            link.after(toggleBtn);
-            
-            toggleBtn.addEventListener('click', function(e) {
-              e.preventDefault();
-              dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-              toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
-            });
+            if (link && dropdown) {
+              // Create dropdown toggle for mobile
+              const toggleBtn = document.createElement('button');
+              toggleBtn.classList.add('dropdown-toggle');
+              toggleBtn.innerHTML = '+';
+              link.after(toggleBtn);
+              
+              // Initially hide dropdown on mobile
+              dropdown.style.display = 'none';
+              
+              toggleBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+              });
+              
+              // Prevent parent link from navigating when toggle is available
+              link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                  e.preventDefault();
+                  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                  toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+                }
+              });
+            }
           });
         }
         

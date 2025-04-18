@@ -17,6 +17,57 @@
   }
   */
   
+  /* Fix for bullet points in navigation menu */
+  .site-nav ul, 
+  .site-nav ul.fallback-nav, 
+  .site-nav ul.dropdown-menu,
+  .dropdown-menu {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .site-nav li,
+  .site-nav ul li,
+  .site-nav ul.fallback-nav li,
+  .site-nav ul.dropdown-menu li,
+  .dropdown-menu li {
+    list-style-type: none !important;
+    list-style-image: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .site-nav li:before,
+  .site-nav ul li:before,
+  .site-nav ul.fallback-nav li:before,
+  .site-nav ul.dropdown-menu li:before,
+  .dropdown-menu li:before {
+    content: none !important;
+    display: none !important;
+  }
+  
+  /* Fix general bullet points in the content */
+  .main-content > ul li,
+  .main-content section ul li,
+  .main-content div ul li,
+  .info-box ul li {
+    list-style-type: disc !important;
+    list-style-image: none !important;
+    margin-left: 20px !important;
+  }
+  
+  .main-content ul,
+  .info-box ul {
+    padding-left: 20px !important;
+  }
+  
+  .main-content ul li:before,
+  .info-box ul li:before {
+    content: none !important;
+    display: none !important;
+  }
+  
   /* Custom CTA button styles */
   .cta-large {
     display: inline-block;
