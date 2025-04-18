@@ -39,8 +39,8 @@
           {% endfor %}
         </ul>
         
-        <!-- Fallback static navigation (shown if dynamic navigation fails) -->
-        {% if site.navigation.size == 0 %}
+        <!-- Fallback static navigation (always shown) -->
+        {% if true %}
         <ul class="fallback-nav">
           <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
           <li class="nav-item has-dropdown">
