@@ -150,7 +150,7 @@
     </div>
     <div class="video-item">
       <p><strong>Correct Grip Tutorial</strong> - Demonstrates proper hand position and grip technique for sculling</p>
-      <p>Related resource: <a href="../../src/Rowers_Hand_Blister_Treatments_.html">Rower's Hand Blister Treatments</a></p>
+      <p>Related resource: <a href="../../src/Rowers_Hand_Blister_Treatment.html">Rower's Hand Blister Treatment</a></p>
     </div>
 
     <h3>Advanced Skills</h3>
@@ -164,7 +164,7 @@
     <ul>
       <li><a href="Learner_Guide.html">Learner's Guide</a> - Comprehensive guide to the Learn to Scull program</li>
       <li><a href="../../src/Sculling_Self_Rescue_Guide.html">Sculling Self-Rescue Guide</a> - Comprehensive instructions for capsize recovery</li>
-      <li><a href="../../src/Rowers_Hand_Blister_Treatments_.html">Blister Treatment Guide</a> - Preventing and treating hand blisters</li>
+      <li><a href="../../src/Rowers_Hand_Blister_Treatment.html">Blister Treatment Guide</a> - Preventing and treating hand blisters</li>
     </ul>
     
     <h3>Terminology and Equipment</h3>

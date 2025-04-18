@@ -59,6 +59,7 @@ layout: default
       <ul class="mb-0">
         <li><a href="src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Comprehensive instructions for safely recovering from a capsize</li>
         <li><a href="src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
+        <li><a href="src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
       </ul>
     </div>
     

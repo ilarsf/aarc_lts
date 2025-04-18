@@ -303,7 +303,7 @@
       </li>
     </ul>
     
-    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatments_.html">Rower's Hand Blister Treatments</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
+    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatment.html">Rower's Hand Blister Treatment</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
 
     <h4>Blister Treatment</h4>
     <ul>
