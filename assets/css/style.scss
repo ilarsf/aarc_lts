@@ -4,37 +4,45 @@
 @import "{{ site.theme }}";
 
 // Ann Arbor Rowing Club styling
-// Color scheme
-$aarc-blue: #1E73BE;
-$aarc-red: #C00000;
-$aarc-dark-gray: #333333;
-$aarc-light-gray: #777777;
-$aarc-white: #ffffff;
-$aarc-border-gray: #e8e8e8;
+// Color scheme - Updated to match AARC website
+$aarc-blue: #0073E6; // Primary blue
+$aarc-blue-hover: #005BB5; // Hover state for blue
+$aarc-red: #E11931; // Accent red
+$aarc-dark-gray: #333333; // Body text
+$aarc-light-gray: #555555; // Secondary text
+$aarc-white: #ffffff; // Background
+$aarc-border-gray: #DDDDDD; // Dividers
+$aarc-footer-bg: #F4F4F4; // Footer background
 
-// Typography
+// Typography - Updated to match AARC website
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: $aarc-dark-gray;
   background-color: $aarc-white;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   color: $aarc-dark-gray;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2rem; // 32px
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem; // 24px
   border-bottom: 1px solid $aarc-border-gray;
   padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem; // 20px
 }
 
 // Links and buttons
@@ -45,7 +53,7 @@ a {
   border-bottom: 1px solid transparent;
   
   &:hover {
-    color: darken($aarc-blue, 15%);
+    color: $aarc-blue-hover;
     border-bottom: 1px solid rgba($aarc-blue, 0.3);
     text-decoration: none;
   }
@@ -71,20 +79,19 @@ a {
   background-color: $aarc-blue;
   color: $aarc-white;
   border-radius: 4px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
   border: none;
   display: inline-block;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   text-align: center;
   
   &:hover {
-    background-color: darken($aarc-blue, 10%);
+    background-color: $aarc-blue-hover;
     color: $aarc-white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-decoration: none;
     border-bottom: none;
   }
@@ -98,22 +105,13 @@ a {
 // Page header
 .page-header {
   background-color: $aarc-blue;
-  background-image: linear-gradient(120deg, lighten($aarc-blue, 10%), darken($aarc-blue, 20%));
+  background-image: none;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
   padding: 2rem 0;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.075' fill-rule='evenodd'/%3E%3C/svg%3E");
-    opacity: 0.4;
-  }
+  // No background pattern to match AARC website
   
   .container-lg {
     position: relative;
@@ -126,21 +124,21 @@ a {
   
   .project-name {
     margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    font-size: 2rem;
     color: $aarc-white;
+    font-weight: 700;
     
     @media screen and (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.75rem;
       text-align: center;
     }
   }
   
   .project-tagline {
-    opacity: 0.95;
     margin-top: 0;
     font-size: 1.25rem;
     color: $aarc-white;
+    font-weight: 400;
     
     @media screen and (max-width: 768px) {
       font-size: 1rem;
@@ -283,11 +281,11 @@ a {
 .site-nav {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: $aarc-white;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
   padding: 0.5rem;
-  border-bottom: 3px solid $aarc-blue;
+  border-bottom: 1px solid $aarc-border-gray;
   
   ul {
     list-style-type: none;
@@ -1243,26 +1241,27 @@ table {
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
 
-// Footer
+// Footer - Redesigned to match AARC website and be more compact
 .site-footer {
-  border-top: 1px solid $aarc-border-gray;
-  padding-top: 2rem;
+  background-color: $aarc-footer-bg;
+  padding: 1.5rem 0;
   margin-top: 3rem;
   color: $aarc-light-gray;
   
   a {
-    color: $aarc-blue;
+    color: $aarc-light-gray;
+    font-size: 0.875rem;
     
     &:hover {
-      color: darken($aarc-blue, 15%);
+      color: $aarc-blue;
     }
   }
   
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    margin-bottom: 1rem;
+    gap: 1.5rem;
     
     .footer-section {
       flex: 1;
@@ -1271,16 +1270,15 @@ table {
       h4 {
         color: $aarc-dark-gray;
         margin-top: 0;
-        margin-bottom: 1rem;
-        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
       }
       
       p {
-        margin-bottom: 1rem;
-        line-height: 1.6;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+        font-size: 0.875rem;
       }
-      
-      // Removed footer-seal style
     }
     
     .footer-links {
@@ -1289,7 +1287,7 @@ table {
       margin: 0;
       
       li {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
         
         a {
           display: inline-block;
@@ -1303,10 +1301,10 @@ table {
   }
   
   .copyright {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid rgba($aarc-border-gray, 0.5);
+    padding-top: 0.75rem;
+    border-top: 1px solid $aarc-border-gray;
   }
   
   @media screen and (max-width: 768px) {
@@ -1314,7 +1312,7 @@ table {
       flex-direction: column;
       
       .footer-section {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
     }
   }
