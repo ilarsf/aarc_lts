@@ -40,7 +40,7 @@
         </ul>
         
         <!-- Fallback static navigation (shown if dynamic navigation fails) -->
-        {% if site.navigation.size == 0 or true %}
+        {% if site.navigation.size == 0 %}
         <ul class="fallback-nav">
           <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
           <li class="nav-item has-dropdown">
@@ -60,13 +60,7 @@
         {% endif %}
       </nav>
       
-      <!-- Debug Navigation -->
-      <div style="display: block; background: #f8f8f8; padding: 10px; margin: 10px 0; border: 1px solid #ddd;">
-        <p><strong>Navigation Debugging:</strong></p>
-        <p>Number of nav items: {{ site.navigation | size }}</p>
-        <p>Nav data: {% if site.navigation.size > 0 %}Present{% else %}Missing{% endif %}</p>
-        <p>First item: {% if site.navigation.size > 0 %}{{ site.navigation[0].title }}{% else %}None{% endif %}</p>
-      </div>
+      <!-- Navigation debugging removed -->
 
       <main class="main-content">
         {{ content }}

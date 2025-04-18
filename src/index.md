@@ -23,19 +23,19 @@ These guides provide detailed instructions on essential techniques and safety pr
   <div class="info-box note">
     <h4>Self-Rescue Guide</h4>
     <p>Comprehensive instructions for recovering from a capsize and re-entering your shell safely.</p>
-    <p><a href="Sculling_Self_Rescue_Guide.md" class="cta-button">View Guide</a></p>
+    <p><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a></p>
   </div>
   
   <div class="info-box tip">
     <h4>Flip Test Instructions</h4>
     <p>Step-by-step guide for completing the capsize recovery test required for all AARC scullers.</p>
-    <p><a href="AARC_Flip_Test_Instructions_20240803.md" class="cta-button">View Guide</a></p>
+    <p><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="cta-button">View Guide</a></p>
   </div>
   
   <div class="info-box">
     <h4>Hand Care Guide</h4>
     <p>Prevention and treatment of rowing blisters, with tips for maintaining healthy hands.</p>
-    <p><a href="Rowers_Hand_Blister_Treatment.md" class="cta-button">View Guide</a></p>
+    <p><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a></p>
   </div>
 </div>
 
@@ -65,11 +65,25 @@ These official AARC documents outline important policies and guidelines that all
 
 ## Additional Resources
 
-If you're looking for more detailed information about the AARC Learn to Scull program, please check these resources:
-
-* [Learner's Guide](../course_materials/learner/Learner_Guide.html) - Comprehensive guide for participants
-* [Coach's Manual](../course_materials/coach/Coach_Manual.html) - Detailed information for program coaches
-* [Q&A Companion](../course_materials/learner/QA_Companion.html) - Answers to frequently asked questions
+<div class="three-col-grid">
+  <div class="info-box">
+    <h4>Learner Resources</h4>
+    <p>Comprehensive guide for participants in the Learn to Scull program.</p>
+    <p><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-button">Learner's Guide</a></p>
+  </div>
+  
+  <div class="info-box">
+    <h4>Coach Resources</h4>
+    <p>Detailed information for program coaches and instructors.</p>
+    <p><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html" class="cta-button">Coach's Manual</a></p>
+  </div>
+  
+  <div class="info-box">
+    <h4>Q&A Resources</h4>
+    <p>Answers to frequently asked questions about the program.</p>
+    <p><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="cta-button">Q&A Companion</a></p>
+  </div>
+</div>
 
 <div class="info-box aarc">
   <h4>Questions?</h4>
