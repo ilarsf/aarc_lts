@@ -4,13 +4,13 @@
 
 ### Welcome to AARC Learn to Scull!
 
-Welcome! The Ann Arbor Rowing Club (AARC) invites you to experience the joy of rowing on Argo Pond.
+Welcome! The Ann Arbor Rowing Club (AARC) invites you to experience the joy of rowing on Argo Pond. This textbook provides a comprehensive guide for our Learn to Scull program.
 
 ### What is Sculling?
 
 Sculling is a type of rowing where one person uses two oars (called sculls), one in each hand, to propel a narrow, lightweight boat called a shell.
 
-![Placeholder: Image of a single sculler on calm water](image-link-placeholder)
+![Placeholder: Image of a single sculler on calm water](placeholder)
 
 ### Who is This Textbook For?
 
@@ -30,23 +30,21 @@ The AARC Learn to Scull program is an introductory course designed to teach you 
 * **Supportive Learning Environment:** Small group instruction ensures personalized attention from experienced coaches.
 * **Technical Focus:** Emphasis on developing proper technique from the very beginning.
 
-#### Weekend Intensive Format:
+#### Weekend Intensive Format & Considerations:
 
-Our program utilizes a weekend intensive format, typically held over two consecutive weekends.
+Our program uses a weekend intensive format (4 sessions over 2 consecutive weekends, 8am-11am Sat/Sun). This immersive format accelerates learning but can be physically demanding.
+* **Pacing:** Be prepared for multiple sessions per weekend.
+* **Hand Care:** Be proactive with blister prevention (See Part 2, Chapter 5).
+* **Recovery:** Stay hydrated, eat well, and rest between sessions.
 
-* **Weekend 1:** Saturday & Sunday, 8:00 am - 11:00 am
-* **Weekend 2:** Saturday & Sunday, 8:00 am - 11:00 am
-
-Each 3-hour session includes instruction, practice, and a short break. This concentrated format helps with skill retention and fits well into busy schedules.
-
-💡 **Tip:** The weekend format is immersive! Come prepared to learn and practice intensively. Stay hydrated and bring snacks.
+*See the [Online Program Schedule](/aarc_lts/course_materials/learner/Program_Schedule.html) for more details on the format.*
 
 #### Learning Journey:
 
 You'll progress through key stages:
 
-1. **Sessions 1-2: Fundamentals:** Water safety, boat familiarity, basic rowing motion, boat handling, and the flip test.
-2. **Sessions 3-4: Integration & Application:** Developing proper technique, applying power, navigation, refining the stroke, and building confidence for independent sculling.
+1.  **Sessions 1-2: Fundamentals:** Water safety, boat familiarity, basic rowing motion, boat handling, and the flip test.
+2.  **Sessions 3-4: Integration & Application:** Developing proper technique, applying power, navigation, refining the stroke, and building confidence for independent sculling.
 
 ### Physical Requirements & Expectations
 
@@ -56,25 +54,29 @@ While sculling is adaptable, certain physical abilities are needed for safety an
 * Ability to turn your head to look over both shoulders (necessary for steering and safety checks).
 * Swimming ability: Adults must attest they can swim.
 
-⚠️ **Warning:** Sculling uses muscles you might not use regularly! Expect some initial muscle soreness and potential hand blisters. Consistent practice and proper technique will build strength and resilience. See the Hand Care chapter for prevention and treatment tips.
+⚠️ **Warning:** Sculling uses muscles you might not use regularly! Expect some initial muscle soreness and potential hand blisters. Consistent practice and proper technique will build strength and resilience. See Part 2, Chapter 5 for prevention and treatment tips.
 
 ### How to Use This Textbook
 
 This textbook is structured to follow the learning progression of the course.
 
-* **Learners:** Read the relevant chapters before and after each session. Use the glossary and Q&A sections as needed.
+* **Learners:** Read the relevant chapters before and after each session. Use the glossary and appendices as needed.
 * **Coaches:** Utilize the session plans, technical points, and class management sections to prepare for and deliver effective instruction.
 
 We've included helpful features:
 
 * **Clear Headings:** To easily find specific topics.
 * **Bullet Points:** For quick summaries.
-* **Visual Placeholders:** Indicating where diagrams or photos would be beneficial (e.g., `![Boat Parts Diagram](image-link-placeholder)`).
-* **Callout Boxes:** Like the "💡 Tip" and "⚠️ Warning" boxes you see here.
-* **Chapter Summaries:** (To be added) To recap key takeaways.
-* **Appendices:** For quick reference to policies, terms, and resources.
+* **Visual Placeholders:** Indicating where diagrams or photos would be beneficial (e.g., `![Placeholder: Description](placeholder)`).
+* **Callout Boxes:** Like the "💡 Tip" and "⚠️ Warning" boxes.
+* **Appendices:** For quick reference to policies, terms, and resources (including FAQs in Appendix D).
 
 Our goal is to maintain a **welcoming and encouraging tone**, making the technical aspects of sculling accessible and enjoyable. Don't hesitate to ask your coaches questions!
+
+### About AARC and Your Coaches
+The Ann Arbor Rowing Club (AARC) is a non-profit organization dedicated to making rowing accessible to the community. Our Learn to Scull program is taught by experienced and passionate coaches.
+
+*To learn more about AARC's mission and meet the coaching team, please visit the [About AARC](/aarc_lts/about/) and [Meet the Team](/aarc_lts/team/) pages on our website.*
 
 ---
 
@@ -90,7 +92,7 @@ A little preparation goes a long way to ensure a smooth start.
 
 * **Waivers:** Ensure you have signed and submitted the AARC liability waiver and the US Rowing waiver. These are typically handled during registration or sent via email beforehand. Contact the program administrator if you're unsure about the status of your waivers.
 * **Communication:** Check your email for any communications from your coaches, especially the "Welcome Email" and "Final Reminder". These often contain specific details about meeting points, weather updates, or last-minute instructions.
-* **Review:** Briefly review Chapter 1 of this textbook and perhaps watch any introductory videos suggested by the coaches.
+* **Review:** Briefly review Chapter 1 of this textbook and perhaps watch any introductory videos suggested by the coaches (links may be provided in emails or Appendix C).
 
 ### What to Wear and Bring
 
@@ -122,10 +124,9 @@ Comfort and practicality are key for rowing.
 * **Listening:** When coaches or coxswains are speaking, especially during boat handling or on the dock, please listen attentively and refrain from side conversations. Clear communication is vital for safety.
 
 ### Meet the Team
+The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about rowing.
 
-The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about rowing. You can learn more about them here:
-
-* [Link to Meet the Team Page (Placeholder)]
+*You can learn more about them on the [Meet the Team page](/aarc_lts/team/) on our website.*
 
 Your coaches are your primary resource. Don't hesitate to ask them questions throughout the program!
 
