@@ -1,0 +1,940 @@
+---
+layout: default
+title: "Boathouse Rules and Safety Quiz"
+---
+
+<div class="quiz-container">
+    <div id="quiz-header">
+        <h1>AARC Boathouse Rules and Safety Quiz</h1>
+        <p>Test your knowledge about boathouse rules, equipment care, and safety procedures. Each quiz consists of 10 randomly selected questions. See if you can make it to the high score board!</p>
+    </div>
+
+    <div id="start-screen" class="quiz-section">
+        <h2>Ready to test your knowledge?</h2>
+        <div class="input-group">
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" placeholder="Your name">
+        </div>
+        <button id="start-button" class="quiz-button">Start Quiz</button>
+        <button id="view-highscores" class="quiz-button secondary">View High Scores</button>
+    </div>
+
+    <div id="quiz-screen" class="quiz-section hidden">
+        <div id="quiz-info">
+            <span id="question-counter">Question 1/10</span>
+            <span id="timer">Time: 0:00</span>
+            <span id="score-display">Score: 0</span>
+        </div>
+        <div id="question-container">
+            <h2 id="question-text">Question text goes here</h2>
+            <div id="answers-container">
+                <!-- Answer buttons will be generated here -->
+            </div>
+        </div>
+        <div id="feedback" class="hidden">
+            <p id="feedback-text"></p>
+        </div>
+    </div>
+
+    <div id="results-screen" class="quiz-section hidden">
+        <h2>Quiz Complete!</h2>
+        <div id="quiz-summary">
+            <p>Your score: <span id="final-score">0</span> points</p>
+            <p>Time taken: <span id="time-taken">0:00</span></p>
+            <p>Correct answers: <span id="correct-count">0</span>/10</p>
+        </div>
+        <div id="high-score-message"></div>
+        <div class="button-group">
+            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
+            <button id="review-button" class="quiz-button secondary">Review Answers</button>
+            <button id="highscores-button" class="quiz-button secondary">View High Scores</button>
+        </div>
+    </div>
+
+    <div id="review-screen" class="quiz-section hidden">
+        <h2>Review Your Answers</h2>
+        <div id="review-container">
+            <!-- Review items will be generated here -->
+        </div>
+        <button id="back-to-results" class="quiz-button">Back to Results</button>
+    </div>
+
+    <div id="highscores-screen" class="quiz-section hidden">
+        <h2>High Scores</h2>
+        <div id="highscores-container">
+            <table id="highscores-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="highscores-body">
+                    <!-- High scores will be generated here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="no-scores-message" class="hidden">
+            <p>No high scores yet. Be the first to set a record!</p>
+        </div>
+        <div class="button-group">
+            <button id="back-button" class="quiz-button">Back</button>
+            <button id="clear-scores" class="quiz-button secondary">Clear High Scores</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .quiz-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #quiz-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .quiz-section {
+        margin-bottom: 30px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #quiz-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .quiz-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+    }
+
+    .quiz-button:hover {
+        background-color: #005fa3;
+    }
+
+    .quiz-button.secondary {
+        background-color: #6c757d;
+    }
+
+    .quiz-button.secondary:hover {
+        background-color: #5a6268;
+    }
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .button-group .quiz-button {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    #answers-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .answer-button {
+        padding: 12px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .answer-button:hover {
+        background-color: #e2e6ea;
+    }
+
+    .correct {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+
+    .incorrect {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+
+    #feedback {
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+        border-left: 4px solid #0077cc;
+    }
+
+    #quiz-summary {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+    }
+
+    #high-score-message {
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .review-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .review-question {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .review-answers {
+        margin-left: 20px;
+    }
+
+    .review-correct {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .review-incorrect {
+        color: #dc3545;
+        text-decoration: line-through;
+    }
+
+    .review-explanation {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-left: 4px solid #6c757d;
+    }
+
+    #highscores-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    #highscores-table th, #highscores-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #highscores-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    #highscores-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    #highscores-table tr:hover {
+        background-color: #e9ecef;
+    }
+
+    #no-scores-message {
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+        .button-group {
+            flex-direction: column;
+        }
+        
+        #quiz-info {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        #highscores-table {
+            font-size: 14px;
+        }
+        
+        #highscores-table th, #highscores-table td {
+            padding: 8px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Quiz questions database
+        const quizQuestions = [
+            {
+                question: "Before putting a boat back on its rack, what should you do?",
+                answers: [
+                    "Leave it on the dock for the next rower",
+                    "Place it on stretchers/slings and wipe it down thoroughly",
+                    "Rinse it with river water only",
+                    "Ask a coach to inspect it"
+                ],
+                correctAnswer: 1,
+                explanation: "Boats should be placed on stretchers/slings and thoroughly wiped down with a towel/rag before returning them to the rack."
+            },
+            {
+                question: "When storing a boat back on the rack, the riggers should:",
+                answers: [
+                    "Face outward for easy access",
+                    "Be removed completely",
+                    "Align with those of other boats on the rack",
+                    "Be rotated 90 degrees"
+                ],
+                correctAnswer: 2,
+                explanation: "When storing boats, ensure the riggers align with those of other boats on the rack to maintain uniformity and balance."
+            },
+            {
+                question: "Why is it important to disinfect oar handles after each row?",
+                answers: [
+                    "To prevent the wood from cracking",
+                    "To maintain hygiene and prevent spread of germs, especially with blisters",
+                    "To make them more grippy",
+                    "It's not important; oar handles don't need cleaning"
+                ],
+                correctAnswer: 1,
+                explanation: "Disinfecting oar handles is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding."
+            },
+            {
+                question: "If you discover an issue with equipment, what should you do?",
+                answers: [
+                    "Fix it yourself",
+                    "Leave it for someone else to discover",
+                    "Note it in the logbook and notify a coach if significant",
+                    "Use the equipment anyway to avoid canceling your row"
+                ],
+                correctAnswer: 2,
+                explanation: "When you find equipment issues, note them in the logbook. If there is significant damage, also notify a coach or club officer immediately."
+            },
+            {
+                question: "What is the proper way to access boats on high racks?",
+                answers: [
+                    "Climb on the racks themselves",
+                    "Stand on another boat temporarily",
+                    "Ask someone taller to help",
+                    "Use the provided step ladders"
+                ],
+                correctAnswer: 3,
+                explanation: "Always use the provided step ladders for reaching high racks; never climb on the racks themselves. Return ladders to their designated storage locations after use."
+            },
+            {
+                question: "If you've used tape on the oar handles for blisters, what should you do afterward?",
+                answers: [
+                    "Leave it for the next person",
+                    "Remove it completely, leaving no residue",
+                    "Add an extra layer for the next person",
+                    "Wrap it with plastic wrap"
+                ],
+                correctAnswer: 1,
+                explanation: "If you've used tape on the handles for blisters, remove it completely after your row. Sticky residue makes handles uncomfortable for the next user."
+            },
+            {
+                question: "What footwear rule applies in the boathouse?",
+                answers: [
+                    "Only waterproof shoes are allowed",
+                    "No footwear restrictions",
+                    "No street shoes on the dock or in boats",
+                    "Only barefoot is allowed on docks"
+                ],
+                correctAnswer: 2,
+                explanation: "Wear appropriate footwear in the boathouse. No street shoes on the dock or in the boats."
+            },
+            {
+                question: "Who is responsible for ensuring the boathouse is locked when leaving?",
+                answers: [
+                    "Only coaches",
+                    "The club president",
+                    "Whoever arrives first in the morning",
+                    "The last person leaving"
+                ],
+                correctAnswer: 3,
+                explanation: "The last person leaving the boathouse is responsible for ensuring all doors and gates are locked."
+            },
+            {
+                question: "What should you always do when using a boat?",
+                answers: [
+                    "Take a photo of it before and after",
+                    "Record your usage in the logbook",
+                    "Leave a deposit with the coach",
+                    "Fill out an online form"
+                ],
+                correctAnswer: 1,
+                explanation: "Always record your boat usage in the logbook, including any issues encountered during your row."
+            },
+            {
+                question: "When rowing activities MUST be postponed due to lightning?",
+                answers: [
+                    "If lightning is seen within the previous 15 minutes",
+                    "Only if it's directly overhead",
+                    "If lightning is seen or thunder is heard within the previous 30 minutes",
+                    "Only during official thunderstorm warnings"
+                ],
+                correctAnswer: 2,
+                explanation: "Rowing activities MUST be postponed or curtailed if lightning is seen or thunder is heard within the previous 30 minutes."
+            },
+            {
+                question: "What is the critical safety feature that must be checked at the bow of the boat?",
+                answers: [
+                    "Bow number",
+                    "Club logo",
+                    "Bow ball",
+                    "Speed sensor"
+                ],
+                correctAnswer: 2,
+                explanation: "The bow ball is a critical safety feature that must be securely attached and undamaged."
+            },
+            {
+                question: "What is the proper traffic pattern to follow on the river?",
+                answers: [
+                    "Stay to the port (left) side",
+                    "Stay to the starboard (right) side",
+                    "Stay in the middle",
+                    "Zigzag to avoid obstacles"
+                ],
+                correctAnswer: 1,
+                explanation: "Always stay to the starboard (right) side of the river to prevent collisions."
+            },
+            {
+                question: "How often should you look around while rowing?",
+                answers: [
+                    "Once per minute",
+                    "Every 3-5 strokes",
+                    "Only when turning",
+                    "Only when the coach says to"
+                ],
+                correctAnswer: 1,
+                explanation: "You should look around constantly, every 3-5 strokes, to maintain awareness of your surroundings."
+            },
+            {
+                question: "What is the universal signal for distress on the water?",
+                answers: [
+                    "Waving one arm overhead",
+                    "Repeatedly raising and lowering both arms overhead",
+                    "Lying flat in the boat",
+                    "Splashing the water"
+                ],
+                correctAnswer: 1,
+                explanation: "The universal signal for distress on the water is repeatedly raising and lowering both arms overhead."
+            },
+            {
+                question: "Which strap on the footstretcher is crucially important for safety in case of capsize?",
+                answers: [
+                    "Ankle straps",
+                    "Heel restraints",
+                    "Shoelace ties",
+                    "Toe covers"
+                ],
+                correctAnswer: 1,
+                explanation: "Heel restraints are crucially important as they limit heel lift and allow quick foot release in case of capsize."
+            },
+            {
+                question: "What is the most important rule if you capsize?",
+                answers: [
+                    "Swim to shore immediately",
+                    "Dive underwater to retrieve loose items",
+                    "Stay with your boat",
+                    "Remove your shoes"
+                ],
+                correctAnswer: 2,
+                explanation: "The most important rule if you capsize is to stay with your boat. Your shell provides significant flotation, even if swamped."
+            },
+            {
+                question: "What is the 'T-Position' used for during a capsize recovery?",
+                answers: [
+                    "The position your body should be in",
+                    "A position created with the oars to provide stability",
+                    "The way you hold the coach's hand",
+                    "The direction you should swim"
+                ],
+                correctAnswer: 1,
+                explanation: "The T-Position refers to arranging the oars perpendicular to the boat with blades flat on the water to create stability during re-entry."
+            },
+            {
+                question: "When re-entering a boat after capsize, what body part should you focus on getting onto the boat first?",
+                answers: [
+                    "Your hands",
+                    "Your feet",
+                    "Your hips",
+                    "Your head"
+                ],
+                correctAnswer: 2,
+                explanation: "When re-entering, focus on driving your hips up and onto the gunwale/deck beside the cockpit. Aim to get your belly button over the edge."
+            },
+            {
+                question: "What should you avoid doing when trying to get back into your boat after a capsize?",
+                answers: [
+                    "Using a dolphin kick",
+                    "Pulling down on the far rigger/gunwale",
+                    "Stabilizing with the oars",
+                    "Using leg power"
+                ],
+                correctAnswer: 1,
+                explanation: "Avoid pulling down on the far rigger/gunwale when trying to get in – this will likely just pull the boat over on top of you. Focus on kicking up and getting your hips onto the near side."
+            },
+            {
+                question: "What action helps maintain boat longevity and shows respect for other rowers?",
+                answers: [
+                    "Using the equipment as hard as possible to 'break it in'",
+                    "Letting the coach handle all cleaning duties",
+                    "Proper care and cleaning after each use",
+                    "Adding personal modifications"
+                ],
+                correctAnswer: 2,
+                explanation: "Proper care and cleaning of equipment after each use helps maintain boat longevity and shows respect for other rowers who will use the equipment."
+            }
+        ];
+
+        // DOM elements
+        const startScreen = document.getElementById('start-screen');
+        const quizScreen = document.getElementById('quiz-screen');
+        const resultsScreen = document.getElementById('results-screen');
+        const reviewScreen = document.getElementById('review-screen');
+        const highscoresScreen = document.getElementById('highscores-screen');
+        
+        const startButton = document.getElementById('start-button');
+        const viewHighscoresButton = document.getElementById('view-highscores');
+        const restartButton = document.getElementById('restart-button');
+        const reviewButton = document.getElementById('review-button');
+        const highscoresButton = document.getElementById('highscores-button');
+        const backToResultsButton = document.getElementById('back-to-results');
+        const backButton = document.getElementById('back-button');
+        const clearScoresButton = document.getElementById('clear-scores');
+        
+        const usernameInput = document.getElementById('username');
+        const questionCounter = document.getElementById('question-counter');
+        const timerElement = document.getElementById('timer');
+        const scoreDisplay = document.getElementById('score-display');
+        const questionText = document.getElementById('question-text');
+        const answersContainer = document.getElementById('answers-container');
+        const feedback = document.getElementById('feedback');
+        const feedbackText = document.getElementById('feedback-text');
+        
+        const finalScore = document.getElementById('final-score');
+        const timeTaken = document.getElementById('time-taken');
+        const correctCount = document.getElementById('correct-count');
+        const highScoreMessage = document.getElementById('high-score-message');
+        
+        const reviewContainer = document.getElementById('review-container');
+        const highscoresBody = document.getElementById('highscores-body');
+        const noScoresMessage = document.getElementById('no-scores-message');
+
+        // Quiz state
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let correctAnswers = 0;
+        let timer;
+        let seconds = 0;
+        let selectedAnswers = [];
+        let quizComplete = false;
+        let returnToScreen = null;
+
+        // Initialization
+        loadHighScores();
+
+        // Event listeners
+        startButton.addEventListener('click', startQuiz);
+        viewHighscoresButton.addEventListener('click', showHighScores);
+        restartButton.addEventListener('click', resetQuiz);
+        reviewButton.addEventListener('click', showReview);
+        highscoresButton.addEventListener('click', () => {
+            returnToScreen = 'results';
+            showHighScores();
+        });
+        backToResultsButton.addEventListener('click', () => {
+            hideAllScreens();
+            resultsScreen.classList.remove('hidden');
+        });
+        backButton.addEventListener('click', () => {
+            hideAllScreens();
+            if (returnToScreen === 'results') {
+                resultsScreen.classList.remove('hidden');
+            } else {
+                startScreen.classList.remove('hidden');
+            }
+        });
+        clearScoresButton.addEventListener('click', clearHighScores);
+
+        // Functions
+        function hideAllScreens() {
+            startScreen.classList.add('hidden');
+            quizScreen.classList.add('hidden');
+            resultsScreen.classList.add('hidden');
+            reviewScreen.classList.add('hidden');
+            highscoresScreen.classList.add('hidden');
+        }
+
+        function startQuiz() {
+            if (!usernameInput.value.trim()) {
+                alert('Please enter your name to start the quiz.');
+                return;
+            }
+
+            // Reset quiz state
+            currentQuestionIndex = 0;
+            score = 0;
+            correctAnswers = 0;
+            seconds = 0;
+            selectedAnswers = [];
+            quizComplete = false;
+
+            // Get random questions
+            currentQuestions = getRandomQuestions(10);
+
+            // Start timer
+            startTimer();
+
+            // Show first question
+            displayQuestion();
+
+            // Switch to quiz screen
+            hideAllScreens();
+            quizScreen.classList.remove('hidden');
+        }
+
+        function getRandomQuestions(num) {
+            const allQuestions = [...quizQuestions];
+            const selectedQuestions = [];
+            
+            for (let i = 0; i < num && allQuestions.length > 0; i++) {
+                const randomIndex = Math.floor(Math.random() * allQuestions.length);
+                selectedQuestions.push(allQuestions.splice(randomIndex, 1)[0]);
+            }
+            
+            return selectedQuestions;
+        }
+
+        function startTimer() {
+            clearInterval(timer);
+            seconds = 0;
+            updateTimerDisplay();
+            
+            timer = setInterval(() => {
+                seconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            timerElement.textContent = `Time: ${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+
+        function displayQuestion() {
+            const question = currentQuestions[currentQuestionIndex];
+            questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuestions.length}`;
+            questionText.textContent = question.question;
+            
+            // Clear previous answers
+            answersContainer.innerHTML = '';
+            
+            // Create answer buttons
+            question.answers.forEach((answer, index) => {
+                const button = document.createElement('button');
+                button.className = 'answer-button';
+                button.textContent = `${String.fromCharCode(65 + index)}. ${answer}`;
+                button.dataset.index = index;
+                
+                button.addEventListener('click', () => selectAnswer(index));
+                answersContainer.appendChild(button);
+            });
+            
+            // Hide feedback
+            feedback.classList.add('hidden');
+        }
+
+        function selectAnswer(answerIndex) {
+            // Prevent selecting answer after question is answered
+            if (feedback.classList.contains('hidden') === false) {
+                return;
+            }
+            
+            const question = currentQuestions[currentQuestionIndex];
+            const isCorrect = answerIndex === question.correctAnswer;
+            
+            // Store user's answer
+            selectedAnswers.push({
+                questionIndex: currentQuestionIndex,
+                selectedAnswer: answerIndex,
+                correct: isCorrect
+            });
+            
+            // Update score
+            if (isCorrect) {
+                score += 10;
+                correctAnswers++;
+                scoreDisplay.textContent = `Score: ${score}`;
+            }
+            
+            // Highlight selected answer
+            const buttons = answersContainer.querySelectorAll('.answer-button');
+            buttons.forEach(button => {
+                const buttonIndex = parseInt(button.dataset.index);
+                
+                if (buttonIndex === answerIndex) {
+                    button.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+                
+                if (buttonIndex === question.correctAnswer && !isCorrect) {
+                    button.classList.add('correct');
+                }
+                
+                // Disable all buttons
+                button.disabled = true;
+            });
+            
+            // Show feedback
+            feedbackText.textContent = isCorrect ? 
+                'Correct! ' + question.explanation : 
+                'Incorrect. ' + question.explanation;
+            feedback.classList.remove('hidden');
+            
+            // Move to next question after delay
+            setTimeout(() => {
+                if (currentQuestionIndex < currentQuestions.length - 1) {
+                    currentQuestionIndex++;
+                    displayQuestion();
+                } else {
+                    endQuiz();
+                }
+            }, 2000);
+        }
+
+        function endQuiz() {
+            // Stop timer
+            clearInterval(timer);
+            quizComplete = true;
+            
+            // Update results screen
+            finalScore.textContent = score;
+            timeTaken.textContent = formatTime(seconds);
+            correctCount.textContent = correctAnswers;
+            
+            // Check for high score
+            const isHighScore = checkForHighScore();
+            if (isHighScore) {
+                highScoreMessage.innerHTML = '<p class="success">Congratulations! You made it to the high score board!</p>';
+                saveHighScore();
+            } else {
+                highScoreMessage.innerHTML = '<p>Nice try! Keep practicing to make it to the high score board.</p>';
+            }
+            
+            // Switch to results screen
+            hideAllScreens();
+            resultsScreen.classList.remove('hidden');
+        }
+
+        function formatTime(totalSeconds) {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
+
+        function checkForHighScore() {
+            const highScores = getHighScores();
+            
+            if (highScores.length < 10) {
+                return true;
+            }
+            
+            return score > highScores[highScores.length - 1].score;
+        }
+
+        function saveHighScore() {
+            const highScores = getHighScores();
+            const newScore = {
+                name: usernameInput.value.trim(),
+                score: score,
+                time: seconds,
+                date: new Date().toLocaleDateString()
+            };
+            
+            highScores.push(newScore);
+            
+            // Sort high scores by score (descending) and time (ascending)
+            highScores.sort((a, b) => {
+                if (a.score !== b.score) {
+                    return b.score - a.score;
+                }
+                return a.time - b.time;
+            });
+            
+            // Keep only top 10
+            if (highScores.length > 10) {
+                highScores.splice(10);
+            }
+            
+            localStorage.setItem('aarc_quiz_highscores', JSON.stringify(highScores));
+        }
+
+        function getHighScores() {
+            const highScores = localStorage.getItem('aarc_quiz_highscores');
+            return highScores ? JSON.parse(highScores) : [];
+        }
+
+        function loadHighScores() {
+            const highScores = getHighScores();
+            highscoresBody.innerHTML = '';
+            
+            if (highScores.length === 0) {
+                noScoresMessage.classList.remove('hidden');
+                return;
+            }
+            
+            noScoresMessage.classList.add('hidden');
+            
+            highScores.forEach((score, index) => {
+                const row = document.createElement('tr');
+                
+                const rankCell = document.createElement('td');
+                rankCell.textContent = index + 1;
+                
+                const nameCell = document.createElement('td');
+                nameCell.textContent = score.name;
+                
+                const scoreCell = document.createElement('td');
+                scoreCell.textContent = score.score;
+                
+                const timeCell = document.createElement('td');
+                timeCell.textContent = formatTime(score.time);
+                
+                const dateCell = document.createElement('td');
+                dateCell.textContent = score.date;
+                
+                row.appendChild(rankCell);
+                row.appendChild(nameCell);
+                row.appendChild(scoreCell);
+                row.appendChild(timeCell);
+                row.appendChild(dateCell);
+                
+                highscoresBody.appendChild(row);
+            });
+        }
+
+        function showHighScores() {
+            loadHighScores();
+            hideAllScreens();
+            highscoresScreen.classList.remove('hidden');
+            
+            if (!returnToScreen) {
+                returnToScreen = 'start';
+            }
+        }
+
+        function clearHighScores() {
+            if (confirm('Are you sure you want to clear all high scores? This cannot be undone.')) {
+                localStorage.removeItem('aarc_quiz_highscores');
+                loadHighScores();
+            }
+        }
+
+        function showReview() {
+            reviewContainer.innerHTML = '';
+            
+            selectedAnswers.forEach(answer => {
+                const question = currentQuestions[answer.questionIndex];
+                const reviewItem = document.createElement('div');
+                reviewItem.className = 'review-item';
+                
+                const questionElement = document.createElement('div');
+                questionElement.className = 'review-question';
+                questionElement.textContent = `Q${answer.questionIndex + 1}: ${question.question}`;
+                
+                const answersElement = document.createElement('div');
+                answersElement.className = 'review-answers';
+                
+                question.answers.forEach((answerText, index) => {
+                    const answerElement = document.createElement('div');
+                    let answerClass = '';
+                    
+                    if (index === question.correctAnswer) {
+                        answerClass = 'review-correct';
+                    } else if (index === answer.selectedAnswer && !answer.correct) {
+                        answerClass = 'review-incorrect';
+                    }
+                    
+                    answerElement.className = answerClass;
+                    answerElement.textContent = `${String.fromCharCode(65 + index)}. ${answerText}`;
+                    
+                    if (index === answer.selectedAnswer) {
+                        answerElement.textContent += ' (Your Answer)';
+                    }
+                    
+                    answersElement.appendChild(answerElement);
+                });
+                
+                const explanationElement = document.createElement('div');
+                explanationElement.className = 'review-explanation';
+                explanationElement.textContent = question.explanation;
+                
+                reviewItem.appendChild(questionElement);
+                reviewItem.appendChild(answersElement);
+                reviewItem.appendChild(explanationElement);
+                
+                reviewContainer.appendChild(reviewItem);
+            });
+            
+            hideAllScreens();
+            reviewScreen.classList.remove('hidden');
+        }
+
+        function resetQuiz() {
+            hideAllScreens();
+            startScreen.classList.remove('hidden');
+        }
+    });
+</script>

@@ -71,7 +71,7 @@ These official AARC documents outline important policies and guidelines that all
 
 ## Additional Resources
 
-<div class="three-col-grid">
+<div class="four-col-grid">
   <div class="info-box">
     <h4>Learner Resources</h4>
     <p>Comprehensive guide for participants in the Learn to Scull program.</p>
@@ -88,6 +88,12 @@ These official AARC documents outline important policies and guidelines that all
     <h4>Q&A Resources</h4>
     <p>Answers to frequently asked questions about the program.</p>
     <div class="mt-auto"><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="cta-button">Q&A Companion</a></div>
+  </div>
+  
+  <div class="info-box challenge">
+    <h4>Interactive Quiz</h4>
+    <p>Test your knowledge of boathouse rules and safety procedures with this interactive quiz.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/boathouse_quiz.html" class="cta-button">Take the Quiz</a></div>
   </div>
 </div>
 
