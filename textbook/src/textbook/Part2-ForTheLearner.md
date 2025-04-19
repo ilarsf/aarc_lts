@@ -186,54 +186,6 @@ You need to know where you're going and what's around you.
 
 💡 **Tip:** Pick a landmark far ahead on the correct side of the river and aim for it. Make small, frequent steering adjustments rather than big, jerky ones.
 
----
-
-Developing good technique takes time and repetition. Be patient, listen to your coaches, and focus on one or two key points each session. Next, we'll cover some essential skills and knowledge, including hand care and understanding traffic patterns.
-
-## Chapter 5: Essential Skills & Knowledge
-
-Beyond the basic stroke and steering, a few key areas of knowledge and skill will significantly enhance your rowing experience and safety. This chapter covers practical advice on caring for your hands, understanding the "rules of the river," and identifying common beginner mistakes.
-
-### Hand Care: Preventing and Treating Blisters
-
-Blisters are a common, almost unavoidable, part of learning to row.
-
-![Placeholder: Image showing common blister locations on a rower's hands](image-link-placeholder)
-
-#### Proper Grip Techniques (The Best Prevention!)
-
-The single most effective way to minimize blisters is to use the correct grip:
-
-* **Relax:** Avoid a "death grip." Think of holding the handles like holding a small bird – firm but gentle.
-* **Fingers, Not Palms:** Let the handle rest primarily in your fingers, creating a "hook" grip.
-* **Light Pressure:** Especially on the recovery, keep pressure light.
-* **Let Oarlocks Work:** Allow the oarlocks to facilitate the feathering and squaring motion rather than forcing it with a tight wrist grip.
-
-**Correct Grip Tutorial:** Watching this can help visualize the proper hand position.
-
-#### Taping and Protection
-
-* **Preventative Taping:** If you know you have "hot spots," apply athletic tape *before* rowing. Ensure hands are clean and dry, and apply tape smoothly at least 20 minutes prior.
-* **Covering Blisters:** If rowing with existing blisters, *always* place a non-stick pad or hydrocolloid dressing directly over the blister *before* applying tape.
-* **Gloves:** Rowing gloves can offer temporary protection, especially if you have multiple blisters, but might slightly reduce your feel for the oar.
-
-#### Blister Treatment
-
-* **Intact Blisters:**
-    * Leave small ones intact if possible; the skin is natural protection.
-    * Cover with a hydrocolloid bandage or a non-stick pad and tape.
-    * Large, painful blisters likely to break can be carefully drained using a sterilized needle at the edge. Apply antibiotic ointment and cover.
-* **Broken/Torn Blisters:**
-    * Clean gently with mild soap and water.
-    * Leave any attached skin flap in place if possible.
-    * Apply antibiotic ointment or petroleum jelly.
-    * Cover with a non-stick dressing and tape securely.
-    * Change dressing daily and after rowing.
-
-⚠️ **Warning:** Watch for signs of infection (increasing pain, spreading redness, warmth, swelling, pus, red streaks, fever) and seek medical attention if they appear.
-
-**For a comprehensive guide, refer to the [Rower's Hand Blister Treatment Guide](../src/Rowers_Hand_Blister_Treatment.html).**
-
 ### Understanding River Traffic Patterns
 
 Just like roads, rivers have rules for traffic flow to ensure everyone's safety. Your coach will explain the specific patterns for Argo Pond during Session 3. Key principles generally include:

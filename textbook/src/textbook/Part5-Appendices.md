@@ -81,8 +81,6 @@ Understanding the language of rowing will help you communicate effectively with 
 
 ---
 
-Familiarity with these terms will grow as you spend more time rowing and listening to coaching cues. The next appendix covers important AARC policies.
-
 ## Appendix B: AARC Policies
 
 This appendix provides references to important Ann Arbor Rowing Club policies governing safety, conduct, and participant well-being. All members, class participants, and coaches are expected to be familiar with and abide by these policies.

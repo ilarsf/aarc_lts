@@ -126,9 +126,41 @@ Remember that rowing equipment is both expensive and delicate. Approach each int
 
 💡 **Tip:** If you're unsure about any aspect of equipment handling or boathouse procedures, ask an experienced member or coach. It's better to ask than to risk damaging equipment or breaking protocol.
 
+## Chapter 6B: Importance of Following Traffic Patterns and Communication on the Water
+
+Adhering to traffic patterns and maintaining clear communication on the water are critical for safety and efficiency. This section emphasizes the importance of these practices and provides guidelines for effective communication.
+
+### Importance of Following Traffic Patterns
+
+Following established traffic patterns ensures that all rowers and water users can navigate the river safely and predictably. Key reasons include:
+
+* **Preventing Collisions:** Adhering to traffic patterns reduces the risk of collisions with other boats, which can cause injuries and damage equipment.
+* **Ensuring Predictability:** When everyone follows the same rules, it becomes easier to anticipate the actions of other rowers, leading to smoother and safer navigation.
+* **Maximizing Efficiency:** Traffic patterns help manage the flow of boats, especially in busy areas, allowing for more efficient use of the waterway.
+
+### Key Traffic Pattern Guidelines
+
+* **Stay to the Right:** Always row on the starboard (right) side of the river in your direction of travel.
+* **Look Around Frequently:** Check over your shoulder every 3-5 strokes to ensure you are aware of your surroundings and any potential obstacles.
+* **Pass Safely:** When overtaking a slower boat, pass towards the center of the river, giving ample space to avoid collisions.
+* **Follow Designated Turns:** Make turns at designated points to maintain the flow of traffic and avoid disrupting other rowers.
+* **Observe Bridge Rules:** Follow specific instructions for navigating bridge arches, ensuring you use the correct arch for your direction of travel.
+
+### Effective Communication on the Water
+
+Clear communication is essential for coordinating movements and ensuring safety. Use the following guidelines to maintain effective communication:
+
+* **Use Standard Commands:** Familiarize yourself with common rowing commands such as "Way Enough," "Hold Water," and "Let it Run." These commands help coordinate actions and ensure everyone is on the same page.
+* **Signal Intentions:** Use hand signals or verbal cues to indicate your intentions, such as turning or stopping. This helps other rowers anticipate your actions and adjust accordingly.
+* **Listen to Coaches:** Pay attention to your coach's instructions and signals, whether they are using a megaphone, whistle, or voice commands. Coaches provide critical guidance for maintaining safety and efficiency.
+* **Minimize Chatter:** Keep non-essential conversation to a minimum while rowing to ensure that important commands and signals can be heard clearly.
+* **Use Distress Signals:** In case of an emergency, use the universal distress signal of raising and lowering both arms repeatedly to attract attention and request assistance.
+
+By following traffic patterns and maintaining clear communication, you contribute to a safer and more enjoyable rowing experience for everyone on the water.
+
 ---
 
-Understanding and practicing these boathouse rules and equipment care principles forms the bedrock of responsible rowing. The next chapter addresses another key safety skill: what to do if you capsize.
+Understanding and practicing these safety protocols and boathouse rules forms the bedrock of responsible rowing. The next chapter addresses a key safety skill: what to do if you capsize.
 
 ## Chapter 7: Capsize Recovery: The Flip Test & Self-Rescue
 
