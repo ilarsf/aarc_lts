@@ -12,7 +12,7 @@ layout: default
   </div>
 </div>
 
-<div class="printable-checklist">
+<div class="printable-checklist" markdown="1">
 
 ## Participant Information
 
