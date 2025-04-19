@@ -93,7 +93,7 @@ These official AARC documents outline important policies and guidelines that all
   <div class="info-box challenge">
     <h4>Interactive Quiz</h4>
     <p>Test your knowledge of boathouse rules and safety procedures with this interactive quiz.</p>
-    <div class="mt-auto"><a href="{{ site.baseurl }}/src/boathouse_quiz.html" class="cta-button">Take the Quiz</a></div>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html" class="cta-button">Take the Quiz</a></div>
   </div>
 </div>
 

@@ -1,0 +1,418 @@
+---
+layout: default
+title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
+---
+
+<div class="quiz-container">
+    <div id="quiz-header">
+        <h1 id="quiz-title">Learn-to-Scull Quiz</h1> <p id="quiz-description">Select a session and test your knowledge!</p> </div>
+
+    <div id="start-screen" class="quiz-section">
+        <h2 id="start-heading">Ready to test your knowledge?</h2>
+        <div class="input-group">
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" placeholder="Your name">
+        </div>
+        <button id="start-button" class="quiz-button" disabled>Start Quiz</button> <button id="view-highscores" class="quiz-button secondary" disabled>View High Scores</button> <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
+        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
+    </div>
+
+    <div id="quiz-screen" class="quiz-section hidden">
+        <div id="quiz-info">
+            <span id="question-counter">Question 1/10</span>
+            <span id="timer">Time: 0:00</span>
+            <span id="score-display">Score: 0</span>
+        </div>
+        <div id="question-container">
+            <h2 id="question-text">Question text goes here</h2>
+            <div id="answers-container">
+                </div>
+        </div>
+        <div id="feedback" class="hidden">
+            <p id="feedback-text"></p>
+        </div>
+    </div>
+
+    <div id="results-screen" class="quiz-section hidden">
+        <h2>Quiz Complete!</h2>
+        <div id="quiz-summary">
+            <p>Your score: <span id="final-score">0</span> points</p>
+            <p>Time taken: <span id="time-taken">0:00</span></p>
+            <p>Correct answers: <span id="correct-count">0</span>/10</p>
+        </div>
+        <div id="high-score-message"></div>
+        <div class="button-group">
+            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
+            <button id="review-button" class="quiz-button secondary">Review Answers</button>
+            <button id="highscores-button" class="quiz-button secondary">View High Scores</button>
+        </div>
+    </div>
+
+    <div id="review-screen" class="quiz-section hidden">
+        <h2>Review Your Answers</h2>
+        <div id="review-container">
+            </div>
+        <button id="back-to-results" class="quiz-button">Back to Results</button>
+    </div>
+
+    <div id="highscores-screen" class="quiz-section hidden">
+        <h2 id="highscores-title">High Scores</h2> <div id="highscores-container">
+            <table id="highscores-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="highscores-body">
+                    </tbody>
+            </table>
+        </div>
+        <div id="no-scores-message" class="hidden">
+            <p>No high scores yet for this session. Be the first to set a record!</p>
+        </div>
+        <div class="button-group">
+            <button id="back-button" class="quiz-button">Back</button>
+            <button id="clear-scores" class="quiz-button secondary">Clear High Scores (Admin)</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Styles remain the same as the original template */
+    .quiz-container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    #quiz-header { text-align: center; margin-bottom: 30px; }
+    .quiz-section { margin-bottom: 30px; }
+    .hidden { display: none; }
+    #quiz-info { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; }
+    .input-group { margin-bottom: 20px; }
+    .input-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+    .input-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; box-sizing: border-box;}
+    .quiz-button { display: block; width: 100%; padding: 12px; background-color: #0077cc; color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 10px; transition: background-color 0.3s; }
+    .quiz-button:hover:not(:disabled) { background-color: #005fa3; }
+    .quiz-button:disabled { background-color: #cccccc; cursor: not-allowed; }
+    .quiz-button.secondary { background-color: #6c757d; }
+    .quiz-button.secondary:hover:not(:disabled) { background-color: #5a6268; }
+    .quiz-button.secondary:disabled { background-color: #aaaaaa; }
+    .button-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button-group .quiz-button { flex: 1; min-width: 200px; }
+    #answers-container { display: flex; flex-direction: column; gap: 10px; }
+    .answer-button { padding: 12px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 5px; text-align: left; font-size: 16px; cursor: pointer; transition: background-color 0.2s; }
+    .answer-button:hover:not(:disabled) { background-color: #e2e6ea; }
+    .answer-button:disabled { cursor: default; opacity: 0.7; }
+    .correct { background-color: #d4edda !important; border-color: #c3e6cb !important; font-weight: bold; }
+    .incorrect { background-color: #f8d7da !important; border-color: #f5c6cb !important; }
+    #feedback { margin: 20px 0; padding: 15px; border-radius: 5px; background-color: #f8f9fa; border-left: 4px solid #0077cc; }
+    #feedback.correct-feedback { border-left-color: #28a745; }
+    #feedback.incorrect-feedback { border-left-color: #dc3545; }
+    #quiz-summary { margin: 20px 0; padding: 20px; background-color: #e9ecef; border-radius: 5px; }
+    #high-score-message { margin: 20px 0; padding: 15px; border-radius: 5px; text-align: center; font-weight: bold; }
+    #high-score-message p.success { color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 10px; border-radius: 4px; }
+    .review-item { margin-bottom: 20px; padding: 15px; border-radius: 5px; border: 1px solid #ddd; background-color: #fff; }
+    .review-question { font-weight: bold; margin-bottom: 10px; }
+    .review-answers { margin-left: 20px; }
+    .review-correct { color: #28a745; font-weight: bold; }
+    .review-correct::before { content: '✔ '; color: #28a745; }
+    .review-incorrect { color: #dc3545; text-decoration: line-through; }
+    .review-incorrect.user-answer::before { content: '✘ '; color: #dc3545; text-decoration: none; display: inline-block; margin-right: 3px; }
+    .review-incorrect.user-answer { font-style: italic; }
+    .review-explanation { margin-top: 10px; padding: 10px; background-color: #f8f9fa; border-left: 4px solid #6c757d; font-size: 0.9em; }
+    #highscores-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    #highscores-table th, #highscores-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+    #highscores-table th { background-color: #f2f2f2; font-weight: bold; }
+    #highscores-table tr:nth-child(even) { background-color: #f8f9fa; }
+    #highscores-table tr:hover { background-color: #e9ecef; }
+    #no-scores-message { text-align: center; padding: 20px; }
+    @media (max-width: 600px) {
+        .button-group { flex-direction: column; }
+        #quiz-info { flex-direction: column; align-items: center; gap: 10px; }
+        #highscores-table { font-size: 14px; }
+        #highscores-table th, #highscores-table td { padding: 8px; }
+        .review-incorrect.user-answer::before, .review-correct::before { display: none; }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // --- Configuration Store ---
+        const quizConfigurations = {
+            // Session Quizzes
+            '1': {
+                title: "Session 1: Learning the Motion and Getting Wet Quiz",
+                description: "Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test covered in Session 1.",
+                questionsUrl: 'session1_questions.csv',
+                quizId: 's1'
+            },
+            '2': {
+                title: "Session 2: Hitting the Water – Basic Stroke Sequencing Quiz",
+                description: "Test your knowledge on transferring erg skills, safe launching, basic boat control, and stroke sequencing from Session 2.",
+                questionsUrl: 'session2_questions.csv', // Assumes this file will be created
+                quizId: 's2'
+            },
+            '3': {
+                title: "Session 3: Learning How to Push Quiz",
+                description: "Test your knowledge on developing leg drive, power application, and basic navigation awareness covered in Session 3.",
+                questionsUrl: 'session3_questions.csv', // Assumes this file will be created
+                quizId: 's3'
+            },
+            '4': {
+                title: "Session 4: Navigation and Working Up River Quiz",
+                description: "Test your knowledge on skill integration, safe river navigation, group assessment, and independent sculling from Session 4.",
+                questionsUrl: 'session4_questions.csv', // Assumes this file will be created
+                quizId: 's4'
+            },
+            // Boathouse Quiz Integration
+            'bh': { // Use 'bh' as the identifier for the boathouse quiz
+                title: "AARC Boathouse Rules and Safety Quiz",
+                description: "Test your knowledge about boathouse rules, equipment care, and safety procedures. Each quiz consists of 10 randomly selected questions from our catalog.",
+                questionsUrl: 'boathouse_questions.csv', // Point to the new CSV
+                quizId: 'bh' // Use 'bh' for the high score key
+            }
+        };
+
+        // --- Dynamic Settings (will be set based on URL) ---
+        let currentConfig = null;
+        let questionsUrl = '';
+        let quizId = '';
+        let highScoreKey = '';
+        const numberOfQuestionsToSelect = 10;
+        const adminPassword = 'AARC_2025';
+
+        // --- DOM Elements ---
+        // (References remain the same as previous version)
+        const startScreen = document.getElementById('start-screen');
+        const quizScreen = document.getElementById('quiz-screen');
+        const resultsScreen = document.getElementById('results-screen');
+        const reviewScreen = document.getElementById('review-screen');
+        const highscoresScreen = document.getElementById('highscores-screen');
+        const startButton = document.getElementById('start-button');
+        const viewHighscoresButton = document.getElementById('view-highscores');
+        const restartButton = document.getElementById('restart-button');
+        const reviewButton = document.getElementById('review-button');
+        const highscoresButton = document.getElementById('highscores-button');
+        const backToResultsButton = document.getElementById('back-to-results');
+        const backButton = document.getElementById('back-button');
+        const clearScoresButton = document.getElementById('clear-scores');
+        const usernameInput = document.getElementById('username');
+        const questionCounter = document.getElementById('question-counter');
+        const timerElement = document.getElementById('timer');
+        const scoreDisplay = document.getElementById('score-display');
+        const questionText = document.getElementById('question-text');
+        const answersContainer = document.getElementById('answers-container');
+        const feedback = document.getElementById('feedback');
+        const feedbackText = document.getElementById('feedback-text');
+        const finalScore = document.getElementById('final-score');
+        const timeTaken = document.getElementById('time-taken');
+        const correctCount = document.getElementById('correct-count');
+        const highScoreMessage = document.getElementById('high-score-message');
+        const reviewContainer = document.getElementById('review-container');
+        const highscoresBody = document.getElementById('highscores-body');
+        const noScoresMessage = document.getElementById('no-scores-message');
+        const highscoresTable = document.getElementById('highscores-table');
+        const loadingMessage = document.getElementById('loading-message');
+        const errorMessage = document.getElementById('error-message');
+        const pageTitleElement = document.querySelector('title');
+        const quizTitleElement = document.getElementById('quiz-title');
+        const quizDescriptionElement = document.getElementById('quiz-description');
+        const startHeadingElement = document.getElementById('start-heading');
+        const highscoresTitleElement = document.getElementById('highscores-title');
+
+        // --- Quiz State ---
+        // (Variables remain the same: allQuestions, currentQuestions, etc.)
+        let allQuestions = [];
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let correctAnswers = 0;
+        let timerInterval;
+        let seconds = 0;
+        let selectedAnswers = [];
+        let quizComplete = false;
+        let returnToScreen = null;
+
+
+        // --- Initialization ---
+        initializeQuiz();
+
+        // --- Event Listeners ---
+        // (Listeners remain the same)
+        startButton.addEventListener('click', attemptStartQuiz);
+        viewHighscoresButton.addEventListener('click', () => { returnToScreen = 'start'; showHighScores(); });
+        restartButton.addEventListener('click', resetQuiz);
+        reviewButton.addEventListener('click', showReview);
+        highscoresButton.addEventListener('click', () => { returnToScreen = 'results'; showHighScores(); });
+        backToResultsButton.addEventListener('click', () => { hideAllScreens(); resultsScreen.classList.remove('hidden'); });
+        backButton.addEventListener('click', () => { hideAllScreens(); if (returnToScreen === 'results') { resultsScreen.classList.remove('hidden'); } else { startScreen.classList.remove('hidden'); } returnToScreen = null; });
+        clearScoresButton.addEventListener('click', clearHighScoresWithPassword);
+
+
+        // --- Core Functions ---
+
+        /** Reads URL parameter, sets config, updates UI text. */
+        function initializeQuiz() {
+            const urlParams = new URLSearchParams(window.location.search);
+            // Use 'quiz' as the parameter name now, to be more generic than 'session'
+            const quizParam = urlParams.get('quiz');
+
+            if (quizParam && quizConfigurations[quizParam]) {
+                currentConfig = quizConfigurations[quizParam];
+                questionsUrl = currentConfig.questionsUrl;
+                quizId = currentConfig.quizId; // e.g., 's1', 's2', 'bh'
+                highScoreKey = `aarc_quiz_${quizId}_highscores`;
+
+                // Update UI Text Dynamically
+                pageTitleElement.textContent = currentConfig.title;
+                quizTitleElement.textContent = currentConfig.title;
+                quizDescriptionElement.textContent = currentConfig.description;
+                // Adjust start heading based on whether it's a session or boathouse quiz
+                if (quizParam === 'bh') {
+                     startHeadingElement.textContent = `Ready to test your Boathouse knowledge?`;
+                     highscoresTitleElement.textContent = `Boathouse Quiz High Scores`;
+                } else if (!isNaN(parseInt(quizParam))) { // Check if it's a number (session)
+                     startHeadingElement.textContent = `Ready to test your Session ${quizParam} knowledge?`;
+                     highscoresTitleElement.textContent = `Session ${quizParam} High Scores`;
+                } else {
+                    startHeadingElement.textContent = `Ready to test your knowledge?`; // Fallback
+                    highscoresTitleElement.textContent = `Quiz High Scores`;
+                }
+
+
+                startButton.disabled = false;
+                viewHighscoresButton.disabled = false;
+                errorMessage.classList.add('hidden');
+                loadHighScores();
+
+            } else {
+                 // Updated error message for clarity
+                showInitializationError("Invalid or missing quiz specified in URL. Please use a valid link (e.g., ?quiz=1 or ?quiz=bh).");
+            }
+        }
+
+        /** Shows an error message on the start screen if initialization fails. */
+        function showInitializationError(message) {
+             quizTitleElement.textContent = "Quiz Configuration Error";
+             quizDescriptionElement.textContent = message;
+             errorMessage.textContent = message;
+             errorMessage.classList.remove('hidden');
+             startButton.disabled = true;
+             viewHighscoresButton.disabled = true;
+             console.error(message);
+        }
+
+        // --- loadQuestions Function ---
+        // (Remains the same - uses the dynamically set 'questionsUrl')
+        async function loadQuestions() {
+            if (!currentConfig) { showInitializationError("Quiz configuration is missing."); return false; }
+            loadingMessage.classList.remove('hidden'); errorMessage.classList.add('hidden');
+            startButton.disabled = true; viewHighscoresButton.disabled = true;
+            try {
+                const response = await fetch(questionsUrl);
+                if (!response.ok) { throw new Error(`HTTP error! Status: ${response.status} fetching ${questionsUrl}`); }
+                const csvData = await response.text();
+                allQuestions = parseCSV(csvData);
+                console.log(`Loaded ${allQuestions.length} questions from ${questionsUrl}.`);
+                if (allQuestions.length === 0) { throw new Error(`No questions parsed from ${questionsUrl}.`); }
+                loadingMessage.classList.add('hidden'); startButton.disabled = false; viewHighscoresButton.disabled = false;
+                return true;
+            } catch (error) {
+                console.error('Error loading/parsing questions:', error);
+                errorMessage.textContent = `Error loading questions: ${error.message}.`;
+                errorMessage.classList.remove('hidden'); loadingMessage.classList.add('hidden');
+                startButton.disabled = false; viewHighscoresButton.disabled = false; // Allow retry
+                return false;
+            }
+        }
+
+
+        // --- parseCSV Function ---
+        // (Remains the same)
+         function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+             if (lines.length < 2) return [];
+             const headers = lines[0].split(',').map(h => h.trim());
+             const questions = [];
+             for (let i = 1; i < lines.length; i++) {
+                 const values = lines[i].split(',');
+                 if (values.length === 1 && values[0].trim() === '') continue;
+                 if (values.length !== headers.length) { console.warn(`Skipping CSV line ${i + 1}: Expected ${headers.length}, found ${values.length}.`); continue; }
+                 const cleanedValues = values.map(v => v.trim().replace(/^"|"$/g, ''));
+                 try {
+                      const question = { id: cleanedValues[0], question: cleanedValues[1], answers: [ cleanedValues[2], cleanedValues[3], cleanedValues[4], cleanedValues[5] ], correctAnswer: parseInt(cleanedValues[6], 10), explanation: cleanedValues[7] };
+                      if (isNaN(question.correctAnswer) || question.correctAnswer < 0 || question.correctAnswer >= question.answers.length) { console.warn(`Invalid correctAnswer index (${cleanedValues[6]}) for Q ${question.id}. Defaulting to 0.`); question.correctAnswer = 0; }
+                      question.answers = question.answers.map(ans => ans || "");
+                      questions.push(question);
+                  } catch (parseError) { console.error(`Error processing line ${i + 1}:`, parseError); }
+             }
+             return questions;
+        }
+
+        // --- attemptStartQuiz Function ---
+        // (Remains the same)
+        async function attemptStartQuiz() {
+            if (!currentConfig) { alert("Quiz is not configured correctly."); return; }
+            if (!usernameInput.value.trim()) { alert('Please enter your name.'); return; }
+            if (allQuestions.length === 0) { if (!await loadQuestions()) return; }
+            if (allQuestions.length === 0) { errorMessage.textContent = "Cannot start: No questions available."; errorMessage.classList.remove('hidden'); return; }
+            startQuiz();
+        }
+
+        // --- startQuiz Function ---
+        // (Remains the same)
+        function startQuiz() {
+            currentQuestionIndex = 0; score = 0; correctAnswers = 0; seconds = 0; selectedAnswers = []; quizComplete = false;
+            scoreDisplay.textContent = `Score: ${score}`; errorMessage.classList.add('hidden');
+            currentQuestions = getRandomQuestions(numberOfQuestionsToSelect);
+            if (currentQuestions.length === 0) { endQuizWithError("Failed to select questions."); return; }
+            startTimer(); displayQuestion(); hideAllScreens(); quizScreen.classList.remove('hidden');
+        }
+
+        // --- getRandomQuestions Function ---
+        // (Remains the same)
+        function getRandomQuestions(num) { const available = [...allQuestions]; const selected = []; const numSel = Math.min(num, available.length); if (available.length === 0) return []; for (let i = 0; i < numSel; i++) { const randIdx = Math.floor(Math.random() * available.length); selected.push(available.splice(randIdx, 1)[0]); } return selected; }
+
+        // --- displayQuestion Function ---
+        // (Remains the same)
+        function displayQuestion() { if (!currentQuestions || currentQuestions.length === 0 || currentQuestionIndex >= currentQuestions.length) { endQuizWithError("Failed to display question."); return; } const q = currentQuestions[currentQuestionIndex]; questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuestions.length}`; questionText.textContent = q.question; answersContainer.innerHTML = ''; const order = q.answers.map((_, i) => i); for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; } order.forEach((origIdx, dispIdx) => { const btn = document.createElement('button'); btn.className = 'answer-button'; const ansTxt = q.answers[origIdx] !== undefined ? q.answers[origIdx] : `Opt ${dispIdx + 1}`; btn.textContent = `${String.fromCharCode(65 + dispIdx)}. ${ansTxt}`; btn.dataset.index = origIdx; btn.addEventListener('click', () => selectAnswer(origIdx)); answersContainer.appendChild(btn); }); feedback.classList.add('hidden'); feedback.classList.remove('correct-feedback', 'incorrect-feedback'); }
+
+        // --- selectAnswer Function ---
+        // (Remains the same)
+        function selectAnswer(selectedIndex) { if (feedback.classList.contains('hidden') === false || quizComplete) return; if (!currentQuestions || currentQuestionIndex >= currentQuestions.length) return; const q = currentQuestions[currentQuestionIndex]; const isCorrect = selectedIndex === q.correctAnswer; selectedAnswers.push({ questionIndex: currentQuestionIndex, selectedAnswer: selectedIndex, correct: isCorrect }); if (isCorrect) { score++; correctAnswers++; scoreDisplay.textContent = `Score: ${score}`; } const btns = answersContainer.querySelectorAll('.answer-button'); btns.forEach(b => { const bIdx = parseInt(b.dataset.index); if (bIdx === selectedIndex) b.classList.add(isCorrect ? 'correct' : 'incorrect'); if (bIdx === q.correctAnswer && !isCorrect) b.classList.add('correct'); b.disabled = true; }); feedbackText.textContent = q.explanation || (isCorrect ? "Correct!" : "Incorrect."); feedback.classList.remove('hidden'); feedback.classList.add(isCorrect ? 'correct-feedback' : 'incorrect-feedback'); setTimeout(() => { if (currentQuestionIndex < currentQuestions.length - 1) { currentQuestionIndex++; displayQuestion(); } else { endQuiz(); } }, 3000); }
+
+        // --- endQuiz Function ---
+        // (Remains the same - uses dynamic highScoreKey)
+        function endQuiz() { quizComplete = true; clearInterval(timerInterval); finalScore.textContent = score; timeTaken.textContent = formatTime(seconds); correctCount.textContent = `${correctAnswers}/${currentQuestions.length}`; const isHS = checkForHighScore(); if (isHS) { highScoreMessage.innerHTML = '<p class="success">Congrats! High score board!</p>'; saveHighScore(); } else { highScoreMessage.innerHTML = '<p>Nice try! Keep practicing.</p>'; } hideAllScreens(); resultsScreen.classList.remove('hidden'); }
+
+        // --- endQuizWithError Function ---
+        // (Remains the same)
+         function endQuizWithError(message) { quizComplete = true; clearInterval(timerInterval); hideAllScreens(); resultsScreen.classList.remove('hidden'); document.getElementById('quiz-summary').innerHTML = `<p style="color: red; font-weight: bold;">Quiz Error: ${message}</p>`; highScoreMessage.innerHTML = ''; }
+
+        // --- showReview Function ---
+        // (Remains the same)
+        function showReview() { reviewContainer.innerHTML = ''; if (!selectedAnswers || selectedAnswers.length !== currentQuestions.length) { reviewContainer.innerHTML = '<p>Review unavailable.</p>'; hideAllScreens(); reviewScreen.classList.remove('hidden'); return; } selectedAnswers.forEach(ans => { if (ans.questionIndex < 0 || ans.questionIndex >= currentQuestions.length) return; const q = currentQuestions[ans.questionIndex]; if (!q) return; const item = document.createElement('div'); item.className = 'review-item'; const qElem = document.createElement('div'); qElem.className = 'review-question'; qElem.textContent = `Q${ans.questionIndex + 1}: ${q.question || 'N/A'}`; const ansElem = document.createElement('div'); ansElem.className = 'review-answers'; const ansArr = Array.isArray(q.answers) ? q.answers : []; ansArr.forEach((txt, idx) => { const el = document.createElement('div'); let lbl = `${String.fromCharCode(65 + idx)}. ${txt || 'N/A'}`; let cls = ''; if (idx === q.correctAnswer) { cls = 'review-correct'; lbl += ' (Correct)'; } if (idx === ans.selectedAnswer) { if (!ans.correct) cls = 'review-incorrect user-answer'; lbl += ' (Yours)'; } el.className = cls; el.textContent = lbl; ansElem.appendChild(el); }); const explElem = document.createElement('div'); explElem.className = 'review-explanation'; explElem.textContent = `Explanation: ${q.explanation || 'N/A'}`; item.appendChild(qElem); item.appendChild(ansElem); item.appendChild(explElem); reviewContainer.appendChild(item); }); hideAllScreens(); reviewScreen.classList.remove('hidden'); }
+
+        // --- Timer Functions ---
+        // (Remain the same)
+        function startTimer() { clearInterval(timerInterval); seconds = 0; updateTimerDisplay(); timerInterval = setInterval(() => { if (!quizComplete) { seconds++; updateTimerDisplay(); } else { clearInterval(timerInterval); } }, 1000); }
+        function updateTimerDisplay() { timerElement.textContent = `Time: ${formatTime(seconds)}`; }
+        function formatTime(secs) { const mins = Math.floor(secs / 60); const s = secs % 60; return `${mins}:${s < 10 ? '0' : ''}${s}`; }
+
+        // --- High Score Functions ---
+        // (Remain the same - use dynamic highScoreKey)
+        function checkForHighScore() { if (!highScoreKey) return false; const hs = getHighScores(); if (hs.length < 10) return true; const low = hs[hs.length - 1]; return score > low.score || (score === low.score && seconds < low.time); }
+        function saveHighScore() { if (!highScoreKey) return; const hs = getHighScores(); const name = usernameInput.value.trim() || "Anon"; const newS = { name: name, score: score, time: seconds, date: new Date().toLocaleDateString() }; hs.push(newS); hs.sort((a, b) => b.score - a.score || a.time - b.time); const upd = hs.slice(0, 10); try { localStorage.setItem(highScoreKey, JSON.stringify(upd)); } catch (e) { console.error("Save HS failed:", e); } }
+        function getHighScores() { if (!highScoreKey) return []; try { const s = localStorage.getItem(highScoreKey); return s ? JSON.parse(s) : []; } catch (e) { console.error("Get HS failed:", e); return []; } }
+        function loadHighScores() { if (!highScoreKey) { noScoresMessage.classList.remove('hidden'); highscoresTable.classList.add('hidden'); return; } const hs = getHighScores(); highscoresBody.innerHTML = ''; if (hs.length === 0) { noScoresMessage.classList.remove('hidden'); highscoresTable.classList.add('hidden'); } else { noScoresMessage.classList.add('hidden'); highscoresTable.classList.remove('hidden'); hs.forEach((d, i) => { const r = highscoresBody.insertRow(); r.insertCell().textContent = i + 1; r.insertCell().textContent = d.name || "Anon"; r.insertCell().textContent = d.score; r.insertCell().textContent = formatTime(d.time); r.insertCell().textContent = d.date; }); } }
+        function showHighScores() { if (!highScoreKey) { alert("Quiz not loaded."); return; } loadHighScores(); hideAllScreens(); highscoresScreen.classList.remove('hidden'); }
+        function clearHighScoresWithPassword() { if (!highScoreKey || !quizId) { alert("Quiz not loaded."); return; } const pwd = prompt(`ADMIN: Pwd to clear scores for ${quizId}:`); if (pwd === null) return; if (pwd === adminPassword) { if (confirm(`SURE clear ALL scores for ${quizId}?`)) { localStorage.removeItem(highScoreKey); loadHighScores(); alert(`Scores for ${quizId} cleared.`); } } else { alert('Incorrect password.'); } }
+
+        // --- Utility Functions ---
+        // (Remain the same)
+        function hideAllScreens() { startScreen.classList.add('hidden'); quizScreen.classList.add('hidden'); resultsScreen.classList.add('hidden'); reviewScreen.classList.add('hidden'); highscoresScreen.classList.add('hidden'); }
+        function resetQuiz() { if (!currentConfig) { showInitializationError("Cannot reset: Config missing."); return; } clearInterval(timerInterval); quizComplete = false; scoreDisplay.textContent = `Score: 0`; feedback.classList.add('hidden'); answersContainer.innerHTML = ''; hideAllScreens(); startScreen.classList.remove('hidden'); startButton.disabled = false; viewHighscoresButton.disabled = false; errorMessage.classList.add('hidden'); }
+
+    });
+</script>
