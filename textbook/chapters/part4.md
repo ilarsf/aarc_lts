@@ -12,7 +12,7 @@ title: "Part 4: For the Coach - AARC Learn to Scull Textbook"
   </div>
 </div>
 
-{% include_relative ../src/textbook/Part4-ForTheCoach.md %}
+{% include textbook/Part4-ForTheCoach.md %}
 
 <div class="textbook-footer">
   <div class="textbook-navigation-compact">
