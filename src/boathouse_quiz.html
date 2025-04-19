@@ -931,9 +931,10 @@ title: "Boathouse Rules and Safety Quiz"
         const correctCount = document.getElementById('correct-count');
         const highScoreMessage = document.getElementById('high-score-message');
 
-        const reviewContainer = document.getElementById('review-container');
-        const highscoresBody = document.getElementById('highscores-body');
-        const noScoresMessage = document.getElementById('no-scores-message');
+    const reviewContainer = document.getElementById('review-container');
+    const highscoresBody = document.getElementById('highscores-body');
+    const noScoresMessage = document.getElementById('no-scores-message');
+    const highscoresTable = document.getElementById('highscores-table');
 
 
         // Quiz state variables (assuming defined as before)
@@ -1078,14 +1079,14 @@ title: "Boathouse Rules and Safety Quiz"
             }
 
             // 3. Render buttons in shuffled order
-            answerOrder.forEach(origIdx => {
-            const btn = document.createElement('button');
-            btn.className = 'answer-button';
-            btn.textContent = `${String.fromCharCode(65 + origIdx)}. ${question.answers[origIdx]}`;
-            // Store the original index so selectAnswer can compare to question.correctAnswer
-            btn.dataset.index = origIdx;
-            btn.addEventListener('click', () => selectAnswer(origIdx));
-            answersContainer.appendChild(btn);
+            answerOrder.forEach((origIdx, displayIndex) => {
+                const btn = document.createElement('button');
+                btn.className = 'answer-button';
+                btn.textContent = `${String.fromCharCode(65 + displayIndex)}. ${question.answers[origIdx]}`;
+                // Store the original index so selectAnswer can compare to question.correctAnswer
+                btn.dataset.index = origIdx;
+                btn.addEventListener('click', () => selectAnswer(origIdx));
+                answersContainer.appendChild(btn);
             });
 
             // Hide feedback
