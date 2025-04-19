@@ -36,14 +36,14 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ### Oar Care and Storage
 
-* **Oar Storage:** Return oars to their designated racks after use, with blades facing in the correct direction as indicated by the rack labels.
+* **Oar Storage:** Return oars to their designated racks after use, as indicated by the rack labels, with blades facing in the correct direction.
 
 * **Oar Cleaning:** After each use, rinse oars with fresh water if available, paying special attention to the collars and gates.
 
 * **Oar Handles**  
    Routinely disinfect oar handles after each row. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.
 
-* **Tape Removal:** If you've used tape on the handles for blisters, remove it completely after your row. Sticky residue makes handles uncomfortable for the next user.
+* **Tape Removal:** If you've used tape for blisters, remove residues completely after your row. Sticky residue makes handles uncomfortable for the next user.
 
 ## Considerate Use of Facilities
 

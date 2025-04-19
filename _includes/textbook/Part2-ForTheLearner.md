@@ -98,7 +98,6 @@ Sculling shells are narrow and require active balancing. It takes practice! Here
 * **Posture:** Sit tall, engaging your core muscles. Avoid slouching.
 * **Hand Heights:** Keep your hands moving at the same level throughout the stroke, especially during the recovery. Uneven hands are a primary cause of tipping. (Note: For crossover, the left hand is typically slightly above the right).
 * **Smooth Movements:** Avoid sudden, jerky motions with your body or oars. Control the slide speed on the recovery.
-* **Blade Control:** Keeping the blades square (perpendicular) and just above or lightly touching the water during pauses or slow movements provides stability. Feathered blades offer less support.
 * **Practice "Setting the Boat":** Your coach may have you practice sitting still at the finish position with blades flat on the water, making tiny adjustments with handle heights to feel the boat's balance point.
 
 Balance improves significantly with practice and as your stroke becomes more consistent. Be patient with yourself!

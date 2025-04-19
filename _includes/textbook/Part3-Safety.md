@@ -96,9 +96,8 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 #### Oar Care and Storage
 
 * **Oar Storage:** Return oars to designated racks, blades facing correctly.
-* **Oar Cleaning:** Rinse with fresh water if available, especially collars/gates.
 * **Oar Handles:** Routinely disinfect after each row for hygiene.
-* **Tape Removal:** Remove any tape used on handles completely after your row.
+* **Tape Removal:** Remove any tape residues on handles completely after your row.
 
 ### Considerate Use of Facilities
 
