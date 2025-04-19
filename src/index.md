@@ -12,6 +12,8 @@ This section contains technical guides and important policy documents for the An
   <ul>
     <li><a href="#technical-guides">Technical Guides</a></li>
     <li><a href="#policy-documents">Policy Documents</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+    <li><a href="#knowledge-check-quizzes">Knowledge Check Quizzes</a></li>
   </ul>
 </div>
 
@@ -94,6 +96,44 @@ These official AARC documents outline important policies and guidelines that all
     <h4>Interactive Quiz</h4>
     <p>Test your knowledge of boathouse rules and safety procedures with this interactive quiz.</p>
     <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html" class="cta-button">Take the Quiz</a></div>
+  </div>
+</div>
+
+## Knowledge Check Quizzes
+
+Test your understanding of the material covered in the Learn to Scull program with these interactive quizzes. Each quiz covers key concepts from the corresponding session or module.
+
+<div class="three-col-grid">
+  <div class="info-box note">
+    <h4>Session 1 Quiz</h4>
+    <p>Test your knowledge on basic rowing motion, equipment, handling, and the flip test.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="cta-button">Take Session 1 Quiz</a></div>
+  </div>
+  
+  <div class="info-box note">
+    <h4>Session 2 Quiz</h4>
+    <p>Test your knowledge on transferring erg skills, launching, boat control, and sequencing.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="cta-button">Take Session 2 Quiz</a></div>
+  </div>
+  
+  <div class="info-box note">
+    <h4>Session 3 Quiz</h4>
+    <p>Test your knowledge on developing leg drive, power application, and navigation.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3" class="cta-button">Take Session 3 Quiz</a></div>
+  </div>
+</div>
+
+<div class="two-col-grid">
+  <div class="info-box note">
+    <h4>Session 4 Quiz</h4>
+    <p>Test your knowledge on skill integration, river navigation, assessment, and independent sculling.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4" class="cta-button">Take Session 4 Quiz</a></div>
+  </div>
+  
+  <div class="info-box warning">
+    <h4>Boathouse Rules Quiz</h4>
+    <p>Test your knowledge on boathouse rules, equipment care, and safety procedures.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="cta-button">Take Boathouse Quiz</a></div>
   </div>
 </div>
 
