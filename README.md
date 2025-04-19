@@ -20,6 +20,7 @@ Content is stored in markdown files organized by audience:
 - `/course_materials/learner/` - Participant-facing materials
 - `/course_materials/communication/` - Templates for program communications
 - `/src/` - Technical guides and reference materials
+- `/src/GoogleDriveExport/` - Detailed materials organized by content category (recently added)
 
 ## Site Features
 
@@ -74,6 +75,9 @@ The site uses:
 3. Expand video resources with embedded technique demonstrations
 4. Add printable quick-reference cards for key concepts
 5. Consider implementing a search feature for larger content sections
+6. Complete integration of GoogleDriveExport content with course_materials for better alignment
+7. Update links in GoogleDriveExport materials to use proper web paths rather than relative Markdown links
+8. Consider creating Google Drive compatible versions of materials for sharing in that environment
 
 ## Textbook Materials
 

@@ -29,18 +29,19 @@ title: Resources - AARC Learn to Scull Program
   <div>
     <h4>Flip Test Demonstrations</h4>
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p><strong>Johanna Flip Test Demo</strong> - Standard flip test procedure</p>
+    <p><strong>Lars Flip Test Demo</strong> - Standard flip test procedure</p>
   </div>
-  
+
   <div>
     <h4>Alternative Flip Technique</h4>
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p><strong>Lars Flip Test Demo</strong> - Alternative technique for re-entry</p>
+    <p><strong>Johanna Flip Test Demo</strong> - Alternative technique for re-entry</p>
   </div>
+
 </div>
 
 <div class="two-col-grid">
