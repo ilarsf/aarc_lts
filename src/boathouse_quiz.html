@@ -1005,7 +1005,7 @@ title: "Boathouse Rules and Safety Quiz"
             scoreDisplay.textContent = `Score: ${score}`; // Reset score display
 
             // Get random questions
-            currentQuestions = getRandomQuestions(10);
+            currentQuestions = getRandomQuestions(20);
 
             // Start timer
             startTimer();
@@ -1118,7 +1118,7 @@ title: "Boathouse Rules and Safety Quiz"
 
             // Update score
             if (isCorrect) {
-                score += 10; // Award 10 points for correct answer
+                score += 1; // Award 1 point for correct answer
                 correctAnswers++;
                 scoreDisplay.textContent = `Score: ${score}`;
             }
