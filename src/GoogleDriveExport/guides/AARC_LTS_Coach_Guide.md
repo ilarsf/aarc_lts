@@ -76,14 +76,14 @@ The program is appropriate for adults with varied fitness levels and water comfo
 | 4 | Navigation and Working Up River | Skill integration, navigating bridges, longer continuous rowing |
 
 For detailed daily plans, see the individual session plan documents:
-- [Session 1 Plan: Learning the Motion and Getting Wet](Session_1_Plan.md)
-- [Session 2 Plan: Hitting the Water - Basic Stroke Sequencing](Session_2_Plan.md)
-- [Session 3 Plan: Learning How to Push](Session_3_Plan.md)
-- [Session 4 Plan: Navigation and Working Up River](Session_4_Plan.md)
+- [Session 1 Plan: Learning the Motion and Getting Wet](../session_plans/Session_1_Plan.md)
+- [Session 2 Plan: Hitting the Water - Basic Stroke Sequencing](../session_plans/Session_2_Plan.md)
+- [Session 3 Plan: Learning How to Push](../session_plans/Session_3_Plan.md)
+- [Session 4 Plan: Navigation and Working Up River](../session_plans/Session_4_Plan.md)
 
 ### Core Technical Frameworks
 
-Throughout all sessions, coaches should consistently reinforce these essential technical frameworks. For full details, see [Kraft's Keys and Black Bear Sequence](Kraft_Keys_and_Black_Bear_Sequence.md).
+Throughout all sessions, coaches should consistently reinforce these essential technical frameworks. For full details, see [Kraft's Keys and Black Bear Sequence](../technical/Kraft_Keys_and_Black_Bear_Sequence.md).
 
 **Kraft's Keys:**
 1. **K**: Keep shoulders relaxed and down
@@ -119,13 +119,13 @@ Throughout all sessions, coaches should consistently reinforce these essential t
 - Weather tracking tools
 
 **Club Policy Documents:**
-- [AARC Safety Rules](AARC_Safety_Rules.pdf)
-- [AARC Code of Conduct](AARC_Code_of_Conduct.pdf)
-- [SafeSport Policy](SafeSport_Policy.pdf)
-- [Sculling Self-Rescue Guide](Sculling_Self_Rescue_Guide.md)
-- [Flip Test Instructions](AARC_Flip_Test_Instructions.md)
+- [AARC Safety Rules](../safety/AARC_Safety_Rules.pdf)
+- [AARC Code of Conduct](../safety/AARC_Code_of_Conduct_2025-02-26.pdf)
+- [SafeSport Policy](../safety/AARCSafeSport_2015-01-18.pdf)
+- [Sculling Self-Rescue Guide](../technical/Sculling_Self_Rescue_Guide.md)
+- [Flip Test Instructions](../technical/AARC_Flip_Test_Instructions_20240803.md)
 
-For a comprehensive pre-session equipment and setup checklist, see [Daily Coach Checklist](Daily_Coach_Checklist.md).
+For a comprehensive pre-session equipment and setup checklist, see [Daily Coach Checklist](../checklists/Daily_Coach_Checklist.md).
 
 ---
 
@@ -139,7 +139,7 @@ For a comprehensive pre-session equipment and setup checklist, see [Daily Coach 
 - Successfully complete supervised flip test
 - Build comfort with water and boat interaction
 
-See the complete [Session 1 Plan](Session_1_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
+See the complete [Session 1 Plan](../session_plans/Session_1_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
 
 ### Session 2: Hitting the Water - Basic Stroke Sequencing
 
@@ -149,7 +149,7 @@ See the complete [Session 1 Plan](Session_1_Plan.md) for detailed timeline, dril
 - Develop basic boat control and balance
 - Master safe launching and landing procedures
 
-See the complete [Session 2 Plan](Session_2_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
+See the complete [Session 2 Plan](../session_plans/Session_2_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
 
 ### Session 3: Learning How to Push
 
@@ -159,7 +159,7 @@ See the complete [Session 2 Plan](Session_2_Plan.md) for detailed timeline, dril
 - Master boat control through turns and varying stroke pressure
 - Build confidence through continuous rowing
 
-See the complete [Session 3 Plan](Session_3_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
+See the complete [Session 3 Plan](../session_plans/Session_3_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
 
 ### Session 4: Navigation and Working Up River
 
@@ -169,7 +169,7 @@ See the complete [Session 3 Plan](Session_3_Plan.md) for detailed timeline, dril
 - Achieve independent sculling capability
 - Complete rower assessment and discuss next steps
 
-See the complete [Session 4 Plan](Session_4_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
+See the complete [Session 4 Plan](../session_plans/Session_4_Plan.md) for detailed timeline, drills, coaching cues, and common error corrections.
 
 ---
 
@@ -184,7 +184,7 @@ See the complete [Session 4 Plan](Session_4_Plan.md) for detailed timeline, dril
 - Review weather forecast and river conditions
 - Prepare demonstration equipment on land
 
-For a detailed pre-session checklist, see [Daily Coach Checklist](Daily_Coach_Checklist.md).
+For a detailed pre-session checklist, see [Daily Coach Checklist](../checklists/Daily_Coach_Checklist.md).
 
 #### Session Execution
 - Begin with land-based review (10-15 minutes)
@@ -204,19 +204,19 @@ For a detailed pre-session checklist, see [Daily Coach Checklist](Daily_Coach_Ch
 
 Effective coach communication is critical to participant learning and engagement. 
 
-For detailed guidance on verbal communication, visual teaching methods, on-water communication, and feedback approaches, see [Communication Techniques](Communication_Techniques.md).
+For detailed guidance on verbal communication, visual teaching methods, on-water communication, and feedback approaches, see [Communication Techniques](../program_management/Communication_Techniques.md).
 
 ### Group Management Strategies
 
 Managing a group of novice scullers requires thoughtful planning and flexible responses to ensure safety and learning for all participants.
 
-For detailed guidance on coach positioning, maintaining group cohesion, pairing/grouping strategies, and pacing considerations, see [Group Management Strategies](Group_Management_Strategies.md).
+For detailed guidance on coach positioning, maintaining group cohesion, pairing/grouping strategies, and pacing considerations, see [Group Management Strategies](../program_management/Group_Management_Strategies.md).
 
 ### Managing Individual Needs
 
 Every learn-to-scull group includes participants with varying learning styles, comfort levels, and physical capabilities.
 
-For detailed guidance on addressing varying skill levels, managing fear/anxiety, accommodating physical limitations, and handling flip test challenges, see the [Managing Individual Needs](Managing_Individual_Needs.md) document.
+For detailed guidance on addressing varying skill levels, managing fear/anxiety, accommodating physical limitations, and handling flip test challenges, see the [Managing Individual Needs](../program_management/Managing_Individual_Needs.md) document.
 
 ---
 
@@ -228,31 +228,31 @@ Safety is paramount in all aspects of rowing instruction and must be integrated 
 
 Comprehensive equipment checks before each session are essential for preventing safety issues on the water.
 
-For detailed checklists covering boat safety checks, oar checks, coach equipment, and documentation, see [Equipment Safety Checklist](Equipment_Safety_Checklist.md).
+For detailed checklists covering boat safety checks, oar checks, coach equipment, and documentation, see [Equipment Safety Checklist](../checklists/Equipment_Safety_Checklist.md).
 
 ### Weather Assessment
 
 Weather and water conditions directly impact safety and must be carefully evaluated before and during each session.
 
-For detailed guidance on pre-session evaluation, during-session monitoring, and weather-related protocols, see [Weather Assessment Guide](Weather_Assessment_Guide.md).
+For detailed guidance on pre-session evaluation, during-session monitoring, and weather-related protocols, see [Weather Assessment Guide](../safety/Weather_Assessment_Guide.md).
 
 ### Capsize Recovery Instruction
 
 The flip test is a critical safety skill that every participant must practice and (ideally) master.
 
-For detailed step-by-step instructions on teaching capsize recovery, addressing common challenges, and post-capsize safety, see [Flip Test Instruction Guide](Flip_Test_Instruction_Guide.md).
+For detailed step-by-step instructions on teaching capsize recovery, addressing common challenges, and post-capsize safety, see [Flip Test Instruction Guide](../safety/Flip_Test_Instruction_Guide.md).
 
 ### River Traffic Patterns
 
 Understanding and following established traffic patterns is essential for safe navigation on shared waterways.
 
-For detailed information on navigation rules, bridge passage protocols, local hazards, and communication during navigation, see [River Traffic Patterns](River_Traffic_Patterns.md).
+For detailed information on navigation rules, bridge passage protocols, local hazards, and communication during navigation, see [River Traffic Patterns](../safety/River_Traffic_Patterns.md).
 
 ### Emergency Procedures
 
 Being prepared for various emergency scenarios ensures quick and appropriate responses when needed.
 
-For detailed protocols covering on-water emergencies, communication protocols, and shore-based emergency resources, see [Emergency Procedures](Emergency_Procedures.md).
+For detailed protocols covering on-water emergencies, communication protocols, and shore-based emergency resources, see [Emergency Procedures](../safety/Emergency_Procedures.md).
 
 ---
 
@@ -262,13 +262,13 @@ For detailed protocols covering on-water emergencies, communication protocols, a
 
 Novice scullers typically experience similar technical challenges that can be addressed with targeted corrections and specific coaching cues.
 
-For a comprehensive table of common issues, probable causes, correction approaches, and effective coaching cues, see [Common Technical Issues and Corrections](Common_Technical_Issues_and_Corrections.md).
+For a comprehensive table of common issues, probable causes, correction approaches, and effective coaching cues, see [Common Technical Issues and Corrections](../technical/Common_Technical_Issues_and_Corrections.md).
 
 ### Key Drills Repertoire
 
 A systematic progression of drills helps scullers develop proper technique through isolated skill development and gradual integration.
 
-For detailed explanations of all recommended drills organized by stroke phase and skill focus, see [Key Drills Repertoire](Key_Drills_Repertoire.md).
+For detailed explanations of all recommended drills organized by stroke phase and skill focus, see [Key Drills Repertoire](../technical/Key_Drills_Repertoire.md).
 
 ### Advancement Indicators
 
@@ -333,19 +333,19 @@ Watch for these signs that participants are ready to advance:
 
 At the conclusion of the program, each participant should be evaluated on their readiness for independent sculling and potential next steps.
 
-For the complete assessment tool, see [Participant Assessment Checklist](Participant_Assessment_Checklist.md).
+For the complete assessment tool, see [Participant Assessment Checklist](../checklists/Participant_Assessment_Checklist.md).
 
 ### Next Steps for Graduates
 
 Clear information on continued rowing opportunities helps graduates transition smoothly into regular club activities.
 
-For comprehensive information on membership options, supervised rowing opportunities, independent sculling guidelines, further coaching options, and volunteer opportunities, see [Post Program Pathways](Post_Program_Pathways.md).
+For comprehensive information on membership options, supervised rowing opportunities, independent sculling guidelines, further coaching options, and volunteer opportunities, see [Post Program Pathways](../program_management/Post_Program_Pathways.md).
 
 ### Advanced Skills Development
 
 For participants interested in continuing to develop their sculling skills, it's helpful to outline the progression beyond basic competence.
 
-For information on technical refinement opportunities, advanced maneuvers, competitive options, and cross-training recommendations, see the Advanced Skills section in the [Post Program Pathways](Post_Program_Pathways.md) document.
+For information on technical refinement opportunities, advanced maneuvers, competitive options, and cross-training recommendations, see the Advanced Skills section in the [Post Program Pathways](../program_management/Post_Program_Pathways.md) document.
 
 ---
 
@@ -353,22 +353,22 @@ For information on technical refinement opportunities, advanced maneuvers, compe
 
 ### Glossary of Rowing Terms
 
-For a comprehensive alphabetical listing of rowing terminology covering boat parts, oar components, technique terms, and commands, see [Glossary of Rowing Terms](Glossary_of_Rowing_Terms.md).
+For a comprehensive alphabetical listing of rowing terminology covering boat parts, oar components, technique terms, and commands, see [Glossary of Rowing Terms](../technical/Glossary_of_Rowing_Terms.md).
 
 ### Equipment Maintenance
 
 Proper care of rowing equipment ensures longevity, performance, and safety for all club members.
 
-For detailed guidance on post-row cleaning, reporting issues, and performing basic maintenance, see [Equipment Maintenance Guide](Equipment_Maintenance_Guide.md).
+For detailed guidance on post-row cleaning, reporting issues, and performing basic maintenance, see [Equipment Maintenance Guide](../equipment/Equipment_Maintenance_Guide.md).
 
 ### Hand Care for Rowers
 
 Hand blisters are a common challenge for new rowers that can be effectively managed with proper prevention and treatment.
 
-For comprehensive information on blister prevention, treatment, and rowing with hand injuries, see [Hand Care for Rowers](Hand_Care_for_Rowers.md).
+For comprehensive information on blister prevention, treatment, and rowing with hand injuries, see [Hand Care for Rowers](../equipment/Hand_Care_for_Rowers.md).
 
 ### Local Water Knowledge
 
 Understanding the specific characteristics of your rowing venue is essential for safe and effective navigation.
 
-For detailed information on local river geography, traffic patterns, bridge navigation, hazards, and weather effects, see [Local Water Knowledge](Local_Water_Knowledge.md).
+For detailed information on local river geography, traffic patterns, bridge navigation, hazards, and weather effects, see [Local Water Knowledge](../safety/Local_Water_Knowledge.md).

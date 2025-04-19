@@ -32,7 +32,7 @@ By the conclusion of the Learn to Scull program, participants will be assessed o
    - Competitive interest
    - Skill development
 
-The [Participant Assessment Checklist](Participant_Assessment_Checklist.md) provides a formal tool for this evaluation.
+The [Participant Assessment Checklist](../checklists/Participant_Assessment_Checklist.md) provides a formal tool for this evaluation.
 
 ### Graduation Categories
 

@@ -556,10 +556,10 @@ Insert distinct pauses (1-2 seconds) at key points during the recovery:
 ## References and Resources
 
 - For detailed session plans incorporating these drills, see:
-  - [Session 1 Plan](Session_1_Plan.md)
-  - [Session 2 Plan](Session_2_Plan.md)
-  - [Session 3 Plan](Session_3_Plan.md)
-  - [Session 4 Plan](Session_4_Plan.md)
+  - [Session 1 Plan](../session_plans/Session_1_Plan.md)
+  - [Session 2 Plan](../session_plans/Session_2_Plan.md)
+  - [Session 3 Plan](../session_plans/Session_3_Plan.md)
+  - [Session 4 Plan](../session_plans/Session_4_Plan.md)
   
 - For technical issues these drills address, see:
   - [Common Technical Issues and Corrections](Common_Technical_Issues_and_Corrections.md)
