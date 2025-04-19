@@ -19,7 +19,7 @@ This section contains technical guides and important policy documents for the An
 
 These guides provide detailed instructions on essential techniques and safety procedures for sculling.
 
-<div class="three-col-grid">
+<div class="four-col-grid">
   <div class="info-box note">
     <h4>Self-Rescue Guide</h4>
     <p>Comprehensive instructions for recovering from a capsize and re-entering your shell safely.</p>
@@ -36,6 +36,12 @@ These guides provide detailed instructions on essential techniques and safety pr
     <h4>Hand Care Guide</h4>
     <p>Prevention and treatment of rowing blisters, with tips for maintaining healthy hands.</p>
     <div class="mt-auto"><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a></div>
+  </div>
+  
+  <div class="info-box warning">
+    <h4>Boathouse Rules</h4>
+    <p>Essential guidelines for equipment care and boathouse etiquette for all club members.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html" class="cta-button">View Guide</a></div>
   </div>
 </div>
 
