@@ -216,16 +216,16 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
 
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="video-item">
-  <p><strong>Left:</strong> Johanna Flip Test Demo - Shows the standard flip test procedure</p>
-  <p><strong>Right:</strong> Lars Flip Test Demo - Alternative technique for re-entry</p>
+  <p><strong>Left:</strong> Lars Flip Test Demo - Shows the standard flip test procedure</p>
+  <p><strong>Right:</strong> Johanna Flip Test Demo - Alternative technique for re-entry</p>
 </div>
 
 ## Safety Practices
