@@ -219,8 +219,6 @@
       <li><input type="checkbox"> Observe ability to integrate steering with rowing</li>
       <li><input type="checkbox"> Discuss pathways after program completion</li>
     </ul>
-
-    <h3 style="text-decoration: line-through;">Sessions 5-6: Not used in current program format</h3>
-    <p><em>NOTE: The program now uses a 4-session format (3 hours each) rather than the previous 6-session format. Sessions 3 and 4 cover the integration and assessment components previously scheduled for Sessions 5-6.</em></p>
+    
   </div>
 </div>

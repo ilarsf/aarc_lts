@@ -20,7 +20,6 @@ Content is stored in markdown files organized by audience:
 - `/course_materials/learner/` - Participant-facing materials
 - `/course_materials/communication/` - Templates for program communications
 - `/src/` - Technical guides and reference materials
-- `/src/GoogleDriveExport/` - Detailed materials organized by content category (recently added)
 
 ## Site Features
 
