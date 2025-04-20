@@ -76,19 +76,30 @@ Here's a breakdown based on the descriptions in the Learner's Guide and Coach's 
 
 ⚠️ **Common Mistake:** Rushing the recovery, especially bending the knees before the arms are away and the body is pivoted forward, is a very common beginner error. Focus on the "Arms -> Body -> Legs" sequence.
 
-### Getting In and Out of the Boat Safely
+### Getting In & Out of the Boat Safely
 
-Handling the boat at the dock requires care and balance. You'll practice this extensively in Session 1.
+#### 1. Dock‑side Preparation
+- **Hand on dock:** Keep one hand on the dock or gunwale at all times during prep.  
+- **Install dock‑side oar first:** Slide the oar into the dock‑side oarlock and close the gate fully.  
+- **Fit outside (river‑side) oar:** Insert it, close the gate, and keep the blade alongside the shell—do **not** extend until the coach calls “Extend.”  
+- **Weight placement:** Bear weight only on the half of the boat nearest the dock.  
+- **Snug the shell:** Pull both oar handles slightly inboard so the boat sits stable against the dock.  
 
-* **Preparation:** Place oars in the oarlocks first before bringing the boat to the dock.
-* **Listen:** Pay attention to dock commands from your coach (e.g., "Hands on").
-* **One Hand Rule:** Always try to keep one hand on the dock and one hand on the boat handle/gunwale when stepping in or out.
-* **Weight Low & Centered:** Keep your weight low and centered over the boat as you step in. Avoid standing straight up quickly.
-* **Stepping In:** Step onto the boat's center line (near the foot stretchers), not off to one side. Lower yourself onto the seat carefully.
-* **Getting Out:** Reverse the process. Bring one hand to the dock, keep weight low, and step out onto the dock carefully.
-* **Go Slow:** Rushing leads to instability. Remember the coach's cue: "Slow is smooth, smooth is fast".
+#### 2. Boarding
+- **Coach cues:** Listen for commands such as “Hands on” and “Extend the outside oar.”  
+- **One‑hand rule:** Maintain one hand on the dock or gunwale; the other hand controls both oar handles, blades feathered for balance.  
+- **Low center of gravity:** Bend knees, stay low, and avoid straightening abruptly.  
+- **Centerline step:** Place your foot on the centerline near the foot stretcher, then lower smoothly onto the seat.  
+- **Smooth pace:** “Slow is smooth, smooth is fast”—move deliberately throughout.  
 
-*At AARC, we launch and land downstream. Your coach will demonstrate the specific technique for safely managing the boat in the current during launch and landing.*
+#### 3. Exiting
+- **Reverse sequence:** Hand to dock → stay low → step onto dock.  
+- **Pull in outside oar:** With both feet on the dock and the boat stable, draw the outside (river‑side) oar inboard.  
+- **Remove oars:** Lift each oar out of its oarlock — outside first, then dock‑side.  
+- **Deliberate motions:** Keep movements controlled to maintain balance.  
+
+*At AARC we launch and land downstream. Your coach will demonstrate the specific technique for managing current during launch and landing.*
+
 
 ![Placeholder: Photos showing steps for getting in and out of the boat at the dock](placeholder)
 

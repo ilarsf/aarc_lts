@@ -14,90 +14,90 @@ Understanding the language of rowing will help you communicate effectively with 
 * **Bow Ball:** Safety ball attached to the bow of the boat.
 * **Cockpit:** The area where the rower sits.
 * **Deck:** The top surface at the bow and stern.
-* **Foot Stretcher:** Adjustable platform where the rower places their feet[cite: 616].
-* **Gunwales (or Gunnels):** The top edges of the boat's sides[cite: 616].
+* **Foot Stretcher:** Adjustable platform where the rower places their feet.
+* **Gunwales (or Gunnels):** The top edges of the boat's sides.
 * **Heel Restraints:** Straps that limit how far the heels can rise (safety feature).
-* **Hull:** The main body of the boat[cite: 616].
+* **Hull:** The main body of the boat.
 * **Keel:** The center line of the boat's bottom.
-* **Oarlock (or Gate):** The swiveling device (often U-shaped) on the rigger that holds the oar in place and allows it to pivot[cite: 616].
+* **Oarlock (or Gate):** The swiveling device (often U-shaped) on the rigger that holds the oar in place and allows it to pivot.
 * **Pitch:** The angle of the oarlock relative to the boat.
-* **Port:** Left side of the boat when facing the bow (rower's right side when seated)[cite: 616].
-* **Rigger:** Metal or carbon framework extending from the gunwale to hold the oarlock[cite: 616].
-* **Seat:** The sliding seat the rower sits on[cite: 616].
-* **Shell:** Another term for a rowing boat[cite: 616].
+* **Port:** Left side of the boat when facing the bow (rower's right side when seated).
+* **Rigger:** Metal or carbon framework extending from the gunwale to hold the oarlock.
+* **Seat:** The sliding seat the rower sits on.
+* **Shell:** Another term for a rowing boat.
 * **Single Scull (1x):** One-person sculling boat with two oars.
 * **Double Scull (2x):** Two-person sculling boat with each rower using two oars.
 * **Quad Scull (4x):** Four-person sculling boat with each rower using two oars.
-* **Starboard:** Right side of the boat when facing the bow (rower's left side when seated)[cite: 616].
-* **Stern:** The rear end of the boat[cite: 616].
-* **Tracks (or Slides):** Rails on which the seat moves[cite: 616].
+* **Starboard:** Right side of the boat when facing the bow (rower's left side when seated).
+* **Stern:** The rear end of the boat.
+* **Tracks (or Slides):** Rails on which the seat moves.
 * **Washboard:** The decking area at bow and stern.
 
 ### Oar Components
 
-* **Blade (or Spoon):** The flat, wide part of the oar that enters the water[cite: 57].
-* **Collar (or Button):** The plastic fitting on the oar shaft that stops the oar from slipping through the oarlock[cite: 57].
-* **Handle:** The part of the oar the rower holds (usually rubber grip)[cite: 57].
+* **Blade (or Spoon):** The flat, wide part of the oar that enters the water.
+* **Collar (or Button):** The plastic fitting on the oar shaft that stops the oar from slipping through the oarlock.
+* **Handle:** The part of the oar the rower holds (usually rubber grip).
 * **Inboard:** The distance from the button/collar to the handle end.
 * **Outboard:** The distance from the button/collar to the blade tip.
-* **Shaft:** The long part of the oar between the handle and blade[cite: 57].
-* **Sleeve:** The plastic fitting on the oar shaft that sits and rotates in the oarlock[cite: 57].
+* **Shaft:** The long part of the oar between the handle and blade.
+* **Sleeve:** The plastic fitting on the oar shaft that sits and rotates in the oarlock.
 
 ### Rowing Technique Terms
 
 * **Body Angle:** The forward lean from the hips at the catch.
-* **Catch:** The moment when the blade enters the water at the beginning of the drive phase[cite: 57].
-* **Crab:** Losing control of an oar, causing the blade to get stuck in the water and the handle to potentially hit the rower[cite: 57].
+* **Catch:** The moment when the blade enters the water at the beginning of the drive phase.
+* **Crab:** Losing control of an oar, causing the blade to get stuck in the water and the handle to potentially hit the rower.
 * **Digging:** When the blade goes too deep in the water during the drive.
-* **Drive:** The power phase of the stroke when the blade is in the water, propelling the boat[cite: 57].
-* **Feathering:** Rotating the blade to be parallel to the water surface during the recovery[cite: 57].
-* **Finish (or Release):** The end of the drive phase when the blade is removed cleanly from the water[cite: 57].
+* **Drive:** The power phase of the stroke when the blade is in the water, propelling the boat.
+* **Feathering:** Rotating the blade to be parallel to the water surface during the recovery.
+* **Finish (or Release):** The end of the drive phase when the blade is removed cleanly from the water.
 * **Layback:** The backward lean of the body (from the hips) at the finish position.
-* **Power 10:** A call for 10 strokes at increased power or focus[cite: 57].
-* **Rating (or Stroke Rate):** The number of strokes taken per minute (spm)[cite: 57].
-* **Recovery:** The phase of the stroke when the rower moves from the finish back towards the stern to prepare for the next catch; blades are out of the water[cite: 57].
-* **Run:** The distance the boat glides between strokes[cite: 57].
+* **Power 10:** A call for 10 strokes at increased power or focus.
+* **Rating (or Stroke Rate):** The number of strokes taken per minute (spm).
+* **Recovery:** The phase of the stroke when the rower moves from the finish back towards the stern to prepare for the next catch; blades are out of the water.
+* **Run:** The distance the boat glides between strokes.
 * **Rushing:** Moving too quickly on the recovery/slide, often disrupting boat balance and run.
-* **Set (or Balance):** Keeping the boat level side-to-side[cite: 57].
+* **Set (or Balance):** Keeping the boat level side-to-side.
 * **Skying:** Raising the blade too high above the water just before the catch.
-* **Squaring:** Rotating the blade to be perpendicular to the water surface just before the catch[cite: 57].
+* **Squaring:** Rotating the blade to be perpendicular to the water surface just before the catch.
 * **Washing Out:** When the blade comes out of the water too early during the drive, losing power.
 
 ### Commands and Navigation
 
-* **Back (or Back it Down):** Command to row in reverse by pushing the handles away[cite: 57].
+* **Back (or Back it Down):** Command to row in reverse by pushing the handles away.
 * **Buoy:** A floating marker often used to indicate traffic patterns or race courses.
 * **Check it down:** See "Hold Water".
 * **Firm:** Command for medium rowing pressure.
 * **Full Pressure:** Command for maximum rowing effort.
-* **Hands On:** Command to take hold of the boat (usually on the gunwales) in preparation for lifting or moving[cite: 57].
-* **Hold Water:** Command to stop the boat quickly by squaring the blades vertically in the water[cite: 57].
-* **Let It Run:** Command to stop rowing and allow the boat to glide[cite: 57].
+* **Hands On:** Command to take hold of the boat (usually on the gunwales) in preparation for lifting or moving.
+* **Hold Water:** Command to stop the boat quickly by squaring the blades vertically in the water.
+* **Let It Run:** Command to stop rowing and allow the boat to glide.
 * **Light on the Feet:** Command for easy pressure rowing.
-* **Ready All, Row:** The standard command sequence to begin rowing together[cite: 57].
+* **Ready All, Row:** The standard command sequence to begin rowing together.
 * **Regatta:** A rowing race event.
-* **Traffic Pattern:** The established "rules of the road" for navigating the waterway (e.g., stay starboard/right)[cite: 57, 649].
-* **Way Enough (or Weigh Enough):** The command to stop rowing[cite: 57].
+* **Traffic Pattern:** The established "rules of the road" for navigating the waterway (e.g., stay starboard/right).
+* **Way Enough (or Weigh Enough):** The command to stop rowing.
 
 ---
 
 ## Appendix B: AARC Policies (Summaries & Links)
 
-All participants and coaches must abide by AARC policies[cite: 603, 6]. Familiarity with these is essential for maintaining a safe and respectful environment[cite: 3]. Full documents are linked for complete details.
+All participants and coaches must abide by AARC policies. Full documents are linked for complete details.
 
 ### AARC Safety Rules
-* **Summary:** Governs on-water conduct[cite: 604], weather cancellations (30-min lightning rule)[cite: 625], traffic patterns (stay starboard)[cite: 649], safety equipment (bow balls, PFDs[cite: 648], lights for dark rowing [cite: 641]), waivers[cite: 608], and incident reporting[cite: 612]. Common sense prevails[cite: 604]. Requires logbook use [cite: 669] and proper equipment handling[cite: 683]. Report damage immediately[cite: 678, 680]. Launches are safety vehicles[cite: 705].
+* **Summary:** Governs on-water conduct.
 * **Full Policy:** [AARC Safety Rules (PDF)](/aarc_lts/src/AARC_Safety_Rules.pdf)
 
 ### AARC Code of Conduct
-* **Summary:** Emphasizes Safety, Respect, and Kindness[cite: 2]. Covers interactions between members/coaches[cite: 12], equipment care[cite: 14], prohibits unsolicited coaching of teammates[cite: 20], sets expectations for responsible behavior (no impairment[cite: 24], reporting misconduct [cite: 26]). Outlines Conduct Review Board (CRB) process[cite: 28, 30].
+* **Summary:** Emphasizes Safety, Respect, and Kindness.
 * **Full Policy:** [AARC Code of Conduct (PDF)](/aarc_lts/src/AARC_Code_of_Conduct_2025-02-26.pdf)
 
 ### AARC SafeSport Policy
-* **Summary:** Commitment to prevent/address bullying, harassment, hazing, and emotional/physical/sexual misconduct[cite: 57, 60, 181]. Defines misconduct types, establishes boundaries (e.g., regarding one-on-one interactions[cite: 268], electronic communication[cite: 293], physical contact [cite: 279]). Outlines reporting procedures for suspected misconduct[cite: 256]. Emphasizes mandatory reporting for suspected child abuse[cite: 257, 390].
+* **Summary:** Commitment to prevent/address bullying, harassment, hazing, and emotional/physical/sexual misconduct.
 * **Full Policy:** [AARC SafeSport Policy (PDF)](/aarc_lts/src/AARCSafeSport_2015-01-18.pdf)
 
-💡 **Tip:** Coaches and learners should familiarize themselves with these policies[cite: 6]. They are foundational to participating safely and respectfully at AARC[cite: 3].
+💡 **Tip:** Coaches and learners should familiarize themselves with these policies.
 
 ---
 

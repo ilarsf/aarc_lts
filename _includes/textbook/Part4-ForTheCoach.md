@@ -6,11 +6,11 @@ Welcome to Part 4, dedicated to the coaches who make the AARC Learn to Scull pro
 
 ### Creating a Positive Learning Environment
 
-Your primary goal is to teach rowing technique *and* foster a love for the sport in a welcoming atmosphere based on **Safety, Respect, and Kindness**[cite: 2].
+Your primary goal is to teach rowing technique *and* foster a love for the sport in a welcoming atmosphere based on **Safety, Respect, and Kindness**.
 
-* **Foster Curiosity:** Welcome questions, normalize the learning process[cite: 19].
+* **Foster Curiosity:** Welcome questions, normalize the learning process.
 * **Build Confidence:** Acknowledge effort, celebrate small successes, break down skills.
-* **Promote Respect:** Encourage peer support, ensure respectful communication[cite: 12, 18, 21].
+* **Promote Respect:** Encourage peer support, ensure respectful communication.
 * **Be Patient & Calm:** Your attitude sets the tone for the group.
 * **Share Enthusiasm:** Balance technical instruction with the joy of the sport.
 
@@ -46,7 +46,7 @@ Use these frameworks consistently for teaching and feedback:
 * **Adapt:** Tailor style (visual, auditory, kinesthetic). Adjust plan based on group/conditions.
 * **Progress Logically:** Isolate skills before combining. Stable (erg) -> unstable (water). Slow -> normal speed.
 * **Manage Fear:** Acknowledge anxieties (capsizing). Break down skills, provide initial support, reduce gradually.
-* **Integrate Safety:** Weave safety into every activity (PFDs, handling, traffic, weather)[cite: 4].
+* **Integrate Safety:** Weave safety into every activity (PFDs, handling, traffic, weather).
 
 ![Placeholder: Diagram showing the 'Feedback Sandwich' concept](placeholder)
 
@@ -148,27 +148,27 @@ Effective coaching involves teaching technique *and* managing logistics and asse
 
 ### Daily Coach Checklist Integration
 
-Consistency and preparedness are vital. Using the **Daily Coach Checklist** consistently helps maintain program quality and safety[cite: 508]. *Refer to the detailed [Daily Coach Checklist](/aarc_lts/course_materials/coach/Daily_Coach_Checklist.html) for specific action items.*
+Consistency and preparedness are vital. Using the **Daily Coach Checklist** consistently helps maintain program quality and safety(/aarc_lts/course_materials/coach/Daily_Coach_Checklist.html) for specific action items.*
 
 #### Key Checklist Phases:
 
 1.  **Pre-Session (30-45 mins before):**
-    * **Weather & Safety:** Forecast/Radar, Water Conditions, Safety Boat/Kit, Comms Check[cite: 624].
-    * **Equipment Prep:** Reserve/Inspect Boats, Teaching Aids, PFDs[cite: 706].
+    * **Weather & Safety:** Forecast/Radar, Water Conditions, Safety Boat/Kit, Comms Check.
+    * **Equipment Prep:** Reserve/Inspect Boats, Teaching Aids, PFDs.
     * **Admin:** Roster Print, Notes Review, Session Plan Finalize, Brief Assistants.
 2.  **Participant Arrival (15 mins before):**
-    * **Check-In:** Greet, Attendance, Forms, Concerns Check[cite: 608].
+    * **Check-In:** Greet, Attendance, Forms, Concerns Check.
     * **Orientation:** Circle-up, Safety/Objectives Review, Demo Focus Points, Q&A.
 3.  **On-Water Session:**
-    * **Launch Management:** Supervise Handling/Launch, Safety Gear Check, Position Launch, Visual Contact[cite: 629, 705].
+    * **Launch Management:** Supervise Handling/Launch, Safety Gear Check, Position Launch, Visual Contact.
     * **Teaching Progression:** Introduce Planned Skills, Individual Feedback, Demos, Monitor Energy.
-    * **Safety Monitoring:** Track Weather, Group Consolidation, Fatigue Watch, Traffic Awareness, Emergency Ready[cite: 653, 657].
+    * **Safety Monitoring:** Track Weather, Group Consolidation, Fatigue Watch, Traffic Awareness, Emergency Ready.
 4.  **Return to Dock:**
-    * **Landing Sequence:** Guide Order, Supervise Landing/Removal, Verify All Participants/Equip, Oversee Cleaning/Storage, Document Issues[cite: 670].
+    * **Landing Sequence:** Guide Order, Supervise Landing/Removal, Verify All Participants/Equip, Oversee Cleaning/Storage, Document Issues.
     * **Immediate Debrief:** Group Feedback, Achievements, Challenges, Preview Next, Q&A.
 5.  **Post-Session (After participants leave):**
     * **Admin Completion:** Update Progress Notes, Incidents Doc, Director Comms, Follow-up Email Draft.
-    * **Equipment Check:** Final Inspect, Report Maintenance, Secure Facility/Equip[cite: 665].
+    * **Equipment Check:** Final Inspect, Report Maintenance, Secure Facility/Equip.
     * **Self-Assessment:** Review Effectiveness, Notes for Improvement, Adjust Plans.
 
 💡 **Coach's Tip:** Make the checklist a habit. It prevents oversight and ensures all safety and logistical bases are covered.
@@ -192,7 +192,7 @@ This checklist ensures consistent standards and provides clear feedback on readi
 
 ### Communication Templates Integration
 
-Consistent communication prepares participants and reinforces learning[cite: 710].
+Consistent communication prepares participants and reinforces learning.
 
 #### Using Templates:
 
