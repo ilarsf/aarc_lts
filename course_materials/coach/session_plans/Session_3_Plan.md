@@ -38,7 +38,7 @@ layout: default
 | On-Water Session 1 | 50 min | Coach Demo (Good vs. Soft Push). Practice initiating drive with legs | Application of pressure | "Press the boat away," "Connect legs to handle," "No arm pull early" | Maintain spacing, listen for instructions, practice looking over shoulder |
 | Mid-Session Break / Shore Talk | 10 min | Review leg drive feeling, Q&A on navigation rules | N/A | "Feel the difference when you push with legs?" | Hydration |
 | On-Water Session 2 | 40 min | Continuous rowing focusing on leg drive application, practice pivot turns | Application of pressure | "Maintain leg pressure," "Back one oar, gentle pull other" | Check surroundings before turning, execute turns away from traffic/obstacles |
-| Landing & Post-Rowing Maintenance | 10 min | Standard procedure | N/A | "Approach slow, bow upstream" | Dock safety |
+| Landing & Post-Rowing Maintenance | 10 min | Standard procedure | N/A | "Approach landing point slowly, angling slightly into dock" | Dock safety |
 
 <div class="info-box aarc mb-3">
   <h4>Coaching Tips</h4>

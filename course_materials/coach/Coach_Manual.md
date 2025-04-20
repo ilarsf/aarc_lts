@@ -218,7 +218,7 @@
           <td>20 min</td>
           <td>Review dock commands, safe launching steps, individual launching</td>
           <td>N/A</td>
-          <td>"Bow points upstream," "Listen for 'Hands on'"</td>
+          <td>"Orient boat for downstream launch," "Listen for 'Hands on'"</td>
           <td>Maintain dock order, assist each other, coach supervision</td>
         </tr>
         <tr>
@@ -248,9 +248,9 @@
         <tr>
           <td>Landing Procedure & Practice</td>
           <td>15 min</td>
-          <td>Review dock approach (upstream), safe landing steps, individual practice</td>
+          <td>Review dock approach, safe landing steps, individual practice</td>
           <td>N/A</td>
-          <td>"Approach dock slowly, upstream," "Hands ready"</td>
+          <td>"Approach dock slowly," "Hands ready"</td>
           <td>Communicate intentions, clear dock quickly</td>
         </tr>
         <tr>

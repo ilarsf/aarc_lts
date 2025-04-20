@@ -88,6 +88,8 @@ Handling the boat at the dock requires care and balance. You'll practice this ex
 * **Getting Out:** Reverse the process. Bring one hand to the dock, keep weight low, and step out onto the dock carefully.
 * **Go Slow:** Rushing leads to instability. Remember the coach's cue: "Slow is smooth, smooth is fast".
 
+*At AARC, we launch and land downstream. Your coach will demonstrate the specific technique for safely managing the boat in the current during launch and landing.*
+
 ![Placeholder: Photos showing steps for getting in and out of the boat at the dock](placeholder)
 
 ### Finding Your Balance

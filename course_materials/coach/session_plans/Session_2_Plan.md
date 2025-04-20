@@ -34,11 +34,11 @@ layout: default
 | Review Day 1 / Q&A | 10 min | Address questions, reinforce key takeaways from Day 1 | N/A | "What was one key thing you learned yesterday?" | N/A |
 | Erg Warm-up | 15 min | Reinforce sequencing, body position | Sequencing, Body Forward | "Focus on smooth transitions," "Pause and check posture" | Ensure proper setup |
 | Equipment Prep | 20 min | Oars down first, boat sign-out, safe carrying to dock | N/A | "Remember oars first," "Sign out clearly" | Safe carrying techniques, clear pathways |
-| Launching Procedure Review & Execution | 20 min | Review dock commands, safe launching steps, individual launching | N/A | "Bow points upstream," "Listen for 'Hands on'" | Maintain dock order, assist each other, coach supervision |
+| Launching Procedure Review & Execution | 20 min | Review dock commands, safe launching steps, individual launching | N/A | "Bow points downstream," "Listen for 'Hands on'" | Maintain dock order, assist each other, coach supervision |
 | On-Water Session 1 | 50 min | Coach Demo (Sequencing, Steering). Apply sequencing on water, basic turning | Sequencing, Relaxation | "Arms away, body over, then slide," "Gentle pressure to turn" | Stay within designated area, maintain safe distance |
 | Mid-Session Break / Shore Talk | 10 min | Review progress, address common issues (balance, sequence), Q&A | N/A | "How does the sequence feel on water?" | Ensure hydration |
 | On-Water Session 2 | 40 min | Coach Demo (Pause Drills). Introduce pause drills for control and body awareness | Sequencing, Body Forward | "Pause... check hands away," "Pause... feel body angle" | Maintain focus during pauses, be aware of drift/other boats |
-| Landing Procedure & Practice | 15 min | Review dock approach (upstream), safe landing steps, individual practice | N/A | "Approach dock slowly, upstream," "Hands ready" | Communicate intentions, clear dock quickly |
+| Landing Procedure & Practice | 15 min | Review dock approach, safe landing steps, individual practice | N/A | "Approach dock slowly," "Hands ready" | Communicate intentions, clear dock quickly |
 | Post-Rowing Maintenance & Wrap-up | 10 min | Boat cleaning, storage, final Q&A | N/A | "Wipe down tracks," "Report any new issues" | Proper storage, secure straps |
 
 <div class="info-box aarc mb-3">
