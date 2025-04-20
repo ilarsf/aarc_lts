@@ -5,7 +5,9 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
 <div class="quiz-container">
     <div id="quiz-header">
-        <h1 id="quiz-title">Learn-to-Scull Quiz</h1> <p id="quiz-description">Select a session and test your knowledge!</p> </div>
+        <h1 id="quiz-title">Learn-to-Scull Quiz</h1>
+        <p id="quiz-description">Select a session and test your knowledge!</p>
+    </div>
 
     <div id="start-screen" class="quiz-section">
         <h2 id="start-heading">Ready to test your knowledge?</h2>
@@ -13,7 +15,9 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             <label for="username">Enter your name:</label>
             <input type="text" id="username" placeholder="Your name">
         </div>
-        <button id="start-button" class="quiz-button" disabled>Start Quiz</button> <button id="view-highscores" class="quiz-button secondary" disabled>View High Scores</button> <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
+        <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
+        <button id="view-highscores" class="quiz-button secondary" disabled>View High Scores</button>
+        <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
         <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
     </div>
 
@@ -26,7 +30,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         <div id="question-container">
             <h2 id="question-text">Question text goes here</h2>
             <div id="answers-container">
-                </div>
+            </div>
         </div>
         <div id="feedback" class="hidden">
             <p id="feedback-text"></p>
@@ -51,12 +55,13 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
     <div id="review-screen" class="quiz-section hidden">
         <h2>Review Your Answers</h2>
         <div id="review-container">
-            </div>
+        </div>
         <button id="back-to-results" class="quiz-button">Back to Results</button>
     </div>
 
     <div id="highscores-screen" class="quiz-section hidden">
-        <h2 id="highscores-title">High Scores</h2> <div id="highscores-container">
+        <h2 id="highscores-title">High Scores</h2>
+        <div id="highscores-container">
             <table id="highscores-table">
                 <thead>
                     <tr>
@@ -68,7 +73,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                     </tr>
                 </thead>
                 <tbody id="highscores-body">
-                    </tbody>
+                </tbody>
             </table>
         </div>
         <div id="no-scores-message" class="hidden">
@@ -180,10 +185,9 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         let quizId = '';
         let highScoreKey = '';
         const numberOfQuestionsToSelect = 10;
-        const adminPassword = 'AARC_2025';
+        const adminPassword = 'AARC_2025'; // Consider moving this to a more secure configuration if deployed
 
         // --- DOM Elements ---
-        // (References remain the same as previous version)
         const startScreen = document.getElementById('start-screen');
         const quizScreen = document.getElementById('quiz-screen');
         const resultsScreen = document.getElementById('results-screen');
@@ -222,7 +226,6 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         const highscoresTitleElement = document.getElementById('highscores-title');
 
         // --- Quiz State ---
-        // (Variables remain the same: allQuestions, currentQuestions, etc.)
         let allQuestions = [];
         let currentQuestions = [];
         let currentQuestionIndex = 0;
@@ -239,7 +242,6 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         initializeQuiz();
 
         // --- Event Listeners ---
-        // (Listeners remain the same)
         startButton.addEventListener('click', attemptStartQuiz);
         viewHighscoresButton.addEventListener('click', () => { returnToScreen = 'start'; showHighScores(); });
         restartButton.addEventListener('click', resetQuiz);
@@ -255,39 +257,36 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         /** Reads URL parameter, sets config, updates UI text. */
         function initializeQuiz() {
             const urlParams = new URLSearchParams(window.location.search);
-            // Use 'quiz' as the parameter name now, to be more generic than 'session'
             const quizParam = urlParams.get('quiz');
 
             if (quizParam && quizConfigurations[quizParam]) {
                 currentConfig = quizConfigurations[quizParam];
                 questionsUrl = currentConfig.questionsUrl;
-                quizId = currentConfig.quizId; // e.g., 's1', 's2', 'bh'
+                quizId = currentConfig.quizId;
                 highScoreKey = `aarc_quiz_${quizId}_highscores`;
 
                 // Update UI Text Dynamically
                 pageTitleElement.textContent = currentConfig.title;
                 quizTitleElement.textContent = currentConfig.title;
                 quizDescriptionElement.textContent = currentConfig.description;
-                // Adjust start heading based on whether it's a session or boathouse quiz
+
                 if (quizParam === 'bh') {
                      startHeadingElement.textContent = `Ready to test your Boathouse knowledge?`;
                      highscoresTitleElement.textContent = `Boathouse Quiz High Scores`;
-                } else if (!isNaN(parseInt(quizParam))) { // Check if it's a number (session)
+                } else if (!isNaN(parseInt(quizParam))) {
                      startHeadingElement.textContent = `Ready to test your Session ${quizParam} knowledge?`;
                      highscoresTitleElement.textContent = `Session ${quizParam} High Scores`;
                 } else {
-                    startHeadingElement.textContent = `Ready to test your knowledge?`; // Fallback
+                    startHeadingElement.textContent = `Ready to test your knowledge?`;
                     highscoresTitleElement.textContent = `Quiz High Scores`;
                 }
-
 
                 startButton.disabled = false;
                 viewHighscoresButton.disabled = false;
                 errorMessage.classList.add('hidden');
-                loadHighScores();
+                loadHighScores(); // Load existing high scores for this quiz
 
             } else {
-                 // Updated error message for clarity
                 showInitializationError("Invalid or missing quiz specified in URL. Please use a valid link (e.g., ?quiz=1 or ?quiz=bh).");
             }
         }
@@ -303,116 +302,605 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
              console.error(message);
         }
 
-        // --- loadQuestions Function ---
-        // (Remains the same - uses the dynamically set 'questionsUrl')
+        /** Fetches and parses the questions from the configured CSV URL. */
         async function loadQuestions() {
-            if (!currentConfig) { showInitializationError("Quiz configuration is missing."); return false; }
-            loadingMessage.classList.remove('hidden'); errorMessage.classList.add('hidden');
-            startButton.disabled = true; viewHighscoresButton.disabled = true;
+            if (!currentConfig) {
+                showInitializationError("Quiz configuration is missing.");
+                return false;
+            }
+            loadingMessage.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+            startButton.disabled = true;
+            viewHighscoresButton.disabled = true;
+
             try {
                 const response = await fetch(questionsUrl);
-                if (!response.ok) { throw new Error(`HTTP error! Status: ${response.status} fetching ${questionsUrl}`); }
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status} fetching ${questionsUrl}`);
+                }
                 const csvData = await response.text();
-                allQuestions = parseCSV(csvData);
-                console.log(`Loaded ${allQuestions.length} questions from ${questionsUrl}.`);
-                if (allQuestions.length === 0) { throw new Error(`No questions parsed from ${questionsUrl}.`); }
-                loadingMessage.classList.add('hidden'); startButton.disabled = false; viewHighscoresButton.disabled = false;
-                return true;
+                allQuestions = parseCSV(csvData); // Use the NEW parseCSV function
+                console.log(`Loaded and parsed ${allQuestions.length} questions from ${questionsUrl}.`);
+
+                if (allQuestions.length === 0) {
+                    // Distinguish between empty file and parsing failure based on console logs from parseCSV
+                    throw new Error(`No questions parsed from ${questionsUrl}. Check file content and browser console for parsing errors.`);
+                }
+
+                loadingMessage.classList.add('hidden');
+                startButton.disabled = false; // Re-enable button after successful load
+                viewHighscoresButton.disabled = false;
+                return true; // Indicate success
             } catch (error) {
                 console.error('Error loading/parsing questions:', error);
-                errorMessage.textContent = `Error loading questions: ${error.message}.`;
-                errorMessage.classList.remove('hidden'); loadingMessage.classList.add('hidden');
-                startButton.disabled = false; viewHighscoresButton.disabled = false; // Allow retry
-                return false;
+                errorMessage.textContent = `Error loading questions: ${error.message}. Check console for details.`;
+                errorMessage.classList.remove('hidden');
+                loadingMessage.classList.add('hidden');
+                // Keep buttons disabled on load failure
+                startButton.disabled = true;
+                viewHighscoresButton.disabled = true;
+                return false; // Indicate failure
             }
         }
 
 
-        // --- parseCSV Function ---
-        // (Remains the same)
+        // --- **REVISED parseCSV Function** ---
+        /**
+         * Parses CSV text into an array of question objects.
+         * Handles fields enclosed in double quotes, including commas within those fields.
+         * Assumes standard CSV format where double quotes inside quoted fields are escaped as "".
+         * @param {string} csvText - The raw CSV text data.
+         * @returns {Array<Object>} An array of question objects.
+         */
          function parseCSV(csvText) {
-            const lines = csvText.trim().split('\n');
-             if (lines.length < 2) return [];
-             const headers = lines[0].split(',').map(h => h.trim());
-             const questions = [];
-             for (let i = 1; i < lines.length; i++) {
-                 const values = lines[i].split(',');
-                 if (values.length === 1 && values[0].trim() === '') continue;
-                 if (values.length !== headers.length) { console.warn(`Skipping CSV line ${i + 1}: Expected ${headers.length}, found ${values.length}.`); continue; }
-                 const cleanedValues = values.map(v => v.trim().replace(/^"|"$/g, ''));
-                 try {
-                      const question = { id: cleanedValues[0], question: cleanedValues[1], answers: [ cleanedValues[2], cleanedValues[3], cleanedValues[4], cleanedValues[5] ], correctAnswer: parseInt(cleanedValues[6], 10), explanation: cleanedValues[7] };
-                      if (isNaN(question.correctAnswer) || question.correctAnswer < 0 || question.correctAnswer >= question.answers.length) { console.warn(`Invalid correctAnswer index (${cleanedValues[6]}) for Q ${question.id}. Defaulting to 0.`); question.correctAnswer = 0; }
-                      question.answers = question.answers.map(ans => ans || "");
-                      questions.push(question);
-                  } catch (parseError) { console.error(`Error processing line ${i + 1}:`, parseError); }
-             }
-             return questions;
-        }
+            const questions = [];
+            // Regex to split CSV lines, handling both \n and \r\n line endings
+            const lines = csvText.trim().split(/\r?\n/);
 
-        // --- attemptStartQuiz Function ---
-        // (Remains the same)
+            if (lines.length < 2) {
+                console.warn("CSV Parsing Warning: No data rows found.");
+                return []; // Need at least header and one data row
+            }
+
+            // Parse header line simply, assuming headers don't contain commas/quotes
+            const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+            const expectedFieldCount = headers.length;
+
+            console.log(`Parsing CSV. Found ${lines.length - 1} data line(s). Headers: [${headers.join(', ')}] Expected fields: ${expectedFieldCount}`);
+
+            // Regex to split a CSV line by commas, but respecting quoted fields.
+            // It looks for a comma that is followed by an even number of double quotes.
+            const csvSplitRegex = /,(?=(?:(?:[^"]*"){2})*[^"]*$)/;
+
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (line === '') {
+                    console.log(`Skipping empty line ${i + 1}.`);
+                    continue; // Skip empty lines
+                }
+
+                // Split the line using the regex
+                const valuesSplit = line.split(csvSplitRegex);
+
+                if (valuesSplit.length !== expectedFieldCount) {
+                    console.warn(`Skipping CSV line ${i + 1}: Expected ${expectedFieldCount} fields, but found ${valuesSplit.length}. Line content: "${line}"`);
+                    continue; // Skip lines with unexpected number of fields
+                }
+
+                // Clean each value: trim whitespace, remove surrounding quotes, unescape double quotes ("")
+                const cleanedValues = valuesSplit.map(value => {
+                    let cleanVal = value.trim();
+                    // Check if value is quoted
+                    if (cleanVal.startsWith('"') && cleanVal.endsWith('"')) {
+                        // Remove surrounding quotes
+                        cleanVal = cleanVal.substring(1, cleanVal.length - 1);
+                        // Unescape double quotes ("") inside the field
+                        cleanVal = cleanVal.replace(/""/g, '"');
+                    }
+                    return cleanVal;
+                });
+
+                try {
+                    // Basic validation - ensure essential fields are present (adjust indices if CSV structure changes)
+                    if (!cleanedValues[0] || !cleanedValues[1] || cleanedValues.length < 8) {
+                        throw new Error("Missing essential data fields (ID, Question, Answers, Index, Explanation).");
+                    }
+
+                    const question = {
+                        id: cleanedValues[0],
+                        question: cleanedValues[1],
+                        answers: [ // Ensure answers exist, default to empty string if missing/null
+                            cleanedValues[2] || "",
+                            cleanedValues[3] || "",
+                            cleanedValues[4] || "",
+                            cleanedValues[5] || ""
+                        ],
+                        correctAnswer: parseInt(cleanedValues[6], 10),
+                        explanation: cleanedValues[7] || "" // Default explanation to empty string if missing
+                    };
+
+                    // Validate correctAnswer index
+                    if (isNaN(question.correctAnswer) || question.correctAnswer < 0 || question.correctAnswer >= 4) { // Assuming 4 answers A,B,C,D -> indices 0,1,2,3
+                        console.warn(`Invalid correctAnswer index (${cleanedValues[6]}) for Q ${question.id} on line ${i+1}. Index must be 0-3. Defaulting to 0.`);
+                        question.correctAnswer = 0; // Default to first answer if index is invalid
+                    }
+
+                    questions.push(question);
+
+                } catch (parseError) {
+                    // Log detailed error including the line content and parsed values for easier debugging
+                    console.error(`Error processing CSV line ${i + 1}:`, parseError, `\nRaw line: "${line}"`, `\nSplit values: [${valuesSplit.join(' | ')}]`, `\nCleaned values: [${cleanedValues.join(' | ')}]`);
+                }
+            } // End of loop through lines
+
+            console.log(`Finished parsing. Successfully parsed ${questions.length} questions.`);
+            return questions;
+        } // --- **End of REVISED parseCSV Function** ---
+
+
+        /** Checks username and loads questions if needed, then starts the quiz. */
         async function attemptStartQuiz() {
-            if (!currentConfig) { alert("Quiz is not configured correctly."); return; }
-            if (!usernameInput.value.trim()) { alert('Please enter your name.'); return; }
-            if (allQuestions.length === 0) { if (!await loadQuestions()) return; }
-            if (allQuestions.length === 0) { errorMessage.textContent = "Cannot start: No questions available."; errorMessage.classList.remove('hidden'); return; }
+            if (!currentConfig) {
+                alert("Quiz is not configured correctly. Please check the URL.");
+                return;
+            }
+            if (!usernameInput.value.trim()) {
+                alert('Please enter your name to start the quiz.');
+                return;
+            }
+            // Load questions only if they haven't been loaded yet
+            if (allQuestions.length === 0) {
+                const loaded = await loadQuestions();
+                if (!loaded) {
+                    // Error message already shown by loadQuestions
+                    return;
+                }
+                // Check again in case loading succeeded but parsing yielded zero questions
+                if (allQuestions.length === 0) {
+                     errorMessage.textContent = "Cannot start quiz: No questions were successfully parsed from the source file.";
+                     errorMessage.classList.remove('hidden');
+                     return;
+                }
+            }
+            // Proceed to start if questions are available
             startQuiz();
         }
 
-        // --- startQuiz Function ---
-        // (Remains the same)
+        /** Initializes quiz state, selects questions, starts timer, displays first question. */
         function startQuiz() {
-            currentQuestionIndex = 0; score = 0; correctAnswers = 0; seconds = 0; selectedAnswers = []; quizComplete = false;
-            scoreDisplay.textContent = `Score: ${score}`; errorMessage.classList.add('hidden');
+            currentQuestionIndex = 0;
+            score = 0;
+            correctAnswers = 0;
+            seconds = 0;
+            selectedAnswers = [];
+            quizComplete = false;
+
+            scoreDisplay.textContent = `Score: ${score}`;
+            errorMessage.classList.add('hidden'); // Hide previous errors
+
+            // Select random questions from the pool loaded by parseCSV
             currentQuestions = getRandomQuestions(numberOfQuestionsToSelect);
-            if (currentQuestions.length === 0) { endQuizWithError("Failed to select questions."); return; }
-            startTimer(); displayQuestion(); hideAllScreens(); quizScreen.classList.remove('hidden');
+
+            if (currentQuestions.length === 0) {
+                 // This should only happen if allQuestions was empty or Math.min resulted in 0
+                endQuizWithError("Failed to select any questions for the quiz. Check CSV file.");
+                return;
+            }
+
+            // Adjust total questions display if fewer than desired were available/selected
+            questionCounter.textContent = `Question 1/${currentQuestions.length}`;
+
+
+            startTimer();
+            displayQuestion();
+            hideAllScreens();
+            quizScreen.classList.remove('hidden');
         }
 
-        // --- getRandomQuestions Function ---
-        // (Remains the same)
-        function getRandomQuestions(num) { const available = [...allQuestions]; const selected = []; const numSel = Math.min(num, available.length); if (available.length === 0) return []; for (let i = 0; i < numSel; i++) { const randIdx = Math.floor(Math.random() * available.length); selected.push(available.splice(randIdx, 1)[0]); } return selected; }
+        /** Selects a random subset of questions from the main pool. */
+        function getRandomQuestions(num) {
+            const available = [...allQuestions]; // Create a copy to avoid modifying the original pool
+            const selected = [];
+            // Determine how many questions to actually select (minimum of desired number and available number)
+            const numToSelect = Math.min(num, available.length);
 
-        // --- displayQuestion Function ---
-        // (Remains the same)
-        function displayQuestion() { if (!currentQuestions || currentQuestions.length === 0 || currentQuestionIndex >= currentQuestions.length) { endQuizWithError("Failed to display question."); return; } const q = currentQuestions[currentQuestionIndex]; questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuestions.length}`; questionText.textContent = q.question; answersContainer.innerHTML = ''; const order = q.answers.map((_, i) => i); for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; } order.forEach((origIdx, dispIdx) => { const btn = document.createElement('button'); btn.className = 'answer-button'; const ansTxt = q.answers[origIdx] !== undefined ? q.answers[origIdx] : `Opt ${dispIdx + 1}`; btn.textContent = `${String.fromCharCode(65 + dispIdx)}. ${ansTxt}`; btn.dataset.index = origIdx; btn.addEventListener('click', () => selectAnswer(origIdx)); answersContainer.appendChild(btn); }); feedback.classList.add('hidden'); feedback.classList.remove('correct-feedback', 'incorrect-feedback'); }
+            if (available.length === 0) {
+                console.warn("getRandomQuestions called with no available questions.");
+                return [];
+            }
 
-        // --- selectAnswer Function ---
-        // (Remains the same)
-        function selectAnswer(selectedIndex) { if (feedback.classList.contains('hidden') === false || quizComplete) return; if (!currentQuestions || currentQuestionIndex >= currentQuestions.length) return; const q = currentQuestions[currentQuestionIndex]; const isCorrect = selectedIndex === q.correctAnswer; selectedAnswers.push({ questionIndex: currentQuestionIndex, selectedAnswer: selectedIndex, correct: isCorrect }); if (isCorrect) { score++; correctAnswers++; scoreDisplay.textContent = `Score: ${score}`; } const btns = answersContainer.querySelectorAll('.answer-button'); btns.forEach(b => { const bIdx = parseInt(b.dataset.index); if (bIdx === selectedIndex) b.classList.add(isCorrect ? 'correct' : 'incorrect'); if (bIdx === q.correctAnswer && !isCorrect) b.classList.add('correct'); b.disabled = true; }); feedbackText.textContent = q.explanation || (isCorrect ? "Correct!" : "Incorrect."); feedback.classList.remove('hidden'); feedback.classList.add(isCorrect ? 'correct-feedback' : 'incorrect-feedback'); setTimeout(() => { if (currentQuestionIndex < currentQuestions.length - 1) { currentQuestionIndex++; displayQuestion(); } else { endQuiz(); } }, 3000); }
+            console.log(`Selecting ${numToSelect} random questions out of ${available.length} available.`);
 
-        // --- endQuiz Function ---
-        // (Remains the same - uses dynamic highScoreKey)
-        function endQuiz() { quizComplete = true; clearInterval(timerInterval); finalScore.textContent = score; timeTaken.textContent = formatTime(seconds); correctCount.textContent = `${correctAnswers}/${currentQuestions.length}`; const isHS = checkForHighScore(); if (isHS) { highScoreMessage.innerHTML = '<p class="success">Congrats! High score board!</p>'; saveHighScore(); } else { highScoreMessage.innerHTML = '<p>Nice try! Keep practicing.</p>'; } hideAllScreens(); resultsScreen.classList.remove('hidden'); }
+            for (let i = 0; i < numToSelect; i++) {
+                 // Prevent infinite loop if somehow available becomes empty unexpectedly
+                 if (available.length === 0) break;
+                const randomIndex = Math.floor(Math.random() * available.length);
+                // Add the selected question to our list and remove it from the available pool
+                selected.push(available.splice(randomIndex, 1)[0]);
+            }
+            return selected;
+        }
 
-        // --- endQuizWithError Function ---
-        // (Remains the same)
-         function endQuizWithError(message) { quizComplete = true; clearInterval(timerInterval); hideAllScreens(); resultsScreen.classList.remove('hidden'); document.getElementById('quiz-summary').innerHTML = `<p style="color: red; font-weight: bold;">Quiz Error: ${message}</p>`; highScoreMessage.innerHTML = ''; }
+        /** Displays the current question and its answers (randomized order). */
+        function displayQuestion() {
+            // Defensive coding: Check if currentQuestions exists and index is valid
+            if (!currentQuestions || currentQuestions.length === 0 || currentQuestionIndex >= currentQuestions.length) {
+                endQuizWithError("Error displaying question: Quiz data is missing or index out of bounds.");
+                return;
+            }
 
-        // --- showReview Function ---
-        // (Remains the same)
-        function showReview() { reviewContainer.innerHTML = ''; if (!selectedAnswers || selectedAnswers.length !== currentQuestions.length) { reviewContainer.innerHTML = '<p>Review unavailable.</p>'; hideAllScreens(); reviewScreen.classList.remove('hidden'); return; } selectedAnswers.forEach(ans => { if (ans.questionIndex < 0 || ans.questionIndex >= currentQuestions.length) return; const q = currentQuestions[ans.questionIndex]; if (!q) return; const item = document.createElement('div'); item.className = 'review-item'; const qElem = document.createElement('div'); qElem.className = 'review-question'; qElem.textContent = `Q${ans.questionIndex + 1}: ${q.question || 'N/A'}`; const ansElem = document.createElement('div'); ansElem.className = 'review-answers'; const ansArr = Array.isArray(q.answers) ? q.answers : []; ansArr.forEach((txt, idx) => { const el = document.createElement('div'); let lbl = `${String.fromCharCode(65 + idx)}. ${txt || 'N/A'}`; let cls = ''; if (idx === q.correctAnswer) { cls = 'review-correct'; lbl += ' (Correct)'; } if (idx === ans.selectedAnswer) { if (!ans.correct) cls = 'review-incorrect user-answer'; lbl += ' (Yours)'; } el.className = cls; el.textContent = lbl; ansElem.appendChild(el); }); const explElem = document.createElement('div'); explElem.className = 'review-explanation'; explElem.textContent = `Explanation: ${q.explanation || 'N/A'}`; item.appendChild(qElem); item.appendChild(ansElem); item.appendChild(explElem); reviewContainer.appendChild(item); }); hideAllScreens(); reviewScreen.classList.remove('hidden'); }
+            const currentQuizQuestion = currentQuestions[currentQuestionIndex];
+            // Update counter using the length of the *selected* questions array
+            questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuestions.length}`;
+            questionText.textContent = currentQuizQuestion.question;
+            answersContainer.innerHTML = ''; // Clear previous answers
+
+            // Randomize answer order
+            const answerIndices = currentQuizQuestion.answers.map((_, i) => i); // [0, 1, 2, 3]
+            // Fisher-Yates (Knuth) Shuffle
+            for (let i = answerIndices.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [answerIndices[i], answerIndices[j]] = [answerIndices[j], answerIndices[i]];
+            }
+
+            // Create buttons for each answer in the shuffled order
+            answerIndices.forEach((originalIndex, displayIndex) => {
+                const button = document.createElement('button');
+                button.className = 'answer-button';
+                // Ensure answer text exists, provide fallback
+                const answerText = currentQuizQuestion.answers[originalIndex] !== undefined ? currentQuizQuestion.answers[originalIndex] : `Option ${displayIndex + 1}`;
+                button.textContent = `${String.fromCharCode(65 + displayIndex)}. ${answerText}`; // A, B, C, D...
+                button.dataset.originalIndex = originalIndex; // Store the original index (0-3) to check correctness
+                button.addEventListener('click', () => selectAnswer(originalIndex));
+                answersContainer.appendChild(button);
+            });
+
+            feedback.classList.add('hidden'); // Hide feedback from previous question
+            feedback.classList.remove('correct-feedback', 'incorrect-feedback');
+        }
+
+        /** Handles answer selection, provides feedback, advances the quiz. */
+        function selectAnswer(selectedIndex) {
+             // Prevent selecting another answer while feedback is shown or if quiz is over
+            if (!feedback.classList.contains('hidden') || quizComplete) return;
+            // Ensure question data is available
+             if (!currentQuestions || currentQuestionIndex >= currentQuestions.length) {
+                console.error("selectAnswer called with invalid state."); return;
+            }
+
+            const q = currentQuestions[currentQuestionIndex];
+            const isCorrect = selectedIndex === q.correctAnswer;
+
+            // Store the user's choice and whether it was correct
+            selectedAnswers.push({
+                questionIndex: currentQuestionIndex,
+                selectedAnswer: selectedIndex, // The original index (0-3) of the chosen answer
+                correct: isCorrect
+            });
+
+            if (isCorrect) {
+                score++;
+                correctAnswers++;
+                scoreDisplay.textContent = `Score: ${score}`;
+            }
+
+            // Visually update buttons
+            const answerButtons = answersContainer.querySelectorAll('.answer-button');
+            answerButtons.forEach(button => {
+                const buttonOriginalIndex = parseInt(button.dataset.originalIndex);
+                // Highlight the selected button (green if correct, red if incorrect)
+                if (buttonOriginalIndex === selectedIndex) {
+                    button.classList.add(isCorrect ? 'correct' : 'incorrect');
+                }
+                // If the selected answer was incorrect, also highlight the correct answer in green
+                if (buttonOriginalIndex === q.correctAnswer && !isCorrect) {
+                     button.classList.add('correct');
+                }
+                // Disable all buttons for this question
+                button.disabled = true;
+            });
+
+            // Show feedback text
+            feedbackText.textContent = q.explanation || (isCorrect ? "Correct!" : "Incorrect.");
+            feedback.classList.remove('hidden');
+            feedback.classList.add(isCorrect ? 'correct-feedback' : 'incorrect-feedback');
+
+            // Automatically advance to the next question or end the quiz after a delay
+            setTimeout(() => {
+                if (currentQuestionIndex < currentQuestions.length - 1) {
+                    currentQuestionIndex++;
+                    displayQuestion();
+                } else {
+                    endQuiz();
+                }
+            }, 3000); // 3-second delay to read feedback
+        }
+
+        /** Ends the quiz, calculates final results, checks for high score. */
+        function endQuiz() {
+            quizComplete = true;
+            clearInterval(timerInterval); // Stop the timer
+
+            // Display final results using the length of the selected questions array
+            finalScore.textContent = score;
+            timeTaken.textContent = formatTime(seconds);
+            correctCount.textContent = `${correctAnswers}/${currentQuestions.length}`; // Use actual number of questions asked
+
+            // Check and display high score message
+            const isHighScore = checkForHighScore();
+            if (isHighScore) {
+                highScoreMessage.innerHTML = '<p class="success">Congratulations! You made the high score board!</p>';
+                saveHighScore(); // Save the score
+            } else {
+                highScoreMessage.innerHTML = '<p>Nice try! Keep practicing to improve your score.</p>';
+            }
+
+            hideAllScreens();
+            resultsScreen.classList.remove('hidden');
+        }
+
+        /** Displays an error message if the quiz ends unexpectedly. */
+         function endQuizWithError(message) {
+             quizComplete = true;
+             clearInterval(timerInterval);
+             console.error("Quiz ended with error:", message);
+             hideAllScreens();
+             resultsScreen.classList.remove('hidden');
+             // Display error in the summary area
+             document.getElementById('quiz-summary').innerHTML = `<p style="color: red; font-weight: bold;">Quiz Error: ${message}</p>`;
+             // Clear potentially misleading high score message
+             highScoreMessage.innerHTML = '';
+         }
+
+        /** Displays the review screen with questions, user answers, and correct answers. */
+        function showReview() {
+             reviewContainer.innerHTML = ''; // Clear previous review items
+
+             // Check if data needed for review is present
+             if (!selectedAnswers || !currentQuestions || selectedAnswers.length !== currentQuestions.length) {
+                 reviewContainer.innerHTML = '<p>Sorry, review is unavailable. Quiz data might be incomplete.</p>';
+                 hideAllScreens();
+                 reviewScreen.classList.remove('hidden');
+                 return;
+             }
+
+             selectedAnswers.forEach((answerData) => {
+                 // Ensure the question index is valid
+                 if (answerData.questionIndex < 0 || answerData.questionIndex >= currentQuestions.length) {
+                     console.warn(`Skipping review for invalid question index: ${answerData.questionIndex}`);
+                     return;
+                 }
+                 const question = currentQuestions[answerData.questionIndex];
+                 if (!question) {
+                     console.warn(`Skipping review for missing question data at index: ${answerData.questionIndex}`);
+                     return;
+                 }
+
+                 const reviewItem = document.createElement('div');
+                 reviewItem.className = 'review-item';
+
+                 // Question Text
+                 const questionElement = document.createElement('div');
+                 questionElement.className = 'review-question';
+                 questionElement.textContent = `Q${answerData.questionIndex + 1}: ${question.question || 'Question text missing'}`;
+                 reviewItem.appendChild(questionElement);
+
+                 // Answers Section
+                 const answersElement = document.createElement('div');
+                 answersElement.className = 'review-answers';
+                 const answersArray = Array.isArray(question.answers) ? question.answers : [];
+
+                 answersArray.forEach((answerText, index) => {
+                     const answerDiv = document.createElement('div');
+                     let label = `${String.fromCharCode(65 + index)}. ${answerText || 'Answer text missing'}`;
+                     let cssClass = '';
+
+                     // Check if this is the correct answer
+                     if (index === question.correctAnswer) {
+                         cssClass = 'review-correct';
+                         label += ' (Correct Answer)';
+                     }
+                     // Check if this was the user's selected answer
+                     if (index === answerData.selectedAnswer) {
+                         // If it was selected and *not* correct, mark as incorrect user answer
+                         if (!answerData.correct) {
+                             cssClass = 'review-incorrect user-answer';
+                         }
+                         // Add indication that this was the user's choice
+                         label += ' (Your Answer)';
+                     }
+                     answerDiv.className = cssClass;
+                     answerDiv.textContent = label;
+                     answersElement.appendChild(answerDiv);
+                 });
+                 reviewItem.appendChild(answersElement);
+
+                 // Explanation
+                 const explanationElement = document.createElement('div');
+                 explanationElement.className = 'review-explanation';
+                 explanationElement.textContent = `Explanation: ${question.explanation || 'No explanation provided.'}`;
+                 reviewItem.appendChild(explanationElement);
+
+                 reviewContainer.appendChild(reviewItem);
+             });
+
+             hideAllScreens();
+             reviewScreen.classList.remove('hidden');
+        }
 
         // --- Timer Functions ---
-        // (Remain the same)
-        function startTimer() { clearInterval(timerInterval); seconds = 0; updateTimerDisplay(); timerInterval = setInterval(() => { if (!quizComplete) { seconds++; updateTimerDisplay(); } else { clearInterval(timerInterval); } }, 1000); }
-        function updateTimerDisplay() { timerElement.textContent = `Time: ${formatTime(seconds)}`; }
-        function formatTime(secs) { const mins = Math.floor(secs / 60); const s = secs % 60; return `${mins}:${s < 10 ? '0' : ''}${s}`; }
+        function startTimer() {
+            clearInterval(timerInterval); // Clear any existing interval
+            seconds = 0;
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                if (!quizComplete) {
+                    seconds++;
+                    updateTimerDisplay();
+                } else {
+                    clearInterval(timerInterval); // Ensure timer stops when quiz completes
+                }
+            }, 1000);
+        }
+        function updateTimerDisplay() {
+            timerElement.textContent = `Time: ${formatTime(seconds)}`;
+        }
+        function formatTime(totalSeconds) {
+            const minutes = Math.floor(totalSeconds / 60);
+            const remainingSeconds = totalSeconds % 60;
+            return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
 
         // --- High Score Functions ---
-        // (Remain the same - use dynamic highScoreKey)
-        function checkForHighScore() { if (!highScoreKey) return false; const hs = getHighScores(); if (hs.length < 10) return true; const low = hs[hs.length - 1]; return score > low.score || (score === low.score && seconds < low.time); }
-        function saveHighScore() { if (!highScoreKey) return; const hs = getHighScores(); const name = usernameInput.value.trim() || "Anon"; const newS = { name: name, score: score, time: seconds, date: new Date().toLocaleDateString() }; hs.push(newS); hs.sort((a, b) => b.score - a.score || a.time - b.time); const upd = hs.slice(0, 10); try { localStorage.setItem(highScoreKey, JSON.stringify(upd)); } catch (e) { console.error("Save HS failed:", e); } }
-        function getHighScores() { if (!highScoreKey) return []; try { const s = localStorage.getItem(highScoreKey); return s ? JSON.parse(s) : []; } catch (e) { console.error("Get HS failed:", e); return []; } }
-        function loadHighScores() { if (!highScoreKey) { noScoresMessage.classList.remove('hidden'); highscoresTable.classList.add('hidden'); return; } const hs = getHighScores(); highscoresBody.innerHTML = ''; if (hs.length === 0) { noScoresMessage.classList.remove('hidden'); highscoresTable.classList.add('hidden'); } else { noScoresMessage.classList.add('hidden'); highscoresTable.classList.remove('hidden'); hs.forEach((d, i) => { const r = highscoresBody.insertRow(); r.insertCell().textContent = i + 1; r.insertCell().textContent = d.name || "Anon"; r.insertCell().textContent = d.score; r.insertCell().textContent = formatTime(d.time); r.insertCell().textContent = d.date; }); } }
-        function showHighScores() { if (!highScoreKey) { alert("Quiz not loaded."); return; } loadHighScores(); hideAllScreens(); highscoresScreen.classList.remove('hidden'); }
-        function clearHighScoresWithPassword() { if (!highScoreKey || !quizId) { alert("Quiz not loaded."); return; } const pwd = prompt(`ADMIN: Pwd to clear scores for ${quizId}:`); if (pwd === null) return; if (pwd === adminPassword) { if (confirm(`SURE clear ALL scores for ${quizId}?`)) { localStorage.removeItem(highScoreKey); loadHighScores(); alert(`Scores for ${quizId} cleared.`); } } else { alert('Incorrect password.'); } }
+        function checkForHighScore() {
+            if (!highScoreKey) return false; // Cannot check if key is not set
+            const highScores = getHighScores();
+            const topScoresCount = 10; // Keep top 10
+
+            // If board isn't full, it's automatically a high score
+            if (highScores.length < topScoresCount) return true;
+
+            // Compare with the lowest score on the full board
+            const lowestHighScore = highScores[highScores.length - 1];
+            // Higher score wins. If scores are equal, faster time wins.
+            return score > lowestHighScore.score || (score === lowestHighScore.score && seconds < lowestHighScore.time);
+        }
+        function saveHighScore() {
+            if (!highScoreKey) return; // Cannot save if key is not set
+            const highScores = getHighScores();
+            const userName = usernameInput.value.trim() || "Anonymous"; // Default name
+            const topScoresCount = 10;
+
+            const newScoreEntry = {
+                name: userName,
+                score: score,
+                time: seconds,
+                date: new Date().toLocaleDateString() // Use locale-specific date format
+            };
+
+            highScores.push(newScoreEntry);
+            // Sort: Higher scores first. For ties, lower time (faster) first.
+            highScores.sort((a, b) => b.score - a.score || a.time - b.time);
+            // Keep only the top N scores
+            const updatedHighScores = highScores.slice(0, topScoresCount);
+
+            try {
+                localStorage.setItem(highScoreKey, JSON.stringify(updatedHighScores));
+                 console.log("High score saved for key:", highScoreKey);
+            } catch (e) {
+                 // Handle potential storage errors (e.g., quota exceeded)
+                console.error("Failed to save high score to localStorage:", e);
+                alert("Could not save high score. Local storage might be full or disabled.");
+            }
+        }
+        function getHighScores() {
+            if (!highScoreKey) return []; // Return empty if key is not set
+            try {
+                const storedScores = localStorage.getItem(highScoreKey);
+                return storedScores ? JSON.parse(storedScores) : [];
+            } catch (e) {
+                console.error("Failed to retrieve or parse high scores from localStorage:", e);
+                // Optionally clear corrupted data: localStorage.removeItem(highScoreKey);
+                return []; // Return empty array on error
+            }
+        }
+        function loadHighScores() {
+             if (!highScoreKey) {
+                console.warn("Cannot load high scores: High score key is not set.");
+                noScoresMessage.classList.remove('hidden');
+                highscoresTable.classList.add('hidden');
+                return;
+            }
+            const highScores = getHighScores();
+            highscoresBody.innerHTML = ''; // Clear previous entries
+
+            if (highScores.length === 0) {
+                noScoresMessage.classList.remove('hidden');
+                highscoresTable.classList.add('hidden');
+            } else {
+                noScoresMessage.classList.add('hidden');
+                highscoresTable.classList.remove('hidden');
+                highScores.forEach((scoreData, index) => {
+                    const row = highscoresBody.insertRow();
+                    row.insertCell().textContent = index + 1; // Rank
+                    row.insertCell().textContent = scoreData.name || "Anonymous";
+                    row.insertCell().textContent = scoreData.score;
+                    row.insertCell().textContent = formatTime(scoreData.time); // Formatted time
+                    row.insertCell().textContent = scoreData.date;
+                });
+            }
+        }
+        function showHighScores() {
+             if (!highScoreKey) {
+                alert("Cannot show high scores: Quiz configuration not loaded.");
+                return;
+            }
+            loadHighScores(); // Refresh scores from localStorage
+            hideAllScreens();
+            highscoresScreen.classList.remove('hidden');
+        }
+        function clearHighScoresWithPassword() {
+             if (!highScoreKey || !quizId) {
+                alert("Cannot clear scores: Quiz configuration not loaded.");
+                return;
+            }
+             // Prompt for admin password
+            const passwordAttempt = prompt(`ADMIN ACTION: Enter password to clear ALL high scores for quiz '${quizId}':`);
+
+            if (passwordAttempt === null) return; // User cancelled prompt
+
+            if (passwordAttempt === adminPassword) {
+                 // Confirm before deleting
+                if (confirm(`Are you absolutely sure you want to permanently delete all high scores for quiz '${quizId}'?`)) {
+                    try {
+                        localStorage.removeItem(highScoreKey);
+                        loadHighScores(); // Refresh display (should show "no scores")
+                        alert(`High scores for quiz '${quizId}' have been cleared.`);
+                         console.log("High scores cleared for key:", highScoreKey);
+                    } catch (e) {
+                        console.error("Failed to clear high scores from localStorage:", e);
+                        alert("Could not clear high scores due to a storage error.");
+                    }
+                }
+            } else {
+                alert('Incorrect password. High scores were not cleared.');
+            }
+        }
 
         // --- Utility Functions ---
-        // (Remain the same)
-        function hideAllScreens() { startScreen.classList.add('hidden'); quizScreen.classList.add('hidden'); resultsScreen.classList.add('hidden'); reviewScreen.classList.add('hidden'); highscoresScreen.classList.add('hidden'); }
-        function resetQuiz() { if (!currentConfig) { showInitializationError("Cannot reset: Config missing."); return; } clearInterval(timerInterval); quizComplete = false; scoreDisplay.textContent = `Score: 0`; feedback.classList.add('hidden'); answersContainer.innerHTML = ''; hideAllScreens(); startScreen.classList.remove('hidden'); startButton.disabled = false; viewHighscoresButton.disabled = false; errorMessage.classList.add('hidden'); }
+        function hideAllScreens() {
+            startScreen.classList.add('hidden');
+            quizScreen.classList.add('hidden');
+            resultsScreen.classList.add('hidden');
+            reviewScreen.classList.add('hidden');
+            highscoresScreen.classList.add('hidden');
+        }
+        function resetQuiz() {
+             if (!currentConfig) {
+                 showInitializationError("Cannot reset quiz: Configuration missing.");
+                 return;
+             }
+            clearInterval(timerInterval); // Stop any running timer
+            quizComplete = false;
+            // Reset quiz state variables (optional - startQuiz does this, but good for clarity)
+            // currentQuestionIndex = 0; score = 0; correctAnswers = 0; seconds = 0; selectedAnswers = [];
+
+            // Reset UI elements
+            scoreDisplay.textContent = `Score: 0`;
+            timerElement.textContent = `Time: 0:00`;
+            feedback.classList.add('hidden');
+            feedback.classList.remove('correct-feedback', 'incorrect-feedback');
+            answersContainer.innerHTML = ''; // Clear any leftover answer buttons
+            errorMessage.classList.add('hidden'); // Hide any previous errors
+
+            // Show the start screen
+            hideAllScreens();
+            startScreen.classList.remove('hidden');
+            // Re-enable buttons on start screen if they were disabled
+            startButton.disabled = (allQuestions.length === 0); // Only enable if questions are loaded (or will be loaded on click)
+            viewHighscoresButton.disabled = false;
+        }
 
     });
 </script>
+
