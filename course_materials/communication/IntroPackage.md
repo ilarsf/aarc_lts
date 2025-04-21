@@ -2,11 +2,11 @@
 layout: default
 ---
 
-# Welcome to the Ann Arbor Rowing Club Learn to Scull Program\!
+# Welcome to the Ann Arbor Rowing Club Learn to Scull Program!
 
-## Get Ready for Your Rowing Adventure\!
+## Get Ready for Your Rowing Adventure!
 
-We are thrilled you've decided to embark on your sculling journey with the Ann Arbor Rowing Club (AARC)\! Sculling, where you use two oars to glide across the water in your own boat, offers a unique blend of physical activity, technical skill, and peaceful connection with the Huron River. This packet is designed to give you a head start, providing essential information to help you feel prepared and excited for your first session.
+We are thrilled you've decided to embark on your sculling journey with the Ann Arbor Rowing Club (AARC)! Sculling, where you use two oars to glide across the water in your own boat, offers a unique blend of physical activity, technical skill, and peaceful connection with the Huron River. This packet is designed to give you a head start, providing essential information to help you feel prepared and excited for your first session.
 
 ### What is Sculling?
 
@@ -36,9 +36,9 @@ Our program uses a weekend intensive format, with four 3-hour sessions held over
 
 ### What to Expect Physically
 
-  * **New Muscles:** Rowing engages muscles you might not use often\! Expect some initial muscle soreness.
+  * **New Muscles:** Rowing engages muscles you might not use often! Expect some initial muscle soreness.
   * **Hand Care:** Blisters are a common part of learning as your hands adapt. We'll cover prevention and care.
-  * **Balance Challenge:** Sculling shells are narrow; learning to balance is part of the fun and the skill\!
+  * **Balance Challenge:** Sculling shells are narrow; learning to balance is part of the fun and the skill!
   * **Getting Wet:** You *will* get wet during the mandatory, supervised "flip test" (capsize recovery practice) in the first session.
   * **Mobility:** You'll need the ability to get down low to enter/exit the boat safely.
 
@@ -60,7 +60,7 @@ Our program uses a weekend intensive format, with four 3-hour sessions held over
   * **Socks:** Necessary for comfort in the boat's foot stretchers.
   * **Shoes:** Wear regular athletic shoes to the boathouse; you'll likely take them off before getting in the boat, which has built-in foot stretchers.
 
-### What to Bring (Essential\!)
+### What to Bring (Essential!)
 
   * **Water Bottle:** LARGE (≥1 Liter / 32 oz). Hydration is critical.
   * **Sun Protection:** Sunscreen (water-resistant), hat with a brim, sunglasses. Water reflects sunlight strongly.
@@ -91,9 +91,9 @@ This mandatory, supervised drill teaches you how to recover if your boat flips.
   * **Manage Oars:** Keep them nearby; they help stabilize for re-entry.
   * **Right the Shell:** If upside down, gently flip it back over.
   * **T-Position Oars:** Arrange oars perpendicular to the boat, blades flat on water, for stability.
-  * **Re-Enter:** Use leg power (kick\!) to get your hips onto the boat, then roll in. *Your coach will guide you through this step-by-step.*
+  * **Re-Enter:** Use leg power (kick!) to get your hips onto the boat, then roll in. *Your coach will guide you through this step-by-step.*
 
-*Watch the Flip Test demonstration videos (available on the [Video Library tab of the Q\&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab)) and review the [Self-Rescue Guide](https://ilarsf.github.io/aarc_lts/course_materials/learner/safety/Self_Rescue_Guide.html) online for details.*
+*Watch the Flip Test demonstration videos (available on the [Video Library tab of the Q&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab)) and review the [Self-Rescue Guide](https://ilarsf.github.io/aarc_lts/course_materials/learner/safety/Self_Rescue_Guide.html) online for details.*
 
 ### Weather & Water Conditions
 
@@ -128,7 +128,7 @@ You'll learn this in detail, but here’s a preview:
 
 ### Key Equipment
 
-  * **Shell:** Your boat\!
+  * **Shell:** Your boat!
   * **Sculls:** Your two oars.
   * **Oarlocks & Riggers:** Hold the oars out from the boat.
   * **Foot Stretcher:** Where your feet go.
@@ -136,23 +136,21 @@ You'll learn this in detail, but here’s a preview:
 
 ### Hand Care (Blisters)
 
-  * **Prevention:** Use a relaxed grip (fingers as hooks, not a death grip). Let hands adapt gradually. Tape known hot spots *before* rowing. *(See the Correct Grip video on the [Video Library tab of the Q\&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab))*
+  * **Prevention:** Use a relaxed grip (fingers as hooks, not a death grip). Let hands adapt gradually. Tape known hot spots *before* rowing. *(See the Correct Grip video on the [Video Library tab of the Q&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab))*
   * **Treatment:** Keep clean, cover appropriately. See the [Hand Care Guide](https://ilarsf.github.io/aarc_lts/src/Rowers_Hand_Blister_Treatment.html) for details.
 
 -----
 
 ## What's Next?
 
-Completing Learn to Scull is just the beginning\! AARC offers:
+Completing Learn to Scull is just the beginning! AARC offers:
 
-  * **Open Sculling Program:** Supervised sessions to practice and improve.
-  * **Club Membership:** For regular rowing once proficient.
-  * **Intermediate Clinics/Technique Sessions:** Focus on specific techniques.
+  * **Club Membership & Open Sculling Program:** Supervised sessions to practice and improve.  
 
 Your coaches will discuss these options in the final session.
 
-We are so excited to have you join us. Prepare for a fun, challenging, and rewarding experience on the water\! If you have any questions before your first class, please don't hesitate to reach out to your coach or contact [email address removed].
+We are so excited to have you join us. Prepare for a fun, challenging, and rewarding experience on the water! If you have any questions before your first class, please don't hesitate to reach out to us.
 
-See you at the boathouse\!
+See you at the boathouse!
 
 **The AARC Learn to Scull Coaching Team**
