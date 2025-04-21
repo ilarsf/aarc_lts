@@ -3,54 +3,39 @@
 ## Pre-Course Communications
 
 ### Welcome Email (1 Week Before First Class)
-**Subject:** Welcome to AARC's Learn to Scull Program!
+
+**Subject:** Welcome to AARC’s Learn to Scull Program!
 
 Dear [Participant Name],
 
-We're excited to welcome you to the Ann Arbor Rowing Club's Learn to Scull program beginning [Start Date]! This email contains important information to help you prepare for your first session.
+AARC is thrilled to welcome you to our Learn to Scull program starting on **[Start Date]** at Bandemer Park boathouse.
 
-**Schedule Confirmation:**
-- Four sessions: [Your specific dates, e.g., May 31, June 1, 7, 8 for LTS1]
-- Each session is 3 hours (8:00-11:00am) with a 30-minute break
-- Small group instruction with maximum 6 participants and a 1:3 coach-to-student ratio
-- Location: Bandemer Park boathouse [specific meeting point details]
-- Please arrive 15 minutes early for the first session
+**ACTION REQUIRED**  
+1. **USRowing Learn‑to‑Row membership** ($10, 60‑day coverage): sign up at https://membership.usrowing.org/individual/join using code **CZGBS**.  
+2. **AARC waiver**: please complete and return the attached form before Day 1.
 
-**Required Before First Class:**
-- USRowing Learn-to-Row membership ($10) - sign up at [USRowing link]
-- Completed AARC waiver form (attached)
+**CLASS DETAILS**  
+- **Dates & times:** [e.g. May 31, June 1, 7, 8] • 8:00 – 11:00 am (with 30 min break)  
+- **Group size:** max 6 participants, 1 coach per 3 scullers  
+- **Location:** meet at the main entrance of the Bandemer Park boathouse; arrive **15 minutes early** on Day 1
 
-**What to Bring to Each Session:**
-- Athletic clothing (shorts/leggings and t-shirt)
-- Water bottle (at least 32 oz/1 liter)
-- Sunscreen, hat, and sunglasses
-- Towel and change of clothes (you will get wet during the flip test)
-- Hand tape or blister care supplies (optional but recommended)
+**WHAT TO BRING**  
+- Athletic clothes that won’t snag in the tracks (leggings/shorts + snug top)  
+- Water bottle (≥1 L)  
+- Sunscreen, hat & sunglasses  
+- Towel & change of clothes (for flip test)  
+- Optional: hand tape/blister kit
 
-**Weather Policy:**
-Classes may be rescheduled due to unsafe weather conditions (lightning, excessive wind, heavy rain). We will notify you by email and text at least 2 hours before the scheduled start time if a session needs to be rescheduled.
+**OTHER NOTES**  
+- You’ll get wet during the flip‑test; plan accordingly.  
+- In case of unsafe weather (lightning, heavy wind/rain), we’ll notify you by email/text at least 2 hours before class.  
+- If you must miss a session, please email your coach ASAP so we can arrange a substitute.
 
-**Physical Requirements:**
-For your safety and enjoyment, please note that sculling requires:
-- Ability to get down to the floor and back up using only one hand
-- Ability to turn your head to look over both shoulders
-- Ability to move a 40-50 pound, 27' single scull (with guidance)
-- Swimming ability (required for all participants)
+We can’t wait to get you on the water!
 
-The first session includes a "flip test" where you'll practice exiting and re-entering a boat in case of capsize. This is done in a controlled environment with coaches ready to assist.
-
-**Recommended Videos:**
-To help you visualize what you'll be learning, we suggest watching these short introduction videos before your first class:
-- [Basic Sculling Technique - URL]
-- [Getting In and Out of a Rowing Shell - URL]
-
-Please confirm receipt of this email and your attendance at the first session by replying to this message.
-
-We look forward to introducing you to the joy of sculling!
-
-Best regards,
-[Coach Name]
-AARC Learn to Scull Program
+Best regards,  
+[Coach Name]  
+AARC Learn to Scull Program  
 [Phone Number]
 
 ---
