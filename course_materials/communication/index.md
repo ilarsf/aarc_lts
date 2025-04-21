@@ -9,6 +9,7 @@ These communication templates help maintain consistent messaging throughout the 
 ## Available Resources
 
 - [**Email Templates**](Email_Templates.md) - Pre-course, daily, and post-course communication templates
+- [**Intro Package**](IntroPackage.md) - Welcome packet for new participants
 
 ## Communication Best Practices
 

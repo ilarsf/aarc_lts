@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Email Templates: Learn to Scull Program
 
 ## Pre-Course Communications
