@@ -214,6 +214,76 @@ Insert distinct pauses (1-2 seconds) at key points during the recovery:
 - **Error:** Digging blades deeper as pressure increases
   - **Correction:** "Same blade depth, more horizontal pressure"
 
+---
+
+### Tap Drill
+
+**Purpose:** Develops comfort and stability at the catch position, allowing rowers to square and place blades effectively.
+
+**Execution:**
+1. Begin at various slide positions (½, ¾, or full slide)
+2. At the catch position, practice a light tap of the blades on the water
+3. Focus on maintaining balance while at the forward catch position
+4. Gradually increase the number of taps while maintaining stability
+5. Progress to clean entry after demonstrating stability at the catch
+
+**Coaching Points:**
+- Emphasize maintaining upper body posture at the catch
+- Focus on core engagement during the exercise
+- Keep shoulders relaxed despite the unstable position
+- Practice light, controlled blade placement
+- Build confidence in the "unstable" forward position
+
+**Progression Options:**
+- Start at half-slide for greater stability
+- Progress to three-quarter slide as confidence builds
+- Finally, practice at full slide
+- Begin with single taps, progress to multiple taps
+- Add clean entry and drive after successful tapping
+
+**Common Errors and Corrections:**
+- **Error:** Rushing into the drive after tap
+  - **Correction:** "Take your time at the catch position"
+- **Error:** Losing core stability during taps
+  - **Correction:** "Engage your core and maintain posture"
+- **Error:** Dropping blade too deep during tap
+  - **Correction:** "Light touches only, feel the water's surface"
+
+---
+
+### Catch Placement Drill
+
+**Purpose:** Connects proper recovery sequencing with effective catch technique, developing clean blade entry.
+
+**Execution:**
+1. Begin with a normal recovery sequence (hands away, body over, slide)
+2. As you approach the catch, focus on early blade squaring
+3. Pause briefly at the catch position to check posture and blade height
+4. Place blade cleanly in the water with minimal splash
+5. Execute a controlled drive focusing on connection
+
+**Coaching Points:**
+- Emphasize early squaring as you approach the catch
+- Focus on blade height just above the water before entry
+- Maintain relaxed shoulders through the placement
+- Connect the previous week's recovery work with effective catches
+- Feel the boat run during the controlled approach to the catch
+
+**Progression Options:**
+- Begin with arms and body only (no slide)
+- Progress to quarter-slide, then half-slide
+- Finally, use full slide with clean placement
+- Add pauses at different points during recovery
+- Progress to continuous rowing with emphasis on placement
+
+**Common Errors and Corrections:**
+- **Error:** Rushing into the catch without proper preparation
+  - **Correction:** "Patient approach, deliberate placement"
+- **Error:** Dropping the hands just before the catch
+  - **Correction:** "Maintain hand height through the approach"
+- **Error:** Blade diving too deep at entry
+  - **Correction:** "Feel the water's surface before connecting"
+
 ## Blade Control Drills
 
 ### Ghost Strokes

@@ -139,6 +139,40 @@ Controlling your oar blades is essential for both propulsion and balance. You'll
 
 💡 **Tip:** Smooth, controlled blade work is key. Avoid abrupt movements. Initially, your coach might have you row with square blades only to simplify the process and focus on balance.
 
+### Developing Comfort at the Catch
+
+The catch is a crucial moment in the stroke cycle - it's where power generation begins and where many beginners struggle with both technique and confidence. Developing comfort at the catch position takes dedicated practice but pays tremendous dividends in rowing effectiveness.
+
+#### The Challenge of the Catch Position
+
+At the catch, you're in what feels like an unstable position:
+* Body is pivoted forward from the hips
+* Seat is near the front stops
+* Arms are extended forward
+* Weight is distributed differently than at other points in the stroke
+
+This unfamiliar position often causes anxiety, leading to rushed entries and missed water. The key is developing comfort and confidence at the catch through specific practice.
+
+#### Tap Drill: Building Catch Confidence
+
+The Tap Drill is specifically designed to build comfort at this critical position:
+
+1. Begin at half, three-quarter, or full slide position (your coach will specify)
+2. With blades squared, approach the catch position with proper sequence
+3. At the catch, lightly "tap" the surface of the water with your blades
+4. Maintain balance and posture during the taps
+5. Practice multiple taps in the same position before proceeding with the drive
+
+**Benefits:**
+* Builds stability at the forward catch position
+* Develops core engagement and balance awareness
+* Reduces anxiety about the "unstable" forward position
+* Creates muscle memory for proper blade height
+
+As you become comfortable with tapping at the catch, you'll find your entries become cleaner and more controlled, leading to more effective power application.
+
+💡 **Tip:** Focus on maintaining your upper body posture during the tap drill. Keep shoulders relaxed despite being in the forward position, and ensure your core is engaged to support your back.
+
 ### Mastering the Sequence: Drills for Coordination
 
 Rowing requires coordinating multiple body parts in a specific sequence. Drills help isolate parts of the stroke to build muscle memory and coordination. You'll likely practice these on the water:
@@ -201,6 +235,38 @@ You need to know where you're going and what's around you.
 ![Placeholder: Image showing a rower looking over their shoulder while rowing](placeholder)
 
 💡 **Tip:** Pick a landmark far ahead on the correct side of the river and aim for it. Make small, frequent steering adjustments rather than big, jerky ones.
+
+### Building Endurance and Rate: Progressive Pieces
+
+As your technique improves, you'll want to develop your endurance and practice rowing at different stroke rates. Progressive pieces are an excellent way to develop these skills in a controlled manner.
+
+#### Progressive Rate Workouts
+
+A proven workout structure that helps develop both endurance and comfort at higher rates follows this format:
+
+**The 10-Minute Progressive Piece:**
+1. **4 minutes** at 16 strokes per minute (spm) - Focus on technical precision
+2. **3 minutes** at 18 spm - Maintain technique while slightly increasing rate
+3. **2 minutes** at 20 spm - Continue focusing on clean catches and releases
+4. **1 minute** at 22 spm - Maintain form while experiencing a higher rate
+
+**Benefits:**
+* Gradually increases cardiovascular demand
+* Builds comfort at varying stroke rates
+* Challenges you to maintain technique as rate increases
+* Teaches pacing and energy management
+* Improves fitness while reinforcing proper form
+
+💡 **Tip:** Even if you never plan to race, practicing at higher rates helps improve your technique and fitness. As you increase stroke rate, focus on maintaining clean catches and relaxed recovery. Remember that pressure can be adjusted independently from rate - beginners should focus on good technique rather than maximum power.
+
+#### Adapting to Your Skill Level
+
+There are many ways to modify this workout structure based on your experience level:
+* **Beginners:** Use lighter pressure, focus on clean technique above all else
+* **Intermediate:** Add slightly more pressure as rate increases
+* **Advanced:** Maintain consistent power throughout the rate changes
+
+Your coach will provide guidance on appropriate pressure levels and may suggest modifications based on your individual needs.
 
 ---
 

@@ -71,6 +71,20 @@ layout: default
 - **Purpose:** Addresses specific skill gaps identified in earlier sessions.
 - **Key Coaching Points:** Focus on quality of movement rather than quantity. Allow adequate practice time at each station.
 
+### Progressive Rate Workout
+- **Execution:** 10-minute structured piece with increasing rate progression:
+  1. 4 minutes at 16 strokes per minute (spm)
+  2. 3 minutes at 18 spm
+  3. 2 minutes at 20 spm
+  4. 1 minute at 22 spm
+- **Purpose:** Develops comfort at varying rates and pressures. Builds endurance and technical consistency while increasing stroke rate.
+- **Key Coaching Points:** 
+  - Maintain technical form as rate increases
+  - Add appropriate pressure with rate (optional for beginners)
+  - Focus on clean catches and releases at higher rates
+  - Adjust expectations based on individual skill level
+  - Emphasize that even higher rates help improve fitness and technique
+
 ## Common Beginner Errors & Corrective Cues
 
 ### Navigation

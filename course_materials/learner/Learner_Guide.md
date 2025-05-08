@@ -368,6 +368,81 @@
   </div>
   
   <div id="reference-tab" class="tab-content">
+    <h2 id="equipment-care-and-procedures">Equipment Care and Procedures</h2>
+    
+    <h3>Proper Equipment Care</h3>
+    <p>Taking good care of rowing equipment is essential for both its longevity and the enjoyment of all club members. Follow these guidelines to ensure proper equipment maintenance:</p>
+    
+    <h4>Boat Cleaning and Storage</h4>
+    <ul>
+      <li><strong>Thorough cleaning:</strong> Always wipe down your boat after each row, before returning it to storage
+        <ul>
+          <li>Clean the entire hull using the sponges and towels provided</li>
+          <li>Pay special attention to removing "river scum" before it dries</li>
+          <li>Once dried, river residue becomes much more difficult to remove</li>
+        </ul>
+      </li>
+      <li><strong>Proper storage:</strong> Return boats to their designated racks following the established system
+        <ul>
+          <li>Note the position and orientation of your boat before taking it out</li>
+          <li>Outside-stored boats should have bows pointed toward the boathouse</li>
+          <li>Secure boats with straps snugly but not excessively tight (especially singles)</li>
+        </ul>
+      </li>
+      <li><strong>Reporting damage:</strong> Always report any equipment issues you notice
+        <ul>
+          <li>Notify your coach immediately about any damage or malfunction</li>
+          <li>Record issues in the logbook to alert other rowers</li>
+          <li>Never use equipment you suspect may be damaged</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <h4>Oar Maintenance</h4>
+    <ul>
+      <li><strong>Handle cleaning:</strong> Clean the oar handles after each use
+        <ul>
+          <li>Wipe with the provided cleaning solution to remove sweat and dirt</li>
+          <li>This prevents the growth of bacteria and deterioration of grip material</li>
+        </ul>
+      </li>
+      <li><strong>Blade care:</strong> Inspect blades for any damage or unusual wear
+        <ul>
+          <li>Report any chips, cracks, or loose parts to your coach</li>
+          <li>When storing, avoid resting blades directly on rough surfaces</li>
+        </ul>
+      </li>
+      <li><strong>Proper storage:</strong> Return oars to their designated racks
+        <ul>
+          <li>Match oars to the correct storage location (usually labeled)</li>
+          <li>Store with blades vertical and weight supported properly</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <h4>Sign-Out Procedures</h4>
+    <ul>
+      <li><strong>Before launching:</strong>
+        <ul>
+          <li>Always sign out in the logbook before taking equipment</li>
+          <li>Record your name, boat, time out, and expected return time</li>
+          <li>Check for any notes about the equipment from previous users</li>
+        </ul>
+      </li>
+      <li><strong>After returning:</strong>
+        <ul>
+          <li>Sign back in to confirm your safe return</li>
+          <li>Note any issues encountered with the equipment</li>
+          <li>Record important observations about water conditions if relevant</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="info-box tip">
+      <h4>Equipment Care Tip</h4>
+      <p>Remember that rowing equipment is shared by many club members and represents a significant investment. By taking proper care of boats and oars, you help ensure a positive experience for everyone and extend the lifespan of valuable equipment.</p>
+    </div>
+
     <h2 id="next-steps-after-the-course">Next Steps After the Course</h2>
     
     <h3>Continuing Your Rowing Journey</h3>

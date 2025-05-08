@@ -17,6 +17,7 @@
     <a class="tab-link" data-tab="execution-tab">Execution</a>
     <a class="tab-link" data-tab="followup-tab">Follow-up</a>
     <a class="tab-link" data-tab="session-tab">Session Notes</a>
+    <a class="tab-link" data-tab="sculling-tab">Sculling-Specific</a>
   </div>
   
   <div id="preparation-tab" class="tab-content">
@@ -220,5 +221,66 @@
       <li><input type="checkbox"> Discuss pathways after program completion</li>
     </ul>
     
+  </div>
+  
+  <div id="sculling-tab" class="tab-content">
+    <h2 id="sculling-specific-guidelines">Sculling-Specific Guidelines</h2>
+
+    <h3>Safety & Visibility</h3>
+    <ul>
+      <li><input type="checkbox"> Emphasize wearing visible clothing (white or hi-viz preferred)</li>
+      <li><input type="checkbox"> Remind rowers to look over both shoulders every 3-5 strokes</li>
+      <li><input type="checkbox"> Ensure all scullers understand traffic patterns</li>
+      <li><input type="checkbox"> Verify rowers can properly identify landmarks for navigation</li>
+      <li><input type="checkbox"> Review hand signals for on-water communication</li>
+    </ul>
+
+    <h3>Dock Management</h3>
+    <ul>
+      <li><input type="checkbox"> Remind participants not to crowd the dock with boats</li>
+      <li><input type="checkbox"> Practice efficient launches (less than 5 minutes from water entry to departure)</li>
+      <li><input type="checkbox"> Coordinate launches in pods if group is large</li>
+      <li><input type="checkbox"> Establish waiting areas for boats ready to launch</li>
+      <li><input type="checkbox"> Maintain clear landing zones for returning boats</li>
+    </ul>
+
+    <h3>Equipment Care</h3>
+    <ul>
+      <li><input type="checkbox"> Demonstrate proper boat wipedown techniques</li>
+      <li><input type="checkbox"> Emphasize cleaning immediately after use (before river scum dries)</li>
+      <li><input type="checkbox"> Show proper oar handle cleaning</li>
+      <li><input type="checkbox"> Teach appropriate strap tightness for outside-stored boats</li>
+      <li><input type="checkbox"> Review logbook sign-out and sign-in procedures</li>
+    </ul>
+
+    <h3>Technical Focus Areas</h3>
+    <ul>
+      <li><input type="checkbox"> Recovery sequence: hands away → body rock → slide</li>
+      <li><input type="checkbox"> Proper body position before knees bend</li>
+      <li><input type="checkbox"> Catch technique and early blade placement</li>
+      <li><input type="checkbox"> Tap drill at ½, ¾ and full slide for catch stability</li>
+      <li><input type="checkbox"> Catch placement drill connecting recovery with entry</li>
+    </ul>
+
+    <h3>Workout Guidance</h3>
+    <ul>
+      <li><input type="checkbox"> Start with technical drills before adding pressure</li>
+      <li><input type="checkbox"> Progressive pieces (10-minute format with increasing rates):</li>
+      <li><input type="checkbox"> 4 minutes at 16spm</li>
+      <li><input type="checkbox"> 3 minutes at 18spm</li>
+      <li><input type="checkbox"> 2 minutes at 20spm</li>
+      <li><input type="checkbox"> 1 minute at 22spm</li>
+      <li><input type="checkbox"> Adjust pressure recommendations based on skill level</li>
+      <li><input type="checkbox"> Monitor for proper technique as rate increases</li>
+    </ul>
+    
+    <h3>Coaching Philosophy</h3>
+    <ul>
+      <li><input type="checkbox"> Encourage rowers to accept and implement coaching feedback</li>
+      <li><input type="checkbox"> Record video of scullers when possible for technique review</li>
+      <li><input type="checkbox"> Emphasize slowing down to be more mindful about technique</li>
+      <li><input type="checkbox"> Remind scullers about taking responsibility for their own rowing</li>
+      <li><input type="checkbox"> Provide alternatives to drills based on varying skill levels</li>
+    </ul>
   </div>
 </div>

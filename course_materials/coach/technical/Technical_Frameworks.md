@@ -134,6 +134,59 @@ The "Black Bear Sequence" provides a systematic approach to teaching the compone
 - Pause drills (arms away, body over)
 - Quarter slide rowing
 - Catch preparation drills
+- Tap drill at ½, ¾, and full slide
+- Catch placement drill
+
+### Advanced Catch Preparation
+
+**Importance of Catch Comfort:**
+- The catch position is often perceived as unstable
+- Anxiety at the catch leads to rushed entries and missed water
+- Developing comfort at full compression enables clean blade entry
+- A precise catch enables maximum drive efficiency
+
+**Key Technical Elements:**
+1. **Body Position**
+   - Strong forward pivot from the hips
+   - Spine remains straight, not rounded
+   - Core engaged for stability
+   - Shoulders relaxed despite forward position
+   - Weight balanced across the seat
+
+2. **Approach Sequence**
+   - Complete body positioning before final slide
+   - Early blade squaring during approach
+   - Hands maintain consistent height
+   - Patient arrival at full compression
+   - Brief moment of stability before entry
+
+3. **Entry Mechanics**
+   - Blade placed at furthest comfortable reach
+   - Entry through horizontal hand movement
+   - Minimal vertical movement during placement
+   - Clean, splash-free entry
+   - Immediate connection with water
+
+**Progression Strategy:**
+1. Begin with static practice at ½ slide
+2. Progress to ¾ slide as stability develops
+3. Finally, develop comfort at full slide
+4. Use tap drills to build confidence at each position
+5. Connect catch preparation with effective drive initiation
+
+**Coaching Focus Areas:**
+- Emphasize strength of body position, not just reach
+- Develop confidence in the "unstable" forward position
+- Create deliberate preparation during the final approach
+- Ensure shoulders remain relaxed at the catch
+- Build comfort before focusing on speed of execution
+
+**Common Challenges:**
+- Rushing into the catch due to instability anxiety
+- Dropping the hands just before entry
+- Early slide movement before body position is set
+- Diving the blade too deep on entry
+- Insufficient core engagement at catch position
 
 ### 4. Drive
 
