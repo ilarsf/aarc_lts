@@ -131,6 +131,12 @@ Test your understanding of the material covered in the Learn to Scull program wi
   </div>
 </div>
 
+<div class="info-box note mt-4">
+  <h4>Low-Light & Nighttime Safety Quiz</h4>
+  <p>Test your knowledge on the most recent safety requirements for rowing in low-light conditions, including proper boat lighting and high-visibility clothing.</p>
+  <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="cta-button">Take Low-Light Safety Quiz</a></div>
+</div>
+
 <div class="info-box aarc">
   <h4>Questions?</h4>
   <p>If you have any questions about these resources or need additional information, please contact your instructor or email <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
