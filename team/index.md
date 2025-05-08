@@ -27,7 +27,7 @@ title: Meet the Team - AARC Learn to Scull Program
     
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Michelle Nemshak">
+        <img src="https://images.clubexpress.com/757878/photos/screen/900131060.bmp?v=1746729268862" alt="Michelle Nemshak">
       </div>
       <div class="team-member-info">
         <h3>Michelle Nemshak</h3>
@@ -60,7 +60,7 @@ title: Meet the Team - AARC Learn to Scull Program
     
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Russell Miller">
+        <img src="https://images.clubexpress.com/757878/photos/screen/59976388.jpg?v=1746729220555" alt="Russell Miller">
       </div>
       <div class="team-member-info">
         <h3>Russell Miller</h3>
@@ -76,18 +76,18 @@ title: Meet the Team - AARC Learn to Scull Program
   <div class="team-grid">
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/russg_350_1348087484.jpg" alt="Russ Giacobbe">
+        <img src="https://images.clubexpress.com/757878/graphics/Russ_Giacobbe_350px_399352445.jpg" alt="Russ Giacobbe">
       </div>
       <div class="team-member-info">
         <h3>Russ Giacobbe</h3>
-        <h4>Rowing Program Director, Head Sweep Coach, Boatman</h4>
-        <p>Russ leads the club's rowing programs and is a key figure you'll meet after completing the Learn to Scull program. His experience and commitment to safety make him an invaluable resource for developing scullers.</p>
+        <h4>Sculling Development Director</h4>
+        <p>Russ leads the club's sculling development programs and is a key figure you'll meet after completing the Learn to Scull program. His experience and commitment to safety make him an invaluable resource for developing scullers.</p>
       </div>
     </div>
     
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/tomkraft_350_1348087449.jpg" alt="Tom Kraft">
+        <img src="https://images.clubexpress.com/757878/graphics/Tom_Kraft_350px_2143360906.jpg" alt="Tom Kraft">
       </div>
       <div class="team-member-info">
         <h3>Tom Kraft</h3>
@@ -98,7 +98,7 @@ title: Meet the Team - AARC Learn to Scull Program
 
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/barbarakraft_350_1348087404.jpg" alt="Barbara Kraft">
+        <img src="https://images.clubexpress.com/757878/graphics/Barb_Kraft_350px_1729077476.jpg" alt="Barbara Kraft">
       </div>
       <div class="team-member-info">
         <h3>Barbara Kraft</h3>

@@ -18,7 +18,7 @@ Your primary goal is to teach rowing technique *and* foster a love for the sport
 
 Use these frameworks consistently for teaching and feedback:
 
-#### KRAFT's Keys
+#### KRAFTs' Keys
 
 * **K:** **K**eep shoulders relaxed and down.
 * **R:** **R**each from hips, not shoulders.
@@ -56,7 +56,7 @@ This chapter sets the stage. Following chapters detail session plans, drills, an
 
 ## Chapter 9: Session Plans & Drills
 
-This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate KRAFT's Keys and the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans](/aarc_lts/course_materials/coach/session_plans/).*
+This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate KRAFTs' Keys and the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans](/aarc_lts/course_materials/coach/session_plans/).*
 
 💡 **Coach's Tip:** Before each session, review the plan below and the **Daily Coach Checklist** (Chapter 10). Familiarize yourself with drills and common errors.
 
