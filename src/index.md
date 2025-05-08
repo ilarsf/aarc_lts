@@ -125,15 +125,15 @@ Test your understanding of the material covered in the Learn to Scull program wi
   </div>
   
   <div class="info-box warning">
-    <h4>Boathouse Rules Quiz</h4>
-    <p>Test your knowledge on boathouse rules, equipment care, and safety procedures.</p>
+    <h4>Club Rules & Equipment Quiz</h4>
+    <p>Test your knowledge on AARC club rules, equipment handling, general safety procedures, and member responsibilities.</p>
     <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="cta-button">Take Boathouse Quiz</a></div>
   </div>
 </div>
 
 <div class="info-box note mt-4">
-  <h4>Low-Light & Nighttime Safety Quiz</h4>
-  <p>Test your knowledge on the most recent safety requirements for rowing in low-light conditions, including proper boat lighting and high-visibility clothing.</p>
+  <h4>Rowing Visibility & Safety Quiz</h4>
+  <p>Test your knowledge on safety requirements for maintaining visibility on the water, including proper boat lighting, and high-visibility clothing (recommended at all times).</p>
   <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="cta-button">Take Low-Light Safety Quiz</a></div>
 </div>
 
