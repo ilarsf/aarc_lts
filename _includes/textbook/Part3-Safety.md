@@ -1,6 +1,6 @@
-# Part 3: Safety
+# Part 3: Safety & Rules of the River
 
-## Chapter 6: On-Water Safety Protocols
+## Chapter 6: Water Safety Fundamentals
 
 Safety is the foundation of enjoyable rowing. This chapter outlines the essential protocols and awareness needed *before* you even launch and while you are on the water. Adhering to these practices ensures not only your safety but the safety of everyone sharing the river. *Refer to the official [AARC Safety Rules (PDF)](/aarc_lts/src/AARC_Safety_Rules.pdf) for complete details.*
 
@@ -16,6 +16,35 @@ Conditions on the water can change quickly. Always assess the weather and water 
 * **River Conditions:** Check for strong currents (especially after heavy rain) and debris (logs, branches) in the water.
 
 ⚠️ **Warning:** Never underestimate the weather. If in doubt, stay ashore. Your coach has the final authority to cancel practice due to unsafe conditions. *See the website's [Weather Guidelines for Rowers](/aarc_lts/course_materials/learner/safety/Weather_Guidelines.html) for more information.*
+
+### Safety Equipment Requirements
+
+Every rowing session requires proper safety equipment and preparations. Here are the essential requirements:
+
+#### Personal Equipment
+
+* **Personal Flotation Device (PFD):** AARC policy requires certain rowers to wear PFDs. Your coach will inform you if this applies to you.
+
+* **High-Visibility Clothing:** 
+  * **CRITICAL SAFETY REQUIREMENT:** Wear bright, visible clothing whenever you row
+  * White or bright/neon colors (yellow, orange, pink) are strongly preferred
+  * High-visibility tops are especially important in low light conditions
+  * Avoid dark colors (black, navy, dark gray) that blend with the water
+  * Consider reflective elements for dawn/dusk rowing
+  * Remember: Being visible to other boats and watercraft could save your life
+
+* **Hand Safety Preparation:**
+  * **Keep fingernails short and smooth:** Long nails can cause painful scratches to your opposite hand during the sculling crossover motion
+  * **Remove rings and jewelry:** Rings can interfere with proper grip technique, increase friction leading to blisters, and catch on equipment causing injury
+  * **Consider removing watches/bracelets:** These may restrict movement or interfere with your stroke
+
+* **Appropriate Attire:** Fitted clothing that won't catch on equipment. Avoid loose shirts or shorts that might get caught in the slide or moving parts.
+
+* **Weather Protection:** Dress appropriately for conditions (sun protection, layers for cold, etc.)
+
+* **Water Bottle:** Stay hydrated during your rowing session.
+
+#### Boat Equipment
 
 ### Essential Equipment Checks
 

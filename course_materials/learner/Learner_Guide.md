@@ -135,6 +135,39 @@
     <h3>What Is a Flip Test?</h3>
     <p>A supervised practice of capsizing and safely returning to your boat. This essential skill ensures you can handle an unexpected capsize. Experiencing this in a controlled setting removes the element of surprise and builds confidence for water safety.</p>
 
+    <h3>Personal Safety Preparation</h3>
+    <p>Before each rowing session, ensure you've taken care of these important personal safety items:</p>
+    
+    <h4>High-Visibility Clothing</h4>
+    <ul>
+      <li><strong>Critical safety requirement:</strong> Always wear bright, visible clothing when rowing</li>
+      <li><strong>Preferred colors:</strong> White or bright/neon colors (yellow, orange, pink)</li>
+      <li><strong>Avoid:</strong> Dark colors like black, navy, or dark gray that blend with the water</li>
+      <li><strong>Enhanced visibility:</strong> Consider clothing with reflective elements for dawn/dusk rowing</li>
+      <li><strong>Remember:</strong> Being visible to other boats and watercraft could save your life</li>
+    </ul>
+    
+    <h4>Prevent Hand Injuries</h4>
+    <ul>
+      <li><strong>Cut your fingernails:</strong> 
+        <ul>
+          <li>Keep fingernails short and smooth to prevent scratching your other hand</li>
+          <li>During the rowing stroke, one hand passes very close to the other with nails pointing downward</li>
+          <li>Long nails can cause painful scratches or cuts to your opposite hand</li>
+          <li>File any sharp edges to prevent snagging on equipment or clothing</li>
+        </ul>
+      </li>
+      <li><strong>Remove rings and jewelry:</strong>
+        <ul>
+          <li>Rings can interfere with proper grip technique</li>
+          <li>Jewelry may increase friction between hand and oar, leading to blisters</li>
+          <li>Rings can catch on equipment and cause injury</li>
+          <li>Consider removing watches and bracelets that might restrict movement</li>
+        </ul>
+      </li>
+      <li><strong>Secure long hair:</strong> Tie back long hair to prevent it getting caught in moving parts</li>
+    </ul>
+
     <h3>Understanding Capsizing</h3>
     <p>Sculling boats are narrow by design for speed and efficiency, making them inherently less stable than recreational watercraft. Capsizing can happen for several reasons:</p>
     <ul>

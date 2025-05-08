@@ -8,7 +8,7 @@ This section contains comprehensive technical resources for Learn to Scull coach
 
 ## Technical Frameworks
 
-[Technical Frameworks Guide](Technical_Frameworks.md) - Comprehensive explanation of Kraft's Keys and the Black Bear Sequence, the foundational technical frameworks used in our Learn to Scull program.
+[Technical Frameworks Guide](Technical_Frameworks.md) - Comprehensive explanation of Krafts' Keys and the Black Bear Sequence, the foundational technical frameworks used in our Learn to Scull program.
 
 ## Drills and Teaching Tools
 

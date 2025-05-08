@@ -9,9 +9,9 @@ layout: default
   <p>This guide outlines the primary technical frameworks used in the AARC Learn to Scull program. These frameworks provide consistent reference points for coaches and participants throughout the learning process.</p>
 </div>
 
-## Kraft's Keys
+## Krafts' Keys
 
-"Kraft's Keys" is a mnemonic device that helps rowers remember essential principles of good sculling technique. Two versions are commonly used:
+"Krafts' Keys" is a mnemonic device that helps rowers remember essential principles of good sculling technique. Two versions are commonly used:
 
 ### Version 1: KRAFT
 
@@ -226,7 +226,7 @@ The "Black Bear Sequence" provides a systematic approach to teaching the compone
 
 ## Integrating the Frameworks in Instruction
 
-The Kraft's Keys and Black Bear Sequence complement each other, with the Keys providing fundamental principles and the Sequence offering a progression for teaching the complete stroke cycle.
+The Krafts' Keys and Black Bear Sequence complement each other, with the Keys providing fundamental principles and the Sequence offering a progression for teaching the complete stroke cycle.
 
 ### Effective Integration Strategies:
 

@@ -16,7 +16,7 @@ Welcome to the coaching resources for the AARC Learn to Scull program. These mat
 
 Visit the [**Technical Resources**](technical/index.md) section for comprehensive guides including:
 
-- [Technical Frameworks](technical/Technical_Frameworks.md) - Kraft's Keys and Black Bear Sequence reference
+- [Technical Frameworks](technical/Technical_Frameworks.md) - Krafts' Keys and Black Bear Sequence reference
 - [Key Drills Repertoire](technical/Key_Drills_Repertoire.md) - Comprehensive guide to all teaching drills
 - [Common Technical Issues and Corrections](technical/Common_Technical_Issues_and_Corrections.md) - Detailed guide to fixing technique problems
 

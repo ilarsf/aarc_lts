@@ -9,9 +9,9 @@ layout: default
   <p>These frameworks will help you learn and remember the key elements of proper sculling technique. Your coaches will refer to these concepts throughout the program.</p>
 </div>
 
-## Kraft's Keys: Five Essential Principles
+## Krafts' Keys: Five Essential Principles
 
-Kraft's Keys is a simple way to remember the most important elements of good sculling technique. The letters in "KRAFT" stand for:
+Krafts' Keys is a simple way to remember the most important elements of good sculling technique. The letters in "KRAFT" stand for:
 
 ### K: Keep shoulders relaxed and down
 - Avoid tension in your shoulders and neck
@@ -88,7 +88,7 @@ Your coaches will use these frameworks to teach you proper technique:
 
 <div class="info-box tip">
   <h4>Practice Tip</h4>
-  <p>Don't try to focus on all aspects of technique at once. Pick one principle from Kraft's Keys to concentrate on during each practice session, then gradually build up to incorporating all of them naturally.</p>
+  <p>Don't try to focus on all aspects of technique at once. Pick one principle from Krafts' Keys to concentrate on during each practice session, then gradually build up to incorporating all of them naturally.</p>
 </div>
 
 [← Back to Learner Resources](../index.md)

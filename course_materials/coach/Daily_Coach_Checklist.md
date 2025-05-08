@@ -39,6 +39,7 @@
       <li><input type="checkbox"> Prepare necessary teaching aids and demo equipment</li>
       <li><input type="checkbox"> Set up any land-based training equipment needed</li>
       <li><input type="checkbox"> Organize PFDs and verify sufficient quantity</li>
+      <li><input type="checkbox"> Have extra high-visibility clothing items available for participants who need them</li>
     </ul>
 
     <h3>Administrative</h3>
@@ -172,6 +173,8 @@
           <li><input type="checkbox"> <a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank">SafeSport Policy</a></li>
         </ul>
       </li>
+      <li><input type="checkbox"> Emphasize high-visibility clothing requirements and their importance for water safety</li>
+      <li><input type="checkbox"> Remind participants about hand/wrist safety (cutting fingernails, removing rings/jewelry)</li>
       <li><input type="checkbox"> Conduct erg session (grip, basic stroke, sequencing)</li>
       <li><input type="checkbox"> Teach boat parts and equipment overview</li>
       <li><input type="checkbox"> Practice safe boat handling (carrying, placing in slings)</li>
@@ -228,11 +231,23 @@
 
     <h3>Safety & Visibility</h3>
     <ul>
-      <li><input type="checkbox"> Emphasize wearing visible clothing (white or hi-viz preferred)</li>
+      <li><input type="checkbox"> <strong>Emphasize wearing visible clothing (white or hi-viz preferred) as a CRITICAL safety requirement</strong></li>
+      <li><input type="checkbox"> Verify all participants are wearing appropriate high-visibility clothing</li>
+      <li><input type="checkbox"> Address any dark-colored clothing that compromises visibility (offer alternatives if available)</li>
+      <li><input type="checkbox"> Explain visibility risks specific to your waterway (low light, blind corners, etc.)</li>
       <li><input type="checkbox"> Remind rowers to look over both shoulders every 3-5 strokes</li>
       <li><input type="checkbox"> Ensure all scullers understand traffic patterns</li>
       <li><input type="checkbox"> Verify rowers can properly identify landmarks for navigation</li>
       <li><input type="checkbox"> Review hand signals for on-water communication</li>
+    </ul>
+
+    <h3>Personal Safety Preparation</h3>
+    <ul>
+      <li><input type="checkbox"> Check that participants have trimmed fingernails to prevent scratching injuries</li>
+      <li><input type="checkbox"> Remind participants to remove rings and jewelry that may interfere with grip or cause injury</li>
+      <li><input type="checkbox"> Explain how fingernails can cause scratches during the crossover in sculling</li>
+      <li><input type="checkbox"> Ensure participants with long hair have it secured</li>
+      <li><input type="checkbox"> Verify participants are wearing appropriate clothing that won't catch in equipment</li>
     </ul>
 
     <h3>Dock Management</h3>

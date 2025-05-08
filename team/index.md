@@ -7,43 +7,13 @@ title: Meet the Team - AARC Learn to Scull Program
 
 <div class="team-section">
   <div class="team-intro">
-    <p>Our dedicated team of director, coaches and instructors are committed to providing an exceptional learning experience for all AARC Learn to Scull participants. With years of rowing experience and a passion for the sport, they are here to guide you every step of the way on your rowing journey.</p>
+    <p>Our dedicated team is committed to providing an exceptional learning experience for all AARC Learn to Scull participants. Get to know the instructors who will guide you through the program and the other key figures in our sculling community you'll meet as you continue your rowing journey.</p>
   </div>
 
+  <h2>Learn to Scull Instructors</h2>
+  <p>These are the instructors who will be directly working with you during the Learn to Scull program:</p>
+
   <div class="team-grid">
-    <div class="team-member">
-      <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/Russ_Giacobbe_350px_399352445.jpg" alt="Russ Giacobbe">
-      </div>
-      <div class="team-member-info">
-        <h3>Russ Giacobbe</h3>
-        <h4>Director & Head Coach</h4>
-        <p>Russ coaches morning sweep practices and serves as the club's boatman. He was formerly the freshman coach at the University of Michigan (2011-2021) and opened Marshall Shell Repair in 2019.</p>
-      </div>
-    </div>
-
-    <div class="team-member">
-      <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/Tom_Kraft_350px_2143360906.jpg" alt="Tom Kraft">
-      </div>
-      <div class="team-member-info">
-        <h3>Tom Kraft</h3>
-        <h4>Head Sculling Coach</h4>
-        <p>Tom learned to row with AARC in 1999. He previously coached Huron High School Rowing and worked at Black Bear Sculling Camps. Tom co-owns RowKraft and brings extensive sculling expertise to the program.</p>
-      </div>
-    </div>
-
-    <div class="team-member">
-      <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/Barb_Kraft_350px_1729077476.jpg" alt="Barb Kraft">
-      </div>
-      <div class="team-member-info">
-        <h3>Barb Kraft</h3>
-        <h4>Sculling Coach</h4>
-        <p>Barb learned to row with AARC in 1998. She coached the AARC Learn to Row program and Huron Rowing's Novice Girls for 13 years. Barb co-owns RowKraft with Tom and specializes in teaching novice scullers.</p>
-      </div>
-    </div>
-
     <div class="team-member">
       <div class="team-member-image">
         <img src="https://images.clubexpress.com/757878/graphics/Margaret_350_1346948715.jpg" alt="Margaret Hudson">
@@ -51,10 +21,32 @@ title: Meet the Team - AARC Learn to Scull Program
       <div class="team-member-info">
         <h3>Margaret Hudson</h3>
         <h4>Instructor & Club President</h4>
-        <p>Margaret serves as the AARC President and brings her leadership skills and rowing experience to the Learn to Scull program. She helps new scullers develop confidence and proper technique on the water.</p>
+        <p>Margaret has been an AARC member since 2009 and currently serves as the Club President. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
       </div>
     </div>
     
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Michelle Nemshak">
+      </div>
+      <div class="team-member-info">
+        <h3>Michelle Nemshak</h3>
+        <h4>Instructor</h4>
+        <p>Michelle joined AARC in 2008 and has been a dedicated instructor for the Learn to Scull program. She specializes in breaking down complex rowing movements into approachable steps for beginners.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Sean Connors">
+      </div>
+      <div class="team-member-info">
+        <h3>Sean Connors</h3>
+        <h4>Instructor</h4>
+        <p>Sean became an AARC member in 2018 and quickly became involved with the Learn to Scull program. With his patient approach and technical knowledge, he helps new rowers feel comfortable and confident on the water.</p>
+      </div>
+    </div>
+
     <div class="team-member">
       <div class="team-member-image">
         <img src="https://images.clubexpress.com/757878/graphics/LarsFritsche_350px_1582283581.jpg" alt="Lars Fritsche">
@@ -62,13 +54,62 @@ title: Meet the Team - AARC Learn to Scull Program
       <div class="team-member-info">
         <h3>Lars Fritsche</h3>
         <h4>Instructor & Club Secretary</h4>
-        <p>Lars serves as the AARC Secretary and instructor for the Learn to Scull program. He focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
+        <p>Lars joined AARC in 2014 and serves as the Club Secretary. As an instructor for the Learn to Scull program, he focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
+      </div>
+    </div>
+    
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Russell Miller">
+      </div>
+      <div class="team-member-info">
+        <h3>Russell Miller</h3>
+        <h4>Instructor</h4>
+        <p>Russ brings enthusiasm and technical expertise to the Learn to Scull program. He is dedicated to helping new rowers develop proper form and technique while building their confidence on the water.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="mt-4">Sculling Community Leaders</h2>
+  <p>After completing the Learn to Scull program, you'll get to know these key figures in our sculling community who lead various club programs:</p>
+
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/russg_350_1348087484.jpg" alt="Russ Giacobbe">
+      </div>
+      <div class="team-member-info">
+        <h3>Russ Giacobbe</h3>
+        <h4>Rowing Program Director, Head Sweep Coach, Boatman</h4>
+        <p>Russ leads the club's rowing programs and is a key figure you'll meet after completing the Learn to Scull program. His experience and commitment to safety make him an invaluable resource for developing scullers.</p>
+      </div>
+    </div>
+    
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/tomkraft_350_1348087449.jpg" alt="Tom Kraft">
+      </div>
+      <div class="team-member-info">
+        <h3>Tom Kraft</h3>
+        <h4>Head Sculling Coach</h4>
+        <p>Tom is widely respected for his technical expertise and teaching methodology. His "Krafts' Keys" framework is used throughout our rowing programs and serves as the foundation for the Learn to Scull curriculum.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/barbarakraft_350_1348087404.jpg" alt="Barbara Kraft">
+      </div>
+      <div class="team-member-info">
+        <h3>Barbara Kraft</h3>
+        <h4>Sculling Coach</h4>
+        <p>Barbara works alongside Tom to develop rowing programs at AARC. She is known for her patient coaching style and attention to detail that helps rowers continue to improve after their initial instruction. </p>
       </div>
     </div>
   </div>
 
   <div class="info-box note mt-4">
-    <h4>Join Our Coaching Team</h4>
-    <p>AARC is always looking for experienced rowers who are passionate about teaching and sharing the joy of sculling. If you're interested in becoming an instructor or coach for our Learn to Scull program, please contact <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
+    <h4>Join Our Teaching Team</h4>
+    <p>AARC is always looking for experienced rowers who are passionate about teaching and sharing the joy of sculling. If you're interested in becoming an instructor for our Learn to Scull program, please contact <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
   </div>
 </div>

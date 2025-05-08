@@ -101,6 +101,8 @@ Comfort and practicality are key for rowing.
 #### What to Wear:
 
 * **Clothing:** Wear form-fitting, athletic clothing that allows freedom of movement and won't get caught in the boat's sliding seat or tracks. Think leggings, athletic shorts (not too baggy), and moisture-wicking tops. Layers are good for cooler weather.
+* **High-Visibility:** For safety on the water, wear bright, visible colors (white, yellow, orange, or pink). Avoid dark colors that blend with water (black, navy, dark gray). This is a critical safety requirement.
+* **Hand Safety:** Trim your fingernails short to prevent scratching during the crossover motion in sculling, and remove rings and jewelry that can interfere with grip or cause injury.
 * **Shoes:** You'll wear athletic shoes to the boathouse for land activities. You will typically remove your shoes before getting into the rowing shell, which has built-in foot stretchers.
 * **Socks:** Recommended for comfort in the boat's foot stretchers.
 

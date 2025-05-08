@@ -31,23 +31,26 @@ layout: default
 
 | Activity | Time | Key Focus/Objective | Relevant Kraft's Key/BBS | Coaching Cues | Safety Notes |
 |----------|------|---------------------|--------------------------|---------------|--------------|
+| **Pre-Session Setup** | **15 min** | **Erg setup, boat in slings, flip test area prep** | **N/A** | **N/A** | **Check equipment safety, prepare rescue gear** |
 | Welcome & Introductions | 10 min | Coach/student intros, class goals, safety overview | N/A | "Welcome! Our goal is to get you comfortable and confident in a sculling shell" | Location of first aid, emergency plan brief |
-| Erg Session | 30 min | Correct grip, basic stroke motion, sequencing intro | Correct Grip, Sequencing | "Fingers as hooks, not fists" "Legs-Body-Arms sequence" | Proper erg setup (damper, feet), avoid hitting front/back stops |
-| Sweep vs. Scull Discussion | 5 min | Explain the difference (1 oar vs 2 oars) | N/A | "Sculling uses two smaller oars, one in each hand" | N/A |
-| Equipment Overview (Boat in slings) | 30 min | Boat parts, adjustments, oar parts | N/A | "This is the rigger," "Adjust stretchers for comfort" | Demonstrate safe adjustment techniques |
-| Boat Handling Practice | 25 min | Getting boats off/on racks, safe carrying, placing in slings | N/A | "Lift with legs," "Carry on shoulders/gunwales" | Clear communication ("Heads up!"), awareness of surroundings |
-| Flip Test Prep & Dockside Skills | 20 min | Getting in/out of boat at dock, stability, basic oar manipulation | Relaxation, Horizontal | "Weight low/centered," "Slow is smooth," "Level hands" | One hand on dock/boat, coach assistance, dock edge awareness |
-| Flip Test Demo & Execution | 45 min | Demonstrate capsize recovery, individual practice | Relaxation | "Stay calm, boat floats," "Kick legs, pull low" | PFD use if needed, coach in water for support, keep boat near dock |
-| Wrap-up, Q&A, Maintenance Intro | 15 min | Review key points, answer questions, introduce boat cleaning/storage | N/A | "Any questions?" "Wipe down hull after rowing" | Reporting equipment issues in logbook |
+| Safety Orientation | 10 min | Review critical safety protocols, emergency procedures, and flip test preparation | N/A | "Safety first, always!" | Emphasize high-viz clothing requirements. Explain why dark colors make rowers invisible on water. Discuss importance of short fingernails and removing rings/jewelry to prevent hand injuries. |
+| Erg Session | 25 min | Correct grip, basic stroke motion, sequencing intro | Correct Grip, Sequencing | "Fingers as hooks, not fists" "Legs-Body-Arms sequence" | Proper erg setup (damper, feet), avoid hitting front/back stops |
+| Equipment Overview (Boat in slings) | 20 min | Boat parts, adjustments, oar parts | N/A | "This is the rigger," "Adjust stretchers for comfort" | Demonstrate safe adjustment techniques |
+| **BREAK** | **5 min** | **Water, restroom, questions** | **N/A** | **N/A** | **N/A** |
+| Boat Handling Practice | 20 min | Getting boats off/on racks, safe carrying, placing in slings | N/A | "Lift with legs," "Carry on shoulders/gunwales" | Clear communication ("Heads up!"), awareness of surroundings |
+| Dockside Skills & Stability | 20 min | Getting in/out of boat, stability practice at dock with ghost strokes | Relaxation, Horizontal | "One hand on dock at all times," "Level hands" | Coach stabilizes boat, proper entry/exit technique |
+| Flip Test Demonstration | 15 min | Coach demonstrates flip technique, explains self-rescue process | Relaxation | "Stay with the boat," "Use legs for re-entry" | Clear explanation, all participants attentive and asking questions |
+| Individual Flip Tests | 75 min | Each participant performs flip test while others observe (12-13 min per participant) | Relaxation | "Stay calm, boat floats," "Kick legs, pull low" | Coach in water, others observing from dock, assistant helps manage rotation |
+| Wrap-up & Maintenance Intro | 15 min | Review key points, answer questions, introduce boat cleaning/storage | N/A | "Any questions?" "Wipe down hull after rowing" | Reporting equipment issues in logbook |
 
 <div class="info-box aarc mb-3">
   <h4>Coaching Tips</h4>
-  <p>Manage cognitive load during the first session by breaking information into manageable chunks. Start with the physical motion (ergometer), then introduce equipment terminology, followed by handling practice. This progression helps participants avoid feeling overwhelmed.</p>
+  <p>With 6 participants performing individual flip tests, keep the group engaged by assigning observation tasks to those waiting their turn. Have them identify specific elements of the recovery technique and share observations after each test. This maintains focus and enhances learning through peer observation.</p>
 </div>
 
 <div class="info-box warning mb-3">
   <h4>Safety Note</h4>
-  <p>Don't rush the flip test. Ensure each participant feels adequately prepared and supported. Watch for signs of anxiety and provide additional coaching for hesitant participants.</p>
+  <p>Plan for approximately 12-13 minutes per participant for the flip test. Have towels and warm clothing ready. Ensure that the entire group observes each test to learn from peers' experiences. Consider weather conditions; on colder days, adjust the schedule to minimize waiting time in wet clothes for those who go early.</p>
 </div>
 
 ## Detailed Drill Explanations
@@ -128,7 +131,7 @@ layout: default
 
 ## Additional Resources
 - [Flip Test Instruction Guide](../safety/Flip_Test_Instructions.md) - Detailed flip test protocol
-- [Technical Frameworks Guide](../technical/Technical_Frameworks.md) - Kraft's Keys and Black Bear Sequence
+- [Technical Frameworks Guide](../technical/Technical_Frameworks.md) - Krafts' Keys and Black Bear Sequence
 - [Key Drills Repertoire](../technical/Key_Drills_Repertoire.md) - Comprehensive drill descriptions
 
 <style>
