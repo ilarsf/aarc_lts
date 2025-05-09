@@ -37,7 +37,7 @@ Our program uses a weekend intensive format (4 sessions over 2 consecutive weeke
 * **Hand Care:** Be proactive with blister prevention (See Part 2, Chapter 5).
 * **Recovery:** Stay hydrated, eat well, and rest between sessions.
 
-*See the [Online Program Schedule](/aarc_lts/course_materials/learner/Program_Schedule.html) for more details on the format.*
+*See the [Online Program Schedule]({{ site.baseurl }}/course_materials/learner/Program_Schedule.html) for more details on the format.*
 
 #### Learning Journey:
 
@@ -76,7 +76,7 @@ Our goal is to maintain a **welcoming and encouraging tone**, making the technic
 ### About AARC and Your Coaches
 The Ann Arbor Rowing Club (AARC) is a non-profit organization dedicated to making rowing accessible to the community. Our Learn to Scull program is taught by experienced and passionate coaches.
 
-*To learn more about AARC's mission and meet the coaching team, please visit the [About AARC](/aarc_lts/about/) and [Meet the Team](/aarc_lts/team/) pages on our website.*
+*To learn more about AARC's mission and meet the coaching team, please visit the [About AARC]({{ site.baseurl }}/about/) and [Meet the Team]({{ site.baseurl }}/team/) pages on our website.*
 
 ---
 
@@ -128,7 +128,7 @@ Comfort and practicality are key for rowing.
 ### Meet the Team
 The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about rowing.
 
-*You can learn more about them on the [Meet the Team page](/aarc_lts/team/) on our website.*
+*You can learn more about them on the [Meet the Team page]({{ site.baseurl }}/team/) on our website.*
 
 Your coaches are your primary resource. Don't hesitate to ask them questions throughout the program!
 

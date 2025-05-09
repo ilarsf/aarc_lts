@@ -2,7 +2,7 @@
 
 ## Chapter 6: Water Safety Fundamentals
 
-Safety is the foundation of enjoyable rowing. This chapter outlines the essential protocols and awareness needed *before* you even launch and while you are on the water. Adhering to these practices ensures not only your safety but the safety of everyone sharing the river. *Refer to the official [AARC Safety Rules (PDF)](/aarc_lts/src/AARC_Safety_Rules.pdf) for complete details.*
+Safety is the foundation of enjoyable rowing. This chapter outlines the essential protocols and awareness needed *before* you even launch and while you are on the water. Adhering to these practices ensures not only your safety but the safety of everyone sharing the river. *Refer to the official [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf) for complete details.*
 
 ### Weather and Water Condition Assessment
 
@@ -15,7 +15,7 @@ Conditions on the water can change quickly. Always assess the weather and water 
 * **Visibility:** Fog or heavy rain can severely reduce visibility, making it hard to see obstacles or other boats. Avoid rowing if visibility is less than ~100 meters.
 * **River Conditions:** Check for strong currents (especially after heavy rain) and debris (logs, branches) in the water.
 
-⚠️ **Warning:** Never underestimate the weather. If in doubt, stay ashore. Your coach has the final authority to cancel practice due to unsafe conditions. *See the website's [Weather Guidelines for Rowers](/aarc_lts/course_materials/learner/safety/Weather_Guidelines.html) for more information.*
+⚠️ **Warning:** Never underestimate the weather. If in doubt, stay ashore. Your coach has the final authority to cancel practice due to unsafe conditions. *See the website's [Weather Guidelines for Rowers]({{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html) for more information.*
 
 ### Safety Equipment Requirements
 
@@ -78,7 +78,7 @@ As discussed in Part 2, Chapter 5, knowing and adhering to the established river
 * Turn appropriately at designated points.
 * **Look around constantly** (every 3-5 strokes).
 
-Following these rules prevents collisions and ensures predictable movement for all water users. *Consult the [River Traffic Guide](/aarc_lts/course_materials/learner/safety/River_Traffic_Guide.html) for a detailed explanation.*
+Following these rules prevents collisions and ensures predictable movement for all water users. *Consult the [River Traffic Guide]({{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html) for a detailed explanation.*
 
 ### Communication: Commands and Signals
 
@@ -98,7 +98,7 @@ Clear communication on the water is essential.
 
 ## Chapter 6A: Boathouse Rules and Equipment Care
 
-Proper care and handling of equipment not only extends its lifespan but also ensures it remains in good working condition for everyone. This chapter covers important boathouse etiquette and equipment maintenance responsibilities. *See the detailed [Boathouse Rules and Equipment Care Guide](/aarc_lts/src/Boathouse_Rules_and_Equipment_Care.html) online.*
+Proper care and handling of equipment not only extends its lifespan but also ensures it remains in good working condition for everyone. This chapter covers important boathouse etiquette and equipment maintenance responsibilities. *See the detailed [Boathouse Rules and Equipment Care Guide]({{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html) online.*
 
 ### General Boathouse Rules
 
@@ -142,7 +142,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 * **Respect Your Peers:** Others deserve well-maintained equipment.
 * **Respect the Club's Investment:** Protects finances, allowing improvements.
 
-💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Club Rules & Equipment Quiz](/aarc_lts/src/quiz_module.html?quiz=bh).
+💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Club Rules & Equipment Quiz]({{ site.baseurl }}/src/quiz_module.html?quiz=bh).
 ---
 
 Understanding and practicing these safety protocols and boathouse rules forms the bedrock of responsible rowing. The next chapter addresses a key safety skill: what to do if you capsize.
@@ -204,8 +204,8 @@ This technique uses leg power, not arm strength.
 
 Watching the process helps. Coaches may provide links, or you can refer to the website:
 
-* Refer to videos linked in Appendix C or the [Q&A Companion Video Library](/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab).
-* *For a comprehensive walkthrough, see the detailed [Sculling Self-Rescue Guide](/aarc_lts/src/Sculling_Self_Rescue_Guide.html) and [Flip Test Instructions](/aarc_lts/src/AARC_Flip_Test_Instructions_20240803.html) available on the website.*
+* Refer to videos linked in Appendix C or the [Q&A Companion Video Library]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab).
+* *For a comprehensive walkthrough, see the detailed [Sculling Self-Rescue Guide]({{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html) and [Flip Test Instructions]({{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html) available on the website.*
 
 ---
 

@@ -111,7 +111,7 @@ This mandatory, supervised drill teaches you how to recover if your boat flips.
 
   * Before launching, quickly check your boat: bow ball secure, riggers tight, heel restraints functional, oarlocks working.
 
-*You can find full details in the [AARC Safety Rules](https://ilarsf.github.io/aarc_lts/src/AARC_Safety_Rules.pdf) and the [AARC SafeSport Policy](https://ilarsf.github.io/aarc_lts/src/AARCSafeSport_2015-01-18.pdf).*
+*You can find full details in the [AARC Safety Rules]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf) and the [AARC SafeSport Policy]({{ site.baseurl }}/src/AARCSafeSport_2015-01-18.pdf).*
 
 -----
 

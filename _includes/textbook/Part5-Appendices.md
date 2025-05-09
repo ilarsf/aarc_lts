@@ -87,15 +87,15 @@ All participants and coaches must abide by AARC policies. Full documents are lin
 
 ### AARC Safety Rules
 * **Summary:** Governs on-water conduct.
-* **Full Policy:** [AARC Safety Rules (PDF)](/aarc_lts/src/AARC_Safety_Rules.pdf)
+* **Full Policy:** [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf)
 
 ### AARC Code of Conduct
 * **Summary:** Emphasizes Safety, Respect, and Kindness.
-* **Full Policy:** [AARC Code of Conduct (PDF)](/aarc_lts/src/AARC_Code_of_Conduct_2025-02-26.pdf)
+* **Full Policy:** [AARC Code of Conduct (PDF)]({{ site.baseurl }}/src/AARC_Code_of_Conduct_2025-02-26.pdf)
 
 ### AARC SafeSport Policy
 * **Summary:** Commitment to prevent/address bullying, harassment, hazing, and emotional/physical/sexual misconduct.
-* **Full Policy:** [AARC SafeSport Policy (PDF)](/aarc_lts/src/AARCSafeSport_2015-01-18.pdf)
+* **Full Policy:** [AARC SafeSport Policy (PDF)]({{ site.baseurl }}/src/AARCSafeSport_2015-01-18.pdf)
 
 💡 **Tip:** Coaches and learners should familiarize themselves with these policies.
 
@@ -126,7 +126,7 @@ Visual aids can be incredibly helpful. Key videos used in the program include:
 * **USRowing Safety Video:** Comprehensive overview of general rowing safety practices.
 * **Correct Grip Tutorial:** Demonstrating proper hand position and grip technique.
 
-*Refer back to the links provided in the [Online Q&A Companion Video Library](/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab) or other online resources provided by AARC to review these videos.*
+*Refer back to the links provided in the [Online Q&A Companion Video Library]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab) or other online resources provided by AARC to review these videos.*
 
 ### External Links & Further Reading
 
@@ -136,7 +136,7 @@ Visual aids can be incredibly helpful. Key videos used in the program include:
 * **Concept2 Technique Videos:** [https://www.concept2.com/indoor-rowers/training/technique-videos](https://www.concept2.com/indoor-rowers/training/technique-videos) (Indoor rowing, but relevant principles)
 
 ### Interactive Learning Tools
-* **Boathouse Rules & Safety Quiz:** Test your knowledge of essential boathouse procedures and safety guidelines. [Take the Quiz](/aarc_lts/src/quiz_module.html?quiz=bh)
+* **Boathouse Rules & Safety Quiz:** Test your knowledge of essential boathouse procedures and safety guidelines. [Take the Quiz]({{ site.baseurl }}/src/quiz_module.html?quiz=bh)
 
 ---
 
@@ -199,7 +199,7 @@ Learning curves vary... *(Content adapted from QA_Companion.md)* ... Basic compe
 #### Can I row in other types of boats after LTS?
 Yes, once proficient, you can explore doubles (2x), quads (4x)... *(Content adapted from QA_Companion.md)* ...
 
-*[For the most up-to-date FAQs and video links, please visit the [Online Q&A Companion](/aarc_lts/course_materials/learner/QA_Companion.html).]*
+*[For the most up-to-date FAQs and video links, please visit the [Online Q&A Companion]({{ site.baseurl }}/course_materials/learner/QA_Companion.html).]*
 
 ---
 
