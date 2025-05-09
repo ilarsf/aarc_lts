@@ -8,9 +8,23 @@ title: "Complete Textbook - AARC Learn to Scull"
   <h1>AARC Learn to Scull - Complete Textbook</h1>
 </div>
 
-<div class="info-box tip">
-  <h4>Print-Friendly Version</h4>
-  <p>This page contains the entire textbook in one document. Use your browser's print function (Ctrl+P or Cmd+P) to create a PDF or printed copy.</p>
+<div class="info-box tip print-instructions">
+  <h4>Creating a PDF or Printed Copy</h4>
+  <p>Follow these steps for best results:</p>
+  <ol>
+    <li>Use <strong>Chrome or Edge</strong> browser for most consistent results</li>
+    <li>Press <strong>Ctrl+P</strong> or <strong>Cmd+P</strong> to open the print dialog</li>
+    <li>Select <strong>"Save as PDF"</strong> from the destination/printer options</li>
+    <li>In the print settings:
+      <ul>
+        <li>Enable <strong>"Background graphics"</strong> for diagrams/icons</li>
+        <li>Set <strong>Margins to "Default" or "Medium"</strong></li>
+        <li>Set <strong>Scale to "Default" or "100%"</strong></li>
+      </ul>
+    </li>
+    <li>Click <strong>"Save"</strong> or <strong>"Print"</strong> to generate the PDF</li>
+  </ol>
+  <p><a href="#" class="print-now-btn" onclick="window.print(); return false;">Click here to print now</a></p>
 </div>
 
 <div class="textbook-full-toc">
