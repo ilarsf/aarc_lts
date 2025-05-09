@@ -190,10 +190,22 @@ When conditions change but don't warrant full cancellation:
 - **Short-Term Immersion:** First 30 minutes (swimming failure)
 - **Long-Term Immersion:** Hypothermia onset (0.5-2 hours depending on temperature)
 
-**Cold Water Equation:**
-- Water temperature <50°F: Extreme caution, experienced rowers only
-- Water temperature <43°F: No singles, restricted small boat use
-- Water temperature <39°F: No rowing recommended
+**AARC Rowing Safety Zones:**
+
+| Condition | Zone 0 | Zone 1 | Zone 2 | Zone 3 |
+|---|---|---|---|---|
+| Water Temp | Any | <40°F | ≥40°F | ≥50°F |
+| Air Temp | ≤25°F or ≤40°F w/ precipitation | ≥50°F | ≤50°F | ≥50°F |
+| Combined | Any | ≤90°F | >90°F | ≥100°F |
+| Allowed Boats | None | 8+ Only | 8+, 4 Oar Rule (2X only) | 8+, 4+, 2X, 2+, 1X |
+
+**Additional Cold Water Safety Rules:**
+- Singles and pairs require water temperature ≥50°F AND combined air/water temperature ≥100°F
+- Doubles (2x) require water temperature ≥40°F AND combined air/water temperature ≥90°F
+- Singles can only be used when water temperature has been above 50°F for at least a week
+- Final decision on small boat usage rests with the director and head coaches
+- Safety launches are required for all practices involving 8+ and 4+
+- For all boats, consider not just when conditions are allowed, but when rowing will be safe and enjoyable
 
 **Cold Air Considerations:**
 - **Wind Chill Factor:** Actual felt temperature vs. reading
