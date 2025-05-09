@@ -6,6 +6,29 @@ layout: default
 
 This curated collection of high-quality instructional videos supports the Learn to Scull curriculum. Videos have been selected for clarity, accuracy, credible instruction, and good production quality, with preference for concise content under 10 minutes where appropriate.
 
+<div class="info-box info mb-3">
+  <h4>Video Quick Reference by Session</h4>
+  <ul>
+    <li><strong>Before First Session:</strong> Modules 1 (Introduction) and 2 (Safety)</li>
+    <li><strong>Session 1:</strong> Modules 3.1-3.3 (Boat Parts, Oars, Getting In/Out)</li>
+    <li><strong>Session 2:</strong> Modules 3.4 (Equipment Adjustments) and 4.1-4.3 (Stroke Overview, Catch, Drive)</li>
+    <li><strong>Session 3:</strong> Modules 4.4-4.6 (Finish, Recovery, Feathering/Squaring)</li>
+    <li><strong>Session 4:</strong> Modules 5 (Skill Development) and 6 (Independent Rowing)</li>
+  </ul>
+</div>
+
+<div class="info-box mb-3">
+  <h4>Quick Navigation</h4>
+  <ul>
+    <li><a href="#module-1-introduction-to-sculling">Module 1: Introduction to Sculling</a></li>
+    <li><a href="#module-2-safety-first">Module 2: Safety First</a></li>
+    <li><a href="#module-3-your-equipment-boat-and-oars">Module 3: Your Equipment</a></li>
+    <li><a href="#module-4-the-sculling-stroke-technique-fundamentals">Module 4: The Sculling Stroke</a></li>
+    <li><a href="#module-5-developing-sculling-skills">Module 5: Developing Skills</a></li>
+    <li><a href="#module-6-your-first-few-outings--beyond">Module 6: First Outings & Beyond</a></li>
+  </ul>
+</div>
+
 ## Module 1: Introduction to Sculling
 
 ### 1.1 What is Sculling?
@@ -24,6 +47,10 @@ This curated collection of high-quality instructional videos supports the Learn 
   <p><strong>Right:</strong> Rowing Terminology // Sculling vs. Sweep Rowing - UCanRow2/Concept2 clearly defines sculling (two oars per person) and contrasts it with sweep rowing (one oar per person). Also introduces basic terms like "crab" and "drive."</p>
 </div>
 
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
+</div>
+
 ### 1.2 Essential Sculling Terminology
 
 <div class="video-grid">
@@ -38,6 +65,10 @@ This curated collection of high-quality instructional videos supports the Learn 
 <div class="video-item">
   <p><strong>Left:</strong> Rowing Lingo with C2: Common Rowing Terms - Concept2 provides a quick overview of essential terms a beginner will frequently hear, such as "catch," "finish," "feathered," and "squared," demonstrated by a coach.</p>
   <p><strong>Right:</strong> Rowing Terms for Beginners - Dark Horse Rowing explains key oar-related terms like "feathered" (flat blade) and "squared" (vertical blade), as well as parts like the "spoon" and "sleeve/collar".</p>
+</div>
+
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
 </div>
 
 ## Module 2: Safety First
@@ -67,6 +98,10 @@ This curated collection of high-quality instructional videos supports the Learn 
 <div class="video-item">
   <p><strong>Capsize Recovery - Single Scull</strong> - USRowing (featuring Charlotte Hollingsworth) provides a clear, step-by-step demonstration of how to get back into a capsized single scull. It covers oar management, body movement, and re-entry technique.</p>
   <p>A critical safety skill. This video should be reviewed before any on-water practice of capsize recovery, which ideally occurs in controlled conditions with supervision.</p>
+</div>
+
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
 </div>
 
 ## Module 3: Your Equipment: Boat and Oars
@@ -133,6 +168,10 @@ This curated collection of high-quality instructional videos supports the Learn 
 <div class="video-item">
   <p><strong>Left:</strong> Adjusting the Foot Stretcher in a Single Scull - Gord Henry Rowing provides a detailed, on-water demonstration of how to adjust the foot stretcher position in a single scull, using the "fist between oar handles and body" guideline.</p>
   <p><strong>Right:</strong> How to Adjust Your Foot Stretcher Height and Position - UCanRow2/Concept2 explains foot stretcher positioning ("thumbs brush shirt") and oarlock/pin height adjustment using washers, which is conceptually similar for on-water boats.</p>
+</div>
+
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
 </div>
 
 ## Module 4: The Sculling Stroke: Technique Fundamentals
@@ -233,6 +272,10 @@ This curated collection of high-quality instructional videos supports the Learn 
   <p><strong>Right:</strong> Rowing Coaching: Teaching Feathering Quickly - Rowperfect UK offers a practical drill for teaching feathering with the fingers, by immobilizing the wrist to force correct muscle engagement.</p>
 </div>
 
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
+</div>
+
 ## Module 5: Developing Sculling Skills
 
 ### 5.1 Achieving Balance: Essential Drills
@@ -294,6 +337,10 @@ This curated collection of high-quality instructional videos supports the Learn 
   <p><strong>Right:</strong> ROWING TECHNIQUE: HOW TO GET THE BEST CATCH - AramTraining addresses detailed catch technique issues that are common among many scullers and provides solutions.</p>
 </div>
 
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
+</div>
+
 ## Module 6: Your First Few Outings & Beyond
 
 ### 6.1 Basic Boat and Oar Care
@@ -339,13 +386,23 @@ This curated collection of high-quality instructional videos supports the Learn 
   <p>A motivating resource that shows pathways to improvement through consistent practice and refinement of technique.</p>
 </div>
 
+<div class="text-right">
+  <a href="#" class="text-small">[Return to Top]</a>
+</div>
+
 <div class="info-box info mb-3">
   <h4>Using This Video Library</h4>
   <p>To get the most from these videos:</p>
   <ul>
-    <li>Watch videos relating to upcoming skills before each LTS session</li>
-    <li>Review videos after sessions to reinforce what you've learned</li>
-    <li>Focus on one technical aspect at a time during practice</li>
-    <li>Consider watching with fellow LTS participants for group discussion</li>
+    <li>Watch videos relating to upcoming skills <strong>before</strong> each LTS session (see session guide above)</li>
+    <li>Review videos <strong>after</strong> sessions to reinforce what you've learned</li>
+    <li>Focus on <strong>one technical aspect at a time</strong> during practice</li>
+    <li>Consider watching with fellow LTS participants for <strong>group discussion</strong></li>
+    <li>Use this resource during your independent practice sessions to refresh concepts</li>
+    <li>Return to these videos as a reference when working on specific technical elements</li>
   </ul>
+</div>
+
+<div class="print-instructions mb-3">
+  <p><a href="#" onclick="window.print(); return false;" class="print-now-btn">Print This Guide</a></p>
 </div>

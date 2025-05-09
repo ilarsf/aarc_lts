@@ -27,6 +27,15 @@ layout: default
 - First aid kit and safety gear
 - River traffic pattern map/diagram
 
+## Recommended Instructional Videos
+
+Direct learners to review these specific videos from the [Instructional Video Library](../../learner/technical/Instructional_Videos.html#module-3-your-equipment-boat-and-oars) to support today's session:
+
+- **Equipment Adjustments**: "Adjusting the Foot Stretcher in a Single Scull" (Gord Henry)
+- **Stroke Overview**: "Sculling Basics" (USVOYAGES/Sculling101) 
+- **Drive Phase**: "The Order of Operations: Legs, Core, Arms" (UCanRow2)
+- **Getting In/Out**: "Essential Sculling #5 Getting in" and "How I get into a single sculling boat"
+
 ## Session Schedule
 
 | Activity | Time | Key Focus/Objective | Relevant Kraft's Key/BBS | Coaching Cues | Safety Notes |

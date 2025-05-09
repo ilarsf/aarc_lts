@@ -165,7 +165,10 @@
     </div>
 
     <h3>Advanced Skills</h3>
-    <p>Coming soon: Additional videos on technical skills, drills, and advanced rowing techniques.</p>
+    <div class="info-box info mb-3">
+      <h4>Complete Video Library</h4>
+      <p>For a comprehensive collection of instructional videos covering all aspects of sculling, visit our <a href="../learner/technical/Instructional_Videos.html">Sculling Instructional Video Library</a>. This resource is organized by technique components and skill progression with session-specific recommendations.</p>
+    </div>
   </div>
   
   <div id="resources-tab" class="tab-content">

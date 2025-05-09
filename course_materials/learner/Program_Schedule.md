@@ -120,6 +120,17 @@ We recommend keeping the following weekend partially open as a contingency for w
 
 ## Preparing for Your Sessions
 
+<div class="info-box info mb-3">
+  <h4>Pre-Session Video Learning</h4>
+  <p>To maximize your on-water time, we recommend reviewing the appropriate videos in our <a href="../learner/technical/Instructional_Videos.html">Sculling Instructional Video Library</a> before each session:</p>
+  <ul>
+    <li><strong>Before Session 1:</strong> Introduction to Sculling and Safety videos</li>
+    <li><strong>Before Session 2:</strong> Equipment Adjustments and Stroke Overview videos</li>
+    <li><strong>Before Session 3:</strong> Finish, Recovery and Blade Work videos</li>
+    <li><strong>Before Session 4:</strong> Drills and Advanced Skills videos</li>
+  </ul>
+</div>
+
 To get the most out of the intensive weekend format:
 
 1. **Arrive Well-Rested:** Begin the program with adequate sleep and energy reserves.
@@ -127,7 +138,8 @@ To get the most out of the intensive weekend format:
 3. **Nutrition:** Plan appropriate meals/snacks for the breaks between same-day sessions.
 4. **Sun Protection:** Bring sunscreen, hat, and sunglasses for on-water sessions.
 5. **Comfortable Clothing:** Wear athletic clothes that allow freedom of movement.
-6. **Mindset:** Approach the intensive format with patience - remember that rowing technique develops gradually, even if sessions are close together.
+6. **Video Preparation:** Review the recommended videos for upcoming session content.
+7. **Mindset:** Approach the intensive format with patience - remember that rowing technique develops gradually, even if sessions are close together.
 
 ## What to Bring
 

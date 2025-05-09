@@ -27,6 +27,15 @@ layout: default
 - First aid kit and safety gear
 - Clean towels for flip test participants
 
+## Recommended Instructional Videos
+
+Direct learners to review these specific videos from the [Instructional Video Library](../../learner/technical/Instructional_Videos.html#module-1-introduction-to-sculling) to support today's session:
+
+- **Introduction to Sculling**: "Essential Sculling Introduction" (Daniel Boyne)
+- **Terminology**: "Rowing Lingo with C2" (Concept2)  
+- **Safety**: "Safety Video - Check your boat and equipment" and "Capsize Recovery - Single Scull"
+- **Equipment**: "Parts of a Sculling Boat" and "Parts of Sculling Oars"
+
 ## Session Schedule
 
 | Activity | Time | Key Focus/Objective | Relevant Kraft's Key/BBS | Coaching Cues | Safety Notes |

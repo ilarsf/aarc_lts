@@ -27,6 +27,15 @@ layout: default
 - Communication equipment (whistle/megaphone)
 - First aid kit and safety gear
 
+## Recommended Instructional Videos
+
+Direct learners to review these specific videos from the [Instructional Video Library](../../learner/technical/Instructional_Videos.html#module-4-the-sculling-stroke-technique-fundamentals) to support today's session:
+
+- **Finish & Release**: "Sculling: The Finish - Tap Down and Feather" (Stephen M.)
+- **Recovery Sequence**: "Essential Sculling Technique for rowers" (Daniel Boyne)
+- **Feathering/Squaring**: "How to Feather and Square Your Oars" (Dark Horse Rowing)
+- **Steering**: "Sculling: How to Steer a Single" (Stephen M.)
+
 ## Session Schedule
 
 | Activity | Time | Key Focus/Objective | Relevant Kraft's Key/BBS | Coaching Cues | Safety Notes |

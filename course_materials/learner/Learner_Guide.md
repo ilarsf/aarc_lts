@@ -71,6 +71,11 @@
   
   <div id="technique-tab" class="tab-content">
     <h2 id="the-rowing-stroke-a-beginners-guide">The Rowing Stroke: A Beginner's Guide</h2>
+    
+    <div class="info-box info mb-3">
+      <h4>Visual Learning Resources</h4>
+      <p>For detailed video demonstrations of each technique element, see our <a href="../learner/technical/Instructional_Videos.html">Sculling Instructional Video Library</a>. This resource is organized by skill and includes session-specific recommendations.</p>
+    </div>
 
     <h3>The Catch</h3>
     <ul>

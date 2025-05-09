@@ -16,9 +16,12 @@ This section contains technical resources designed specifically for Learn to Scu
 
 [Rowing Terminology](Rowing_Terminology.md) - A glossary of common rowing terms you'll hear during your Learn to Scull program.
 
+## Video Resources
+
+[Instructional Videos](Instructional_Videos.md) - A comprehensive, session-specific library of curated instructional videos covering all aspects of sculling technique, safety, and boat handling.
+
 ## Additional Resources
 
-- [Sculling Technique Videos](https://www.youtube.com/playlist?list=PLgqR0cBXYQVWtpRX4LkV1SOMlAcDHlqCK) - Collection of recommended technique videos
 - [Rowing Equipment Guide](Equipment_Guide.md) - Basic introduction to boat parts and equipment
 
 [← Back to Learner Resources](../index.md)

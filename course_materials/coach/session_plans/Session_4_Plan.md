@@ -27,6 +27,15 @@ layout: default
 - Communication equipment (whistle/megaphone)
 - First aid kit and safety gear
 
+## Recommended Instructional Videos
+
+Direct learners to review these specific videos from the [Instructional Video Library](../../learner/technical/Instructional_Videos.html#module-5-developing-sculling-skills) to support today's session:
+
+- **Balance Drills**: "Sculling: Setting the Boat Level" and "How to Set the Boat - Rowing Balance Drills"
+- **Stroke Component Drills**: "Most important Sculling drills done right" (AramTraining)
+- **Common Mistakes**: "Common Rowing Machine Mistakes at the Catch" and "ROWING TECHNIQUE: HOW TO GET THE BEST CATCH"
+- **Boat Care**: "How to Clean Rowing Oar Grips" and "How to Care for Your Rowing Shell"
+
 ## Session Schedule
 
 | Activity | Time | Key Focus/Objective | Relevant Kraft's Key/BBS | Coaching Cues | Safety Notes |
