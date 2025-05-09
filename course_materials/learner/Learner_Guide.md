@@ -410,16 +410,20 @@
     <ul>
       <li><strong>Thorough cleaning:</strong> Always wipe down your boat after each row, before returning it to storage
         <ul>
+          <li>Place boat on the stretchers/slings first</li>
           <li>Clean the entire hull using the sponges and towels provided</li>
+          <li>Take the time necessary to CLEAN the boat, not just dry it</li>
           <li>Pay special attention to removing "river scum" before it dries</li>
           <li>Once dried, river residue becomes much more difficult to remove</li>
         </ul>
       </li>
       <li><strong>Proper storage:</strong> Return boats to their designated racks following the established system
         <ul>
-          <li>Note the position and orientation of your boat before taking it out</li>
-          <li>Outside-stored boats should have bows pointed toward the boathouse</li>
-          <li>Secure boats with straps snugly but not excessively tight (especially singles)</li>
+          <li>Note how and where your boat is stored and return it to the same place and position</li>
+          <li>All boats on the outside rack have bows pointed to the boathouse</li>
+          <li>Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance</li>
+          <li>Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat)</li>
+          <li>Make sure the boat is properly supported to prevent damage</li>
         </ul>
       </li>
       <li><strong>Reporting damage:</strong> Always report any equipment issues you notice
@@ -458,6 +462,7 @@
       <li><strong>Before launching:</strong>
         <ul>
           <li>Always sign out in the logbook before taking equipment</li>
+          <li>Use only the boat and oars that you have been assigned</li>
           <li>Record your name, boat, time out, and expected return time</li>
           <li>Check for any notes about the equipment from previous users</li>
         </ul>
@@ -466,6 +471,7 @@
         <ul>
           <li>Sign back in to confirm your safe return</li>
           <li>Note any issues encountered with the equipment</li>
+          <li>If there is significant damage, also notify a coach or club officer immediately</li>
           <li>Record important observations about water conditions if relevant</li>
         </ul>
       </li>

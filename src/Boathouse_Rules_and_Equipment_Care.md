@@ -9,8 +9,9 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ## General Boathouse Rules
 
-* **Sign Out/In:** Always record your boat usage in the logbook, including any issues encountered during your row.
-* **Footwear:** Wear appropriate footwear in the boathouse. No street shoes on the dock or in the boats.
+* **Sign Out/In:** Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered during your row.
+* **Boat Assignment:** Use only the boat and oars that you have been assigned.
+* **Footwear:** Wear appropriate footwear in the boathouse. Street shoes are allowed on the dock but not in the boats.
 * **Quiet Hours:** Respect neighbors by minimizing noise during early morning hours.
 * **Security:** The last person leaving the boathouse is responsible for ensuring all doors and gates are locked.
 * **Keep Pathways Clear:** Never leave equipment blocking walkways, doorways, or launch areas.
@@ -19,17 +20,17 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ### Boat Handling
 
-* **Carrying Boats:** Always lift with proper technique and adequate help. Listen to experienced rowers regarding the correct carrying positions.
+* **Carrying Boats:** Always lift with proper technique and adequate help. Ask for help taking the boat on or off of its rack and carrying, if needed. Listen to experienced rowers regarding the correct carrying positions.
 * **Using Slings/Stretchers:** Place boats carefully on stretchers when adjusting foot stretchers or performing maintenance.
 * **Step Ladders:** Use the provided step ladders for reaching high racks; never climb on the racks themselves. Return ladders to their designated storage locations after use.
 
 ### Boat Maintenance
 
 1. **Cleaning the Boat**  
-   Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. This ensures the equipment is clean and ready for the next use.
+   Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove. This ensures the equipment is clean and ready for the next use.
 
 2. **Storing the Boat**  
-   After cleaning, place the boat back in its original rack position. Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance. Make sure it is properly supported to prevent damage.
+   After cleaning, place the boat back in its original rack position. Note how and where your boat is stored and return it to the same place and position. All boats on the outside rack have bows pointed to the boathouse. Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance. Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat). Make sure it is properly supported to prevent damage.
 
 3. **Reporting Issues**  
    Please note any issues with the equipment in the logbook. If there is significant damage, also notify a coach or club officer immediately.
@@ -47,8 +48,8 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ## Considerate Use of Facilities
 
-* **Changing Rooms:** Keep changing areas tidy and remove all personal belongings after use.
-* **Bathrooms:** Leave the facilities as you would like to find them.
+* **Bathroom Facilities:** Note that there are only public toilets without running water available. Please plan accordingly.
+* **Changing:** There are no dedicated changing rooms at this facility. Come dressed appropriately or be prepared to change discreetly.
 * **Trash:** Dispose of all waste properly and recycle when possible.
 * **Personal Items:** Do not leave valuables unattended in the boathouse.
 

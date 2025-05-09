@@ -102,8 +102,9 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ### General Boathouse Rules
 
-* **Sign Out/In:** Always record your boat usage in the logbook, including any issues encountered.
-* **Footwear:** Wear appropriate footwear. No street shoes on the dock or in boats.
+* **Sign Out/In:** Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered.
+* **Boat Assignment:** Use only the boat and oars that you have been assigned.
+* **Footwear:** Wear appropriate footwear. Street shoes are allowed on the dock but not in the boats.
 * **Quiet Hours:** Respect neighbors by minimizing noise during early morning hours.
 * **Security:** Last person leaving ensures doors/gates are locked.
 * **Keep Pathways Clear:** Do not block walkways, doorways, or launch areas.
@@ -112,14 +113,14 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 #### Boat Handling
 
-* **Carrying Boats:** Use proper technique and adequate help. Listen to commands.
+* **Carrying Boats:** Use proper technique and adequate help. Ask for help taking the boat on or off of its rack and carrying, if needed. Listen to commands.
 * **Using Slings/Stretchers:** Place boats carefully on stretchers for maintenance.
 * **Step Ladders:** Use provided ladders for high racks; don't climb racks. Return ladders.
 
 #### Boat Maintenance
 
-1.  **Cleaning the Boat:** Before racking, place on slings and wipe down thoroughly with provided rags/towels.
-2.  **Storing the Boat:** Return to original rack position. Align riggers with other boats. Ensure proper support.
+1.  **Cleaning the Boat:** Before racking, place on slings and thoroughly wipe down using provided rags/towels. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove.
+2.  **Storing the Boat:** Return to original rack position. Note how and where your boat is stored and return it to the same place and position. All boats on the outside rack have bows pointed to the boathouse. Ensure riggers align with other boats. Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat).
 3.  **Reporting Issues:** Note issues in logbook. Notify coach/officer immediately for significant damage.
 
 #### Oar Care and Storage
@@ -130,7 +131,8 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ### Considerate Use of Facilities
 
-* **Changing Rooms/Bathrooms:** Keep tidy, remove personal belongings.
+* **Bathroom Facilities:** Note that there are only public toilets without running water available. Plan accordingly.
+* **Changing:** There are no dedicated changing rooms at this facility. Come dressed appropriately or be prepared to change discreetly (e.g., in the public toilet).
 * **Trash:** Dispose of waste properly, recycle when possible.
 * **Personal Items:** Do not leave valuables unattended.
 
@@ -140,8 +142,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 * **Respect Your Peers:** Others deserve well-maintained equipment.
 * **Respect the Club's Investment:** Protects finances, allowing improvements.
 
-💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Boathouse Rules & Safety Quiz](/aarc_lts/src/boathouse_quiz.html).
-
+💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Club Rules & Equipment Quiz](/aarc_lts/src/quiz_module.html?quiz=bh).
 ---
 
 Understanding and practicing these safety protocols and boathouse rules forms the bedrock of responsible rowing. The next chapter addresses a key safety skill: what to do if you capsize.

@@ -38,9 +38,13 @@ This checklist serves as a tangible assessment for coaches to gauge participant 
 | Demonstrates safe partner carry                           | □       | □          | □          |          |
 | Correctly places boat on/off racks                        | □       | □          | □          |          |
 | Places boat properly in slings                            | □       | □          | □          |          |
+| Uses only assigned boat and oars                          | □       | □          | □          |          |
 | Follows correct pre-launch sequence (oars first, sign out)  | □       | □          | □          |          |
-| Properly straps boat on rack                              | □       | □          | □          |          |
+| Thoroughly cleans boat (not just drying)                  | □       | □          | □          |          |
+| Returns boat to correct position with proper orientation   | □       | □          | □          |          |
+| Properly straps boat on rack (appropriate tightness)      | □       | □          | □          |          |
 | Handles oars appropriately                                | □       | □          | □          |          |
+| Disinfects oar handles after use                          | □       | □          | □          |          |
 
 **Equipment Handling Notes:**  
 

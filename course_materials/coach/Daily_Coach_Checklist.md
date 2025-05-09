@@ -261,11 +261,13 @@
 
     <h3>Equipment Care</h3>
     <ul>
-      <li><input type="checkbox"> Demonstrate proper boat wipedown techniques</li>
+      <li><input type="checkbox"> Demonstrate proper boat wipedown techniques (CLEAN, not just dry)</li>
       <li><input type="checkbox"> Emphasize cleaning immediately after use (before river scum dries)</li>
-      <li><input type="checkbox"> Show proper oar handle cleaning</li>
-      <li><input type="checkbox"> Teach appropriate strap tightness for outside-stored boats</li>
-      <li><input type="checkbox"> Review logbook sign-out and sign-in procedures</li>
+      <li><input type="checkbox"> Show proper oar handle cleaning and disinfection</li>
+      <li><input type="checkbox"> Teach appropriate strap tightness for outside-stored boats (1Xs not as tight as sweep boats)</li> 
+      <li><input type="checkbox"> Remind rowers to return boats to the same position with bows properly oriented</li>
+      <li><input type="checkbox"> Review logbook sign-out and sign-in procedures (before launching and upon return)</li>
+      <li><input type="checkbox"> Remind rowers to use only assigned boats and oars</li>
     </ul>
 
     <h3>Technical Focus Areas</h3>

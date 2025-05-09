@@ -111,6 +111,32 @@ Learn how to recover from a capsize and re-enter the scull safely.
 2. Ensure the oars are properly positioned and that you are seated correctly.  
 3. Signal to the coach or support boat that you are ready to continue.
 
+## Exiting at the Dock
+
+<div class="info-box warning">
+  <h4>Important Note</h4>
+  <p>There is no ladder on the dock. You will need to exit the water similar to getting out of a swimming pool.</p>
+</div>
+
+<div class="two-col-grid">
+  <div>
+    <h4>If You Cannot Re-Enter the Boat</h4>
+    <ol>
+      <li>Swim with your boat to the dock, keeping it between you and the dock.</li>
+      <li>Once at the dock, place both hands on the dock surface.</li>
+      <li>Use a strong push/kick motion to lift your upper body onto the dock.</li>
+      <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface.</li>
+      <li>Help may be offered, but be prepared to exit the water on your own.</li>
+    </ol>
+  </div>
+  
+  <div class="image-placeholder">
+    <div class="icon"><i class="fas fa-image"></i></div>
+    <div class="title">Pool-Style Exit</div>
+    <div class="description">Illustration showing the proper technique for exiting the water onto the dock without a ladder.</div>
+  </div>
+</div>
+
 ## Additional Tips
 
 <div class="two-col-grid">
