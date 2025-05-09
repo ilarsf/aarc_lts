@@ -93,7 +93,7 @@ This mandatory, supervised drill teaches you how to recover if your boat flips.
   * **T-Position Oars:** Arrange oars perpendicular to the boat, blades flat on water, for stability.
   * **Re-Enter:** Use leg power (kick!) to get your hips onto the boat, then roll in. *Your coach will guide you through this step-by-step.*
 
-*Watch the Flip Test demonstration videos (available on the [Video Library tab of the Q&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab)) and review the [Self-Rescue Guide](https://ilarsf.github.io/aarc_lts/course_materials/learner/safety/Self_Rescue_Guide.html) online for details.*
+*Watch the Flip Test demonstration videos (available on the [Video Library tab of the Q&A Companion page]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab)) and review the [Self-Rescue Guide]({{ site.baseurl }}/course_materials/learner/safety/Self_Rescue_Guide.html) online for details.*
 
 ### Weather & Water Conditions
 
@@ -136,8 +136,8 @@ You'll learn this in detail, but here’s a preview:
 
 ### Hand Care (Blisters)
 
-  * **Prevention:** Use a relaxed grip (fingers as hooks, not a death grip). Let hands adapt gradually. Tape known hot spots *before* rowing. *(See the Correct Grip video on the [Video Library tab of the Q&A Companion page](https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab))*
-  * **Treatment:** Keep clean, cover appropriately. See the [Hand Care Guide](https://ilarsf.github.io/aarc_lts/src/Rowers_Hand_Blister_Treatment.html) for details.
+  * **Prevention:** Use a relaxed grip (fingers as hooks, not a death grip). Let hands adapt gradually. Tape known hot spots *before* rowing. *(See the Correct Grip video on the [Video Library tab of the Q&A Companion page]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab))*
+  * **Treatment:** Keep clean, cover appropriately. See the [Hand Care Guide]({{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html) for details.
 
 -----
 

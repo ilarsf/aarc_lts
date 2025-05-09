@@ -136,7 +136,7 @@ Visual aids can be incredibly helpful. Key videos used in the program include:
 * **Concept2 Technique Videos:** [https://www.concept2.com/indoor-rowers/training/technique-videos](https://www.concept2.com/indoor-rowers/training/technique-videos) (Indoor rowing, but relevant principles)
 
 ### Interactive Learning Tools
-* **Boathouse Rules & Safety Quiz:** Test your knowledge of essential boathouse procedures and safety guidelines. [Take the Quiz](/aarc_lts/src/boathouse_quiz.html)
+* **Boathouse Rules & Safety Quiz:** Test your knowledge of essential boathouse procedures and safety guidelines. [Take the Quiz](/aarc_lts/src/quiz_module.html?quiz=bh)
 
 ---
 
