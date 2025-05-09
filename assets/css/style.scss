@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 // Ann Arbor Rowing Club styling
 // Color scheme - Updated to match AARC website
 $aarc-blue: #0073E6; // Primary blue
@@ -18,12 +23,7 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: $aarc-dark-gray;
@@ -51,13 +51,13 @@ a {
   text-decoration: none;
   transition: all 0.2s ease;
   border-bottom: 1px solid transparent;
-
+  
   &:hover {
     color: $aarc-blue-hover;
     border-bottom: 1px solid rgba($aarc-blue, 0.3);
     text-decoration: none;
   }
-
+  
   // External links
   &[target="_blank"]::after {
     content: "↗";
@@ -65,7 +65,7 @@ a {
     margin-left: 3px;
     display: inline-block;
   }
-
+  
   // PDF links
   &[href$=".pdf"]::after {
     content: "📄";
@@ -88,17 +88,17 @@ a {
   display: inline-block;
   transition: all 0.2s ease;
   text-align: center;
-
+  
   &:hover {
     background-color: $aarc-blue-hover;
     color: $aarc-white;
     text-decoration: none;
     border-bottom: none;
   }
-
+  
   &:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 }
 
@@ -108,11 +108,11 @@ a {
   background-image: none;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
   padding: 2rem 0;
-
+  
   // No background pattern to match AARC website
-
+  
   .container-lg {
     position: relative;
     z-index: 1;
@@ -121,25 +121,25 @@ a {
     padding: 0 2rem;
     width: 100%;
   }
-
+  
   .project-name {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     color: $aarc-white;
     font-weight: 700;
-
+    
     @media screen and (max-width: 768px) {
       font-size: 1.75rem;
       text-align: center;
     }
   }
-
+  
   .project-tagline {
     margin-top: 0;
     font-size: 1.25rem;
     color: $aarc-white;
     font-weight: 400;
-
+    
     @media screen and (max-width: 768px) {
       font-size: 1rem;
       text-align: center;
@@ -150,14 +150,14 @@ a {
 // Page sections styling
 .page-intro {
   margin-bottom: 2rem;
-
+  
   h1 {
     font-size: 2.2rem;
     color: $aarc-dark-gray;
     margin-bottom: 1.5rem;
     position: relative;
     padding-bottom: 0.75rem;
-
+    
     &::after {
       content: '';
       position: absolute;
@@ -167,11 +167,11 @@ a {
       width: 60px;
       background-color: $aarc-blue;
     }
-
+    
     @media screen and (max-width: 768px) {
       font-size: 1.8rem;
       text-align: center;
-
+      
       &::after {
         left: 50%;
         transform: translateX(-50%);
@@ -184,37 +184,37 @@ a {
 .featured-image {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin: 1rem 0;
-
+  
   img {
     display: block;
     width: 100%;
     height: auto;
     transition: transform 0.6s ease;
-
+    
     &:hover {
       transform: scale(1.02);
     }
   }
-
+  
   @media screen and (max-width: 768px) {
     margin: 1.5rem 0;
   }
 }
 
 // Content sections
-.program-overview,
-.resource-library,
+.program-overview, 
+.resource-library, 
 .learning-journey {
   margin: 3rem 0;
   position: relative;
-
+  
   h2 {
     color: $aarc-blue;
     position: relative;
     margin-bottom: 1.5rem;
-
+    
     &::after {
       content: '';
       display: block;
@@ -223,17 +223,17 @@ a {
       background-color: $aarc-blue;
       margin-top: 0.5rem;
     }
-
+    
     @media screen and (max-width: 768px) {
       text-align: center;
-
+      
       &::after {
         margin-left: auto;
         margin-right: auto;
       }
     }
   }
-
+  
   @media screen and (max-width: 768px) {
     margin: 2rem 0;
   }
@@ -244,15 +244,15 @@ a {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
   height: 100%;
-
+  
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-
+  
   h4 {
     color: $aarc-blue;
     margin-top: 0;
@@ -261,15 +261,15 @@ a {
     border-bottom: 1px solid rgba($aarc-blue, 0.2);
     font-size: 1.1rem;
   }
-
+  
   ul {
     margin-bottom: 0;
     padding-left: 1.5rem;
-
+    
     li {
       margin-bottom: 0.5rem;
       position: relative;
-
+      
       &::marker {
         color: $aarc-blue;
       }
@@ -283,30 +283,29 @@ a {
   margin-bottom: 2.5rem;
   background-color: $aarc-white;
   border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
   padding: 0.5rem;
   border-bottom: 1px solid $aarc-border-gray;
-
+  
   @media screen and (min-width: 769px) {
-    display: block !important;
-    /* Force navigation to always be visible on desktop */
+    display: block !important; /* Force navigation to always be visible on desktop */
   }
-
+  
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
+    
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
-
+    
     li {
       margin: 0;
       position: relative;
-
+      
       a {
         color: $aarc-dark-gray;
         font-weight: 500;
@@ -316,37 +315,37 @@ a {
         text-decoration: none;
         border-radius: 4px;
         font-size: 1.05rem;
-
+        
         @media screen and (min-width: 992px) {
           font-size: 1.1rem;
         }
-
+        
         &:hover {
           color: $aarc-blue;
           background-color: rgba($aarc-blue, 0.05);
         }
       }
-
+      
       &.has-dropdown {
-        >a {
+        > a {
           display: flex;
           align-items: center;
           justify-content: space-between;
-
+          
           &:after {
             content: "▼";
             font-size: 0.7rem;
             margin-left: 0.5rem;
           }
         }
-
+        
         &:hover .dropdown-menu {
           display: block;
         }
       }
     }
   }
-
+  
   .dropdown-menu {
     display: none;
     position: absolute;
@@ -354,28 +353,28 @@ a {
     top: 100%;
     background-color: white;
     min-width: 220px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 4px;
     padding: 0.5rem 0;
     z-index: 1000;
     border: 1px solid $aarc-border-gray;
-
+    
     li {
       margin: 0;
       width: 100%;
-
+      
       a {
         padding: 0.65rem 1.25rem;
         border-left: 3px solid transparent;
         border-radius: 0;
-
+        
         &:hover {
           background-color: rgba($aarc-blue, 0.05);
           border-left: 3px solid $aarc-blue;
         }
       }
     }
-
+    
     @media screen and (max-width: 768px) {
       position: static;
       box-shadow: none;
@@ -386,39 +385,39 @@ a {
       margin-bottom: 0.5rem;
       padding: 0;
       display: none;
-
+      
       li a {
         padding: 0.5rem 1rem;
-
+        
         &:hover {
           border-left: 3px solid transparent;
         }
       }
     }
   }
-
+  
   // Active state for navigation
-  .active-nav-item>a {
+  .active-nav-item > a {
     color: $aarc-blue;
     font-weight: 600;
     background-color: rgba($aarc-blue, 0.08);
   }
-
+  
   // Mobile style improvements
   @media screen and (max-width: 768px) {
     ul li {
       margin-bottom: 0.25rem;
-
+      
       a {
         border-left: 3px solid transparent;
-
+        
         &:hover {
           border-left: 3px solid $aarc-blue;
         }
       }
     }
-
-    .active-nav-item>a {
+    
+    .active-nav-item > a {
       border-left: 3px solid $aarc-blue;
     }
   }
@@ -427,7 +426,7 @@ a {
 // Mobile navigation
 .mobile-nav-toggle {
   display: none;
-
+  
   @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
@@ -435,7 +434,7 @@ a {
     width: 45px;
     height: 45px;
     font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255,255,255,0.15);
     border: none;
     border-radius: 50%;
     color: $aarc-white;
@@ -445,12 +444,12 @@ a {
     top: 1.5rem;
     z-index: 100;
     transition: all 0.3s ease;
-
+    
     &:hover {
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(255,255,255,0.25);
       transform: scale(1.05);
     }
-
+    
     &:active {
       transform: scale(0.95);
     }
@@ -460,40 +459,39 @@ a {
 // Mobile menu style
 .site-nav {
   @media screen and (max-width: 768px) {
-    display: none;
-    /* Hide by default on mobile, toggle with JavaScript */
+    display: none; /* Hide by default on mobile, toggle with JavaScript */
     width: 100%;
     background-color: $aarc-white;
     padding: 0.75rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 1rem;
-
+    
     ul {
       flex-direction: column;
-
+      
       li {
         margin-right: 0;
         margin-bottom: 0.25rem;
         width: 100%;
         position: relative;
-
+        
         a {
           border-left: 3px solid transparent;
           transition: all 0.2s ease;
-
+          
           &:hover {
             border-left: 3px solid $aarc-blue;
             padding-left: 1.25rem;
           }
         }
-
-        &.has-dropdown>a {
+        
+        &.has-dropdown > a {
           margin-bottom: 0.25rem;
         }
       }
     }
-
+    
     &.active {
       display: block;
       animation: fadeIn 0.3s ease-in-out;
@@ -507,7 +505,6 @@ a {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -517,7 +514,7 @@ a {
 // Dropdown toggle button for mobile
 .dropdown-toggle {
   display: none;
-
+  
   @media screen and (max-width: 600px) {
     display: inline-block;
     background: none;
@@ -530,7 +527,7 @@ a {
     right: 0;
     top: 0.3rem;
     padding: 0 0.5rem;
-
+    
     &:focus {
       outline: none;
     }
@@ -538,13 +535,8 @@ a {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 // Main container
@@ -560,24 +552,19 @@ a {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 0;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  
+  h1, h2, h3, h4, h5, h6 {
     color: $aarc-dark-gray;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-
+  
   h1 {
     font-size: 2.2rem;
     margin-top: 0;
     position: relative;
     padding-bottom: 0.75rem;
-
+    
     &::after {
       content: '';
       position: absolute;
@@ -587,12 +574,12 @@ a {
       width: 60px;
       background-color: $aarc-blue;
     }
-
+    
     @media screen and (min-width: 768px) {
       font-size: 2.4rem;
     }
   }
-
+  
   h2 {
     font-size: 1.8rem;
     color: $aarc-blue;
@@ -600,7 +587,7 @@ a {
     padding-bottom: 0.5rem;
     margin-top: 3rem;
     position: relative;
-
+    
     &::before {
       content: '';
       position: absolute;
@@ -610,46 +597,46 @@ a {
       width: 100%;
       background-color: rgba($aarc-border-gray, 0.5);
     }
-
+    
     @media screen and (min-width: 768px) {
       font-size: 2rem;
     }
   }
-
+  
   h3 {
     font-size: 1.4rem;
     margin-top: 1.75rem;
-
+    
     @media screen and (min-width: 768px) {
       font-size: 1.6rem;
     }
   }
-
+  
   h4 {
     font-size: 1.15rem;
-
+    
     @media screen and (min-width: 768px) {
       font-size: 1.3rem;
     }
   }
-
+  
   p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
-
+    
     @media screen and (min-width: 768px) {
       font-size: 1.05rem;
       line-height: 1.7;
     }
   }
-
+  
   hr {
     height: 2px;
     margin: 3rem 0;
     background: linear-gradient(to right, rgba($aarc-blue, 0.1), rgba($aarc-blue, 0.5), rgba($aarc-blue, 0.1));
     border: none;
   }
-
+  
   // Section dividers
   .section-divider {
     height: 2px;
@@ -658,7 +645,7 @@ a {
     background: linear-gradient(to right, transparent, $aarc-border-gray, transparent);
     border: none;
     position: relative;
-
+    
     &::before {
       content: "•";
       position: absolute;
@@ -669,61 +656,58 @@ a {
       color: $aarc-light-gray;
     }
   }
-
+  
   // Images in content
   img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
     margin: 1.5rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
-
+  
   // Lists styling
-  ul,
-  ol {
+  ul, ol {
     padding-left: 2rem;
     margin-bottom: 1.5rem;
-
+    
     li {
       margin-bottom: 0.5rem;
-
+      
       @media screen and (min-width: 768px) {
         font-size: 1.05rem;
       }
     }
-
-    ul,
-    ol {
+    
+    ul, ol {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
   }
-
+  
   // Responsive content
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 1.8rem;
-
+      
       &::after {
         width: 40px;
       }
     }
-
+    
     h2 {
       font-size: 1.5rem;
     }
-
+    
     h3 {
       font-size: 1.25rem;
     }
-
+    
     h4 {
       font-size: 1.1rem;
     }
-
-    p,
-    li {
+    
+    p, li {
       font-size: 0.95rem;
     }
   }
@@ -742,7 +726,7 @@ a {
   margin: 1rem 0;
   text-align: center;
   width: 100%;
-
+  
   &:hover {
     background-color: darken($aarc-blue, 10%);
     text-decoration: none;
@@ -760,7 +744,7 @@ a {
   flex-wrap: wrap;
   border-bottom: 1px solid $aarc-border-gray;
   margin-bottom: 1rem;
-
+  
   .tab-link {
     padding: 0.75rem 1.25rem;
     margin-right: 0.5rem;
@@ -770,12 +754,12 @@ a {
     color: $aarc-dark-gray;
     cursor: pointer;
     font-weight: 500;
-
+    
     &:hover {
       background-color: rgba($aarc-blue, 0.05);
       text-decoration: none;
     }
-
+    
     &.active {
       border: 1px solid $aarc-border-gray;
       border-bottom-color: $aarc-white;
@@ -787,7 +771,7 @@ a {
 
 .tab-content {
   display: none;
-
+  
   &.active {
     display: block;
   }
@@ -800,8 +784,8 @@ table {
   margin: 1.5rem 0 2.5rem 0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  
   th {
     background-color: $aarc-blue;
     color: $aarc-white;
@@ -809,7 +793,7 @@ table {
     text-align: left;
     padding: 0.9rem 0.75rem;
     position: relative;
-
+    
     &:after {
       content: '';
       position: absolute;
@@ -817,10 +801,10 @@ table {
       left: 0;
       right: 0;
       height: 2px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255,255,255,0.2);
     }
   }
-
+  
   td {
     border: 1px solid $aarc-border-gray;
     padding: 0.85rem 0.75rem;
@@ -828,66 +812,62 @@ table {
     line-height: 1.5;
     transition: background-color 0.2s ease;
   }
-
+  
   tr:nth-child(even) {
     background-color: rgba($aarc-border-gray, 0.15);
   }
-
+  
   tr:hover {
     background-color: rgba($aarc-blue, 0.05);
   }
-
+  
   // Responsive tables
   @media screen and (max-width: 768px) {
     &.responsive-table {
       display: block;
       width: 100%;
-
-      thead,
-      tbody,
-      th,
-      td,
-      tr {
-        display: block;
+      
+      thead, tbody, th, td, tr { 
+        display: block; 
       }
-
-      thead tr {
+      
+      thead tr { 
         position: absolute;
         top: -9999px;
         left: -9999px;
       }
-
+      
       tr {
         border: 1px solid $aarc-border-gray;
         margin-bottom: 1rem;
       }
-
-      td {
+      
+      td { 
         border: none;
-        border-bottom: 1px solid $aarc-border-gray;
+        border-bottom: 1px solid $aarc-border-gray; 
         position: relative;
-        padding-left: 40%;
+        padding-left: 40%; 
         text-align: left;
         min-height: 1rem;
-
-        &:before {
+        
+        &:before { 
           position: absolute;
           top: 0.85rem;
           left: 0.75rem;
-          width: 35%;
-          padding-right: 10px;
+          width: 35%; 
+          padding-right: 10px; 
           white-space: nowrap;
           font-weight: 600;
           content: attr(data-label);
         }
-
+        
         &:last-child {
           border-bottom: none;
         }
       }
     }
   }
-
+  
   // Table captions
   caption {
     margin-bottom: 0.5rem;
@@ -903,9 +883,9 @@ table {
   border-radius: 8px;
   padding: 1.25rem;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border-left: 4px solid $aarc-blue;
-
+  
   h4 {
     margin-top: 0;
     margin-bottom: 0.75rem;
@@ -913,36 +893,36 @@ table {
     font-weight: 600;
     display: flex;
     align-items: center;
-
+    
     &:before {
       content: "📋";
       margin-right: 0.5rem;
       font-size: 1.1em;
     }
   }
-
+  
   ul {
     margin-bottom: 0;
     padding-left: 1.5rem;
-
+    
     li {
       margin-bottom: 0.4rem;
       position: relative;
-
+      
       &:before {
         content: "→";
         position: absolute;
         left: -1.2rem;
         color: rgba($aarc-blue, 0.5);
       }
-
+      
       a {
         color: $aarc-dark-gray;
         text-decoration: none;
         font-weight: 500;
         transition: all 0.2s ease;
         border-bottom: 1px solid transparent;
-
+        
         &:hover {
           color: $aarc-blue;
           border-bottom: 1px solid rgba($aarc-blue, 0.3);
@@ -950,9 +930,8 @@ table {
       }
     }
   }
-
+  
   @media screen and (min-width: 900px) {
-
     // For larger screens, let's float it to the right for some layouts
     &.float-right {
       float: right;
@@ -961,15 +940,15 @@ table {
       margin-bottom: 1rem;
     }
   }
-
+  
   @media screen and (min-width: 1200px) {
     &.float-right {
       width: 320px;
       margin-left: 2.5rem;
     }
   }
-
-  &.float-right+h2 {
+  
+  &.float-right + h2 {
     clear: none;
   }
 }
@@ -977,14 +956,13 @@ table {
 // Video embedding and responsive iframes
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   margin: 1.5rem 0;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
+  
   iframe {
     position: absolute;
     top: 0;
@@ -1005,15 +983,15 @@ table {
 // Video library section
 .video-library {
   margin: 2rem 0;
-
+  
   .video-item {
     margin-bottom: 2rem;
-
+    
     h4 {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
-
+    
     p {
       color: $aarc-light-gray;
       font-size: 0.9rem;
@@ -1028,104 +1006,96 @@ table {
   margin: 2rem 0;
   border-radius: 8px;
   border-left: 5px solid;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  /* Prevent content overflow */
-  width: 100%;
-  /* Ensure box takes full width of its container */
-  box-sizing: border-box;
-  /* Include padding in width calculation */
-
+  overflow: auto; /* Prevent content overflow */
+  width: 100%; /* Ensure box takes full width of its container */
+  box-sizing: border-box; /* Include padding in width calculation */
+  
   /* Remove height: 100% to prevent stretching and overlap */
-
+  
   @media screen and (min-width: 768px) {
     padding: 1.75rem;
   }
-
+  
   /* When inside grid layouts, prevent overflow */
   .two-col-grid &,
   .three-col-grid & {
     height: auto;
     min-height: 0;
   }
-
+  
   &.tip {
     background-color: rgba(39, 174, 96, 0.05);
     border-left-color: #27ae60;
-
+    
     h4 {
       color: #27ae60;
-
       &:before {
         content: "💡";
         margin-right: 0.5rem;
       }
     }
   }
-
+  
   &.warning {
     background-color: rgba(243, 156, 18, 0.05);
     border-left-color: #f39c12;
-
+    
     h4 {
       color: #e67e22;
-
       &:before {
         content: "⚠️";
         margin-right: 0.5rem;
       }
     }
   }
-
+  
   &.note {
     background-color: rgba(52, 152, 219, 0.05);
     border-left-color: #3498db;
-
+    
     h4 {
       color: #3498db;
-
       &:before {
         content: "📝";
         margin-right: 0.5rem;
       }
     }
   }
-
+  
   &.aarc {
     background-color: rgba(192, 0, 0, 0.05);
     border-left-color: $aarc-red;
-
+    
     h4 {
       color: $aarc-red;
-
       &:before {
         content: "🚣";
         margin-right: 0.5rem;
       }
     }
   }
-
+  
   h4 {
     margin-top: 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-
+    
     @media screen and (min-width: 768px) {
       font-size: 1.3rem;
     }
   }
-
+  
   p:last-child {
     margin-bottom: 0;
   }
-
-  ul,
-  ol {
+  
+  ul, ol {
     margin-bottom: 0;
-
+    
     li:last-child {
       margin-bottom: 0;
     }
@@ -1140,19 +1110,19 @@ table {
   padding: 2rem;
   margin: 1.5rem 0;
   text-align: center;
-
+  
   .icon {
     font-size: 2rem;
     color: $aarc-light-gray;
     margin-bottom: 1rem;
   }
-
+  
   .title {
     font-weight: 600;
     color: $aarc-dark-gray;
     margin-bottom: 0.5rem;
   }
-
+  
   .description {
     color: $aarc-light-gray;
     font-style: italic;
@@ -1167,112 +1137,107 @@ table {
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
   margin: 2rem 0;
-
+  
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.5rem;
   }
-
+  
   @media screen and (min-width: 1200px) {
     grid-gap: 3rem;
   }
-
+  
   // Column alignment options
   &.align-center {
     align-items: center;
   }
-
+  
   &.align-start {
     align-items: start;
   }
-
+  
   &.align-end {
     align-items: end;
   }
-
+  
   // Column width options
   &.col-60-40 {
     @media screen and (min-width: 768px) {
       grid-template-columns: 60% 40%;
     }
   }
-
+  
   &.col-40-60 {
     @media screen and (min-width: 768px) {
       grid-template-columns: 40% 60%;
     }
   }
-
+  
   &.col-70-30 {
     @media screen and (min-width: 768px) {
       grid-template-columns: 70% 30%;
     }
   }
-
+  
   &.col-30-70 {
     @media screen and (min-width: 768px) {
       grid-template-columns: 30% 70%;
     }
   }
-
+  
   // Responsive overrides
   &.stack-mobile {
     @media screen and (max-width: 767px) {
       grid-template-columns: 1fr;
     }
   }
-
+  
   &.reverse-mobile {
     @media screen and (max-width: 767px) {
-      &>*:first-child {
+      & > *:first-child {
         order: 2;
       }
-
-      &>*:last-child {
+      & > *:last-child {
         order: 1;
       }
     }
   }
-
+  
   // Ensure all content in grid cells has proper spacing
-  >*>*:first-child {
+  > * > *:first-child {
     margin-top: 0;
   }
-
-  >*>*:last-child {
+  
+  > * > *:last-child {
     margin-bottom: 0;
   }
-
+  
   // Fix for broken grid layout
-  >* {
+  > * {
     min-width: 0;
     width: 100%;
-    box-sizing: border-box;
-    /* Ensure padding doesn't increase width */
-    overflow: visible;
-    /* Allow nested content to be visible */
-    position: relative;
-    /* Establish a positioning context */
-    height: auto;
-    /* Allow height to be determined by content */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    overflow: visible; /* Allow nested content to be visible */
+    position: relative; /* Establish a positioning context */
+    height: auto; /* Allow height to be determined by content */
   }
-
+  
   // Fix for direct info-box children in grids
-  >.info-box {
+  > .info-box {
     height: auto;
     align-self: stretch;
   }
-
+  
   // Fix for images in grid cells
   .featured-image {
     max-width: 100%;
-
+    
     img {
       max-width: 100%;
       height: auto;
     }
   }
-
+  
   // Additional fix for very small screens
   @media screen and (max-width: 576px) {
     grid-gap: 1rem;
@@ -1285,57 +1250,52 @@ table {
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
   margin: 2rem 0;
-  align-items: start;
-  /* Changed from stretch to start to avoid forced height */
-
+  align-items: start; /* Changed from stretch to start to avoid forced height */
+  
   @media screen and (min-width: 576px) and (max-width: 991px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   @media screen and (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
-
+  
   @media screen and (min-width: 1200px) {
     grid-gap: 2.5rem;
   }
-
+  
   // All grid cells should handle their content properly
-  >* {
+  > * {
     min-width: 0;
     width: 100%;
-    box-sizing: border-box;
-    /* Include padding in width calculation */
-    overflow: visible;
-    /* Prevent clipping of content */
-    position: relative;
-    /* Establish position context */
-    height: auto;
-    /* Let content determine height */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: visible; /* Prevent clipping of content */
+    position: relative; /* Establish position context */
+    height: auto; /* Let content determine height */
   }
-
+  
   // Fix for direct info-box children
-  >.info-box {
+  > .info-box {
     height: auto;
     align-self: stretch;
   }
-
+  
   // Ensure all content in grid cells has proper spacing
-  >*>*:first-child {
+  > * > *:first-child {
     margin-top: 0;
   }
-
-  >*>*:last-child {
+  
+  > * > *:last-child {
     margin-bottom: 0;
   }
-
+  
   // Fix for images in grid cells
   img {
     max-width: 100%;
     height: auto;
   }
-
+  
   // Additional fix for very small screens
   @media screen and (max-width: 576px) {
     grid-gap: 1rem;
@@ -1343,49 +1303,17 @@ table {
 }
 
 // Utility classes
-.text-center {
-  text-align: center;
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-
-.mb-1 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 1rem;
-}
-
-.mb-3 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 2rem;
-}
-
-.mt-0 {
-  margin-top: 0;
-}
-
-.mt-1 {
-  margin-top: 0.5rem;
-}
-
-.mt-2 {
-  margin-top: 1rem;
-}
-
-.mt-3 {
-  margin-top: 1.5rem;
-}
-
-.mt-4 {
-  margin-top: 2rem;
-}
+.text-center { text-align: center; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
 
 // Textbook specific styling
 .textbook-navigation {
@@ -1403,33 +1331,33 @@ table {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
   }
-
+  
   .toc-part {
     margin-bottom: 1.5rem;
-
+    
     h4 {
       margin-top: 0;
       margin-bottom: 0.5rem;
       font-size: 1.1rem;
     }
-
+    
     ul {
       margin-bottom: 0;
-
+      
       li {
         margin-bottom: 0.3rem;
-
+        
         a {
           font-size: 0.95rem;
         }
       }
     }
-
+    
     &:last-child {
       margin-bottom: 0;
     }
   }
-
+  
   .textbook-actions {
     margin-top: 1.5rem;
     padding-top: 1rem;
@@ -1437,35 +1365,35 @@ table {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    
     .btn {
       margin: 0.5rem 0;
     }
   }
 }
 
-.textbook-header,
+.textbook-header, 
 .textbook-footer {
   margin: 1.5rem 0;
   padding: 1rem 0;
-
+  
   .textbook-home-link {
     font-weight: 600;
     color: $aarc-blue;
     display: inline-block;
     margin-bottom: 1rem;
   }
-
+  
   .textbook-navigation-compact {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     .current-part {
       font-weight: 600;
       color: $aarc-dark-gray;
     }
-
+    
     .prev-chapter,
     .next-chapter {
       font-weight: 600;
@@ -1481,31 +1409,31 @@ table {
 
 .textbook-full-toc {
   margin: 2rem 0;
-
+  
   h2 {
     color: $aarc-blue;
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
-
+  
   .toc-main {
     list-style-type: none;
     padding-left: 0;
-
-    >li {
+    
+    > li {
       margin-bottom: 1rem;
       font-weight: 600;
       font-size: 1.1rem;
-
-      >a {
+      
+      > a {
         color: $aarc-dark-gray;
       }
-
-      >ul {
+      
+      > ul {
         margin-top: 0.5rem;
         padding-left: 1.5rem;
-
-        >li {
+        
+        > li {
           font-weight: normal;
           font-size: 1rem;
           margin-bottom: 0.3rem;
@@ -1515,245 +1443,99 @@ table {
   }
 }
 
-// Print-specific styles for better PDF output
+// Printing adjustments
 @media print {
-
-  // Page layout and margins
-  @page {
-    margin: 2cm;
-    size: letter;
-  }
-
-  body {
-    font-size: 11pt;
-    line-height: 1.5;
-    color: black;
-    background: white;
-  }
-
-  // Hide navigation and UI elements
-  header,
-  .sidebar,
-  footer,
-  nav,
-  .textbook-header a,
-  .textbook-footer,
-  button,
-  .cta-button,
-  .main-content>.btn,
   .page-header,
   .site-nav,
   .site-footer {
     display: none !important;
   }
-
+  
   .main-content {
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-
-  // Better heading and text formatting
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  
+  .textbook-header .textbook-home-link,
+  .textbook-footer {
+    display: none !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
-    color: black;
   }
-
-  h1 {
-    font-size: 18pt;
-    margin-top: 2em;
-  }
-
-  h2 {
-    font-size: 16pt;
-    margin-top: 1.5em;
-  }
-
-  h3 {
-    font-size: 14pt;
-    margin-top: 1.2em;
-  }
-
-  h4 {
-    font-size: 12pt;
-    margin-top: 1em;
-  }
-
-  p,
-  ul,
-  ol,
-  dl,
-  table {
+  
+  p, li, blockquote, table {
     page-break-inside: avoid;
-    margin-bottom: 1em;
   }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1em 0;
+  
+  img, figure {
+    max-width: 500px !important;
+    max-height: 300px !important;
   }
-
-  th,
-  td {
-    border: 1px solid #333;
-    padding: 0.5em;
-    text-align: left;
-  }
-
-  // Better info box styling for print
+  
   .info-box {
-    border: 1px solid #333;
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid #ccc !important;
+    background-color: #f8f8f8 !important;
   }
-
-  // Make links readable in print
-  a {
-    color: black;
-    text-decoration: underline;
-    word-wrap: break-word;
-  }
-
-  // Add URLs after links for print
-  a:not([href^='#']):after {
-    content: " (" attr(href) ")";
-    font-size: 0.9em;
-    font-style: italic;
-  }
-
-  // Page breaks and structure
-  .section-divider {
-    page-break-before: always;
+  
+  hr.section-divider {
     border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .textbook-full-toc {
-    page-break-after: always;
-    margin-bottom: 2em;
-  }
-
-  // Fix specific elements for print
-  img,
-  figure {
-    max-width: 100% !important;
-    page-break-inside: avoid;
-    display: block;
-    margin: 1em auto;
-  }
-
-  // Make placeholders clearer in print
-  img[src="placeholder"] {
-    border: 1px dashed #999;
-    padding: 1em;
-    text-align: center;
-    height: 100px;
-    width: 80%;
-    background: #f9f9f9;
-  }
-
-  // Fix tables in print
-  table {
-    page-break-inside: auto;
-  }
-
-  tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
-  }
-
-  // Print button styling (hidden in print)
-  .print-now-btn {
-    display: inline-block;
-    background-color: $aarc-blue;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 4px;
-    text-decoration: none !important;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  .print-instructions {
-    margin-bottom: 2em;
-  }
-
-  // These elements should only show in print
-  .print-only {
-    display: none;
-  }
-
-  // Show print-only elements in print
-  @page {
-    size: letter portrait;
-    margin: 1.5cm;
-  }
-
-  .print-only {
-    display: block !important;
-  }
-
-  .print-instructions {
-    display: none !important;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
   }
 }
 
 // Team Section
 .team-section {
   margin: 2rem 0 3rem;
-
+  
   .team-intro {
     max-width: 800px;
     margin: 0 auto 2rem;
     text-align: center;
-
+    
     p {
       font-size: 1.1rem;
       color: $aarc-dark-gray;
       line-height: 1.6;
     }
   }
-
+  
   .team-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-
+    
     @media screen and (min-width: 576px) {
       grid-template-columns: repeat(2, 1fr);
     }
-
+    
     @media screen and (min-width: 992px) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
-
+  
   .team-member {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
-
+    
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
     }
-
+    
     .team-member-image {
       overflow: hidden;
-
+      
       img {
         width: 100%;
         height: auto;
@@ -1764,17 +1546,17 @@ table {
         box-shadow: none;
       }
     }
-
+    
     .team-member-info {
       padding: 1.25rem;
-
+      
       h3 {
         margin-top: 0;
         margin-bottom: 0.25rem;
         font-size: 1.2rem;
         color: $aarc-dark-gray;
       }
-
+      
       h4 {
         margin-top: 0;
         margin-bottom: 0.75rem;
@@ -1784,7 +1566,7 @@ table {
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
-
+      
       p {
         font-size: 0.9rem;
         margin-bottom: 0;
@@ -1800,7 +1582,7 @@ table {
   background-color: $aarc-footer-bg;
   padding: 1rem 0;
   margin-top: 3rem;
-
+  
   .copyright {
     font-size: 0.75rem;
     text-align: center;
