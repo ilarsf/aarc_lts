@@ -171,7 +171,7 @@ This curated collection of high-quality instructional videos supports the Learn 
   <p><strong>Right:</strong> Daniel Boyne emphasizes posture, relaxation, and rhythm during the recovery and catch.</p>
 </div>
 
-### 4.2 The Catch
+### 4.2  The Catch
 <div class="video-grid">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/EO49G8ANMZY" frameborder="0" allowfullscreen></iframe>
@@ -182,9 +182,10 @@ This curated collection of high-quality instructional videos supports the Learn 
 </div>
 
 <div class="video-item">
-  <p><strong>Left:</strong> Decent Rowing focuses on matching body speed to boat speed for a gentle blade entry.</p>
-  <p><strong>Right:</strong> Decent Rowing (catch preparation) advocates quick, decisive blade placement.</p>
+  <p><strong>Left:</strong> <em>Tutorial on Avoiding Slowing the Boat at the Catch</em> – <strong>Decent Rowing</strong> explains how matching body speed to boat speed creates a gentle, controlled blade entry.</p>
+  <p><strong>Right:</strong> <em>Square Early for an Easy Catch</em> – <strong>Decent Rowing</strong> shows why squaring the blade early lets you place it quickly and decisively without checking the hull.</p>
 </div>
+
 
 ### 4.3 The Drive
 <div class="video-grid">
@@ -206,7 +207,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 </div>
 
 <div class="video-item">
-  <p><strong>Finish drill:</strong> Stephen M. demonstrates the downward tap and smooth feather away.</p>
+  <p><strong>Finish drill:</strong> John Dunn demonstrates the downward tap and smooth feather away.</p>
   <p>Additional extraction cues are illustrated in the <a href="#the-sculling-stroke-cycle-an-overview">overview video (4.1)</a>.</p>
 </div>
 
