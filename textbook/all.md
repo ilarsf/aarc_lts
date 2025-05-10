@@ -9,7 +9,14 @@ title: "Complete Textbook - AARC Learn to Scull"
 </div>
 
 <div class="info-box tip print-instructions">
-  <h4>Creating a PDF or Printed Copy</h4>
+  <h4>Creating a Professional PDF or Printed Textbook</h4>
+  <p>Your textbook will be formatted with:</p>
+  <ul>
+    <li>A professional <strong>cover page</strong></li>
+    <li>Automatic <strong>page numbering</strong></li>
+    <li>Each <strong>chapter starting on a new page</strong></li>
+    <li>Proper <strong>headers and footers</strong></li>
+  </ul>
   <p>Follow these steps for best results:</p>
   <ol>
     <li>Use <strong>Chrome or Edge</strong> browser for most consistent results</li>
@@ -20,6 +27,7 @@ title: "Complete Textbook - AARC Learn to Scull"
         <li>Enable <strong>"Background graphics"</strong> for diagrams/icons</li>
         <li>Set <strong>Margins to "Default" or "Medium"</strong></li>
         <li>Set <strong>Scale to "Default" or "100%"</strong></li>
+        <li>Set <strong>Paper size to "Letter"</strong></li>
       </ul>
     </li>
     <li>Click <strong>"Save"</strong> or <strong>"Print"</strong> to generate the PDF</li>
@@ -67,23 +75,43 @@ title: "Complete Textbook - AARC Learn to Scull"
   </ul>
 </div>
 
-<hr class="section-divider">
+<div class="print-info-page">
+  <h1>AARC Learn to Scull</h1>
+  <p class="textbook-subtitle">Complete Textbook</p>
+  <div class="textbook-cover-info">
+    <p>Ann Arbor Rowing Club</p>
+    <p>Learn to Scull Program</p>
+    <p>{{ site.time | date: '%Y' }}</p>
+  </div>
+</div>
+
+<hr class="section-divider page-break-after">
+
+<h1 id="part-1-getting-started" class="part-heading">Part 1: Getting Started</h1>
 
 {% include textbook/Part1-GettingStarted.md %}
 
 <hr class="section-divider">
 
+<h1 id="part-2-for-the-learner" class="part-heading">Part 2: For the Learner</h1>
+
 {% include textbook/Part2-ForTheLearner.md %}
 
 <hr class="section-divider">
+
+<h1 id="part-3-safety" class="part-heading">Part 3: Safety</h1>
 
 {% include textbook/Part3-Safety.md %}
 
 <hr class="section-divider">
 
+<h1 id="part-4-for-the-coach" class="part-heading">Part 4: For the Coach</h1>
+
 {% include textbook/Part4-ForTheCoach.md %}
 
 <hr class="section-divider">
+
+<h1 id="part-5-appendices" class="part-heading">Part 5: Appendices</h1>
 
 {% include textbook/Part5-Appendices.md %}
 
