@@ -29,7 +29,10 @@ The site includes:
 - Drop-down navigation menus
 - Tabbed content organization
 - Automatic table of contents generation
-- PDF export for printable materials
+- Enhanced print functionality for the textbook:
+  - One-click printing from any page
+  - Print-optimized CSS for better formatting
+  - Option to save as PDF
 - Video embeds and galleries
 - Interactive information boxes
 - Responsive tables
