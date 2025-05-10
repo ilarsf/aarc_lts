@@ -1,6 +1,8 @@
 <!-- Additional head content -->
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Custom Print JS -->
+<script src="{{ site.baseurl }}/assets/js/print.js"></script>
 
 <style>
   /* Mobile-specific additional styles - commented out to avoid conflict with style.scss
@@ -16,17 +18,17 @@
     }
   }
   */
-  
+
   /* Fix for bullet points in navigation menu */
-  .site-nav ul, 
-  .site-nav ul.fallback-nav, 
+  .site-nav ul,
+  .site-nav ul.fallback-nav,
   .site-nav ul.dropdown-menu,
   .dropdown-menu {
     list-style-type: none !important;
     margin: 0 !important;
     padding: 0 !important;
   }
-  
+
   .site-nav li,
   .site-nav ul li,
   .site-nav ul.fallback-nav li,
@@ -37,7 +39,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  
+
   .site-nav li:before,
   .site-nav ul li:before,
   .site-nav ul.fallback-nav li:before,
@@ -46,9 +48,9 @@
     content: none !important;
     display: none !important;
   }
-  
+
   /* Fix general bullet points in the content */
-  .main-content > ul li,
+  .main-content>ul li,
   .main-content section ul li,
   .main-content div ul li,
   .info-box ul li {
@@ -56,18 +58,18 @@
     list-style-image: none !important;
     margin-left: 20px !important;
   }
-  
+
   .main-content ul,
   .info-box ul {
     padding-left: 20px !important;
   }
-  
+
   .main-content ul li:before,
   .info-box ul li:before {
     content: none !important;
     display: none !important;
   }
-  
+
   /* Custom CTA button styles */
   .cta-large {
     display: inline-block;
@@ -81,79 +83,84 @@
     letter-spacing: 0.5px;
     margin: 2rem 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .cta-large:hover {
     background-color: #165c98;
     text-decoration: none;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
-  
+
   /* Image placeholder icon */
   .image-placeholder .icon i {
     font-size: 2.5rem;
     color: #aaaaaa;
   }
-  
+
   /* Smooth scroll for anchor links */
   html {
     scroll-behavior: smooth;
   }
-  
+
   /* Highlight current section */
   .section-highlight {
     animation: highlightFade 2s ease-out;
   }
-  
+
   @keyframes highlightFade {
-    0% { background-color: rgba(30, 115, 190, 0.2); }
-    100% { background-color: transparent; }
+    0% {
+      background-color: rgba(30, 115, 190, 0.2);
+    }
+
+    100% {
+      background-color: transparent;
+    }
   }
 </style>
 
 <!-- Tab and Navigation JavaScript -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     // Initialize tabs
     const tabContainers = document.querySelectorAll('.tab-container');
-    
+
     tabContainers.forEach(container => {
       const tabLinks = container.querySelectorAll('.tab-link');
       const tabContents = container.querySelectorAll('.tab-content');
-      
+
       // Check for hash in URL to activate specific tab
       const hash = window.location.hash;
       let activeTabSet = false;
-      
+
       // Set first tab as active by default
       if (tabLinks.length > 0 && !activeTabSet) {
         tabLinks[0].classList.add('active');
       }
-      
+
       if (tabContents.length > 0 && !activeTabSet) {
         tabContents[0].classList.add('active');
       }
-      
+
       // Add click event to tab links
       tabLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
           e.preventDefault();
-          
+
           // Get target tab ID
           const targetId = this.getAttribute('data-tab');
-          
+
           // Remove active class from all tabs and content
           tabLinks.forEach(tab => tab.classList.remove('active'));
           tabContents.forEach(content => content.classList.remove('active'));
-          
+
           // Add active class to current tab and content
           this.classList.add('active');
           document.getElementById(targetId).classList.add('active');
-          
+
           // Update URL hash for direct linking
           if (history.pushState) {
             history.pushState(null, null, '#' + targetId);
@@ -163,49 +170,49 @@
         });
       });
     });
-    
+
     // Auto-generate TOC when present
     const tocContainer = document.querySelector('.page-toc-container');
     if (tocContainer) {
       const headings = document.querySelectorAll('h2, h3');
       const tocList = document.createElement('ul');
-      
+
       headings.forEach((heading, index) => {
         // Create ID if not present
         if (!heading.id) {
           heading.id = 'section-' + index;
         }
-        
+
         const listItem = document.createElement('li');
         const link = document.createElement('a');
-        
+
         link.href = '#' + heading.id;
         link.textContent = heading.textContent;
-        
+
         // Indent h3 elements
         if (heading.tagName === 'H3') {
           listItem.style.paddingLeft = '1rem';
         }
-        
+
         listItem.appendChild(link);
         tocList.appendChild(listItem);
       });
-      
+
       tocContainer.appendChild(tocList);
     }
-    
+
     // Handle anchor link highlighting
     if (window.location.hash) {
       const targetElement = document.querySelector(window.location.hash);
       if (targetElement) {
         setTimeout(() => {
           targetElement.classList.add('section-highlight');
-          
+
           // Scroll to element with offset for fixed header
           const headerOffset = 80;
           const elementPosition = targetElement.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: "smooth"
@@ -213,7 +220,7 @@
         }, 100);
       }
     }
-    
+
     // Add icons to image placeholders
     const imagePlaceholders = document.querySelectorAll('.image-placeholder .icon');
     imagePlaceholders.forEach(placeholder => {

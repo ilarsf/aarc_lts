@@ -13,7 +13,7 @@ title: "Complete Textbook - AARC Learn to Scull"
   <p>Follow these steps for best results:</p>
   <ol>
     <li>Use <strong>Chrome or Edge</strong> browser for most consistent results</li>
-    <li>Press <strong>Ctrl+P</strong> or <strong>Cmd+P</strong> to open the print dialog</li>
+    <li>Click the <strong>Print Button</strong> below (or press <strong>Ctrl+P</strong> / <strong>Cmd+P</strong>)</li>
     <li>Select <strong>"Save as PDF"</strong> from the destination/printer options</li>
     <li>In the print settings:
       <ul>
@@ -24,7 +24,7 @@ title: "Complete Textbook - AARC Learn to Scull"
     </li>
     <li>Click <strong>"Save"</strong> or <strong>"Print"</strong> to generate the PDF</li>
   </ol>
-  <p><a href="#" class="print-now-btn" onclick="window.print(); return false;">Click here to print now</a></p>
+  <p><a href="#" class="print-now-btn button-primary"><i class="fas fa-print"></i> Print Full Textbook Now</a></p>
 </div>
 
 <div class="textbook-full-toc">
