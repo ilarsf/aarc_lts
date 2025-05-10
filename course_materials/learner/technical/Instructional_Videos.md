@@ -122,7 +122,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 
 <div class="video-item">
   <p><strong>Adjusting the Foot Stretcher</strong> – <strong>Ottawa Rowing Club (CAN)</strong> – <strong>1:30</strong></p>
-  <p><em>Overview:</em> A quick tutorial on how to properly adjust your foot stretcher in a sculling boat. Coaches explain how moving the foot stretcher affects your stroke: they demonstrate the correct position that allows shins vertical at the catch and a comfortable reach. You'll see how to loosen the wing nuts and slide the stretcher to fit your leg length, and secure it firmly before rowing. Proper foot stretcher placement is one of the first and most important equipment tweaks for a beginner to get the right stroke length and posture. (Bonus tips on checking heel tie-downs and adjusting foot straps are included.)</p>
+  <p><em>Overview:</em> A quick tutorial on how to properly adjust your foot stretcher in a sculling boat. Coaches explain how moving the foot stretcher affects your stroke: they demonstrate the correct position that allows shins vertical at the catch and a comfortable reach. You'll see how to loosen the wing nuts and slide the stretcher to fit your leg length, and secure it firmly before rowing. Proper foot stretcher placement is one of the first and most important equipment tweaks for a beginner to get the right stroke length and posture.</p>
 </div>
 
 <div class="text-right"><a href="#" class="text-small">[Return to Top]</a></div>

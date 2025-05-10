@@ -20,7 +20,7 @@ Your single sculling shell is a long, narrow boat designed for speed and efficie
 * **Seat:** The small seat you sit on, which slides back and forth on **Tracks** (or Slides).
 * **Foot Stretcher:** An adjustable platform where you secure your feet. Your coach will help you adjust this for your leg length.
 * **Riggers:** Metal or carbon frames extending from the sides of the boat. They hold the oars.
-* **Oarlocks (or Gates):** U-shaped holders at the end of the riggers that secure the oars and allow them to pivot.
+* **Oarlocks (with Gates):** U-shaped holders at the end of the riggers that secure the oars and allow them to pivot. The gates ensure your oars do not pop out.
 * **Gunwales (or Gunnels):** The top edges of the boat's sides.
 
 ![Placeholder: Diagram of a single scull with parts labeled](placeholder)

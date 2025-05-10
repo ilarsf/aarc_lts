@@ -86,12 +86,12 @@
     </ul>
 
     <h3>The Drive</h3>
-    <ol>
+    <ul>
       <li>Press with legs while keeping arms straight</li>
       <li>Once legs are nearly flat, engage the back</li>
       <li>Finally, pull with arms to bring handles to body</li>
       <li>Key point: Legs → Back → Arms</li>
-    </ol>
+    </ul>
 
     <h3>The Finish</h3>
     <ul>
@@ -102,12 +102,12 @@
     </ul>
 
     <h3>The Recovery</h3>
-    <ol>
+    <ul>
       <li>Extend arms away from body</li>
       <li>Pivot forward from hips</li>
       <li>Begin bending knees to slide forward</li>
       <li>Key point: Arms → Back → Legs (reverse of drive)</li>
-    </ol>
+    </ul>
 
     <h2 id="essential-sculling-techniques">Essential Sculling Techniques</h2>
 
