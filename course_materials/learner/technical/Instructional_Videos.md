@@ -32,7 +32,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 
 ## Module 1: Introduction to Sculling
 
-### 1.1 What is Sculling?
+### 1 What is Sculling?
 <div class="video-grid">
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/eTerbM8Uhxc" frameborder="0" allowfullscreen></iframe>
@@ -42,20 +42,6 @@ This curated collection of high-quality instructional videos supports the Learn 
 <div class="video-item">
   <p><strong>Sculling vs. Sweep – Rowing Boat Classes Explained</strong> – <strong>World Rowing</strong> – <strong>3:55</strong></p>
   <p><em>Overview:</em> Explains what sculling is (using two oars per rower) versus sweep rowing (one oar per rower) and introduces the different boat types (singles, doubles, fours, etc.). This short video from World Rowing uses clear visuals to walk through the 29 rowing boat classes, helping newcomers understand how sculling boats (like the single) differ from sweep boats in configuration and terminology. It's a great primer on where single sculling fits into the sport.</p>
-</div>
-
-<div class="text-right"><a href="#" class="text-small">[Return to Top]</a></div>
-
-### 1.2 Essential Sculling Terminology
-<div class="video-grid">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/7VqoNPauuX4" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-<div class="video-item">
-  <p><strong>Glossary of Rowing (Part 1)</strong> – <strong>CamCamOnTheCam (Cambridge Rowing)</strong> – <strong>6:38</strong></p>
-  <p><em>Overview:</em> An introductory glossary video created for novice rowers, covering common rowing terms and jargon. It defines basic terms such as port/starboard, bow/stern, catch, drive, etc., and even includes a few local terms from Cambridge. This is a handy orientation to the language of rowing, helping you "get up to speed with common rowing terms" so you can follow coaching instructions and communicate on the water.</p>
 </div>
 
 <div class="text-right"><a href="#" class="text-small">[Return to Top]</a></div>
@@ -77,13 +63,13 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 2.2 Capsize Drill & Recovery
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/G0dKLlgZ3o0" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="video-item">
-  <p><strong>Capsize and Recovery Drill</strong> – <strong>British Rowing</strong> – <strong>2:20</strong></p>
-  <p><em>Overview:</em> A British Rowing instructional clip demonstrating what to do if you flip a single scull and how to get back in safely. An athlete intentionally capsizes and then, step by step, shows the proper recovery technique: staying with the boat, releasing feet from the shoes, righting the shell, and re-entering from the bow. This expert-led video is an excellent visual guide to practice the capsize drill so you'll be prepared to "understand what to do when a rowing boat capsizes" in real life. It's a must-watch for every new sculler's safety training.</p>
+  <p><strong>How to Get Back into Your Scull after Flipping</strong> – <strong>rowingwithcalmwaters</strong> – <strong>2:27</strong></p>
+  <p><em>Overview:</em> Learn how to get back into your scull -- swiftly and safely -- after flipping over in water. Demonstrated by Calm Waters Rowing coaches and U.S. National Team medalists Charlotte Hollings and John Dunn. </p>
 </div>
 
 <div class="text-right"><a href="#" class="text-small">[Return to Top]</a></div>
@@ -105,7 +91,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 3.2 Parts of Sculling Oars
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/vJle0P9X8FY" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -117,19 +103,20 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 3.3 Getting In and Out of the Scull
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Ey-08B0azG8" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/BZj3jUVNdAM" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="video-item">
-  <p><strong>How to Get into a Single Scull (Step-by-Step)</strong> – <strong>Fulham Reach Boat Club (UK)</strong> – <strong>3:00</strong></p>
-  <p><em>Overview:</em> A coach from a rowing club demonstrates the proper technique for entering and exiting a single scull safely, even without assistance. The video shows how to orient your scull alongside the dock, secure the handles in one hand, and carefully step in one foot at a time while maintaining three points of contact for stability. It also covers adjusting your footing and then pushing off. By following this drill-style demonstration, beginners can practice getting in and out with confidence and greatly reduce the risk of flipping or injuring equipment.</p>
+  <p><strong>How to get into a rowing single scull</strong> – <strong>Decent Rowing (AUS)</strong> – <strong>0:53</strong></p>
+  <p><em>Overview:</em> How to get into a rowing single scull
+</p>
 </div>
 
 ### 3.4 Basic Equipment Adjustments
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleFootStretch" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/LJVyqtKbx3s" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -157,7 +144,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 4.2 The Catch
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleCatch" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/0kzP4KZLMq8" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -169,7 +156,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 4.3 The Drive
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleDrive" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/BYsueP5GpGY" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -181,7 +168,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 4.4 The Finish & Release
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleRelease" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/15RkCUVzqdA" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -193,7 +180,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 4.5 The Recovery
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Kacj-Vh6AMQ" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/I4yWtnTFdoY" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -205,7 +192,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 4.6 Feathering & Squaring
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleFeather" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -221,7 +208,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 5.1 Achieving Balance: Essential Drills
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleCircles" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VXxJ6zUPtLg" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -233,7 +220,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 5.2 Drills for Stroke Components
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleScullDrills" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/kAAFCBTwb2Q" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -257,12 +244,12 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 5.4 Identifying & Correcting Common Beginner Mistakes
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleFundamentals" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/RO0kN5JNa9w" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="video-item">
-  <p><strong>Sculling Fundamentals</strong> – <strong>USRowing</strong> – <strong>14:00</strong></p>
+  <p><strong>Sculling Basics</strong> – <strong>USRowing</strong> – <strong>14:55</strong></p>
   <p><em>Overview:</em> A longer, <strong>comprehensive</strong> coaching video from USRowing that not only teaches the fundamentals of the stroke but also points out typical novice mistakes and how to fix them. It is structured as an all-in-one technique session: a coach goes through the stroke step by step, and at each step highlights pitfalls new scullers often face – for example, rushing the slide on recovery, shooting the tail (legs driving with no body swing), dipping the hands at the catch, or letting the blade depth fluctuate. For each error, the correct technique is shown and drills or cues to correct it are suggested. Because it "covers all the elements of the sculling stroke" in detail, this video effectively serves as a troubleshooting guide. As a viewer, you can compare your own rowing to the demonstrations to identify any of these common errors, and then follow the provided advice to continually improve your form.</p>
 </div>
 
@@ -273,7 +260,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 ### 6.1 Basic Boat and Oar Care
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleBoatCare" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ro4UF4JIgPk" frameborder="0" allowfullscreen></iframe>
   </div>
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/ExampleOarCare" frameborder="0" allowfullscreen></iframe>
@@ -281,28 +268,28 @@ This curated collection of high-quality instructional videos supports the Learn 
 </div>
 
 <div class="video-item">
-  <p><strong>Left:</strong> <strong>How to Maintain Your Rowing Boat</strong> – <strong>Liteboat (FRA)</strong> – <strong>3:00</strong></p>
-  <p><em>Overview:</em> A practical tutorial on caring for your single scull to keep it in top shape. Filmed by a rowing shell manufacturer, this video gives simple maintenance tips: how to rinse your boat with fresh water after each row, check and dry the tracks and seat, and avoid damage when storing or carrying the shell. It shows the proper way to <strong>wash the hull</strong>, remove dirt (especially around the slides and riggers), and even polish the shell for longevity. For beginners, it underlines the importance of routine cleaning and inspection (for example, tightening rigger nuts) as part of rowing – helping you protect your equipment investment and ensure your boat is safe and ready each time you go out.</p>
-  <p><strong>Right:</strong> <strong>Cleaning Rowing and Sculling Oar Grips</strong> – <strong>Croker Oars (AUS)</strong> – <strong>5:20</strong></p>
-  <p><em>Overview:</em> This short video from a leading oar manufacturer shows how to clean and care for your scull's oar handles and grips. It demonstrates the best practices for different grip types (rubber, suede, foam): washing them with mild soap, using a brush to remove salt and sweat residue, and letting them dry properly. The instructor also covers inspecting the oar sleeve, collar, and button for wear or looseness. Regular oar maintenance as shown here is important not only for hygiene (grips can get pretty dirty!) but also for performance – clean, well-maintained oar grips ensure consistent handle grip and reduce the chance of blisters. After watching this, you'll know how to give your oars a little TLC after your outings, which will keep them in good condition for years.</p>
+  <p><strong>Left:</strong> <strong>HCleaning & Maintenance</strong> – <strong>Fluidesign Composites Inc.</strong> – <strong>4:37</strong></p>
+  <p><em>Overview:</em> A practical tutorial on caring for your single scull to keep it in top shape.</p>
+  <p><strong>Right:</strong> <strong>Cleaning Sculling Grips</strong> – <strong>Croker Oars (AUS)</strong> – <strong>1:58</strong></p>
+  <p><em>Overview:</em> Cleaning sculling grips is easy. It also needs to be done regularly. Howard Croker from Croker Oars shows you the tool and techniques for cleaning sculling grips.</p>
 </div>
 
 ### 6.2 Structuring Your First On-Water Practice Sessions
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleFirstOuting" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/AeUZfT0APoI" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="video-item">
-  <p><strong>How to Launch Your Rowing Boat & Do Your First Strokes</strong> – <strong>Liteboat/TopRow</strong> – <strong>6:53</strong></p>
+  <p><strong>How to Launch Your Rowing Boat & Do Your First Strokes</strong> – <strong>Liteboat TV</strong> – <strong>6:53</strong></p>
   <p><em>Overview:</em> A beginner-friendly guide that walks you through an entire first outing, produced in collaboration with TopRow (a recreational rowing program). The video starts with how to carry and launch your single scull from the dock, then moves into what a first practice session might look like on the water. Coaches demonstrate initial drills like simply sitting at different positions to get your balance, then taking your <em>very first strokes</em> on the water with half slide rowing. They provide a simple structure: warm-up with stationary drills, then focus on one technique element at a time (for example, arms-only rowing, then adding body swing, then legs). The pacing is tailored for novices – you're encouraged to pause, regain balance, and not rush as you build coordination. By following this session outline, new scullers (and their coaches) can structure the first few practices methodically, ensuring a safe and confidence-building progression in the single. It's essentially a template for Day 1 on-water that you can replicate and gradually expand upon as you gain skill.</p>
 </div>
 
 ### 6.3 Tips for Continued Learning & Improvement
 <div class="video-grid">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ExampleAdvice" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/KMpAtNw56K8" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 
