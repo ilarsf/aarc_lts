@@ -1,7 +1,6 @@
----
+--- 
 
----
-
+--- 
 
 @import "{{ site.theme }}";
 
@@ -25,7 +24,12 @@ body {
   line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: $aarc-dark-gray;
@@ -563,7 +567,12 @@ a {
   margin: 0 auto;
   padding: 1rem 0;
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $aarc-dark-gray;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -677,7 +686,8 @@ a {
   }
 
   // Lists styling
-  ul, ol {
+  ul,
+  ol {
     padding-left: 2rem;
     margin-bottom: 1.5rem;
 
@@ -689,7 +699,8 @@ a {
       }
     }
 
-    ul,ol {
+    ul,
+    ol {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
@@ -1565,23 +1576,22 @@ table {
 
   /* Basic page setup */
   @page {
-    margin: 1.5cm;
-    size: letter;
-
-    /* Add page numbers in the footer */
-    @bottom-center {
-      content: counter(page);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10pt;
-    }
+    margin: 0.75in 0.75in 1in 0.75in;
+    /* top, right, bottom, left */
+    size: letter portrait;
   }
 
-  /* Reset body margins and styling */
+  /* Reset body margins and styling for print */
+  html,
   body {
-    margin: 0;
-    padding: 0;
-    font-size: 11pt;
-    line-height: 1.5;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+    background: white !important;
+    color: black !important;
+    font-family: "Times New Roman", Times, serif !important;
+    width: 100% !important;
   }
 
   /* Hide elements not needed in print */
@@ -1590,165 +1600,199 @@ table {
   .site-footer,
   .print-hide,
   .print-instructions,
-  .textbook-header .textbook-home-link,
+  .textbook-header,
   .textbook-footer,
   .button-primary,
-  nav {
+  nav,
+  button,
+  .mobile-nav-toggle {
     display: none !important;
   }
 
-  /* Full-width content */
+  /* Full-width content with proper margins */
   .main-content {
     width: 100% !important;
     max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 auto !important;
+    padding: 0.5in !important;
+    font-size: 12pt !important;
   }
 
-  /* Page break controls */
-  h1,
+  /* Container reset */
+  .container-lg {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Heading styling */
+  h1 {
+    font-size: 22pt !important;
+    margin-top: 0.5in !important;
+    margin-bottom: 0.25in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    text-align: left !important;
+  }
+
   h2 {
-    page-break-after: avoid;
-    page-break-inside: avoid;
+    font-size: 18pt !important;
+    margin-top: 0.4in !important;
+    margin-bottom: 0.2in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    page-break-after: avoid;
-    page-break-inside: avoid;
-    margin-top: 20pt;
+    font-size: 14pt !important;
+    margin-top: 0.3in !important;
+    margin-bottom: 0.15in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
   }
 
+  /* Link display */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  /* Avoid page breaks inside these elements */
   p,
   li,
   blockquote,
-  table {
-    page-break-inside: avoid;
+  table,
+  .info-box,
+  figure {
+    page-break-inside: avoid !important;
   }
 
-  /* Prevent orphaned headings */
-  h1,
-  h2,
-  h3,
-  h4 {
-    &+p {
-      page-break-before: avoid;
-    }
-  }
-
-  /* Force page breaks before new parts/chapters */
-  .page-break-before,
-  [id^="part-"],
-  [id^="chapter-"] {
-    page-break-before: always;
-  }
-
-  /* Margin at bottom of pages */
+  /* Control orphans and widows */
   p {
-    orphans: 3;
-    widows: 3;
+    orphans: 3 !important;
+    widows: 3 !important;
   }
 
   /* Image sizing */
   img,
   figure {
-    max-width: 500px !important;
-    max-height: 300px !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Part wrappers for proper page breaks */
+  .part-wrapper {
+    page-break-before: always !important;
+    margin-top: 0.5in !important;
+  }
+
+  /* Chapter headings */
+  h2[id^="chapter-"] {
+    page-break-before: always !important;
+    margin-top: 0.5in !important;
   }
 
   /* Info boxes */
   .info-box {
-    break-inside: avoid;
     border: 1px solid #ccc !important;
     background-color: #f8f8f8 !important;
-    margin: 15pt 0;
-    padding: 10pt;
+    margin: 0.2in 0 !important;
+    padding: 0.1in !important;
   }
 
+  /* Section dividers */
   hr.section-divider {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 2rem 0;
+    border: none !important;
+    border-top: 1px solid #ccc !important;
+    margin: 0.25in 0 !important;
   }
 
-  /* Add page numbers in bottom corner */
-  .page-counter {
-    position: fixed;
-    bottom: 10mm;
-    right: 10mm;
-    font-size: 10pt;
-    content: counter(page);
-    font-family: Arial, sans-serif;
+  /* Headers and footers */
+  .print-header {
+    position: fixed !important;
+    top: 0.3in !important;
+    left: 0.75in !important;
+    right: 0.75in !important;
+    height: 0.3in !important;
+    border-bottom: 0.5pt solid #ccc !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 9pt !important;
+    font-family: Arial, sans-serif !important;
+    font-style: italic !important;
+    color: #666 !important;
   }
 
-  .total-pages {
-    position: fixed;
-    bottom: 10mm;
-    left: 10mm;
-    font-size: 10pt;
-    font-family: Arial, sans-serif;
+  .print-footer {
+    position: fixed !important;
+    bottom: 0.3in !important;
+    left: 0.75in !important;
+    right: 0.75in !important;
+    height: 0.3in !important;
+    border-top: 0.5pt solid #ccc !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 9pt !important;
+    font-family: Arial, sans-serif !important;
+    color: #666 !important;
   }
 
-  /* Header for each page */
-  .header-title {
-    position: fixed;
-    top: 10mm;
-    left: 10mm;
-    font-size: 9pt;
-    font-family: Arial, sans-serif;
-    font-style: italic;
+  /* Make sure content starts below header in print */
+  .main-content::before {
+    content: '' !important;
+    display: block !important;
+    height: 0.5in !important;
   }
 
-  /* Copyright notice on first page */
-  .print-copyright {
-    position: fixed;
-    bottom: 10mm;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 9pt;
-    font-family: Arial, sans-serif;
+  /* Cover page styling */
+  .print-info-page {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 9in !important;
+    /* Approximate height of letter paper minus margins */
+    text-align: center !important;
+    page-break-after: always !important;
   }
 
-  .date-printed {
-    position: fixed;
-    top: 10mm;
-    right: 10mm;
-    font-size: 9pt;
-    font-family: Arial, sans-serif;
-    font-style: italic;
+  .print-info-page h1 {
+    font-size: 28pt !important;
+    margin-bottom: 0.25in !important;
   }
 
-  /* Table of contents formatting */
+  .textbook-subtitle {
+    font-size: 20pt !important;
+    margin-bottom: 2in !important;
+  }
+
+  .textbook-cover-info {
+    margin-top: 2in !important;
+    font-size: 14pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Table of contents */
   .textbook-full-toc {
-    page-break-after: always;
-
-    h2 {
-      font-size: 18pt;
-      margin-bottom: 15pt;
-    }
-
-    .toc-main {
-      font-size: 11pt;
-
-      >li {
-        margin-bottom: 8pt;
-
-        a {
-          text-decoration: none;
-          color: black;
-        }
-
-        >ul {
-          margin-top: 5pt;
-        }
-      }
-    }
+    page-break-after: always !important;
   }
 
-  /* Ensure all content is visible in print */
+  .textbook-full-toc h2 {
+    font-size: 20pt !important;
+    text-align: center !important;
+    margin-bottom: 0.3in !important;
+  }
+
+  .textbook-full-toc .toc-main {
+    font-size: 12pt !important;
+  }
+
+  /* Show all details */
   details,
   .collapse {
     display: block !important;
@@ -1758,48 +1802,115 @@ table {
     display: none !important;
   }
 
-  // Show the print info page and part headings in print mode
-  .print-info-page {
-    display: block;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    page-break-after: always;
-
-    h1 {
-      font-size: 28pt;
-      margin-bottom: 1rem;
-    }
-
-    .textbook-subtitle {
-      font-size: 20pt;
-      margin-bottom: 4rem;
-    }
-
-    .textbook-cover-info {
-      margin-top: 4rem;
-      font-size: 14pt;
-      line-height: 1.5;
-    }
-  }
-
+  /* Part headings */
   .part-heading {
-    display: block;
-    font-size: 24pt;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    page-break-before: always;
-    page-break-after: avoid;
+    display: block !important;
+    font-size: 24pt !important;
+    text-align: center !important;
+    margin-top: 1in !important;
+    margin-bottom: 0.5in !important;
+  }
+}
+
+/* Copyright notice on first page */
+.print-copyright {
+  position: fixed;
+  bottom: 10mm;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 9pt;
+  font-family: Arial, sans-serif;
+}
+
+.date-printed {
+  position: fixed;
+  top: 10mm;
+  right: 10mm;
+  font-size: 9pt;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+/* Table of contents formatting */
+.textbook-full-toc {
+  page-break-after: always;
+
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 15pt;
   }
 
-  // Hide web-only elements in print
-  .textbook-header {
-    display: none;
+  .toc-main {
+    font-size: 11pt;
+
+    >li {
+      margin-bottom: 8pt;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      >ul {
+        margin-top: 5pt;
+      }
+    }
   }
+}
+
+/* Ensure all content is visible in print */
+details,
+.collapse {
+  display: block !important;
+}
+
+details>summary {
+  display: none !important;
+}
+
+// Show the print info page and part headings in print mode
+.print-info-page {
+  display: block;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  page-break-after: always;
+
+  h1 {
+    font-size: 28pt;
+    margin-bottom: 1rem;
+  }
+
+  .textbook-subtitle {
+    font-size: 20pt;
+    margin-bottom: 4rem;
+  }
+
+  .textbook-cover-info {
+    margin-top: 4rem;
+    font-size: 14pt;
+    line-height: 1.5;
+  }
+}
+
+.part-heading {
+  display: block;
+  font-size: 24pt;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  page-break-before: always;
+  page-break-after: avoid;
+}
+
+// Hide web-only elements in print
+.textbook-header {
+  display: none;
+}
 }
 
 // Team Section

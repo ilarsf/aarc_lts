@@ -27,52 +27,125 @@ function prepareForPrinting() {
         el.classList.add('show');
     });
 
-    // Add page break before each major section/chapter
-    document.querySelectorAll('h1[id^="part-"], h2[id^="chapter-"]').forEach(function (heading) {
-        heading.classList.add('page-break-before');
-    });
+    // Clean up any previous print elements
+    cleanupPrintElements();
 
-    // Add page numbers by creating a counter element that will be positioned in the footer
-    addPageCounter();
+    // Fix empty pages by properly structuring content
+    fixEmptyPages();
+
+    // Try to properly mark chapter headings if not already done
+    addChapterIds();
+
+    // Add print-specific header and footer content
+    addFooterContent();
 }
 
-// Add dynamic page counter that will appear in print mode
-function addPageCounter() {
-    // Remove any existing page counters
-    const existingCounters = document.querySelectorAll('.page-counter');
-    existingCounters.forEach(counter => counter.remove());
+// Clean up any elements we might have added in a previous print attempt
+function cleanupPrintElements() {
+    // Remove any existing print-specific elements
+    const elementsToRemove = document.querySelectorAll('.print-header, .print-footer, .page-counter, .header-title, .total-pages, .print-copyright, .date-printed');
+    elementsToRemove.forEach(el => el.remove());
+}
 
-    // Create page counter elements
-    const pageCounter = document.createElement('div');
-    pageCounter.className = 'page-counter';
+// Fix issues with empty pages
+function fixEmptyPages() {
+    // Replace page-break-before with a more reliable approach
+    document.querySelectorAll('.page-break-before').forEach(el => {
+        el.classList.remove('page-break-before');
+    });
 
-    const totalPages = document.createElement('div');
-    totalPages.className = 'total-pages';
-    totalPages.setAttribute('id', 'total-pages');
-    totalPages.textContent = 'Total pages: calculating...';
+    // Add page breaks only to major sections where really needed
+    document.querySelectorAll('h1[id^="part-"]').forEach(function (heading) {
+        // Create a wrapper if it doesn't exist
+        if (!heading.parentElement.classList.contains('part-wrapper')) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'part-wrapper';
+            wrapper.style.pageBreakBefore = 'always';
 
-    // Create a title for the header
+            // Insert the wrapper before the heading
+            heading.parentNode.insertBefore(wrapper, heading);
+            // Move the heading into the wrapper
+            wrapper.appendChild(heading);
+        }
+    });
+
+    // Fix potential margin issues - only make minimal adjustments
+    // to avoid conflicts with print.css
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
+}
+
+// Function to add IDs to chapter headings if not already present
+function addChapterIds() {
+    // Find all h2 elements that might be chapters
+    const potentialChapters = Array.from(document.querySelectorAll('h2:not([id^="chapter-"])'))
+        .filter(h2 => h2.textContent.toLowerCase().includes('chapter'));
+
+    // Add proper IDs to make sure page breaks work correctly
+    potentialChapters.forEach((heading, index) => {
+        heading.id = 'chapter-' + (index + 1);
+        heading.classList.add('chapter-heading');
+    });
+
+    // Also check for part headings that might be missing IDs
+    const potentialParts = Array.from(document.querySelectorAll('h1:not([id^="part-"])'))
+        .filter(h1 => h1.textContent.toLowerCase().includes('part'));
+
+    potentialParts.forEach((heading, index) => {
+        heading.id = 'part-' + (index + 1);
+        heading.classList.add('part-heading');
+    });
+}
+
+// Add footer content in a more consistent way
+function addFooterContent() {
+    // Clean up any existing footer elements
+    cleanupPrintElements();
+
+    // Create wrapper elements for header and footer
+    const printHeader = document.createElement('div');
+    printHeader.className = 'print-header';
+
+    const printFooter = document.createElement('div');
+    printFooter.className = 'print-footer';
+
+    // Create header content
     const headerTitle = document.createElement('div');
     headerTitle.className = 'header-title';
     headerTitle.textContent = 'AARC Learn to Scull';
 
-    // Add copyright info
-    const copyright = document.createElement('div');
-    copyright.className = 'print-copyright';
-    copyright.textContent = '© ' + new Date().getFullYear() + ' Ann Arbor Rowing Club';
-
-    // Add date printed
+    // Create date printed for header
     const datePrinted = document.createElement('div');
     datePrinted.className = 'date-printed';
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     datePrinted.textContent = 'Printed: ' + new Date().toLocaleDateString('en-US', options);
 
-    // Append elements to body
-    document.body.appendChild(pageCounter);
-    document.body.appendChild(headerTitle);
-    document.body.appendChild(totalPages);
-    document.body.appendChild(copyright);
-    document.body.appendChild(datePrinted);
+    // Create footer elements - left side
+    const copyright = document.createElement('div');
+    copyright.className = 'print-copyright';
+    copyright.textContent = '© ' + new Date().getFullYear() + ' Ann Arbor Rowing Club';
+
+    // Create footer elements - right side with page numbers
+    const totalPages = document.createElement('div');
+    totalPages.className = 'total-pages';
+    totalPages.textContent = 'Page ';
+
+    // Append all elements to their containers
+    printHeader.appendChild(headerTitle);
+    printHeader.appendChild(datePrinted);
+
+    printFooter.appendChild(copyright);
+    printFooter.appendChild(totalPages);
+
+    // Add to the document
+    document.body.appendChild(printHeader);
+    document.body.appendChild(printFooter);
+
+    // Add proper print margins to main content
+    const mainContent = document.querySelector('.main-content');
+    if (mainContent) {
+        mainContent.style.padding = '0.75in';
+    }
 }
 
 // Handle when someone tries to print directly from browser (Ctrl+P)
