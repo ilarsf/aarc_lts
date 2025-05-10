@@ -1,4 +1,9 @@
---- --- @import "{{ site.theme }}";
+--- 
+
+
+--- 
+
+@import "{{ site.theme }}";
 
 // Ann Arbor Rowing Club styling
 // Color scheme - Updated to match AARC website
@@ -20,12 +25,7 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: $aarc-dark-gray;
@@ -563,12 +563,7 @@ a {
   margin: 0 auto;
   padding: 1rem 0;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     color: $aarc-dark-gray;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -682,8 +677,7 @@ a {
   }
 
   // Lists styling
-  ul,
-  ol {
+  ul, ol {
     padding-left: 2rem;
     margin-bottom: 1.5rem;
 
@@ -695,8 +689,7 @@ a {
       }
     }
 
-    ul,
-    ol {
+    ul, ol {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
