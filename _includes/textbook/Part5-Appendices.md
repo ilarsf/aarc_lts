@@ -146,58 +146,114 @@ This section addresses common questions asked by new scullers.
 
 ### Getting Started
 #### What should I wear for rowing?
-Wear form-fitting, moisture-wicking clothes... *(Content adapted from QA_Companion.md)* ...
+Wear form-fitting, moisture-wicking clothes that allow freedom of movement. Avoid baggy shorts or pants that might catch on equipment. Many rowers prefer specialized rowing shorts with reinforced seats, but any athletic shorts will work initially. In cooler weather, dress in layers that can be removed as you warm up. Consider bringing a change of clothes in case you get wet.
 
 #### Do I need special shoes?
-No, rowing shells have built-in foot stretchers... *(Content adapted from QA_Companion.md)* ...
+No, rowing shells have built-in foot stretchers with shoes or foot holders. You'll remove your regular shoes before getting in the boat. However, wear athletic shoes to the boathouse for warm-up activities.
 
 #### How fit do I need to be to start?
-Rowing is accessible to people of varying fitness levels... *(Content adapted from QA_Companion.md)* ...
+Rowing is accessible to people of varying fitness levels. The Learn to Scull program focuses on technique rather than endurance or power. Basic fitness that allows 1-2 hours of light to moderate activity is sufficient. If you have specific concerns about physical limitations, discuss them with your coach before the first session.
 
 #### Will I capsize during Learn to Scull?
-While capsizing is possible, it's not common... *(Content adapted from QA_Companion.md)* ... You'll complete a supervised "flip test".
+While capsizing is possible, it's not common. The program uses stable training shells, and coaches provide careful instruction on balance. You'll complete a supervised "flip test" (intentional capsize and recovery) in a controlled environment to build confidence in water safety.
 
 #### I'm not a strong swimmer. Can I still row?
-Yes, with precautions. Inform your coach... *(Content adapted from QA_Companion.md)* ... You'll wear a PFD.
+Yes, with some precautions. Inform your coach about your swimming ability. You'll be required to wear a PFD (personal flotation device) during on-water sessions. The LTS boats stay in protected water areas, and coaches maintain close supervision.
 
 ### Technique Questions
 #### Why do my hands get blisters?
-Blisters are common... *(Content adapted from QA_Companion.md)* ... maintain a relaxed grip. See Part 2, Chapter 5 and the Hand Care Guide.
+Blisters are common for new rowers as hands adapt to the friction of the oar handles. They typically diminish as you develop calluses and improve your grip technique. To minimize blisters: maintain a relaxed grip (avoid "white knuckling" the oars), ensure proper hand position, and gradually increase rowing duration. Athletic tape can protect vulnerable areas. See Part 2, Chapter 5 and the Hand Care Guide.
 
 #### I have trouble maintaining boat balance. What can help?
-Balance challenges are normal... *(Content adapted from QA_Companion.md)* ... Focus on Relaxation, Posture, Hand heights, Smooth movements, Blade control.
+Balance challenges are normal for beginners. Focus on these key elements:
+<ul>
+  <li><strong>Relaxation:</strong> Tension in your upper body makes balancing harder</li>
+  <li><strong>Posture:</strong> Sit tall with core engaged</li>
+  <li><strong>Hand heights:</strong> Keep hands at consistent heights</li>
+  <li><strong>Smooth movements:</strong> Avoid jerky or rushed actions</li>
+  <li><strong>Blade control:</strong> Keep blades feathered (parallel to water) when near water for stability</li>
+</ul>
+Practice "setting the boat" by sitting at the finish position with oars on the water and finding the balance point.
 
 #### What's the most common mistake beginners make?
-Rushing the recovery... *(Content adapted from QA_Companion.md)* ... Practice a controlled, rhythmic recovery.
+Rushing the recovery (the part of the stroke when returning to the catch position). This creates timing issues, disrupts the boat's run, and causes balance problems. Practice a controlled, rhythmic recovery that's slower than the drive. Remember the rowing axiom: "slow hands away" from the finish.
 
 #### My oar keeps getting stuck in the water. What's happening?
-This is "catching a crab"... *(Content adapted from QA_Companion.md)* ... Common causes include incorrect tap down, blade angle, leaning away, hands too high. Push handle away to extract.
+This is called "catching a crab" and happens when the blade doesn't extract cleanly from the water. Common causes include:
+<ul>
+  <li>Not pushing down slightly on the handles at the finish ("tapping down")</li>
+  <li>Blade angled incorrectly during the drive</li>
+  <li>Leaning away from the oar instead of maintaining vertical posture</li>
+  <li>Drawing the hands too high into the body at the finish</li>
+</ul>
+If you catch a crab, push the handle away from you to extract the blade. In severe cases, stop rowing and reposition before continuing.
 
 #### How do I maintain a straight course?
-Look over your shoulder frequently (every 3-5 strokes)... *(Content adapted from QA_Companion.md)* ... Ensure equal pressure, make small corrections.
+Maintaining direction requires practice and attention. Remember to:
+<ul>
+  <li>Look over your shoulder frequently (every 5-10 strokes) to check your course</li>
+  <li>Ensure equal pressure on both oars</li>
+  <li>Apply slightly more pressure on one side to make small corrections</li>
+  <li>Focus on consistent hand heights and equal arc with both oars</li>
+  <li>Pick a landmark in the distance and aim toward it</li>
+  <li>Make small, frequent adjustments rather than large corrections</li>
+</ul>
 
 ### Equipment Questions
 #### What adjustments can be made to the boat for comfort?
-The primary adjustment is the foot stretcher position... *(Content adapted from QA_Companion.md)* ...
+The primary adjustment is the foot stretcher position. This controls your distance from the oarlocks and should be set so that at the finish, your hands come to your lower ribs with your elbows tucked in, not splayed out. Coaches will help with this adjustment. The oar inboard (distance from handle end to collar) can also be adjusted for smaller or larger hands.
 
 #### What do all the boat and equipment terms mean?
-Refer to the Glossary in Appendix A... *(Content adapted from QA_Companion.md)* ...
+Refer to the Glossary in Appendix A for comprehensive terminology. Common terms include:
+<ul>
+  <li><strong>Bow:</strong> Front of boat (forward direction)</li>
+  <li><strong>Stern:</strong> Back of boat</li>
+  <li><strong>Port:</strong> Left side when facing bow (right side when sitting in rowing position)</li>
+  <li><strong>Starboard:</strong> Right side when facing bow (left side when sitting in rowing position)</li>
+  <li><strong>Gunwale:</strong> Top edge of boat's side</li>
+  <li><strong>Rigger:</strong> Metal framework extending from side of boat that supports the oarlock</li>
+  <li><strong>Oarlock:</strong> U-shaped fitting that holds the oar</li>
+</ul>
 
 #### How do I carry the boat properly?
-Single sculls can be carried by one person, but beginners often use a buddy system... *(Content adapted from QA_Companion.md)* ... Lift by gunwales, raise to shoulder height, keep level.
+Single sculls can be carried by one person, but beginners often use a buddy system for safety. To carry a single:
+<ul>
+  <li>Stand at the boat's midpoint (balance point)</li>
+  <li>Lift by gripping the gunwales or shell near the riggers</li>
+  <li>Raise to shoulder height with the upper flange (top edge) against your shoulder</li>
+  <li>Keep boat level and watch for obstacles, especially the riggers</li>
+  <li>Communicate clearly with coaches or helpers</li>
+  <li>When putting the boat down, reverse the process with controlled movements</li>
+</ul>
 
 ### Program Questions
 #### Why is the program organized as a weekend intensive format?
-Offers time efficiency, better skill retention, immersive learning... *(Content adapted from QA_Companion.md)* ... See Part 1, Chapter 1 for details.
+The weekend format offers several advantages:
+<ul>
+  <li><strong>Time Efficiency:</strong> Complete the program in just two weekends</li>
+  <li><strong>Skill Retention:</strong> Less time between sessions means better retention of techniques</li>
+  <li><strong>Immersive Learning:</strong> Concentrated practice periods accelerate skill development</li>
+  <li><strong>Scheduling Flexibility:</strong> Easier to commit to two weekends than multiple weekday sessions</li>
+  <li><strong>Community Building:</strong> Intensive format fosters stronger connections among participants</li>
+</ul>
+The weekend format is physically demanding but delivers the complete curriculum in a compact timeframe. See Part 1, Chapter 1 for details.
 
 #### What happens after Learn to Scull?
-Options include Open Sculling, Club Membership, Technique Sessions, Private Lessons... *(Content adapted from QA_Companion.md)* ... Coaches will discuss during Session 4.
+After completing the program, several options are available:
+<ul>
+  <li><strong>Open Sculling:</strong> Supervised practice sessions for recent graduates</li>
+  <li><strong>Club Membership:</strong> Join AARC with various membership options</li>
+  <li><strong>Technique Sessions:</strong> Focused coaching on specific aspects of technique</li>
+  <li><strong>Private Lessons:</strong> One-on-one coaching for accelerated development</li>
+  <li><strong>Novice Programs:</strong> Organized activities for newer rowers</li>
+</ul>
+Coaches will discuss these options during your final LTS session.
 
 #### How long should it take to become proficient?
-Learning curves vary... *(Content adapted from QA_Companion.md)* ... Basic competence often within 8-12 sessions.
+Learning curves vary widely based on athletic background, frequency of practice, and natural balance. Most rowers develop basic competence (independent launching, stable rowing, navigational awareness) within 8-12 sessions. Meaningful technical proficiency typically requires 30-50 sessions. Remember, even Olympic rowers continuously refine their technique!
 
 #### Can I row in other types of boats after LTS?
-Yes, once proficient, you can explore doubles (2x), quads (4x)... *(Content adapted from QA_Companion.md)* ...
+Yes, once you develop basic sculling proficiency, you can explore other boat types. Many rowers progress to double sculls (two-person boats), which offer improved stability and the opportunity to row with a partner. With further experience, you might try quad sculls (four-person) or eventually learn to sweep row in four-person or eight-person boats.
 
 *[For the most up-to-date FAQs and video links, please visit the [Online Q&A Companion]({{ site.baseurl }}/course_materials/learner/QA_Companion.html).]*
 

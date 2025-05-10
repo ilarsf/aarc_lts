@@ -38,7 +38,7 @@
       <li><strong>Posture:</strong> Sit tall with core engaged</li>
       <li><strong>Hand heights:</strong> Keep hands at consistent heights</li>
       <li><strong>Smooth movements:</strong> Avoid jerky or rushed actions</li>
-      <li><strong>Blade control:</strong> Keep blades square (perpendicular to water) when near water for stability</li>
+      <li><strong>Blade control:</strong> Keep blades feathered (parallel to water) when near water for stability</li>
     </ul>
     Practice "setting the boat" by sitting at the finish position with oars on the water and finding the balance point.</p>
 
