@@ -67,6 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const siteBaseUrl = '{{ site.baseurl }}';
   console.log('Site baseUrl:', siteBaseUrl);
   
+  // Debug function to help identify any path processing issues
+  function debugPath(original, processed) {
+    console.debug(`Path processing: "${original}" → "${processed}"`);
+    return processed;
+  }
+  
   // Check if there's a hash in the URL indicating a search term
   const hash = window.location.hash.substring(1);
   if (hash) {
@@ -200,7 +206,28 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const titleLink = document.createElement('a');
       // Process the path to replace the Liquid tag with the actual baseUrl
-      const pathWithRealBaseUrl = result.path.replace(/\{\{\s*site\.baseurl\s*\}\}/g, siteBaseUrl);
+      let pathWithRealBaseUrl;
+      
+      try {
+        // Process path with more robust error handling
+        if (result.path.includes('{{ site.baseurl }}')) {
+          pathWithRealBaseUrl = result.path.replace(/\{\{\s*site\.baseurl\s*\}\}/g, siteBaseUrl);
+        } else {
+          // If no template tags found, just use path directly
+          pathWithRealBaseUrl = result.path;
+        }
+        
+        // Add leading slash if missing and not external URL
+        if (!pathWithRealBaseUrl.startsWith('/') && 
+            !pathWithRealBaseUrl.startsWith('http') &&
+            !pathWithRealBaseUrl.startsWith(siteBaseUrl)) {
+          pathWithRealBaseUrl = '/' + pathWithRealBaseUrl;
+        }
+      } catch (error) {
+        console.error('Error processing path:', error, result.path);
+        pathWithRealBaseUrl = '#'; // Fallback to prevent broken links
+      }
+      
       titleLink.href = pathWithRealBaseUrl;
       titleLink.textContent = result.title;
       titleLink.className = 'search-result-title';
@@ -270,15 +297,21 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .popular-searches a {
-  background-color: #eee;
-  padding: 5px 10px;
+  background-color: #f2f7ff;
+  border: 1px solid #e0e9ff;
+  padding: 6px 12px;
   border-radius: 4px;
   text-decoration: none;
-  color: #333;
+  color: #0066cc;
+  transition: all 0.2s ease;
+  font-size: 14px;
 }
 
 .popular-searches a:hover {
-  background-color: #ddd;
+  background-color: #e0e9ff;
+  border-color: #0066cc;
+  text-decoration: none !important;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
@@ -289,10 +322,33 @@ document.addEventListener('DOMContentLoaded', function() {
   #search-input {
     border-radius: 4px;
     margin-bottom: 10px;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    -webkit-appearance: none; /* Better iOS appearance */
   }
   
   #search-button {
     border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .search-result-item {
+    padding: 12px;
+  }
+  
+  .search-result-title {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .two-col-grid {
+    display: block;
+  }
+  
+  .two-col-grid > div {
+    margin-bottom: 20px;
   }
 }
 </style>

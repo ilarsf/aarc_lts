@@ -17,10 +17,12 @@
     <div class="container-lg px-3 my-5">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
-      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="header-actions">
+        <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -66,7 +68,6 @@
         </li>
         <li class="nav-item"><a href="{{ site.baseurl }}/quick-answers/"><i class="fas fa-bolt"></i> Quick Answers</a>
         </li>
-        <li class="nav-item"><a href="{{ site.baseurl }}/search/"><i class="fas fa-search"></i> Search</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/about/">About AARC</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/resources/">Resources</a></li>
@@ -92,11 +93,6 @@
       const siteNav = document.querySelector('.site-nav');
       const dropdownItems = document.querySelectorAll('.has-dropdown');
 
-      // Menu should always start hidden on mobile
-      if (window.innerWidth <= 768) {
-        siteNav.style.display = 'none';
-      }
-
       // Set active nav item based on current page URL
       const currentPath = window.location.pathname;
       const navLinks = document.querySelectorAll('.site-nav a');
@@ -114,13 +110,6 @@
           // Toggle active class
           siteNav.classList.toggle('active');
 
-          // Explicitly toggle display property as well
-          if (siteNav.classList.contains('active')) {
-            siteNav.style.display = 'block';
-          } else if (window.innerWidth <= 768) {
-            siteNav.style.display = 'none';
-          }
-
           // Toggle icon
           const icon = mobileNavToggle.querySelector('i');
           if (icon) {
@@ -134,6 +123,23 @@
           }
         });
       }
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function (event) {
+        if (!siteNav.contains(event.target) &&
+          !mobileNavToggle.contains(event.target) &&
+          siteNav.classList.contains('active') &&
+          window.innerWidth <= 768) {
+          siteNav.classList.remove('active');
+
+          // Reset icon
+          const icon = mobileNavToggle.querySelector('i');
+          if (icon) {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        }
+      });
 
       // Mobile dropdown handling for all dropdown menus
       if (window.innerWidth <= 768) {
