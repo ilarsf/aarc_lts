@@ -991,6 +991,14 @@ table {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
+  /* Remove margins when in grids */
+  .video-grid &,
+  .two-col-grid &,
+  .three-col-grid & {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   iframe {
     position: absolute;
     top: 0;
@@ -1006,6 +1014,8 @@ table {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
   margin: 1.5rem 0;
+  align-items: start;
+  /* Ensure items align at the top */
 }
 
 // Video library section
@@ -1014,6 +1024,14 @@ table {
 
   .video-item {
     margin-bottom: 2rem;
+
+    /* Remove margins when in grids */
+    .video-grid &,
+    .two-col-grid &,
+    .three-col-grid & {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
     h4 {
       margin-top: 0.5rem;
@@ -1265,6 +1283,11 @@ table {
     /* Establish a positioning context */
     height: auto;
     /* Allow height to be determined by content */
+
+    /* Apply consistent top margin handling for all grid children */
+    >*:first-child {
+      margin-top: 0;
+    }
   }
 
   // Fix for direct info-box children in grids
