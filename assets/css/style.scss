@@ -1,9 +1,4 @@
---- 
-
---- 
-
-
-@import "{{ site.theme }}";
+--- --- @import "{{ site.theme }}";
 
 // Ann Arbor Rowing Club styling
 // Color scheme - Updated to match AARC website
@@ -1051,11 +1046,13 @@ table {
     padding: 1.75rem;
   }
 
-  /* When inside grid layouts, prevent overflow */
+  /* When inside grid layouts, adjust margins and height */
   .two-col-grid &,
   .three-col-grid & {
     height: auto;
     min-height: 0;
+    margin: 0;
+    /* Remove vertical margins when in grid */
   }
 
   &.tip {
@@ -1174,6 +1171,8 @@ table {
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
   margin: 2rem 0;
+  align-items: start;
+  /* Default align to top */
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -1268,6 +1267,8 @@ table {
   >.info-box {
     height: auto;
     align-self: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   // Fix for images in grid cells
@@ -1293,7 +1294,7 @@ table {
   grid-gap: 1.5rem;
   margin: 2rem 0;
   align-items: start;
-  /* Changed from stretch to start to avoid forced height */
+  /* This ensures boxes align at the top */
 
   @media screen and (min-width: 576px) and (max-width: 991px) {
     grid-template-columns: repeat(2, 1fr);
@@ -1326,6 +1327,8 @@ table {
   >.info-box {
     height: auto;
     align-self: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   // Ensure all content in grid cells has proper spacing
