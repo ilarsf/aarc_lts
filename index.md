@@ -8,7 +8,40 @@ layout: default
   <div class="two-col-grid align-center">
     <div>
       <div class="info-box note">
-        <h4>Welcome to AARC!</h4>
+      </div>
+</div>
+
+<section class="quick-access">
+  <h2>Need Information Fast?</h2>
+  
+  <div class="two-col-grid">
+    <div class="info-box tip mb-3">
+      <h4><i class="fas fa-bolt"></i> Quick Answers</h4>
+      <p>Find fast answers to common questions about the Learn to Scull program, rowing technique, safety, and equipment with our structured guides.</p>
+      <div class="text-center mt-3">
+        <a href="{{ site.baseurl }}/quick-answers/" class="cta-button">Get Quick Answers</a>
+      </div>
+    </div>
+    
+    <div class="info-box mb-3">
+      <h4><i class="fas fa-search"></i> Search Resources</h4>
+      <p>Looking for something specific? Use our search tool to instantly find information across all Learn to Scull resources and materials.</p>
+      <div class="text-center mt-3">
+        <a href="{{ site.baseurl }}/search/" class="cta-button">Search Resources</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="info-box aarc">
+  <h4>Meet Our Team</h4>
+<p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="{{ site.baseurl }}/team/">Meet our Team</a> who will guide you through your rowing journey.</p>
+</div>
+
+<div class="info-box note">
+  <h4>Questions?</h4>
+  <p>For more information about the Learn to Scull program, please email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">official AARC website</a>.</p>
+</div>ome to AARC!</h4>
         <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
       </div>
       
