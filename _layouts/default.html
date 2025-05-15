@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% seo %}
-  <link rel="stylesheet" href="{{ " /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  {% include head-custom.html %}
-</head>
-
-<body>
-  <div class="page-header">
-    <div class="container-lg px-3 my-5">
-      <div class="header-content">
-        <div class="header-text">
-          <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-        </div>
-        <div class="header-actions">
-          <div class="quick-search">
-            <form action="{{ site.baseurl }}/search/" method="get" id="header-search-form">
-              <input type="text" id="header-search-input" placeholder="Quick search..." aria-label="Quick search">
-              <button type="submit" class="search-button" aria-label="Search">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-          </div>
-          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container-lg px-3 my-5">
+        <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </div>
-  </div>
 
   <div class="container-lg px-3 my-5 markdown-body main-container">
     <nav class="site-nav">
@@ -99,21 +84,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Initialize header search functionality
-      const headerSearchForm = document.getElementById('header-search-form');
-      const headerSearchInput = document.getElementById('header-search-input');
-
-      if (headerSearchForm && headerSearchInput) {
-        headerSearchForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          const searchTerm = headerSearchInput.value.trim();
-
-          if (searchTerm !== '') {
-            // Redirect to search page with the search term as a parameter
-            window.location.href = "{{ site.baseurl }}/search/#" + encodeURIComponent(searchTerm);
-          }
-        });
-      }
 
       // Initialize navigation functionality
       const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
