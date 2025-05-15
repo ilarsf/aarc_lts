@@ -106,6 +106,16 @@ During this session, coaches will assess your readiness for independent sculling
 
 This assessment helps determine appropriate next steps in your rowing journey.
 
+## Session 4 Quiz
+
+To solidify your understanding of all sculling concepts covered in the program, please complete the final Session 4 quiz:
+
+[**Complete Session 4 Quiz**](/src/quiz_module.html?quiz=session4)
+
+This comprehensive quiz will help you assess your knowledge and readiness as you complete the Learn to Scull program.
+
+[← Back to Communication Resources](index.md)
+
 We're excited to see how far you've come and to help you take this final step toward becoming an independent sculler!
 
 *Remember: Rowing is a lifelong sport where you can always continue to learn and improve. Today marks not the end, but a beginning!*

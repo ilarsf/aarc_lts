@@ -65,3 +65,13 @@ The same items as for Session 1:
 By the end of Session 2, you should feel more comfortable with the basic sculling motion and boat handling. In Sessions 3 and 4, we'll focus on refining your technique, building endurance, and developing independence on the water.
 
 *If you have questions before Session 2, please reach out to your coach. We're here to support your learning journey!*
+
+## Session 2 Quiz
+
+To reinforce what you've learned in this session, we encourage you to complete the Session 2 quiz:
+
+[**Complete Session 2 Quiz**](/src/quiz_module.html?quiz=session2)
+
+This quiz will test your knowledge of the techniques and concepts introduced today, helping to cement your understanding as you progress in your sculling journey.
+
+[← Back to Communication Resources](index.md)

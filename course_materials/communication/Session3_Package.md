@@ -76,6 +76,16 @@ The same essential items:
 * Hand care supplies
 * Small snack
 
+## Session 3 Quiz
+
+To reinforce what you've learned in this session, we encourage you to complete the Session 3 quiz:
+
+[**Complete Session 3 Quiz**](/src/quiz_module.html?quiz=session3)
+
+This quiz will help you evaluate your understanding of more advanced sculling techniques and concepts covered today.
+
+[← Back to Communication Resources](index.md)
+
 ## Looking Ahead
 
 By the end of Session 3, your stroke should be more refined and coordinated. Session 4 will focus on building your independence as a sculler, including launching and docking on your own, and preparing you for continuing with the club after the program ends.

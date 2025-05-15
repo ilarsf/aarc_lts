@@ -160,6 +160,21 @@ As you continue rowing, consider these equipment items:
 * **Weather-Appropriate Gear:** Layering options for changing conditions
 * **Small Dry Bag:** Useful for keeping essentials dry while on the water
 
+## Knowledge Review
+
+As you continue your rowing journey, you may want to periodically review key concepts from the program. Our online quizzes remain available to help refresh your knowledge:
+
+- [**Boathouse Rules Quiz**](/src/quiz_module.html?quiz=boathouse)
+- [**Safety Guidelines Quiz**](/src/quiz_module.html?quiz=safety)
+- [**Session 1 Quiz**](/src/quiz_module.html?quiz=session1)
+- [**Session 2 Quiz**](/src/quiz_module.html?quiz=session2)
+- [**Session 3 Quiz**](/src/quiz_module.html?quiz=session3)
+- [**Session 4 Quiz**](/src/quiz_module.html?quiz=session4)
+
+These quizzes are excellent tools for reinforcing your understanding of sculling techniques, safety procedures, and boathouse protocols.
+
+[← Back to Communication Resources](index.md)
+
 ## Community Engagement
 
 Rowing is as much about community as it is about sport:

@@ -61,6 +61,38 @@ While the content of the information packages is standardized, you may want to h
 2. **Reference Specific Sections:** In your emails, direct participants to specific sections of the information packages that address these challenges
 3. **Add Context:** Explain how the information relates to what was observed during the session
 
+## Using Quiz Resources
+
+The Learn to Scull program includes interactive quizzes that serve as valuable tools for both participants and coaches:
+
+### Participant Benefits
+- Reinforces key concepts from each session
+- Provides immediate feedback on knowledge comprehension
+- Offers a convenient way to review material between sessions
+
+### Coach Benefits
+- Helps identify knowledge gaps among participants
+- Creates accountability for reviewing materials
+- Provides objective assessment data
+
+### How to Incorporate Quizzes
+1. **Pre-Course Preparation**: Include links to the Boathouse Rules and Safety Guidelines quizzes in welcome emails
+2. **Session Reinforcement**: Send quiz links in post-session emails to reinforce learning
+3. **Knowledge Assessment**: Use quiz results to identify topics needing additional attention
+4. **Learning Retention**: Encourage participants to retake quizzes periodically after course completion
+
+### Quiz Schedule Recommendations
+- **Before First Session**: Boathouse Rules and Safety Guidelines quizzes
+- **After Each Session**: Corresponding session quiz
+- **Post-Course**: Encourage review of all quizzes as needed
+
+### Technical Notes
+- Quizzes are accessible via web browser on mobile devices and computers
+- No login required - easy access for all participants
+- Results are not tracked or stored - quizzes are for participant self-assessment only
+
+The quiz resources are seamlessly integrated with the information packages, with links provided in each relevant package document.
+
 ## Communication Best Practices
 
 ### Tone and Style

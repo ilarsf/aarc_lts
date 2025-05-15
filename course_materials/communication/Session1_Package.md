@@ -61,6 +61,16 @@ For a preview of what this looks like, review the [Flip Test demonstration video
 * Get a good night's sleep before your session
 * Arrive 15 minutes early for your first session for proper orientation
 
+## Session 1 Quiz
+
+To reinforce what you've learned in this session, we encourage you to complete the Session 1 quiz:
+
+[**Complete Session 1 Quiz**](/src/quiz_module.html?quiz=session1)
+
+This short quiz covers the key concepts introduced today and will help solidify your understanding of basic sculling principles.
+
+[← Back to Communication Resources](index.md)
+
 We're excited to get you on the water and start your rowing journey!
 
 *If you have any questions before Session 1, please contact your coach directly.*
