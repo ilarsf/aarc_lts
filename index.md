@@ -77,9 +77,6 @@ layout: default
         <li><strong>Registration:</strong> Opens April 30th, 2025</li>
         <li><strong>Cost:</strong> $300 ($225 for students/veterans)</li>
       </ul>
-      <div class="text-center mt-3">
-        <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-button">View Full Schedule</a>
-      </div>
     </div>
   </div>
 </section>
@@ -108,9 +105,6 @@ layout: default
     </div>
   </div>
 
-  <div class="text-center mt-3">
-    <a href="{{ site.baseurl }}/textbook/" class="cta-large"><i class="fas fa-book"></i> Access Complete Textbook</a>
-  </div>
 </section>
 
 <div class="info-box">
