@@ -1,12 +1,17 @@
 ---
 layout: default
-title: Resources - AARC Learn to Scull Program
+title: Additional Resources - AARC Learn to Scull Program
 ---
 
-# Resources
+# Additional Resources
 
 <div class="team-intro">
-  <p>This page contains a collection of resources for AARC Learn to Scull participants and coaches. From safety guidelines to rowing techniques, you'll find valuable information to enhance your rowing experience.</p>
+  <p>This page contains supplementary resources that complement the main program materials. Here you'll find club policies, educational videos, technique guides, rowing terminology, equipment care guidelines, and external references to enhance your rowing knowledge.</p>
+</div>
+
+<div class="info-box note">
+  <h4>How to Use These Resources</h4>
+  <p>These materials supplement the primary content found in the <a href="{{ site.baseurl }}/textbook/">Textbook</a>, <a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a>, and <a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a> sections. Use them for additional learning, reference, or to deepen your understanding of specific rowing concepts.</p>
 </div>
 
 ## AARC Policies and Procedures
