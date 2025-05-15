@@ -1060,16 +1060,16 @@
     <h4>Flip Test Demonstrations</h4>
     <div class="video-grid">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     
     <div class="video-item">
-      <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure with clear steps</p>
-      <p><strong>Right:</strong> Lars Flip Test Demo - Shows alternative re-entry technique for smaller rowers</p>
+      <p><strong>Left:</strong> Lars Flip Test Demo - Standard flip test procedure with clear steps</p>
+      <p><strong>Right:</strong> Johanna Flip Test Demo - Shows alternative re-entry technique for smaller rowers</p>
       <p>For detailed instructions to share with learners, direct them to our <a href="../../src/Sculling_Self_Rescue_Guide.html">Sculling Self-Rescue Guide</a>.</p>
     </div>
     
