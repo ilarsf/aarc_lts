@@ -158,7 +158,7 @@ title: Resources - AARC Learn to Scull Program
     </li>
     <li><strong>Oar Care:</strong>
       <ul>
-        <li>Store oars with blades up on racks</li>
+        <li>Return oars to their designated racks after use, as indicated by the rack labels, with blades facing in the correct direction</li>
         <li>Avoid dragging blades on the ground or dock</li>
         <li>Report any damage to collars or blades</li>
       </ul>

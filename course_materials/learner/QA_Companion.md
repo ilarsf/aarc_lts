@@ -14,6 +14,16 @@
     <h3>Getting Started</h3>
     <h4>What should I wear for rowing?</h4>
     <p>Wear form-fitting, moisture-wicking clothes that allow freedom of movement. Avoid baggy shorts or pants that might catch on equipment. Many rowers prefer specialized rowing shorts with reinforced seats, but any athletic shorts will work initially. In cooler weather, dress in layers that can be removed as you warm up. Consider bringing a change of clothes in case you get wet.</p>
+    
+    <h4>Why should I wear bright colors while rowing?</h4>
+    <p>Bright, high-visibility clothing (neon yellow, orange, red) is strongly recommended for safety reasons:
+    <ul>
+      <li><strong>Visibility to Other Boats:</strong> Makes you easier to spot by other watercraft, especially in low light conditions</li>
+      <li><strong>Emergency Situations:</strong> Increases visibility if you need assistance on the water</li>
+      <li><strong>Coaching Visibility:</strong> Helps coaches identify individuals in a group of scullers</li>
+      <li><strong>Dawn/Dusk Rowing:</strong> Essential during early morning or evening practices when light is limited</li>
+    </ul>
+    Consider investing in high-visibility technical shirts, hats, or even bright socks which increase your visibility from multiple angles. Many scullers find that a bright hat is particularly useful as it's visible from a distance when your body is low in the shell.</p>
 
     <h4>Do I need special shoes?</h4>
     <p>No, rowing shells have built-in foot stretchers with shoes or foot holders. You'll remove your regular shoes before getting in the boat. However, wear athletic shoes to the boathouse for warm-up activities.</p>
@@ -23,6 +33,16 @@
 
     <h4>Will I capsize during Learn to Scull?</h4>
     <p>While capsizing is possible, it's not common. The program uses stable training shells, and coaches provide careful instruction on balance. You'll complete a supervised "flip test" (intentional capsize and recovery) in a controlled environment to build confidence in water safety.</p>
+    
+    <h4>What is the flip test and why is it required?</h4>
+    <p>The flip test is a supervised capsize recovery drill that teaches you how to safely re-enter your boat after it has capsized. It's a mandatory safety requirement for all AARC scullers for several important reasons:
+    <ul>
+      <li><strong>Safety Preparation:</strong> Ensures you know what to do in case of an accidental capsize</li>
+      <li><strong>Confidence Building:</strong> Reduces anxiety about capsizing once you know you can recover</li>
+      <li><strong>Program Requirement:</strong> Must be successfully completed to graduate from the Learn to Scull program</li>
+      <li><strong>Club Requirement:</strong> Required to participate in the Open Sculling Program and use club equipment</li>
+    </ul>
+    The test is typically scheduled during Session 1, but if needed, you'll have opportunities to complete it in Sessions 2, 3, or 4. Coaches will demonstrate the procedure first, provide guidance throughout, and ensure you have proper support. You can review the <a href="https://ilarsf.github.io/aarc_lts/course_materials/learner/QA_Companion.html#videos-tab">flip test demonstration videos</a> in advance to help prepare. Bring a complete change of clothes for after the test.</p>
 
     <h4>I'm not a strong swimmer. Can I still row?</h4>
     <p>Yes, with some precautions. Inform your coach about your swimming ability. You'll be required to wear a PFD (personal flotation device) during on-water sessions. The LTS boats stay in protected water areas, and coaches maintain close supervision.</p>
@@ -108,13 +128,32 @@
     <h4>What happens after Learn to Scull?</h4>
     <p>After completing the program, several options are available:
     <ul>
-      <li><strong>Open Sculling:</strong> Supervised practice sessions for recent graduates</li>
-      <li><strong>Club Membership:</strong> Join AARC with various membership options</li>
+      <li><strong>Open Sculling Program Trial:</strong> A four-week discounted trial period immediately following your LTS class</li>
+      <li><strong>Full Club Membership:</strong> Required for participation in any AARC programs</li>
       <li><strong>Technique Sessions:</strong> Focused coaching on specific aspects of technique</li>
       <li><strong>Private Lessons:</strong> One-on-one coaching for accelerated development</li>
       <li><strong>Novice Programs:</strong> Organized activities for newer rowers</li>
     </ul>
     Coaches will discuss these options during your final LTS session.</p>
+    
+    <h4>What is the club membership structure and what does it cover?</h4>
+    <p>AARC membership is organized as follows:
+    <ul>
+      <li><strong>Basic Membership:</strong> Covers insurance and access to the club website</li>
+      <li><strong>Full Membership:</strong> Required for participation in rowing programs</li>
+      <li><strong>Program Fees:</strong> Separate fees for specific programs (Open Sculling, Competitive Team, etc.)</li>
+    </ul>
+    To participate in rowing activities after Learn to Scull, you'll need both a Full Membership and registration in a specific program like Open Sculling. Current fees are available on the AARC website.</p>
+    
+    <h4>How do I gain access to club equipment?</h4>
+    <p>Access to club boats is progressive and based on demonstrated skill level:
+    <ul>
+      <li><strong>Level I:</strong> Use only during coached sculling practices</li>
+      <li><strong>Level II:</strong> Use during any coached sessions (based on coach discretion)</li>
+      <li><strong>Level III:</strong> Use with another experienced sculler present (requires 150K meters logged)</li>
+      <li><strong>Level IV:</strong> Independent use outside practice hours (requires 300K meters and proficiency test)</li>
+    </ul>
+    Sculling coaches track your progress and approve advancement to higher levels as your skills develop. This system ensures safety and proper equipment use while providing a clear pathway to independent rowing.</p>
 
     <h4>How long should it take to become proficient?</h4>
     <p>Learning curves vary widely based on athletic background, frequency of practice, and natural balance. Most rowers develop basic competence (independent launching, stable rowing, navigational awareness) within 8-12 sessions. Meaningful technical proficiency typically requires 30-50 sessions. Remember, even Olympic rowers continuously refine their technique!</p>

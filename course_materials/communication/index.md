@@ -4,12 +4,26 @@ layout: default
 
 # Communication Resources: Learn to Scull Program
 
-These communication templates help maintain consistent messaging throughout the Learn to Scull program.
+These communication templates and information packages help maintain consistent messaging throughout the Learn to Scull program. For guidance on how to use these resources effectively, see the [Using Communication Resources](Using_Communication_Resources.md) guide.
 
 ## Available Resources
 
-- [**Email Templates**](Email_Templates.md) - Pre-course, daily, and post-course communication templates
+### Information Packages
 - [**Intro Package**](IntroPackage.md) - Welcome packet for new participants
+- [**Session 1 Package**](Session1_Package.md) - Information for the first session
+- [**Session 2 Package**](Session2_Package.md) - Information for the second session
+- [**Session 3 Package**](Session3_Package.md) - Information for the third session
+- [**Session 4 Package**](Session4_Package.md) - Information for the fourth session
+- [**Post-Course Package**](PostCourse_Package.md) - Next steps after completing the program
+
+### Email Templates
+- [**Standard Email Templates**](Email_Templates.md) - Pre-course, daily, and post-course communication templates
+- [**Weather-Related Email Templates**](Weather_Email_Templates.md) - Templates for weather cancellations and modifications
+- [**Administrative Email Templates**](Administrative_Email_Templates.md) - Templates for registration, payment, and program evaluation
+
+### Program Administration
+- [**2025 Program Schedule**](2025_Program_Schedule.md) - Complete schedule of 2025 LTS sessions with key dates
+- [**Using Communication Resources**](Using_Communication_Resources.md) - Guide for coaches on effective use of these materials
 
 ## Communication Best Practices
 
