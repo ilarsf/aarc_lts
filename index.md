@@ -32,21 +32,18 @@ layout: default
   
   <div class="three-col-grid">
     <div class="info-box tip text-center">
-      <h3><i class="fas fa-search"></i></h3>
       <h4>Search</h4>
       <p>Find specific information across all program resources</p>
       <a href="{{ site.baseurl }}/search/" class="cta-button">Search</a>
     </div>
     
     <div class="info-box note text-center">
-      <h3><i class="fas fa-question-circle"></i></h3>
       <h4>Quick Answers</h4>
       <p>Get organized answers to common questions</p>
       <a href="{{ site.baseurl }}/quick-answers/" class="cta-button">Get Answers</a>
     </div>
     
     <div class="info-box aarc text-center">
-      <h3><i class="fas fa-book"></i></h3>
       <h4>Textbook</h4>
       <p>Access complete course materials</p>
       <a href="{{ site.baseurl }}/textbook/" class="cta-button">View Textbook</a>
