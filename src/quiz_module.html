@@ -11,12 +11,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
     <div id="start-screen" class="quiz-section">
         <h2 id="start-heading">Ready to test your knowledge?</h2>
-        <div class="input-group">
-            <label for="username">Enter your name:</label>
-            <input type="text" id="username" placeholder="Your name">
-        </div>
         <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
-        <button id="view-highscores" class="quiz-button secondary" disabled>View Session Attempts</button>
         <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
         <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
     </div>
@@ -42,13 +37,12 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         <div id="quiz-summary">
             <p>Your score: <span id="final-score">0</span> points</p>
             <p>Time taken: <span id="time-taken">0:00</span></p>
-            <p>Correct answers: <span id="correct-count">0</span>/10</p>
+            <p>Correct answers: <span id="correct-count">0</span>/15</p>
         </div>
-        <div id="high-score-message"></div>
+        <div id="feedback-message"></div>
         <div class="button-group">
             <button id="restart-button" class="quiz-button">Take Quiz Again</button>
             <button id="review-button" class="quiz-button secondary">Review Answers</button>
-            <button id="highscores-button" class="quiz-button secondary">View Session Attempts</button>
         </div>
     </div>
 
@@ -59,31 +53,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         <button id="back-to-results" class="quiz-button">Back to Results</button>
     </div>
 
-    <div id="highscores-screen" class="quiz-section hidden">
-        <h2 id="highscores-title">Session Attempts</h2>
-        <div id="highscores-container">
-            <table id="highscores-table">
-                <thead>
-                    <tr>
-                        <th>Attempt #</th>
-                        <th>Name</th>
-                        <th>Score</th>
-                        <th>Time</th>
-                        <th>Time of Day</th>
-                    </tr>
-                </thead>
-                <tbody id="highscores-body">
-                </tbody>
-            </table>
-        </div>
-        <div id="no-scores-message" class="hidden">
-            <p>No attempts yet in this session. Take the quiz to record your score!</p>
-        </div>
-        <div class="button-group">
-            <button id="back-button" class="quiz-button">Back</button>
-            <button id="try-again-button" class="quiz-button secondary">Try Again</button>
-        </div>
-    </div>
+
 </div>
 
 <style>
@@ -418,24 +388,17 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         let currentConfig = null;
         let questionsUrl = '';
         let quizId = '';
-        let sessionScores = []; // Session-based scores
-        const numberOfQuestionsToSelect = 10;
+        const numberOfQuestionsToSelect = 15; // Increased to 15 questions (50% more than original 10)
 
         // --- DOM Elements ---
         const startScreen = document.getElementById('start-screen');
         const quizScreen = document.getElementById('quiz-screen');
         const resultsScreen = document.getElementById('results-screen');
         const reviewScreen = document.getElementById('review-screen');
-        const highscoresScreen = document.getElementById('highscores-screen');
         const startButton = document.getElementById('start-button');
-        const viewHighscoresButton = document.getElementById('view-highscores');
         const restartButton = document.getElementById('restart-button');
         const reviewButton = document.getElementById('review-button');
-        const highscoresButton = document.getElementById('highscores-button');
         const backToResultsButton = document.getElementById('back-to-results');
-        const backButton = document.getElementById('back-button');
-        const tryAgainButton = document.getElementById('try-again-button');
-        const usernameInput = document.getElementById('username');
         const questionCounter = document.getElementById('question-counter');
         const timerElement = document.getElementById('timer');
         const scoreDisplay = document.getElementById('score-display');
@@ -446,18 +409,14 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         const finalScore = document.getElementById('final-score');
         const timeTaken = document.getElementById('time-taken');
         const correctCount = document.getElementById('correct-count');
-        const highScoreMessage = document.getElementById('high-score-message');
+        const feedbackMessage = document.getElementById('feedback-message');
         const reviewContainer = document.getElementById('review-container');
-        const highscoresBody = document.getElementById('highscores-body');
-        const noScoresMessage = document.getElementById('no-scores-message');
-        const highscoresTable = document.getElementById('highscores-table');
         const loadingMessage = document.getElementById('loading-message');
         const errorMessage = document.getElementById('error-message');
         const pageTitleElement = document.querySelector('title');
         const quizTitleElement = document.getElementById('quiz-title');
         const quizDescriptionElement = document.getElementById('quiz-description');
         const startHeadingElement = document.getElementById('start-heading');
-        const highscoresTitleElement = document.getElementById('highscores-title');
 
         // --- Quiz State ---
         let allQuestions = [];
@@ -469,40 +428,20 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         let seconds = 0;
         let selectedAnswers = [];
         let quizComplete = false;
-        let returnToScreen = null;
 
         // --- Initialization ---
         initializeQuiz();
 
         // --- Event Listeners ---
         startButton.addEventListener('click', attemptStartQuiz);
-        viewHighscoresButton.addEventListener('click', () => { returnToScreen = 'start'; showSessionScores(); });
         restartButton.addEventListener('click', resetQuiz);
         reviewButton.addEventListener('click', showReview);
-        highscoresButton.addEventListener('click', () => { returnToScreen = 'results'; showSessionScores(); });
         backToResultsButton.addEventListener('click', () => { hideAllScreens(); resultsScreen.classList.remove('hidden'); });
-        backButton.addEventListener('click', () => {
-            hideAllScreens();
-            if (returnToScreen === 'results') {
-                resultsScreen.classList.remove('hidden');
-            } else {
-                startScreen.classList.remove('hidden');
-            }
-            returnToScreen = null;
-        });
-        tryAgainButton.addEventListener('click', resetQuiz);
 
         // --- Core Functions ---
 
-        /** Validates user input and starts quiz if valid */
+        /** Validates that questions are loaded before starting the quiz */
         function attemptStartQuiz() {
-            const userName = usernameInput.value.trim();
-            if (!userName) {
-                alert('Please enter your name before starting the quiz.');
-                usernameInput.focus();
-                return;
-            }
-
             if (!allQuestions || allQuestions.length === 0) {
                 showInitializationError("Questions not loaded. Please try reloading the page.");
                 return;
@@ -616,17 +555,27 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 return;
             }
 
-            // If we have fewer questions than needed, use all of them
-            if (allQuestions.length <= numberOfQuestionsToSelect) {
+            // Calculate questions to select: either all of them, or 15 (base), or 50% more if available
+            let questionsToSelect = numberOfQuestionsToSelect;
+
+            // If we have fewer questions than base amount, use all of them
+            if (allQuestions.length <= questionsToSelect) {
                 currentQuestions = [...allQuestions];
                 return;
             }
 
-            // Otherwise, select random questions
+            // If we have 50% more questions than base amount, use that many
+            // For example, if base is 15 and we have 23+ questions, select 15 + 50% = 22 questions
+            const fiftyPercentMore = Math.floor(questionsToSelect * 1.5);
+            if (allQuestions.length >= fiftyPercentMore) {
+                questionsToSelect = fiftyPercentMore;
+            }
+
+            // Select random questions
             currentQuestions = [];
             const indices = new Set();
 
-            while (indices.size < numberOfQuestionsToSelect) {
+            while (indices.size < questionsToSelect) {
                 const index = Math.floor(Math.random() * allQuestions.length);
                 if (!indices.has(index)) {
                     indices.add(index);
@@ -775,19 +724,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             timeTaken.textContent = formatTime(seconds);
             correctCount.textContent = `${correctAnswers}/${currentQuestions.length}`;
 
-            // Save score in session
-            const userName = usernameInput.value.trim() || "Anonymous";
-            addSessionScore(userName, score, seconds);
-
             // Display completion message
+            const feedbackMessage = document.getElementById('feedback-message');
             if (correctAnswers === currentQuestions.length) {
-                highScoreMessage.innerHTML = '<p class="success">Perfect score! Congratulations!</p>';
+                feedbackMessage.innerHTML = '<p class="success">Perfect score! Congratulations!</p>';
             } else if (correctAnswers >= currentQuestions.length * 0.8) {
-                highScoreMessage.innerHTML = '<p class="success">Great job! You know this material well.</p>';
+                feedbackMessage.innerHTML = '<p class="success">Great job! You know this material well.</p>';
             } else if (correctAnswers >= currentQuestions.length * 0.6) {
-                highScoreMessage.innerHTML = '<p>Good effort! Keep practicing to improve your score.</p>';
+                feedbackMessage.innerHTML = '<p>Good effort! Keep practicing to improve your score.</p>';
             } else {
-                highScoreMessage.innerHTML = '<p>You might want to review this material again.</p>';
+                feedbackMessage.innerHTML = '<p>You might want to review this material again.</p>';
             }
 
             hideAllScreens();
@@ -811,48 +757,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
         }
 
-        // --- Session Score Functions ---
-        function addSessionScore(name, userScore, time) {
-            sessionScores.push({
-                name: name,
-                score: userScore,
-                time: time,
-                date: new Date().toLocaleTimeString() // Use time instead of date for session
-            });
-
-            // Sort: Higher scores first. For ties, lower time (faster) first.
-            sessionScores.sort((a, b) => b.score - a.score || a.time - b.time);
-
-            // Keep only the top 10 scores for display
-            if (sessionScores.length > 10) {
-                sessionScores = sessionScores.slice(0, 10);
-            }
-        }
-
-        function showSessionScores() {
-            highscoresBody.innerHTML = ''; // Clear previous entries
-            highscoresTitleElement.textContent = `${currentConfig.title} - Session Attempts`;
-
-            if (sessionScores.length === 0) {
-                noScoresMessage.classList.remove('hidden');
-                highscoresTable.classList.add('hidden');
-                noScoresMessage.innerHTML = '<p>No attempts yet in this session. Take the quiz to record your score!</p>';
-            } else {
-                noScoresMessage.classList.add('hidden');
-                highscoresTable.classList.remove('hidden');
-                sessionScores.forEach((scoreData, index) => {
-                    const row = highscoresBody.insertRow();
-                    row.insertCell().textContent = index + 1; // Attempt #
-                    row.insertCell().textContent = scoreData.name;
-                    row.insertCell().textContent = scoreData.score;
-                    row.insertCell().textContent = formatTime(scoreData.time);
-                    row.insertCell().textContent = scoreData.date;
-                });
-            }
-
-            hideAllScreens();
-            highscoresScreen.classList.remove('hidden');
-        }
+        // No session score functions needed
 
         // --- Utility Functions ---
         function hideAllScreens() {
@@ -860,7 +765,6 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             quizScreen.classList.add('hidden');
             resultsScreen.classList.add('hidden');
             reviewScreen.classList.add('hidden');
-            highscoresScreen.classList.add('hidden');
         }
 
         function resetQuiz() {
@@ -888,13 +792,10 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             errorMessage.classList.remove('hidden');
             loadingMessage.classList.add('hidden');
             startButton.disabled = true;
-            viewHighscoresButton.disabled = true;
         }
 
         /** Initialize session scores */
-        function initSessionScores() {
-            sessionScores = [];
-        }
+
 
         function initializeQuiz() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -912,22 +813,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
                 if (quizParam === 'bh') {
                     startHeadingElement.textContent = `Ready to test your Boathouse knowledge?`;
-                    highscoresTitleElement.textContent = `Boathouse Quiz Attempts`;
                 } else if (quizParam === 'safety') {
                     startHeadingElement.textContent = `Ready to test your Safety knowledge?`;
-                    highscoresTitleElement.textContent = `Safety Quiz Attempts`;
                 } else if (!isNaN(parseInt(quizParam))) {
                     startHeadingElement.textContent = `Ready to test your Session ${quizParam} knowledge?`;
-                    highscoresTitleElement.textContent = `Session ${quizParam} Quiz Attempts`;
                 } else {
                     startHeadingElement.textContent = `Ready to test your knowledge?`;
-                    highscoresTitleElement.textContent = `Quiz Attempts`;
                 }
 
                 startButton.disabled = false;
-                viewHighscoresButton.disabled = false;
                 errorMessage.classList.add('hidden');
-                initSessionScores();
                 loadQuestions(); // Load questions for the selected quiz
 
             } else {
