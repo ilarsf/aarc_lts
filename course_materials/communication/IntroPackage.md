@@ -145,8 +145,8 @@ You'll learn this in detail, but here’s a preview:
 
 Before your first session, we recommend completing these short knowledge quizzes to familiarize yourself with key concepts:
 
-- [**Boathouse Rules Quiz**](/src/quiz_module.html?quiz=boathouse) - Test your understanding of boathouse protocols and equipment care
-- [**Safety Guidelines Quiz**](/src/quiz_module.html?quiz=safety) - Review essential safety procedures and river navigation rules
+- [**Boathouse Rules Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=bh) - Test your understanding of boathouse protocols and equipment care
+- [**Safety Guidelines Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=safety) - Review essential safety procedures and river navigation rules
 
 Completing these quizzes will help you feel more prepared for your first session and enhance your learning experience!
 

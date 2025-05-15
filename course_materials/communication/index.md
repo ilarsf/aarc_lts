@@ -17,12 +17,12 @@ These communication templates and information packages help maintain consistent 
 - [**Post-Course Package**](PostCourse_Package.md) - Next steps after completing the program
 
 ### Quiz Resources
-- [**Boathouse Rules Quiz**](/src/quiz_module.html?quiz=boathouse) - Test knowledge of boathouse protocols
-- [**Safety Guidelines Quiz**](/src/quiz_module.html?quiz=safety) - Review essential safety procedures
-- [**Session 1 Quiz**](/src/quiz_module.html?quiz=session1) - Reinforce Session 1 concepts
-- [**Session 2 Quiz**](/src/quiz_module.html?quiz=session2) - Reinforce Session 2 concepts
-- [**Session 3 Quiz**](/src/quiz_module.html?quiz=session3) - Reinforce Session 3 concepts
-- [**Session 4 Quiz**](/src/quiz_module.html?quiz=session4) - Final comprehensive assessment
+- [**Boathouse Rules Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=bh) - Test knowledge of boathouse protocols
+- [**Safety Guidelines Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=safety) - Review essential safety procedures
+- [**Session 1 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=1) - Reinforce Session 1 concepts
+- [**Session 2 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=2) - Reinforce Session 2 concepts
+- [**Session 3 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=3) - Reinforce Session 3 concepts
+- [**Session 4 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=4) - Final comprehensive assessment
 
 ### Email Templates
 - [**Standard Email Templates**](Email_Templates.md) - Pre-course, daily, and post-course communication templates
