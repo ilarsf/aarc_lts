@@ -63,6 +63,10 @@ title: Search - AARC Learn to Scull Program
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Get the base URL for the site to process paths correctly
+  const siteBaseUrl = '{{ site.baseurl }}';
+  console.log('Site baseUrl:', siteBaseUrl);
+  
   // Check if there's a hash in the URL indicating a search term
   const hash = window.location.hash.substring(1);
   if (hash) {
@@ -76,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Search index content structure
   const searchIndex = [
-    {% raw %}
     // Learn to Scull Program pages
     { title: "Learn to Scull Program", path: "{{ site.baseurl }}/", keywords: "learn scull rowing program overview intensive weekend introduction beginner novice start learning new rower", summary: "Overview of the Learn to Scull program, including program features, schedule, and requirements." },
     { title: "Program Schedule", path: "{{ site.baseurl }}/course_materials/learner/Program_Schedule.html", keywords: "schedule sessions weekend timing format progression four saturday sunday morning 8am class dates times meeting", summary: "Details about the four-session weekend intensive format including times, dates, and session progression." },
@@ -137,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "About AARC", path: "{{ site.baseurl }}/about/", keywords: "about AARC Ann Arbor Rowing Club history mission values organization structure club information", summary: "Information about the Ann Arbor Rowing Club, its history, and mission." },
     { title: "Club Policies", path: "{{ site.baseurl }}/textbook/chapters/part5.html#appendix-b-aarc-policies", keywords: "policies rules procedures code conduct safesport behavior expectations membership requirements", summary: "AARC club policies including Code of Conduct and SafeSport Policy." },
     { title: "Resources", path: "{{ site.baseurl }}/resources/", keywords: "resources additional materials references links external websites books videos", summary: "Additional resources for rowers beyond the Learn to Scull program." }
-    {% endraw %}
   ];
 
   const searchInput = document.getElementById('search-input');
@@ -197,7 +199,9 @@ document.addEventListener('DOMContentLoaded', function() {
       li.className = 'search-result-item';
       
       const titleLink = document.createElement('a');
-      titleLink.href = result.path;
+      // Process the path to replace the Liquid tag with the actual baseUrl
+      const pathWithRealBaseUrl = result.path.replace(/\{\{\s*site\.baseurl\s*\}\}/g, siteBaseUrl);
+      titleLink.href = pathWithRealBaseUrl;
       titleLink.textContent = result.title;
       titleLink.className = 'search-result-title';
       
