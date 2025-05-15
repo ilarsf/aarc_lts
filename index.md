@@ -8,8 +8,22 @@ layout: default
   <div class="two-col-grid align-center">
     <div>
       <div class="info-box note">
+        <h4>Welcome to AARC!</h4>
+        <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
       </div>
-</div>
+      
+      <p>Sculling is a type of rowing where a rower uses two oars to propel their boat through the water. Sculling is typically done in smaller boats of one or two people who navigate the water without a coxswain. Sculling allows for greater independence. In a scull, rowers can feel the impact of their own movement and connect to the water.</p>
+      
+      <p>Our Learn to Scull program is an introductory program for those who are new to rowing, have previous sculling experience and are in need of "refresher" lessons, or are sweep rowers who would like to learn how to scull. The class will teach you the basics and get you comfortable with sculling, preparing you for the next step in your rowing journey.</p>
+    </div>
+    
+    <div>
+      <div class="featured-image">
+        <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="AARC Learn to Scull" loading="lazy">
+      </div>
+    </div>
+  </div>
+</header>
 
 <section class="quick-access">
   <h2>Need Information Fast?</h2>
@@ -32,31 +46,6 @@ layout: default
     </div>
   </div>
 </section>
-
-<div class="info-box aarc">
-  <h4>Meet Our Team</h4>
-<p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="{{ site.baseurl }}/team/">Meet our Team</a> who will guide you through your rowing journey.</p>
-</div>
-
-<div class="info-box note">
-  <h4>Questions?</h4>
-  <p>For more information about the Learn to Scull program, please email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">official AARC website</a>.</p>
-</div>ome to AARC!</h4>
-        <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
-      </div>
-      
-      <p>Sculling is a type of rowing where a rower uses two oars to propel their boat through the water. Sculling is typically done in smaller boats of one or two people who navigate the water without a coxswain. Sculling allows for greater independence. In a scull, rowers can feel the impact of their own movement and connect to the water.</p>
-      
-      <p>Our Learn to Scull program is an introductory program for those who are new to rowing, have previous sculling experience and are in need of "refresher" lessons, or are sweep rowers who would like to learn how to scull. The class will teach you the basics and get you comfortable with sculling, preparing you for the next step in your rowing journey.</p>
-    </div>
-    
-    <div>
-      <div class="featured-image">
-        <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="AARC Learn to Scull" loading="lazy">
-      </div>
-    </div>
-  </div>
-</header>
 
 <section class="program-overview">
   <h2>Program Overview</h2>
