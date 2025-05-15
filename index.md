@@ -9,12 +9,14 @@ layout: default
     <div>
       <div class="info-box note">
         <h4>Welcome to AARC!</h4>
-        <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. This comprehensive resource center provides structured materials for both coaches and participants in our weekend intensive Learn to Scull program.</p>
+        <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. Our Learn to Scull program is an introductory weekend intensive course for those who are new to rowing or would like to refresh their sculling skills.</p>
       </div>
       
-      <p>Sculling is a type of rowing where a rower uses two oars to propel their boat through the water. Sculling is typically done in smaller boats of one or two people who navigate the water without a coxswain. Sculling allows for greater independence. In a scull, rowers can feel the impact of their own movement and connect to the water.</p>
+      <p>Sculling is a type of rowing where you use two oars to propel your boat through the water. This engaging sport offers independence and a unique connection to the water as you feel the immediate impact of your movements.</p>
       
-      <p>Our Learn to Scull program is an introductory program for those who are new to rowing, have previous sculling experience and are in need of "refresher" lessons, or are sweep rowers who would like to learn how to scull. The class will teach you the basics and get you comfortable with sculling, preparing you for the next step in your rowing journey.</p>
+      <div class="text-center mt-4">
+        <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-large">View 2025 Program Schedule</a>
+      </div>
     </div>
     
     <div>
@@ -25,190 +27,96 @@ layout: default
   </div>
 </header>
 
-<section class="quick-access">
-  <h2>Need Information Fast?</h2>
+<section class="quick-links">
+  <h2>Quick Access</h2>
   
-  <div class="two-col-grid">
-    <div class="info-box tip mb-3">
-      <h4><i class="fas fa-bolt"></i> Quick Answers</h4>
-      <p>Find fast answers to common questions about the Learn to Scull program, rowing technique, safety, and equipment with our structured guides.</p>
-      <div class="text-center mt-3">
-        <a href="{{ site.baseurl }}/quick-answers/" class="cta-button">Get Quick Answers</a>
-      </div>
+  <div class="three-col-grid">
+    <div class="info-box tip text-center">
+      <h3><i class="fas fa-search"></i></h3>
+      <h4>Search</h4>
+      <p>Find specific information across all program resources</p>
+      <a href="{{ site.baseurl }}/search/" class="cta-button">Search</a>
     </div>
     
-    <div class="info-box mb-3">
-      <h4><i class="fas fa-search"></i> Search Resources</h4>
-      <p>Looking for something specific? Use our search tool to instantly find information across all Learn to Scull resources and materials.</p>
-      <div class="text-center mt-3">
-        <a href="{{ site.baseurl }}/search/" class="cta-button">Search Resources</a>
-      </div>
+    <div class="info-box note text-center">
+      <h3><i class="fas fa-question-circle"></i></h3>
+      <h4>Quick Answers</h4>
+      <p>Get organized answers to common questions</p>
+      <a href="{{ site.baseurl }}/quick-answers/" class="cta-button">Get Answers</a>
+    </div>
+    
+    <div class="info-box aarc text-center">
+      <h3><i class="fas fa-book"></i></h3>
+      <h4>Textbook</h4>
+      <p>Access complete course materials</p>
+      <a href="{{ site.baseurl }}/textbook/" class="cta-button">View Textbook</a>
     </div>
   </div>
 </section>
 
 <section class="program-overview">
-  <h2>Program Overview</h2>
+  <h2>Program Highlights</h2>
 
-<div class="two-col-grid align-center">
-  <div>
-    <p>The Learn to Scull program is a weekend intensive format designed to introduce beginners to the sport of sculling. Through four sessions over two weekends, participants develop the skills and confidence to safely navigate a sculling boat and enjoy this rewarding sport.</p>
-    
-    <h3>Key Program Features</h3>
-    <ul>
-      <li><strong>Progressive Skill Development</strong>: Each session builds on previous skills</li>
-      <li><strong>Safety-First Approach</strong>: Comprehensive safety training, including flip test and self-rescue</li>
-      <li><strong>Supportive Learning Environment</strong>: Small group instruction with experienced coaches</li>
-      <li><strong>Technical Focus</strong>: Develop proper technique from the beginning</li>
-      <li><strong>Pathway to Membership</strong>: Clear next steps for continued rowing after the program</li>
-    </ul>
-  </div>
-  
-  <div>
-    <div class="info-box tip mb-2">
-      <h4>Weekend Intensive Format</h4>
-      <p>Four sessions over two consecutive weekends:</p>
+  <div class="two-col-grid align-center">
+    <div class="info-box mb-3">
+      <h4>Program Format</h4>
       <ul class="mb-0">
-        <li><strong>Weekend 1:</strong> Saturday & Sunday, 8:00-11:00am</li>
-        <li><strong>Weekend 2:</strong> Saturday & Sunday, 8:00-11:00am</li>
+        <li>Four 3-hour sessions over two weekends</li>
+        <li>Small groups (maximum 6 participants)</li>
+        <li>1:3 coach-to-student ratio</li>
+        <li>Progressive skill development approach</li>
+        <li>Practical water safety training</li>
+        <li>Pathway to club membership after completion</li>
       </ul>
-      <p>Each session is 3 hours with a break. See our <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program Schedule</a> for details.</p>
     </div>
     
-    <p>After completing the LTS class, scullers are invited to become Full Members of AARC and participate in our coached Open Sculling Program, with a four-week trial period offered at a discounted rate.</p>
-  </div>
-</div>
-
-<div class="info-box warning">
-  <h4>Physical Requirements</h4>
-  <p>While there is no specific fitness level required, sculling does require mobility to enter/exit the boat safely:</p>
-  <ul class="mb-0">
-    <li>Ability to get down to the floor and back up using only one hand</li>
-    <li>Ability to turn your head to look over both shoulders</li>
-    <li>Ability to move a 40-50 pound, 27' single scull</li>
-    <li>Swimming ability (adults over 18 must attest that they can swim)</li>
-  </ul>
-</div>
-
-<div class="info-box aarc">
-  <h4>2025 Class Schedule - Registration Opens April 30th!</h4>
-  <ul class="mb-0">
-    <li><strong>LTS1:</strong> May 31/June 1 & 7/8</li>
-    <li><strong>LTS2:</strong> June 14/15 & 21/22</li>
-    <li><strong>LTS3:</strong> June 28/29 & July 12/13</li>
-    <li><strong>LTS4:</strong> July 26/27 & Aug 2/3</li>
-    <li><strong>Class Size:</strong> Maximum 6 participants (1:3 coach-to-student ratio)</li>
-    <li><strong>$300</strong> for the 4-class program</li>
-    <li><strong>$225</strong> for Students (college, professional & graduate students) and Veterans</li>
-    <li><strong>Required:</strong> USRowing Learn-to-Row membership ($10)</li>
-    <li>AARC endeavors to make rowing accessible to the broad community. Scholarships are available to those with financial need.</li>
-  </ul>
-</div>
-
-<section class="resource-library">
-  <h2>Resource Library</h2>
-
-  <div class="info-box aarc mb-4">
-    <h4>New! Complete Textbook Format</h4>
-    <p>For those who prefer a sequential learning experience, we now offer a comprehensive textbook version of all course materials:</p>
-    <ul>
-      <li><a href="{{ site.baseurl }}/textbook/"><strong>AARC Learn to Scull Textbook</strong></a> - Complete course materials in a traditional textbook format</li>
-      <li>Perfect for reading in sequence or printing for offline reference</li>
-      <li>Includes materials for both learners and coaches in a logical progression</li>
-    </ul>
-    <div class="text-center mt-3">
-      <a href="{{ site.baseurl }}/textbook/" class="cta-button">Access the Textbook</a>
+    <div class="info-box aarc mb-3">
+      <h4>2025 Sessions</h4>
+      <ul class="mb-0">
+        <li><strong>Session 1:</strong> May/June</li>
+        <li><strong>Session 2:</strong> June</li>
+        <li><strong>Session 3:</strong> June/July</li>
+        <li><strong>Session 4:</strong> July/August</li>
+        <li><strong>Registration:</strong> Opens April 30th, 2025</li>
+        <li><strong>Cost:</strong> $300 ($225 for students/veterans)</li>
+      </ul>
+      <div class="text-center mt-3">
+        <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-button">View Full Schedule</a>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="three-col-grid">
+<section class="resources-section">
+  <h2>Program Resources</h2>
+  
+  <div class="two-col-grid">
     <div class="info-box note mb-3">
-      <h4>For Learners</h4>
-      <p>Resources to support your journey from beginner to confident sculler:</p>
+      <h4>For Participants</h4>
       <ul class="mb-0">
-        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a> - Beginner-friendly explanations of sculling concepts and techniques</li>
-        <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html"><strong>Program Schedule</strong></a> - Weekend intensive format details for the 4-session course</li>
-        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions</li>
+        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a></li>
+        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a></li>
+        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a></li>
+        <li><a href="{{ site.baseurl }}/src/AARC_Safety_Rules.pdf" target="_blank"><strong>Safety Rules</strong></a></li>
       </ul>
     </div>
     
     <div class="info-box tip mb-3">
       <h4>For Coaches</h4>
-      <p>Access coaching resources to deliver a consistent, high-quality learning experience:</p>
       <ul class="mb-0">
-        <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a> - Comprehensive program guide with session plans</li>
-        <li><a href="{{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html"><strong>Daily Coach Checklist</strong></a> - Operational checklist for sessions</li>
-      </ul>
-    </div>
-    
-    <div class="info-box mb-3">
-      <h4>Technical Resources</h4>
-      <p>Detailed guides for specific techniques and safety procedures:</p>
-      <ul class="mb-0">
-        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a> - Instructions for safely recovering from a capsize</li>
-        <li><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html"><strong>Flip Test Instructions</strong></a> - Guidelines for the capsize recovery test</li>
-        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care Guide</strong></a> - Prevention and treatment of rowing blisters</li>
+        <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a></li>
+        <li><a href="{{ site.baseurl }}/course_materials/coach/session_plans/"><strong>Session Plans</strong></a></li>
+        <li><a href="{{ site.baseurl }}/course_materials/coach/technical/Key_Drills_Repertoire.html"><strong>Key Drills</strong></a></li>
       </ul>
     </div>
   </div>
 
-<div class="two-col-grid">
-  <div class="info-box mb-3">
-    <h4>Communication Resources</h4>
-    <p>Templates for program communications:</p>
-    <ul class="mb-0">
-      <li><a href="{{ site.baseurl }}/course_materials/communication/Email_Templates.html"><strong>Email Templates</strong></a> - Pre-course, daily, and post-course communication templates</li>
-    </ul>
-  </div>
-
-  <div class="info-box warning mb-3">
-    <h4>Club Policies</h4>
-    <p>Important AARC policies and guidelines:</p>
-    <ul class="mb-0">
-      <li><a href="src/AARC_Safety_Rules.pdf" target="_blank"><strong>Safety Rules</strong></a> - Essential safety guidelines for all AARC rowers</li>
-      <li><a href="src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank"><strong>Code of Conduct</strong></a> - Standards of behavior for all club members</li>
-      <li><a href="src/AARCSafeSport_2015-01-18.pdf" target="_blank"><strong>SafeSport Policy</strong></a> - Club commitment to a safe sporting environment</li>
-    </ul>
-  </div>
-</div>
-
-<section class="learning-journey">
-  <h2>Learning Journey</h2>
-  
-  <div class="two-col-grid">
-    <div class="journey-stage">
-      <h4>Sessions 1-2: Fundamentals</h4>
-      <ul>
-        <li>Water safety and boat familiarity</li>
-        <li>Basic rowing motion</li>
-        <li>Boat handling on land and water</li>
-        <li>Flip test and self-rescue practice</li>
-        <li>Basic stroke sequencing</li>
-        <li>Learning to balance the boat</li>
-      </ul>
-    </div>
-    
-    <div class="journey-stage">
-      <h4>Sessions 3-4: Integration and Application</h4>
-      <ul>
-        <li>Developing proper technique</li>
-        <li>Applying power with the legs</li>
-        <li>Navigation and steering mastery</li>
-        <li>Refining stroke technique</li>
-        <li>Building endurance and confidence</li>
-        <li>Practicing independent sculling</li>
-        <li>Preparing for continued rowing</li>
-      </ul>
-    </div>
+  <div class="text-center mt-3">
+    <a href="{{ site.baseurl }}/textbook/" class="cta-large"><i class="fas fa-book"></i> Access Complete Textbook</a>
   </div>
 </section>
 
-<div class="info-box aarc">
-  <h4>Meet Our Team</h4>
-<p>The AARC Learn to Scull program is led by a dedicated team of experienced coaches and instructors who are passionate about introducing new rowers to the sport. <a href="{{ site.baseurl }}/team/">Meet our Team</a> who will guide you through your rowing journey.</p>
-</div>
-
-<div class="info-box note">
+<div class="info-box">
   <h4>Questions?</h4>
   <p>For more information about the Learn to Scull program, please email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">official AARC website</a>.</p>
 </div>

@@ -142,7 +142,36 @@
     color: white;
   }
 
+  /* Enhanced styling for simplified homepage */
+  .quick-links h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quick-links .info-box {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .quick-links .info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
+    .three-col-grid {
+      grid-template-columns: 1fr;
+    }
+
     .search-link {
       display: block;
       margin: 10px auto;
