@@ -35,9 +35,10 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
     <div id="results-screen" class="quiz-section hidden">
         <h2>Quiz Complete!</h2>
         <div id="quiz-summary">
-            <p>Your score: <span id="final-score">0</span> points</p>
+            <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
+                    id="total-questions" class="highlight">15</span> questions correctly</p>
             <p>Time taken: <span id="time-taken">0:00</span></p>
-            <p>Correct answers: <span id="correct-count">0</span>/15</p>
+            <p>Final score: <span id="final-score">0</span>%</p>
         </div>
         <div id="feedback-message"></div>
         <div class="button-group">
@@ -210,6 +211,18 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         padding: 20px;
         background-color: #e9ecef;
         border-radius: 5px;
+        text-align: center;
+    }
+
+    #quiz-summary .result-heading {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    #quiz-summary .highlight {
+        color: #0077cc;
+        font-size: 1.5em;
     }
 
     #high-score-message {
@@ -388,7 +401,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         let currentConfig = null;
         let questionsUrl = '';
         let quizId = '';
-        const numberOfQuestionsToSelect = 15; // Increased to 15 questions (50% more than original 10)
+        const numberOfQuestionsToSelect = 15; // Select 15 questions for each quiz
 
         // --- DOM Elements ---
         const startScreen = document.getElementById('start-screen');
@@ -470,7 +483,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             showQuestion(currentQuestionIndex);
 
             // Update UI
-            scoreDisplay.textContent = `Score: ${score}`;
+            scoreDisplay.textContent = `Score: ${score}%`;
             questionCounter.textContent = `Question 1/${currentQuestions.length}`;
 
             // Switch to the quiz screen
@@ -555,20 +568,13 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 return;
             }
 
-            // Calculate questions to select: either all of them, or 15 (base), or 50% more if available
+            // Set questions to select to default 15
             let questionsToSelect = numberOfQuestionsToSelect;
 
-            // If we have fewer questions than base amount, use all of them
+            // If we have fewer questions than requested amount, use all of them
             if (allQuestions.length <= questionsToSelect) {
                 currentQuestions = [...allQuestions];
                 return;
-            }
-
-            // If we have 50% more questions than base amount, use that many
-            // For example, if base is 15 and we have 23+ questions, select 15 + 50% = 22 questions
-            const fiftyPercentMore = Math.floor(questionsToSelect * 1.5);
-            if (allQuestions.length >= fiftyPercentMore) {
-                questionsToSelect = fiftyPercentMore;
             }
 
             // Select random questions
@@ -582,6 +588,9 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                     currentQuestions.push(allQuestions[index]);
                 }
             }
+
+            // Shuffle the selected questions for random order
+            currentQuestions = shuffleArray(currentQuestions);
         }
 
         /** Displays a question by index */
@@ -630,12 +639,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
             // Update score if correct
             if (isCorrect) {
-                score += 10;
-                scoreDisplay.textContent = `Score: ${score}`;
                 correctAnswers++;
+                // Calculate score as percentage of correct answers so far
+                score = Math.round((correctAnswers / (currentQuestionIndex + 1)) * 100);
+                scoreDisplay.textContent = `Score: ${score}%`;
                 feedback.classList.add('correct-feedback');
                 feedbackText.textContent = `Correct! ${currentQuestion.explanation}`;
             } else {
+                // Recalculate score
+                score = Math.round((correctAnswers / (currentQuestionIndex + 1)) * 100);
+                scoreDisplay.textContent = `Score: ${score}%`;
                 feedback.classList.add('incorrect-feedback');
                 feedbackText.textContent = `Incorrect. The correct answer is: ${currentQuestion.answers[currentQuestion.correctIndex]}. ${currentQuestion.explanation}`;
             }
@@ -719,10 +732,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             quizComplete = true;
             clearInterval(timerInterval); // Stop the timer
 
+            // Calculate final percentage score
+            const finalPercentageScore = currentQuestions.length > 0
+                ? Math.round((correctAnswers / currentQuestions.length) * 100)
+                : 0;
+
             // Display final results
-            finalScore.textContent = score;
+            finalScore.textContent = finalPercentageScore;
             timeTaken.textContent = formatTime(seconds);
-            correctCount.textContent = `${correctAnswers}/${currentQuestions.length}`;
+            correctCount.textContent = correctAnswers;
+            document.getElementById('total-questions').textContent = currentQuestions.length;
 
             // Display completion message
             const feedbackMessage = document.getElementById('feedback-message');
@@ -760,6 +779,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         // No session score functions needed
 
         // --- Utility Functions ---
+        /** Fisher-Yates shuffle algorithm for arrays */
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
         function hideAllScreens() {
             startScreen.classList.add('hidden');
             quizScreen.classList.add('hidden');
@@ -776,7 +805,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             quizComplete = false;
 
             // Reset UI elements
-            scoreDisplay.textContent = `Score: 0`;
+            scoreDisplay.textContent = `Score: 0%`;
             timerElement.textContent = `Time: 0:00`;
             feedback.classList.add('hidden');
             feedback.classList.remove('correct-feedback', 'incorrect-feedback');
