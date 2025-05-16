@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Exclusion Test</title>
+</head>
+
+<body>
+    <h1>Search Exclusion Test</h1>
+    <div id="results"></div>
+
+    <script>
+        // Mock search index for testing
+        var searchIndex = [
+            { path: '/textbook/chapters/part1.html', title: 'Part 1', body: 'Regular content for learners' },
+            { path: '/coach_portal/index.html', title: 'Coach Portal', body: 'Coach content' },
+            { path: '/textbook/chapters/ForTheCoach.html', title: 'For The Coach', body: 'Coach content in textbook' },
+            { path: '/course_materials/learner/index.html', title: 'Learner Material', body: 'Learner content' },
+            { path: '/course_materials/coach/index.html', title: 'Coach Resources', body: 'Coach resources' },
+            { path: '/textbook/chapters/part2.html', title: 'Part 2', body: 'More regular content for learners' },
+            { path: '/textbook/chapters/CoachAppendices.html', title: 'Coach Appendices', body: 'Coach appendices' },
+            { path: '/regular/page.html', title: 'Regular page', body: 'This page mentions coach portal but is not coach specific' },
+            { path: '/about/index.html', title: 'Coach Manual', body: 'This is about the coach manual' }
+        ];
+
+        // Log the original count
+        console.log('Original count:', searchIndex.length);
+        document.getElementById('results').innerHTML += '<p>Original search index count: ' + searchIndex.length + '</p>';
+
+        // Include the search exclusion script
+        var script = document.createElement('script');
+        script.src = 'assets/js/search-exclusion.js';
+        document.head.appendChild(script);
+
+        // Check the results after script loads
+        script.onload = function () {
+            console.log('Filtered count:', searchIndex.length);
+            document.getElementById('results').innerHTML += '<p>Filtered search index count: ' + searchIndex.length + '</p>';
+
+            // Display the remaining items
+            var remainingItems = '<ul>';
+            searchIndex.forEach(function (item) {
+                remainingItems += '<li>' + item.path + ' - ' + item.title + '</li>';
+            });
+            remainingItems += '</ul>';
+            document.getElementById('results').innerHTML += '<p>Remaining items:</p>' + remainingItems;
+        };
+    </script>
+</body>
+
+</html>
