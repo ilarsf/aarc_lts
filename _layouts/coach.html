@@ -106,11 +106,36 @@
             const urlParams = new URLSearchParams(window.location.search);
             const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
             const storageAuth = localStorage.getItem('aarc_coach_access') === 'granted';
+            const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
 
-            // If no access via any method, redirect to login
-            const hasAccess = urlAuth || storageAuth;
+            // Get access via any method (URL, localStorage) or if we've already redirected too many times
+            const hasAccess = urlAuth || storageAuth || redirectCount >= 2;
+
+            // Only redirect if no access AND we haven't already redirected too many times
             if (!hasAccess) {
-                window.location.href = '{{ site.baseurl }}/coach_portal/';
+                // When redirecting, preserve auth_status if present
+                let redirectUrl = '{{ site.baseurl }}/coach_portal/';
+
+                if (redirectCount > 0) {
+                    redirectUrl += '?redirect_count=' + (redirectCount + 1);
+                    if (urlAuth) redirectUrl += '&auth_status=ok';
+                } else {
+                    redirectUrl += urlAuth ? '?auth_status=ok' : '?redirect_count=1';
+                }
+
+                window.location.href = redirectUrl;
+            }
+
+            // If URL authentication is being used, modify all coach portal links to maintain auth state
+            if (urlAuth) {
+                document.querySelectorAll('a').forEach(function (link) {
+                    const href = link.getAttribute('href');
+                    if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
+                        // Add auth_status parameter to the link
+                        const separator = href.includes('?') ? '&' : '?';
+                        link.setAttribute('href', href + separator + 'auth_status=ok');
+                    }
+                });
             }
 
             // Mobile nav toggle

@@ -208,9 +208,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Current redirect count:', redirectCount);
             }
 
+            // Skip redirect if we already have too many redirects (but less than the stop threshold)
+            if (redirectCount >= 2) {
+                console.warn('Too many redirects, skipping redirect but showing content');
+                return; // Allow content to be shown instead of redirecting
+            }
+
+            // Preserve any auth_status parameter when redirecting
+            const hasAuthStatus = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
+
             // Construct redirect URL with incremented counter
             let redirectUrl = basePath + '/coach_portal/';
             redirectUrl += '?redirect_count=' + (redirectCount + 1);
+
+            // Add auth_status if it was present in the original URL
+            if (hasAuthStatus) {
+                redirectUrl += '&auth_status=ok';
+            }
 
             // Add a small delay to allow console logs to be seen if debugging
             if (DEBUG) {
@@ -352,19 +366,36 @@ document.addEventListener('DOMContentLoaded', function () {
         if (DEBUG) console.log('Found auth_status in URL, granting access');
         setStoredAccess('granted');
 
-        // Modify all internal coach portal links to include the auth_status parameter
-        if (!isLocalStorageAvailable()) {
-            document.addEventListener('DOMContentLoaded', function () {
-                // Process all links that point to coach portal pages
-                document.querySelectorAll('a').forEach(function (link) {
-                    const href = link.getAttribute('href');
-                    if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
-                        // Add auth_status parameter to the link
-                        const separator = href.includes('?') ? '&' : '?';
-                        link.setAttribute('href', href + separator + 'auth_status=ok');
-                    }
-                });
+        // ALWAYS modify all internal links to include auth_status, regardless of storage availability
+        // This ensures consistent navigation even in strict privacy browsers
+        document.addEventListener('DOMContentLoaded', function () {
+            // Process all links that point to coach portal pages
+            document.querySelectorAll('a').forEach(function (link) {
+                const href = link.getAttribute('href');
+                if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
+                    // Add auth_status parameter to the link
+                    const separator = href.includes('?') ? '&' : '?';
+                    link.setAttribute('href', href + separator + 'auth_status=ok');
+
+                    if (DEBUG) console.log('Modified link to include auth_status:', href);
+                }
             });
-        }
+
+            // Also add a visual indicator that URL-based auth is being used
+            if (!isLocalStorageAvailable()) {
+                const authNotice = document.createElement('div');
+                authNotice.style.position = 'fixed';
+                authNotice.style.bottom = '10px';
+                authNotice.style.right = '10px';
+                authNotice.style.backgroundColor = '#17a2b8';
+                authNotice.style.color = 'white';
+                authNotice.style.padding = '5px 10px';
+                authNotice.style.borderRadius = '4px';
+                authNotice.style.fontSize = '12px';
+                authNotice.style.zIndex = '1000';
+                authNotice.textContent = 'URL Auth Active';
+                document.body.appendChild(authNotice);
+            }
+        });
     }
 });
