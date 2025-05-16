@@ -12,6 +12,13 @@ search_exclude: true
         includes clear instructions, coaching points, and common errors to watch for.</p>
 </div>
 
+{% include accordion.html %}
+
+<div class="accordion-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
+
 <div class="drill-categories">
     <div class="category-nav">
         <a href="#beginner-drills" class="category-link">Beginner Drills</a>
@@ -23,62 +30,57 @@ search_exclude: true
 
 <h2 id="beginner-drills">Beginner Drills</h2>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Arms Only Rowing</h3>
-        <span class="skill-tag">Balance</span>
-        <span class="skill-tag">Hands</span>
+<div class="accordion-section">
+  <button class="accordion-toggle">Arms Only Rowing <span class="skill-tag">Balance</span> <span class="skill-tag">Hands</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Focuses attention on hand and arm movement while maintaining balance and posture.</p>
+
+      <h4>Setup</h4>
+      <ul>
+          <li>Rower sits at the finish position with legs flat</li>
+          <li>Blades feathered just above the water</li>
+          <li>Body position upright with good posture</li>
+      </ul>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>From finish position, extend arms forward to full reach</li>
+          <li>Square blades just before entry</li>
+          <li>Place blades in water with minimal splash</li>
+          <li>Draw handles to body with arms only</li>
+          <li>Feather and extract blades cleanly</li>
+          <li>Repeat sequence</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Emphasize relaxed shoulders and flat wrists</li>
+          <li>Watch for "digging" or "skying" at catch</li>
+          <li>Ensure clean extraction at finish</li>
+          <li>Maintain consistent rhythm and handle heights</li>
+      </ul>
+
+      <h4>Common Errors</h4>
+      <ul>
+          <li>Hunching forward during recovery</li>
+          <li>Dropping hands during recovery causing blade to hit water</li>
+          <li>Rushing the recovery phase</li>
+      </ul>
+
+      <div class="drill-variation">
+          <h5>Variation: Pause Arms Only</h5>
+          <p>Add a 1-second pause at full extension before placing blades to improve control and catch timing.</p>
+      </div>
     </div>
-    <div class="drill-content">
-        <h4>Purpose</h4>
-        <p>Focuses attention on hand and arm movement while maintaining balance and posture.</p>
-
-        <h4>Setup</h4>
-        <ul>
-            <li>Rower sits at the finish position with legs flat</li>
-            <li>Blades feathered just above the water</li>
-            <li>Body position upright with good posture</li>
-        </ul>
-
-        <h4>Execution</h4>
-        <ol>
-            <li>From finish position, extend arms forward to full reach</li>
-            <li>Square blades just before entry</li>
-            <li>Place blades in water with minimal splash</li>
-            <li>Draw handles to body with arms only</li>
-            <li>Feather and extract blades cleanly</li>
-            <li>Repeat sequence</li>
-        </ol>
-
-        <h4>Coaching Points</h4>
-        <ul>
-            <li>Emphasize relaxed shoulders and flat wrists</li>
-            <li>Watch for "digging" or "skying" at catch</li>
-            <li>Ensure clean extraction at finish</li>
-            <li>Maintain consistent rhythm and handle heights</li>
-        </ul>
-
-        <h4>Common Errors</h4>
-        <ul>
-            <li>Hunching forward during recovery</li>
-            <li>Dropping hands during recovery causing blade to hit water</li>
-            <li>Rushing the recovery phase</li>
-        </ul>
-
-        <div class="drill-variation">
-            <h5>Variation: Pause Arms Only</h5>
-            <p>Add a 1-second pause at full extension before placing blades to improve control and catch timing.</p>
-        </div>
-    </div>
+  </div>
 </div>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Arms and Back</h3>
-        <span class="skill-tag">Posture</span>
-        <span class="skill-tag">Sequencing</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Arms and Back <span class="skill-tag">Posture</span> <span class="skill-tag">Sequencing</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
         <h4>Purpose</h4>
         <p>Develops coordination between back swing and arm draw while maintaining consistent blade depth.</p>
 
@@ -94,8 +96,6 @@ search_exclude: true
             <li>From forward body angle, place blades in water</li>
             <li>Initiate drive by swinging body to upright position</li>
             <li>Continue movement by drawing hands to body</li>
-            <li>Finish with upright posture and hands drawn to lower ribs</li>
-            <li>Extract and feather blades</li>
             <li>Extend arms and hinge forward from hips to return to starting position</li>
             <li>Repeat sequence</li>
         </ol>
@@ -115,17 +115,15 @@ search_exclude: true
             <li>Opening back angle too far at finish</li>
         </ul>
     </div>
+  </div>
 </div>
 
 <h2 id="intermediate-drills">Intermediate Drills</h2>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Quarter Slide Rowing</h3>
-        <span class="skill-tag">Control</span>
-        <span class="skill-tag">Coordination</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Quarter Slide Rowing <span class="skill-tag">Control</span> <span class="skill-tag">Coordination</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
         <h4>Purpose</h4>
         <p>Introduces leg drive while maintaining upper body sequencing and control.</p>
 
@@ -149,7 +147,6 @@ search_exclude: true
 
         <h4>Coaching Points</h4>
         <ul>
-            <li>Emphasize controlled slide movement</li>
             <li>Watch for proper sequencing in both recovery and drive</li>
             <li>Ensure handle heights remain consistent</li>
         </ul>
@@ -166,17 +163,15 @@ search_exclude: true
             <p>Progress from 1/4 to 1/2 to 3/4 to full slide during the session to build coordination gradually.</p>
         </div>
     </div>
+  </div>
 </div>
 
 <h2 id="technical-focus-drills">Technical Focus Drills</h2>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Pause Rowing</h3>
-        <span class="skill-tag">Technique</span>
-        <span class="skill-tag">Control</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Pause Rowing <span class="skill-tag">Technique</span> <span class="skill-tag">Control</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
         <h4>Purpose</h4>
         <p>Improves body awareness and position at specific points in the stroke cycle.</p>
 
@@ -209,6 +204,7 @@ search_exclude: true
             <li>Losing balance during pause</li>
         </ul>
     </div>
+  </div>
 </div>
 
 <h2 id="progression-sequences">Progression Sequences</h2>
@@ -267,6 +263,61 @@ search_exclude: true
 
 .category-link:hover {
     background-color: #e0e0e0;
+}
+
+.accordion-controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.accordion-controls button {
+    padding: 0.5rem 1rem;
+    background-color: #0073E6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accordion-controls button:hover {
+    background-color: #005bb5;
+}
+
+.accordion-section {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-toggle {
+    width: 100%;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.accordion-content-inner {
+    padding: 1rem;
 }
 
 .drill-card {

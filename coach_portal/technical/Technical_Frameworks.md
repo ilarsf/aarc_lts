@@ -9,220 +9,253 @@ layout: default
   <p>This guide outlines the primary technical frameworks used in the AARC Learn to Scull program. These frameworks provide consistent reference points for coaches and participants throughout the learning process.</p>
 </div>
 
+{% include accordion.html %}
+
+<div class="accordion-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
+
 ## Krafts' Keys
 
-"Krafts' Keys" is a mnemonic device that helps rowers remember essential principles of good sculling technique. Two versions are commonly used:
+<div class="accordion-section">
+  <button class="accordion-toggle">Version 1: KRAFT</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ol>
+        <li><strong>K: Keep shoulders relaxed and down</strong>
+          <ul>
+            <li>Prevents tension that inhibits movement and balance</li>
+            <li>Allows natural body swing and fluid motion</li>
+            <li>Reduces energy waste and potential for injury</li>
+            <li><strong>Coaching cue:</strong> "Drop your shoulders away from your ears"</li>
+          </ul>
+        </li>
+        <li><strong>R: Reach from hips, not shoulders</strong>
+          <ul>
+            <li>Encourages proper forward body angle at the catch</li>
+            <li>Prevents hunching or overreaching with the shoulders</li>
+            <li>Promotes good posture and effective power application</li>
+            <li><strong>Coaching cue:</strong> "Pivot from the hips, keep shoulders relaxed"</li>
+          </ul>
+        </li>
+        <li><strong>A: Arms straight until legs are flat</strong>
+          <ul>
+            <li>Ensures power sequence from largest to smallest muscle groups</li>
+            <li>Prevents premature arm bend that wastes leg drive</li>
+            <li>Establishes efficient power transfer through the drive</li>
+            <li><strong>Coaching cue:</strong> "Arms like ropes, let the legs do the work"</li>
+          </ul>
+        </li>
+        <li><strong>F: Feather after extraction</strong>
+          <ul>
+            <li>Promotes clean blade extraction before rotation</li>
+            <li>Prevents washing out at the finish</li>
+            <li>Establishes proper sequence at the finish</li>
+            <li><strong>Coaching cue:</strong> "Hands clear, then rotate"</li>
+          </ul>
+        </li>
+        <li><strong>T: Tap down before extraction</strong>
+          <ul>
+            <li>Ensures clean release from the water</li>
+            <li>Prevents dragging the blade or digging too deep</li>
+            <li>Sets up proper handle heights for recovery</li>
+            <li><strong>Coaching cue:</strong> "Light tap down, then extract"</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-### Version 1: KRAFT
-
-1. **K**: **Keep shoulders relaxed and down**
-   - Prevents tension that inhibits movement and balance
-   - Allows natural body swing and fluid motion
-   - Reduces energy waste and potential for injury
-   - **Coaching cue:** "Drop your shoulders away from your ears"
-
-2. **R**: **Reach from hips, not shoulders**
-   - Encourages proper forward body angle at the catch
-   - Prevents hunching or overreaching with the shoulders
-   - Promotes good posture and effective power application
-   - **Coaching cue:** "Pivot from the hips, keep shoulders relaxed"
-
-3. **A**: **Arms straight until legs are flat**
-   - Ensures power sequence from largest to smallest muscle groups
-   - Prevents premature arm bend that wastes leg drive
-   - Establishes efficient power transfer through the drive
-   - **Coaching cue:** "Arms like ropes, let the legs do the work"
-
-4. **F**: **Feather after extraction**
-   - Promotes clean blade extraction before rotation
-   - Prevents washing out at the finish
-   - Establishes proper sequence at the finish
-   - **Coaching cue:** "Hands clear, then rotate"
-
-5. **T**: **Tap down before extraction**
-   - Ensures clean release from the water
-   - Prevents dragging the blade or digging too deep
-   - Sets up proper handle heights for recovery
-   - **Coaching cue:** "Light tap down, then extract"
-
-### Version 2: KRAFT (Alternative Interpretation)
-
-1. **Korrect Grip**
-   - Maintain proper hand position to ensure control and stability
-   - Relaxed fingers, hook-like grip
-   - Proper spacing and alignment
-   - **Coaching cue:** "Fingers are hooks, not fists"
-
-2. **Relaxation**
-   - Keep body and shoulders relaxed and soft above the handles
-   - Avoid tension that inhibits balance and movement
-   - Efficient use of energy and smoother technique
-   - **Coaching cue:** "Breathe and drop your shoulders"
-
-3. **Alignment**
-   - "Everything is horizontal"
-   - Level hand heights through the stroke
-   - Consistent blade depths
-   - **Coaching cue:** "Imagine carrying a tray of drinks"
-
-4. **Flow (& Forward)**
-   - Maintain a smooth stroke sequence
-   - Keep the body forward and prepared
-   - Continuous motion without abrupt changes
-   - **Coaching cue:** "Smooth, continuous movements"
-
-5. **Timing**
-   - "When the blade is square, it's in the water"
-   - Proper coordination of blade entry and exit
-   - Synchronized movements and application
-   - **Coaching cue:** "Square and bury together"
+<div class="accordion-section">
+  <button class="accordion-toggle">Version 2: KRAFT (Alternative Interpretation)</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ol>
+        <li><strong>Korrect Grip</strong>
+          <ul>
+            <li>Maintain proper hand position to ensure control and stability</li>
+            <li>Relaxed fingers, hook-like grip</li>
+            <li>Proper spacing and alignment</li>
+            <li><strong>Coaching cue:</strong> "Fingers are hooks, not fists"</li>
+          </ul>
+        </li>
+        <li><strong>Relaxation</strong>
+          <ul>
+            <li>Keep body and shoulders relaxed and soft above the handles</li>
+            <li>Avoid tension that inhibits balance and movement</li>
+            <li>Efficient use of energy and smoother technique</li>
+            <li><strong>Coaching cue:</strong> "Breathe and drop your shoulders"</li>
+          </ul>
+        </li>
+        <li><strong>Alignment</strong>
+          <ul>
+            <li>"Everything is horizontal"</li>
+            <li>Level hand heights through the stroke</li>
+            <li>Consistent blade depths</li>
+            <li><strong>Coaching cue:</strong> "Imagine carrying a tray of drinks"</li>
+          </ul>
+        </li>
+        <li><strong>Flow (& Forward)</strong>
+          <ul>
+            <li>Continuous fluid motion through the stroke</li>
+            <li>No stopping or jerky movements</li>
+            <li>Controlled slide speed and rush seat</li>
+            <li><strong>Coaching cue:</strong> "Smooth and continuous, like water flowing"</li>
+          </ul>
+        </li>
+        <li><strong>Timing</strong>
+          <ul>
+            <li>Proper sequencing of movement</li>
+            <li>Catch at full compression, blades enter together</li>
+            <li>Coordinated application of power</li>
+            <li><strong>Coaching cue:</strong> "Together on the catch, together on the finish"</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
 
 ## Black Bear Sequence
 
-The "Black Bear Sequence" provides a systematic approach to teaching the components of the rowing stroke in a logical order. This framework breaks down the stroke cycle into distinct elements that can be taught, practiced, and refined individually before integration.
+<div class="accordion-section">
+  <button class="accordion-toggle">1. Grip and Feather</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p><strong>Description:</strong></p>
+      <ul>
+        <li>Proper hand position on the oar handles</li>
+        <li>Control of blade angle (feathered vs. squared)</li>
+        <li>Relaxed but secure grip</li>
+      </ul>
+      <p><strong>Key Teaching Points:</strong></p>
+      <ul>
+        <li>Hands hanging from the handle rather than gripping tightly</li>
+        <li>Proper spacing between hands</li>
+        <li>Wrist position and movement for feathering/squaring</li>
+        <li>Thumbs resting lightly on handle ends</li>
+      </ul>
+      <p><strong>Related Drills:</strong></p>
+      <ul>
+        <li>Ghost strokes (stationary blade control practice)</li>
+        <li>Square blade rowing</li>
+        <li>Grip demonstration and practice</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-### 1. Grip and Feather
+<div class="accordion-section">
+  <button class="accordion-toggle">2. Release</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p><strong>Description:</strong></p>
+      <ul>
+        <li>The moment when the blade leaves the water at the finish</li>
+        <li>Includes tap down and extraction movement</li>
+        <li>Sets up the recovery phase</li>
+      </ul>
+      <p><strong>Key Teaching Points:</strong></p>
+      <ul>
+        <li>Clean extraction with minimal splash</li>
+        <li>Light tap down to release blade</li>
+        <li>Quick hands away movement after release</li>
+        <li>Maintaining proper hand heights</li>
+      </ul>
+      <p><strong>Related Drills:</strong></p>
+      <ul>
+        <li>Pick drill (starting at the finish)</li>
+        <li>Release-focused rowing (arms only)</li>
+        <li>Pause at finish position</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-**Description:**
-- Proper hand position on the oar handles
-- Control of blade angle (feathered vs. squared)
-- Relaxed but secure grip
+<div class="accordion-section">
+  <button class="accordion-toggle">3. Recovery/Catch</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p><strong>Description:</strong></p>
+      <ul>
+        <li>The phase from finish to catch when blade is out of water</li>
+        <li>Includes the sequenced return to the catch position</li>
+        <li>Proper body positioning for effective catch</li>
+      </ul>
+      <p><strong>Key Teaching Points:</strong></p>
+      <ul>
+        <li>Sequence: arms away → body pivot → slide</li>
+        <li>Controlled slide speed (slow recovery)</li>
+        <li>Forward body angle established early</li>
+        <li>Blade preparation (squaring) before entry</li>
+      </ul>
+      <p><strong>Related Drills:</strong></p>
+      <ul>
+        <li>Pause drills (arms away, body over)</li>
+        <li>Quarter slide rowing</li>
+        <li>Catch preparation drills</li>
+        <li>Tap drill at ½, ¾, and full slide</li>
+        <li>Catch placement drill</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-**Key Teaching Points:**
-- Hands hanging from the handle rather than gripping tightly
-- Proper spacing between hands
-- Wrist position and movement for feathering/squaring
-- Thumbs resting lightly on handle ends
+<div class="accordion-section">
+  <button class="accordion-toggle">4. Drive</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p><strong>Description:</strong></p>
+      <ul>
+        <li>Power phase when blade is in water</li>
+        <li>Connected power application sequence</li>
+        <li>Coordinated leg, back, and arm action</li>
+      </ul>
+      <p><strong>Key Teaching Points:</strong></p>
+      <ul>
+        <li>Sequence: legs → back → arms</li>
+        <li>Initial leg push without opening the back</li>
+        <li>Connected power application through the stroke</li>
+        <li>Maintaining pressure through finish</li>
+      </ul>
+      <p><strong>Related Drills:</strong></p>
+      <ul>
+        <li>Reverse pick drill</li>
+        <li>Legs-only rowing</li>
+        <li>Power application exercises</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-**Related Drills:**
-- Ghost strokes (stationary blade control practice)
-- Square blade rowing
-- Grip demonstration and practice
-
-### 2. Release
-
-**Description:**
-- The moment when the blade leaves the water at the finish
-- Includes tap down and extraction movement
-- Sets up the recovery phase
-
-**Key Teaching Points:**
-- Clean extraction with minimal splash
-- Light tap down to release blade
-- Quick hands away movement after release
-- Maintaining proper hand heights
-
-**Related Drills:**
-- Pick drill (starting at the finish)
-- Release-focused rowing (arms only)
-- Pause at finish position
-
-### 3. Recovery/Catch
-
-**Description:**
-- The phase from finish to catch when blade is out of water
-- Includes the sequenced return to the catch position
-- Proper body positioning for effective catch
-
-**Key Teaching Points:**
-- Sequence: arms away → body pivot → slide
-- Controlled slide speed (slow recovery)
-- Forward body angle established early
-- Blade preparation (squaring) before entry
-
-**Related Drills:**
-- Pause drills (arms away, body over)
-- Quarter slide rowing
-- Catch preparation drills
-- Tap drill at ½, ¾, and full slide
-- Catch placement drill
-
-### Advanced Catch Preparation
-
-**Importance of Catch Comfort:**
-- The catch position is often perceived as unstable
-- Anxiety at the catch leads to rushed entries and missed water
-- Developing comfort at full compression enables clean blade entry
-- A precise catch enables maximum drive efficiency
-
-**Key Technical Elements:**
-1. **Body Position**
-   - Strong forward pivot from the hips
-   - Spine remains straight, not rounded
-   - Core engaged for stability
-   - Shoulders relaxed despite forward position
-   - Weight balanced across the seat
-
-2. **Approach Sequence**
-   - Complete body positioning before final slide
-   - Early blade squaring during approach
-   - Hands maintain consistent height
-   - Patient arrival at full compression
-   - Brief moment of stability before entry
-
-3. **Entry Mechanics**
-   - Blade placed at furthest comfortable reach
-   - Entry through horizontal hand movement
-   - Minimal vertical movement during placement
-   - Clean, splash-free entry
-   - Immediate connection with water
-
-**Progression Strategy:**
-1. Begin with static practice at ½ slide
-2. Progress to ¾ slide as stability develops
-3. Finally, develop comfort at full slide
-4. Use tap drills to build confidence at each position
-5. Connect catch preparation with effective drive initiation
-
-**Coaching Focus Areas:**
-- Emphasize strength of body position, not just reach
-- Develop confidence in the "unstable" forward position
-- Create deliberate preparation during the final approach
-- Ensure shoulders remain relaxed at the catch
-- Build comfort before focusing on speed of execution
-
-**Common Challenges:**
-- Rushing into the catch due to instability anxiety
-- Dropping the hands just before entry
-- Early slide movement before body position is set
-- Diving the blade too deep on entry
-- Insufficient core engagement at catch position
-
-### 4. Drive
-
-**Description:**
-- Power phase when blade is in water
-- Connected power application sequence
-- Coordinated leg, back, and arm action
-
-**Key Teaching Points:**
-- Sequence: legs → back → arms
-- Initial leg push without opening the back
-- Connected power application through the stroke
-- Maintaining pressure through finish
-
-**Related Drills:**
-- Reverse pick drill
-- Legs-only rowing
-- Power application exercises
-
-### 5. Steering
-
-**Description:**
-- Directional control of the shell
-- Navigation and spatial awareness
-- Regular checks and course corrections
-
-**Key Teaching Points:**
-- Looking over shoulder every 3-5 strokes
-- Making small, subtle adjustments
-- Understanding how pressure affects direction
-- Anticipating turns and obstacles
-
-**Related Drills:**
-- One-arm turning practice
-- Pivot turns
-- Point-to-point navigation practice
+<div class="accordion-section">
+  <button class="accordion-toggle">5. Steering</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p><strong>Description:</strong></p>
+      <ul>
+        <li>Directional control of the shell</li>
+        <li>Navigation and spatial awareness</li>
+        <li>Regular checks and course corrections</li>
+      </ul>
+      <p><strong>Key Teaching Points:</strong></p>
+      <ul>
+        <li>Looking over shoulder every 3-5 strokes</li>
+        <li>Making small, subtle adjustments</li>
+        <li>Understanding how pressure affects direction</li>
+        <li>Anticipating turns and obstacles</li>
+      </ul>
+      <p><strong>Related Drills:</strong></p>
+      <ul>
+        <li>One-arm turning practice</li>
+        <li>Pivot turns</li>
+        <li>Point-to-point navigation practice</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ## Integrating the Frameworks in Instruction
 

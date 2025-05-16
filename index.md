@@ -15,8 +15,12 @@ layout: default
       <p>Sculling is a type of rowing where you use two oars to propel your boat through the water. This engaging sport offers independence and a unique connection to the water as you feel the immediate impact of your movements.</p>
       
       <div class="text-center mt-4">
+        <a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-large">Learner’s Guide</a>
+      </div>
+      <div class="text-center mt-4">
         <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-large">View 2025 Program Schedule</a>
       </div>
+
     </div>
     
     <div>
