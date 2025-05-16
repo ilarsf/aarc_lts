@@ -9,7 +9,7 @@ search_exclude: true
 <div class="info-box tip">
   <h3>About This Textbook</h3>
   <p>This textbook contains comprehensive coaching materials for the Learn to Scull program, organized in a structured, easy-to-navigate format.</p>
-  <p><a href="{{ site.baseurl }}/coach_portal/textbook/coach_complete.md" class="button-primary"><i class="fas fa-book"></i> View Complete Coach Textbook</a> <span class="note">(All chapters on one page, print-friendly)</span></p>
+  <p><a href="{{ site.baseurl }}/coach_portal/textbook/coach_complete.html" class="button-primary"><i class="fas fa-book"></i> View Complete Coach Textbook</a> <span class="note">(All chapters on one page, print-friendly)</span></p>
 </div>
 
 <div class="textbook-toc">
@@ -128,3 +128,4 @@ search_exclude: true
     margin-right: 0.5rem;
   }
 </style>
+

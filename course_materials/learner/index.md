@@ -7,63 +7,119 @@ custom_class: learner-page
 
 Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.
 
-## Available Resources
+{% include accordion.html %}
 
-- [**Learner's Guide**](Learner_Guide.md) - A comprehensive guide to sculling concepts, techniques, and progression
-- [**Q&A Companion**](QA_Companion.md) - Answers to frequently asked questions about sculling, equipment, and safety
-- [**Program Schedule**](Program_Schedule.md) - Overview of our structured 4-session format
+<div class="accordion-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
 
-### Technical Resources
+<div class="accordion-section">
+  <button class="accordion-toggle">Available Resources</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ul>
+        <li><a href="Learner_Guide.html"><strong>Learner's Guide</strong></a> - A comprehensive guide to sculling concepts, techniques, and progression</li>
+        <li><a href="QA_Companion.html"><strong>Q&A Companion</strong></a> - Answers to frequently asked questions about sculling, equipment, and safety</li>
+        <li><a href="Program_Schedule.html"><strong>Program Schedule</strong></a> - Overview of our structured 4-session format</li>
+        <li><a href="Textbook.html"><strong>Textbook</strong></a> - Complete textbook with all essential rowing knowledge in an easy-to-navigate accordion format</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-Visit the [**Technical Resources**](technical/index.md) section for guides including:
+<div class="accordion-section">
+  <button class="accordion-toggle">Technical Resources</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p>Visit the <a href="technical/index.html"><strong>Technical Resources</strong></a> section for guides including:</p>
+      
+      <ul>
+        <li><a href="technical/Technical_Frameworks.html">Technical Frameworks</a> - Easy-to-understand explanation of rowing technique</li>
+        <li><a href="technical/Common_Rowing_Fixes.html">Common Rowing Fixes</a> - Simple solutions to the most common beginner issues</li>
+        <li><a href="technical/Rowing_Terminology.html">Rowing Terminology</a> - Glossary of rowing terms you'll need to know</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-- [Technical Frameworks](technical/Technical_Frameworks.md) - Easy-to-understand explanation of rowing technique
-- [Common Rowing Fixes](technical/Common_Rowing_Fixes.md) - Simple solutions to the most common beginner issues
-- [Rowing Terminology](technical/Rowing_Terminology.md) - Glossary of rowing terms you'll need to know
+<div class="accordion-section">
+  <button class="accordion-toggle">Safety Resources</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p>Visit the <a href="safety/index.html"><strong>Safety Resources</strong></a> section for guides including:</p>
+      
+      <ul>
+        <li><a href="safety/Self_Rescue_Guide.html">Self-Rescue Guide</a> - What to do if you capsize, including the flip test procedure</li>
+        <li><a href="safety/River_Traffic_Guide.html">River Traffic Guide</a> - Simple navigation rules to share the waterway safely</li>
+        <li><a href="safety/Weather_Guidelines.html">Weather Guidelines</a> - Understanding conditions that affect rowing safety</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-### Safety Resources
+<div class="accordion-section">
+  <button class="accordion-toggle">Key Learning Areas</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <p>The Learner's Guide covers comprehensive information to support your sculling journey. Here are the major topics you'll explore:</p>
 
-Visit the [**Safety Resources**](safety/index.md) section for guides including:
+      <h3>Foundational Skills</h3>
+      <ul>
+        <li><strong>Basic Technique</strong> - Learn the fundamentals of the sculling stroke</li>
+        <li><strong>Equipment Familiarity</strong> - Understand boat parts and proper handling</li>
+        <li><strong>Boat Control</strong> - Develop balance and steering capabilities</li>
+      </ul>
 
-- [Self-Rescue Guide](safety/Self_Rescue_Guide.md) - What to do if you capsize, including the flip test procedure
-- [River Traffic Guide](safety/River_Traffic_Guide.md) - Simple navigation rules to share the waterway safely
-- [Weather Guidelines](safety/Weather_Guidelines.md) - Understanding conditions that affect rowing safety
+      <h3>Safety Knowledge</h3>
+      <ul>
+        <li><strong>Flip Test Preparation</strong> - Learn capsize recovery techniques</li>
+        <li><strong>Navigation Rules</strong> - Understand waterway traffic patterns</li>
+        <li><strong>Weather Awareness</strong> - Recognize safe rowing conditions</li>
+      </ul>
 
-## Key Learning Areas
+      <h3>Technical Development</h3>
+      <ul>
+        <li><strong>Stroke Sequence</strong> - Master the precise timing of the rowing stroke</li>
+        <li><strong>Blade Control</strong> - Learn proper feathering and squaring techniques</li>
+        <li><strong>Body Positioning</strong> - Optimize your form for efficiency and safety</li>
+      </ul>
 
-The Learner's Guide covers comprehensive information to support your sculling journey. Here are the major topics you'll explore:
+      <h3>Program Progression</h3>
+      <ul>
+        <li><strong>Skill Milestones</strong> - Track your progress through defined achievements</li>
+        <li><strong>Next Steps</strong> - Discover pathways to continue after program completion</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-### Foundational Skills
-- **Basic Technique** - Learn the fundamentals of the sculling stroke
-- **Equipment Familiarity** - Understand boat parts and proper handling
-- **Boat Control** - Develop balance and steering capabilities
+<div class="accordion-section">
+  <button class="accordion-toggle">How to Use These Resources</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ol>
+        <li>Review the Learner's Guide before your first session to familiarize yourself with basic concepts</li>
+        <li>Refer to the Q&A Companion when you have specific questions</li>
+        <li>Use the detailed reference materials for specific topics like hand care or self-rescue procedures</li>
+        <li>Revisit these materials between sessions to reinforce what you've learned</li>
+        <li>Reference the Post Program Pathways document as you near completion to plan your next steps</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-### Safety Knowledge
-- **Flip Test Preparation** - Learn capsize recovery techniques
-- **Navigation Rules** - Understand waterway traffic patterns
-- **Weather Awareness** - Recognize safe rowing conditions
+<div class="accordion-section">
+  <button class="accordion-toggle">Additional Resources</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ul>
+        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care for Rowers</strong></a> - Information on preventing and treating blisters</li>
+        <li><a href="{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html"><strong>Boathouse Rules</strong></a> - Guidelines for proper behavior and equipment handling</li>
+        <li><a href="{{ site.baseurl }}/src/AARC_Safety_Rules.pdf"><strong>AARC Safety Rules</strong></a> - The official safety rules for all AARC programs</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-### Technical Development
-- **Stroke Sequence** - Master the precise timing of the rowing stroke
-- **Blade Control** - Learn proper feathering and squaring techniques
-- **Body Positioning** - Optimize your form for efficiency and safety
-
-### Program Progression
-- **Skill Milestones** - Track your progress through defined achievements
-- **Next Steps** - Discover pathways to continue after program completion
-
-## How to Use These Resources
-
-1. Review the Learner's Guide before your first session to familiarize yourself with basic concepts
-2. Refer to the Q&A Companion when you have specific questions
-3. Use the detailed reference materials for specific topics like hand care or self-rescue procedures
-4. Revisit these materials between sessions to reinforce what you've learned
-5. Reference the Post Program Pathways document as you near completion to plan your next steps
-
-## Additional Resources
-
-- [**Hand Care for Rowers**](/src/Rowers_Hand_Blister_Treatment.md) - Information on preventing and treating blisters
-- [**Boathouse Rules**](/src/Boathouse_Rules_and_Equipment_Care.md) - Guidelines for proper behavior and equipment handling
-- [**AARC Safety Rules**](/src/AARC_Safety_Rules.pdf) - The official safety rules for all AARC programs
-
-[← Back to Main Page](../../index.md)
+[← Back to Main Page]({{ site.baseurl }}/index.html)

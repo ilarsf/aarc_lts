@@ -152,4 +152,28 @@ search_exclude: true
   .resource-links ul {
     margin-bottom: 0;
   }
+  
+  /* Improve button styling for better readability */
+  .cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--theme-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .cta-button:hover {
+    background-color: #004c99;
+    text-decoration: none;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
 </style>

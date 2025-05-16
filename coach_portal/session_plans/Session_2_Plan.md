@@ -10,6 +10,7 @@ search_exclude: true
   <h4>Session Overview</h4>
   <p>This second session transitions participants from ergometer to on-water rowing, focusing on applying the stroke sequence they learned in Session 1 to the boat environment. The session emphasizes proper recovery sequence and basic boat control.</p>
   <div class="text-center mt-3">
+    <a href="{{ site.baseurl }}/coach_portal/session_plans/" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
     <a href="javascript:window.print()" class="btn">Print This Plan</a>
   </div>
 </div>

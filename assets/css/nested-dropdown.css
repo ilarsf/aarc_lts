@@ -1,0 +1,55 @@
+/* Nested dropdown menu styles */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 4px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Accordion in dropdown styles */
+.dropdown-accordion {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-accordion-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.dropdown-accordion-toggle:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0;
+}
+
+.dropdown-accordion-content.active {
+    max-height: 500px;
+}
+
+.dropdown-accordion-content li a {
+    padding-left: 24px !important;
+    font-size: 0.95em;
+}
