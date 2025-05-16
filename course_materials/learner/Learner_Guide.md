@@ -294,9 +294,9 @@
       </li>
       <li><strong>Communication and Emergency Preparedness:</strong>
         <ul>
-          <li>Know the universal distress signal (raising and lowering both arms repeatedly)</li>
+          <li>Know the sculler's distress signal (raising and lowering one arm repeatedly while using the other arm to maintain stability with your oars)</li>
           <li>Understand whistle/megaphone signals from coaches</li>
-          <li>Always sign out boats and record your expected return time</li>
+          <li>Always sign out boats and record your return time</li>
           <li>Know the location of first aid equipment</li>
         </ul>
       </li>

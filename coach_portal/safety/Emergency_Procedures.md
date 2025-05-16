@@ -51,7 +51,7 @@ search_exclude: true
    - Continuous blasts = Urgent emergency/immediate danger
 
 3. **Visual Signals:**
-   - Waving both arms overhead repeatedly = Universal distress signal
+   - Distress signal for scullers: Waving one arm overhead repeatedly (modified from universal signal to allow scullers to maintain stability with other arm on oars)
    - Single arm raised vertically = Need assistance
    - Paddle/oar raised and waved = Emergency situation
 
@@ -74,14 +74,14 @@ search_exclude: true
           <td>For all medical emergencies, fires, police</td>
         </tr>
         <tr>
-          <td>Coast Guard</td>
-          <td>Local: [CLUB TO INSERT]</td>
-          <td>For navigable waterways</td>
+          <td>DNR Conservation Officers</td>
+          <td>RAP Hotline: 1-800-292-7800</td>
+          <td>For water-related emergencies on Michigan inland waters</td>
         </tr>
         <tr>
-          <td>Marine Police</td>
+          <td>Washtenaw County Sheriff's Marine Division</td>
           <td>Local: [CLUB TO INSERT]</td>
-          <td>For water-related emergencies</td>
+          <td>For water-related emergencies on the Huron River</td>
         </tr>
         <tr>
           <td>Boathouse Manager</td>

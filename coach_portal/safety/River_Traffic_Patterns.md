@@ -154,9 +154,9 @@ Bridges present specific navigation challenges that require clear protocols:
 
 ## Additional Resources
 
-- [US Coast Guard Navigation Rules (PDF)](#) - Complete navigation regulations for all watercraft
-- [Local Waterway Map](#) - Detailed map of local waterway with marked hazards and patterns
-- [Traffic Pattern Video](#) - Instructional video demonstrating proper navigation
+- [Michigan Boating Laws (Website)](https://www.boat-ed.com/michigan/handbook/book.html) - Applicable boating regulations for inland waterways
+- [Local Waterway Map](#) - Detailed map of the Huron River with marked hazards and patterns
+- [Traffic Pattern Video](#) - Instructional video demonstrating proper navigation on the Huron River
 
 ## Local River Traffic Pattern
 

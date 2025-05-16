@@ -23,7 +23,7 @@ search_exclude: true
     <ul>
       <li><strong>Duration</strong>: 4 sessions (3 hours each)</li>
       <li><strong>Class Size</strong>: Maximum 8-12 participants</li>
-      <li><strong>Instructor Ratio</strong>: 1:4 (coach to student)</li>
+      <li><strong>Instructor Ratio</strong>: 1:3 (coach to student) for on-water activities, 1:6 for land instruction</li>
     </ul>
 
     <h2 id="learning-objectives">Core Learning Objectives</h2>

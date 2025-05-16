@@ -57,7 +57,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 
 <div class="video-item">
   <p><strong>USRowing Safety Video</strong> – <strong>USRowing</strong> – <strong>13:30</strong></p>
-  <p><em>Overview:</em> A comprehensive safety briefing produced by USRowing with U.S. Coast Guard input. This video covers essential on-water safety practices: checking equipment before rowing, understanding traffic patterns on the river, how to monitor weather and water conditions, and the importance of wearing a bow light and bowball. It uses real scenarios to highlight common hazards and how to avoid accidents, making sure you know how to stay safe and aware whenever you're out sculling.</p>
+  <p><em>Overview:</em> A comprehensive safety briefing produced by USRowing. This video covers essential on-water safety practices: checking equipment before rowing, understanding traffic patterns on the river, how to monitor weather and water conditions, and the importance of proper lighting and safety equipment. It uses real scenarios to highlight common hazards and how to avoid accidents, making sure you know how to stay safe and aware whenever you're out sculling on waterways like the Huron River.</p>
 </div>
 
 ### 2.2 Capsize Drill & Recovery

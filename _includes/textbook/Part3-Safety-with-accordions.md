@@ -99,7 +99,7 @@ Clear communication on the water is essential.
     * "Way Enough" (or "Weigh Enough"): Stop rowing.
     * "Hold Water": Stop the boat quickly by squaring blades in the water.
     * "Let it Run": Stop rowing and glide.
-* **Distress Signal:** The universal signal for distress on the water is repeatedly raising and lowering both arms overhead.
+* **Distress Signal:** For scullers, the distress signal is repeatedly raising and lowering one arm overhead while maintaining stability with the other arm on your oars. (This modification of the universal distress signal accounts for the need to hold onto oars to maintain stability.)
 * **Verbal Communication:** Keep chatter minimal while rowing to ensure commands can be heard.
 
 💡 **Tip:** Always prioritize safety. It is the responsibility of every person on the water to look out for themselves and others. If you feel unsafe for any reason, communicate this to your coach immediately.

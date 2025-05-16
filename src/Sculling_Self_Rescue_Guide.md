@@ -253,7 +253,7 @@ A few minutes spent checking before heading out can prevent significant problems
   <div>
     <h4>Equipment Checks</h4>
     <ul>
-      <li>Bow ball secure (minimum 4cm diameter)</li>
+      <li>Bow ball secure (minimum 1.5 inches / 4cm diameter)</li>
       <li>Hull integrity (no damage)</li>
       <li>Riggers and hardware tight</li>
       <li>Foot stretchers properly adjusted</li>

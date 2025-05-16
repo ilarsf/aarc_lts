@@ -62,7 +62,7 @@ Our program uses a weekend intensive format, with four 3-hour sessions held over
 
 ### What to Bring (Essential!)
 
-  * **Water Bottle:** LARGE (≥1 Liter / 32 oz). Hydration is critical.
+  * **Water Bottle:** LARGE (32 oz / ≥1 Liter). Hydration is critical.
   * **Sun Protection:** Sunscreen (water-resistant), hat with a brim, sunglasses. Water reflects sunlight strongly.
   * **Towel & Complete Change of Clothes:** For after the flip test in Session 1.
   * **Required Forms:** Ensure your AARC and USRowing waivers are complete.

@@ -53,7 +53,7 @@ To make the most of your second session:
 ## What to Bring
 
 The same items as for Session 1:
-* Water bottle (≥1 liter)
+* Water bottle (32 oz / ≥1 liter)
 * Athletic clothing (non-baggy)
 * **Bright Colors:** Wear bright, high-visibility clothing (neon yellow, orange, red) for safety on the water
 * Sun protection
