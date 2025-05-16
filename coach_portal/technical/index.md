@@ -15,7 +15,7 @@ search_exclude: true
   <div class="resource-card">
     <h3>Key Drills Repertoire</h3>
     <p>Comprehensive collection of drills organized by skill level and learning objective. Each drill includes clear instructions and common errors to watch for.</p>
-    <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html" class="cta-button">View Drills</a>
+    <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.md" class="cta-button">View Drills</a>
   </div>
   
   <div class="resource-card">

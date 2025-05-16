@@ -28,13 +28,13 @@ This guide provides comprehensive protocols for evaluating weather and water con
     <tbody>
       <tr>
         <td><strong>Wind Speed</strong></td>
-        <td class="safe"><10 mph</td>
+        <td class="safe">&lt;10 mph</td>
         <td class="caution">10-15 mph</td>
         <td class="danger">>15 mph</td>
       </tr>
       <tr>
         <td><strong>Wind Gusts</strong></td>
-        <td class="safe"><12 mph</td>
+        <td class="safe">&lt;12 mph</td>
         <td class="caution">12-17 mph</td>
         <td class="danger">>17 mph</td>
       </tr>
@@ -48,7 +48,7 @@ This guide provides comprehensive protocols for evaluating weather and water con
         <td><strong>Visibility</strong></td>
         <td class="safe">>500 meters</td>
         <td class="caution">100-500 meters</td>
-        <td class="danger"><100 meters</td>
+        <td class="danger">&lt;100 meters</td>
       </tr>
       <tr>
         <td><strong>Lightning</strong></td>
@@ -66,19 +66,19 @@ This guide provides comprehensive protocols for evaluating weather and water con
         <td><strong>Air Temperature</strong></td>
         <td class="safe">>50°F</td>
         <td class="caution">40-50°F</td>
-        <td class="danger"><40°F</td>
+        <td class="danger">&lt;40°F</td>
       </tr>
       <tr>
         <td><strong>Water Temperature</strong></td>
         <td class="safe">>60°F</td>
         <td class="caution">50-60°F</td>
-        <td class="danger"><50°F</td>
+        <td class="danger">&lt;50°F</td>
       </tr>
       <tr>
         <td><strong>Combined (Air+Water)</strong></td>
         <td class="safe">>120°F</td>
         <td class="caution">100-120°F</td>
-        <td class="danger"><100°F</td>
+        <td class="danger">&lt;100°F</td>
       </tr>
       <tr>
         <td><strong>Current/Flow</strong></td>

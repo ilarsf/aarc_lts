@@ -107,11 +107,24 @@ search_exclude: true
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
   
   .resource-card h3 {
     margin-top: 0;
     color: var(--theme-color);
+  }
+  
+  .resource-card .cta-button {
+    margin-top: 1rem;
+    display: inline-block;
+    min-width: 180px;
   }
   
   .coach-content {

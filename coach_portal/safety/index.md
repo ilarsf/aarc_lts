@@ -42,7 +42,7 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
     </div>
     <div class="card-content">
       <p>Know the procedures for capsize rescue, medical emergencies, and severe weather events.</p>
-      <a href="Emergency_Procedures.html" class="cta-button">View Procedures</a>
+      <a href="Emergency_Procedures.md" class="cta-button">View Procedures</a>
     </div>
   </div>
   
@@ -52,7 +52,7 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
     </div>
     <div class="card-content">
       <p>Understand and teach proper river traffic patterns, bridge navigation, and collision avoidance.</p>
-      <a href="River_Traffic_Patterns.html" class="cta-button">View Traffic Rules</a>
+      <a href="River_Traffic_Patterns.md" class="cta-button">View Traffic Rules</a>
     </div>
   </div>
   
@@ -62,7 +62,7 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
     </div>
     <div class="card-content">
       <p>Learn to evaluate weather conditions and make appropriate go/no-go decisions for rowing sessions.</p>
-      <a href="Weather_Assessment_Guide.html" class="cta-button">View Weather Guide</a>
+      <a href="Weather_Assessment_Guide.md" class="cta-button">View Weather Guide</a>
     </div>
   </div>
 </div>

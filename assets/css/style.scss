@@ -747,12 +747,17 @@ a {
   letter-spacing: 0.5px;
   margin: 1rem 0;
   text-align: center;
-  width: 100%;
+  width: auto;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background-color: darken($aarc-blue, 10%);
     text-decoration: none;
     color: $aarc-white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
