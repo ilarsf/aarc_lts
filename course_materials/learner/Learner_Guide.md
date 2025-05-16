@@ -8,6 +8,7 @@
     <a class="tab-link" data-tab="technique-tab">Technique</a>
     <a class="tab-link" data-tab="safety-tab">Safety</a>
     <a class="tab-link" data-tab="reference-tab">Reference</a>
+    <a class="tab-link" data-tab="quizzes-tab">Quizzes</a>
   </div>
   
   <div id="welcome-tab" class="tab-content">
@@ -31,6 +32,16 @@
       <li><strong>PFD</strong>: Personal flotation device, required safety equipment</li>
       <li><strong>Clothing</strong>: Athletic, moisture-wicking clothes that allow movement</li>
     </ul>
+    
+    <div class="info-box tip">
+      <h4>Prepare for Your First Session</h4>
+      <p>To help you feel ready for your first day on the water, we recommend completing:</p>
+      <ul>
+        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> - Familiarize yourself with essential safety practices</li>
+        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Learn about equipment care and protocols</li>
+      </ul>
+      <p>These short quizzes will give you a head start on important concepts!</p>
+    </div>
   </div>
   
   <div id="journey-tab" class="tab-content">
@@ -67,6 +78,18 @@
       <li>Demonstrate proper safety awareness</li>
       <li>Show proficient technique at various speeds</li>
     </ul>
+    
+    <div class="section-review">
+      <h4>Track Your Progress</h4>
+      <p>Reinforce your learning after each session:</p>
+      <ul>
+        <li>After Session 1: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1">Take Session 1 Quiz</a></li>
+        <li>After Session 2: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2">Take Session 2 Quiz</a></li>
+        <li>After Session 3: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3">Take Session 3 Quiz</a></li>
+        <li>After Session 4: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4">Take Session 4 Quiz</a></li>
+      </ul>
+      <p>These quizzes help reinforce what you've learned and identify areas for additional practice.</p>
+    </div>
   </div>
   
   <div id="technique-tab" class="tab-content">
@@ -108,6 +131,18 @@
       <li>Begin bending knees to slide forward</li>
       <li>Key point: Arms → Back → Legs (reverse of drive)</li>
     </ul>
+    
+    <div class="knowledge-check">
+      <h4>Quick Knowledge Check</h4>
+      <p class="question">What is the correct sequence of movement during the recovery phase?</p>
+      <div class="knowledge-check-toggle">
+        <button class="toggle-answer">Show Answer</button>
+        <div class="answer hidden">
+          <p><strong>Answer:</strong> The correct sequence is: Arms away first, then body pivot forward, then legs slide forward (Arms → Back → Legs).</p>
+          <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="mini-link">Try the full Session 1 Quiz</a></p>
+        </div>
+      </div>
+    </div>
 
     <h2 id="essential-sculling-techniques">Essential Sculling Techniques</h2>
 
@@ -125,6 +160,18 @@
       <li><strong>Feathered</strong>: Blades parallel to water (for reduced air resistance)</li>
       <li>Practice transitioning between positions with control</li>
     </ul>
+    
+    <div class="mini-quiz">
+      <h4>Quick Check</h4>
+      <div class="mini-quiz-question">
+        <p>What is the proper hand position for feathering the blade?</p>
+        <button class="mini-quiz-toggle">Show Answer</button>
+        <div class="mini-quiz-answer hidden">
+          <p>Roll your knuckles down toward the tops of your thighs using your fingers (not your wrists) to rotate the handles.</p>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="mini-link">More questions →</a>
+        </div>
+      </div>
+    </div>
 
     <h3>Steering Basics</h3>
     <ul>
@@ -151,6 +198,18 @@
       <li><strong>Enhanced visibility:</strong> Consider clothing with reflective elements for dawn/dusk rowing</li>
       <li><strong>Remember:</strong> Being visible to other boats and watercraft could save your life</li>
     </ul>
+    
+    <div class="mini-quiz">
+      <h4>Quick Check</h4>
+      <div class="mini-quiz-question">
+        <p>Which color combination for high-visibility clothing is most effective for being seen on the water?</p>
+        <button class="mini-quiz-toggle">Show Answer</button>
+        <div class="mini-quiz-answer hidden">
+          <p>Fluorescent yellow, orange, or green provide the highest visibility on water, especially in low light conditions.</p>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">More safety questions →</a>
+        </div>
+      </div>
+    </div>
     
     <h4>Prevent Hand Injuries</h4>
     <ul>
@@ -243,6 +302,18 @@
         </ul>
       </li>
     </ol>
+    
+    <div class="knowledge-check">
+      <h4>Quick Knowledge Check</h4>
+      <p class="question">What should you do if you capsize and your boat is upside down?</p>
+      <div class="knowledge-check-toggle">
+        <button class="toggle-answer">Show Answer</button>
+        <div class="answer hidden">
+          <p><strong>Answer:</strong> Approach the overturned scull from the side, reach across the hull to the far side gunwale, and slowly pull the boat towards you to right it, watching out for the oars as it flips.</p>
+          <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">Try the full Safety Quiz</a></p>
+        </div>
+      </div>
+    </div>
 
     <h4>Video Demonstrations</h4>
     <p>Watch these instructional videos showing the proper flip test procedure:</p>
@@ -403,6 +474,16 @@
       <li><strong>Oarlocks:</strong> Gates close properly and secure the oars</li>
     </ul>
     <p>If you find any issues with equipment, report them immediately to your coach and note them in the boat log.</p>
+    
+    <div class="section-review">
+      <h4>Review Your Safety Knowledge</h4>
+      <p>Ready to test what you've learned about rowing safety?</p>
+      <ul>
+        <li>Take the <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> (5-minute assessment)</li>
+        <li>Practice the self-rescue sequence mentally</li>
+        <li>Review key safety protocols before each row</li>
+      </ul>
+    </div>
   </div>
   
   <div id="reference-tab" class="tab-content">
@@ -422,6 +503,18 @@
           <li>Once dried, river residue becomes much more difficult to remove</li>
         </ul>
       </li>
+      
+      <div class="mini-quiz">
+        <h4>Quick Check</h4>
+        <div class="mini-quiz-question">
+          <p>Why is it important to disinfect oar handles after each use?</p>
+          <button class="mini-quiz-toggle">Show Answer</button>
+          <div class="mini-quiz-answer hidden">
+            <p>To maintain hygiene and prevent the spread of germs, especially given the likelihood of blisters and potential bleeding.</p>
+            <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="mini-link">More boathouse questions →</a>
+          </div>
+        </div>
+      </div>
       <li><strong>Proper storage:</strong> Return boats to their designated racks following the established system
         <ul>
           <li>Note how and where your boat is stored and return it to the same place and position</li>
@@ -618,5 +711,137 @@
       <li><strong>Buoy:</strong> Floating marker used to indicate traffic patterns or hazards</li>
       <li><strong>Regatta:</strong> A rowing race event</li>
     </ul>
+  </div>
+  
+  <div id="quizzes-tab" class="tab-content">
+    <h2>Knowledge Check Quizzes</h2>
+    <p>Test your understanding of the Learn to Scull program material with these quick knowledge assessments. Each quiz takes about 5 minutes to complete and helps reinforce key concepts from your sessions.</p>
+    
+    <h3>Your Quiz Progress</h3>
+    <div class="quiz-progress">
+      <div class="progress-grid">
+        <div class="progress-item" data-quiz-id="safety">
+          <div class="progress-icon">🦺</div>
+          <div class="progress-label">Safety</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+        <div class="progress-item" data-quiz-id="bh">
+          <div class="progress-icon">🏠</div>
+          <div class="progress-label">Boathouse</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+        <div class="progress-item" data-quiz-id="s1">
+          <div class="progress-icon">1️⃣</div>
+          <div class="progress-label">Session 1</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+        <div class="progress-item" data-quiz-id="s2">
+          <div class="progress-icon">2️⃣</div>
+          <div class="progress-label">Session 2</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+        <div class="progress-item" data-quiz-id="s3">
+          <div class="progress-icon">3️⃣</div>
+          <div class="progress-label">Session 3</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+        <div class="progress-item" data-quiz-id="s4">
+          <div class="progress-icon">4️⃣</div>
+          <div class="progress-label">Session 4</div>
+          <div class="progress-status not-started">Not started</div>
+        </div>
+      </div>
+    </div>
+    
+    <h3>Quiz Dashboard</h3>
+    <div id="quizzes-dashboard" class="quiz-dashboard">
+      <!-- Pre-Course Preparation Quizzes -->
+      <div class="quiz-card" data-quiz-id="safety">
+        <div class="quiz-card-header">
+          <h4>Rowing Safety Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge of rowing safety, including water safety rules, boat lighting, visibility requirements, and AARC safety protocols.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+      
+      <div class="quiz-card" data-quiz-id="bh">
+        <div class="quiz-card-header">
+          <h4>Boathouse Rules Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge of boathouse protocols, equipment handling, and care procedures.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+      
+      <!-- Session Quizzes -->
+      <div class="quiz-card" data-quiz-id="s1">
+        <div class="quiz-card-header">
+          <h4>Session 1 Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+      
+      <div class="quiz-card" data-quiz-id="s2">
+        <div class="quiz-card-header">
+          <h4>Session 2 Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge on transferring erg skills, safe launching, basic boat control, and stroke sequencing.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+      
+      <div class="quiz-card" data-quiz-id="s3">
+        <div class="quiz-card-header">
+          <h4>Session 3 Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge on developing leg drive, power application, and basic navigation awareness.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+      
+      <div class="quiz-card" data-quiz-id="s4">
+        <div class="quiz-card-header">
+          <h4>Session 4 Quiz</h4>
+        </div>
+        <div class="quiz-card-body">
+          <p>Test your knowledge on skill integration, safe river navigation, group assessment, and independent sculling.</p>
+          <div class="quiz-status not-started">○ Not Started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4" class="quiz-link">Take Quiz</a>
+        </div>
+      </div>
+    </div>
+    
+    <h3>Why Take These Quizzes?</h3>
+    <ul>
+      <li><strong>Reinforce Learning:</strong> Quizzes help solidify the concepts and techniques you learn during your sessions</li>
+      <li><strong>Identify Knowledge Gaps:</strong> Discover areas where you might need additional review or practice</li>
+      <li><strong>Track Progress:</strong> See your improvement as you advance through the program</li>
+      <li><strong>Build Confidence:</strong> Confirm your understanding of important safety and technique principles</li>
+    </ul>
+    
+    <p>Each quiz provides immediate feedback and explanations for all questions, making them valuable learning tools even if you don't answer every question correctly the first time.</p>
+    
+    <div class="info-box tip">
+      <h4>Quiz Tips</h4>
+      <ul>
+        <li>Take the <strong>Rowing Safety Quiz</strong> and <strong>Boathouse Rules Quiz</strong> before your first session</li>
+        <li>Complete each session quiz shortly after attending the corresponding session</li>
+        <li>Review any incorrect answers to strengthen your understanding</li>
+        <li>Retake quizzes periodically to refresh your knowledge</li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -89,11 +89,6 @@ This comprehensive glossary of rowing terms will help you navigate the language 
 
 ---
 
-## Visual Reference
-
-![Rowing Stroke Sequence](/assets/images/rowing_stroke_sequence.png)
-*Note: This image may not be available. It represents the four phases of the rowing stroke: catch, drive, finish, and recovery.*
-
 ## Related Resources
 
 - [Technical Frameworks](Technical_Frameworks.md) - For detailed explanations of rowing technique

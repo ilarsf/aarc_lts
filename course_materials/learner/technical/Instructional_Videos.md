@@ -312,7 +312,3 @@ This curated collection of high-quality instructional videos supports the Learn 
     <li>Return to these videos as a reference when working on specific technical elements.</li>
   </ul>
 </div>
-
-<div class="print-instructions mb-3">
-  <p><a href="#" onclick="window.print(); return false;" class="print-now-btn">Print This Guide</a></p>
-</div>

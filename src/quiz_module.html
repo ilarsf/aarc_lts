@@ -388,11 +388,11 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 questionsUrl: 'boathouse_questions.csv',
                 quizId: 'bh'
             },
-            // Safety Quiz
+            // Safety Quiz (Consolidated)
             'safety': {
-                title: "Low-Light & Nighttime Safety Quiz",
-                description: "Test your knowledge on rowing safety in low-light conditions, including proper boat lighting and high-visibility clothing requirements.",
-                questionsUrl: 'safety_questions.csv',
+                title: "Rowing Safety Quiz",
+                description: "Test your knowledge on rowing safety, including water safety rules, proper boat lighting, high-visibility clothing requirements, and AARC safety protocols.",
+                questionsUrl: 'consolidated_safety_questions.csv',
                 quizId: 'safety'
             }
         };
@@ -472,6 +472,19 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             currentQuestionIndex = 0;
             selectedAnswers = [];
             quizComplete = false;
+
+            // Mark as started in localStorage
+            if (quizId) {
+                try {
+                    const existingData = localStorage.getItem('aarc_quiz_' + quizId);
+                    const status = existingData ? JSON.parse(existingData) : {};
+                    status.started = true;
+                    status.lastAttempt = new Date().toISOString();
+                    localStorage.setItem('aarc_quiz_' + quizId, JSON.stringify(status));
+                } catch (e) {
+                    console.error('Error updating quiz started status:', e);
+                }
+            }
 
             // Select random questions for this quiz attempt
             selectRandomQuestions();
@@ -737,6 +750,9 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 ? Math.round((correctAnswers / currentQuestions.length) * 100)
                 : 0;
 
+            // Save quiz completion status to localStorage
+            saveQuizStatus(finalPercentageScore);
+
             // Display final results
             finalScore.textContent = finalPercentageScore;
             timeTaken.textContent = formatTime(seconds);
@@ -825,6 +841,34 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
         /** Initialize session scores */
 
+        /** Save quiz completion status to localStorage */
+        function saveQuizStatus(score) {
+            if (!quizId) return;
+
+            try {
+                const status = {
+                    started: true,
+                    completed: score >= 60, // Consider it completed if they scored at least 60%
+                    lastScore: score,
+                    lastAttempt: new Date().toISOString()
+                };
+
+                localStorage.setItem('aarc_quiz_' + quizId, JSON.stringify(status));
+
+                // Try to notify parent page if any that quiz status changed
+                try {
+                    window.parent.postMessage({
+                        type: 'quizCompleted',
+                        quizId: quizId,
+                        status: status
+                    }, '*');
+                } catch (e) {
+                    console.log('Could not notify parent window of quiz completion');
+                }
+            } catch (e) {
+                console.error('Error saving quiz status:', e);
+            }
+        }
 
         function initializeQuiz() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -844,6 +888,8 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                     startHeadingElement.textContent = `Ready to test your Boathouse knowledge?`;
                 } else if (quizParam === 'safety') {
                     startHeadingElement.textContent = `Ready to test your Safety knowledge?`;
+                } else if (quizParam === 'lts-safety') {
+                    startHeadingElement.textContent = `Ready to test your Learn-to-Scull Safety Rules knowledge?`;
                 } else if (!isNaN(parseInt(quizParam))) {
                     startHeadingElement.textContent = `Ready to test your Session ${quizParam} knowledge?`;
                 } else {

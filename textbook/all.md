@@ -8,33 +8,6 @@ title: "Complete Textbook - AARC Learn to Scull"
   <h1>AARC Learn to Scull - Complete Textbook</h1>
 </div>
 
-<div class="info-box tip print-instructions">
-  <h4>Creating a Professional PDF or Printed Textbook</h4>
-  <p>Your textbook will be formatted with:</p>
-  <ul>
-    <li>A professional <strong>cover page</strong></li>
-    <li>Automatic <strong>page numbering</strong></li>
-    <li>Each <strong>chapter starting on a new page</strong></li>
-    <li>Proper <strong>headers and footers</strong></li>
-  </ul>
-  <p>Follow these steps for best results:</p>
-  <ol>
-    <li>Use <strong>Chrome or Edge</strong> browser for most consistent results</li>
-    <li>Click the <strong>Print Button</strong> below (or press <strong>Ctrl+P</strong> / <strong>Cmd+P</strong>)</li>
-    <li>Select <strong>"Save as PDF"</strong> from the destination/printer options</li>
-    <li>In the print settings:
-      <ul>
-        <li>Enable <strong>"Background graphics"</strong> for diagrams/icons</li>
-        <li>Set <strong>Margins to "Default" or "Medium"</strong></li>
-        <li>Set <strong>Scale to "Default" or "100%"</strong></li>
-        <li>Set <strong>Paper size to "Letter"</strong></li>
-      </ul>
-    </li>
-    <li>Click <strong>"Save"</strong> or <strong>"Print"</strong> to generate the PDF</li>
-  </ol>
-  <p><a href="#" class="print-now-btn button-primary"><i class="fas fa-print"></i> Print Full Textbook Now</a></p>
-</div>
-
 <div class="textbook-full-toc">
   <h2>Table of Contents</h2>
   

@@ -79,9 +79,23 @@ search_exclude: true
 </div>
 
 <div class="info-box note mt-4">
-  
+  <h3>Need More Help?</h3>
+  <p>Reach out to your instructors via email</p>
+</div>
+
+<style>
   .cta-button {
     display: inline-block;
     margin-top: 1rem;
+    background-color: var(--theme-color);
+    color: white !important;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--theme-color-dark);
+    color: white !important;
+    text-decoration: none;
   }
 </style>

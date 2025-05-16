@@ -25,7 +25,6 @@ The textbook version offers several advantages:
   <ul>
     <li><strong>Online version:</strong> Navigate through the chapters using the links above.</li>
     <li><strong>Complete Version:</strong> <a href="{{ site.baseurl }}/textbook/all.html">View all chapters</a> on a single page (print-friendly).</li>
-    <li><strong>Print Textbook:</strong> <a href="{{ site.baseurl }}/textbook/all.html?print=true" class="index-print-btn button-primary"><i class="fas fa-print"></i> Print Full Textbook</a> <span class="note">(Opens print-friendly version)</span></li>
     </ul>
 </div>
 

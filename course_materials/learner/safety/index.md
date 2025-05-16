@@ -18,7 +18,8 @@ This section contains safety information that all Learn to Scull participants sh
 
 ## Safety Rules and Policies
 
-- [AARC Safety Rules (PDF)](/src/AARC_Safety_Rules.pdf) - The official safety rules for all AARC programs
+- [Learn-to-Scull Safety Rules](/src/Learn_to_Scull_Safety_Rules.html) - **Essential rules** for Learn-to-Scull participants (includes quiz)
+- [AARC Safety Rules (PDF)](/src/AARC_Safety_Rules.pdf) - The complete official safety rules for all AARC programs
 - [Boathouse Rules and Equipment Care](/src/Boathouse_Rules_and_Equipment_Care.md) - Guidelines for proper behavior and equipment handling at the boathouse
 
 ## Additional Resources

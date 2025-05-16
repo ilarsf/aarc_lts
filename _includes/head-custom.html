@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/buttons.css">
 <!-- Accordion Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/accordion.css">
+<!-- Quiz Integration Styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/quiz-integration.css">
 <!-- Custom Print JS -->
 <script src="{{ site.baseurl }}/assets/js/print.js"></script>
 <!-- Coach Authentication JS -->
@@ -15,6 +17,45 @@
 <script src="{{ site.baseurl }}/assets/js/search-exclusion.js"></script>
 <!-- Accordion JS -->
 <script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+<!-- Quiz Integration JS -->
+<script src="{{ site.baseurl }}/assets/js/quiz-integration.js"></script>
+
+<!-- Global CSS Variables -->
+<style>
+  :root {
+    --theme-color: #0073E6;
+    --theme-color-dark: #005BB5;
+    --aarc-blue: #0073E6;
+    --aarc-blue-hover: #005BB5;
+  }
+
+  /* Global button styles to ensure consistency */
+  .btn,
+  .button-primary,
+  .cta-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--theme-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn:hover,
+  .button-primary:hover,
+  .cta-button:hover {
+    background-color: var(--theme-color-dark);
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+</style>
 
 <style>
   /* Mobile-specific additional styles - commented out to avoid conflict with style.scss

@@ -131,10 +131,18 @@ Test your understanding of the material covered in the Learn to Scull program wi
   </div>
 </div>
 
-<div class="info-box note mt-4">
-  <h4>Rowing Visibility & Safety Quiz</h4>
-  <p>Test your knowledge on safety requirements for maintaining visibility on the water, including proper boat lighting, and high-visibility clothing (recommended at all times).</p>
-  <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="cta-button">Take Low-Light Safety Quiz</a></div>
+<div class="two-col-grid">
+  <div class="info-box warning">
+    <h4>Learn-to-Scull Safety Rules Quiz</h4>
+    <p>Test your knowledge on the key safety rules that apply specifically to Learn-to-Scull participants. These rules are essential for all LTS participants.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=lts-safety" class="cta-button">Take LTS Safety Quiz</a></div>
+  </div>
+  
+  <div class="info-box note">
+    <h4>Rowing Visibility & Safety Quiz</h4>
+    <p>Test your knowledge on safety requirements for maintaining visibility on the water, including proper boat lighting, and high-visibility clothing.</p>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="cta-button">Take Low-Light Safety Quiz</a></div>
+  </div>
 </div>
 
 <div class="info-box aarc">

@@ -24,6 +24,10 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
 
 [Flip Test Instructions]({{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html) - Detailed instructions for conducting safe and effective flip tests with novice rowers.
 
+## Program-Specific Safety Rules
+
+[LTS Safety Rules]({{ site.baseurl }}/src/Learn_to_Scull_Safety_Rules.html) - Key safety rules specifically for Learn-to-Scull participants, with an accompanying quiz to test their knowledge.
+
 ## Additional Resources
 
 - [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf)
