@@ -177,3 +177,10 @@ Learn how to recover from a capsize and re-enter the scull safely.
   <h4>Review the Full Guide</h4>
   <p>For more detailed information on the self-rescue process, see our comprehensive <a href="Sculling_Self_Rescue_Guide.html">Sculling Self-Rescue Guide</a>.</p>
 </div>
+
+## Safety Considerations
+
+<div class="info-box warning">
+  <h4>Physical Impact</h4>
+  <p>Be aware that flip tests and actual capsize recovery can result in bruising, particularly on the legs, hips, and sides of your torso. If you bruise easily, you may want to wear additional protective clothing during practice. Consider this when planning activities that would expose these areas (like beach vacations or photo sessions) soon after flip test sessions.</p>
+</div>

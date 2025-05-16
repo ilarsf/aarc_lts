@@ -62,6 +62,11 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
   <p>Always perform your first flip test under the supervision of a qualified coach and in a controlled environment. Wear appropriate clothing, and ensure the water is a reasonable temperature. Never practice capsizing alone.</p>
 </div>
 
+<div class="info-box note">
+  <h4>Physical Impact</h4>
+  <p>Both practice sessions and actual capsize recovery can result in bruising, particularly on the legs, hips, and sides of your torso. People who bruise easily may notice more significant marks. Consider this when planning activities where these areas will be visible (such as beach vacations or photo sessions) in the days following flip tests or accidental capsizes. Wearing compression garments or additional layers during practice may provide some protection.</p>
+</div>
+
 ## Self-Rescue Process
 
 ### Immediate Response
