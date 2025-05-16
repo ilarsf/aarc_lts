@@ -209,9 +209,8 @@ title: Quick Answers - AARC Learn to Scull Program
           <h3>How do I properly care for equipment?</h3>
           <p>Equipment care guidelines:</p>
           <ul>
-            <li>Always carry shells with at least two people</li>
             <li>Never step on the tracks or drag a shell</li>
-            <li>Rinse boats and oars after use</li>
+            <li>Clean boats and oars after use</li>
             <li>Report any damage to coaches immediately</li>
             <li>Follow proper storage procedures in the boathouse</li>
           </ul>

@@ -17,10 +17,6 @@ layout: default
       <div class="text-center mt-4">
         <a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-large">Learner’s Guide</a>
       </div>
-      <div class="text-center mt-4">
-        <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-large">View 2025 Program Schedule</a>
-      </div>
-
     </div>
     
     <div>
@@ -48,10 +44,11 @@ layout: default
     </div>
     
     <div class="info-box aarc text-center">
-      <h4>Textbook</h4>
-      <p>Access complete course materials</p>
-      <a href="{{ site.baseurl }}/textbook/" class="cta-button">View Textbook</a>
+      <h4>View 2025 Program Schedule</h4>
+      <p>Learn more about the Program Schedule</p>
+      <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-large">View 2025 Program Schedule</a>
     </div>
+
   </div>
 </section>
 
