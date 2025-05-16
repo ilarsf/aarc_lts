@@ -33,7 +33,7 @@ search_exclude: true
       <div class="resource-card">
         <h3>Coach Manual</h3>
         <p>Comprehensive guide for conducting the Learn to Scull program.</p>
-        <a href="{{ site.baseurl }}/coach_portal/manual/Coach_Manual.html" class="cta-button">View Manual</a>
+        <a href="{{ site.baseurl }}/coach_portal/manual/Coach_Manual.md" class="cta-button">View Manual</a>
       </div>
       
       <div class="resource-card">
@@ -57,7 +57,7 @@ search_exclude: true
       <div class="resource-card">
         <h3>Assessment Tools</h3>
         <p>Skills checklists and participant evaluation resources.</p>
-        <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html" class="cta-button">View Assessment Tools</a>
+        <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md" class="cta-button">View Assessment Tools</a>
       </div>
       
       <div class="resource-card">
@@ -69,45 +69,8 @@ search_exclude: true
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check for stored access token
-    const hasAccess = localStorage.getItem('aarc_coach_access') === 'granted';
-    if (hasAccess) {
-      showCoachContent();
-    }
-    
-    // Handle password submission
-    document.getElementById('submit-password').addEventListener('click', function() {
-      validatePassword();
-    });
-    
-    // Allow Enter key to submit
-    document.getElementById('coach-password').addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
-        validatePassword();
-      }
-    });
-    
-    function validatePassword() {
-      const password = document.getElementById('coach-password').value;
-      const correctPassword = 'Coach2025'; // Change this to your desired password
-      
-      if (password === correctPassword) {
-        // Store access token in localStorage (will persist until cleared)
-        localStorage.setItem('aarc_coach_access', 'granted');
-        showCoachContent();
-      } else {
-        document.getElementById('password-error').textContent = 'Incorrect password. Please try again.';
-      }
-    }
-    
-    function showCoachContent() {
-      document.getElementById('password-gate').style.display = 'none';
-      document.getElementById('coach-content').style.display = 'block';
-    }
-  });
-</script>
+<!-- Authentication is handled by the coach-auth.js script -->
+<!-- No inline JavaScript needed as all functionality is moved to the external file -->
 
 <style>
   .password-gate {
