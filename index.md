@@ -27,31 +27,6 @@ layout: default
   </div>
 </header>
 
-<section class="quick-links">
-  <h2>Quick Access</h2>
-  
-  <div class="three-col-grid">
-    <div class="info-box tip text-center">
-      <h4>Search</h4>
-      <p>Find specific information across all program resources</p>
-      <a href="{{ site.baseurl }}/search/" class="cta-button">Search</a>
-    </div>
-    
-    <div class="info-box note text-center">
-      <h4>Quick Answers</h4>
-      <p>Get organized answers to common questions</p>
-      <a href="{{ site.baseurl }}/quick-answers/" class="cta-button">Get Answers</a>
-    </div>
-    
-    <div class="info-box aarc text-center">
-      <h4>View 2025 Program Schedule</h4>
-      <p>Learn more about the Program Schedule</p>
-      <a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html" class="cta-large">View 2025 Program Schedule</a>
-    </div>
-
-  </div>
-</section>
-
 <section class="program-overview">
   <h2>Program Highlights</h2>
 
