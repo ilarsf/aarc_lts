@@ -204,4 +204,4 @@ Using these templates ensures participants receive timely information about sche
 
 ---
 
-This concludes the core coaching section. Part 5 contains reference materials.
+This concludes the core coaching section. The Coach Appendices contain additional reference materials.

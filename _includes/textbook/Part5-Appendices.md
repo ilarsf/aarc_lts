@@ -1,4 +1,4 @@
-# Part 5: Appendices
+# Part 4: Appendices
 
 These appendices provide supplementary information, including key terminology, official AARC policies, FAQs, and resources for your continued rowing journey.
 

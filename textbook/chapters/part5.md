@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Part 5: Appendices - AARC Learn to Scull Textbook"
+title: "Part 4: Appendices - AARC Learn to Scull Textbook"
 ---
 
 <div class="textbook-header">
   <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Textbook Home</a>
   <div class="textbook-navigation-compact">
-    <a href="{{ site.baseurl }}/textbook/chapters/part4.html" class="prev-chapter">« Part 4: For the Coach</a>
-    <span class="current-part">Part 5: Appendices</span>
+    <a href="{{ site.baseurl }}/textbook/chapters/part3.html" class="prev-chapter">« Part 3: Safety</a>
+    <span class="current-part">Part 4: Appendices</span>
     <span class="next-chapter"></span>
   </div>
 </div>

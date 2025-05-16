@@ -58,14 +58,7 @@ title: "Complete Textbook - AARC Learn to Scull"
         <li><a href="#chapter-7-capsize-recovery-the-flip-test--self-rescue">Chapter 7: Capsize Recovery</a></li>
       </ul>
     </li>
-    <li><a href="#part-4-for-the-coach">Part 4: For the Coach</a>
-      <ul>
-        <li><a href="#chapter-8-coaching-philosophy--approach">Chapter 8: Coaching Philosophy</a></li>
-        <li><a href="#chapter-9-session-plans--drills">Chapter 9: Session Plans & Drills</a></li>
-        <li><a href="#chapter-10-coach-operations">Chapter 10: Coach Operations</a></li>
-      </ul>
-    </li>
-    <li><a href="#part-5-appendices">Part 5: Appendices</a>
+    <li><a href="#part-4-appendices">Part 4: Appendices</a>
       <ul>
         <li><a href="#appendix-a-glossary-of-rowing-terms">Appendix A: Glossary of Rowing Terms</a></li>
         <li><a href="#appendix-b-aarc-policies">Appendix B: AARC Policies</a></li>
@@ -105,15 +98,9 @@ title: "Complete Textbook - AARC Learn to Scull"
 
 <hr class="section-divider">
 
-<h1 id="part-4-for-the-coach" class="part-heading">Part 4: For the Coach</h1>
+<h1 id="part-4-appendices" class="part-heading">Part 4: Appendices</h1>
 
-{% include textbook/Part4-ForTheCoach.md %}
-
-<hr class="section-divider">
-
-<h1 id="part-5-appendices" class="part-heading">Part 5: Appendices</h1>
-
-{% include textbook/Part5-Appendices.md %}
+{% include textbook/Part4-Appendices.md %}
 
 <div class="textbook-footer">
   <a href="{{ site.baseurl }}/textbook/" class="textbook-home-link">« Back to Textbook Home</a>

@@ -29,18 +29,16 @@ The textbook version offers several advantages:
     </ul>
 </div>
 
-## For Coaches and Learners
+## For Learners
 
-This textbook incorporates materials for both learners and coaches, organized into logical sections. While some content is specifically for coaches or learners, we encourage everyone to read the entire textbook to gain a comprehensive understanding of the program. The appendices now include FAQs and expanded resource links.
+This textbook is organized into logical sections for learners. We encourage everyone to read the entire textbook to gain a comprehensive understanding of the program. The appendices include FAQs and expanded resource links.
 
-<div class="two-col-grid">
-  <div>
-    <h3>For Learners</h3>
-    <p>Parts 1-3 and the Appendices are essential reading for all learners, covering everything from your first day on the water to safety protocols, rowing techniques, and common questions. <a href="chapters/part1.html">Start with Part 1 »</a></p>
-  </div>
+<div class="info-box">
+  <h3>Learning Journey</h3>
+  <p>Parts 1-3 and the Appendices are essential reading for all learners, covering everything from your first day on the water to safety protocols, rowing techniques, and common questions. <a href="chapters/part1.html">Start with Part 1 »</a></p>
+</div>
 
-  <div>
-    <h3>For Coaches</h3>
-    <p>Parts 1-5 are relevant for coaches, with Part 4 specifically focused on coaching methodologies, session plans, and program operations, now better integrated with online checklists and planning tools. <a href="chapters/part4.html">Go to Coach Materials »</a></p>
-  </div>
+<div class="info-box note">
+  <h3>Note for Coaches</h3>
+  <p>Coach-specific materials are now available in the <a href="{{ site.baseurl }}/coach_portal/textbook/">Coach Portal</a>. (Access requires coach login)</p>
 </div>

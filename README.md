@@ -89,9 +89,10 @@ The repository also includes comprehensive textbook materials, located in the `/
       - **Part 1: Getting Started**
       - **Part 2: For the Learner**
       - **Part 3: Safety**
-      - **Part 4: For the Coach**
-      - **Part 5: Appendices**
+      - **Part 4: Appendices**
 
+  - **Coach Content**: Coach-specific materials have been moved to the `/coach_portal/textbook/` directory, accessible via coach login.
+  
   - **Includes**: Shared content for the chapters is stored in the `_includes/textbook/` directory. This structure ensures compatibility with GitHub Pages and avoids include path issues.
 
 Deploying the site on GitHub Pages will now correctly build and render the textbook as part of the overall site.
