@@ -14,6 +14,12 @@ title: Additional Resources - AARC Learn to Scull Program
   <p>These materials supplement the primary content found in the <a href="{{ site.baseurl }}/textbook/">Textbook</a>, <a href="{{ site.baseurl }}/course_materials/learner/">Learner Resources</a>, and <a href="{{ site.baseurl }}/course_materials/coach/">Coach Resources</a> sections. Use them for additional learning, reference, or to deepen your understanding of specific rowing concepts.</p>
 </div>
 
+## Site Features and Guides
+- [Accordion Demo - Collapsible Content Sections]({{ site.baseurl }}/resources/accordion-demo.html) - See how to use accordion components for content-heavy pages
+- [Accordion Template]({{ site.baseurl }}/resources/accordion-template.html) - Template for converting existing content to accordions
+- [Textbook Chapter with Accordions]({{ site.baseurl }}/resources/accordion-textbook-example.html) - Example of a content-heavy page converted to use accordion sections
+- [Accordion Converter Script]({{ site.baseurl }}/resources/accordion-converter.js) - Helper script to automatically convert heading-based content to accordion format
+
 ## AARC Policies and Procedures
 
 ### Safety Guidelines

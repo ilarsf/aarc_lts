@@ -1,0 +1,34 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include accordion.html %}
+2. Structure your content using the pattern below:
+
+```
+<div class="accordion-controls">
+    <button id="expand-all">Expand All</button>
+    <button id="collapse-all">Collapse All</button>
+</div>
+
+<div class="accordion-section">
+    <button class="accordion-toggle">Section Title</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            Your content here...
+        </div>
+    </div>
+</div>
+
+<div class="accordion-section">
+    <button class="accordion-toggle">Another Section</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            More content here...
+        </div>
+    </div>
+</div>
+```
+
+To convert an existing markdown heading structure to accordion format:
+- Use level 2 headings (##) as accordion section titles
+- Place all content between headings inside the accordion-content-inner div
+{% endcomment %}

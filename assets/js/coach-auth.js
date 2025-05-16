@@ -39,9 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (isCoachPage) {
         const hasAccess = getStoredAccess();
-        const isMainCoachPortal = window.location.pathname.endsWith('/coach_portal/') ||
-            window.location.pathname.endsWith('/coach_portal/index.html') ||
-            window.location.pathname.endsWith('/coach_portal/index.md');
+
+        // ---- START MODIFICATION ----
+        // Determine the expected path for the main coach portal directory.
+        // This path is used for redirects and for identifying the main portal page.
+        const coachPortalRedirectTargetPath = (window.location.origin.includes('github.io') ? '/aarc_lts' : '') + '/coach_portal/';
+        const currentPath = window.location.pathname;
+
+        // Check if we are on the main coach portal page (or its variants like index.html or index.md)
+        // This now correctly handles if the server/browser drops the trailing slash from the directory path.
+        const isMainCoachPortal = currentPath === coachPortalRedirectTargetPath || // e.g., /prefix/coach_portal/
+            currentPath === coachPortalRedirectTargetPath.slice(0, -1) || // e.g., /prefix/coach_portal (no slash)
+            currentPath === coachPortalRedirectTargetPath + 'index.html' ||
+            currentPath === coachPortalRedirectTargetPath + 'index.md';
+        // ---- END MODIFICATION ----
 
         // If on coach page but no access and not already on main coach portal page, redirect
         if (!hasAccess && !isMainCoachPortal) {
