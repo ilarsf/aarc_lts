@@ -25,7 +25,7 @@ search_exclude: true
         <li>Land-based technique introduction</li>
         <li>First water experience in stable singles</li>
       </ul>
-      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.md" class="cta-button">View Session 1 Plan</a>
+      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.html" class="cta-button">View Session 1 Plan</a>
     </div>
   </div>
 
