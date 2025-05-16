@@ -98,9 +98,9 @@ layout: default
     <div class="info-box tip mb-3">
       <h4>For Coaches</h4>
       <ul class="mb-0">
-        <li><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html"><strong>Coach's Manual</strong></a></li>
-        <li><a href="{{ site.baseurl }}/course_materials/coach/session_plans/"><strong>Session Plans</strong></a></li>
-        <li><a href="{{ site.baseurl }}/course_materials/coach/technical/Key_Drills_Repertoire.html"><strong>Key Drills</strong></a></li>
+        <li><a href="{{ site.baseurl }}/coach_portal/"><strong>Coach Portal</strong></a></li>
+        <li><a href="{{ site.baseurl }}/assets/pdf/daily_coach_checklist.html"><strong>Coach Checklist</strong></a></li>
+        <li><a href="{{ site.baseurl }}/assets/pdf/session_specific_checklist.html"><strong>Session Materials</strong></a></li>
       </ul>
     </div>
   </div>

@@ -4,52 +4,40 @@ layout: default
 
 # Coach Resources: Learn to Scull Program
 
-Welcome to the coaching resources for the AARC Learn to Scull program. These materials are designed to help you deliver a consistent, high-quality learning experience.
+Welcome to the coaching resources for the AARC Learn to Scull program. These materials have been moved to the new Coach Portal.
 
-## Available Resources
+<div class="info-box">
+<h2>Coach Portal Access</h2>
+<p>All coaching resources have been moved to the password-protected Coach Portal for better security and organization.</p>
+<p>Please visit the <a href="{{ site.baseurl }}/coach_portal/" class="cta-button">Coach Portal</a> to access:</p>
+<ul>
+  <li>Coach's Manual</li>
+  <li>Daily Coach Checklist (also available as <a href="{{ site.baseurl }}/assets/pdf/daily_coach_checklist.html">printable PDF</a>)</li>
+  <li>Participant Assessment Checklist</li>
+  <li>Technical Resources</li>
+  <li>Session Plans</li>
+  <li>Safety Procedures</li>
+</ul>
+<p>If you need the coach portal password, please contact the program administrator.</p>
+</div>
 
-- [**Coach's Manual**](Coach_Manual.md) - Comprehensive guide with session goals, teaching points, and class management strategies
-- [**Daily Coach Checklist**](Daily_Coach_Checklist.md) - Operational checklist for before, during, and after each session
-- [**Participant Assessment Checklist**](Participant_Assessment_Checklist.md) - Evaluation form for program completion
+## Quick Access Resources
 
-### Technical Resources
+For convenience, these key resources remain directly accessible:
 
-Visit the [**Technical Resources**](technical/index.md) section for comprehensive guides including:
+- [**Daily Coach Checklist (PDF)**]({{ site.baseurl }}/assets/pdf/daily_coach_checklist.html) - Printable operational checklist for before, during, and after each session
+- [**Session Specific Checklist**]({{ site.baseurl }}/assets/pdf/session_specific_checklist.html) - Printable session-specific materials
 
-- [Technical Frameworks](technical/Technical_Frameworks.md) - Krafts' Keys and Black Bear Sequence reference
-- [Key Drills Repertoire](technical/Key_Drills_Repertoire.md) - Comprehensive guide to all teaching drills
-- [Common Technical Issues and Corrections](technical/Common_Technical_Issues_and_Corrections.md) - Detailed guide to fixing technique problems
+### Additional Safety Resources
 
-### Session Plans
+Additional safety resources are available in the Coach Portal. Some key safety documents include:
 
-Visit the [**Session Plans**](session_plans/index.md) section for detailed plans including:
+- Emergency Procedures
+- River Traffic Patterns
+- Weather Assessment Guide
+- Flip Test Instructions
 
-- [Session 1 Plan](session_plans/Session_1_Plan.md) - Learning the Motion and Getting Wet
-- [Session 2 Plan](session_plans/Session_2_Plan.md) - Hitting the Water - Basic Stroke Sequencing
-- [Session 3 Plan](session_plans/Session_3_Plan.md) - Learning How to Push
-- [Session 4 Plan](session_plans/Session_4_Plan.md) - Navigation and Working Up River
-
-### Safety Resources
-
-Visit the [**Safety Resources**](safety/index.md) section for comprehensive safety guides including:
-
-- [Emergency Procedures](safety/Emergency_Procedures.md) - Protocols for handling on-water emergencies
-- [River Traffic Patterns](safety/River_Traffic_Patterns.md) - Navigation rules and waterway protocols
-- [Weather Assessment Guide](safety/Weather_Assessment_Guide.md) - Guidelines for safe rowing conditions
-- [Flip Test Instructions](safety/Flip_Test_Instructions.md) - Protocol for teaching capsizing recovery
-
-## Program Components
-
-The Coach's Manual contains comprehensive information on all aspects of the program, organized into digestible sections. Here are some key components to review:
-
-### Technical Resources
-- **Rowing Technique** - Proper form, common corrections, and teaching progressions
-- **Drills and Exercises** - Structured activities to develop specific skills
-- **Equipment Knowledge** - Boat parts, adjustments, and maintenance basics
-
-### Safety Protocols
-- **Emergency Procedures** - How to handle on-water incidents
-- **Weather Assessment** - Guidelines for safe rowing conditions
+Visit the [Coach Portal Safety Section]({{ site.baseurl }}/coach_portal/) for access to these materials.
 - **Traffic Patterns** - Navigation rules and waterway protocols
 
 ### Program Management

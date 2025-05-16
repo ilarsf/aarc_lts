@@ -295,7 +295,7 @@ search_exclude: true
             <span class="resource-desc">Detailed plans for all four LTS sessions</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/safety/Daily_Coach_Checklist.md">Daily Coach Checklist</a>
+            <a href="{{ site.baseurl }}/assets/pdf/daily_coach_checklist.html">Daily Coach Checklist</a>
             <span class="resource-desc">Pre-session preparation checklist</span>
           </li>
           <li>

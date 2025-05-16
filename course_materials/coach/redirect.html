@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Coach Materials - Redirecting"
+---
+
+<div class="info-box">
+    <h1>Coach Materials Moved</h1>
+    <p>The coach materials you're looking for have been moved to the password-protected Coach Portal.</p>
+    <p><a href="{{ site.baseurl }}/coach_portal/" class="cta-button">Go to Coach Portal</a></p>
+</div>
+
+<script>
+    // Redirect to coach portal after a short delay
+    setTimeout(function () {
+        window.location.href = '{{ site.baseurl }}/coach_portal/';
+    }, 3000);
+</script>

@@ -15,19 +15,19 @@ search_exclude: true
   <div class="resource-card">
     <h3>Key Drills Repertoire</h3>
     <p>Comprehensive collection of drills organized by skill level and learning objective. Each drill includes clear instructions and common errors to watch for.</p>
-    <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.md" class="cta-button">View Drills</a>
+    <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html" class="cta-button">View Drills</a>
   </div>
   
   <div class="resource-card">
     <h3>Technical Correction Guide</h3>
     <p>Identify common technical issues and learn effective correction strategies, including visual cues, verbal prompts, and targeted drills.</p>
-    <a href="{{ site.baseurl }}/coach_portal/technical/Technical_Correction_Guide.html" class="cta-button">View Correction Guide</a>
+    <a href="{{ site.baseurl }}/coach_portal/technical/Common_Technical_Issues_and_Corrections.html" class="cta-button">View Correction Guide</a>
   </div>
   
   <div class="resource-card">
     <h3>Teaching Frameworks</h3>
     <p>Structured approaches for introducing and developing technical skills, with clear progression pathways for different learning styles.</p>
-    <a href="{{ site.baseurl }}/coach_portal/technical/Teaching_Frameworks.html" class="cta-button">View Teaching Frameworks</a>
+    <a href="{{ site.baseurl }}/coach_portal/technical/Technical_Frameworks.html" class="cta-button">View Teaching Frameworks</a>
   </div>
   
   <div class="resource-card">

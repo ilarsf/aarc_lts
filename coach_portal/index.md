@@ -33,7 +33,7 @@ search_exclude: true
       <div class="resource-card">
         <h3>Coach Manual</h3>
         <p>Comprehensive guide for conducting the Learn to Scull program.</p>
-        <a href="{{ site.baseurl }}/coach_portal/manual/Coach_Manual.md" class="cta-button">View Manual</a>
+        <a href="{{ site.baseurl }}/coach_portal/manual/Coach_Manual.html" class="cta-button">View Manual</a>
       </div>
       
       <div class="resource-card">
@@ -57,7 +57,7 @@ search_exclude: true
       <div class="resource-card">
         <h3>Assessment Tools</h3>
         <p>Skills checklists and participant evaluation resources.</p>
-        <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md" class="cta-button">View Assessment Tools</a>
+        <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html" class="cta-button">View Assessment Tools</a>
       </div>
       
       <div class="resource-card">

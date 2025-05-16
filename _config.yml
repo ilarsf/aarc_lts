@@ -44,7 +44,7 @@ navigation:
       - title: Learner Guide
         url: /course_materials/learner/Learner_Guide.html
       - title: Daily Checklist
-        url: /course_materials/coach/Daily_Coach_Checklist.html
+        url: /assets/pdf/daily_coach_checklist.html
   - title: Learner Resources
     url: /course_materials/learner/
     subitems:

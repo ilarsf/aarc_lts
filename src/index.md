@@ -83,7 +83,7 @@ These official AARC documents outline important policies and guidelines that all
   <div class="info-box">
     <h4>Coach Resources</h4>
     <p>Detailed information for program coaches and instructors.</p>
-    <div class="mt-auto"><a href="{{ site.baseurl }}/course_materials/coach/Coach_Manual.html" class="cta-button">Coach's Manual</a></div>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/coach_portal/" class="cta-button">Coach Portal</a></div>
   </div>
   
   <div class="info-box">
