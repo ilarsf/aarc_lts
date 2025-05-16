@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% include head-custom.html %}
+</head>
+
+<body>
+    <div class="page-header">
+        <div class="container-lg px-3 my-5">
+            <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+            <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+            <div class="header-actions">
+                <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg px-3 my-5 markdown-body main-container">
+        <nav class="site-nav">
+            <ul class="fallback-nav">
+                <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/textbook/">Textbook</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/textbook/chapters/part1.html">Part 1: Getting Started</a></li>
+                        <li><a href="{{ site.baseurl }}/textbook/chapters/part2.html">Part 2: For the Learner</a></li>
+                        <li><a href="{{ site.baseurl }}/textbook/chapters/part3.html">Part 3: Safety</a></li>
+                        <li><a href="{{ site.baseurl }}/textbook/chapters/part5.html">Part 5: Appendices</a></li>
+                        <li><a href="{{ site.baseurl }}/textbook/all.html">View All Chapters</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ site.baseurl }}/coach_portal/" class="active">Coach Portal</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/course_materials/learner/">For Learners</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html">Learner Guide</a>
+                        </li>
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program
+                                Schedule</a></li>
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html">Q&A Companion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/src/">Technical Guides</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a></li>
+                        <li><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html">Flip Test
+                                Instructions</a>
+                        </li>
+                        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="{{ site.baseurl }}/quick-answers/"><i class="fas fa-bolt"></i> Quick
+                        Answers</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/about/">About AARC</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/about/">Club Information</a></li>
+                        <li><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/resources/">Additional Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/resources/#aarc-policies-and-procedures">Club Policies</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#educational-resources">Educational Materials</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#equipment-care">Equipment Care</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#external-resources">External Resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="coach-portal-banner">
+                <div class="banner-icon"><i class="fas fa-lock"></i></div>
+                <div class="banner-text">
+                    <strong>Coach Portal - Restricted Access</strong>
+                    <span>This content is for authorized coaches only. Please do not share login credentials.</span>
+                </div>
+            </div>
+
+            {{ content }}
+
+            <div class="coach-portal-footer">
+                <p><i class="fas fa-shield-alt"></i> AARC Coach Resources - For internal use only</p>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="copyright">
+                © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club – All Rights Reserved
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if user has coach access
+            const hasAccess = localStorage.getItem('aarc_coach_access') === 'granted';
+            if (!hasAccess) {
+                window.location.href = '{{ site.baseurl }}/coach_portal/';
+            }
+
+            // Mobile nav toggle
+            const navToggle = document.querySelector('.mobile-nav-toggle');
+            const siteNav = document.querySelector('.site-nav');
+
+            if (navToggle && siteNav) {
+                navToggle.addEventListener('click', function () {
+                    siteNav.classList.toggle('active');
+                    this.setAttribute('aria-expanded', siteNav.classList.contains('active'));
+                });
+            }
+        });
+    </script>
+
+    <style>
+        .coach-portal-banner {
+            display: flex;
+            align-items: center;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-left: 5px solid #721c24;
+            color: #721c24;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .banner-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .banner-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .coach-portal-footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .site-nav .active {
+            font-weight: bold;
+            color: var(--theme-color);
+        }
+    </style>
+</body>
+
+</html>

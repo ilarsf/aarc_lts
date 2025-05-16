@@ -1,0 +1,130 @@
+---
+layout: coach
+title: "Coach Manual - AARC Learn to Scull Program"
+search_exclude: true
+---
+
+# Coach's Manual: Learn to Scull Program
+
+
+<div class="tab-container">
+    <div class="tab-nav">
+        <a class="tab-link" data-tab="overview-tab">Overview</a>
+        <a class="tab-link" data-tab="sessions-tab">Sessions</a>
+        <a class="tab-link" data-tab="technical-tab">Technical</a>
+        <a class="tab-link" data-tab="management-tab">Management</a>
+        <a class="tab-link" data-tab="resources-tab">Resources</a>
+    </div>
+
+    <div id="overview-tab" class="tab-content">
+        <h2 id="program-overview">Program Overview</h2>
+        <p>The Learn to Scull (LTS) program is a structured course designed to introduce beginners to the sport of
+            sculling. This manual provides comprehensive guidance for coaches to deliver a consistent, high-quality
+            learning experience.</p>
+
+        <h2 id="program-structure">Program Structure</h2>
+        <ul>
+            <li><strong>Duration</strong>: 4 sessions (3 hours each)</li>
+            <li><strong>Class Size</strong>: Maximum 8-12 participants</li>
+            <li><strong>Instructor Ratio</strong>: 1:4 (coach to student)</li>
+        </ul>
+
+        <!-- The rest of the coach manual content would be copied here -->
+    </div>
+
+    <!-- Other tab content would be copied here -->
+</div>
+
+<div class="info-box note mt-4">
+    <p><strong>Note:</strong> This is a protected coach resource. Please do not share login credentials with program
+        participants.</p>
+</div>
+
+<script>
+    // Tab functionality
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all tab links
+        const tabLinks = document.querySelectorAll('.tab-link');
+
+        // Set the first tab as active by default
+        if (tabLinks.length > 0) {
+            tabLinks[0].classList.add('active');
+            const firstTabId = tabLinks[0].getAttribute('data-tab');
+            document.getElementById(firstTabId).classList.add('active');
+        }
+
+        // Add click event listeners to tabs
+        tabLinks.forEach(function (tabLink) {
+            tabLink.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Get the tab ID
+                const tabId = this.getAttribute('data-tab');
+
+                // Remove active class from all tabs and contents
+                document.querySelectorAll('.tab-link').forEach(function (el) {
+                    el.classList.remove('active');
+                });
+
+                document.querySelectorAll('.tab-content').forEach(function (el) {
+                    el.classList.remove('active');
+                });
+
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    });
+</script>
+
+<style>
+    .tab-container {
+        margin: 2rem 0;
+    }
+
+    .tab-nav {
+        display: flex;
+        overflow-x: auto;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1rem;
+    }
+
+    .tab-link {
+        padding: 0.75rem 1.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .tab-link:hover {
+        background-color: #f5f5f5;
+    }
+
+    .tab-link.active {
+        border-bottom: 3px solid var(--theme-color);
+        color: var(--theme-color);
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
