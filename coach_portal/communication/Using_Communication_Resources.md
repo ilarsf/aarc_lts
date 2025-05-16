@@ -116,7 +116,7 @@ The quiz resources are seamlessly integrated with the information packages, with
 
 ## Program Schedule and Planning
 
-Use the [2025 Program Schedule](2025_Program_Schedule.md) as your master reference for planning communications. The schedule includes:
+Use the [2025 Program Schedule](2025_Program_Schedule.html) as your master reference for planning communications. The schedule includes:
 
 - Session dates and times
 - Registration deadlines

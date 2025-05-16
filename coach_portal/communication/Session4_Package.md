@@ -114,7 +114,7 @@ To solidify your understanding of all sculling concepts covered in the program, 
 
 This comprehensive quiz will help you assess your knowledge and readiness as you complete the Learn to Scull program.
 
-[← Back to Communication Resources](index.md)
+[← Back to Communication Resources](index.html)
 
 We're excited to see how far you've come and to help you take this final step toward becoming an independent sculler!
 

@@ -67,9 +67,9 @@ For each session, follow this communication timeline:
 
 | When | Communication | Resource Link |
 |------|---------------|--------------|
-| 2 weeks before | Registration confirmation | [Administrative Email Templates](Administrative_Email_Templates.md) |
-| 1 week before | Welcome email | [Email Templates](Email_Templates.md) |
-| 1 day before Session 1 | Final reminder | [Email Templates](Email_Templates.md) |
+| 2 weeks before | Registration confirmation | [Administrative Email Templates](Administrative_Email_Templates.html) |
+| 1 week before | Welcome email | [Email Templates](Email_Templates.html) |
+| 1 day before Session 1 | Final reminder | [Email Templates](Email_Templates.html) |
 | Evening after Session 1 | Post-session follow-up | [Email Templates](Email_Templates.md) |
 | Evening before Session 2 | Session 2 prep | [Email Templates](Email_Templates.md) |
 | Evening after Session 2 | Post-session follow-up | [Email Templates](Email_Templates.md) |

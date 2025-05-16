@@ -84,7 +84,7 @@ To reinforce what you've learned in this session, we encourage you to complete t
 
 This quiz will help you evaluate your understanding of more advanced sculling techniques and concepts covered today.
 
-[← Back to Communication Resources](index.md)
+[← Back to Communication Resources](index.html)
 
 ## Looking Ahead
 

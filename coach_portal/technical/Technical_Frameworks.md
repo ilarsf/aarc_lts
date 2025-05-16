@@ -272,4 +272,4 @@ The Krafts' Keys and Black Bear Sequence complement each other, with the Keys pr
   <p>These frameworks provide a consistent technical foundation for both coaches and rowers. Refer to them regularly during instruction and use them as reference points when analyzing and correcting technique.</p>
 </div>
 
-[← Back to Coach Resources](../index.md)
+[← Back to Coach Resources](../index.html)

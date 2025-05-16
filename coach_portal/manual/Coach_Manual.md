@@ -66,7 +66,7 @@ search_exclude: true
     <ul>
       <li><a href="{{ site.baseurl }}/coach_portal/session_plans/">Session Plans</a> - Detailed outlines for each session</li>
       <li><a href="{{ site.baseurl }}/coach_portal/technical/">Technical Resources</a> - In-depth guides on technique and drills</li>
-      <li><a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md">Assessment Tools</a> - Skills checklists and evaluation forms</li>
+      <li><a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Assessment Tools</a> - Skills checklists and evaluation forms</li>
       <li><a href="{{ site.baseurl }}/coach_portal/safety/">Safety Procedures</a> - Essential safety protocols and emergency procedures</li>
     </ul>
 
@@ -90,7 +90,7 @@ search_exclude: true
           <li>Flip test and water entry practice</li>
           <li>First on-water experience in stable boats</li>
         </ul>
-        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.md" class="btn">View Session 1 Plan</a>
+        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.html" class="btn">View Session 1 Plan</a>
       </div>
 
       <div class="session-card">
@@ -101,7 +101,7 @@ search_exclude: true
           <li>Introduction to maneuvering and steering</li>
           <li>Guided practice in protected water</li>
         </ul>
-        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_2_Plan.md" class="btn">View Session 2 Plan</a>
+        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_2_Plan.html" class="btn">View Session 2 Plan</a>
       </div>
 
       <div class="session-card">
@@ -112,7 +112,7 @@ search_exclude: true
           <li>Introduction to traffic patterns</li>
           <li>Extended rowing practice with coaching</li>
         </ul>
-        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_3_Plan.md" class="btn">View Session 3 Plan</a>
+        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_3_Plan.html" class="btn">View Session 3 Plan</a>
       </div>
 
       <div class="session-card">
@@ -123,7 +123,7 @@ search_exclude: true
           <li>Introduction to more advanced skills</li>
           <li>Next steps in rowing development</li>
         </ul>
-        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_4_Plan.md" class="btn">View Session 4 Plan</a>
+        <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_4_Plan.html" class="btn">View Session 4 Plan</a>
       </div>
     </div>
 
@@ -343,15 +343,15 @@ search_exclude: true
         <h3>Assessment Resources</h3>
         <ul class="resource-list">
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md">Participant Assessment Checklist</a>
+            <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Participant Assessment Checklist</a>
             <span class="resource-desc">Comprehensive skills evaluation form</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/assessment/Program_Evaluation_Form.md">Program Evaluation Form</a>
+            <a href="{{ site.baseurl }}/coach_portal/assessment/Program_Evaluation_Form.html">Program Evaluation Form</a>
             <span class="resource-desc">Feedback collection tool for program improvement</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/assessment/Progress_Tracking_Sheet.md">Progress Tracking Sheet</a>
+            <a href="{{ site.baseurl }}/coach_portal/assessment/Progress_Tracking_Sheet.html">Progress Tracking Sheet</a>
             <span class="resource-desc">Tool for monitoring participant development</span>
           </li>
         </ul>

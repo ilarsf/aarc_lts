@@ -382,4 +382,4 @@ This reference guide provides detailed analysis of the most common technical iss
 }
 </style>
 
-[← Back to Technical Resources](index.md)
+[← Back to Technical Resources](index.html)

@@ -69,7 +69,7 @@ To reinforce what you've learned in this session, we encourage you to complete t
 
 This short quiz covers the key concepts introduced today and will help solidify your understanding of basic sculling principles.
 
-[← Back to Communication Resources](index.md)
+[← Back to Communication Resources](index.html)
 
 We're excited to get you on the water and start your rowing journey!
 
