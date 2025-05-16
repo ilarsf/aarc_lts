@@ -22,13 +22,13 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
 
 ## Flip Test and Self-Rescue
 
-[Flip Test Instructions](../assessment/Flip_Test_Instructions.html) - Detailed instructions for conducting safe and effective flip tests with novice rowers.
+[Flip Test Instructions]({{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html) - Detailed instructions for conducting safe and effective flip tests with novice rowers.
 
 ## Additional Resources
 
-- [AARC Safety Rules (PDF)](/assets/pdf/AARC_Safety_Rules.pdf)
-- [AARC Code of Conduct (PDF)](/assets/pdf/AARC_Code_of_Conduct.pdf)
-- [AARC SafeSport (PDF)](/assets/pdf/AARC_SafeSport.pdf)
+- [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf)
+- [AARC Code of Conduct (PDF)]({{ site.baseurl }}/src/AARC_Code_of_Conduct_2025-02-26.pdf)
+- [AARC SafeSport (PDF)]({{ site.baseurl }}/src/AARCSafeSport_2015-01-18.pdf)
 
 <div class="info-box aarc">
   <h4>Safety First</h4>

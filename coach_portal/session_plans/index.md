@@ -25,7 +25,7 @@ search_exclude: true
         <li>Land-based technique introduction</li>
         <li>First water experience in stable singles</li>
       </ul>
-      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.md" class="cta-button">View Session 1 Plan</a>
+      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_1_Plan.html" class="cta-button">View Session 1 Plan</a>
     </div>
   </div>
 
@@ -42,7 +42,7 @@ search_exclude: true
         <li>Self-rescue demonstration</li>
         <li>Introduction to steering</li>
       </ul>
-      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_2_Plan.md" class="cta-button">View Session 2 Plan</a>
+      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_2_Plan.html" class="cta-button">View Session 2 Plan</a>
     </div>
   </div>
 
@@ -59,7 +59,7 @@ search_exclude: true
         <li>Individual flip tests</li>
         <li>Advanced recovery techniques</li>
       </ul>
-      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_3_Plan.md" class="cta-button">View Session 3 Plan</a>
+      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_3_Plan.html" class="cta-button">View Session 3 Plan</a>
     </div>
   </div>
 
@@ -76,7 +76,7 @@ search_exclude: true
         <li>Skill assessment</li>
         <li>Next steps guidance</li>
       </ul>
-      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_4_Plan.md" class="cta-button">View Session 4 Plan</a>
+      <a href="{{ site.baseurl }}/coach_portal/session_plans/Session_4_Plan.html" class="cta-button">View Session 4 Plan</a>
     </div>
   </div>
 </div>

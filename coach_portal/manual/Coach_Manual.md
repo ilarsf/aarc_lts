@@ -240,7 +240,7 @@ search_exclude: true
     <div class="safety-guidelines">
       <div class="safety-item">
         <h4>Daily Safety Checks</h4>
-        <p>Complete <a href="{{ site.baseurl }}/coach_portal/safety/Daily_Safety_Checklist.md">safety checklist</a> before each session, including equipment inspection and weather assessment.</p>
+        <p>Complete <a href="{{ site.baseurl }}/coach_portal/safety/Daily_Safety_Checklist.html">safety checklist</a> before each session, including equipment inspection and weather assessment.</p>
       </div>
       
       <div class="safety-item">
@@ -274,11 +274,9 @@ search_exclude: true
       <li>Demonstrate proper equipment handling before allowing independent use</li>
       <li>Establish clear procedures for reporting equipment issues</li>
       <li>Teach and reinforce appropriate equipment care throughout the program</li>
-    </ul>
-
-    <div class="info-box note">
+    </ul>      <div class="info-box note">
       <h4>Participant Assessment</h4>
-      <p>Track progress using the <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md">Participant Assessment Checklist</a>. Provide constructive feedback throughout the program and formal assessments at the conclusion.</p>
+      <p>Track progress using the <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Participant Assessment Checklist</a>. Provide constructive feedback throughout the program and formal assessments at the conclusion.</p>
     </div>
   </div>
 
@@ -299,7 +297,7 @@ search_exclude: true
             <span class="resource-desc">Pre-session preparation checklist</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/technical/Drill_Progression.md">Skill Development Progression</a>
+            <a href="{{ site.baseurl }}/coach_portal/technical/Drill_Progression.html">Skill Development Progression</a>
             <span class="resource-desc">Recommended sequence of skills and drills</span>
           </li>
         </ul>
@@ -309,15 +307,15 @@ search_exclude: true
         <h3>Technical Resources</h3>
         <ul class="resource-list">
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.md">Key Drills Repertoire</a>
+            <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html">Key Drills Repertoire</a>
             <span class="resource-desc">Comprehensive collection of effective teaching drills</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/technical/Error_Correction_Guide.md">Error Correction Guide</a>
+            <a href="{{ site.baseurl }}/coach_portal/technical/Common_Technical_Issues_and_Corrections.html">Error Correction Guide</a>
             <span class="resource-desc">Common technical issues and correction strategies</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/technical/Teaching_Analogies.md">Teaching Analogies</a>
+            <a href="{{ site.baseurl }}/coach_portal/technical/Coaching_Language_Guide.html">Teaching Analogies</a>
             <span class="resource-desc">Effective metaphors and analogies for technical concepts</span>
           </li>
         </ul>
@@ -327,15 +325,15 @@ search_exclude: true
         <h3>Safety Resources</h3>
         <ul class="resource-list">
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/safety/Emergency_Response_Plan.md">Emergency Response Plan</a>
+            <a href="{{ site.baseurl }}/coach_portal/safety/Emergency_Procedures.html">Emergency Response Plan</a>
             <span class="resource-desc">Detailed procedures for handling emergencies</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/safety/Weather_Guidelines.md">Weather Guidelines</a>
+            <a href="{{ site.baseurl }}/coach_portal/safety/Weather_Assessment_Guide.html">Weather Guidelines</a>
             <span class="resource-desc">Weather-related safety parameters and decision framework</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/safety/Flip_Test_Protocol.md">Flip Test Protocol</a>
+            <a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html">Flip Test Protocol</a>
             <span class="resource-desc">Standardized procedure for conducting flip tests</span>
           </li>
         </ul>
@@ -363,9 +361,9 @@ search_exclude: true
     <h3>Communication Templates</h3>
     <p>Standardized communication templates for consistent participant interaction:</p>
     <ul>
-      <li><a href="{{ site.baseurl }}/course_materials/communication/Email_Templates.md">Email Templates</a> - For program updates and information</li>
-      <li><a href="{{ site.baseurl }}/course_materials/communication/Weather_Email_Templates.md">Weather Notification Templates</a> - For weather-related changes</li>
-      <li><a href="{{ site.baseurl }}/course_materials/communication/Administrative_Email_Templates.md">Administrative Communications</a> - For logistics and scheduling</li>
+      <li><a href="{{ site.baseurl }}/coach_portal/communication/Email_Templates.html">Email Templates</a> - For program updates and information</li>
+      <li><a href="{{ site.baseurl }}/coach_portal/communication/Weather_Email_Templates.html">Weather Notification Templates</a> - For weather-related changes</li>
+      <li><a href="{{ site.baseurl }}/coach_portal/communication/Administrative_Email_Templates.html">Administrative Communications</a> - For logistics and scheduling</li>
     </ul>
 
     <div class="info-box tip">

@@ -65,6 +65,12 @@ search_exclude: true
         <p>Complete coaching reference materials in textbook format.</p>
         <a href="{{ site.baseurl }}/coach_portal/textbook/" class="cta-button">View Coach Textbook</a>
       </div>
+      
+      <div class="resource-card">
+        <h3>Communication Resources</h3>
+        <p>Email templates and participant information packages.</p>
+        <a href="{{ site.baseurl }}/coach_portal/communication/" class="cta-button">View Communication Resources</a>
+      </div>
     </div>
   </div>
 </div>

@@ -196,7 +196,7 @@ Consistent communication prepares participants and reinforces learning.
 
 #### Using Templates:
 
-1.  Refer to the **[Email Templates Guide]({{ site.baseurl }}/course_materials/communication/Email_Templates.html)**.
+1.  Refer to the **[Email Templates Guide]({{ site.baseurl }}/coach_portal/communication/Email_Templates.html)**.
 2.  Available templates cover Pre-Course, During Course, and Post-Course communications.
 3.  Copy relevant template, customize placeholders (Name, Date, Skill), and send following the recommended schedule.
 

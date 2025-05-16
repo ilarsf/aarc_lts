@@ -4,18 +4,17 @@ layout: default
 
 # Communication Resources: Learn to Scull Program
 
-<div class="info-box">
-<h2>Coach Portal Access</h2>
-<p>All communication resources have been moved to the password-protected Coach Portal for better security and organization.</p>
-<p>Please visit the <a href="{{ site.baseurl }}/coach_portal/communication/" class="cta-button">Coach Portal</a> to access:</p>
-<ul>
-  <li>Email Templates</li>
-  <li>Weather Notification Templates</li>
-  <li>Session Information Packages</li>
-  <li>Administrative Communications</li>
-</ul>
-<p>If you need the coach portal password, please contact the program administrator.</p>
-</div>
+These communication templates and information packages help maintain consistent messaging throughout the Learn to Scull program. For guidance on how to use these resources effectively, see the [Using Communication Resources](Using_Communication_Resources.html) guide.
+
+## Available Resources
+
+### Information Packages
+- [**Intro Package**](IntroPackage.html) - Welcome packet for new participants
+- [**Session 1 Package**](Session1_Package.html) - Information for the first session
+- [**Session 2 Package**](Session2_Package.html) - Information for the second session
+- [**Session 3 Package**](Session3_Package.html) - Information for the third session
+- [**Session 4 Package**](Session4_Package.html) - Information for the fourth session
+- [**Post-Course Package**](PostCourse_Package.html) - Next steps after completing the program
 
 ### Quiz Resources
 - [**Boathouse Rules Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=bh) - Test knowledge of boathouse protocols
@@ -26,13 +25,13 @@ layout: default
 - [**Session 4 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=4) - Final comprehensive assessment
 
 ### Email Templates
-- [**Standard Email Templates**](Email_Templates.md) - Pre-course, daily, and post-course communication templates
-- [**Weather-Related Email Templates**](Weather_Email_Templates.md) - Templates for weather cancellations and modifications
-- [**Administrative Email Templates**](Administrative_Email_Templates.md) - Templates for registration, payment, and program evaluation
+- [**Standard Email Templates**](Email_Templates.html) - Pre-course, daily, and post-course communication templates
+- [**Weather-Related Email Templates**](Weather_Email_Templates.html) - Templates for weather cancellations and modifications
+- [**Administrative Email Templates**](Administrative_Email_Templates.html) - Templates for registration, payment, and program evaluation
 
 ### Program Administration
-- [**2025 Program Schedule**](2025_Program_Schedule.md) - Complete schedule of 2025 LTS sessions with key dates
-- [**Using Communication Resources**](Using_Communication_Resources.md) - Guide for coaches on effective use of these materials
+- [**2025 Program Schedule**](2025_Program_Schedule.html) - Complete schedule of 2025 LTS sessions with key dates
+- [**Using Communication Resources**](Using_Communication_Resources.html) - Guide for coaches on effective use of these materials
 
 ## Communication Best Practices
 

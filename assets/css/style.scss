@@ -738,26 +738,24 @@ a {
 // Call to action
 .cta-button {
   display: inline-block;
+  padding: 8px 16px;
   background-color: $aarc-blue;
-  color: $aarc-white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 1rem 0;
+  color: $aarc-white !important;
   text-align: center;
-  width: auto;
-  min-width: 150px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: darken($aarc-blue, 10%);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 2px solid $aarc-blue;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
+  &:hover, &:focus {
+    background-color: $aarc-blue-hover;
+    border-color: $aarc-blue-hover;
+    color: $aarc-white !important;
     text-decoration: none;
-    color: $aarc-white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
 }
 
