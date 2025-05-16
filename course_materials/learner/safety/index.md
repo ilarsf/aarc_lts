@@ -8,7 +8,7 @@ This section contains safety information that all Learn to Scull participants sh
 
 ## Essential Safety Guides
 
-[Self-Rescue Guide](Self_Rescue_Guide.md) - Step-by-step instructions for what to do if you capsize, including the flip test procedure that you'll practice during the program.
+[Self-Rescue Guide](../../src/Sculling_Self_Rescue_Guide.html) - Step-by-step instructions for what to do if you capsize, including the flip test procedure that you'll practice during the program.
 
 [River Traffic Guide](River_Traffic_Guide.md) - Clear explanation of navigation rules and traffic patterns to help you safely share the waterway with other boats.
 

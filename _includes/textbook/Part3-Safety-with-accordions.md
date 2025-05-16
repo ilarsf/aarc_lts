@@ -224,7 +224,7 @@ This technique uses leg power, not arm strength.
 Watching the process helps. Coaches may provide links, or you can refer to the website:
 
 * Refer to videos linked in Appendix C or the [Q&A Companion Video Library]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab).
-* *For a comprehensive walkthrough, see the detailed [Sculling Self-Rescue Guide]({{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html) and [Flip Test Instructions]({{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html) available on the website.*
+* *For a comprehensive walkthrough, see the detailed [Self-Rescue & Flip Test Guide]({{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html) available on the website.*
 
     </div>
   </div>

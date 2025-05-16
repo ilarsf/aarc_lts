@@ -31,7 +31,7 @@ These guides provide detailed instructions on essential techniques and safety pr
   <div class="info-box tip">
     <h4>Flip Test Instructions</h4>
     <p>Step-by-step guide for completing the capsize recovery test required for all AARC scullers.</p>
-    <div class="mt-auto"><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="cta-button">View Guide</a></div>
+    <div class="mt-auto"><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a></div>
   </div>
   
   <div class="info-box">

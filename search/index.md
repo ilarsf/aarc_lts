@@ -52,7 +52,7 @@ title: Search - AARC Learn to Scull Program
       <h4>Quick Guides</h4>
       <ul class="mb-0">
         <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a> - Recovering from a capsize</li>
-        <li><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html">Flip Test Instructions</a> - Step-by-step guide</li>
+        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test Guide</a> - Step-by-step guide</li>
         <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a> - Treating rowing blisters</li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html">River Traffic Guide</a> - Navigation rules</li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/technical/Instructional_Videos.html">Instructional Videos</a> - Visual learning resources</li>
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Safety pages
     { title: "Self-Rescue Guide", path: "{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html", keywords: "capsize flip falling in water safety rescue emergency recovery wet exit swamp swamped boat flooded", summary: "Instructions for safely recovering from a capsize and getting back into your shell." },
-    { title: "Flip Test Instructions", path: "{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html", keywords: "flip test capsizing practice self rescue demonstration requirements wet exit capsize drill procedure walk through", summary: "Step-by-step guide for completing the capsize recovery test required for all AARC scullers." },
+    { title: "Self-Rescue & Flip Test Guide", path: "{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html", keywords: "flip test capsizing practice self rescue demonstration requirements wet exit capsize drill procedure walk through recovery get back in", summary: "Comprehensive guide covering both the flip test procedure and self-rescue techniques required for all AARC scullers." },
     { title: "River Traffic Guide", path: "{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html", keywords: "river traffic pattern navigation rules right-of-way direction clockwise counter-clockwise starboard port side map waterway", summary: "Guidelines for navigating Argo pond and understanding river traffic patterns." },
     { title: "Weather Guidelines", path: "{{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html", keywords: "weather conditions wind rain lightning thunder temperature cold hot cancellation policy meters per second whitecaps waves fog visibility", summary: "Safety guidelines for rowing in various weather conditions." },
     { title: "Safety Rules", path: "{{ site.baseurl }}/src/AARC_Safety_Rules.pdf", keywords: "safety rules regulations requirements emergency procedures visibility lights life jacket PFD flotation device rowing alone buddy system sign out log", summary: "Essential safety guidelines for all AARC rowers." },

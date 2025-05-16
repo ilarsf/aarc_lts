@@ -22,7 +22,7 @@ This section contains comprehensive safety materials for Learn to Scull coaches.
 
 ## Flip Test and Self-Rescue
 
-[Flip Test Instructions]({{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html) - Detailed instructions for conducting safe and effective flip tests with novice rowers.
+[Self-Rescue & Flip Test Guide]({{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html) - Comprehensive instructions for capsize recovery and conducting safe and effective flip tests with novice rowers.
 
 ## Program-Specific Safety Rules
 

@@ -135,7 +135,7 @@ title: Quick Answers - AARC Learn to Scull Program
             <li>Bail water from the boat</li>
             <li>Return to rowing</li>
           </ol>
-          <p><a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html">View detailed flip test instructions</a></p>
+          <p><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">View detailed flip test instructions</a></p>
         </div>
         
         <div class="question-block">
@@ -266,7 +266,7 @@ title: Quick Answers - AARC Learn to Scull Program
           <div class="resource-card">
             <h4>Flip Test Instructions</h4>
             <p>Step-by-step guide for completing the capsize recovery test</p>
-            <a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="cta-button">View Instructions</a>
+            <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Instructions</a>
           </div>
           
           <div class="resource-card">
@@ -342,7 +342,7 @@ title: Quick Answers - AARC Learn to Scull Program
       <h3>Safety Information:</h3>
       <div class="tree-options">
         <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue Guide</a>
-        <a href="{{ site.baseurl }}/src/AARC_Flip_Test_Instructions_20240803.html" class="tree-link">Flip Test Instructions</a>
+        <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue & Flip Test Guide</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html" class="tree-link">River Traffic Rules</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html" class="tree-link">Weather Guidelines</a>
         <button class="tree-back" data-target="q1">Back to Start</button>

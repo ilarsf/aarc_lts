@@ -29,7 +29,7 @@ title: Additional Resources - AARC Learn to Scull Program
 
 ## Technical Guides
 - [Sculling Self-Rescue Guide](/src/Sculling_Self_Rescue_Guide.html)
-- [Flip Test Instructions](/src/AARC_Flip_Test_Instructions_20240803.html)
+- [Self-Rescue & Flip Test Guide](/src/Sculling_Self_Rescue_Guide.html)
 - [Rower's Hand Care Guide](/src/Rowers_Hand_Blister_Treatment.html)
 
 ## Educational Resources

@@ -2,18 +2,18 @@
 layout: default
 ---
 
-# Sculling Self-Rescue Guide
+# Sculling Self-Rescue & Flip Test Guide
 
 
 ## Introduction
 
 Sculling, with its sleek boats and dual oars, offers a unique blend of physical exertion and serene connection with the water. However, the narrow design that makes sculling shells efficient also makes them less stable than recreational watercraft. For beginners, capsizing is a natural part of the learning process.
 
-This guide provides comprehensive instructions on how to safely recover from a capsize and re-enter your shell using low-exertion techniques that don't require significant upper body strength. By understanding and practicing these skills, you'll build confidence to enjoy sculling with less anxiety about the possibility of an unexpected swim.
+This guide provides comprehensive instructions on how to safely recover from a capsize and re-enter your shell using low-exertion techniques that don't require significant upper body strength. By understanding and practicing these skills through the required flip test and ongoing practice, you'll build confidence to enjoy sculling with less anxiety about the possibility of an unexpected swim.
 
 <div class="info-box note">
   <h4>What You'll Learn</h4>
-  <p>This guide covers the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
+  <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
 </div>
 
 ## Understanding Capsizing
@@ -65,6 +65,11 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
 <div class="info-box note">
   <h4>Physical Impact</h4>
   <p>Both practice sessions and actual capsize recovery can result in bruising, particularly on the legs, hips, and sides of your torso. People who bruise easily may notice more significant marks. Consider this when planning activities where these areas will be visible (such as beach vacations or photo sessions) in the days following flip tests or accidental capsizes. Wearing compression garments or additional layers during practice may provide some protection.</p>
+</div>
+
+<div class="info-box note">
+  <h4>Important Note</h4>
+  <p>There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water similar to getting out of a swimming pool by using a strong push/kick motion to lift your upper body onto the dock.</p>
 </div>
 
 ## Self-Rescue Process
@@ -214,6 +219,28 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
   <div>
     <h4>Stern Entry Method</h4>
     <p>Some resources mention entering over the stern (back) of the boat. However, for most beginners, the side-entry method with oar stabilization is the most reliable approach.</p>
+  </div>
+</div>
+
+### Exiting at the Dock
+
+If you cannot re-enter your boat during a flip test or capsize situation:
+
+<div class="two-col-grid">
+  <div>
+    <ol>
+      <li>Swim with your boat to the dock, keeping it between you and the dock.</li>
+      <li>Once at the dock, place both hands on the dock surface.</li>
+      <li>Use a strong push/kick motion to lift your upper body onto the dock.</li>
+      <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface.</li>
+      <li>Help may be offered, but be prepared to exit the water on your own.</li>
+    </ol>
+  </div>
+  
+  <div class="image-placeholder">
+    <div class="icon"><i class="fas fa-image"></i></div>
+    <div class="title">Pool-Style Exit</div>
+    <div class="description">Illustration showing the proper technique for exiting the water onto the dock without a ladder.</div>
   </div>
 </div>
 
