@@ -11,18 +11,34 @@ search_exclude: true
   <p>This guide outlines essential protocols for responding to emergency situations that may occur during rowing activities. Familiarize yourself with these procedures before each season and review regularly.</p>
 </div>
 
-## Quick Reference: Emergency Response Steps
+{% include accordion.html %}
 
-1. **Assess** the situation
-2. **Alert** others to the emergency
-3. **Act** according to appropriate protocol
-4. **Access** help and resources
-5. **Attend** to affected individuals
-6. **Aftermath** procedures and documentation
+<div class="accordion-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
 
-## Communication Systems
+<div class="accordion-section">
+  <button class="accordion-toggle">Quick Reference: Emergency Response Steps</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <ol>
+        <li><strong>Assess</strong> the situation</li>
+        <li><strong>Alert</strong> others to the emergency</li>
+        <li><strong>Act</strong> according to appropriate protocol</li>
+        <li><strong>Access</strong> help and resources</li>
+        <li><strong>Attend</strong> to affected individuals</li>
+        <li><strong>Aftermath</strong> procedures and documentation</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-### Emergency Signal Hierarchy
+<div class="accordion-section">
+  <button class="accordion-toggle">Communication Systems</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h3>Emergency Signal Hierarchy</h3>
 
 1. **Verbal Commands:**
    - "HELP!" - Basic call for assistance
@@ -44,19 +60,49 @@ search_exclude: true
    - Standard opening: "Mayday, Mayday, Mayday" for life-threatening emergencies
    - "Pan-Pan, Pan-Pan, Pan-Pan" for urgent but not immediately life-threatening situations
 
-### Emergency Contact Information
+      <h3>Emergency Contact Information</h3>
 
-| Emergency Service | Contact Number | Notes |
-|-------------------|----------------|-------|
-| Emergency Services | 911 | For all medical emergencies, fires, police |
-| Coast Guard | Local: [CLUB TO INSERT] | For navigable waterways |
-| Marine Police | Local: [CLUB TO INSERT] | For water-related emergencies |
-| Boathouse Manager | [CLUB TO INSERT] | For facility-related emergencies |
-| Club Safety Officer | [CLUB TO INSERT] | For reporting and follow-up |
+      <table>
+        <tr>
+          <th>Emergency Service</th>
+          <th>Contact Number</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>Emergency Services</td>
+          <td>911</td>
+          <td>For all medical emergencies, fires, police</td>
+        </tr>
+        <tr>
+          <td>Coast Guard</td>
+          <td>Local: [CLUB TO INSERT]</td>
+          <td>For navigable waterways</td>
+        </tr>
+        <tr>
+          <td>Marine Police</td>
+          <td>Local: [CLUB TO INSERT]</td>
+          <td>For water-related emergencies</td>
+        </tr>
+        <tr>
+          <td>Boathouse Manager</td>
+          <td>[CLUB TO INSERT]</td>
+          <td>For facility-related emergencies</td>
+        </tr>
+        <tr>
+          <td>Club Safety Officer</td>
+          <td>[CLUB TO INSERT]</td>
+          <td>For reporting and follow-up</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
 
-## Specific Emergency Protocols
-
-### Capsized Boat / Person in Water
+<div class="accordion-section">
+  <button class="accordion-toggle">Specific Emergency Protocols</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h3>Capsized Boat / Person in Water</h3>
 
 #### Coach Response:
 1. Immediately assess if person can self-rescue
@@ -75,43 +121,54 @@ search_exclude: true
 5. If unable to re-enter, wait with boat for assistance
 6. In cold water, get as much of body onto overturned hull as possible
 
-### Medical Emergency
+      <h3>Medical Emergency</h3>
 
-#### On-Water Response:
-1. Secure scene, position stable boats/launch
-2. Assess ABCs (Airway, Breathing, Circulation)
-3. Designate responders and a communicator
-4. Return to nearest safe landing point
-5. Call 911 if needed
-6. Assign someone to direct emergency services to location
-7. Continue care until professional help arrives
+      <h4>On-Water Response:</h4>
+      <ol>
+        <li>Secure scene, position stable boats/launch</li>
+        <li>Assess ABCs (Airway, Breathing, Circulation)</li>
+        <li>Designate responders and a communicator</li>
+        <li>Return to nearest safe landing point</li>
+        <li>Call 911 if needed</li>
+        <li>Assign someone to direct emergency services to location</li>
+        <li>Continue care until professional help arrives</li>
+      </ol>
 
-#### Land-Based Response:
-1. Secure scene, ensure no further danger
-2. Assess ABCs (Airway, Breathing, Circulation)
-3. Call 911 if needed
-4. Provide appropriate first aid
-5. Document incident
-6. Notify club safety officer
+      <h4>Land-Based Response:</h4>
+      <ol>
+        <li>Secure scene, ensure no further danger</li>
+        <li>Assess ABCs (Airway, Breathing, Circulation)</li>
+        <li>Call 911 if needed</li>
+        <li>Provide appropriate first aid</li>
+        <li>Document incident</li>
+        <li>Notify club safety officer</li>
+      </ol>
 
-### Severe Weather Emergency
+      <h3>Severe Weather Emergency</h3>
 
-#### Lightning/Thunder Protocol:
+      <h4>Lightning/Thunder Protocol:</h4>
 1. If lightning seen/thunder heard, immediately clear water
 2. Count time between lightning and thunder (5 seconds = 1 mile)
 3. All rowers must be off water and in safe shelter
 4. Wait minimum 30 minutes after last lightning/thunder before resuming
 5. Indoor shelter is preferable to boat bays
 
-#### Sudden Wind/Storm Protocol:
-1. Assess safest route to shelter
-2. Instruct rowers to stay low in boat
-3. Head directly to nearest shore if unsafe to return to dock
-4. If conditions prevent rowing, secure boats and wait for rescue
+      <h4>Sudden Wind/Storm Protocol:</h4>
+      <ol>
+        <li>Assess safest route to shelter</li>
+        <li>Instruct rowers to stay low in boat</li>
+        <li>Head directly to nearest shore if unsafe to return to dock</li>
+        <li>If conditions prevent rowing, secure boats and wait for rescue</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-## Emergency Equipment Locations
-
-### In Coach Launch:
+<div class="accordion-section">
+  <button class="accordion-toggle">Emergency Equipment Locations</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h3>In Coach Launch:</h3>
 - First aid kit
 - Emergency throw bag
 - Thermal blanket
@@ -119,36 +176,50 @@ search_exclude: true
 - Bailer
 - Whistle/horn
 
-### At Boathouse:
-- AED: [LOCATION]
-- First aid kits: [LOCATION]
-- Emergency landline: [LOCATION]
-- Fire extinguishers: [LOCATION]
-- Emergency exits: [MARKED ON FACILITY MAP]
+      <h3>At Boathouse:</h3>
+      <ul>
+        <li>AED: [LOCATION]</li>
+        <li>First aid kits: [LOCATION]</li>
+        <li>Emergency landline: [LOCATION]</li>
+        <li>Fire extinguishers: [LOCATION]</li>
+        <li>Emergency exits: [MARKED ON FACILITY MAP]</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-## Incident Reporting and Follow-up
-
-### Immediate Documentation:
+<div class="accordion-section">
+  <button class="accordion-toggle">Incident Reporting and Follow-up</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h3>Immediate Documentation:</h3>
 1. Document all emergency incidents regardless of severity
 2. Note participants involved, witnesses, conditions
 3. Record actions taken and outcomes
 4. Take photos when appropriate
 
-### Formal Reporting:
-1. Complete club incident report form within 24 hours
-2. Submit to safety officer/board
-3. Contact USRowing if serious injury or significant equipment damage
-4. Review incident for preventative measures
+      <h3>Formal Reporting:</h3>
+      <ol>
+        <li>Complete club incident report form within 24 hours</li>
+        <li>Submit to safety officer/board</li>
+        <li>Contact USRowing if serious injury or significant equipment damage</li>
+        <li>Review incident for preventative measures</li>
+      </ol>
 
-### Post-Emergency Support:
-1. Check in with affected individuals after incident
-2. Offer appropriate resources for physical/emotional support
-3. Conduct debrief with coaches and safety team
-4. Implement any necessary policy/procedure changes
+      <h3>Post-Emergency Support:</h3>
+      <ol>
+        <li>Check in with affected individuals after incident</li>
+        <li>Offer appropriate resources for physical/emotional support</li>
+        <li>Conduct debrief with coaches and safety team</li>
+        <li>Implement any necessary policy/procedure changes</li>
+      </ol>
 
-<div class="info-box tip">
-  <h4>Coach Preparation</h4>
-  <p>Test emergency procedures with regular drills and ensure all coaches have current CPR and First Aid certification. Familiarity with procedures leads to faster, more effective emergency response.</p>
+      <div class="info-box tip">
+        <h4>Coach Preparation</h4>
+        <p>Test emergency procedures with regular drills and ensure all coaches have current CPR and First Aid certification. Familiarity with procedures leads to faster, more effective emergency response.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>

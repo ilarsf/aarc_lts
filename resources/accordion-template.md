@@ -8,15 +8,17 @@ This template demonstrates how to convert your existing Markdown content into co
 
 Add this line at the top of your Markdown document:
 
+{% raw %}
 ```
 {% include accordion.html %}
 ```
+{% endraw %}
 
 ## Step 2: Add Accordion Controls
 
 Next, add these controls to allow users to expand or collapse all sections at once:
 
-```html
+```
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
   <button id="collapse-all">Collapse All</button>
@@ -27,7 +29,7 @@ Next, add these controls to allow users to expand or collapse all sections at on
 
 ### Example: Original Markdown Format
 
-```markdown
+```
 ## Section 1 Title
 
 Content for section 1...
@@ -43,7 +45,7 @@ Content for section 2...
 
 ### Example: Converted to Accordion Format
 
-```html
+```
 <div class="accordion-section">
   <button class="accordion-toggle">Section 1 Title</button>
   <div class="accordion-content">

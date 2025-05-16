@@ -2,9 +2,17 @@
 
 These appendices provide supplementary information, including key terminology, official AARC policies, FAQs, and resources for your continued rowing journey.
 
----
+{% include accordion.html %}
 
-## Appendix A: Glossary of Rowing Terms
+<div class="accordion-controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse All</button>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Appendix A: Glossary of Rowing Terms</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
 
 Understanding the language of rowing will help you communicate effectively with coaches and fellow rowers. This glossary covers common terms related to equipment, technique, and commands. *(Sourced primarily from program materials).*
 
@@ -79,9 +87,14 @@ Understanding the language of rowing will help you communicate effectively with 
 * **Traffic Pattern:** The established "rules of the road" for navigating the waterway (e.g., stay starboard/right).
 * **Way Enough (or Weigh Enough):** The command to stop rowing.
 
----
+    </div>
+  </div>
+</div>
 
-## Appendix B: AARC Policies (Summaries & Links)
+<div class="accordion-section">
+  <button class="accordion-toggle">Appendix B: AARC Policies (Summaries & Links)</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
 
 All participants and coaches must abide by AARC policies. Full documents are linked for complete details.
 
@@ -99,9 +112,14 @@ All participants and coaches must abide by AARC policies. Full documents are lin
 
 💡 **Tip:** Coaches and learners should familiarize themselves with these policies.
 
----
+    </div>
+  </div>
+</div>
 
-## Appendix C: Resources & Next Steps
+<div class="accordion-section">
+  <button class="accordion-toggle">Appendix C: Resources & Next Steps</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
 
 Congratulations on completing (or nearing the completion of) the AARC Learn to Scull program! This appendix provides resources to help you continue your rowing journey, revisit key visual aids, and explore further information.
 
@@ -138,9 +156,14 @@ Visual aids can be incredibly helpful. Key videos used in the program include:
 ### Interactive Learning Tools
 * **Boathouse Rules & Safety Quiz:** Test your knowledge of essential boathouse procedures and safety guidelines. [Take the Quiz]({{ site.baseurl }}/src/quiz_module.html?quiz=bh)
 
----
+    </div>
+  </div>
+</div>
 
-## Appendix D: Frequently Asked Questions (FAQ)
+<div class="accordion-section">
+  <button class="accordion-toggle">Appendix D: Frequently Asked Questions (FAQ)</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
 
 This section addresses common questions asked by new scullers.
 
@@ -255,7 +278,10 @@ Learning curves vary widely based on athletic background, frequency of practice,
 #### Can I row in other types of boats after LTS?
 Yes, once you develop basic sculling proficiency, you can explore other boat types. Many rowers progress to double sculls (two-person boats), which offer improved stability and the opportunity to row with a partner. With further experience, you might try quad sculls (four-person) or eventually learn to sweep row in four-person or eight-person boats.
 
-*[For the most up-to-date FAQs and video links, please visit the [Online Q&A Companion]({{ site.baseurl }}/course_materials/learner/QA_Companion.html).]*
+      <p><em><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html">For the most up-to-date FAQs and video links, please visit the Online Q&A Companion</a>.</em></p>
+    </div>
+  </div>
+</div>
 
 ---
 

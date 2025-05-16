@@ -72,13 +72,37 @@ This page demonstrates how to use the accordion feature to make content more man
 
 To convert your existing content to use accordions, follow these steps:
 
-1. Add the accordion controls at the top of your content section:
-```html
-<div class="accordion-controls">
-  <button id="expand-all">Expand All</button>
-  <button id="collapse-all">Collapse All</button>
-</div>
-```
+1. Include the accordion component at the top of your page:
+
+   {% raw %}
+   ```
+   {% include accordion.html %}
+   ```
+   {% endraw %}
+
+2. Add the accordion controls:
+
+   ```
+   <div class="accordion-controls">
+     <button id="expand-all">Expand All</button>
+     <button id="collapse-all">Collapse All</button>
+   </div>
+   ```
+
+3. For each section you want to make collapsible, wrap it in the accordion structure:
+
+   ```
+   <div class="accordion-section">
+     <button class="accordion-toggle">Section Title</button>
+     <div class="accordion-content">
+       <div class="accordion-content-inner">
+         Your content here...
+       </div>
+     </div>
+   </div>
+   ```
+
+4. Move your existing content into the `accordion-content-inner` div.
 
 ## Examples
 
@@ -86,19 +110,3 @@ Check out these examples to see how accordions can be implemented:
 
 - [Accordion Template]({{ site.baseurl }}/resources/accordion-template.html) - Template showing how to convert content
 - [Textbook Chapter with Accordions]({{ site.baseurl }}/resources/accordion-textbook-example.html) - Example of a textbook chapter converted to use accordion sections
-
-2. For each section you want to make collapsible, wrap it in the accordion structure:
-```html
-<div class="accordion-section">
-  <button class="accordion-toggle">Section Title</button>
-  <div class="accordion-content">
-    <div class="accordion-content-inner">
-      Your content here...
-    </div>
-  </div>
-</div>
-```
-
-3. Move your existing content into the `accordion-content-inner` div.
-
-4. To include the accordion functionality on a page, add `{% include accordion.html %}` near the top of your Markdown file.

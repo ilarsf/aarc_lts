@@ -86,14 +86,14 @@ search_exclude: true
   <div class="two-col-grid">
     <div>
       <ul>
-        <li><a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.md">Key Drills Repertoire</a> - Comprehensive drill guide</li>
-        <li><a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.md">Assessment Checklist</a> - Skills tracking sheet</li>
+        <li><a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html">Key Drills Repertoire</a> - Comprehensive drill guide</li>
+        <li><a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Assessment Checklist</a> - Skills tracking sheet</li>
       </ul>
     </div>
     <div>
       <ul>
         <li><a href="{{ site.baseurl }}/assets/pdf/daily_coach_checklist.html">Daily Coach Checklist</a> - Pre-session preparation</li>
-        <li><a href="{{ site.baseurl }}/coach_portal/safety/Weather_Assessment_Guide.md">Weather Assessment Guide</a> - Decision-making framework</li>
+        <li><a href="{{ site.baseurl }}/coach_portal/safety/Weather_Assessment_Guide.html">Weather Assessment Guide</a> - Decision-making framework</li>
       </ul>
     </div>
   </div>
