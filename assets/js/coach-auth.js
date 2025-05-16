@@ -8,19 +8,53 @@ document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
 
+    // Check if this is a URL-based auth request (for browsers with strict privacy settings)
+    const hasUrlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
+
+    // Check if the password was provided in the URL (emergency access option)
+    const urlPassword = urlParams.get('pw');
+    const correctPassword = 'Coach2025';
+    const hasPasswordInUrl = urlPassword === correctPassword;
+
     // If we've redirected too many times, show an error and stop
-    if (redirectCount > 3) {
+    if (redirectCount > 2) {
         console.error('Redirect loop detected. Authentication system disabled.');
-        // Create and show an error message to the user if we're in a redirect loop
+
+        // Create and show an error message that helps the user solve the privacy issue
         const errorDiv = document.createElement('div');
         errorDiv.style.padding = '20px';
         errorDiv.style.margin = '20px';
         errorDiv.style.backgroundColor = '#f8d7da';
         errorDiv.style.color = '#721c24';
         errorDiv.style.borderRadius = '5px';
-        errorDiv.innerHTML = '<h3>Authentication Error</h3><p>We detected a problem with the authentication system. Please try using a different browser, clearing your cookies, or disabling tracking protection for this site.</p>';
+        errorDiv.innerHTML = `
+            <h3>Authentication Error</h3>
+            <p>It appears your browser is blocking cookies and storage needed for authentication.</p>
+            <h4>Options to fix this:</h4>
+            <ol>
+                <li>Try a different browser (Chrome or Firefox recommended)</li>
+                <li>Disable tracking protection for this site</li>
+                <li>Enable cookies and JavaScript for this site</li>
+                <li><strong>Quick access:</strong> <a href="?auth_status=ok">Click here for URL-based access</a> (needs to be clicked on each page visit)</li>
+            </ol>
+        `;
         document.body.prepend(errorDiv);
         return;
+    }
+
+    // If access provided via URL, immediately handle it for this session
+    if (hasPasswordInUrl) {
+        // Remove the password from the URL for security
+        if (window.history && window.history.replaceState) {
+            try {
+                const newUrl = new URL(window.location.href);
+                newUrl.searchParams.delete('pw');
+                newUrl.searchParams.set('auth_status', 'ok');
+                window.history.replaceState({}, document.title, newUrl.toString());
+            } catch (e) {
+                if (DEBUG) console.error('Failed to update URL:', e);
+            }
+        }
     }
 
     // Test if localStorage is available (to handle Safari private browsing)
@@ -60,9 +94,16 @@ document.addEventListener('DOMContentLoaded', function () {
         return null;
     }
 
-    // Use multi-level storage with fallbacks (localStorage → sessionStorage → cookies)
+    // Use multi-level storage with fallbacks (localStorage → sessionStorage → cookies → URL parameter)
     function getStoredAccess() {
-        // Check localStorage first
+        // First check URL parameter (useful for browsers that block storage)
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok') {
+            if (DEBUG) console.log('Access granted via URL parameter');
+            return true;
+        }
+
+        // Check localStorage 
         if (isLocalStorageAvailable() && localStorage.getItem('aarc_coach_access') === 'granted') {
             if (DEBUG) console.log('Access granted from localStorage');
             return true;
@@ -237,12 +278,32 @@ document.addEventListener('DOMContentLoaded', function () {
             showCoachContent();
 
             // Set a flag in URL to indicate authenticated status as a last resort
-            // This won't persist across page reloads but might help with some edge cases
+            // This will help browsers with strict privacy settings that block cookies
             if (window.history && window.history.replaceState) {
                 try {
                     const newUrl = new URL(window.location.href);
                     newUrl.searchParams.set('auth_status', 'ok');
                     window.history.replaceState({}, document.title, newUrl.toString());
+
+                    // Add a notification if we think cookies/storage might be blocked
+                    if (!isLocalStorageAvailable()) {
+                        const storageWarning = document.createElement('div');
+                        storageWarning.style.padding = '10px';
+                        storageWarning.style.margin = '10px 0';
+                        storageWarning.style.backgroundColor = '#fff3cd';
+                        storageWarning.style.color = '#856404';
+                        storageWarning.style.borderRadius = '5px';
+                        storageWarning.innerHTML = `
+                            <p><strong>Notice:</strong> Your browser appears to be blocking storage. You may need to add <code>?auth_status=ok</code> 
+                            to URLs when navigating between pages, or use a different browser.</p>
+                        `;
+
+                        // Add the warning at the top of the coach content
+                        const coachContent = document.getElementById('coach-content');
+                        if (coachContent && coachContent.firstChild) {
+                            coachContent.insertBefore(storageWarning, coachContent.firstChild);
+                        }
+                    }
                 } catch (e) {
                     if (DEBUG) console.error('Failed to update URL:', e);
                 }
@@ -290,5 +351,20 @@ document.addEventListener('DOMContentLoaded', function () {
     if (urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok') {
         if (DEBUG) console.log('Found auth_status in URL, granting access');
         setStoredAccess('granted');
+
+        // Modify all internal coach portal links to include the auth_status parameter
+        if (!isLocalStorageAvailable()) {
+            document.addEventListener('DOMContentLoaded', function () {
+                // Process all links that point to coach portal pages
+                document.querySelectorAll('a').forEach(function (link) {
+                    const href = link.getAttribute('href');
+                    if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
+                        // Add auth_status parameter to the link
+                        const separator = href.includes('?') ? '&' : '?';
+                        link.setAttribute('href', href + separator + 'auth_status=ok');
+                    }
+                });
+            });
+        }
     }
 });

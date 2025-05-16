@@ -103,7 +103,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Check if user has coach access
-            const hasAccess = localStorage.getItem('aarc_coach_access') === 'granted';
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
+            const storageAuth = localStorage.getItem('aarc_coach_access') === 'granted';
+
+            // If no access via any method, redirect to login
+            const hasAccess = urlAuth || storageAuth;
             if (!hasAccess) {
                 window.location.href = '{{ site.baseurl }}/coach_portal/';
             }
