@@ -56,6 +56,14 @@ search_exclude: true
         <li><a href="{{ site.baseurl }}/coach_portal/textbook/participant_assessment.html#final-assessment">Final Assessment</a></li>
       </ul>
     </li>
+    <li>
+      <h3><a href="{{ site.baseurl }}/coach_portal/textbook/program_administration.html">Program Administration</a></h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/coach_portal/textbook/program_administration.html#registration-management">Registration Management</a></li>
+        <li><a href="{{ site.baseurl }}/coach_portal/textbook/program_administration.html#communication-protocols">Communication Protocols</a></li>
+        <li><a href="{{ site.baseurl }}/coach_portal/textbook/program_administration.html#equipment-logistics">Equipment Logistics</a></li>
+      </ul>
+    </li>
   </ol>
 </div>
 

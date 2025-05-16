@@ -39,6 +39,7 @@ The program consists of 4 sessions (3 hours each) scheduled across two consecuti
   <ul class="mb-0">
     <li>Multiple sessions in a single day during the first weekend</li>
     <li>Hand sensitivity and potential blister development</li>
+    <li>Possibility of bruising during the flip test, particularly on legs, torso, and arms</li>
     <li>Cumulative fatigue across consecutive days of learning</li>
   </ul>
 </div>
