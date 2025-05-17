@@ -183,297 +183,348 @@
   
   <div id="safety-tab" class="tab-content">
     <h2 id="safety-first-the-flip-test-and-self-rescue">Safety First: The Flip Test and Self-Rescue</h2>
-
-    <h3>What Is a Flip Test?</h3>
-    <p>A supervised practice of capsizing and safely returning to your boat. This essential skill ensures you can handle an unexpected capsize. Experiencing this in a controlled setting removes the element of surprise and builds confidence for water safety.</p>
-
-    <h3>Personal Safety Preparation</h3>
-    <p>Before each rowing session, ensure you've taken care of these important personal safety items:</p>
     
-    <h4>High-Visibility Clothing</h4>
-    <ul>
-      <li><strong>Critical safety requirement:</strong> Always wear bright, visible clothing when rowing</li>
-      <li><strong>Preferred colors:</strong> White or bright/neon colors (yellow, orange, pink)</li>
-      <li><strong>Avoid:</strong> Dark colors like black, navy, or dark gray that blend with the water</li>
-      <li><strong>Enhanced visibility:</strong> Consider clothing with reflective elements for dawn/dusk rowing</li>
-      <li><strong>Remember:</strong> Being visible to other boats and watercraft could save your life</li>
-    </ul>
+    <!-- Add accordion controls -->
+    <div class="accordion-controls">
+      <button id="expand-all">Expand All</button>
+      <button id="collapse-all">Collapse All</button>
+    </div>
+    
+    <!-- First accordion section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">What Is a Flip Test?</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>A supervised practice of capsizing and safely returning to your boat. This essential skill ensures you can handle an unexpected capsize. Experiencing this in a controlled setting removes the element of surprise and builds confidence for water safety.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Personal Safety Preparation section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">Personal Safety Preparation</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>Before each rowing session, ensure you've taken care of these important personal safety items:</p>
+          
+          <h4>High-Visibility Clothing</h4>
+          <ul>
+            <li><strong>Critical safety requirement:</strong> Always wear bright, visible clothing when rowing</li>
+            <li><strong>Preferred colors:</strong> White or bright/neon colors (yellow, orange, pink)</li>
+            <li><strong>Avoid:</strong> Dark colors like black, navy, or dark gray that blend with the water</li>
+            <li><strong>Enhanced visibility:</strong> Consider clothing with reflective elements for dawn/dusk rowing</li>
+            <li><strong>Remember:</strong> Being visible to other boats and watercraft could save your life</li>
+          </ul>
     
     <div class="mini-quiz">
-      <h4>Quick Check</h4>
-      <div class="mini-quiz-question">
-        <p>Which color combination for high-visibility clothing is most effective for being seen on the water?</p>
-        <button class="mini-quiz-toggle">Show Answer</button>
-        <div class="mini-quiz-answer hidden">
-          <p>Fluorescent yellow, orange, or green provide the highest visibility on water, especially in low light conditions.</p>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">More safety questions →</a>
+              <h4>Quick Check</h4>
+              <div class="mini-quiz-question">
+                <p>Which color combination for high-visibility clothing is most effective for being seen on the water?</p>
+                <button class="mini-quiz-toggle">Show Answer</button>
+                <div class="mini-quiz-answer hidden">
+                  <p>Fluorescent yellow, orange, or green provide the highest visibility on water, especially in low light conditions.</p>
+                  <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">More safety questions →</a>
+                </div>
+              </div>
+            </div>
+            
+            <h4>Prevent Hand Injuries</h4>
+            <ul>
+              <li><strong>Cut your fingernails:</strong> 
+                <ul>
+                  <li>Keep fingernails short and smooth to prevent scratching your other hand</li>
+                  <li>During the rowing stroke, one hand passes very close to the other with nails pointing downward</li>
+                  <li>Long nails can cause painful scratches or cuts to your opposite hand</li>
+                  <li>File any sharp edges to prevent snagging on equipment or clothing</li>
+                </ul>
+              </li>
+              <li><strong>Remove rings and jewelry:</strong>
+                <ul>
+                  <li>Rings can interfere with proper grip technique</li>
+                  <li>Jewelry may increase friction between hand and oar, leading to blisters</li>
+                  <li>Rings can catch on equipment and cause injury</li>
+                  <li>Consider removing watches and bracelets that might restrict movement</li>
+                </ul>
+              </li>
+              <li><strong>Secure long hair:</strong> Tie back long hair to prevent it getting caught in moving parts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- Understanding Capsizing section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">Understanding Capsizing</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>Sculling boats are narrow by design for speed and efficiency, making them inherently less stable than recreational watercraft. Capsizing can happen for several reasons:</p>
+          <ul>
+            <li><strong>Balance and Body Position:</strong> Small shifts in weight or uneven oar handle heights</li>
+            <li><strong>Technique Errors:</strong> "Catching a crab" (blade stuck in water) or uneven pressure</li>
+            <li><strong>Oar Handling:</strong> Challenges managing two oars independently</li>
+            <li><strong>External Conditions:</strong> Wind, waves, and boat wash from other vessels</li>
+            <li><strong>The Learning Process:</strong> Developing new balance reflexes takes time</li>
+          </ul>
+          <p>Remember that capsizing is a normal part of learning to scull. Many experienced rowers have capsized at some point in their rowing careers!</p>
+
+    <!-- The Self-Rescue Process section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">The Self-Rescue Process: Detailed Steps</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <h4>Immediate Response</h4>
+          <ol>
+            <li><strong>Stay Calm and Stay With Your Boat:</strong> The golden rule of water safety. The shell, even when swamped or upside down, provides significant buoyancy and is your primary flotation aid.</li>
+            <li><strong>Manage Your Oars:</strong> Locate both oars immediately – they will float. Keep them nearby, as they are essential tools for stabilizing the boat during re-entry.</li>
+            <li><strong>Assess the Situation:</strong> Note your position relative to shore and check for any immediate hazards.</li>
+          </ol>
+          
+          <h4>Preparing for Re-entry</h4>
+          <ol>
+            <li><strong>Right the Shell (if upside down):</strong>
+              <ul>
+                <li>Approach the overturned scull from the side</li>
+                <li>Reach across the hull (bottom) of the boat to the far side and grab the gunwale (top edge)</li>
+                <li>Slowly pull the boat towards you to right it, watching out for the oars as it flips</li>
+              </ul>
+            </li>
+            <li><strong>Position the Oars for Stability:</strong>
+              <ul>
+                <li>Arrange both oars perpendicular to the boat (T-position)</li>
+                <li>Ensure blades are flat on the water surface (feathered)</li>
+                <li>This creates an outrigger system that dramatically improves stability</li>
+              </ul>
+            </li>
+          </ol>
+          
+          <h4>Re-entering the Boat: Side Entry Method</h4>
+          <ol>
+            <li><strong>Position Yourself:</strong> Swim to the middle of the boat (near the rigger). Face the shell, holding onto the overlapping oar handles or the near gunwale.</li>
+            <li><strong>The Kick & Hip Lift:</strong>
+              <ul>
+                <li>Take a breath, dip slightly underwater</li>
+                <li>Execute a powerful kick (dolphin or scissor) with your legs</li>
+                <li>Focus on driving your hips up onto the gunwale</li>
+                <li>This step relies on leg power, not upper body strength</li>
+              </ul>
+            </li>
+            <li><strong>The Tummy Flop & Roll:</strong>
+              <ul>
+                <li>Once your hips/stomach are across the gunwale, pause briefly to balance</li>
+                <li>The boat will wobble – rely on the oar stability system</li>
+              </ul>
+            </li>
+            <li><strong>Swing a Leg Over:</strong> Carefully swing the leg furthest from the boat over the hull and into the cockpit area.</li>
+            <li><strong>Sit Up Slowly:</strong>
+              <ul>
+                <li>Bring the other leg over (you might straddle the boat initially)</li>
+                <li>Slowly and carefully shift your weight to sit down on the seat</li>
+              </ul>
+            </li>
+            <li><strong>Regain Control:</strong>
+              <ul>
+                <li>Immediately check oar handles – keep them slightly elevated with blades flat on water</li>
+                <li>The boat will have some water in it – this is normal</li>
+                <li>Begin gentle rowing to shore or continue your session</li>
+              </ul>
+            </li>
+          </ol>
+    
+          <div class="knowledge-check">
+            <h4>Quick Knowledge Check</h4>
+            <p class="question">What should you do if you capsize and your boat is upside down?</p>
+            <div class="knowledge-check-toggle">
+              <button class="toggle-answer">Show Answer</button>
+              <div class="answer hidden">
+                <p><strong>Answer:</strong> Approach the overturned scull from the side, reach across the hull to the far side gunwale, and slowly pull the boat towards you to right it, watching out for the oars as it flips.</p>
+                <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">Try the full Safety Quiz</a></p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Video Demonstrations</h4>
+          <p>Watch these instructional videos showing the proper flip test procedure:</p>
+          
+          <div class="video-grid">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure</p>
+            <p><strong>Right:</strong> Lars Flip Test Demo - Alternative re-entry technique</p>
+          </div>
+          
+          <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.html">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
         </div>
       </div>
     </div>
-    
-    <h4>Prevent Hand Injuries</h4>
-    <ul>
-      <li><strong>Cut your fingernails:</strong> 
-        <ul>
-          <li>Keep fingernails short and smooth to prevent scratching your other hand</li>
-          <li>During the rowing stroke, one hand passes very close to the other with nails pointing downward</li>
-          <li>Long nails can cause painful scratches or cuts to your opposite hand</li>
-          <li>File any sharp edges to prevent snagging on equipment or clothing</li>
-        </ul>
-      </li>
-      <li><strong>Remove rings and jewelry:</strong>
-        <ul>
-          <li>Rings can interfere with proper grip technique</li>
-          <li>Jewelry may increase friction between hand and oar, leading to blisters</li>
-          <li>Rings can catch on equipment and cause injury</li>
-          <li>Consider removing watches and bracelets that might restrict movement</li>
-        </ul>
-      </li>
-      <li><strong>Secure long hair:</strong> Tie back long hair to prevent it getting caught in moving parts</li>
-    </ul>
 
-    <h3>Understanding Capsizing</h3>
-    <p>Sculling boats are narrow by design for speed and efficiency, making them inherently less stable than recreational watercraft. Capsizing can happen for several reasons:</p>
-    <ul>
-      <li><strong>Balance and Body Position:</strong> Small shifts in weight or uneven oar handle heights</li>
-      <li><strong>Technique Errors:</strong> "Catching a crab" (blade stuck in water) or uneven pressure</li>
-      <li><strong>Oar Handling:</strong> Challenges managing two oars independently</li>
-      <li><strong>External Conditions:</strong> Wind, waves, and boat wash from other vessels</li>
-      <li><strong>The Learning Process:</strong> Developing new balance reflexes takes time</li>
-    </ul>
-    <p>Remember that capsizing is a normal part of learning to scull. Many experienced rowers have capsized at some point in their rowing careers!</p>
-
-    <h3>The Self-Rescue Process: Detailed Steps</h3>
-    
-    <h4>Immediate Response</h4>
-    <ol>
-      <li><strong>Stay Calm and Stay With Your Boat:</strong> The golden rule of water safety. The shell, even when swamped or upside down, provides significant buoyancy and is your primary flotation aid.</li>
-      <li><strong>Manage Your Oars:</strong> Locate both oars immediately – they will float. Keep them nearby, as they are essential tools for stabilizing the boat during re-entry.</li>
-      <li><strong>Assess the Situation:</strong> Note your position relative to shore and check for any immediate hazards.</li>
-    </ol>
-    
-    <h4>Preparing for Re-entry</h4>
-    <ol>
-      <li><strong>Right the Shell (if upside down):</strong>
-        <ul>
-          <li>Approach the overturned scull from the side</li>
-          <li>Reach across the hull (bottom) of the boat to the far side and grab the gunwale (top edge)</li>
-          <li>Slowly pull the boat towards you to right it, watching out for the oars as it flips</li>
-        </ul>
-      </li>
-      <li><strong>Position the Oars for Stability:</strong>
-        <ul>
-          <li>Arrange both oars perpendicular to the boat (T-position)</li>
-          <li>Ensure blades are flat on the water surface (feathered)</li>
-          <li>This creates an outrigger system that dramatically improves stability</li>
-        </ul>
-      </li>
-    </ol>
-    
-    <h4>Re-entering the Boat: Side Entry Method</h4>
-    <ol>
-      <li><strong>Position Yourself:</strong> Swim to the middle of the boat (near the rigger). Face the shell, holding onto the overlapping oar handles or the near gunwale.</li>
-      <li><strong>The Kick & Hip Lift:</strong>
-        <ul>
-          <li>Take a breath, dip slightly underwater</li>
-          <li>Execute a powerful kick (dolphin or scissor) with your legs</li>
-          <li>Focus on driving your hips up onto the gunwale</li>
-          <li>This step relies on leg power, not upper body strength</li>
-        </ul>
-      </li>
-      <li><strong>The Tummy Flop & Roll:</strong>
-        <ul>
-          <li>Once your hips/stomach are across the gunwale, pause briefly to balance</li>
-          <li>The boat will wobble – rely on the oar stability system</li>
-        </ul>
-      </li>
-      <li><strong>Swing a Leg Over:</strong> Carefully swing the leg furthest from the boat over the hull and into the cockpit area.</li>
-      <li><strong>Sit Up Slowly:</strong>
-        <ul>
-          <li>Bring the other leg over (you might straddle the boat initially)</li>
-          <li>Slowly and carefully shift your weight to sit down on the seat</li>
-        </ul>
-      </li>
-      <li><strong>Regain Control:</strong>
-        <ul>
-          <li>Immediately check oar handles – keep them slightly elevated with blades flat on water</li>
-          <li>The boat will have some water in it – this is normal</li>
-          <li>Begin gentle rowing to shore or continue your session</li>
-        </ul>
-      </li>
-    </ol>
-    
-    <div class="knowledge-check">
-      <h4>Quick Knowledge Check</h4>
-      <p class="question">What should you do if you capsize and your boat is upside down?</p>
-      <div class="knowledge-check-toggle">
-        <button class="toggle-answer">Show Answer</button>
-        <div class="answer hidden">
-          <p><strong>Answer:</strong> Approach the overturned scull from the side, reach across the hull to the far side gunwale, and slowly pull the boat towards you to right it, watching out for the oars as it flips.</p>
-          <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">Try the full Safety Quiz</a></p>
+    <!-- Water Safety Rules section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">Water Safety Rules</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <div class="info-box tip">
+            <h4>AARC Policy Resources</h4>
+            <p>We recommend reviewing these official AARC policy documents at your convenience:</p>
+            <ul class="mb-0">
+              <li><a href="../../src/AARC_Safety_Rules.pdf" target="_blank"><strong>AARC Safety Rules</strong></a> - Complete safety guidelines for all AARC rowers</li>
+              <li><a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank"><strong>Code of Conduct</strong></a> - Behavioral expectations for all members</li>
+              <li><a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank"><strong>SafeSport Policy</strong></a> - Guidelines for maintaining a safe sporting environment</li>
+            </ul>
+          </div>
+          
+          <ul>
+            <li><strong>Always wear appropriate safety gear:</strong> Use PFDs (life jackets) when required by club policy, especially for beginners</li>
+            <li><strong>Check weather and water conditions before rowing:</strong>
+              <ul>
+                <li>Avoid rowing in thunderstorms or lightning</li>
+                <li>Be cautious of high winds and whitecaps</li>
+                <li>Know the water temperature (hypothermia risk, even in summer)</li>
+                <li>Check for river debris or unusual flow</li>
+              </ul>
+            </li>
+            <li><strong>Be aware of traffic and follow navigation rules:</strong>
+              <ul>
+                <li>Stay to the starboard (right) side of the waterway</li>
+                <li>Look behind you every 5-10 strokes to check your course</li>
+                <li>Know when and where to cross the waterway safely</li>
+                <li>Follow bridge passage protocols exactly as taught</li>
+              </ul>
+            </li>
+            <li><strong>Communication and Emergency Preparedness:</strong>
+              <ul>
+                <li>Know the sculler's distress signal (raising and lowering one arm repeatedly while using the other arm to maintain stability with your oars)</li>
+                <li>Understand whistle/megaphone signals from coaches</li>
+                <li>Always sign out boats and record your return time</li>
+                <li>Know the location of first aid equipment</li>
+              </ul>
+            </li>
+            <li><strong>Never row alone as a beginner:</strong> Until you're signed off by coaches, always row during supervised sessions</li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <h4>Video Demonstrations</h4>
-    <p>Watch these instructional videos showing the proper flip test procedure:</p>
-    
-    <div class="video-grid">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Caring for Your Hands section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">Caring for Your Hands</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>Rowing can cause blisters, especially for beginners. This is a normal part of the learning process as your hands adapt to the unique demands of the sport.</p>
+          
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div class="video-item">
+            <p><strong>Correct Grip Tutorial</strong> - The proper grip technique is the first step in preventing blisters</p>
+          </div>
+
+          <h4>Prevention Strategies</h4>
+          <ul>
+            <li><strong>Develop proper grip technique:</strong>
+              <ul>
+                <li>Maintain a relaxed "hook" grip rather than a tight "death grip"</li>
+                <li>Let the oar handle sit in the fingers with light pressure</li>
+                <li>Think of "fingers as hooks, not fists"</li>
+              </ul>
+            </li>
+            <li><strong>Allow for gradual conditioning:</strong>
+              <ul>
+                <li>Start with shorter rowing sessions and gradually increase duration</li>
+                <li>Allow calluses to form naturally over time</li>
+                <li>Be patient with the adaptation process</li>
+              </ul>
+            </li>
+            <li><strong>Use preventative protection:</strong>
+              <ul>
+                <li>Apply athletic tape to vulnerable areas <em>before</em> blisters form</li>
+                <li>Ensure tape is applied to clean, dry hands at least 20 minutes before rowing</li>
+                <li>Consider using rowing gloves if you continue to have significant issues</li>
+              </ul>
+            </li>
+          </ul>
+          
+          <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatment.md">Rower's Hand Blister Treatment</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
+
+          <h4>Blister Treatment</h4>
+          <ul>
+            <li><strong>For intact blisters:</strong>
+              <ul>
+                <li>If small, keep the blister intact as the skin provides natural protection</li>
+                <li>Cover with a hydrocolloid blister bandage or athletic tape with padding</li>
+                <li>Protect from further friction during rowing</li>
+              </ul>
+            </li>
+            <li><strong>For popped or torn blisters:</strong>
+              <ul>
+                <li>Clean the area gently with mild soap and water</li>
+                <li>Apply antibiotic ointment or petroleum jelly</li>
+                <li>Cover with a non-stick dressing and secure with tape</li>
+                <li>Change dressing daily and after rowing</li>
+              </ul>
+            </li>
+            <li><strong>Watch for infection signs:</strong>
+              <ul>
+                <li>Increasing pain, redness spreading beyond the blister area</li>
+                <li>Warmth, swelling, or pus formation</li>
+                <li>If signs of infection appear, seek medical attention</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Rowing with Hand Issues</h4>
+          <ul>
+            <li><strong>Proper protection:</strong>
+              <ul>
+                <li>Always place a non-stick barrier over open blisters before taping</li>
+                <li>Consider "tape grip" technique for palm blisters (coaches can demonstrate)</li>
+                <li>For multiple blisters, rowing gloves might be appropriate temporarily</li>
+              </ul>
+            </li>
+            <li><strong>Post-rowing care:</strong>
+              <ul>
+                <li>Remove tape/dressings after rowing to clean and air the area</li>
+                <li>Wash hands thoroughly to prevent infection</li>
+                <li>Apply moisturizer to keep calluses supple (especially overnight)</li>
+              </ul>
+            </li>
+            <li><strong>Long-term management:</strong>
+              <ul>
+                <li>Regularly maintain calluses by filing rough edges</li>
+                <li>Keep calluses at moderate thickness - not too thick or too thin</li>
+                <li>Continue to focus on proper grip technique to minimize friction</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Equipment Safety Checks section -->
+    <div class="accordion-section">
+      <button class="accordion-toggle">Equipment Safety Checks</button>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>Before each row, take a moment to check these key safety features:</p>
+          <ul>
+            <li><strong>Bow ball:</strong> Must be securely attached and undamaged</li>
+            <li><strong>Hull integrity:</strong> No visible cracks or damage</li>
+            <li><strong>Foot stretchers:</strong> Properly adjusted and secure</li>
+            <li><strong>Heel restraints:</strong> Functional to allow quick foot release</li>
+            <li><strong>Riggers and hardware:</strong> All bolts tight, no missing parts</li>
+            <li><strong>Oarlocks:</strong> Gates close properly and secure the oars</li>
+          </ul>
+          <p>If you find any issues with equipment, report them immediately to your coach and note them in the boat log.</p>
+        </div>
       </div>
     </div>
-    
-    <div class="video-item">
-      <p><strong>Left:</strong> Johanna Flip Test Demo - Standard flip test procedure</p>
-      <p><strong>Right:</strong> Lars Flip Test Demo - Alternative re-entry technique</p>
-    </div>
-    
-    <p>For detailed step-by-step instructions, see our <a href="../../src/Sculling_Self_Rescue_Guide.html">complete Sculling Self-Rescue Guide</a>. Find all safety videos in our <a href="QA_Companion.html#videos-tab">Video Library</a>.</p>
-
-    <h3>Water Safety Rules</h3>
-    <div class="info-box tip">
-      <h4>AARC Policy Resources</h4>
-      <p>We recommend reviewing these official AARC policy documents at your convenience:</p>
-      <ul class="mb-0">
-        <li><a href="../../src/AARC_Safety_Rules.pdf" target="_blank"><strong>AARC Safety Rules</strong></a> - Complete safety guidelines for all AARC rowers</li>
-        <li><a href="../../src/AARC_Code_of_Conduct_2025-02-26.pdf" target="_blank"><strong>Code of Conduct</strong></a> - Behavioral expectations for all members</li>
-        <li><a href="../../src/AARCSafeSport_2015-01-18.pdf" target="_blank"><strong>SafeSport Policy</strong></a> - Guidelines for maintaining a safe sporting environment</li>
-      </ul>
-    </div>
-    
-    <ul>
-      <li><strong>Always wear appropriate safety gear:</strong> Use PFDs (life jackets) when required by club policy, especially for beginners</li>
-      <li><strong>Check weather and water conditions before rowing:</strong>
-        <ul>
-          <li>Avoid rowing in thunderstorms or lightning</li>
-          <li>Be cautious of high winds and whitecaps</li>
-          <li>Know the water temperature (hypothermia risk, even in summer)</li>
-          <li>Check for river debris or unusual flow</li>
-        </ul>
-      </li>
-      <li><strong>Be aware of traffic and follow navigation rules:</strong>
-        <ul>
-          <li>Stay to the starboard (right) side of the waterway</li>
-          <li>Look behind you every 5-10 strokes to check your course</li>
-          <li>Know when and where to cross the waterway safely</li>
-          <li>Follow bridge passage protocols exactly as taught</li>
-        </ul>
-      </li>
-      <li><strong>Communication and Emergency Preparedness:</strong>
-        <ul>
-          <li>Know the sculler's distress signal (raising and lowering one arm repeatedly while using the other arm to maintain stability with your oars)</li>
-          <li>Understand whistle/megaphone signals from coaches</li>
-          <li>Always sign out boats and record your return time</li>
-          <li>Know the location of first aid equipment</li>
-        </ul>
-      </li>
-      <li><strong>Never row alone as a beginner:</strong> Until you're signed off by coaches, always row during supervised sessions</li>
-    </ul>
-
-    <h3>Caring for Your Hands</h3>
-    <p>Rowing can cause blisters, especially for beginners. This is a normal part of the learning process as your hands adapt to the unique demands of the sport.</p>
-    
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
-    <div class="video-item">
-      <p><strong>Correct Grip Tutorial</strong> - The proper grip technique is the first step in preventing blisters</p>
-    </div>
-
-    <h4>Prevention Strategies</h4>
-    <ul>
-      <li><strong>Develop proper grip technique:</strong>
-        <ul>
-          <li>Maintain a relaxed "hook" grip rather than a tight "death grip"</li>
-          <li>Let the oar handle sit in the fingers with light pressure</li>
-          <li>Think of "fingers as hooks, not fists"</li>
-        </ul>
-      </li>
-      <li><strong>Allow for gradual conditioning:</strong>
-        <ul>
-          <li>Start with shorter rowing sessions and gradually increase duration</li>
-          <li>Allow calluses to form naturally over time</li>
-          <li>Be patient with the adaptation process</li>
-        </ul>
-      </li>
-      <li><strong>Use preventative protection:</strong>
-        <ul>
-          <li>Apply athletic tape to vulnerable areas <em>before</em> blisters form</li>
-          <li>Ensure tape is applied to clean, dry hands at least 20 minutes before rowing</li>
-          <li>Consider using rowing gloves if you continue to have significant issues</li>
-        </ul>
-      </li>
-    </ul>
-    
-    <p>For comprehensive guidance on blister treatment and management, see our <a href="../../src/Rowers_Hand_Blister_Treatment.md">Rower's Hand Blister Treatment</a> guide and the <a href="QA_Companion.html#videos-tab">Video Library</a> for more technique demonstrations.</p>
-
-    <h4>Blister Treatment</h4>
-    <ul>
-      <li><strong>For intact blisters:</strong>
-        <ul>
-          <li>If small, keep the blister intact as the skin provides natural protection</li>
-          <li>Cover with a hydrocolloid blister bandage or athletic tape with padding</li>
-          <li>Protect from further friction during rowing</li>
-        </ul>
-      </li>
-      <li><strong>For popped or torn blisters:</strong>
-        <ul>
-          <li>Clean the area gently with mild soap and water</li>
-          <li>Apply antibiotic ointment or petroleum jelly</li>
-          <li>Cover with a non-stick dressing and secure with tape</li>
-          <li>Change dressing daily and after rowing</li>
-        </ul>
-      </li>
-      <li><strong>Watch for infection signs:</strong>
-        <ul>
-          <li>Increasing pain, redness spreading beyond the blister area</li>
-          <li>Warmth, swelling, or pus formation</li>
-          <li>If signs of infection appear, seek medical attention</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h4>Rowing with Hand Issues</h4>
-    <ul>
-      <li><strong>Proper protection:</strong>
-        <ul>
-          <li>Always place a non-stick barrier over open blisters before taping</li>
-          <li>Consider "tape grip" technique for palm blisters (coaches can demonstrate)</li>
-          <li>For multiple blisters, rowing gloves might be appropriate temporarily</li>
-        </ul>
-      </li>
-      <li><strong>Post-rowing care:</strong>
-        <ul>
-          <li>Remove tape/dressings after rowing to clean and air the area</li>
-          <li>Wash hands thoroughly to prevent infection</li>
-          <li>Apply moisturizer to keep calluses supple (especially overnight)</li>
-        </ul>
-      </li>
-      <li><strong>Long-term management:</strong>
-        <ul>
-          <li>Regularly maintain calluses by filing rough edges</li>
-          <li>Keep calluses at moderate thickness - not too thick or too thin</li>
-          <li>Continue to focus on proper grip technique to minimize friction</li>
-        </ul>
-      </li>
-    </ul>
-
-    <h3>Equipment Safety Checks</h3>
-    <p>Before each row, take a moment to check these key safety features:</p>
-    <ul>
-      <li><strong>Bow ball:</strong> Must be securely attached and undamaged</li>
-      <li><strong>Hull integrity:</strong> No visible cracks or damage</li>
-      <li><strong>Foot stretchers:</strong> Properly adjusted and secure</li>
-      <li><strong>Heel restraints:</strong> Functional to allow quick foot release</li>
-      <li><strong>Riggers and hardware:</strong> All bolts tight, no missing parts</li>
-      <li><strong>Oarlocks:</strong> Gates close properly and secure the oars</li>
-    </ul>
-    <p>If you find any issues with equipment, report them immediately to your coach and note them in the boat log.</p>
     
     <div class="section-review">
       <h4>Review Your Safety Knowledge</h4>
@@ -857,3 +908,7 @@
     </div>
   </div>
 </div>
+
+<!-- Include the accordion scripts -->
+<script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>

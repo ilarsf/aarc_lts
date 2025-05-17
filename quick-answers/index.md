@@ -335,7 +335,6 @@ title: Quick Answers - AARC Learn to Scull Program
     <div class="tree-question hidden" id="q4">
       <h3>Safety Information:</h3>
       <div class="tree-options">
-        <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue Guide</a>
         <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue & Flip Test Guide</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html" class="tree-link">River Traffic Rules</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html" class="tree-link">Weather Guidelines</a>

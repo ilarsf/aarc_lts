@@ -13,6 +13,19 @@ title: "Part 3: Safety - AARC Learn to Scull Textbook"
 </div>
 
 {% include accordion.html %}
+<script>
+  // Ensure accordions are initialized after content is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Accordion initialization check - Part 3 page');
+    // Add a slight delay to make sure content is fully loaded
+    setTimeout(function() {
+      // Re-initialize accordions if needed
+      if (typeof initAccordions === 'function') {
+        initAccordions();
+      }
+    }, 300);
+  });
+</script>
 {% include textbook/Part3-Safety-with-accordions.md %}
 
 <div class="textbook-footer">
