@@ -18,6 +18,31 @@ search_exclude: true
 </div>
 
 {% include accordion.html %}
+<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
+
+<!-- Filter Controls -->
+<div class="filters-container">
+  <h3>Filter Drills by Skill Tags</h3>
+  <p class="filter-instructions">Click on any tag to filter drills by that skill focus. Click tags in drills for quick filtering.</p>
+  <div class="tag-filters">
+    <button class="tag-filter active" data-tag="all">All Skills</button>
+    <button class="tag-filter" data-tag="Balance">Balance</button>
+    <button class="tag-filter" data-tag="Hands">Hands</button>
+    <button class="tag-filter" data-tag="Posture">Posture</button>
+    <button class="tag-filter" data-tag="Sequencing">Sequencing</button>
+    <button class="tag-filter" data-tag="Control">Control</button>
+    <button class="tag-filter" data-tag="Coordination">Coordination</button>
+    <button class="tag-filter" data-tag="Technique">Technique</button>
+    <button class="tag-filter" data-tag="Recovery">Recovery</button>
+    <button class="tag-filter" data-tag="Body Awareness">Body Awareness</button>
+    <button class="tag-filter" data-tag="Confidence">Confidence</button>
+    <button class="tag-filter" data-tag="Precision">Precision</button>
+  </div>
+  <div class="filter-counter">
+    <span id="visible-drills-count">All</span> drills shown
+  </div>
+</div>
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
@@ -1017,13 +1042,23 @@ search_exclude: true
 <style>
 .drill-categories {
     margin: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
 }
 
 .category-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
 }
 
 .category-link {
@@ -1033,10 +1068,90 @@ search_exclude: true
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .category-link:hover {
     background-color: #e0e0e0;
+}
+
+.category-link.active {
+    background-color: #0073E6;
+    color: white;
+}
+
+/* Filter Styles */
+.filters-container {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 60px; /* Leave space for the category navigation */
+    z-index: 90;
+}
+
+.filters-container h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.filter-instructions {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-counter {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+    margin-top: 0.5rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 0.5rem;
+}
+
+#visible-drills-count {
+    font-weight: bold;
+    color: #0073E6;
+}
+
+.tag-filter {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tag-filter:hover {
+    background-color: #e7e7e7;
+}
+
+.tag-filter.active {
+    background-color: #0073E6;
+    color: white;
+    border-color: #0073E6;
+}
+
+/* Hide filtered items */
+.accordion-section.filtered {
+    display: none;
 }
 
 .accordion-controls {
@@ -1052,6 +1167,7 @@ search_exclude: true
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .accordion-controls button:hover {
@@ -1060,6 +1176,7 @@ search_exclude: true
 
 .accordion-section {
     margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .accordion-toggle {
@@ -1075,42 +1192,42 @@ search_exclude: true
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    transition: background-color 0.2s ease;
 }
 
 .accordion-toggle:hover {
     background-color: #e0e0e0;
 }
 
+.accordion-toggle:after {
+    content: '\002B'; /* Plus sign */
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.accordion-toggle.active:after {
+    content: '\2212'; /* Minus sign */
+}
+
 .accordion-content {
-    display: none;
-    padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
     background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    margin-top: 0.5rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-radius: 0 0 4px 4px;
+}
+
+.accordion-content.visible {
+    max-height: 2000px; /* Arbitrary large height */
 }
 
 .accordion-content-inner {
     padding: 1rem;
-}
-
-.drill-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.drill-header {
-    background-color: #f8f9fa;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid #eee;
-}
-
-.drill-header h3 {
-    margin: 0 0 0.5rem 0;
-    color: #0073E6;
 }
 
 .skill-tag {
@@ -1121,19 +1238,40 @@ search_exclude: true
     border-radius: 50px;
     font-size: 0.8rem;
     margin-right: 0.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
-.drill-content {
-    padding: 1.5rem;
+.skill-tag:hover {
+    background-color: #c5e1ff;
 }
 
-.drill-content h4 {
-    color: #333;
-    margin: 1.25rem 0 0.75rem;
+.skill-tag.highlighted {
+    background-color: #0073E6;
+    color: white;
+    animation: pulse 1.5s infinite;
 }
 
-.drill-content h4:first-child {
-    margin-top: 0;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 115, 230, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(0, 115, 230, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 115, 230, 0);
+    }
+}
+
+.no-results {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 1rem;
+    border-left: 4px solid #ffeeba;
+    margin: 1rem 0;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .drill-variation {
@@ -1148,11 +1286,21 @@ search_exclude: true
     color: #0073E6;
 }
 
-.drill-content ul, .drill-content ol {
+h4 {
+    color: #333;
+    margin: 1.25rem 0 0.75rem;
+}
+
+h4:first-child {
+    margin-top: 0;
+}
+
+.accordion-content ul, 
+.accordion-content ol {
     margin-bottom: 1rem;
 }
 
-.drill-content li {
+.accordion-content li {
     margin-bottom: 0.5rem;
 }
 
@@ -1165,5 +1313,37 @@ search_exclude: true
         width: 100%;
         text-align: center;
     }
+    
+    .tag-filters {
+        justify-content: center;
+    }
 }
 </style>
+
+<script>
+  // Filter functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const tagFilters = document.querySelectorAll('.tag-filter');
+    const accordionSections = document.querySelectorAll('.accordion-section');
+
+    tagFilters.forEach(filter => {
+      filter.addEventListener('click', function() {
+        const tag = this.getAttribute('data-tag');
+
+        // Remove active class from all filters and add to the clicked one
+        tagFilters.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        // Show/Hide accordion sections based on filter
+        accordionSections.forEach(section => {
+          const hasTag = section.querySelector('.skill-tag');
+          if (tag === 'all' || (hasTag && hasTag.textContent.includes(tag))) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

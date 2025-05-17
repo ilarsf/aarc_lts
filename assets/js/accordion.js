@@ -14,19 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle the content visibility
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
+                content.classList.remove('visible');
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('visible');
             }
         });
     });
 
-    // Function to expand all sections
+    // Function to expand all visible sections
     window.expandAllSections = function () {
         accordionToggles.forEach(toggle => {
-            const content = toggle.nextElementSibling;
-            if (!content.style.maxHeight) {
+            // Only expand sections that are not filtered out
+            if (!toggle.parentElement.classList.contains('filtered')) {
+                const content = toggle.nextElementSibling;
                 toggle.classList.add('active');
                 content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('visible');
             }
         });
     }
@@ -35,10 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.collapseAllSections = function () {
         accordionToggles.forEach(toggle => {
             const content = toggle.nextElementSibling;
-            if (content.style.maxHeight) {
-                toggle.classList.remove('active');
-                content.style.maxHeight = null;
-            }
+            toggle.classList.remove('active');
+            content.style.maxHeight = null;
+            content.classList.remove('visible');
         });
     }
 
@@ -53,4 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (collapseAllBtn) {
         collapseAllBtn.addEventListener('click', window.collapseAllSections);
     }
+
+    // Initial setup - ensure accordion content is properly hidden
+    accordionToggles.forEach(toggle => {
+        const content = toggle.nextElementSibling;
+        if (!toggle.classList.contains('active')) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.classList.add('visible');
+        }
+    });
 });
