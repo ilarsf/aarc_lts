@@ -8,20 +8,20 @@ layout: default
 
 <div class="info-box note">
   <h4>What You'll Learn</h4>
-  <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescu    <p>Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.</p>
+  <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
 
-    <p>Remember these key points:</p>
-    <ul>
-      <li><strong>Stay calm and stay with your boat</strong> – it is your primary flotation device</li>
-      <li><strong>Practice the Flip Test</strong> in a controlled environment to build familiarity</li>
-      <li><strong>Master the low-exertion side re-entry technique</strong> using oars for stability</li>
-      <li><strong>Use leg power and body mechanics</strong> rather than upper body strength</li>
-      <li><strong>Follow safety protocols</strong> before and during each rowing session</li>
-    </ul>
+  <p>Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.</p>
 
-    <p>With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.</p>
-  </div>
-</div>om capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
+  <p>Remember these key points:</p>
+  <ul>
+    <li><strong>Stay calm and stay with your boat</strong> – it is your primary flotation device</li>
+    <li><strong>Practice the Flip Test</strong> in a controlled environment to build familiarity</li>
+    <li><strong>Master the low-exertion side re-entry technique</strong> using oars for stability</li>
+    <li><strong>Use leg power and body mechanics</strong> rather than upper body strength</li>
+    <li><strong>Follow safety protocols</strong> before and during each rowing session</li>
+  </ul>
+
+  <p>With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.</p>
 </div>
 
 <div class="tab-container">
@@ -114,13 +114,13 @@ layout: default
       <li><strong>Assess the Situation:</strong> Note your position relative to shore and check for any immediate hazards.</li>
     </ol>
 
-<div class="image-placeholder">
-  <div class="icon"><i class="fas fa-image"></i></div>
-  <div class="title">Immediate Post-Capsize Position</div>
-  <div class="description">Illustration showing the proper position immediately after capsizing, with the rower maintaining contact with the boat and securing the oars.</div>
-</div>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Immediate Post-Capsize Position</div>
+      <div class="description">Illustration showing the proper position immediately after capsizing, with the rower maintaining contact with the boat and securing the oars.</div>
+    </div>
 
-### Preparing for Re-entry
+    <h3>Preparing for Re-entry</h3>
 
 <div class="two-col-grid">
   <div>
@@ -156,12 +156,12 @@ layout: default
   </div>
 </div>
 
-### Re-entering the Boat: Side Entry Method
+    <h3>Re-entering the Boat: Side Entry Method</h3>
 
-<div class="info-box tip">
-  <h4>Key Technique Point</h4>
-  <p>The re-entry technique relies primarily on leg power, not upper body strength. The key is to use a strong kick to propel your hips up onto the gunwale, then roll into the boat. Think of it as a swimming dolphin kick followed by a controlled roll.</p>
-</div>
+    <div class="info-box tip">
+      <h4>Key Technique Point</h4>
+      <p>The re-entry technique relies primarily on leg power, not upper body strength. The key is to use a strong kick to propel your hips up onto the gunwale, then roll into the boat. Think of it as a swimming dolphin kick followed by a controlled roll.</p>
+    </div>
 
 <div class="three-col-grid">
   <div>
@@ -243,7 +243,7 @@ layout: default
       <li><strong>Practice Makes Perfect:</strong> Like any skill, re-entry becomes more efficient and less strenuous with practice.</li>
     </ul>
 
-### Alternative Approaches
+    <h3>Alternative Approaches</h3>
 
 <div class="two-col-grid">
   <div>
@@ -257,43 +257,43 @@ layout: default
   </div>
 </div>
 
-### Exiting at the Dock
+    <h3>Exiting at the Dock</h3>
 
-If you cannot re-enter your boat during a flip test or capsize situation:
+    <p>If you cannot re-enter your boat during a flip test or capsize situation:</p>
 
-<div class="two-col-grid">
-  <div>
-    <ol>
-      <li>Swim with your boat to the dock, keeping it between you and the dock.</li>
-      <li>Once at the dock, place both hands on the dock surface.</li>
-      <li>Use a strong push/kick motion to lift your upper body onto the dock.</li>
-      <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface.</li>
-      <li>Help may be offered, but be prepared to exit the water on your own.</li>
-    </ol>
-  </div>
-  
-  <div class="image-placeholder">
-    <div class="icon"><i class="fas fa-image"></i></div>
-    <div class="title">Pool-Style Exit</div>
-    <div class="description">Illustration showing the proper technique for exiting the water onto the dock without a ladder.</div>
-  </div>
-</div>
+    <div class="two-col-grid">
+      <div>
+        <ol>
+          <li>Swim with your boat to the dock, keeping it between you and the dock.</li>
+          <li>Once at the dock, place both hands on the dock surface.</li>
+          <li>Use a strong push/kick motion to lift your upper body onto the dock.</li>
+          <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface.</li>
+          <li>Help may be offered, but be prepared to exit the water on your own.</li>
+        </ol>
+      </div>
+      
+      <div class="image-placeholder">
+        <div class="icon"><i class="fas fa-image"></i></div>
+        <div class="title">Pool-Style Exit</div>
+        <div class="description">Illustration showing the proper technique for exiting the water onto the dock without a ladder.</div>
+      </div>
+    </div>
 
-## Video Demonstrations
+    <h3>Video Demonstrations</h3>
 
-<div class="video-grid">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
+    <div class="video-grid">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
 
-<div class="video-item">
-  <p><strong>Left:</strong> Lars Flip Test Demo - Shows the standard flip test procedure</p>
-  <p><strong>Right:</strong> Johanna Flip Test Demo - Alternative technique for re-entry</p>
-</div>
+    <div class="video-item">
+      <p><strong>Left:</strong> Lars Flip Test Demo - Shows the standard flip test procedure</p>
+      <p><strong>Right:</strong> Johanna Flip Test Demo - Alternative technique for re-entry</p>
+    </div>
   </div>
   
   <div id="practice-tab" class="tab-content">
@@ -303,18 +303,18 @@ If you cannot re-enter your boat during a flip test or capsize situation:
 
     <h4>Before You Launch: Critical Checks</h4>
 
-A few minutes spent checking before heading out can prevent significant problems:
+    <p>A few minutes spent checking before heading out can prevent significant problems:</p>
 
-<div class="two-col-grid">
-  <div>
-    <h4>Weather/Water Conditions</h4>
-    <ul>
-      <li>Check forecast (wind speed/direction, temperature, thunderstorms)</li>
-      <li>Assess current conditions (whitecaps, fog visibility, lightning)</li>
-      <li>Note water temperature (hypothermia risk)</li>
-      <li>Check for river debris or unusual flow</li>
-    </ul>
-  </div>
+    <div class="two-col-grid">
+      <div>
+        <h4>Weather/Water Conditions</h4>
+        <ul>
+          <li>Check forecast (wind speed/direction, temperature, thunderstorms)</li>
+          <li>Assess current conditions (whitecaps, fog visibility, lightning)</li>
+          <li>Note water temperature (hypothermia risk)</li>
+          <li>Check for river debris or unusual flow</li>
+        </ul>
+      </div>
   
   <div>
     <h4>Equipment Checks</h4>
@@ -334,13 +334,13 @@ A few minutes spent checking before heading out can prevent significant problems
   <p>Always check that your heel restraints are functioning properly. These simple straps prevent your feet from becoming trapped in the foot stretchers during a capsize, allowing you to exit the boat quickly and safely.</p>
 </div>
 
-### On-Water Safety
+    <h3>On-Water Safety</h3>
 
-<div class="image-placeholder">
-  <div class="icon"><i class="fas fa-image"></i></div>
-  <div class="title">Traffic Pattern Diagram</div>
-  <div class="description">Illustration of typical rowing traffic pattern on a waterway, showing proper positioning, passing procedures, and navigation around obstacles.</div>
-</div>
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Traffic Pattern Diagram</div>
+      <div class="description">Illustration of typical rowing traffic pattern on a waterway, showing proper positioning, passing procedures, and navigation around obstacles.</div>
+    </div>
 
     <ul>
       <li><strong>Traffic Pattern:</strong> Know and follow the local traffic rules (typically stay to the starboard/right side of waterways)</li>
@@ -358,16 +358,18 @@ A few minutes spent checking before heading out can prevent significant problems
 
     <h3>Conclusion</h3>
 
-Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.
+    <p>Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.</p>
 
-Remember these key points:
-* **Stay calm and stay with your boat** – it is your primary flotation device
-* **Practice the Flip Test** in a controlled environment to build familiarity
-* **Master the low-exertion side re-entry technique** using oars for stability
-* **Use leg power and body mechanics** rather than upper body strength
-* **Follow safety protocols** before and during each rowing session
+    <p>Remember these key points:</p>
+    <ul>
+      <li><strong>Stay calm and stay with your boat</strong> – it is your primary flotation device</li>
+      <li><strong>Practice the Flip Test</strong> in a controlled environment to build familiarity</li>
+      <li><strong>Master the low-exertion side re-entry technique</strong> using oars for stability</li>
+      <li><strong>Use leg power and body mechanics</strong> rather than upper body strength</li>
+      <li><strong>Follow safety protocols</strong> before and during each rowing session</li>
+    </ul>
 
-With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.
+    <p>With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.</p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
