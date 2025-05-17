@@ -21,29 +21,6 @@ search_exclude: true
 <script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
 
-<!-- Filter Controls -->
-<div class="filters-container">
-  <h3>Filter Drills by Skill Tags</h3>
-  <p class="filter-instructions">Click on any tag to filter drills by that skill focus. Click tags in drills for quick filtering.</p>
-  <div class="tag-filters">
-    <button class="tag-filter active" data-tag="all">All Skills</button>
-    <button class="tag-filter" data-tag="Balance">Balance</button>
-    <button class="tag-filter" data-tag="Hands">Hands</button>
-    <button class="tag-filter" data-tag="Posture">Posture</button>
-    <button class="tag-filter" data-tag="Sequencing">Sequencing</button>
-    <button class="tag-filter" data-tag="Control">Control</button>
-    <button class="tag-filter" data-tag="Coordination">Coordination</button>
-    <button class="tag-filter" data-tag="Technique">Technique</button>
-    <button class="tag-filter" data-tag="Recovery">Recovery</button>
-    <button class="tag-filter" data-tag="Body Awareness">Body Awareness</button>
-    <button class="tag-filter" data-tag="Confidence">Confidence</button>
-    <button class="tag-filter" data-tag="Precision">Precision</button>
-  </div>
-  <div class="filter-counter">
-    <span id="visible-drills-count">All</span> drills shown
-  </div>
-</div>
-
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
   <button id="collapse-all">Collapse All</button>
@@ -532,13 +509,11 @@ search_exclude: true
 
 <h2 id="session-specific-drill-sequences">Session-Specific Drill Sequences</h2>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Session 1 Drill Sequence</h3>
-        <span class="skill-tag">Beginner</span>
-        <span class="skill-tag">Foundation</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Session 1 Drill Sequence <span class="skill-tag">Beginner</span> <span class="skill-tag">Foundation</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Session Plan</h4>
         <ol>
             <li><strong>Erg - Pick Drill</strong> (10 min)
                 <ul>
@@ -560,15 +535,14 @@ search_exclude: true
             </li>
         </ol>
     </div>
+  </div>
 </div>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Session 2 Drill Sequence</h3>
-        <span class="skill-tag">Recovery</span>
-        <span class="skill-tag">Boat Control</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Session 2 Drill Sequence <span class="skill-tag">Recovery</span> <span class="skill-tag">Boat Control</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Session Plan</h4>
         <ol>
             <li><strong>Erg Warm-up - Pick Drill</strong> (5 min)
                 <ul>
@@ -596,15 +570,14 @@ search_exclude: true
             </li>
         </ol>
     </div>
+  </div>
 </div>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Session 3 Drill Sequence</h3>
-        <span class="skill-tag">Drive</span>
-        <span class="skill-tag">Navigation</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Session 3 Drill Sequence <span class="skill-tag">Drive</span> <span class="skill-tag">Navigation</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Session Plan</h4>
         <ol>
             <li><strong>Erg Warm-up - Reverse Pick</strong> (5 min)
                 <ul>
@@ -632,15 +605,14 @@ search_exclude: true
             </li>
         </ol>
     </div>
+  </div>
 </div>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Session 4 Drill Sequence</h3>
-        <span class="skill-tag">Integration</span>
-        <span class="skill-tag">Independence</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Session 4 Drill Sequence <span class="skill-tag">Integration</span> <span class="skill-tag">Independence</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Session Plan</h4>
         <ol>
             <li><strong>Continuous Rowing with Navigation Focus</strong> (20 min)
                 <ul>
@@ -662,6 +634,7 @@ search_exclude: true
             </li>
         </ol>
     </div>
+  </div>
 </div>
 
 <div class="info-box">
@@ -671,13 +644,10 @@ search_exclude: true
 
 <h2 id="progression-sequences">Progression Sequences</h2>
 
-<div class="drill-card">
-    <div class="drill-header">
-        <h3>Basic to Full Stroke Progression</h3>
-        <span class="skill-tag">Sequencing</span>
-        <span class="skill-tag">Integration</span>
-    </div>
-    <div class="drill-content">
+<div class="accordion-section">
+  <button class="accordion-toggle">Basic to Full Stroke Progression <span class="skill-tag">Sequencing</span> <span class="skill-tag">Integration</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
         <h4>Purpose</h4>
         <p>Builds the full stroke pattern incrementally to reinforce proper sequencing and technique.</p>
 
@@ -700,6 +670,7 @@ search_exclude: true
             <li>Encourage body awareness and proper timing</li>
         </ul>
     </div>
+  </div>
 </div>
 
 <h2 id="drive-phase-drills">Drive Phase Drills</h2>
@@ -1042,11 +1013,6 @@ search_exclude: true
 <style>
 .drill-categories {
     margin: 2rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
-    padding: 0.5rem 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -1080,78 +1046,6 @@ search_exclude: true
 .category-link.active {
     background-color: #0073E6;
     color: white;
-}
-
-/* Filter Styles */
-.filters-container {
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 6px;
-    margin-bottom: 2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 60px; /* Leave space for the category navigation */
-    z-index: 90;
-}
-
-.filters-container h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-.filter-instructions {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    font-style: italic;
-}
-
-.tag-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.filter-counter {
-    font-size: 0.9rem;
-    color: #666;
-    text-align: right;
-    margin-top: 0.5rem;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 0.5rem;
-}
-
-#visible-drills-count {
-    font-weight: bold;
-    color: #0073E6;
-}
-
-.tag-filter {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.tag-filter:hover {
-    background-color: #e7e7e7;
-}
-
-.tag-filter.active {
-    background-color: #0073E6;
-    color: white;
-    border-color: #0073E6;
-}
-
-/* Hide filtered items */
-.accordion-section.filtered {
-    display: none;
 }
 
 .accordion-controls {
@@ -1238,40 +1132,10 @@ search_exclude: true
     border-radius: 50px;
     font-size: 0.8rem;
     margin-right: 0.5rem;
-    transition: all 0.2s ease;
-    cursor: pointer;
 }
 
 .skill-tag:hover {
     background-color: #c5e1ff;
-}
-
-.skill-tag.highlighted {
-    background-color: #0073E6;
-    color: white;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 115, 230, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 6px rgba(0, 115, 230, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 115, 230, 0);
-    }
-}
-
-.no-results {
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 1rem;
-    border-left: 4px solid #ffeeba;
-    margin: 1rem 0;
-    border-radius: 4px;
-    text-align: center;
 }
 
 .drill-variation {
@@ -1313,37 +1177,5 @@ h4:first-child {
         width: 100%;
         text-align: center;
     }
-    
-    .tag-filters {
-        justify-content: center;
-    }
 }
 </style>
-
-<script>
-  // Filter functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const tagFilters = document.querySelectorAll('.tag-filter');
-    const accordionSections = document.querySelectorAll('.accordion-section');
-
-    tagFilters.forEach(filter => {
-      filter.addEventListener('click', function() {
-        const tag = this.getAttribute('data-tag');
-
-        // Remove active class from all filters and add to the clicked one
-        tagFilters.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-
-        // Show/Hide accordion sections based on filter
-        accordionSections.forEach(section => {
-          const hasTag = section.querySelector('.skill-tag');
-          if (tag === 'all' || (hasTag && hasTag.textContent.includes(tag))) {
-            section.style.display = 'block';
-          } else {
-            section.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-</script>

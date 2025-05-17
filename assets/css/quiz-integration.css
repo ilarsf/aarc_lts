@@ -170,8 +170,8 @@
 .quiz-card-header h4 {
     margin: 0;
     font-size: 18px;
-    color: white;
-    /* Changed from default to white for better visibility on blue background */
+    color: white !important;
+    /* Added !important to ensure this color overrides any other styles */
 }
 
 .quiz-card-body {
