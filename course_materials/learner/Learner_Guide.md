@@ -721,34 +721,46 @@
     <div class="quiz-progress">
       <div class="progress-grid">
         <div class="progress-item" data-quiz-id="safety">
-          <div class="progress-icon">🦺</div>
-          <div class="progress-label">Safety</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="progress-item-link">
+            <div class="progress-icon">🦺</div>
+            <div class="progress-label">Safety</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
         <div class="progress-item" data-quiz-id="bh">
-          <div class="progress-icon">🏠</div>
-          <div class="progress-label">Boathouse</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="progress-item-link">
+            <div class="progress-icon">🏠</div>
+            <div class="progress-label">Boathouse</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
         <div class="progress-item" data-quiz-id="s1">
-          <div class="progress-icon">1️⃣</div>
-          <div class="progress-label">Session 1</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="progress-item-link">
+            <div class="progress-icon">1️⃣</div>
+            <div class="progress-label">Session 1</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
         <div class="progress-item" data-quiz-id="s2">
-          <div class="progress-icon">2️⃣</div>
-          <div class="progress-label">Session 2</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="progress-item-link">
+            <div class="progress-icon">2️⃣</div>
+            <div class="progress-label">Session 2</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
         <div class="progress-item" data-quiz-id="s3">
-          <div class="progress-icon">3️⃣</div>
-          <div class="progress-label">Session 3</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3" class="progress-item-link">
+            <div class="progress-icon">3️⃣</div>
+            <div class="progress-label">Session 3</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
         <div class="progress-item" data-quiz-id="s4">
-          <div class="progress-icon">4️⃣</div>
-          <div class="progress-label">Session 4</div>
-          <div class="progress-status not-started">Not started</div>
+          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4" class="progress-item-link">
+            <div class="progress-icon">4️⃣</div>
+            <div class="progress-label">Session 4</div>
+            <div class="progress-status not-started">Not started</div>
+          </a>
         </div>
       </div>
     </div>

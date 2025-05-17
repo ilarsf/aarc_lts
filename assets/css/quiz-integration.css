@@ -77,9 +77,22 @@
 
 .progress-item {
     text-align: center;
-    padding: 10px;
+    padding: 0;
     background-color: #f8f9fa;
     border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.progress-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-item-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .progress-icon {
@@ -157,6 +170,8 @@
 .quiz-card-header h4 {
     margin: 0;
     font-size: 18px;
+    color: white;
+    /* Changed from default to white for better visibility on blue background */
 }
 
 .quiz-card-body {
