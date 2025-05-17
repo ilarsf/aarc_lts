@@ -25,9 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.add('active');
         });
     });
-
-    // Display the first tab by default
-    if (tabLinks.length > 0) {
-        tabLinks[0].click();
-    }
 });
