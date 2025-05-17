@@ -7,12 +7,6 @@ search_exclude: true
 # Key Drills Repertoire
 
 <div class="info-box tip">
-    <h3>Using This Guide</h3>
-    <p>This repertoire contains carefully selected drills organized by skill level and learning objective. Each drill
-        includes clear instructions, coaching points, and common errors to watch for.</p>
-</div>
-
-<div class="info-box tip">
   <h4>Coaching Resource</h4>
   <p>This comprehensive guide provides detailed explanations of all recommended drills for the AARC Learn to Scull program. Drills are organized by focus area to help coaches select appropriate exercises for specific skill development.</p>
 </div>

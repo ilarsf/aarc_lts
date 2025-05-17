@@ -44,6 +44,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         <div class="button-group">
             <button id="restart-button" class="quiz-button">Take Quiz Again</button>
             <button id="review-button" class="quiz-button secondary">Review Answers</button>
+            <button id="return-button" class="quiz-button">Return to Page</button>
         </div>
     </div>
 
@@ -411,6 +412,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         const startButton = document.getElementById('start-button');
         const restartButton = document.getElementById('restart-button');
         const reviewButton = document.getElementById('review-button');
+        const returnButton = document.getElementById('return-button');
         const backToResultsButton = document.getElementById('back-to-results');
         const questionCounter = document.getElementById('question-counter');
         const timerElement = document.getElementById('timer');
@@ -441,6 +443,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         let seconds = 0;
         let selectedAnswers = [];
         let quizComplete = false;
+        let referrerUrl = document.referrer || '{{ site.baseurl }}/';
 
         // --- Initialization ---
         initializeQuiz();
@@ -449,6 +452,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         startButton.addEventListener('click', attemptStartQuiz);
         restartButton.addEventListener('click', resetQuiz);
         reviewButton.addEventListener('click', showReview);
+        returnButton.addEventListener('click', () => { window.location.href = referrerUrl; });
         backToResultsButton.addEventListener('click', () => { hideAllScreens(); resultsScreen.classList.remove('hidden'); });
 
         // --- Core Functions ---
