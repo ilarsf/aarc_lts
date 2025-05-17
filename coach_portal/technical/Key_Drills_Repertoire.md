@@ -12,6 +12,11 @@ search_exclude: true
         includes clear instructions, coaching points, and common errors to watch for.</p>
 </div>
 
+<div class="info-box tip">
+  <h4>Coaching Resource</h4>
+  <p>This comprehensive guide provides detailed explanations of all recommended drills for the AARC Learn to Scull program. Drills are organized by focus area to help coaches select appropriate exercises for specific skill development.</p>
+</div>
+
 {% include accordion.html %}
 
 <div class="accordion-controls">
@@ -24,6 +29,11 @@ search_exclude: true
         <a href="#beginner-drills" class="category-link">Beginner Drills</a>
         <a href="#intermediate-drills" class="category-link">Intermediate Drills</a>
         <a href="#technical-focus-drills" class="category-link">Technical Focus Drills</a>
+        <a href="#recovery-phase-drills" class="category-link">Recovery Phase Drills</a>
+        <a href="#drive-phase-drills" class="category-link">Drive Phase Drills</a>
+        <a href="#blade-control-drills" class="category-link">Blade Control Drills</a>
+        <a href="#boat-control-drills" class="category-link">Boat Control Drills</a>
+        <a href="#session-specific-drill-sequences" class="category-link">Session-Specific Sequences</a>
         <a href="#progression-sequences" class="category-link">Progression Sequences</a>
     </div>
 </div>
@@ -202,6 +212,283 @@ search_exclude: true
             <li>Tensing up during pause</li>
             <li>Rushing through the pause</li>
             <li>Losing balance during pause</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<h2 id="recovery-phase-drills">Recovery Phase Drills</h2>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Pick Drill (Erg & Water) <span class="skill-tag">Sequencing</span> <span class="skill-tag">Recovery</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
+          <li>Progress through these stages, spending 10-15 strokes on each:
+              <ul>
+                <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
+                <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
+                <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
+                <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
+              </ul>
+          </li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Emphasize clean hand movement away from body FIRST</li>
+          <li>Ensure body pivot is complete BEFORE knees bend</li>
+          <li>Maintain consistent hand heights throughout</li>
+          <li>Focus on smooth transitions between segments</li>
+          <li>Watch for rushing - recovery should be controlled</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin on ergometer before attempting on water</li>
+          <li>Use a mirror or partner observation to check form</li>
+          <li>Add pauses between segments if needed</li>
+          <li>Reduce pressure to focus on technique</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Bending knees before hands are away/body is over
+              <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
+          <li><strong>Error:</strong> Dropping hands after finish
+              <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
+          <li><strong>Error:</strong> Rushing the movement sequence
+              <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Pause Drills <span class="skill-tag">Control</span> <span class="skill-tag">Body Awareness</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Enhances body awareness and control during recovery. Reinforces correct sequencing and develops patience.</p>
+
+      <h4>Execution</h4>
+      <p>Insert distinct pauses (1-2 seconds) at key points during the recovery:</p>
+      <ol>
+          <li><strong>Arms Away Pause:</strong> Pause immediately after the release, once hands have cleared the knees</li>
+          <li><strong>Body Over Pause:</strong> Pause after arms are extended and body has pivoted forward, before knees bend</li>
+          <li><strong>Half-Slide Pause:</strong> Pause halfway up the slide to check body position</li>
+          <li><strong>Catch Pause:</strong> Pause at the catch position with blade squared before entry</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Use verbal cadence to reinforce: "Pull... Away (pause)... Body (pause)... Slide..."</li>
+          <li>Emphasize complete pause - no movement during the hold</li>
+          <li>Check body position during each pause</li>
+          <li>Maintain proper posture and relaxation during pauses</li>
+          <li>Focus on the transition after each pause</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin with single-pause exercises, then combine multiple pauses</li>
+          <li>Start at low pressure, gradually increase as control improves</li>
+          <li>Begin on erg for understanding, then transfer to water</li>
+          <li>Progress to "Quick Pause" variations with briefer stops</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Moving during the pause
+              <br><strong>Correction:</strong> "Freeze completely during the pause"</li>
+          <li><strong>Error:</strong> Losing posture during pause
+              <br><strong>Correction:</strong> "Check your body position - core engaged, shoulders relaxed"</li>
+          <li><strong>Error:</strong> Rushing after the pause
+              <br><strong>Correction:</strong> "Smooth acceleration after each pause"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Square Blade Rowing <span class="skill-tag">Blade Control</span> <span class="skill-tag">Balance</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Builds blade control and balance. Simplifies technique for beginners while improving feel for proper blade depth.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Row without feathering the blades (keep them squared/perpendicular to water throughout stroke)</li>
+          <li>Begin with arms-only rowing to establish control</li>
+          <li>Progress to full stroke with blades remaining squared</li>
+          <li>Focus on clean entry and exit</li>
+          <li>Maintain consistent blade depth</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Start with minimal pressure</li>
+          <li>Emphasize horizontal movement of hands</li>
+          <li>Focus on precise hand heights</li>
+          <li>Ensure blades clear water completely on recovery</li>
+          <li>Drive for clean, splash-free entries and exits</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin at the dock or in very calm water</li>
+          <li>Start with 10-stroke pieces, gradually extending</li>
+          <li>Introduce brief feathering only at the finish, returning to square immediately</li>
+          <li>Progress to "Alternate 10" - 10 strokes squared, 10 strokes feathered</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Catching water during recovery
+              <br><strong>Correction:</strong> "Hands slightly higher on recovery"</li>
+          <li><strong>Error:</strong> Uneven blade depths
+              <br><strong>Correction:</strong> "Find the same resistance in both hands"</li>
+          <li><strong>Error:</strong> Hesitation before catch due to anxiety about entry
+              <br><strong>Correction:</strong> "Confidence at the catch - commit to the entry"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 id="boat-control-drills">Boat Control Drills</h2>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Balance Drills <span class="skill-tag">Balance</span> <span class="skill-tag">Core Stability</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Improves the rower's balance and stability in the boat.</p>
+
+      <h4>Setup</h4>
+      <ul>
+          <li>Rower sits in the boat with feet out of the straps</li>
+          <li>Blades are placed in the water for balance</li>
+      </ul>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Practice rowing motions with no foot stretcher engagement</li>
+          <li>Focus on maintaining balance and control with the core</li>
+          <li>Experiment with different body positions to find the center of balance</li>
+          <li>Repeat the sequence, emphasizing stability and control</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Ensure the rower is using their core for balance, not just the arms</li>
+          <li>Watch for any excessive movement or instability in the boat</li>
+          <li>Maintain a consistent rhythm and control throughout the drill</li>
+      </ul>
+
+      <h4>Common Errors</h4>
+      <ul>
+          <li>Rushing the drill or using excessive force</li>
+          <li>Failing to maintain a consistent blade depth</li>
+          <li>Loss of balance or control during the drill</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Steering Drills <span class="skill-tag">Steering</span> <span class="skill-tag">Coordination</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Purpose</h4>
+        <p>Develops the ability to steer and control the boat effectively.</p>
+
+        <h4>Setup</h4>
+        <ul>
+            <li>Rower sits in the boat with a straight course ahead</li>
+            <li>Blades are placed in the water at the sides of the boat</li>
+        </ul>
+
+        <h4>Execution</h4>
+        <ol>
+            <li>Practice moving the blades in and out of the water to steer</li>
+            <li>Use small, controlled movements to guide the boat</li>
+            <li>Focus on maintaining a straight course and balanced boat</li>
+            <li>Repeat the sequence, emphasizing steering control and coordination</li>
+        </ol>
+
+        <h4>Coaching Points</h4>
+        <ul>
+            <li>Ensure the rower is using their core and legs for steering, not just the arms</li>
+            <li>Watch for any excessive or erratic movements while steering</li>
+            <li>Maintain a consistent rhythm and control throughout the drill</li>
+        </ul>
+
+        <h4>Common Errors</h4>
+        <ul>
+            <li>Rushing the drill or using excessive force</li>
+            <li>Failing to maintain a consistent blade depth</li>
+            <li>Loss of control or steering accuracy during the drill</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<h2 id="session-specific-drill-sequences">Session-Specific Drill Sequences</h2>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Endurance Building Sequence <span class="skill-tag">Endurance</span> <span class="skill-tag">Technique</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Builds endurance while maintaining focus on technique and form.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>5 minutes: Easy rowing, focusing on technique</li>
+          <li>5 minutes: Increase pace slightly, maintain technique</li>
+          <li>5 minutes: Focus on endurance, steady pace</li>
+          <li>5 minutes: Increase pace, emphasize power and technique</li>
+          <li>5 minutes: Cool down, easy rowing</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Ensure the rower maintains good technique throughout the sequence</li>
+          <li>Watch for any signs of fatigue affecting form</li>
+          <li>Encourage a steady and controlled increase in pace</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Speed and Power Sequence <span class="skill-tag">Speed</span> <span class="skill-tag">Power</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+        <h4>Purpose</h4>
+        <p>Develops speed and power through focused intervals and technique reinforcement.</p>
+
+        <h4>Execution</h4>
+        <ol>
+            <li>3 minutes: Easy rowing, focus on quick hands and light feet</li>
+            <li>3 minutes: Build speed while maintaining technique</li>
+            <li>3 minutes: Power strokes - emphasize leg drive and body swing</li>
+            <li>3 minutes: Recovery rowing, focus on technique</li>
+            <li>3 minutes: Repeat power strokes, focus on speed</li>
+            <li>3 minutes: Cool down, easy rowing</li>
+        </ol>
+
+        <h4>Coaching Points</h4>
+        <ul>
+            <li>Ensure the rower maintains good technique, especially during power strokes</li>
+            <li>Watch for any loss of form or control at higher speeds</li>
+            <li>Encourage a strong and controlled leg drive</li>
         </ul>
     </div>
   </div>
