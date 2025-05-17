@@ -1,0 +1,173 @@
+/* Specific styling for drill repository */
+.drill-container {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.drill-container:last-child {
+    border-bottom: none;
+}
+
+.drill-header {
+    margin-bottom: 1.5rem;
+}
+
+.drill-section {
+    background-color: #f9f9f9;
+    padding: 1.25rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+/* Session timeline styling */
+.session-timeline {
+    position: relative;
+    margin-left: 15px;
+}
+
+.session-activity {
+    position: relative;
+    padding: 1rem 1rem 1rem 2rem;
+    border-left: 2px solid #0073E6;
+    margin-bottom: 1.5rem;
+}
+
+.session-activity:last-child {
+    margin-bottom: 0;
+}
+
+.session-activity:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 1.5rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #0073E6;
+}
+
+.session-activity h5 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #0073E6;
+}
+
+.session-activity ul {
+    margin-bottom: 0;
+}
+
+.session-activity i {
+    margin-right: 5px;
+}
+
+/* Progression steps styling */
+ol.progression-steps {
+    counter-reset: step-counter;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ol.progression-steps li {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    border-left: 3px solid #0073E6;
+    background: rgba(0, 115, 230, 0.05);
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+}
+
+ol.progression-steps li:hover {
+    background: rgba(0, 115, 230, 0.1);
+}
+
+.step-count {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    background: #0073E6;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.drill-variation {
+    background-color: #f0f7ff;
+    border-left: 3px solid #0073E6;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 0 5px 5px 0;
+}
+
+.drill-variation h5 {
+    margin: 0 0 0.5rem 0;
+    color: #0073E6;
+}
+
+.tab-content h3 {
+    color: #0073E6;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.tab-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.tab-content h4 {
+    color: #333;
+    margin: 1.25rem 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.tab-content ul,
+.tab-content ol {
+    margin-bottom: 1rem;
+}
+
+.tab-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Error correction and coaching points styling */
+.error-correction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.error-column,
+.correction-column {
+    padding: 0.5rem;
+}
+
+.error-column {
+    border-right: 1px solid #ddd;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .error-correction {
+        grid-template-columns: 1fr;
+    }
+
+    .error-column {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 1rem;
+    }
+}

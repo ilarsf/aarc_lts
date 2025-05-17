@@ -39,83 +39,103 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Beginner Drills</h2>
 
-      <h3>Arms Only Rowing</h3>
-      
-      <h4>Purpose</h4>
-      <p>Focuses attention on hand and arm movement while maintaining balance and posture.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Arms Only Rowing</h3>
+          <p>Focuses attention on hand and arm movement while maintaining balance and posture.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Setup</h4>
+          <ul>
+            <li>Rower sits at the finish position with legs flat</li>
+            <li>Blades feathered just above the water</li>
+            <li>Body position upright with good posture</li>
+          </ul>
+        </div>
 
-      <h4>Setup</h4>
-      <ul>
-        <li>Rower sits at the finish position with legs flat</li>
-        <li>Blades feathered just above the water</li>
-        <li>Body position upright with good posture</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>From finish position, extend arms forward to full reach</li>
+            <li>Square blades just before entry</li>
+            <li>Place blades in water with minimal splash</li>
+            <li>Draw handles to body with arms only</li>
+            <li>Feather and extract blades cleanly</li>
+            <li>Repeat sequence</li>
+          </ol>
+        </div>
 
-      <h4>Execution</h4>
-      <ol>
-        <li>From finish position, extend arms forward to full reach</li>
-        <li>Square blades just before entry</li>
-        <li>Place blades in water with minimal splash</li>
-        <li>Draw handles to body with arms only</li>
-        <li>Feather and extract blades cleanly</li>
-        <li>Repeat sequence</li>
-      </ol>
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Emphasize relaxed shoulders and flat wrists</li>
+            <li>Watch for "digging" or "skying" at catch</li>
+            <li>Ensure clean extraction at finish</li>
+            <li>Maintain consistent rhythm and handle heights</li>
+          </ul>
+        </div>
 
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Emphasize relaxed shoulders and flat wrists</li>
-        <li>Watch for "digging" or "skying" at catch</li>
-        <li>Ensure clean extraction at finish</li>
-        <li>Maintain consistent rhythm and handle heights</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Common Errors</h4>
+          <ul>
+            <li>Hunching forward during recovery</li>
+            <li>Dropping hands during recovery causing blade to hit water</li>
+            <li>Rushing the recovery phase</li>
+          </ul>
+        </div>
 
-      <h4>Common Errors</h4>
-      <ul>
-        <li>Hunching forward during recovery</li>
-        <li>Dropping hands during recovery causing blade to hit water</li>
-        <li>Rushing the recovery phase</li>
-      </ul>
-
-      <div class="drill-variation">
-        <h5>Variation: Pause Arms Only</h5>
-        <p>Add a 1-second pause at full extension before placing blades to improve control and catch timing.</p>
+        <div class="drill-variation">
+          <h5>Variation: Pause Arms Only</h5>
+          <p>Add a 1-second pause at full extension before placing blades to improve control and catch timing.</p>
+        </div>
       </div>
 
-      <h3>Arms and Back</h3>
-      
-      <h4>Purpose</h4>
-      <p>Develops coordination between back swing and arm draw while maintaining consistent blade depth.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Arms and Back</h3>
+          <p>Develops coordination between back swing and arm draw while maintaining consistent blade depth.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Setup</h4>
+          <ul>
+            <li>Rower sits at the finish position with legs flat</li>
+            <li>Blades squared and ready at the catch position</li>
+            <li>Body leaning forward from the hips at 1 o'clock position</li>
+          </ul>
+        </div>
 
-      <h4>Setup</h4>
-      <ul>
-        <li>Rower sits at the finish position with legs flat</li>
-        <li>Blades squared and ready at the catch position</li>
-        <li>Body leaning forward from the hips at 1 o'clock position</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>From forward body angle, place blades in water</li>
+            <li>Initiate drive by swinging body to upright position</li>
+            <li>Continue movement by drawing hands to body</li>
+            <li>Extend arms and hinge forward from hips to return to starting position</li>
+            <li>Repeat sequence</li>
+          </ol>
+        </div>
 
-      <h4>Execution</h4>
-      <ol>
-        <li>From forward body angle, place blades in water</li>
-        <li>Initiate drive by swinging body to upright position</li>
-        <li>Continue movement by drawing hands to body</li>
-        <li>Extend arms and hinge forward from hips to return to starting position</li>
-        <li>Repeat sequence</li>
-      </ol>
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Ensure good connection at catch without lunging</li>
+            <li>Watch for proper sequencing (back swing before arms)</li>
+            <li>Maintain strong core throughout movement</li>
+            <li>Keep shoulders relaxed and down</li>
+          </ul>
+        </div>
 
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Ensure good connection at catch without lunging</li>
-        <li>Watch for proper sequencing (back swing before arms)</li>
-        <li>Maintain strong core throughout movement</li>
-        <li>Keep shoulders relaxed and down</li>
-      </ul>
-
-      <h4>Common Errors</h4>
-      <ul>
-        <li>Breaking arms too early in the drive sequence</li>
-        <li>Collapsing chest or hunching during drive</li>
-        <li>Opening back angle too far at finish</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Common Errors</h4>
+          <ul>
+            <li>Breaking arms too early in the drive sequence</li>
+            <li>Collapsing chest or hunching during drive</li>
+            <li>Opening back angle too far at finish</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -123,45 +143,55 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Intermediate Drills</h2>
 
-      <h3>Quarter Slide Rowing</h3>
-      
-      <h4>Purpose</h4>
-      <p>Introduces leg drive while maintaining upper body sequencing and control.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Quarter Slide Rowing</h3>
+          <p>Introduces leg drive while maintaining upper body sequencing and control.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Setup</h4>
+          <ul>
+            <li>Rower starts at finish position</li>
+            <li>Slide forward only 1/4 of full slide length (approximately 4-5 inches)</li>
+          </ul>
+        </div>
 
-      <h4>Setup</h4>
-      <ul>
-        <li>Rower starts at finish position</li>
-        <li>Slide forward only 1/4 of full slide length (approximately 4-5 inches)</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>From finish, extend arms away</li>
+            <li>Pivot forward from hips</li>
+            <li>Slide forward slightly to 1/4 position</li>
+            <li>Square blades and place in water</li>
+            <li>Drive with legs until knees are flat</li>
+            <li>Swing back to upright position</li>
+            <li>Draw hands to body</li>
+            <li>Repeat sequence maintaining short slide range</li>
+          </ol>
+        </div>
 
-      <h4>Execution</h4>
-      <ol>
-        <li>From finish, extend arms away</li>
-        <li>Pivot forward from hips</li>
-        <li>Slide forward slightly to 1/4 position</li>
-        <li>Square blades and place in water</li>
-        <li>Drive with legs until knees are flat</li>
-        <li>Swing back to upright position</li>
-        <li>Draw hands to body</li>
-        <li>Repeat sequence maintaining short slide range</li>
-      </ol>
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Watch for proper sequencing in both recovery and drive</li>
+            <li>Ensure handle heights remain consistent</li>
+          </ul>
+        </div>
 
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Watch for proper sequencing in both recovery and drive</li>
-        <li>Ensure handle heights remain consistent</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Common Errors</h4>
+          <ul>
+            <li>Rushing forward on the recovery</li>
+            <li>Breaking knees before arms and body on recovery</li>
+            <li>Initiating drive with back instead of legs</li>
+          </ul>
+        </div>
 
-      <h4>Common Errors</h4>
-      <ul>
-        <li>Rushing forward on the recovery</li>
-        <li>Breaking knees before arms and body on recovery</li>
-        <li>Initiating drive with back instead of legs</li>
-      </ul>
-
-      <div class="drill-variation">
-        <h5>Variation: Progressive Slides</h5>
-        <p>Progress from 1/4 to 1/2 to 3/4 to full slide during the session to build coordination gradually.</p>
+        <div class="drill-variation">
+          <h5>Variation: Progressive Slides</h5>
+          <p>Progress from 1/4 to 1/2 to 3/4 to full slide during the session to build coordination gradually.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -170,39 +200,49 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Technical Focus Drills</h2>
 
-      <h3>Pause Rowing</h3>
-      
-      <h4>Purpose</h4>
-      <p>Improves body awareness and position at specific points in the stroke cycle.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Pause Rowing</h3>
+          <p>Improves body awareness and position at specific points in the stroke cycle.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Setup</h4>
+          <ul>
+            <li>Select a specific position for the pause (common positions: arms away, body over, quarter-slide, catch, finish)</li>
+            <li>Start with regular rowing</li>
+          </ul>
+        </div>
 
-      <h4>Setup</h4>
-      <ul>
-        <li>Select a specific position for the pause (common positions: arms away, body over, quarter-slide, catch, finish)</li>
-        <li>Start with regular rowing</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>Row normally but add a 2-second pause at the selected position</li>
+            <li>Maintain good posture and balance during pause</li>
+            <li>Continue through the rest of the stroke normally</li>
+            <li>Focus on the position and body awareness during each pause</li>
+          </ol>
+        </div>
 
-      <h4>Execution</h4>
-      <ol>
-        <li>Row normally but add a 2-second pause at the selected position</li>
-        <li>Maintain good posture and balance during pause</li>
-        <li>Continue through the rest of the stroke normally</li>
-        <li>Focus on the position and body awareness during each pause</li>
-      </ol>
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Check posture alignment during pause</li>
+            <li>Ensure balance is maintained</li>
+            <li>Watch for consistent pause duration</li>
+            <li>Maintain relaxed upper body during pause</li>
+          </ul>
+        </div>
 
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Check posture alignment during pause</li>
-        <li>Ensure balance is maintained</li>
-        <li>Watch for consistent pause duration</li>
-        <li>Maintain relaxed upper body during pause</li>
-      </ul>
-
-      <h4>Common Errors</h4>
-      <ul>
-        <li>Tensing up during pause</li>
-        <li>Rushing through the pause</li>
-        <li>Losing balance during pause</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Common Errors</h4>
+          <ul>
+            <li>Tensing up during pause</li>
+            <li>Rushing through the pause</li>
+            <li>Losing balance during pause</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -210,52 +250,64 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Recovery Phase Drills</h2>
 
-      <h3>Pick Drill (Erg & Water)</h3>
-      
-      <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position.</p>
-      
-      <h4>Purpose</h4>
-      <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position. This drill helps rowers develop the correct recovery pattern that will become automatic with practice.</p>
-      
-      <h4>Execution</h4>
-      <ol>
-        <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
-        <li>Progress through these stages, spending 10-15 strokes on each:
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Pick Drill (Erg & Water)</h3>
+          <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position. This drill helps rowers develop the correct recovery pattern that will become automatic with practice.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
+            <li>Progress through these stages, spending 10-15 strokes on each:
+              <ul>
+                <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
+                <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
+                <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
+                <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
           <ul>
-            <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
-            <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
-            <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
-            <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
+            <li>Emphasize clean hand movement away from body FIRST</li>
+            <li>Ensure body pivot is complete BEFORE knees bend</li>
+            <li>Maintain consistent hand heights throughout</li>
+            <li>Focus on smooth transitions between segments</li>
+            <li>Watch for rushing - recovery should be controlled</li>
           </ul>
-        </li>
-      </ol>
-      
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Emphasize clean hand movement away from body FIRST</li>
-        <li>Ensure body pivot is complete BEFORE knees bend</li>
-        <li>Maintain consistent hand heights throughout</li>
-        <li>Focus on smooth transitions between segments</li>
-        <li>Watch for rushing - recovery should be controlled</li>
-      </ul>
-      
-      <h4>Progression Options</h4>
-      <ul>
-        <li>Begin on ergometer before attempting on water</li>
-        <li>Use a mirror or partner observation to check form</li>
-        <li>Add pauses between segments if needed</li>
-        <li>Reduce pressure to focus on technique</li>
-      </ul>
-      
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-        <li><strong>Error:</strong> Bending knees before hands are away/body is over
-          <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
-        <li><strong>Error:</strong> Dropping hands after finish
-          <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
-        <li><strong>Error:</strong> Rushing the movement sequence
-          <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
-      </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Progression Options</h4>
+          <ul>
+            <li>Begin on ergometer before attempting on water</li>
+            <li>Use a mirror or partner observation to check form</li>
+            <li>Add pauses between segments if needed</li>
+            <li>Reduce pressure to focus on technique</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Common Errors and Corrections</h4>
+          <div class="error-correction">
+            <div class="error-column">
+              <p><strong>Error:</strong> Bending knees before hands are away/body is over</p>
+              <p><strong>Error:</strong> Dropping hands after finish</p>
+              <p><strong>Error:</strong> Rushing the movement sequence</p>
+            </div>
+            <div class="correction-column">
+              <p><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</p>
+              <p><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</p>
+              <p><strong>Correction:</strong> "Slow hands away, feel the boat run"</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3>Pause Drills</h3>
       
@@ -345,41 +397,53 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Drive Phase Drills</h2>
 
-      <h3>Reverse Pick Drill</h3>
-      
-      <h4>Purpose</h4>
-      <p>Teaches proper sequencing of the drive phase, focusing on leg-body-arm coordination.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Reverse Pick Drill</h3>
+          <p>Teaches proper sequencing of the drive phase, focusing on leg-body-arm coordination.</p>
+        </div>
 
-      <h4>Execution</h4>
-      <ol>
-        <li>Start at the catch position with blades squared and in the water</li>
-        <li>Progress through these stages, spending 10-15 strokes on each:
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>Start at the catch position with blades squared and in the water</li>
+            <li>Progress through these stages, spending 10-15 strokes on each:
+              <ul>
+                <li><strong>Legs Only:</strong> Push with legs while maintaining forward body angle and straight arms</li>
+                <li><strong>Legs + Back:</strong> Add body swing after legs are nearly flat</li>
+                <li><strong>Full Stroke:</strong> Add arm draw after body has swung to upright position</li>
+              </ul>
+            </li>
+            <li>Return to catch position using normal recovery sequence</li>
+          </ol>
+        </div>
+
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
           <ul>
-            <li><strong>Legs Only:</strong> Push with legs while maintaining forward body angle and straight arms</li>
-            <li><strong>Legs + Back:</strong> Add body swing after legs are nearly flat</li>
-            <li><strong>Full Stroke:</strong> Add arm draw after body has swung to upright position</li>
+            <li>Emphasize proper sequencing: legs FIRST, back SECOND, arms LAST</li>
+            <li>Maintain connection with the water throughout the drive</li>
+            <li>Watch for early back opening or arm bending</li>
+            <li>Focus on power application through the legs</li>
           </ul>
-        </li>
-        <li>Return to catch position using normal recovery sequence</li>
-      </ol>
+        </div>
 
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Emphasize proper sequencing: legs FIRST, back SECOND, arms LAST</li>
-        <li>Maintain connection with the water throughout the drive</li>
-        <li>Watch for early back opening or arm bending</li>
-        <li>Focus on power application through the legs</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-        <li><strong>Error:</strong> Opening back too early (before legs are down)
-          <br><strong>Correction:</strong> "Push with legs only, keep your shoulders in front of your hips"</li>
-        <li><strong>Error:</strong> Breaking arms too early
-          <br><strong>Correction:</strong> "Keep arms straight and relaxed until legs are flat"</li>
-        <li><strong>Error:</strong> Rushing the recovery after drive
-          <br><strong>Correction:</strong> "Slow hands away, let the boat run"</li>
-      </ul>
+        <div class="drill-section">
+          <h4>Common Errors and Corrections</h4>
+          <div class="error-correction">
+            <div class="error-column">
+              <p><strong>Error:</strong> Opening back too early (before legs are down)</p>
+              <p><strong>Error:</strong> Breaking arms too early</p>
+              <p><strong>Error:</strong> Rushing the recovery after drive</p>
+            </div>
+            <div class="correction-column">
+              <p><strong>Correction:</strong> "Push with legs only, keep your shoulders in front of your hips"</p>
+              <p><strong>Correction:</strong> "Keep arms straight and relaxed until legs are flat"</p>
+              <p><strong>Correction:</strong> "Slow hands away, let the boat run"</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3>Legs Only Rowing</h3>
       
@@ -464,48 +528,62 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Blade Control Drills</h2>
 
-      <h3>Square Blade Rowing</h3>
-      
-      <h4>Purpose</h4>
-      <p>Develops precise blade height control and clean entries/exits while building confidence with blade manipulation.</p>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Square Blade Rowing</h3>
+          <p>Develops precise blade height control and clean entries/exits while building confidence with blade manipulation.</p>
+        </div>
 
-      <h4>Setup</h4>
-      <ul>
-        <li>Begin with blades squared (perpendicular to water)</li>
-        <li>Maintain squared position throughout entire stroke</li>
-        <li>Start with very light pressure</li>
-      </ul>
-
-      <h4>Execution</h4>
-      <ol>
-        <li>Row complete strokes without feathering the blade at any point</li>
-        <li>Focus on clean entry and exit of squared blade</li>
-        <li>Maintain consistent blade depth throughout the drive</li>
-        <li>Keep squared blades just above water surface during recovery</li>
-        <li>Progress from arms-only to full strokes as control develops</li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Watch handle heights carefully - should remain consistent</li>
-        <li>Emphasize horizontal hand movements</li>
-        <li>Look for minimal splash at entry and exit</li>
-        <li>Start with short strokes before progressing to full range</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-        <li><strong>Error:</strong> Blade digging too deep
-          <br><strong>Correction:</strong> "Slightly higher hands, feel the water's surface"</li>
-        <li><strong>Error:</strong> Blade skimming or skipping
-          <br><strong>Correction:</strong> "Connect at entry, press to buried depth"</li>
-        <li><strong>Error:</strong> Blade catching water during recovery
-          <br><strong>Correction:</strong> "Hands away cleaner, blade height consistent"</li>
-      </ul>
-
-      <div class="drill-variation">
-        <h5>Variation: Square Blade with Pauses</h5>
-        <p>Add pauses at key positions (finish, arms away, body over, catch) to reinforce control.</p>
+        <div class="drill-section">
+          <h4>Setup</h4>
+          <ul>
+            <li>Begin with blades squared (perpendicular to water)</li>
+            <li>Maintain squared position throughout entire stroke</li>
+            <li>Start with very light pressure</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>Row complete strokes without feathering the blade at any point</li>
+            <li>Focus on clean entry and exit of squared blade</li>
+            <li>Maintain consistent blade depth throughout the drive</li>
+            <li>Keep squared blades just above water surface during recovery</li>
+            <li>Progress from arms-only to full strokes as control develops</li>
+          </ol>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Watch handle heights carefully - should remain consistent</li>
+            <li>Emphasize horizontal hand movements</li>
+            <li>Look for minimal splash at entry and exit</li>
+            <li>Start with short strokes before progressing to full range</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Common Errors and Corrections</h4>
+          <div class="error-correction">
+            <div class="error-column">
+              <p><strong>Error:</strong> Blade digging too deep</p>
+              <p><strong>Error:</strong> Blade skimming or skipping</p>
+              <p><strong>Error:</strong> Blade catching water during recovery</p>
+            </div>
+            <div class="correction-column">
+              <p><strong>Correction:</strong> "Slightly higher hands, feel the water's surface"</p>
+              <p><strong>Correction:</strong> "Connect at entry, press to buried depth"</p>
+              <p><strong>Correction:</strong> "Hands away cleaner, blade height consistent"</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="drill-variation">
+          <h5>Variation: Square Blade with Pauses</h5>
+          <p>Add pauses at key positions (finish, arms away, body over, catch) to reinforce control.</p>
+        </div>
       </div>
 
       <h3>Feathering Practice</h3>
@@ -585,46 +663,60 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Boat Control Drills</h2>
 
-      <h3>Basic Turning (One Arm)</h3>
-      
-      <h4>Purpose</h4>
-      <p>Teaches fundamental directional control and builds confidence in maneuvering the boat.</p>
-
-      <h4>Execution</h4>
-      <ol>
-        <li>While moving forward at light pressure, take strokes with just one oar</li>
-        <li>To turn left (port): row with right hand only (starboard oar)</li>
-        <li>To turn right (starboard): row with left hand only (port oar)</li>
-        <li>Inside arm rests in lap or holds oar steady</li>
-        <li>Use varying pressure to control turning radius</li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Look in the direction of the turn</li>
-        <li>Keep inside oar balanced and clear of water</li>
-        <li>Use gentle, controlled pressure</li>
-        <li>Maintain good posture and body position</li>
-        <li>Extend arm fully on recovery for maximum effect</li>
-      </ul>
-
-      <h4>Progression Options</h4>
-      <ul>
-        <li>Begin from stationary position</li>
-        <li>Start with 90-degree turns, progress to 180-degree turns</li>
-        <li>Practice turning both directions with equal skill</li>
-        <li>Add precision targets to aim for after turn</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-        <li><strong>Error:</strong> Pulling too hard, causing jerky movement
-            <br><strong>Correction:</strong> "Gentle, steady pressure"</li>
-        <li><strong>Error:</strong> Inside oar dragging in water
-            <br><strong>Correction:</strong> "Keep inside blade clear of water"</li>
-        <li><strong>Error:</strong> Looking at the oar instead of direction of travel
-            <br><strong>Correction:</strong> "Eyes up, look where you want to go"</li>
-      </ul>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Basic Turning (One Arm)</h3>
+          <p>Teaches fundamental directional control and builds confidence in maneuvering the boat.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol>
+            <li>While moving forward at light pressure, take strokes with just one oar</li>
+            <li>To turn left (port): row with right hand only (starboard oar)</li>
+            <li>To turn right (starboard): row with left hand only (port oar)</li>
+            <li>Inside arm rests in lap or holds oar steady</li>
+            <li>Use varying pressure to control turning radius</li>
+          </ol>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Look in the direction of the turn</li>
+            <li>Keep inside oar balanced and clear of water</li>
+            <li>Use gentle, controlled pressure</li>
+            <li>Maintain good posture and body position</li>
+            <li>Extend arm fully on recovery for maximum effect</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Progression Options</h4>
+          <ul>
+            <li>Begin from stationary position</li>
+            <li>Start with 90-degree turns, progress to 180-degree turns</li>
+            <li>Practice turning both directions with equal skill</li>
+            <li>Add precision targets to aim for after turn</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Common Errors and Corrections</h4>
+          <div class="error-correction">
+            <div class="error-column">
+              <p><strong>Error:</strong> Pulling too hard, causing jerky movement</p>
+              <p><strong>Error:</strong> Inside oar dragging in water</p>
+              <p><strong>Error:</strong> Looking at the oar instead of direction of travel</p>
+            </div>
+            <div class="correction-column">
+              <p><strong>Correction:</strong> "Gentle, steady pressure"</p>
+              <p><strong>Correction:</strong> "Keep inside blade clear of water"</p>
+              <p><strong>Correction:</strong> "Eyes up, look where you want to go"</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3>Pivot Turns (One Backing/One Rowing)</h3>
       
@@ -718,29 +810,41 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Session-Specific Drill Sequences</h2>
 
-      <h3>Session 1 Drill Sequence</h3>
-      
-      <h4>Session Plan</h4>
-      <ol>
-        <li><strong>Erg - Pick Drill</strong> (10 min)
-            <ul>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Session 1 Drill Sequence</h3>
+          <p>Foundational drill sequence for the first Learn to Scull session.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Session Plan</h4>
+          <div class="session-timeline">
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Erg - Pick Drill (10 min)</h5>
+              <ul>
                 <li>Establish basic recovery sequence</li>
                 <li>Focus on clean finish and hands away</li>
-            </ul>
-        </li>
-        <li><strong>Erg - Reverse Pick Drill</strong> (10 min)
-            <ul>
+              </ul>
+            </div>
+            
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Erg - Reverse Pick Drill (10 min)</h5>
+              <ul>
                 <li>Introduce drive sequence</li>
                 <li>Emphasize leg drive</li>
-            </ul>
-        </li>
-        <li><strong>Dockside - Ghost Strokes</strong> (15 min)
-            <ul>
+              </ul>
+            </div>
+            
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Dockside - Ghost Strokes (15 min)</h5>
+              <ul>
                 <li>Build confidence with oar handling</li>
                 <li>Practice feathering/squaring</li>
-            </ul>
-        </li>
-      </ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3>Session 2 Drill Sequence</h3>
       
@@ -832,39 +936,51 @@ search_exclude: true
     <div class="tab-content-inner">
       <h2>Progression Sequences</h2>
 
-      <h3>Basic to Full Stroke Progression</h3>
-      
-      <h4>Purpose</h4>
-      <p>Builds the full stroke pattern incrementally to reinforce proper sequencing and technique.</p>
-
-      <h4>Execution</h4>
-      <ol>
-        <li>10 strokes: Arms only</li>
-        <li>10 strokes: Arms and back</li>
-        <li>10 strokes: Quarter slide</li>
-        <li>10 strokes: Half slide</li>
-        <li>10 strokes: Three-quarter slide</li>
-        <li>10 strokes: Full slide</li>
-        <li>10 strokes: Full pressure rowing</li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-        <li>Ensure clean transitions between stages</li>
-        <li>Maintain technique quality as complexity increases</li>
-        <li>Watch for proper sequencing throughout progression</li>
-        <li>Encourage body awareness and proper timing</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-        <li><strong>Error:</strong> Rushing to later stages before mastering earlier ones
-          <br><strong>Correction:</strong> "Master each step before moving on"</li>
-        <li><strong>Error:</strong> Losing form as complexity increases
-          <br><strong>Correction:</strong> "Maintain the same quality from simple to complex"</li>
-        <li><strong>Error:</strong> Incomplete recovery sequence throughout progression
-          <br><strong>Correction:</strong> "Every stroke has the same careful recovery, regardless of length"</li>
-      </ul>
+      <div class="drill-container">
+        <div class="drill-header">
+          <h3>Basic to Full Stroke Progression</h3>
+          <p>Builds the full stroke pattern incrementally to reinforce proper sequencing and technique.</p>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Execution</h4>
+          <ol class="progression-steps">
+            <li><span class="step-count">10×</span> Arms only</li>
+            <li><span class="step-count">10×</span> Arms and back</li>
+            <li><span class="step-count">10×</span> Quarter slide</li>
+            <li><span class="step-count">10×</span> Half slide</li>
+            <li><span class="step-count">10×</span> Three-quarter slide</li>
+            <li><span class="step-count">10×</span> Full slide</li>
+            <li><span class="step-count">10×</span> Full pressure rowing</li>
+          </ol>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Coaching Points</h4>
+          <ul>
+            <li>Ensure clean transitions between stages</li>
+            <li>Maintain technique quality as complexity increases</li>
+            <li>Watch for proper sequencing throughout progression</li>
+            <li>Encourage body awareness and proper timing</li>
+          </ul>
+        </div>
+        
+        <div class="drill-section">
+          <h4>Common Errors and Corrections</h4>
+          <div class="error-correction">
+            <div class="error-column">
+              <p><strong>Error:</strong> Rushing to later stages before mastering earlier ones</p>
+              <p><strong>Error:</strong> Losing form as complexity increases</p>
+              <p><strong>Error:</strong> Incomplete recovery sequence throughout progression</p>
+            </div>
+            <div class="correction-column">
+              <p><strong>Correction:</strong> "Master each step before moving on"</p>
+              <p><strong>Correction:</strong> "Maintain the same quality from simple to complex"</p>
+              <p><strong>Correction:</strong> "Every stroke has the same careful recovery, regardless of length"</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3>Pressure Progression</h3>
       

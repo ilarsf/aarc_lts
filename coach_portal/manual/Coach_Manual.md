@@ -10,7 +10,7 @@ search_exclude: true
   <div class="tab-nav">
     <a class="tab-link active" data-tab="overview-tab"><i class="fas fa-info-circle"></i> <span>Overview</span></a>
     <a class="tab-link" data-tab="sessions-tab"><i class="fas fa-calendar-alt"></i> <span>Sessions</span></a>
-    <a class="tab-link" data-tab="technical-tab"><i class="fas fa-rowing"></i> <span>Technical</span></a>
+    <a class="tab-link" data-tab="technical-tab"><i class="fas fa-wrench"></i> <span>Technical</span></a>
     <a class="tab-link" data-tab="management-tab"><i class="fas fa-users-gear"></i> <span>Management</span></a>
     <a class="tab-link" data-tab="resources-tab"><i class="fas fa-bookmark"></i> <span>Resources</span></a>
   </div>

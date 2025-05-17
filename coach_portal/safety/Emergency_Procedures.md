@@ -225,8 +225,6 @@ search_exclude: true
       <h3>Formal Reporting:</h3>
       <ol>
         <li>Complete club incident report form within 24 hours</li>
-        <li>Submit to safety officer/board</li>
-        <li>Contact USRowing if serious injury or significant equipment damage</li>
         <li>Report to AARC Safety Committee at <a href="mailto:safety@a2crew.org">safety@a2crew.org</a></li>
         <li>Review incident for preventative measures</li>
       </ol>
