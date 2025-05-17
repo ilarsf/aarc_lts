@@ -80,7 +80,6 @@ search_exclude: true
                 <h5>Variation: Pause Arms Only</h5>
                 <p>Add a 1-second pause at full extension before placing blades to improve control and catch timing.</p>
             </div>
-          </div>
         </div>
       </div>
 
