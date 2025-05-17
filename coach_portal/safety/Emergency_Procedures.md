@@ -39,26 +39,36 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h3>Emergency Signal Hierarchy</h3>
-
-1. **Verbal Commands:**
-   - "HELP!" - Basic call for assistance
-   - "EMERGENCY!" - Indicates serious situation
-   - Specific calls: "MAN OVERBOARD!", "MEDICAL EMERGENCY!", etc.
-
-2. **Whistle Signals:**
-   - One blast = Attention/stop
-   - Three blasts = Emergency assistance needed
-   - Continuous blasts = Urgent emergency/immediate danger
-
-3. **Visual Signals:**
-   - Distress signal for scullers: Waving one arm overhead repeatedly (modified from universal signal to allow scullers to maintain stability with other arm on oars)
-   - Single arm raised vertically = Need assistance
-   - Paddle/oar raised and waved = Emergency situation
-
-4. **Radio/Phone Communication:**
-   - Channel/Number: VHF Channel 16 (where applicable) or club emergency channel
-   - Standard opening: "Mayday, Mayday, Mayday" for life-threatening emergencies
-   - "Pan-Pan, Pan-Pan, Pan-Pan" for urgent but not immediately life-threatening situations
+      <ol>
+        <li><strong>Verbal Commands:</strong>
+          <ul>
+            <li>"HELP!" - Basic call for assistance</li>
+            <li>"EMERGENCY!" - Indicates serious situation</li>
+            <li>Specific calls: "MAN OVERBOARD!", "MEDICAL EMERGENCY!", etc.</li>
+          </ul>
+        </li>
+        <li><strong>Whistle Signals:</strong>
+          <ul>
+            <li>One blast = Attention/stop</li>
+            <li>Three blasts = Emergency assistance needed</li>
+            <li>Continuous blasts = Urgent emergency/immediate danger</li>
+          </ul>
+        </li>
+        <li><strong>Visual Signals:</strong>
+          <ul>
+            <li>Distress signal for scullers: Waving one arm overhead repeatedly (modified from universal signal to allow scullers to maintain stability with other arm on oars)</li>
+            <li>Single arm raised vertically = Need assistance</li>
+            <li>Paddle/oar raised and waved = Emergency situation</li>
+          </ul>
+        </li>
+        <li><strong>Radio/Phone Communication:</strong>
+          <ul>
+            <li>Channel/Number: VHF Channel 16 (where applicable) or club emergency channel</li>
+            <li>Standard opening: "Mayday, Mayday, Mayday" for life-threatening emergencies</li>
+            <li>"Pan-Pan, Pan-Pan, Pan-Pan" for urgent but not immediately life-threatening situations</li>
+          </ul>
+        </li>
+      </ol>
 
       <h3>Emergency Contact Information</h3>
 
@@ -80,17 +90,17 @@ search_exclude: true
         </tr>
         <tr>
           <td>Washtenaw County Sheriff's Marine Division</td>
-          <td>Local: [CLUB TO INSERT]</td>
+          <td>Non-emergency dispatch: (734) 994-2911</td>
           <td>For water-related emergencies on the Huron River</td>
         </tr>
         <tr>
           <td>Boathouse Manager</td>
-          <td>[CLUB TO INSERT]</td>
+          <td>Russ Giacobbe, Director & Boatman — contact via <a href="mailto:info@a2crew.com">info@a2crew.com</a></td>
           <td>For facility-related emergencies</td>
         </tr>
         <tr>
           <td>Club Safety Officer</td>
-          <td>[CLUB TO INSERT]</td>
+          <td>Jason Wenzlaff, Safety Committee Chair — <a href="mailto:safety@a2crew.org">safety@a2crew.org</a></td>
           <td>For reporting and follow-up</td>
         </tr>
       </table>
@@ -104,22 +114,26 @@ search_exclude: true
     <div class="accordion-content-inner">
       <h3>Capsized Boat / Person in Water</h3>
 
-#### Coach Response:
-1. Immediately assess if person can self-rescue
-2. Position launch for rescue, approach from downwind
-3. Cut engine when near rower
-4. Use "stirrup" rescue technique if available
-5. If person cannot self-rescue, directly assist them into launch
-6. Check for injuries, signs of hypothermia
-7. Recover equipment only when person is safe
+      <h4>Coach Response:</h4>
+      <ol>
+        <li>Immediately assess if person can self-rescue</li>
+        <li>Position launch for rescue, approach from downwind</li>
+        <li>Cut engine when near rower</li>
+        <li>Use "stirrup" rescue technique if available</li>
+        <li>If person cannot self-rescue, directly assist them into launch</li>
+        <li>Check for injuries, signs of hypothermia</li>
+        <li>Recover equipment only when person is safe</li>
+      </ol>
 
-#### For Learn to Scull Participants:
-1. Stay with your capsized boat
-2. Remain calm, control breathing
-3. Attempt "kick and pull" self-rescue if trained
-4. If successful, low scull to shore
-5. If unable to re-enter, wait with boat for assistance
-6. In cold water, get as much of body onto overturned hull as possible
+      <h4>For Learn to Scull Participants:</h4>
+      <ol>
+        <li>Stay with your capsized boat</li>
+        <li>Remain calm, control breathing</li>
+        <li>Attempt "kick and pull" self-rescue if trained</li>
+        <li>If successful, low scull to shore</li>
+        <li>If unable to re-enter, wait with boat for assistance</li>
+        <li>In cold water, get as much of body onto overturned hull as possible</li>
+      </ol>
 
       <h3>Medical Emergency</h3>
 
@@ -147,11 +161,13 @@ search_exclude: true
       <h3>Severe Weather Emergency</h3>
 
       <h4>Lightning/Thunder Protocol:</h4>
-1. If lightning seen/thunder heard, immediately clear water
-2. Count time between lightning and thunder (5 seconds = 1 mile)
-3. All rowers must be off water and in safe shelter
-4. Wait minimum 30 minutes after last lightning/thunder before resuming
-5. Indoor shelter is preferable to boat bays
+      <ol>
+        <li>If lightning seen/thunder heard, immediately clear water</li>
+        <li>Count time between lightning and thunder (5 seconds = 1 mile)</li>
+        <li>All rowers must be off water and in safe shelter</li>
+        <li>Wait minimum 30 minutes after last lightning/thunder before resuming</li>
+        <li>Indoor shelter is preferable to boat bays</li>
+      </ol>
 
       <h4>Sudden Wind/Storm Protocol:</h4>
       <ol>
@@ -169,21 +185,27 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h3>In Coach Launch:</h3>
-- First aid kit
-- Emergency throw bag
-- Thermal blanket
-- Paddle/oar
-- Bailer
-- Whistle/horn
+      <ul>
+        <li>First aid kit</li>
+        <li>Emergency throw bag</li>
+        <li>Thermal blanket</li>
+        <li>Paddle/oar</li>
+        <li>Bailer</li>
+        <li>Whistle/horn</li>
+      </ul>
 
       <h3>At Boathouse:</h3>
       <ul>
-        <li>AED: [LOCATION]</li>
-        <li>First aid kits: [LOCATION]</li>
-        <li>Emergency landline: [LOCATION]</li>
-        <li>Fire extinguishers: [LOCATION]</li>
-        <li>Emergency exits: [MARKED ON FACILITY MAP]</li>
+        <li>AED: Mounted at the main boathouse door next to the sweep oars</li>
+        <li>First aid kits: Mounted at the main boathouse door next to the sweep oars</li>
+        <li>Fire extinguishers: [TO BE FILLED IN AFTER BOATHOUSE WALK-THROUGH]</li>
+        <li>Emergency exits: [TO BE CONFIRMED WITH POSTED FACILITY MAP]</li>
       </ul>
+      
+      <div class="info-box info">
+        <h4>Questions?</h4>
+        <p>For safety-related questions, contact the AARC Safety Committee at <a href="mailto:safety@a2crew.org">safety@a2crew.org</a>. For general inquiries, email <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -193,16 +215,19 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h3>Immediate Documentation:</h3>
-1. Document all emergency incidents regardless of severity
-2. Note participants involved, witnesses, conditions
-3. Record actions taken and outcomes
-4. Take photos when appropriate
+      <ol>
+        <li>Document all emergency incidents regardless of severity</li>
+        <li>Note participants involved, witnesses, conditions</li>
+        <li>Record actions taken and outcomes</li>
+        <li>Take photos when appropriate</li>
+      </ol>
 
       <h3>Formal Reporting:</h3>
       <ol>
         <li>Complete club incident report form within 24 hours</li>
         <li>Submit to safety officer/board</li>
         <li>Contact USRowing if serious injury or significant equipment damage</li>
+        <li>Report to AARC Safety Committee at <a href="mailto:safety@a2crew.org">safety@a2crew.org</a></li>
         <li>Review incident for preventative measures</li>
       </ol>
 
