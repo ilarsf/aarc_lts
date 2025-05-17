@@ -364,134 +364,284 @@ search_exclude: true
 <h2 id="boat-control-drills">Boat Control Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Balance Drills <span class="skill-tag">Balance</span> <span class="skill-tag">Core Stability</span></button>
+  <button class="accordion-toggle">Basic Turning (One Arm) <span class="skill-tag">Steering</span> <span class="skill-tag">Control</span></button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
-      <p>Improves the rower's balance and stability in the boat.</p>
-
-      <h4>Setup</h4>
-      <ul>
-          <li>Rower sits in the boat with feet out of the straps</li>
-          <li>Blades are placed in the water for balance</li>
-      </ul>
+      <p>Teaches fundamental directional control and builds confidence in maneuvering the boat.</p>
 
       <h4>Execution</h4>
       <ol>
-          <li>Practice rowing motions with no foot stretcher engagement</li>
-          <li>Focus on maintaining balance and control with the core</li>
-          <li>Experiment with different body positions to find the center of balance</li>
-          <li>Repeat the sequence, emphasizing stability and control</li>
+          <li>While moving forward at light pressure, take strokes with just one oar</li>
+          <li>To turn left (port): row with right hand only (starboard oar)</li>
+          <li>To turn right (starboard): row with left hand only (port oar)</li>
+          <li>Inside arm rests in lap or holds oar steady</li>
+          <li>Use varying pressure to control turning radius</li>
       </ol>
 
       <h4>Coaching Points</h4>
       <ul>
-          <li>Ensure the rower is using their core for balance, not just the arms</li>
-          <li>Watch for any excessive movement or instability in the boat</li>
-          <li>Maintain a consistent rhythm and control throughout the drill</li>
+          <li>Look in the direction of the turn</li>
+          <li>Keep inside oar balanced and clear of water</li>
+          <li>Use gentle, controlled pressure</li>
+          <li>Maintain good posture and body position</li>
+          <li>Extend arm fully on recovery for maximum effect</li>
       </ul>
 
-      <h4>Common Errors</h4>
+      <h4>Progression Options</h4>
       <ul>
-          <li>Rushing the drill or using excessive force</li>
-          <li>Failing to maintain a consistent blade depth</li>
-          <li>Loss of balance or control during the drill</li>
+          <li>Begin from stationary position</li>
+          <li>Start with 90-degree turns, progress to 180-degree turns</li>
+          <li>Practice turning both directions with equal skill</li>
+          <li>Add precision targets to aim for after turn</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Pulling too hard, causing jerky movement
+              <br><strong>Correction:</strong> "Gentle, steady pressure"</li>
+          <li><strong>Error:</strong> Inside oar dragging in water
+              <br><strong>Correction:</strong> "Keep inside blade clear of water"</li>
+          <li><strong>Error:</strong> Looking at the oar instead of direction of travel
+              <br><strong>Correction:</strong> "Eyes up, look where you want to go"</li>
       </ul>
     </div>
   </div>
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Steering Drills <span class="skill-tag">Steering</span> <span class="skill-tag">Coordination</span></button>
+  <button class="accordion-toggle">Pivot Turns (One Backing/One Rowing) <span class="skill-tag">Maneuverability</span> <span class="skill-tag">Technique</span></button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
-        <h4>Purpose</h4>
-        <p>Develops the ability to steer and control the boat effectively.</p>
+      <h4>Purpose</h4>
+      <p>Develops more advanced turning capability for maneuvering in confined spaces or executing quick direction changes.</p>
 
-        <h4>Setup</h4>
-        <ul>
-            <li>Rower sits in the boat with a straight course ahead</li>
-            <li>Blades are placed in the water at the sides of the boat</li>
-        </ul>
+      <h4>Execution</h4>
+      <ol>
+          <li>To execute a sharp turn (e.g., 180 degrees):
+              <ul>
+                <li>Back (push) with one oar: handle moves away from body</li>
+                <li>Row (pull) with the other oar: normal rowing motion</li>
+              </ul>
+          </li>
+          <li>For tighter turns, back more strongly than rowing</li>
+          <li>For gentler arcs, apply more pressure to rowing oar</li>
+          <li>Blade on backing oar can be partially squared for more resistance</li>
+      </ol>
 
-        <h4>Execution</h4>
-        <ol>
-            <li>Practice moving the blades in and out of the water to steer</li>
-            <li>Use small, controlled movements to guide the boat</li>
-            <li>Focus on maintaining a straight course and balanced boat</li>
-            <li>Repeat the sequence, emphasizing steering control and coordination</li>
-        </ol>
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Begin with very light pressure on both oars</li>
+          <li>Backing hand should be slightly higher than normal</li>
+          <li>Look in the direction of the turn</li>
+          <li>Keep backing blade partially squared for effect</li>
+          <li>Coordinate pressure between oars for smooth rotation</li>
+      </ul>
 
-        <h4>Coaching Points</h4>
-        <ul>
-            <li>Ensure the rower is using their core and legs for steering, not just the arms</li>
-            <li>Watch for any excessive or erratic movements while steering</li>
-            <li>Maintain a consistent rhythm and control throughout the drill</li>
-        </ul>
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Start with stationary pivot turn (boat spinning in place)</li>
+          <li>Progress to moving pivot turns</li>
+          <li>Add precision challenges (turn within specific area)</li>
+          <li>Practice emergency stops using backing pressure on both oars</li>
+      </ul>
 
-        <h4>Common Errors</h4>
-        <ul>
-            <li>Rushing the drill or using excessive force</li>
-            <li>Failing to maintain a consistent blade depth</li>
-            <li>Loss of control or steering accuracy during the drill</li>
-        </ul>
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Backing oar digging too deep
+              <br><strong>Correction:</strong> "Higher hands on backing oar"</li>
+          <li><strong>Error:</strong> Insufficient backing pressure for effect
+              <br><strong>Correction:</strong> "Push that handle away more firmly"</li>
+          <li><strong>Error:</strong> Uncoordinated pressure between oars
+              <br><strong>Correction:</strong> "Equal and opposite forces for a clean pivot"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Traffic Pattern Practice <span class="skill-tag">Navigation</span> <span class="skill-tag">Safety</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Develops navigation awareness and traffic pattern compliance in a structured exercise.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Establish a rectangular course with clear turning points</li>
+          <li>Row the complete pattern maintaining proper river position throughout</li>
+          <li>Practice looking over shoulder every 3-5 strokes</li>
+          <li>Execute turns at corners while maintaining proper traffic position</li>
+          <li>Maintain awareness of other boats in the pattern</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Establish the "starboard rule" (stay to the right relative to direction)</li>
+          <li>Emphasize regular checking over both shoulders</li>
+          <li>Plan turns well ahead of time</li>
+          <li>Maintain consistent distance from shore</li>
+          <li>Practice communication when approaching other boats</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin in low-traffic conditions</li>
+          <li>Add specific landmarks to navigate around</li>
+          <li>Progress to busier traffic situations</li>
+          <li>Add "obstacles" to navigate around while maintaining pattern</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Cutting corners on turns
+              <br><strong>Correction:</strong> "Take wide turns, maintain your 'lane'"</li>
+          <li><strong>Error:</strong> Forgetting to check position regularly
+              <br><strong>Correction:</strong> "Look every 5 strokes - make it part of your rhythm"</li>
+          <li><strong>Error:</strong> Drifting toward middle of waterway
+              <br><strong>Correction:</strong> "Stay close to starboard shore (safely)"</li>
+      </ul>
     </div>
   </div>
 </div>
 
 <h2 id="session-specific-drill-sequences">Session-Specific Drill Sequences</h2>
 
-<div class="accordion-section">
-  <button class="accordion-toggle">Endurance Building Sequence <span class="skill-tag">Endurance</span> <span class="skill-tag">Technique</span></button>
-  <div class="accordion-content">
-    <div class="accordion-content-inner">
-      <h4>Purpose</h4>
-      <p>Builds endurance while maintaining focus on technique and form.</p>
-
-      <h4>Execution</h4>
-      <ol>
-          <li>5 minutes: Easy rowing, focusing on technique</li>
-          <li>5 minutes: Increase pace slightly, maintain technique</li>
-          <li>5 minutes: Focus on endurance, steady pace</li>
-          <li>5 minutes: Increase pace, emphasize power and technique</li>
-          <li>5 minutes: Cool down, easy rowing</li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-          <li>Ensure the rower maintains good technique throughout the sequence</li>
-          <li>Watch for any signs of fatigue affecting form</li>
-          <li>Encourage a steady and controlled increase in pace</li>
-      </ul>
+<div class="drill-card">
+    <div class="drill-header">
+        <h3>Session 1 Drill Sequence</h3>
+        <span class="skill-tag">Beginner</span>
+        <span class="skill-tag">Foundation</span>
     </div>
-  </div>
+    <div class="drill-content">
+        <ol>
+            <li><strong>Erg - Pick Drill</strong> (10 min)
+                <ul>
+                    <li>Establish basic recovery sequence</li>
+                    <li>Focus on clean finish and hands away</li>
+                </ul>
+            </li>
+            <li><strong>Erg - Reverse Pick Drill</strong> (10 min)
+                <ul>
+                    <li>Introduce drive sequence</li>
+                    <li>Emphasize leg drive</li>
+                </ul>
+            </li>
+            <li><strong>Dockside - Ghost Strokes</strong> (15 min)
+                <ul>
+                    <li>Build confidence with oar handling</li>
+                    <li>Practice feathering/squaring</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 </div>
 
-<div class="accordion-section">
-  <button class="accordion-toggle">Speed and Power Sequence <span class="skill-tag">Speed</span> <span class="skill-tag">Power</span></button>
-  <div class="accordion-content">
-    <div class="accordion-content-inner">
-        <h4>Purpose</h4>
-        <p>Develops speed and power through focused intervals and technique reinforcement.</p>
-
-        <h4>Execution</h4>
-        <ol>
-            <li>3 minutes: Easy rowing, focus on quick hands and light feet</li>
-            <li>3 minutes: Build speed while maintaining technique</li>
-            <li>3 minutes: Power strokes - emphasize leg drive and body swing</li>
-            <li>3 minutes: Recovery rowing, focus on technique</li>
-            <li>3 minutes: Repeat power strokes, focus on speed</li>
-            <li>3 minutes: Cool down, easy rowing</li>
-        </ol>
-
-        <h4>Coaching Points</h4>
-        <ul>
-            <li>Ensure the rower maintains good technique, especially during power strokes</li>
-            <li>Watch for any loss of form or control at higher speeds</li>
-            <li>Encourage a strong and controlled leg drive</li>
-        </ul>
+<div class="drill-card">
+    <div class="drill-header">
+        <h3>Session 2 Drill Sequence</h3>
+        <span class="skill-tag">Recovery</span>
+        <span class="skill-tag">Boat Control</span>
     </div>
-  </div>
+    <div class="drill-content">
+        <ol>
+            <li><strong>Erg Warm-up - Pick Drill</strong> (5 min)
+                <ul>
+                    <li>Reinforce recovery sequence</li>
+                    <li>Prepare for on-water application</li>
+                </ul>
+            </li>
+            <li><strong>On-Water - Pick Drill</strong> (20 min)
+                <ul>
+                    <li>Transfer recovery sequence to water</li>
+                    <li>Build confidence through progression</li>
+                </ul>
+            </li>
+            <li><strong>On-Water - Pause Drills</strong> (20 min)
+                <ul>
+                    <li>Enhance body awareness</li>
+                    <li>Reinforce proper sequencing</li>
+                </ul>
+            </li>
+            <li><strong>Basic Turning Practice</strong> (10 min)
+                <ul>
+                    <li>Introduce fundamental boat control</li>
+                    <li>Build confidence in maneuvering</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="drill-card">
+    <div class="drill-header">
+        <h3>Session 3 Drill Sequence</h3>
+        <span class="skill-tag">Drive</span>
+        <span class="skill-tag">Navigation</span>
+    </div>
+    <div class="drill-content">
+        <ol>
+            <li><strong>Erg Warm-up - Reverse Pick</strong> (5 min)
+                <ul>
+                    <li>Focus on leg drive and connection</li>
+                    <li>Prepare for power application on water</li>
+                </ul>
+            </li>
+            <li><strong>On-Water - Reverse Pick Drill</strong> (20 min)
+                <ul>
+                    <li>Develop effective leg drive</li>
+                    <li>Build connection and power</li>
+                </ul>
+            </li>
+            <li><strong>Pivot Turn Practice</strong> (15 min)
+                <ul>
+                    <li>Develop more advanced turning skills</li>
+                    <li>Build confidence in tight spaces</li>
+                </ul>
+            </li>
+            <li><strong>Traffic Pattern Introduction</strong> (15 min)
+                <ul>
+                    <li>Apply navigation principles</li>
+                    <li>Practice looking while rowing</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="drill-card">
+    <div class="drill-header">
+        <h3>Session 4 Drill Sequence</h3>
+        <span class="skill-tag">Integration</span>
+        <span class="skill-tag">Independence</span>
+    </div>
+    <div class="drill-content">
+        <ol>
+            <li><strong>Continuous Rowing with Navigation Focus</strong> (20 min)
+                <ul>
+                    <li>Integrate all skills</li>
+                    <li>Develop multitasking capability</li>
+                </ul>
+            </li>
+            <li><strong>Group-Specific Work:</strong>
+                <ul>
+                    <li><strong>Group 1:</strong> Bridge passage practice (20 min)</li>
+                    <li><strong>Group 2:</strong> Skill refinement stations (20 min)</li>
+                </ul>
+            </li>
+            <li><strong>Pressure Control Practice</strong> (15 min)
+                <ul>
+                    <li>Develop consistent technique at varying intensities</li>
+                    <li>Build confidence for independent rowing</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="info-box">
+  <h4>Using This Document</h4>
+  <p>Use this repertoire to select appropriate drills for each session based on participant needs and progress. The suggested session sequences provide a starting point, but should be adapted based on group dynamics and individual learning paces.</p>
 </div>
 
 <h2 id="progression-sequences">Progression Sequences</h2>
@@ -525,6 +675,343 @@ search_exclude: true
             <li>Encourage body awareness and proper timing</li>
         </ul>
     </div>
+</div>
+
+<h2 id="drive-phase-drills">Drive Phase Drills</h2>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Reverse Pick Drill (Erg & Water) <span class="skill-tag">Drive</span> <span class="skill-tag">Power</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Isolates and emphasizes leg drive as the primary power source. Teaches rowers to connect effectively at the catch.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Start at the catch position (legs compressed, body forward, arms extended)</li>
+          <li>Progress through these stages, spending 10-15 strokes on each:
+              <ul>
+                <li><strong>Legs Only:</strong> Drive with legs while keeping arms straight and body angle constant</li>
+                <li><strong>Legs + Back:</strong> Add back swing after legs are halfway down</li>
+                <li><strong>Full Stroke:</strong> Add arm pull for complete stroke</li>
+              </ul>
+          </li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Emphasize pressure starting from the feet</li>
+          <li>Maintain consistent forward body angle during initial leg drive</li>
+          <li>Focus on straight arms until legs are nearly flat</li>
+          <li>Feel the "connection" or "hang" off the handle</li>
+          <li>Drive horizontally rather than vertically</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin on ergometer to establish understanding</li>
+          <li>Use mirror or partner observation for feedback</li>
+          <li>Start with light pressure, gradually increase</li>
+          <li>Use "ten stroke transition" between phases</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Opening back too early (bum shoving)
+              <br><strong>Correction:</strong> "Maintain forward body angle as legs start to drive"</li>
+          <li><strong>Error:</strong> Pulling with arms too early
+              <br><strong>Correction:</strong> "Arms are just hooks - let the legs do the work"</li>
+          <li><strong>Error:</strong> Insufficient leg compression at catch
+              <br><strong>Correction:</strong> "Get your shins vertical for maximum power"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Quarter-Slide Rowing <span class="skill-tag">Control</span> <span class="skill-tag">Connection</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Limits range of motion to focus on technical precision and connection without the complexity of full slide.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Row with compressed range of motion (slides only 1/4 of normal distance)</li>
+          <li>Focus on clean catches and efficient power application</li>
+          <li>Emphasize quick connection at catch</li>
+          <li>Maintain good body sequence despite shortened stroke</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Keep shins vertical at the catch</li>
+          <li>Focus on immediate leg drive connection</li>
+          <li>Maintain consistent rhythm and timing</li>
+          <li>Emphasize clean finishes despite shorter stroke</li>
+          <li>Watch for good sequencing despite compressed range</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin with arms-only, then add quarter slide</li>
+          <li>Progress to half-slide as control improves</li>
+          <li>Alternate sets: 10 strokes quarter-slide, 10 strokes half-slide</li>
+          <li>Gradually extend to full slide when ready</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Rushing despite shortened slide
+              <br><strong>Correction:</strong> "Same timing, shorter distance"</li>
+          <li><strong>Error:</strong> Poor body preparation despite shorter distance
+              <br><strong>Correction:</strong> "Still need full rock-over despite shorter slide"</li>
+          <li><strong>Error:</strong> Pulling with arms to compensate for shorter stroke
+              <br><strong>Correction:</strong> "Push, don't pull - legs still the power source"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Legs-Only Pressure Builds <span class="skill-tag">Power</span> <span class="skill-tag">Control</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Isolates leg drive to develop awareness of leg power and connection.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Row with straight arms and constant body angle throughout</li>
+          <li>Focus exclusively on leg drive</li>
+          <li>Begin with light pressure (30%)</li>
+          <li>Gradually increase pressure in 10% increments</li>
+          <li>Focus on maintaining technique as pressure increases</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Maintain consistent body angle throughout</li>
+          <li>Keep arms straight as tension cables</li>
+          <li>Feel pressure building from feet</li>
+          <li>Focus on smooth, even acceleration</li>
+          <li>Keep blade depth consistent as pressure increases</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin on erg to establish feel</li>
+          <li>Start with 10-stroke pieces at each pressure level</li>
+          <li>Progress to "ladder" approach: 10 at 30%, 10 at 40%, 10 at 50%, etc.</li>
+          <li>Add "countdown" approach: 10 at highest pressure, 9 at slightly less, etc.</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Breaking form as pressure increases
+              <br><strong>Correction:</strong> "Only add pressure you can control"</li>
+          <li><strong>Error:</strong> Pulling with arms or back to generate more force
+              <br><strong>Correction:</strong> "The increase comes only from legs"</li>
+          <li><strong>Error:</strong> Digging blades deeper as pressure increases
+              <br><strong>Correction:</strong> "Same blade depth, more horizontal pressure"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Tap Drill <span class="skill-tag">Catch</span> <span class="skill-tag">Balance</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Develops comfort and stability at the catch position, allowing rowers to square and place blades effectively.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Begin at various slide positions (½, ¾, or full slide)</li>
+          <li>At the catch position, practice a light tap of the blades on the water</li>
+          <li>Focus on maintaining balance while at the forward catch position</li>
+          <li>Gradually increase the number of taps while maintaining stability</li>
+          <li>Progress to clean entry after demonstrating stability at the catch</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Emphasize maintaining upper body posture at the catch</li>
+          <li>Focus on core engagement during the exercise</li>
+          <li>Keep shoulders relaxed despite the unstable position</li>
+          <li>Practice light, controlled blade placement</li>
+          <li>Build confidence in the "unstable" forward position</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Start at half-slide for greater stability</li>
+          <li>Progress to three-quarter slide as confidence builds</li>
+          <li>Finally, practice at full slide</li>
+          <li>Begin with single taps, progress to multiple taps</li>
+          <li>Add clean entry and drive after successful tapping</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Rushing into the drive after tap
+              <br><strong>Correction:</strong> "Take your time at the catch position"</li>
+          <li><strong>Error:</strong> Losing core stability during taps
+              <br><strong>Correction:</strong> "Engage your core and maintain posture"</li>
+          <li><strong>Error:</strong> Dropping blade too deep during tap
+              <br><strong>Correction:</strong> "Light touches only, feel the water's surface"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Catch Placement Drill <span class="skill-tag">Entry</span> <span class="skill-tag">Technique</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Connects proper recovery sequencing with effective catch technique, developing clean blade entry.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Begin with a normal recovery sequence (hands away, body over, slide)</li>
+          <li>As you approach the catch, focus on early blade squaring</li>
+          <li>Pause briefly at the catch position to check posture and blade height</li>
+          <li>Place blade cleanly in the water with minimal splash</li>
+          <li>Execute a controlled drive focusing on connection</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Emphasize early squaring as you approach the catch</li>
+          <li>Focus on blade height just above the water before entry</li>
+          <li>Maintain relaxed shoulders through the placement</li>
+          <li>Connect the previous week's recovery work with effective catches</li>
+          <li>Feel the boat run during the controlled approach to the catch</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin with arms and body only (no slide)</li>
+          <li>Progress to quarter-slide, then half-slide</li>
+          <li>Finally, use full slide with clean placement</li>
+          <li>Add pauses at different points during recovery</li>
+          <li>Progress to continuous rowing with emphasis on placement</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Rushing into the catch without proper preparation
+              <br><strong>Correction:</strong> "Patient approach, deliberate placement"</li>
+          <li><strong>Error:</strong> Dropping the hands just before the catch
+              <br><strong>Correction:</strong> "Maintain hand height through the approach"</li>
+          <li><strong>Error:</strong> Blade diving too deep at entry
+              <br><strong>Correction:</strong> "Feel the water's surface before connecting"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 id="blade-control-drills">Blade Control Drills</h2>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Ghost Strokes <span class="skill-tag">Confidence</span> <span class="skill-tag">Coordination</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Builds initial confidence in oar control in a stable environment before open water rowing.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>With boat secured at dock (or coach stabilizing), practice minimal-pressure strokes</li>
+          <li>Focus on handle movement and blade work without actual boat movement</li>
+          <li>Practice feathering and squaring with precise timing</li>
+          <li>Feel how oar movements affect boat stability</li>
+          <li>Develop sense of blade depth without pressure concerns</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Focus on light grip and relaxed shoulders</li>
+          <li>Practice horizontal hand movement</li>
+          <li>Learn to feel blade position without looking</li>
+          <li>Develop feathering/squaring movement with proper wrist action</li>
+          <li>Experience how hand movements affect boat balance</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Begin with single-hand practice on each oar</li>
+          <li>Progress to coordinated two-hand movements</li>
+          <li>Add slight pressure to feel resistance</li>
+          <li>Gradually reduce coach/dock support</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Gripping handles too tightly
+              <br><strong>Correction:</strong> "Fingers as hooks, not fists"</li>
+          <li><strong>Error:</strong> Exaggerated vertical hand movement
+              <br><strong>Correction:</strong> "Hands move horizontally, not up and down"</li>
+          <li><strong>Error:</strong> Looking at blades constantly instead of feeling position
+              <br><strong>Correction:</strong> "Feel the blade angle through your hands"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Advanced Feathering Drill <span class="skill-tag">Technique</span> <span class="skill-tag">Precision</span></button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <h4>Purpose</h4>
+      <p>Develops precise blade control and clean feathering/squaring technique.</p>
+
+      <h4>Execution</h4>
+      <ol>
+          <li>Row with focus on crisp, clean feathering after extraction</li>
+          <li>Count specific timing for feathering:
+              <ul>
+                <li>"Pull, Tap, Away, Feather" - with distinct timing for each</li>
+              </ul>
+          </li>
+          <li>Practice squaring timing before catch:
+              <ul>
+                <li>Begin squaring early, complete just before entry</li>
+              </ul>
+          </li>
+          <li>Focus on wrist movement rather than full arm rotation</li>
+      </ol>
+
+      <h4>Coaching Points</h4>
+      <ul>
+          <li>Feather only after handle has cleared water</li>
+          <li>Use primarily wrist action, not forearm rotation</li>
+          <li>Square gradually, not in a single jerky movement</li>
+          <li>Maintain level hands throughout feathering/squaring</li>
+          <li>Feel the mechanical advantage of the oarlock</li>
+      </ul>
+
+      <h4>Progression Options</h4>
+      <ul>
+          <li>Practice stationary at dock first</li>
+          <li>Add slow-motion rowing with exaggerated attention to hand positions</li>
+          <li>Alternate 10 strokes of exaggerated focus, 10 natural strokes</li>
+          <li>Progress to rhythmic verbal cadence without counting</li>
+      </ul>
+
+      <h4>Common Errors and Corrections</h4>
+      <ul>
+          <li><strong>Error:</strong> Feathering before blade is clear of water
+              <br><strong>Correction:</strong> "Extract first, then feather"</li>
+          <li><strong>Error:</strong> Squaring too late at the catch
+              <br><strong>Correction:</strong> "Begin squaring as you start the final approach to catch"</li>
+          <li><strong>Error:</strong> Over-controlling with finger movement
+              <br><strong>Correction:</strong> "Firm wrists, loose fingers"</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <style>
