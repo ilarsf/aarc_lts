@@ -51,7 +51,7 @@
     <h4>Why do my hands get blisters?</h4>
     <p>Blisters are common for new rowers as hands adapt to the friction of the oar handles. They typically diminish as you develop calluses and improve your grip technique. To minimize blisters: maintain a relaxed grip (avoid "white knuckling" the oars), ensure proper hand position, and gradually increase rowing duration. Athletic tape can protect vulnerable areas.</p>
 
-    <h4>I have trouble maintaining boat balance. What can I help?</h4>
+    <h4>I have trouble maintaining boat balance. What can I do?</h4>
     <p>Balance challenges are normal for beginners. Focus on these key elements:
     <ul>
       <li><strong>Relaxation:</strong> Tension in your upper body makes balancing harder</li>
@@ -78,7 +78,7 @@
     <h4>How do I maintain a straight course?</h4>
     <p>Maintaining direction requires practice and attention. Remember to:
     <ul>
-      <li>Look over your shoulder frequently (every 5-10 strokes) to check your course</li>
+      <li>Look over your shoulder frequently (every 3-5 strokes) to check your course</li>
       <li>Ensure equal pressure on both oars</li>
       <li>Apply slightly more pressure on one side to make small corrections</li>
       <li>Focus on consistent hand heights and equal arc with both oars</li>
@@ -141,7 +141,7 @@
     <ul>
       <li><strong>Basic Membership:</strong> Covers insurance and access to the club website</li>
       <li><strong>Full Membership:</strong> Required for participation in rowing programs</li>
-      <li><strong>Program Fees:</strong> Separate fees for specific programs (Open Sculling, Competitive Team, etc.)</li>
+      <li><strong>Program Fees:</strong> Separate fees for specific programs (Open Sculling, Tech Sweep, etc.)</li>
     </ul>
     To participate in rowing activities after Learn to Scull, you'll need both a Full Membership and registration in a specific program like Open Sculling. Current fees are available on the AARC website.</p>
     
@@ -159,7 +159,7 @@
     <p>Learning curves vary widely based on athletic background, frequency of practice, and natural balance. Most rowers develop basic competence (independent launching, stable rowing, navigational awareness) within 8-12 sessions. Meaningful technical proficiency typically requires 30-50 sessions. Remember, even Olympic rowers continuously refine their technique!</p>
 
     <h4>Can I row in other types of boats after LTS?</h4>
-    <p>Yes, once you develop basic sculling proficiency, you can explore other boat types. Many rowers progress to double sculls (two-person boats), which offer improved stability and the opportunity to row with a partner. With further experience, you might try quad sculls (four-person) or eventually learn to sweep row in four-person or eight-person boats.</p>
+    <p>Yes, once you develop basic sculling proficiency, you can explore other boat types. Many rowers progress to double sculls (two-person boats), which offer improved stability and the opportunity to row with a partner.</p>
   </div>
   
   <div id="videos-tab" class="tab-content">
