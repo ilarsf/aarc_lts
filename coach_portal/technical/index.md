@@ -32,55 +32,6 @@ search_exclude: true
           <button class="toggle-content-btn" data-target="drills-content">Show Content Inline</button>
         </div>
       </div>
-      
-      <div id="drills-content" class="expandable-content" style="display:none;">
-        <h2>Key Drills Repertoire</h2>
-        
-        <div class="drill-categories">
-          <div class="category-nav">
-            <a href="#beginner-drills" class="category-link">Beginner Drills</a>
-            <a href="#intermediate-drills" class="category-link">Intermediate Drills</a>
-            <a href="#technical-focus-drills" class="category-link">Technical Focus Drills</a>
-            <a href="#recovery-phase-drills" class="category-link">Recovery Phase Drills</a>
-            <a href="#drive-phase-drills" class="category-link">Drive Phase Drills</a>
-            <a href="#blade-control-drills" class="category-link">Blade Control Drills</a>
-          </div>
-        </div>
-
-        <h3 id="beginner-drills">Beginner Drills</h3>
-        
-        <div class="collapsible-section">
-          <h4 class="collapsible-header">Arms Only Rowing</h4>
-          <div class="collapsible-content">
-            <h5>Purpose</h5>
-            <p>Focuses attention on hand and arm movement while maintaining balance and posture.</p>
-
-            <h5>Setup</h5>
-            <ul>
-              <li>Rower sits at the finish position with legs flat</li>
-              <li>Blades feathered just above the water</li>
-              <li>Body position upright with good posture</li>
-            </ul>
-
-            <h5>Execution</h5>
-            <ol>
-              <li>Square blades and place in water</li>
-              <li>Pull with arms only to bring blades through water</li>
-              <li>Extract blades cleanly at finish</li>
-              <li>Return to starting position with relaxed arms</li>
-            </ol>
-            
-            <h5>Common Errors</h5>
-            <ul>
-              <li>Leaning back during the drive</li>
-              <li>Dropping hands at extraction</li>
-              <li>Rushing the recovery</li>
-            </ul>
-          </div>
-        </div>
-        
-        <p><em>Note: This is a condensed preview. Visit the full page for complete drill repository.</em></p>
-      </div>
     </div>
   </div>
 
@@ -92,41 +43,6 @@ search_exclude: true
           <a href="{{ site.baseurl }}/coach_portal/technical/Common_Technical_Issues_and_Corrections" class="cta-button">View Full Page</a>
           <button class="toggle-content-btn" data-target="corrections-content">Show Content Inline</button>
         </div>
-      </div>
-      
-      <div id="corrections-content" class="expandable-content" style="display:none;">
-        <h2>Common Technical Issues and Corrections</h2>
-        
-        <div class="info-box tip">
-          <h4>Using This Guide</h4>
-          <p>Focus on one correction at a time rather than overwhelming novice rowers with multiple technique points.</p>
-        </div>
-
-        <h3>Recovery Phase Issues</h3>
-        
-        <div class="collapsible-section">
-          <h4 class="collapsible-header">Rushing the Slide</h4>
-          <div class="collapsible-content">
-            <table>
-              <tr>
-                <th>Issue Details</th>
-                <th>Correction Approach</th>
-              </tr>
-              <tr>
-                <td><strong>Observable Signs:</strong> <br>- Fast return to catch <br>- Jerky movements <br>- Poor preparation for catch</td>
-                <td><strong>Primary Causes:</strong> <br>- Anxiety <br>- Poor sequencing awareness <br>- Lack of control</td>
-              </tr>
-            </table>
-
-            <h5>Correction Drills:</h5>
-            <ol>
-              <li><strong>Pause Drills:</strong> Insert distinct pauses during recovery</li>
-              <li><strong>Counting Rhythm:</strong> Use verbal cadence for timing</li>
-            </ol>
-          </div>
-        </div>
-        
-        <p><em>Note: This is a condensed preview. Visit the full page for complete correction guide.</em></p>
       </div>
     </div>
   </div>
@@ -140,40 +56,6 @@ search_exclude: true
           <button class="toggle-content-btn" data-target="frameworks-content">Show Content Inline</button>
         </div>
       </div>
-      
-      <div id="frameworks-content" class="expandable-content" style="display:none;">
-        <h2>Technical Frameworks for Sculling Instruction</h2>
-        
-        <h3>KRAFT</h3>
-        
-        <div class="collapsible-section">
-          <h4 class="collapsible-header">KRAFT</h4>
-          <div class="collapsible-content">
-            <ol>
-              <li><strong>K: Keep shoulders relaxed and down</strong>
-                <ul>
-                  <li>Prevents tension that inhibits movement and balance</li>
-                  <li><strong>Coaching cue:</strong> "Drop your shoulders away from your ears"</li>
-                </ul>
-              </li>
-              <li><strong>R: Reach from hips, not shoulders</strong>
-                <ul>
-                  <li>Encourages proper forward body angle at the catch</li>
-                  <li><strong>Coaching cue:</strong> "Pivot from the hips, keep shoulders relaxed"</li>
-                </ul>
-              </li>
-              <li><strong>A: Arms straight until legs are flat</strong>
-                <ul>
-                  <li>Ensures power sequence from largest to smallest muscle groups</li>
-                  <li><strong>Coaching cue:</strong> "Arms like ropes, let the legs do the work"</li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-        </div>
-        
-        <p><em>Note: This is a condensed preview. Visit the full page for complete frameworks guide.</em></p>
-      </div>
     </div>
   </div>
 
@@ -185,11 +67,6 @@ search_exclude: true
           <a href="{{ site.baseurl }}/coach_portal/technical/Video_Analysis_Guide" class="cta-button">View Full Page</a>
           <button class="toggle-content-btn" data-target="video-content">Show Content Inline</button>
         </div>
-      </div>
-      
-      <div id="video-content" class="expandable-content" style="display:none;">
-        <h2>Video Analysis Guide</h2>
-        <p><em>Visit the full page for complete video analysis guide.</em></p>
       </div>
     </div>
   </div>
@@ -203,11 +80,6 @@ search_exclude: true
           <button class="toggle-content-btn" data-target="equipment-content">Show Content Inline</button>
         </div>
       </div>
-      
-      <div id="equipment-content" class="expandable-content" style="display:none;">
-        <h2>Equipment Adjustment Reference</h2>
-        <p><em>Visit the full page for complete equipment adjustment guide.</em></p>
-      </div>
     </div>
   </div>
 
@@ -219,11 +91,6 @@ search_exclude: true
           <a href="{{ site.baseurl }}/coach_portal/technical/Coaching_Language_Guide" class="cta-button">View Full Page</a>
           <button class="toggle-content-btn" data-target="language-content">Show Content Inline</button>
         </div>
-      </div>
-      
-      <div id="language-content" class="expandable-content" style="display:none;">
-        <h2>Coaching Language Guide</h2>
-        <p><em>Visit the full page for complete language guide.</em></p>
       </div>
     </div>
   </div>
