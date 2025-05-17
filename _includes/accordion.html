@@ -11,12 +11,44 @@ Usage instructions:
     <button id="collapse-all">Collapse All</button>
 </div>
 
+<!-- Single-level accordion -->
 <div class="accordion-section">
     <button class="accordion-toggle">Section Title <span class="skill-tag">Tag1</span> <span
             class="skill-tag">Tag2</span></button>
     <div class="accordion-content">
         <div class="accordion-content-inner">
             Your content here...
+        </div>
+    </div>
+</div>
+
+<!-- Multi-level accordion with nested content -->
+<div class="accordion-section">
+    <button class="accordion-toggle">Main Section Title</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Main content goes here...</p>
+
+            <!-- Nested accordion section -->
+            <div class="nested-section">
+                <button class="nested-toggle">Subsection Title</button>
+                <div class="nested-content">
+                    <div class="nested-content-inner">
+                        <p>Nested content goes here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another nested accordion section -->
+            <div class="nested-section">
+                <button class="nested-toggle">Another Subsection</button>
+                <div class="nested-content">
+                    <div class="nested-content-inner">
+                        <p>More nested content...</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

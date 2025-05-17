@@ -220,48 +220,80 @@ search_exclude: true
   <button class="accordion-toggle">Pick Drill (Erg & Water)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
-      <h4>Purpose</h4>
       <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position.</p>
-
-      <h4>Execution</h4>
-      <ol>
-          <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
-          <li>Progress through these stages, spending 10-15 strokes on each:
-              <ul>
-                <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
-                <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
-                <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
-                <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
-              </ul>
-          </li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-          <li>Emphasize clean hand movement away from body FIRST</li>
-          <li>Ensure body pivot is complete BEFORE knees bend</li>
-          <li>Maintain consistent hand heights throughout</li>
-          <li>Focus on smooth transitions between segments</li>
-          <li>Watch for rushing - recovery should be controlled</li>
-      </ul>
-
-      <h4>Progression Options</h4>
-      <ul>
-          <li>Begin on ergometer before attempting on water</li>
-          <li>Use a mirror or partner observation to check form</li>
-          <li>Add pauses between segments if needed</li>
-          <li>Reduce pressure to focus on technique</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-          <li><strong>Error:</strong> Bending knees before hands are away/body is over
-              <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
-          <li><strong>Error:</strong> Dropping hands after finish
-              <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
-          <li><strong>Error:</strong> Rushing the movement sequence
-              <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
-      </ul>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Purpose</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position. This drill helps rowers develop the correct recovery pattern that will become automatic with practice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Execution</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ol>
+              <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
+              <li>Progress through these stages, spending 10-15 strokes on each:
+                <ul>
+                  <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
+                  <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
+                  <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
+                  <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Coaching Points</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li>Emphasize clean hand movement away from body FIRST</li>
+              <li>Ensure body pivot is complete BEFORE knees bend</li>
+              <li>Maintain consistent hand heights throughout</li>
+              <li>Focus on smooth transitions between segments</li>
+              <li>Watch for rushing - recovery should be controlled</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Progression Options</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li>Begin on ergometer before attempting on water</li>
+              <li>Use a mirror or partner observation to check form</li>
+              <li>Add pauses between segments if needed</li>
+              <li>Reduce pressure to focus on technique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Common Errors and Corrections</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li><strong>Error:</strong> Bending knees before hands are away/body is over
+                <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
+              <li><strong>Error:</strong> Dropping hands after finish
+                <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
+              <li><strong>Error:</strong> Rushing the movement sequence
+                <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
