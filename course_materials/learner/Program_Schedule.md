@@ -135,7 +135,7 @@ We recommend keeping the following weekend partially open as a contingency for w
 To get the most out of the intensive weekend format:
 
 1. **Arrive Well-Rested:** Begin the program with adequate sleep and energy reserves.
-2. **Hydration:** Bring water bottles to each session and hydrate consistently.
+2. **Hydration:** Bring a water bottle to each session and hydrate consistently.
 3. **Nutrition:** Plan appropriate meals/snacks for the breaks between same-day sessions.
 4. **Sun Protection:** Bring sunscreen, hat, and sunglasses for on-water sessions.
 5. **Comfortable Clothing:** Wear athletic clothes that allow freedom of movement.
@@ -148,10 +148,10 @@ For each session, please bring:
 - Water bottle (at least 32 oz / 1 liter)
 - Sunscreen (water-resistant, SPF 30+)
 - Hat with brim and sunglasses
-- Athletic clothing appropriate for the weather
+- Athletic clothing appropriate for the weather. Ideally bright colors
 - Towel and change of clothes (in case of getting wet)
 - Hand tape or blister care supplies
-- Small snack for between sessions (if attending both morning and afternoon)
+- Small snack
 
 <div class="info-box tip">
   <h4>Weekends: A Total Immersion</h4>
