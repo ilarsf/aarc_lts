@@ -2,12 +2,7 @@
 layout: coach
 title: "Coaching Language Guide - AARC Learn to Scull Program"
 search_exclude: true
-uses_accordion: true
-
 ---
-
-
-{% include accordion.html %}
 
 # Coaching Language Guide
 
@@ -15,6 +10,8 @@ uses_accordion: true
   <h3>Effective Communication</h3>
   <p>How you communicate technical concepts can be as important as what you communicate. This guide provides effective terminology, metaphors, and communication strategies to help new scullers understand and apply proper technique.</p>
 </div>
+
+{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

@@ -2,12 +2,7 @@
 layout: coach
 title: "Equipment Adjustment Reference - AARC Learn to Scull Program"
 search_exclude: true
-uses_accordion: true
-
 ---
-
-{% include accordion.html %}
-
 
 # Equipment Adjustment Reference
 
@@ -15,6 +10,8 @@ uses_accordion: true
   <h3>Proper Equipment Setup</h3>
   <p>Proper equipment adjustments are crucial for rower comfort, safety, and technical development. This guide will help you make appropriate adjustments for participants of varying sizes and abilities.</p>
 </div>
+
+{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

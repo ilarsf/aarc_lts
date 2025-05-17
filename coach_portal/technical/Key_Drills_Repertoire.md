@@ -2,13 +2,7 @@
 layout: coach
 title: "Key Drills Repertoire - AARC Learn to Scull Program"
 search_exclude: true
-uses_accordion: true
-uses_category_nav: true
 ---
-
-
-{% include accordion.html %}
-
 
 # Key Drills Repertoire
 
@@ -17,6 +11,11 @@ uses_category_nav: true
   <p>This comprehensive guide provides detailed explanations of all recommended drills for the AARC Learn to Scull program. Drills are organized by focus area to help coaches select appropriate exercises for specific skill development.</p>
 </div>
 
+{% include accordion.html %}
+<link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
+<script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
 <script>
   // Enhanced accordion initialization
   document.addEventListener('DOMContentLoaded', function() {

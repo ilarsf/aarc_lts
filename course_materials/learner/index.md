@@ -1,17 +1,13 @@
 ---
 layout: default
 custom_class: learner-page
-uses_accordion: true
-
 ---
-
-
-{% include accordion.html %}
-
 
 # Learner Resources: Learn to Scull Program
 
 Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.
+
+{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

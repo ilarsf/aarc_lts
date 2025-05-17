@@ -2,7 +2,7 @@
 
 ## Chapter 8: Coaching Philosophy & Approach
 
-Welcome to Part 4, dedicated to the coaches who make the AARC Learn to Scull program possible! This chapter outlines the core philosophy, key teaching frameworks, and effective strategies to help you create a supportive, safe, and effective learning environment for new scullers. *Refer to the full [Coach's Manual]({{ site.baseurl }}/course_materials/coach/Coach_Manual.html) for more detail.*
+Welcome to Part 4, dedicated to the coaches who make the AARC Learn to Scull program possible! This chapter outlines the core philosophy, key teaching frameworks, and effective strategies to help you create a supportive, safe, and effective learning environment for new scullers. *Refer to the full [Coach's Manual]({{ site.baseurl }}/coach_portal/manual/Coach_Manual.html) in the Coach Portal for more detail.*
 
 ### Creating a Positive Learning Environment
 
@@ -36,7 +36,7 @@ Use these frameworks consistently for teaching and feedback:
 4.  **Drive:** Connected power (legs → back → arms).
 5.  **Steering:** Frequent looks, subtle corrections.
 
-💡 **Tip:** Refer learners to these frameworks. Use keywords consistently. *See the [Technical Frameworks Guide]({{ site.baseurl }}/course_materials/coach/technical/Technical_Frameworks.html) for details.*
+💡 **Tip:** Refer learners to these frameworks. Use keywords consistently. *See the Technical Frameworks Guide in the Coach Portal for details.*
 
 ### Class Management Strategies (Coaching Approach)
 
@@ -56,7 +56,7 @@ This chapter sets the stage. Following chapters detail session plans, drills, an
 
 ## Chapter 9: Session Plans & Drills
 
-This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate KRAFTs' Keys and the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans]({{ site.baseurl }}/course_materials/coach/session_plans/).*
+This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate KRAFTs' Keys and the Black Bear Sequence (BBS) framework.** *Detailed plans are available in the Coach Portal.*
 
 💡 **Coach's Tip:** Before each session, review the plan below and the **Daily Coach Checklist** (Chapter 10). Familiarize yourself with drills and common errors.
 
@@ -148,7 +148,7 @@ Effective coaching involves teaching technique *and* managing logistics and asse
 
 ### Daily Coach Checklist Integration
 
-Consistency and preparedness are vital. Using the **Daily Coach Checklist** consistently helps maintain program quality and safety({{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html) for specific action items.*
+Consistency and preparedness are vital. Using the **Daily Coach Checklist** consistently helps maintain program quality and safety ({{ site.baseurl }}/assets/pdf/daily_coach_checklist.html) for specific action items.*
 
 #### Key Checklist Phases:
 
@@ -196,7 +196,7 @@ Consistent communication prepares participants and reinforces learning.
 
 #### Using Templates:
 
-1.  Refer to the **[Email Templates Guide]({{ site.baseurl }}/course_materials/communication/Email_Templates.html)**.
+1.  Refer to the **[Email Templates Guide]({{ site.baseurl }}/coach_portal/communication/Email_Templates.html)**.
 2.  Available templates cover Pre-Course, During Course, and Post-Course communications.
 3.  Copy relevant template, customize placeholders (Name, Date, Skill), and send following the recommended schedule.
 
@@ -204,4 +204,4 @@ Using these templates ensures participants receive timely information about sche
 
 ---
 
-This concludes the core coaching section. Part 5 contains reference materials.
+This concludes the core coaching section. The Coach Appendices contain additional reference materials.

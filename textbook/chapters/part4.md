@@ -12,7 +12,6 @@ title: "Part 4: Appendices - AARC Learn to Scull Textbook"
   </div>
 </div>
 
-{% include accordion.html %}
 <script>
   // Ensure accordions are initialized after content is loaded
   document.addEventListener('DOMContentLoaded', function() {

@@ -2,13 +2,7 @@
 layout: coach
 title: "Video Analysis Guide - AARC Learn to Scull Program"
 search_exclude: true
-uses_accordion: true
-
 ---
-
-
-{% include accordion.html %}
-
 
 # Video Analysis Guide for Rowing Coaches
 
@@ -16,6 +10,8 @@ uses_accordion: true
   <h3>Effective Use of Video</h3>
   <p>Video analysis is one of the most powerful tools available to rowing coaches. This guide will help you implement effective video feedback in your Learn to Scull program.</p>
 </div>
+
+{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

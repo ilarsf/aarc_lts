@@ -1,14 +1,3 @@
----
-layout: default
-title: Learner's Guide - AARC Learn to Scull Program
-uses_tabs: true
-uses_accordion: true
----
-
-
-{% include accordion.html %}
-
-
 # Learner's Guide: Learn to Scull Program
 
 
@@ -920,3 +909,6 @@ uses_accordion: true
   </div>
 </div>
 
+<!-- Include the accordion scripts -->
+<script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>

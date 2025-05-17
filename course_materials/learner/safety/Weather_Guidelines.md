@@ -1,12 +1,6 @@
 ---
 layout: default
-uses_accordion: true
-
 ---
-
-
-{% include accordion.html %}
-
 
 # Weather Guidelines for Rowers
 

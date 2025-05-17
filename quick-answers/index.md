@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Quick Answers - AARC Learn to Scull Program
-uses_tabs: true
 ---
 
 <header class="page-intro">
@@ -356,7 +355,48 @@ uses_tabs: true
   </div>
 </section>
 
+<script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Tab navigation functionality
+  const tabLinks = document.querySelectorAll('.tab-link');
+  if (tabLinks.length > 0) {
+    // Set first tab as active by default
+    const firstTabId = tabLinks[0].getAttribute('data-tab');
+    document.getElementById(firstTabId).classList.add('active');
+    tabLinks[0].classList.add('active');
+
+    // Function to activate a specific tab by ID
+    function activateTab(tabId) {
+      // Deactivate current tabs
+      const activeTab = document.querySelector('.tab-content.active');
+      const activeLink = document.querySelector('.tab-link.active');
+
+      if (activeTab) activeTab.classList.remove('active');
+      if (activeLink) activeLink.classList.remove('active');
+
+      // Activate new tab
+      document.getElementById(tabId).classList.add('active');
+      const tabLink = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
+      if (tabLink) tabLink.classList.add('active');
+
+      return true;
+    }
+
+    // Tab click handling
+    tabLinks.forEach(tabLink => {
+      tabLink.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Get tab to activate
+        const tabId = this.getAttribute('data-tab');
+        activateTab(tabId);
+
+        // Update URL hash without scrolling
+        history.pushState(null, null, `#${tabId}`);
+      });
+    });
+  }
+
   // Decision tree interaction
   const treeOptions = document.querySelectorAll('.tree-option, .tree-back');
   
@@ -374,8 +414,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
-
 
 <style>
 /* Quick Answer Styles */

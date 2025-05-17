@@ -1,11 +1,6 @@
 ---
 layout: default
-uses_accordion: true
 ---
-
-
-{% include accordion.html %}
-
 
 # Technical Frameworks for Sculling Instruction
 
@@ -13,6 +8,8 @@ uses_accordion: true
   <h4>Coaching Resource</h4>
   <p>This guide outlines the primary technical frameworks used in the AARC Learn to Scull program. These frameworks provide consistent reference points for coaches and participants throughout the learning process.</p>
 </div>
+
+{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
