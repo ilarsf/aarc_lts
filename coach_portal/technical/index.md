@@ -15,15 +15,15 @@ search_exclude: true
 
 <div class="tab-container">
   <div class="tab-nav">
-    <button class="tab-button active" data-tab="tab1">Key Drills</button>
-    <button class="tab-button" data-tab="tab2">Technical Correction</button>
-    <button class="tab-button" data-tab="tab3">Teaching Frameworks</button>
-    <button class="tab-button" data-tab="tab4">Video Analysis</button>
-    <button class="tab-button" data-tab="tab5">Equipment Adjustment</button>
-    <button class="tab-button" data-tab="tab6">Coaching Language</button>
+    <a class="tab-link active" data-tab="tab1"><i class="fas fa-dumbbell"></i> <span>Key Drills</span></a>
+    <a class="tab-link" data-tab="tab2"><i class="fas fa-wrench"></i> <span>Technical Correction</span></a>
+    <a class="tab-link" data-tab="tab3"><i class="fas fa-sitemap"></i> <span>Teaching Frameworks</span></a>
+    <a class="tab-link" data-tab="tab4"><i class="fas fa-video"></i> <span>Video Analysis</span></a>
+    <a class="tab-link" data-tab="tab5"><i class="fas fa-tools"></i> <span>Equipment Adjustment</span></a>
+    <a class="tab-link" data-tab="tab6"><i class="fas fa-comments"></i> <span>Coaching Language</span></a>
   </div>
 
-  <div class="tab-content active" id="tab1">
+  <div id="tab1" class="tab-content active">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Comprehensive collection of drills organized by skill level and learning objective. Each drill includes clear instructions and common errors to watch for.</p>
@@ -35,7 +35,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div class="tab-content" id="tab2">
+  <div id="tab2" class="tab-content">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Identify common technical issues and learn effective correction strategies, including visual cues, verbal prompts, and targeted drills.</p>
@@ -47,7 +47,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div class="tab-content" id="tab3">
+  <div id="tab3" class="tab-content">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Structured approaches for introducing and developing technical skills, with clear progression pathways for different learning styles.</p>
@@ -59,7 +59,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div class="tab-content" id="tab4">
+  <div id="tab4" class="tab-content">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Guidelines for using video feedback effectively, including recommended apps, camera positions, and analysis methods.</p>
@@ -71,7 +71,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div class="tab-content" id="tab5">
+  <div id="tab5" class="tab-content">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Instructions for adjusting foot stretchers, oarlock height, and other equipment settings to match participant needs.</p>
@@ -83,7 +83,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div class="tab-content" id="tab6">
+  <div id="tab6" class="tab-content">
     <div class="tab-content-inner">
       <div class="tab-overview">
         <p>Effective terminology, metaphors, and communication strategies for conveying technical concepts to beginners.</p>
@@ -233,5 +233,35 @@ search_exclude: true
         }
       }
     });
+    
+    // Handle tab navigation with the new tab-link class
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all tabs and content
+        tabLinks.forEach(tab => tab.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        // Show corresponding content
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+    
+    // Set first tab as active by default if none is active
+    if (!document.querySelector('.tab-link.active') && tabLinks.length > 0) {
+      const firstTab = tabLinks[0];
+      const firstTabId = firstTab.getAttribute('data-tab');
+      
+      firstTab.classList.add('active');
+      document.getElementById(firstTabId).classList.add('active');
+    }
   });
 </script>

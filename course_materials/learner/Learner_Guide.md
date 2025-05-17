@@ -3,12 +3,12 @@
 
 <div class="tab-container">
   <div class="tab-nav">
-    <a class="tab-link" data-tab="welcome-tab">Welcome</a>
-    <a class="tab-link" data-tab="journey-tab">Journey</a>
-    <a class="tab-link" data-tab="technique-tab">Technique</a>
-    <a class="tab-link" data-tab="safety-tab">Safety</a>
-    <a class="tab-link" data-tab="reference-tab">Reference</a>
-    <a class="tab-link" data-tab="quizzes-tab">Quizzes</a>
+    <a class="tab-link" data-tab="welcome-tab"><i class="fas fa-handshake"></i> <span>Welcome</span></a>
+    <a class="tab-link" data-tab="journey-tab"><i class="fas fa-route"></i> <span>Journey</span></a>
+    <a class="tab-link" data-tab="technique-tab"><i class="fas fa-person-rowing"></i> <span>Technique</span></a>
+    <a class="tab-link" data-tab="safety-tab"><i class="fas fa-life-ring"></i> <span>Safety</span></a>
+    <a class="tab-link" data-tab="reference-tab"><i class="fas fa-book"></i> <span>Reference</span></a>
+    <a class="tab-link" data-tab="quizzes-tab"><i class="fas fa-question-circle"></i> <span>Quizzes</span></a>
   </div>
   
   <div id="welcome-tab" class="tab-content">

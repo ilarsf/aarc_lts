@@ -2,9 +2,9 @@
 
 <div class="tab-container">
   <div class="tab-nav">
-    <a class="tab-link" data-tab="faq-tab">FAQs</a>
-    <a class="tab-link" data-tab="videos-tab">Videos</a>
-    <a class="tab-link" data-tab="resources-tab">Resources</a>
+    <a class="tab-link" data-tab="faq-tab"><i class="fas fa-question-circle"></i> <span>FAQs</span></a>
+    <a class="tab-link" data-tab="videos-tab"><i class="fas fa-video"></i> <span>Videos</span></a>
+    <a class="tab-link" data-tab="resources-tab"><i class="fas fa-file-alt"></i> <span>Resources</span></a>
   </div>
   
   <div id="faq-tab" class="tab-content">

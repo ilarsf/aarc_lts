@@ -2,21 +2,34 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/tab-icons.css' | relative_url }}">
+
 # Sculling Self-Rescue & Flip Test Guide
-
-
-## Introduction
-
-Sculling, with its sleek boats and dual oars, offers a unique blend of physical exertion and serene connection with the water. However, the narrow design that makes sculling shells efficient also makes them less stable than recreational watercraft. For beginners, capsizing is a natural part of the learning process.
-
-This guide provides comprehensive instructions on how to safely recover from a capsize and re-enter your shell using low-exertion techniques that don't require significant upper body strength. By understanding and practicing these skills through the required flip test and ongoing practice, you'll build confidence to enjoy sculling with less anxiety about the possibility of an unexpected swim.
 
 <div class="info-box note">
   <h4>What You'll Learn</h4>
   <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
 </div>
 
-## Understanding Capsizing
+<div class="tab-container">
+  <div class="tab-nav">
+    <a class="tab-link active" data-tab="intro-tab"><i class="fas fa-info-circle"></i> <span>Introduction</span></a>
+    <a class="tab-link" data-tab="capsizing-tab"><i class="fas fa-water"></i> <span>Understanding Capsizing</span></a>
+    <a class="tab-link" data-tab="fliptest-tab"><i class="fas fa-clipboard-check"></i> <span>Flip Test</span></a>
+    <a class="tab-link" data-tab="selfrescue-tab"><i class="fas fa-life-ring"></i> <span>Self-Rescue</span></a>
+    <a class="tab-link" data-tab="practice-tab"><i class="fas fa-dumbbell"></i> <span>Practice Tips</span></a>
+  </div>
+  
+  <div id="intro-tab" class="tab-content active">
+    <h2>Introduction</h2>
+    
+    <p>Sculling, with its sleek boats and dual oars, offers a unique blend of physical exertion and serene connection with the water. However, the narrow design that makes sculling shells efficient also makes them less stable than recreational watercraft. For beginners, capsizing is a natural part of the learning process.</p>
+    
+    <p>This guide provides comprehensive instructions on how to safely recover from a capsize and re-enter your shell using low-exertion techniques that don't require significant upper body strength. By understanding and practicing these skills through the required flip test and ongoing practice, you'll build confidence to enjoy sculling with less anxiety about the possibility of an unexpected swim.</p>
+  </div>
+  
+  <div id="capsizing-tab" class="tab-content">
+    <h2>Understanding Capsizing</h2>
 
 Capsizing can happen for several reasons, and it's something many experienced rowers have encountered at some point:
 
@@ -327,3 +340,50 @@ Remember these key points:
 * **Follow safety protocols** before and during each rowing session
 
 With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Tab navigation functionality
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  // Function to activate a specific tab by ID
+  function activateTab(tabId) {
+    // Deactivate current tabs
+    tabLinks.forEach(tab => tab.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    // Activate new tab
+    document.getElementById(tabId).classList.add('active');
+    const tabLink = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
+    tabLink.classList.add('active');
+  }
+  
+  // Tab click handling
+  tabLinks.forEach(tabLink => {
+    tabLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get tab to activate
+      const tabId = this.getAttribute('data-tab');
+      activateTab(tabId);
+    });
+  });
+  
+  // Set first tab as active by default if none is active
+  if (!document.querySelector('.tab-link.active') && tabLinks.length > 0) {
+    const firstTab = tabLinks[0];
+    const firstTabId = firstTab.getAttribute('data-tab');
+    activateTab(firstTabId);
+  }
+  
+  // Check for hash in URL to activate specific tab
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const tabId = hash.replace('-section', '-tab');
+    if (document.getElementById(tabId)) {
+      activateTab(tabId);
+    }
+  }
+});
+</script>

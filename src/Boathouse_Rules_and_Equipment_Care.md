@@ -3,20 +3,36 @@ layout: default
 title: "Boathouse Rules and Equipment Care"
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/tab-icons.css' | relative_url }}">
+
 # Boathouse Rules and Equipment Care
 
 Proper care and handling of equipment not only extends its lifespan but also ensures it remains in good working condition for everyone. This guide covers important boathouse etiquette and equipment maintenance responsibilities.
 
-## General Boathouse Rules
-
-* **Sign Out/In:** Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered during your row.
-* **Boat Assignment:** Use only the boat and oars that you have been assigned.
-* **Footwear:** Wear appropriate footwear in the boathouse. Street shoes are allowed on the dock but not in the boats.
-* **Quiet Hours:** Respect neighbors by minimizing noise during early morning hours.
-* **Security:** The last person leaving the boathouse is responsible for ensuring all doors and gates are locked.
-* **Keep Pathways Clear:** Never leave equipment blocking walkways, doorways, or launch areas.
-
-## Equipment Handling and Storage
+<div class="tab-container">
+  <div class="tab-nav">
+    <a class="tab-link active" data-tab="rules-tab"><i class="fas fa-clipboard-list"></i> <span>General Rules</span></a>
+    <a class="tab-link" data-tab="handling-tab"><i class="fas fa-hands"></i> <span>Handling & Storage</span></a>
+    <a class="tab-link" data-tab="maintenance-tab"><i class="fas fa-screwdriver-wrench"></i> <span>Maintenance</span></a>
+    <a class="tab-link" data-tab="oars-tab"><i class="fas fa-ruler-combined"></i> <span>Oar Care</span></a>
+    <a class="tab-link" data-tab="facilities-tab"><i class="fas fa-house-user"></i> <span>Facilities</span></a>
+  </div>
+  
+  <div id="rules-tab" class="tab-content active">
+    <h2>General Boathouse Rules</h2>
+    
+    <ul>
+      <li><strong>Sign Out/In:</strong> Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered during your row.</li>
+      <li><strong>Boat Assignment:</strong> Use only the boat and oars that you have been assigned.</li>
+      <li><strong>Footwear:</strong> Wear appropriate footwear in the boathouse. Street shoes are allowed on the dock but not in the boats.</li>
+      <li><strong>Quiet Hours:</strong> Respect neighbors by minimizing noise during early morning hours.</li>
+      <li><strong>Security:</strong> The last person leaving the boathouse is responsible for ensuring all doors and gates are locked.</li>
+      <li><strong>Keep Pathways Clear:</strong> Never leave equipment blocking walkways, doorways, or launch areas.</li>
+    </ul>
+  </div>
+  
+  <div id="handling-tab" class="tab-content">
+    <h2>Equipment Handling and Storage</h2>
 
 ### Boat Handling
 
@@ -65,3 +81,50 @@ Remember that rowing equipment is both expensive and delicate. Approach each int
   <h4>Ask When Unsure</h4>
   <p>If you're unsure about any aspect of equipment handling or boathouse procedures, ask an experienced member or coach. It's better to ask than to risk damaging equipment or breaking protocol.</p>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Tab navigation functionality
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  // Function to activate a specific tab by ID
+  function activateTab(tabId) {
+    // Deactivate current tabs
+    tabLinks.forEach(tab => tab.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    // Activate new tab
+    document.getElementById(tabId).classList.add('active');
+    const tabLink = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
+    tabLink.classList.add('active');
+  }
+  
+  // Tab click handling
+  tabLinks.forEach(tabLink => {
+    tabLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get tab to activate
+      const tabId = this.getAttribute('data-tab');
+      activateTab(tabId);
+    });
+  });
+  
+  // Set first tab as active by default if none is active
+  if (!document.querySelector('.tab-link.active') && tabLinks.length > 0) {
+    const firstTab = tabLinks[0];
+    const firstTabId = firstTab.getAttribute('data-tab');
+    activateTab(firstTabId);
+  }
+  
+  // Check for hash in URL to activate specific tab
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const tabId = hash.replace('-section', '-tab');
+    if (document.getElementById(tabId)) {
+      activateTab(tabId);
+    }
+  }
+});
+</script>
