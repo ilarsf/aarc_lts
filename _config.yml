@@ -1,0 +1,74 @@
+title: AARC Learn to Scull Program
+description: Training materials for the Ann Arbor Rowing Club's Learn to Scull program
+baseurl: /aarc_lts
+remote_theme: pages-themes/cayman@v0.2.0
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Optional settings
+show_downloads: false
+google_analytics:
+
+# Custom theme settings
+theme_color: "#0066cc"         # Primary blue color
+theme_color_secondary: "#004c99" # Secondary blue color
+footer_text_color: "#7c7c7c"     # Light gray for footer text
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Textbook
+    url: /textbook/
+    subitems:
+      - title: "Part 1: Getting Started"
+        url: /textbook/chapters/part1.html
+      - title: "Part 2: For the Learner"
+        url: /textbook/chapters/part2.html
+      - title: "Part 3: Safety"
+        url: /textbook/chapters/part3.html
+      - title: "Part 4: Appendices"
+        url: /textbook/chapters/part4.html
+      - title: "View All Chapters"
+        url: /textbook/all.html
+  - title: Coach Portal
+    url: /coach_portal/
+  - title: Learner Resources
+    url: /course_materials/learner/
+    subitems:
+      - title: Learner Guide
+        url: /course_materials/learner/Learner_Guide.html
+      - title: Daily Checklist
+        url: /assets/pdf/daily_coach_checklist.html
+      - title: Program Schedule
+        url: /course_materials/learner/Program_Schedule.html
+      - title: Q&A Companion
+        url: /course_materials/learner/QA_Companion.html
+  - title: Technical Guides
+    url: /src/
+    subitems:
+      - title: Self-Rescue Guide
+        url: /src/Sculling_Self_Rescue_Guide.html
+      - title: Flip Test Instructions
+        url: /src/Sculling_Self_Rescue_Guide.html
+      - title: Hand Care Guide
+        url: /src/Rowers_Hand_Blister_Treatment.html
+  - title: Communication
+    url: /coach_portal/communication/
+  - title: Meet the Team
+    url: /team/
+  - title: About AARC
+    url: /about/
+  - title: Resources
+    url: /resources/
+
+# Site info
+organization: "Ann Arbor Rowing Club"
+copyright_year: 2025

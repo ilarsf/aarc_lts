@@ -1,0 +1,83 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include accordion.html %}
+2. Also add the script tag:
+<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
+3. Structure your content using the pattern below:
+
+```
+<div class="accordion-controls">
+    <button id="expand-all">Expand All</button>
+    <button id="collapse-all">Collapse All</button>
+</div>
+
+<!-- Single-level accordion -->
+<div class="accordion-section">
+    <button class="accordion-toggle">Section Title <span class="skill-tag">Tag1</span> <span
+            class="skill-tag">Tag2</span></button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            Your content here...
+        </div>
+    </div>
+</div>
+
+<!-- Multi-level accordion with nested content -->
+<div class="accordion-section">
+    <button class="accordion-toggle">Main Section Title</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Main content goes here...</p>
+
+            <!-- Nested accordion section -->
+            <div class="nested-section">
+                <button class="nested-toggle">Subsection Title</button>
+                <div class="nested-content">
+                    <div class="nested-content-inner">
+                        <p>Nested content goes here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another nested accordion section -->
+            <div class="nested-section">
+                <button class="nested-toggle">Another Subsection</button>
+                <div class="nested-content">
+                    <div class="nested-content-inner">
+                        <p>More nested content...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="accordion-section">
+    <button class="accordion-toggle">Another Section <span class="skill-tag">Tag3</span></button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            More content here...
+        </div>
+    </div>
+</div>
+```
+
+For filtering functionality:
+- Add skill tags to each accordion-toggle button as shown above
+- Include the filters container at the top of your page:
+
+```
+<div class="filters-container">
+    <h3>Filter by Tags</h3>
+    <div class="tag-filters">
+        <button class="tag-filter active" data-tag="all">All Tags</button>
+        <button class="tag-filter" data-tag="Tag1">Tag1</button>
+        <button class="tag-filter" data-tag="Tag2">Tag2</button>
+        <!-- Add more tag filters as needed -->
+    </div>
+</div>
+```
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/accordion.css' | relative_url }}">

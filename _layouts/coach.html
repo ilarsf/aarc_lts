@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% include head-custom.html %}
+    <!-- No drill filter scripts needed -->
+</head>
+
+<body>
+    <div class="page-header">
+        <div class="container-lg px-3 my-5">
+            <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+            <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+            <div class="header-actions">
+                <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg px-3 my-5 markdown-body main-container">
+        <nav class="site-nav">
+            <ul class="fallback-nav">
+                <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/course_materials/learner/">For Learners</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html">Learner Guide</a>
+                        </li>
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program
+                                Schedule</a></li>
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html">Q&A Companion</a>
+                        </li>
+                        <li><a href="{{ site.baseurl }}/course_materials/learner/Textbook.html">Textbook</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/src/">Technical Guides</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test
+                                Guide</a></li>
+                        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ site.baseurl }}/coach_portal/" class="active">Coach Portal</a>
+                </li>
+                <li class="nav-item"><a href="{{ site.baseurl }}/quick-answers/"><i class="fas fa-bolt"></i> Quick
+                        Answers</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{{ site.baseurl }}/resources/">Additional Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/about/">Club Information</a></li>
+                        <li><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#aarc-policies-and-procedures">Club Policies</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#educational-resources">Educational Materials</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#equipment-care">Equipment Care</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/#external-resources">External Resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="coach-portal-banner">
+                <div class="banner-icon"><i class="fas fa-lock"></i></div>
+                <div class="banner-text">
+                    <strong>Coach Portal - Restricted Access</strong>
+                    <span>This content is for authorized coaches only. Please do not share login credentials.</span>
+                </div>
+            </div>
+
+            {{ content }}
+
+            <div class="coach-portal-footer">
+                <p><i class="fas fa-shield-alt"></i> AARC Coach Resources - For internal use only</p>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="copyright">
+                © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club – All Rights Reserved
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if user has coach access
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
+            const storageAuth = localStorage.getItem('aarc_coach_access') === 'granted';
+            const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
+
+            // Get access via any method (URL, localStorage) or if we've already redirected too many times
+            const hasAccess = urlAuth || storageAuth || redirectCount >= 2;
+
+            // Only redirect if no access AND we haven't already redirected too many times
+            if (!hasAccess) {
+                // When redirecting, preserve auth_status if present
+                let redirectUrl = '{{ site.baseurl }}/coach_portal/';
+
+                if (redirectCount > 0) {
+                    redirectUrl += '?redirect_count=' + (redirectCount + 1);
+                    if (urlAuth) redirectUrl += '&auth_status=ok';
+                } else {
+                    redirectUrl += urlAuth ? '?auth_status=ok' : '?redirect_count=1';
+                }
+
+                window.location.href = redirectUrl;
+            }
+
+            // If URL authentication is being used, modify all coach portal links to maintain auth state
+            if (urlAuth) {
+                document.querySelectorAll('a').forEach(function (link) {
+                    const href = link.getAttribute('href');
+                    if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
+                        // Add auth_status parameter to the link
+                        const separator = href.includes('?') ? '&' : '?';
+                        link.setAttribute('href', href + separator + 'auth_status=ok');
+                    }
+                });
+            }
+
+            // Mobile nav toggle
+            const navToggle = document.querySelector('.mobile-nav-toggle');
+            const siteNav = document.querySelector('.site-nav');
+
+            if (navToggle && siteNav) {
+                navToggle.addEventListener('click', function () {
+                    siteNav.classList.toggle('active');
+                    this.setAttribute('aria-expanded', siteNav.classList.contains('active'));
+                });
+            }
+
+            // Tab functionality for any tab systems in coach pages
+            function initializeTabs() {
+                const tabLinks = document.querySelectorAll('.tab-link');
+                const tabContents = document.querySelectorAll('.tab-content');
+
+                if (tabLinks.length > 0) {
+                    tabLinks.forEach(link => {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+
+                            // Remove active class from all tabs and content
+                            tabLinks.forEach(tab => tab.classList.remove('active'));
+                            tabContents.forEach(content => content.classList.remove('active'));
+
+                            // Add active class to clicked tab
+                            this.classList.add('active');
+
+                            // Show corresponding content
+                            const tabId = this.getAttribute('data-tab');
+                            if (document.getElementById(tabId)) {
+                                document.getElementById(tabId).classList.add('active');
+                            }
+                        });
+                    });
+
+                    // If no tab is active, activate the first one
+                    if (!document.querySelector('.tab-link.active')) {
+                        const firstTab = document.querySelector('.tab-link');
+                        const firstTabId = firstTab.getAttribute('data-tab');
+
+                        firstTab.classList.add('active');
+                        if (document.getElementById(firstTabId)) {
+                            document.getElementById(firstTabId).classList.add('active');
+                        }
+                    }
+                }
+            }
+
+            // Initialize interactive elements
+            initializeTabs();
+        });
+    </script>
+
+    <style>
+        /* Coach Portal Elements */
+        .coach-portal-banner {
+            display: flex;
+            align-items: center;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-left: 5px solid #721c24;
+            color: #721c24;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .banner-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .banner-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .coach-portal-footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .site-nav .active {
+            font-weight: bold;
+            color: var(--theme-color);
+        }
+
+        /* Tab System Styling */
+        .tab-container {
+            margin: 2rem 0;
+        }
+
+        .tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 1.5rem;
+        }
+
+        .tab-link {
+            padding: 0.75rem 1.25rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            font-weight: 500;
+            color: var(--theme-color);
+            text-decoration: none;
+        }
+
+        .tab-link:hover {
+            background-color: #f8f9fa;
+        }
+
+        .tab-link.active {
+            border-bottom: 3px solid var(--theme-color);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .info-box.tip {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .info-box.note {
+            background-color: #e2f0fb;
+            border-left: 5px solid #0d6efd;
+        }
+
+        .info-box.warning {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+
+        .info-box h3,
+        .info-box h4 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Resource Cards */
+        .resource-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-card h3 {
+            margin-top: 0;
+            color: var(--theme-color);
+        }
+
+        /* Grid Layouts */
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Button Styling */
+        .cta-button,
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--theme-color);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:hover,
+        .btn:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error-message {
+            color: #dc3545;
+            margin-top: 0.5rem;
+        }
+
+        /* Print Styles */
+        @media print {
+
+            .coach-portal-banner,
+            .coach-portal-footer,
+            .site-nav,
+            .page-header,
+            .site-footer {
+                display: none !important;
+            }
+        }
+
+        /* Ensure tables are well-formatted */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #dee2e6;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f8f9fa;
+        }
+
+        /* Fix code and pre blocks */
+        pre,
+        code {
+            font-family: monospace;
+        }
+
+        pre {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        code {
+            padding: 0.2rem 0.4rem;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        /* Fix markdown conversion issues */
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .markdown-body h1 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 2em;
+        }
+
+        .markdown-body li+li {
+            margin-top: 0.25em;
+        }
+
+        .markdown-body blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+        }
+    </style>
+
+    <!-- Tab functionality -->
+    <script src="{{ site.baseurl }}/assets/js/tabs.js"></script>
+</body>
+
+</html>

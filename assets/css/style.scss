@@ -1,0 +1,2062 @@
+--- 
+
+--- 
+
+@import "{{ site.theme }}";
+
+// Ann Arbor Rowing Club styling
+// Color scheme - Updated to match AARC website
+$aarc-blue: #0073E6; // Primary blue
+$aarc-blue-hover: #005BB5; // Hover state for blue
+$aarc-red: #E11931; // Accent red
+$aarc-dark-gray: #333333; // Body text
+$aarc-light-gray: #555555; // Secondary text
+$aarc-white: #ffffff; // Background
+$aarc-border-gray: #DDDDDD; // Dividers
+$aarc-footer-bg: #F4F4F4; // Footer background
+
+// Typography - Updated to match AARC website
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $aarc-dark-gray;
+  background-color: $aarc-white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// Textbook Styling
+.textbook-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: $aarc-white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: $aarc-dark-gray;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem; // 32px
+}
+
+h2 {
+  font-size: 1.5rem; // 24px
+  border-bottom: 1px solid $aarc-border-gray;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem; // 20px
+}
+
+// Links and buttons
+a {
+  color: $aarc-blue;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: $aarc-blue-hover;
+    border-bottom: 1px solid rgba($aarc-blue, 0.3);
+    text-decoration: none;
+  }
+
+  // External links
+  &[target="_blank"]::after {
+    content: "↗";
+    font-size: 0.8em;
+    margin-left: 3px;
+    display: inline-block;
+  }
+
+  // PDF links
+  &[href$=".pdf"]::after {
+    content: "📄";
+    font-size: 0.9em;
+    margin-left: 3px;
+    display: inline-block;
+  }
+}
+
+.btn {
+  background-color: $aarc-blue;
+  color: $aarc-white;
+  border-radius: 4px;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  border: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  text-align: center;
+
+  &:hover {
+    background-color: $aarc-blue-hover;
+    color: $aarc-white;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Page header
+.page-header {
+  background-color: $aarc-blue;
+  background-image: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+
+  // No background pattern to match AARC website
+
+  .container-lg {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  .project-name {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: $aarc-white;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+  }
+
+  .project-tagline {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: $aarc-white;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+// Page sections styling
+.page-intro {
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.2rem;
+    color: $aarc-dark-gray;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 60px;
+      background-color: $aarc-blue;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+      text-align: center;
+
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+// Featured image styling
+.featured-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 1.5rem 0;
+  }
+}
+
+// Content sections
+.program-overview,
+.resource-library,
+.learning-journey {
+  margin: 3rem 0;
+  position: relative;
+
+  h2 {
+    color: $aarc-blue;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: $aarc-blue;
+      margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+
+      &::after {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 2rem 0;
+  }
+}
+
+// Learning journey styling
+.journey-stage {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  h4 {
+    color: $aarc-blue;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba($aarc-blue, 0.2);
+    font-size: 1.1rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      &::marker {
+        color: $aarc-blue;
+      }
+    }
+  }
+}
+
+// Navigation
+.site-nav {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  background-color: $aarc-white;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+  border-bottom: 1px solid $aarc-border-gray;
+
+  @media screen and (min-width: 769px) {
+    display: block !important;
+    /* Force navigation to always be visible on desktop */
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0;
+      position: relative;
+
+      a {
+        color: $aarc-dark-gray;
+        font-weight: 500;
+        padding: 0.75rem 1rem;
+        display: block;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1.05rem;
+
+        @media screen and (min-width: 992px) {
+          font-size: 1.1rem;
+        }
+
+        &:hover {
+          color: $aarc-blue;
+          background-color: rgba($aarc-blue, 0.05);
+        }
+      }
+
+      &.has-dropdown {
+        >a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &:after {
+            content: "▼";
+            font-size: 0.7rem;
+            margin-left: 0.5rem;
+          }
+        }
+
+        &:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    z-index: 1000;
+    border: 1px solid $aarc-border-gray;
+
+    li {
+      margin: 0;
+      width: 100%;
+
+      a {
+        padding: 0.65rem 1.25rem;
+        border-left: 3px solid transparent;
+        border-radius: 0;
+
+        &:hover {
+          background-color: rgba($aarc-blue, 0.05);
+          border-left: 3px solid $aarc-blue;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      position: static;
+      box-shadow: none;
+      border: none;
+      border-left: 3px solid $aarc-blue;
+      background-color: rgba($aarc-blue, 0.02);
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0;
+      display: none;
+
+      li a {
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          border-left: 3px solid transparent;
+        }
+      }
+    }
+  }
+
+  // Active state for navigation
+  .active-nav-item>a {
+    color: $aarc-blue;
+    font-weight: 600;
+    background-color: rgba($aarc-blue, 0.08);
+  }
+
+  // Mobile style improvements
+  @media screen and (max-width: 768px) {
+    ul li {
+      margin-bottom: 0.25rem;
+
+      a {
+        border-left: 3px solid transparent;
+
+        &:hover {
+          border-left: 3px solid $aarc-blue;
+        }
+      }
+    }
+
+    .active-nav-item>a {
+      border-left: 3px solid $aarc-blue;
+    }
+  }
+}
+
+// Mobile navigation
+.mobile-nav-toggle {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50%;
+    color: $aarc-white;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 100;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+// Mobile menu style
+.site-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+    /* Hide by default on mobile, toggle with JavaScript */
+    width: 100%;
+    background-color: $aarc-white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+
+    ul {
+      flex-direction: column;
+
+      li {
+        margin-right: 0;
+        margin-bottom: 0.25rem;
+        width: 100%;
+        position: relative;
+
+        a {
+          border-left: 3px solid transparent;
+          transition: all 0.2s ease;
+
+          &:hover {
+            border-left: 3px solid $aarc-blue;
+            padding-left: 1.25rem;
+          }
+        }
+
+        &.has-dropdown>a {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+
+    &.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+      animation: slideDown 0.3s ease-out;
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Dropdown toggle button for mobile
+.dropdown-toggle {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: $aarc-blue;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+    padding: 0 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// Main container
+.main-container {
+  max-width: 1200px !important;
+  padding: 0 2rem !important;
+  margin: 0 auto;
+  width: 100%;
+}
+
+// Main content
+.main-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $aarc-dark-gray;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 0.75rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 60px;
+      background-color: $aarc-blue;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: $aarc-blue;
+    border-bottom: 1px solid $aarc-border-gray;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -12px;
+      height: 1px;
+      width: 100%;
+      background-color: rgba($aarc-border-gray, 0.5);
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 1.75rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.15rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  }
+
+  hr {
+    height: 2px;
+    margin: 3rem 0;
+    background: linear-gradient(to right, rgba($aarc-blue, 0.1), rgba($aarc-blue, 0.5), rgba($aarc-blue, 0.1));
+    border: none;
+  }
+
+  // Section dividers
+  .section-divider {
+    height: 2px;
+    margin: 3rem auto;
+    width: 80%;
+    background: linear-gradient(to right, transparent, $aarc-border-gray, transparent);
+    border: none;
+    position: relative;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.25rem;
+      color: $aarc-light-gray;
+    }
+  }
+
+  // Images in content
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  // Lists styling
+  ul,
+  ol {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.05rem;
+      }
+    }
+
+    ul,
+    ol {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  // Responsive content
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+
+      &::after {
+        width: 40px;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    p,
+    li {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Call to action
+.cta-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: $aarc-blue;
+  color: $aarc-white !important;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 2px solid $aarc-blue;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
+  &:hover, &:focus {
+    background-color: $aarc-blue-hover;
+    border-color: $aarc-blue-hover;
+    color: $aarc-white !important;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+}
+
+// Tab Navigation
+.tab-container {
+  margin: 2rem 0;
+}
+
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $aarc-border-gray;
+  margin-bottom: 1rem;
+
+  .tab-link {
+    padding: 0.75rem 1.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: $aarc-dark-gray;
+    cursor: pointer;
+    font-weight: 500;
+    
+    i {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba($aarc-blue, 0.05);
+      text-decoration: none;
+    }
+
+    &.active {
+      border: 1px solid $aarc-border-gray;
+      border-bottom-color: $aarc-white;
+      color: $aarc-blue;
+      background-color: $aarc-white;
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+// Table styles
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0 2.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  th {
+    background-color: $aarc-blue;
+    color: $aarc-white;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.9rem 0.75rem;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  td {
+    border: 1px solid $aarc-border-gray;
+    padding: 0.85rem 0.75rem;
+    vertical-align: top;
+    line-height: 1.5;
+    transition: background-color 0.2s ease;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba($aarc-border-gray, 0.15);
+  }
+
+  tr:hover {
+    background-color: rgba($aarc-blue, 0.05);
+  }
+
+  // Responsive tables
+  @media screen and (max-width: 768px) {
+    &.responsive-table {
+      display: block;
+      width: 100%;
+
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        border: 1px solid $aarc-border-gray;
+        margin-bottom: 1rem;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid $aarc-border-gray;
+        position: relative;
+        padding-left: 40%;
+        text-align: left;
+        min-height: 1rem;
+
+        &:before {
+          position: absolute;
+          top: 0.85rem;
+          left: 0.75rem;
+          width: 35%;
+          padding-right: 10px;
+          white-space: nowrap;
+          font-weight: 600;
+          content: attr(data-label);
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  // Table captions
+  caption {
+    margin-bottom: 0.5rem;
+    color: $aarc-light-gray;
+    text-align: left;
+    font-style: italic;
+  }
+}
+
+// Page TOC navigation
+.page-toc {
+  background-color: rgba($aarc-blue, 0.05);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid $aarc-blue;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: $aarc-blue;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "📋";
+      margin-right: 0.5rem;
+      font-size: 1.1em;
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.4rem;
+      position: relative;
+
+      &:before {
+        content: "→";
+        position: absolute;
+        left: -1.2rem;
+        color: rgba($aarc-blue, 0.5);
+      }
+
+      a {
+        color: $aarc-dark-gray;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          color: $aarc-blue;
+          border-bottom: 1px solid rgba($aarc-blue, 0.3);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+
+    // For larger screens, let's float it to the right for some layouts
+    &.float-right {
+      float: right;
+      width: 300px;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &.float-right {
+      width: 320px;
+      margin-left: 2.5rem;
+    }
+  }
+
+  &.float-right+h2 {
+    clear: none;
+  }
+}
+
+// Video embedding and responsive iframes
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Remove margins when in grids */
+  .video-grid &,
+  .two-col-grid &,
+  .three-col-grid & {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  margin: 1.5rem 0;
+  align-items: start;
+  /* Ensure items align at the top */
+}
+
+// Video library section
+.video-library {
+  margin: 2rem 0;
+
+  .video-item {
+    margin-bottom: 2rem;
+
+    /* Remove margins when in grids */
+    .video-grid &,
+    .two-col-grid &,
+    .three-col-grid & {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $aarc-light-gray;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Information Boxes
+.info-box {
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border-left: 5px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  /* Prevent content overflow */
+  width: 100%;
+  /* Ensure box takes full width of its container */
+  box-sizing: border-box;
+  /* Include padding in width calculation */
+
+  /* Remove height: 100% to prevent stretching and overlap */
+
+  @media screen and (min-width: 768px) {
+    padding: 1.75rem;
+  }
+
+  /* When inside grid layouts, adjust margins and height */
+  .two-col-grid &,
+  .three-col-grid & {
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    /* Remove vertical margins when in grid */
+  }
+
+  &.tip {
+    background-color: rgba(39, 174, 96, 0.05);
+    border-left-color: #27ae60;
+
+    h4 {
+      color: #27ae60;
+
+      &:before {
+        content: "💡";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &.warning {
+    background-color: rgba(243, 156, 18, 0.05);
+    border-left-color: #f39c12;
+
+    h4 {
+      color: #e67e22;
+
+      &:before {
+        content: "⚠️";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &.note {
+    background-color: rgba(52, 152, 219, 0.05);
+    border-left-color: #3498db;
+
+    h4 {
+      color: #3498db;
+
+      &:before {
+        content: "📝";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &.aarc {
+    background-color: rgba(192, 0, 0, 0.05);
+    border-left-color: $aarc-red;
+
+    h4 {
+      color: $aarc-red;
+
+      &:before {
+        content: "🚣";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  h4 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 0;
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Image placeholders
+.image-placeholder {
+  background-color: rgba($aarc-border-gray, 0.2);
+  border: 2px dashed $aarc-border-gray;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+
+  .icon {
+    font-size: 2rem;
+    color: $aarc-light-gray;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-weight: 600;
+    color: $aarc-dark-gray;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    color: $aarc-light-gray;
+    font-style: italic;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+// Two-column layout
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+  align-items: start;
+  /* Default align to top */
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-gap: 3rem;
+  }
+
+  // Column alignment options
+  &.align-center {
+    align-items: center;
+  }
+
+  &.align-start {
+    align-items: start;
+  }
+
+  &.align-end {
+    align-items: end;
+  }
+
+  // Column width options
+  &.col-60-40 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 60% 40%;
+    }
+  }
+
+  &.col-40-60 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 40% 60%;
+    }
+  }
+
+  &.col-70-30 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 70% 30%;
+    }
+  }
+
+  &.col-30-70 {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 30% 70%;
+    }
+  }
+
+  // Responsive overrides
+  &.stack-mobile {
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &.reverse-mobile {
+    @media screen and (max-width: 767px) {
+      &>*:first-child {
+        order: 2;
+      }
+
+      &>*:last-child {
+        order: 1;
+      }
+    }
+  }
+
+  // Ensure all content in grid cells has proper spacing
+  >*>*:first-child {
+    margin-top: 0;
+  }
+
+  >*>*:last-child {
+    margin-bottom: 0;
+  }
+
+  // Fix for broken grid layout
+  >* {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensure padding doesn't increase width */
+    overflow: visible;
+    /* Allow nested content to be visible */
+    position: relative;
+    /* Establish a positioning context */
+    height: auto;
+    /* Allow height to be determined by content */
+
+    /* Apply consistent top margin handling for all grid children */
+    >*:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // Fix for direct info-box children in grids
+  >.info-box {
+    height: auto;
+    align-self: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Fix for images in grid cells
+  .featured-image {
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // Additional fix for very small screens
+  @media screen and (max-width: 576px) {
+    grid-gap: 1rem;
+  }
+}
+
+// Three-column layout
+.three-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+  align-items: start;
+  /* This ensures boxes align at the top */
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-gap: 2.5rem;
+  }
+
+  // All grid cells should handle their content properly
+  >* {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    overflow: visible;
+    /* Prevent clipping of content */
+    position: relative;
+    /* Establish position context */
+    height: auto;
+    /* Let content determine height */
+  }
+
+  // Fix for direct info-box children
+  >.info-box {
+    height: auto;
+    align-self: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Ensure all content in grid cells has proper spacing
+  >*>*:first-child {
+    margin-top: 0;
+  }
+
+  >*>*:last-child {
+    margin-bottom: 0;
+  }
+
+  // Fix for images in grid cells
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  // Additional fix for very small screens
+  @media screen and (max-width: 576px) {
+    grid-gap: 1rem;
+  }
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+// Textbook specific styling
+.textbook-navigation {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba($aarc-blue, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba($aarc-blue, 0.2);
+
+  h3 {
+    margin-top: 0;
+    color: $aarc-blue;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba($aarc-blue, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .toc-part {
+    margin-bottom: 1.5rem;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 0.3rem;
+
+        a {
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .textbook-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba($aarc-blue, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .btn {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.textbook-header,
+.textbook-footer {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+
+  .textbook-home-link {
+    font-weight: 600;
+    color: $aarc-blue;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .textbook-navigation-compact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .current-part {
+      font-weight: 600;
+      color: $aarc-dark-gray;
+    }
+
+    .prev-chapter,
+    .next-chapter {
+      font-weight: 600;
+    }
+  }
+}
+
+.textbook-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $aarc-border-gray;
+}
+
+.textbook-full-toc {
+  margin: 2rem 0;
+
+  h2 {
+    color: $aarc-blue;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .toc-main {
+    list-style-type: none;
+    padding-left: 0;
+
+    >li {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+
+      >a {
+        color: $aarc-dark-gray;
+      }
+
+      >ul {
+        margin-top: 0.5rem;
+        padding-left: 1.5rem;
+
+        >li {
+          font-weight: normal;
+          font-size: 1rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+// Printing adjustments
+// Print-related styles
+.button-primary {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0074d9;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+  border: none;
+  text-align: center;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0056a4;
+    text-decoration: none;
+  }
+
+  i {
+    margin-right: 6px;
+  }
+}
+
+.note {
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.print-instructions {
+  margin-bottom: 2rem;
+}
+
+// Print textbook styles
+.print-info-page {
+  display: none;
+}
+
+.part-heading {
+  /* Hidden in web view, visible in print */
+  display: none;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+@media print {
+
+  /* Basic page setup */
+  @page {
+    margin: 0.75in 0.75in 1in 0.75in;
+    /* top, right, bottom, left */
+    size: letter portrait;
+  }
+
+  /* Reset body margins and styling for print */
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+    background: white !important;
+    color: black !important;
+    font-family: "Times New Roman", Times, serif !important;
+    width: 100% !important;
+  }
+
+  /* Hide elements not needed in print */
+  .page-header,
+  .site-nav,
+  .site-footer,
+  .print-hide,
+  .print-instructions,
+  .textbook-header,
+  .textbook-footer,
+  .button-primary,
+  nav,
+  button,
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+
+  /* Full-width content with proper margins */
+  .main-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0.5in !important;
+    font-size: 12pt !important;
+  }
+
+  /* Container reset */
+  .container-lg {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Heading styling */
+  h1 {
+    font-size: 22pt !important;
+    margin-top: 0.5in !important;
+    margin-bottom: 0.25in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    text-align: left !important;
+  }
+
+  h2 {
+    font-size: 18pt !important;
+    margin-top: 0.4in !important;
+    margin-bottom: 0.2in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 14pt !important;
+    margin-top: 0.3in !important;
+    margin-bottom: 0.15in !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Link display */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  /* Avoid page breaks inside these elements */
+  p,
+  li,
+  blockquote,
+  table,
+  .info-box,
+  figure {
+    page-break-inside: avoid !important;
+  }
+
+  /* Control orphans and widows */
+  p {
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+
+  /* Image sizing */
+  img,
+  figure {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Part wrappers for proper page breaks */
+  .part-wrapper {
+    page-break-before: always !important;
+    margin-top: 0.5in !important;
+  }
+
+  /* Chapter headings */
+  h2[id^="chapter-"] {
+    page-break-before: always !important;
+    margin-top: 0.5in !important;
+  }
+
+  /* Info boxes */
+  .info-box {
+    border: 1px solid #ccc !important;
+    background-color: #f8f8f8 !important;
+    margin: 0.2in 0 !important;
+    padding: 0.1in !important;
+  }
+
+  /* Section dividers */
+  hr.section-divider {
+    border: none !important;
+    border-top: 1px solid #ccc !important;
+    margin: 0.25in 0 !important;
+  }
+
+  /* Headers and footers */
+  .print-header {
+    position: fixed !important;
+    top: 0.3in !important;
+    left: 0.75in !important;
+    right: 0.75in !important;
+    height: 0.3in !important;
+    border-bottom: 0.5pt solid #ccc !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 9pt !important;
+    font-family: Arial, sans-serif !important;
+    font-style: italic !important;
+    color: #666 !important;
+  }
+
+  .print-footer {
+    position: fixed !important;
+    bottom: 0.3in !important;
+    left: 0.75in !important;
+    right: 0.75in !important;
+    height: 0.3in !important;
+    border-top: 0.5pt solid #ccc !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 9pt !important;
+    font-family: Arial, sans-serif !important;
+    color: #666 !important;
+  }
+
+  /* Make sure content starts below header in print */
+  .main-content::before {
+    content: '' !important;
+    display: block !important;
+    height: 0.5in !important;
+  }
+
+  /* Cover page styling */
+  .print-info-page {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 9in !important;
+    /* Approximate height of letter paper minus margins */
+    text-align: center !important;
+    page-break-after: always !important;
+  }
+
+  .print-info-page h1 {
+    font-size: 28pt !important;
+    margin-bottom: 0.25in !important;
+  }
+
+  .textbook-subtitle {
+    font-size: 20pt !important;
+    margin-bottom: 2in !important;
+  }
+
+  .textbook-cover-info {
+    margin-top: 2in !important;
+    font-size: 14pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Table of contents */
+  .textbook-full-toc {
+    page-break-after: always !important;
+  }
+
+  .textbook-full-toc h2 {
+    font-size: 20pt !important;
+    text-align: center !important;
+    margin-bottom: 0.3in !important;
+  }
+
+  .textbook-full-toc .toc-main {
+    font-size: 12pt !important;
+  }
+
+  /* Show all details */
+  details,
+  .collapse {
+    display: block !important;
+  }
+
+  details>summary {
+    display: none !important;
+  }
+
+  /* Part headings */
+  .part-heading {
+    display: block !important;
+    font-size: 24pt !important;
+    text-align: center !important;
+    margin-top: 1in !important;
+    margin-bottom: 0.5in !important;
+  }
+}
+
+/* Copyright notice on first page */
+.print-copyright {
+  position: fixed;
+  bottom: 10mm;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 9pt;
+  font-family: Arial, sans-serif;
+}
+
+.date-printed {
+  position: fixed;
+  top: 10mm;
+  right: 10mm;
+  font-size: 9pt;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+/* Table of contents formatting */
+.textbook-full-toc {
+  page-break-after: always;
+
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 15pt;
+  }
+
+  .toc-main {
+    font-size: 11pt;
+
+    >li {
+      margin-bottom: 8pt;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      >ul {
+        margin-top: 5pt;
+      }
+    }
+  }
+}
+
+/* Ensure all content is visible in print */
+details,
+.collapse {
+  display: block !important;
+}
+
+details>summary {
+  display: none !important;
+}
+
+// Show the print info page and part headings in print mode
+.print-info-page {
+  display: block;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  page-break-after: always;
+
+  h1 {
+    font-size: 28pt;
+    margin-bottom: 1rem;
+  }
+
+  .textbook-subtitle {
+    font-size: 20pt;
+    margin-bottom: 4rem;
+  }
+
+  .textbook-cover-info {
+    margin-top: 4rem;
+    font-size: 14pt;
+    line-height: 1.5;
+  }
+}
+
+.part-heading {
+  display: block;
+  font-size: 24pt;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  page-break-before: always;
+  page-break-after: avoid;
+}
+
+// Hide web-only elements in print
+.textbook-header {
+  display: none;
+}
+
+// Team Section
+.team-section {
+  margin: 2rem 0 3rem;
+
+  .team-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+
+    p {
+      font-size: 1.1rem;
+      color: $aarc-dark-gray;
+      line-height: 1.6;
+    }
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media screen and (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member-image {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.6s ease;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    .team-member-info {
+      padding: 1.25rem;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        font-size: 1.2rem;
+        color: $aarc-dark-gray;
+      }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-size: 0.9rem;
+        color: $aarc-blue;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+        color: $aarc-light-gray;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Footer - Minimal copyright only
+.site-footer {
+  background-color: $aarc-footer-bg;
+  padding: 1rem 0;
+  margin-top: 3rem;
+
+  .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    color: $aarc-light-gray;
+  }
+}
