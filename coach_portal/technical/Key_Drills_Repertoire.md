@@ -984,6 +984,54 @@ search_exclude: true
                   <li>Watch for proper sequencing throughout progression</li>
                   <li>Encourage body awareness and proper timing</li>
               </ul>
+
+              <h4>Common Errors and Corrections</h4>
+              <ul>
+                  <li><strong>Error:</strong> Rushing to later stages before mastering earlier ones
+                      <br><strong>Correction:</strong> "Master each step before moving on"</li>
+                  <li><strong>Error:</strong> Losing form as complexity increases
+                      <br><strong>Correction:</strong> "Maintain the same quality from simple to complex"</li>
+                  <li><strong>Error:</strong> Incomplete recovery sequence throughout progression
+                      <br><strong>Correction:</strong> "Every stroke has the same careful recovery, regardless of length"</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Pressure Progression</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+              <h4>Purpose</h4>
+              <p>Teaches control of effort and application of power while maintaining proper technique.</p>
+
+              <h4>Execution</h4>
+              <ol>
+                  <li>5 strokes at 25% pressure - focus on perfect form</li>
+                  <li>5 strokes at 50% pressure - maintain the same form</li>
+                  <li>5 strokes at 75% pressure - resist technique breakdown</li>
+                  <li>5 strokes at full pressure - complete power with control</li>
+                  <li>5 strokes descending pressure back to 25%</li>
+                  <li>Repeat cycle 2-3 times</li>
+              </ol>
+
+              <h4>Coaching Points</h4>
+              <ul>
+                  <li>Define pressure by application of force, not by stroke rate</li>
+                  <li>Maintain same body positions regardless of pressure</li>
+                  <li>Focus on efficiency - more speed without more effort</li>
+                  <li>Feel the difference between controlled and rushed power</li>
+              </ul>
+
+              <h4>Common Errors and Corrections</h4>
+              <ul>
+                  <li><strong>Error:</strong> Increasing rate instead of pressure
+                      <br><strong>Correction:</strong> "Same rate, more push - feel the resistance"</li>
+                  <li><strong>Error:</strong> Shortening stroke length at higher pressure
+                      <br><strong>Correction:</strong> "Full compression, full extension at all pressures"</li>
+                  <li><strong>Error:</strong> Losing blade control at higher pressures
+                      <br><strong>Correction:</strong> "Strong connection through the water, clean finish"</li>
+              </ul>
           </div>
         </div>
       </div>
