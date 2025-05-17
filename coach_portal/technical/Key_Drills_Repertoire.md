@@ -13,8 +13,34 @@ search_exclude: true
 
 {% include accordion.html %}
 <link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
-<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
+<script>
+  // Fix for potential jQuery conflicts - runs after page is loaded
+  window.addEventListener('load', function() {
+    if (typeof fixAccordions === 'function') {
+      fixAccordions();
+    }
+    
+    // Check for any jQuery-specific errors
+    setTimeout(function() {
+      var accordionContents = document.querySelectorAll('.accordion-content');
+      var visibleCount = 0;
+      accordionContents.forEach(function(content) {
+        // If any accordions are visible after clicking, the toggle is working
+        if (content.classList.contains('visible')) {
+          visibleCount++;
+        }
+      });
+      
+      // If we find jQuery but accordions don't work properly, try to reinitialize
+      if (window.jQuery && visibleCount === 0 && typeof fixAccordions === 'function') {
+        console.log("Attempting to fix accordions again");
+        fixAccordions();
+      }
+    }, 2000);
+  });
+</script>
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
