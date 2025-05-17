@@ -1,0 +1,40 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include tabs.html %}
+2. Structure your content using the pattern below:
+
+```
+<div class="tab-container">
+    <div class="tab-nav">
+        <button class="tab-button active" data-tab="tab1">Tab 1 Title</button>
+        <button class="tab-button" data-tab="tab2">Tab 2 Title</button>
+        <button class="tab-button" data-tab="tab3">Tab 3 Title</button>
+        <!-- Add more tab buttons as needed -->
+    </div>
+
+    <div class="tab-content active" id="tab1">
+        <div class="tab-content-inner">
+            <p>Content for Tab 1...</p>
+            <a href="#" class="cta-button">Call To Action</a>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tab2">
+        <div class="tab-content-inner">
+            <p>Content for Tab 2...</p>
+            <a href="#" class="cta-button">Call To Action</a>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tab3">
+        <div class="tab-content-inner">
+            <p>Content for Tab 3...</p>
+            <a href="#" class="cta-button">Call To Action</a>
+        </div>
+    </div>
+</div>
+```
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/tabs.css' | relative_url }}">
+<script src="{{ '/assets/js/tabs.js' | relative_url }}" defer></script>
