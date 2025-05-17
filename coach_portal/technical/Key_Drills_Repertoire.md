@@ -632,11 +632,6 @@ search_exclude: true
   </div>
 </div>
 
-<div class="info-box">
-  <h4>Using This Document</h4>
-  <p>Use this repertoire to select appropriate drills for each session based on participant needs and progress. The suggested session sequences provide a starting point, but should be adapted based on group dynamics and individual learning paces.</p>
-</div>
-
 <h2 id="progression-sequences">Progression Sequences</h2>
 
 <div class="accordion-section">
