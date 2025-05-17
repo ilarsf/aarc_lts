@@ -1,126 +1,130 @@
-// Accordion functionality for .accordion-toggle buttons
-// Ensures each button toggles its corresponding .accordion-content
+// Script to manage accordion functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize all accordion sections (top level)
+    const accordionToggles = document.querySelectorAll('.accordion-toggle');
 
-// Create a safe function to handle potential jQuery conflicts
-(function () {
-    // Function to initialize accordions with vanilla JavaScript
-    function initAccordions() {
-        console.log("Initializing accordions with vanilla JS");
+    // Initialize all nested accordion sections (second level)
+    const nestedToggles = document.querySelectorAll('.nested-toggle');
 
-        // Toggle individual accordion sections
-        document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent default behavior
-                btn.classList.toggle('active');
-                var content = btn.nextElementSibling;
-                if (content && content.classList.contains('accordion-content')) {
-                    content.classList.toggle('visible');
+    // Handle top-level accordions
+    accordionToggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+            // Toggle the active class on the button
+            this.classList.toggle('active');
 
-                    // Log for debugging
-                    console.log('Toggling accordion:',
-                        'Button:', btn.textContent.trim(),
-                        'Active:', btn.classList.contains('active'),
-                        'Content visible:', content.classList.contains('visible'));
-                }
-            });
-        });
+            // Get the target content
+            const content = this.nextElementSibling;
 
-        // Expand All
-        var expandAll = document.getElementById('expand-all');
-        if (expandAll) {
-            expandAll.addEventListener('click', function () {
-                document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
-                    btn.classList.add('active');
-                    var content = btn.nextElementSibling;
-                    if (content && content.classList.contains('accordion-content')) {
-                        content.classList.add('visible');
-                    }
-                });
-            });
-        }
-
-        // Collapse All
-        var collapseAll = document.getElementById('collapse-all');
-        if (collapseAll) {
-            collapseAll.addEventListener('click', function () {
-                document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
-                    btn.classList.remove('active');
-                    var content = btn.nextElementSibling;
-                    if (content && content.classList.contains('accordion-content')) {
-                        content.classList.remove('visible');
-                    }
-                });
-            });
-        }
-
-        // Initialize nested toggles if present
-        document.querySelectorAll('.nested-toggle').forEach(function (btn) {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent default behavior
-                e.stopPropagation(); // Prevent event bubbling
-                btn.classList.toggle('active');
-                var content = btn.nextElementSibling;
-                if (content && content.classList.contains('nested-content')) {
-                    content.classList.toggle('visible');
-
-                    // Log for debugging
-                    console.log('Toggling nested content:',
-                        'Button:', btn.textContent.trim(),
-                        'Active:', btn.classList.contains('active'),
-                        'Content visible:', content.classList.contains('visible'));
-                }
-            });
-        });
-    }
-
-    // Function to verify accordion functionality
-    function verifyAccordions() {
-        const toggles = document.querySelectorAll('.accordion-toggle');
-        console.log(`Found ${toggles.length} accordion toggle elements`);
-
-        if (toggles.length === 0) {
-            console.warn('No accordion toggles found. Check if the page structure is correct.');
-        }
-
-        // Check if any accordions are already open (for debugging)
-        const visibleContents = document.querySelectorAll('.accordion-content.visible');
-        console.log(`${visibleContents.length} accordion sections are visible on page load`);
-    }
-
-    // Initialize when the DOM is loaded
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function () {
-            initAccordions();
-            setTimeout(verifyAccordions, 500); // Check after a delay
-        });
-    } else {
-        // DOM already loaded, run immediately
-        initAccordions();
-        setTimeout(verifyAccordions, 500);
-    }
-
-    // Define a global function to fix potential jQuery conflicts
-    window.fixAccordions = function () {
-        // Remove any jQuery slideReveal bindings
-        if (window.jQuery) {
-            try {
-                jQuery('.accordion-content').each(function () {
-                    if (jQuery(this).data('slideReveal')) {
-                        jQuery(this).slideReveal('hide');
-                    }
-                });
-            } catch (e) {
-                console.log("Cleaning up jQuery references: ", e);
+            // Toggle the content visibility
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.classList.remove('visible');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 2000 + "px"; // Added extra height to ensure full content visibility
+                content.classList.add('visible');
             }
+        });
+    });
 
-            // Reinitialize with vanilla JS
-            initAccordions();
-        }
-    };
+    // Handle nested accordions
+    nestedToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (event) {
+            // Prevent event from bubbling to parent accordion
+            event.stopPropagation();
 
-    // If page has jQuery loaded, provide backup plan
-    if (window.jQuery) {
-        console.log("jQuery detected, setting up fallback");
-        window.setTimeout(window.fixAccordions, 500);
+            // Toggle the active class on the button
+            this.classList.toggle('active');
+
+            // Get the target content
+            const content = this.nextElementSibling;
+
+            // Toggle the content visibility
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.classList.remove('visible');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px"; // Add extra height for nested content
+                content.classList.add('visible');
+
+                // Update parent accordion's height if needed
+                const parentContent = this.closest('.accordion-content');
+                if (parentContent && parentContent.classList.contains('visible')) {
+                    parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + 2000 + "px";
+                }
+            }
+        });
+    });
+
+    // Function to expand all visible sections
+    window.expandAllSections = function () {
+        // Expand top-level sections first
+        accordionToggles.forEach(toggle => {
+            // Only expand sections that are not filtered out
+            if (!toggle.parentElement.classList.contains('filtered')) {
+                const content = toggle.nextElementSibling;
+                toggle.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 2000 + "px";
+                content.classList.add('visible');
+            }
+        });
+
+        // Then expand all nested sections
+        nestedToggles.forEach(toggle => {
+            // Only expand if parent is visible
+            if (!toggle.closest('.accordion-section').classList.contains('filtered')) {
+                const content = toggle.nextElementSibling;
+                toggle.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('visible');
+
+                // Update parent's height
+                const parentContent = toggle.closest('.accordion-content');
+                if (parentContent && parentContent.classList.contains('visible')) {
+                    parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + 2000 + "px";
+                }
+            }
+        });
     }
-})();
+
+    // Function to collapse all sections
+    window.collapseAllSections = function () {
+        // Collapse nested sections first
+        nestedToggles.forEach(toggle => {
+            const content = toggle.nextElementSibling;
+            toggle.classList.remove('active');
+            content.style.maxHeight = null;
+            content.classList.remove('visible');
+        });
+
+        // Then collapse top-level sections
+        accordionToggles.forEach(toggle => {
+            const content = toggle.nextElementSibling;
+            toggle.classList.remove('active');
+            content.style.maxHeight = null;
+            content.classList.remove('visible');
+        });
+    }
+
+    // Add event listeners for expand/collapse all buttons
+    const expandAllBtn = document.getElementById('expand-all');
+    const collapseAllBtn = document.getElementById('collapse-all');
+
+    if (expandAllBtn) {
+        expandAllBtn.addEventListener('click', window.expandAllSections);
+    }
+
+    if (collapseAllBtn) {
+        collapseAllBtn.addEventListener('click', window.collapseAllSections);
+    }
+
+    // Initial setup - ensure accordion content is properly hidden
+    accordionToggles.forEach(toggle => {
+        const content = toggle.nextElementSibling;
+        if (!toggle.classList.contains('active')) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.classList.add('visible');
+        }
+    });
+});

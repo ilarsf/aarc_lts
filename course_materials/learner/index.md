@@ -50,7 +50,7 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
       <p>Visit the <a href="safety/index.html"><strong>Safety Resources</strong></a> section for guides including:</p>
       
       <ul>
-        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a> - What to do if you capsize, including the flip test procedure</li>
+        <li><a href="safety/Self_Rescue_Guide.html">Self-Rescue Guide</a> - What to do if you capsize, including the flip test procedure</li>
         <li><a href="safety/River_Traffic_Guide.html">River Traffic Guide</a> - Simple navigation rules to share the waterway safely</li>
         <li><a href="safety/Weather_Guidelines.html">Weather Guidelines</a> - Understanding conditions that affect rowing safety</li>
       </ul>

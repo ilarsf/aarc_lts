@@ -45,21 +45,16 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.3s ease-out, visibility 0s 0.5s;
+    transition: max-height 0.5s ease-out;
     background-color: white;
     border-left: 1px solid #e7e7e7;
     border-right: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .accordion-content.visible {
-    max-height: 10000px;
-    /* Increased height for larger content */
-    opacity: 1;
-    visibility: visible;
-    transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+    max-height: 2000px;
+    /* Arbitrary large height */
 }
 
 .accordion-content-inner {
@@ -137,18 +132,13 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0s 0.3s;
+    transition: max-height 0.3s ease-out;
     background-color: #fefefe;
     border-left: 1px solid #eee;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .nested-content.visible {
-    max-height: 5000px;
-    opacity: 1;
-    visibility: visible;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 1000px;
 }
 
 .nested-content-inner {

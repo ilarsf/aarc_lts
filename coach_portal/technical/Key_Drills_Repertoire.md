@@ -13,70 +13,8 @@ search_exclude: true
 
 {% include accordion.html %}
 <link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
-<script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
-<script>
-  // Enhanced accordion initialization
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded - initializing accordion handlers');
-    
-    // Direct event binding to ensure it works
-    document.querySelectorAll('.accordion-toggle').forEach(function(button) {
-      console.log('Adding click handler to:', button.textContent.trim());
-      
-      button.addEventListener('click', function(e) {
-        console.log('Accordion toggle clicked:', this.textContent.trim());
-        this.classList.toggle('active');
-        
-        var content = this.nextElementSibling;
-        if (content && content.classList.contains('accordion-content')) {
-          content.classList.toggle('visible');
-          console.log('Toggle successful:', content.classList.contains('visible'));
-        } else {
-          console.warn('No accordion content found for:', this.textContent.trim());
-        }
-      });
-    });
-    
-    // Fix for potential jQuery conflicts - runs after a delay
-    setTimeout(function() {
-      if (typeof fixAccordions === 'function') {
-        console.log('Running fixAccordions()');
-        fixAccordions();
-      }
-      
-      // Verify accordion functionality
-      var accordionToggles = document.querySelectorAll('.accordion-toggle');
-      console.log('Found ' + accordionToggles.length + ' accordion toggle buttons');
-      
-      if (accordionToggles.length > 0) {
-        // Force open the first accordion if none are open (for testing)
-        var anyOpen = false;
-        document.querySelectorAll('.accordion-content.visible').forEach(function() {
-          anyOpen = true;
-        });
-        
-        if (!anyOpen) {
-          console.log('No accordion sections are open - opening first section for testing');
-        }
-      }
-    }, 1000);
-  });
-  
-  // Additional failsafe on full page load
-  window.addEventListener('load', function() {
-    console.log('Window fully loaded');
-    
-    // If jQuery is detected and seems to be causing issues
-    if (window.jQuery) {
-      console.log('jQuery detected on page - checking for conflicts');
-      if (typeof fixAccordions === 'function') {
-        fixAccordions();
-      }
-    }
-  });
-</script>
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
@@ -282,48 +220,80 @@ search_exclude: true
   <button class="accordion-toggle">Pick Drill (Erg & Water)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
-      <h4>Purpose</h4>
-      <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position. This drill helps rowers develop the correct recovery pattern that will become automatic with practice.</p>
-
-      <h4>Execution</h4>
-      <ol>
-          <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
-          <li>Progress through these stages, spending 10-15 strokes on each:
-              <ul>
+      <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position.</p>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Purpose</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <p>Builds the recovery sequence from finish to catch, establishing proper sequencing and body position. This drill helps rowers develop the correct recovery pattern that will become automatic with practice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Execution</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ol>
+              <li>Start at the finish position (legs flat, slight body layback, arms drawn to lower ribs)</li>
+              <li>Progress through these stages, spending 10-15 strokes on each:
+                <ul>
                   <li><strong>Arms Only:</strong> Extend arms away from body to full reach without changing body angle or slide position</li>
                   <li><strong>Arms + Body:</strong> Add the forward pivot from the hips after arms are away</li>
                   <li><strong>Arms + Body + Half Slide:</strong> Add half-slide movement after body has pivoted forward</li>
                   <li><strong>Full Stroke:</strong> Complete the entire stroke with full slide</li>
-              </ul>
-          </li>
-      </ol>
-
-      <h4>Coaching Points</h4>
-      <ul>
-          <li>Emphasize clean hand movement away from body FIRST</li>
-          <li>Ensure body pivot is complete BEFORE knees bend</li>
-          <li>Maintain consistent hand heights throughout</li>
-          <li>Focus on smooth transitions between segments</li>
-          <li>Watch for rushing - recovery should be controlled</li>
-      </ul>
-
-      <h4>Progression Options</h4>
-      <ul>
-          <li>Begin on ergometer before attempting on water</li>
-          <li>Use a mirror or partner observation to check form</li>
-          <li>Add pauses between segments if needed</li>
-          <li>Reduce pressure to focus on technique</li>
-      </ul>
-
-      <h4>Common Errors and Corrections</h4>
-      <ul>
-          <li><strong>Error:</strong> Bending knees before hands are away/body is over
-              <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
-          <li><strong>Error:</strong> Dropping hands after finish
-              <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
-          <li><strong>Error:</strong> Rushing the movement sequence
-              <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
-      </ul>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Coaching Points</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li>Emphasize clean hand movement away from body FIRST</li>
+              <li>Ensure body pivot is complete BEFORE knees bend</li>
+              <li>Maintain consistent hand heights throughout</li>
+              <li>Focus on smooth transitions between segments</li>
+              <li>Watch for rushing - recovery should be controlled</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Progression Options</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li>Begin on ergometer before attempting on water</li>
+              <li>Use a mirror or partner observation to check form</li>
+              <li>Add pauses between segments if needed</li>
+              <li>Reduce pressure to focus on technique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nested-section">
+        <button class="nested-toggle">Common Errors and Corrections</button>
+        <div class="nested-content">
+          <div class="nested-content-inner">
+            <ul>
+              <li><strong>Error:</strong> Bending knees before hands are away/body is over
+                <br><strong>Correction:</strong> "Hands away FIRST, body rock SECOND, slide THIRD"</li>
+              <li><strong>Error:</strong> Dropping hands after finish
+                <br><strong>Correction:</strong> "Maintain horizontal pressure on the handle"</li>
+              <li><strong>Error:</strong> Rushing the movement sequence
+                <br><strong>Correction:</strong> "Slow hands away, feel the boat run"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
