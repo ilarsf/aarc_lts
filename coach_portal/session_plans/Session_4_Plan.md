@@ -11,7 +11,6 @@ search_exclude: true
   <p>This final session focuses on integrating all previously learned skills and developing confidence in river navigation, including bridge passage. Participants will be assessed on their progress and provided with information about continuing their rowing journey.</p>
   <div class="text-center mt-3">
     <a href="{{ site.baseurl }}/coach_portal/session_plans/" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
-    <a href="javascript:window.print()" class="btn">Print This Plan</a>
   </div>
 </div>
 

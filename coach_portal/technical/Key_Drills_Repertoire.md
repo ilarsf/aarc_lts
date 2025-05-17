@@ -403,6 +403,276 @@ search_exclude: true
     </div>
   </div>
 
+  <div class="tab-content" id="drive-phase-drills">
+    <div class="tab-content-inner">
+      <h2>Drive Phase Drills</h2>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Reverse Pick Drill</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Teaches proper sequencing of the drive phase, focusing on leg-body-arm coordination.</p>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>Start at the catch position with blades squared and in the water</li>
+                <li>Progress through these stages, spending 10-15 strokes on each:
+                  <ul>
+                    <li><strong>Legs Only:</strong> Push with legs while maintaining forward body angle and straight arms</li>
+                    <li><strong>Legs + Back:</strong> Add body swing after legs are nearly flat</li>
+                    <li><strong>Full Stroke:</strong> Add arm draw after body has swung to upright position</li>
+                  </ul>
+                </li>
+                <li>Return to catch position using normal recovery sequence</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Emphasize proper sequencing: legs FIRST, back SECOND, arms LAST</li>
+                <li>Maintain connection with the water throughout the drive</li>
+                <li>Watch for early back opening or arm bending</li>
+                <li>Focus on power application through the legs</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Opening back too early (before legs are down)
+                  <br><strong>Correction:</strong> "Push with legs only, keep your shoulders in front of your hips"</li>
+                <li><strong>Error:</strong> Breaking arms too early
+                  <br><strong>Correction:</strong> "Keep arms straight and relaxed until legs are flat"</li>
+                <li><strong>Error:</strong> Rushing the recovery after drive
+                  <br><strong>Correction:</strong> "Slow hands away, let the boat run"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Legs Only Rowing</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Isolates and develops the leg drive component of the stroke, building leg strength and proper drive mechanics.</p>
+
+            <h4>Setup</h4>
+            <ul>
+                <li>Begin at the catch position</li>
+                <li>Body angle fixed at 1 o'clock position</li>
+                <li>Arms extended straight throughout the drill</li>
+            </ul>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>From the catch, drive with legs only</li>
+                <li>Maintain fixed body angle and straight arms</li>
+                <li>Push until legs are flat</li>
+                <li>Without changing body angle or arms, return to catch</li>
+                <li>Repeat, focusing on isolated leg movement</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Ensure shoulders stay in front of hips throughout</li>
+                <li>Keep consistent pressure through the footplate</li>
+                <li>Maintain natural body angle without hunching</li>
+                <li>Focus on horizontal movement of the handle</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Changing body angle during drive
+                  <br><strong>Correction:</strong> "Hold your body position - freeze your back"</li>
+                <li><strong>Error:</strong> Breaking arms during drive
+                  <br><strong>Correction:</strong> "Think of your arms as ropes, not pistons"</li>
+                <li><strong>Error:</strong> Sliding seat without engaging legwork
+                  <br><strong>Correction:</strong> "Push through your heels, feel the foot stretcher"</li>
+            </ul>
+
+            <div class="drill-variation">
+              <h5>Variation: Legs Only with Pause</h5>
+              <p>Add a 1-second pause when legs are flat to emphasize the leg isolation and build awareness of body position.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Sequencing Drill</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Reinforces the correct drive phase sequence with verbal cues and deliberate transitions between phases.</p>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>At the catch, call out the sequence while performing it:</li>
+                <li>"LEGS" - Push with legs only, maintaining body position</li>
+                <li>"BACK" - Once legs are nearly flat, swing back to upright position</li>
+                <li>"ARMS" - Draw hands to body once back swing is complete</li>
+                <li>Return to catch using normal recovery sequence</li>
+                <li>Repeat with coach or rowers calling out sequence</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Emphasize distinct transitions between phases</li>
+                <li>Use verbal cues timed with the movement</li>
+                <li>Ensure proper timing - each phase begins as the previous one completes</li>
+                <li>Start slowly to build coordination before increasing rate</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Phases overlap instead of happening sequentially
+                  <br><strong>Correction:</strong> "Make each movement distinct - complete one before starting the next"</li>
+                <li><strong>Error:</strong> Back opens before legs are down
+                  <br><strong>Correction:</strong> "Wait for legs to finish before saying 'BACK'"</li>
+                <li><strong>Error:</strong> Arms pull too early
+                  <br><strong>Correction:</strong> "Keep arms extended until your back reaches upright position"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="blade-control-drills">
+    <div class="tab-content-inner">
+      <h2>Blade Control Drills</h2>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Square Blade Rowing</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Develops precise blade height control and clean entries/exits while building confidence with blade manipulation.</p>
+
+            <h4>Setup</h4>
+            <ul>
+                <li>Begin with blades squared (perpendicular to water)</li>
+                <li>Maintain squared position throughout entire stroke</li>
+                <li>Start with very light pressure</li>
+            </ul>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>Row complete strokes without feathering the blade at any point</li>
+                <li>Focus on clean entry and exit of squared blade</li>
+                <li>Maintain consistent blade depth throughout the drive</li>
+                <li>Keep squared blades just above water surface during recovery</li>
+                <li>Progress from arms-only to full strokes as control develops</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Watch handle heights carefully - should remain consistent</li>
+                <li>Emphasize horizontal hand movements</li>
+                <li>Look for minimal splash at entry and exit</li>
+                <li>Start with short strokes before progressing to full range</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Blade digging too deep
+                  <br><strong>Correction:</strong> "Slightly higher hands, feel the water's surface"</li>
+                <li><strong>Error:</strong> Blade skimming or skipping
+                  <br><strong>Correction:</strong> "Connect at entry, press to buried depth"</li>
+                <li><strong>Error:</strong> Blade catching water during recovery
+                  <br><strong>Correction:</strong> "Hands away cleaner, blade height consistent"</li>
+            </ul>
+
+            <div class="drill-variation">
+              <h5>Variation: Square Blade with Pauses</h5>
+              <p>Add pauses at key positions (finish, arms away, body over, catch) to reinforce control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Feathering Practice</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Develops smooth, controlled blade rotation and proper feathering/squaring technique.</p>
+
+            <h4>Setup</h4>
+            <ul>
+                <li>Start with stationary boat or very slow rowing</li>
+                <li>Focus solely on the rotation of the handles</li>
+            </ul>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>At finish position, after extracting blades, practice rotating handles to feather</li>
+                <li>During recovery, practice rotating to square position</li>
+                <li>Focus on using only the fingers (not wrists) to rotate</li>
+                <li>Progress to continuous rowing with emphasis on clean feathering</li>
+                <li>Add specific focus points: feather after extraction, square before entry</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Feather with fingers, not wrists</li>
+                <li>Keep wrists flat during rotation</li>
+                <li>Time feathering to occur just after blade clears water</li>
+                <li>Time squaring to finish before blade reaches water</li>
+                <li>Maintain relaxed grip throughout</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Breaking wrists to feather
+                  <br><strong>Correction:</strong> "Roll with fingers, keep wrists flat"</li>
+                <li><strong>Error:</strong> Feathering before blade is clear of water
+                  <br><strong>Correction:</strong> "Extract first, then feather"</li>
+                <li><strong>Error:</strong> Late squaring causes splash or missed water
+                  <br><strong>Correction:</strong> "Complete square before entry - prepare early"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion-toggle">Tap Down Drill</button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <h4>Purpose</h4>
+            <p>Improves clean blade extraction at the finish and proper hand heights during recovery.</p>
+
+            <h4>Execution</h4>
+            <ol>
+                <li>Row normally to the finish position</li>
+                <li>At finish, emphasize a slight downward tap of the hands before moving away</li>
+                <li>This "tap down" ensures blades clear the water cleanly</li>
+                <li>Continue with normal recovery sequence</li>
+                <li>Focus on the clean exit and proper hand heights after the tap</li>
+            </ol>
+
+            <h4>Coaching Points</h4>
+            <ul>
+                <li>Tap down is subtle - only enough to clear the blade</li>
+                <li>Maintain proper sequencing after the tap</li>
+                <li>Watch for consistent hand heights during recovery</li>
+                <li>Keep shoulders relaxed through the extraction</li>
+            </ul>
+
+            <h4>Common Errors and Corrections</h4>
+            <ul>
+                <li><strong>Error:</strong> Excessive tap down motion
+                  <br><strong>Correction:</strong> "Minimal movement - just enough to clear water"</li>
+                <li><strong>Error:</strong> Dropping hands during recovery
+                  <br><strong>Correction:</strong> "After tap, maintain consistent handle height"</li>
+                <li><strong>Error:</strong> Rushing away after tap
+                  <br><strong>Correction:</strong> "Controlled hands away after clean extraction"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="tab-content" id="boat-control-drills">
     <div class="tab-content-inner">
       <h2>Boat Control Drills</h2>
