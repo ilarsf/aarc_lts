@@ -1,5 +1,6 @@
 ---
 layout: default
+uses_accordion: true
 ---
 
 # Technical Frameworks for Sculling Instruction

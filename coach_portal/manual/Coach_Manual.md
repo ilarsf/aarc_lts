@@ -2,6 +2,7 @@
 layout: coach
 title: "Coach Manual - AARC Learn to Scull Program"
 search_exclude: true
+uses_tabs: true
 ---
 
 # Coach's Manual: Learn to Scull Program
@@ -527,27 +528,4 @@ search_exclude: true
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Tab functionality
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Remove active class from all tabs and content
-        tabLinks.forEach(tab => tab.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
-        
-        // Add active class to clicked tab
-        this.classList.add('active');
-        
-        // Show corresponding content
-        const tabId = this.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
-      });
-    });
-  });
-</script>
+

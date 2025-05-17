@@ -1,3 +1,9 @@
+---
+layout: default
+title: Learner Q&A Companion - AARC Learn to Scull Program
+uses_tabs: true
+---
+
 # Learner Q&A Companion
 
 <div class="tab-container">

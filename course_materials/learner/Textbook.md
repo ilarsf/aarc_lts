@@ -2,6 +2,7 @@
 layout: default
 title: "Learn to Scull Textbook"
 custom_class: learner-page
+uses_accordion: true
 ---
 
 # Learn to Scull Textbook
@@ -118,7 +119,7 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull Textbook. This comprehensi
         <li>Pathways beyond the Learn to Scull program</li>
       </ul>
       
-      <p><a href="{{ site.baseurl }}/textbook/chapters/part5.html" class="btn btn-primary">Read the full chapter</a></p>
+      <p><a href="{{ site.baseurl }}/textbook/chapters/part4.html" class="btn btn-primary">Read the full chapter</a></p>
     </div>
   </div>
 </div>

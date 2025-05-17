@@ -1,0 +1,40 @@
+<!-- Core scripts that should be loaded on all pages -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Global site scripts -->
+<script src="{{ site.baseurl }}/assets/js/search-exclusion.js"></script>
+
+<!-- Conditional script loading based on page features -->
+{% if page.uses_accordion %}
+<script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+<script src="{{ site.baseurl }}/assets/js/accordion-fallback.js" defer></script>
+{% endif %}
+
+{% if page.uses_quiz %}
+<script src="{{ site.baseurl }}/assets/js/quiz-integration.js"></script>
+{% endif %}
+
+{% if page.uses_tabs %}
+<script src="{{ site.baseurl }}/assets/js/tabs.js"></script>
+{% endif %}
+
+{% if page.uses_drill_filter %}
+<script src="{{ site.baseurl }}/assets/js/drill-filter.js"></script>
+{% endif %}
+
+{% if page.uses_skill_tags %}
+<script src="{{ site.baseurl }}/assets/js/skill-tags.js"></script>
+{% endif %}
+
+{% if page.uses_category_nav %}
+<script src="{{ site.baseurl }}/assets/js/category-nav.js"></script>
+{% endif %}
+
+{% if page.uses_nested_dropdown %}
+<script src="{{ site.baseurl }}/assets/js/nested-dropdown.js"></script>
+{% endif %}
+
+<!-- Coach portal scripts only loaded when in coach section -->
+{% if page.layout == 'coach' or page.path contains 'coach_portal' %}
+<script src="{{ site.baseurl }}/assets/js/coach-auth.js"></script>
+{% endif %}
