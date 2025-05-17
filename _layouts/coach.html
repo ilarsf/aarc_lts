@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     {% include head-custom.html %}
-    <!-- Conditional loading of the drill-filter.js script -->
-    {% if page.url contains 'Key_Drills_Repertoire' %}
-    <script src="{{ '/assets/js/drill-filter.js' | relative_url }}" defer></script>
-    {% endif %}
+    <!-- No drill filter scripts needed -->
 </head>
 
 <body>

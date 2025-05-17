@@ -5,13 +5,12 @@ title: AARC Learn to Scull Textbook
 
 # AARC Learn to Scull Textbook
 
-Welcome to the comprehensive textbook version of the Ann Arbor Rowing Club's Learn to Scull program. This updated textbook format provides all course materials in a sequential, easy-to-read format - perfect for those who prefer a traditional learning approach or want to print materials for offline reading. It now better integrates resources found across the main program website.
+Welcome to the comprehensive textbook version of the Ann Arbor Rowing Club's Learn to Scull program. This updated textbook format provides all course materials in a sequential, easy-to-read format - perfect for those who prefer a traditional learning approach. It now better integrates resources found across the main program website.
 
 ## Why a Textbook Format?
 
 The textbook version offers several advantages:
 - **Linear progression** through all course materials
-- **Printable format** for offline reading
 - **Consolidated information** without having to navigate between pages
 - **Comprehensive coverage** of all program aspects in one place, including summaries of key online resources.
 
@@ -24,7 +23,7 @@ The textbook version offers several advantages:
   <p>You can read the textbook in two ways:</p>
   <ul>
     <li><strong>Online version:</strong> Navigate through the chapters using the links above.</li>
-    <li><strong>Complete Version:</strong> <a href="{{ site.baseurl }}/textbook/all.html">View all chapters</a> on a single page (print-friendly).</li>
+    <li><strong>Complete Version:</strong> <a href="{{ site.baseurl }}/textbook/all.html">View all chapters</a> on a single page.</li>
     </ul>
 </div>
 

@@ -10,11 +10,10 @@ search_exclude: true
   <h4>Assessment Tool</h4>
   <p>Use this checklist to evaluate participant readiness for independent sculling and post-program options. Complete this form on the final day of the program.</p>
   <div class="text-center mt-3">
-    <a href="javascript:window.print()" class="btn">Print This Checklist</a>
   </div>
 </div>
 
-<div class="printable-checklist" markdown="1">
+<div class="assessment-checklist" markdown="1">
 
 ## Participant Information
 
@@ -133,61 +132,31 @@ Participant Signature: _____________________ Date: __________
 </div>
 
 <style>
-  .printable-checklist {
+  .assessment-checklist {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
     background-color: white;
   }
   
-  .printable-checklist table {
+  .assessment-checklist table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1.5rem;
   }
   
-  .printable-checklist th,
-  .printable-checklist td {
+  .assessment-checklist th,
+  .assessment-checklist td {
     border: 1px solid #ddd;
     padding: 0.75rem;
     text-align: left;
   }
   
-  .printable-checklist th {
+  .assessment-checklist th {
     background-color: #f8f9fa;
   }
   
-  .printable-checklist td:nth-child(2) {
+  .assessment-checklist td:nth-child(2) {
     text-align: center;
-  }
-  
-  @media print {
-    .info-box,
-    header,
-    footer,
-    .site-nav,
-    .page-header,
-    .btn {
-      display: none !important;
-    }
-    
-    body, html {
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-    
-    .printable-checklist {
-      padding: 0;
-    }
-    
-    h1 {
-      text-align: center;
-      margin-top: 0;
-    }
-    
-    @page {
-      size: portrait;
-      margin: 0.5in;
-    }
   }
 </style>

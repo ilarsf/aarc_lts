@@ -18,8 +18,10 @@ search_exclude: true
 </div>
 
 {% include accordion.html %}
+<link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
 <script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/skill-tags.js' | relative_url }}" defer></script>
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

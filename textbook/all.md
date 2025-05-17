@@ -41,8 +41,8 @@ title: "Complete Textbook - AARC Learn to Scull"
   </ul>
 </div>
 
-<div class="print-info-page">
-  <h1>AARC Learn to Scull</h1>
+<div>
+  <h2>AARC Learn to Scull</h2>
   <p class="textbook-subtitle">Complete Textbook</p>
   <div class="textbook-cover-info">
     <p>Ann Arbor Rowing Club</p>
@@ -51,7 +51,7 @@ title: "Complete Textbook - AARC Learn to Scull"
   </div>
 </div>
 
-<hr class="section-divider page-break-after">
+<hr class="section-divider">
 
 <h1 id="part-1-getting-started" class="part-heading">Part 1: Getting Started</h1>
 

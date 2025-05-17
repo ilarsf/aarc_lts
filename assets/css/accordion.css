@@ -40,11 +40,16 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
     background-color: white;
     border-left: 1px solid #e7e7e7;
     border-right: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+}
+
+.accordion-content.visible {
+    max-height: 2000px;
+    /* Arbitrary large height */
 }
 
 .accordion-content-inner {
@@ -96,6 +101,29 @@
     .accordion-controls {
         display: none;
     }
+}
+
+/* Skill Tags Styling */
+.skill-tag {
+    display: inline-block;
+    background-color: #e1f0ff;
+    color: #0073E6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: normal;
+}
+
+.skill-tag:hover {
+    background-color: #c5e1ff;
+}
+
+.skill-tag.highlighted {
+    background-color: #0073E6;
+    color: white;
 }
 
 /* Mobile responsiveness */

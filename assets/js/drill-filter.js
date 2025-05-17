@@ -98,6 +98,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
+            // Fix accordion max-height issues after filtering
+            setTimeout(() => {
+                const visibleAccordions = document.querySelectorAll('.accordion-content.visible');
+                visibleAccordions.forEach(content => {
+                    content.style.maxHeight = content.scrollHeight + 2000 + 'px';
+                });
+            }, 100);
+
             // Show message if no matching drills
             const noResultsMessage = document.getElementById('no-results-message');
             if (visibleSections === 0) {

@@ -11,7 +11,6 @@ search_exclude: true
   <p>This third session focuses on developing effective leg drive and power application while introducing navigation principles. Participants will learn to master boat control through turns and practice varying stroke pressure.</p>
   <div class="text-center mt-3">
     <a href="{{ site.baseurl }}/coach_portal/session_plans/" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
-    <a href="javascript:window.print()" class="btn">Print This Plan</a>
   </div>
 </div>
 

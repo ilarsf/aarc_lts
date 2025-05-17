@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 content.style.maxHeight = null;
                 content.classList.remove('visible');
             } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.maxHeight = content.scrollHeight + 2000 + "px"; // Added extra height to ensure full content visibility
                 content.classList.add('visible');
             }
         });

@@ -47,35 +47,10 @@ search_exclude: true
   </ul>
 </div>
 
-<div class="info-box tip print-instructions">
-  <h4>Creating a Professional PDF or Printed Coach Textbook</h4>
-  <p>Your textbook will be formatted with:</p>
-  <ul>
-    <li>A professional <strong>cover page</strong></li>
-    <li>Automatic <strong>page numbering</strong></li>
-    <li>Each <strong>chapter starting on a new page</strong></li>
-    <li>Proper <strong>headers and footers</strong></li>
-  </ul>
-  <p>Follow these steps for best results:</p>
-  <ol>
-    <li>Use <strong>Chrome or Edge</strong> browser for most consistent results</li>
-    <li>Click the <strong>Print Button</strong> below (or press <strong>Ctrl+P</strong> / <strong>Cmd+P</strong>)</li>
-    <li>Select <strong>"Save as PDF"</strong> from the destination/printer options</li>
-    <li>In the print settings:
-      <ul>
-        <li>Enable <strong>"Background graphics"</strong> for diagrams/icons</li>
-        <li>Set <strong>Margins to "Default" or "Medium"</strong></li>
-        <li>Set <strong>Scale to "Default" or "100%"</strong></li>
-        <li>Set <strong>Paper size to "Letter"</strong></li>
-      </ul>
-    </li>
-    <li>Click <strong>"Save"</strong> or <strong>"Print"</strong> to generate the PDF</li>
-  </ol>
-  <p><a href="#" class="print-now-btn button-primary"><i class="fas fa-print"></i> Print Coach Textbook Now</a></p>
-</div>
 
-<div class="print-info-page">
-  <h1>AARC Learn to Scull</h1>
+
+<div>
+  <h2>AARC Learn to Scull</h2>
   <p class="textbook-subtitle">Complete Coach Textbook</p>
   <div class="textbook-cover-info">
     <p>Ann Arbor Rowing Club</p>
@@ -85,7 +60,7 @@ search_exclude: true
   </div>
 </div>
 
-<hr class="section-divider page-break-after">
+<hr class="section-divider">
 
 <h1 id="part-1-coaching-fundamentals" class="part-heading">Part 1: Coaching Fundamentals</h1>
 
