@@ -779,6 +779,11 @@ a {
     color: $aarc-dark-gray;
     cursor: pointer;
     font-weight: 500;
+    
+    i {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
 
     &:hover {
       background-color: rgba($aarc-blue, 0.05);

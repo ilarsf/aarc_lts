@@ -13,14 +13,17 @@ title: Quick Answers - AARC Learn to Scull Program
   </div>
 </header>
 
+{% include accordion.html %}
+
 <section class="quick-answers">
   <div class="tab-container">
     <div class="tab-nav">
-      <a class="tab-link" data-tab="program-tab">Program Info</a>
-      <a class="tab-link" data-tab="technique-tab">Rowing Technique</a>
-      <a class="tab-link" data-tab="safety-tab">Safety</a>
-      <a class="tab-link" data-tab="equipment-tab">Equipment</a>
-      <a class="tab-link" data-tab="resources-tab">Resources</a>
+      <a class="tab-link" data-tab="program-tab"><i class="fas fa-calendar-days"></i> <span>Program Info</span></a>
+      <a class="tab-link" data-tab="technique-tab"><i class="fas fa-water"></i> <span>Rowing Technique</span></a>
+      <a class="tab-link" data-tab="safety-tab"><i class="fas fa-life-ring"></i> <span>Safety</span></a>
+      <a class="tab-link" data-tab="equipment-tab"><i class="fas fa-screwdriver-wrench"></i> <span>Equipment</span></a>
+      <a class="tab-link" data-tab="terminology-tab"><i class="fas fa-book"></i> <span>Terminology</span></a>
+      <a class="tab-link" data-tab="resources-tab"><i class="fas fa-file-lines"></i> <span>Resources</span></a>
     </div>
     
     <div id="program-tab" class="tab-content active">
@@ -226,6 +229,119 @@ title: Quick Answers - AARC Learn to Scull Program
             <li>Consider using rowing gloves or athletic tape</li>
           </ul>
           <p><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">View Hand Care Guide</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="terminology-tab" class="tab-content">
+      <h2>Rowing Terminology</h2>
+      
+      <div class="qa-section">
+        <p>Common rowing terms are organized into categories below. This reference will help you understand the language used by coaches and experienced rowers. For the full glossary, <a href="{{ site.baseurl }}/textbook/chapters/part4.html#appendix-a-glossary-of-rowing-terms">visit the Textbook Appendix</a>.</p>
+        
+        <div class="info-box tip">
+          <h4>Learning Tip</h4>
+          <p>Familiarizing yourself with rowing vocabulary will help you follow instructions more effectively during practice sessions. Focus on learning terms related to boat parts and commands first.</p>
+        </div>
+        
+        <div class="accordion-section">
+          <button class="accordion-toggle">Boat Parts and Equipment</button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <ul>
+                <li><strong>Bow:</strong> The forward end of the boat (crosses finish line first).</li>
+                <li><strong>Bow Ball:</strong> Safety ball attached to the bow of the boat.</li>
+                <li><strong>Cockpit:</strong> The area where the rower sits.</li>
+                <li><strong>Foot Stretcher:</strong> Adjustable platform where the rower places their feet.</li>
+                <li><strong>Gunwales (or Gunnels):</strong> The top edges of the boat's sides.</li>
+                <li><strong>Hull:</strong> The main body of the boat.</li>
+                <li><strong>Oarlock (or Gate):</strong> The U-shaped device on the rigger that holds the oar.</li>
+                <li><strong>Port:</strong> Left side of the boat when facing the bow (rower's right when seated).</li>
+                <li><strong>Rigger:</strong> Metal framework extending from the gunwale to hold the oarlock.</li>
+                <li><strong>Seat:</strong> The sliding seat the rower sits on.</li>
+                <li><strong>Shell:</strong> Another term for a rowing boat.</li>
+                <li><strong>Starboard:</strong> Right side of the boat when facing the bow (rower's left when seated).</li>
+                <li><strong>Stern:</strong> The rear end of the boat.</li>
+                <li><strong>Tracks (or Slides):</strong> Rails on which the seat moves.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-section">
+          <button class="accordion-toggle">Oar Components</button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <ul>
+                <li><strong>Blade (or Spoon):</strong> The flat, wide part of the oar that enters the water.</li>
+                <li><strong>Collar (or Button):</strong> The plastic fitting that stops the oar from slipping through the oarlock.</li>
+                <li><strong>Handle:</strong> The part of the oar the rower holds (usually rubber grip).</li>
+                <li><strong>Inboard:</strong> The distance from the button/collar to the handle end.</li>
+                <li><strong>Outboard:</strong> The distance from the button/collar to the blade tip.</li>
+                <li><strong>Shaft:</strong> The long part of the oar between the handle and blade.</li>
+                <li><strong>Sleeve:</strong> The plastic fitting on the shaft that sits in the oarlock.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-section">
+          <button class="accordion-toggle">Rowing Technique Terms</button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <ul>
+                <li><strong>Body Angle:</strong> The forward lean from the hips at the catch.</li>
+                <li><strong>Catch:</strong> The moment when the blade enters the water.</li>
+                <li><strong>Crab:</strong> Losing control of an oar, causing the blade to get stuck in the water.</li>
+                <li><strong>Drive:</strong> The power phase when the blade is in the water, propelling the boat.</li>
+                <li><strong>Feathering:</strong> Rotating the blade to be parallel to the water during recovery.</li>
+                <li><strong>Finish (or Release):</strong> The end of the drive when the blade leaves the water.</li>
+                <li><strong>Layback:</strong> The backward lean of the body at the finish position.</li>
+                <li><strong>Rating (or Stroke Rate):</strong> The number of strokes taken per minute (spm).</li>
+                <li><strong>Recovery:</strong> Moving from the finish back to prepare for the next catch.</li>
+                <li><strong>Set (or Balance):</strong> Keeping the boat level side-to-side.</li>
+                <li><strong>Skying:</strong> Raising the blade too high above the water before the catch.</li>
+                <li><strong>Squaring:</strong> Rotating the blade perpendicular to the water before the catch.</li>
+                <li><strong>Washing Out:</strong> When the blade leaves the water too early during the drive.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-section">
+          <button class="accordion-toggle">Commands and Navigation</button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <ul>
+                <li><strong>Back (or Back it Down):</strong> Command to row in reverse by pushing handles away.</li>
+                <li><strong>Check it down:</strong> See "Hold Water".</li>
+                <li><strong>Firm:</strong> Command for medium rowing pressure.</li>
+                <li><strong>Full Pressure:</strong> Command for maximum rowing effort.</li>
+                <li><strong>Hands On:</strong> Command to take hold of the boat for lifting/moving.</li>
+                <li><strong>Hold Water:</strong> Command to stop the boat quickly with blades squared in water.</li>
+                <li><strong>Let It Run:</strong> Command to stop rowing and allow the boat to glide.</li>
+                <li><strong>Ready All, Row:</strong> The standard command to begin rowing together.</li>
+                <li><strong>Traffic Pattern:</strong> The established "rules of the road" for waterway navigation.</li>
+                <li><strong>Way Enough (or Weigh Enough):</strong> Command to stop rowing.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mini-quiz">
+          <h4>Quick Check</h4>
+          <div class="mini-quiz-question">
+            <p>What is the difference between port and starboard?</p>
+            <button class="mini-quiz-toggle">Show Answer</button>
+            <div class="mini-quiz-answer hidden">
+              <p><strong>Port</strong> is the left side of the boat when facing the bow (but the rower's right side when seated). <strong>Starboard</strong> is the right side of the boat when facing the bow (but the rower's left side when seated).</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="navigation-buttons">
+          <a href="{{ site.baseurl }}/textbook/chapters/part4.html#appendix-a-glossary-of-rowing-terms" class="cta-button">Complete Glossary</a>
+          <a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="secondary-button">Q&A Companion</a>
         </div>
       </div>
     </div>

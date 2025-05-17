@@ -1,0 +1,53 @@
+/* Tab icons styling */
+.tab-link i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .tab-link {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .tab-link i {
+        margin-right: 0.3rem;
+    }
+}
+
+/* Very small screens - show only icons */
+@media (max-width: 480px) {
+    .tab-nav {
+        justify-content: space-between;
+    }
+
+    .tab-link {
+        flex: 1;
+        text-align: center;
+        padding: 0.6rem 0.4rem;
+    }
+
+    .tab-link i {
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+
+    .tab-link span {
+        display: none;
+    }
+}
+
+/* Navigation buttons at the bottom of tabs */
+.navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
