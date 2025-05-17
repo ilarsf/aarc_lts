@@ -293,11 +293,11 @@ search_exclude: true
             <span class="resource-desc">Detailed plans for all four LTS sessions</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/assets/pdf/daily_coach_checklist.html">Daily Coach Checklist</a>
+            <a href="{{ site.baseurl }}/coach_portal/safety/Daily_Safety_Checklist.html">Daily Coach Checklist</a>
             <span class="resource-desc">Pre-session preparation checklist</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/technical/Drill_Progression.html">Skill Development Progression</a>
+            <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html">Skill Development Progression</a>
             <span class="resource-desc">Recommended sequence of skills and drills</span>
           </li>
         </ul>
@@ -347,11 +347,11 @@ search_exclude: true
             <span class="resource-desc">Comprehensive skills evaluation form</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/assessment/Program_Evaluation_Form.html">Program Evaluation Form</a>
+            <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Program Evaluation Form</a>
             <span class="resource-desc">Feedback collection tool for program improvement</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/coach_portal/assessment/Progress_Tracking_Sheet.html">Progress Tracking Sheet</a>
+            <a href="{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html">Progress Tracking Sheet</a>
             <span class="resource-desc">Tool for monitoring participant development</span>
           </li>
         </ul>

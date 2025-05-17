@@ -258,17 +258,11 @@ title: Quick Answers - AARC Learn to Scull Program
         <h3>Safety Resources</h3>
         <div class="resource-cards">
           <div class="resource-card">
-            <h4>Self-Rescue Guide</h4>
+            <h4>Self-Rescue Guide & Flip Test Instructions</h4>
             <p>Instructions for safely recovering from a capsize</p>
             <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a>
           </div>
-          
-          <div class="resource-card">
-            <h4>Flip Test Instructions</h4>
-            <p>Step-by-step guide for completing the capsize recovery test</p>
-            <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Instructions</a>
-          </div>
-          
+                    
           <div class="resource-card">
             <h4>River Traffic Guide</h4>
             <p>Guidelines for navigating on Argo pond</p>
