@@ -180,10 +180,11 @@
 
         // Function to activate a specific tab by ID or section name
         function activateTab(tabIdOrHash) {
-          console.log("[Default Layout] activateTab called with:", tabIdOrHash); // Debug log
           let tabId = tabIdOrHash;
 
+          // Handle section IDs that should map to specific tabs
           const sectionToTabMap = {
+            // Learner Guide
             'welcome-to-sculling': 'welcome-tab',
             'what-to-expect': 'welcome-tab',
             'your-sculling-journey': 'journey-tab',
@@ -191,6 +192,8 @@
             'essential-sculling-techniques': 'technique-tab',
             'safety-first-the-flip-test-and-self-rescue': 'safety-tab',
             'next-steps-after-the-course': 'reference-tab',
+
+            // Coach Manual
             'program-overview': 'overview-tab',
             'program-structure': 'overview-tab',
             'session-goals-and-progression': 'sessions-tab',
@@ -200,31 +203,28 @@
             'resources': 'resources-tab'
           };
 
+          // Check if we need to map a section ID to a tab ID
           if (sectionToTabMap[tabIdOrHash]) {
             tabId = sectionToTabMap[tabIdOrHash];
-            console.log("[Default Layout] Mapped to tabId:", tabId); // Debug log
           }
 
+          // Find the tab link
           const tabLink = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
-          const tabContent = document.getElementById(tabId); // Get the content div by its ID
+          if (tabLink) {
+            // Deactivate current tabs
+            const activeTab = document.querySelector('.tab-content.active');
+            const activeLink = document.querySelector('.tab-link.active');
 
-          console.log("[Default Layout] Looking for link:", `.tab-link[data-tab="${tabId}"]`, tabLink); // Debug log
-          console.log("[Default Layout] Looking for content:", `#${tabId}`, tabContent); // Debug log
-
-          if (tabLink && tabContent) { // Ensure both the link and content elements exist
-            // Deactivate ALL currently active tabs and contents more robustly
-            document.querySelectorAll('.tab-link.active').forEach(link => link.classList.remove('active'));
-            document.querySelectorAll('.tab-content.active').forEach(content => content.classList.remove('active'));
+            if (activeTab) activeTab.classList.remove('active');
+            if (activeLink) activeLink.classList.remove('active');
 
             // Activate new tab
-            tabLink.classList.add('active');    // Activate link
-            tabContent.classList.add('active'); // Activate content
-            console.log("[Default Layout] Successfully activated tab:", tabId); // Debug log
+            document.getElementById(tabId).classList.add('active');
+            tabLink.classList.add('active');
+
             return true;
-          } else {
-            console.warn("[Default Layout] Failed to find link or content for tabId:", tabId); // Debug log
-            return false;
           }
+          return false;
         }
 
         // Check for hash in URL to activate specific tab

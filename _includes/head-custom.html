@@ -11,8 +11,6 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/category-nav.css">
 <!-- Quiz Integration Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/quiz-integration.css">
-<!-- Tab Styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tabs.css">
 <!-- Coach Authentication JS -->
 <script src="{{ site.baseurl }}/assets/js/coach-auth.js"></script>
 <!-- Search Exclusion JS -->
@@ -392,36 +390,15 @@
 
       // Check for hash in URL to activate specific tab
       const hash = window.location.hash;
-      let activeTabSetByHash = false;
+      let activeTabSet = false;
 
-      // Check for hash in URL to activate specific tab FIRST
-      if (window.location.hash) {
-        const hash = window.location.hash.substring(1); // Remove #
-        const targetTabLink = container.querySelector(`.tab-link[data-tab="${hash}"]`);
-        const targetTabContent = container.querySelector(`#${hash}.tab-content`);
-
-        if (targetTabLink && targetTabContent) {
-          // Deactivate any potentially pre-set active tabs (e.g., from other scripts or defaults)
-          tabLinks.forEach(tab => tab.classList.remove('active'));
-          tabContents.forEach(content => content.classList.remove('active'));
-
-          // Add active class to the target tab and content
-          targetTabLink.classList.add('active');
-          targetTabContent.classList.add('active');
-          activeTabSetByHash = true;
-        }
+      // Set first tab as active by default
+      if (tabLinks.length > 0 && !activeTabSet) {
+        tabLinks[0].classList.add('active');
       }
 
-      // If no tab was activated by the hash, set the first tab as active by default
-      if (!activeTabSetByHash && tabLinks.length > 0) {
-        // Deactivate any other active tabs first to ensure only one is active
-        tabLinks.forEach(tab => tab.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
-
-        tabLinks[0].classList.add('active');
-        if (tabContents.length > 0) {
-          tabContents[0].classList.add('active');
-        }
+      if (tabContents.length > 0 && !activeTabSet) {
+        tabContents[0].classList.add('active');
       }
 
       // Add click event to tab links
