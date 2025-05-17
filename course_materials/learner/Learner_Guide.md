@@ -912,3 +912,4 @@
 <!-- Include the accordion scripts -->
 <script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>

@@ -1,0 +1,38 @@
+/* Basic tab styling */
+.tab-container {
+    margin: 20px 0;
+}
+
+.tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-link {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-bottom: -1px;
+    background-color: #f8f8f8;
+    text-decoration: none;
+    color: #333;
+}
+
+.tab-link:hover {
+    background-color: #eaeaea;
+}
+
+.tab-link.active {
+    background-color: white;
+    border-color: #ddd;
+    border-bottom-color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
