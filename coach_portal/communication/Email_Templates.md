@@ -158,7 +158,7 @@ Tomorrow is Session #4, your final Learn to Scull session. Here's what to expect
 **Session Guide:** Please review our Session 4 information package:
 https://ilarsf.github.io/aarc_lts/coach_portal/communication/Session4_Package.html
 
-**Practice Tip:** Practice checking over your shoulder every 5-10 strokes while maintaining balance - a crucial skill for safe river navigation.
+**Practice Tip:** Practice checking over your shoulder every 3-5 strokes while maintaining balance - a crucial skill for safe river navigation.
 
 **Final Opportunity:** This is the last session to complete any remaining requirements, including the flip test if you haven't done it yet.
 

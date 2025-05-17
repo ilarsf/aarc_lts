@@ -214,7 +214,7 @@ If you catch a crab, push the handle away from you to extract the blade. In seve
 #### How do I maintain a straight course?
 Maintaining direction requires practice and attention. Remember to:
 <ul>
-  <li>Look over your shoulder frequently (every 5-10 strokes) to check your course</li>
+  <li>Look over your shoulder frequently (every 3-5 strokes) to check your course</li>
   <li>Ensure equal pressure on both oars</li>
   <li>Apply slightly more pressure on one side to make small corrections</li>
   <li>Focus on consistent hand heights and equal arc with both oars</li>

@@ -127,7 +127,7 @@ This guide covers common technical issues you might experience as a new rower an
 - Your technique breaks down when you look around
 
 **How to Fix It:**
-- Think: "Look every 5 strokes – quick checks"
+- Think: "Look every 3-5 strokes – quick checks"
 - Pick a distant point to aim for
 - Make small, gentle steering corrections
 - Practice looking over your shoulder without stopping your rowing

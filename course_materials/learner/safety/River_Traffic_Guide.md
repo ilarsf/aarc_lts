@@ -30,7 +30,7 @@ The most important rule in rowing traffic is to **stay to the right** side of th
 
       <p>You must actively watch where you're going:</p>
       <ul>
-        <li>Look over your shoulder every 5 strokes</li>
+        <li>Look over your shoulder every 3-5 strokes</li>
         <li>Alternate between looking left and right</li>
         <li>Check what's ahead of you regularly</li>
         <li>Be aware of other boats around you</li>
@@ -125,7 +125,7 @@ Learn these important verbal signals:
     <div class="accordion-content-inner">
 
 - [x] Stay to the right (starboard) side of the waterway
-- [x] Look over your shoulder every 5 strokes
+- [x] Look over your shoulder every 3-5 strokes
 - [x] Pass other boats on their port (left) side
 - [x] Never pass under bridges
 - [x] Communicate clearly with other rowers

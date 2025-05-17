@@ -142,7 +142,7 @@ Bridges present specific navigation challenges that require clear protocols:
 - Emergency maneuvers
 
 ### Key Learning Outcomes
-- Regular checking of surroundings (every 5 strokes)
+- Regular checking of surroundings (every 3-5 strokes)
 - Ability to identify proper travel lane
 - Understanding of right-of-way rules
 - Basic collision avoidance skills

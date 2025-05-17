@@ -358,7 +358,7 @@
       <li><strong>Be aware of traffic and follow navigation rules:</strong>
         <ul>
           <li>Stay to the starboard (right) side of the waterway</li>
-          <li>Look behind you every 5-10 strokes to check your course</li>
+          <li>Look behind you every 3-5 strokes to check your course</li>
           <li>Know when and where to cross the waterway safely</li>
           <li>Follow bridge passage protocols exactly as taught</li>
         </ul>

@@ -304,7 +304,7 @@ A few minutes spent checking before heading out can prevent significant problems
 </div>
 
 * **Traffic Pattern:** Know and follow the local traffic rules (typically stay to the starboard/right side of waterways)
-* **Look Around Frequently:** Turn to look over your shoulder every 5-10 strokes to check your course and be aware of other boats
+* **Look Around Frequently:** Turn to look over your shoulder every 3-5 strokes to check your course and be aware of other boats
 * **Maintain Awareness:** Be constantly alert to changing conditions, approaching boats, and fixed hazards
 * **Communicate:** Use clear verbal communication when necessary (overtaking, warning of hazards)
 

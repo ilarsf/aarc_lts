@@ -42,7 +42,7 @@ In this final session, we'll concentrate on independence and integration:
 Safe navigation is essential for independent rowing:
 
 * **Traffic Pattern:** Always stay to the starboard/right side of the river in your direction of travel
-* **Looking Around:** Check behind you every 5-10 strokes by turning your head, not your entire body
+* **Looking Around:** Check behind you every 3-5 strokes by turning your head, not your entire body
 * **Bridge Navigation:** Follow specific procedures for passing through bridges
 * **Hazard Recognition:** Identify and avoid obstacles like logs, shallow areas, or wildlife
 * **Communication:** Understanding standard calls and warnings used on the water

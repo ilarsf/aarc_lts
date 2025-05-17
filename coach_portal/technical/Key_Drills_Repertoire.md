@@ -542,7 +542,7 @@ search_exclude: true
                 <li><strong>Error:</strong> Cutting corners on turns
                     <br><strong>Correction:</strong> "Take wide turns, maintain your 'lane'"</li>
                 <li><strong>Error:</strong> Forgetting to check position regularly
-                    <br><strong>Correction:</strong> "Look every 5 strokes - make it part of your rhythm"</li>
+                    <br><strong>Correction:</strong> "Look every 3-5 strokes - make it part of your rhythm"</li>
                 <li><strong>Error:</strong> Drifting toward middle of waterway
                     <br><strong>Correction:</strong> "Stay close to starboard shore (safely)"</li>
             </ul>
