@@ -17,17 +17,22 @@
     position: relative;
     border-radius: 4px;
     border-left: 4px solid #0073E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion-toggle:hover {
-    background-color: #e7e7e7;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-toggle:after {
     content: '\002B';
     /* Plus sign */
     font-weight: bold;
-    float: right;
+    font-size: 18px;
+    flex-shrink: 0;
     margin-left: 5px;
 }
 

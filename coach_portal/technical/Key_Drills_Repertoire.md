@@ -15,7 +15,6 @@ search_exclude: true
 <link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
 <script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/skill-tags.js' | relative_url }}" defer></script>
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
@@ -39,7 +38,7 @@ search_exclude: true
 <h2 id="beginner-drills">Beginner Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Arms Only Rowing <span class="skill-tag">Balance</span> <span class="skill-tag">Hands</span></button>
+  <button class="accordion-toggle">Arms Only Rowing</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -86,7 +85,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Arms and Back <span class="skill-tag">Posture</span> <span class="skill-tag">Sequencing</span></button>
+  <button class="accordion-toggle">Arms and Back</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Purpose</h4>
@@ -129,7 +128,7 @@ search_exclude: true
 <h2 id="intermediate-drills">Intermediate Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Quarter Slide Rowing <span class="skill-tag">Control</span> <span class="skill-tag">Coordination</span></button>
+  <button class="accordion-toggle">Quarter Slide Rowing</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Purpose</h4>
@@ -177,7 +176,7 @@ search_exclude: true
 <h2 id="technical-focus-drills">Technical Focus Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Pause Rowing <span class="skill-tag">Technique</span> <span class="skill-tag">Control</span></button>
+  <button class="accordion-toggle">Pause Rowing</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Purpose</h4>
@@ -218,7 +217,7 @@ search_exclude: true
 <h2 id="recovery-phase-drills">Recovery Phase Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Pick Drill (Erg & Water) <span class="skill-tag">Sequencing</span> <span class="skill-tag">Recovery</span></button>
+  <button class="accordion-toggle">Pick Drill (Erg & Water)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -268,7 +267,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Pause Drills <span class="skill-tag">Control</span> <span class="skill-tag">Body Awareness</span></button>
+  <button class="accordion-toggle">Pause Drills</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -314,7 +313,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Square Blade Rowing <span class="skill-tag">Blade Control</span> <span class="skill-tag">Balance</span></button>
+  <button class="accordion-toggle">Square Blade Rowing</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -362,7 +361,7 @@ search_exclude: true
 <h2 id="boat-control-drills">Boat Control Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Basic Turning (One Arm) <span class="skill-tag">Steering</span> <span class="skill-tag">Control</span></button>
+  <button class="accordion-toggle">Basic Turning (One Arm)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -408,7 +407,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Pivot Turns (One Backing/One Rowing) <span class="skill-tag">Maneuverability</span> <span class="skill-tag">Technique</span></button>
+  <button class="accordion-toggle">Pivot Turns (One Backing/One Rowing)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -458,7 +457,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Traffic Pattern Practice <span class="skill-tag">Navigation</span> <span class="skill-tag">Safety</span></button>
+  <button class="accordion-toggle">Traffic Pattern Practice</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -506,7 +505,7 @@ search_exclude: true
 <h2 id="session-specific-drill-sequences">Session-Specific Drill Sequences</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Session 1 Drill Sequence <span class="skill-tag">Beginner</span> <span class="skill-tag">Foundation</span></button>
+  <button class="accordion-toggle">Session 1 Drill Sequence</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Session Plan</h4>
@@ -535,7 +534,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Session 2 Drill Sequence <span class="skill-tag">Recovery</span> <span class="skill-tag">Boat Control</span></button>
+  <button class="accordion-toggle">Session 2 Drill Sequence</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Session Plan</h4>
@@ -570,7 +569,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Session 3 Drill Sequence <span class="skill-tag">Drive</span> <span class="skill-tag">Navigation</span></button>
+  <button class="accordion-toggle">Session 3 Drill Sequence</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Session Plan</h4>
@@ -605,7 +604,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Session 4 Drill Sequence <span class="skill-tag">Integration</span> <span class="skill-tag">Independence</span></button>
+  <button class="accordion-toggle">Session 4 Drill Sequence</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Session Plan</h4>
@@ -641,7 +640,7 @@ search_exclude: true
 <h2 id="progression-sequences">Progression Sequences</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Basic to Full Stroke Progression <span class="skill-tag">Sequencing</span> <span class="skill-tag">Integration</span></button>
+  <button class="accordion-toggle">Basic to Full Stroke Progression</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
         <h4>Purpose</h4>
@@ -672,7 +671,7 @@ search_exclude: true
 <h2 id="drive-phase-drills">Drive Phase Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Reverse Pick Drill (Erg & Water) <span class="skill-tag">Drive</span> <span class="skill-tag">Power</span></button>
+  <button class="accordion-toggle">Reverse Pick Drill (Erg & Water)</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -721,7 +720,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Quarter-Slide Rowing <span class="skill-tag">Control</span> <span class="skill-tag">Connection</span></button>
+  <button class="accordion-toggle">Quarter-Slide Rowing</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -766,7 +765,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Legs-Only Pressure Builds <span class="skill-tag">Power</span> <span class="skill-tag">Control</span></button>
+  <button class="accordion-toggle">Legs-Only Pressure Builds</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -812,7 +811,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Tap Drill <span class="skill-tag">Catch</span> <span class="skill-tag">Balance</span></button>
+  <button class="accordion-toggle">Tap Drill</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -859,7 +858,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Catch Placement Drill <span class="skill-tag">Entry</span> <span class="skill-tag">Technique</span></button>
+  <button class="accordion-toggle">Catch Placement Drill</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -908,7 +907,7 @@ search_exclude: true
 <h2 id="blade-control-drills">Blade Control Drills</h2>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Ghost Strokes <span class="skill-tag">Confidence</span> <span class="skill-tag">Coordination</span></button>
+  <button class="accordion-toggle">Ghost Strokes</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -954,7 +953,7 @@ search_exclude: true
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Advanced Feathering Drill <span class="skill-tag">Technique</span> <span class="skill-tag">Precision</span></button>
+  <button class="accordion-toggle">Advanced Feathering Drill</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h4>Purpose</h4>
@@ -1120,19 +1119,7 @@ search_exclude: true
     padding: 1rem;
 }
 
-.skill-tag {
-    display: inline-block;
-    background-color: #e1f0ff;
-    color: #0073E6;
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
-}
 
-.skill-tag:hover {
-    background-color: #c5e1ff;
-}
 
 .drill-variation {
     background-color: #f9f9f9;
