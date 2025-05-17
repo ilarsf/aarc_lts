@@ -1,5 +1,6 @@
 ---
 layout: default
+uses_accordion: true
 ---
 
 # Common Technical Issues and Corrections
@@ -12,8 +13,6 @@ This reference guide provides detailed analysis of the most common technical iss
   <div class="text-center mt-3">
   </div>
 </div>
-
-{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

@@ -9,8 +9,6 @@ uses_accordion: true
 
 Welcome to the Ann Arbor Rowing Club's Learn to Scull Textbook. This comprehensive guide contains all the essential information to support your rowing journey.
 
-{% include accordion.html %}
-
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
   <button id="collapse-all">Collapse All</button>

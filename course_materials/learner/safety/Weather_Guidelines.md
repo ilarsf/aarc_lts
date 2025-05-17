@@ -1,5 +1,7 @@
 ---
 layout: default
+uses_accordion: true
+
 ---
 
 # Weather Guidelines for Rowers

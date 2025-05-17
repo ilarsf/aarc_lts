@@ -10,8 +10,6 @@ uses_accordion: true
   <p>This guide outlines the primary technical frameworks used in the AARC Learn to Scull program. These frameworks provide consistent reference points for coaches and participants throughout the learning process.</p>
 </div>
 
-{% include accordion.html %}
-
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>
   <button id="collapse-all">Collapse All</button>

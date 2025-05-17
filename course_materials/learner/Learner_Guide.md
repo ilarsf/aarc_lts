@@ -2,6 +2,7 @@
 layout: default
 title: Learner's Guide - AARC Learn to Scull Program
 uses_tabs: true
+uses_accordion: true
 ---
 
 # Learner's Guide: Learn to Scull Program

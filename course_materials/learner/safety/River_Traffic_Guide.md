@@ -1,12 +1,12 @@
 ---
 layout: default
+uses_accordion: true
+
 ---
 
 # River Traffic Guide for Novice Scullers
 
 This guide covers the essential traffic rules you need to know to row safely on the water. Understanding these basic principles will help you navigate confidently and avoid collisions.
-
-{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

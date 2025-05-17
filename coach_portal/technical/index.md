@@ -2,6 +2,7 @@
 layout: coach
 title: "Technical Resources - AARC Learn to Scull Program"
 search_exclude: true
+uses_accordion: true
 ---
 
 # Technical Resources for Coaches
@@ -10,8 +11,6 @@ search_exclude: true
   <h3>About These Resources</h3>
   <p>This section contains technical coaching resources, drills, and teaching frameworks to help you deliver effective instruction throughout the Learn to Scull program.</p>
 </div>
-
-{% include accordion.html %}
 
 <div class="accordion-controls">
   <button id="expand-all">Expand All</button>

@@ -13,9 +13,6 @@ uses_category_nav: true
   <p>This comprehensive guide provides detailed explanations of all recommended drills for the AARC Learn to Scull program. Drills are organized by focus area to help coaches select appropriate exercises for specific skill development.</p>
 </div>
 
-{% include accordion.html %}
-
-
 <script>
   // Enhanced accordion initialization
   document.addEventListener('DOMContentLoaded', function() {
