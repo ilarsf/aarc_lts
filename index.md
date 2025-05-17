@@ -12,8 +12,10 @@ layout: default
         <p>The Ann Arbor Rowing Club invites you to experience the joy of rowing on Argo pond. Our Learn to Scull program is an introductory weekend intensive course for those who are new to rowing or would like to refresh their sculling skills.</p>
       </div>
       
-      <p>Sculling is a type of rowing where you use two oars to propel your boat through the water. This engaging sport offers independence and a unique connection to the water as you feel the immediate impact of your movements.</p>
-      
+      <div class="info-box mb-3">
+        <p>Sculling is a type of rowing where you use two oars to propel your boat through the water. This engaging sport offers independence and a unique connection to the water as you feel the immediate impact of your movements.</p>
+      </div>
+
       <div class="text-center mt-4">
         <a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="cta-large">Learner’s Guide</a>
       </div>
