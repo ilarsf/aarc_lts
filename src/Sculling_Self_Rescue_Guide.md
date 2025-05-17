@@ -8,7 +8,20 @@ layout: default
 
 <div class="info-box note">
   <h4>What You'll Learn</h4>
-  <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescue process from capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
+  <p>This comprehensive guide covers both the formal flip test procedure you'll complete during your training and the entire self-rescu    <p>Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.</p>
+
+    <p>Remember these key points:</p>
+    <ul>
+      <li><strong>Stay calm and stay with your boat</strong> – it is your primary flotation device</li>
+      <li><strong>Practice the Flip Test</strong> in a controlled environment to build familiarity</li>
+      <li><strong>Master the low-exertion side re-entry technique</strong> using oars for stability</li>
+      <li><strong>Use leg power and body mechanics</strong> rather than upper body strength</li>
+      <li><strong>Follow safety protocols</strong> before and during each rowing session</li>
+    </ul>
+
+    <p>With knowledge, preparation, and practice, you can safely navigate the challenges of learning to scull and fully enjoy the unique freedom of gliding across the water.</p>
+  </div>
+</div>om capsizing to getting back into your boat and resuming rowing. Even experienced rowers occasionally take an unexpected swim, so these skills are valuable for all scullers.</p>
 </div>
 
 <div class="tab-container">
@@ -30,26 +43,30 @@ layout: default
   
   <div id="capsizing-tab" class="tab-content">
     <h2>Understanding Capsizing</h2>
+    
+    <p>Capsizing can happen for several reasons, and it's something many experienced rowers have encountered at some point:</p>
 
-Capsizing can happen for several reasons, and it's something many experienced rowers have encountered at some point:
+    <ul>
+      <li><strong>Balance and Body Position:</strong> Small shifts in weight or uneven oar handle heights can disrupt stability</li>
+      <li><strong>Technique Errors:</strong> "Catching a crab" (blade stuck in water) or uneven pressure application</li>
+      <li><strong>Oar Handling:</strong> Challenges in managing two oars independently with symmetrical movement</li>
+      <li><strong>External Conditions:</strong> Wind, waves, and boat wash from other vessels</li>
+      <li><strong>The Learning Process:</strong> Developing new balance reflexes takes time</li>
+    </ul>
 
-* **Balance and Body Position:** Small shifts in weight or uneven oar handle heights can disrupt stability
-* **Technique Errors:** "Catching a crab" (blade stuck in water) or uneven pressure application
-* **Oar Handling:** Challenges in managing two oars independently with symmetrical movement
-* **External Conditions:** Wind, waves, and boat wash from other vessels
-* **The Learning Process:** Developing new balance reflexes takes time
+    <p>Recognizing these common causes helps demystify the capsize. It's rarely a dramatic failure, but rather a consequence of the boat's design interacting with the learning process.</p>
 
-Recognizing these common causes helps demystify the capsize. It's rarely a dramatic failure, but rather a consequence of the boat's design interacting with the learning process.
-
-<div class="image-placeholder">
-  <div class="icon"><i class="fas fa-image"></i></div>
-  <div class="title">Balance Points in a Sculling Shell</div>
-  <div class="description">Illustration showing key balance points in a single scull, including center of gravity, waterline, and how weight shifts affect stability.</div>
-</div>
-
-## The Flip Test
-
-The "Flip Test" is an intentional capsize performed in a controlled environment (typically close to a dock under supervision) that serves several important purposes:
+    <div class="image-placeholder">
+      <div class="icon"><i class="fas fa-image"></i></div>
+      <div class="title">Balance Points in a Sculling Shell</div>
+      <div class="description">Illustration showing key balance points in a single scull, including center of gravity, waterline, and how weight shifts affect stability.</div>
+    </div>
+  </div>
+  
+  <div id="fliptest-tab" class="tab-content">
+    <h2>The Flip Test</h2>
+    
+    <p>The "Flip Test" is an intentional capsize performed in a controlled environment (typically close to a dock under supervision) that serves several important purposes:</p>
 
 <div class="two-col-grid">
   <div>
@@ -84,14 +101,18 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
   <h4>Important Note</h4>
   <p>There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water similar to getting out of a swimming pool by using a strong push/kick motion to lift your upper body onto the dock.</p>
 </div>
+  </div>
+  
+  <div id="selfrescue-tab" class="tab-content">
+    <h2>Self-Rescue Process</h2>
 
-## Self-Rescue Process
+    <h3>Immediate Response</h3>
 
-### Immediate Response
-
-1. **Stay Calm and Stay With Your Boat:** The golden rule of water safety. The shell, even when swamped or upside down, provides significant buoyancy and is your primary flotation aid.
-2. **Manage Your Oars:** Locate both oars immediately – they will float. Keep them nearby, as they are essential tools for stabilizing the boat during re-entry.
-3. **Assess the Situation:** Note your position relative to shore and check for any immediate hazards.
+    <ol>
+      <li><strong>Stay Calm and Stay With Your Boat:</strong> The golden rule of water safety. The shell, even when swamped or upside down, provides significant buoyancy and is your primary flotation aid.</li>
+      <li><strong>Manage Your Oars:</strong> Locate both oars immediately – they will float. Keep them nearby, as they are essential tools for stabilizing the boat during re-entry.</li>
+      <li><strong>Assess the Situation:</strong> Note your position relative to shore and check for any immediate hazards.</li>
+    </ol>
 
 <div class="image-placeholder">
   <div class="icon"><i class="fas fa-image"></i></div>
@@ -214,12 +235,13 @@ The "Flip Test" is an intentional capsize performed in a controlled environment 
   </div>
 </div>
 
-### Tips for Success
-
-* **Maximize Leg Power:** The effectiveness of the Kick & Hip Lift cannot be overstated. Focus on generating a strong upward thrust with your legs.
-* **Use Buoyancy:** The "dip and kick" technique leverages water's natural buoyancy to assist the upward movement.
-* **Focus on the Roll:** The body roll is about momentum and core rotation, not arm strength.
-* **Practice Makes Perfect:** Like any skill, re-entry becomes more efficient and less strenuous with practice.
+    <h3>Tips for Success</h3>
+    <ul>
+      <li><strong>Maximize Leg Power:</strong> The effectiveness of the Kick & Hip Lift cannot be overstated. Focus on generating a strong upward thrust with your legs.</li>
+      <li><strong>Use Buoyancy:</strong> The "dip and kick" technique leverages water's natural buoyancy to assist the upward movement.</li>
+      <li><strong>Focus on the Roll:</strong> The body roll is about momentum and core rotation, not arm strength.</li>
+      <li><strong>Practice Makes Perfect:</strong> Like any skill, re-entry becomes more efficient and less strenuous with practice.</li>
+    </ul>
 
 ### Alternative Approaches
 
@@ -272,10 +294,14 @@ If you cannot re-enter your boat during a flip test or capsize situation:
   <p><strong>Left:</strong> Lars Flip Test Demo - Shows the standard flip test procedure</p>
   <p><strong>Right:</strong> Johanna Flip Test Demo - Alternative technique for re-entry</p>
 </div>
+  </div>
+  
+  <div id="practice-tab" class="tab-content">
+    <h2>Practice Tips</h2>
+    
+    <h3>Safety Practices</h3>
 
-## Safety Practices
-
-### Before You Launch: Critical Checks
+    <h4>Before You Launch: Critical Checks</h4>
 
 A few minutes spent checking before heading out can prevent significant problems:
 
@@ -316,19 +342,21 @@ A few minutes spent checking before heading out can prevent significant problems
   <div class="description">Illustration of typical rowing traffic pattern on a waterway, showing proper positioning, passing procedures, and navigation around obstacles.</div>
 </div>
 
-* **Traffic Pattern:** Know and follow the local traffic rules (typically stay to the starboard/right side of waterways)
-* **Look Around Frequently:** Turn to look over your shoulder every 3-5 strokes to check your course and be aware of other boats
-* **Maintain Awareness:** Be constantly alert to changing conditions, approaching boats, and fixed hazards
-* **Communicate:** Use clear verbal communication when necessary (overtaking, warning of hazards)
+    <ul>
+      <li><strong>Traffic Pattern:</strong> Know and follow the local traffic rules (typically stay to the starboard/right side of waterways)</li>
+      <li><strong>Look Around Frequently:</strong> Turn to look over your shoulder every 3-5 strokes to check your course and be aware of other boats</li>
+      <li><strong>Maintain Awareness:</strong> Be constantly alert to changing conditions, approaching boats, and fixed hazards</li>
+      <li><strong>Communicate:</strong> Use clear verbal communication when necessary (overtaking, warning of hazards)</li>
+    </ul>
 
-### When to Stay Ashore
+    <h3>When to Stay Ashore</h3>
 
-<div class="info-box warning">
-  <h4>Exercise Good Judgment</h4>
-  <p>If conditions seem questionable (threatening weather, cold water, poor visibility), make the conservative choice and stay on land. Missing one outing is always better than risking a dangerous situation.</p>
-</div>
+    <div class="info-box warning">
+      <h4>Exercise Good Judgment</h4>
+      <p>If conditions seem questionable (threatening weather, cold water, poor visibility), make the conservative choice and stay on land. Missing one outing is always better than risking a dangerous situation.</p>
+    </div>
 
-## Conclusion
+    <h3>Conclusion</h3>
 
 Capsizing is an experience many scullers encounter, particularly during the learning phase. By understanding why shells capsize and mastering the techniques for safe self-rescue, you can approach the water with confidence.
 

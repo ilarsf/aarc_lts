@@ -550,17 +550,14 @@ search_exclude: true
       </div>
     </div>
   </div>
-
   <div class="tab-content" id="blade-control-drills">
     <div class="tab-content-inner">
       <h2>Blade Control Drills</h2>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Square Blade Rowing</h3>
           <p>Develops precise blade height control and clean entries/exits while building confidence with blade manipulation.</p>
         </div>
-
         <div class="drill-section">
           <h4>Setup</h4>
           <ul>
@@ -569,7 +566,6 @@ search_exclude: true
             <li>Start with very light pressure</li>
           </ul>
         </div>
-        
         <div class="drill-section">
           <h4>Execution</h4>
           <ol>
@@ -580,7 +576,6 @@ search_exclude: true
             <li>Progress from arms-only to full strokes as control develops</li>
           </ol>
         </div>
-        
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -590,7 +585,6 @@ search_exclude: true
             <li>Start with short strokes before progressing to full range</li>
           </ul>
         </div>
-        
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <div class="error-correction">
@@ -606,19 +600,16 @@ search_exclude: true
             </div>
           </div>
         </div>
-        
         <div class="drill-variation">
           <h5>Variation: Square Blade with Pauses</h5>
           <p>Add pauses at key positions (finish, arms away, body over, catch) to reinforce control.</p>
         </div>
       </div>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Feathering Practice</h3>
           <p>Develops smooth, controlled blade rotation and proper feathering/squaring technique.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Setup</h4>
           <ul>
@@ -626,7 +617,6 @@ search_exclude: true
             <li>Focus solely on the rotation of the handles</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Execution</h4>
           <ol>
@@ -637,7 +627,6 @@ search_exclude: true
             <li>Add specific focus points: feather after extraction, square before entry</li>
           </ol>
         </div>
-
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -648,7 +637,6 @@ search_exclude: true
             <li>Maintain relaxed grip throughout</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <ul>
@@ -661,7 +649,6 @@ search_exclude: true
           </ul>
         </div>
       </div>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Tap Down Drill</h3>
@@ -678,7 +665,6 @@ search_exclude: true
             <li>Focus on the clean exit and proper hand heights after the tap</li>
           </ol>
         </div>
-
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -688,7 +674,6 @@ search_exclude: true
             <li>Keep shoulders relaxed through the extraction</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <ul>
@@ -703,17 +688,14 @@ search_exclude: true
       </div>
     </div>
   </div>
-
   <div class="tab-content" id="boat-control-drills">
     <div class="tab-content-inner">
       <h2>Boat Control Drills</h2>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Basic Turning (One Arm)</h3>
           <p>Teaches fundamental directional control and builds confidence in maneuvering the boat.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Execution</h4>
           <ol>
@@ -724,7 +706,6 @@ search_exclude: true
             <li>Use varying pressure to control turning radius</li>
           </ol>
         </div>
-        
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -735,7 +716,6 @@ search_exclude: true
             <li>Extend arm fully on recovery for maximum effect</li>
           </ul>
         </div>
-        
         <div class="drill-section">
           <h4>Progression Options</h4>
           <ul>
@@ -745,7 +725,6 @@ search_exclude: true
             <li>Add precision targets to aim for after turn</li>
           </ul>
         </div>
-        
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <div class="error-correction">
@@ -762,13 +741,11 @@ search_exclude: true
           </div>
         </div>
       </div>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Pivot Turns (One Backing/One Rowing)</h3>
           <p>Develops more advanced turning capability for maneuvering in confined spaces or executing quick direction changes.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Execution</h4>
           <ol>
@@ -783,7 +760,6 @@ search_exclude: true
             <li>Blade on backing oar can be partially squared for more resistance</li>
           </ol>
         </div>
-
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -794,7 +770,6 @@ search_exclude: true
             <li>Coordinate pressure between oars for smooth rotation</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Progression Options</h4>
           <ul>
@@ -804,7 +779,6 @@ search_exclude: true
             <li>Practice emergency stops using backing pressure on both oars</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <ul>
@@ -817,13 +791,11 @@ search_exclude: true
           </ul>
         </div>
       </div>
-
       <div class="drill-container">
         <div class="drill-header">
           <h3>Traffic Pattern Practice</h3>
           <p>Develops navigation awareness and traffic pattern compliance in a structured exercise.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Execution</h4>
           <ol>
@@ -834,7 +806,6 @@ search_exclude: true
             <li>Maintain awareness of other boats in the pattern</li>
           </ol>
         </div>
-
         <div class="drill-section">
           <h4>Coaching Points</h4>
           <ul>
@@ -845,7 +816,6 @@ search_exclude: true
             <li>Practice communication when approaching other boats</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Progression Options</h4>
           <ul>
@@ -855,7 +825,6 @@ search_exclude: true
             <li>Add "obstacles" to navigate around while maintaining pattern</li>
           </ul>
         </div>
-
         <div class="drill-section">
           <h4>Common Errors and Corrections</h4>
           <ul>
@@ -870,242 +839,245 @@ search_exclude: true
       </div>
     </div>
   </div>
-
   <div class="tab-content" id="session-specific-drills">
     <div class="tab-content-inner">
       <h2>Session-Specific Drill Sequences</h2>
-
+      <!-- Session 1 -->
       <div class="drill-container">
         <div class="drill-header">
           <h3>Session 1 Drill Sequence</h3>
           <p>Foundational drill sequence for the first Learn to Scull session.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Session Plan</h4>
           <div class="session-timeline">
             <div class="session-activity">
-              <h5><i class="fas fa-stopwatch"></i> Erg - Pick Drill (10 min)</h5>
+              <h5><i class="fas fa-stopwatch"></i> Erg – Pick Drill <span class="duration">(10 min)</span></h5>
               <ul>
                 <li>Establish basic recovery sequence</li>
                 <li>Focus on clean finish and hands away</li>
               </ul>
             </div>
-            
             <div class="session-activity">
-              <h5><i class="fas fa-stopwatch"></i> Erg - Reverse Pick Drill (10 min)</h5>
+              <h5><i class="fas fa-stopwatch"></i> Erg – Reverse Pick Drill <span class="duration">(10 min)</span></h5>
               <ul>
                 <li>Introduce drive sequence</li>
                 <li>Emphasize leg drive</li>
               </ul>
             </div>
-            
             <div class="session-activity">
-              <h5><i class="fas fa-stopwatch"></i> Dockside - Ghost Strokes (15 min)</h5>
+              <h5><i class="fas fa-stopwatch"></i> Dockside – Ghost Strokes <span class="duration">(15 min)</span></h5>
               <ul>
                 <li>Build confidence with oar handling</li>
-                <li>Practice feathering/squaring</li>
+                <li>Practice feathering / squaring</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Session 2 -->
       <div class="drill-container">
         <div class="drill-header">
           <h3>Session 2 Drill Sequence</h3>
           <p>Structured sequence of drills for the second Learn to Scull session.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Session Plan</h4>
-          <ol>
-            <li><strong>Erg Warm-up - Pick Drill</strong> (5 min)
-                <ul>
-                    <li>Reinforce recovery sequence</li>
-                    <li>Prepare for on-water application</li>
-                </ul>
-            </li>
-            <li><strong>On-Water - Pick Drill</strong> (20 min)
-                <ul>
-                    <li>Transfer recovery sequence to water</li>
-                    <li>Build confidence through progression</li>
-                </ul>
-            </li>
-            <li><strong>On-Water - Pause Drills</strong> (20 min)
-                <ul>
-                    <li>Enhance body awareness</li>
-                    <li>Reinforce proper sequencing</li>
-                </ul>
-            </li>
-            <li><strong>Basic Turning Practice</strong> (10 min)
-                <ul>
-                    <li>Introduce fundamental boat control</li>
-                    <li>Build confidence in maneuvering</li>
-                </ul>
-            </li>
-          </ol>
+          <div class="session-timeline">
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Erg Warm-up – Pick Drill <span class="duration">(5 min)</span></h5>
+              <ul>
+                <li>Reinforce recovery sequence</li>
+                <li>Prepare for on-water application</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> On-Water – Pick Drill <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Transfer recovery sequence to water</li>
+                <li>Build confidence through progression</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> On-Water – Pause Drills <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Enhance body awareness</li>
+                <li>Reinforce proper sequencing</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Basic Turning Practice <span class="duration">(10 min)</span></h5>
+              <ul>
+                <li>Introduce fundamental boat control</li>
+                <li>Build confidence in maneuvering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="drill-section">
+          <h4>Progression Steps</h4>
+          <div class="progression-steps">
+            <div class="progression-step">
+              <h5>Step 1: Erg Warm-up – Pick Drill <span class="duration">(5 min)</span></h5>
+              <ul>
+                <li>Reinforce recovery sequence</li>
+                <li>Prepare for on-water application</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 2: On-Water – Pick Drill <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Transfer recovery sequence to water</li>
+                <li>Build confidence through progression</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 3: On-Water – Pause Drills <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Enhance body awareness</li>
+                <li>Reinforce proper sequencing</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 4: Basic Turning Practice <span class="duration">(10 min)</span></h5>
+              <ul>
+                <li>Introduce fundamental boat control</li>
+                <li>Build confidence in maneuvering</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
+      <!-- Session 3 -->
       <div class="drill-container">
         <div class="drill-header">
           <h3>Session 3 Drill Sequence</h3>
           <p>Structured sequence of drills for the third Learn to Scull session.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Session Plan</h4>
-          <ol>
-            <li><strong>Erg Warm-up - Reverse Pick</strong> (5 min)
-                <ul>
-                    <li>Focus on leg drive and connection</li>
-                    <li>Prepare for power application on water</li>
-                </ul>
-            </li>
-            <li><strong>On-Water - Reverse Pick Drill</strong> (20 min)
-                <ul>
-                    <li>Develop effective leg drive</li>
-                    <li>Build connection and power</li>
-                </ul>
-            </li>
-            <li><strong>Pivot Turn Practice</strong> (15 min)
-                <ul>
-                    <li>Develop more advanced turning skills</li>
-                    <li>Build confidence in tight spaces</li>
-                </ul>
-            </li>
-            <li><strong>Traffic Pattern Introduction</strong> (15 min)
-                <ul>
-                    <li>Apply navigation principles</li>
-                    <li>Practice looking while rowing</li>
-                </ul>
-            </li>
-          </ol>
+          <div class="session-timeline">
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Erg Warm-up – Reverse Pick <span class="duration">(5 min)</span></h5>
+              <ul>
+                <li>Focus on leg drive and connection</li>
+                <li>Prepare for power application on water</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> On-Water – Reverse Pick Drill <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Develop effective leg drive</li>
+                <li>Build connection and power</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Pivot Turn Practice <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Develop more advanced turning skills</li>
+                <li>Build confidence in tight spaces</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Traffic Pattern Introduction <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Apply navigation principles</li>
+                <li>Practice looking while rowing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="drill-section">
+          <h4>Progression Steps</h4>
+          <div class="progression-steps">
+            <div class="progression-step">
+              <h5>Step 1: Erg Warm-up – Reverse Pick <span class="duration">(5 min)</span></h5>
+              <ul>
+                <li>Focus on leg drive and connection</li>
+                <li>Prepare for power application on water</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 2: On-Water – Reverse Pick Drill <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Develop effective leg drive</li>
+                <li>Build connection and power</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 3: Pivot Turn Practice <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Develop more advanced turning skills</li>
+                <li>Build confidence in tight spaces</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 4: Traffic Pattern Introduction <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Apply navigation principles</li>
+                <li>Practice looking while rowing</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
+      <!-- Session 4 -->
       <div class="drill-container">
         <div class="drill-header">
           <h3>Session 4 Drill Sequence</h3>
           <p>Structured sequence of drills for the fourth Learn to Scull session.</p>
         </div>
-        
         <div class="drill-section">
           <h4>Session Plan</h4>
-          <ol>
-            <li><strong>Continuous Rowing with Navigation Focus</strong> (20 min)
-                <ul>
-                    <li>Integrate all skills</li>
-                    <li>Develop multitasking capability</li>
-                </ul>
-            </li>
-            <li><strong>Group-Specific Work:</strong>
-                <ul>
-                    <li><strong>Group 1:</strong> Bridge passage practice (20 min)</li>
-                    <li><strong>Group 2:</strong> Skill refinement stations (20 min)</li>
-                </ul>
-            </li>
-            <li><strong>Pressure Control Practice</strong> (15 min)
-                <ul>
-                    <li>Develop consistent technique at varying intensities</li>
-                    <li>Build confidence for independent rowing</li>
-                </ul>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="progression-drills">
-    <div class="tab-content-inner">
-      <h2>Progression Sequences</h2>
-
-      <div class="drill-container">
-        <div class="drill-header">
-          <h3>Basic to Full Stroke Progression</h3>
-          <p>Builds the full stroke pattern incrementally to reinforce proper sequencing and technique.</p>
-        </div>
-        
-        <div class="drill-section">
-          <h4>Execution</h4>
-          <ol class="progression-steps">
-            <li><span class="step-count">10×</span> Arms only</li>
-            <li><span class="step-count">10×</span> Arms and back</li>
-            <li><span class="step-count">10×</span> Quarter slide</li>
-            <li><span class="step-count">10×</span> Half slide</li>
-            <li><span class="step-count">10×</span> Three-quarter slide</li>
-            <li><span class="step-count">10×</span> Full slide</li>
-            <li><span class="step-count">10×</span> Full pressure rowing</li>
-          </ol>
-        </div>
-        
-        <div class="drill-section">
-          <h4>Coaching Points</h4>
-          <ul>
-            <li>Ensure clean transitions between stages</li>
-            <li>Maintain technique quality as complexity increases</li>
-            <li>Watch for proper sequencing throughout progression</li>
-            <li>Encourage body awareness and proper timing</li>
-          </ul>
-        </div>
-        
-        <div class="drill-section">
-          <h4>Common Errors and Corrections</h4>
-          <div class="error-correction">
-            <div class="error-column">
-              <p><strong>Error:</strong> Rushing to later stages before mastering earlier ones</p>
-              <p><strong>Error:</strong> Losing form as complexity increases</p>
-              <p><strong>Error:</strong> Incomplete recovery sequence throughout progression</p>
+          <div class="session-timeline">
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Continuous Rowing with Navigation Focus <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Integrate all skills</li>
+                <li>Develop multitasking capability</li>
+              </ul>
             </div>
-            <div class="correction-column">
-              <p><strong>Correction:</strong> "Master each step before moving on"</p>
-              <p><strong>Correction:</strong> "Maintain the same quality from simple to complex"</p>
-              <p><strong>Correction:</strong> "Every stroke has the same careful recovery, regardless of length"</p>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Group-Specific Work <span class="duration">(20 min each)</span></h5>
+              <ul>
+                <li><strong>Group 1:</strong> Bridge passage practice</li>
+                <li><strong>Group 2:</strong> Skill refinement stations</li>
+              </ul>
+            </div>
+            <div class="session-activity">
+              <h5><i class="fas fa-stopwatch"></i> Pressure Control Practice <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Develop consistent technique at varying intensities</li>
+                <li>Build confidence for independent rowing</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="drill-container">
-        <div class="drill-header">
-          <h3>Pressure Progression</h3>
-          <p>Teaches control of effort and application of power while maintaining proper technique.</p>
-        </div>
-        
         <div class="drill-section">
-          <h4>Execution</h4>
-          <ol>
-            <li>5 strokes at 25% pressure - focus on perfect form</li>
-            <li>5 strokes at 50% pressure - maintain the same form</li>
-            <li>5 strokes at 75% pressure - resist technique breakdown</li>
-            <li>5 strokes at full pressure - complete power with control</li>
-            <li>5 strokes descending pressure back to 25%</li>
-            <li>Repeat cycle 2-3 times</li>
-          </ol>
-        </div>
-
-        <div class="drill-section">
-          <h4>Coaching Points</h4>
-          <ul>
-            <li>Define pressure by application of force, not by stroke rate</li>
-            <li>Maintain same body positions regardless of pressure</li>
-            <li>Focus on efficiency - more speed without more effort</li>
-            <li>Feel the difference between controlled and rushed power</li>
-          </ul>
-        </div>
-
-        <div class="drill-section">
-          <h4>Common Errors and Corrections</h4>
-          <ul>
-            <li><strong>Error:</strong> Increasing rate instead of pressure
-              <br><strong>Correction:</strong> "Same rate, more push - feel the resistance"</li>
-            <li><strong>Error:</strong> Shortening stroke length at higher pressure
-              <br><strong>Correction:</strong> "Full compression, full extension at all pressures"</li>
-            <li><strong>Error:</strong> Losing blade control at higher pressures
-              <br><strong>Correction:</strong> "Strong connection through the water, clean finish"</li>
-          </ul>
+          <h4>Progression Steps</h4>
+          <div class="progression-steps">
+            <div class="progression-step">
+              <h5>Step 1: Continuous Rowing with Navigation Focus <span class="duration">(20 min)</span></h5>
+              <ul>
+                <li>Integrate all skills</li>
+                <li>Develop multitasking capability</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 2: Group-Specific Work <span class="duration">(20 min each)</span></h5>
+              <ul>
+                <li><strong>Group 1:</strong> Bridge passage practice</li>
+                <li><strong>Group 2:</strong> Skill refinement stations</li>
+              </ul>
+            </div>
+            <div class="progression-step">
+              <h5>Step 3: Pressure Control Practice <span class="duration">(15 min)</span></h5>
+              <ul>
+                <li>Develop consistent technique at varying intensities</li>
+                <li>Build confidence for independent rowing</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
