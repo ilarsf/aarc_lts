@@ -5,6 +5,10 @@ custom_class: learner-page
 uses_accordion: true
 ---
 
+
+{% include accordion.html %}
+
+
 # Learn to Scull Textbook
 
 Welcome to the Ann Arbor Rowing Club's Learn to Scull Textbook. This comprehensive guide contains all the essential information to support your rowing journey.

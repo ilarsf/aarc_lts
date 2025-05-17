@@ -5,6 +5,10 @@ search_exclude: true
 uses_accordion: true
 ---
 
+
+{% include accordion.html %}
+
+
 # Technical Resources for Coaches
 
 <div class="info-box tip">

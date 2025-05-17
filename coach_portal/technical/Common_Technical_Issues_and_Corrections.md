@@ -3,6 +3,8 @@ layout: default
 uses_accordion: true
 ---
 
+{% include accordion.html %}
+
 # Common Technical Issues and Corrections
 
 This reference guide provides detailed analysis of the most common technical issues encountered by novice scullers, along with effective correction strategies. For each issue, we've included the probable causes, appropriate drills, effective coaching cues, and progression indicators.

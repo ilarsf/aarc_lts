@@ -5,6 +5,10 @@ uses_accordion: true
 
 ---
 
+
+{% include accordion.html %}
+
+
 # Learner Resources: Learn to Scull Program
 
 Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.

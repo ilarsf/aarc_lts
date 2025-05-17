@@ -6,6 +6,9 @@ uses_accordion: true
 
 ---
 
+
+{% include accordion.html %}
+
 # Coaching Language Guide
 
 <div class="info-box tip">

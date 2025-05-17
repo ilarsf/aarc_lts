@@ -6,6 +6,10 @@ uses_accordion: true
 
 ---
 
+
+{% include accordion.html %}
+
+
 # Video Analysis Guide for Rowing Coaches
 
 <div class="info-box tip">

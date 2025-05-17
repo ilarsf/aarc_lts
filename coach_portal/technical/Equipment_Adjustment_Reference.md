@@ -6,6 +6,9 @@ uses_accordion: true
 
 ---
 
+{% include accordion.html %}
+
+
 # Equipment Adjustment Reference
 
 <div class="info-box tip">

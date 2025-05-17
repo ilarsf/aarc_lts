@@ -3,6 +3,10 @@ layout: default
 uses_accordion: true
 ---
 
+
+{% include accordion.html %}
+
+
 # Technical Frameworks for Sculling Instruction
 
 <div class="info-box tip">

@@ -4,6 +4,10 @@ uses_accordion: true
 
 ---
 
+
+{% include accordion.html %}
+
+
 # Weather Guidelines for Rowers
 
 This guide provides essential information on weather conditions that affect rowing safety. Understanding these guidelines will help you make informed decisions about when it's safe to row.

@@ -5,6 +5,10 @@ uses_tabs: true
 uses_accordion: true
 ---
 
+
+{% include accordion.html %}
+
+
 # Learner's Guide: Learn to Scull Program
 
 

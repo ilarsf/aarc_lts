@@ -6,6 +6,10 @@ uses_accordion: true
 uses_category_nav: true
 ---
 
+
+{% include accordion.html %}
+
+
 # Key Drills Repertoire
 
 <div class="info-box tip">
