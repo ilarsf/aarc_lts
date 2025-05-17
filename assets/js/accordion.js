@@ -9,11 +9,18 @@
 
         // Toggle individual accordion sections
         document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
-            btn.addEventListener('click', function () {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default behavior
                 btn.classList.toggle('active');
                 var content = btn.nextElementSibling;
                 if (content && content.classList.contains('accordion-content')) {
                     content.classList.toggle('visible');
+
+                    // Log for debugging
+                    console.log('Toggling accordion:',
+                        'Button:', btn.textContent.trim(),
+                        'Active:', btn.classList.contains('active'),
+                        'Content visible:', content.classList.contains('visible'));
                 }
             });
         });
@@ -48,22 +55,48 @@
 
         // Initialize nested toggles if present
         document.querySelectorAll('.nested-toggle').forEach(function (btn) {
-            btn.addEventListener('click', function () {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default behavior
+                e.stopPropagation(); // Prevent event bubbling
                 btn.classList.toggle('active');
                 var content = btn.nextElementSibling;
                 if (content && content.classList.contains('nested-content')) {
                     content.classList.toggle('visible');
+
+                    // Log for debugging
+                    console.log('Toggling nested content:',
+                        'Button:', btn.textContent.trim(),
+                        'Active:', btn.classList.contains('active'),
+                        'Content visible:', content.classList.contains('visible'));
                 }
             });
         });
     }
 
+    // Function to verify accordion functionality
+    function verifyAccordions() {
+        const toggles = document.querySelectorAll('.accordion-toggle');
+        console.log(`Found ${toggles.length} accordion toggle elements`);
+
+        if (toggles.length === 0) {
+            console.warn('No accordion toggles found. Check if the page structure is correct.');
+        }
+
+        // Check if any accordions are already open (for debugging)
+        const visibleContents = document.querySelectorAll('.accordion-content.visible');
+        console.log(`${visibleContents.length} accordion sections are visible on page load`);
+    }
+
     // Initialize when the DOM is loaded
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initAccordions);
+        document.addEventListener('DOMContentLoaded', function () {
+            initAccordions();
+            setTimeout(verifyAccordions, 500); // Check after a delay
+        });
     } else {
         // DOM already loaded, run immediately
         initAccordions();
+        setTimeout(verifyAccordions, 500);
     }
 
     // Define a global function to fix potential jQuery conflicts

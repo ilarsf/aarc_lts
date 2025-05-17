@@ -14,31 +14,67 @@ search_exclude: true
 {% include accordion.html %}
 <link rel="stylesheet" href="{{ '/assets/css/category-nav.css' | relative_url }}">
 <script src="{{ '/assets/js/accordion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/accordion-fallback.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/category-nav.js' | relative_url }}" defer></script>
 <script>
-  // Fix for potential jQuery conflicts - runs after page is loaded
-  window.addEventListener('load', function() {
-    if (typeof fixAccordions === 'function') {
-      fixAccordions();
-    }
+  // Enhanced accordion initialization
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded - initializing accordion handlers');
     
-    // Check for any jQuery-specific errors
-    setTimeout(function() {
-      var accordionContents = document.querySelectorAll('.accordion-content');
-      var visibleCount = 0;
-      accordionContents.forEach(function(content) {
-        // If any accordions are visible after clicking, the toggle is working
-        if (content.classList.contains('visible')) {
-          visibleCount++;
+    // Direct event binding to ensure it works
+    document.querySelectorAll('.accordion-toggle').forEach(function(button) {
+      console.log('Adding click handler to:', button.textContent.trim());
+      
+      button.addEventListener('click', function(e) {
+        console.log('Accordion toggle clicked:', this.textContent.trim());
+        this.classList.toggle('active');
+        
+        var content = this.nextElementSibling;
+        if (content && content.classList.contains('accordion-content')) {
+          content.classList.toggle('visible');
+          console.log('Toggle successful:', content.classList.contains('visible'));
+        } else {
+          console.warn('No accordion content found for:', this.textContent.trim());
         }
       });
-      
-      // If we find jQuery but accordions don't work properly, try to reinitialize
-      if (window.jQuery && visibleCount === 0 && typeof fixAccordions === 'function') {
-        console.log("Attempting to fix accordions again");
+    });
+    
+    // Fix for potential jQuery conflicts - runs after a delay
+    setTimeout(function() {
+      if (typeof fixAccordions === 'function') {
+        console.log('Running fixAccordions()');
         fixAccordions();
       }
-    }, 2000);
+      
+      // Verify accordion functionality
+      var accordionToggles = document.querySelectorAll('.accordion-toggle');
+      console.log('Found ' + accordionToggles.length + ' accordion toggle buttons');
+      
+      if (accordionToggles.length > 0) {
+        // Force open the first accordion if none are open (for testing)
+        var anyOpen = false;
+        document.querySelectorAll('.accordion-content.visible').forEach(function() {
+          anyOpen = true;
+        });
+        
+        if (!anyOpen) {
+          console.log('No accordion sections are open - opening first section for testing');
+        }
+      }
+    }, 1000);
+  });
+  
+  // Additional failsafe on full page load
+  window.addEventListener('load', function() {
+    console.log('Window fully loaded');
+    
+    // If jQuery is detected and seems to be causing issues
+    if (window.jQuery) {
+      console.log('jQuery detected on page - checking for conflicts');
+      if (typeof fixAccordions === 'function') {
+        fixAccordions();
+      }
+    }
   });
 </script>
 
