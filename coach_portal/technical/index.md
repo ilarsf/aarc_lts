@@ -23,7 +23,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Comprehensive collection of drills organized by skill level and learning objective. Each drill includes clear instructions and common errors to watch for.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire.html" class="cta-button">View Drills</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Key_Drills_Repertoire" class="cta-button">View Drills</a>
     </div>
   </div>
 </div>
@@ -33,7 +33,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Identify common technical issues and learn effective correction strategies, including visual cues, verbal prompts, and targeted drills.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Common_Technical_Issues_and_Corrections.html" class="cta-button">View Correction Guide</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Common_Technical_Issues_and_Corrections" class="cta-button">View Correction Guide</a>
     </div>
   </div>
 </div>
@@ -43,7 +43,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Structured approaches for introducing and developing technical skills, with clear progression pathways for different learning styles.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Technical_Frameworks.html" class="cta-button">View Teaching Frameworks</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Technical_Frameworks" class="cta-button">View Teaching Frameworks</a>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Guidelines for using video feedback effectively, including recommended apps, camera positions, and analysis methods.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Video_Analysis_Guide.html" class="cta-button">View Video Guide</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Video_Analysis_Guide" class="cta-button">View Video Guide</a>
     </div>
   </div>
 </div>
@@ -63,7 +63,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Instructions for adjusting foot stretchers, oarlock height, and other equipment settings to match participant needs.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Equipment_Adjustment_Reference.html" class="cta-button">View Equipment Guide</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Equipment_Adjustment_Reference" class="cta-button">View Equipment Guide</a>
     </div>
   </div>
 </div>
@@ -73,7 +73,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <p>Effective terminology, metaphors, and communication strategies for conveying technical concepts to beginners.</p>
-      <a href="{{ site.baseurl }}/coach_portal/technical/Coaching_Language_Guide.html" class="cta-button">View Language Guide</a>
+      <a href="{{ site.baseurl }}/coach_portal/technical/Coaching_Language_Guide" class="cta-button">View Language Guide</a>
     </div>
   </div>
 </div>
