@@ -8,7 +8,7 @@ This section contains technical resources designed specifically for Learn to Scu
 
 ## Technical Guides
 
-[Technical Frameworks](Technical_Frameworks.md) - A learner-friendly explanation of Krafts' Keys and the Black Bear Sequence, the fundamental principles that guide good sculling technique.
+[Technical Frameworks](Technical_Frameworks.md) - A learner-friendly explanation of KRAFT and the Black Bear Sequence, the fundamental principles that guide good sculling technique.
 
 [Common Rowing Fixes](Common_Rowing_Fixes.md) - Simple solutions to the most common technical issues you might encounter as a beginning rower.
 

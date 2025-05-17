@@ -16,10 +16,10 @@ layout: default
   <button id="collapse-all">Collapse All</button>
 </div>
 
-## Krafts' Keys
+## KRAFT
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Version 1: KRAFT</button>
+  <button class="accordion-toggle">KRAFT</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <ol>
@@ -61,56 +61,6 @@ layout: default
             <li>Prevents dragging the blade or digging too deep</li>
             <li>Sets up proper handle heights for recovery</li>
             <li><strong>Coaching cue:</strong> "Light tap down, then extract"</li>
-          </ul>
-        </li>
-      </ol>
-    </div>
-  </div>
-</div>
-
-<div class="accordion-section">
-  <button class="accordion-toggle">Version 2: KRAFT (Alternative Interpretation)</button>
-  <div class="accordion-content">
-    <div class="accordion-content-inner">
-      <ol>
-        <li><strong>Korrect Grip</strong>
-          <ul>
-            <li>Maintain proper hand position to ensure control and stability</li>
-            <li>Relaxed fingers, hook-like grip</li>
-            <li>Proper spacing and alignment</li>
-            <li><strong>Coaching cue:</strong> "Fingers are hooks, not fists"</li>
-          </ul>
-        </li>
-        <li><strong>Relaxation</strong>
-          <ul>
-            <li>Keep body and shoulders relaxed and soft above the handles</li>
-            <li>Avoid tension that inhibits balance and movement</li>
-            <li>Efficient use of energy and smoother technique</li>
-            <li><strong>Coaching cue:</strong> "Breathe and drop your shoulders"</li>
-          </ul>
-        </li>
-        <li><strong>Alignment</strong>
-          <ul>
-            <li>"Everything is horizontal"</li>
-            <li>Level hand heights through the stroke</li>
-            <li>Consistent blade depths</li>
-            <li><strong>Coaching cue:</strong> "Imagine carrying a tray of drinks"</li>
-          </ul>
-        </li>
-        <li><strong>Flow (& Forward)</strong>
-          <ul>
-            <li>Continuous fluid motion through the stroke</li>
-            <li>No stopping or jerky movements</li>
-            <li>Controlled slide speed and rush seat</li>
-            <li><strong>Coaching cue:</strong> "Smooth and continuous, like water flowing"</li>
-          </ul>
-        </li>
-        <li><strong>Timing</strong>
-          <ul>
-            <li>Proper sequencing of movement</li>
-            <li>Catch at full compression, blades enter together</li>
-            <li>Coordinated application of power</li>
-            <li><strong>Coaching cue:</strong> "Together on the catch, together on the finish"</li>
           </ul>
         </li>
       </ol>
@@ -259,7 +209,7 @@ layout: default
 
 ## Integrating the Frameworks in Instruction
 
-The Krafts' Keys and Black Bear Sequence complement each other, with the Keys providing fundamental principles and the Sequence offering a progression for teaching the complete stroke cycle.
+The KRAFT and Black Bear Sequence complement each other, with KRAFT providing fundamental principles and the Sequence offering a progression for teaching the complete stroke cycle.
 
 ### Effective Integration Strategies:
 
@@ -292,12 +242,12 @@ The Krafts' Keys and Black Bear Sequence complement each other, with the Keys pr
 
 | Issue | Relevant Framework Element | Key-Based Correction |
 |-------|----------------------------|----------------------|
-| Rushing the slide | Recovery (BBS), Relaxation (Key) | Apply "Flow" principle, slow recovery sequence |
-| Breaking arms early | Drive (BBS), Arms straight (Key) | Reinforce "A" - arms straight until legs flat |
-| Bouncy recovery | Recovery (BBS), Horizontal (Key) | Apply "Alignment" principle, level hands |
-| Missing the catch | Catch (BBS), Timing (Key) | Focus on "Timing" - square with entry |
-| Washing out at finish | Release (BBS), Tap down (Key) | Apply "T" - tap down before extraction |
-| Tense upper body | All phases, Relaxation (Key) | Reinforce "R" - relaxation throughout stroke |
+| Rushing the slide | Recovery (BBS) | Slow recovery sequence for better boat run |
+| Breaking arms early | Drive (BBS), Arms straight (KRAFT) | Reinforce "A" - arms straight until legs flat |
+| Bouncy recovery | Recovery (BBS) | Focus on level hands and consistent height |
+| Missing the catch | Catch (BBS) | Focus on proper blade entry timing |
+| Washing out at finish | Release (BBS), Tap down (KRAFT) | Apply "T" - tap down before extraction |
+| Tense upper body | All phases, K (KRAFT) | Reinforce "K" - keep shoulders relaxed and down |
 | Poor steering | Steering (BBS) | Integrate regular looking without disrupting technique |
 
 <div class="info-box">

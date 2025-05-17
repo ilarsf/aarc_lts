@@ -255,7 +255,7 @@ Many of you are making excellent progress with blade work and power application.
 - Maintaining proper sequencing even when fatigued
 
 **For Practice:**
-Continue visualizing the complete stroke cycle, paying special attention to the catch timing and clean blade extraction. Remember KRAFT's Keys: Keep shoulders relaxed, Reach from hips, Arms straight until legs are flat, Feather after extraction, Tap down before extraction.
+Continue visualizing the complete stroke cycle, paying special attention to the catch timing and clean blade extraction. Remember KRAFT: Keep shoulders relaxed, Reach from hips, Arms straight until legs are flat, Feather after extraction, Tap down before extraction.
 
 **Video Resources:**
 To reinforce today's lessons, check out:

@@ -8,7 +8,7 @@ This reference guide provides detailed analysis of the most common technical iss
 
 <div class="info-box tip">
   <h4>Using This Guide</h4>
-  <p>Focus on one correction at a time rather than overwhelming novice rowers with multiple technique points. Connect your coaching to the frameworks of Kraft's Keys and Black Bear Sequence for consistency.</p>
+  <p>Focus on one correction at a time rather than overwhelming novice rowers with multiple technique points. Connect your coaching to the frameworks of KRAFT and Black Bear Sequence for consistency.</p>
   <div class="text-center mt-3">
   </div>
 </div>
@@ -37,7 +37,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Reduces boat run <br>- Creates balance issues <br>- Leads to poor catch preparation <br>- Increases risk of catching crabs</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "Flow" principle (Kraft's Keys) <br>- Disrupts Recovery sequence (Black Bear)</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Disrupts Recovery sequence (Black Bear)</td>
         </tr>
       </table>
 
@@ -85,7 +85,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Missed water at catch <br>- Poor blade depth control <br>- Balance issues <br>- Inconsistent power application</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "Alignment" principle (Kraft's Keys) <br>- Impacts Grip/Blade Control (Black Bear)</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Impacts Grip/Blade Control (Black Bear)</td>
         </tr>
       </table>
 
@@ -133,7 +133,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Limited reach <br>- Compressed catch position <br>- Difficult blade entry <br>- Reduced power potential</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "Sequencing" principle (Black Bear) <br>- Affects "Forward Body" position (Kraft's Keys)</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Violates "Sequencing" principle (Black Bear) <br>- Affects "R: Reach from hips" position (KRAFT)</td>
         </tr>
       </table>
 
@@ -183,7 +183,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Reduced power output <br>- Premature back opening <br>- Inefficient energy use <br>- Increased fatigue</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "A" principle (Arms straight) in Kraft's Keys <br>- Disrupts Drive sequence (Black Bear)</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Violates "A: Arms straight until legs are flat" in KRAFT <br>- Disrupts Drive sequence (Black Bear)</td>
         </tr>
       </table>
 
@@ -329,7 +329,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Energy wasted stabilizing <br>- Disrupted technique <br>- Inconsistent catch/release <br>- Psychological distraction</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "Relaxation" principle (Kraft's Keys) <br>- Affects all segments of stroke</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Violates "K: Keep shoulders relaxed and down" in KRAFT <br>- Affects all segments of stroke</td>
         </tr>
       </table>
 
@@ -377,7 +377,7 @@ This reference guide provides detailed analysis of the most common technical iss
         </tr>
         <tr>
           <td><strong>Impact on Performance:</strong> <br>- Inefficient power application <br>- Balance disruption <br>- Increased drag <br>- Difficulty maintaining technique</td>
-          <td><strong>Key Framework Connection:</strong> <br>- Violates "Horizontal" principle (Kraft's Keys) <br>- Affects Release and Catch (Black Bear)</td>
+          <td><strong>Key Framework Connection:</strong> <br>- Violates tap down and feather principles in KRAFT <br>- Affects Release and Catch (Black Bear)</td>
         </tr>
       </table>
 

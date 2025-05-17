@@ -144,10 +144,10 @@ search_exclude: true
       <div id="frameworks-content" class="expandable-content" style="display:none;">
         <h2>Technical Frameworks for Sculling Instruction</h2>
         
-        <h3>Krafts' Keys</h3>
+        <h3>KRAFT</h3>
         
         <div class="collapsible-section">
-          <h4 class="collapsible-header">Version 1: KRAFT</h4>
+          <h4 class="collapsible-header">KRAFT</h4>
           <div class="collapsible-content">
             <ol>
               <li><strong>K: Keep shoulders relaxed and down</strong>

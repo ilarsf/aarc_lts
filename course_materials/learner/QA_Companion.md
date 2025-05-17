@@ -226,7 +226,7 @@
     <h3>Technical Frameworks</h3>
     <p>The LTS program uses two key technical frameworks to simplify the learning process:</p>
     <ul>
-      <li><strong>KRAFT's Keys:</strong>
+      <li><strong>KRAFT:</strong>
         <ul>
           <li><strong>K</strong>: Keep shoulders relaxed and down</li>
           <li><strong>R</strong>: Reach from hips, not shoulders</li>

@@ -92,7 +92,7 @@ title: Meet the Team - AARC Learn to Scull Program
       <div class="team-member-info">
         <h3>Tom Kraft</h3>
         <h4>Head Sculling Coach</h4>
-        <p>Tom is widely respected for his technical expertise and teaching methodology. His "Krafts' Keys" framework is used throughout our rowing programs and serves as the foundation for the Learn to Scull curriculum.</p>
+        <p>Tom is widely respected for his technical expertise and teaching methodology. His "KRAFT" framework is used throughout our rowing programs and serves as the foundation for the Learn to Scull curriculum.</p>
       </div>
     </div>
 
