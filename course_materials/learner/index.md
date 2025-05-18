@@ -3,9 +3,25 @@ layout: default
 custom_class: learner-page
 ---
 
-# Learner Resources: Learn to Scull Program
+# Learner's Guide & Core Materials
 
-Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources will help you throughout your journey to becoming a confident sculler.
+<div class="info-box note">
+  <h4>Welcome to Your Learning Journey!</h4>
+  <p>This section contains the core learning materials for the Learn to Scull program. Here you'll find comprehensive guides, schedules, and references organized to support your progress through the course.</p>
+  
+  <div class="two-col-grid">
+    <div>
+      <h5>Start Here</h5>
+      <p><a href="Learner_Guide.html" class="cta-button"><i class="fas fa-book"></i> Learner's Guide</a></p>
+      <p>Your comprehensive manual for the entire program.</p>
+    </div>
+    <div>
+      <h5>Supplementary Materials</h5>
+      <p><a href="{{ site.baseurl }}/resources/" class="cta-button"><i class="fas fa-external-link-alt"></i> Additional Resources</a></p>
+      <p>Access technical guides, quizzes, and more.</p>
+    </div>
+  </div>
+</div>
 
 {% include accordion.html %}
 
@@ -15,7 +31,7 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Available Resources</button>
+  <button class="accordion-toggle">Core Learning Materials</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <ul>
@@ -29,31 +45,63 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Technical Resources</button>
+  <button class="accordion-toggle">Technical & Safety Resources</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
-      <p>Visit the <a href="technical/index.html"><strong>Technical Resources</strong></a> section for guides including:</p>
-      
-      <ul>
-        <li><a href="technical/Technical_Frameworks.html">Technical Frameworks</a> - Easy-to-understand explanation of rowing technique</li>
-        <li><a href="technical/Common_Rowing_Fixes.html">Common Rowing Fixes</a> - Simple solutions to the most common beginner issues</li>
-        <li><a href="technical/Rowing_Terminology.html">Rowing Terminology</a> - Glossary of rowing terms you'll need to know</li>
-      </ul>
+      <div class="two-col-grid">
+        <div>
+          <h4>Technical Guides</h4>
+          <ul>
+            <li><a href="technical/Technical_Frameworks.html">Technical Frameworks</a> - Rowing technique explained clearly</li>
+            <li><a href="technical/Common_Rowing_Fixes.html">Common Rowing Fixes</a> - Solutions for beginner issues</li>
+            <li><a href="technical/Rowing_Terminology.html">Rowing Terminology</a> - Essential rowing vocabulary</li>
+          </ul>
+          <p><a href="technical/index.html" class="cta-button"><i class="fas fa-wrench"></i> All Technical Resources</a></p>
+        </div>
+        
+        <div>
+          <h4>Safety Essentials</h4>
+          <ul>
+            <li><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a> - Handling a capsize</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Safety Quiz</a> - Test your knowledge</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Equipment care</li>
+          </ul>
+          <p><a href="safety/index.html" class="cta-button"><i class="fas fa-life-ring"></i> All Safety Resources</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="accordion-section">
-  <button class="accordion-toggle">Safety Resources</button>
+  <button class="accordion-toggle">Knowledge Check Quizzes</button>
   <div class="accordion-content">
     <div class="accordion-content-inner">
-      <p>Visit the <a href="safety/index.html"><strong>Safety Resources</strong></a> section for guides including:</p>
+      <p>Test your understanding with these interactive knowledge checks:</p>
       
-      <ul>
-        <li><a href="safety/Self_Rescue_Guide.html">Self-Rescue Guide</a> - What to do if you capsize, including the flip test procedure</li>
-        <li><a href="safety/River_Traffic_Guide.html">River Traffic Guide</a> - Simple navigation rules to share the waterway safely</li>
-        <li><a href="safety/Weather_Guidelines.html">Weather Guidelines</a> - Understanding conditions that affect rowing safety</li>
-      </ul>
+      <div class="two-col-grid">
+        <div>
+          <h4>Pre-Course Preparation</h4>
+          <ul>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> - Water safety rules and protocols</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Equipment care and protocols</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4>Session Quizzes</h4>
+          <ul>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a> - Basic rowing motion and equipment</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2">Session 2 Quiz</a> - Boat control and stroke sequencing</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3">Session 3 Quiz</a> - Leg drive and navigation</li>
+            <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4">Session 4 Quiz</a> - Independent sculling skills</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="info-box tip">
+        <p>Access our <a href="{{ site.baseurl }}/course_materials/learner/quizzes.html">complete quiz dashboard</a> to track your progress and see your quiz completion status.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -120,6 +168,26 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
       </ul>
     </div>
   </div>
+</div>
+
+<div class="info-box tip">
+  <h3>Getting Started: Recommended Sequence</h3>
+  <p>New to the Learn to Scull program? We suggest this sequence:</p>
+  
+  <ol>
+    <li>Review the <a href="Program_Schedule.html">Program Schedule</a> to understand what to expect</li>
+    <li>Read the <a href="Learner_Guide.html">Learner's Guide</a> welcome and safety sections</li>
+    <li>Complete these important quizzes before your first session:
+      <ul>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a></li>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a></li>
+      </ul>
+    </li>
+    <li>Familiarize yourself with the <a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a></li>
+    <li>Check out the <a href="QA_Companion.html">Q&A Companion</a> for answers to common questions</li>
+  </ol>
+  
+  <p>Questions? Contact your instructor or email <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
 </div>
 
 [← Back to Main Page]({{ site.baseurl }}/index.html)
