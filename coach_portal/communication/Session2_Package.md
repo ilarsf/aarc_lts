@@ -70,7 +70,7 @@ By the end of Session 2, you should feel more comfortable with the basic scullin
 
 To reinforce what you've learned in this session, we encourage you to complete the Session 2 quiz:
 
-[**Complete Session 2 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=2)
+[**Complete Session 2 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=2)
 
 This quiz will test your knowledge of the techniques and concepts introduced today, helping to cement your understanding as you progress in your sculling journey.
 

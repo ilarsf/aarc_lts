@@ -42,8 +42,8 @@ title: Learner’s Guide
       <h4>Prepare for Your First Session</h4>
       <p>To help you feel ready for your first day on the water, we recommend completing:</p>
       <ul>
-        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> - Familiarize yourself with essential safety practices</li>
-        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Learn about equipment care and protocols</li>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> - Familiarize yourself with essential safety practices</li>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Learn about equipment care and protocols</li>
       </ul>
       <p>These short quizzes will give you a head start on important concepts!</p>
     </div>
@@ -88,10 +88,10 @@ title: Learner’s Guide
       <h4>Track Your Progress</h4>
       <p>Reinforce your learning after each session:</p>
       <ul>
-        <li>After Session 1: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1">Take Session 1 Quiz</a></li>
-        <li>After Session 2: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2">Take Session 2 Quiz</a></li>
-        <li>After Session 3: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3">Take Session 3 Quiz</a></li>
-        <li>After Session 4: <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4">Take Session 4 Quiz</a></li>
+        <li>After Session 1: <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Take Session 1 Quiz</a></li>
+        <li>After Session 2: <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2">Take Session 2 Quiz</a></li>
+        <li>After Session 3: <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3">Take Session 3 Quiz</a></li>
+        <li>After Session 4: <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4">Take Session 4 Quiz</a></li>
       </ul>
       <p>These quizzes help reinforce what you've learned and identify areas for additional practice.</p>
     </div>
@@ -144,7 +144,7 @@ title: Learner’s Guide
         <button class="toggle-answer">Show Answer</button>
         <div class="answer hidden">
           <p><strong>Answer:</strong> The correct sequence is: Arms away first, then body pivot forward, then legs slide forward (Arms → Back → Legs).</p>
-          <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="mini-link">Try the full Session 1 Quiz</a></p>
+          <p><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" class="mini-link">Try the full Session 1 Quiz</a></p>
         </div>
       </div>
     </div>
@@ -173,7 +173,7 @@ title: Learner’s Guide
         <button class="mini-quiz-toggle">Show Answer</button>
         <div class="mini-quiz-answer hidden">
           <p>Roll your knuckles down toward the tops of your thighs using your fingers (not your wrists) to rotate the handles.</p>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="mini-link">More questions →</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" class="mini-link">More questions →</a>
         </div>
       </div>
     </div>
@@ -211,7 +211,7 @@ title: Learner’s Guide
         <button class="mini-quiz-toggle">Show Answer</button>
         <div class="mini-quiz-answer hidden">
           <p>Fluorescent yellow, orange, or green provide the highest visibility on water, especially in low light conditions.</p>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">More safety questions →</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="mini-link">More safety questions →</a>
         </div>
       </div>
     </div>
@@ -315,7 +315,7 @@ title: Learner’s Guide
         <button class="toggle-answer">Show Answer</button>
         <div class="answer hidden">
           <p><strong>Answer:</strong> Approach the overturned scull from the side, reach across the hull to the far side gunwale, and slowly pull the boat towards you to right it, watching out for the oars as it flips.</p>
-          <p><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="mini-link">Try the full Safety Quiz</a></p>
+          <p><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="mini-link">Try the full Safety Quiz</a></p>
         </div>
       </div>
     </div>
@@ -484,7 +484,7 @@ title: Learner’s Guide
       <h4>Review Your Safety Knowledge</h4>
       <p>Ready to test what you've learned about rowing safety?</p>
       <ul>
-        <li>Take the <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> (5-minute assessment)</li>
+        <li>Take the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> (5-minute assessment)</li>
         <li>Practice the self-rescue sequence mentally</li>
         <li>Review key safety protocols before each row</li>
       </ul>
@@ -516,7 +516,7 @@ title: Learner’s Guide
           <button class="mini-quiz-toggle">Show Answer</button>
           <div class="mini-quiz-answer hidden">
             <p>To maintain hygiene and prevent the spread of germs, especially given the likelihood of blisters and potential bleeding.</p>
-            <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="mini-link">More boathouse questions →</a>
+            <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" class="mini-link">More boathouse questions →</a>
           </div>
         </div>
       </div>
@@ -726,42 +726,42 @@ title: Learner’s Guide
     <div class="quiz-progress">
       <div class="progress-grid">
         <div class="progress-item" data-quiz-id="safety">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="progress-item-link">
             <div class="progress-icon">🦺</div>
             <div class="progress-label">Safety</div>
             <div class="progress-status not-started">Not started</div>
           </a>
         </div>
         <div class="progress-item" data-quiz-id="bh">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" class="progress-item-link">
             <div class="progress-icon">🏠</div>
             <div class="progress-label">Boathouse</div>
             <div class="progress-status not-started">Not started</div>
           </a>
         </div>
         <div class="progress-item" data-quiz-id="s1">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" class="progress-item-link">
             <div class="progress-icon">1️⃣</div>
             <div class="progress-label">Session 1</div>
             <div class="progress-status not-started">Not started</div>
           </a>
         </div>
         <div class="progress-item" data-quiz-id="s2">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" class="progress-item-link">
             <div class="progress-icon">2️⃣</div>
             <div class="progress-label">Session 2</div>
             <div class="progress-status not-started">Not started</div>
           </a>
         </div>
         <div class="progress-item" data-quiz-id="s3">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" class="progress-item-link">
             <div class="progress-icon">3️⃣</div>
             <div class="progress-label">Session 3</div>
             <div class="progress-status not-started">Not started</div>
           </a>
         </div>
         <div class="progress-item" data-quiz-id="s4">
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4" class="progress-item-link">
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" class="progress-item-link">
             <div class="progress-icon">4️⃣</div>
             <div class="progress-label">Session 4</div>
             <div class="progress-status not-started">Not started</div>
@@ -780,7 +780,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge of rowing safety, including water safety rules, boat lighting, visibility requirements, and AARC safety protocols.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="quiz-link">Take Quiz</a>
         </div>
       </div>
       
@@ -791,7 +791,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge of boathouse protocols, equipment handling, and care procedures.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" class="quiz-link">Take Quiz</a>
         </div>
       </div>
       
@@ -803,7 +803,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=1" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" class="quiz-link">Take Quiz</a>
         </div>
       </div>
       
@@ -814,7 +814,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge on transferring erg skills, safe launching, basic boat control, and stroke sequencing.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=2" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" class="quiz-link">Take Quiz</a>
         </div>
       </div>
       
@@ -825,7 +825,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge on developing leg drive, power application, and basic navigation awareness.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=3" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" class="quiz-link">Take Quiz</a>
         </div>
       </div>
       
@@ -836,7 +836,7 @@ title: Learner’s Guide
         <div class="quiz-card-body">
           <p>Test your knowledge on skill integration, safe river navigation, group assessment, and independent sculling.</p>
           <div class="quiz-status not-started">○ Not Started</div>
-          <a href="{{ site.baseurl }}/src/quiz_module.html?quiz=4" class="quiz-link">Take Quiz</a>
+          <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" class="quiz-link">Take Quiz</a>
         </div>
       </div>
     </div>

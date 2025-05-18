@@ -311,8 +311,8 @@ title: Learner Q&A Companion
       <h4>Test Your Knowledge</h4>
       <p>Continue reinforcing your rowing knowledge with these interactive quizzes:</p>
       <ul>
-        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=safety">Rowing Safety Quiz</a></li>
-        <li><a href="{{ site.baseurl }}/src/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a></li>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a></li>
+        <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a></li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html#quizzes-tab">View All Knowledge Check Quizzes</a></li>
       </ul>
       <p>These quizzes are excellent tools for refreshing your understanding as you continue your rowing journey.</p>

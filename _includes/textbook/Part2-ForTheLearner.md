@@ -302,7 +302,7 @@ The single most effective way to minimize blisters is to use the correct grip:
 
 ⚠️ **Warning:** Watch for signs of infection (increasing pain, redness, warmth, swelling, pus) and seek medical attention if they appear.
 
-*For a comprehensive guide, refer to the [Rower's Hand Blister Treatment Guide]({{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html) available on the website.*
+*For a comprehensive guide, refer to the [Rower's Hand Blister Treatment Guide]({{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html) available on the website.*
 
 ### Understanding River Traffic Patterns
 

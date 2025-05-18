@@ -164,12 +164,12 @@ As you continue rowing, consider these equipment items:
 
 As you continue your rowing journey, you may want to periodically review key concepts from the program. Our online quizzes remain available to help refresh your knowledge:
 
-- [**Boathouse Rules Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=bh)
-- [**Safety Guidelines Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=safety)
-- [**Session 1 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=1)
-- [**Session 2 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=2)
-- [**Session 3 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=3)
-- [**Session 4 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=4)
+- [**Boathouse Rules Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=bh)
+- [**Safety Guidelines Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=safety)
+- [**Session 1 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=1)
+- [**Session 2 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=2)
+- [**Session 3 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=3)
+- [**Session 4 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=4)
 
 These quizzes are excellent tools for reinforcing your understanding of sculling techniques, safety procedures, and boathouse protocols.
 

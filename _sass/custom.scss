@@ -1,0 +1,30 @@
+// Custom overrides for the Cayman theme to fix Sass deprecation warnings
+
+// Import the color module properly
+@use "sass:color";
+
+// Override the skip-nav with focus styles that use the deprecated invert function
+.skip-nav {
+  &:focus {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: auto;
+    // Use color.invert instead of invert
+    background: #ffffff; // This is a fallback
+    outline: thick solid #ffffff; // This is a fallback
+  }
+}
+
+// Override any other elements that might use the invert function
+.btn {
+  &:focus {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    // Use color.invert instead of invert
+    outline: thick solid #ffffff; // This is a fallback
+  }
+}

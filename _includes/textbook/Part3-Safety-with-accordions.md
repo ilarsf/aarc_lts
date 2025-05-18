@@ -10,7 +10,7 @@
   <div class="accordion-content">
     <div class="accordion-content-inner">
 
-Safety is the foundation of enjoyable rowing. This chapter outlines the essential protocols and awareness needed *before* you even launch and while you are on the water. Adhering to these practices ensures not only your safety but the safety of everyone sharing the river. *Refer to the official [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf) for complete details.*
+Safety is the foundation of enjoyable rowing. This chapter outlines the essential protocols and awareness needed *before* you even launch and while you are on the water. Adhering to these practices ensures not only your safety but the safety of everyone sharing the river. *Refer to the official [AARC Safety Rules (PDF)]({{ site.baseurl }}/resources/AARC_Safety_Rules.pdf) for complete details.*
 
 ### Weather and Water Condition Assessment
 
@@ -113,7 +113,7 @@ Clear communication on the water is essential.
   <div class="accordion-content">
     <div class="accordion-content-inner">
 
-Proper care and handling of equipment not only extends its lifespan but also ensures it remains in good working condition for everyone. This chapter covers important boathouse etiquette and equipment maintenance responsibilities. *See the detailed [Boathouse Rules and Equipment Care Guide]({{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html) online.*
+Proper care and handling of equipment not only extends its lifespan but also ensures it remains in good working condition for everyone. This chapter covers important boathouse etiquette and equipment maintenance responsibilities. *See the detailed [Boathouse Rules and Equipment Care Guide]({{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html) online.*
 
 ### General Boathouse Rules
 
@@ -157,7 +157,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 * **Respect Your Peers:** Others deserve well-maintained equipment.
 * **Respect the Club's Investment:** Protects finances, allowing improvements.
 
-💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Club Rules & Equipment Quiz]({{ site.baseurl }}/src/quiz_module.html?quiz=bh).
+💡 **Tip:** Unsure? Ask an experienced member or coach. Test your knowledge with the [Club Rules & Equipment Quiz]({{ site.baseurl }}/resources/quiz_module.html?quiz=bh).
 
     </div>
   </div>
@@ -224,7 +224,7 @@ This technique uses leg power, not arm strength.
 Watching the process helps. Coaches may provide links, or you can refer to the website:
 
 * Refer to videos linked in Appendix C or the [Q&A Companion Video Library]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab).
-* *For a comprehensive walkthrough, see the detailed [Self-Rescue & Flip Test Guide]({{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html) available on the website.*
+* *For a comprehensive walkthrough, see the detailed [Self-Rescue & Flip Test Guide]({{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html) available on the website.*
 
     </div>
   </div>

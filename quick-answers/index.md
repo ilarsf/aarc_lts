@@ -138,7 +138,7 @@ title: Quick Answers - AARC Learn to Scull Program
             <li>Bail water from the boat</li>
             <li>Return to rowing</li>
           </ol>
-          <p><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">View detailed flip test instructions</a></p>
+          <p><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">View detailed flip test instructions</a></p>
         </div>
         
         <div class="question-block">
@@ -150,7 +150,7 @@ title: Quick Answers - AARC Learn to Scull Program
             <li>Follow self-rescue procedures if able</li>
             <li>If you can't self-rescue, signal for help and move toward shore with the boat</li>
           </ol>
-          <p><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">View the Self-Rescue Guide</a></p>
+          <p><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">View the Self-Rescue Guide</a></p>
         </div>
         
         <div class="question-block">
@@ -217,7 +217,7 @@ title: Quick Answers - AARC Learn to Scull Program
             <li>Report any damage to coaches immediately</li>
             <li>Follow proper storage procedures in the boathouse</li>
           </ul>
-          <p><a href="{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html">View Equipment Care Guide</a></p>
+          <p><a href="{{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html">View Equipment Care Guide</a></p>
         </div>
         
         <div class="question-block">
@@ -228,7 +228,7 @@ title: Quick Answers - AARC Learn to Scull Program
             <li><strong>Treatment:</strong> Clean blisters, use proper bandaging techniques</li>
             <li>Consider using rowing gloves or athletic tape</li>
           </ul>
-          <p><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">View Hand Care Guide</a></p>
+          <p><a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html">View Hand Care Guide</a></p>
         </div>
       </div>
     </div>
@@ -376,7 +376,7 @@ title: Quick Answers - AARC Learn to Scull Program
           <div class="resource-card">
             <h4>Self-Rescue Guide & Flip Test Instructions</h4>
             <p>Instructions for safely recovering from a capsize</p>
-            <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a>
+            <a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html" class="cta-button">View Guide</a>
           </div>
                     
           <div class="resource-card">
@@ -397,13 +397,13 @@ title: Quick Answers - AARC Learn to Scull Program
           <div class="resource-card">
             <h4>Hand Care Guide</h4>
             <p>Preventing and treating hand blisters from rowing</p>
-            <a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a>
+            <a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html" class="cta-button">View Guide</a>
           </div>
           
           <div class="resource-card">
             <h4>Knowledge Check Quizzes</h4>
             <p>Test your understanding of rowing concepts</p>
-            <a href="{{ site.baseurl }}/src/#knowledge-check-quizzes" class="cta-button">Take Quizzes</a>
+            <a href="{{ site.baseurl }}/resources/#knowledge-check-quizzes" class="cta-button">Take Quizzes</a>
           </div>
         </div>
       </div>
@@ -443,7 +443,7 @@ title: Quick Answers - AARC Learn to Scull Program
         <a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html" class="tree-link">Learner's Guide</a>
         <a href="{{ site.baseurl }}/textbook/" class="tree-link">Complete Textbook</a>
         <a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html" class="tree-link">Q&A Companion</a>
-        <a href="{{ site.baseurl }}/src/#knowledge-check-quizzes" class="tree-link">Practice Quizzes</a>
+        <a href="{{ site.baseurl }}/resources/#knowledge-check-quizzes" class="tree-link">Practice Quizzes</a>
         <button class="tree-back" data-target="q1">Back to Start</button>
       </div>
     </div>
@@ -451,8 +451,8 @@ title: Quick Answers - AARC Learn to Scull Program
     <div class="tree-question hidden" id="q4">
       <h3>Safety Information:</h3>
       <div class="tree-options">
-        <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue Guide</a>
-        <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue & Flip Test Guide</a>
+        <a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue Guide</a>
+        <a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html" class="tree-link">Self-Rescue & Flip Test Guide</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html" class="tree-link">River Traffic Rules</a>
         <a href="{{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html" class="tree-link">Weather Guidelines</a>
         <button class="tree-back" data-target="q1">Back to Start</button>
@@ -462,9 +462,9 @@ title: Quick Answers - AARC Learn to Scull Program
     <div class="tree-question hidden" id="q5">
       <h3>Technical Questions:</h3>
       <div class="tree-options">
-        <a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html" class="tree-link">Hand Blisters</a>
+        <a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html" class="tree-link">Hand Blisters</a>
         <a href="{{ site.baseurl }}/textbook/chapters/part5.html#appendix-a-glossary-of-rowing-terms" class="tree-link">Rowing Terminology</a>
-        <a href="{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html" class="tree-link">Equipment Care</a>
+        <a href="{{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html" class="tree-link">Equipment Care</a>
         <a href="{{ site.baseurl }}/course_materials/learner/technical/" class="tree-link">Technical Resources</a>
         <button class="tree-back" data-target="q1">Back to Start</button>
       </div>

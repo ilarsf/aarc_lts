@@ -51,9 +51,9 @@ title: Search - AARC Learn to Scull Program
     <div>
       <h4>Quick Guides</h4>
       <ul class="mb-0">
-        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a> - Recovering from a capsize</li>
-        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test Guide</a> - Step-by-step guide</li>
-        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a> - Treating rowing blisters</li>
+        <li><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue Guide</a> - Recovering from a capsize</li>
+        <li><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test Guide</a> - Step-by-step guide</li>
+        <li><a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a> - Treating rowing blisters</li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html">River Traffic Guide</a> - Navigation rules</li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/technical/Instructional_Videos.html">Instructional Videos</a> - Visual learning resources</li>
       </ul>
@@ -94,16 +94,16 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "Quick Answers", path: "{{ site.baseurl }}/quick-answers/", keywords: "quick help fast answers immediate resources quick reference common questions lookup find information", summary: "Quick reference guide to common questions and resources organized by topic." },
     
     // Safety pages
-    { title: "Self-Rescue & Flip Test Guide", path: "{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html", keywords: "flip test capsizing practice self rescue demonstration requirements wet exit capsize drill procedure walk through recovery get back in", summary: "Comprehensive guide covering both the flip test procedure and self-rescue techniques required for all AARC scullers." },
+    { title: "Self-Rescue & Flip Test Guide", path: "{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html", keywords: "flip test capsizing practice self rescue demonstration requirements wet exit capsize drill procedure walk through recovery get back in", summary: "Comprehensive guide covering both the flip test procedure and self-rescue techniques required for all AARC scullers." },
     { title: "River Traffic Guide", path: "{{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html", keywords: "river traffic pattern navigation rules right-of-way direction clockwise counter-clockwise starboard port side map waterway", summary: "Guidelines for navigating Argo pond and understanding river traffic patterns." },
     { title: "Weather Guidelines", path: "{{ site.baseurl }}/course_materials/learner/safety/Weather_Guidelines.html", keywords: "weather conditions wind rain lightning thunder temperature cold hot cancellation policy meters per second whitecaps waves fog visibility", summary: "Safety guidelines for rowing in various weather conditions." },
-    { title: "Safety Rules", path: "{{ site.baseurl }}/src/AARC_Safety_Rules.pdf", keywords: "safety rules regulations requirements emergency procedures visibility lights life jacket PFD flotation device rowing alone buddy system sign out log", summary: "Essential safety guidelines for all AARC rowers." },
+    { title: "Safety Rules", path: "{{ site.baseurl }}/resources/AARC_Safety_Rules.pdf", keywords: "safety rules regulations requirements emergency procedures visibility lights life jacket PFD flotation device rowing alone buddy system sign out log", summary: "Essential safety guidelines for all AARC rowers." },
     { title: "Emergency Procedures", path: "{{ site.baseurl }}/coach_portal/safety/Emergency_Procedures.html", keywords: "emergency procedures first aid injury accident response protocol help rescue call 911 medical", summary: "Step-by-step procedures for handling emergency situations at the boathouse or on the water." },
     
     // Technical resources
-    { title: "Hand Care Guide", path: "{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html", keywords: "hand care blisters calluses treatment prevention gloves tape hands hurt sore pain palms fingers", summary: "Preventing and treating hand blisters from rowing." },
+    { title: "Hand Care Guide", path: "{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html", keywords: "hand care blisters calluses treatment prevention gloves tape hands hurt sore pain palms fingers", summary: "Preventing and treating hand blisters from rowing." },
     { title: "Rowing Terminology", path: "{{ site.baseurl }}/textbook/chapters/part5.html#appendix-a-glossary-of-rowing-terms", keywords: "terms vocabulary glossary dictionary rowing language jargon definitions technical words boat parts oar", summary: "Comprehensive glossary of rowing terms and their definitions." },
-    { title: "Boathouse Rules", path: "{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html", keywords: "boathouse rules equipment care storage handling respect boat rack carrying lifting launching", summary: "Rules for using the boathouse facilities and caring for equipment." },
+    { title: "Boathouse Rules", path: "{{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html", keywords: "boathouse rules equipment care storage handling respect boat rack carrying lifting launching", summary: "Rules for using the boathouse facilities and caring for equipment." },
     { title: "Common Rowing Fixes", path: "{{ site.baseurl }}/course_materials/learner/technical/Common_Rowing_Fixes.html", keywords: "technical fixes problems issues troubleshooting common mistakes corrections technique tips help advice rushing forward early square late square catching air blade depth", summary: "Solutions for common technical issues that beginner rowers experience." },
     { title: "Instructional Videos", path: "{{ site.baseurl }}/course_materials/learner/technical/Instructional_Videos.html", keywords: "videos tutorials demonstrations visual instruction technique youtube learning resources watch see demonstrations", summary: "Curated collection of instructional videos demonstrating proper rowing technique and skills." },
     { title: "Technical Frameworks", path: "{{ site.baseurl }}/course_materials/learner/technical/Technical_Frameworks.html", keywords: "technique frameworks models approaches teaching methods concepts body position posture stroke sequence", summary: "Analytical frameworks for understanding and teaching proper rowing technique." },
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "Complete Textbook", path: "{{ site.baseurl }}/textbook/all.html", keywords: "textbook complete full comprehensive guide reference all chapters combined entire", summary: "Complete course materials in a traditional textbook format with all chapters combined." },
     
     // Assessment and knowledge checks
-    { title: "Knowledge Check Quizzes", path: "{{ site.baseurl }}/src/quiz_module.html", keywords: "quiz quizzes test questions assessment learning check knowledge verification understanding", summary: "Interactive quizzes to test your knowledge of rowing concepts and safety." },
+    { title: "Knowledge Check Quizzes", path: "{{ site.baseurl }}/resources/quiz_module.html", keywords: "quiz quizzes test questions assessment learning check knowledge verification understanding", summary: "Interactive quizzes to test your knowledge of rowing concepts and safety." },
     { title: "Participant Assessment", path: "{{ site.baseurl }}/coach_portal/assessment/Participant_Assessment_Checklist.html", keywords: "assessment evaluation progress skills checklist competency mastery tracking learning", summary: "Checklist for coaches to track participant progress and skill development." },
     
     // Additional resources

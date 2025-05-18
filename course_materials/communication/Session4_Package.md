@@ -110,7 +110,7 @@ This assessment helps determine appropriate next steps in your rowing journey.
 
 To solidify your understanding of all sculling concepts covered in the program, please complete the final Session 4 quiz:
 
-[**Complete Session 4 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=4)
+[**Complete Session 4 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=4)
 
 This comprehensive quiz will help you assess your knowledge and readiness as you complete the Learn to Scull program.
 

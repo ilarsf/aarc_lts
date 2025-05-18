@@ -333,7 +333,7 @@ search_exclude: true
             <span class="resource-desc">Weather-related safety parameters and decision framework</span>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test Guide</a>
+            <a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip Test Guide</a>
             <span class="resource-desc">Standardized procedure for conducting flip tests</span>
           </li>
         </ul>

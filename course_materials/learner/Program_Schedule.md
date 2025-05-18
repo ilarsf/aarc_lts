@@ -102,7 +102,7 @@ We recommend keeping the following weekend partially open as a contingency for w
       <li>Apply preventative tape before blisters form</li>
       <li>Treat any developing blisters promptly</li>
       <li>Maintain proper grip technique to minimize friction</li>
-      <li>Follow our <a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a> between sessions</li>
+      <li>Follow our <a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html">Hand Care Guide</a> between sessions</li>
     </ul>
   </div>
   

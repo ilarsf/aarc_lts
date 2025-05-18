@@ -80,7 +80,7 @@ The same essential items:
 
 To reinforce what you've learned in this session, we encourage you to complete the Session 3 quiz:
 
-[**Complete Session 3 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=3)
+[**Complete Session 3 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=3)
 
 This quiz will help you evaluate your understanding of more advanced sculling techniques and concepts covered today.
 

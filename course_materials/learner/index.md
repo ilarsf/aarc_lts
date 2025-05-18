@@ -114,9 +114,9 @@ Welcome to the Ann Arbor Rowing Club's Learn to Scull program! These resources w
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <ul>
-        <li><a href="{{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care for Rowers</strong></a> - Information on preventing and treating blisters</li>
-        <li><a href="{{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.html"><strong>Boathouse Rules</strong></a> - Guidelines for proper behavior and equipment handling</li>
-        <li><a href="{{ site.baseurl }}/src/AARC_Safety_Rules.pdf"><strong>AARC Safety Rules</strong></a> - The official safety rules for all AARC programs</li>
+        <li><a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html"><strong>Hand Care for Rowers</strong></a> - Information on preventing and treating blisters</li>
+        <li><a href="{{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html"><strong>Boathouse Rules</strong></a> - Guidelines for proper behavior and equipment handling</li>
+        <li><a href="{{ site.baseurl }}/resources/AARC_Safety_Rules.pdf"><strong>AARC Safety Rules</strong></a> - The official safety rules for all AARC programs</li>
       </ul>
     </div>
   </div>

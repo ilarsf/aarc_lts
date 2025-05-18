@@ -111,7 +111,7 @@ This mandatory, supervised drill teaches you how to recover if your boat flips.
 
   * Before launching, quickly check your boat: bow ball secure, riggers tight, heel restraints functional, oarlocks working.
 
-*You can find full details in the [AARC Safety Rules]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf) and the [AARC SafeSport Policy]({{ site.baseurl }}/src/AARCSafeSport_2015-01-18.pdf).*
+*You can find full details in the [AARC Safety Rules]({{ site.baseurl }}/resources/AARC_Safety_Rules.pdf) and the [AARC SafeSport Policy]({{ site.baseurl }}/resources/AARCSafeSport_2015-01-18.pdf).*
 
 -----
 
@@ -137,7 +137,7 @@ You'll learn this in detail, but here’s a preview:
 ### Hand Care (Blisters)
 
   * **Prevention:** Use a relaxed grip (fingers as hooks, not a death grip). Let hands adapt gradually. Tape known hot spots *before* rowing. *(See the Correct Grip video on the [Video Library tab of the Q&A Companion page]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab))*
-  * **Treatment:** Keep clean, cover appropriately. See the [Hand Care Guide]({{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html) for details.
+  * **Treatment:** Keep clean, cover appropriately. See the [Hand Care Guide]({{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html) for details.
 
 -----
 
@@ -145,8 +145,8 @@ You'll learn this in detail, but here’s a preview:
 
 Before your first session, we recommend completing these short knowledge quizzes to familiarize yourself with key concepts:
 
-- [**Boathouse Rules Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=bh) - Test your understanding of boathouse protocols and equipment care
-- [**Safety Guidelines Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=safety) - Review essential safety procedures and river navigation rules
+- [**Boathouse Rules Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=bh) - Test your understanding of boathouse protocols and equipment care
+- [**Safety Guidelines Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=safety) - Review essential safety procedures and river navigation rules
 
 Completing these quizzes will help you feel more prepared for your first session and enhance your learning experience!
 

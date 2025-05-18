@@ -45,12 +45,13 @@ The most important rule in rowing traffic is to **stay to the right** side of th
     <div class="accordion-content-inner">
       <h3>Passing Another Boat</h3>
 
-When you need to pass a slower boat ahead of you:
-
-1. Check carefully that the passing lane is clear
-2. Call out "Passing on your port!" (their left side)
-3. Move away from shore to pass
-4. Return to your normal lane once safely past
+      <p>When you need to pass a slower boat ahead of you:</p>
+      <ol>
+        <li>Check carefully that the passing lane is clear</li>
+        <li>Call out "Passing on your port!" (their left side)</li>
+        <li>Move away from shore to pass</li>
+        <li>Return to your normal lane once safely past</li>
+      </ol>
 
       <h3>Meeting Oncoming Boats</h3>
 
@@ -72,18 +73,20 @@ When you need to pass a slower boat ahead of you:
     <div class="accordion-content-inner">
       <h3>Bridges</h3>
 
-Bridge navigation requires extra care:
-
-1. No passing under bridges - ever!
-2. Approach in single file
-3. Use only the designated arch for rowing
-4. Stay centered in the arch
-5. Maintain a straight line through the bridge
+      <p>Bridge navigation requires extra care:</p>
+      <ol>
+        <li>No passing under bridges - ever!</li>
+        <li>Always approach bridges in single file</li>
+        <li>Use only the designated arch for rowing</li>
+        <li>Stay centered in the arch</li>
+        <li>Maintain a straight line through the bridge</li>
+        <li>Be aware of the current and wind effects</li>
+        <li>Be cautious of powerboats and their wakes</li>
+      </ol>
 
       <h3>Narrow Sections</h3>
 
       <p>In narrow areas of the waterway:</p>
-
       <ol>
         <li>Be extra vigilant - look around more frequently</li>
         <li>Stick close to the right shore</li>
@@ -100,12 +103,13 @@ Bridge navigation requires extra care:
     <div class="accordion-content-inner">
       <h3>Standard Calls</h3>
 
-Learn these important verbal signals:
-
-- **"Ahead!"** - When approaching boats head-on
-- **"Passing on your port!"** - When overtaking
-- **"Stop!"** - Emergency stop needed
-- **"Look out!"** - Immediate danger
+      <p>Learn these important verbal signals:</p>
+      <ul>
+        <li><b>Ahead!</b> - When approaching another boat</li>
+        <li><b>Passing on your port!</b> - When overtaking</li>
+        <li><b>Stop!</b> - Emergency stop needed</li>
+        <li><b>Look out!</b> - Immediate danger</li>
+      </ul>
 
       <h3>Coach Signals</h3>
 
@@ -124,13 +128,42 @@ Learn these important verbal signals:
   <div class="accordion-content">
     <div class="accordion-content-inner">
 
-- [x] Stay to the right (starboard) side of the waterway
-- [x] Look over your shoulder every 3-5 strokes
-- [x] Pass other boats on their port (left) side
-- [x] Never pass under bridges
-- [x] Communicate clearly with other rowers
-- [x] Follow all coach instructions immediately
-- [x] If in doubt, slow down or stop
+      <h3>Before You Row</h3>
+
+      <p>Check your equipment and safety gear:</p>
+      <ul>
+        <li>Life jacket (PFD) properly fitted</li>
+        <li>Rowing shell in good condition</li>
+        <li>Oars are undamaged and secure</li>
+        <li>Emergency whistle attached to your PFD</li>
+        <li>Cell phone in a waterproof case (if needed)</li>
+        <li>Sign out the boat, record time, name, and date</li>
+      </ul>
+
+      <h3>On the Water</h3>
+
+      <p>Follow these rules while rowing:</p>
+      <ul>
+        <li>Stay to the right (starboard) side of the waterway</li>
+        <li>Look over your shoulder every 3-5 strokes</li>
+        <li>Pass other boats on their port (left) side</li>
+        <li>Never pass under bridges</li>
+        <li>Communicate clearly with other rowers</li>
+        <li>Follow all coach instructions immediately</li>
+        <li>If in doubt, slow down or stop</li>
+      </ul>
+      
+      <h3>Emergency Preparedness</h3>
+      <p>Be ready for emergencies:</p>
+      <ul>
+        <li>Keep a safe distance from other boats</li>
+        <li>Be aware of the current and wind conditions</li>
+        <li>Be familiar with the area and its hazards</li>
+        <li>Don't row alone - always have a buddy</li>
+        <li>Have a PFD with you at all times</li>
+        <li>Have a plan for bad weather</li>
+        <li>Stay hydrated and take breaks as needed</li>
+      </ul>
 
     </div>
   </div>

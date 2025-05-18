@@ -65,7 +65,7 @@ For a preview of what this looks like, review the [Flip Test demonstration video
 
 To reinforce what you've learned in this session, we encourage you to complete the Session 1 quiz:
 
-[**Complete Session 1 Quiz**]({{ site.baseurl }}/src/quiz_module.html?quiz=1)
+[**Complete Session 1 Quiz**]({{ site.baseurl }}/resources/quiz_module.html?quiz=1)
 
 This short quiz covers the key concepts introduced today and will help solidify your understanding of basic sculling principles.
 

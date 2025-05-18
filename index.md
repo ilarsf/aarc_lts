@@ -69,8 +69,8 @@ layout: default
       <ul class="mb-0">
         <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html"><strong>Learner's Guide</strong></a></li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html"><strong>Q&A Companion</strong></a></li>
-        <li><a href="{{ site.baseurl }}/src/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a></li>
-        <li><a href="{{ site.baseurl }}/src/AARC_Safety_Rules.pdf" target="_blank"><strong>Safety Rules</strong></a></li>
+        <li><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html"><strong>Self-Rescue Guide</strong></a></li>
+        <li><a href="{{ site.baseurl }}/resources/AARC_Safety_Rules.pdf" target="_blank"><strong>Safety Rules</strong></a></li>
         <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html#quizzes-tab"><strong>Knowledge Check Quizzes</strong></a></li>
       </ul>
     </div>
