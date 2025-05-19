@@ -31,8 +31,8 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">KRAFT: Taking It to the Next Level</button>
-                <div class="accordion-content">
+                <button class="accordion-toggle" aria-expanded="false" aria-controls="kraft-content">KRAFT: Taking It to the Next Level</button>
+                <div class="accordion-content" id="kraft-content">
                     <div class="accordion-content-inner">
                         <p>You're familiar with the basic KRAFT principles (Keep shoulders relaxed, Reach from hips, Arms straight until legs are flat, Feather after extraction, Tap down before extraction). Here's how to refine each principle for more advanced rowing:</p>
 
@@ -148,8 +148,8 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Advanced Balance Exercises</button>
-                <div class="accordion-content">
+                <button class="accordion-toggle" aria-expanded="false" aria-controls="balance-content">Advanced Balance Exercises</button>
+                <div class="accordion-content" id="balance-content">
                     <div class="accordion-content-inner">
                         <div class="row">
                             <div class="col-md-6">
@@ -256,7 +256,7 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             
             <div class="accordion-section">
                 <button class="accordion-toggle" aria-expanded="false" aria-controls="drills-content">Advanced Training Drills</button>
-                <div class="accordion-content">
+                <div class="accordion-content" id="drills-content">
                     <div class="accordion-content-inner">
                         <div class="row">
                             <div class="col-md-6">
@@ -321,8 +321,8 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Technical Analysis</button>
-                <div class="accordion-content">
+                <button class="accordion-toggle" aria-expanded="false" aria-controls="technical-analysis-content">Technical Analysis</button>
+                <div class="accordion-content" id="technical-analysis-content">
                     <div class="accordion-content-inner">
                         <h3>Working with Video Analysis</h3>
                         <div class="info-box tip">
@@ -340,8 +340,8 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Structured Training Approach</button>
-                <div class="accordion-content">
+                <button class="accordion-toggle" aria-expanded="false" aria-controls="training-approach-content">Structured Training Approach</button>
+                <div class="accordion-content" id="training-approach-content">
                     <div class="accordion-content-inner">
                         <h3>Developing a Training Plan</h3>
                         <p>As you move beyond the Learn to Scull program, consider developing a more structured approach to your rowing:</p>
@@ -380,8 +380,8 @@ As you become more comfortable with the basic sculling stroke and boat control, 
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Next Steps in Your Rowing Journey</button>
-                <div class="accordion-content">
+                <button class="accordion-toggle" aria-expanded="false" aria-controls="next-steps-content">Next Steps in Your Rowing Journey</button>
+                <div class="accordion-content" id="next-steps-content">
                     <div class="accordion-content-inner">
                         <div class="info-box tip">
                             <h4>Continuing Your Development</h4>
@@ -409,3 +409,4 @@ As you become more comfortable with the basic sculling stroke and boat control, 
     <a href="../technique/videos.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Instructional Videos</a>
     <a href="../resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
 </div>
+

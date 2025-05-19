@@ -12,8 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle the active class on the button
             this.classList.toggle('active');
 
-            // Get the target content
-            const content = this.nextElementSibling;
+            // Update aria-expanded attribute
+            const isExpanded = this.classList.contains('active');
+            this.setAttribute('aria-expanded', isExpanded);
+
+            // Get the target content - either by aria-controls or next sibling
+            let content;
+            if (this.hasAttribute('aria-controls')) {
+                const contentId = this.getAttribute('aria-controls');
+                content = document.getElementById(contentId);
+            }
+
+            // Fallback to next sibling if no aria-controls or if content not found
+            if (!content) {
+                content = this.nextElementSibling;
+            }
 
             // Toggle the content visibility
             if (content.style.maxHeight) {
