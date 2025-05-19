@@ -1,0 +1,454 @@
+/* River Traffic Interactive Map and Accordion Layout */
+
+.river-traffic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Interactive Map Layout */
+.interactive-map-container {
+    position: relative;
+    background: #e3f2fd;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #90caf9;
+    margin-bottom: 20px;
+}
+
+.interactive-map-title {
+    color: #1565c0;
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 10px;
+}
+
+.river-map {
+    position: relative;
+    background-color: #bbdefb;
+    /* Water color */
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.river-map svg {
+    width: 100%;
+    height: 100%;
+}
+
+.river-map path.river {
+    fill: #bbdefb;
+    /* Light blue for water */
+    stroke: #64b5f6;
+    /* Blue border for water */
+    stroke-width: 2;
+}
+
+.river-map .land {
+    fill: #c8e6c9;
+    /* Light green for land */
+}
+
+.river-map .landmark {
+    fill: #8d6e63;
+}
+
+.river-map .bridge {
+    fill: #795548;
+    stroke: #5d4037;
+    stroke-width: 2;
+}
+
+.river-map .bridge-arch {
+    fill: #bbdefb;
+    stroke: #5d4037;
+    stroke-width: 2;
+}
+
+.river-map .traffic-arrow {
+    fill: none;
+    stroke: #f44336;
+    stroke-width: 3;
+    stroke-dasharray: 7, 5;
+    animation: flowAnimation 2s linear infinite;
+}
+
+.river-map .traffic-arrow.right {
+    stroke: #4caf50;
+}
+
+.river-map .highlight-point {
+    fill: #ff9800;
+    stroke: #f57c00;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.river-map .highlight-point:hover,
+.river-map .highlight-point.active {
+    fill: #f57c00;
+    r: 8;
+}
+
+.river-map .hazard {
+    fill: #e53935;
+    stroke: #c62828;
+    stroke-width: 2;
+}
+
+.map-legend {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.85rem;
+    max-width: 200px;
+}
+
+.map-legend h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.legend-label {
+    font-size: 0.8rem;
+}
+
+.map-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.map-control-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.map-control-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.map-control-btn.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+}
+
+/* Infobox that appears when clicking on map points */
+.map-infobox {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    display: none;
+    z-index: 100;
+}
+
+.map-infobox.visible {
+    display: block;
+}
+
+.map-infobox h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1976d2;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.map-infobox p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.map-infobox-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #9e9e9e;
+}
+
+.map-infobox-close:hover {
+    color: #424242;
+}
+
+/* Navigation Rules Accordions */
+.traffic-rules-section {
+    margin-bottom: 30px;
+}
+
+.traffic-accordion {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.traffic-accordion-toggle {
+    background-color: #f5f5f5;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.traffic-accordion-toggle:hover {
+    background-color: #eeeeee;
+}
+
+.traffic-accordion-toggle.active {
+    background-color: #e3f2fd;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.traffic-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #ffffff;
+}
+
+.traffic-accordion-content.active {
+    max-height: 1000px;
+}
+
+.traffic-accordion-inner {
+    padding: 15px;
+}
+
+.traffic-rule-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.traffic-rule-icon {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 24px;
+    color: #1976d2;
+    padding-top: 3px;
+}
+
+.traffic-rule-content {
+    flex: 1;
+}
+
+.traffic-rule-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1976d2;
+}
+
+.traffic-rule-description {
+    margin-bottom: 10px;
+}
+
+/* Traffic Pattern Visualization */
+.traffic-pattern {
+    display: flex;
+    background-color: #e3f2fd;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+}
+
+.traffic-pattern::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #2196f3;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.traffic-pattern::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #bbdefb;
+    top: 15%;
+    left: 0;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.traffic-direction {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+}
+
+.traffic-direction.upstream {
+    border-right: 2px dashed #2196f3;
+}
+
+.traffic-direction-label {
+    font-weight: 600;
+    color: #1976d2;
+    font-size: 0.9rem;
+    background-color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid #2196f3;
+}
+
+.traffic-boat {
+    width: 60px;
+    height: 15px;
+    background-color: #424242;
+    position: relative;
+    border-radius: 10px;
+}
+
+.traffic-boat::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.traffic-boat.upstream::after {
+    border-bottom: 8px solid #424242;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.traffic-boat.downstream::after {
+    border-top: 8px solid #424242;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Animations */
+@keyframes flowAnimation {
+    from {
+        stroke-dashoffset: 24;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .river-map {
+        height: 400px;
+    }
+
+    .map-legend {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .traffic-rule-icon {
+        flex: 0 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .river-map {
+        height: 300px;
+    }
+}
+
+/* Communication Boxes */
+.communication-box {
+    background-color: #f5f5f5;
+    border-left: 4px solid #2196f3;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.communication-box h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1976d2;
+    font-size: 1rem;
+}
+
+.communication-speaker {
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.communication-phrase {
+    font-style: italic;
+}
+
+.communication-response {
+    color: #4caf50;
+}

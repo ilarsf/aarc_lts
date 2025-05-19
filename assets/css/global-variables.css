@@ -1,0 +1,47 @@
+/* Global variables and common button styles */
+:root {
+    --theme-color: #0073E6;
+    --theme-color-dark: #005BB5;
+    --aarc-blue: #0073E6;
+    --aarc-blue-hover: #005BB5;
+}
+
+/* Global button styles to ensure consistency */
+.btn,
+.button-primary,
+.cta-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--theme-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover,
+.button-primary:hover,
+.cta-button:hover {
+    background-color: var(--theme-color-dark);
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix for bullet points in navigation menu */
+.site-nav ul,
+.site-nav ul.fallback-nav,
+.site-nav ul.dropdown-menu,
+.dropdown-menu {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove the commented out mobile navigation styles
+   These were causing conflicts with style.scss */

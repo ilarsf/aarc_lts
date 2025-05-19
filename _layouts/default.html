@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 
 <head>
   <meta charset="UTF-8">
@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% seo %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   {% include head-custom.html %}
 </head>
 
@@ -169,93 +171,26 @@
         });
       }
 
-      // Tab navigation functionality
-      const tabLinks = document.querySelectorAll('.tab-link');
-      if (tabLinks.length > 0) {
-        // Set first tab as active by default
-        const firstTabId = tabLinks[0].getAttribute('data-tab');
-        document.getElementById(firstTabId).classList.add('active');
-        tabLinks[0].classList.add('active');
+      // Register section-to-tab mapping for deep linking
+      window.sectionToTabMap = {
+        // Learner Guide
+        'welcome-to-sculling': 'welcome-tab',
+        'what-to-expect': 'welcome-tab',
+        'your-sculling-journey': 'journey-tab',
+        'the-rowing-stroke-a-beginners-guide': 'technique-tab',
+        'essential-sculling-techniques': 'technique-tab',
+        'safety-first-the-flip-test-and-self-rescue': 'safety-tab',
+        'next-steps-after-the-course': 'reference-tab',
 
-        // Function to activate a specific tab by ID or section name
-        function activateTab(tabIdOrHash) {
-          let tabId = tabIdOrHash;
-
-          // Handle section IDs that should map to specific tabs
-          const sectionToTabMap = {
-            // Learner Guide
-            'welcome-to-sculling': 'welcome-tab',
-            'what-to-expect': 'welcome-tab',
-            'your-sculling-journey': 'journey-tab',
-            'the-rowing-stroke-a-beginners-guide': 'technique-tab',
-            'essential-sculling-techniques': 'technique-tab',
-            'safety-first-the-flip-test-and-self-rescue': 'safety-tab',
-            'next-steps-after-the-course': 'reference-tab',
-
-            // Coach Manual
-            'program-overview': 'overview-tab',
-            'program-structure': 'overview-tab',
-            'session-goals-and-progression': 'sessions-tab',
-            'technical-teaching-points': 'technical-tab',
-            'class-management': 'management-tab',
-            'coaching-tips': 'management-tab',
-            'resources': 'resources-tab'
-          };
-
-          // Check if we need to map a section ID to a tab ID
-          if (sectionToTabMap[tabIdOrHash]) {
-            tabId = sectionToTabMap[tabIdOrHash];
-          }
-
-          // Find the tab link
-          const tabLink = document.querySelector(`.tab-link[data-tab="${tabId}"]`);
-          if (tabLink) {
-            // Deactivate current tabs
-            const activeTab = document.querySelector('.tab-content.active');
-            const activeLink = document.querySelector('.tab-link.active');
-
-            if (activeTab) activeTab.classList.remove('active');
-            if (activeLink) activeLink.classList.remove('active');
-
-            // Activate new tab
-            document.getElementById(tabId).classList.add('active');
-            tabLink.classList.add('active');
-
-            return true;
-          }
-          return false;
-        }
-
-        // Check for hash in URL to activate specific tab
-        if (window.location.hash) {
-          const hash = window.location.hash.substring(1);
-          if (activateTab(hash)) {
-            // Scroll to tab container
-            setTimeout(() => {
-              const tabContainer = document.querySelector('.tab-container');
-              if (tabContainer) {
-                window.scrollTo(0, tabContainer.offsetTop - 20);
-              }
-            }, 100);
-          }
-        }
-
-        // Tab click handling
-        tabLinks.forEach(tabLink => {
-          tabLink.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Get tab to activate
-            const tabId = this.getAttribute('data-tab');
-            activateTab(tabId);
-
-            // Update URL hash without scrolling
-            history.pushState(null, null, `#${tabId}`);
-          });
-        });
-
-        // Quick navigation links removed
-      }
+        // Coach Manual
+        'program-overview': 'overview-tab',
+        'program-structure': 'overview-tab',
+        'session-goals-and-progression': 'sessions-tab',
+        'technical-teaching-points': 'technical-tab',
+        'class-management': 'management-tab',
+        'coaching-tips': 'management-tab',
+        'resources': 'resources-tab'
+      };
     });
   </script>
 

@@ -1,0 +1,44 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include cards.html %}
+2. Structure your content using the pattern below:
+
+```
+<div class="card-grid">
+    <a href="/path/to/page.html" class="card">
+        <div class="card-image">
+            <img src="/assets/images/icon-image.png" alt="Card Title">
+        </div>
+        <div class="card-content">
+            <h3>Card Title</h3>
+            <p>Brief description of the card content or destination</p>
+        </div>
+    </a>
+
+    <a href="/path/to/another-page.html" class="card">
+        <!-- Another card structure -->
+    </a>
+
+    <!-- More cards as needed -->
+</div>
+```
+
+Feature Cards with Icons:
+
+```
+<div class="feature-cards">
+    <div class="feature-card">
+        <div class="icon">
+            <i class="fas fa-life-ring"></i> <!-- Using Font Awesome or similar -->
+        </div>
+        <h3>Safety First</h3>
+        <p>Brief description of the feature</p>
+        <a href="/path/to/page" class="cta-button">Learn More</a>
+    </div>
+
+    <!-- More feature cards -->
+</div>
+```
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/cards.css' | relative_url }}">

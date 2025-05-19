@@ -1,48 +1,75 @@
 ---
 layout: default
-title: About AARC - Ann Arbor Rowing Club
+title: About the Learn to Scull Program - AARC Learn to Scull
 ---
 
-# About Ann Arbor Rowing Club
+<div class="about-header">
+  <h1>About the Learn to Scull Program</h1>
+  <p class="lead">A comprehensive introduction to the art and sport of sculling from Ann Arbor Rowing Club.</p>
+</div>
 
-The Ann Arbor Rowing Club (AARC) is a volunteer‑run 501(c)(3) that promotes rowing on the Huron River for adults of all backgrounds and abilities.
+## Program Philosophy
 
-## Mission
+The AARC Learn to Scull program is designed with these core principles:
 
-We work to make rowing safe, welcoming, and affordable by
+- **Safety First:** Comprehensive water safety training including self-rescue techniques
+- **Progressive Learning:** Building skills incrementally from fundamentals to independent sculling
+- **Supportive Environment:** Small class sizes with experienced coaches and a 1:3 coach-to-student ratio
+- **Inclusive Approach:** Accessible to adults of all backgrounds, fitness levels, and learning styles
+- **Pathway to Membership:** Clear next steps for continuing development after program completion
 
-- teaching beginners through our Learn to Row and Learn to Scull classes  
-- providing coached training and racing for experienced athletes  
-- offering adaptive rowing and financial assistance so cost or disability is never a barrier  
-- fostering community, fitness, and respect for the river  
+## Program History
 
-## Programs
+Our Learn to Scull program has been introducing new scullers to the Huron River for over 15 years. Developed by experienced coaches and consistently refined through participant feedback, the program has evolved to use a weekend intensive format that maximizes learning and skill retention while accommodating busy schedules.
 
-- **Learn to Row / Learn to Scull:** step‑by‑step introduction for first‑time rowers  
-- **Technical Sweep:** small‑group sessions that refine technique  
-- **Open Sweep and Sculling:** coached recreational or competitive training  
-- **Adaptive Rowing:** customized sessions for athletes with disabilities  
-- **Winter Training:** erg, strength, and conditioning during the off‑water season  
-- **Private Coaching:** one‑on‑one instruction  
+## Program Structure
 
-## Facilities
+### Weekend Intensive Format
 
-Our boathouse and dock on the Huron River give members several miles of sheltered water. The fleet includes eights, fours, pairs, quads, doubles, singles, and adaptive shells. We are currently fundraising for an accessible dock upgrade.
+- Four 3-hour sessions over two consecutive weekends
+- Small groups (maximum 6 participants per class)
+- 1:3 coach-to-student ratio for personalized instruction
+- Comprehensive curriculum covering technique, safety, and boat handling
 
-## Membership
+### The Learning Journey
 
-- Open to adults (18+) who can swim 100 m  
-- Club boats, oars, ergs, and safety launches included  
-- Discounts for students and veterans; scholarships available  
-- Volunteer hours keep fees low — members help at events, maintain equipment, and steward the river  
+1. **Weekend 1:** Focus on fundamentals, basic motion, and water safety
+   - Session 1: Introduction to equipment, basic technique on ergometers, water safety orientation
+   - Session 2: Flip test practice, first on-water experience, basic stroke components
 
-## Community Engagement
+2. **Weekend 2:** Focus on power application, navigation, and independent sculling
+   - Session 3: Refining technique, navigation skills, coordinated movements
+   - Session 4: Independent boat handling, full stroke sequence, next steps guidance
 
-- **Adaptive and Scholarship Programs:** removing financial or physical barriers  
-- **Veteran Outreach:** dedicated seats and events for service members  
-- **River Stewardship:** clean‑ups and education with local partners  
-- **Community Rows:** public open‑house rows each summer  
+## Equipment and Facilities
+
+The program utilizes:
+
+- **Training Singles:** Stable, beginner-friendly sculling boats
+- **Ergometers:** Indoor rowing machines for technical instruction
+- **Safety Equipment:** Personal flotation devices, safety launches, first aid supplies
+- **AARC Boathouse:** Located on the Huron River with access to protected rowing water
+- **Indoor Facilities:** Classroom space for presentations and land-based instruction
+
+## Beyond the Program
+
+After completing Learn to Scull, graduates can:
+
+- Join the Open Sculling Program (4-week trial period available at a discounted rate)
+- Become full AARC members with access to club boats and facilities
+- Participate in technique sessions and clinics for continued improvement
+- Engage with the broader AARC community through volunteer opportunities and events
+
+<div class="info-box tip">
+  <h4>More About AARC</h4>
+  <p>Learn to Scull is just one of many programs offered by Ann Arbor Rowing Club. Visit the <a href="https://aarc.clubexpress.com" target="_blank">AARC website</a> to discover all opportunities for rowing in Ann Arbor.</p>
+</div>
 
 ---
 
-For schedules, fees, and registration, visit the [Ann Arbor Rowing Club website](https://aarc.clubexpress.com).
+<div class="navigation-links">
+  <a href="../about/team.html" class="nav-link">Meet Our Team</a>
+  <a href="../about/contact.html" class="nav-link">Contact Information</a>
+  <a href="../about/faq.html" class="nav-link">Frequently Asked Questions</a>
+  <a href="../index.html" class="nav-link">Back to Home</a>
+</div>

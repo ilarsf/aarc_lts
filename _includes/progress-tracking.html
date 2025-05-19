@@ -1,0 +1,273 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include progress-tracking.html %}
+2. Structure your content using the patterns below:
+
+Skill Progress Tracking:
+```html
+<div class="skill-tracker">
+    <div class="skill-item" data-skill-id="catch-position">
+        <div class="skill-name">Catch Position</div>
+        <div class="progress-bar">
+            <input type="range" min="0" max="100" value="0" class="slider">
+            <div class="progress-indicator" style="width: 0%;"></div>
+            <span class="progress-value">0%</span>
+        </div>
+    </div>
+    <!-- More skills -->
+</div>
+```
+
+Checklist Component:
+```html
+<div class="interactive-checklist">
+    <div class="checklist-category">
+        <h4>Safety Skills</h4>
+        <div class="category-progress">
+            <div class="progress-indicator" style="width: 0%;"></div>
+            <span class="progress-value">0/5</span>
+        </div>
+        <div class="checklist-items">
+            <div class="checklist-item">
+                <input type="checkbox" id="safety-flip-test" name="safety-checklist">
+                <label for="safety-flip-test">Successfully completed flip test</label>
+            </div>
+            <!-- More items -->
+        </div>
+    </div>
+    <!-- More categories -->
+</div>
+```
+
+Competency Self-Assessment:
+```html
+<div class="competency-self-assessment">
+    <div class="competency-level">
+        <h4>Level 1: Developing</h4>
+        <div class="competency-indicators">
+            <div class="indicator">
+                <input type="checkbox" id="level1-safety" name="level1">
+                <label for="level1-safety">Safety Awareness</label>
+            </div>
+            <div class="indicator">
+                <input type="checkbox" id="level1-boat" name="level1">
+                <label for="level1-boat">Boat Handling</label>
+            </div>
+            <!-- More indicators -->
+        </div>
+    </div>
+    <!-- More competency levels -->
+</div>
+```
+
+Progress Control Actions:
+```html
+<div class="progress-actions">
+    <button id="save-progress" class="btn">Save Progress</button>
+    <button id="reset-progress" class="btn btn-outline">Reset Progress</button>
+    <button id="export-progress" class="btn btn-outline">Export Progress</button>
+</div>
+```
+
+{% endcomment %}
+
+<script src="{{ '/assets/js/progress-tracker.js' | relative_url }}" defer></script>
+
+<style>
+    /* Progress Tracker Styles */
+    .skill-tracker {
+        margin-bottom: 2rem;
+    }
+
+    .skill-item {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+
+    .skill-name {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .progress-bar {
+        position: relative;
+        height: 2rem;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .progress-indicator {
+        position: absolute;
+        height: 100%;
+        background-color: #4CAF50;
+        transition: width 0.3s ease;
+    }
+
+    .progress-value {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #333;
+        font-weight: 600;
+        z-index: 1;
+    }
+
+    input[type="range"].slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.01;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /* Checklist Styles */
+    .interactive-checklist {
+        margin-bottom: 2rem;
+    }
+
+    .checklist-category {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+
+    .checklist-category h4 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .category-progress {
+        position: relative;
+        height: 0.5rem;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    .category-progress .progress-indicator {
+        position: absolute;
+        height: 100%;
+        background-color: #4CAF50;
+        transition: width 0.3s ease;
+    }
+
+    .category-progress .progress-value {
+        position: absolute;
+        right: 0;
+        top: -1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .checklist-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+        .checklist-items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .checklist-item input[type="checkbox"] {
+        margin-top: 0.25rem;
+    }
+
+    /* Competency Assessment Styles */
+    .competency-self-assessment {
+        margin-bottom: 2rem;
+    }
+
+    .competency-level {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .competency-level:nth-child(1) {
+        background-color: #ffecb3;
+    }
+
+    .competency-level:nth-child(2) {
+        background-color: #c8e6c9;
+    }
+
+    .competency-level:nth-child(3) {
+        background-color: #bbdefb;
+    }
+
+    .competency-indicators {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+        .competency-indicators {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .indicator {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .indicator input[type="checkbox"] {
+        margin-top: 0.25rem;
+    }
+
+    /* Progress Actions */
+    .progress-actions {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 576px) {
+        .progress-actions {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #004c99;
+    }
+
+    .btn-outline {
+        background-color: transparent;
+        border: 1px solid #0066cc;
+        color: #0066cc;
+    }
+
+    .btn-outline:hover {
+        background-color: #f0f7ff;
+    }
+</style>

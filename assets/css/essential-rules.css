@@ -1,0 +1,232 @@
+/* Priority-based Accordion CSS */
+
+/* Enhanced accordion specific for essential rules */
+.rules-accordion-section {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.rules-accordion-toggle {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    background-color: #f8f8f8;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rules-accordion-toggle:hover {
+    background-color: #f0f0f0;
+}
+
+.rules-accordion-toggle.active {
+    background-color: #e3f2fd;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.rules-accordion-content {
+    padding: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.rules-accordion-content.active {
+    max-height: 1000px;
+}
+
+.rules-accordion-inner {
+    padding: 15px;
+}
+
+/* Priority tag enhancements */
+.rules-priority-tag {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.rules-priority-tag.critical {
+    background-color: #f44336;
+    color: white;
+}
+
+.rules-priority-tag.critical::before {
+    content: "⚠️ ";
+    margin-right: 3px;
+}
+
+.rules-priority-tag.important {
+    background-color: #ff9800;
+    color: white;
+}
+
+.rules-priority-tag.important::before {
+    content: "⚠ ";
+    margin-right: 3px;
+}
+
+.rules-priority-tag.standard {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Rules content styling */
+.rule-content-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.rule-icon {
+    flex: 0 0 40px;
+    font-size: 24px;
+    color: #1976d2;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.rule-text {
+    flex: 1;
+}
+
+.rule-text h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1976d2;
+}
+
+.rule-text p {
+    margin-top: 0;
+}
+
+/* Rule list styles */
+.rule-list {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.rule-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.rule-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.rule-list li.warning::before {
+    content: "!";
+    color: #f44336;
+}
+
+/* Filter buttons */
+.rules-filter-btn {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    padding: 8px 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rules-filter-btn:hover {
+    background: #e0e0e0;
+}
+
+.rules-filter-btn.active {
+    background: #2196f3;
+    color: white;
+    border-color: #2196f3;
+}
+
+.rules-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Dividers */
+.rules-divider {
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+    position: relative;
+}
+
+.rules-divider-label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: white;
+    padding: 0 10px;
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+/* Info boxes */
+.rules-info-box {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px;
+    position: relative;
+}
+
+.rules-info-box.warning {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+}
+
+.rules-info-box.danger {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+}
+
+.rules-info-box.info {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+}
+
+.rules-info-box h3,
+.rules-info-box h4 {
+    margin-top: 0;
+    color: #424242;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rules-accordion-toggle {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .rules-priority-tag {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+}

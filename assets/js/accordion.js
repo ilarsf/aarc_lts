@@ -103,19 +103,89 @@ document.addEventListener('DOMContentLoaded', function () {
             content.style.maxHeight = null;
             content.classList.remove('visible');
         });
-    }
+    }    // Add event listeners for expand/collapse all buttons
+    const expandAllBtns = document.querySelectorAll('[id^="expand-all"]');
+    const collapseAllBtns = document.querySelectorAll('[id^="collapse-all"]');
 
-    // Add event listeners for expand/collapse all buttons
-    const expandAllBtn = document.getElementById('expand-all');
-    const collapseAllBtn = document.getElementById('collapse-all');
+    expandAllBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            // Check if this button has a specific tab identifier (like "expand-all-intermediate")
+            const btnId = this.id;
+            const tabId = btnId.replace('expand-all-', '');
 
-    if (expandAllBtn) {
-        expandAllBtn.addEventListener('click', window.expandAllSections);
-    }
+            // Find the tab content this button belongs to
+            let tabContent;
+            console.log(`Button ID: ${btnId}, Tab ID: ${tabId}`);
 
-    if (collapseAllBtn) {
-        collapseAllBtn.addEventListener('click', window.collapseAllSections);
-    }
+            if (tabId && tabId !== 'expand-all') {
+                // Use the parent tab content if this is in a tabbed interface
+                tabContent = document.getElementById(tabId);
+                if (!tabContent) {
+                    // If not found by ID, the button is probably within the tab already
+                    tabContent = this.closest('.tab-content');
+                }
+            } else {
+                tabContent = this.closest('.tab-content');
+            }
+
+            if (tabContent) {
+                console.log(`Found tab content: ${tabContent.id}`);
+                const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
+                console.log(`Found ${accordionToggles.length} accordion toggles in ${tabContent.id}`);
+
+                accordionToggles.forEach(toggle => {
+                    if (!toggle.parentElement.classList.contains('filtered')) {
+                        const content = toggle.nextElementSibling;
+                        toggle.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 2000 + "px";
+                        content.classList.add('visible');
+                    }
+                });
+            } else {
+                console.log('No tab content found, expanding all sections');
+                // If not in a tab, expand all
+                window.expandAllSections();
+            }
+        });
+    }); collapseAllBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            // Check if this button has a specific tab identifier (like "collapse-all-intermediate")
+            const btnId = this.id;
+            const tabId = btnId.replace('collapse-all-', '');
+
+            // Find the tab content this button belongs to
+            let tabContent;
+            console.log(`Button ID: ${btnId}, Tab ID: ${tabId}`);
+
+            if (tabId && tabId !== 'collapse-all') {
+                // Use the parent tab content if this is in a tabbed interface
+                tabContent = document.getElementById(tabId);
+                if (!tabContent) {
+                    // If not found by ID, the button is probably within the tab already
+                    tabContent = this.closest('.tab-content');
+                }
+            } else {
+                tabContent = this.closest('.tab-content');
+            }
+
+            if (tabContent) {
+                console.log(`Found tab content: ${tabContent.id}`);
+                const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
+                console.log(`Found ${accordionToggles.length} accordion toggles in ${tabContent.id}`);
+
+                accordionToggles.forEach(toggle => {
+                    const content = toggle.nextElementSibling;
+                    toggle.classList.remove('active');
+                    content.style.maxHeight = null;
+                    content.classList.remove('visible');
+                });
+            } else {
+                console.log('No tab content found, collapsing all sections');
+                // If not in a tab, collapse all
+                window.collapseAllSections();
+            }
+        });
+    });
 
     // Initial setup - ensure accordion content is properly hidden
     accordionToggles.forEach(toggle => {

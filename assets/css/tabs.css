@@ -19,7 +19,8 @@
     scrollbar-width: thin;
 }
 
-.tab-button {
+.tab-button,
+.tab-link {
     background-color: #f5f5f5;
     color: #333;
     border: none;
@@ -33,17 +34,20 @@
     font-size: 0.9rem;
 }
 
-.tab-button:hover {
+.tab-button:hover,
+.tab-link:hover {
     background-color: #e0e0e0;
 }
 
-.tab-button.active {
+.tab-button.active,
+.tab-link.active {
     background-color: #0073E6;
     color: white;
 }
 
 .tab-content {
-    display: none;
+    display: none !important;
+    /* Use !important to override any conflicting styles */
     padding: 25px;
     border: 1px solid #e7e7e7;
     border-top: none;
@@ -52,7 +56,8 @@
 }
 
 .tab-content.active {
-    display: block;
+    display: block !important;
+    /* Use !important to ensure visibility */
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -75,30 +80,26 @@
     .tab-nav {
         flex-wrap: nowrap;
         overflow-x: auto;
+        flex-direction: column;
     }
 
-    .tab-button {
+    .tab-button,
+    .tab-link {
         flex: 0 0 auto;
         padding: 10px 15px;
         font-size: 0.85rem;
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+        margin-bottom: 2px;
     }
 
     .tab-content {
         padding: 15px;
     }
-}
 
-flex-direction: column;
-}
-
-.tab-button {
-    width: 100%;
-    border-radius: 0;
-    margin-right: 0;
-    margin-bottom: 2px;
-}
-
-.tab-button.active {
-    border-radius: 0;
-}
+    .tab-button.active,
+    .tab-link.active {
+        border-radius: 0;
+    }
 }

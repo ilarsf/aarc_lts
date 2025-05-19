@@ -10,6 +10,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+vendor/
+.bundle/
 
 # Editor directories and files
 .idea

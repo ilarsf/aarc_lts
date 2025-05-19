@@ -1,0 +1,130 @@
+/* Coach Portal Specific Styles */
+
+.cards-container {
+    margin: 2rem 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.resource-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h3 {
+    margin-top: 0.5rem;
+    color: var(--theme-color);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--theme-color);
+    margin-bottom: 1rem;
+}
+
+.resource-card p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.resource-card .cta-button {
+    margin-top: auto;
+    display: inline-block;
+    min-width: 140px;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--theme-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.resource-card .cta-button:hover {
+    background-color: var(--theme-color-dark, #0056b3);
+}
+
+/* Tab styles specific to coach portal */
+.coach-content .tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.coach-content .tab-button {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #495057;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.coach-content .tab-button:hover {
+    color: var(--theme-color);
+}
+
+.coach-content .tab-button.active {
+    color: var(--theme-color);
+    border-bottom-color: var(--theme-color);
+}
+
+.coach-content .tab-content {
+    display: none;
+    padding: 1.5rem 0;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.coach-content .tab-content.active {
+    display: block;
+}
+
+.coach-content .tab-content-inner {
+    padding: 0 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .coach-content .tab-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

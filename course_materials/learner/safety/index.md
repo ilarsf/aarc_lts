@@ -18,12 +18,12 @@ This section contains safety information that all Learn to Scull participants sh
 
 ## Safety Rules and Policies
 
-- [Learn-to-Scull Safety Rules](/src/Learn_to_Scull_Safety_Rules.html) - **Essential rules** for Learn-to-Scull participants (includes quiz)
-- [AARC Safety Rules (PDF)](/src/AARC_Safety_Rules.pdf) - The complete official safety rules for all AARC programs
-- [Boathouse Rules and Equipment Care](/src/Boathouse_Rules_and_Equipment_Care.md) - Guidelines for proper behavior and equipment handling at the boathouse
+- [Learn-to-Scull Safety Rules]({{ site.baseurl }}/src/Learn_to_Scull_Safety_Rules.html) - **Essential rules** for Learn-to-Scull participants (includes quiz)
+- [AARC Safety Rules (PDF)]({{ site.baseurl }}/src/AARC_Safety_Rules.pdf) - The complete official safety rules for all AARC programs
+- [Boathouse Rules and Equipment Care]({{ site.baseurl }}/src/Boathouse_Rules_and_Equipment_Care.md) - Guidelines for proper behavior and equipment handling at the boathouse
 
 ## Additional Resources
 
-- [Hand Care for Rowers](/src/Rowers_Hand_Blister_Treatment.md) - Information on preventing and treating blisters
+- [Hand Care for Rowers]({{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.md) - Information on preventing and treating blisters
 
 [← Back to Learner Resources](../index.md)

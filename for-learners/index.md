@@ -1,0 +1,282 @@
+---
+layout: default
+title: Learner's Guide
+description: A comprehensive guide for participants in the AARC Learn to Scull Program
+---
+
+{% include tabs.html %}
+{% include cards.html %}
+
+# Learner's Guide: Learn to Scull Program
+
+Welcome to the Learn to Scull program! This guide will support your journey from complete beginner to confident sculler. Sculling is a rewarding sport that offers a unique blend of technical skill, physical exercise, and connection with nature.
+
+<div class="tab-container">
+    <div class="tab-nav">
+        <button class="tab-link active" data-tab="getting-started">Getting Started</button>
+        <button class="tab-link" data-tab="learning-journey">Learning Journey</button>
+        <button class="tab-link" data-tab="technique">Technique</button>
+        <button class="tab-link" data-tab="safety">Safety</button>
+        <button class="tab-link" data-tab="resources">Resources</button>
+    </div>
+
+    <div class="tab-content active" id="getting-started">
+        <div class="tab-content-inner">
+            <h3>Getting Started</h3>
+            <p>Everything you need to know before your first session, from program overview to basic terminology.</p>
+            
+            <div class="card-grid">
+                <a href="{{ site.baseurl }}/for-learners/getting-started/program-overview.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Program Overview</h3>
+                        <p>Learn about the program structure, what to expect, and how the sessions build on each other.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/getting-started/preparation.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Preparation</h3>
+                        <p>Everything you need to bring and prepare before your first rowing session.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Terminology</h3>
+                        <p>Essential rowing terms and vocabulary to help you understand instructions.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="learning-journey">
+        <div class="tab-content-inner">
+            <h3>Learning Journey</h3>
+            <p>Session-by-session guides to help you track your progress through the Learn to Scull program.</p>
+            
+            <div class="card-grid">
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-1.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-1"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Session 1</h3>
+                        <p>Equipment familiarization, safety procedures, and first strokes on the water.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-2.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-2"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Session 2</h3>
+                        <p>Basic stroke technique, coordination, and skill development exercises.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-3"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Session 3</h3>
+                        <p>Intermediate skills, drill sequences, and river navigation practice.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-4"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Session 4</h3>
+                        <p>Advanced skills, independent rowing, and preparation for continued practice.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="technique">
+        <div class="tab-content-inner">
+            <h3>Technique</h3>
+            <p>Resources to help you understand and refine your sculling technique.</p>
+            
+            <div class="card-grid">
+                <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Basic Technique</h3>
+                        <p>Learn the fundamentals of the sculling stroke with detailed breakdowns of each phase.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/technique/common-fixes.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Common Fixes</h3>
+                        <p>Solutions to common technical problems that new scullers encounter.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/technique/videos.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Technique Videos</h3>
+                        <p>Visual demonstrations of proper sculling technique and common drills.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/technique/advanced-technique.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Advanced Technique</h3>
+                        <p>More sophisticated aspects of sculling for ongoing skill development.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="safety">
+        <div class="tab-content-inner">
+            <h3>Safety</h3>
+            <p>Critical safety information and practices for all scullers.</p>
+            
+            <div class="card-grid">
+                <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Essential Rules</h3>
+                        <p>The most important safety protocols every rower must follow on the water.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Self-Rescue</h3>
+                        <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-traffic-light"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>River Traffic</h3>
+                        <p>Navigation patterns and rules for sharing the waterway safely with others.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Weather Guidelines</h3>
+                        <p>Understanding weather conditions and making safe rowing decisions.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="resources">
+        <div class="tab-content-inner">
+            <h3>Resources</h3>
+            <p>Additional materials to support your learning and ongoing development as a sculler.</p>
+            
+            <div class="card-grid">
+                <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Answers to common questions about the program and learning to scull.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/resources/glossary.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Glossary</h3>
+                        <p>Comprehensive dictionary of rowing and sculling terminology.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/resources/assessment.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Self-Assessment</h3>
+                        <p>Tools to track your progress and identify areas for improvement.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-forward"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Next Steps</h3>
+                        <p>Options for continuing your rowing journey after completing the program.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="nav-item">
+    <i class="fas fa-life-ring"></i>
+    <h3>Safety</h3>
+    <p>Safety guidelines, self-rescue procedures, and rules</p>
+  </a>
+  
+  <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="nav-item">
+    <i class="fas fa-question-circle"></i>
+    <h3>Resources</h3>
+    <p>FAQs, terminology, and next steps</p>
+  </a>
+</div>
+
+## Quick Links
+
+- [Program Overview]({{ site.baseurl }}/for-learners/getting-started/program-overview.html)
+- [Session 1 Guide]({{ site.baseurl }}/for-learners/learning-journey/session-1.html)
+- [Essential Safety Rules]({{ site.baseurl }}/for-learners/safety/essential-rules.html)
+- [Basic Rowing Technique]({{ site.baseurl }}/for-learners/technique/basic-technique.html)
+- [Rowing Terminology]({{ site.baseurl }}/for-learners/resources/glossary.html)
+- [Frequently Asked Questions](resources/faq.html)

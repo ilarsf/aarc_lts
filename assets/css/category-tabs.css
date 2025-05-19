@@ -1,0 +1,115 @@
+/* Category Tabs CSS for Terminology Page */
+/* Extends the az-tabs.css with category-specific styling */
+
+.az-tab-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Enhanced tab buttons for categories */
+.az-tab-button {
+    padding: 10px 15px;
+    margin: 0 3px 5px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f8f8;
+    transition: all 0.2s ease;
+}
+
+.az-tab-button:hover {
+    background-color: #e9e9e9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.az-tab-button.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+}
+
+/* Info boxes */
+.info-box {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.info-box p {
+    margin: 5px 0;
+}
+
+.info-box ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.info-box a {
+    color: #0d47a1;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px dotted #0d47a1;
+}
+
+.info-box a:hover {
+    border-bottom: 1px solid #0d47a1;
+}
+
+/* Full width images */
+.full-width-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 15px 0;
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .az-tab-button {
+        padding: 8px 12px;
+        margin: 0 2px 3px;
+        font-size: 0.85rem;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+}
+
+/* Term highlighting in search results */
+.highlight-term {
+    background-color: rgba(255, 236, 179, 0.5);
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+/* Jump links */
+.term-jump-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.term-jump-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #424242;
+    font-size: 0.9rem;
+}
+
+.term-jump-link:hover {
+    background-color: #e0e0e0;
+}

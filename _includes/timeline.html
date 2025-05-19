@@ -1,0 +1,76 @@
+{% comment %}
+Usage instructions:
+1. Include this file in your markdown with: {% include timeline.html %}
+2. Structure your content using the pattern below:
+
+```
+<!-- Vertical Timeline for Session Plans -->
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="timeline-marker">
+            <span class="time">9:00</span>
+        </div>
+        <div class="timeline-content">
+            <h3>Activity Title</h3>
+            <p>Description of the activity...</p>
+            <ul>
+                <li>Key point 1</li>
+                <li>Key point 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-marker">
+            <span class="time">9:30</span>
+        </div>
+        <div class="timeline-content">
+            <!-- Another activity -->
+        </div>
+    </div>
+
+    <!-- More timeline items -->
+</div>
+```
+
+Progress Timeline for Learning Journey:
+
+```
+<div class="progress-timeline">
+    <div class="timeline-step completed">
+        <div class="step-marker">1</div>
+        <div class="step-content">
+            <h4>Session 1</h4>
+            <p>Introduction to Equipment</p>
+        </div>
+    </div>
+
+    <div class="timeline-step active">
+        <div class="step-marker">2</div>
+        <div class="step-content">
+            <h4>Session 2</h4>
+            <p>Basic Stroke Technique</p>
+        </div>
+    </div>
+
+    <div class="timeline-step">
+        <div class="step-marker">3</div>
+        <div class="step-content">
+            <h4>Session 3</h4>
+            <p>Advanced Skills</p>
+        </div>
+    </div>
+
+    <div class="timeline-step">
+        <div class="step-marker">4</div>
+        <div class="step-content">
+            <h4>Session 4</h4>
+            <p>Mastery & Independence</p>
+        </div>
+    </div>
+</div>
+```
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/timeline.css' | relative_url }}">
+<script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>
