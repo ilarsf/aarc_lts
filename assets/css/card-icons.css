@@ -1,0 +1,31 @@
+/* Card Icon styles */
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #f5f5f5;
+    color: #0077cc;
+    overflow: hidden;
+}
+
+.card-icon i {
+    font-size: 3rem;
+}
+
+/* Ensure proper structure for icon-based cards */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-content p {
+    flex: 1;
+}

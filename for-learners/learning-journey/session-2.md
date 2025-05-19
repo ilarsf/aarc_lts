@@ -300,34 +300,37 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             <h3>Looking Ahead to Session 3</h3>
             <p>Session 3 will focus on developing effective leg drive and power application while introducing navigation principles and river traffic patterns.</p>
             
-            <div class="cards-container">
+            <div class="resource-section">
                 <div class="card-grid">
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-calendar-day"></i>
                         </div>
-                        <h4 class="card-title">Session 3 Guide</h4>
-                        <p class="card-text">Learn about power application and river navigation</p>
-                        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Session 3 Guide</h3>
+                            <p>Learn about power application and river navigation</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html#the-recovery" class="card">
                         <div class="card-icon">
                             <i class="fas fa-hand-paper"></i>
                         </div>
-                        <h4 class="card-title">Recovery Technique</h4>
-                        <p class="card-text">Master the arms-body-slide sequence</p>
-                        <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html#the-recovery" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Recovery Technique</h3>
+                            <p>Master the arms-body-slide sequence</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-first-aid"></i>
                         </div>
-                        <h4 class="card-title">Hand Care Guide</h4>
-                        <p class="card-text">Prevent and treat rowing blisters</p>
-                        <a href="{{ site.baseurl }}/for-learners/health/hand-care.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Hand Care Guide</h3>
+                            <p>Prevent and treat rowing blisters</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 

@@ -46,18 +46,19 @@
 }
 
 .tab-content {
-    display: none !important;
-    /* Use !important to override any conflicting styles */
+    display: none;
     padding: 25px;
     border: 1px solid #e7e7e7;
     border-top: none;
     background-color: white;
     border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .tab-content.active {
-    display: block !important;
-    /* Use !important to ensure visibility */
+    display: block;
+    opacity: 1;
     animation: fadeIn 0.5s ease-in-out;
 }
 

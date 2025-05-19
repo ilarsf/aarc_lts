@@ -183,5 +183,4 @@ This section contains official AARC policies that govern club operations, member
     <p>Club policies may be updated periodically. Members are responsible for staying informed about current rules and guidelines. Check the bulletin board or website for the most recent version of all policies.</p>
 </div>
 
-<script src="{{ site.baseurl }}/assets/js/tabs.js"></script>
-<script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+<!-- JavaScript files are already included in head-custom.html -->

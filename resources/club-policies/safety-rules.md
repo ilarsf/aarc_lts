@@ -304,4 +304,4 @@ Safety Committee members and coaches have the authority to prohibit any individu
     <a href="{{ site.baseurl }}/resources/club-policies/index.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to Club Policies</a>
 </div>
 
-<script src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+<!-- accordion.js is already included in head-custom.html -->

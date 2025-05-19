@@ -358,4 +358,4 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
 
 <a href="#" class="az-jump-to-top">Back to Top ↑</a>
 
-<script src="{{ site.baseurl }}/assets/js/az-tabs.js"></script>
+<script src="{{ site.baseurl }}/assets/js/az-tabs.js" defer></script>

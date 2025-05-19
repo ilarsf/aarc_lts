@@ -123,23 +123,22 @@ As you become more comfortable with the basic sculling stroke and boat control, 
                         </div>
 
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="info-box">
-                                    <h3>T: Technique Under Pressure</h3>
-                                    <div class="two-col-flex">
-                                        <div class="technique-image">
-                                            <img src="{{ '/assets/images/advanced/technique-pressure.jpg' | relative_url }}" alt="Maintaining technique under pressure" class="img-fluid">
-                                        </div>
-                                        <div class="technique-description">
-                                            <p>Beyond basic tap down, maintain technique under varying conditions:</p>
-                                            <ul>
-                                                <li>Consistent form at higher pressures</li>
-                                                <li>Adaptability to changing water conditions</li>
-                                                <li>Maintaining technique when fatigued</li>
-                                                <li>Clean extraction regardless of pressure</li>
-                                            </ul>
-                                            <p><strong>Practice:</strong> Pyramid pieces with increasing pressure (50%, 75%, 100%, 75%, 50%) while focusing on maintaining perfect technique throughout.</p>
-                                        </div>
+                        <div class="col-md-12">
+                            <div class="info-box">
+                                <h3>T: Technique Under Pressure</h3>
+                                <div class="two-col-flex">
+                                    <div class="technique-image">
+                                        <img src="{{ '/assets/images/advanced/technique-pressure.jpg' | relative_url }}" alt="Maintaining technique under pressure" class="img-fluid">
+                                    </div>
+                                    <div class="technique-description">
+                                        <p>Beyond basic tap down, maintain technique under varying conditions:</p>
+                                        <ul>
+                                            <li>Consistent form at higher pressures</li>
+                                            <li>Adaptability to changing water conditions</li>
+                                            <li>Maintaining technique when fatigued</li>
+                                            <li>Clean extraction regardless of pressure</li>
+                                        </ul>
+                                        <p><strong>Practice:</strong> Pyramid pieces with increasing pressure (50%, 75%, 100%, 75%, 50%) while focusing on maintaining perfect technique throughout.</p>
                                     </div>
                                 </div>
                             </div>
@@ -405,6 +404,7 @@ As you become more comfortable with the basic sculling stroke and boat control, 
 </div>
 <!-- End of tab container -->
 
+
 <div class="navigation-links">
     <a href="../technique/videos.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Instructional Videos</a>
     <a href="../resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
@@ -441,3 +441,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 500);
 });
 </script>
+

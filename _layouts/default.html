@@ -72,7 +72,7 @@
 
     <footer class="site-footer">
       <div class="copyright">
-        © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club – All Rights Reserved
+        © {{ site.time | date: '%Y' }} Ann Arbor Rowing Club - All Rights Reserved
       </div>
     </footer>
   </div>
@@ -156,7 +156,7 @@
               e.preventDefault();
               e.stopPropagation();
               dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-              toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+              toggleBtn.innerHTML = dropdown.style.display === 'block' ? '-' : '+';
             });
 
             // Prevent parent link from navigating when toggle is available
@@ -164,7 +164,7 @@
               if (window.innerWidth <= 768) {
                 e.preventDefault();
                 dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-                toggleBtn.innerHTML = dropdown.style.display === 'block' ? '−' : '+';
+                toggleBtn.innerHTML = dropdown.style.display === 'block' ? '-' : '+';
               }
             });
           }

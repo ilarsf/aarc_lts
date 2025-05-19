@@ -1,0 +1,22 @@
+/* Resource Sections */
+.resource-section {
+    margin: 2.5rem 0;
+}
+
+.resource-section .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1.5rem 0;
+}
+
+/* Makes cards consistent height */
+.resource-section .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .resource-section .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

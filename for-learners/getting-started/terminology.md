@@ -6,7 +6,7 @@ description: Essential rowing terms for beginning scullers
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/az-tabs.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/category-tabs.css">
-<script src="{{ site.baseurl }}/assets/js/category-tabs.js"></script>
+<script src="{{ site.baseurl }}/assets/js/category-tabs.js" defer></script>
 
 # Basic Rowing Terminology
 

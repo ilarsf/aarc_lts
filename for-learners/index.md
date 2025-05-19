@@ -258,25 +258,3 @@ Welcome to the Learn to Scull program! This guide will support your journey from
 
 <!-- Font Awesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
-  <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="nav-item">
-    <i class="fas fa-life-ring"></i>
-    <h3>Safety</h3>
-    <p>Safety guidelines, self-rescue procedures, and rules</p>
-  </a>
-  
-  <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="nav-item">
-    <i class="fas fa-question-circle"></i>
-    <h3>Resources</h3>
-    <p>FAQs, terminology, and next steps</p>
-  </a>
-</div>
-
-## Quick Links
-
-- [Program Overview]({{ site.baseurl }}/for-learners/getting-started/program-overview.html)
-- [Session 1 Guide]({{ site.baseurl }}/for-learners/learning-journey/session-1.html)
-- [Essential Safety Rules]({{ site.baseurl }}/for-learners/safety/essential-rules.html)
-- [Basic Rowing Technique]({{ site.baseurl }}/for-learners/technique/basic-technique.html)
-- [Rowing Terminology]({{ site.baseurl }}/for-learners/resources/glossary.html)
-- [Frequently Asked Questions](resources/faq.html)

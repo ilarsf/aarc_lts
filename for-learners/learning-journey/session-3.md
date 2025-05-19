@@ -321,34 +321,37 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             <h3>Looking Ahead to Session 4</h3>
             <p>Session 4 will focus on integrating all previously learned skills and developing confidence in river navigation, including bridge passage.</p>
             
-            <div class="cards-container">
+            <div class="resource-section">
                 <div class="card-grid">
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-calendar-day"></i>
                         </div>
-                        <h4 class="card-title">Session 4 Guide</h4>
-                        <p class="card-text">Final session focused on independence and integration</p>
-                        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Session 4 Guide</h3>
+                            <p>Final session focused on independence and integration</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-map-marked-alt"></i>
                         </div>
-                        <h4 class="card-title">River Navigation</h4>
-                        <p class="card-text">Review traffic patterns and river rules</p>
-                        <a href="{{ site.baseurl }}/for-learners/safety/river-navigation.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>River Navigation</h3>
+                            <p>Review traffic patterns and river rules</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/technique/power-application.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-dumbbell"></i>
                         </div>
-                        <h4 class="card-title">Power Application</h4>
-                        <p class="card-text">Details on effective leg drive technique</p>
-                        <a href="{{ site.baseurl }}/for-learners/technique/power-application.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Power Application</h3>
+                            <p>Details on effective leg drive technique</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 

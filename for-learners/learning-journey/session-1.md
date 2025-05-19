@@ -318,34 +318,37 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                 <li>Getting more independent on the water</li>
             </ul>
             
-            <div class="cards-container">
+            <div class="resource-section">
                 <div class="card-grid">
-                    <div class="card">
+                    <a href="session-2.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-calendar-day"></i>
                         </div>
-                        <h4 class="card-title">Session 2 Guide</h4>
-                        <p class="card-text">Preparation and instructions for your second rowing session</p>
-                        <a href="session-2.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Session 2 Guide</h3>
+                            <p>Preparation and instructions for your second rowing session</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-hand-paper"></i>
                         </div>
-                        <h4 class="card-title">Basic Rowing Technique</h4>
-                        <p class="card-text">Learn the fundamentals of sculling technique</p>
-                        <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Basic Rowing Technique</h3>
+                            <p>Learn the fundamentals of sculling technique</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-life-ring"></i>
                         </div>
-                        <h4 class="card-title">Self-Rescue Guide</h4>
-                        <p class="card-text">Detailed instructions on capsize recovery</p>
-                        <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card-button">View Guide</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Self-Rescue Guide</h3>
+                            <p>Detailed instructions on capsize recovery</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

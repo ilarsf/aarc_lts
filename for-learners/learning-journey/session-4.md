@@ -326,34 +326,37 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             
             <h3>Continuing Your Rowing Journey</h3>
             
-            <div class="cards-container">
+            <div class="resource-section">
                 <div class="card-grid">
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/resources/membership.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-id-card"></i>
                         </div>
-                        <h4 class="card-title">Club Membership</h4>
-                        <p class="card-text">Join AARC as a regular member</p>
-                        <a href="{{ site.baseurl }}/for-learners/resources/membership.html" class="card-button">Learn More</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Club Membership</h3>
+                            <p>Join AARC as a regular member</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/resources/advanced-coaching.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-user-graduate"></i>
                         </div>
-                        <h4 class="card-title">Further Coaching</h4>
-                        <p class="card-text">Continue with advanced technique sessions</p>
-                        <a href="{{ site.baseurl }}/for-learners/resources/advanced-coaching.html" class="card-button">View Options</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Further Coaching</h3>
+                            <p>Continue with advanced technique sessions</p>
+                        </div>
+                    </a>
                     
-                    <div class="card">
+                    <a href="{{ site.baseurl }}/for-learners/resources/racing.html" class="card">
                         <div class="card-icon">
                             <i class="fas fa-trophy"></i>
                         </div>
-                        <h4 class="card-title">Competitive Rowing</h4>
-                        <p class="card-text">Explore racing opportunities</p>
-                        <a href="{{ site.baseurl }}/for-learners/resources/racing.html" class="card-button">Learn More</a>
-                    </div>
+                        <div class="card-content">
+                            <h3>Competitive Rowing</h3>
+                            <p>Explore racing opportunities</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 

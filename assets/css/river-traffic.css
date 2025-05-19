@@ -299,37 +299,69 @@
 /* Traffic Pattern Visualization */
 .traffic-pattern {
     display: flex;
-    background-color: #e3f2fd;
-    border-radius: 6px;
-    padding: 15px;
+    flex-direction: column;
+    background-color: #f5f9ff;
+    border-radius: 8px;
+    padding: 20px;
     margin: 20px 0;
     position: relative;
-    overflow: hidden;
-    height: 120px;
+    border: 2px solid #2196f3;
 }
 
-.traffic-pattern::after {
-    content: "";
+.traffic-pattern h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1565c0;
+}
+
+.river-illustration {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    position: relative;
+}
+
+.river-bank {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #c8e6c9;
+    /* Green for shore */
+    border: 1px solid #81c784;
+}
+
+.shoreline {
+    font-style: italic;
+    color: #2e7d32;
+}
+
+.river-bank:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.river-bank:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.river-flow {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #bbdefb;
+    /* Blue for water */
+    position: relative;
+}
+
+.river-center-line {
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #2196f3;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    right: 0;
+    border-top: 2px solid #2196f3;
     z-index: 1;
-}
-
-.traffic-pattern::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    background-color: #bbdefb;
-    top: 15%;
-    left: 0;
-    border-radius: 4px;
-    z-index: 0;
 }
 
 .traffic-direction {
@@ -338,13 +370,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
     padding: 10px;
-}
-
-.traffic-direction.upstream {
-    border-right: 2px dashed #2196f3;
 }
 
 .traffic-direction-label {
@@ -355,47 +384,131 @@
     padding: 3px 8px;
     border-radius: 12px;
     border: 1px solid #2196f3;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .traffic-boat {
-    width: 60px;
-    height: 15px;
-    background-color: #424242;
+    font-size: 24px;
+    color: #424242;
+    background-color: #ffcc80;
+    /* Light orange for boat */
+    padding: 5px 15px;
+    border-radius: 20px;
     position: relative;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: boatRocking 2s infinite ease-in-out;
 }
 
-.traffic-boat::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+.traffic-boat.upstream {
+    border-top: 2px solid #e65100;
 }
 
-.traffic-boat.upstream::after {
-    border-bottom: 8px solid #424242;
-    top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
+.traffic-boat.downstream {
+    border-bottom: 2px solid #e65100;
 }
 
-.traffic-boat.downstream::after {
-    border-top: 8px solid #424242;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+@keyframes boatRocking {
 
-/* Animations */
-@keyframes flowAnimation {
-    from {
-        stroke-dashoffset: 24;
+    0%,
+    100% {
+        transform: rotate(0deg);
     }
 
-    to {
-        stroke-dashoffset: 0;
+    25% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+
+.traffic-note {
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Traffic Arrows and Paths */
+.traffic-path {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.traffic-arrow {
+    color: #1976d2;
+    font-size: 18px;
+    margin: 0 5px;
+    animation: fadeInOut 2s infinite;
+}
+
+.crossing-path {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.crossing-arrow {
+    color: #e65100;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px dashed #e65100;
+    padding: 3px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.center-label {
+    position: absolute;
+    top: -18px;
+    left: -45px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #1976d2;
+    white-space: nowrap;
+}
+
+.river-label {
+    padding: 5px 10px;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #81c784;
+    border-bottom: 1px solid #81c784;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
     }
 }
 
@@ -451,4 +564,268 @@
 
 .communication-response {
     color: #4caf50;
+}
+
+/* River Traffic Pattern - Detailed Map */
+.river-map-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.river-map {
+    display: flex;
+    flex-direction: column;
+    background-color: #bbdefb;
+    border: 2px solid #0d47a1;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.river-feature {
+    background-color: #e3f2fd;
+    border-radius: 4px;
+    margin: 2px 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 30px;
+}
+
+.river-feature.bridge {
+    background-color: #a5d6a7;
+    border: 1px solid #2e7d32;
+}
+
+.river-feature.dam {
+    background-color: #ffcdd2;
+    border: 1px solid #c62828;
+    font-weight: bold;
+}
+
+.river-feature.dock {
+    background-color: #ffe082;
+    border: 1px solid #ff8f00;
+}
+
+.feature-label {
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.feature-label.dock-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 5px;
+    background-color: #ffe082;
+    border: 1px solid #ff8f00;
+    border-radius: 3px;
+}
+
+.river-section {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+    border-left: 2px solid #0d47a1;
+    border-right: 2px solid #0d47a1;
+    min-height: 40px;
+}
+
+.river-section.crossing {
+    background-color: rgba(255, 235, 59, 0.2);
+}
+
+.river-traffic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+.river-traffic.upstream {
+    border-right: 1px dashed #1976d2;
+}
+
+.river-traffic i {
+    color: #1976d2;
+    margin: 0 3px;
+    animation: fadeInOut 2s infinite;
+}
+
+.crossing-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.crossing-label {
+    background-color: rgba(255, 152, 0, 0.7);
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.crossing-arrow {
+    font-size: 18px;
+    color: #e65100;
+    margin: 0 5px;
+    border: 1px dashed #e65100;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 2px 4px;
+    animation: pulse 2s infinite;
+}
+
+.traffic-instruction {
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #333;
+    margin: 2px 0;
+}
+
+.traffic-instruction.opposite {
+    margin-top: 5px;
+}
+
+.traffic-instruction.left {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.traffic-instruction.right {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.river-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    border: 1px solid #90caf9;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-right: 15px;
+}
+
+.legend-icon {
+    margin-right: 5px;
+}
+
+.legend-icon.upstream {
+    color: #1976d2;
+}
+
+.legend-icon.downstream {
+    color: #1976d2;
+}
+
+.legend-icon.crossing-line {
+    width: 15px;
+    height: 8px;
+    background-color: rgba(255, 152, 0, 0.7);
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.legend-icon.bridge-symbol {
+    width: 15px;
+    height: 8px;
+    background-color: #a5d6a7;
+    margin-right: 5px;
+    border: 1px solid #2e7d32;
+}
+
+.legend-icon.dam-symbol {
+    width: 15px;
+    height: 8px;
+    background-color: #ffcdd2;
+    margin-right: 5px;
+    border: 1px solid #c62828;
+}
+
+/* 1 — features that span BOTH banks */
+.river-feature.full-span {
+    width: 100%;
+    /* fill full channel width             */
+    justify-content: center;
+    /* keep label centred                  */
+    border-left: none;
+    /* remove side “bank” borders          */
+    border-right: none;
+}
+
+/* 2 — features fixed to ONE bank */
+.river-feature.left-bank {
+    margin-right: auto;
+    /* hug the left side (port downstream) */
+    width: 42%;
+    border-left: 4px solid #0d47a1;
+    /* optional bank edge marker         */
+}
+
+.river-feature.right-bank {
+    margin-left: auto;
+    /* hug the right side (starboard)      */
+    width: 42%;
+    border-right: 4px solid #0d47a1;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }

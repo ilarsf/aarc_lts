@@ -467,4 +467,4 @@ Understanding proper rowing technique is essential for an efficient, effective, 
     </div>
 </div>
 
-<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
+<!-- accordion.js is already included in head-custom.html -->
