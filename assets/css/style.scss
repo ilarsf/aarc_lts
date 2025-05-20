@@ -1,8 +1,7 @@
---- 
+---
+---
 
---- 
-
-@import "{{ site.theme }}";
+@import "jekyll-theme-cayman";
 
 // Ann Arbor Rowing Club styling
 // Color scheme - Updated to match AARC website
@@ -786,7 +785,8 @@ a {
     margin-bottom: -1px;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
-    color: $aarc-dark-gray;
+    color: $aarc-dark-gray; // Ensure text is dark for contrast against white
+    background-color: $aarc-white; // Set background to white for non-active tabs
     cursor: pointer;
     font-weight: 500;
     
@@ -802,9 +802,9 @@ a {
 
     &.active {
       border: 1px solid $aarc-border-gray;
-      border-bottom-color: $aarc-white;
+      border-bottom-color: $aarc-white; // Keep active tab's bottom border white
       color: $aarc-blue;
-      background-color: $aarc-white;
+      background-color: $aarc-white; // Active tab background remains white
     }
   }
 }

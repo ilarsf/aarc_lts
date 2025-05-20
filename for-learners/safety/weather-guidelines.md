@@ -117,21 +117,21 @@ Weather conditions directly impact rowing safety. This guide will help you under
         
         <!-- Visibility Conditions -->
         <tr data-conditions="visibility">
-          <td><strong>Visibility > 500m (> 1640 ft / > 547 yd)</strong><br>Clear conditions</td>
+          <td><strong>Visibility > 500 yd (approx. > 457 m)</strong><br>Clear conditions</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td>Standard procedures</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility 100-500m (328-1640 ft / 109-547 yd)</strong><br>Light fog</td>
+          <td><strong>Visibility 100-500 yd (approx. 91-457 m)</strong><br>Light fog</td>
           <td class="warning">Not Advised</td>
           <td class="caution">Caution</td>
           <td class="caution">Caution</td>
           <td>Stay near shore, use lights, reduce speed</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility < 100m (< 328 ft / < 109 yd)</strong><br>Heavy fog</td>
+          <td><strong>Visibility < 100 yd (approx. < 91 m)</strong><br>Heavy fog</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
@@ -263,7 +263,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <p class="minimum-requirement">Minimum visibility requirement: <strong>100 meters (approx. 328 feet / 109 yards) in all directions</strong></p>
+        <p class="minimum-requirement">Minimum visibility requirement: <strong>100 yd (approx. 91 m) in all directions</strong></p>
         
         <div class="two-col-grid">
           <div>
@@ -280,7 +280,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
             <h4>Judgment Test:</h4>
             <ul>
               <li>If you can't see the opposite shore or landmarks clearly</li>
-              <li>If you can't see approaching boats from at least 100m (approx. 328 ft / 109 yd) away</li>
+              <li>If you can't see approaching boats from at least 100 yd (approx. 91 m) away</li>
               <li>If you can't see underwater obstacles</li>
               <li>If other rowers appear and disappear from view</li>
               <li>→ Conditions are too foggy for safe rowing</li>
