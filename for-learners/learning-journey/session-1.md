@@ -125,6 +125,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html">Basic Rowing Terminology</a></li>
                             <li>Understand that getting wet is part of the learning process</li>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html">Sculling Self-Rescue Guide</a></li>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to familiarize yourself with the upcoming concepts.</li>
                             <li>Approach the session with patience and an open mind</li>
                         </ul>
                     </div>
@@ -301,7 +302,8 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a> to reinforce what you've learned</li>
+                            <li>Review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a> to reinforce what you\'ve learned</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you\'ve learned.</li>
                             <li>Practice the rowing sequence mentally to build muscle memory</li>
                             <li>Take care of any developing blisters according to recommendations</li>
                             <li>Prepare questions for your next session</li>

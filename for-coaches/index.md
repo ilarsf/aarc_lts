@@ -124,7 +124,7 @@ search_exclude: true
                 </div>
                 <h3>Drills Library</h3>
                 <p>Collection of effective sculling drills organized by skill level and focus area.</p>
-                <a href="{{ site.baseurl }}/for-coaches/technical-coaching/drills.html" class="cta-button">View Drills</a>
+                <a href="{{ site.baseurl }}/for-coaches/technical-coaching/drills-library.html" class="cta-button">View Drills</a>
               </div>
               
               <div class="resource-card">
@@ -133,7 +133,7 @@ search_exclude: true
                 </div>
                 <h3>Common Errors</h3>
                 <p>How to identify and correct common beginner mistakes.</p>
-                <a href="{{ site.baseurl }}/for-coaches/technical-coaching/common-errors.html" class="cta-button">View Guide</a>
+                <a href="{{ site.baseurl }}/for-coaches/technical-coaching/common-issues.html" class="cta-button">View Guide</a>
               </div>
               
               <div class="resource-card">
@@ -172,7 +172,7 @@ search_exclude: true
                 </div>
                 <h3>Assessment Tools</h3>
                 <p>Checklists and criteria for evaluating participant progress.</p>
-                <a href="{{ site.baseurl }}/for-coaches/program-management/assessment.html" class="cta-button">View Tools</a>
+                <a href="{{ site.baseurl }}/for-coaches/program-management/assessment-tools.html" class="cta-button">View Tools</a>
               </div>
               
               <div class="resource-card">

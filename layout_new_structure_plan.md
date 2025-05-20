@@ -110,7 +110,7 @@ This document outlines the recommended layouts for each section of the reorganiz
 ### For Coaches Section
 
 #### for-coaches/index.md
-- [ ] **Combined Layout: Tabs + Cards**
+- [x] **Combined Layout: Tabs + Cards**
   - Tab 1: "Session Plans" (with visual session cards)
   - Tab 2: "Technical Coaching" (with technique category cards)
   - Tab 3: "Program Management" (with admin task cards)
@@ -118,7 +118,7 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Quick access buttons for current session resources
 
 #### for-coaches/session-plans/
-- [ ] **overview.md**: Timeline Layout with Program Structure
+- [x] **overview.md**: Timeline Layout with Program Structure
   - Visual timeline of the entire program
   - Links to each session with preview information
   - Progression indicators for skill development
@@ -127,8 +127,8 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Accordion sections for detailed activity instructions
   - Printable session outline for on-water reference
 - [x] **session-2.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
-- [ ] **session-3.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
-- [ ] **session-4.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
+- [x] **session-3.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
+- [x] **session-4.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
 
 #### for-coaches/technical-coaching/
 - [x] **coaching-language.md**: Accordion Layout
@@ -137,7 +137,7 @@ This document outlines the recommended layouts for each section of the reorganiz
   - *Current implementation is appropriate*
 - [x] **equipment-adjustments.md**: [C] Combined Layout: Tables + Accordions
   - *Should include quick-reference tables for equipment adjustments*
-- [ ] **drills-library.md**: [C] Combined Layout: Filterable Cards + Accordions
+- [x] **drills-library.md**: [C] Combined Layout: Filterable Cards + Accordions
   - Visual cards for each drill with filtering options (purpose, skill level)
   - Accordion details for each drill's instructions
 - [x] **video-analysis.md**: Accordion Layout
@@ -148,16 +148,16 @@ This document outlines the recommended layouts for each section of the reorganiz
   - *Current implementation is appropriate*
 - [x] **assessment-tools.md**: Accordion Layout
   - *Current implementation is appropriate*
-- [ ] **administrative-guide.md**: [C] Combined Layout: Tabs by Phase + Accordions
+- [x] **administrative-guide.md**: [C] Combined Layout: Tabs by Phase + Accordions
   - Tabs for program phases (Pre-program, During, Post-program)
   - Accordion sections within each tab for specific tasks
   - Downloadable templates and checklists
 
 #### for-coaches/safety-leadership/
-- [ ] **safety-protocols.md**: [C] Combined Layout: Scenario Cards + Accordions
+- [x] **safety-protocols.md**: [C] Combined Layout: Scenario Cards + Accordions
   - Visual scenario cards with quick actions
   - Detailed accordion content for each scenario
-- [ ] **daily-safety-checklist.md**: [C] Interactive Checklist Layout
+- [x] **daily-safety-checklist.md**: [C] Interactive Checklist Layout
   - Digital checkable items grouped by category
   - Printable version with date fields
   - Mobile-friendly layout for on-dock use
@@ -165,7 +165,7 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Visual decision trees for emergency response
   - Accordion sections for detailed protocols
   - Emergency contact information prominently displayed
-- [ ] **risk-management.md**: [C] Risk Matrix + Accordion Layout
+- [x] **risk-management.md**: [C] Risk Matrix + Accordion Layout
   - Visual risk assessment matrix 
   - Accordion sections for detailed mitigation strategies
 
@@ -213,18 +213,18 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Progress visualization
 
 ### About Section
-- [ ] **index.md**: Card-Based Layout with Program Features
+- [x] **index.md**: Card-Based Layout with Program Features
   - Visual cards highlighting program features
   - Timeline of program history/development
-- [ ] **team.md**: [C] Profile Card Grid Layout
+- [x] **team.md**: [C] Profile Card Grid Layout
   - Visual coach/instructor profile cards
   - Filterable by role/expertise
   - Brief bios with contact information
-- [ ] **contact.md**: [C] Interactive Contact Form + FAQ Cards
+- [x] **contact.md**: [C] Interactive Contact Form + FAQ Cards
   - User-friendly contact form
   - Quick-access FAQ cards for common inquiries
   - Contact information organized by department/need
-- [ ] **faq.md**: [C] Combined Layout: Topic Tabs + Accordions
+- [x] **faq.md**: [C] Combined Layout: Topic Tabs + Accordions
   - Tabbed categories for different question types
   - Accordion sections for Q&A content
   - Search functionality for finding specific questions

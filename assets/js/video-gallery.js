@@ -7,41 +7,95 @@ document.addEventListener('DOMContentLoaded', function () {
     initVideoGallery();
 });
 
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
 function initVideoGallery() {
-    // Set up filter buttons
-    setupFilterButtons();
-
-    // Set up video modal functionality
+    setupFilterButtons(); // Sets up event listeners
     setupVideoModal();
-
-    // Set up search functionality if search field exists
     if (document.getElementById('video-search')) {
-        setupVideoSearch();
+        setupVideoSearch(); // Sets up event listeners
     }
+
+    const initialUrlFilter = getQueryParam('filter');
+    const showAllButton = document.getElementById('show-all-videos');
+
+    // Clear all active states from filter buttons to ensure a clean start
+    document.querySelectorAll('.filter-button.active').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    if (initialUrlFilter) {
+        const targetButton = document.querySelector(`.filter-button[data-filter='${initialUrlFilter}'][data-filter-type="session"]`);
+        if (targetButton) {
+            targetButton.classList.add('active');
+            // If a specific filter is from URL, "Show All" button should not be active.
+            // This is handled by clearing all active states first and only activating the target.
+        } else {
+            // Invalid filter in URL, or filter not found, default to "Show All"
+            if (showAllButton) {
+                showAllButton.classList.add('active');
+            }
+        }
+    } else {
+        // No URL filter, default to "Show All"
+        if (showAllButton) {
+            showAllButton.classList.add('active');
+        }
+    }
+
+    filterVideos(); // Apply filters based on the determined active buttons
 }
 
 function setupFilterButtons() {
-    const filterButtons = document.querySelectorAll('.filter-button');
+    const allFilterButtons = document.querySelectorAll('.filter-button');
+    const showAllButton = document.getElementById('show-all-videos');
 
-    filterButtons.forEach(button => {
+    allFilterButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const category = this.getAttribute('data-filter');
-            const categoryType = this.getAttribute('data-filter-type');
+            const clickedButton = this;
 
-            // Toggle active state for buttons of the same filter type
-            if (categoryType) {
-                document.querySelectorAll(`.filter-button[data-filter-type="${categoryType}"]`).forEach(btn => {
-                    btn.classList.remove('active');
+            if (clickedButton.id === 'show-all-videos') {
+                // Clicked "Show All"
+                allFilterButtons.forEach(btn => {
+                    if (btn !== clickedButton) {
+                        btn.classList.remove('active');
+                    }
                 });
-            }
+                clickedButton.classList.add('active');
+            } else {
+                // Clicked a specific filter button (not "Show All")
+                const categoryType = clickedButton.getAttribute('data-filter-type');
+                if (categoryType) {
+                    // Deactivate other buttons of the same type if they are not the clicked one
+                    document.querySelectorAll(`.filter-button[data-filter-type="${categoryType}"]`).forEach(btn => {
+                        if (btn !== clickedButton) {
+                            btn.classList.remove('active');
+                        }
+                    });
+                    // Toggle the clicked button's active state (or simply set to active)
+                    // If a button in a category is clicked, it should become active.
+                    clickedButton.classList.add('active');
 
-            this.classList.toggle('active');
-            filterVideos();
+                    // Deactivate "Show All" button if a specific filter is now active
+                    if (showAllButton) {
+                        showAllButton.classList.remove('active');
+                    }
+                } else {
+                    // Fallback for buttons without categoryType that are not "Show All" (should not occur with current HTML)
+                    clickedButton.classList.toggle('active');
+                    if (clickedButton.classList.contains('active') && showAllButton) {
+                        showAllButton.classList.remove('active');
+                    }
+                }
+            }
+            filterVideos(); // Apply filters after updating active states
         });
     });
 
     // "Show All" button functionality
-    const showAllButton = document.getElementById('show-all-videos');
     if (showAllButton) {
         showAllButton.addEventListener('click', function () {
             // Remove active class from all filter buttons
@@ -57,6 +111,7 @@ function setupFilterButtons() {
 
             // Activate the "Show All" button
             this.classList.add('active');
+            filterVideos(); // Ensure filtering is called
         });
     }
 }

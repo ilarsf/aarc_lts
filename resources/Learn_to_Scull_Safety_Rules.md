@@ -97,7 +97,7 @@ title: "Learn-to-Scull Safety Rules"
 ## Safety Resources
 
 <div class="button-container">
-  <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=lts-safety" class="cta-button"><i class="fas fa-tasks"></i> Take the LTS Safety Rules Quiz</a>
+  <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="cta-button"><i class="fas fa-tasks"></i> Take the Safety Rules Quiz</a>
   <a href="{{ site.baseurl }}/resources/AARC_Safety_Rules.pdf" class="cta-button"><i class="fas fa-file-pdf"></i> Complete AARC Safety Rules</a>
 </div>
 

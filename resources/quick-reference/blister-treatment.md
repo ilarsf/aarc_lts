@@ -88,45 +88,65 @@ Treat blisters when they:
 
 ### Treatment Steps
 
-<div class="treatment-steps">
-  <div class="step">
-    <h4>1. Clean the Area</h4>
-    <ul>
-      <li>Wash hands thoroughly with soap and water</li>
-      <li>Gently clean the blister and surrounding area</li>
-      <li>Pat dry with a clean towel</li>
-    </ul>
-  </div>
-  
-  <div class="step">
-    <h4>2. Assess the Blister</h4>
-    <ul>
-      <li><strong>Intact blister:</strong> If possible, leave it intact as the skin provides natural protection</li>
-      <li><strong>Torn blister:</strong> Keep the skin flap in place if possible as it provides protection</li>
-      <li><strong>Draining blister:</strong> May need drainage if very large or painful</li>
-    </ul>
-  </div>
-  
-  <div class="step">
-    <h4>3. Draining (if necessary)</h4>
-    <ul>
-      <li>Only drain large, painful blisters</li>
-      <li>Use a sterilized needle (flame or alcohol)</li>
-      <li>Make a small hole at the blister edge</li>
-      <li>Gently press to release fluid</li>
-      <li>Keep the skin intact over the area</li>
-    </ul>
-  </div>
-  
-  <div class="step">
-    <h4>4. Protect and Bandage</h4>
-    <ul>
-      <li>Apply antibiotic ointment for open blisters</li>
-      <li>Cover with a bandage or specialized blister pad</li>
-      <li>Secure with athletic or medical tape</li>
-      <li>Change dressing daily or when soiled</li>
-    </ul>
-  </div>
+<div class="treatment-steps-container">
+    <div class="treatment-step">
+        <div class="step-number-container">
+            <div class="step-number">1</div>
+        </div>
+        <div class="step-content">
+            <h4>Clean the Area</h4>
+            <ul>
+                <li>Wash hands thoroughly with soap and water</li>
+                <li>Gently clean the blister and surrounding area</li>
+                <li>Pat dry with a clean towel</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="treatment-step">
+        <div class="step-number-container">
+            <div class="step-number">2</div>
+        </div>
+        <div class="step-content">
+            <h4>Assess the Blister</h4>
+            <ul>
+                <li><strong>Intact blister:</strong> If possible, leave it intact as the skin provides natural protection</li>
+                <li><strong>Torn blister:</strong> Keep the skin flap in place if possible as it provides protection</li>
+                <li><strong>Draining blister:</strong> May need drainage if very large or painful</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="treatment-step">
+        <div class="step-number-container">
+            <div class="step-number">3</div>
+        </div>
+        <div class="step-content">
+            <h4>Draining (if necessary)</h4>
+            <ul>
+                <li>Only drain large, painful blisters</li>
+                <li>Use a sterilized needle (flame or alcohol)</li>
+                <li>Make a small hole at the blister edge</li>
+                <li>Gently press to release fluid</li>
+                <li>Keep the skin intact over the area</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="treatment-step">
+        <div class="step-number-container">
+            <div class="step-number">4</div>
+        </div>
+        <div class="step-content">
+            <h4>Protect and Bandage</h4>
+            <ul>
+                <li>Apply antibiotic ointment for open blisters</li>
+                <li>Cover with a bandage or specialized blister pad</li>
+                <li>Secure with athletic or medical tape</li>
+                <li>Change dressing daily or when soiled</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 ### Rowing with Blisters
@@ -178,9 +198,75 @@ Contact a healthcare provider if you notice:
 - Maintain regular rowing to keep calluses developed
 
 <style>
+.treatment-steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  position: relative; /* For pseudo-element line */
+}
+
+/* Vertical line connecting the steps */
+.treatment-steps-container::before {
+  content: '';
+  position: absolute;
+  left: 29px; /* Adjust to center with step-number */
+  top: 20px; /* Start below the first number */
+  bottom: 20px; /* End above the last number */
+  width: 2px;
+  background-color: var(--theme-color-light); /* Or your desired line color */
+  z-index: 0;
+}
+
+.treatment-step {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 1rem;
+  position: relative; /* For z-index stacking */
+  z-index: 1; /* Ensure content is above the line */
+}
+
+.step-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Fixed width for the number container */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.step-number {
+  background-color: var(--theme-color); /* Use theme color for step numbers */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 2; /* Ensure numbers are above the line */
+}
+
+.step-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-grow: 1; /* Allow content to take remaining space */
+}
+
+.step-content h4 {
+  margin-top: 0;
+  color: var(--theme-color-dark); /* Darker theme color for heading */
+}
+
+/* Remove the old .treatment-steps and .step styles */
+/*
 .treatment-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column; 
   gap: 1.5rem;
   margin: 2rem 0;
 }
@@ -191,6 +277,7 @@ Contact a healthcare provider if you notice:
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+*/
 
 .method-grid {
   display: grid;

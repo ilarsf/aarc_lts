@@ -34,52 +34,68 @@ Proper care and handling of equipment not only extends its lifespan but also ens
   <div id="handling-tab" class="tab-content">
     <h2>Equipment Handling and Storage</h2>
 
-### Boat Handling
+    <h3>Boat Handling</h3>
+    <ul>
+      <li><strong>Carrying Boats:</strong> Always lift with proper technique and adequate help. Ask for help taking the boat on or off of its rack and carrying, if needed. Listen to experienced rowers regarding the correct carrying positions.</li>
+      <li><strong>Using Slings/Stretchers:</strong> Place boats carefully on stretchers when adjusting foot stretchers or performing maintenance.</li>
+      <li><strong>Step Ladders:</strong> Use the provided step ladders for reaching high racks; never climb on the racks themselves. Return ladders to their designated storage locations after use.</li>
+    </ul>
 
-* **Carrying Boats:** Always lift with proper technique and adequate help. Ask for help taking the boat on or off of its rack and carrying, if needed. Listen to experienced rowers regarding the correct carrying positions.
-* **Using Slings/Stretchers:** Place boats carefully on stretchers when adjusting foot stretchers or performing maintenance.
-* **Step Ladders:** Use the provided step ladders for reaching high racks; never climb on the racks themselves. Return ladders to their designated storage locations after use.
+    <h3>Storing Boats</h3>
+    <p>After cleaning, place the boat back in its original rack position. Note how and where your boat is stored and return it to the same place and position. All boats on the outside rack have bows pointed to the boathouse. Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance. Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat). Make sure it is properly supported to prevent damage.</p>
 
-### Boat Maintenance
+    <h3>Storing Oars</h3>
+    <ul>
+      <li><strong>Oar Storage:</strong> Return oars to their designated racks after use, as indicated by the rack labels, with blades facing in the correct direction.</li>
+    </ul>
+  </div>
+  
+  <div id="maintenance-tab" class="tab-content">
+    <h2>General Equipment Maintenance</h2>
 
-1. **Cleaning the Boat**  
-   Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove. This ensures the equipment is clean and ready for the next use.
+    <h3>Cleaning Boats</h3>
+    <p>Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove. This ensures the equipment is clean and ready for the next use.</p>
 
-2. **Storing the Boat**  
-   After cleaning, place the boat back in its original rack position. Note how and where your boat is stored and return it to the same place and position. All boats on the outside rack have bows pointed to the boathouse. Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance. Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat). Make sure it is properly supported to prevent damage.
+    <h3>Reporting Issues</h3>
+    <p>Please note any issues with the equipment in the logbook. If there is significant damage, also notify a coach or club officer immediately.</p>
+  </div>
+  
+  <div id="oars-tab" class="tab-content">
+    <h2>Oar Care</h2>
+    
+    <h3>Cleaning Oars</h3>
+    <p>After each use, rinse oars with fresh water if available, paying special attention to the collars and gates.</p>
 
-3. **Reporting Issues**  
-   Please note any issues with the equipment in the logbook. If there is significant damage, also notify a coach or club officer immediately.
+    <h3>Oar Handles</h3>
+    <p>Routinely disinfect oar handles after each row. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.</p>
 
-### Oar Care and Storage
+    <h3>Tape Residue Removal</h3>
+    <p>If you\'ve used tape for blisters, remove residues completely after your row. Sticky residue makes handles uncomfortable for the next user.</p>
+  </div>
+  
+  <div id="facilities-tab" class="tab-content">
+    <h2>Considerate Use of Facilities</h2>
+    <ul>
+      <li><strong>Bathroom Facilities:</strong> Note that there are only public toilets without running water available. Please plan accordingly.</li>
+      <li><strong>Changing:</strong> There are no dedicated changing rooms at this facility. Come dressed appropriately or be prepared to change discreetly.</li>
+      <li><strong>Trash:</strong> Dispose of all waste properly and recycle when possible.</li>
+      <li><strong>Personal Items:</strong> Do not leave valuables unattended in the boathouse.</li>
+    </ul>
+  </div>
+  
+</div> <!-- This closes tab-container -->
 
-* **Oar Storage:** Return oars to their designated racks after use, as indicated by the rack labels, with blades facing in the correct direction.
+<h2>Equipment Respect Philosophy</h2>
 
-* **Oar Cleaning:** After each use, rinse oars with fresh water if available, paying special attention to the collars and gates.
-
-* **Oar Handles**  
-   Routinely disinfect oar handles after each row. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.
-
-* **Tape Removal:** If you've used tape for blisters, remove residues completely after your row. Sticky residue makes handles uncomfortable for the next user.
-
-## Considerate Use of Facilities
-
-* **Bathroom Facilities:** Note that there are only public toilets without running water available. Please plan accordingly.
-* **Changing:** There are no dedicated changing rooms at this facility. Come dressed appropriately or be prepared to change discreetly.
-* **Trash:** Dispose of all waste properly and recycle when possible.
-* **Personal Items:** Do not leave valuables unattended in the boathouse.
-
-## Equipment Respect Philosophy
-
-Remember that rowing equipment is both expensive and delicate. Approach each interaction with equipment by following these principles:
-
-* **Respect Your Future Self:** The care you take now ensures the equipment will be in good condition for your next row.
-* **Respect Your Peers:** Other rowers deserve to use well-maintained equipment just as you do.
-* **Respect the Club's Investment:** Proper care of equipment protects the club's financial investment and allows resources to be directed to improvements rather than replacements.
+<ul>
+  <li><strong>Respect Your Future Self:</strong> The care you take now ensures the equipment will be in good condition for your next row.</li>
+  <li><strong>Respect Your Peers:</strong> Other rowers deserve to use well-maintained equipment just as you do.</li>
+  <li><strong>Respect the Club\'s Investment:</strong> Proper care of equipment protects the club\'s financial investment and allows resources to be directed to improvements rather than replacements.</li>
+</ul>
 
 <div class="info-box tip">
   <h4>Ask When Unsure</h4>
-  <p>If you're unsure about any aspect of equipment handling or boathouse procedures, ask an experienced member or coach. It's better to ask than to risk damaging equipment or breaking protocol.</p>
+  <p>If you\'re unsure about any aspect of equipment handling or boathouse procedures, ask an experienced member or coach. It\'s better to ask than to risk damaging equipment or breaking protocol.</p>
 </div>
 
 <script>
