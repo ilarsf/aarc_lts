@@ -20,8 +20,6 @@ search_exclude: true
     <button class="tab-link" data-tab="drive-phase-drills">Drive Phase</button>
     <button class="tab-link" data-tab="blade-control-drills">Blade Control</button>
     <button class="tab-link" data-tab="boat-control-drills">Boat Control</button>
-    <button class="tab-link" data-tab="session-specific-drills">Session Plans</button>
-    <button class="tab-link" data-tab="progression-drills">Progression</button>
   </div>
 
   <div class="tab-content active" id="beginner-drills">
