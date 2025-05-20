@@ -98,11 +98,18 @@
             // Check if user has coach access
             const urlParams = new URLSearchParams(window.location.search);
             const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
-            const storageAuth = localStorage.getItem('aarc_coach_access') === 'granted';
+            let storageAuth = localStorage.getItem('aarc_coach_access') === 'granted'; // Changed to let
+
+            // If authenticated via URL, persist to localStorage and update storageAuth for this session
+            if (urlAuth && !storageAuth) {
+                localStorage.setItem('aarc_coach_access', 'granted');
+                storageAuth = true; // Ensure storageAuth reflects the change for the hasAccess check
+            }
+
             const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
 
             // Get access via any method (URL, localStorage) or if we've already redirected too many times
-            const hasAccess = urlAuth || storageAuth || redirectCount >= 2;
+            const hasAccess = urlAuth || storageAuth || redirectCount >= 2; // Now uses the potentially updated storageAuth
 
             // Only redirect if no access AND we haven't already redirected too many times
             if (!hasAccess) {
