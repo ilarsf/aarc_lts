@@ -1,82 +1,144 @@
 ---
 layout: default
-title: Preparation - What to Bring and Wear
-description: Essential preparation for your AARC Learn to Scull sessions
+title: Preparing for Your First Session
+description: Essential information to help you prepare for your first Learn to Scull session, covering what to bring, what to expect, and key safety guidelines.
 ---
 
-# What to Bring and Wear
+# Preparing for Your First Session
 
-Proper preparation will help you have a comfortable, safe, and enjoyable experience during your Learn to Scull program. This guide covers everything you need to bring to each session and how to dress appropriately for rowing.
+Welcome to the Learn to Scull program! This guide provides essential information to help you prepare for your first session, ensuring you arrive ready and confident.
 
-## Essential Items for Every Session
+{% include accordion.html %}
 
-### Hydration and Nutrition
-- **Large Water Bottle:** At least 32 oz (1 liter) - rowing is physically demanding and you'll need to stay hydrated
-- **Small Snack:** Something light for energy during the session break (energy bar, fruit, etc.)
+<div class="accordion-controls">
+    <button id="expand-all">Expand All</button>
+    <button id="collapse-all">Collapse All</button>
+</div>
 
-### Sun Protection
-- **Waterproof Sunscreen:** The water reflects sunlight, increasing exposure
-- **Hat with Brim:** Protects your face and improves visibility
-- **Sunglasses:** Ideally with a strap to prevent loss if they fall off
-- **Lip Balm with SPF:** Optional but recommended
+<div class="accordion-section">
+    <button class="accordion-toggle">What to Bring</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Please bring the following items to each session:</p>
+            <ul>
+                <li><strong>Water Bottle:</strong> Staying hydrated is crucial. A reusable water bottle is recommended.</li>
+                <li><strong>Sunscreen:</strong> Protect your skin, even on cloudy days.</li>
+                <li><strong>Sunglasses:</strong> Polarized sunglasses are best for reducing glare off the water.</li>
+                <li><strong>Hat or Visor:</strong> For sun protection and to keep hair out of your eyes.</li>
+                <li><strong>Towel:</strong> For drying off after the session or if you get wet.</li>
+                <li><strong>Change of Clothes (optional):</strong> You might want dry clothes for after the session.</li>
+                <li><strong>Small Waterproof Bag (optional):</strong> To protect small personal items like keys or a phone if you choose to bring them on the water (at your own risk). Coaches are not responsible for personal belongings.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### Required Safety Items
-- **Completed Forms:** AARC and USRowing waivers (especially for your first session)
-- **Medication:** If needed (e.g., asthma inhaler, EpiPen), in a waterproof container
+<div class="accordion-section">
+    <button class="accordion-toggle">What to Wear</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Appropriate attire is important for comfort, safety, and preventing damage to equipment:</p>
+            <ul>
+                <li><strong>Form-Fitting Clothing:</strong> Loose clothing, especially baggy shorts or tops, can get caught in the sliding seat or oars. Opt for athletic wear such as bike shorts, leggings, or close-fitting athletic pants and tops.</li>
+                <li><strong>Moisture-Wicking Fabrics:</strong> Choose synthetic fabrics (polyester, nylon, spandex) that dry quickly and pull moisture away from your skin. Avoid cotton, as it absorbs water and stays wet.</li>
+                <li><strong>Layers:</strong> Weather can change quickly. Dress in layers that you can easily add or remove. A lightweight windbreaker or waterproof jacket can be useful.</li>
+                <li><strong>Bright Colors:</strong> High-visibility clothing (neon yellow, orange, bright green) is strongly recommended to make you more visible to other boaters and coaches on the water.</li>
+                <li><strong>Socks:</strong> You will typically row in your socks or barefoot in the boat's foot stretchers. Bring socks you don't mind getting damp.</li>
+                <li><strong>Shoes for Land:</strong> Wear athletic shoes (sneakers/trainers) to the boathouse for land-based activities and carrying equipment. You will remove them before getting into the rowing shell.</li>
+            </ul>
+            <p><strong>Avoid:</strong></p>
+            <ul>
+                <li>Baggy clothing</li>
+                <li>Jeans or restrictive street clothes</li>
+                <li>Clothing with zippers or buttons that could scratch the boat</li>
+                <li>Excessive jewelry that could get caught or lost</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### For Session 1 (Flip Test)
-- **Towel:** Full-size to dry off after the flip test
-- **Complete Change of Clothes:** You will get wet during the supervised flip test
-- **Plastic Bag:** For wet clothes after the flip test
+<div class="accordion-section">
+    <button class="accordion-toggle">Arriving at the Boathouse</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <ul>
+                <li><strong>Arrival Time:</strong> Plan to arrive 10-15 minutes before your scheduled session time. This allows you to check in, prepare your equipment, and participate in any pre-session briefings.</li>
+                <li><strong>Parking:</strong> Familiarize yourself with parking options near the boathouse. Parking can be limited, so allow extra time if needed.</li>
+                <li><strong>Check-In:</strong> Upon arrival, find your coach or the program coordinator to check in.</li>
+                <li><strong>Restrooms:</strong> Know where the restrooms are located. It's a good idea to use them before the session begins.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### Optional Items
-- **Hand Care Supplies:** Athletic tape or blister kit if you're prone to blisters
-- **Small Dry Bag:** To keep valuables dry (phone, keys)
-- **Hair Ties:** For long hair
+<div class="accordion-section">
+    <button class="accordion-toggle">Pre-Session Briefing</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Each session will typically start with a brief meeting that may cover:</p>
+            <ul>
+                <li>The day's learning objectives and activities</li>
+                <li>Weather and water conditions</li>
+                <li>Safety reminders and procedures</li>
+                <li>Equipment assignments</li>
+                <li>Opportunity to ask questions</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-## What to Wear for Rowing
+<div class="accordion-section">
+    <button class="accordion-toggle">Safety First: Key Reminders</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Safety is our top priority. Always remember:</p>
+            <ul>
+                <li><strong>Listen to Your Coaches:</strong> Follow all instructions from your coaches immediately and without question, especially regarding safety.</li>
+                <li><strong>Inform Coaches of Concerns:</strong> If you have any medical conditions, are not a strong swimmer, or have any concerns, please inform your coach before getting on the water.</li>
+                <li><strong>PFDs (Personal Flotation Devices):</strong> Your coach will instruct you on PFD usage. If you are not a confident swimmer or feel uncomfortable, request a PFD.</li>
+                <li><strong>Buddy System:</strong> Stay with the group and be aware of your fellow rowers.</li>
+                <li><strong>Handling Equipment:</strong> Learn the proper techniques for handling boats and oars to prevent injury and equipment damage. Always ask for help if you are unsure.</li>
+                <li><strong>Flip Test:</strong> You will participate in a supervised capsize drill (flip test) to learn how to recover if your boat overturns. This is a crucial safety skill.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### Clothing Guidelines
-- **Athletic, Form-Fitting Clothing:** Wear moisture-wicking garments that won't catch in the sliding seat tracks
-- **AVOID Baggy Clothing:** Loose clothing can get caught in moving parts of the boat
-- **HIGH VISIBILITY Colors:** Wear bright colors (neon yellow, orange, pink, white) for safety on the water
-- **AVOID Dark Colors:** Dark colors (black, navy, dark gray) blend with water and reduce visibility
-- **Layers:** In cooler weather, wear layers that can be easily removed as you warm up
-- **No Cotton:** Choose synthetic fabrics that dry quickly
+<div class="accordion-section">
+    <button class="accordion-toggle">Understanding Basic Boathouse Etiquette</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <ul>
+                <li><strong>Shared Space:</strong> The boathouse and docks are shared spaces. Be mindful of other users and club members.</li>
+                <li><strong>Equipment Care:</strong> Treat all club equipment with respect. Report any damage to your coach immediately.</li>
+                <li><strong>Cleanliness:</strong> Help keep the boathouse tidy. Dispose of trash properly and rinse your equipment as instructed.</li>
+                <li><strong>Noise Levels:</strong> Be considerate of others, especially when instruction is in progress.</li>
+                <li><strong>Dock Awareness:</strong> Docks can be slippery. Walk carefully and be aware of boat traffic.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-### Footwear
-- **Athletic Shoes:** Wear regular athletic shoes to the boathouse for warm-up activities
-- **Socks:** You'll wear socks in the boat's built-in foot stretchers (shoes stay on shore)
-- **No Street Shoes:** Street shoes are never allowed in the boats
-
-### Hand Protection
-- **Remove Rings and Jewelry:** These can cause blisters and may catch on equipment
-- **Cut Fingernails Short:** Long nails can cause scratches to your opposite hand
-- **Optional Gloves:** Rowing-specific gloves can help prevent blisters for beginners
-
-## Preparing Your Body
-
-### Before Your First Session
-- **Trim Fingernails:** Keep them short and smooth
-- **Remove Jewelry:** Take off rings, bracelets, and watches that might interfere with rowing
-- **Basic Stretching:** Light stretching, especially for shoulders, back, and legs
-- **Rest Well:** Ensure you're well-rested to maximize learning and endurance
-
-### Between Sessions
-- **Hand Care:** Treat any developing blisters according to the [Hand Care Guide]({{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html)
-- **Gentle Recovery:** Light stretching if you're sore from previous sessions
-- **Mental Preparation:** Review techniques and terminology from previous sessions
-
-## Facility Information
-
-- **Location:** Meet at the Bandemer Park boathouse (check pre-course emails for exact meeting spot)
-- **Arrival Time:** 15 minutes early for your first session, 5-10 minutes early for subsequent sessions
-- **Facilities Note:** There are no dedicated locker rooms or changing facilities at Bandemer Park
-- **Weather Contingency:** Sessions may be rescheduled due to unsafe conditions; check your email before heading to the boathouse if weather is questionable
-
-Remember that sculling is a water sport - you will get wet at some point! Having proper clothing and being prepared for all conditions will make your learning experience much more enjoyable.
+<div class="accordion-section">
+    <button class="accordion-toggle">What to Expect On Your First Day</button>
+    <div class="accordion-content">
+        <div class="accordion-content-inner">
+            <p>Your first day will be a mix of land-based and on-water instruction. You can expect to:</p>
+            <ul>
+                <li>Meet your coaches and fellow participants.</li>
+                <li>Get an overview of rowing terminology and basic boat handling.</li>
+                <li>Learn about safety procedures and boathouse rules.</li>
+                <li>Practice basic rowing movements on an ergometer (rowing machine) or a stable dockside platform.</li>
+                <li>Get familiar with handling oars and getting in and out of a rowing shell.</li>
+                <li>Potentially have your first experience rowing on the water in a stable training boat, with close supervision.</li>
+            </ul>
+            <p>The focus will be on safety, familiarization, and learning fundamental techniques in a supportive environment. Don't worry about mastering everything at once – rowing is a skill that develops over time with practice.</p>
+            <p>Most importantly, come with a positive attitude, be ready to learn, and have fun!</p>
+        </div>
+    </div>
+</div>
 
 **Next Steps:**
-- [Basic Rowing Terminology](terminology.html)
-- [Session 1 Guide]({{ site.baseurl }}/for-learners/learning-journey/session-1.html)
-- [Safety Essentials]({{ site.baseurl }}/for-learners/safety/essential-rules.html)
+- [Program Overview]({{ site.baseurl }}/for-learners/getting-started/program-overview.html)
+- [Rowing Terminology]({{ site.baseurl }}/for-learners/getting-started/terminology.html)
+- [Frequently Asked Questions]({{ site.baseurl }}/for-learners/resources/faq.html)

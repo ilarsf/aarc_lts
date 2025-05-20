@@ -25,19 +25,20 @@ search_exclude: true
       <h3>Assessment Instructions</h3>
       <p>Complete this comprehensive assessment for each participant at the end of the program. The assessment evaluates technical skills, safety awareness, and readiness for independent sculling.</p>
       
-      <div class="assessment-checklist">
-        <h3>Participant Information</h3>
+      {% for i in (1..6) %}
+      <div class="assessment-checklist participant-assessment-{{ i }}">
+        <h3>Participant {{ i }} Information</h3>
         <div class="form-group">
-          <label for="participant-name">Name:</label>
-          <input type="text" id="participant-name" class="form-control">
+          <label for="participant-name-{{ i }}">Name:</label>
+          <input type="text" id="participant-name-{{ i }}" class="form-control participant-name">
         </div>
         <div class="form-group">
-          <label for="program-dates">Program Dates:</label>
-          <input type="text" id="program-dates" class="form-control">
+          <label for="program-dates-{{ i }}">Program Dates:</label>
+          <input type="text" id="program-dates-{{ i }}" class="form-control program-dates">
         </div>
         <div class="form-group">
-          <label for="coach-name">Coach:</label>
-          <input type="text" id="coach-name" class="form-control">
+          <label for="coach-name-{{ i }}">Coach:</label>
+          <input type="text" id="coach-name-{{ i }}" class="form-control coach-name">
         </div>
         
         <h3>Assessment Scale</h3>
@@ -59,54 +60,54 @@ search_exclude: true
           <tr>
             <td>Carries boat safely with proper technique</td>
             <td>
-              <select>
+              <select id="boat-handling-carries-{{ i }}" class="form-control boat-handling-carries">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="boat-handling-carries-comments-{{ i }}" class="form-control boat-handling-carries-comments"></td>
           </tr>
           <tr>
             <td>Launches boat properly from dock</td>
             <td>
-              <select>
+              <select id="boat-handling-launches-{{ i }}" class="form-control boat-handling-launches">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="boat-handling-launches-comments-{{ i }}" class="form-control boat-handling-launches-comments"></td>
           </tr>
           <tr>
             <td>Handles oars properly</td>
             <td>
-              <select>
+              <select id="boat-handling-oars-{{ i }}" class="form-control boat-handling-oars">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="boat-handling-oars-comments-{{ i }}" class="form-control boat-handling-oars-comments"></td>
           </tr>
           <tr>
             <td>Lands boat safely at dock</td>
             <td>
-              <select>
+              <select id="boat-handling-lands-{{ i }}" class="form-control boat-handling-lands">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="boat-handling-lands-comments-{{ i }}" class="form-control boat-handling-lands-comments"></td>
           </tr>
         </table>
         
@@ -120,67 +121,67 @@ search_exclude: true
           <tr>
             <td>Demonstrates proper recovery sequencing</td>
             <td>
-              <select>
+              <select id="tech-rowing-recovery-{{ i }}" class="form-control tech-rowing-recovery">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="tech-rowing-recovery-comments-{{ i }}" class="form-control tech-rowing-recovery-comments"></td>
           </tr>
           <tr>
             <td>Maintains proper blade depth</td>
             <td>
-              <select>
+              <select id="tech-rowing-blade-depth-{{ i }}" class="form-control tech-rowing-blade-depth">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="tech-rowing-blade-depth-comments-{{ i }}" class="form-control tech-rowing-blade-depth-comments"></td>
           </tr>
           <tr>
             <td>Demonstrates proper drive sequence</td>
             <td>
-              <select>
+              <select id="tech-rowing-drive-sequence-{{ i }}" class="form-control tech-rowing-drive-sequence">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="tech-rowing-drive-sequence-comments-{{ i }}" class="form-control tech-rowing-drive-sequence-comments"></td>
           </tr>
           <tr>
             <td>Maintains consistent rhythm</td>
             <td>
-              <select>
+              <select id="tech-rowing-rhythm-{{ i }}" class="form-control tech-rowing-rhythm">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="tech-rowing-rhythm-comments-{{ i }}" class="form-control tech-rowing-rhythm-comments"></td>
           </tr>
           <tr>
             <td>Controls boat feathering and squaring</td>
             <td>
-              <select>
+              <select id="tech-rowing-feathering-{{ i }}" class="form-control tech-rowing-feathering">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="tech-rowing-feathering-comments-{{ i }}" class="form-control tech-rowing-feathering-comments"></td>
           </tr>
         </table>
         
@@ -194,68 +195,68 @@ search_exclude: true
           <tr>
             <td>Successfully completed flip test</td>
             <td>
-              <select>
+              <select id="safety-nav-flip-test-{{ i }}" class="form-control safety-nav-flip-test">
                 <option>Select...</option>
-                <option>Yes</option>
-                <option>No</option>
-                <option>N/A</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="na">N/A</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="safety-nav-flip-test-comments-{{ i }}" class="form-control safety-nav-flip-test-comments"></td>
           </tr>
           <tr>
             <td>Demonstrates awareness of river traffic pattern</td>
             <td>
-              <select>
+              <select id="safety-nav-traffic-pattern-{{ i }}" class="form-control safety-nav-traffic-pattern">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="safety-nav-traffic-pattern-comments-{{ i }}" class="form-control safety-nav-traffic-pattern-comments"></td>
           </tr>
           <tr>
             <td>Applies appropriate safety practices</td>
             <td>
-              <select>
+              <select id="safety-nav-practices-{{ i }}" class="form-control safety-nav-practices">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="safety-nav-practices-comments-{{ i }}" class="form-control safety-nav-practices-comments"></td>
           </tr>
           <tr>
             <td>Demonstrates ability to steer effectively</td>
             <td>
-              <select>
+              <select id="safety-nav-steering-{{ i }}" class="form-control safety-nav-steering">
                 <option>Select...</option>
-                <option>1 - Needs significant improvement</option>
-                <option>2 - Developing</option>
-                <option>3 - Competent</option>
-                <option>4 - Proficient</option>
+                <option value="1">1 - Needs significant improvement</option>
+                <option value="2">2 - Developing</option>
+                <option value="3">3 - Competent</option>
+                <option value="4">4 - Proficient</option>
               </select>
             </td>
-            <td><input type="text" class="form-control"></td>
+            <td><input type="text" id="safety-nav-steering-comments-{{ i }}" class="form-control safety-nav-steering-comments"></td>
           </tr>
         </table>
         
         <h3>Overall Assessment</h3>
         <div class="form-group">
-          <label for="overall-strengths">Participant Strengths:</label>
-          <textarea id="overall-strengths" class="form-control" rows="3"></textarea>
+          <label for="overall-strengths-{{ i }}">Participant Strengths:</label>
+          <textarea id="overall-strengths-{{ i }}" class="form-control overall-strengths" rows="3"></textarea>
         </div>
         <div class="form-group">
-          <label for="development-areas">Areas for Development:</label>
-          <textarea id="development-areas" class="form-control" rows="3"></textarea>
+          <label for="development-areas-{{ i }}">Areas for Development:</label>
+          <textarea id="development-areas-{{ i }}" class="form-control development-areas" rows="3"></textarea>
         </div>
         <div class="form-group">
-          <label for="recommendations">Recommendations for Next Steps:</label>
-          <textarea id="recommendations" class="form-control" rows="3"></textarea>
+          <label for="recommendations-{{ i }}">Recommendations for Next Steps:</label>
+          <textarea id="recommendations-{{ i }}" class="form-control recommendations" rows="3"></textarea>
         </div>
         
         <h3>Program Completion Status</h3>
@@ -263,34 +264,35 @@ search_exclude: true
           <label>Recommendation:</label>
           <div class="radio-options">
             <label>
-              <input type="radio" name="completion-status" value="ready">
+              <input type="radio" name="completion-status-{{ i }}" value="ready" class="completion-status-ready">
               Ready for independent sculling
             </label>
             <label>
-              <input type="radio" name="completion-status" value="additional">
+              <input type="radio" name="completion-status-{{ i }}" value="additional" class="completion-status-additional">
               Additional supervised practice recommended
             </label>
             <label>
-              <input type="radio" name="completion-status" value="not-ready">
+              <input type="radio" name="completion-status-{{ i }}" value="not-ready" class="completion-status-not-ready">
               Not ready for independent sculling
             </label>
           </div>
         </div>
         
         <div class="form-group">
-          <label for="coach-signature">Coach Signature:</label>
-          <input type="text" id="coach-signature" class="form-control">
+          <label for="coach-signature-{{ i }}">Coach Signature:</label>
+          <input type="text" id="coach-signature-{{ i }}" class="form-control coach-signature">
         </div>
         <div class="form-group">
-          <label for="assessment-date">Date:</label>
-          <input type="date" id="assessment-date" class="form-control">
+          <label for="assessment-date-{{ i }}">Date:</label>
+          <input type="date" id="assessment-date-{{ i }}" class="form-control assessment-date">
         </div>
         
         <div class="form-actions">
-          <button class="cta-button">Print Assessment</button>
-          <button class="cta-button">Save as PDF</button>
+          <button class="cta-button print-assessment-button" data-participant="{{ i }}">Print Assessment</button>
+          <button class="cta-button save-pdf-button" data-participant="{{ i }}">Save as PDF</button>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -301,8 +303,13 @@ search_exclude: true
     <div class="accordion-content-inner">
       <p>Use this tracker to monitor participant progress after each session. This helps identify areas for focus in subsequent sessions.</p>
       
-      <h3>Progressive Skill Tracking</h3>
-      <div class="progress-tracker">
+      {% for i in (1..6) %}
+      <div class="progress-tracker participant-progress-{{ i }}">
+        <h3>Participant {{ i }} Progressive Skill Tracking</h3>
+        <div class="form-group">
+          <label for="participant-name-progress-{{ i }}">Name:</label>
+          <input type="text" id="participant-name-progress-{{ i }}" class="form-control participant-name-progress">
+        </div>
         <table class="progress-table">
           <tr>
             <th>Skill Area</th>
@@ -314,175 +321,175 @@ search_exclude: true
           <tr>
             <td>Balance & Stability</td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="balance-stability-s1-{{ i }}" class="compact-select balance-stability-s1">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="balance-stability-s2-{{ i }}" class="compact-select balance-stability-s2">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="balance-stability-s3-{{ i }}" class="compact-select balance-stability-s3">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="balance-stability-s4-{{ i }}" class="compact-select balance-stability-s4">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
           </tr>
           <tr>
             <td>Recovery Sequence</td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="recovery-sequence-s1-{{ i }}" class="compact-select recovery-sequence-s1">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="recovery-sequence-s2-{{ i }}" class="compact-select recovery-sequence-s2">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="recovery-sequence-s3-{{ i }}" class="compact-select recovery-sequence-s3">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="recovery-sequence-s4-{{ i }}" class="compact-select recovery-sequence-s4">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
           </tr>
           <tr>
             <td>Blade Control</td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="blade-control-s1-{{ i }}" class="compact-select blade-control-s1">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="blade-control-s2-{{ i }}" class="compact-select blade-control-s2">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="blade-control-s3-{{ i }}" class="compact-select blade-control-s3">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="blade-control-s4-{{ i }}" class="compact-select blade-control-s4">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
           </tr>
           <tr>
             <td>Drive Phase</td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="drive-phase-s1-{{ i }}" class="compact-select drive-phase-s1">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="drive-phase-s2-{{ i }}" class="compact-select drive-phase-s2">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="drive-phase-s3-{{ i }}" class="compact-select drive-phase-s3">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="drive-phase-s4-{{ i }}" class="compact-select drive-phase-s4">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
           </tr>
           <tr>
             <td>Safety Awareness</td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="safety-awareness-s1-{{ i }}" class="compact-select safety-awareness-s1">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="safety-awareness-s2-{{ i }}" class="compact-select safety-awareness-s2">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="safety-awareness-s3-{{ i }}" class="compact-select safety-awareness-s3">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
             <td>
-              <select class="compact-select">
-                <option>-</option>
-                <option>✓</option>
-                <option>!</option>
-                <option>X</option>
+              <select id="safety-awareness-s4-{{ i }}" class="compact-select safety-awareness-s4">
+                <option value="">-</option>
+                <option value="✓">✓</option>
+                <option value="!">!</option>
+                <option value="X">X</option>
               </select>
             </td>
           </tr>
@@ -494,19 +501,21 @@ search_exclude: true
       </div>
       
       <div class="notes-section">
-        <h3>Session Notes</h3>
+        <h3>Participant {{ i }} Session Notes</h3>
         
         <div class="session-notes">
           <h4>Session 1 Notes</h4>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea id="session-1-notes-{{ i }}" class="form-control session-1-notes" rows="3"></textarea>
           <h4>Session 2 Notes</h4>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea id="session-2-notes-{{ i }}" class="form-control session-2-notes" rows="3"></textarea>
           <h4>Session 3 Notes</h4>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea id="session-3-notes-{{ i }}" class="form-control session-3-notes" rows="3"></textarea>
           <h4>Session 4 Notes</h4>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea id="session-4-notes-{{ i }}" class="form-control session-4-notes" rows="3"></textarea>
         </div>
       </div>
+      {% if i < 6 %}<hr>{% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -696,5 +705,10 @@ search_exclude: true
   .analysis-table th {
     background-color: #f3f4f5;
     width: 25%;
+  }
+
+  .assessment-table tbody tr:nth-child(odd),
+  .progress-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
   }
 </style>

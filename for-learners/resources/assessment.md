@@ -499,5 +499,3 @@ Based on your assessment, your coaches may recommend:
   <a href="../resources/glossary.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Glossary</a>
   <a href="../resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
 </div>
-</content>
-</invoke>

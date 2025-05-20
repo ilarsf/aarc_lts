@@ -81,16 +81,6 @@ description: Guidance on continuing your rowing journey after completing the AAR
         </ul>
         <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
     </div>
-
-    <div id="coaching-programs-details" class="my-4 p-4 border rounded">
-        <h3>Novice and Intermediate Coached Programs</h3>
-        <p>After the Open Sculling trial, or if you desire more structured coaching, consider these options:</p>
-        <ul>
-            <li><strong>Novice Programs:</strong> Typically run for several weeks, focusing on refining basic skills, building endurance, and introducing more varied water conditions.</li>
-            <li><strong>Intermediate Programs:</strong> For those comfortable with basic independent sculling, these programs work on advanced techniques, efficiency, and potentially an introduction to racing or different boat classes.</li>
-        </ul>
-        <p>Information on current program offerings, schedules, and registration can be found on the AARC website or by contacting the club captain.</p>
-    </div>
     
     <div id="clinics-workshops-details" class="my-4 p-4 border rounded">
         <h3>Technique Clinics & Workshops</h3>
