@@ -92,6 +92,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to prepare for this session.</li>
                             <li>"Adjusting the Foot Stretcher in a Single Scull" - learn how to properly set up your boat</li>
                             <li>"Sculling Basics" - understand the fundamentals of the sculling stroke</li>
                             <li>"Essential Sculling #5 Getting In" - techniques for safely entering a single</li>
@@ -142,7 +143,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 1</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Warm-up & Review (10-25 minutes)</h4>
+                        <h4>Warm-up & Review</h4>
                         <ul>
                             <li>Brief Q&A about Session 1</li>
                             <li>Ergometer warm-up to reinforce proper sequencing</li>
@@ -157,7 +158,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Equipment Preparation (20-25 minutes)</h4>
+                        <h4>Equipment Preparation</h4>
                         <ul>
                             <li>Learning "oars down first" procedure</li>
                             <li>Boat sign-out process</li>
@@ -171,7 +172,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 3</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Launching Your Boat (20 minutes)</h4>
+                        <h4>Launching Your Boat</h4>
                         <ul>
                             <li>Review of dock commands and procedures</li>
                             <li>Step-by-step launching process</li>
@@ -185,7 +186,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 4</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>On-Water Session (90 minutes with break)</h4>
+                        <h4>On-Water Session (with break)</h4>
                         
                         <div class="accordion-section">
                             <button class="accordion-toggle">First Skills Focus</button>
@@ -222,7 +223,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Finish</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Landing & Wrap-up (15 minutes)</h4>
+                        <h4>Landing & Wrap-up</h4>
                         <ul>
                             <li>Review dock approach techniques</li>
                             <li>Safe landing practice</li>
@@ -289,6 +290,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Practice your recovery sequence mentally</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you\'ve learned.</li>
                             <li>Review the river traffic pattern diagrams provided</li>
                             <li>Read about hand care as blisters may begin to develop</li>
                             <li>Consider watching the videos recommended for Session 3</li>

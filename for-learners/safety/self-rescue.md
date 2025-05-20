@@ -254,7 +254,7 @@ description: Flip test and recovery procedures for scullers
 </div>
 
 <div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
+  <p>{% include icon.html icon="fas fa-info-circle" type="info" %} <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
 </div>
 
 ## Alternative Scenarios & Solutions
@@ -454,28 +454,12 @@ description: Flip test and recovery procedures for scullers
 <div class="video-grid">
   <div class="video-container">
     <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      {% include image-with-fallback.html 
-        src="https://img.youtube.com/vi/bfJR2K18GZo/maxresdefault.jpg" 
-        alt="Lars Flip Test Demo Thumbnail"
-        icon="fas fa-play-circle" 
-        type="info"
-        icon_size="4rem"
-        icon_color="#e91e63"
-        class="video-thumbnail" %}
       <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
     <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Lars Flip Test Demo</strong> - Shows the standard flip test procedure</p>
   </div>
   <div class="video-container">
     <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      {% include image-with-fallback.html 
-        src="https://img.youtube.com/vi/lznN4_uCz9c/maxresdefault.jpg" 
-        alt="Johanna Flip Test Demo Thumbnail"
-        icon="fas fa-play-circle" 
-        type="info"
-        icon_size="4rem"
-        icon_color="#e91e63"
-        class="video-thumbnail" %}
       <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
     <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Johanna Flip Test Demo</strong> - Alternative technique for re-entry</p>

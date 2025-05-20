@@ -91,6 +91,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                 <button class="accordion-toggle">Review Video Resources</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
+                        <p>Review the following videos to prepare for this session. You can also <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">view all videos for Session 4</a>.</p>
                         <ul>
                             <li>"Sculling: Setting the Boat Level" - advanced balance techniques</li>
                             <li>"Most important Sculling drills done right" - refining stroke components</li>
@@ -144,7 +145,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <span class="time">Part 1</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Review & Session Plan (15 minutes)</h4>
+                        <h4>Review & Session Plan</h4>
                         <ul>
                             <li>Reinforcement of leg drive concepts</li>
                             <li>Review of navigation rules</li>
@@ -159,7 +160,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Equipment Prep & Launching (20 minutes)</h4>
+                        <h4>Equipment Prep & Launching</h4>
                         <ul>
                             <li>Standard boat preparation with special attention to steering components</li>
                             <li>Double-checking all equipment</li>
@@ -173,7 +174,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <span class="time">Part 3</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Warm-up & Group Division (25 minutes)</h4>
+                        <h4>Warm-up & Group Division</h4>
                         <ul>
                             <li>Short row near boathouse</li>
                             <li>Assessment of individual control/confidence</li>
@@ -192,7 +193,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <span class="time">Part 4</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Group-Specific On-Water Session (110 minutes with break)</h4>
+                        <h4>Group-Specific On-Water Session (with break)</h4>
                         
                         <div class="accordion-section">
                             <button class="accordion-toggle">Bridge Ready Group</button>
@@ -233,7 +234,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <span class="time">Finish</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Landing & Next Steps (15 minutes)</h4>
+                        <h4>Landing & Next Steps</h4>
                         <ul>
                             <li>Efficient dock approach and exit</li>
                             <li>Thorough equipment cleaning</li>
@@ -322,6 +323,15 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             <div class="info-box tip">
                 <h4>Moving Forward</h4>
                 <p>Ask your coaches about specific recommendations for your continued development. Everyone progresses at their own pace, and there are opportunities for scullers at all levels!</p>
+            </div>
+            
+            <div class="accordion-section">
+                <button class="accordion-toggle">Practice and Review</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>After your session, review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">videos for Session 4</a> to reinforce what you've learned and identify areas for improvement.</p>
+                    </div>
+                </div>
             </div>
             
             <h3>Continuing Your Rowing Journey</h3>

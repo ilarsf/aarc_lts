@@ -92,6 +92,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to prepare for this session.</li>
                             <li>"Sculling: The Finish - Tap Down and Feather" - learn proper blade extraction</li>
                             <li>"Essential Sculling Technique for rowers" - focus on recovery sequence</li>
                             <li>"How to Feather and Square Your Oars" - mastering blade control</li>
@@ -144,7 +145,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <span class="time">Part 1</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Warm-up & Review (0-25 minutes)</h4>
+                        <h4>Warm-up & Review</h4>
                         <ul>
                             <li>Brief Q&A about Session 2</li>
                             <li>Reinforcement of sequencing concepts</li>
@@ -159,7 +160,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>River Geography & Traffic (25-50 minutes)</h4>
+                        <h4>River Geography & Traffic</h4>
                         <ul>
                             <li>Review of boathouse map and river layout</li>
                             <li>Explanation of traffic pattern rules</li>
@@ -174,7 +175,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <span class="time">Part 3</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Equipment Prep & Launching (20 minutes)</h4>
+                        <h4>Equipment Prep & Launching</h4>
                         <ul>
                             <li>Standard boat preparation with proper checks</li>
                             <li>Reinforcement of sign-out procedures</li>
@@ -188,7 +189,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <span class="time">Part 4</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>On-Water Session (100 minutes with break)</h4>
+                        <h4>On-Water Session (with break)</h4>
                         
                         <div class="accordion-section">
                             <button class="accordion-toggle">First Skills Focus</button>
@@ -225,7 +226,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <span class="time">Finish</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Landing & Wrap-up (10 minutes)</h4>
+                        <h4>Landing & Wrap-up</h4>
                         <ul>
                             <li>Controlled dock approach with increased independence</li>
                             <li>Thorough equipment cleaning</li>
@@ -310,6 +311,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Practice mentally connecting your leg drive to boat movement</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to reinforce what you\'ve learned.</li>
                             <li>Review river traffic patterns and navigation rules</li>
                             <li>Consider watching videos recommended for Session 4</li>
                             <li>Take care of any developing blisters or hand issues</li>

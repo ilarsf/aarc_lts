@@ -132,6 +132,20 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                 </div>
             </div>
             
+            <div class="accordion-section">
+                <button class="accordion-toggle">What to Expect Physically</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li>Rowing engages many muscle groups - you may use muscles you don't typically use</li>
+                            <li>Hand blisters are common for beginners - we'll cover prevention techniques</li>
+                            <li>Balance is challenging at first - the boats are designed to be narrow</li>
+                            <li>You'll need to bend low to get into and out of the boat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
             <div class="info-box tip">
                 <h4>Preparation Tip</h4>
                 <p>Getting a good night's sleep before your first session will help you absorb new information and skills more effectively.</p>
@@ -267,20 +281,6 @@ Welcome to your first Learn to Scull session! This guide will help you understan
     <div class="tab-content" id="next-steps">
         <div class="tab-content-inner">
             <h3>After Your First Session</h3>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">What to Expect Physically</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Rowing engages many muscle groups - you may use muscles you don't typically use</li>
-                            <li>Hand blisters are common for beginners - we'll cover prevention techniques</li>
-                            <li>Balance is challenging at first - the boats are designed to be narrow</li>
-                            <li>You'll need to bend low to get into and out of the boat</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             
             <div class="accordion-section">
                 <button class="accordion-toggle">The Flip Test - What to Know</button>

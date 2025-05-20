@@ -68,7 +68,7 @@ This curated collection of high-quality instructional videos supports the Learn 
 
   <div class="video-grid">
     <!-- Introduction to Sculling -->
-    <div class="video-card" data-sessions="pre-course session1" data-skills="basics" data-topics="stroke-overview">
+    <div class="video-card" data-sessions="pre-course" data-skills="basics" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="eTerbM8Uhxc">
         <iframe src="https://www.youtube.com/embed/eTerbM8Uhxc" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -90,7 +90,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
     
     <!-- Safety Video -->
-    <div class="video-card" data-sessions="pre-course session1" data-skills="safety" data-topics="stroke-overview">
+    <div class="video-card" data-sessions="pre-course" data-skills="safety" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="Rx5SUe_RdgQ">
         <iframe src="https://www.youtube.com/embed/Rx5SUe_RdgQ" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -155,8 +155,54 @@ This curated collection of high-quality instructional videos supports the Learn 
       </div>
     </div>
 
+    <!-- Lars Flip Test Demo -->
+    <div class="video-card" data-sessions="session1" data-skills="safety self-rescue" data-topics="">
+      <div class="video-thumbnail" data-video-id="bfJR2K18GZo">
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Lars Flip Test Demo - Hip Rotation Method</h3>
+        <div class="video-meta">
+          <span class="video-creator">AARC</span>
+          <span class="video-duration">1:10</span>
+        </div>
+        <div class="video-description">
+          Demonstration of the "Hip Rotation Method" for re-entering a capsized scull, performed by an AARC rower. This video shows the standard flip test procedure.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Safety</span>
+          <span class="video-tag">Self-Rescue</span>
+          <span class="video-tag">Flip Test</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Johanna Flip Test Demo -->
+    <div class="video-card" data-sessions="session1" data-skills="safety self-rescue" data-topics="">
+      <div class="video-thumbnail" data-video-id="lznN4_uCz9c">
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Johanna Flip Test Demo - Hip Rotation Method</h3>
+        <div class="video-meta">
+          <span class="video-creator">AARC</span>
+          <span class="video-duration">1:10</span>
+        </div>
+        <div class="video-description">
+          Demonstration of an alternative technique for re-entering a capsized scull using the "Hip Rotation Method", performed by an AARC rower.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Safety</span>
+          <span class="video-tag">Self-Rescue</span>
+          <span class="video-tag">Flip Test</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Parts of Sculling Oars -->
-    <div class="video-card" data-sessions="session1" data-skills="equipment" data-topics="">
+    <div class="video-card" data-sessions="post-course" data-skills="equipment" data-topics="">
       <div class="video-thumbnail" data-video-id="g6dO8Tftidk">
         <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -172,7 +218,6 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Equipment</span>
           <span class="video-tag">Oars</span>
-          <span class="video-tag">Session 1</span>
         </div>
       </div>
     </div>
@@ -266,7 +311,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
     
     <!-- The Finish -->
-    <div class="video-card" data-sessions="session3" data-skills="technique" data-topics="finish">
+    <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="finish">
       <div class="video-thumbnail" data-video-id="15RkCUVzqdA">
         <iframe src="https://www.youtube.com/embed/15RkCUVzqdA" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -282,13 +327,13 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Technique</span>
           <span class="video-tag">Finish</span>
-          <span class="video-tag">Session 3</span>
+          <span class="video-tag">Session 3-4</span>
         </div>
       </div>
     </div>
     
     <!-- The Recovery -->
-    <div class="video-card" data-sessions="session3" data-skills="technique" data-topics="recovery">
+    <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="recovery">
       <div class="video-thumbnail" data-video-id="I4yWtnTFdoY">
         <iframe src="https://www.youtube.com/embed/I4yWtnTFdoY" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -304,7 +349,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Technique</span>
           <span class="video-tag">Recovery</span>
-          <span class="video-tag">Session 3</span>
+          <span class="video-tag">Session 3-4</span>
         </div>
       </div>
     </div>
@@ -348,13 +393,13 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Drills</span>
           <span class="video-tag">Technique</span>
-          <span class="video-tag">Sessions 3-4</span>
+          <span class="video-tag">Session 3-4</span>
         </div>
       </div>
     </div>
     
     <!-- Navigation and Steering -->
-    <div class="video-card" data-sessions="session4" data-skills="technique advanced" data-topics="">
+    <div class="video-card" data-sessions="session3 session4" data-skills="technique advanced" data-topics="">
       <div class="video-thumbnail" data-video-id="2Ry2O5f8q0Y">
         <iframe src="https://www.youtube.com/embed/2Ry2O5f8q0Y" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -370,7 +415,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Navigation</span>
           <span class="video-tag">Advanced</span>
-          <span class="video-tag">Session 4</span>
+          <span class="video-tag">Session 3-4</span>
         </div>
       </div>
     </div>
