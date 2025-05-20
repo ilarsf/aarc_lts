@@ -298,6 +298,224 @@ This reference guide provides detailed analysis of the most common technical iss
   </div>
 </div>
 
+<div class="accordion-section">
+  <button class="accordion-toggle">Skying or Diving Blades on Recovery</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <table>
+        <tr>
+          <th>Issue Details</th>
+          <td>Rower carries blades too high (skying) or too low (diving/dragging) on the recovery, affecting boat balance, rhythm, and preparation for the catch.</td>
+        </tr>
+        <tr>
+          <th>Visual Indicators</th>
+          <td>
+            <ul>
+              <li>Blades significantly above the water surface (skying)</li>
+              <li>Blades dragging in the water (diving/dragging)</li>
+              <li>Inconsistent hand heights during recovery</li>
+              <li>Boat instability, particularly if one blade is higher/lower than the other</li>
+              <li>Rushed or compromised catch due to poor blade positioning</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Common Causes</th>
+          <td>
+            <ul>
+              <li>Poor body posture (slumping or over-reaching)</li>
+              <li>Incorrect hand levels (too high or too low)</li>
+              <li>Tension in shoulders and arms</li>
+              <li>Lack of awareness of blade position relative to water</li>
+              <li>Overcompensating for balance issues</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Correction Drills</th>
+          <td>
+            <ul>
+              <li>"Square Blade Rowing" focusing on consistent blade height</li>
+              <li>"Tap Down Drill" - exaggerating the downward movement of hands at the finish to clear water</li>
+              <li>"Recovery Pause Drill" - pausing at hands away and body over to check hand levels and blade height</li>
+              <li>Rowing with one hand on one oar, other hand guiding height on the other</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Coaching Cues</th>
+          <td>
+            <ul>
+              <li>"Level hands, like carrying a tray"</li>
+              <li>"Skim the surface on recovery"</li>
+              <li>"Relax the shoulders, let the hands float"</li>
+              <li>"Clear the water with a gentle tap down"</li>
+              <li>"Match your hand heights"</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Progress Indicators</th>
+          <td>
+            <ul>
+              <li>Blades consistently clear the water by a small, even margin</li>
+              <li>Smoother, more stable recovery</li>
+              <li>Improved preparation for the catch</li>
+              <li>Reduced tension in upper body</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Missing Water or Digging at the Catch</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <table>
+        <tr>
+          <th>Issue Details</th>
+          <td>Rower either fails to get the blade buried before taking the load (missing water/catching air) or plunges the blade too deep at the catch (digging), leading to inefficient power and potential equipment damage.</td>
+        </tr>
+        <tr>
+          <th>Visual Indicators</th>
+          <td>
+            <ul>
+              <li>Swooshing sound of blade hitting water late (missing water)</li>
+              <li>Large splash or "thud" as blade enters water (digging)</li>
+              <li>Blade not fully buried at the start of the drive</li>
+              <li>Blade buried too deep, oar shaft angled down into water</li>
+              <li>Boat checks or lurches at the catch</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Common Causes</th>
+          <td>
+            <ul>
+              <li>Incorrect timing of blade entry with leg drive</li>
+              <li>Poor hand height control approaching the catch</li>
+              <li>Over-reaching or lunging at the catch</li>
+              <li>Rushing the recovery and slide</li>
+              <li>Fear of "crabbing" leading to tentative catches</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Correction Drills</th>
+          <td>
+            <ul>
+              <li>"Catch Placement Drill" - rowing with pauses at the catch, focusing on blade entry</li>
+              <li>"Quarter Slide Catches" - focusing on blade entry from a shortened slide</li>
+              <li>"Slap Catches" (gentle) - to emphasize simultaneous hand lift and leg drive</li>
+              <li>"Rowing with Eyes Closed" (advanced) - to feel the blade lock in</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Coaching Cues</th>
+          <td>
+            <ul>
+              <li>"Lift hands into the catch, don't drop"</li>
+              <li>"Place the blade, then push"</li>
+              <li>"Feel the water before you load the legs"</li>
+              <li>"Quick hands up as the seat changes direction"</li>
+              <li>"Think 'up and in' with the hands"</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Progress Indicators</th>
+          <td>
+            <ul>
+              <li>Clean, quiet catches with minimal splash</li>
+              <li>Blade fully buried as leg drive begins</li>
+              <li>Immediate connection with the water</li>
+              <li>Improved boat acceleration from the catch</li>
+              <li>More confident and consistent catch timing</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-section">
+  <button class="accordion-toggle">Washing Out or Finishing Short</button>
+  <div class="accordion-content">
+    <div class="accordion-content-inner">
+      <table>
+        <tr>
+          <th>Issue Details</th>
+          <td>Rower's blade comes out of the water too early before the stroke is complete (washing out), or the rower shortens the stroke by not drawing the handles all the way to the body (finishing short). Both result in a loss of power.</td>
+        </tr>
+        <tr>
+          <th>Visual Indicators</th>
+          <td>
+            <ul>
+              <li>Blade becomes unburied and creates surface disturbance before the finish</li>
+              <li>Handles do not reach the body at the finish</li>
+              <li>Upper body may open up or lean back excessively to compensate</li>
+              <li>Reduced boat speed and run</li>
+              <li>Rowers may appear to be "flailing" at the finish</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Common Causes</th>
+          <td>
+            <ul>
+              <li>Dropping hands or elbows prematurely at the finish</li>
+              <li>Poor core engagement, leading to inability to maintain pressure</li>
+              <li>Opening the body too early in the drive sequence</li>
+              <li>Misunderstanding of stroke length and finish position</li>
+              <li>Fatigue leading to shortened strokes</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Correction Drills</th>
+          <td>
+            <ul>
+              <li>"Finish Position Rowing" - pausing at the finish to ensure correct body and handle position</li>
+              <li>"Low Rate, Full Stroke" - focusing on maintaining pressure to the very end</li>
+              <li>"Outside Arm Only Rowing" - to emphasize drawing through with the lats and back</li>
+              <li>"Handle Slap Drill" - gently tapping chest with handles to ensure full draw (use with caution)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Coaching Cues</th>
+          <td>
+            <ul>
+              <li>"Keep the blade buried until the hands touch the body"</li>
+              <li>"Draw through to your ribs/sternum"</li>
+              <li>"Squeeze the shoulder blades together at the finish"</li>
+              <li>"Maintain pressure on the oar handle all the way"</li>
+              <li>"Don't let go of the water early"</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Progress Indicators</th>
+          <td>
+            <ul>
+              <li>Blade remains buried and working until the tap down</li>
+              <li>Handles consistently drawn to the body</li>
+              <li>Fuller, more complete stroke length</li>
+              <li>Improved boat run and power application through the end of the drive</li>
+              <li>More controlled and powerful finish</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
 ## Additional Resources
 
 <div class="resource-links mt-4">

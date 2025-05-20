@@ -410,21 +410,21 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </div>
     
     <div class="resource-card">
-      <h3>Dark Sky</h3>
-      <p>Hyperlocal forecasts with minute-by-minute precipitation timing.</p>
-      <a href="https://darksky.net" class="resource-link" target="_blank">Visit Site</a>
-    </div>
-    
-    <div class="resource-card">
-      <h3>RadarScope</h3>
-      <p>Professional-grade radar data for tracking storm systems.</p>
-      <a href="https://radarscope.app" class="resource-link" target="_blank">Visit Site</a>
-    </div>
-    
-    <div class="resource-card">
       <h3>Windfinder</h3>
       <p>Specialized wind forecasts ideal for water sports.</p>
       <a href="https://www.windfinder.com" class="resource-link" target="_blank">Visit Site</a>
+    </div>
+    
+    <div class="resource-card">
+      <h3>Real Time Lightning Map</h3>
+      <p>See lightning strikes in real time across the planet. Free access to maps of former thunderstorms. By Blitzortung.org and contributors.</p>
+      <a href="https://www.lightningmaps.org" class="resource-link" target="_blank">Visit Site</a>
+    </div>
+    
+    <div class="resource-card">
+      <h3>WeatherBug</h3>
+      <p>Local and National Weather Forecasts, Radar & News.</p>
+      <a href="https://www.weatherbug.com" class="resource-link" target="_blank">Visit Site</a>
     </div>
   </div>
   
