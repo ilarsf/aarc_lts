@@ -186,6 +186,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
               <li>Wait a minimum of 30 minutes after the last lightning sighting or thunder before returning to the water</li>
               <li>Reset the 30-minute clock with each new lightning strike or thunder</li>
             </ul>
+            {% include icon.html icon="fas fa-bolt" type="safety" feature=true alt="Lightning warning" %}
           </div>
           
           <div>
@@ -404,24 +405,48 @@ Weather conditions directly impact rowing safety. This guide will help you under
   <div class="weather-resources">
     <div class="resource-card">
       <h3>Weather.gov</h3>
+      {% include image-with-fallback.html 
+        src="/assets/images/weather-resources/weather-gov.jpg" 
+        alt="Weather.gov website screenshot"
+        icon="fas fa-cloud-sun-rain" 
+        type="weather"
+        icon_size="3rem" %}
       <p>National Weather Service with official forecasts and warnings.</p>
       <a href="https://www.weather.gov" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
       <h3>Dark Sky</h3>
+      {% include image-with-fallback.html 
+        src="/assets/images/weather-resources/dark-sky.jpg" 
+        alt="Dark Sky app screenshot"
+        icon="fas fa-cloud-showers-heavy" 
+        type="weather"
+        icon_size="3rem" %}
       <p>Hyperlocal forecasts with minute-by-minute precipitation timing.</p>
       <a href="https://darksky.net" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
       <h3>RadarScope</h3>
+      {% include image-with-fallback.html 
+        src="/assets/images/weather-resources/radarscope.jpg" 
+        alt="RadarScope app screenshot"
+        icon="fas fa-broadcast-tower" 
+        type="weather"
+        icon_size="3rem" %}
       <p>Professional-grade radar data for tracking storm systems.</p>
       <a href="https://radarscope.app" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
       <h3>Windfinder</h3>
+      {% include image-with-fallback.html 
+        src="/assets/images/weather-resources/windfinder.jpg" 
+        alt="Windfinder website screenshot"
+        icon="fas fa-wind" 
+        type="weather"
+        icon_size="3rem" %}
       <p>Specialized wind forecasts ideal for water sports.</p>
       <a href="https://www.windfinder.com" class="resource-link" target="_blank">Visit Site</a>
     </div>
@@ -545,13 +570,19 @@ Weather conditions directly impact rowing safety. This guide will help you under
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Add Font Awesome icons if not already loaded
-    if (!document.getElementById('font-awesome-css')) {
-      const link = document.createElement('link');
-      link.id = 'font-awesome-css';
-      link.rel = 'stylesheet';
-      link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-      document.head.appendChild(link);
-    }
+    // Remove Font Awesome loading script as it's now included in head-custom.html
   });
 </script>
+
+<!-- Helper component for icon fallbacks -->
+<div class="icon-helper" style="display:none">
+  <div id="weather-icon-template" class="icon-fallback weather-icon">
+    <i class="fas fa-cloud-sun"></i>
+  </div>
+  <div id="safety-icon-template" class="icon-fallback safety-icon">
+    <i class="fas fa-shield-alt"></i>
+  </div>
+  <div id="info-icon-template" class="icon-fallback info-icon">
+    <i class="fas fa-info-circle"></i>
+  </div>
+</div>

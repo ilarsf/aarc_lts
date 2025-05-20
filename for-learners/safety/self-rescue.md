@@ -5,7 +5,6 @@ description: Flip test and recovery procedures for scullers
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/self-rescue-timeline.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 # Sculling Self-Rescue Guide
 
@@ -13,7 +12,7 @@ description: Flip test and recovery procedures for scullers
 
 ## Understanding Capsizing
 
-<p><i class="fas fa-info-circle" style="color: #2196f3;"></i> Capsizing can happen to anyone, from beginners to experienced rowers. Common causes include:</p>
+<p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Capsizing can happen to anyone, from beginners to experienced rowers. Common causes include:</p>
 
 <div class="rescue-step-content">
   <div class="row">
@@ -27,7 +26,7 @@ description: Flip test and recovery procedures for scullers
     </div>
     <div class="col-md-3 text-center">
       <div class="rescue-step-icon">
-        <i class="fas fa-water fa-3x" style="color: #2196f3;"></i>
+        {% include icon.html icon="fas fa-water" type="info" size="3rem" alt="Water icon" %}
       </div>
     </div>
   </div>
@@ -74,7 +73,7 @@ description: Flip test and recovery procedures for scullers
       <div class="row">
         <div class="col-md-9">
           <div class="rescue-step-description">
-            <p><i class="fas fa-check-circle" style="color: #4caf50;"></i> Before any rowing session, be prepared for the possibility of capsizing.</p>
+            <p>{% include icon.html icon="fas fa-check-circle" type="info" alt="Check" color="#4caf50" %} Before any rowing session, be prepared for the possibility of capsizing.</p>
           </div>
           <div class="rescue-step-actions">
             <ul>
@@ -84,11 +83,11 @@ description: Flip test and recovery procedures for scullers
               <li>Know the water conditions and temperature</li>
             </ul>
           </div>
-          <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Tip:</strong> During your flip test, coaches will ensure it's conducted in a safe, shallow area with supervision.</p>
+          <p>{% include icon.html icon="fas fa-lightbulb" type="info" alt="Tip" color="#4caf50" %} <strong>Tip:</strong> During your flip test, coaches will ensure it's conducted in a safe, shallow area with supervision.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
-            <i class="fas fa-tshirt fa-3x" style="color: #2196f3;"></i>
+            {% include icon.html icon="fas fa-tshirt" type="info" size="3rem" alt="Clothing icon" %}
           </div>
         </div>
       </div>
@@ -256,7 +255,7 @@ description: Flip test and recovery procedures for scullers
 </div>
 
 <div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p><i class="fas fa-info-circle" style="color: #2196f3;"></i> <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
+  <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
 </div>
 
 ## Alternative Scenarios & Solutions
@@ -264,28 +263,27 @@ description: Flip test and recovery procedures for scullers
 <p>Not all rescue situations are the same. Here are solutions for different challenging scenarios you might encounter.</p>
 
 <div class="alert alert-warning" style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p><i class="fas fa-exclamation-circle" style="color: #ff9800;"></i> <strong>Important:</strong> There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water using the push/kick method described in "Exiting at the Dock" below.</p>
+  <p>{% include icon.html icon="fas fa-exclamation-circle" type="safety" alt="Warning" color="#ff9800" %} <strong>Important:</strong> There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water using the push/kick method described in "Exiting at the Dock" below.</p>
 </div>
 
 ### Common Challenges
 
 <div class="accordion-container" id="common-challenges">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('tired')"><i class="fas fa-battery-quarter" style="margin-right: 10px; color: #f44336;"></i> Too Tired to Re-enter</div>
+    <div class="accordion-header" onclick="toggleAccordion('tired')">{% include icon.html icon="fas fa-battery-quarter" type="safety" alt="Low energy" style="margin-right: 10px;" %} Too Tired to Re-enter</div>
     <div class="accordion-content" id="tired-content">
       <div class="rescue-step-content">
         <div class="row">
           <div class="col-md-9">
-            <p><i class="fas fa-info-circle" style="color: #2196f3;"></i> Hold onto the boat and kick to shore. Use a scissor kick to conserve energy while making forward progress.</p>
+            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Hold onto the boat and kick to shore. Use a scissor kick to conserve energy while making forward progress.</p>
             <ul>
               <li>Keep your upper body draped over the boat to conserve energy</li>
               <li>Use gentle scissor kicks rather than thrashing motions</li>
-              <li>If possible, use your oars to help steer towards shore</li>
             </ul>
           </div>
           <div class="col-md-3 text-center">
             <div class="rescue-step-icon">
-              <i class="fas fa-swimmer fa-3x" style="color: #2196f3;"></i>
+              {% include icon.html icon="fas fa-swimmer" type="info" size="3rem" alt="Swimmer icon" %}
             </div>
           </div>
         </div>
@@ -294,17 +292,17 @@ description: Flip test and recovery procedures for scullers
   </div>
   
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('cold')"><i class="fas fa-thermometer-quarter" style="margin-right: 10px; color: #f44336;"></i> Extremely Cold Water</div>
+    <div class="accordion-header" onclick="toggleAccordion('cold')">{% include icon.html icon="fas fa-thermometer-quarter" type="safety" alt="Cold temperature" style="margin-right: 10px;" %} Extremely Cold Water</div>
     <div class="accordion-content" id="cold-content">
       <div class="rescue-step-content">
         <div class="row">
           <div class="col-md-9">
-            <p><i class="fas fa-exclamation-triangle" style="color: #ff9800;"></i> Focus on quick re-entry or signaling for help; consider swimming to shore while holding the boat if re-entry isn't immediately successful. Cold water saps strength quickly, so respond with urgency.</p>
+            <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#ff9800" %} Focus on quick re-entry or signaling for help; consider swimming to shore while holding the boat if re-entry isn't immediately successful. Cold water saps strength quickly, so respond with urgency.</p>
             <p><strong>Cold Water Safety:</strong> In water under 60°F (15°C), prioritize getting your core out of the water as quickly as possible. Cold water shock and hypothermia are serious risks that can impair your ability to self-rescue.</p>
           </div>
           <div class="col-md-3 text-center">
             <div class="rescue-step-icon">
-              <i class="fas fa-snowflake fa-3x" style="color: #2196f3;"></i>
+              {% include icon.html icon="fas fa-snowflake" type="info" size="3rem" alt="Cold water icon" %}
             </div>
           </div>
         </div>
@@ -313,12 +311,12 @@ description: Flip test and recovery procedures for scullers
   </div>
   
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('dock')"><i class="fas fa-home" style="margin-right: 10px; color: #2196f3;"></i> Exiting at the Dock</div>
+    <div class="accordion-header" onclick="toggleAccordion('dock')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Exiting at the Dock</div>
     <div class="accordion-content" id="dock-content">
       <div class="rescue-step-content">
         <div class="row">
           <div class="col-md-9">
-            <p><i class="fas fa-info-circle" style="color: #2196f3;"></i> If you cannot re-enter your boat and need to get to the dock:</p>
+            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock:</p>
             <ol>
               <li>Swim with your boat to the dock, keeping it between you and the dock</li>
               <li>Once at the dock, place both hands on the dock surface</li>
@@ -329,7 +327,7 @@ description: Flip test and recovery procedures for scullers
           </div>
           <div class="col-md-3 text-center">
             <div class="rescue-step-icon">
-              <i class="fas fa-grip-lines fa-3x" style="color: #2196f3;"></i>
+              {% include icon.html icon="fas fa-grip-lines" type="info" size="3rem" alt="Dock grip icon" %}
             </div>
           </div>
         </div>
@@ -430,7 +428,7 @@ description: Flip test and recovery procedures for scullers
 
 ## Practice and Preparation
 
-<p><i class="fas fa-brain" style="color: #2196f3;"></i> Self-rescue skills require regular maintenance. Here's how to stay prepared:</p>
+<p>{% include icon.html icon="fas fa-brain" type="info" alt="Mental preparation" %} Self-rescue skills require regular maintenance. Here's how to stay prepared:</p>
 
 <div class="rescue-step-content">
   <div class="row">
@@ -444,7 +442,7 @@ description: Flip test and recovery procedures for scullers
     </div>
     <div class="col-md-3 text-center">
       <div class="rescue-step-icon">
-        <i class="fas fa-clipboard-check fa-3x" style="color: #2196f3;"></i>
+        {% include icon.html icon="fas fa-clipboard-check" type="info" size="3rem" alt="Checklist icon" %}
       </div>
     </div>
   </div>
@@ -452,25 +450,41 @@ description: Flip test and recovery procedures for scullers
 
 ## Video Demonstrations
 
-<p><i class="fas fa-video" style="color: #e91e63;"></i> These videos demonstrate the flip test and self-rescue techniques:</p>
+<p>{% include icon.html icon="fas fa-video" type="info" alt="Video" color="#e91e63" %} These videos demonstrate the flip test and self-rescue techniques:</p>
 
 <div class="video-grid">
   <div class="video-container">
     <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      {% include image-with-fallback.html 
+        src="https://img.youtube.com/vi/bfJR2K18GZo/maxresdefault.jpg" 
+        alt="Lars Flip Test Demo Thumbnail"
+        icon="fas fa-play-circle" 
+        type="info"
+        icon_size="4rem"
+        icon_color="#e91e63"
+        class="video-thumbnail" %}
       <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
-    <p><i class="fas fa-play-circle" style="color: #e91e63;"></i> <strong>Lars Flip Test Demo</strong> - Shows the standard flip test procedure</p>
+    <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Lars Flip Test Demo</strong> - Shows the standard flip test procedure</p>
   </div>
   <div class="video-container">
     <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      {% include image-with-fallback.html 
+        src="https://img.youtube.com/vi/lznN4_uCz9c/maxresdefault.jpg" 
+        alt="Johanna Flip Test Demo Thumbnail"
+        icon="fas fa-play-circle" 
+        type="info"
+        icon_size="4rem"
+        icon_color="#e91e63"
+        class="video-thumbnail" %}
       <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
-    <p><i class="fas fa-play-circle" style="color: #e91e63;"></i> <strong>Johanna Flip Test Demo</strong> - Alternative technique for re-entry</p>
+    <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Johanna Flip Test Demo</strong> - Alternative technique for re-entry</p>
   </div>
 </div>
 
 <div class="alert alert-warning" style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p><i class="fas fa-exclamation-triangle" style="color: #f44336;"></i> <strong>Safety First:</strong> If at any point during a real capsize you feel unsafe or unable to complete the self-rescue, signal for help immediately and stay with your boat while awaiting assistance.</p>
+  <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#f44336" %} <strong>Safety First:</strong> If at any point during a real capsize you feel unsafe or unable to complete the self-rescue, signal for help immediately and stay with your boat while awaiting assistance.</p>
 </div>
 
 <style>
@@ -717,13 +731,13 @@ description: Flip test and recovery procedures for scullers
 
 By mastering these self-rescue techniques, you gain confidence on the water and ensure you can handle unexpected situations safely.
 
-<h3><i class="fas fa-shield-alt" style="color: #2196f3;"></i> Additional Safety Resources</h3>
+<h3>{% include icon.html icon="fas fa-shield-alt" type="info" alt="Safety" %} Additional Safety Resources</h3>
 
 <div class="resource-section">
     <div class="card-grid">
         <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card hover-effect">
             <div class="card-icon">
-                <i class="fas fa-clipboard-list" style="color: #4caf50;"></i>
+                {% include icon.html icon="fas fa-clipboard-list" type="info" alt="Rules" color="#4caf50" %}
             </div>
             <div class="card-content">
                 <h3>Essential Safety Rules</h3>
@@ -733,7 +747,7 @@ By mastering these self-rescue techniques, you gain confidence on the water and 
         
         <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card hover-effect">
             <div class="card-icon">
-                <i class="fas fa-route" style="color: #2196f3;"></i>
+                {% include icon.html icon="fas fa-route" type="info" alt="Route" color="#2196f3" %}
             </div>
             <div class="card-content">
                 <h3>River Traffic Guide</h3>
@@ -743,7 +757,7 @@ By mastering these self-rescue techniques, you gain confidence on the water and 
         
         <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines.html" class="card hover-effect">
             <div class="card-icon">
-                <i class="fas fa-cloud-sun-rain" style="color: #ff9800;"></i>
+                {% include icon.html icon="fas fa-cloud-sun-rain" type="weather" alt="Weather" color="#ff9800" %}
             </div>
             <div class="card-content">
                 <h3>Weather Guidelines</h3>
@@ -823,5 +837,34 @@ h2, h3 {
 /* Make icons consistent */
 i.fas, i.far {
   margin-right: 6px;
+}
+
+/* Custom styling for video thumbnails */
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover {
+  opacity: 0.5;
+}
+
+/* When image is hidden, make sure the icon fallback doesn't block the video */
+.icon-fallback.feature-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 20px;
 }
 </style>

@@ -11,7 +11,7 @@ parent: Knowledge Assessment
 
 <div class="info-box note">
   <h4>Required Quizzes</h4>
-  <p>The Safety Quiz is required for all Learn to Scull participants and must be completed with a score of at least 80% before the first on-water session.</p>
+  <p>Completing the Safety Quiz is highly recommended for all Learn to Scull participants before the first on-water session.</p>
 </div>
 
 ## Your Progress
@@ -81,11 +81,11 @@ parent: Knowledge Assessment
   <div class="quiz-card featured-card" data-quiz-id="safety">
     <div class="quiz-card-header">
       <h4>Rowing Safety Quiz</h4>
-      <span class="required-badge">Required</span>
+      <span class="required-badge">Recommended</span>
     </div>
     <div class="quiz-card-body">
       <p>Essential safety knowledge every rower must know, including emergency procedures, traffic patterns, and weather guidelines.</p>
-      <p class="quiz-requirement">Required for all participants. Must score at least 80% before first on-water session.</p>
+      <p class="quiz-requirement">Recommended for all participants before first on-water session.</p>
       <div class="quiz-status not-started">○ Not Started</div>
       <a href="#" onclick="loadQuiz('safety'); return false;" class="quiz-link">Take Quiz</a>
     </div>

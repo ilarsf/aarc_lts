@@ -19,6 +19,16 @@ Content is stored in markdown files organized by audience:
 - `/course_materials/coach/` - Coach-facing resources
 - `/course_materials/learner/` - Participant-facing materials
 - `/course_materials/communication/` - Templates for program communications
+
+## Image Handling
+
+The site includes a custom image handling system that:
+
+1. **Prevents broken image placeholders** - Missing images won't show broken placeholders
+2. **Uses icon fallbacks** - Font Awesome icons can be used in place of missing images
+3. **Improves performance** - Reduces console errors and improves page loading
+
+For details on using this feature, see [Image Handling Documentation](/assets/README-image-handling.md)
 - `/src/` - Technical guides and reference materials
 
 ## Site Features

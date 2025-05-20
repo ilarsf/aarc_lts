@@ -27,7 +27,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <p>The rowing stroke consists of four main phases that continuously flow together in a cycle. Select each tab to learn about the specific phases in detail.</p>
             
             <div class="image-gallery">
-                <img src="{{ site.baseurl }}/assets/images/stroke-cycle.jpg" alt="Complete rowing stroke cycle" class="img-full">
+                {% include image-with-fallback.html 
+                    src="/assets/images/stroke-cycle.jpg" 
+                    alt="Complete rowing stroke cycle"
+                    icon="fas fa-sync" 
+                    type="info"
+                    icon_size="3rem"
+                    class="img-full" %}
                 <p class="caption">The complete stroke cycle: Catch → Drive → Finish → Recovery</p>
             </div>
             
@@ -51,7 +57,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>1. The Catch</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/catch-position.jpg" alt="The catch position" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/catch-position.jpg" 
+                        alt="The catch position"
+                        icon="fas fa-arrow-down" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <p>The beginning of the stroke when the blade enters the water.</p>
@@ -91,7 +103,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>2. The Drive</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/drive-phase.jpg" alt="The drive phase" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/drive-phase.jpg" 
+                        alt="The drive phase"
+                        icon="fas fa-arrow-right" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <p>The work phase when the blade is in the water.</p>
@@ -131,7 +149,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>3. The Finish</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/finish-position.jpg" alt="The finish position" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/finish-position.jpg" 
+                        alt="The finish position"
+                        icon="fas fa-arrow-up" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <p>The end of the drive when the blade exits the water.</p>
@@ -172,7 +196,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>4. The Recovery</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/recovery-phase.jpg" alt="The recovery phase" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/recovery-phase.jpg" 
+                        alt="The recovery phase"
+                        icon="fas fa-undo" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <p>The return to the catch position with blades out of water.</p>
@@ -248,7 +278,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>K: Keep shoulders relaxed and down</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/relaxed-shoulders.jpg" alt="Relaxed shoulders position" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/relaxed-shoulders.jpg" 
+                        alt="Relaxed shoulders position"
+                        icon="fas fa-user" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <ul>
@@ -272,7 +308,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>R: Reach from hips, not shoulders</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/hip-pivot.jpg" alt="Proper hip pivot" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/hip-pivot.jpg" 
+                        alt="Proper hip pivot"
+                        icon="fas fa-arrow-down" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <ul>
@@ -296,7 +338,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>A: Arms straight until legs are flat</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/straight-arms.jpg" alt="Straight arms during drive" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/straight-arms.jpg" 
+                        alt="Straight arms during drive"
+                        icon="fas fa-hands" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <ul>
@@ -320,7 +368,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>F: Feather after extraction</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/feather-sequence.jpg" alt="Proper feathering sequence" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/feather-sequence.jpg" 
+                        alt="Proper feathering sequence"
+                        icon="fas fa-thumbs-up" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <ul>
@@ -344,7 +398,13 @@ Understanding proper rowing technique is essential for an efficient, effective, 
             <h3>T: Tap down before extraction</h3>
             <div class="two-col-flex">
                 <div class="technique-image">
-                    <img src="{{ site.baseurl }}/assets/images/tap-down.jpg" alt="Proper tap down technique" class="img-fluid">
+                    {% include image-with-fallback.html 
+                        src="/assets/images/tap-down.jpg" 
+                        alt="Proper tap down technique"
+                        icon="fas fa-hand-point-down" 
+                        type="info"
+                        icon_size="3rem"
+                        class="img-fluid" %}
                 </div>
                 <div class="technique-description">
                     <ul>

@@ -55,13 +55,6 @@ Welcome to your centralized resource hub for the Learn to Scull program! Here yo
     <p>Access teaching resources, session plans, and program management tools designed for instructors.</p>
     <a href="{{ site.baseurl }}/for-coaches/" class="cta-button">Go to Coach Portal</a>
   </div>
-  
-  <div class="nav-card">
-    <div class="nav-icon"><i class="fas fa-book"></i></div>
-    <h3>Textbook Format</h3>
-    <p>Access the complete Learn to Scull materials in traditional textbook format.</p>
-    <a href="{{ site.baseurl }}/textbook/" class="cta-button">View Textbook</a>
-  </div>
 </div>
 
 <div class="info-box tip">

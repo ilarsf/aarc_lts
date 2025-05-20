@@ -1,0 +1,26 @@
+{% comment %}
+Icon Component
+Usage: {% include icon.html icon="fas fa-rowing" type="weather" size="2rem" alt="Rowing icon" %}
+
+Parameters:
+- icon: Font Awesome icon classes (required)
+- type: Type of icon styling (weather, safety, info) (default: info)
+- size: Font size of the icon (default: 2rem)
+- alt: Alternative text for accessibility (default: empty)
+- feature: Boolean to make it a feature icon (larger with more padding) (default: false)
+{% endcomment %}
+
+{% assign icon_type = include.type | default: 'info' %}
+{% assign icon_size = include.size | default: '2rem' %}
+{% assign alt_text = include.alt | default: '' %}
+{% assign feature = include.feature | default: false %}
+
+{% if feature %}
+<div class="icon-fallback {{ icon_type }}-icon feature-icon" role="img" aria-label="{{ alt_text }}">
+    <i class="{{ include.icon }}" style="font-size: {{ icon_size }};"></i>
+</div>
+{% else %}
+<div class="icon-fallback {{ icon_type }}-icon" role="img" aria-label="{{ alt_text }}">
+    <i class="{{ include.icon }}" style="font-size: {{ icon_size }};"></i>
+</div>
+{% endif %}

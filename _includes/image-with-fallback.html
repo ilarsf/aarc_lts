@@ -1,0 +1,23 @@
+{% comment %}
+Image with Icon Fallback Component
+Usage: {% include image-with-fallback.html src="/path/to/image.jpg" alt="Description"
+icon="fas fa-rowing" type="weather" icon_size="2rem" %}
+
+Parameters:
+- src: Image source URL (required)
+- alt: Alternative text for the image (required)
+- icon: Font Awesome icon classes for fallback (required)
+- type: Type of icon styling (weather, safety, info) (default: info)
+- icon_size: Font size of the fallback icon (default: 2rem)
+- icon_color: Color of the icon (optional)
+- class: Additional CSS classes for the image (optional)
+{% endcomment %}
+
+{% assign icon_type = include.type | default: 'info' %}
+{% assign icon_size = include.icon_size | default: '2rem' %}
+{% assign icon_color = include.icon_color | default: '' %}
+{% assign img_class = include.class | default: '' %}
+
+<img src="{{ include.src }}" alt="{{ include.alt }}" class="{{ img_class }}" data-fallback-icon="{{ include.icon }}"
+    data-icon-class="{{ icon_type }}-icon" {% if icon_size %}data-icon-size="{{ icon_size }}" {% endif %} {% if
+    icon_color %}data-icon-color="{{ icon_color }}" {% endif %} loading="lazy">
