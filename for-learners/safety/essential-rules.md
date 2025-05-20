@@ -28,7 +28,9 @@ description: Must-know safety rules for all rowing participants
     <button id="collapse-all-rules" class="rules-filter-btn">Collapse All</button>
 </div>
 
-## Core Safety Principles
+<div class="rules-divider">
+    <span class="rules-divider-label">Core Safety Principles</span>
+</div>
 
 <div class="rules-accordion-section" data-priority="critical" data-category="on-water">
     <button class="rules-accordion-toggle">

@@ -20,7 +20,7 @@ This document outlines the recommended layouts for each section of the reorganiz
 ## Implementation Plan
 
 ### Landing Page (index_new.md)
-- [ ] **Card-Based Layout with Featured Sections**
+- [x] **Card-Based Layout with Featured Sections**
   - Visual cards for primary user paths (Learners, Coaches, Resources, About)
   - Hero section with key program highlights and imagery
   - Clear call-to-action buttons for different user journeys
@@ -38,8 +38,8 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Each tab should contain visual cards for sub-sections with icons
 
 #### for-learners/getting-started/
-- [ ] **program-overview.md**: Standard Markdown with Card Elements for key concepts
-- [ ] **preparation.md**: Combined Layout: Accordion + Interactive Checklist
+- [x] **program-overview.md**: Standard Markdown with Card Elements for key concepts
+- [x] **preparation.md**: Combined Layout: Accordion + Interactive Checklist
   - Equipment lists with checkable items
   - Categorized preparation steps
 - [x] **terminology.md**: [C] Category Tabbed Layout with Search
@@ -87,12 +87,12 @@ This document outlines the recommended layouts for each section of the reorganiz
 - [x] **river-traffic.md**: [C] Interactive Map/Diagram Layout + Accordions
   - Visual diagram of traffic patterns with interactive elements
   - Accordion sections for detailed navigation rules
-- [ ] **weather-guidelines.md**: Table + Accordion Layout
+- [x] **weather-guidelines.md**: Table + Accordion Layout
   - Table showing weather conditions and decision framework
   - Accordion sections for detailed protocols by condition
 
 #### for-learners/resources/
-- [ ] **faq.md**: Combined Layout: Topic Tabs + Accordions
+- [x] **faq.md**: Combined Layout: Topic Tabs + Accordions
   - Tabs for major topic categories (Equipment, Technique, Program, etc.)
   - Accordion questions within each tab for easy scanning
 - [x] **glossary.md**: [C] A-Z Tabbed Layout with Search
@@ -103,7 +103,7 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Self-assessment checklists
   - Visual skill progress indicators
   - Interactive competency tracking
-- [ ] **next-steps.md**: Card-Based Layout
+- [x] **next-steps.md**: Card-Based Layout
   - Visual cards for different post-program pathways
   - Clear call-to-action buttons for each option
 
@@ -126,7 +126,7 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Visual timeline of session activities with durations
   - Accordion sections for detailed activity instructions
   - Printable session outline for on-water reference
-- [ ] **session-2.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
+- [x] **session-2.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
 - [ ] **session-3.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
 - [ ] **session-4.md**: [C] Combined Layout: Timeline + Accordions (same as session-1)
 
@@ -190,24 +190,24 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Accordion sections for area-specific rules
 
 #### resources/quick-reference/
-- [ ] **equipment-care.md**: [C] Combined Layout: Visual Guides + Accordions
+- [x] **equipment-care.md**: [C] Combined Layout: Visual Guides + Accordions
   - Visual guides for equipment handling
   - Accordion sections for detailed care instructions
   - Printable quick-reference cards
-- [ ] **blister-treatment.md**: [C] Visual Step-by-Step Guide
+- [x] **blister-treatment.md**: [C] Visual Step-by-Step Guide
   - Sequential visual steps for treatment
   - Printable reference version
-- [ ] **weather-reference.md**: [C] Interactive Weather Decision Matrix
+- [x] **weather-reference.md**: [C] Interactive Weather Decision Matrix
   - Visual matrix of conditions and actions
   - Accordion details for specific protocols
   - Mobile-optimized for on-water decision making
 
 #### resources/knowledge-assessment/
-- [ ] **quizzes.md**: [C] Interactive Quiz Layout
+- [x] **quizzes.md**: [C] Interactive Quiz Layout
   - Categorized quiz modules
   - Progress tracking across modules
   - Visual feedback for correct/incorrect answers
-- [ ] **self-assessment.md**: [C] Interactive Skill Tracking Layout
+- [x] **self-assessment.md**: [C] Interactive Skill Tracking Layout
   - Visual skill development chart
   - Checkable competency items
   - Progress visualization

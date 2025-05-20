@@ -298,3 +298,167 @@
     text-align: center;
     font-size: 0.9rem;
 }
+
+/* Accordion inside Timeline Styling */
+#rescue-main-timeline .accordion-section .accordion-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    border: none;
+    border-left: 3px solid #2196f3;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    justify-content: flex-start;
+    /* Override the default space-between */
+}
+
+#rescue-main-timeline .accordion-section .accordion-toggle:hover,
+#rescue-main-timeline .accordion-section .accordion-toggle.active {
+    background-color: #e3f2fd;
+}
+
+#rescue-main-timeline .accordion-section .accordion-toggle .rescue-step-number {
+    position: relative;
+    left: auto;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#rescue-main-timeline .accordion-section .accordion-toggle .rescue-step-title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1565c0;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Allow title to take available space */
+}
+
+#rescue-main-timeline .accordion-section .accordion-toggle::after {
+    content: '\002B';
+    /* Match the accordion.js expected content */
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    transition: transform 0.3s ease;
+}
+
+#rescue-main-timeline .accordion-section .accordion-toggle.active::after {
+    content: '\2212';
+    /* Match the accordion.js expected content */
+}
+
+#rescue-main-timeline .accordion-section .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-left: 20px;
+    /* Add left padding to align content with timeline */
+    border: none;
+    /* Remove borders from the standard accordion styles */
+}
+
+#rescue-main-timeline .accordion-section .accordion-content.visible {
+    max-height: 3000px;
+    /* Increased max-height to ensure content fits */
+}
+
+#rescue-main-timeline .accordion-section .accordion-content-inner {
+    padding: 20px;
+    padding-top: 5px;
+}
+
+/* Regular accordion styling (non-timeline) */
+.accordion-container {
+    margin-bottom: 25px;
+}
+
+.accordion-container .accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordion-container .accordion-header {
+    background-color: #f5f5f5;
+    color: #1565c0;
+    padding: 15px;
+    cursor: pointer;
+    border-left: 3px solid #2196f3;
+    position: relative;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-container .accordion-header::after {
+    content: '\002B';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.accordion-container .accordion-header.active {
+    background-color: #e3f2fd;
+}
+
+.accordion-container .accordion-header.active::after {
+    content: '\2212';
+}
+
+.accordion-container .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: white;
+}
+
+.accordion-container .accordion-content p,
+.accordion-container .accordion-content ol,
+.accordion-container .accordion-content ul {
+    padding: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Accordion controls styling */
+.accordion-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.accordion-controls button {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.accordion-controls button:hover {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+    color: #1565c0;
+}
+
+#expand-all {
+    border-left: 3px solid #4caf50;
+}
+
+#collapse-all {
+    border-left: 3px solid #f44336;
+}

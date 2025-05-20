@@ -3,18 +3,12 @@ layout: default
 title: AARC Learn to Scull Program
 ---
 
-<div class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg');">
-  <div class="hero-content">
-    <h1>Learn to Scull Program</h1>
-    <p class="subtitle">Ann Arbor Rowing Club</p>
-    <p class="hero-description">Experience the joy of sculling on Argo Pond through our structured learning program.</p>
-    <div class="hero-cta">
-      <a href="{{ site.baseurl }}/for-learners/" class="cta-button">For Learners</a>
-      <a href="{{ site.baseurl }}/for-coaches/" class="cta-button">For Coaches</a>
-      <a href="{{ site.baseurl }}/about/" class="cta-button secondary">Program Info</a>
-    </div>
+<section class="program-section">
+  <div class="section-header">
+    <h1>AARC - Learn to Scull Program</h1>
+    <p class="subtitle">Experience the joy of sculling on Argo Pond through our structured learning program.</p>
   </div>
-</div>
+</section>
 
 <section class="program-section">
   <div class="section-header">
@@ -151,8 +145,7 @@ title: AARC Learn to Scull Program
       <div class="step-number">1</div>
       <div class="step-content">
         <h3>Introduction</h3>
-        <p>Equipment fundamentals, safety procedures, and your first rowing experience.</p>
-        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-1.html" class="step-link">Session Details <i class="fas fa-chevron-right"></i></a>
+        Equipment fundamentals, safety procedures, and your first rowing experience.
       </div>
     </div>
     
@@ -160,8 +153,7 @@ title: AARC Learn to Scull Program
       <div class="step-number">2</div>
       <div class="step-content">
         <h3>Development</h3>
-        <p>Stroke sequencing, blade control, and basic maneuvering techniques.</p>
-        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-2.html" class="step-link">Session Details <i class="fas fa-chevron-right"></i></a>
+        Stroke sequencing, blade control, and basic maneuvering techniques.
       </div>
     </div>
     
@@ -169,8 +161,7 @@ title: AARC Learn to Scull Program
       <div class="step-number">3</div>
       <div class="step-content">
         <h3>Refinement</h3>
-        <p>Technique efficiency, power application, and river navigation skills.</p>
-        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="step-link">Session Details <i class="fas fa-chevron-right"></i></a>
+        Technique efficiency, power application, and river navigation skills.
       </div>
     </div>
     
@@ -178,8 +169,7 @@ title: AARC Learn to Scull Program
       <div class="step-number">4</div>
       <div class="step-content">
         <h3>Independence</h3>
-        <p>Skill assessment, extended practice, and post-program opportunities.</p>
-        <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="step-link">Session Details <i class="fas fa-chevron-right"></i></a>
+        Skill assessment, extended practice, and post-program opportunities.
       </div>
     </div>
   </div>
@@ -231,54 +221,12 @@ title: AARC Learn to Scull Program
   --section-padding: 3rem 0;
 }
 
-/* Hero Section */
-.hero-section {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 6rem 2rem;
-  text-align: center;
-  border-radius: var(--border-radius);
-  margin-bottom: 3rem;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.hero-description {
-  font-size: 1.25rem;
-  margin: 0 auto 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.hero-cta {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 /* Section Styling */
 .program-section {
   padding: var(--section-padding);
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 0;
 }
 
 .section-header {
@@ -302,6 +250,7 @@ title: AARC Learn to Scull Program
   width: 80px;
   height: 3px;
   background-color: var(--primary-color);
+  z-index: 0;
 }
 
 .section-header p {
@@ -560,15 +509,19 @@ title: AARC Learn to Scull Program
 
 /* Buttons */
 .cta-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 500;
   transition: var(--transition);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 140px;
+  text-align: center;
 }
 
 .cta-button:hover {
@@ -586,6 +539,52 @@ title: AARC Learn to Scull Program
 
 .cta-button.secondary:hover {
   background-color: rgba(255,255,255,0.2);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-color);
+  background-image: linear-gradient(rgba(0, 56, 130, 0.85), rgba(0, 56, 130, 0.9)), url("{{ site.baseurl }}/assets/images/rowing-header.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: var(--border-radius);
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* Responsive Adjustments */
