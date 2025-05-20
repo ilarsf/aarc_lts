@@ -19,7 +19,7 @@ This document outlines the recommended layouts for each section of the reorganiz
 
 ## Implementation Plan
 
-### Landing Page (index_new.md)
+### Landing Page (index.md)
 - [x] **Card-Based Layout with Featured Sections**
   - Visual cards for primary user paths (Learners, Coaches, Resources, About)
   - Hero section with key program highlights and imagery
@@ -228,17 +228,6 @@ This document outlines the recommended layouts for each section of the reorganiz
   - Tabbed categories for different question types
   - Accordion sections for Q&A content
   - Search functionality for finding specific questions
-
-### Textbook Section
-- [ ] **index.md**: [C] Interactive Chapter Navigation
-  - Visual chapter cards with progress tracking
-  - Clear linear progression indicators
-  - Quick-jump table of contents
-- [ ] **chapters/**: [C] Combined Layout for Each Chapter
-  - Chapter overview with visual navigation
-  - Accordion sections for detailed topics
-  - Progress tracking between chapters
-  - Interactive elements for key concepts
 
 ## Implementation Guidelines
 
@@ -779,7 +768,6 @@ All layouts should be optimized for mobile devices, with special attention to:
    - for-coaches/safety-leadership/daily-safety-checklist.md - Interactive checklist
 
 5. **Remaining Content (Phase 5):**
-   - Complete textbook section
    - About section
    - Any remaining pages
 

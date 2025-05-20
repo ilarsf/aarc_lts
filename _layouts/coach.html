@@ -20,7 +20,6 @@
             <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
             <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
             <div class="header-actions">
-                <a href="{{ site.baseurl }}/search/" class="search-link"><i class="fas fa-search"></i> Search</a>
                 <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -33,42 +32,39 @@
             <ul class="fallback-nav">
                 <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
                 <li class="nav-item has-dropdown">
-                    <a href="{{ site.baseurl }}/course_materials/learner/">For Learners</a>
+                    <a href="{{ site.baseurl }}/for-learners/">For Learners</a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ site.baseurl }}/course_materials/learner/Learner_Guide.html">Learner Guide</a>
-                        </li>
-                        <li><a href="{{ site.baseurl }}/course_materials/learner/Program_Schedule.html">Program
-                                Schedule</a></li>
-                        <li><a href="{{ site.baseurl }}/course_materials/learner/QA_Companion.html">Q&A Companion</a>
-                        </li>
-                        <li><a href="{{ site.baseurl }}/course_materials/learner/Textbook.html">Textbook</a></li>
+                        <li><a href="{{ site.baseurl }}/for-learners/getting-started/">Getting Started</a></li>
+                        <li><a href="{{ site.baseurl }}/for-learners/learning-journey/">Learning Journey</a></li>
+                        <li><a href="{{ site.baseurl }}/for-learners/technique/">Technique</a></li>
+                        <li><a href="{{ site.baseurl }}/for-learners/safety/">Safety</a></li>
+                        <li><a href="{{ site.baseurl }}/for-learners/resources/">Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown active">
+                    <a href="{{ site.baseurl }}/for-coaches/">For Coaches</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ site.baseurl }}/for-coaches/session-plans/">Session Plans</a></li>
+                        <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/">Technical Coaching</a></li>
+                        <li><a href="{{ site.baseurl }}/for-coaches/program-management/">Program Management</a></li>
+                        <li><a href="{{ site.baseurl }}/for-coaches/safety-leadership/">Safety Leadership</a></li>
                     </ul>
                 </li>
                 <li class="nav-item has-dropdown">
-                    <a href="{{ site.baseurl }}/resources/">Technical Guides</a>
+                    <a href="{{ site.baseurl }}/resources/">Resources</a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ site.baseurl }}/resources/Sculling_Self_Rescue_Guide.html">Self-Rescue & Flip
-                                Test
-                                Guide</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html">Hand Care
-                                Guide</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/club-policies/">Club Policies</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/quick-reference/">Quick Reference</a></li>
+                        <li><a href="{{ site.baseurl }}/resources/knowledge-assessment/">Knowledge Assessment</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ site.baseurl }}/coach_portal/" class="active">Coach Portal</a>
-                </li>
-                <li class="nav-item"><a href="{{ site.baseurl }}/quick-answers/"><i class="fas fa-bolt"></i> Quick
-                        Answers</a>
-                </li>
                 <li class="nav-item has-dropdown">
-                    <a href="{{ site.baseurl }}/resources/">Additional Resources</a>
+                    <a href="{{ site.baseurl }}/about/">About</a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ site.baseurl }}/about/">Club Information</a></li>
-                        <li><a href="{{ site.baseurl }}/team/">Meet the Team</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/#aarc-policies-and-procedures">Club Policies</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/#educational-resources">Educational Materials</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/#equipment-care">Equipment Care</a></li>
-                        <li><a href="{{ site.baseurl }}/resources/#external-resources">External Resources</a></li>
+                        <li><a href="{{ site.baseurl }}/about/">Program Details</a></li>
+                        <li><a href="{{ site.baseurl }}/about/team/">Meet the Team</a></li>
+                        <li><a href="{{ site.baseurl }}/about/contact/">Contact</a></li>
+                        <li><a href="{{ site.baseurl }}/about/faq/">FAQ</a></li>
                     </ul>
                 </li>
             </ul>
@@ -111,7 +107,7 @@
             // Only redirect if no access AND we haven't already redirected too many times
             if (!hasAccess) {
                 // When redirecting, preserve auth_status if present
-                let redirectUrl = '{{ site.baseurl }}/coach_portal/';
+                let redirectUrl = '{{ site.baseurl }}/for-coaches/';
 
                 if (redirectCount > 0) {
                     redirectUrl += '?redirect_count=' + (redirectCount + 1);
@@ -127,7 +123,7 @@
             if (urlAuth) {
                 document.querySelectorAll('a').forEach(function (link) {
                     const href = link.getAttribute('href');
-                    if (href && href.includes('/coach_portal/') && !href.includes('auth_status=')) {
+                    if (href && href.includes('/for-coaches/') && !href.includes('auth_status=')) {
                         // Add auth_status parameter to the link
                         const separator = href.includes('?') ? '&' : '?';
                         link.setAttribute('href', href + separator + 'auth_status=ok');

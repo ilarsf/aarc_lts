@@ -144,7 +144,7 @@ description: Flip test and recovery procedures for scullers
               <li>Position yourself at the cockpit (center) of the boat</li>
               <li>Reach across to the far side and grasp the rigger</li>
               <li>Push down on the near rigger while pulling up on the far rigger</li>
-              <li>The boat will roll back to upright position</li>
+              <li>The boat will roll back to upright position. Watch the oars</li>
             </ol>
           </div>
           <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> Use the riggers as leverage points rather than trying to lift the entire weight of the boat. Think of it as rolling the boat rather than lifting it.</p>
@@ -173,14 +173,40 @@ description: Flip test and recovery procedures for scullers
           <div class="rescue-step-actions">
             <ol>
               <li><strong>Position your oars</strong>: Extend both oars perpendicular to the boat</li>
-              <li><strong>Verify gate closure</strong>: Ensure both oarlocks are properly closed</li>
-              <li>Position yourself at the center of the boat</li>
-              <li>Hold both oar handles with your outside hand (away from the boat)</li>
-              <li>Place your inside hand on the far gunwale (edge of the boat)</li>
-              <li>Kick your legs behind you to the surface (horizontal position)</li>
-              <li>Use a scissors kick while pushing down on the oar handles</li>
-              <li>Slide your body across the boat on your stomach</li>
-              <li>Carefully roll into a seated position in the cockpit</li>
+              <li><strong>Set the Near-Side Oar</strong><br>
+                Float the near-side blade flat on the water, shaft perpendicular to the hull. This gives you a stable brace. Verify the oarlock is properly closed.
+              </li>
+              <li><strong>Retrieve the Far-Side Oar</strong><br>
+                Swim or lean over to grab the other oar. Push its blade out so both blades lie parallel, with the handles overlapping. Ensure this oarlock is also properly closed.
+              </li>
+              <li><strong>Position your hands</strong><br>
+                Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip.
+              </li>
+              <li><strong>Hoist Yourself Onto the Hull</strong> (Two methods)
+                <ul>
+                  <li>Do a few small bounces to gain momentum</li>
+                  <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick</li>
+                </ul>
+                <strong>Option A: The Belly Flop Method</strong>
+                <ul>
+                  <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
+                  <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
+                  <li>Once stable in this position, pull one leg across behind you</li>
+                  <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
+                </ul>
+                <strong>Option B: The Hip Rotation Method</strong>
+                <ul>
+                  <li>Rotate your hip onto the tracks as you rise</li>
+                  <li>Keep your weight low and centered over the boat</li>
+                  <li>Once your hip is secured on the tracks, pull one leg across</li>
+                  <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
+                </ul>
+              </li>
+              <li><strong>Re-seat Yourself</strong>
+                <ul>
+                  <li>Wait until the boat settles, then while both feet are outside, pull the seat below you and re-seat yourself. Insert your feet into the cockpit and foot stretchers.</li>
+                </ul>
+              </li>
             </ol>
           </div>
           <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> This technique relies on leg power and body mechanics, not upper body strength. A strong scissors kick while pushing down on the oar handles will help lift your body horizontally onto the boat.</p>
@@ -209,10 +235,10 @@ description: Flip test and recovery procedures for scullers
           <div class="rescue-step-actions">
             <ol>
               <li>Find your seat position and adjust your feet in the stretchers</li>
-              <li>Collect both oar handles and position yourself properly</li>
               <li>Perform a quick equipment check</li>
-              <li>Begin gentle rowing to drain water through the foot stretcher holes</li>
-              <li>When stable, resume normal rowing</li>
+              <li>Begin gentle rowing, when stable, resume normal rowing</li>
+              <li>Signal to your coach or others that you are okay</li>
+              <li>Consider heading to the dock to drain the boat</li>
             </ol>
           </div>
           <p><i class="fas fa-hourglass-half" style="color: #43a047;"></i> <strong>Recovery Time:</strong> Take your time getting settled back in the boat. It's normal for the boat to feel unstable at first—gentle movements and patience will help you regain control.</p>
