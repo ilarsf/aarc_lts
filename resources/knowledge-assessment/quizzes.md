@@ -7,35 +7,14 @@ parent: Knowledge Assessment
 
 <div class="page-header">
   <h1>Knowledge Quizzes</h1>
-  <p class="page-description">Test your understanding of key rowing concepts with our interactive quizzes. These assessments help reinforce important information and ensure you're ready for on-water activities.</p>
 </div>
 
 <div class="info-box note">
-  <h4>Required Quizzes/* Progress grid styles */
-.quiz-progress {
-  margin: 2.5rem 0;
-}
-
-.progress-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1.2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.progress-item {
-  text-align: center;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.2rem 1rem;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
-}ty Quiz is required for all Learn to Scull participants and must be completed with a score of at least 80% before the first on-water session.</p>
+  <h4>Required Quizzes</h4>
+  <p>The Safety Quiz is required for all Learn to Scull participants and must be completed with a score of at least 80% before the first on-water session.</p>
 </div>
 
-## Your Quiz Progress
+## Your Progress
 
 <div class="quiz-progress">
   <div class="progress-grid">
@@ -56,7 +35,7 @@ parent: Knowledge Assessment
     <div class="progress-item" data-quiz-id="session1">
       <a href="#" onclick="loadQuiz('session1'); return false;" class="progress-item-link">
         <div class="progress-icon">1️⃣</div>
-        <div class="progress-label">Session 1</
+        <div class="progress-label">Session 1</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
@@ -91,104 +70,97 @@ parent: Knowledge Assessment
   </div>
 </div>
 
-{% include tabs.html %}
+## Available Quizzes
 
-<div class="tab active" data-tab="session-quizzes">
-  <h2>Session Quizzes</h2>
-  <p>These quizzes are designed to reinforce the key concepts from each Learn to Scull session. Take each quiz after completing the corresponding session to solidify your understanding.</p>
+<div class="quiz-category-header">
+  <h3>Safety, Boathouse, and Terminology Quizzes</h3>
+</div>
+
+<div class="quiz-grid">
+  <!-- Safety & Boathouse Quizzes -->
+  <div class="quiz-card featured-card" data-quiz-id="safety">
+    <div class="quiz-card-header">
+      <h4>Rowing Safety Quiz</h4>
+      <span class="required-badge">Required</span>
+    </div>
+    <div class="quiz-card-body">
+      <p>Essential safety knowledge every rower must know, including emergency procedures, traffic patterns, and weather guidelines.</p>
+      <p class="quiz-requirement">Required for all participants. Must score at least 80% before first on-water session.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('safety'); return false;" class="quiz-link">Take Quiz</a>
+    </div>
+  </div>
   
-  <div class="quiz-grid">
-    <div class="quiz-card" data-quiz-id="session1">
-      <div class="quiz-card-header">
-        <h4>Session 1 Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>Test your understanding of the core concepts covered in Session 1, including basic terminology, equipment, and fundamental safety rules.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('session1'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
+  <div class="quiz-card" data-quiz-id="boathouse">
+    <div class="quiz-card-header">
+      <h4>Boathouse Rules Quiz</h4>
     </div>
-    
-    <div class="quiz-card" data-quiz-id="session2">
-      <div class="quiz-card-header">
-        <h4>Session 2 Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>This quiz covers the material from Session 2, focusing on rowing technique, water safety, and equipment handling.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('session2'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
+    <div class="quiz-card-body">
+      <p>Test your knowledge of boathouse protocols, equipment handling, and club rules.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('boathouse'); return false;" class="quiz-link">Take Quiz</a>
     </div>
-    
-    <div class="quiz-card" data-quiz-id="session3">
-      <div class="quiz-card-header">
-        <h4>Session 3 Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>Assess your knowledge of Session 3 content, including advanced technique, river traffic patterns, and common challenges.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('session3'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
+  </div>
+
+  <div class="quiz-card" data-quiz-id="terminology">
+    <div class="quiz-card-header">
+      <h4>Rowing Terminology Quiz</h4>
     </div>
-    
-    <div class="quiz-card" data-quiz-id="session4">
-      <div class="quiz-card-header">
-        <h4>Session 4 Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>Test your comprehensive understanding of all material covered in Session 4, including independent rowing requirements.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('session4'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
+    <div class="quiz-card-body">
+      <p>Demonstrate your understanding of rowing terminology, commands, and technical language.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('terminology'); return false;" class="quiz-link">Take Quiz</a>
     </div>
   </div>
 </div>
 
-<div class="tab" data-tab="safety-quizzes">
-  <h2>Safety Quizzes</h2>
-  <p>Safety is our top priority. These quizzes cover essential knowledge about water safety, boathouse protocols, and emergency procedures.</p>
-  
-  <div class="quiz-grid">
-    <div class="quiz-card featured-card" data-quiz-id="safety">
-      <div class="quiz-card-header">
-        <h4>Rowing Safety Quiz</h4>
-        <span class="required-badge">Required</span>
-      </div>
-      <div class="quiz-card-body">
-        <p>Essential safety knowledge every rower must know, including emergency procedures, traffic patterns, and weather guidelines.</p>
-        <p class="quiz-requirement">Required for all participants. Must score at least 80% before first on-water session.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('safety'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
-    </div>
-    
-    <div class="quiz-card" data-quiz-id="boathouse">
-      <div class="quiz-card-header">
-        <h4>Boathouse Rules Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>Test your knowledge of boathouse protocols, equipment handling, and club rules.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('boathouse'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
-    </div>
-  </div>
+<div class="quiz-category-header">
+  <h3>Session Quizzes</h3>
+  <p>Test your knowledge from each training session</p>
 </div>
 
-<div class="tab" data-tab="topic-quizzes">
-  <h2>Topic-Specific Quizzes</h2>
-  <p>These specialized quizzes focus on particular aspects of rowing knowledge, allowing you to dive deeper into specific areas.</p>
+<div class="quiz-grid">
+  <div class="quiz-card" data-quiz-id="session1">
+    <div class="quiz-card-header">
+      <h4>Session 1 Quiz</h4>
+    </div>
+    <div class="quiz-card-body">
+      <p>Test your understanding of the core concepts covered in Session 1, including basic terminology, equipment, and fundamental safety rules.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('session1'); return false;" class="quiz-link">Take Quiz</a>
+    </div>
+  </div>
   
-  <div class="quiz-grid">
-    <div class="quiz-card" data-quiz-id="terminology">
-      <div class="quiz-card-header">
-        <h4>Rowing Terminology Quiz</h4>
-      </div>
-      <div class="quiz-card-body">
-        <p>Demonstrate your understanding of rowing terminology, commands, and technical language.</p>
-        <div class="quiz-status not-started">○ Not Started</div>
-        <a href="#" onclick="loadQuiz('terminology'); return false;" class="quiz-link">Take Quiz</a>
-      </div>
+  <div class="quiz-card" data-quiz-id="session2">
+    <div class="quiz-card-header">
+      <h4>Session 2 Quiz</h4>
+    </div>
+    <div class="quiz-card-body">
+      <p>This quiz covers the material from Session 2, focusing on rowing technique, water safety, and equipment handling.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('session2'); return false;" class="quiz-link">Take Quiz</a>
+    </div>
+  </div>
+  
+  <div class="quiz-card" data-quiz-id="session3">
+    <div class="quiz-card-header">
+      <h4>Session 3 Quiz</h4>
+    </div>
+    <div class="quiz-card-body">
+      <p>Assess your knowledge of Session 3 content, including advanced technique, river traffic patterns, and common challenges.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('session3'); return false;" class="quiz-link">Take Quiz</a>
+    </div>
+  </div>
+  
+  <div class="quiz-card" data-quiz-id="session4">
+    <div class="quiz-card-header">
+      <h4>Session 4 Quiz</h4>
+    </div>
+    <div class="quiz-card-body">
+      <p>Test your comprehensive understanding of all material covered in Session 4, including independent rowing requirements.</p>
+      <div class="quiz-status not-started">○ Not Started</div>
+      <a href="#" onclick="loadQuiz('session4'); return false;" class="quiz-link">Take Quiz</a>
     </div>
   </div>
 </div>
@@ -211,16 +183,20 @@ parent: Knowledge Assessment
 
 ## About the Quizzes
 
+<div class="section-intro">
+  <p>Find answers to common questions about our knowledge assessment quizzes and learn how to make the most of these learning tools.</p>
+</div>
+
 {% include accordion.html %}
 
-<div class="accordion">
+<div class="accordion modern-accordion">
   <div class="accordion-item">
     <div class="accordion-header">
       <h3>Quiz Structure</h3>
       <span class="accordion-icon">+</span>
     </div>
     <div class="accordion-content">
-      <ul>
+      <ul class="feature-list">
         <li><strong>Length</strong>: Most quizzes contain 10-15 questions</li>
         <li><strong>Format</strong>: Multiple-choice and true/false questions</li>
         <li><strong>Time Limit</strong>: None (take as much time as you need)</li>
@@ -236,7 +212,7 @@ parent: Knowledge Assessment
       <span class="accordion-icon">+</span>
     </div>
     <div class="accordion-content">
-      <ul>
+      <ul class="feature-list">
         <li><strong>Reinforce Learning:</strong> Quizzes help solidify the concepts and techniques you learn during your sessions</li>
         <li><strong>Identify Knowledge Gaps:</strong> Discover areas where you might need additional review or practice</li>
         <li><strong>Track Progress:</strong> See your improvement as you advance through the program</li>
@@ -253,7 +229,7 @@ parent: Knowledge Assessment
     </div>
     <div class="accordion-content">
       <p>To prepare for these quizzes, review the following materials:</p>
-      <ul>
+      <ul class="feature-list">
         <li><a href="{{ site.baseurl }}/for-learners/getting-started/">For Learners: Getting Started</a> - Basic concepts and terminology</li>
         <li><a href="{{ site.baseurl }}/for-learners/safety/">For Learners: Safety</a> - Essential safety information</li>
         <li><a href="{{ site.baseurl }}/resources/quick-reference/">Quick Reference Guides</a> - Key rowing concepts and procedures</li>
@@ -277,7 +253,7 @@ parent: Knowledge Assessment
       
       <div class="info-box tip">
         <h4>Quiz Tips</h4>
-        <ul>
+        <ul class="feature-list">
           <li>Take the <strong>Rowing Safety Quiz</strong> and <strong>Boathouse Rules Quiz</strong> before your first session</li>
           <li>Complete each session quiz shortly after attending the corresponding session</li>
           <li>Review any incorrect answers to strengthen your understanding</li>
@@ -340,8 +316,16 @@ function loadQuiz(quizType) {
   }
   
   // Update the quiz title and description
-  document.getElementById('current-quiz-title').innerText = quizTitles[quizType];
-  document.getElementById('quiz-description').innerText = quizDescriptions[quizType];
+  const quizTitleElement = document.getElementById('current-quiz-title');
+  const quizDescriptionElement = document.getElementById('quiz-description');
+  
+  if (quizTitleElement) {
+    quizTitleElement.innerText = quizTitles[quizType];
+  }
+  
+  if (quizDescriptionElement) {
+    quizDescriptionElement.innerText = quizDescriptions[quizType];
+  }
   
   // Show loading indicator before loading the quiz
   showQuizLoading();
@@ -360,12 +344,15 @@ function loadQuiz(quizType) {
   quizFrame.src = quizUrl;
   
   // Show the quiz container
-  document.getElementById('quiz-container').classList.remove('hidden');
-  
-  // Scroll to the quiz with a slight delay for smoother transition
-  setTimeout(() => {
-    document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
+  const quizContainer = document.getElementById('quiz-container');
+  if (quizContainer) {
+    quizContainer.classList.remove('hidden');
+    
+    // Scroll to the quiz with a slight delay for smoother transition
+    setTimeout(() => {
+      quizContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
   
   // Update progress status if needed
   updateQuizStatus(quizType, 'in-progress');
@@ -373,37 +360,57 @@ function loadQuiz(quizType) {
 
 // Show quiz loading indicator
 function showQuizLoading() {
-  if (!document.getElementById('quiz-loading')) {
-    const loadingDiv = document.createElement('div');
-    loadingDiv.id = 'quiz-loading';
-    loadingDiv.className = 'quiz-loading';
-    loadingDiv.innerHTML = `
-      <div class="loading-spinner"></div>
-      <p>Loading quiz content...</p>
-    `;
-    document.getElementById('quiz-content').appendChild(loadingDiv);
-  } else {
-    document.getElementById('quiz-loading').style.display = 'flex';
+  try {
+    const quizContent = document.getElementById('quiz-content');
+    if (!quizContent) return;
+    
+    if (!document.getElementById('quiz-loading')) {
+      const loadingDiv = document.createElement('div');
+      loadingDiv.id = 'quiz-loading';
+      loadingDiv.className = 'quiz-loading';
+      loadingDiv.innerHTML = `
+        <div class="loading-spinner"></div>
+        <p>Loading quiz content...</p>
+      `;
+      quizContent.appendChild(loadingDiv);
+    } else {
+      const loadingElement = document.getElementById('quiz-loading');
+      if (loadingElement) {
+        loadingElement.style.display = 'flex';
+      }
+    }
+  } catch (error) {
+    console.log('Error showing quiz loading:', error);
   }
 }
 
 // Hide quiz loading indicator
 function hideQuizLoading() {
-  const loadingElement = document.getElementById('quiz-loading');
-  if (loadingElement) {
-    loadingElement.style.opacity = '0';
-    setTimeout(() => {
-      loadingElement.style.display = 'none';
-    }, 300);
+  try {
+    const loadingElement = document.getElementById('quiz-loading');
+    if (loadingElement) {
+      loadingElement.style.opacity = '0';
+      setTimeout(() => {
+        loadingElement.style.display = 'none';
+      }, 300);
+    }
+  } catch (error) {
+    console.log('Error hiding quiz loading:', error);
   }
 }
 
 function closeQuiz() {
   // Hide the quiz container
-  document.getElementById('quiz-container').classList.add('hidden');
+  const quizContainer = document.getElementById('quiz-container');
+  if (quizContainer) {
+    quizContainer.classList.add('hidden');
+  }
   
   // Clear the iframe
-  document.getElementById('quiz-frame').src = '';
+  const quizFrame = document.getElementById('quiz-frame');
+  if (quizFrame) {
+    quizFrame.src = '';
+  }
   
   // Scroll back to the top
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -411,48 +418,58 @@ function closeQuiz() {
 
 // Function to load saved quiz statuses
 function loadQuizStatuses() {
-  const quizzes = ['safety', 'boathouse', 'session1', 'session2', 'session3', 'session4', 'terminology'];
-  
-  quizzes.forEach(quiz => {
-    const status = localStorage.getItem(`quiz_${quiz}_status`);
-    if (status) {
-      updateQuizStatus(quiz, status);
-    }
-  });
+  try {
+    const quizzes = ['safety', 'boathouse', 'session1', 'session2', 'session3', 'session4', 'terminology'];
+    
+    quizzes.forEach(quiz => {
+      const status = localStorage.getItem(`quiz_${quiz}_status`);
+      if (status) {
+        updateQuizStatus(quiz, status);
+      }
+    });
+  } catch (error) {
+    console.log('Error loading quiz statuses:', error);
+  }
 }
 
 // Function to update quiz status
 function updateQuizStatus(quizId, status) {
-  // Update in progress grid
-  const progressItem = document.querySelector(`.progress-item[data-quiz-id="${quizId}"] .progress-status`);
-  if (progressItem) {
-    progressItem.className = `progress-status ${status}`;
-    
-    if (status === 'completed') {
-      progressItem.textContent = 'Completed';
-    } else if (status === 'in-progress') {
-      progressItem.textContent = 'In progress';
-    } else {
-      progressItem.textContent = 'Not started';
+  try {
+    // Update in progress grid
+    const progressItem = document.querySelector(`.progress-item[data-quiz-id="${quizId}"] .progress-status`);
+    if (progressItem) {
+      progressItem.className = `progress-status ${status}`;
+      
+      if (status === 'completed') {
+        progressItem.textContent = 'Completed';
+      } else if (status === 'in-progress') {
+        progressItem.textContent = 'In progress';
+      } else {
+        progressItem.textContent = 'Not started';
+      }
     }
+    
+    // Update in dashboard
+    const dashboardItems = document.querySelectorAll(`.quiz-card[data-quiz-id="${quizId}"] .quiz-status`);
+    if (dashboardItems && dashboardItems.length > 0) {
+      dashboardItems.forEach(dashboardItem => {
+        dashboardItem.className = `quiz-status ${status}`;
+        
+        if (status === 'completed') {
+          dashboardItem.innerHTML = '✓ Completed';
+        } else if (status === 'in-progress') {
+          dashboardItem.innerHTML = '○ In Progress';
+        } else {
+          dashboardItem.innerHTML = '○ Not Started';
+        }
+      });
+    }
+    
+    // Save status to local storage
+    localStorage.setItem(`quiz_${quizId}_status`, status);
+  } catch (error) {
+    console.log('Error updating quiz status:', error);
   }
-  
-  // Update in dashboard
-  const dashboardItems = document.querySelectorAll(`.quiz-card[data-quiz-id="${quizId}"] .quiz-status`);
-  dashboardItems.forEach(dashboardItem => {
-    dashboardItem.className = `quiz-status ${status}`;
-    
-    if (status === 'completed') {
-      dashboardItem.innerHTML = '✓ Completed';
-    } else if (status === 'in-progress') {
-      dashboardItem.innerHTML = '○ In Progress';
-    } else {
-      dashboardItem.innerHTML = '○ Not Started';
-    }
-  });
-  
-  // Save status to local storage
-  localStorage.setItem(`quiz_${quizId}_status`, status);
 }
 
 // Listen for messages from the quiz iframe
@@ -467,29 +484,31 @@ window.addEventListener('message', function(event) {
   }
 });
 
-// Handle tab navigation
+// Handle page initialization
 document.addEventListener('DOMContentLoaded', function() {
-  // Set session-quizzes tab as active by default
-  document.querySelector('.tabs').innerHTML = `
-    <button class="tab-button active" data-tab="session-quizzes">Session Quizzes</button>
-    <button class="tab-button" data-tab="safety-quizzes">Safety Quizzes</button>
-    <button class="tab-button" data-tab="topic-quizzes">Topic-Specific Quizzes</button>
-  `;
-  
-  // Add event listeners to tab buttons
-  const tabButtons = document.querySelectorAll('.tab-button');
-  tabButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Remove active class from all buttons and tabs
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      
-      // Add active class to clicked button and corresponding tab
-      this.classList.add('active');
-      const tabId = this.getAttribute('data-tab');
-      document.querySelector(`.tab[data-tab="${tabId}"]`).classList.add('active');
+  // Initialize accordion functionality
+  const accordionItems = document.querySelectorAll('.modern-accordion .accordion-item');
+  if (accordionItems && accordionItems.length > 0) {
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          // Toggle the active class on the clicked item
+          const isActive = item.classList.contains('active');
+          
+          // Close all accordion items first
+          accordionItems.forEach(accItem => {
+            accItem.classList.remove('active');
+          });
+          
+          // If the clicked item wasn't active before, make it active
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      }
     });
-  });
+  }
   
   // Load saved quiz statuses
   loadQuizStatuses();
@@ -512,28 +531,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* Progress grid styles */
 .quiz-progress {
-  margin: 2rem 0;
+  margin: 2.5rem 0 3rem;
+  padding: 1rem 0;
 }
 
 .progress-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .progress-item {
   text-align: center;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
 }
 
 .progress-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
   border-color: var(--theme-color);
+}
+
+.progress-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-color), #4d94ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.progress-item:hover::after {
+  opacity: 1;
 }
 
 .progress-item-link {
@@ -562,101 +603,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .progress-status {
   font-size: 0.85rem;
-  padding: 0.4rem 0.6rem;
+  padding: 0.45rem 0.7rem;
   border-radius: 20px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  letter-spacing: 0.01em;
 }
 
 .progress-status.not-started {
   background-color: #f1f1f1;
   color: #666;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid #e0e0e0;
 }
 
 .progress-status.in-progress {
   background-color: #cce5ff;
   color: #004085;
-  box-shadow: 0 2px 5px rgba(0,70,150,0.1);
+  border: 1px solid #b8daff;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-status.in-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0));
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
 }
 
 .progress-status.completed {
   background-color: #d4edda;
   color: #155724;
-  box-shadow: 0 2px 5px rgba(21,87,36,0.1);
+  border: 1px solid #c3e6cb;
   position: relative;
 }
 
 .progress-status.completed::before {
   content: "✓";
-  margin-right: 3px;
+  margin-right: 4px;
+  font-weight: bold;
 }
 
-/* Tab styles */
-.tabs {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #dee2e6;
-  margin: 2.5rem 0 2rem;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.tab-button {
-  padding: 0.9rem 1.5rem;
-  margin: 0 0.5rem;
-  background: none;
-  border: none;
-  border-bottom: 3px solid transparent;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.25s;
-  color: #555;
-  font-size: 1.05rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.tab-button:hover {
-  background-color: #f8f9fa;
-  color: var(--theme-color);
-}
-
-.tab-button.active {
-  border-bottom-color: var(--theme-color);
-  color: var(--theme-color);
-}
-
-.tab-button.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--theme-color);
-  animation: tabActivate 0.3s ease forwards;
-}
-
-@keyframes tabActivate {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.tab {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease-out;
-}
-
-.tab.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeIn 0.4s ease forwards;
-}
-
+/* Section transition animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -674,19 +674,37 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Quiz card styles */
 .quiz-card {
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: all 0.35s ease;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: 1px solid #f0f0f0;
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .quiz-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.quiz-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.quiz-card:hover::after {
+  opacity: 1;
 }
 
 .quiz-card.featured-card {
@@ -709,13 +727,30 @@ document.addEventListener('DOMContentLoaded', function() {
 .quiz-card-header {
   background-color: var(--theme-color);
   color: white;
-  padding: 1.2rem 1.3rem;
+  padding: 1.3rem 1.5rem;
   position: relative;
+  border-bottom: 3px solid rgba(0,0,0,0.05);
+  background-image: linear-gradient(135deg, var(--theme-color), rgba(0, 123, 255, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-card-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at top right, rgba(255,255,255,0.25) 0%, transparent 60%);
+  opacity: 0.6;
 }
 
 .featured-card .quiz-card-header {
   background-color: #dc3545;
-  background-image: linear-gradient(135deg, #dc3545, #e83e8c);
+  background-image: linear-gradient(135deg, #dc3545 0%, #e83e8c 100%);
+  padding-bottom: 1.5rem;
 }
 
 .quiz-card-header h4 {
@@ -758,9 +793,9 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .quiz-status {
-  margin: 1.2rem 0;
-  padding: 0.7rem;
-  border-radius: 8px;
+  margin: 1.3rem 0;
+  padding: 0.8rem;
+  border-radius: 10px;
   font-weight: bold;
   text-align: center;
   transition: all 0.3s ease;
@@ -769,31 +804,53 @@ document.addEventListener('DOMContentLoaded', function() {
   align-items: center;
   justify-content: center;
   min-height: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05) inset;
 }
 
 .quiz-status.not-started {
-  background-color: #f5f5f5;
-  color: #666;
-  border-left: 4px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border-left: 5px solid #ced4da;
+  letter-spacing: 0.02em;
 }
 
 .quiz-status.in-progress {
-  background-color: #e2f0fd;
+  background-color: rgba(13, 110, 253, 0.08);
   color: #0056b3;
-  border-left: 4px solid #0d6efd;
-  animation: pulse 2s infinite;
+  border-left: 5px solid #0d6efd;
+  letter-spacing: 0.02em;
+  animation: pulse 2.5s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-status.in-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shimmer 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.2); }
-  70% { box-shadow: 0 0 0 6px rgba(13, 110, 253, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25); }
+  70% { box-shadow: 0 0 0 8px rgba(13, 110, 253, 0); }
   100% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0); }
 }
 
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
 .quiz-status.completed {
-  background-color: #e0f7e9;
+  background-color: rgba(25, 135, 84, 0.08);
   color: #155724;
-  border-left: 4px solid #198754;
+  border-left: 5px solid #198754;
+  letter-spacing: 0.02em;
 }
 
 .quiz-link {
@@ -801,19 +858,21 @@ document.addEventListener('DOMContentLoaded', function() {
   background-color: var(--theme-color);
   color: white;
   text-align: center;
-  padding: 0.9rem;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: auto;
-  transition: all 0.3s;
-  box-shadow: 0 4px 8px rgba(0,102,204,0.25);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 10px rgba(0,102,204,0.3);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  font-size: 0.93rem;
   border: none;
   position: relative;
   overflow: hidden;
+  z-index: 1;
+  transform-origin: center;
 }
 
 .featured-card .quiz-link {
@@ -823,28 +882,50 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .quiz-link:hover {
-  background-color: var(--theme-color-dark);
+  background-color: var(--theme-color-dark, #0056b3);
   text-decoration: none;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,102,204,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,102,204,0.35);
 }
 
 .quiz-link::after {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 100%;
   height: 100%;
   top: 0;
-  left: -50px;
-  background-color: rgba(255, 255, 255, 0.2);
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transform: skewX(-20deg);
-  transition: all 0.5s;
+  transition: all 0.7s ease;
+  z-index: -1;
 }
 
 .quiz-link:hover::after {
-  left: 110%;
-  transition: all 0.5s;
+  left: 100%;
+  transition: all 0.7s ease;
+}
+
+.quiz-link::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.8);
+  top: 50%;
+  left: 30%;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.quiz-link:hover::before {
+  transform: scale(20);
+  opacity: 0.1;
 }
 
 .featured-card .quiz-link:hover {
@@ -856,13 +937,16 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Quiz container styles */
 #quiz-container {
   background-color: white;
-  border-radius: 12px;
-  padding: 2.5rem;
-  margin: 3rem 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: all 0.5s ease;
-  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 3rem;
+  margin: 4rem 0;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(240,240,240,0.8);
   position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #quiz-container::before {
@@ -871,10 +955,27 @@ document.addEventListener('DOMContentLoaded', function() {
   top: 0;
   left: 0;
   right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, var(--theme-color), #4d94ff);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  height: 8px;
+  background: linear-gradient(90deg, var(--theme-color), #4d94ff, #6a11cb);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,123,255,0.2);
+}
+
+/* Add subtle pattern to quiz container */
+#quiz-container::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: radial-gradient(circle at 10px 10px, rgba(0,0,0,0.01) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .quiz-header {
@@ -896,40 +997,213 @@ document.addEventListener('DOMContentLoaded', function() {
   background-color: #6c757d;
   color: white;
   border: none;
-  padding: 0.8rem 1.6rem;
-  border-radius: 8px;
+  padding: 1rem 2rem;
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(108,117,125,0.25);
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 5px 12px rgba(108,117,125,0.3);
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   position: relative;
   overflow: hidden;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 .back-button::before {
   content: "←";
-  margin-right: 8px;
+  margin-right: 12px;
   display: inline-block;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 1.2rem;
 }
 
 .back-button:hover {
   background-color: #5a6268;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(108,117,125,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(108,117,125,0.35);
+  letter-spacing: 0.07em;
 }
 
 .back-button:hover::before {
-  transform: translateX(-3px);
+  transform: translateX(-5px);
+  animation: arrowBounce 1s infinite;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(-5px); }
+  50% { transform: translateX(-8px); }
 }
 
 .hidden {
   display: none !important;
+}
+
+/* Quiz loading styles */
+.quiz-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--theme-color);
+  animation: spinner 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.quiz-loading p {
+  color: #6c757d;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* About Quizzes Section Styling */
+.section-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.modern-accordion {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.modern-accordion .accordion-item {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.modern-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.modern-accordion .accordion-header {
+  padding: 1.5rem 2rem;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modern-accordion .accordion-header:hover {
+  background: rgba(0, 123, 255, 0.04);
+}
+
+.modern-accordion .accordion-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.modern-accordion .accordion-icon {
+  font-size: 1.5rem;
+  color: var(--theme-color);
+  font-weight: 300;
+  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+}
+
+.modern-accordion .accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.modern-accordion .accordion-content {
+  background: rgba(0,0,0,0.01);
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.modern-accordion .accordion-item.active .accordion-content {
+  padding: 1.5rem 2rem 2rem;
+  max-height: 1000px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-list li:before {
+  content: "•";
+  color: var(--theme-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  line-height: 1;
+}
+
+.feature-list li strong {
+  color: #333;
+  margin-right: 8px;
+}
+
+/* Quiz category header styles */
+.quiz-category-header {
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0,123,255,0.2);
+  max-width: 1200px;
+}
+
+.quiz-category-header h3 {
+  font-size: 1.5rem;
+  color: var(--theme-color);
+  margin-bottom: 0.3rem;
+}
+
+.quiz-category-header p {
+  color: #666;
+  margin-top: 0;
+  font-size: 1.05rem;
 }
 </style>
