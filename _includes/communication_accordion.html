@@ -1,0 +1,36 @@
+<div class="accordion" id="{{ include.id }}">
+    {% if include.expand_text and include.collapse_text %}
+    <div class="accordion-controls">
+        <button id="expand-all">{{ include.expand_text }}</button>
+        <button id="collapse-all">{{ include.collapse_text }}</button>
+    </div>
+    {% endif %}
+
+    {% for group in include.sections %}
+    <div class="accordion-group">
+        <h2 class="accordion-group-title">{{ group.title }}</h2>
+
+        {% for section in group.sections %}
+        <div class="accordion-section">
+            <button class="accordion-toggle">{{ section.heading }}</button>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    {% for item in section.items %}
+                    <div class="template-container">
+                        <h4>{{ item.title }}</h4>
+                        {% if item.subject %}
+                        <p><strong>Subject:</strong> {{ item.subject }}</p>
+                        {% endif %}
+                        <div class="template-content">
+                            {% capture processed_body %}{{ item.body }}{% endcapture %}
+                            {{ processed_body | markdownify }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

@@ -70,7 +70,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Introduction to Sculling -->
     <div class="video-card" data-sessions="pre-course" data-skills="basics" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="eTerbM8Uhxc">
-        <iframe src="https://www.youtube.com/embed/eTerbM8Uhxc" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/eTerbM8Uhxc" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Sculling vs. Sweep – Rowing Boat Classes Explained</h3>
@@ -92,7 +92,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Safety Video -->
     <div class="video-card" data-sessions="pre-course" data-skills="safety" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="Rx5SUe_RdgQ">
-        <iframe src="https://www.youtube.com/embed/Rx5SUe_RdgQ" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Rx5SUe_RdgQ" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">USRowing Safety Video</h3>
@@ -114,7 +114,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Capsize Recovery -->
     <div class="video-card" data-sessions="session1" data-skills="safety" data-topics="">
       <div class="video-thumbnail" data-video-id="nhtv53MOrqA">
-        <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">How to Get Back into Your Scull after Flipping</h3>
@@ -136,7 +136,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Parts of a Shell -->
     <div class="video-card" data-sessions="session1" data-skills="equipment" data-topics="">
       <div class="video-thumbnail" data-video-id="se7_i8KoyjE">
-        <iframe src="https://www.youtube.com/embed/se7_i8KoyjE" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/se7_i8KoyjE" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Parts of a Rowing Shell</h3>
@@ -158,7 +158,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Lars Flip Test Demo -->
     <div class="video-card" data-sessions="session1" data-skills="safety self-rescue" data-topics="">
       <div class="video-thumbnail" data-video-id="bfJR2K18GZo">
-        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Lars Flip Test Demo - Hip Rotation Method</h3>
@@ -181,7 +181,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Johanna Flip Test Demo -->
     <div class="video-card" data-sessions="session1" data-skills="safety self-rescue" data-topics="">
       <div class="video-thumbnail" data-video-id="lznN4_uCz9c">
-        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Johanna Flip Test Demo - Hip Rotation Method</h3>
@@ -204,7 +204,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Parts of Sculling Oars -->
     <div class="video-card" data-sessions="post-course" data-skills="equipment" data-topics="">
       <div class="video-thumbnail" data-video-id="g6dO8Tftidk">
-        <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Oars – Every Rower Should Know This</h3>
@@ -225,7 +225,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Getting In and Out of the Boat -->
     <div class="video-card" data-sessions="session1" data-skills="basics technique" data-topics="">
       <div class="video-thumbnail" data-video-id="BZj3jUVNdAM">
-        <iframe src="https://www.youtube.com/embed/BZj3jUVNdAM" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BZj3jUVNdAM" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">How to get into a rowing single scull</h3>
@@ -247,7 +247,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Basic Stroke Technique -->
     <div class="video-card" data-sessions="session2" data-skills="technique" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="OpZbV8LyT_c">
-        <iframe src="https://www.youtube.com/embed/OpZbV8LyT_c" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/OpZbV8LyT_c" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Essential Sculling Technique for Rowers</h3>
@@ -269,7 +269,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- The Catch -->
     <div class="video-card" data-sessions="session2" data-skills="technique" data-topics="catch">
       <div class="video-thumbnail" data-video-id="0kzP4KZLMq8">
-        <iframe src="https://www.youtube.com/embed/0kzP4KZLMq8" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/0kzP4KZLMq8" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Catch (Sculling)</h3>
@@ -291,7 +291,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- The Drive Phase -->
     <div class="video-card" data-sessions="session2 session3" data-skills="technique" data-topics="drive">
       <div class="video-thumbnail" data-video-id="BYsueP5GpGY">
-        <iframe src="https://www.youtube.com/embed/BYsueP5GpGY" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BYsueP5GpGY" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Drive (Sculling)</h3>
@@ -313,7 +313,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- The Finish -->
     <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="finish">
       <div class="video-thumbnail" data-video-id="15RkCUVzqdA">
-        <iframe src="https://www.youtube.com/embed/15RkCUVzqdA" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/15RkCUVzqdA" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Release (Sculling)</h3>
@@ -335,10 +335,10 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- The Recovery -->
     <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="recovery">
       <div class="video-thumbnail" data-video-id="I4yWtnTFdoY">
-        <iframe src="https://www.youtube.com/embed/I4yWtnTFdoY" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/I4yWtnTFdoY" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
-        <h3 class="video-title">Recovery to Catch – Body & Blade Preparation</h3>
+        <h3 class="video-title">Recovery to Catch – Body &amp; Blade Preparation</h3>
         <div class="video-meta">
           <span class="video-creator">Daniel Boyne</span>
           <span class="video-duration">5:39</span>
@@ -357,7 +357,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Feathering and Squaring -->
     <div class="video-card" data-sessions="session3" data-skills="technique" data-topics="feathering">
       <div class="video-thumbnail" data-video-id="UIDwzwSsXtI">
-        <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Proper Sculling Grip and Feathering</h3>
@@ -379,7 +379,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Drilling Technique -->
     <div class="video-card" data-sessions="session3 session4" data-skills="drills technique" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="kAAFCBTwb2Q">
-        <iframe src="https://www.youtube.com/embed/kAAFCBTwb2Q" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/kAAFCBTwb2Q" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Sculling Drills</h3>
@@ -401,7 +401,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Navigation and Steering -->
     <div class="video-card" data-sessions="session3 session4" data-skills="technique advanced" data-topics="">
       <div class="video-thumbnail" data-video-id="2Ry2O5f8q0Y">
-        <iframe src="https://www.youtube.com/embed/2Ry2O5f8q0Y" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/2Ry2O5f8q0Y" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Sculling: How to Steer a Single</h3>
@@ -423,7 +423,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     <!-- Advanced Sculling Technique -->
     <div class="video-card" data-sessions="post-course" data-skills="advanced technique" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="RO0kN5JNa9w">
-        <iframe src="https://www.youtube.com/embed/RO0kN5JNa9w" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/RO0kN5JNa9w" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Sculling Basics</h3>
@@ -441,23 +441,8 @@ This curated collection of high-quality instructional videos supports the Learn 
         </div>
       </div>
     </div>
-</div>
 
-<div class="info-box info mb-3">
-  <h4>Using This Video Library</h4>
-  <p>To get the most from these videos:</p>
-  <ul>
-    <li>Watch videos relating to upcoming skills <strong>before</strong> each LTS session (use the Session filters above).</li>
-    <li>Review videos <strong>after</strong> sessions to reinforce what you've learned.</li>
-    <li>Focus on <strong>one technical aspect at a time</strong> during practice.</li>
-    <li>Use the filters to find videos that address specific areas you want to work on.</li>
-    <li>Share favorite videos with your fellow scullers to encourage group learning.</li>
-  </ul>
-</div>
+  </div> <!-- End of video-grid -->
+</div> <!-- End of video-gallery -->
 
-<div class="navigation-links">
-  <a href="../technique/common-fixes.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Common Fixes</a>
-  <a href="../technique/advanced-technique.html" class="btn btn-primary">Advanced Technique <i class="fas fa-arrow-right"></i></a>
-</div>
-
-<script src="{{ '/assets/js/video-gallery.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/video-gallery.js' | relative_url }}"></script>

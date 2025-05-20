@@ -14,6 +14,7 @@ Developing proper sculling technique is essential for efficiency, enjoyment, and
 
 - [Basic Technique](basic-technique.md) - Fundamental sculling movements and positions
 - [Common Fixes](common-fixes.md) - Solutions to typical beginner challenges
+- [Steering](steering.md) - Understanding the basics of steering and balance
 - [Instructional Videos](videos.md) - Visual demonstrations of proper technique
 - [Advanced Technique](advanced-technique.md) - Refinements for continuing development
 

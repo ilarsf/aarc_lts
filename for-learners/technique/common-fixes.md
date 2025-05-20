@@ -352,7 +352,7 @@ This guide covers common technical issues you might experience as a new rower an
                         </div>
                         <h4 class="card-title">River Navigation</h4>
                         <p class="card-text">Detailed guide to waterway traffic patterns</p>
-                        <a href="{{ site.baseurl }}/for-learners/safety/river-navigation.html" class="card-button">View Guide</a>
+                        <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card-button">View Guide</a>
                     </div>
                     
                     <div class="card">
