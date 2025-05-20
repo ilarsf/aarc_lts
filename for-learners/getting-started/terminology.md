@@ -13,11 +13,6 @@ description: Essential rowing terms for beginning scullers
 Understanding key rowing terms will help you communicate effectively with coaches and fellow rowers. This guide covers the essential vocabulary you'll need as you begin your sculling journey.
 
 <div class="info-box">
-  <p><strong>Key Diagrams:</strong></p>
-  <ul>
-    <li><a href="#boat-diagram">Boat Parts Diagram</a></li>
-    <li><a href="#oar-diagram">Oar Components Diagram</a></li>
-  </ul>
   <p>For a complete reference, see the <a href="{{ site.baseurl }}/for-learners/resources/glossary.html">Full Rowing Glossary</a></p>
 </div>
 
@@ -37,16 +32,6 @@ Understanding key rowing terms will help you communicate effectively with coache
 
     <div class="az-tab-content" id="letter-all">
         <h2 class="az-glossary-letter">All Essential Terms</h2>
-
-        <div id="boat-diagram">
-            <h3>Boat Parts Diagram</h3>
-            <img src="{{ site.baseurl }}/assets/images/boat-diagram.png" alt="Diagram of a single scull with labeled parts" class="full-width-image">
-        </div>
-
-        <div id="oar-diagram">
-            <h3>Oar Components Diagram</h3>
-            <img src="{{ site.baseurl }}/assets/images/oar-diagram.png" alt="Diagram of a sculling oar with labeled parts" class="full-width-image">
-        </div>
         
         <h3 class="az-glossary-term">Back/Back it Down</h3>
         <p class="az-glossary-definition">Command to row in reverse.</p>
@@ -187,10 +172,6 @@ Understanding key rowing terms will help you communicate effectively with coache
     <div class="az-tab-content" id="letter-boat">
         <h2 class="az-glossary-letter">Boat Parts</h2>
         
-        <div>
-            <img src="{{ site.baseurl }}/assets/images/boat-diagram.png" alt="Diagram of a single scull with labeled parts" class="full-width-image">
-        </div>
-        
         <h3 class="az-glossary-term">Bow</h3>
         <p class="az-glossary-definition">The front end of the boat (crosses the finish line first).</p>
         
@@ -230,10 +211,6 @@ Understanding key rowing terms will help you communicate effectively with coache
 
     <div class="az-tab-content" id="letter-oar">
         <h2 class="az-glossary-letter">Oar Components</h2>
-        
-        <div>
-            <img src="{{ site.baseurl }}/assets/images/oar-diagram.png" alt="Diagram of a sculling oar with labeled parts" class="full-width-image">
-        </div>
         
         <h3 class="az-glossary-term">Blade/Spoon</h3>
         <p class="az-glossary-definition">The wide, flat end of the oar that goes in the water.</p>

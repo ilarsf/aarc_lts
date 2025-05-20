@@ -83,7 +83,6 @@ description: Flip test and recovery procedures for scullers
               <li>Know the water conditions and temperature</li>
             </ul>
           </div>
-          <p>{% include icon.html icon="fas fa-lightbulb" type="info" alt="Tip" color="#4caf50" %} <strong>Tip:</strong> During your flip test, coaches will ensure it's conducted in a safe, shallow area with supervision.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">

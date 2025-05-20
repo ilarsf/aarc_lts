@@ -124,6 +124,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <ul>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html">Basic Rowing Terminology</a></li>
                             <li>Understand that getting wet is part of the learning process</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html">Sculling Self-Rescue Guide</a></li>
                             <li>Approach the session with patience and an open mind</li>
                         </ul>
                     </div>
