@@ -110,29 +110,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         </div>
       </div>
     </div>
-    
-    <!-- Capsize Recovery -->
-    <div class="video-card" data-sessions="session1" data-skills="safety" data-topics="">
-      <div class="video-thumbnail" data-video-id="nhtv53MOrqA">
-        <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">How to Get Back into Your Scull after Flipping</h3>
-        <div class="video-meta">
-          <span class="video-creator">Rowing with Calm Waters</span>
-          <span class="video-duration">2:27</span>
-        </div>
-        <div class="video-description">
-          Learn how to get back into your scull — swiftly and safely — after flipping over in water. Demonstrated by Calm Waters Rowing coaches and U.S. National Team medalists Charlotte Hollings and John Dunn.
-        </div>
-        <div class="video-tags">
-          <span class="video-tag">Safety</span>
-          <span class="video-tag">Self-Rescue</span>
-          <span class="video-tag">Session 1</span>
-        </div>
-      </div>
-    </div>
-    
+
     <!-- Parts of a Shell -->
     <div class="video-card" data-sessions="session1" data-skills="equipment" data-topics="">
       <div class="video-thumbnail" data-video-id="se7_i8KoyjE">
@@ -150,6 +128,50 @@ This curated collection of high-quality instructional videos supports the Learn 
         <div class="video-tags">
           <span class="video-tag">Equipment</span>
           <span class="video-tag">Terminology</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Getting In and Out of the Boat -->
+    <div class="video-card" data-sessions="session1" data-skills="basics technique" data-topics="">
+      <div class="video-thumbnail" data-video-id="BZj3jUVNdAM">
+        <iframe src="https://www.youtube.com/embed/BZj3jUVNdAM" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">How to get into a rowing single scull</h3>
+        <div class="video-meta">
+          <span class="video-creator">Daniel Boyne</span>
+          <span class="video-duration">1:45</span>
+        </div>
+        <div class="video-description">
+          A clear demonstration of the proper technique for entering a single scull from the dock. The instructor shows the step-by-step process of mounting the boat safely: positioning the oars, secure hand placement, gradual weight transfer, and proper foot positioning.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Basics</span>
+          <span class="video-tag">Safety</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+        
+    <!-- Capsize Recovery -->
+    <div class="video-card" data-sessions="session1" data-skills="safety" data-topics="">
+      <div class="video-thumbnail" data-video-id="nhtv53MOrqA">
+        <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">How to Get Back into Your Scull after Flipping</h3>
+        <div class="video-meta">
+          <span class="video-creator">Rowing with Calm Waters</span>
+          <span class="video-duration">2:27</span>
+        </div>
+        <div class="video-description">
+          Learn how to get back into your scull — swiftly and safely — after flipping over in water. Demonstration of the "Belly Flop Method" by Calm Waters Rowing coaches and U.S. National Team medalists Charlotte Hollings and John Dunn.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Safety</span>
+          <span class="video-tag">Self-Rescue</span>
           <span class="video-tag">Session 1</span>
         </div>
       </div>
@@ -201,49 +223,6 @@ This curated collection of high-quality instructional videos supports the Learn 
       </div>
     </div>
 
-    <!-- Parts of Sculling Oars -->
-    <div class="video-card" data-sessions="post-course" data-skills="equipment" data-topics="">
-      <div class="video-thumbnail" data-video-id="g6dO8Tftidk">
-        <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Oars – Every Rower Should Know This</h3>
-        <div class="video-meta">
-          <span class="video-creator">Decent Rowing (AUS)</span>
-          <span class="video-duration">4:10</span>
-        </div>
-        <div class="video-description">
-          The connection between the oar handle and the rower's hand is arguably the most important. But how many people know how to set up and maintain their oars? In this video, Ken Davey and Howard Croker run through what every rower should know about their oars and how to get the most out of them on race day.
-        </div>
-        <div class="video-tags">
-          <span class="video-tag">Equipment</span>
-          <span class="video-tag">Oars</span>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Getting In and Out of the Boat -->
-    <div class="video-card" data-sessions="session1" data-skills="basics technique" data-topics="">
-      <div class="video-thumbnail" data-video-id="BZj3jUVNdAM">
-        <iframe src="https://www.youtube.com/embed/BZj3jUVNdAM" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">How to get into a rowing single scull</h3>
-        <div class="video-meta">
-          <span class="video-creator">Daniel Boyne</span>
-          <span class="video-duration">1:45</span>
-        </div>
-        <div class="video-description">
-          A clear demonstration of the proper technique for entering a single scull from the dock. The instructor shows the step-by-step process of mounting the boat safely: positioning the oars, secure hand placement, gradual weight transfer, and proper foot positioning.
-        </div>
-        <div class="video-tags">
-          <span class="video-tag">Basics</span>
-          <span class="video-tag">Safety</span>
-          <span class="video-tag">Session 1</span>
-        </div>
-      </div>
-    </div>
-    
     <!-- Basic Stroke Technique -->
     <div class="video-card" data-sessions="session2" data-skills="technique" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="OpZbV8LyT_c">
@@ -376,28 +355,6 @@ This curated collection of high-quality instructional videos supports the Learn 
       </div>
     </div>
     
-    <!-- Drilling Technique -->
-    <div class="video-card" data-sessions="session3 session4" data-skills="drills technique" data-topics="stroke-overview">
-      <div class="video-thumbnail" data-video-id="kAAFCBTwb2Q">
-        <iframe src="https://www.youtube.com/embed/kAAFCBTwb2Q" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Sculling Drills</h3>
-        <div class="video-meta">
-          <span class="video-creator">AramTraining</span>
-          <span class="video-duration">5:00</span>
-        </div>
-        <div class="video-description">
-          A compilation of fundamental on-water drills to reinforce proper technique. Includes pause drills, pick drills, and exercises for improving blade releases and handle control, all designed to help you isolate and improve individual stroke components.
-        </div>
-        <div class="video-tags">
-          <span class="video-tag">Drills</span>
-          <span class="video-tag">Technique</span>
-          <span class="video-tag">Session 3-4</span>
-        </div>
-      </div>
-    </div>
-    
     <!-- Navigation and Steering -->
     <div class="video-card" data-sessions="session3 session4" data-skills="technique advanced" data-topics="">
       <div class="video-thumbnail" data-video-id="2Ry2O5f8q0Y">
@@ -419,7 +376,50 @@ This curated collection of high-quality instructional videos supports the Learn 
         </div>
       </div>
     </div>
-    
+
+    <!-- Parts of Sculling Oars -->
+    <div class="video-card" data-sessions="post-course" data-skills="equipment" data-topics="">
+      <div class="video-thumbnail" data-video-id="g6dO8Tftidk">
+        <iframe src="https://www.youtube.com/embed/g6dO8Tftidk" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Oars – Every Rower Should Know This</h3>
+        <div class="video-meta">
+          <span class="video-creator">Decent Rowing (AUS)</span>
+          <span class="video-duration">4:10</span>
+        </div>
+        <div class="video-description">
+          The connection between the oar handle and the rower's hand is arguably the most important. But how many people know how to set up and maintain their oars? In this video, Ken Davey and Howard Croker run through what every rower should know about their oars and how to get the most out of them on race day.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Equipment</span>
+          <span class="video-tag">Oars</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drilling Technique -->
+    <div class="video-card" data-sessions="session3 session4" data-skills="drills technique" data-topics="stroke-overview">
+      <div class="video-thumbnail" data-video-id="kAAFCBTwb2Q">
+        <iframe src="https://www.youtube.com/embed/kAAFCBTwb2Q" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Sculling Drills</h3>
+        <div class="video-meta">
+          <span class="video-creator">AramTraining</span>
+          <span class="video-duration">5:00</span>
+        </div>
+        <div class="video-description">
+          A compilation of fundamental on-water drills to reinforce proper technique. Includes pause drills, pick drills, and exercises for improving blade releases and handle control, all designed to help you isolate and improve individual stroke components.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Drills</span>
+          <span class="video-tag">Technique</span>
+          <span class="video-tag">Session 3-4</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Advanced Sculling Technique -->
     <div class="video-card" data-sessions="post-course" data-skills="advanced technique" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="RO0kN5JNa9w">
