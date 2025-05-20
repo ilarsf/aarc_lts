@@ -43,35 +43,35 @@ Weather conditions directly impact rowing safety. This guide will help you under
       <tbody>
         <!-- Wind Conditions -->
         <tr data-conditions="wind">
-          <td><strong>Wind 0-7 mph</strong><br>Calm or light breeze</td>
+          <td><strong>Wind 0-7 mph (0-11 km/h)</strong><br>Calm or light breeze</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td>Standard procedures</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 8-12 mph</strong><br>Moderate breeze</td>
+          <td><strong>Wind 8-12 mph (12-19 km/h)</strong><br>Moderate breeze</td>
           <td class="caution">Caution</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td>Stay in sheltered water areas if possible</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 12-15 mph</strong><br>Fresh breeze, whitecaps</td>
+          <td><strong>Wind 12-15 mph (19-24 km/h)</strong><br>Fresh breeze, whitecaps</td>
           <td class="warning">Not Advised</td>
           <td class="caution">Caution</td>
           <td class="safe">Safe</td>
           <td>No novice singles, stay near shore</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 15-20 mph</strong><br>Strong breeze, moderate waves</td>
+          <td><strong>Wind 15-20 mph (24-32 km/h)</strong><br>Strong breeze, moderate waves</td>
           <td class="no-go">No Rowing</td>
           <td class="warning">Not Advised</td>
           <td class="caution">Larger Boats Only</td>
           <td>No singles/doubles for any rower</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 20+ mph</strong><br>Near gale, rough water</td>
+          <td><strong>Wind 20+ mph (32+ km/h)</strong><br>Near gale, rough water</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
@@ -80,35 +80,35 @@ Weather conditions directly impact rowing safety. This guide will help you under
         
         <!-- Temperature Conditions -->
         <tr data-conditions="temp">
-          <td><strong>Water < 40°F</strong><br>Red Zone</td>
+          <td><strong>Water < 40°F (< 4°C)</strong><br>Red Zone</td>
           <td class="no-go">No Singles/Doubles</td>
           <td class="warning">Multi-Person Only</td>
           <td class="warning">Multi-Person Only</td>
           <td>Coach accompaniment required, cold gear needed</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Water 40-50°F</strong><br>Yellow Zone</td>
+          <td><strong>Water 40-50°F (4-10°C)</strong><br>Yellow Zone</td>
           <td class="warning">No Singles</td>
           <td class="caution">No Singles</td>
           <td class="caution">Experienced Only</td>
           <td>Four-oar rule, cold gear required</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Water > 50°F</strong><br>Green Zone</td>
+          <td><strong>Water > 50°F (> 10°C)</strong><br>Green Zone</td>
           <td class="caution">Standard</td>
           <td class="safe">Standard</td>
           <td class="safe">Standard</td>
           <td>Normal operations when other conditions permit</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Heat Index 80-90°F</strong></td>
+          <td><strong>Heat Index 80-90°F (27-32°C)</strong></td>
           <td class="caution">Caution</td>
           <td class="caution">Caution</td>
           <td class="caution">Caution</td>
           <td>Hydration essential, monitor for heat stress</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Heat Index > 90°F</strong></td>
+          <td><strong>Heat Index > 90°F (> 32°C)</strong></td>
           <td class="warning">Modified Practice</td>
           <td class="warning">Modified Practice</td>
           <td class="caution">Modified Practice</td>
@@ -117,21 +117,21 @@ Weather conditions directly impact rowing safety. This guide will help you under
         
         <!-- Visibility Conditions -->
         <tr data-conditions="visibility">
-          <td><strong>Visibility > 500m</strong><br>Clear conditions</td>
+          <td><strong>Visibility > 500m (> 1640 ft / > 547 yd)</strong><br>Clear conditions</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td class="safe">Safe</td>
           <td>Standard procedures</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility 100-500m</strong><br>Light fog</td>
+          <td><strong>Visibility 100-500m (328-1640 ft / 109-547 yd)</strong><br>Light fog</td>
           <td class="warning">Not Advised</td>
           <td class="caution">Caution</td>
           <td class="caution">Caution</td>
           <td>Stay near shore, use lights, reduce speed</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility < 100m</strong><br>Heavy fog</td>
+          <td><strong>Visibility < 100m (< 328 ft / < 109 yd)</strong><br>Heavy fog</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
           <td class="no-go">No Rowing</td>
@@ -226,11 +226,11 @@ Weather conditions directly impact rowing safety. This guide will help you under
           <div>
             <h4>Wind Speed Guidelines:</h4>
             <ul>
-              <li><strong>0-7 mph:</strong> Generally safe for all boats</li>
-              <li><strong>8-12 mph:</strong> Caution for beginners in singles</li>
-              <li><strong>12-15 mph:</strong> Experienced singles only, no beginner singles</li>
-              <li><strong>15+ mph:</strong> No small boats (singles/doubles) recommended</li>
-              <li><strong>20+ mph:</strong> No rowing recommended</li>
+              <li><strong>0-7 mph (0-11 km/h):</strong> Generally safe for all boats</li>
+              <li><strong>8-12 mph (12-19 km/h):</strong> Caution for beginners in singles</li>
+              <li><strong>12-15 mph (19-24 km/h):</strong> Experienced singles only, no beginner singles</li>
+              <li><strong>15-20 mph (24-32 km/h):</strong> No small boats (singles/doubles) recommended</li>
+              <li><strong>20+ mph (32+ km/h):</strong> No rowing recommended</li>
             </ul>
           </div>
           
@@ -263,7 +263,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <p class="minimum-requirement">Minimum visibility requirement: <strong>100 meters in all directions</strong></p>
+        <p class="minimum-requirement">Minimum visibility requirement: <strong>100 meters (approx. 328 feet / 109 yards) in all directions</strong></p>
         
         <div class="two-col-grid">
           <div>
@@ -280,7 +280,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
             <h4>Judgment Test:</h4>
             <ul>
               <li>If you can't see the opposite shore or landmarks clearly</li>
-              <li>If you can't see approaching boats from at least 100m away</li>
+              <li>If you can't see approaching boats from at least 100m (approx. 328 ft / 109 yd) away</li>
               <li>If you can't see underwater obstacles</li>
               <li>If other rowers appear and disappear from view</li>
               <li>→ Conditions are too foggy for safe rowing</li>
@@ -310,8 +310,8 @@ Weather conditions directly impact rowing safety. This guide will help you under
             <h4>Cold Zone (Red)</h4>
             <p>High risk, severely restricted rowing</p>
             <ul>
-              <li>Water temp &lt; 40°F</li>
-              <li>Combined air/water temp &lt; 90°F</li>
+              <li>Water temp &lt; 40°F (&lt; 4°C)</li>
+              <li>Combined air/water temp &lt; 90°F (Air °C + Water °C &lt; 15°C)</li>
             </ul>
             <p><strong>Restrictions:</strong> Only stable, multi-person boats with coach accompaniment</p>
           </div>
@@ -320,8 +320,8 @@ Weather conditions directly impact rowing safety. This guide will help you under
             <h4>Caution Zone (Yellow)</h4>
             <p>Modified rowing permitted</p>
             <ul>
-              <li>Water temp 40-50°F</li>
-              <li>Combined air/water temp 90-100°F</li>
+              <li>Water temp 40-50°F (4-10°C)</li>
+              <li>Combined air/water temp 90-100°F (15°C ≤ Air °C + Water °C ≤ 20°C)</li>
             </ul>
             <p><strong>Restrictions:</strong> Eight-person shells and doubles with four-oar rule</p>
           </div>
@@ -330,8 +330,8 @@ Weather conditions directly impact rowing safety. This guide will help you under
             <h4>Normal Zone (Green)</h4>
             <p>Standard operations</p>
             <ul>
-              <li>Water temp &gt; 50°F</li>
-              <li>Combined air/water temp &gt; 100°F</li>
+              <li>Water temp &gt; 50°F (&gt; 10°C)</li>
+              <li>Combined air/water temp &gt; 100°F (Air °C + Water °C &gt; 20°C)</li>
             </ul>
             <p><strong>Restrictions:</strong> All boat types permitted when conditions are safe</p>
           </div>
@@ -340,8 +340,8 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <div class="weather-info-box">
           <h4>Additional Cold Weather Rules</h4>
           <ul>
-            <li>Singles (1X) require water temperature ≥50°F AND combined air/water temperature ≥100°F</li>
-            <li>Doubles (2X) require water temperature ≥40°F AND combined air/water temperature ≥90°F</li>
+            <li>Singles (1X) require water temperature ≥50°F (≥10°C) AND combined air/water temperature ≥100°F (Air °C + Water °C ≥ 20°C)</li>
+            <li>Doubles (2X) require water temperature ≥40°F (≥4°C) AND combined air/water temperature ≥90°F (Air °C + Water °C ≥ 15°C)</li>
           </ul>
         </div>
       </div>
@@ -366,10 +366,10 @@ Weather conditions directly impact rowing safety. This guide will help you under
           <div>
             <h4>Heat Index Guidelines:</h4>
             <ul>
-              <li><strong>&lt;80°F:</strong> Generally safe for full practice</li>
-              <li><strong>80-90°F:</strong> Use caution and monitor for signs of heat stress</li>
-              <li><strong>90-105°F:</strong> High risk – expect modified practice (reduced duration/intensity)</li>
-              <li><strong>&gt;105°F:</strong> Extreme risk – practice may be moved indoors</li>
+              <li><strong>&lt;80°F (&lt;27°C):</strong> Generally safe for full practice</li>
+              <li><strong>80-90°F (27-32°C):</strong> Use caution and monitor for signs of heat stress</li>
+              <li><strong>90-105°F (32-41°C):</strong> High risk – expect modified practice (reduced duration/intensity)</li>
+              <li><strong>&gt;105°F (&gt;41°C):</strong> Extreme risk – practice may be moved indoors</li>
             </ul>
           </div>
           
