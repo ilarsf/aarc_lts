@@ -94,51 +94,77 @@
     </div>
 
     <script>
+        // InitializeTabs function defined globally so it can be called by specific pages too
+        function initializeTabs() {
+            const tabLinks = document.querySelectorAll('.tab-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            if (tabLinks.length > 0) {
+                tabLinks.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        tabLinks.forEach(tab => tab.classList.remove('active'));
+                        tabContents.forEach(content => content.classList.remove('active'));
+
+                        this.classList.add('active');
+                        const tabId = this.getAttribute('data-tab');
+                        if (document.getElementById(tabId)) {
+                            document.getElementById(tabId).classList.add('active');
+                        }
+                    });
+                });
+
+                // If no tab is active, activate the first one, ensuring elements exist
+                const firstTabLink = document.querySelector('.tab-link');
+                if (firstTabLink && !document.querySelector('.tab-link.active')) {
+                    const firstTabId = firstTabLink.getAttribute('data-tab');
+                    firstTabLink.classList.add('active');
+                    const firstTabContent = document.getElementById(firstTabId);
+                    if (firstTabContent) {
+                        firstTabContent.classList.add('active');
+                    }
+                }
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
-            // Check if user has coach access
             const urlParams = new URLSearchParams(window.location.search);
             const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
-            let storageAuth = localStorage.getItem('aarc_coach_access') === 'granted'; // Changed to let
+            let storageAuth = localStorage.getItem('aarc_coach_access') === 'granted';
 
-            // If authenticated via URL, persist to localStorage and update storageAuth for this session
             if (urlAuth && !storageAuth) {
                 localStorage.setItem('aarc_coach_access', 'granted');
-                storageAuth = true; // Ensure storageAuth reflects the change for the hasAccess check
+                storageAuth = true;
             }
 
-            const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
+            const siteBaseUrl = "{{ site.baseurl }}";
+            const loginPagePath = siteBaseUrl + "/for-coaches/";
+            const loginPageIndexHtmlPath = siteBaseUrl + "/for-coaches/index.html";
+            const currentPagePath = window.location.pathname;
 
-            // Get access via any method (URL, localStorage) or if we've already redirected too many times
-            const hasAccess = urlAuth || storageAuth || redirectCount >= 2; // Now uses the potentially updated storageAuth
+            const isDesignatedLoginPage = (currentPagePath === loginPagePath || currentPagePath === loginPageIndexHtmlPath);
 
-            // Only redirect if no access AND we haven't already redirected too many times
-            if (!hasAccess) {
-                // When redirecting, preserve auth_status if present
-                let redirectUrl = '{{ site.baseurl }}/for-coaches/';
-
-                if (redirectCount > 0) {
+            if (!storageAuth && !isDesignatedLoginPage) {
+                const redirectCount = parseInt(urlParams.get('redirect_count') || '0');
+                if (redirectCount < 2) {
+                    let redirectUrl = loginPagePath; // Redirect to the main /for-coaches/ page
                     redirectUrl += '?redirect_count=' + (redirectCount + 1);
-                    if (urlAuth) redirectUrl += '&auth_status=ok';
-                } else {
-                    redirectUrl += urlAuth ? '?auth_status=ok' : '?redirect_count=1';
+                    window.location.href = redirectUrl;
+                    return; // Stop further script execution on this page
                 }
-
-                window.location.href = redirectUrl;
+                // If redirect limit is hit on a non-login page and still not authenticated,
+                // the page content should ideally be hidden by its own structure or this indicates an issue.
             }
 
-            // If URL authentication is being used, modify all coach portal links to maintain auth state
-            if (urlAuth) {
-                document.querySelectorAll('a').forEach(function (link) {
-                    const href = link.getAttribute('href');
-                    if (href && href.includes('/for-coaches/') && !href.includes('auth_status=')) {
-                        // Add auth_status parameter to the link
-                        const separator = href.includes('?') ? '&' : '?';
-                        link.setAttribute('href', href + separator + 'auth_status=ok');
-                    }
-                });
+            // Initialize tabs for authenticated users on non-login coach pages
+            if (storageAuth && !isDesignatedLoginPage) {
+                initializeTabs();
             }
+            // Note: The designated login page (for-coaches/index.md) will call initializeTabs()
+            // from its own script after successful authentication and content display.
 
-            // Mobile nav toggle
+            // Mobile nav toggle (general UI, always set up)
             const navToggle = document.querySelector('.mobile-nav-toggle');
             const siteNav = document.querySelector('.site-nav');
 
@@ -149,46 +175,7 @@
                 });
             }
 
-            // Tab functionality for any tab systems in coach pages
-            function initializeTabs() {
-                const tabLinks = document.querySelectorAll('.tab-link');
-                const tabContents = document.querySelectorAll('.tab-content');
-
-                if (tabLinks.length > 0) {
-                    tabLinks.forEach(link => {
-                        link.addEventListener('click', function (e) {
-                            e.preventDefault();
-
-                            // Remove active class from all tabs and content
-                            tabLinks.forEach(tab => tab.classList.remove('active'));
-                            tabContents.forEach(content => content.classList.remove('active'));
-
-                            // Add active class to clicked tab
-                            this.classList.add('active');
-
-                            // Show corresponding content
-                            const tabId = this.getAttribute('data-tab');
-                            if (document.getElementById(tabId)) {
-                                document.getElementById(tabId).classList.add('active');
-                            }
-                        });
-                    });
-
-                    // If no tab is active, activate the first one
-                    if (!document.querySelector('.tab-link.active')) {
-                        const firstTab = document.querySelector('.tab-link');
-                        const firstTabId = firstTab.getAttribute('data-tab');
-
-                        firstTab.classList.add('active');
-                        if (document.getElementById(firstTabId)) {
-                            document.getElementById(firstTabId).classList.add('active');
-                        }
-                    }
-                }
-            }
-
-            // Initialize interactive elements
-            initializeTabs();
+            // Tab functionality previously here is now more selectively called by initializeTabs()
         });
     </script>
 

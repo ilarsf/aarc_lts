@@ -22,6 +22,9 @@ theme_color: "#0066cc"         # Primary blue color
 theme_color_secondary: "#004c99" # Secondary blue color
 footer_text_color: "#7c7c7c"     # Light gray for footer text
 
+# Coach Portal settings
+coach_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb
+
 # Navigation
 navigation:
   - title: Home
