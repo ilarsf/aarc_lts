@@ -319,8 +319,3 @@ Understanding key rowing terms will help you communicate effectively with coache
 <div class="info-box">
   <p>Learning these terms will make your sculling experience smoother and help you understand coaching instructions more easily. Don't worry about memorizing everything at once—you'll become familiar with these terms through practice and repetition.</p>
 </div>
-
-**Next Steps:**
-- [Program Overview](program-overview.html)
-- [Session 1 Guide]({{ site.baseurl }}/for-learners/learning-journey/session-1.html)
-- [Complete Rowing Glossary]({{ site.baseurl }}/for-learners/resources/glossary.html)

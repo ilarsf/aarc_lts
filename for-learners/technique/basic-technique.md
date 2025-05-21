@@ -253,26 +253,9 @@ Understanding proper rowing technique is essential for an efficient, effective, 
 
 <p>Remember that rowing is a highly technical sport that takes time to master. Be patient with yourself, focus on one improvement at a time, and enjoy the learning process.</p>
 
-<div class="cards-container">
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-video"></i>
-            </div>
-            <h4 class="card-title">Instructional Videos</h4>
-            <p class="card-text">Visual guides to perfect your stroke</p>
-            <a href="videos.html" class="card-button">Watch Videos</a>
-        </div>
-        
-        <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-user-graduate"></i>
-            </div>
-            <h4 class="card-title">Session Techniques</h4>
-            <p class="card-text">Focused skills for each practice session</p>
-            <a href="{{ site.baseurl }}/for-learners/learning-journey/session-2.html" class="card-button">View Guide</a>
-        </div>
-    </div>
+<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 10px 0; border-radius: 4px;">
+  <p>{% include icon.html icon="fas fa-video" type="info" alt="Videos" %} Visual guides to perfect your stroke: 
+  <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=technique" class="cta-button">Watch Technique Videos</a></p>
 </div>
 
 <!-- accordion.js is already included in head-custom.html -->
