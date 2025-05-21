@@ -94,26 +94,13 @@ Welcome to your second Learn to Scull session! This guide will help you understa
     <div class="tab-content" id="preparation">
         <div class="tab-content-inner">
             <h3>Preparation for Session 2</h3>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">Review Video Resources</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to prepare for this session.</li>
-                            <li>"Adjusting the Foot Stretcher in a Single Scull" - learn how to properly set up your boat</li>
-                            <li>"Sculling Basics" - understand the fundamentals of the sculling stroke</li>
-                            <li>"Essential Sculling #5 Getting In" - techniques for safely entering a single</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
+
             <div class="accordion-section">
                 <button class="accordion-toggle">Mental Preparation</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to prepare for this session.</li>
                             <li>It's normal to feel nervous about getting into a boat - everyone does!</li>
                             <li>Remember the "arms-body-slide" recovery sequence from Session 1</li>
                             <li>Be prepared to get wet (wear appropriate clothing)</li>
@@ -271,7 +258,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Practice your recovery sequence mentally</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you\\'ve learned.</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you've learned.</li>
                             <li>Review the river traffic pattern diagrams provided</li>
                             
                             <li>Consider watching the videos recommended for Session 3</li>

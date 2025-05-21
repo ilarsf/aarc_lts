@@ -145,7 +145,6 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Rowing engages many muscle groups - you may use muscles you don't typically use</li>
-                            <li>Hand blisters are common for beginners - we'll cover prevention techniques</li>
                             <li>Balance is challenging at first - the boats are designed to be narrow</li>
                             <li>You'll need to bend low to get into and out of the boat</li>
                         </ul>
@@ -294,8 +293,8 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>For fun and to reinforce what you\'ve learned, you can optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a>.</li>
-                            <li>You can also optionally review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you\'ve learned.</li>
+                            <li>For fun and to reinforce what you've learned, you can optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a>.</li>
+                            <li>You can also optionally review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you've learned.</li>
                             <li>Practice the rowing sequence mentally to build muscle memory</li>
                             <li>Take care of any developing blisters according to recommendations</li>
                             <li>Prepare questions for your next session</li>

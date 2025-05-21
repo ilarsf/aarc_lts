@@ -96,27 +96,11 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             <h3>Preparation for Session 4</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Review Video Resources</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>Review the following videos to prepare for this session. You can also <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">view all videos for Session 4</a>.</p>
-                        <ul>
-                            <li>"Sculling: Setting the Boat Level" - advanced balance techniques</li>
-                            <li>"Most important Sculling technique exercises done right" - refining stroke components</li>
-                            <li>"How to turn a single scull with confidence" - advanced turning</li>
-                            <li>"Navigating bridges and obstacles in a single scull" - practical skills</li>
-                            <li>"Common Rowing Machine Mistakes at the Catch" - troubleshooting technique</li>
-                            <li>"How to Care for Your Rowing Shell" - proper equipment maintenance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
                 <button class="accordion-toggle">Mental Preparation</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 4 Videos</a> to prepare for this session.</li>
                             <li>Reflect on your progress since Session 1</li>
                             <li>Think about questions you may have about continuing with rowing</li>
                             <li>Prepare for assessment of your skills (with a growth mindset)</li>

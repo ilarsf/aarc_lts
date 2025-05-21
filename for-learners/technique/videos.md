@@ -67,6 +67,7 @@ This curated collection of high-quality instructional videos supports the Learn 
   <h2>Video Collection</h2>
 
   <div class="video-grid">
+
     <!-- Introduction to Sculling -->
     <div class="video-card" data-sessions="pre-course" data-skills="basics" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="eTerbM8Uhxc">
@@ -88,7 +89,55 @@ This curated collection of high-quality instructional videos supports the Learn 
         </div>
       </div>
     </div>
-    
+
+    <!-- Getting Ready to Row on the Rowing Machine -->
+    <div class="video-card" data-sessions="pre-course session1" data-skills="basics equipment" data-topics="equipment">
+      <div class="video-thumbnail" data-video-id="4WyHEL-9xKM">
+        <iframe src="https://www.youtube.com/embed/4WyHEL-9xKM" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Getting Ready to Row on the Rowing Machine with Concept2</h3>
+        <div class="video-meta">
+          <span class="video-creator">concept2usa</span>
+          <span class="video-duration">0:49</span>
+        </div>
+        <div class="video-description">
+          It's easy to get started on the Concept2 RowErg. This video will guide you through setting the damper, adjusting the foot straps, and getting you started using the powerful Concept2 Performance Monitor.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Ergometer Setup</span>
+          <span class="video-tag">Basics</span>
+          <span class="video-tag">Equipment</span>
+          <span class="video-tag">Pre-Course</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Correct Rowing Machine Technique -->
+    <div class="video-card" data-sessions="pre-course session1" data-skills="technique basics" data-topics="stroke-overview">
+      <div class="video-thumbnail" data-video-id="4zWu1yuJ0_g">
+        <iframe src="https://www.youtube.com/embed/4zWu1yuJ0_g" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Correct Rowing Machine Technique, Improve Your Rowing | Concept2</h3>
+        <div class="video-meta">
+          <span class="video-creator">concept2usa</span>
+          <span class="video-duration">1:53</span>
+        </div>
+        <div class="video-description">
+          Technique on an indoor rowing machine can be divided into three parts: the catch, the drive and the recovery. This video will take you through proper technique on the rowing machine. This is appropriate for all types of athletes.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Technique</span>
+          <span class="video-tag">Ergometer</span>
+          <span class="video-tag">Full Stroke</span>
+          <span class="video-tag">Pre-Course</span>
+          <span class="video-tag">Session 1</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Safety Video -->
     <div class="video-card" data-sessions="" data-skills="safety" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="Rx5SUe_RdgQ">

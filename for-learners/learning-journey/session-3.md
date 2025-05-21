@@ -96,25 +96,11 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             <h3>Preparation for Session 3</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Review Video Resources</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to prepare for this session.</li>
-                            <li>"Sculling: The Finish - Tap Down and Feather" - learn proper blade extraction</li>
-                            <li>"Essential Sculling Technique for rowers" - focus on recovery sequence</li>
-                            <li>"How to Feather and Square Your Oars" - mastering blade control</li>
-                            <li>"Sculling: How to Steer a Single" - basic steering techniques</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
                 <button class="accordion-toggle">Mental Preparation</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to prepare for this session.</li>
                             <li>Visualize the feeling of pushing with your legs during the drive</li>
                             <li>Review the river traffic patterns you'll be following</li>
                             <li>Prepare to row longer distances in this session</li>
