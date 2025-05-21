@@ -1,0 +1,46 @@
+Dear LTS Participants,<br><br>
+
+Great job at our first Learn to Scull session for program {{ page.lts_program_number }}! You've already made significant progress in understanding rowing terminology, basic stroke mechanics on the ergometer, and completing your first flip test.<br><br>
+
+**KEY ACHIEVEMENTS FROM SESSION 1**<br><br>
+*   Learned basic rowing motion using ergometers.<br>
+*   Got familiar with equipment terminology and boat handling.<br>
+*   Attempted the essential "flip test" to practice water safety.<br>
+*   Built comfort and confidence around rowing equipment and water.<br><br>
+
+**PREPARING FOR SESSION 2: Hitting the Water**<br><br>
+To build on what you've learned and prepare for our first on-water session, please review:<br><br>
+1.  **Video Resources for Session 2:** Watch the [Session 2 Videos](https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=session2) to see these concepts in action.<br>
+2.  Review the [Session 2 Learning Guide](https://ilarsf.github.io/aarc_lts/for-learners/learning-journey/session-2.html) for an overview of what we'll cover.<br><br>
+
+**NEXT SESSION: {{ page.session_dates[1] | default: "[Day, Date, Time]" }}** {# Assumes the second date in the array is for session 2 #}<br><br>
+We'll focus on:<br>
+*   Transferring ergometer stroke sequence to on-water rowing.<br>
+*   Establishing proper recovery sequence (arms → body → slide).<br>
+*   Developing basic boat control and balance.<br>
+*   Mastering safe launching and landing procedures.<br><br>
+
+**REMINDERS**<br><br>
+*   Please arrive 10 minutes early.<br>
+*   Wear suitable clothing (forecast: [weather summary]).<br>
+*   Bring water and sun protection.<br><br>
+
+If you have any questions before our next session, please don't hesitate to contact us.<br><br>
+
+Best regards,<br><br>
+
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+{% for instructor in page.instructors %}
+  {% assign first_name = instructor.name | split: " " | first %}
+  {% assign instructor_first_names = instructor_first_names | append: first_name %}
+  {% assign instructor_emails = instructor_emails | append: instructor.email %}
+  {% unless forloop.last %}
+    {% assign instructor_first_names = instructor_first_names | append: " & " %}
+    {% assign instructor_emails = instructor_emails | append: " & " %}
+  {% endunless %}
+{% endfor %}
+
+{{ instructor_first_names }}<br>
+AARC Learn to Scull Program Instructors<br>
+({{ instructor_emails }})

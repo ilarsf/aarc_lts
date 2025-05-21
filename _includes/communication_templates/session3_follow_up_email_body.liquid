@@ -1,0 +1,46 @@
+Dear LTS Participants,<br><br>
+
+Fantastic job in Session 3! You're now applying power more effectively and getting comfortable with navigating the boat.<br><br>
+
+**KEY ACHIEVEMENTS FROM SESSION 3**<br><br>
+*   Developed effective leg drive and power application.<br>
+*   Learned navigation principles and river traffic patterns.<br>
+*   Mastered boat control through turns and varying stroke pressure.<br>
+*   Built confidence through continuous rowing.<br><br>
+
+**PREPARING FOR SESSION 4: Navigation and Working Up River**<br><br>
+For our final session, where we integrate all skills and focus on independent sculling, please review:<br><br>
+1.  **Video Resources for Session 4:** Watch the [Session 4 Videos](https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=session4).<br>
+2.  Review the [Session 4 Learning Guide](https://ilarsf.github.io/aarc_lts/for-learners/learning-journey/session-4.html).<br><br>
+
+**NEXT SESSION: {{ page.session_dates[3] | default: "[Day, Date, Time]" }}**<br><br>
+Our final session will focus on:<br>
+*   Integrating all previously learned skills.<br>
+*   Developing confidence in river navigation, including bridges.<br>
+*   Achieving independent sculling capability.<br>
+*   Discussing next steps.<br><br>
+
+**REMINDERS**<br><br>
+*   Please arrive on time.<br>
+*   Dress for the weather.<br>
+*   Don't forget water and sun protection.<br><br>
+
+You're doing wonderfully! Feel free to reach out with any questions.<br><br>
+
+Best regards,<br><br>
+
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+{% for instructor in page.instructors %}
+  {% assign first_name = instructor.name | split: " " | first %}
+  {% assign instructor_first_names = instructor_first_names | append: first_name %}
+  {% assign instructor_emails = instructor_emails | append: instructor.email %}
+  {% unless forloop.last %}
+    {% assign instructor_first_names = instructor_first_names | append: " & " %}
+    {% assign instructor_emails = instructor_emails | append: " & " %}
+  {% endunless %}
+{% endfor %}
+
+{{ instructor_first_names }}<br>
+AARC Learn to Scull Program Instructors<br>
+({{ instructor_emails }})

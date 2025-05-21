@@ -18,12 +18,21 @@
                     {% for item in section.items %}
                     <div class="template-container">
                         <h4>{{ item.title }}</h4>
-                        {% if item.subject %}
+
+                        {% if item.subject_template %}
+                        <p><strong>Subject:</strong> {% include {{ item.subject_template }} %}</p>
+                        {% elsif item.subject %}
                         <p><strong>Subject:</strong> {{ item.subject }}</p>
                         {% endif %}
+
                         <div class="template-content">
+                            {% if item.body_template %}
+                            {% capture processed_body %}{% include {{ item.body_template }} %}{% endcapture %}
+                            {{ processed_body | markdownify }}
+                            {% elsif item.body %}
                             {% capture processed_body %}{{ item.body }}{% endcapture %}
                             {{ processed_body | markdownify }}
+                            {% endif %}
                         </div>
                     </div>
                     {% endfor %}

@@ -2,6 +2,24 @@
 layout: coach
 title: "Communication Templates and Protocols - AARC Learn to Scull Program"
 search_exclude: true
+
+# Program-specific data
+lts_program_number: "LTS #1"
+session_dates:
+  - "May 31, 2025 (Saturday)"
+  - "June 1, 2025 (Sunday)"
+  - "June 7, 2025 (Saturday)"
+  - "June 8, 2025 (Sunday)"
+program_start_date: "May 1, 2025"
+instructors:
+  - first_name: "Michelle"
+    name: "Michelle Nemshak"
+    email: "mnrn67@comcast.net"
+  - first_name: "Lars"
+    name: "Lars Fritsche"
+    email: "fritsche.lars@gmail.com"
+program_contact_email: "info@a2crew.com"
+
 ---
 
 # Communication Templates and Protocols

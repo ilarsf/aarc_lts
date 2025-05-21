@@ -1,0 +1,38 @@
+Dear LTS Participants,<br><br>
+
+We're looking forward to welcoming you to our Learn to Scull program ({{ page.lts_program_number }}) starting {{ page.session_dates[0] | split: '(' | first | strip }} at [Time]. {# Assuming you want to dynamically insert the first session day/date and manually fill in time #}<br><br>
+
+**FINAL CHECKLIST**<br><br>
+1. USRowing Membership: [Complete/Pending]<br>
+2. AARC Waiver: [Complete/Pending]<br>
+3. Weather forecast: [Weather Summary] - program will run rain or shine unless conditions are unsafe<br><br>
+
+**REMINDER: WHAT TO BRING**<br><br>
+- Athletic clothes (no baggy items that could catch in the tracks)<br>
+- Water bottle<br>
+- Sunscreen, hat & sunglasses<br>
+- Towel & change of clothes<br>
+- Completed forms (if not already submitted)<br><br>
+
+The program will run for approximately 3 hours. Please arrive 15 minutes early on the first day to complete sign-in.<br><br>
+
+See you on the water!<br><br>
+
+Best regards,<br><br>
+
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+{% for instructor in page.instructors %}
+  {% assign first_name = instructor.name | split: " " | first %}
+  {% assign instructor_first_names = instructor_first_names | append: first_name %}
+  {% assign instructor_emails = instructor_emails | append: instructor.email %}
+  {% unless forloop.last %}
+    {% assign instructor_first_names = instructor_first_names | append: " & " %}
+    {% assign instructor_emails = instructor_emails | append: " & " %}
+  {% endunless %}
+{% endfor %}
+
+{{ instructor_first_names }}<br>
+AARC Learn to Scull Program Instructors<br>
+({{ instructor_emails }})
+

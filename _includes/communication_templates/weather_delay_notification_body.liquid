@@ -1,0 +1,37 @@
+Dear LTS Participants,<br><br>
+
+Due to the forecast of [specific weather condition] for our scheduled session on [day/date], we will be delaying the start time to [new time].<br><br>
+
+The current forecast indicates that conditions will improve by [time], allowing us to safely conduct our session with the following adjustments:<br><br>
+
+**REVISED PLAN**<br><br>
+- New start time: [time]<br>
+- Expected end time: [time]<br>
+- Location: Same (Bandemer Park boathouse)<br>
+- Focus: We will adjust our session plan to prioritize [specific activities] to ensure we cover essential skills<br><br>
+
+**PREPARATION**<br><br>
+- Please bring extra layers as temperatures may be cooler<br>
+- A change of clothes is still recommended<br><br>
+
+We will send a confirmation email by [time] if conditions develop differently than expected.<br><br>
+
+Please reply to confirm you've received this update.<br><br>
+
+Thank you for your flexibility,<br><br>
+
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+{% for instructor in page.instructors %}
+  {% assign first_name = instructor.name | split: " " | first %}
+  {% assign instructor_first_names = instructor_first_names | append: first_name %}
+  {% assign instructor_emails = instructor_emails | append: instructor.email %}
+  {% unless forloop.last %}
+    {% assign instructor_first_names = instructor_first_names | append: " & " %}
+    {% assign instructor_emails = instructor_emails | append: " & " %}
+  {% endunless %}
+{% endfor %}
+
+{{ instructor_first_names }}<br>
+AARC Learn to Scull Program Instructors<br>
+({{ instructor_emails }})

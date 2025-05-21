@@ -1,0 +1,59 @@
+Dear [Participant Name],<br><br>
+
+Congratulations on successfully completing AARC's Learn to Scull program! It has been a pleasure watching your progression from your first strokes on the ergometer to confidently navigating the Huron River.<br><br>
+
+**YOUR ACHIEVEMENTS**<br><br>
+
+During these four sessions, you've demonstrated competency in:
+- Boat handling and equipment knowledge
+- Basic sculling technique and stroke sequencing
+- Water safety and self-rescue procedures
+- River traffic patterns and navigation
+<br><br>
+
+**YOUR PERSONAL ASSESSMENT**<br><br>
+
+Attached is your individual skills assessment highlighting your strengths and areas for continued focus. [Personalized comment about participant's progress]<br><br>
+
+**NEXT STEPS WITH AARC**<br><br>
+
+We encourage you to continue your rowing journey with us! Here are some ways to stay involved and keep developing your skills:<br><br>
+
+1.  **Sculling Fundamentals Program:**
+    *   Refine your technique, build endurance, and increase confidence. This program focuses on advanced drills and longer rows.
+    *   Ideal for LTS graduates.
+    *   Check the [AARC Programs Page](https://aarc.clubexpress.com/) for schedules and registration.
+<br>
+2.  **AARC Membership:**
+    *   Become a full member for access to club boats (after certification), coached sessions, boathouse facilities, and our vibrant community.
+    *   Visit the [AARC Membership Page](https://aarc.clubexpress.com/) for details.
+<br>
+3.  **Private Lessons:**
+    *   Get one-on-one coaching tailored to your specific goals.
+<br>
+4.  **Volunteer with AARC:**
+    *   Give back by helping with boathouse maintenance, regattas, or other club events.
+    *   See opportunities on the [Volunteer Page](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=203251).
+<br><br>
+
+For more details on these opportunities and other ways to continue your development, please see our [Next Steps Guide](https://ilarsf.github.io/aarc_lts/for-learners/resources/next-steps.html).<br><br>
+
+It's been a pleasure having you in our program. We hope to see you on the water again soon!<br><br>
+
+Best regards,<br><br>
+
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+{% for instructor in page.instructors %}
+  {% assign first_name = instructor.name | split: " " | first %}
+  {% assign instructor_first_names = instructor_first_names | append: first_name %}
+  {% assign instructor_emails = instructor_emails | append: instructor.email %}
+  {% unless forloop.last %}
+    {% assign instructor_first_names = instructor_first_names | append: " & " %}
+    {% assign instructor_emails = instructor_emails | append: " & " %}
+  {% endunless %}
+{% endfor %}
+
+{{ instructor_first_names }}<br>
+AARC Learn to Scull Program Instructors<br>
+({{ instructor_emails }})
