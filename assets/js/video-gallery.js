@@ -28,7 +28,7 @@ function initVideoGallery() {
     });
 
     if (initialUrlFilter) {
-        const targetButton = document.querySelector(`.filter-button[data-filter='${initialUrlFilter}'][data-filter-type="session"]`);
+        const targetButton = document.querySelector(`.filter-button[data-filter='${initialUrlFilter}']`);
         if (targetButton) {
             targetButton.classList.add('active');
             // If a specific filter is from URL, "Show All" button should not be active.

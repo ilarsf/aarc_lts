@@ -304,7 +304,8 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                 <button class="accordion-toggle">Practice and Review</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <p>After your session, review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">videos for Session 4</a> to reinforce what you've learned and identify areas for improvement.</p>
+                        <li>Optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4">Session 4 Quiz</a>.</li>
+                        <li>After your session, review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">videos for Session 4</a> to reinforce what you've learned and identify areas for improvement.</li>
                     </div>
                 </div>
             </div>

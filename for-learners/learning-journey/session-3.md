@@ -286,6 +286,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3">Session 3 Quiz</a>.</li>
                             <li>Practice mentally connecting your leg drive to boat movement</li>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to reinforce what you've learned.</li>
                             <li>Review river traffic patterns and navigation rules</li>

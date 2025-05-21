@@ -279,6 +279,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
+                            <li>Optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2">Session 2 Quiz</a>.</li>
                             <li>Practice your recovery sequence mentally</li>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you've learned.</li>
                             <li>Review the river traffic pattern diagrams provided</li>
