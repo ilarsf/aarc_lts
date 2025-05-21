@@ -263,7 +263,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <li>Apply slightly more pressure with the oar on the <strong>outside</strong> of the turn. (e.g., to turn the bow to port, apply more pressure with the starboard oar).</li>
                             <li>The oar on the <strong>inside</strong> of the turn takes lighter strokes or trails lightly in the water with the blade feathered or square just above the surface.</li>
                         </ul>
-                        <p>Remember to look where you want to go. For more significant or sharper turns, especially from a stationary position, you might use a <a href="session-3.html#pivot-turns">Pivot Turn</a> (covered in Session 3).</p>
+                        <p>Remember to look where you want to go. For more significant or sharper turns, especially from a stationary position, you might use a <a href="session-3.html#skills">Pivot Turn</a> (covered in Session 3).</p>
                     </div>
                 </div>
             </div>
