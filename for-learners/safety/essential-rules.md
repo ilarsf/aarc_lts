@@ -339,26 +339,6 @@ description: Must-know safety rules for all rowing participants
             <p>Detailed steps for capsize recovery and self-rescue techniques</p>
         </div>
     </a>
-    
-    <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card">
-        <div class="card-image">
-            <i class="fas fa-traffic-light"></i>
-        </div>
-        <div class="card-content">
-            <h3>River Traffic Rules</h3>
-            <p>Navigation patterns and sharing the waterway safely</p>
-        </div>
-    </a>
-    
-    <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines.html" class="card">
-        <div class="card-image">
-            <i class="fas fa-cloud-sun-rain"></i>
-        </div>
-        <div class="card-content">
-            <h3>Weather Guidelines</h3>
-            <p>Understanding conditions and making safe decisions</p>
-        </div>
-    </a>
 </div>
 
 <!-- Font Awesome for icons -->

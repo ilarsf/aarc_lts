@@ -10,7 +10,7 @@ This reference guide provides detailed analysis of the most common technical iss
 
 <div class="info-box tip">
   <h4>Using This Guide</h4>
-  <p>Focus on one correction at a time rather than overwhelming novice rowers with multiple technique points. Connect your coaching to the frameworks of KRAFT and Black Bear Sequence for consistency.</p>
+  <p>Focus on one correction at a time rather than overwhelming novice rowers with multiple technique points. Connect your coaching to the Black Bear Sequence framework for consistency.</p>
 </div>
 
 {% include accordion.html %}

@@ -9,8 +9,6 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
 
 # Learner's Guide: Learn to Scull Program
 
-Welcome to the Learn to Scull program! This guide will support your journey from complete beginner to confident sculler. Sculling is a rewarding sport that offers a unique blend of technical skill, physical exercise, and connection with nature.
-
 <div class="tab-container">
     <div class="tab-nav">
         <button class="tab-link active" data-tab="getting-started">Getting Started</button>
@@ -43,16 +41,6 @@ Welcome to the Learn to Scull program! This guide will support your journey from
                     <div class="card-content">
                         <h3>Preparation</h3>
                         <p>Everything you need to bring and prepare before your first rowing session.</p>
-                    </div>
-                </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Terminology</h3>
-                        <p>Essential rowing terms and vocabulary to help you understand instructions.</p>
                     </div>
                 </a>
             </div>
@@ -123,17 +111,7 @@ Welcome to the Learn to Scull program! This guide will support your journey from
                         <p>Learn the fundamentals of the sculling stroke with detailed breakdowns of each phase.</p>
                     </div>
                 </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/technique/common-fixes.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Common Fixes</h3>
-                        <p>Solutions to common technical problems that new scullers encounter.</p>
-                    </div>
-                </a>
-                
+
                 <a href="{{ site.baseurl }}/for-learners/technique/videos.html" class="card">
                     <div class="card-image">
                         <i class="fas fa-video"></i>
@@ -144,15 +122,6 @@ Welcome to the Learn to Scull program! This guide will support your journey from
                     </div>
                 </a>
                 
-                <a href="{{ site.baseurl }}/for-learners/technique/advanced-technique.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Advanced Technique</h3>
-                        <p>More sophisticated aspects of sculling for ongoing skill development.</p>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -182,26 +151,6 @@ Welcome to the Learn to Scull program! This guide will support your journey from
                         <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
                     </div>
                 </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-traffic-light"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>River Traffic</h3>
-                        <p>Navigation patterns and rules for sharing the waterway safely with others.</p>
-                    </div>
-                </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-cloud-sun-rain"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Weather Guidelines</h3>
-                        <p>Understanding weather conditions and making safe rowing decisions.</p>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -221,24 +170,24 @@ Welcome to the Learn to Scull program! This guide will support your journey from
                         <p>Answers to common questions about the program and learning to scull.</p>
                     </div>
                 </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/resources/glossary.html" class="card">
+
+                <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html" class="card">
                     <div class="card-image">
-                        <i class="fas fa-book-open"></i>
+                        <i class="fas fa-book"></i>
                     </div>
                     <div class="card-content">
-                        <h3>Glossary</h3>
-                        <p>Comprehensive dictionary of rowing and sculling terminology.</p>
+                        <h3>Terminology</h3>
+                        <p>Essential rowing terms and vocabulary to help you understand instructions.</p>
                     </div>
                 </a>
-                
-                <a href="{{ site.baseurl }}/for-learners/resources/assessment.html" class="card">
+
+                <a href="{{ site.baseurl }}/for-learners/resources/quizzes.html" class="card">
                     <div class="card-image">
-                        <i class="fas fa-clipboard-check"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="card-content">
-                        <h3>Self-Assessment</h3>
-                        <p>Tools to track your progress and identify areas for improvement.</p>
+                        <h3>Quizzes</h3>
+                        <p>Test your knowledge with interactive quizzes on various topics.</p>
                     </div>
                 </a>
                 

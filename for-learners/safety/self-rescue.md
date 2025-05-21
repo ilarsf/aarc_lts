@@ -175,7 +175,7 @@ description: Flip test and recovery procedures for scullers
                 Float the near-side blade flat on the water, shaft perpendicular to the hull. This gives you a stable brace. Verify the oarlock is properly closed.
               </li>
               <li><strong>Retrieve the Far-Side Oar</strong><br>
-                Swim or lean over to grab the other oar. Push its blade out so both blades lie parallel, with the handles overlapping. Ensure this oarlock is also properly closed.
+                Swim or lean over to grab the other oar. Extend both oars, pushing them out so they are fully extended and both blades lie flat on the water, with the handles overlapping. Ensure this oarlock is also properly closed.
               </li>
               <li><strong>Position your hands</strong><br>
                 Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip.
@@ -183,7 +183,7 @@ description: Flip test and recovery procedures for scullers
               <li><strong>Hoist Yourself Onto the Hull</strong> (Two methods)
                 <ul>
                   <li>Do a few small bounces to gain momentum</li>
-                  <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick</li>
+                  <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick, similar to getting out of a pool</li>
                 </ul>
                 <strong>Option A: The Belly Flop Method</strong>
                 <ul>
@@ -257,10 +257,6 @@ description: Flip test and recovery procedures for scullers
   <p>{% include icon.html icon="fas fa-info-circle" type="info" %} <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
 </div>
 
-## Alternative Scenarios & Solutions
-
-<p>Not all rescue situations are the same. Here are solutions for different challenging scenarios you might encounter.</p>
-
 <div class="alert alert-warning" style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 15px; margin: 20px 0; border-radius: 4px;">
   <p>{% include icon.html icon="fas fa-exclamation-circle" type="safety" alt="Warning" color="#ff9800" %} <strong>Important:</strong> There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water using the push/kick method described in "Exiting at the Dock" below.</p>
 </div>
@@ -269,64 +265,31 @@ description: Flip test and recovery procedures for scullers
 
 <div class="accordion-container" id="common-challenges">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('tired')">{% include icon.html icon="fas fa-battery-quarter" type="safety" alt="Low energy" style="margin-right: 10px;" %} Too Tired to Re-enter</div>
-    <div class="accordion-content" id="tired-content">
-      <div class="rescue-step-content">
-        <div class="row">
-          <div class="col-md-9">
-            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Hold onto the boat and kick to shore. Use a scissor kick to conserve energy while making forward progress.</p>
-            <ul>
-              <li>Keep your upper body draped over the boat to conserve energy</li>
-              <li>Use gentle scissor kicks rather than thrashing motions</li>
-            </ul>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="rescue-step-icon">
-              {% include icon.html icon="fas fa-swimmer" type="info" size="3rem" alt="Swimmer icon" %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('cold')">{% include icon.html icon="fas fa-thermometer-quarter" type="safety" alt="Cold temperature" style="margin-right: 10px;" %} Extremely Cold Water</div>
-    <div class="accordion-content" id="cold-content">
-      <div class="rescue-step-content">
-        <div class="row">
-          <div class="col-md-9">
-            <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#ff9800" %} Focus on quick re-entry or signaling for help; consider swimming to shore while holding the boat if re-entry isn't immediately successful. Cold water saps strength quickly, so respond with urgency.</p>
-            <p><strong>Cold Water Safety:</strong> In water under 60°F (15°C), prioritize getting your core out of the water as quickly as possible. Cold water shock and hypothermia are serious risks that can impair your ability to self-rescue.</p>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="rescue-step-icon">
-              {% include icon.html icon="fas fa-snowflake" type="info" size="3rem" alt="Cold water icon" %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion('dock')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Exiting at the Dock</div>
     <div class="accordion-content" id="dock-content">
       <div class="rescue-step-content">
         <div class="row">
           <div class="col-md-9">
-            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock:</p>
+            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock or shore:</p>
+            <ul>
+              <li>If the dock is too far or you are too tired to swim effectively while holding the boat, position yourself flat on the stern deck (like a frog on a branch). This helps conserve energy.</li>
+              <li>Use your hands to paddle towards the shore or dock.</li>
+            </ul>
+            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Once you reach the dock with your boat:</p>
             <ol>
-              <li>Swim with your boat to the dock, keeping it between you and the dock</li>
-              <li>Once at the dock, place both hands on the dock surface</li>
-              <li>Use a strong push/kick motion to lift your upper body onto the dock</li>
-              <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface</li>
-              <li>Help may be offered, but be prepared to exit the water on your own</li>
+                <li>Keep the boat between you and the dock.</li>
+                <li>Place both hands on the dock surface.</li>
+                <li>Use a strong push/kick motion to lift your upper body onto the dock</li>
+                <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface</li>
+                <li>Help may be offered, but be prepared to exit the water on your own</li>
             </ol>
           </div>
           <div class="col-md-3 text-center">
             <div class="rescue-step-icon">
               {% include icon.html icon="fas fa-grip-lines" type="info" size="3rem" alt="Dock grip icon" %}
+            </div>
+            <div class="rescue-step-icon" style="margin-top: 10px;">
+              {% include icon.html icon="fas fa-swimmer" type="info" size="3rem" alt="Swimmer icon" %}
             </div>
           </div>
         </div>
@@ -727,26 +690,7 @@ By mastering these self-rescue techniques, you gain confidence on the water and 
                 <p>Learn the critical safety guidelines for all rowers</p>
             </div>
         </a>
-        
-        <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card hover-effect">
-            <div class="card-icon">
-                {% include icon.html icon="fas fa-route" type="info" alt="Route" color="#2196f3" %}
-            </div>
-            <div class="card-content">
-                <h3>River Traffic Guide</h3>
-                <p>Navigation patterns and right-of-way rules</p>
-            </div>
-        </a>
-        
-        <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines.html" class="card hover-effect">
-            <div class="card-icon">
-                {% include icon.html icon="fas fa-cloud-sun-rain" type="weather" alt="Weather" color="#ff9800" %}
-            </div>
-            <div class="card-content">
-                <h3>Weather Guidelines</h3>
-                <p>Understanding conditions safe for rowing</p>
-            </div>
-        </a>
+
     </div>
 </div>
 

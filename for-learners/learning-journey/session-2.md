@@ -11,7 +11,9 @@ description: Guide for your second Learn to Scull session focused on basic strok
 
 <div class="progress-timeline">
     <div class="timeline-step">
-        <div class="step-marker">1</div>
+        <a href="session-1.html" class="step-link">
+            <div class="step-marker">1</div>
+        </a>
         <div class="step-content">
             <h4>Session 1</h4>
             <p>Introduction</p>
@@ -19,7 +21,9 @@ description: Guide for your second Learn to Scull session focused on basic strok
     </div>
     
     <div class="timeline-step active" data-current="true">
-        <div class="step-marker">2</div>
+        <a href="session-2.html" class="step-link">
+            <div class="step-marker">2</div>
+        </a>
         <div class="step-content">
             <h4>Session 2</h4>
             <p>Building Skills</p>
@@ -27,7 +31,9 @@ description: Guide for your second Learn to Scull session focused on basic strok
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">3</div>
+        <a href="session-3.html" class="step-link">
+            <div class="step-marker">3</div>
+        </a>
         <div class="step-content">
             <h4>Session 3</h4>
             <p>Refinement</p>
@@ -35,7 +41,9 @@ description: Guide for your second Learn to Scull session focused on basic strok
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">4</div>
+        <a href="session-4.html" class="step-link">
+            <div class="step-marker">4</div>
+        </a>
         <div class="step-content">
             <h4>Session 4</h4>
             <p>Independence</p>
@@ -207,8 +215,9 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration of pause drills</li>
-                                        <li>Practice pausing at key positions</li>
+                                        <li>Coach demonstration of pause  exercises</li>
+                                        <li>Practice basic sequencing: legs-body-arms</li>
+                                        <li>Introduction to feathering and squaring</li>
                                         <li>Focus on control and awareness</li>
                                         <li>Building comfort with the unstable boat</li>
                                     </ul>
@@ -234,26 +243,10 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                 </div>
             </div>
             
-            <h3>Key Drills You'll Learn</h3>
+            <h3>Key Technique Exercises You'll Learn</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Pick Drill (Water)</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>This drill mirrors what you did on the erg but is performed in the boat:</p>
-                        <ol>
-                            <li>Arms-only rowing from the finish (10 strokes)</li>
-                            <li>Progress to arms-and-body rowing (10 strokes)</li>
-                            <li>Add half-slide (10 strokes)</li>
-                            <li>Finally full-slide rowing (10 strokes)</li>
-                        </ol>
-                        <p>This helps you transfer the learned recovery sequence from stable erg to unstable boat, building confidence and control incrementally.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">Pause Drills (Arms Away, Body Over)</button>
+                <button class="accordion-toggle">Pause Exercises (Arms Away, Body Over)</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <p>Execute your stroke normally but insert a distinct 2-second pause at specific points:</p>
@@ -270,18 +263,6 @@ Welcome to your second Learn to Scull session! This guide will help you understa
 
     <div class="tab-content" id="next-steps">
         <div class="tab-content-inner">
-            <h3>Common Challenges in Session 2</h3>
-            
-            <div class="info-box warning">
-                <h4>What to Watch Out For</h4>
-                <ul>
-                    <li><strong>Sequencing errors:</strong> Bending knees before hands are away/body is over</li>
-                    <li><strong>Rushing the slide:</strong> Moving too quickly towards the catch position</li>
-                    <li><strong>Balance issues:</strong> Tensing up, gripping oars tightly, uneven hand heights</li>
-                    <li><strong>Blade work problems:</strong> Catching "crabs" (oar gets stuck underwater)</li>
-                </ul>
-                <p>Don't worry if you experience these issues - they're all normal parts of learning!</p>
-            </div>
 
             <h3>After This Session</h3>
             <div class="accordion-section">
@@ -290,9 +271,9 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Practice your recovery sequence mentally</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you\'ve learned.</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you\\'ve learned.</li>
                             <li>Review the river traffic pattern diagrams provided</li>
-                            <li>Read about hand care as blisters may begin to develop</li>
+                            
                             <li>Consider watching the videos recommended for Session 3</li>
                         </ul>
                     </div>
@@ -324,22 +305,9 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         </div>
                     </a>
                     
-                    <a href="{{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-first-aid"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Hand Care Guide</h3>
-                            <p>Prevent and treat rowing blisters</p>
-                        </div>
-                    </a>
                 </div>
             </div>
 
-            <div class="navigation-links">
-                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-1.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Session 1</a>
-                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="btn btn-primary">Session 3 <i class="fas fa-arrow-right"></i></a>
-            </div>
         </div>
     </div>
 </div>

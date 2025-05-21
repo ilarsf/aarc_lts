@@ -24,12 +24,19 @@
 }
 
 .card-image {
-    height: 160px;
+    height: 100px;
+    /* Reduced from 160px */
     overflow: hidden;
     background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-image .fas {
+    /* Target Font Awesome icons within card-image */
+    font-size: 3rem;
+    /* Increased icon size */
 }
 
 .card-image img {

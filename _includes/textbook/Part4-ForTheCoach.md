@@ -18,16 +18,6 @@ Your primary goal is to teach rowing technique *and* foster a love for the sport
 
 Use these frameworks consistently for teaching and feedback:
 
-#### KRAFTs' Keys
-
-* **K:** **K**eep shoulders relaxed and down.
-* **R:** **R**each from hips, not shoulders.
-* **A:** **A**rms straight until legs are flat.
-* **F:** **F**eather after extraction.
-* **T:** **T**ap down before extraction.
-
-![Placeholder: Simple icons or graphics representing each KRAFT key](placeholder)
-
 #### Black Bear Sequence (BBS)
 
 1.  **Grip and feather:** Hand position, blade control.
@@ -40,7 +30,7 @@ Use these frameworks consistently for teaching and feedback:
 
 ### Class Management Strategies (Coaching Approach)
 
-* **Focus:** One major technical point per rower per session. Connect feedback to KRAFT/BBS.
+* **Focus:** One major technical point per rower per session. Connect feedback to BBS.
 * **Communicate Clearly:** Simple keywords, analogies ("Fingers like hooks").
 * **Effective Feedback:** Specific, constructive, prompt. Use "feedback sandwich" (positive, correction, positive). Focus on desired action.
 * **Adapt:** Tailor style (visual, auditory, kinesthetic). Adjust plan based on group/conditions.
@@ -56,7 +46,7 @@ This chapter sets the stage. Following chapters detail session plans, drills, an
 
 ## Chapter 9: Session Plans & Drills
 
-This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate KRAFTs' Keys and the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans]({{ site.baseurl }}/course_materials/coach/session_plans/).*
+This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans]({{ site.baseurl }}/course_materials/coach/session_plans/).*
 
 💡 **Coach's Tip:** Before each session, review the plan below and the **Daily Coach Checklist** (Chapter 10). Familiarize yourself with drills and common errors.
 
@@ -68,7 +58,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Common Errors:** Erg grip, early arm bend, slouching; boat handling bumps; rushing entry/exit; flip test panic/difficulty.
 * **Detailed Plan:** [Session 1 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_1_Plan.html)
 
-| Activity                          | Est. Duration | Key Focus/Objective                                                                       | Relevant KRAFT/BBS        | Coaching Cues                       | Safety Notes                                           |
+| Activity                          | Est. Duration | Key Focus/Objective                                                                       | Relevant BBS        | Coaching Cues                       | Safety Notes                                           |
 | :-------------------------------- | :------------ | :---------------------------------------------------------------------------------------- | :------------------------ | :------------------------------------------ | :----------------------------------------------------- |
 | Welcome & Intros                  | 10 min        | Goals, safety overview, intros, mention AARC Policies                                     | N/A                       | "Welcome! Goal: comfort & confidence."      | First aid location, EAP brief, Policy links provided. |
 | Safety Orientation                | 10 min        | Review critical safety protocols, equipment requirements, and flip test preparation       | N/A                       | "Safety first, always!"                     | Emphasize high-viz clothing requirements, importance of short fingernails and removing rings/jewelry. |
@@ -87,7 +77,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Common Errors:** Sequencing (early knees, rushing slide), Balance (tension, uneven hands), Turning (jerky), Blade Work (crabs).
 * **Detailed Plan:** [Session 2 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_2_Plan.html)
 
-| Activity                          | Est. Duration | Key Focus/Objective                                                              | Relevant KRAFT/BBS        | Coaching Cues                                     | Safety Notes                                      |
+| Activity                          | Est. Duration | Key Focus/Objective                                                              | Relevant BBS        | Coaching Cues                                     | Safety Notes                                      |
 | :-------------------------------- | :------------ | :------------------------------------------------------------------------------- | :------------------------ | :------------------------------------------------ | :------------------------------------------------ |
 | Review Day 1 / Q&A                | 10 min        | Reinforce Day 1 takeaways, address questions                                     | N/A                       | "What was one key thing learned?"                 | N/A                                               |
 | Erg Warm-up                       | 15 min        | Reinforce sequencing, body position                                              | Sequencing, Body Forward  | "Smooth transitions," "Pause, check posture."     | Proper setup.                                     |
@@ -107,7 +97,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Common Errors:** Drive (weak leg drive/arm pull, bum shoving, early back opening), Steering (not looking, oversteering), Traffic Pattern (wrong side, cutting corners).
 * **Detailed Plan:** [Session 3 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_3_Plan.html)
 
-| Activity                               | Est. Duration | Key Focus/Objective                                                              | Relevant KRAFT/BBS      | Coaching Cues                                      | Safety Notes                                             |
+| Activity                               | Est. Duration | Key Focus/Objective                                                              | Relevant BBS      | Coaching Cues                                      | Safety Notes                                             |
 | :------------------------------------- | :------------ | :------------------------------------------------------------------------------- | :---------------------- | :--------------------------------------------------------- | :------------------------------------------------------- |
 | Review Day 2 / Q&A / Day 3 Intro       | 10 min        | Reinforce sequencing, introduce push & navigation focus                          | N/A                     | "Today: power from legs, navigating safely."               | N/A                                                      |
 | Erg Warm-up                            | 15 min        | Focus on leg drive initiation and connection (Reverse Pick)                      | Application of pressure | "Push through heels," "Feel the hang," "Legs first."        | Proper setup.                                            |
@@ -126,7 +116,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Common Errors:** Navigation (fixating, wrong side/cutting corners, stopping to look), Integration (technique decay, inconsistent effort), Bridge Passage (hesitation/erratic steering, too close to abutments).
 * **Detailed Plan:** [Session 4 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_4_Plan.html)
 
-| Activity                               | Est. Duration | Key Focus/Objective                                                                                      | Relevant KRAFT/BBS | Coaching Cues                                         | Safety Notes                                                               |
+| Activity                               | Est. Duration | Key Focus/Objective                                                                                      | Relevant BBS | Coaching Cues                                         | Safety Notes                                                               |
 | :------------------------------------- | :------------ | :------------------------------------------------------------------------------------------------------- | :----------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------- |
 | Review Day 3 / Q&A / Day 4 Plan        | 15 min        | Reinforce leg drive, nav rules. Outline Day 4: integration, bridges, assessment                          | Steering           | "Putting it all together. Remember traffic rules!"            | Reiterate bridge pattern (arch, no passing).                   |
 | Equipment Prep & Launching             | 20 min        | Standard procedure                                                                                       | N/A                | "Double check steering points."                               | Ensure all boats signed out.                                                 |

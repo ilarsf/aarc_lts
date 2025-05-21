@@ -108,9 +108,6 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dt>Port</dt>
                 <dd>Left side of the boat when facing the bow (rower\'s right side when seated).</dd>
                 
-                <dt>Power 10</dt>
-                <dd>A call for 10 strokes with increased focus or power.</dd>
-                
                 <dt>Quad Scull (4x)</dt>
                 <dd>Four people each with two oars.</dd>
                 
@@ -312,8 +309,6 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>Practice capsize recovery (mandatory safety training).</dd>
                 <dt>PFD</dt>
                 <dd>Personal Flotation Device.</dd>
-                <dt>Power 10</dt>
-                <dd>A call for 10 strokes with increased focus or power.</dd>
                 <dt>Traffic Pattern</dt>
                 <dd>The established rules for navigating the waterway.</dd>
             </dl>

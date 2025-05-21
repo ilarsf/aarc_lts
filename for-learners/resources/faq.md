@@ -378,7 +378,3 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
     </div>
 </div>
 
-**Next Steps:**
-- [Program Overview]({{ site.baseurl }}/for-learners/getting-started/program-overview.html)
-- [Basic Technique Guide]({{ site.baseurl }}/for-learners/technique/basic-technique.html)
-- [Rowing Terminology]({{ site.baseurl }}/for-learners/getting-started/terminology.html)

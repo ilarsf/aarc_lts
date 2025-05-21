@@ -4,42 +4,8 @@ title: AARC Learn to Scull Program
 ---
 
 <section class="program-section">
-
-  <div class="main-navigation">
-    <div class="nav-tile">
-      <div class="tile-icon"><i class="fas fa-user-graduate"></i></div>
-      <h3>For Learners</h3>
-      <p>New to sculling? Find step-by-step guides, technique tutorials, and safety resources.</p>
-      <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start Learning</a>
-    </div>
-    
-    <div class="nav-tile">
-      <div class="tile-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-      <h3>For Coaches</h3>
-      <p>Access session plans, coaching resources, and assessment guidelines.</p>
-      <a href="{{ site.baseurl }}/for-coaches/" class="cta-button">Coach Resources</a>
-    </div>
-    
-    <div class="nav-tile">
-      <div class="tile-icon"><i class="fas fa-book"></i></div>
-      <h3>Resources</h3>
-      <p>Find club policies, equipment guides, and supplementary learning materials.</p>
-      <a href="{{ site.baseurl }}/resources/" class="cta-button">View Resources</a>
-    </div>
-    
-    <div class="nav-tile">
-      <div class="tile-icon"><i class="fas fa-info-circle"></i></div>
-      <h3>About</h3>
-      <p>Learn about the program structure, team, and registration information.</p>
-      <a href="{{ site.baseurl }}/about/" class="cta-button">Program Details</a>
-    </div>
-  </div>
-</section>
-
-<section class="program-section">
   <div class="section-header">
     <h2>Program Highlights</h2>
-    <p>What makes our Learn to Scull program special</p>
   </div>
 
   <div class="highlights-grid">
@@ -80,7 +46,6 @@ title: AARC Learn to Scull Program
 <section class="program-section info-section">
   <div class="section-header">
     <h2>2025 Program Information</h2>
-    <p>Sessions and registration details</p>
   </div>
   
   <div class="info-container">
@@ -123,78 +88,8 @@ title: AARC Learn to Scull Program
 <!-- Font Awesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
-<section class="program-section learning-journey">
-  <div class="section-header">
-    <h2>Your Learning Journey</h2>
-    <p>What to expect in each session</p>
-  </div>
-  
-  <div class="journey-container">
-    <div class="journey-step">
-      <div class="step-number">1</div>
-      <div class="step-content">
-        <h3>Introduction</h3>
-        Equipment fundamentals, safety procedures, and your first rowing experience.
-      </div>
-    </div>
-    
-    <div class="journey-step">
-      <div class="step-number">2</div>
-      <div class="step-content">
-        <h3>Development</h3>
-        Stroke sequencing, blade control, and basic maneuvering techniques.
-      </div>
-    </div>
-    
-    <div class="journey-step">
-      <div class="step-number">3</div>
-      <div class="step-content">
-        <h3>Refinement</h3>
-        Technique efficiency, power application, and river navigation skills.
-      </div>
-    </div>
-    
-    <div class="journey-step">
-      <div class="step-number">4</div>
-      <div class="step-content">
-        <h3>Independence</h3>
-        Skill assessment, extended practice, and post-program opportunities.
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="program-section quick-resources">
-  <div class="section-header">
-    <h2>Essential Resources</h2>
-    <p>Quick access to key information</p>
-  </div>
-  
-  <div class="resources-flex">
-    <div class="resource-item">
-      <i class="fas fa-life-ring"></i>
-      <h3>Safety Guidelines</h3>
-      <a href="{{ site.baseurl }}/for-learners/safety/essential-rules/">View <i class="fas fa-arrow-right"></i></a>
-    </div>
-    
-    <div class="resource-item">
-      <i class="fas fa-book"></i>
-      <h3>Technique Guide</h3>
-      <a href="{{ site.baseurl }}/for-learners/technique/basic-technique/">View <i class="fas fa-arrow-right"></i></a>
-    </div>
-    
-    <div class="resource-item">
-      <i class="fas fa-question-circle"></i>
-      <h3>FAQ</h3>
-      <a href="{{ site.baseurl }}/for-learners/resources/faq/">View <i class="fas fa-arrow-right"></i></a>
-    </div>
-    
-    <div class="resource-item">
-      <i class="fas fa-users"></i>
-      <h3>Meet the Team</h3>
-      <a href="{{ site.baseurl }}/about/team/">View <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
+<section class="program-section cta-section" style="text-align: center;">
+  <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Learner’s Guide: Learn to Scull Program</a>
 </section>
 
 <style>
@@ -383,119 +278,6 @@ title: AARC Learn to Scull Program
   margin-top: 0.5rem;
 }
 
-/* Journey Section */
-.journey-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  position: relative;
-}
-
-.journey-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 38px;
-  width: 4px;
-  background-color: var(--primary-color);
-  z-index: 0;
-}
-
-.journey-step {
-  display: flex;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 1;
-}
-
-.step-number {
-  background-color: var(--primary-color);
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 1.5rem;
-  box-shadow: 0 0 0 8px white;
-}
-
-.step-content {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  flex-grow: 1;
-  box-shadow: var(--box-shadow);
-}
-
-.step-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.step-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.step-link i {
-  font-size: 0.8rem;
-  margin-left: 0.3rem;
-}
-
-/* Quick Resources */
-.resources-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.resource-item {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  width: 200px;
-  flex: 0 0 auto;
-}
-
-.resource-item:hover {
-  transform: translateY(-5px);
-}
-
-.resource-item i {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.resource-item h3 {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.resource-item a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-}
-
-.resource-item a i {
-  font-size: 0.8rem;
-  margin-left: 0.3rem;
-}
-
 /* Buttons */
 .cta-button {
   display: inline-flex;
@@ -537,7 +319,7 @@ title: AARC Learn to Scull Program
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem; /* Reduced top/bottom padding */
   text-align: center;
   margin-bottom: 2rem;
   position: relative;
@@ -550,13 +332,13 @@ title: AARC Learn to Scull Program
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem; /* Reduced font size */
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Reduced font size */
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
@@ -594,17 +376,6 @@ title: AARC Learn to Scull Program
     font-size: 1rem;
   }
   
-  .journey-container::before {
-    left: 30px;
-  }
-  
-  .step-number {
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
-    margin-right: 1rem;
-  }
-
   .info-container {
     grid-template-columns: 1fr;
   }

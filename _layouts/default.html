@@ -30,43 +30,18 @@
   <div class="container-lg px-3 my-5 markdown-body main-container">
     <nav class="site-nav">
       <ul class="fallback-nav">
-        <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
-        <li class="nav-item has-dropdown">
-          <a href="{{ site.baseurl }}/for-learners/">For Learners</a>
+        {% for item in site.navigation %}
+        <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+          {% if item.subitems %}
           <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/for-learners/getting-started/">Getting Started</a></li>
-            <li><a href="{{ site.baseurl }}/for-learners/learning-journey/">Learning Journey</a></li>
-            <li><a href="{{ site.baseurl }}/for-learners/technique/">Technique</a></li>
-            <li><a href="{{ site.baseurl }}/for-learners/safety/">Safety</a></li>
-            <li><a href="{{ site.baseurl }}/for-learners/resources/">Resources</a></li>
+            {% for subitem in item.subitems %}
+            <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+            {% endfor %}
           </ul>
+          {% endif %}
         </li>
-        <li class="nav-item has-dropdown">
-          <a href="{{ site.baseurl }}/for-coaches/">For Coaches</a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/for-coaches/session-plans/">Session Plans</a></li>
-            <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/">Technical Coaching</a></li>
-            <li><a href="{{ site.baseurl }}/for-coaches/program-management/">Program Management</a></li>
-            <li><a href="{{ site.baseurl }}/for-coaches/safety-leadership/">Safety Leadership</a></li>
-          </ul>
-        </li>
-        <li class="nav-item has-dropdown">
-          <a href="{{ site.baseurl }}/resources/">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/resources/club-policies/">Club Policies</a></li>
-            <li><a href="{{ site.baseurl }}/resources/quick-reference/">Quick Reference</a></li>
-            <li><a href="{{ site.baseurl }}/resources/knowledge-assessment/">Knowledge Assessment</a></li>
-          </ul>
-        </li>
-        <li class="nav-item has-dropdown">
-          <a href="{{ site.baseurl }}/about/">About</a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/about/">Program Details</a></li>
-            <li><a href="{{ site.baseurl }}/about/team/">Meet the Team</a></li>
-            <li><a href="{{ site.baseurl }}/about/contact/">Contact</a></li>
-            <li><a href="{{ site.baseurl }}/about/faq/">FAQ</a></li>
-          </ul>
-        </li>
+        {% endfor %}
       </ul>
     </nav>
 
@@ -175,26 +150,102 @@
         });
       }
 
-      // Register section-to-tab mapping for deep linking
-      window.sectionToTabMap = {
-        // Learner Guide
-        'welcome-to-sculling': 'welcome-tab',
-        'what-to-expect': 'welcome-tab',
-        'your-sculling-journey': 'journey-tab',
-        'the-rowing-stroke-a-beginners-guide': 'technique-tab',
-        'essential-sculling-techniques': 'technique-tab',
-        'safety-first-the-flip-test-and-self-rescue': 'safety-tab',
-        'next-steps-after-the-course': 'reference-tab',
+      // Replace the entire old "Tab System Logic" block with this new one:
+      // Function to activate a tab based on its ID within all tab containers globally
+      function activateTabGlobally(tabIdToActivate) {
+        const tabContainers = document.querySelectorAll('.tab-container');
+        let tabWasActivated = false;
+        tabContainers.forEach(container => {
+          const tabButtons = container.querySelectorAll('.tab-nav .tab-link, .tab-nav .tab-button');
+          const tabContents = container.querySelectorAll('.tab-content');
+          let foundInThisContainer = false;
 
-        // Coach Manual
-        'program-overview': 'overview-tab',
-        'program-structure': 'overview-tab',
-        'session-goals-and-progression': 'sessions-tab',
-        'technical-teaching-points': 'technical-tab',
-        'class-management': 'management-tab',
-        'coaching-tips': 'management-tab',
-        'resources': 'resources-tab'
-      };
+          // Check if the tabIdToActivate exists in this container
+          if (Array.from(tabButtons).some(btn => btn.getAttribute('data-tab') === tabIdToActivate)) {
+            foundInThisContainer = true;
+            tabButtons.forEach(btn => {
+              if (btn.getAttribute('data-tab') === tabIdToActivate) {
+                btn.classList.add('active');
+              } else {
+                btn.classList.remove('active');
+              }
+            });
+            tabContents.forEach(content => {
+              if (content.getAttribute('id') === tabIdToActivate) {
+                content.classList.add('active');
+              } else {
+                content.classList.remove('active');
+              }
+            });
+            tabWasActivated = true;
+          }
+        });
+        return tabWasActivated;
+      }
+
+      // Setup tab listeners and initial state for each tab container
+      const tabContainers = document.querySelectorAll('.tab-container');
+      tabContainers.forEach(container => {
+        const tabButtons = container.querySelectorAll('.tab-nav .tab-link, .tab-nav .tab-button');
+        const tabContents = container.querySelectorAll('.tab-content');
+
+        function activateTabInContainer(tabId) {
+          tabButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-tab') === tabId) {
+              btn.classList.add('active');
+            }
+          });
+          tabContents.forEach(content => {
+            content.classList.remove('active');
+            if (content.getAttribute('id') === tabId) {
+              content.classList.add('active');
+            }
+          });
+        }
+
+        tabButtons.forEach(button => {
+          button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const tabId = this.getAttribute('data-tab');
+            activateTabInContainer(tabId); // Activate within its own container
+            if (history.pushState) {
+              history.pushState(null, null, '#' + tabId);
+            } else {
+              window.location.hash = '#' + tabId;
+            }
+          });
+        });
+
+        // Initial state for THIS container:
+        const isActiveButtonPresent = Array.from(tabButtons).some(btn => btn.classList.contains('active'));
+        if (!isActiveButtonPresent && tabButtons.length > 0) {
+          const firstTabId = tabButtons[0].getAttribute('data-tab');
+          activateTabInContainer(firstTabId);
+        } else if (isActiveButtonPresent) {
+          const activeButton = Array.from(tabButtons).find(btn => btn.classList.contains('active'));
+          if (activeButton) {
+            activateTabInContainer(activeButton.getAttribute('data-tab'));
+          }
+        }
+      });
+
+      // Handle initial hash on page load after all containers are set up
+      const initialHash = window.location.hash.substring(1);
+      if (initialHash) {
+        activateTabGlobally(initialHash);
+      }
+
+      // Listen for hash changes
+      window.addEventListener('hashchange', function () {
+        const newHash = window.location.hash.substring(1);
+        // Only attempt to activate if there's a hash. 
+        // If hash is empty (e.g. user cleared it), current active tabs remain.
+        if (newHash) {
+          activateTabGlobally(newHash);
+        }
+      });
+
     });
   </script>
 

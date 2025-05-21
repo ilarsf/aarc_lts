@@ -11,7 +11,9 @@ description: Guide for your final Learn to Scull session focusing on independent
 
 <div class="progress-timeline">
     <div class="timeline-step">
-        <div class="step-marker">1</div>
+        <a href="session-1.html" class="step-link">
+            <div class="step-marker">1</div>
+        </a>
         <div class="step-content">
             <h4>Session 1</h4>
             <p>Introduction</p>
@@ -19,7 +21,9 @@ description: Guide for your final Learn to Scull session focusing on independent
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">2</div>
+        <a href="session-2.html" class="step-link">
+            <div class="step-marker">2</div>
+        </a>
         <div class="step-content">
             <h4>Session 2</h4>
             <p>Building Skills</p>
@@ -27,7 +31,9 @@ description: Guide for your final Learn to Scull session focusing on independent
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">3</div>
+        <a href="session-3.html" class="step-link">
+            <div class="step-marker">3</div>
+        </a>
         <div class="step-content">
             <h4>Session 3</h4>
             <p>Refinement</p>
@@ -35,7 +41,9 @@ description: Guide for your final Learn to Scull session focusing on independent
     </div>
     
     <div class="timeline-step active" data-current="true">
-        <div class="step-marker">4</div>
+        <a href="session-4.html" class="step-link">
+            <div class="step-marker">4</div>
+        </a>
         <div class="step-content">
             <h4>Session 4</h4>
             <p>Independence</p>
@@ -94,7 +102,9 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <p>Review the following videos to prepare for this session. You can also <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session4">view all videos for Session 4</a>.</p>
                         <ul>
                             <li>"Sculling: Setting the Boat Level" - advanced balance techniques</li>
-                            <li>"Most important Sculling drills done right" - refining stroke components</li>
+                            <li>"Most important Sculling technique exercises done right" - refining stroke components</li>
+                            <li>"How to turn a single scull with confidence" - advanced turning</li>
+                            <li>"Navigating bridges and obstacles in a single scull" - practical skills</li>
                             <li>"Common Rowing Machine Mistakes at the Catch" - troubleshooting technique</li>
                             <li>"How to Care for Your Rowing Shell" - proper equipment maintenance</li>
                         </ul>
@@ -217,7 +227,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                                         <li>Focused skill refinement stations</li>
                                         <li>Emphasis on "Consistent rhythm"</li>
                                         <li>Additional practice with looking around frequently</li>
-                                        <li>Technical drills to improve specific areas</li>
+                                        <li>Technical technique exercises to improve specific areas</li>
                                     </ul>
                                 </div>
                             </div>
@@ -272,7 +282,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <p>You'll rotate through focused practice stations:</p>
                         <ol>
                             <li><strong>Balance and Relaxation:</strong> Square blade rowing at light pressure</li>
-                            <li><strong>Technical Precision:</strong> Pause drills to reinforce sequencing</li>
+                            <li><strong>Technical Precision:</strong> Pause exercises to reinforce sequencing</li>
                             <li><strong>Turning Practice:</strong> Pivot turns and course changes</li>
                         </ol>
                         <p>This addresses specific skill gaps identified in earlier sessions.</p>
@@ -284,23 +294,6 @@ Welcome to your final Learn to Scull session! This guide will help you understan
 
     <div class="tab-content" id="next-steps">
         <div class="tab-content-inner">
-            <h3>Common Challenges in Session 4</h3>
-            
-            <div class="info-box warning">
-                <h4>What to Watch Out For</h4>
-                <h5>Navigation Issues:</h5>
-                <ul>
-                    <li><strong>Fixating on nearby boats:</strong> Instead, look further upriver for navigation points</li>
-                    <li><strong>Improper river position:</strong> Failing to stay consistently on correct side of river</li>
-                    <li><strong>Stopping to look:</strong> Stopping rowing completely to look around, losing momentum</li>
-                </ul>
-                <h5>Integration Issues:</h5>
-                <ul>
-                    <li><strong>Technique deterioration:</strong> Form breaking down when focusing on steering</li>
-                    <li><strong>Inconsistent effort:</strong> Loss of focus during longer rowing pieces</li>
-                    <li><strong>Bridge hesitation:</strong> Erratic steering when approaching bridge arches</li>
-                </ul>
-            </div>
 
             <h3>What's Next After the Program?</h3>
             
@@ -347,33 +340,9 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                             <p>Join AARC as a regular member</p>
                         </div>
                     </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/resources/advanced-coaching.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Further Coaching</h3>
-                            <p>Continue with advanced technique sessions</p>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/resources/racing.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Competitive Rowing</h3>
-                            <p>Explore racing opportunities</p>
-                        </div>
-                    </a>
                 </div>
             </div>
 
-            <div class="navigation-links">
-                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Session 3</a>
-                <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
-            </div>
         </div>
     </div>
 </div>

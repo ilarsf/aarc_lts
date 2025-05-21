@@ -5,13 +5,8 @@ nav_order: 1
 parent: Knowledge Assessment
 ---
 
-<div class="page-header">
-  <h1>Knowledge Quizzes</h1>
-</div>
-
-<div class="info-box note">
-  <h4>Required Quizzes</h4>
-  <p>Completing the Safety Quiz is highly recommended for all Learn to Scull participants before the first on-water session.</p>
+<div class="page-header" style="padding-bottom: 0.5rem; margin-bottom: 1rem;">
+  <h1 style="font-size: 1.8rem; margin-bottom: 0.25rem;">Knowledge Quizzes</h1>
 </div>
 
 ## Your Progress
@@ -219,27 +214,6 @@ parent: Knowledge Assessment
         <li><strong>Build Confidence:</strong> Confirm your understanding of important safety and technique principles</li>
       </ul>
       <p>Each quiz provides immediate feedback and explanations for all questions, making them valuable learning tools even if you don't answer every question correctly the first time.</p>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <div class="accordion-header">
-      <h3>Study Resources</h3>
-      <span class="accordion-icon">+</span>
-    </div>
-    <div class="accordion-content">
-      <p>To prepare for these quizzes, review the following materials:</p>
-      <ul class="feature-list">
-        <li><a href="{{ site.baseurl }}/for-learners/getting-started/">For Learners: Getting Started</a> - Basic concepts and terminology</li>
-        <li><a href="{{ site.baseurl }}/for-learners/safety/">For Learners: Safety</a> - Essential safety information</li>
-        <li><a href="{{ site.baseurl }}/resources/quick-reference/">Quick Reference Guides</a> - Key rowing concepts and procedures</li>
-        <li><a href="{{ site.baseurl }}/resources/club-policies/boathouse-rules">Boathouse Rules</a> - Equipment handling and facility guidelines</li>
-      </ul>
-      
-      <div class="info-box tip">
-        <h4>Study Tip</h4>
-        <p>If you miss questions on a quiz, make note of those topics and review the relevant materials before retaking the quiz.</p>
-      </div>
     </div>
   </div>
   

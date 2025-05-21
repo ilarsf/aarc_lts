@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Session 3 - Learning How to Push
-description: Guide for your third Learn to Scull session focusing on power application and river navigation
+description: Guide for your third Learn to Scull session focusing on power application and steering
 ---
 
 {% include tabs.html %}
@@ -11,7 +11,9 @@ description: Guide for your third Learn to Scull session focusing on power appli
 
 <div class="progress-timeline">
     <div class="timeline-step">
-        <div class="step-marker">1</div>
+        <a href="session-1.html" class="step-link">
+            <div class="step-marker">1</div>
+        </a>
         <div class="step-content">
             <h4>Session 1</h4>
             <p>Introduction</p>
@@ -19,7 +21,9 @@ description: Guide for your third Learn to Scull session focusing on power appli
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">2</div>
+        <a href="session-2.html" class="step-link">
+            <div class="step-marker">2</div>
+        </a>
         <div class="step-content">
             <h4>Session 2</h4>
             <p>Building Skills</p>
@@ -27,7 +31,9 @@ description: Guide for your third Learn to Scull session focusing on power appli
     </div>
     
     <div class="timeline-step active" data-current="true">
-        <div class="step-marker">3</div>
+        <a href="session-3.html" class="step-link">
+            <div class="step-marker">3</div>
+        </a>
         <div class="step-content">
             <h4>Session 3</h4>
             <p>Refinement</p>
@@ -35,7 +41,9 @@ description: Guide for your third Learn to Scull session focusing on power appli
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">4</div>
+        <a href="session-4.html" class="step-link">
+            <div class="step-marker">4</div>
+        </a>
         <div class="step-content">
             <h4>Session 4</h4>
             <p>Independence</p>
@@ -43,7 +51,7 @@ description: Guide for your third Learn to Scull session focusing on power appli
     </div>
 </div>
 
-Welcome to your third Learn to Scull session! This guide will help you understand what to expect as you develop effective leg drive and power application while learning navigation principles.
+Welcome to your third Learn to Scull session! This guide will help you understand what to expect as you develop effective leg drive and power application while learning steering principles.
 
 <div class="tab-container">
     <div class="tab-nav">
@@ -65,7 +73,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj2" name="checklist" value="obj2">
-                    <label for="obj2">Learn navigation principles and river traffic patterns</label>
+                    <label for="obj2">Learn steering principles and river traffic patterns</label>
                 </div>
                 
                 <div class="checklist-item">
@@ -96,7 +104,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <li>"Sculling: The Finish - Tap Down and Feather" - learn proper blade extraction</li>
                             <li>"Essential Sculling Technique for rowers" - focus on recovery sequence</li>
                             <li>"How to Feather and Square Your Oars" - mastering blade control</li>
-                            <li>"Sculling: How to Steer a Single" - basic navigation techniques</li>
+                            <li>"Sculling: How to Steer a Single" - basic steering techniques</li>
                         </ul>
                     </div>
                 </div>
@@ -236,13 +244,13 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 </div>
             </div>
             
-            <h3>Key Drills You'll Learn</h3>
+            <h3>Key Technique Exercises</h3>
             
             <div class="accordion-section">
                 <button class="accordion-toggle">Reverse Pick Drill (Water)</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <p>This drill helps isolate and emphasize leg drive as the primary power source:</p>
+                        <p>This exercise helps isolate and emphasize leg drive as the primary power source:</p>
                         <ol>
                             <li>Legs-only strokes (maintaining forward body lean and straight arms) - 10 strokes</li>
                             <li>Progress to legs-and-back swing - 10 strokes</li>
@@ -286,23 +294,6 @@ Welcome to your third Learn to Scull session! This guide will help you understan
 
     <div class="tab-content" id="next-steps">
         <div class="tab-content-inner">
-            <h3>Common Challenges in Session 3</h3>
-            
-            <div class="info-box warning">
-                <h4>What to Watch Out For</h4>
-                <h5>Drive Issues:</h5>
-                <ul>
-                    <li><strong>Weak leg drive:</strong> Primarily pulling with arms instead of pushing with legs</li>
-                    <li><strong>Bum shoving:</strong> Seat moves back before shoulders/handle</li>
-                    <li><strong>Early back opening:</strong> Opening your back too early in the drive</li>
-                </ul>
-                <h5>Navigation Issues:</h5>
-                <ul>
-                    <li><strong>Looking infrequently:</strong> Not checking surroundings often enough</li>
-                    <li><strong>Oversteering:</strong> Making excessive corrections causing weaving</li>
-                    <li><strong>Traffic pattern confusion:</strong> Rowing on the wrong side of the river</li>
-                </ul>
-            </div>
 
             <h3>After This Session</h3>
             <div class="accordion-section">
@@ -321,7 +312,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             </div>
 
             <h3>Looking Ahead to Session 4</h3>
-            <p>Session 4 will focus on integrating all previously learned skills and developing confidence in river navigation, including bridge passage.</p>
+            <p>Session 4 will focus on integrating all previously learned skills and developing confidence in steering, river navigation, including bridge passage.</p>
             
             <div class="resource-section">
                 <div class="card-grid">
@@ -334,33 +325,9 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <p>Final session focused on independence and integration</p>
                         </div>
                     </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>River Navigation</h3>
-                            <p>Review traffic patterns and river rules</p>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/technique/power-application.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-dumbbell"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Power Application</h3>
-                            <p>Details on effective leg drive technique</p>
-                        </div>
-                    </a>
                 </div>
             </div>
 
-            <div class="navigation-links">
-                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-2.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Session 2</a>
-                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="btn btn-primary">Session 4 <i class="fas fa-arrow-right"></i></a>
-            </div>
         </div>
     </div>
 </div>

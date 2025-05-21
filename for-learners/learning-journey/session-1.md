@@ -11,7 +11,9 @@ description: Guide for your first Learn to Scull session
 
 <div class="progress-timeline">
     <div class="timeline-step active" data-current="true">
-        <div class="step-marker">1</div>
+        <a href="session-1.html" class="step-link">
+            <div class="step-marker">1</div>
+        </a>
         <div class="step-content">
             <h4>Session 1</h4>
             <p>Introduction</p>
@@ -19,7 +21,9 @@ description: Guide for your first Learn to Scull session
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">2</div>
+        <a href="session-2.html" class="step-link">
+            <div class="step-marker">2</div>
+        </a>
         <div class="step-content">
             <h4>Session 2</h4>
             <p>Building Skills</p>
@@ -27,7 +31,9 @@ description: Guide for your first Learn to Scull session
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">3</div>
+        <a href="session-3.html" class="step-link">
+            <div class="step-marker">3</div>
+        </a>
         <div class="step-content">
             <h4>Session 3</h4>
             <p>Refinement</p>
@@ -35,7 +41,9 @@ description: Guide for your first Learn to Scull session
     </div>
     
     <div class="timeline-step">
-        <div class="step-marker">4</div>
+        <a href="session-4.html" class="step-link">
+            <div class="step-marker">4</div>
+        </a>
         <div class="step-content">
             <h4>Session 4</h4>
             <p>Independence</p>
@@ -111,7 +119,6 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                             <li>Hat, sunglasses, and waterproof sunscreen</li>
                             <li>Towel and complete change of clothes for after the flip test</li>
                             <li>Small snack for the break</li>
-                            <li>Optional: athletic tape if prone to blisters</li>
                         </ul>
                     </div>
                 </div>
@@ -163,7 +170,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Part 1</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Introduction & Land Training (90 minutes)</h4>
+                        <h4>Introduction & Land Training</h4>
                         
                         <div class="accordion-section">
                             <button class="accordion-toggle">Welcome and Orientation</button>
@@ -211,7 +218,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Break</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Break (20 minutes)</h4>
+                        <h4>Break</h4>
                         <ul>
                             <li>Rest, hydrate, and prepare for water activities</li>
                         </ul>
@@ -223,7 +230,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Water Introduction (70 minutes)</h4>
+                        <h4>Water Introduction</h4>
                         
                         <div class="accordion-section">
                             <button class="accordion-toggle">The Flip Test</button>
@@ -248,7 +255,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                                     <ul>
                                         <li>If time permits, guided assistance into a training shell</li>
                                         <li>Practice basic balance and boat feel</li>
-                                        <li>Simple rowing drills near the dock</li>
+                                        <li>Simple rowing technique exercises near the dock</li>
                                     </ul>
                                 </div>
                             </div>
@@ -261,7 +268,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Finish</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Wrap-Up (15 minutes)</h4>
+                        <h4>Wrap-Up</h4>
                         <ul>
                             <li>Question and answer session</li>
                             <li>Preview of Session 2 content</li>
@@ -283,27 +290,12 @@ Welcome to your first Learn to Scull session! This guide will help you understan
             <h3>After Your First Session</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">The Flip Test - What to Know</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>The flip test is a mandatory safety requirement for all AARC scullers for several important reasons:</p>
-                        <ul>
-                            <li><strong>Safety Preparation:</strong> Ensures you know what to do if you accidentally capsize</li>
-                            <li><strong>Confidence Building:</strong> Reduces anxiety about capsizing once you know you can recover</li>
-                            <li><strong>Program Requirement:</strong> Must be successfully completed to graduate from the program</li>
-                        </ul>
-                        <p>You will get wet during this test, but coaches will guide and supervise you throughout the process. Everyone completes this test, and most participants find it builds confidence for their rowing journey.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
                 <button class="accordion-toggle">After Your Session</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a> to reinforce what you\'ve learned</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you\'ve learned.</li>
+                            <li>For fun and to reinforce what you\'ve learned, you can optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a>.</li>
+                            <li>You can also optionally review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you\'ve learned.</li>
                             <li>Practice the rowing sequence mentally to build muscle memory</li>
                             <li>Take care of any developing blisters according to recommendations</li>
                             <li>Prepare questions for your next session</li>
@@ -313,7 +305,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
             </div>
 
             <h3>Looking Ahead</h3>
-            <p>In Session 2, you'll build on these fundamentals by:</p>
+            <p>In Session 2, you\'ll build on these fundamentals by:</p>
             <ul>
                 <li>Refining your understanding of the rowing stroke</li>
                 <li>Developing better boat balance and control</li>

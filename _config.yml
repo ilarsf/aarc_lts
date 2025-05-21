@@ -24,54 +24,42 @@ footer_text_color: "#7c7c7c"     # Light gray for footer text
 
 # Coach Portal settings
 coach_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb
+open_sculling_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb # Added for open sculling
 
 # Navigation
 navigation:
   - title: Home
     url: /
-  - title: Textbook
-    url: /textbook/
+  - title: For Learners
+    url: /for-learners/
     subitems:
-      - title: "Part 1: Getting Started"
-        url: /textbook/chapters/part1.html
-      - title: "Part 2: For the Learner"
-        url: /textbook/chapters/part2.html
-      - title: "Part 3: Safety"
-        url: /textbook/chapters/part3.html
-      - title: "Part 4: Appendices"
-        url: /textbook/chapters/part4.html
-      - title: "View All Chapters"
-        url: /textbook/all.html
-  - title: Coach Portal
-    url: /coach_portal/
-  - title: Learner Resources
-    url: /course_materials/learner/
-    subitems:
-      - title: Learner Guide
-        url: /course_materials/learner/Learner_Guide.html
-      - title: Daily Checklist
-        url: /assets/pdf/daily_coach_checklist.html
-      - title: Program Schedule
-        url: /course_materials/learner/Program_Schedule.html
-      - title: Q&A Companion
-        url: /course_materials/learner/QA_Companion.html
-  - title: Technical Guides
-    url: /src/
-    subitems:
-      - title: Self-Rescue Guide
-        url: /src/Sculling_Self_Rescue_Guide.html
-      - title: Flip Test Instructions
-        url: /src/Sculling_Self_Rescue_Guide.html
-      - title: Hand Care Guide
-        url: /src/Rowers_Hand_Blister_Treatment.html
-  - title: Communication
-    url: /coach_portal/communication/
-  - title: Meet the Team
-    url: /team/
-  - title: About AARC
+      - title: Getting Started
+        url: /for-learners/#getting-started
+      - title: Learning Journey
+        url: /for-learners/#learning-journey
+      - title: Technique
+        url: /for-learners/#technique
+      - title: Safety
+        url: /for-learners/#safety
+      - title: Resources
+        url: /for-learners/#resources
+  - title: 🔑 For Coaches
+    url: /for-coaches/
+  - title: 🔑 Open Sculling
+    url: /open-sculling/
+  - title: About
     url: /about/
-  - title: Resources
-    url: /resources/
+    subitems:
+      - title: Program Details
+        url: /about/
+      - title: Meet the Team
+        url: /about/team/
+      - title: Club Policies
+        url: /about/club-policies/
+      - title: Contact
+        url: /about/contact/
+      - title: FAQ
+        url: /about/faq/
 
 # Site info
 organization: "Ann Arbor Rowing Club"

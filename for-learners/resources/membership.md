@@ -27,14 +27,51 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
         <button class="accordion-toggle">Membership Categories</button>
         <div class="accordion-content">
             <div class="accordion-content-inner">
-                <p>AARC offers several membership categories to suit different needs. (Note: Specific fees are updated annually and available on the main AARC website or from the Membership Coordinator).</p>
+                <p>AARC has a two-part fee structure: <strong>Club Membership</strong> and <strong>Program Fees</strong>. Both are required to participate in on-water rowing activities.</p>
+
+                <p><strong>1. Club Membership:</strong></p>
                 <ul>
-                    <li><strong>Adult Individual Membership:</strong> Standard membership for individuals over 18.</li>
-                    <li><strong>Family Membership:</strong> Discounted rate for multiple family members residing at the same address.</li>
-                    <li><strong>Student Membership:</strong> Discounted rate for full-time students.</li>
-                    <li><strong>Associate/Social Membership:</strong> For non-rowing supporters who wish to be part of the club community.</li>
+                    <li>Covers your USRowing affiliation (including insurance) and access to club resources like our website and boathouse facilities (as per club rules).</li>
+                    <li>The primary category is <strong>Adult Individual Membership</strong> for individuals over 18.</li>
+                    <li>Specific membership fees are updated annually.</li>
                 </ul>
-                <p><em>Prospective members are encouraged to check the official AARC website or contact the <a href="mailto:membership@annarborrowing.club">Membership Coordinator</a> for the latest fee structure and any promotional offers.</em></p>
+
+                <p><strong>2. Program Fees:</strong></p>
+                <ul>
+                    <li>Cover the costs associated with on-water activities, coaching, and equipment usage for specific rowing programs (e.g., Open Sculling, coached programs).</li>
+                    <li><strong>LTS Graduate Trial:</strong> Following successful completion of a Learn to Scull (LTS) program, new rowers are typically offered an introductory trial period for the Open Sculling program at a reduced program fee rate. This is designed to help you transition smoothly into regular club rowing.</li>
+                    <li>Program fees vary by program and are also updated annually.</li>
+                </ul>
+                <p><em>Prospective members are encouraged to check the official AARC website or contact the <a href="mailto:info@a2crew.org">Membership Coordinator</a> for the latest fee structure for both membership and programs, and any promotional offers.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-section">
+        <button class="accordion-toggle">Scholarship Program</button>
+        <div class="accordion-content">
+            <div class="accordion-content-inner">
+                <p>AARC endeavors to make rowing accessible to the broad community. To support participation in our rowing classes and programs, scholarships are available to those with financial need.</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Demonstrated need AND one of the following:
+                        <ul>
+                            <li>Current AARC member</li>
+                            <li>Participant in AARC “Learn to” Classes</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Limitations:</strong></p>
+                <ul>
+                    <li>Financial assistance can cover a portion of class fees and/or monthly program fees but cannot be applied to any other fees associated with participating with AARC, such as boat rack rental fees, regatta fees, social events fees or purchase of club apparel and gear.</li>
+                </ul>
+                <p><strong>How to Apply:</strong></p>
+                <ul>
+                    <li>Please complete the 2025 Scholarship Application (link to be added here or refer to main AARC website).</li>
+                    <li>AARC keeps financial information private. Applications will be reviewed by the Scholarship Committee which is comprised of the Scholarship Committee chair, the Treasurer and two Board members-at-large.</li>
+                    <li>Requests for financial assistance must be made each season for which aid is needed and must be requested prior to the start of the class or program for which aid is needed. The personal contribution must also be paid prior to the start of the class or program unless special accommodation has been made with the Scholarship Committee.</li>
+                    <li>AARC reserves the right to discontinue a scholarship at any time should the rower/sculler not adhere to the club\'s safety guidelines and/or follow the club\'s policies and procedures.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -58,26 +95,9 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
         </div>
     </div>
 
-    <h2>Next Steps After Joining</h2>
-    <div class="accordion-section">
-        <button class="accordion-toggle">After Joining</button>
-        <div class="accordion-content">
-            <div class="accordion-content-inner">
-                <p>Once you are a member:</p>
-                <ul>
-                    <li>Get familiar with the <a href="{{ site.baseurl }}/resources/Boathouse_Rules_and_Equipment_Care.html">Boathouse Rules and Equipment Care</a> guidelines.</li>
-                    <li>Understand the club's <a href="{{ site.baseurl }}/resources/Learn_to_Scull_Safety_Rules.html">Safety Rules</a>.</li>
-                    <li>Explore different rowing times and connect with other members to find rowing partners if desired.</li>
-                    <li>Sign up for any additional programs or coaching that interests you.</li>
-                    <li>Consider volunteering – it’s a great way to meet people and support the club!</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <div class="info-box tip">
         <h4>Questions?</h4>
-        <p>For any questions about membership, please contact the AARC Membership Coordinator at <a href="mailto:membership@annarborrowing.club">membership@annarborrowing.club</a> or visit the main AARC website.</p>
+        <p>For any questions about membership, please contact the AARC Membership Coordinator at <a href="mailto:info@a2crew.org">info@a2crew.org</a> or visit the main <a href="https://aarc.clubexpress.com/">AARC website</a>.</p>
     </div>
 
     <div class="mt-5">
