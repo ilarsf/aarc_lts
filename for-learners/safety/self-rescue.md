@@ -106,7 +106,7 @@ description: Flip test and recovery procedures for scullers
           </div>
           <div class="rescue-step-actions">
             <ol>
-              <li><strong>Stay calm</strong> and take a breath</li>
+              <li><strong>Stay calm</strong> and get your bearings</li>
               <li><strong>Exit the boat</strong> - avoid getting caught by the oar or rigger</li>
               <li><strong>Stay with your boat</strong> - it's your primary flotation device</li>
               <li><strong>Keep hold of both oars</strong> if possible</li>
@@ -255,6 +255,10 @@ description: Flip test and recovery procedures for scullers
   </div>
 </div>
 
+<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 10px 0; border-radius: 4px;">
+  <p>{% include icon.html icon="fas fa-video" type="info" alt="Videos" %} For visual demonstrations of the self-rescue techniques, please see our collection of self-rescue videos: 
+  <a href="https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=self-rescue" class="cta-button">Watch Self-Rescue Videos</a></p>
+</div>
 
 <div class="accordion-container" id="alternative-self-rescue-accordion">
   <div class="accordion-item">

@@ -35,6 +35,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="filter-buttons">
         <button class="filter-button" data-filter="basics" data-filter-type="skill">Basics</button>
         <button class="filter-button" data-filter="safety" data-filter-type="skill">Safety</button>
+        <button class="filter-button" data-filter="self-rescue" data-filter-type="skill">Self-Rescue</button>
         <button class="filter-button" data-filter="equipment" data-filter-type="skill">Equipment</button>
         <button class="filter-button" data-filter="technique" data-filter-type="skill">Technique</button>
         <button class="filter-button" data-filter="drills" data-filter-type="skill">Drills</button>
@@ -205,7 +206,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
         
     <!-- Capsize Recovery -->
-    <div class="video-card" data-sessions="session1" data-skills="safety" data-topics="">
+    <div class="video-card" data-sessions="session1" data-skills="safety self-rescue" data-topics="">
       <div class="video-thumbnail" data-video-id="nhtv53MOrqA">
         <iframe src="https://www.youtube.com/embed/nhtv53MOrqA" frameborder="0" allowfullscreen=""></iframe>
       </div>
