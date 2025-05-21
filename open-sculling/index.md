@@ -35,7 +35,12 @@ search_exclude: true
     </div>
 
     <!-- Content for open scullers will go here. This could include specific guidelines, sign-up links, etc. -->
-    <p>Content to be added.</p>
+    <p>Please find below links to resources, safety guidelines, and technique information:</p>
+    <ul>
+      <li><a href="{{ '/open-sculling/resources/' | relative_url }}">Resources</a></li>
+      <li><a href="{{ '/open-sculling/safety/' | relative_url }}">Safety Guidelines</a></li>
+      <li><a href="{{ '/open-sculling/technique/' | relative_url }}">Technique</a></li>
+    </ul>
     
   </div>
 </div>
