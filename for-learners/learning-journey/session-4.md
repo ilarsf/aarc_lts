@@ -124,7 +124,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             
             <div class="info-box tip">
                 <h4>Preparation Tip</h4>
-                <p>Come prepared with any questions about club membership, equipment, or continued coaching as this is your final formal Learn to Scull session.</p>
+                <p>Come prepared with any questions about club membership, equipment, or continued rowing as this is your final formal Learn to Scull session.</p>
             </div>
         </div>
     </div>

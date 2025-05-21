@@ -188,7 +188,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration of stroke sequencing</li>
+                                        <li>Demonstration of stroke sequencing</li>
                                         <li>Applying recovery sequencing on water</li>
                                         <li>Basic turning practice</li>
                                         <li>Focus on "arms away, body over, then slide"</li>
@@ -202,7 +202,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration of pause  exercises</li>
+                                        <li>Demonstration of pause exercises</li>
                                         <li>Practice basic sequencing: legs-body-arms</li>
                                         <li>Introduction to feathering and squaring</li>
                                         <li>Focus on control and awareness</li>
@@ -238,8 +238,8 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     <div class="accordion-content-inner">
                         <p>Execute your stroke normally but insert a distinct 2-second pause at specific points:</p>
                         <ul>
-                            <li><strong>Arms Away Pause:</strong> Pause immediately after release, once hands have cleared knees</li>
-                            <li><strong>Body Over Pause:</strong> Pause after arms are extended and body has pivoted forward, before knees bend</li>
+                            <li><strong>Arms Away Pause:</strong> Pause immediately after the arms have been extended, with the body remaining in the lean back (11 o'clock) position</li>
+                            <li><strong>Body Over Pause:</strong> Pause after the body has pivoted forward, before the knees bend</li>
                         </ul>
                         <p>These pauses enhance your body awareness and control during recovery, explicitly teaching the correct sequence and preventing common errors like early knee bend.</p>
                     </div>

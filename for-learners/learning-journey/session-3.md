@@ -189,7 +189,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration of good vs. soft push</li>
+                                        <li>Demonstration of good vs. soft push</li>
                                         <li>Practice initiating drive with legs</li>
                                         <li>Connecting legs to handle movement</li>
                                         <li>Looking over shoulder while rowing</li>
@@ -266,7 +266,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <p>While rowing continuously:</p>
                         <ol>
-                            <li>Coach will designate points/landmarks to aim for</li>
+                            <li>Pick points/landmarks to aim for</li>
                             <li>Practice looking over your shoulder every 3-5 strokes</li>
                             <li>Make small course corrections to maintain your line</li>
                         </ol>
