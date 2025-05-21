@@ -96,12 +96,3 @@ title: About the Learn to Scull Program - AARC Learn to Scull
   <h4>More About AARC</h4>
   <p>Learn to Scull is just one of many programs offered by Ann Arbor Rowing Club. Visit the <a href="https://aarc.clubexpress.com" target="_blank">AARC website</a> to discover all opportunities for rowing in Ann Arbor.</p>
 </div>
-
----
-
-<div class="navigation-links">
-  <a href="../about/team.html" class="nav-link">Meet Our Team</a>
-  <a href="../about/contact.html" class="nav-link">Contact Information</a>
-  <a href="../about/faq.html" class="nav-link">Frequently Asked Questions</a>
-  <a href="../index.html" class="nav-link">Back to Home</a>
-</div>
