@@ -255,7 +255,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <h4>Turning When Stationary or Moving Very Slowly:</h4>
                         <ul>
                             <li>To initiate a turn, one arm can be used to stabilize the boat by holding the oar handle steady, often with the blade flat on the water or slightly submerged for balance.</li>
-                            <li>The other arm performs gentle, short strokes (often arms and body only) to pivot the boat. For example, to turn the bow to your right (port side), you would take gentle forward strokes with your right (starboard) oar while your left (port) oar provides stability.</li>
+                            <li>The other arm performs gentle, short strokes (often arms and body only) to pivot the boat.</li>
                         </ul>
 
                         <h4>Turning While Rowing (Continuous Turn):</h4>
