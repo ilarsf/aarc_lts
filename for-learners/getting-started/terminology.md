@@ -64,7 +64,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>Two people each with two oars.</dd>
                 
                 <dt>Drive</dt>
-                <dd>The work phase when the blade is in the water and you\'re pushing with your legs.</dd>
+                <dd>The work phase when the blade is in the water and you're pushing with your legs.</dd>
                 
                 <dt>Eight (8+)</dt>
                 <dd>Eight rowers (each with one oar) plus coxswain.</dd>
@@ -82,7 +82,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>Adjustable platform where you place your feet.</dd>
                 
                 <dt>Gunwales (pronounced "gunnels")</dt>
-                <dd>The top edges of the boat\'s sides.</dd>
+                <dd>The top edges of the boat's sides.</dd>
                 
                 <dt>Handle</dt>
                 <dd>The part of the oar you hold.</dd>
@@ -106,7 +106,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>Personal Flotation Device.</dd>
                 
                 <dt>Port</dt>
-                <dd>Left side of the boat when facing the bow (rower\'s right side when seated).</dd>
+                <dd>Left side of the boat when facing the bow (rower's right side when seated).</dd>
                 
                 <dt>Quad Scull (4x)</dt>
                 <dd>Four people each with two oars.</dd>
@@ -121,7 +121,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>The phase when you return to the catch position, blades out of the water.</dd>
                 
                 <dt>Rigger</dt>
-                <dd>Metal or carbon framework extending from the boat\'s side to hold the oarlock.</dd>
+                <dd>Metal or carbon framework extending from the boat's side to hold the oarlock.</dd>
                 
                 <dt>Rushing</dt>
                 <dd>Moving too quickly during the recovery.</dd>
@@ -151,7 +151,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dd>Rotating the blade to be perpendicular to the water before the catch.</dd>
                 
                 <dt>Starboard</dt>
-                <dd>Right side of the boat when facing the bow (rower\'s left side when seated).</dd>
+                <dd>Right side of the boat when facing the bow (rower's left side when seated).</dd>
                 
                 <dt>Stern</dt>
                 <dd>The back end of the boat.</dd>
@@ -182,19 +182,19 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dt>Foot Stretcher</dt>
                 <dd>Adjustable platform where you place your feet.</dd>
                 <dt>Gunwales (pronounced "gunnels")</dt>
-                <dd>The top edges of the boat\'s sides.</dd>
+                <dd>The top edges of the boat's sides.</dd>
                 <dt>Hull</dt>
                 <dd>The main body of the boat.</dd>
                 <dt>Oarlock</dt>
                 <dd>The U-shaped device on the rigger that holds the oar and allows it to pivot.</dd>
                 <dt>Port</dt>
-                <dd>Left side of the boat when facing the bow (rower\'s right side when seated).</dd>
+                <dd>Left side of the boat when facing the bow (rower's right side when seated).</dd>
                 <dt>Rigger</dt>
-                <dd>Metal or carbon framework extending from the boat\'s side to hold the oarlock.</dd>
+                <dd>Metal or carbon framework extending from the boat's side to hold the oarlock.</dd>
                 <dt>Seat</dt>
                 <dd>The sliding seat that moves on tracks.</dd>
                 <dt>Starboard</dt>
-                <dd>Right side of the boat when facing the bow (rower\'s left side when seated).</dd>
+                <dd>Right side of the boat when facing the bow (rower's left side when seated).</dd>
                 <dt>Stern</dt>
                 <dd>The back end of the boat.</dd>
                 <dt>Tracks/Slides</dt>
@@ -228,7 +228,7 @@ Understanding key rowing terms will help you communicate effectively with coache
                 <dt>Catch</dt>
                 <dd>The moment when the blade enters the water.</dd>
                 <dt>Drive</dt>
-                <dd>The work phase when the blade is in the water and you\'re pushing with your legs.</dd>
+                <dd>The work phase when the blade is in the water and you're pushing with your legs.</dd>
                 <dt>Feathering</dt>
                 <dd>Rotating the blade to be parallel to the water during recovery.</dd>
                 <dt>Finish/Release</dt>

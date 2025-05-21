@@ -22,7 +22,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <button class="accordion-toggle"><i class="fas fa-water"></i> Open Sculling Program Trial</button>
         <div class="accordion-content">
             <div class="accordion-content-inner">
-                <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It\'s an excellent bridge from structured lessons to more independent rowing.</p>
+                <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing.</p>
                 <p>The <strong>multi-week discounted trial period</strong> in the Open Sculling Program is the most common and recommended next step. It provides:</p>
                 <ul>
                     <li>Regular, supervised water time.</li>
@@ -49,7 +49,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <button class="accordion-toggle"><i class="fas fa-user-graduate"></i> Coached Programs</button>
         <div class="accordion-content">
             <div class="accordion-content-inner">
-                <p>If you\'re looking for more structured coaching after the trial period, AARC offers various coached programs. These programs focus on continued skill development, endurance building, and often introduce more advanced techniques or specific boat types (e.g., doubles, quads).</p>
+                <p>If you're looking for more structured coaching after the trial period, AARC offers various coached programs. These programs focus on continued skill development, endurance building, and often introduce more advanced techniques or specific boat types (e.g., doubles, quads).</p>
                 <p>AARC offers a variety of coached programs throughout the year for different skill levels. These are announced on the main AARC website and through member communications. They are a great way to continue structured learning and improve with a dedicated group.</p>
             </div>
         </div>
@@ -78,7 +78,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
             <div class="accordion-content-inner">
                 <ul>
                     <li><strong>Be Consistent:</strong> Regular time on the water is key to reinforcing skills.</li>
-                    <li><strong>Ask Questions:</strong> Don\'t hesitate to ask coaches or experienced members for advice.</li>
+                    <li><strong>Ask Questions:</strong> Don't hesitate to ask coaches or experienced members for advice.</li>
                     <li><strong>Stay Patient:</strong> Sculling is a complex sport; mastery takes time and practice.</li>
                     <li><strong>Focus on One Thing at a Time:</strong> When practicing, try to isolate one aspect of your technique to improve.</li>
                     <li><strong>Enjoy the Process:</strong> Celebrate your progress and enjoy the journey of becoming a proficient sculler!</li>

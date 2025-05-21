@@ -128,7 +128,6 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Hand care is important now - bring athletic tape if needed</li>
                             <li>Stay hydrated before and during the session</li>
                             <li>Sunscreen and appropriate clothing for longer water time</li>
                         </ul>
@@ -302,7 +301,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Practice mentally connecting your leg drive to boat movement</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to reinforce what you\'ve learned.</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to reinforce what you've learned.</li>
                             <li>Review river traffic patterns and navigation rules</li>
                             <li>Consider watching videos recommended for Session 4</li>
                             <li>Take care of any developing blisters or hand issues</li>
