@@ -28,3 +28,16 @@
     outline: thick solid #ffffff; // This is a fallback
   }
 }
+
+/* Style for the call-to-action button container */
+.cta-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+}
+
+.cta-container .btn {
+  max-width: 300px; /* Max width for the button */
+  /* Ensure button takes full width of its container if needed, but max-width restricts it */
+}

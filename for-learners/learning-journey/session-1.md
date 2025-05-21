@@ -305,7 +305,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
             </div>
 
             <h3>Looking Ahead</h3>
-            <p>In Session 2, you\'ll build on these fundamentals by:</p>
+            <p>In Session 2, you'll build on these fundamentals by:</p>
             <ul>
                 <li>Refining your understanding of the rowing stroke</li>
                 <li>Developing better boat balance and control</li>
@@ -313,39 +313,9 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                 <li>Getting more independent on the water</li>
             </ul>
             
-            <div class="resource-section">
-                <div class="card-grid">
-                    <a href="session-2.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-calendar-day"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Session 2 Guide</h3>
-                            <p>Preparation and instructions for your second rowing session</p>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-hand-paper"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Basic Rowing Technique</h3>
-                            <p>Learn the fundamentals of sculling technique</p>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-life-ring"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Self-Rescue Guide</h3>
-                            <p>Detailed instructions on capsize recovery</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <section class="program-section cta-section" style="text-align: center;">
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-2.html" class="cta-button">{% include icon.html icon="fas fa-calendar-day" type="info" alt="Session 2" %} Next - Session 2 Guide</a>
+            </section>
         </div>
     </div>
 </div>

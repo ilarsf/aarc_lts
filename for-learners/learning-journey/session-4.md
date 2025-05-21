@@ -329,19 +329,9 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             
             <h3>Continuing Your Rowing Journey</h3>
             
-            <div class="resource-section">
-                <div class="card-grid">
-                    <a href="{{ site.baseurl }}/for-learners/resources/membership.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-id-card"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Club Membership</h3>
-                            <p>Join AARC as a regular member</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <section class="program-section cta-section" style="text-align: center;">
+                <a href="{{ site.baseurl }}/for-learners/resources/membership.html" class="cta-button">{% include icon.html icon="fas fa-id-card" type="info" alt="Club Membership" %} Club Membership - Join AARC as a regular member</a>
+            </section>
 
         </div>
     </div>

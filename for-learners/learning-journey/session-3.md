@@ -313,19 +313,9 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             <h3>Looking Ahead to Session 4</h3>
             <p>Session 4 will focus on integrating all previously learned skills and developing confidence in steering, river navigation, including bridge passage.</p>
             
-            <div class="resource-section">
-                <div class="card-grid">
-                    <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-calendar-day"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Session 4 Guide</h3>
-                            <p>Final session focused on independence and integration</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <section class="program-section cta-section" style="text-align: center;">
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-4.html" class="cta-button">{% include icon.html icon="fas fa-calendar-day" type="info" alt="Session 4" %} Next - Session 4 Guide</a>
+            </section>
 
         </div>
     </div>

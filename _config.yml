@@ -50,8 +50,6 @@ navigation:
   - title: About
     url: /about/
     subitems:
-      - title: Program Details
-        url: /about/
       - title: Meet the Team
         url: /about/team/
       - title: Club Policies

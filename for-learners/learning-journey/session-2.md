@@ -283,30 +283,9 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             <h3>Looking Ahead to Session 3</h3>
             <p>Session 3 will focus on developing effective leg drive and power application while introducing navigation principles and river traffic patterns.</p>
             
-            <div class="resource-section">
-                <div class="card-grid">
-                    <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-calendar-day"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Session 3 Guide</h3>
-                            <p>Learn about power application and river navigation</p>
-                        </div>
-                    </a>
-                    
-                    <a href="{{ site.baseurl }}/for-learners/technique/basic-technique.html#the-recovery" class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-hand-paper"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Recovery Technique</h3>
-                            <p>Master the arms-body-slide sequence</p>
-                        </div>
-                    </a>
-                    
-                </div>
-            </div>
+            <section class="program-section cta-section" style="text-align: center;">
+                <a href="{{ site.baseurl }}/for-learners/learning-journey/session-3.html" class="cta-button">{% include icon.html icon="fas fa-calendar-day" type="info" alt="Session 3" %} Next - Session 3 Guide</a>
+            </section>
 
         </div>
     </div>

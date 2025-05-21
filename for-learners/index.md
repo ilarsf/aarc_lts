@@ -132,16 +132,6 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             <p>Critical safety information and practices for all scullers.</p>
             
             <div class="card-grid">
-                <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Essential Rules</h3>
-                        <p>The most important safety protocols every rower must follow on the water.</p>
-                    </div>
-                </a>
-                
                 <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
                     <div class="card-image">
                         <i class="fas fa-life-ring"></i>
@@ -151,6 +141,17 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
                         <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
                     </div>
                 </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Essential Rules</h3>
+                        <p>The most important safety protocols every rower must follow on the water.</p>
+                    </div>
+                </a>
+            
             </div>
         </div>
     </div>

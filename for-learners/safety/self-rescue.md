@@ -76,12 +76,11 @@ description: Flip test and recovery procedures for scullers
             <p>{% include icon.html icon="fas fa-check-circle" type="info" alt="Check" color="#4caf50" %} Before any rowing session, be prepared for the possibility of capsizing.</p>
           </div>
           <div class="rescue-step-actions">
-            <ul>
+            <ol>
               <li>Wear appropriate clothing suitable for water immersion</li>
               <li>Remove loose items from pockets</li>
               <li>Understand the self-rescue procedure</li>
-              <li>Know the water conditions and temperature</li>
-            </ul>
+            </ol>
           </div>
         </div>
         <div class="col-md-3 text-center">
@@ -106,13 +105,13 @@ description: Flip test and recovery procedures for scullers
             <p><i class="fas fa-water" style="color: #2196f3;"></i> The first moments after a capsize are crucial. Your primary focus should be on personal safety.</p>
           </div>
           <div class="rescue-step-actions">
-            <ul>
+            <ol>
               <li><strong>Stay calm</strong> and take a breath</li>
+              <li><strong>Exit the boat</strong> - avoid getting caught by the oar or rigger</li>
               <li><strong>Stay with your boat</strong> - it's your primary flotation device</li>
-              <li><strong>Exit the boat</strong> - push away slightly to avoid getting caught</li>
               <li><strong>Keep hold of both oars</strong> if possible</li>
               <li><strong>Assess the situation</strong> - check for injury or dangerous conditions</li>
-            </ul>
+            </ol>
           </div>
           <p><i class="fas fa-exclamation-triangle" style="color: #ff9800;"></i> <strong>Important:</strong> If you are injured or in dangerous waters (strong current, very cold water), prioritize signaling for help over attempting self-rescue.</p>
         </div>
@@ -142,7 +141,8 @@ description: Flip test and recovery procedures for scullers
               <li>Position yourself at the cockpit (center) of the boat</li>
               <li>Reach across to the far side and grasp the rigger</li>
               <li>Push down on the near rigger while pulling up on the far rigger</li>
-              <li>The boat will roll back to upright position. Watch the oars</li>
+              <li>Watch out for the oars and rigger coming towards you</li>
+              <li>The boat will roll back to upright position.</li>
             </ol>
           </div>
           <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> Use the riggers as leverage points rather than trying to lift the entire weight of the boat. Think of it as rolling the boat rather than lifting it.</p>
@@ -175,28 +175,31 @@ description: Flip test and recovery procedures for scullers
                 Float the near-side blade flat on the water, shaft perpendicular to the hull. This gives you a stable brace. Verify the oarlock is properly closed.
               </li>
               <li><strong>Retrieve the Far-Side Oar</strong><br>
-                Swim or lean over to grab the other oar. Extend both oars, pushing them out so they are fully extended and both blades lie flat on the water, with the handles overlapping. Ensure this oarlock is also properly closed.
+                Swim or lean over to grab the other oar. Ensure this oarlock is also properly closed.
+              </li>
+              <li><strong>Extend both oars</strong><br>Push them out so they are fully extended and both blades lie flat on the water, with the handles overlapping.
               </li>
               <li><strong>Position your hands</strong><br>
-                Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip.
+                Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip between the tracks.
               </li>
               <li><strong>Hoist Yourself Onto the Hull</strong> (Two methods)
                 <ul>
-                  <li>Do a few small bounces to gain momentum</li>
+                  <li>First, bob down to utilize your natural buoyancy, then use a strong kick to gain upward momentum</li>
                   <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick, similar to getting out of a pool</li>
                 </ul>
                 <strong>Option A: The Belly Flop Method</strong>
                 <ul>
                   <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
                   <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
-                  <li>Once stable in this position, pull one leg across behind you</li>
+                  <li>Keep your weight low and centered over the boat</li>
+                  <li>Once stable in this position, sit up, and bring one leg across</li>
                   <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
                 </ul>
                 <strong>Option B: The Hip Rotation Method</strong>
                 <ul>
                   <li>Rotate your hip onto the tracks as you rise</li>
                   <li>Keep your weight low and centered over the boat</li>
-                  <li>Once your hip is secured on the tracks, pull one leg across</li>
+                  <li>Once your hip is secured on the tracks, sit up, and bring one leg across</li>
                   <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
                 </ul>
               </li>
@@ -207,7 +210,7 @@ description: Flip test and recovery procedures for scullers
               </li>
             </ol>
           </div>
-          <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> This technique relies on leg power and body mechanics, not upper body strength. A strong scissors kick while pushing down on the oar handles will help lift your body horizontally onto the boat.</p>
+          <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> This technique relies on leg power and body mechanics, not upper body strength. Using your natural buoancy and a strong scissors kick while pushing down on the oar handles will help lift your body horizontally onto the boat.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
@@ -232,10 +235,9 @@ description: Flip test and recovery procedures for scullers
           </div>
           <div class="rescue-step-actions">
             <ol>
-              <li>Find your seat position and adjust your feet in the stretchers</li>
               <li>Perform a quick equipment check</li>
-              <li>Begin gentle rowing, when stable, resume normal rowing</li>
               <li>Signal to your coach or others that you are okay</li>
+              <li>Begin gentle rowing, when stable, resume normal rowing</li>
               <li>Consider heading to the dock to drain the boat</li>
             </ol>
           </div>
@@ -253,50 +255,38 @@ description: Flip test and recovery procedures for scullers
   </div>
 </div>
 
-<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p>{% include icon.html icon="fas fa-info-circle" type="info" %} <strong>Physical Impact Note:</strong> Capsize recovery may cause bruising on legs, hips, and torso. Consider wearing compression garments during practice, especially if you bruise easily.</p>
-</div>
 
-<div class="alert alert-warning" style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p>{% include icon.html icon="fas fa-exclamation-circle" type="safety" alt="Warning" color="#ff9800" %} <strong>Important:</strong> There is no ladder on the dock. If you cannot re-enter your boat during a flip test, you will need to exit the water using the push/kick method described in "Exiting at the Dock" below.</p>
-</div>
-
-### Common Challenges
-
-<div class="accordion-container" id="common-challenges">
+<div class="accordion-container" id="alternative-self-rescue-accordion">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('dock')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Exiting at the Dock</div>
-    <div class="accordion-content" id="dock-content">
-      <div class="rescue-step-content">
-        <div class="row">
-          <div class="col-md-9">
-            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock or shore:</p>
-            <ul>
-              <li>If the dock is too far or you are too tired to swim effectively while holding the boat, position yourself flat on the stern deck (like a frog on a branch). This helps conserve energy.</li>
-              <li>Use your hands to paddle towards the shore or dock.</li>
-            </ul>
-            <p>{% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Once you reach the dock with your boat:</p>
-            <ol>
-                <li>Keep the boat between you and the dock.</li>
-                <li>Place both hands on the dock surface.</li>
-                <li>Use a strong push/kick motion to lift your upper body onto the dock</li>
-                <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface</li>
-                <li>Help may be offered, but be prepared to exit the water on your own</li>
-            </ol>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="rescue-step-icon">
-              {% include icon.html icon="fas fa-grip-lines" type="info" size="3rem" alt="Dock grip icon" %}
-            </div>
-            <div class="rescue-step-icon" style="margin-top: 10px;">
-              {% include icon.html icon="fas fa-swimmer" type="info" size="3rem" alt="Swimmer icon" %}
-            </div>
-          </div>
-        </div>
+    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self Rescue</div>
+    <div class="accordion-content" id="alternative-self-rescue-content">
+      <div id="dock-content">
+        {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock or shore:
+        <ul>
+          <li>Position yourself flat on the stern deck, much like you would lie on a surfboard.</li>
+          <li>Use your hands to paddle towards the shore or dock.</li>
+        </ul>
+        {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Once you reach the dock with your boat:
+        <ul>
+          <li>Push the boat to the side of the dock, keeping it parallel to the dock.</li>
+          <li>Position yourself next to the boat, facing the dock.</li>
+          <li>Place both hands on the dock surface.</li>
+          <li>Use a strong push/kick motion to lift your upper body onto the dock</li>
+          <li>Once your torso is on the dock, swing one leg up and roll onto the dock surface</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
+
+<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 10px 0; border-radius: 4px;">
+  <p>{% include icon.html icon="fas fa-info-circle" type="info" %} <strong>A Note on Physical Sensations:</strong> During self-rescue practice, some individuals might experience minor bruising on areas like legs, hips, or torso as they learn to get back into the boat. This is a normal part of the learning process.</p>
+  <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#f44336" %} <strong>Safety First:</strong> If at any point during a real capsize you feel unsafe or unable to complete the self-rescue, signal for help immediately and stay with your boat while awaiting assistance.</p>
+</div>
+
+<section class="program-section cta-section" style="text-align: center;">
+  <a href="{{ site.baseurl }}/for-learners/#safety" class="cta-button">{% include icon.html icon="fas fa-shield-alt" type="info" alt="Safety" %} Back to Safety</a>
+</section>
 
 <script>
   // Simple manual accordion toggle function for challenge sections
@@ -387,52 +377,6 @@ description: Flip test and recovery procedures for scullers
     return false;
   }
 </script>
-
-## Practice and Preparation
-
-<p>{% include icon.html icon="fas fa-brain" type="info" alt="Mental preparation" %} Self-rescue skills require regular maintenance. Here's how to stay prepared:</p>
-
-<div class="rescue-step-content">
-  <div class="row">
-    <div class="col-md-9">
-      <ul>
-        <li><strong>Mental Rehearsal</strong>: Visualize each step of the self-rescue process regularly</li>
-        <li><strong>Periodic Practice</strong>: Request supervised practice of the flip test periodically</li>
-        <li><strong>Proper Preparation</strong>: Always dress for immersion possibility, especially in colder conditions</li>
-        <li><strong>Pre-row Check</strong>: Verify all equipment is secure before each row, including properly closed oarlocks</li>
-      </ul>
-    </div>
-    <div class="col-md-3 text-center">
-      <div class="rescue-step-icon">
-        {% include icon.html icon="fas fa-clipboard-check" type="info" size="3rem" alt="Checklist icon" %}
-      </div>
-    </div>
-  </div>
-</div>
-
-## Video Demonstrations
-
-<p>{% include icon.html icon="fas fa-video" type="info" alt="Video" color="#e91e63" %} These videos demonstrate the flip test and self-rescue techniques:</p>
-
-<div class="video-grid">
-  <div class="video-container">
-    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <iframe src="https://www.youtube.com/embed/bfJR2K18GZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-    <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Lars Flip Test Demo</strong> - Shows the standard flip test procedure</p>
-  </div>
-  <div class="video-container">
-    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <iframe src="https://www.youtube.com/embed/lznN4_uCz9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-    <p>{% include icon.html icon="fas fa-play-circle" type="info" alt="Play" color="#e91e63" %} <strong>Johanna Flip Test Demo</strong> - Alternative technique for re-entry</p>
-  </div>
-</div>
-
-<div class="alert alert-warning" style="background-color: #fff3e0; border-left: 4px solid #ff9800; padding: 15px; margin: 20px 0; border-radius: 4px;">
-  <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#f44336" %} <strong>Safety First:</strong> If at any point during a real capsize you feel unsafe or unable to complete the self-rescue, signal for help immediately and stay with your boat while awaiting assistance.</p>
-</div>
-
 <style>
 /* Local overrides for regular accordions on this page */
 .accordion-container .accordion-item .accordion-header {
@@ -674,25 +618,6 @@ description: Flip test and recovery procedures for scullers
     });
   });
 </script>
-
-By mastering these self-rescue techniques, you gain confidence on the water and ensure you can handle unexpected situations safely.
-
-<h3>{% include icon.html icon="fas fa-shield-alt" type="info" alt="Safety" %} Additional Safety Resources</h3>
-
-<div class="resource-section">
-    <div class="card-grid">
-        <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card hover-effect">
-            <div class="card-icon">
-                {% include icon.html icon="fas fa-clipboard-list" type="info" alt="Rules" color="#4caf50" %}
-            </div>
-            <div class="card-content">
-                <h3>Essential Safety Rules</h3>
-                <p>Learn the critical safety guidelines for all rowers</p>
-            </div>
-        </a>
-
-    </div>
-</div>
 
 <style>
 /* Card hover effects */
