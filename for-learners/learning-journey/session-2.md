@@ -245,6 +245,28 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     </div>
                 </div>
             </div>
+
+            <div class="accordion-section">
+                <button class="accordion-toggle">One-Armed Turn (Gradual Turns)</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>This technique is used for making gentle adjustments to your course. The specific approach varies slightly depending on whether you are stationary/moving very slowly or already rowing with some momentum.</p>
+                        
+                        <h4>Turning When Stationary or Moving Very Slowly:</h4>
+                        <ul>
+                            <li>To initiate a turn, one arm can be used to stabilize the boat by holding the oar handle steady, often with the blade flat on the water or slightly submerged for balance.</li>
+                            <li>The other arm performs gentle, short strokes (often arms and body only) to pivot the boat. For example, to turn the bow to your right (port side), you would take gentle forward strokes with your right (starboard) oar while your left (port) oar provides stability.</li>
+                        </ul>
+
+                        <h4>Turning While Rowing (Continuous Turn):</h4>
+                        <ul>
+                            <li>Apply slightly more pressure with the oar on the <strong>outside</strong> of the turn. (e.g., to turn the bow to port, apply more pressure with the starboard oar).</li>
+                            <li>The oar on the <strong>inside</strong> of the turn takes lighter strokes or trails lightly in the water with the blade feathered or square just above the surface.</li>
+                        </ul>
+                        <p>Remember to look where you want to go. For more significant or sharper turns, especially from a stationary position, you might use a <a href="session-3.html#pivot-turns">Pivot Turn</a> (covered in Session 3).</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
