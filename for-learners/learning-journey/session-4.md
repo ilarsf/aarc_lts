@@ -287,9 +287,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <p>Your Learn to Scull journey doesn't end here! At the conclusion of this session, you'll receive:</p>
                         <ul>
-                            <li>Assessment of your current skill level</li>
                             <li>Information about club membership options</li>
-                            <li>Details about ongoing coaching opportunities</li>
                             <li>Guidance on how to continue developing your sculling skills</li>
                             <li>Information about rowing programs you might enjoy</li>
                         </ul>
