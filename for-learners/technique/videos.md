@@ -76,7 +76,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         <h3 class="video-title">Sculling vs. Sweep – Rowing Boat Classes Explained</h3>
         <div class="video-meta">
           <span class="video-creator">World Rowing</span>
-          <span class="video-duration">3:55</span>
+          <span class="video-duration">2:55</span>
         </div>
         <div class="video-description">
           Explains what sculling is (using two oars per rower) versus sweep rowing (one oar per rower) and introduces the different boat types (singles, doubles, fours, etc.). A great primer on where single sculling fits into the sport.
@@ -90,7 +90,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
     
     <!-- Safety Video -->
-    <div class="video-card" data-sessions="pre-course" data-skills="safety" data-topics="stroke-overview">
+    <div class="video-card" data-sessions="" data-skills="safety" data-topics="stroke-overview">
       <div class="video-thumbnail" data-video-id="Rx5SUe_RdgQ">
         <iframe src="https://www.youtube.com/embed/Rx5SUe_RdgQ" frameborder="0" allowfullscreen=""></iframe>
       </div>
@@ -98,7 +98,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         <h3 class="video-title">USRowing Safety Video</h3>
         <div class="video-meta">
           <span class="video-creator">USRowing</span>
-          <span class="video-duration">13:30</span>
+          <span class="video-duration">41:25</span>
         </div>
         <div class="video-description">
           A comprehensive safety briefing covering essential on-water safety practices: checking equipment, understanding traffic patterns, monitoring weather and water conditions, and the importance of proper safety equipment.
@@ -112,15 +112,15 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
 
     <!-- Parts of a Shell -->
-    <div class="video-card" data-sessions="session1" data-skills="equipment" data-topics="">
+    <div class="video-card" data-sessions="pre-course session1" data-skills="equipment" data-topics="">
       <div class="video-thumbnail" data-video-id="se7_i8KoyjE">
         <iframe src="https://www.youtube.com/embed/se7_i8KoyjE" frameborder="0" allowfullscreen=""></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Parts of a Rowing Shell</h3>
         <div class="video-meta">
-          <span class="video-creator">Rowing Clips (USA)</span>
-          <span class="video-duration">2:30</span>
+          <span class="video-creator">The Drive</span>
+          <span class="video-duration">2:43</span>
         </div>
         <div class="video-description">
           A walk-through of all the key components of a sculling boat. This short video goes bow to stern identifying the hull, bowball, seat, tracks, riggers, foot stretcher, and more to help beginners understand the equipment.
@@ -141,8 +141,8 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">How to get into a rowing single scull</h3>
         <div class="video-meta">
-          <span class="video-creator">Daniel Boyne</span>
-          <span class="video-duration">1:45</span>
+          <span class="video-creator">Decent Rowing</span>
+          <span class="video-duration">0:41</span>
         </div>
         <div class="video-description">
           A clear demonstration of the proper technique for entering a single scull from the dock. The instructor shows the step-by-step process of mounting the boat safely: positioning the oars, secure hand placement, gradual weight transfer, and proper foot positioning.
@@ -231,8 +231,8 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Essential Sculling Technique for Rowers</h3>
         <div class="video-meta">
-          <span class="video-creator">USVOYAGES/Sculling101</span>
-          <span class="video-duration">14:55</span>
+          <span class="video-creator">World Rowing</span>
+          <span class="video-duration">3:45</span>
         </div>
         <div class="video-description">
           A comprehensive overview of the entire sculling stroke cycle. This instructional video breaks down the complete stroke sequence from catch to finish, covering proper body positioning and handle positions through each phase.
@@ -253,8 +253,8 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Catch (Sculling)</h3>
         <div class="video-meta">
-          <span class="video-creator">Stephen M.</span>
-          <span class="video-duration">2:21</span>
+          <span class="video-creator">Rowing Canada Aviron</span>
+          <span class="video-duration">1:05</span>
         </div>
         <div class="video-description">
           A focused tutorial on the critical moment when the oar enters the water. Learn proper handle height, blade orientation, and timing for clean blade entry without diving too deep or skipping across the surface.
@@ -275,7 +275,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Drive (Sculling)</h3>
         <div class="video-meta">
-          <span class="video-creator">UCanRow2</span>
+          <span class="video-creator">Rowing Canada Aviron</span>
           <span class="video-duration">3:45</span>
         </div>
         <div class="video-description">
@@ -297,7 +297,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">On-Water Rowing – The Release (Sculling)</h3>
         <div class="video-meta">
-          <span class="video-creator">Stephen M.</span>
+          <span class="video-creator">Rowing Canada Aviron</span>
           <span class="video-duration">3:11</span>
         </div>
         <div class="video-description">
@@ -319,7 +319,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Recovery to Catch – Body &amp; Blade Preparation</h3>
         <div class="video-meta">
-          <span class="video-creator">Daniel Boyne</span>
+          <span class="video-creator">Calm Waters Rowing</span>
           <span class="video-duration">5:39</span>
         </div>
         <div class="video-description">
@@ -341,7 +341,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Proper Sculling Grip and Feathering</h3>
         <div class="video-meta">
-          <span class="video-creator">Dark Horse Rowing</span>
+          <span class="video-creator">British Rowing</span>
           <span class="video-duration">5:04</span>
         </div>
         <div class="video-description">
@@ -363,7 +363,7 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Sculling: How to Steer a Single</h3>
         <div class="video-meta">
-          <span class="video-creator">Stephen M.</span>
+          <span class="video-creator">Calm Waters Rowing</span>
           <span class="video-duration">2:00</span>
         </div>
         <div class="video-description">
@@ -386,7 +386,7 @@ This curated collection of high-quality instructional videos supports the Learn 
         <h3 class="video-title">Oars – Every Rower Should Know This</h3>
         <div class="video-meta">
           <span class="video-creator">Decent Rowing (AUS)</span>
-          <span class="video-duration">4:10</span>
+          <span class="video-duration">8:44</span>
         </div>
         <div class="video-description">
           The connection between the oar handle and the rower's hand is arguably the most important. But how many people know how to set up and maintain their oars? In this video, Ken Davey and Howard Croker run through what every rower should know about their oars and how to get the most out of them on race day.
@@ -406,8 +406,8 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Sculling Drills</h3>
         <div class="video-meta">
-          <span class="video-creator">AramTraining</span>
-          <span class="video-duration">5:00</span>
+          <span class="video-creator">US Rowing</span>
+          <span class="video-duration">16:45</span>
         </div>
         <div class="video-description">
           A compilation of fundamental on-water drills to reinforce proper technique. Includes pause drills, pick drills, and exercises for improving blade releases and handle control, all designed to help you isolate and improve individual stroke components.
@@ -428,8 +428,8 @@ This curated collection of high-quality instructional videos supports the Learn 
       <div class="video-info">
         <h3 class="video-title">Sculling Basics</h3>
         <div class="video-meta">
-          <span class="video-creator">Dark Horse Rowing</span>
-          <span class="video-duration">6:21</span>
+          <span class="video-creator">US Rowing</span>
+          <span class="video-duration">14:56</span>
         </div>
         <div class="video-description">
           A coaching video that identifies typical novice mistakes and how to fix them. The video points out common errors like rushing the slide, shooting the tail, dipping hands at the catch, and provides corrections and drills to improve your technique.
