@@ -95,6 +95,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                 <li>Navigate the rowing course with confidence</li>
                 <li>Demonstrate proper safety awareness</li>
                 <li>Show proficient technique at various speeds</li>
+                <li>Understand and perform basic post-rowing equipment care (cleaning and storage)</li>
             </ul>
         </div>
     </div>
@@ -108,6 +109,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
             <ul>
               <li><strong>Single scull</strong>: A narrow, lightweight boat propelled by two oars</li>
               <li><strong>Oars (sculls)</strong>: Two identical oars, one for each hand</li>
+              <li><strong>Ergometer (Erg)</strong>: A land-based rowing machine used for technique development and warm-ups.</li>
               <li><strong>PFD</strong>: Personal flotation device, required safety equipment</li>
               <li><strong>Clothing</strong>: Athletic, moisture-wicking clothes that allow movement</li>
             </ul>
@@ -124,8 +126,8 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
               <div>
                 <h3>Sessions 1-2: Fundamentals</h3>
                 <ul>
-                  <li>Introduction to equipment</li>
-                  <li>Basic rowing motion</li>
+                  <li>Introduction to equipment (including ergometers)</li>
+                  <li>Basic rowing motion (on erg and on water)</li>
                   <li>Safety procedures and flip test</li>
                   <li>Getting in/out of boats</li>
                   <li>First on-water experiences</li>
@@ -141,6 +143,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                   <li>Navigation and river traffic patterns</li>
                   <li>Independent sculling practice</li>
                   <li>Building endurance and confidence</li>
+                  <li>Understanding proper equipment care (rinsing and storage)</li>
                   <li>Final assessment and skill verification</li>
                   <li>Planning post-program continuation</li>
                 </ul>

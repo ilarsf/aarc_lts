@@ -15,10 +15,11 @@ search_exclude: true
 </div>
 
 ## Session Goals
-- Integrate all previously learned skills
-- Develop confidence in river navigation, including bridges
-- Achieve independent sculling capability
-- Complete rower assessment and discuss next steps
+- Integrate all previously learned skills, including effective ratio and rhythm.
+- Develop confidence in river navigation, including bridge passage and docking.
+- Practice backing and turning maneuvers effectively.
+- Achieve independent sculling capability and introduce different boat types.
+- Complete rower assessment, discuss next steps, and introduce video review opportunities.
 
 ## Required Equipment
 - Single sculls
@@ -44,11 +45,12 @@ search_exclude: true
 - **0:00-0:10** - Welcome and participant check-in
    - Collect any remaining forms
    - Address any lingering questions
-   - Outline final session structure
+   - Outline final session structure, including skills circuit.
 - **0:10-0:20** - Review of all key skills and concepts
-   - Brief summary of Sessions 1-3 learnings
-   - What to focus on today
-   - Assessment expectations
+   - Brief summary of Sessions 1-3 learnings (stroke, drills, steering, ratio/rhythm, safety).
+   - What to focus on today: integration, independence, specific maneuvers (backing, docking).
+   - Assessment expectations.
+   - Brief introduction to different boat types (e.g., trainers, racers) and their characteristics.
 
 ### 2. Equipment Preparation and Launch (25 minutes)
 - **0:20-0:35** - Independent equipment preparation
@@ -60,20 +62,19 @@ search_exclude: true
    - Initial stability and technique check at dock
 
 ### 3. Skill Integration and Navigation Practice (120 minutes)
-- **0:45-1:30** - Technical review and integration
-   - Warm-up with technical focus drills
-   - Progressive building of stroke rate and pressure
-   - Coach feedback on individual technique issues
-- **1:30-2:15** - Navigation practice course
-   - River traffic pattern adherence
-   - Bridge navigation techniques
-   - Group formation rowing
-   - Individual turns and maneuvers
-- **2:15-2:45** - Independent rowing practice
-   - Coaches observing from distance
-   - Self-diagnosis and correction
-   - Navigation decision-making
-   - Safety awareness demonstration
+- **0:45-1:30** - Technical review, integration, and Skills Circuit Warm-up
+   - Warm-up with technical focus drills (e.g., pause drills emphasizing ratio, feathering).
+   - Progressive building of stroke rate and pressure, maintaining ratio and rhythm.
+   - Coach feedback on individual technique issues.
+   - Introduction to Skills Circuit stations: backing, turning, docking, continuous rowing with ratio focus.
+- **1:30-2:15** - Navigation practice course / Skills Circuit Group A
+   - River traffic pattern adherence, bridge navigation techniques, group formation rowing.
+   - Group A: Guided upriver row with bridge passage, docking practice. Focus on navigation, traffic, ratio/rhythm.
+   - Group B: Skills Circuit - backing, turning, docking, ratio/rhythm rowing.
+- **2:15-2:45** - Independent rowing practice / Skills Circuit Group B
+   - Coaches observing from distance. Self-diagnosis and correction. Navigation decision-making. Safety awareness.
+   - Group B: Guided upriver row with bridge passage, docking practice.
+   - Group A: Skills Circuit - backing, turning, docking, ratio/rhythm rowing.
 
 ### 4. Assessment and Landing (30 minutes)
 - **2:45-3:00** - Return to dock with individual assessment
@@ -92,7 +93,7 @@ search_exclude: true
    - Personalized development suggestions
 - **3:30-3:45** - Post-program opportunities presentation
    - Club membership options
-   - Additional training opportunities
+   - Additional training opportunities (including video review sessions)
    - Equipment usage policies
    - Safety certification requirements
 - **3:45-4:00** - Program conclusion
@@ -104,11 +105,11 @@ search_exclude: true
 ## Key Coaching Points
 
 ### Technique Focus Areas
-1. **Integration** - All stroke elements working together
-2. **Consistency** - Maintaining technique under fatigue
-3. **Adaptability** - Adjusting to changing conditions
-4. **Independence** - Self-diagnosis and correction
-5. **Decision-making** - Good judgment in navigation
+1. **Integration** - All stroke elements working together, including ratio and rhythm.
+2. **Consistency** - Maintaining technique (especially ratio) under fatigue.
+3. **Adaptability** - Adjusting to changing conditions, boat types (if applicable).
+4. **Independence** - Self-diagnosis, correction, and decision-making for maneuvers (backing, turning, docking).
+5. **Decision-making** - Good judgment in navigation, traffic, and safety.
 
 ### Common Issues to Address
 - Regression to early technical errors
@@ -127,11 +128,11 @@ search_exclude: true
 
 ## Assessment Considerations
 Coaches should evaluate each participant's:
-- Overall rowing competence
-- Independent boat handling
-- Navigation confidence
-- Safety awareness
-- Technical improvement over program
+- Overall rowing competence, including ratio and rhythm.
+- Independent boat handling (steering, backing, turning, docking).
+- Navigation confidence and bridge passage.
+- Safety awareness and decision-making.
+- Technical improvement over program.
 
 ## Post-Session Tasks for Coaches
 1. Complete final assessment forms
@@ -146,7 +147,7 @@ Coaches should evaluate each participant's:
   <ul>
     <li><a href="{{ site.baseurl }}/for-coaches/program-management/assessment-tools.html">Assessment Checklist</a> - Final evaluation form</li>
     <li><a href="{{ site.baseurl }}/for-coaches/program-management/administrative-guide.html">Post-Program Guide</a> - Next steps information</li>
-    <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/video-analysis.html">Video Analysis Guide</a> - For final technique review</li>
+    <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/video-analysis.html">Video Analysis Guide</a> - For final technique review and explaining video review opportunities</li>
   </ul>
 </div>
 

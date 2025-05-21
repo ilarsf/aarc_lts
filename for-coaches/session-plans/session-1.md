@@ -16,10 +16,11 @@ search_exclude: true
 </div>
 
 ## Session Goals
-- Introduce basic rowing motion on stable ergometer
-- Familiarize participants with equipment terminology and handling
+- Introduce basic rowing motion on stable ergometer (legs only, body swing, full stroke, pick drill elements)
+- Familiarize participants with equipment terminology and handling (including proper equipment care: rinsing and storage)
 - Successfully complete supervised flip test
 - Build comfort with water and boat interaction
+- Coach demonstration of key initial skills: boat carrying, getting in/out, basic maneuvering.
 
 ## Required Equipment
 - Ergometers
@@ -156,13 +157,16 @@ search_exclude: true
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Breaking Down the Stroke <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">Breaking Down the Stroke (Pick Drill on Erg) <span class="priority-tag essential">Essential</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Arms-only rowing</li>
-                            <li>Arms and back</li>
-                            <li>Adding the slide</li>
+                            <li>Arms and back/body swing</li>
+                            <li>Legs-only rowing</li>
+                            <li>Legs and body swing</li>
+                            <li>Adding the slide (full stroke)</li>
+                            <li>Brief introduction to Pick Drill: arms only, then arms & body strokes.</li>
                         </ul>
                     </div>
                 </div>
@@ -186,7 +190,7 @@ search_exclude: true
     <div class="timeline-block">
         <div class="timeline-block-header">
             <span class="timeline-time">1:45-2:45</span>
-            <h3 class="timeline-title">Flip Test and Water Introduction</h3>
+            <h3 class="timeline-title">Flip Test, Water Introduction & Basic Handling</h3>
         </div>
         <div class="timeline-content">
             <div class="accordion-section">
@@ -221,6 +225,21 @@ search_exclude: true
             </div>
             
             <div class="accordion-section">
+                <button class="accordion-toggle">On-Water: Coach Demonstrations & First Strokes <span class="priority-tag essential">Essential</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li>Coach Demo: Safe boat carrying (to and from water).</li>
+                            <li>Coach Demo: Getting in and out of the boat at the dock.</li>
+                            <li>Coach Demo: Basic maneuvering (e.g., sculling forward, stopping).</li>
+                            <li>Participants practice getting in/out, finding balance.</li>
+                            <li>Participants practice initial strokes (e.g., Pick Drill: arms only, arms & body) near the dock with close supervision.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
                 <button class="accordion-toggle">Debrief <span class="priority-tag important">Important</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
@@ -238,16 +257,17 @@ search_exclude: true
     <div class="timeline-block">
         <div class="timeline-block-header">
             <span class="timeline-time">2:45-3:00</span>
-            <h3 class="timeline-title">Conclusion and Next Session Preview</h3>
+            <h3 class="timeline-title">Conclusion, Equipment Care & Next Session Preview</h3>
         </div>
         <div class="timeline-content">
             <div class="accordion-section">
-                <button class="accordion-toggle">Session Recap <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">Session Recap & Equipment Care <span class="priority-tag essential">Essential</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Reinforce main points of the day</li>
                             <li>Answer any immediate questions</li>
+                            <li>Coach Demo & Supervised Practice: Proper equipment rinsing and storage.</li>
                         </ul>
                     </div>
                 </div>

@@ -110,40 +110,48 @@ search_exclude: true
         <h4>Rowing Equipment</h4>
         <div class="category-progress">
             <div class="progress-indicator" style="width: 0%;"></div>
-            <span class="progress-value">0/9</span>
+            <span class="progress-value">0/10</span>
         </div>
         <div class="checklist-items">
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-sufficient-boats" name="rowing-equip-checklist">
-                <label for="rowing-equip-sufficient-boats">Sufficient boats for group size</label>
+                <label for="rowing-equip-sufficient-boats">Sufficient boats for group size and skill level (consider mix of trainer/recreational/racing shells as appropriate for session goals, track specific boat names/numbers used, e.g., P1, P2, P3, P4, W1, W3, W4)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="rowing-equip-specific-boats-identified" name="rowing-equip-checklist">
+                <label for="rowing-equip-specific-boats-identified">Specific boats (e.g., P1, P2) identified and tracked if used for specific drills/groups</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-boats-inspected" name="rowing-equip-checklist">
-                <label for="rowing-equip-boats-inspected">Boats inspected for damage</label>
+                <label for="rowing-equip-boats-inspected">Boats inspected for damage (all types)</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-bow-balls" name="rowing-equip-checklist">
-                <label for="rowing-equip-bow-balls">Bow balls secure</label>
+                <label for="rowing-equip-bow-balls">Bow balls secure (all boats)</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-heel-restraints" name="rowing-equip-checklist">
-                <label for="rowing-equip-heel-restraints">Heel restraints functional</label>
+                <label for="rowing-equip-heel-restraints">Heel restraints functional (all boats)</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-hatch-covers" name="rowing-equip-checklist">
-                <label for="rowing-equip-hatch-covers">Hatch covers secure</label>
+                <label for="rowing-equip-hatch-covers">Hatch covers secure (all boats)</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-foot-stretchers" name="rowing-equip-checklist">
-                <label for="rowing-equip-foot-stretchers">Foot stretchers operational</label>
+                <label for="rowing-equip-foot-stretchers">Foot stretchers operational (all boats)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="rowing-equip-rigger-tightness" name="rowing-equip-checklist">
+                <label for="rowing-equip-rigger-tightness">Riggers checked for tightness (all boats)</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-sufficient-oars" name="rowing-equip-checklist">
-                <label for="rowing-equip-sufficient-oars">Sufficient oars available</label>
+                <label for="rowing-equip-sufficient-oars">Sufficient oars available, appropriate size for boats and rowers</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-oar-collars" name="rowing-equip-checklist">
-                <label for="rowing-equip-oar-collars">Oar collars secure</label>
+                <label for="rowing-equip-oar-collars">Oar collars secure and correctly positioned</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="rowing-equip-dock-clear" name="rowing-equip-checklist">
@@ -308,9 +316,9 @@ search_exclude: true
 ## Pre-Session Briefing Topics
 
 - Weather conditions and any modifications
-- Safety procedures review
+- Safety procedures review (including what to do if different boat types are encountered or used)
 - Session objectives and structure
-- Boat assignments and rationale
+- Boat assignments and rationale (including discussion of different boat types being used, if applicable, and specific boat names/numbers like P1, P2, P3, P4, W1, W3, W4)
 - Designated water area for today's session
 - Communication signals and protocols
 - Individual participant considerations

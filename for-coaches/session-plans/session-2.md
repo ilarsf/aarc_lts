@@ -15,10 +15,11 @@ search_exclude: true
 </div>
 
 ## Session Goals
-- Transfer ergometer stroke sequence to on-water rowing
-- Establish proper recovery sequence (arms → body → slide)
-- Develop basic boat control and balance
-- Master safe launching and landing procedures
+- Transfer ergometer stroke sequence to on-water rowing, including Pick Drill and Pause Drill elements.
+- Establish proper recovery sequence (arms → body → slide) and introduce feathering/squaring.
+- Develop basic boat control, balance, and understanding of river traffic basics.
+- Master safe launching and landing procedures.
+- Coach demonstration of full stroke, feathering/squaring.
 
 ## Required Equipment
 - Single sculls
@@ -42,14 +43,15 @@ search_exclude: true
 
 ### 1. Review and Warm-up (30 minutes)
 - **0:00-0:10** - Welcome and Session 1 review
-   - Review key learnings from Session 1
+   - Review key learnings from Session 1 (erg drills, boat handling, equipment care)
    - Address questions from homework
    - Set expectations for today's session
 - **0:10-0:25** - Ergometer technique warm-up
-   - Review stroke sequence
-   - Focus on recovery sequence
-   - Emphasize connection between hands and feet
-- **0:25-0:30** - Transition to boathouse floor
+   - Review stroke sequence, including Pick Drill (arms, arms/body, legs, legs/body, full slide)
+   - Introduce Pause Drills (e.g., pause at arms away, pause at body prep)
+   - Focus on recovery sequence and connection
+- **0:25-0:30** - Transition to boathouse floor & Safety Briefing on River Traffic
+   - Briefly review basic river traffic rules (e.g., keep right, awareness of others).
 
 ### 2. Equipment and Launching Review (30 minutes)
 - **0:30-0:45** - Equipment assignment and adjustment
@@ -63,18 +65,16 @@ search_exclude: true
 
 ### 3. On-Water Skill Development (90 minutes)
 - **1:00-1:20** - Row from dock to practice area
-   - Basic boat control focus
-   - Light grip on handles
-   - Simple stroke with emphasis on recovery
+   - Basic boat control focus, light grip, simple stroke with emphasis on recovery.
+   - Coach Demo: Full stroke on water, feathering and squaring blades.
 - **1:20-1:50** - Drill progression:
-   - Arms-only rowing
-   - Arms and body
-   - Full stroke at low rate (16-18 spm)
+   - Pick Drill Progression (arms-only, arms & body, legs only, legs & body, full slide strokes)
+   - Pause Drills (e.g., pause at arms away, pause at body prep) - focus on control and sequencing.
+   - Full stroke at low rate (16-18 spm) incorporating feathering/squaring.
 - **1:50-2:20** - Skill development:
-   - Basic maneuvering
-   - Stopping the boat
-   - Learning to back the boat
-   - Simple turns (using one arm only)
+   - Practice feathering and squaring drills (e.g., feathering in place, continuous feathering).
+   - Basic maneuvering, stopping the boat, learning to back the boat.
+   - Simple turns (using one arm only).
 - **2:20-2:30** - Return to dock preparation
    - Review landing procedure
    - Practice approaching the dock
@@ -105,9 +105,10 @@ search_exclude: true
 ### Technique Focus Areas
 1. **Recovery Sequence** - Clear distinction between arms-body-slide
 2. **Hand Heights** - Level hands, no teeter-totter
-3. **Blade Control** - Square/feather timing, clean entry/exit
+3. **Blade Control** - Square/feather timing, clean entry/exit. Introduction to feathering.
 4. **Balance** - Finding the balanced point, minimal touching of gunwales
 5. **Posture** - Maintaining proper back position through the sequence
+6. **Pick Drill & Pause Drills** - Reinforcing correct sequencing and control.
 
 ### Common Issues to Address
 - Rushing into the catch

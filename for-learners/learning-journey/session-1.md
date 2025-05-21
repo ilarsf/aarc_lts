@@ -68,7 +68,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
             <div class="interactive-checklist">
                 <div class="checklist-item">
                     <input type="checkbox" id="obj1" name="checklist" value="obj1">
-                    <label for="obj1">Learn the basic rowing motion using ergometers (rowing machines)</label>
+                    <label for="obj1">Learn the basic rowing motion using ergometers (rowing machines) and on the water.</label>
                 </div>
                 
                 <div class="checklist-item">
@@ -185,12 +185,13 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
                         
                         <div class="accordion-section">
-                            <button class="accordion-toggle">Ergometer Introduction</button>
+                            <button class="accordion-toggle">Ergometer Introduction & Drills</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Basic rowing terminology</li>
                                         <li>Learning the stroke sequence: catch, drive, finish, recovery</li>
+                                        <li>Practicing components of the stroke (e.g., legs only, body swing)</li>
                                         <li>Hands-on practice with coach feedback</li>
                                     </ul>
                                 </div>
@@ -198,13 +199,13 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">Equipment Orientation</button>
+                            <button class="accordion-toggle">Equipment Orientation & Handling</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Parts of the shell and oars</li>
-                                        <li>Safe boat carrying techniques</li>
-                                        <li>Demonstration of getting in and out of the boat</li>
+                                        <li>Coach demonstration: Safe boat carrying techniques</li>
+                                        <li>Coach demonstration: Getting in and out of the boat (dockside)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -229,10 +230,10 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Water Introduction</h4>
+                        <h4>Water Introduction & Safety</h4>
                         
                         <div class="accordion-section">
-                            <button class="accordion-toggle">The Flip Test</button>
+                            <button class="accordion-toggle">The Flip Test (Capsize Drill)</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <p>This supervised drill teaches you what to do if your boat capsizes:</p>
@@ -248,12 +249,14 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">First Water Experience</button>
+                            <button class="accordion-toggle">First Water Experience & Drills</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>If time permits, guided assistance into a training shell</li>
+                                        <li>Guided assistance into a training shell</li>
                                         <li>Practice basic balance and boat feel</li>
+                                        <li>Coach demonstration: Basic maneuvering (e.g., stopping, gentle turning)</li>
+                                        <li>Introduction to the "Pick Drill" (arms only, arms & body) with coach guidance</li>
                                         <li>Simple rowing technique exercises near the dock</li>
                                     </ul>
                                 </div>
@@ -267,9 +270,10 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         <span class="time">Finish</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Wrap-Up</h4>
+                        <h4>Wrap-Up & Equipment Care</h4>
                         <ul>
                             <li>Question and answer session</li>
+                            <li>Coach demonstration and practice: Proper cleaning and storage of boats and oars</li>
                             <li>Preview of Session 2 content</li>
                             <li>Homework assignments</li>
                         </ul>

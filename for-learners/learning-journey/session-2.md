@@ -68,26 +68,30 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             <div class="interactive-checklist">
                 <div class="checklist-item">
                     <input type="checkbox" id="obj1" name="checklist" value="obj1">
-                    <label for="obj1">Transfer ergometer stroke sequence to on-water rowing</label>
+                    <label for="obj1">Transfer ergometer stroke sequence to on-water rowing, focusing on the Pick Drill progression.</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj2" name="checklist" value="obj2">
-                    <label for="obj2">Establish proper recovery sequence (arms → body → slide)</label>
+                    <label for="obj2">Establish proper recovery sequence (arms → body → slide) using Pause Drills.</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj3" name="checklist" value="obj3">
-                    <label for="obj3">Develop basic boat control and balance</label>
+                    <label for="obj3">Develop basic boat control, balance, and understanding of river traffic basics.</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj4" name="checklist" value="obj4">
-                    <label for="obj4">Master safe launching and landing procedures</label>
+                    <label for="obj4">Master safe launching and landing procedures with coach demonstration and guidance.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="obj5" name="checklist" value="obj5">
+                    <label for="obj5">Learn and practice feathering and squaring the blades.</label>
                 </div>
             </div>
             
-            <p>By the end of this session, you should have experience rowing on the water and begin developing the proper recovery sequence.</p>
+            <p>By the end of this session, you should have experience rowing on the water, begin developing the proper recovery sequence, and understand basic feathering and squaring.</p>
         </div>
     </div>
 
@@ -141,7 +145,8 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <h4>Warm-up & Review</h4>
                         <ul>
                             <li>Brief Q&A about Session 1</li>
-                            <li>Ergometer warm-up to reinforce proper sequencing</li>
+                            <li>Ergometer warm-up: Review Pick Drill progression (arms, arms & body, 1/4 slide, 1/2 slide, full slide)</li>
+                            <li>Ergometer: Practice Pause Drills (pause at hands away, pause at body prep)</li>
                             <li>Focus on smooth transitions between stroke phases</li>
                             <li>Special emphasis on "arms-body-slide" recovery sequence</li>
                         </ul>
@@ -153,11 +158,12 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 2</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Equipment Preparation</h4>
+                        <h4>Equipment Preparation & Safety Briefing</h4>
                         <ul>
                             <li>Learning "oars down first" procedure</li>
                             <li>Boat sign-out process</li>
-                            <li>Safe carrying techniques to the dock</li>
+                            <li>Safe carrying techniques to the dock (coach demonstration)</li>
+                            <li>Briefing on basic river traffic rules (e.g., stay to starboard side)</li>
                         </ul>
                     </div>
                 </div>
@@ -184,13 +190,15 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <h4>On-Water Session (with break)</h4>
                         
                         <div class="accordion-section">
-                            <button class="accordion-toggle">First Skills Focus</button>
+                            <button class="accordion-toggle">First Skills Focus: Pick Drill & Pauses</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Demonstration of stroke sequencing</li>
+                                        <li>Coach demonstration: Full stroke sequence on water</li>
+                                        <li>Practice Pick Drill progression on water (arms only, arms & body, 1/4 slide, etc.)</li>
+                                        <li>Practice Pause Drills (pause at hands away, pause at body prep) on water</li>
                                         <li>Applying recovery sequencing on water</li>
-                                        <li>Basic turning practice</li>
+                                        <li>Basic turning practice (as introduced in Session 1)</li>
                                         <li>Focus on "arms away, body over, then slide"</li>
                                     </ul>
                                 </div>
@@ -198,15 +206,16 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">Second Skills Focus</button>
+                            <button class="accordion-toggle">Second Skills Focus: Feathering & Continuous Rowing</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Demonstration of pause exercises</li>
-                                        <li>Practice basic sequencing: legs-body-arms</li>
-                                        <li>Introduction to feathering and squaring</li>
-                                        <li>Focus on control and awareness</li>
+                                        <li>Coach demonstration: Feathering and squaring the blades</li>
+                                        <li>Practice feathering drill (e.g., feather on recovery, square before catch)</li>
+                                        <li>Practice basic sequencing: legs-body-arms for the drive</li>
+                                        <li>Focus on control and awareness, linking strokes</li>
                                         <li>Building comfort with the unstable boat</li>
+                                        <li>Coach feedback on common errors and corrections</li>
                                     </ul>
                                 </div>
                             </div>
@@ -231,6 +240,23 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             </div>
             
             <h3>Key Technique Exercises You'll Learn</h3>
+
+            <div class="accordion-section">
+                <button class="accordion-toggle">Pick Drill Progression</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>A sequence of drills breaking down the stroke to focus on specific components, typically performed in this order:</p>
+                        <ul>
+                            <li><strong>Arms Only:</strong> From the finish position, extend arms, then draw them back. Body and legs remain still.</li>
+                            <li><strong>Arms & Body:</strong> Add body swing. From finish, extend arms, then pivot body forward from hips, then reverse. Legs remain still.</li>
+                            <li><strong>Quarter Slide:</strong> Add a small amount of leg movement.</li>
+                            <li><strong>Half Slide:</strong> Increase leg movement.</li>
+                            <li><strong>Full Slide:</strong> Perform the complete stroke.</li>
+                        </ul>
+                        <p>This drill helps isolate and correct technique at each part of the stroke and recovery.</p>
+                    </div>
+                </div>
+            </div>
             
             <div class="accordion-section">
                 <button class="accordion-toggle">Pause Exercises (Arms Away, Body Over)</button>
@@ -242,6 +268,20 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <li><strong>Body Over Pause:</strong> Pause after the body has pivoted forward, before the knees bend</li>
                         </ul>
                         <p>These pauses enhance your body awareness and control during recovery, explicitly teaching the correct sequence and preventing common errors like early knee bend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-toggle">Feathering Drill</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>This drill helps you learn to rotate the oar blades from a vertical (squared) position to a horizontal (feathered) position and back again smoothly.</p>
+                        <ul>
+                            <li><strong>Practice on Recovery:</strong> As you extend your arms away from the body on the recovery, gently roll the oar handle with your fingers to turn the blade flat (feathered).</li>
+                            <li><strong>Square Before Catch:</strong> As you approach the catch (the point where blades enter the water), roll the handle back to make the blade vertical (squared) again.</li>
+                        </ul>
+                        <p>Smooth feathering reduces wind resistance and helps with balance. Your coach will guide you on the timing and technique.</p>
                     </div>
                 </div>
             </div>

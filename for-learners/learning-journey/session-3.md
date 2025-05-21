@@ -68,12 +68,12 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             <div class="interactive-checklist">
                 <div class="checklist-item">
                     <input type="checkbox" id="obj1" name="checklist" value="obj1">
-                    <label for="obj1">Develop effective leg drive and power application</label>
+                    <label for="obj1">Develop effective leg drive, power application, and understand ratio and rhythm</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj2" name="checklist" value="obj2">
-                    <label for="obj2">Learn steering principles and river traffic patterns</label>
+                    <label for="obj2">Learn steering principles, including varying pressure, and understand river traffic patterns</label>
                 </div>
                 
                 <div class="checklist-item">
@@ -83,11 +83,11 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj4" name="checklist" value="obj4">
-                    <label for="obj4">Build confidence through continuous rowing</label>
+                    <label for="obj4">Build confidence through continuous rowing, focusing on technique and rhythm</label>
                 </div>
             </div>
             
-            <p>By the end of this session, you should have increased confidence on the water and understand how to apply power effectively.</p>
+            <p>By the end of this session, you should have increased confidence on the water, understand how to apply power effectively, and control the boat with more precision.</p>
         </div>
     </div>
 
@@ -143,7 +143,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <li>Brief Q&A about Session 2</li>
                             <li>Reinforcement of sequencing concepts</li>
                             <li>Introduction of Day 3 focus points</li>
-                            <li>Ergometer warm-up focusing on leg drive initiation</li>
+                            <li>Ergometer warm-up focusing on leg drive initiation, body swing, full slide strokes, and an introduction to ratio and rhythm.</li>
                         </ul>
                     </div>
                 </div>
@@ -189,8 +189,8 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Demonstration of good vs. soft push</li>
-                                        <li>Practice initiating drive with legs</li>
+                                        <li>Coach Demonstration: Full slide rowing with emphasis on leg drive and proper ratio.</li>
+                                        <li>Practice initiating drive with legs (refer to "Leg Drive Progression" drill)</li>
                                         <li>Connecting legs to handle movement</li>
                                         <li>Looking over shoulder while rowing</li>
                                     </ul>
@@ -203,10 +203,13 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Continuous rowing focusing on leg drive</li>
+                                        <li>Continuous rowing focusing on leg drive, maintaining ratio and rhythm</li>
                                         <li>Practice pivot turn technique</li>
-                                        <li>Applying varying stroke pressure</li>
+                                        <li>Applying varying stroke pressure for steering</li>
                                         <li>Regular navigation practice</li>
+                                        <li>Pause Drills (e.g., pause at arms away, pause at body prep) to refine sequencing and control.</li>
+                                        <li>Steering Drills: Practicing turns using outside arm only / inside arm only.</li>
+                                        <li>(Optional) Connection Drills: Wide grip and narrow grip rowing to feel the connection.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -232,16 +235,50 @@ Welcome to your third Learn to Scull session! This guide will help you understan
             <h3>Key Technique Exercises</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Reverse Pick Drill (Water)</button>
+                <button class="accordion-toggle">Leg Drive Progression (Legs Only, Legs & Body, Full Slide)</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <p>This exercise helps isolate and emphasize leg drive as the primary power source:</p>
+                        <p>This exercise, often started on the erg and continued on water, helps isolate and emphasize leg drive as the primary power source and proper sequencing:</p>
                         <ol>
-                            <li>Legs-only strokes (maintaining forward body lean and straight arms) - 10 strokes</li>
-                            <li>Progress to legs-and-back swing - 10 strokes</li>
-                            <li>Then full strokes - 10 strokes</li>
+                            <li><strong>Legs-only strokes:</strong> Maintaining forward body lean and straight arms, focus on pushing with the legs. (10 strokes)</li>
+                            <li><strong>Legs-and-body swing strokes:</strong> Add the body swing after the leg drive is complete, keeping arms straight. (10 strokes)</li>
+                            <li><strong>Full strokes:</strong> Integrate the arm draw after the leg drive and body swing. (10 strokes)</li>
                         </ol>
-                        <p>This teaches you to connect effectively at catch and "hang" your body weight off the handles.</p>
+                        <p>This teaches you to connect effectively at the catch, use your body weight, and maintain a strong connection through the stroke.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-toggle">Pause Drills</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Pause drills help improve balance, control, and body preparation. Common pauses include:</p>
+                        <ul>
+                            <li><strong>Pause at Arms Away:</strong> After the finish, extend arms fully before swinging the body. Ensures hands get out of the bow quickly.</li>
+                            <li><strong>Pause at Body Prep:</strong> After arms away, swing the body forward to the catch position, then pause before sliding. Ensures proper body angle before the slide.</li>
+                            <li><strong>Pause at Half Slide:</strong> Pause midway up the slide to check posture and oar handle height.</li>
+                        </ul>
+                        <p>Execute several strokes with the pause, then row normally, trying to replicate the feeling of the paused position.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-toggle">Steering Techniques</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Effective steering is crucial for safety and efficiency. Key techniques include:</p>
+                        <ul>
+                            <li><strong>Varying Pressure:</strong> To turn, apply slightly more pressure on the oar opposite the direction you want to go. For example, to turn to port (left), pull harder with your starboard (right) oar.</li>
+                            <li><strong>Outside Arm Only / Inside Arm Only:</strong>
+                                <ul>
+                                    <li><em>Outside Arm Only:</em> To make a gradual turn, row lightly or trail the oar on the inside of the turn, and use only the outside arm (or normal pressure with both arms on the outside oar) for a few strokes.</li>
+                                    <li><em>Inside Arm Only:</em> Less common for turning, but can be used for very slight adjustments or to understand individual arm contribution.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Looking Over Shoulder:</strong> Regularly look over both shoulders (every 3-5 strokes) to check your course and for obstacles.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

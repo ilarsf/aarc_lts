@@ -68,26 +68,30 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             <div class="interactive-checklist">
                 <div class="checklist-item">
                     <input type="checkbox" id="obj1" name="checklist" value="obj1">
-                    <label for="obj1">Integrate all previously learned skills</label>
+                    <label for="obj1">Integrate all previously learned skills, including effective ratio and rhythm</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj2" name="checklist" value="obj2">
-                    <label for="obj2">Develop confidence in river navigation, including bridges</label>
+                    <label for="obj2">Develop confidence in river navigation, including bridge passage and docking</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj3" name="checklist" value="obj3">
-                    <label for="obj3">Achieve independent sculling capability</label>
+                    <label for="obj3">Practice backing and turning maneuvers</label>
                 </div>
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj4" name="checklist" value="obj4">
-                    <label for="obj4">Complete your rower assessment and discuss next steps</label>
+                    <label for="obj4">Achieve independent sculling capability and understand different boat types</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="obj5" name="checklist" value="obj5">
+                    <label for="obj5">Complete your rower assessment, discuss next steps, and learn about video review opportunities</label>
                 </div>
             </div>
             
-            <p>By the end of this session, you should be comfortable independently sculling and navigating on the water, and understand your next steps in your rowing journey.</p>
+            <p>By the end of this session, you should be comfortable independently sculling, navigating on the water, understand your next steps, and be aware of how video can aid your rowing journey.</p>
         </div>
     </div>
 
@@ -141,10 +145,11 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                     <div class="timeline-content">
                         <h4>Review & Session Plan</h4>
                         <ul>
-                            <li>Reinforcement of leg drive concepts</li>
-                            <li>Review of navigation rules</li>
-                            <li>Outline of Day 4 activities</li>
+                            <li>Reinforcement of leg drive and ratio/rhythm concepts</li>
+                            <li>Review of navigation rules, docking, and backing</li>
+                            <li>Outline of Day 4 activities, including skills circuit</li>
                             <li>Explanation of group division approach</li>
+                            <li>Introduction to different boat types (e.g., trainers, racers) and their characteristics.</li>
                         </ul>
                     </div>
                 </div>
@@ -195,21 +200,29 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Guided upriver row with bridge passage</li>
-                                        <li>Focus on navigation and traffic patterns</li>
+                                        <li>Focus on navigation, traffic patterns, and maintaining ratio/rhythm</li>
                                         <li>Building endurance with longer continuous rowing</li>
                                         <li>Practicing "Eyes up, check clearance" and "Hold course through arch"</li>
+                                        <li>Docking practice</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">Skills Development Group</button>
+                            <button class="accordion-toggle">Skills Development Group / Skills Circuit</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Focused skill refinement stations</li>
-                                        <li>Emphasis on "Consistent rhythm"</li>
+                                        <li>Focused skill refinement stations (Skills Circuit):
+                                            <ul>
+                                                <li>Backing drill</li>
+                                                <li>Turning (pivot turns, wide turns)</li>
+                                                <li>Docking practice</li>
+                                                <li>Continuous rowing with focus on ratio and rhythm</li>
+                                            </ul>
+                                        </li>
+                                        <li>Emphasis on "Consistent rhythm" and boat feel</li>
                                         <li>Additional practice with looking around frequently</li>
                                         <li>Technical technique exercises to improve specific areas</li>
                                     </ul>
@@ -231,9 +244,9 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                         <h4>Landing & Next Steps</h4>
                         <ul>
                             <li>Efficient dock approach and exit</li>
-                            <li>Thorough equipment cleaning</li>
-                            <li>Program completion discussion</li>
-                            <li>Post-program pathways information</li>
+                            <li>Thorough equipment cleaning and storage</li>
+                            <li>Program completion discussion and skills assessment feedback</li>
+                            <li>Post-program pathways information, including information on video review sessions</li>
                         </ul>
                     </div>
                 </div>
@@ -241,6 +254,22 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             
             <h3>Key Activities You'll Experience</h3>
             
+            <div class="accordion-section">
+                <button class="accordion-toggle">Skills Circuit</button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>A series of focused exercises to practice and demonstrate key boat handling skills:</p>
+                        <ul>
+                            <li><strong>Backing Drill:</strong> Practice rowing backwards for control and maneuvering in tight spaces.</li>
+                            <li><strong>Turning Drills:</strong> Execute pivot turns and wider, sweeping turns.</li>
+                            <li><strong>Docking Practice:</strong> Approach and depart from the dock safely and efficiently.</li>
+                            <li><strong>Ratio and Rhythm Rowing:</strong> Maintain consistent stroke rhythm and power application over a set distance.</li>
+                        </ul>
+                        <p>This circuit allows for assessment of individual skills in a controlled environment.</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="accordion-section">
                 <button class="accordion-toggle">Continuous Rowing with Navigation Focus</button>
                 <div class="accordion-content">
@@ -282,7 +311,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
             <h3>What's Next After the Program?</h3>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Program Completion</button>
+                <button class="accordion-toggle">Program Completion & Video Review</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <p>Your Learn to Scull journey doesn't end here! At the conclusion of this session, you'll receive:</p>
@@ -290,6 +319,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                             <li>Information about club membership options</li>
                             <li>Guidance on how to continue developing your sculling skills</li>
                             <li>Information about rowing programs you might enjoy</li>
+                            <li>Details on how to participate in video review sessions to get personalized feedback on your technique.</li>
                         </ul>
                     </div>
                 </div>

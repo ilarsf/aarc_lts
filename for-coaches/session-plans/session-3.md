@@ -15,10 +15,11 @@ search_exclude: true
 </div>
 
 ## Session Goals
-- Develop effective leg drive and power application
-- Introduce navigation principles and river traffic patterns
-- Master boat control through turns and varying stroke pressure
-- Build confidence through continuous rowing
+- Develop effective leg drive, power application, and understand ratio and rhythm.
+- Introduce navigation principles, river traffic patterns, and steering by varying pressure.
+- Master boat control through turns (pivot turns), varying stroke pressure, and Pause Drills.
+- Build confidence through continuous rowing, focusing on technique and rhythm.
+- Coach demonstration of full slide rowing with emphasis on leg drive and ratio.
 
 ## Required Equipment
 - Single sculls
@@ -42,13 +43,14 @@ search_exclude: true
 
 ### 1. Review and Warm-up (30 minutes)
 - **0:00-0:10** - Welcome and Session 2 review
-   - Recap key learnings from previous session
+   - Recap key learnings (Pick/Pause drills, feathering, basic traffic)
    - Address questions from homework
-   - Set expectations for today
+   - Set expectations for today (leg drive, ratio, steering)
 - **0:10-0:25** - Ergometer technique with leg drive focus
-   - Proper leg drive mechanics
-   - Connection through the footplate
-   - Sequencing with proper body angle
+   - Proper leg drive mechanics, connection through footplate.
+   - Sequencing with proper body angle.
+   - Introduction to ratio and rhythm on the erg (e.g., 1:2 drive to recovery count).
+   - Drills: Legs only, Legs & Body, Full slide with ratio focus.
 - **0:25-0:30** - Transition to boathouse floor
 
 ### 2. Navigation and River Traffic Rules (15 minutes)
@@ -70,22 +72,21 @@ search_exclude: true
 
 ### 4. On-Water Skill Development (105 minutes)
 - **1:15-1:30** - Row to practice area
-   - Focus on technique review from Session 2
-   - Gradual introduction of leg drive
-- **1:30-2:00** - Drill progression:
-   - Half-slide rowing
-   - "Front-end first" drill focusing on catch
-   - Gradual pressure builds (25%, 50%, 75%)
-   - Maintaining technique with increased power
-- **2:00-2:30** - Advanced maneuvering practice:
-   - Controlled turns
-   - Stopping and starting on command
-   - Backing drills
-   - Figure-8 pattern practice
+   - Focus on technique review from Session 2 (feathering, basic steering).
+   - Gradual introduction of leg drive. Coach Demo: Full slide rowing with emphasis on leg drive and proper ratio.
+- **1:30-2:00** - Drill progression (Leg Drive & Ratio Focus):
+   - Leg Drive Progression (Legs only, Legs & Body, Full slide) - focus on power from legs.
+   - Pause Drills (e.g., pause at arms away, pause at body prep) to refine sequencing and control, emphasizing ratio.
+   - Gradual pressure builds (25%, 50%, 75%) maintaining technique and ratio.
+- **2:00-2:30** - Advanced maneuvering and steering practice:
+   - Controlled turns: Pivot turns (one backing/one rowing).
+   - Steering Drills: Practicing turns using outside arm only / inside arm only / varying pressure.
+   - Stopping and starting on command.
+   - (Optional) Connection Drills: Wide grip and narrow grip rowing.
 - **2:30-3:00** - Continuous rowing with coaching
-   - Longer pieces with specific focus points
-   - Individual feedback on technique
-   - Practice navigating simulated traffic patterns
+   - Longer pieces with specific focus points (leg drive, ratio, steering, looking around).
+   - Individual feedback on technique.
+   - Practice navigating simulated traffic patterns, applying steering techniques.
 
 ### 5. Landing and Conclusion (30 minutes)
 - **3:00-3:15** - Return to dock and landing practice
@@ -103,11 +104,12 @@ search_exclude: true
 ## Key Coaching Points
 
 ### Technique Focus Areas
-1. **Leg Drive** - Power application through legs, not back
-2. **Catch Timing** - Clean entry at full reach
-3. **Blade Depth** - Consistent and appropriate through drive
-4. **Handle Heights** - Maintaining proper height through recovery and drive
-5. **Core Engagement** - Connected posture through the drive phase
+1. **Leg Drive** - Power application through legs, not back. Emphasize connection.
+2. **Ratio and Rhythm** - Consistent timing between drive and recovery phases.
+3. **Catch Timing & Blade Depth** - Clean entry at full reach, consistent depth.
+4. **Steering Techniques** - Varying pressure, outside/inside arm for turns, pivot turns.
+5. **Core Engagement & Posture** - Connected posture through the drive phase.
+6. **Pause Drills** - Reinforcing sequencing, control, and ratio.
 
 ### Common Issues to Address
 - Rushing the slide into the catch
@@ -118,11 +120,11 @@ search_exclude: true
 - Uneven pressure between hands
 
 ### Safety Emphasis Points
-- Adherence to traffic patterns
-- Awareness of other water users
-- Proper response to coach commands
-- Weather awareness and adaptation
-- Emergency stop procedure
+- Adherence to traffic patterns and looking around frequently.
+- Awareness of other water users.
+- Proper response to coach commands for steering and stopping.
+- Weather awareness and adaptation.
+- Emergency stop procedure.
 
 ## Assessment Considerations
 Coaches should note each participant's:
