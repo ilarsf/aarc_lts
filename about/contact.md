@@ -92,12 +92,3 @@ title: Contact Information - AARC Learn to Scull
     <li><strong>Weather Updates:</strong> Sent via email by 5:00 PM the day before a scheduled session.</li>
   </ul>
 </div>
-
----
-
-<div class="navigation-links">
-  <a href="../about/index.html" class="nav-link">About the Program</a>
-  <a href="../about/team.html" class="nav-link">Meet Our Team</a>
-  <a href="../about/faq.html" class="nav-link">Frequently Asked Questions</a>
-  <a href="../index.html" class="nav-link">Back to Home</a>
-</div>

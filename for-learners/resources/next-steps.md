@@ -6,11 +6,28 @@ description: Guidance on continuing your rowing journey after completing the AAR
 
 {% include accordion.html %}
 
+<style>
+  .content-image {
+    max-width: 500px; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Assuming var(--border-radius) is 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Assuming var(--box-shadow) */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
 <div class="container my-5">
     <div class="page-header">
         <h1>Continue Your Rowing Journey</h1>
         <p class="lead">Congratulations on completing the Learn to Scull program! Here’s how you can continue to develop your skills and enjoy rowing with AARC.</p>
     </div>
+
+    <img src="https://images.clubexpress.com/757878/graphics/clubsculling5in_549792197.jpg" alt="AARC single sculler on the water" class="content-image">
 
     <h2>Understanding Your Progress</h2>
     <p>During your Learn to Scull program, your coaches helped you develop core competencies. This provides a foundation for choosing your next steps. Remember, everyone progresses at their own pace, and the goal is to find the right pathway for your continued enjoyment and development in sculling.</p>

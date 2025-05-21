@@ -259,12 +259,3 @@ title: Frequently Asked Questions - AARC Learn to Scull
   <h4>Still Have Questions?</h4>
   <p>If your question isn't answered here, please <a href="{{ site.baseurl }}/about/contact.html">contact us</a>. We're happy to provide additional information about the Learn to Scull program.</p>
 </div>
-
----
-
-<div class="navigation-links">
-  <a href="{{ site.baseurl }}/about/index.html" class="nav-link">About the Program</a>
-  <a href="{{ site.baseurl }}/about/team.html" class="nav-link">Meet Our Team</a>
-  <a href="{{ site.baseurl }}/about/contact.html" class="nav-link">Contact Information</a>
-  <a href="{{ site.baseurl }}/index.html" class="nav-link">Back to Home</a>
-</div>

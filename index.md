@@ -43,6 +43,10 @@ title: AARC Learn to Scull Program
   </div>
 </section>
 
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="Learn to Scull program participants" class="landing-page-image">
+</div>
+
 <section class="program-section info-section">
   <div class="section-header">
     <h2>2025 Program Information</h2>
@@ -356,6 +360,16 @@ title: AARC Learn to Scull Program
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.landing-page-image {
+  max-width: 600px; /* Adjusted from 700px */
+  width: 75%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-top: 1rem;
+  margin-bottom: 2rem; /* Added to ensure spacing before next section */
 }
 
 /* Responsive Adjustments */
