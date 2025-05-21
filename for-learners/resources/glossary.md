@@ -70,17 +70,20 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Balance</h3>
         <p class="az-glossary-definition">The stability of the boat, achieved through proper technique and body positioning.</p>
         
+        <h3 class="az-glossary-term">Blade (or Spoon)</h3>
+        <p class="az-glossary-definition">The flat, wide part of the oar that enters the water.</p>
+        
         <h3 class="az-glossary-term">Bow</h3>
         <p class="az-glossary-definition">The forward end of the boat (crosses finish line first).</p>
         
         <h3 class="az-glossary-term">Bow Ball</h3>
         <p class="az-glossary-definition">Safety ball attached to the bow of the boat.</p>
         
+        <h3 class="az-glossary-term">Bow Rigger</h3>
+        <p class="az-glossary-definition">The rigger closest to the bow of the boat.</p>
+        
         <h3 class="az-glossary-term">Bowside</h3>
         <p class="az-glossary-definition">The starboard (right) side of the boat when facing forward.</p>
-        
-        <h3 class="az-glossary-term">Blade</h3>
-        <p class="az-glossary-definition">The flat, wide part of the oar that enters the water.</p>
         
         <h3 class="az-glossary-term">Button</h3>
         <p class="az-glossary-definition">The plastic fitting on the oar shaft that stops the oar from slipping through the oarlock.</p>
@@ -117,8 +120,8 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Deck</h3>
         <p class="az-glossary-definition">The covered portion at the bow and stern of the boat.</p>
         
-        <h3 class="az-glossary-term">Double</h3>
-        <p class="az-glossary-definition">A sculling boat for two people, each using two oars (2x).</p>
+        <h3 class="az-glossary-term">Double (or Double Scull, 2x)</h3>
+        <p class="az-glossary-definition">A sculling boat for two people, each using two oars.</p>
         
         <h3 class="az-glossary-term">Drive</h3>
         <p class="az-glossary-definition">The part of the stroke when the blade is in the water and power is being applied.</p>
@@ -143,8 +146,11 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Feathering</h3>
         <p class="az-glossary-definition">Rotating the blade to a horizontal position during recovery to reduce wind resistance.</p>
         
-        <h3 class="az-glossary-term">Finish</h3>
+        <h3 class="az-glossary-term">Finish (or Release)</h3>
         <p class="az-glossary-definition">The end of the drive phase when the blade comes out of the water.</p>
+        
+        <h3 class="az-glossary-term">Flip Test</h3>
+        <p class="az-glossary-definition">Practice capsize recovery (mandatory safety training).</p>
         
         <h3 class="az-glossary-term">Foot Stretcher</h3>
         <p class="az-glossary-definition">Adjustable platform where the rower places their feet.</p>
@@ -166,6 +172,12 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
     <div class="az-tab-content" id="letter-H">
         <h2 class="az-glossary-letter">H</h2>
         
+        <h3 class="az-glossary-term">Handle</h3>
+        <p class="az-glossary-definition">The part of the oar you hold.</p>
+        
+        <h3 class="az-glossary-term">"Hands On"</h3>
+        <p class="az-glossary-definition">Command to take hold of the boat, typically to carry it.</p>
+        
         <h3 class="az-glossary-term">Hanging at the Catch</h3>
         <p class="az-glossary-definition">Pausing with the blade squared just above the water before dropping it in.</p>
         
@@ -174,6 +186,15 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Heat</h3>
         <p class="az-glossary-definition">A preliminary race which determines which boats advance to semifinals or finals.</p>
+        
+        <h3 class="az-glossary-term">"Hold Water" (or "Check It Down")</h3>
+        <p class="az-glossary-definition">Command to place blades squared in water to slow/stop the boat.</p>
+        
+        <h3 class="az-glossary-term">Hudson</h3>
+        <p class="az-glossary-definition">A popular brand of rowing shells.</p>
+        
+        <h3 class="az-glossary-term">Hull</h3>
+        <p class="az-glossary-definition">The main body of the boat.</p>
     </div>
 
     <div class="az-tab-content" id="letter-I">
@@ -205,6 +226,9 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Leg Drive</h3>
         <p class="az-glossary-definition">The initial push with the legs during the drive phase.</p>
+        
+        <h3 class="az-glossary-term">"Let it Run"</h3>
+        <p class="az-glossary-definition">Command to stop rowing and allow the boat to glide.</p>
         
         <h3 class="az-glossary-term">Lightweight</h3>
         <p class="az-glossary-definition">A category of rowing for athletes who meet specific weight requirements.</p>
@@ -243,6 +267,12 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Paddle</h3>
         <p class="az-glossary-definition">Rowing with light pressure, usually for warm-up or cool-down.</p>
         
+        <h3 class="az-glossary-term">Peinert</h3>
+        <p class="az-glossary-definition">A popular brand of rowing shells.</p>
+        
+        <h3 class="az-glossary-term">PFD</h3>
+        <p class="az-glossary-definition">Personal Flotation Device.</p>
+        
         <h3 class="az-glossary-term">Pitch</h3>
         <p class="az-glossary-definition">The angle of the oarlock relative to the boat.</p>
         
@@ -263,24 +293,45 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Rating (or Stroke Rate)</h3>
         <p class="az-glossary-definition">The number of strokes taken per minute (spm).</p>
         
+        <h3 class="az-glossary-term">"Ready to Row" (or "Row")</h3>
+        <p class="az-glossary-definition">Command to begin rowing.</p>
+        
         <h3 class="az-glossary-term">Recovery</h3>
         <p class="az-glossary-definition">The phase of the stroke when the rower moves back towards the stern to prepare for the next catch.</p>
         
+        <h3 class="az-glossary-term">Rigger</h3>
+        <p class="az-glossary-definition">Metal or carbon framework extending from the boat's side to hold the oarlock. Can be a bow rigger or stern rigger, depending on its position relative to the rower.</p>
+        
         <h3 class="az-glossary-term">Rip</h3>
         <p class="az-glossary-definition">To row particularly well or with great power.</p>
+
+        <h3 class="az-glossary-term">Rushing</h3>
+        <p class="az-glossary-definition">Moving too quickly during the recovery, especially sliding towards the stern before the body is prepared.</p>
     </div>
 
     <div class="az-tab-content" id="letter-S">
         <h2 class="az-glossary-letter">S</h2>
         
+        <h3 class="az-glossary-term">Scull</h3>
+        <p class="az-glossary-definition">A type of boat where each rower uses two oars (sculls). Also refers to the act of rowing with two oars.</p>
+        
         <h3 class="az-glossary-term">Sculling</h3>
         <p class="az-glossary-definition">Rowing with two oars per person.</p>
         
+        <h3 class="az-glossary-term">Seat</h3>
+        <p class="az-glossary-definition">The sliding seat on which the rower sits. Also refers to a rower's position in the boat (e.g., bow seat, stroke seat).</p>
+        
         <h3 class="az-glossary-term">Set (or Balance)</h3>
         <p class="az-glossary-definition">Keeping the boat level side-to-side.</p>
-        
+
+        <h3 class="az-glossary-term">Shaft</h3>
+        <p class="az-glossary-definition">The long, main body of the oar, between the handle and the blade.</p>
+
         <h3 class="az-glossary-term">Shooting the Slide</h3>
         <p class="az-glossary-definition">When legs straighten before back and arms engage during the drive.</p>
+                
+        <h3 class="az-glossary-term">Single Scull (1x)</h3>
+        <p class="az-glossary-definition">A sculling boat for one person using two oars.</p>
         
         <h3 class="az-glossary-term">Skying</h3>
         <p class="az-glossary-definition">Raising the blade too high above the water just before the catch.</p>
@@ -288,20 +339,20 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         <h3 class="az-glossary-term">Squaring</h3>
         <p class="az-glossary-definition">Rotating the blade to be perpendicular to the water surface just before the catch.</p>
         
+        <h3 class="az-glossary-term">Stern</h3>
+        <p class="az-glossary-definition">The rear end of the boat.</p>
+        
+        <h3 class="az-glossary-term">Stern Rigger</h3>
+        <p class="az-glossary-definition">The rigger closest to the stern of the boat.</p>
+        
+        <h3 class="az-glossary-term">Stretcher</h3>
+        <p class="az-glossary-definition">Another term for the foot stretcher.</p>
+
         <h3 class="az-glossary-term">Stroke</h3>
         <p class="az-glossary-definition">One complete cycle of the rowing motion.</p>
         
         <h3 class="az-glossary-term">Stroke Rate</h3>
         <p class="az-glossary-definition">Number of strokes per minute.</p>
-        
-        <h3 class="az-glossary-term">Stern</h3>
-        <p class="az-glossary-definition">The rear end of the boat.</p>
-        
-        <h3 class="az-glossary-term">Stretcher</h3>
-        <p class="az-glossary-definition">Another term for the foot stretcher.</p>
-        
-        <h3 class="az-glossary-term">Tracks (or Slides)</h3>
-        <p class="az-glossary-definition">Rails on which the seat moves.</p>
     </div>
 
     <div class="az-tab-content" id="letter-T">
@@ -309,7 +360,10 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Tap Down</h3>
         <p class="az-glossary-definition">The slight downward pressure on the handles at the finish.</p>
-        
+
+        <h3 class="az-glossary-term">Tracks (or Slides)</h3>
+        <p class="az-glossary-definition">Rails on which the seat moves.</p>
+
         <h3 class="az-glossary-term">Traffic Pattern</h3>
         <p class="az-glossary-definition">The established "rules of the road" for navigating the waterway (e.g., stay starboard/right).</p>
         
@@ -339,6 +393,9 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Way Enough (or Weigh Enough)</h3>
         <p class="az-glossary-definition">The command to stop rowing.</p>
+        
+        <h3 class="az-glossary-term">WinTech</h3>
+        <p class="az-glossary-definition">A popular brand of rowing shells.</p>
     </div>
 
     <div class="az-tab-content" id="letter-Y">
