@@ -21,10 +21,10 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
         <div class="accordion-content-inner">
             <div class="info-box note">
               <h4>Weekend Intensive Format</h4>
-              <p>The AARC Learn to Scull program uses a weekend intensive format, delivering the complete curriculum over two consecutive weekends. This format is designed for efficient skill development while accommodating busy schedules.</p>
+              <p>The AARC Learn to Scull program uses a weekend intensive format, delivering the complete curriculum over two weekends. This format is designed for efficient skill development while accommodating busy schedules.</p>
             </div>
 
-            <p>The program consists of 4 sessions (3 hours each) scheduled across two consecutive weekends:</p>
+            <p>The program consists of 4 sessions (3 hours each) scheduled across two weekends:</p>
 
             <div class="two-col-grid">
               <div>
@@ -49,7 +49,6 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
               <h4>Physical Considerations</h4>
               <p>This intensive format can be physically demanding, especially for those new to rowing. Participants should be prepared for:</p>
               <ul class="mb-0">
-                <li>Multiple sessions in a single day during the first weekend</li>
                 <li>Possibility of bruising during the flip test</li>
                 <li>Cumulative fatigue across consecutive days of learning</li>
               </ul>
@@ -66,10 +65,10 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
 
             <h4>Milestone 1: Water Safety and Boat Familiarity</h4>
             <ul>
-                <li>Successfully complete the flip test</li>
                 <li>Understand basic terminology</li>
                 <li>Enter and exit the boat with assistance</li>
                 <li>Develop comfort with the rowing position</li>
+                <li>Successfully complete the flip test</li>
             </ul>
 
             <h4>Milestone 2: Basic Technique Development</h4>
@@ -93,7 +92,6 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                 <li>Launch and dock independently</li>
                 <li>Navigate the rowing course with confidence</li>
                 <li>Demonstrate proper safety awareness</li>
-                <li>Show proficient technique at various speeds</li>
                 <li>Understand and perform basic post-rowing equipment care (cleaning and storage)</li>
             </ul>
         </div>
@@ -166,7 +164,6 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                 <li>Fog that reduces visibility below 100 meters</li>
                 <li>Unsafe water conditions (excessive current, debris, or contamination)</li>
             </ul>
-            <p>We recommend keeping the following weekend partially open as a contingency for weather-related rescheduling.</p>
         </div>
     </div>
 </div>
@@ -204,7 +201,6 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                 <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety">Rowing Safety Quiz</a> - Familiarize yourself with essential safety practices</li>
                 <li><a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh">Boathouse Rules Quiz</a> - Learn about equipment care and protocols</li>
               </ul>
-              <p>These short quizzes will give you a head start on important concepts!</p>
             </div>
         </div>
     </div>
@@ -213,4 +209,4 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
 **Next Steps:**
 - [What to Bring and Wear](preparation.html)
 - [Basic Rowing Terminology](terminology.html)
-- [Session 1 Guide]({{ site.baseurl }}/for-learners/learning-journey/session-1.html)
+- [Learning Journey]({{ site.baseurl }}/for-learners/learning-journey/)
