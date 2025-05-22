@@ -67,23 +67,6 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <div class="accordion-content">
             <div class="accordion-content-inner">
                 <p>If you're looking for more structured coaching after the trial period, AARC offers various coached programs. These programs focus on continued skill development, endurance building, and often introduce more advanced techniques or specific boat types (e.g., doubles, quads).</p>
-                <p>AARC offers a variety of coached programs throughout the year for different skill levels. These are announced on the main AARC website and through member communications. They are a great way to continue structured learning and improve with a dedicated group.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-section">
-        <button class="accordion-toggle"><i class="fas fa-chalkboard-teacher"></i> Technique Clinics & Workshops</button>
-        <div class="accordion-content">
-            <div class="accordion-content-inner">
-                <p>AARC periodically hosts specialized clinics focusing on particular aspects of sculling. These are great for targeted skill improvement. Check the main AARC website for announcements.</p>
-                <p>Keep an eye on the main AARC website and newsletters for announcements about upcoming clinics. Examples might include:</p>
-                <ul>
-                    <li>Perfecting the Catch & Finish</li>
-                    <li>Steering and Navigation</li>
-                    <li>Introduction to Racing Concepts</li>
-                    <li>Boat Handling</li>
-                </ul>
             </div>
         </div>
     </div>

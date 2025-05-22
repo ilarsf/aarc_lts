@@ -56,7 +56,7 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
                 <ul>
                     <li>Demonstrated need AND one of the following:
                         <ul>
-                            <li>Current AARC member</li>
+                            <li>Current AARC member in good standing</li>
                             <li>Participant in AARC “Learn to” Classes</li>
                         </ul>
                     </li>
@@ -67,10 +67,10 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
                 </ul>
                 <p><strong>How to Apply:</strong></p>
                 <ul>
-                    <li>Please complete the 2025 Scholarship Application (link to be added here or refer to main AARC website).</li>
+                    <li>Please complete the [2025 Scholarship Application](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=153833).</li>
                     <li>AARC keeps financial information private. Applications will be reviewed by the Scholarship Committee which is comprised of the Scholarship Committee chair, the Treasurer and two Board members-at-large.</li>
                     <li>Requests for financial assistance must be made each season for which aid is needed and must be requested prior to the start of the class or program for which aid is needed. The personal contribution must also be paid prior to the start of the class or program unless special accommodation has been made with the Scholarship Committee.</li>
-                    <li>AARC reserves the right to discontinue a scholarship at any time should the rower/sculler not adhere to the club\'s safety guidelines and/or follow the club\'s policies and procedures.</li>
+                    <li>AARC reserves the right to discontinue a scholarship at any time should the rower/sculler not adhere to the club's safety guidelines and/or follow the club's policies and procedures.</li>
                 </ul>
             </div>
         </div>
@@ -85,11 +85,9 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
                 <ol>
                     <li><strong>Complete Learn to Scull (or equivalent):</strong> For new rowers, successful completion of the LTS program and certification by coaches is usually the first step. Experienced rowers transferring from other clubs may have a different pathway – please contact us.</li>
                     <li><strong>Open Sculling Program Trial (Recommended):</strong> Participate in the four-week trial to transition smoothly into club rowing.</li>
-                    <li><strong>Submit Membership Application:</strong> Fill out the official AARC membership application form (available online or from the club).</li>
-                    <li><strong>Pay Annual Dues:</strong> Submit payment for the applicable membership category.</li>
+                    <li><strong>Pay Annual Dues:</strong> Submit payment for the full membership.</li>
                     <li><strong>Sign Waivers & Agreements:</strong> Complete and sign all required waivers, including the AARC Code of Conduct and safety acknowledgments.</li>
-                    <li><strong>USRowing Membership:</strong> Ensure you have an active USRowing membership (Basic membership is often included with LTS; an upgrade might be needed for full competitive membership). AARC will guide you on this.</li>
-                    <li><strong>Boathouse Orientation:</strong> Attend a boathouse orientation session to learn about equipment storage, safety procedures, and facility rules.</li>
+                    <li><strong>USRowing Membership:</strong> Ensure you have an active USRowing membership. AARC will guide you on this.</li>
                 </ol>
             </div>
         </div>

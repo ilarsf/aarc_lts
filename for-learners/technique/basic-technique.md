@@ -176,9 +176,9 @@ Understanding proper rowing technique is essential for an efficient, effective, 
                     <div class="accordion-content-inner">
                         <ul>
                             <li><strong>Over-leaning:</strong> Leaning back too far beyond 11 o'clock position</li>
-                            <li><strong>No tap down:</strong> Failing to lift handles slightly to extract blades</li>
+                            <li><strong>No tap down:</strong> Failing to tap handles down slightly to extract blades</li>
                             <li><strong>Early feather:</strong> Rotating handles before blades are clear of water</li>
-                            <li><strong>Handle height:</strong> Drawing hands too high (to chest) or too low</li>
+                            <li><strong>Handle height:</strong> Drawing hands too high or too low</li>
                         </ul>
                     </div>
                 </div>
@@ -223,7 +223,7 @@ Understanding proper rowing technique is essential for an efficient, effective, 
                         <ul>
                             <li><strong>Early slide:</strong> Bending knees before hands clear knees</li>
                             <li><strong>Rushing:</strong> Moving too quickly to the catch position</li>
-                            <li><strong>Skying:</strong> Hands too high during recovery</li>
+                            <li><strong>Skying:</strong> Hands too low during recovery</li>
                             <li><strong>Hunched shoulders:</strong> Not pivoting properly from hips</li>
                         </ul>
                     </div>
