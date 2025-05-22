@@ -9,408 +9,158 @@ layout: null
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AARC Quiz Module</title>
+    <!-- <link rel="stylesheet" href="../assets/css/quiz-integration.css"> -->
+    <!-- Styles are now primarily in quiz-integration.css -->
+    <!-- Minimal styles for body and html to ensure iframe behavior if needed -->
     <style>
-        /* Quiz-specific styles */
         html {
-            /* ADDED */
             height: 100%;
             overflow-x: hidden;
+            /* Prevent horizontal scroll on html */
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* Basic font stack */
             line-height: 1.6;
             color: #333;
+            /* Default text color */
             margin: 0;
             padding: 0;
             background: transparent;
-            /* overflow: auto; */
-            /* MODIFIED: Replaced by specific overflow properties below */
+            /* Essential for embedding */
             min-width: 320px;
+            /* Minimum width for responsiveness */
             height: 100%;
-            /* ADDED: Make body fill html height */
             overflow-y: auto;
-            /* ADDED: Allow vertical scroll on body */
-        }
-
-        .quiz-container {
-            width: 100%;
-            max-width: 800px;
-            /* MODIFIED: Set a max-width for larger screens */
-            min-height: 100%;
-            /* Ensures it's at least as tall as body */
-            margin: 0 auto;
-            /* Centers the container when max-width is active */
-            padding: 5px;
-            /* MODIFIED: Adjusted padding for better spacing */
-            background: transparent;
-            box-sizing: border-box;
-        }
-
-        .quiz-section {
-            margin-bottom: 20px;
-        }
-
-        #quiz-title {
-            color: #0066cc;
-            margin-bottom: 10px;
-            display: none;
-            /* Hide in embed version */
-        }
-
-        #quiz-description {
-            font-size: 1.1rem;
-            color: #666;
-            display: none;
-            /* Hide in embed version */
-        }
-
-        .quiz-button {
-            background-color: #0066cc;
-            color: white;
-            border: 2px solid #004d99;
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            display: inline-block;
-        }
-
-        .quiz-button:hover {
-            background-color: #004d99;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .quiz-button.secondary {
-            background-color: #6c757d;
-            border-color: #5a6268;
-        }
-
-        .quiz-button.secondary:hover {
-            background-color: #5a6268;
-        }
-
-        .quiz-button:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-
-        #start-screen {
-            text-align: center;
-            padding: 15px;
-        }
-
-        #quiz-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        #question-container {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        #question-text {
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .answer-option {
-            display: block;
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .answer-option:hover {
-            background-color: #e9ecef;
-        }
-
-        .answer-option.selected {
-            background-color: #cce5ff;
-            border-color: #b8daff;
-        }
-
-        .answer-option.correct {
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-
-        .answer-option.incorrect {
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-
-        #feedback {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        #results-screen {
-            text-align: center;
-            padding: 20px;
-        }
-
-        #quiz-summary {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .result-heading {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #0066cc;
-        }
-
-        .button-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        #review-screen {
-            padding: 15px;
-        }
-
-        .review-question {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Progress bar */
-        #progress-container {
-            width: 100%;
-            background-color: #e9ecef;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            height: 8px;
-        }
-
-        #progress-bar {
-            height: 100%;
-            background-color: #0066cc;
-            border-radius: 4px;
-            width: 0;
-            transition: width 0.3s ease;
-        }
-
-        html {
+            /* Allow vertical scroll within the iframe body */
             scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE 10+ */
         }
 
         body::-webkit-scrollbar {
+            /* WebKit */
             display: none;
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            #quiz-info {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            #quiz-info span {
-                margin-bottom: 10px;
-            }
-
-            .button-group {
-                flex-direction: column;
-            }
-
-            /* ADDED: Adjust h3 font size on smaller screens */
-            #question-text,
-            #results-screen h3,
-            #review-screen h3 {
-                font-size: 1rem;
-                /* Or your preferred size */
-            }
-        }
+        /* The .quiz-container will get .quiz-embedded-mode class via JS,
+           and quiz-integration.css handles hiding #quiz-header and #return-button.
+           No need for specific rules here anymore. */
     </style>
 </head>
 
-<body></body>
-<div class="quiz-container">
-    <div id="start-screen" class="quiz-section">
-        <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
-        <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...
-        </p>
-        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
-    </div>
+<body>
+    {% include quiz_core_template.html %}
 
-    <div id="quiz-screen" class="quiz-section hidden">
-        <div id="progress-container">
-            <div id="progress-bar"></div>
-        </div>
-        <div id="quiz-info">
-            <span id="question-counter">Question 1/10</span>
-            <span id="timer">Time: 0:00</span>
-            <span id="score-display">Score: 0</span>
-        </div>
-        <div id="question-container">
-            <h3 id="question-text">Question text goes here</h3>
-            <div id="answers-container">
-            </div>
-        </div>
-        <div id="feedback" class="hidden">
-            <p id="feedback-text"></p>
-        </div>
-    </div>
+    <script src="../assets/js/quiz_logic.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add a class to the body or quiz-container for embed-specific styling via CSS if needed
+            document.querySelector('.quiz-container').classList.add('quiz-embedded-mode');
 
-    <div id="results-screen" class="quiz-section hidden">
-        <h3>Quiz Complete!</h3>
-        <div id="quiz-summary">
-            <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
-                    id="total-questions" class="highlight">15</span> questions correctly</p>
-            <p>Time taken: <span id="time-taken">0:00</span></p>
-            <p>Final score: <span id="final-score">0</span>%</p>
-        </div>
-        <div id="feedback-message"></div>
-        <div class="button-group">
-            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
-            <button id="review-button" class="quiz-button secondary">Review Answers</button>
-        </div>
-    </div>
+            const urlParams = new URLSearchParams(window.location.search);
+            const quizIdFromUrl = urlParams.get('quiz');
+            const csvSourceFromUrl = urlParams.get('src');
 
-    <div id="review-screen" class="quiz-section hidden">
-        <h3>Review Your Answers</h3>
-        <div id="review-container">
-            <!-- Review questions will be inserted here -->
-        </div>
-        <div style="text-align: center; margin-top: 20px;">
-            <button id="review-back-button" class="quiz-button">Back to Results</button>
-        </div>
-    </div>
-</div>
+            const domElements = {
+                // Start Screen
+                startScreen: document.getElementById('start-screen'), // ADDED
+                startButton: document.getElementById('start-button'),
+                loadingMessage: document.getElementById('loading-message'),
+                errorMessage: document.getElementById('error-message'),
+                startScreenTitle: document.getElementById('start-heading'),
+                // Quiz Screen
+                quizScreen: document.getElementById('quiz-screen'),
+                questionCounter: document.getElementById('question-counter'),
+                timerDisplay: document.getElementById('timer'),
+                scoreDisplay: document.getElementById('score-display'),
+                questionText: document.getElementById('question-text'),
+                answersContainer: document.getElementById('answers-container'),
+                feedback: document.getElementById('feedback'),
+                feedbackText: document.getElementById('feedback-text'),
+                progressBarContainer: document.getElementById('progress-container'), // From unified template
+                progressBar: document.getElementById('progress-bar'), // From unified template
+                // Results Screen
+                resultsScreen: document.getElementById('results-screen'),
+                correctCountDisplay: document.getElementById('correct-count'),
+                totalQuestionsDisplay: document.getElementById('total-questions'),
+                timeTakenDisplay: document.getElementById('time-taken'),
+                finalScoreDisplay: document.getElementById('final-score'),
+                feedbackMessageDisplay: document.getElementById('feedback-message'),
+                // Review Screen
+                reviewScreen: document.getElementById('review-screen'),
+                reviewContainer: document.getElementById('review-container'),
+                // Buttons
+                restartButton: document.getElementById('restart-button'),
+                reviewButton: document.getElementById('review-button'),
+                // Note: 'return-button' is in the template, but will be hidden by JS/CSS for embed
+                // 'review-back-button' was specific to embed, now using 'back-to-results' from template
+                returnToResultsButton: document.getElementById('back-to-results'),
+                // Elements to be hidden in embed mode
+                quizHeader: document.getElementById('quiz-header'),
+                returnToParentPageButton: document.getElementById('return-button')
+            };
 
-<script src="../assets/js/quiz_logic.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const quizIdFromUrl = urlParams.get('quiz');
-        const csvSourceFromUrl = urlParams.get('src');
-
-        const domElements = {
-            // Start Screen
-            startButton: document.getElementById('start-button'),
-            loadingMessage: document.getElementById('loading-message'),
-            errorMessage: document.getElementById('error-message'),
-            // Quiz Screen
-            quizScreen: document.getElementById('quiz-screen'),
-            questionCounter: document.getElementById('question-counter'),
-            timerDisplay: document.getElementById('timer'),
-            scoreDisplay: document.getElementById('score-display'), // Displays correctAnswersCount
-            questionText: document.getElementById('question-text'),
-            answersContainer: document.getElementById('answers-container'),
-            feedback: document.getElementById('feedback'),
-            feedbackText: document.getElementById('feedback-text'),
-            progressBar: document.getElementById('progress-bar'),
-            // Results Screen
-            resultsScreen: document.getElementById('results-screen'),
-            correctCountDisplay: document.getElementById('correct-count'),
-            totalQuestionsDisplay: document.getElementById('total-questions'),
-            timeTakenDisplay: document.getElementById('time-taken'),
-            finalScoreDisplay: document.getElementById('final-score'), // Displays percentage
-            feedbackMessageDisplay: document.getElementById('feedback-message'),
-            // Review Screen
-            reviewScreen: document.getElementById('review-screen'),
-            reviewContainer: document.getElementById('review-container'),
-            // Buttons
-            restartButton: document.getElementById('restart-button'),
-            reviewButton: document.getElementById('review-button'),
-            reviewBackButton: document.getElementById('review-back-button'),
-        };
-
-        const moduleConfig = {
-            quizId: quizIdFromUrl,
-            isEmbedded: true,
-            fetchCsvUrl: () => {
-                // Logic to determine CSV URL for embedded module
-                // It expects the 'src' parameter to be the direct filename or a path from root.
-                let fetchUrl = csvSourceFromUrl;
-                if (fetchUrl && !fetchUrl.startsWith('http') && !fetchUrl.startsWith('/')) {
-                    // Assuming CSVs are in a 'resources' directory relative to site root for embeds
-                    // Or, if the src is 'safety_questions.csv', it becomes '/resources/safety_questions.csv'
-                    // This matches the logic previously in loadAndProcessQuestions for embedded version
-                    if (!fetchUrl.includes('/')) { // Simple filename
-                        fetchUrl = '/resources/' + fetchUrl;
-                    } else if (!fetchUrl.startsWith('/')) { // Relative path like 'somefolder/file.csv'
-                        fetchUrl = '/' + fetchUrl; // Assume it's relative from root
+            const moduleConfig = {
+                quizId: quizIdFromUrl,
+                isEmbedded: true,
+                fetchCsvUrl: () => {
+                    let fetchUrl = csvSourceFromUrl;
+                    if (fetchUrl && !fetchUrl.startsWith('http') && !fetchUrl.startsWith('/')) {
+                        if (!fetchUrl.includes('/')) {
+                            fetchUrl = '/resources/' + fetchUrl;
+                        } else if (!fetchUrl.startsWith('/')) {
+                            fetchUrl = '/' + fetchUrl;
+                        }
                     }
+                    console.log("Embedded module determined fetchCsvUrl:", fetchUrl);
+                    return fetchUrl;
+                },
+                onQuizEndCallbacks: [],
+                onQuestionsLoadedCallbacks: [],
+                moduleUsesProgressBar: true,
+                moduleUsesDetailedFeedbackMessage: true,
+                moduleHandlesHighScore: false,
+                modulePostsToParent: true,
+            };
+
+            // Hide elements not for embedded version
+            if (domElements.quizHeader) {
+                domElements.quizHeader.classList.add('hidden');
+            }
+            if (domElements.returnToParentPageButton) {
+                domElements.returnToParentPageButton.classList.add('hidden');
+            }
+            // Ensure start heading is generic for embedded quizzes or set as needed
+            if (domElements.startScreenTitle) {
+                domElements.startScreenTitle.textContent = "Ready to test your knowledge?";
+            }
+
+
+            initializeQuizModule(domElements, moduleConfig);
+
+            if (csvSourceFromUrl) {
+                if (domElements.startButton) domElements.startButton.disabled = false;
+            } else {
+                console.error('No CSV source specified in URL parameters for embedded quiz.');
+                if (domElements.errorMessage) {
+                    domElements.errorMessage.textContent = 'No quiz source specified. Cannot load quiz.';
+                    domElements.errorMessage.classList.remove('hidden');
                 }
-                console.log("Embedded module determined fetchCsvUrl:", fetchUrl);
-                return fetchUrl;
-            },
-            onQuizEndCallbacks: [],
-            onQuestionsLoadedCallbacks: [
-                // Example: function() { console.log("Custom callback: Questions loaded for embed module!"); }
-            ],
-            moduleUsesProgressBar: true,
-            moduleUsesDetailedFeedbackMessage: true, // Embed version uses the detailed % messages
-            moduleHandlesHighScore: false, // No high score logic in embed
-            modulePostsToParent: true, // Embed version posts completion to parent
-        };
-
-        initializeQuizModule(domElements, moduleConfig);
-
-        // Initial action: try to load questions if source is provided
-        if (csvSourceFromUrl) {
-            // The startButton click will trigger loadAndProcessQuestions if allQuestions is empty
-            // Or, we can trigger it directly if we want loading to start immediately
-            // For now, let startButton handle it to show loading message correctly.
-            // Enable start button if CSV source is present, actual loading on click.
-            if (domElements.startButton) domElements.startButton.disabled = false;
-            if (domElements.loadingMessage && domElements.startButton.disabled) { // Show loading if start is still disabled (e.g. by default)
-                // This state is usually handled by attemptStartNewQuiz
+                if (domElements.startButton) domElements.startButton.disabled = true;
             }
-        } else {
-            console.error('No CSV source specified in URL parameters for embedded quiz.');
-            if (domElements.errorMessage) {
-                domElements.errorMessage.textContent = 'No quiz source specified. Cannot load quiz.';
-                domElements.errorMessage.classList.remove('hidden');
-            }
-            if (domElements.startButton) domElements.startButton.disabled = true;
-        }
 
-        // Specific event listener for reviewBackButton in embed module
-        if (domElements.reviewBackButton && domElements.resultsScreen && domElements.reviewScreen) {
-            domElements.reviewBackButton.addEventListener('click', function () {
-                domElements.reviewScreen.classList.add('hidden');
-                domElements.resultsScreen.classList.remove('hidden');
-            });
-        }
-    });
-</script>
+            // Event listener for 'back-to-results' button (formerly reviewBackButton)
+            if (domElements.returnToResultsButton && domElements.resultsScreen && domElements.reviewScreen) {
+                domElements.returnToResultsButton.addEventListener('click', function () {
+                    domElements.reviewScreen.classList.add('hidden');
+                    domElements.resultsScreen.classList.remove('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

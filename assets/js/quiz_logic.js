@@ -17,6 +17,7 @@ let numberOfQuestionsToSelect = DEFAULT_QUESTIONS_TO_SELECT;
 // --- DOM Element References (to be populated by each module via init) ---
 let dom = {
     // Start Screen
+    startScreen: null, // ADDED: Reference to the start screen container
     startButton: null,
     loadingMessage: null,
     errorMessage: null,
@@ -29,7 +30,9 @@ let dom = {
     answersContainer: null,
     feedback: null,
     feedbackText: null,
+    progressBarContainer: null, // Added: Reference to the progress bar's container
     progressBar: null,        // Embed only
+    changeQuizButton: null, // RE-ADD: Button to go back to quiz selection
     // Results Screen
     resultsScreen: null,
     correctCountDisplay: null, // Element to show number of correct answers
@@ -43,8 +46,8 @@ let dom = {
     // Buttons (common)
     restartButton: null,
     reviewButton: null,
-    // Module-specific buttons (optional, to be wired by module's init)
-    reviewBackButton: null,    // Embed
+    // Module-specific buttons (optional, to be wired by module\'s init)
+    // reviewBackButton: null,    // Embed // REMOVED - consolidated to returnToResultsButton
     returnToResultsButton: null, // Main (back from review to results)
     returnToParentPageButton: null, // Main (back to referring page)
     // Main module specific UI for quiz selection
@@ -180,6 +183,30 @@ function resetAndStartNewQuiz() {
     if (dom.quizScreen) dom.quizScreen.classList.remove('hidden');
     if (dom.errorMessage) dom.errorMessage.classList.add('hidden');
 
+    // Show/hide progress bar container based on config
+    if (dom.progressBarContainer) {
+        if (config.moduleUsesProgressBar) {
+            dom.progressBarContainer.classList.remove('hidden');
+        } else {
+            dom.progressBarContainer.classList.add('hidden');
+        }
+    }
+
+    // Show "Change Quiz" button only on main page, not embedded, and only if quiz has started
+    if (dom.changeQuizButton) {
+        if (!config.isEmbedded) {
+            dom.changeQuizButton.classList.remove('hidden');
+        } else {
+            dom.changeQuizButton.classList.add('hidden');
+        }
+    }
+
+    // Ensure the main "Return to Page" button is visible on quiz screen for non-embedded version
+    if (dom.returnToParentPageButton && !config.isEmbedded) {
+        dom.returnToParentPageButton.classList.remove('hidden');
+    } else if (dom.returnToParentPageButton) {
+        dom.returnToParentPageButton.classList.add('hidden');
+    }
 
     startSharedTimer();
     displayCurrentQuestion();
@@ -196,6 +223,10 @@ function displayCurrentQuestion() {
     // Update progress
     if (dom.questionCounter) {
         dom.questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuestions.length}`;
+    }
+    // Ensure progressBarContainer is visible if moduleUsesProgressBar is true
+    if (config.moduleUsesProgressBar && dom.progressBarContainer && dom.progressBarContainer.classList.contains('hidden')) {
+        dom.progressBarContainer.classList.remove('hidden');
     }
     if (config.moduleUsesProgressBar && dom.progressBar) {
         dom.progressBar.style.width = `${((currentQuestionIndex + 1) / currentQuestions.length) * 100}%`;
@@ -215,8 +246,8 @@ function displayCurrentQuestion() {
         let shuffledAnswerObjects = shuffleArray(answerObjects);
 
         shuffledAnswerObjects.forEach((answerObj) => {
-            const answerElement = document.createElement('div');
-            answerElement.className = 'answer-option'; // Ensure this class matches CSS
+            const answerElement = document.createElement('button'); // Changed from div to button
+            answerElement.className = 'answer-button'; // Use .answer-button for styling from quiz-integration.css
             answerElement.textContent = answerObj.text;
             answerElement.dataset.originalIndex = answerObj.originalIndex;
             answerElement.addEventListener('click', handleAnswerSelection);
@@ -228,13 +259,19 @@ function displayCurrentQuestion() {
 }
 
 function handleAnswerSelection(event) {
-    if (dom.answersContainer.querySelector('.answer-option.selected')) {
+    if (dom.answersContainer.querySelector('.answer-button.selected')) {
         return; // Prevent selecting multiple answers or re-selecting
     }
 
     const selectedAnswerElement = event.target;
     const selectedOriginalIndex = parseInt(selectedAnswerElement.dataset.originalIndex);
     const question = currentQuestions[currentQuestionIndex];
+
+    // Clear existing selections/highlights from other buttons if any (though logic should prevent re-click)
+    // dom.answersContainer.querySelectorAll(\'.answer-button.selected\').forEach(btn => btn.classList.remove(\'selected\'));
+    // dom.answersContainer.querySelectorAll(\'.answer-button.correct\').forEach(btn => btn.classList.remove(\'correct\'));
+    // dom.answersContainer.querySelectorAll(\'.answer-button.incorrect\').forEach(btn => btn.classList.remove(\'incorrect\'));
+
 
     selectedAnswerElement.classList.add('selected');
     userAnswers[currentQuestionIndex] = selectedOriginalIndex;
@@ -247,7 +284,7 @@ function handleAnswerSelection(event) {
         if (dom.scoreDisplay) dom.scoreDisplay.textContent = `Score: ${correctAnswersCount}`;
     } else {
         selectedAnswerElement.classList.add('incorrect');
-        const correctAnswerElement = dom.answersContainer.querySelector(`.answer-option[data-original-index="${question.correctIndex}"]`);
+        const correctAnswerElement = dom.answersContainer.querySelector(`.answer-button[data-original-index="${question.correctIndex}"]`);
         if (correctAnswerElement) correctAnswerElement.classList.add('correct');
     }
 
@@ -257,7 +294,7 @@ function handleAnswerSelection(event) {
     }
 
     // Disable all answer options after selection
-    const answerOptions = dom.answersContainer.querySelectorAll('.answer-option');
+    const answerOptions = dom.answersContainer.querySelectorAll('.answer-button');
     answerOptions.forEach(option => {
         option.removeEventListener('click', handleAnswerSelection);
         option.style.cursor = 'default';
@@ -282,6 +319,18 @@ function endCurrentQuiz() {
 
     if (dom.quizScreen) dom.quizScreen.classList.add('hidden');
     if (dom.resultsScreen) dom.resultsScreen.classList.remove('hidden');
+
+    // Hide "Change Quiz" button on results screen
+    if (dom.changeQuizButton && !config.isEmbedded) {
+        dom.changeQuizButton.classList.add('hidden');
+    }
+
+    // Ensure the main "Return to Page" button is visible on results screen for non-embedded version
+    if (dom.returnToParentPageButton && !config.isEmbedded) {
+        dom.returnToParentPageButton.classList.remove('hidden');
+    } else if (dom.returnToParentPageButton) {
+        dom.returnToParentPageButton.classList.add('hidden');
+    }
 
     const percentage = currentQuestions.length > 0 ? Math.round((correctAnswersCount / currentQuestions.length) * 100) : 0;
 
@@ -340,6 +389,19 @@ function endCurrentQuiz() {
 function showReviewScreen() {
     if (dom.resultsScreen) dom.resultsScreen.classList.add('hidden');
     if (dom.reviewScreen) dom.reviewScreen.classList.remove('hidden');
+
+    // Hide "Change Quiz" button on review screen
+    if (dom.changeQuizButton && !config.isEmbedded) {
+        dom.changeQuizButton.classList.add('hidden');
+    }
+
+    // Ensure the main "Return to Page" button is visible on review screen for non-embedded version
+    if (dom.returnToParentPageButton && !config.isEmbedded) {
+        dom.returnToParentPageButton.classList.remove('hidden');
+    } else if (dom.returnToParentPageButton) {
+        dom.returnToParentPageButton.classList.add('hidden');
+    }
+
     populateReviewContent();
 }
 
@@ -349,40 +411,45 @@ function populateReviewContent() {
 
     currentQuestions.forEach((question, index) => {
         const userAnswerOriginalIndex = userAnswers[index];
-        const isCorrect = userAnswerOriginalIndex === question.correctIndex;
+        // const isCorrect = userAnswerOriginalIndex === question.correctIndex; // Already calculated and stored effectively
 
-        const questionElement = document.createElement('div');
-        // Base class for styling each question block in review
-        questionElement.className = 'review-question-item';
+        const questionDiv = document.createElement('div');
+        questionDiv.className = 'review-question'; // Matches CSS
 
-        let userAnswerText = 'No answer';
-        let userAnswerClasses = 'user-answer-text';
-        if (userAnswerOriginalIndex !== null && userAnswerOriginalIndex >= 0 && userAnswerOriginalIndex < question.answers.length) {
-            userAnswerText = question.answers[userAnswerOriginalIndex];
+        const questionTitle = document.createElement('p');
+        questionTitle.className = 'question-title'; // Matches CSS
+        questionTitle.innerHTML = `<strong>Question ${index + 1}:</strong> ${question.text}`;
+        questionDiv.appendChild(questionTitle);
+
+        const answersList = document.createElement('ul');
+        answersList.className = 'review-answers'; // Matches CSS
+
+        question.answers.forEach((answerText, answerIndex) => {
+            const answerItem = document.createElement('li');
+            answerItem.className = 'answer-option'; // Matches CSS
+            answerItem.textContent = answerText;
+
+            if (answerIndex === question.correctIndex) {
+                answerItem.classList.add('correct-answer'); // Matches CSS for highlighting the correct answer
+            }
+            if (answerIndex === userAnswerOriginalIndex) {
+                answerItem.classList.add('user-selected'); // Matches CSS for user's selection
+                if (userAnswerOriginalIndex !== question.correctIndex) {
+                    answerItem.classList.add('incorrect-selection'); // Matches CSS if user selected this and it was wrong
+                }
+            }
+            answersList.appendChild(answerItem);
+        });
+        questionDiv.appendChild(answersList);
+
+        if (question.explanation) {
+            const explanationP = document.createElement('p');
+            explanationP.className = 'review-explanation'; // A general class for explanation text
+            explanationP.innerHTML = `<strong>Explanation:</strong> ${question.explanation}`;
+            questionDiv.appendChild(explanationP);
         }
 
-        if (isCorrect) {
-            userAnswerClasses += ' user-answer-correct';
-        } else {
-            userAnswerClasses += ' user-answer-incorrect';
-        }
-
-        let correctAnswerText = 'N/A'; // Should not happen if data is valid
-        if (question.correctIndex >= 0 && question.correctIndex < question.answers.length) {
-            correctAnswerText = question.answers[question.correctIndex];
-        }
-
-        // The overall question block can also be styled based on correctness for a background highlight
-        questionElement.classList.add(isCorrect ? 'review-item-correct' : 'review-item-incorrect');
-
-        questionElement.innerHTML = `
-            <h3>Question ${index + 1}</h3>
-            <p class="review-question-text">${question.text}</p>
-            <p class="${userAnswerClasses}"><strong>Your answer:</strong> ${userAnswerText}</p>
-            <p class="correct-answer-text"><strong>Correct answer:</strong> ${correctAnswerText}</p>
-            ${!isCorrect && question.explanation ? `<p class="review-explanation"><strong>Explanation:</strong> ${question.explanation}</p>` : (question.explanation ? `<p class="review-explanation"><strong>Explanation:</strong> ${question.explanation}</p>` : '')}
-        `;
-        dom.reviewContainer.appendChild(questionElement);
+        dom.reviewContainer.appendChild(questionDiv);
     });
 }
 
@@ -405,6 +472,15 @@ function initializeQuizModule(moduleDomElements, moduleConfig) {
     }
     if (dom.reviewButton) {
         dom.reviewButton.addEventListener('click', showReviewScreen);
+    }
+
+    // RE-ADD: Event listener for the "Change Quiz" button
+    if (dom.changeQuizButton) {
+        dom.changeQuizButton.addEventListener('click', () => {
+            // Navigate to the main quiz selection page
+            // Assumes siteBaseUrl is available or can be constructed if needed.
+            window.location.href = (config.siteBaseUrl || '') + '/for-learners/resources/quizzes.html';
+        });
     }
 
     // Module-specific initial UI setup (e.g., populating dropdown, handling URL params)

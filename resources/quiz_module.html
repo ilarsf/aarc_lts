@@ -3,60 +3,7 @@ layout: default
 title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 ---
 
-<div class="quiz-container">
-    <div id="quiz-header">
-        <h1 id="quiz-title">Learn-to-Scull Quiz</h1>
-        <p id="quiz-description">Select a session and test your knowledge!</p>
-    </div>
-
-    <div id="start-screen" class="quiz-section">
-        <h2 id="start-heading">Ready to test your knowledge?</h2>
-        <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
-        <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
-        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
-    </div>
-
-    <div id="quiz-screen" class="quiz-section hidden">
-        <div id="quiz-info">
-            <span id="question-counter">Question 1/10</span>
-            <span id="timer">Time: 0:00</span>
-            <span id="score-display">Score: 0</span>
-        </div>
-        <div id="question-container">
-            <h2 id="question-text">Question text goes here</h2>
-            <div id="answers-container">
-            </div>
-        </div>
-        <div id="feedback" class="hidden">
-            <p id="feedback-text"></p>
-        </div>
-    </div>
-
-    <div id="results-screen" class="quiz-section hidden">
-        <h2>Quiz Complete!</h2>
-        <div id="quiz-summary">
-            <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
-                    id="total-questions" class="highlight">15</span> questions correctly</p>
-            <p>Time taken: <span id="time-taken">0:00</span></p>
-            <p>Final score: <span id="final-score">0</span>%</p>
-        </div>
-        <div id="feedback-message"></div>
-        <div class="button-group">
-            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
-            <button id="review-button" class="quiz-button secondary">Review Answers</button>
-            <button id="return-button" class="quiz-button">Return to Page</button>
-        </div>
-    </div>
-
-    <div id="review-screen" class="quiz-section hidden">
-        <h2>Review Your Answers</h2>
-        <div id="review-container">
-        </div>
-        <button id="back-to-results" class="quiz-button">Back to Results</button>
-    </div>
-
-
-</div>
+{% include quiz_core_template.html %}
 
 <script src="../assets/js/quiz_logic.js"></script>
 <script>
@@ -78,6 +25,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
         const domElements = {
             // Start Screen
+            startScreen: document.getElementById('start-screen'), // ADDED
             startButton: document.getElementById('start-button'),
             loadingMessage: document.getElementById('loading-message'),
             errorMessage: document.getElementById('error-message'),
@@ -91,6 +39,8 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             answersContainer: document.getElementById('answers-container'),
             feedback: document.getElementById('feedback'),
             feedbackText: document.getElementById('feedback-text'),
+            progressBarContainer: document.getElementById('progress-container'), // Added for unified template
+            progressBar: document.getElementById('progress-bar'), // Added for unified template
             // Results Screen
             resultsScreen: document.getElementById('results-screen'),
             correctCountDisplay: document.getElementById('correct-count'),
@@ -104,11 +54,13 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             // Buttons
             restartButton: document.getElementById('restart-button'),
             reviewButton: document.getElementById('review-button'),
-            returnToResultsButton: document.getElementById('back-to-results'), // Main page specific
-            returnToParentPageButton: document.getElementById('return-button'), // Main page specific
+            returnToResultsButton: document.getElementById('back-to-results'),
+            returnToParentPageButton: document.getElementById('return-button'),
             // Main module specific UI for quiz selection/display
+            quizHeader: document.getElementById('quiz-header'), // Added for unified template
             quizTitleElement: document.getElementById('quiz-title'),
             quizDescriptionElement: document.getElementById('quiz-description'),
+            changeQuizButton: document.getElementById('change-quiz-button') // RE-ADD
         };
 
         let currentQuizConfig = null;
@@ -116,15 +68,11 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         const moduleConfig = {
             quizId: null, // Will be set from currentQuizConfig
             isEmbedded: false,
-            fetchCsvUrl: () => { // UPDATED: fetchCsvUrl logic to correctly use site.baseurl
+            siteBaseUrl: siteBaseUrl, // ADDED: Pass siteBaseUrl to quiz_logic.js
+            fetchCsvUrl: () => {
                 if (currentQuizConfig && currentQuizConfig.questionsUrl) {
                     const questionsFileName = currentQuizConfig.questionsUrl;
-                    // Construct path: siteBaseUrl + /resources/ + filename
-                    // siteBaseUrl is "" (for root deployment) or "/repository-name" (for GitHub Pages)
-                    // questionsFileName is like "safety_questions.csv"
-                    // This results in a correctly formed path like "/resources/file.csv" or "/repository-name/resources/file.csv"
                     let url = `${siteBaseUrl}/resources/${questionsFileName}`;
-
                     console.log("Main module determined fetchCsvUrl (corrected):", url);
                     return url;
                 }
@@ -133,7 +81,6 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             onQuizEndCallbacks: [
                 function (correctCount, totalCount, percentage) {
                     console.log("Main Quiz Ended:", { correctCount, totalCount, percentage });
-                    // Potentially save high score or other main page specific actions
                     saveQuizStatusToLocalStorage(percentage);
                 }
             ],
@@ -143,10 +90,10 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                     if (domElements.startButton) domElements.startButton.disabled = false;
                 }
             ],
-            moduleUsesProgressBar: false, // Main page does not use a progress bar element
-            moduleUsesDetailedFeedbackMessage: true, // Main page uses detailed feedback
-            moduleHandlesHighScore: true, // Main page might have high score logic (handled by saveQuizStatusToLocalStorage)
-            modulePostsToParent: false, // Main page doesn't post to parent, it is the parent.
+            moduleUsesProgressBar: false,
+            moduleUsesDetailedFeedbackMessage: true,
+            moduleHandlesHighScore: true,
+            modulePostsToParent: false,
         };
 
         function initializeMainQuizPage() {
@@ -155,9 +102,8 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
             if (quizParam && quizConfigurations[quizParam]) {
                 currentQuizConfig = quizConfigurations[quizParam];
-                moduleConfig.quizId = currentQuizConfig.quizId; // Set quizId in shared config
+                moduleConfig.quizId = currentQuizConfig.quizId;
 
-                // Update UI Text Dynamically
                 if (document.title && currentQuizConfig.title) document.title = currentQuizConfig.title;
                 if (domElements.quizTitleElement) domElements.quizTitleElement.textContent = currentQuizConfig.title;
                 if (domElements.quizDescriptionElement) domElements.quizDescriptionElement.textContent = currentQuizConfig.description;
@@ -168,9 +114,21 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 else if (!isNaN(parseInt(quizParam))) startHeadingText = `Ready to test your Session ${quizParam} knowledge?`;
                 if (domElements.startScreenTitle) domElements.startScreenTitle.textContent = startHeadingText;
 
+                // Show elements specific to standalone page
+                if (domElements.quizHeader) domElements.quizHeader.classList.remove('hidden');
+                // if (domElements.returnToParentPageButton) domElements.returnToParentPageButton.classList.remove('hidden'); // Logic moved to quiz_logic.js
+                // Ensure main return button is visible on initial load of start screen for standalone page
+                if (domElements.returnToParentPageButton) {
+                    domElements.returnToParentPageButton.classList.remove('hidden');
+                }
+
+                // Hide change quiz button initially on main page, quiz_logic will show it when quiz starts
+                if (domElements.changeQuizButton) {
+                    // domElements.changeQuizButton.classList.add('hidden'); // Let quiz_logic handle this
+                }
+
                 initializeQuizModule(domElements, moduleConfig);
 
-                // Enable start button, loading is handled by attemptStartNewQuiz
                 if (domElements.startButton) domElements.startButton.disabled = false;
                 if (domElements.errorMessage) domElements.errorMessage.classList.add('hidden');
 
@@ -199,12 +157,18 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             });
         }
 
+        // Ensure the "Return to Page" button is always visible on the main quiz page (not embedded)
+        // This is a more general rule now that the button is in global-actions.
+        if (domElements.returnToParentPageButton && !moduleConfig.isEmbedded) {
+            domElements.returnToParentPageButton.classList.remove('hidden');
+        }
+
         function saveQuizStatusToLocalStorage(score) {
             if (!moduleConfig.quizId) return;
             try {
                 const status = {
                     started: true,
-                    completed: score >= 60, // Consider completed if score is 60%+
+                    completed: score >= 60,
                     lastScore: score,
                     lastAttempt: new Date().toISOString()
                 };

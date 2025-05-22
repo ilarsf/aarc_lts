@@ -1,0 +1,65 @@
+<div class="quiz-container">
+    <div id="quiz-header">
+        <h1 id="quiz-title">Learn-to-Scull Quiz</h1>
+        <p id="quiz-description">Select a session and test your knowledge!</p>
+    </div>
+
+    <div id="start-screen" class="quiz-section">
+        <h2 id="start-heading">Ready to test your knowledge?</h2>
+        <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
+        <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
+        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
+    </div>
+
+    <div id="quiz-screen" class="quiz-section hidden">
+        <!-- Progress bar for embedded version can be conditionally included here if needed -->
+        <!-- For example: {% if include.is_embedded %} ... progress bar html ... {% endif %} -->
+        <div id="progress-container" class="hidden"> <!-- Initially hidden, JS will show if moduleUsesProgressBar -->
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz-info">
+            <span id="question-counter">Question 1/10</span>
+            <span id="timer">Time: 0:00</span>
+            <span id="score-display">Score: 0</span>
+        </div>
+        <div id="question-container">
+            <h2 id="question-text">Question text goes here</h2>
+            <div id="answers-container">
+            </div>
+        </div>
+        <div id="feedback" class="hidden">
+            <p id="feedback-text"></p>
+        </div>
+        <div id="quiz-screen-actions" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <button id="change-quiz-button" class="quiz-button secondary hidden">Change Quiz</button>
+        </div>
+    </div>
+
+    <div id="results-screen" class="quiz-section hidden">
+        <h2>Quiz Complete!</h2>
+        <div id="quiz-summary">
+            <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
+                    id="total-questions" class="highlight">15</span> questions correctly</p>
+            <p>Time taken: <span id="time-taken">0:00</span></p>
+            <p>Final score: <span id="final-score">0</span>%</p>
+        </div>
+        <div id="feedback-message"></div>
+        <div class="button-group">
+            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
+            <button id="review-button" class="quiz-button secondary">Review Answers</button>
+        </div>
+    </div>
+
+    <div id="review-screen" class="quiz-section hidden">
+        <h2>Review Your Answers</h2>
+        <div id="review-container">
+        </div>
+        <!-- Button text/ID might differ or be controlled by JS based on context -->
+        <button id="back-to-results" class="quiz-button">Back to Results</button>
+    </div>
+
+    <!-- Moved Return to Page button here for standalone page general visibility -->
+    <div id="global-actions" style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+        <button id="return-button" class="quiz-button hidden">Return to Page</button>
+    </div>
+</div> <!-- End of quiz-container -->

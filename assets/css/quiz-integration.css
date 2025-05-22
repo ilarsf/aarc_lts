@@ -61,7 +61,7 @@
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Quiz Progress Tracker */
@@ -114,88 +114,488 @@
     color: #6c757d;
 }
 
-/* Section End Review */
-.section-review {
-    background-color: #e8f4ff;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 25px 0;
-    border-left: 4px solid #17a2b8;
+/* FROM quiz_module_embed.html inline styles - General page structure and default element styling */
+/* It's often better for the main site CSS to control global body styles.
+   This is provided as a default if quiz modules are used in a very standalone way. */
+/* body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+.quiz-container {
+    width: 100%;
+    max-width: 800px;
+    /* Max width for the quiz content area */
+    margin: 0 auto;
+    /* Centering the quiz container */
+    padding: 20px;
+    /* Default padding, can be overridden for embed */
+    box-sizing: border-box;
 }
 
-.section-review h4 {
-    color: #17a2b8;
-    margin-top: 0;
+.quiz-section {
+    /* e.g., start-screen, quiz-screen, results-screen */
+    margin-bottom: 20px;
 }
 
-.mini-link {
-    font-size: 14px;
-    text-decoration: none;
-    color: #0077cc;
+/* General Quiz Buttons (used by template) */
+.quiz-button {
+    background-color: #0066cc;
+    color: white;
+    border: 2px solid #004d99;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    margin-top: 8px;
+    text-decoration: none;
+    /* Ensure links styled as buttons look right */
+    text-align: center;
 }
 
-.mini-link:hover {
-    text-decoration: underline;
+.quiz-button:hover,
+.quiz-button:focus {
+    background-color: #004d99;
+    /* transform: translateY(-2px); */
+    /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    /* Ensure text color remains on hover */
+    outline: none;
 }
 
-/* Quiz Dashboard */
-.quiz-dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+.quiz-button.secondary {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+
+.quiz-button.secondary:hover,
+.quiz-button.secondary:focus {
+    background-color: #5a6268;
+}
+
+.quiz-button:disabled {
+    background-color: #cccccc;
+    border-color: #b0b0b0;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Screen specific stylings */
+#start-screen {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#quiz-info {
+    /* Container for question counter, timer, score */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    /* Light background for this info bar */
+    border-radius: 4px;
+}
+
+#question-container {
+    background-color: #f8f9fa;
+    /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings within quiz sections */
+#start-screen h2,
+#results-screen h2,
+#review-screen h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0056b3;
+    /* Darker blue for headings */
+    margin-top: 0;
+    /* Remove default top margin for h2 */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#question-text {
+    /* This is an h2 in the template, styled as #quiz-screen h2 essentially */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    /* Questions usually left-aligned */
+    color: #333;
+    /* Standard text color for question */
+}
+
+
+#feedback {
+    /* Feedback after answering a question */
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    /* Space from answers */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#feedback p {
+    margin: 0;
+}
+
+#results-screen {
+    text-align: center;
+    padding-top: 20px;
+    /* Ensure padding consistent with start-screen */
+    padding-bottom: 20px;
+}
+
+#quiz-summary {
+    /* Container for score, time, etc. on results screen */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#quiz-summary p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#quiz-summary p:last-child {
+    margin-bottom: 0;
+}
+
+#quiz-summary .highlight {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.result-heading {
+    /* For "Your Score:", "Time Taken:" labels */
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #555;
+    display: inline-block;
+    /* Keep label and value on same line if possible */
+    margin-right: 5px;
+}
+
+.button-group {
+    /* For buttons on results/review screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
-.quiz-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+#review-screen {
+    padding-top: 15px;
+    /* Consistent padding */
+    padding-bottom: 15px;
 }
 
-.quiz-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.quiz-card-header {
-    background-color: #0077cc;
-    color: white;
-    padding: 12px 15px;
-}
-
-.quiz-card-header h4 {
-    margin: 0;
-    font-size: 18px;
-    color: white !important;
-    /* Added !important to ensure this color overrides any other styles */
-}
-
-.quiz-card-body {
+.review-question {
+    /* Container for each question in review mode */
+    background-color: #f8f9fa;
     padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.quiz-card-body p {
+.review-question p.question-title {
+    /* Question text in review */
+    font-weight: bold;
     margin-top: 0;
-    font-size: 14px;
-    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
-.quiz-link {
-    display: inline-block;
-    background-color: #0077cc;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
+.review-question ul.review-answers {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.review-question li.answer-option {
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    margin-top: 10px;
-    font-size: 14px;
-    transition: background-color 0.2s ease;
+    margin-bottom: 8px;
+    background-color: #fff;
 }
 
-.quiz-link:hover {
-    background-color: #005fa3;
+.review-question li.answer-option:last-child {
+    margin-bottom: 0;
+}
+
+/* Review answer states */
+.review-question li.user-selected {
+    /* The user's actual choice */
+    border-left: 5px solid #0077cc;
+    /* Blue left border for user's selection */
+    padding-left: 10px;
+    /* Adjust padding to account for border */
+}
+
+.review-question li.correct-answer {
+    /* The correct answer */
+    background-color: #d4edda !important;
+    /* Light green for correct answer indication */
+    color: #155724 !important;
+    border-color: #c3e6cb !important;
+}
+
+.review-question li.incorrect-selection.user-selected {
+    /* User selected an incorrect answer */
+    background-color: #f8d7da !important;
+    /* Light red for incorrect selection */
+    color: #721c24 !important;
+    border-color: #f5c6cb !important;
+    /* text-decoration: line-through; /* Optional: strike through incorrect choice */
+}
+
+
+/* Progress Bar (used by template, JS controls visibility) */
+#progress-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 12px;
+    /* Slightly thicker */
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #0066cc;
+    border-radius: 4px;
+    /* Match container */
+    width: 0;
+    /* Initial state */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Embedded Mode Specific Styles */
+/* Applied when .quiz-container has .quiz-embedded-mode class */
+.quiz-container.quiz-embedded-mode {
+    background: transparent !important;
+    /* Ensure quiz background is see-through */
+    padding: 5px;
+    /* Minimal padding for embedded version */
+    /* min-height: 100%; /* Let iframe body height dictate this */
+    /* The following are if the container itself should scroll,
+       but quiz_module_embed.html body is set to scroll.
+       If issues arise, these can be enabled.
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; */
+}
+
+/* .quiz-container.quiz-embedded-mode::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide quiz header and main return button in embedded mode */
+.quiz-container.quiz-embedded-mode #quiz-header,
+.quiz-container.quiz-embedded-mode #return-button {
+    display: none !important;
+}
+
+
+/* Styles for Quiz Answer Buttons */
+/* NEW: Add flex display to the container for better layout options on desktop */
+#answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    gap: 10px;
+    /* Space between buttons */
+    align-items: stretch;
+    /* Make buttons in the same row same height if they wrap */
+}
+
+#answers-container .answer-button {
+    /* Assuming answers are buttons or divs with class .answer-button */
+    display: block;
+    /* width: 100%; MODIFIED: Flex properties will manage width on desktop */
+    padding: 12px 15px;
+    /* margin: 8px 0; MODIFIED: Replaced by gap on parent or specific mobile margin */
+    margin: 0;
+    /* Let gap handle spacing between items */
+    background-color: #f0f0f0;
+    /* Light background for contrast */
+    border: 1px solid #ccc;
+    /* Clear border */
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+
+    /* NEW: Flex properties for desktop layout (e.g., two columns) */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 5px);
+    /* Two columns, accounting for 10px gap */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+#answers-container .answer-button:hover,
+#answers-container .answer-button:focus {
+    background-color: #e0e0e0;
+    /* Darker on hover/focus */
+    border-color: #0077cc;
+    /* Highlight border on hover/focus */
+    outline: none;
+    /* Remove default focus outline if custom is applied */
+}
+
+#answers-container .answer-button.selected {
+    background-color: #0077cc;
+    /* Style for selected answer */
+    color: white;
+    border-color: #005fa3;
+}
+
+#answers-container .answer-button.correct {
+    background-color: #28a745;
+    /* Green for correct */
+    color: white;
+    border-color: #1e7e34;
+}
+
+#answers-container .answer-button.incorrect {
+    background-color: #dc3545;
+    /* Red for incorrect */
+    color: white;
+    border-color: #b02a37;
+}
+
+
+/* Ensure buttons in the quiz take full width on smaller screens */
+@media (max-width: 768px) {
+
+    /* NEW: Adjustments for #answers-container on mobile */
+    #answers-container {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 0;
+        /* Remove gap, use margins on buttons instead for mobile */
+    }
+
+    .quiz-button,
+    #answers-container .answer-button {
+        /* Apply to general quiz buttons and answer buttons */
+        width: 100%;
+        box-sizing: border-box;
+        /* Ensure padding and border don't add to width */
+        /* margin-left: 0; Already covered by width 100% and box-sizing */
+        /* margin-right: 0; */
+        margin: 8px 0;
+        /* Restore vertical margin for mobile stacked layout */
+        flex-basis: auto;
+        /* Reset flex-basis for mobile, let width 100% rule */
+    }
+
+    .quiz-container {
+        padding: 10px;
+        /* Reduce padding on mobile for standalone */
+    }
+
+    .quiz-container.quiz-embedded-mode {
+        padding: 5px;
+        /* Keep embed padding minimal on mobile too */
+    }
+
+    #quiz-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        /* Space between items when stacked */
+        padding: 10px;
+        /* Adjusted padding for mobile */
+        font-size: 0.9rem;
+    }
+
+    #quiz-info span {
+        /* Direct children like counter, timer, score */
+        margin-bottom: 5px;
+    }
+
+    #quiz-info span:last-child {
+        margin-bottom: 0;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        /* Gap for vertical stacking */
+    }
+
+    .button-group .quiz-button {
+        /* Ensure buttons in group take full width */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Adjust heading font sizes for mobile */
+    #start-screen h2,
+    #results-screen h2,
+    #review-screen h2 {
+        font-size: 1.3rem;
+    }
+
+    #question-text {
+        /* h2 in template */
+        font-size: 1.2rem;
+    }
+
+    #question-container {
+        padding: 15px;
+    }
+
+    #quiz-summary {
+        padding: 15px;
+    }
+
+    #quiz-summary p {
+        font-size: 1rem;
+    }
+
+    .result-heading {
+        font-size: 1rem;
+    }
 }
