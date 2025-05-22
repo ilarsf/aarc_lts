@@ -168,7 +168,7 @@ parent: Knowledge Assessment
   
   <div id="quiz-content">
     <!-- Quiz content will load here -->
-    <iframe id="quiz-frame" style="width:100%; height:500px; border:none; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px;" src=""></iframe>
+    <iframe id="quiz-frame" style="width:100%; height:800px; border:none; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px;" src=""></iframe>
   </div>
   
   <div class="quiz-controls">
@@ -912,13 +912,13 @@ document.addEventListener('DOMContentLoaded', function() {
 #quiz-container {
   background-color: white;
   border-radius: 16px;
-  padding: 3rem;
-  margin: 4rem 0;
+  padding: 1rem;
+  margin: 1rem 0;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.05);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: 1px solid rgba(240,240,240,0.8);
   position: relative;
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

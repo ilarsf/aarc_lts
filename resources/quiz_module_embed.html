@@ -11,6 +11,12 @@ layout: null
     <title>AARC Quiz Module</title>
     <style>
         /* Quiz-specific styles */
+        html {
+            /* ADDED */
+            height: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -18,14 +24,25 @@ layout: null
             margin: 0;
             padding: 0;
             background: transparent;
-            overflow-x: hidden;
+            /* overflow: auto; */
+            /* MODIFIED: Replaced by specific overflow properties below */
+            min-width: 320px;
+            height: 100%;
+            /* ADDED: Make body fill html height */
+            overflow-y: auto;
+            /* ADDED: Allow vertical scroll on body */
         }
 
         .quiz-container {
             width: 100%;
-            max-width: 100%;
-            margin: 0;
-            padding: 10px;
+            max-width: 800px;
+            /* MODIFIED: Set a max-width for larger screens */
+            min-height: 100%;
+            /* Ensures it's at least as tall as body */
+            margin: 0 auto;
+            /* Centers the container when max-width is active */
+            padding: 5px;
+            /* MODIFIED: Adjusted padding for better spacing */
             background: transparent;
             box-sizing: border-box;
         }
@@ -37,13 +54,15 @@ layout: null
         #quiz-title {
             color: #0066cc;
             margin-bottom: 10px;
-            display: none; /* Hide in embed version */
+            display: none;
+            /* Hide in embed version */
         }
 
         #quiz-description {
             font-size: 1.1rem;
             color: #666;
-            display: none; /* Hide in embed version */
+            display: none;
+            /* Hide in embed version */
         }
 
         .quiz-button {
@@ -56,14 +75,14 @@ layout: null
             cursor: pointer;
             transition: all 0.2s;
             font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             display: inline-block;
         }
 
         .quiz-button:hover {
             background-color: #004d99;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .quiz-button.secondary {
@@ -97,7 +116,7 @@ layout: null
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #question-text {
@@ -140,7 +159,7 @@ layout: null
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #results-screen {
@@ -153,7 +172,7 @@ layout: null
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .result-heading {
@@ -182,7 +201,7 @@ layout: null
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .hidden {
@@ -206,14 +225,14 @@ layout: null
             transition: width 0.3s ease;
         }
 
-        /* Remove scrollbar if embedded */
         html {
             scrollbar-width: none;
         }
+
         body::-webkit-scrollbar {
             display: none;
         }
-        
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             #quiz-info {
@@ -228,368 +247,377 @@ layout: null
             .button-group {
                 flex-direction: column;
             }
+
+            /* ADDED: Adjust h3 font size on smaller screens */
+            #question-text,
+            #results-screen h3,
+            #review-screen h3 {
+                font-size: 1rem;
+                /* Or your preferred size */
+            }
         }
     </style>
 </head>
 
-<body>
-    <div class="quiz-container">
-        <div id="start-screen" class="quiz-section">
-            <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
-            <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
-            <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
-        </div>
+<body></body>
+<div class="quiz-container">
+    <div id="start-screen" class="quiz-section">
+        <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
+        <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...
+        </p>
+        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
+    </div>
 
-        <div id="quiz-screen" class="quiz-section hidden">
-            <div id="progress-container">
-                <div id="progress-bar"></div>
-            </div>
-            <div id="quiz-info">
-                <span id="question-counter">Question 1/10</span>
-                <span id="timer">Time: 0:00</span>
-                <span id="score-display">Score: 0</span>
-            </div>
-            <div id="question-container">
-                <h3 id="question-text">Question text goes here</h3>
-                <div id="answers-container">
-                </div>
-            </div>
-            <div id="feedback" class="hidden">
-                <p id="feedback-text"></p>
+    <div id="quiz-screen" class="quiz-section hidden">
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz-info">
+            <span id="question-counter">Question 1/10</span>
+            <span id="timer">Time: 0:00</span>
+            <span id="score-display">Score: 0</span>
+        </div>
+        <div id="question-container">
+            <h3 id="question-text">Question text goes here</h3>
+            <div id="answers-container">
             </div>
         </div>
-
-        <div id="results-screen" class="quiz-section hidden">
-            <h3>Quiz Complete!</h3>
-            <div id="quiz-summary">
-                <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
-                        id="total-questions" class="highlight">15</span> questions correctly</p>
-                <p>Time taken: <span id="time-taken">0:00</span></p>
-                <p>Final score: <span id="final-score">0</span>%</p>
-            </div>
-            <div id="feedback-message"></div>
-            <div class="button-group">
-                <button id="restart-button" class="quiz-button">Take Quiz Again</button>
-                <button id="review-button" class="quiz-button secondary">Review Answers</button>
-            </div>
-        </div>
-
-        <div id="review-screen" class="quiz-section hidden">
-            <h3>Review Your Answers</h3>
-            <div id="review-container">
-                <!-- Review questions will be inserted here -->
-            </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <button id="review-back-button" class="quiz-button">Back to Results</button>
-            </div>
+        <div id="feedback" class="hidden">
+            <p id="feedback-text"></p>
         </div>
     </div>
 
-    <script>
-        // Get URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const quizType = urlParams.get('quiz');
-        const csvSource = urlParams.get('src');
+    <div id="results-screen" class="quiz-section hidden">
+        <h3>Quiz Complete!</h3>
+        <div id="quiz-summary">
+            <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
+                    id="total-questions" class="highlight">15</span> questions correctly</p>
+            <p>Time taken: <span id="time-taken">0:00</span></p>
+            <p>Final score: <span id="final-score">0</span>%</p>
+        </div>
+        <div id="feedback-message"></div>
+        <div class="button-group">
+            <button id="restart-button" class="quiz-button">Take Quiz Again</button>
+            <button id="review-button" class="quiz-button secondary">Review Answers</button>
+        </div>
+    </div>
 
-        // Elements
-        const startScreen = document.getElementById('start-screen');
-        const quizScreen = document.getElementById('quiz-screen');
-        const resultsScreen = document.getElementById('results-screen');
-        const reviewScreen = document.getElementById('review-screen');
+    <div id="review-screen" class="quiz-section hidden">
+        <h3>Review Your Answers</h3>
+        <div id="review-container">
+            <!-- Review questions will be inserted here -->
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="review-back-button" class="quiz-button">Back to Results</button>
+        </div>
+    </div>
+</div>
 
-        const startButton = document.getElementById('start-button');
-        const loadingMessage = document.getElementById('loading-message');
-        const errorMessage = document.getElementById('error-message');
+<script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const quizType = urlParams.get('quiz');
+    const csvSource = urlParams.get('src');
 
-        const questionCounter = document.getElementById('question-counter');
-        const timerDisplay = document.getElementById('timer');
-        const scoreDisplay = document.getElementById('score-display');
-        const questionText = document.getElementById('question-text');
-        const answersContainer = document.getElementById('answers-container');
-        const feedback = document.getElementById('feedback');
-        const feedbackText = document.getElementById('feedback-text');
-        const progressBar = document.getElementById('progress-bar');
+    // Elements
+    const startScreen = document.getElementById('start-screen');
+    const quizScreen = document.getElementById('quiz-screen');
+    const resultsScreen = document.getElementById('results-screen');
+    const reviewScreen = document.getElementById('review-screen');
 
-        const correctCount = document.getElementById('correct-count');
-        const totalQuestions = document.getElementById('total-questions');
-        const timeTaken = document.getElementById('time-taken');
-        const finalScore = document.getElementById('final-score');
-        const feedbackMessage = document.getElementById('feedback-message');
+    const startButton = document.getElementById('start-button');
+    const loadingMessage = document.getElementById('loading-message');
+    const errorMessage = document.getElementById('error-message');
 
-        const restartButton = document.getElementById('restart-button');
-        const reviewButton = document.getElementById('review-button');
-        const reviewContainer = document.getElementById('review-container');
-        const reviewBackButton = document.getElementById('review-back-button');
+    const questionCounter = document.getElementById('question-counter');
+    const timerDisplay = document.getElementById('timer');
+    const scoreDisplay = document.getElementById('score-display');
+    const questionText = document.getElementById('question-text');
+    const answersContainer = document.getElementById('answers-container');
+    const feedback = document.getElementById('feedback');
+    const feedbackText = document.getElementById('feedback-text');
+    const progressBar = document.getElementById('progress-bar');
 
-        // Quiz data
-        let quizData = [];
-        let currentQuestion = 0;
-        let score = 0;
-        let timer = 0;
-        let timerInterval = null;
-        let userAnswers = [];
+    const correctCount = document.getElementById('correct-count');
+    const totalQuestions = document.getElementById('total-questions');
+    const timeTaken = document.getElementById('time-taken');
+    const finalScore = document.getElementById('final-score');
+    const feedbackMessage = document.getElementById('feedback-message');
 
-        // Load questions from CSV
-        async function loadQuestionsFromCSV() {
-            startButton.disabled = true;
-            loadingMessage.classList.remove('hidden');
-            errorMessage.classList.add('hidden');
+    const restartButton = document.getElementById('restart-button');
+    const reviewButton = document.getElementById('review-button');
+    const reviewContainer = document.getElementById('review-container');
+    const reviewBackButton = document.getElementById('review-back-button');
 
-            console.log('Loading quiz from source:', csvSource);
+    // Quiz data
+    let quizData = [];
+    let currentQuestion = 0;
+    let score = 0;
+    let timer = 0;
+    let timerInterval = null;
+    let userAnswers = [];
 
-            try {
-                // Ensure the CSV path is properly formatted
-                let fetchUrl = csvSource;
-                if (csvSource && !csvSource.startsWith('http') && !csvSource.startsWith('/')) {
-                    fetchUrl = '/' + csvSource;
+    // Load questions from CSV
+    async function loadQuestionsFromCSV() {
+        startButton.disabled = true;
+        loadingMessage.classList.remove('hidden');
+        errorMessage.classList.add('hidden');
+
+        console.log('Loading quiz from source:', csvSource);
+
+        try {
+            // Ensure the CSV path is properly formatted
+            let fetchUrl = csvSource;
+            if (csvSource && !csvSource.startsWith('http') && !csvSource.startsWith('/')) {
+                fetchUrl = '/' + csvSource;
+            }
+
+            console.log('Fetching from URL:', fetchUrl);
+            const response = await fetch(fetchUrl);
+
+            if (!response.ok) {
+                throw new Error(`Failed to load questions: ${response.status} ${response.statusText} - URL: ${fetchUrl}`);
+            }
+
+            const csvText = await response.text();
+            console.log('CSV data loaded:', csvText.substring(0, 100) + '...');
+
+            const questions = parseCSV(csvText);
+            console.log('Parsed questions:', questions.length);
+
+            if (questions.length === 0) {
+                throw new Error('No questions found in the CSV file');
+            }
+
+            quizData = questions;
+            startButton.disabled = false;
+            loadingMessage.classList.add('hidden');
+        } catch (error) {
+            console.error('Error loading questions:', error);
+            loadingMessage.classList.add('hidden');
+            errorMessage.textContent = `Error loading quiz: ${error.message}`;
+            errorMessage.classList.remove('hidden');
+        }
+    }
+
+    // Parse CSV data
+    function parseCSV(csvText) {
+        const lines = csvText.split('\n').filter(line => line.trim() && !line.startsWith('//'));
+
+        if (lines.length === 0) {
+            return [];
+        }
+
+        const headers = lines[0].split(',').map(header => header.trim().replace(/^"(.*)"$/, '$1'));
+        const questions = [];
+
+        for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (!line) continue;
+
+            // Handle quoted fields with commas
+            const values = [];
+            let fieldStart = 0;
+            let inQuotes = false;
+
+            for (let j = 0; j < line.length; j++) {
+                if (line[j] === '"' && (j === 0 || line[j - 1] !== '\\')) {
+                    inQuotes = !inQuotes;
+                } else if (line[j] === ',' && !inQuotes) {
+                    values.push(line.substring(fieldStart, j).trim().replace(/^"(.*)"$/, '$1'));
+                    fieldStart = j + 1;
                 }
-                
-                console.log('Fetching from URL:', fetchUrl);
-                const response = await fetch(fetchUrl);
-                
-                if (!response.ok) {
-                    throw new Error(`Failed to load questions: ${response.status} ${response.statusText} - URL: ${fetchUrl}`);
-                }
+            }
 
-                const csvText = await response.text();
-                console.log('CSV data loaded:', csvText.substring(0, 100) + '...');
-                
-                const questions = parseCSV(csvText);
-                console.log('Parsed questions:', questions.length);
+            values.push(line.substring(fieldStart).trim().replace(/^"(.*)"$/, '$1'));
 
-                if (questions.length === 0) {
-                    throw new Error('No questions found in the CSV file');
-                }
+            const question = {
+                id: values[0] || `Q${i}`,
+                text: values[1] || 'Question text missing',
+                answers: [
+                    values[2] || 'Answer A missing',
+                    values[3] || 'Answer B missing',
+                    values[4] || 'Answer C missing',
+                    values[5] || 'Answer D missing'
+                ],
+                correctIndex: parseInt(values[6]) - 1 || 0, // Convert from 1-indexed to 0-indexed
+                explanation: values[7] || 'No explanation provided'
+            };
 
-                quizData = questions;
-                startButton.disabled = false;
-                loadingMessage.classList.add('hidden');
-            } catch (error) {
-                console.error('Error loading questions:', error);
-                loadingMessage.classList.add('hidden');
-                errorMessage.textContent = `Error loading quiz: ${error.message}`;
-                errorMessage.classList.remove('hidden');
+            // Filter out empty answers
+            question.answers = question.answers.filter(a => a && a !== 'null' && a !== 'undefined');
+
+            if (question.answers.length > 0) {
+                questions.push(question);
             }
         }
 
-        // Parse CSV data
-        function parseCSV(csvText) {
-            const lines = csvText.split('\n').filter(line => line.trim() && !line.startsWith('//'));
-            
-            if (lines.length === 0) {
-                return [];
-            }
-            
-            const headers = lines[0].split(',').map(header => header.trim().replace(/^"(.*)"$/, '$1'));
-            const questions = [];
+        return questions;
+    }
 
-            for (let i = 1; i < lines.length; i++) {
-                const line = lines[i].trim();
-                if (!line) continue;
+    // Start quiz
+    function startQuiz() {
+        // Reset quiz state
+        currentQuestion = 0;
+        score = 0;
+        timer = 0;
+        userAnswers = Array(quizData.length).fill(null);
 
-                // Handle quoted fields with commas
-                const values = [];
-                let fieldStart = 0;
-                let inQuotes = false;
+        // Hide start screen, show quiz screen
+        startScreen.classList.add('hidden');
+        quizScreen.classList.remove('hidden');
 
-                for (let j = 0; j < line.length; j++) {
-                    if (line[j] === '"' && (j === 0 || line[j - 1] !== '\\')) {
-                        inQuotes = !inQuotes;
-                    } else if (line[j] === ',' && !inQuotes) {
-                        values.push(line.substring(fieldStart, j).trim().replace(/^"(.*)"$/, '$1'));
-                        fieldStart = j + 1;
-                    }
-                }
+        // Start timer
+        startTimer();
 
-                values.push(line.substring(fieldStart).trim().replace(/^"(.*)"$/, '$1'));
+        // Load first question
+        loadQuestion();
+    }
 
-                const question = {
-                    id: values[0] || `Q${i}`,
-                    text: values[1] || 'Question text missing',
-                    answers: [
-                        values[2] || 'Answer A missing',
-                        values[3] || 'Answer B missing',
-                        values[4] || 'Answer C missing',
-                        values[5] || 'Answer D missing'
-                    ],
-                    correctIndex: parseInt(values[6]) - 1 || 0, // Convert from 1-indexed to 0-indexed
-                    explanation: values[7] || 'No explanation provided'
-                };
+    // Load question
+    function loadQuestion() {
+        const question = quizData[currentQuestion];
 
-                // Filter out empty answers
-                question.answers = question.answers.filter(a => a && a !== 'null' && a !== 'undefined');
+        // Update progress
+        questionCounter.textContent = `Question ${currentQuestion + 1}/${quizData.length}`;
+        progressBar.style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+        scoreDisplay.textContent = `Score: ${score}`;
 
-                if (question.answers.length > 0) {
-                    questions.push(question);
-                }
-            }
+        // Set question text
+        questionText.textContent = question.text;
 
-            return questions;
+        // Clear previous answers
+        answersContainer.innerHTML = '';
+
+        // Add answer options
+        question.answers.forEach((answer, index) => {
+            const answerElement = document.createElement('div');
+            answerElement.className = 'answer-option';
+            answerElement.textContent = answer;
+            answerElement.dataset.index = index;
+            answerElement.addEventListener('click', selectAnswer);
+            answersContainer.appendChild(answerElement);
+        });
+
+        // Hide feedback
+        feedback.classList.add('hidden');
+    }
+
+    // Select answer
+    function selectAnswer(event) {
+        // Prevent selecting multiple answers
+        const alreadySelected = document.querySelector('.answer-option.selected');
+        if (alreadySelected) return;
+
+        const selectedAnswer = event.target;
+        const selectedIndex = parseInt(selectedAnswer.dataset.index);
+        const question = quizData[currentQuestion];
+
+        // Mark selected answer
+        selectedAnswer.classList.add('selected');
+
+        // Store user's answer
+        userAnswers[currentQuestion] = selectedIndex;
+
+        // Check if answer is correct
+        const isCorrect = selectedIndex === question.correctIndex;
+        if (isCorrect) {
+            selectedAnswer.classList.add('correct');
+            score++;
+        } else {
+            selectedAnswer.classList.add('incorrect');
+
+            // Highlight correct answer
+            const correctAnswer = document.querySelector(`.answer-option[data-index="${question.correctIndex}"]`);
+            if (correctAnswer) correctAnswer.classList.add('correct');
         }
 
-        // Start quiz
-        function startQuiz() {
-            // Reset quiz state
-            currentQuestion = 0;
-            score = 0;
-            timer = 0;
-            userAnswers = Array(quizData.length).fill(null);
+        // Show feedback
+        feedbackText.innerHTML = `<strong>${isCorrect ? 'Correct!' : 'Incorrect.'}</strong> ${question.explanation}`;
+        feedback.classList.remove('hidden');
 
-            // Hide start screen, show quiz screen
-            startScreen.classList.add('hidden');
-            quizScreen.classList.remove('hidden');
+        // Disable answer selection
+        const answerOptions = document.querySelectorAll('.answer-option');
+        answerOptions.forEach(option => {
+            option.removeEventListener('click', selectAnswer);
+            option.style.cursor = 'default';
+        });
 
-            // Start timer
-            startTimer();
-
-            // Load first question
-            loadQuestion();
-        }
-
-        // Load question
-        function loadQuestion() {
-            const question = quizData[currentQuestion];
-
-            // Update progress
-            questionCounter.textContent = `Question ${currentQuestion + 1}/${quizData.length}`;
-            progressBar.style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
-            scoreDisplay.textContent = `Score: ${score}`;
-
-            // Set question text
-            questionText.textContent = question.text;
-
-            // Clear previous answers
-            answersContainer.innerHTML = '';
-
-            // Add answer options
-            question.answers.forEach((answer, index) => {
-                const answerElement = document.createElement('div');
-                answerElement.className = 'answer-option';
-                answerElement.textContent = answer;
-                answerElement.dataset.index = index;
-                answerElement.addEventListener('click', selectAnswer);
-                answersContainer.appendChild(answerElement);
-            });
-
-            // Hide feedback
-            feedback.classList.add('hidden');
-        }
-
-        // Select answer
-        function selectAnswer(event) {
-            // Prevent selecting multiple answers
-            const alreadySelected = document.querySelector('.answer-option.selected');
-            if (alreadySelected) return;
-
-            const selectedAnswer = event.target;
-            const selectedIndex = parseInt(selectedAnswer.dataset.index);
-            const question = quizData[currentQuestion];
-
-            // Mark selected answer
-            selectedAnswer.classList.add('selected');
-
-            // Store user's answer
-            userAnswers[currentQuestion] = selectedIndex;
-
-            // Check if answer is correct
-            const isCorrect = selectedIndex === question.correctIndex;
-            if (isCorrect) {
-                selectedAnswer.classList.add('correct');
-                score++;
+        // Move to next question after delay
+        setTimeout(() => {
+            if (currentQuestion < quizData.length - 1) {
+                currentQuestion++;
+                loadQuestion();
             } else {
-                selectedAnswer.classList.add('incorrect');
-
-                // Highlight correct answer
-                const correctAnswer = document.querySelector(`.answer-option[data-index="${question.correctIndex}"]`);
-                if (correctAnswer) correctAnswer.classList.add('correct');
+                endQuiz();
             }
+        }, 2500);
+    }
 
-            // Show feedback
-            feedbackText.innerHTML = `<strong>${isCorrect ? 'Correct!' : 'Incorrect.'}</strong> ${question.explanation}`;
-            feedback.classList.remove('hidden');
+    // End quiz
+    function endQuiz() {
+        // Stop timer
+        clearInterval(timerInterval);
 
-            // Disable answer selection
-            const answerOptions = document.querySelectorAll('.answer-option');
-            answerOptions.forEach(option => {
-                option.removeEventListener('click', selectAnswer);
-                option.style.cursor = 'default';
-            });
+        // Hide quiz screen, show results screen
+        quizScreen.classList.add('hidden');
+        resultsScreen.classList.remove('hidden');
 
-            // Move to next question after delay
-            setTimeout(() => {
-                if (currentQuestion < quizData.length - 1) {
-                    currentQuestion++;
-                    loadQuestion();
-                } else {
-                    endQuiz();
+        // Update results
+        correctCount.textContent = score;
+        totalQuestions.textContent = quizData.length;
+        timeTaken.textContent = formatTime(timer);
+
+        const percentage = Math.round((score / quizData.length) * 100);
+        finalScore.textContent = percentage;
+
+        // Set feedback message
+        if (percentage >= 90) {
+            feedbackMessage.innerHTML = '<p class="highlight">Excellent work! You have a strong understanding of the material.</p>';
+        } else if (percentage >= 80) {
+            feedbackMessage.innerHTML = '<p class="highlight">Good job! You have a solid grasp of the material.</p>';
+        } else if (percentage >= 70) {
+            feedbackMessage.innerHTML = '<p>Not bad! You understand most of the material but might want to review some concepts.</p>';
+        } else {
+            feedbackMessage.innerHTML = '<p>You might want to review the material and try again to improve your score.</p>';
+        }
+
+        // Special message for safety quiz
+        if ((quizType === 'safety' || quizType === 'lts-safety') && percentage < 80) {
+            feedbackMessage.innerHTML += '<p style="color: #dc3545; font-weight: bold;">The Safety Quiz requires a score of at least 80% before your first on-water session. Please review the safety materials and try again.</p>';
+        }
+
+        // Notify parent window of quiz completion
+        try {
+            window.parent.postMessage({
+                quizStatus: {
+                    quizId: quizType,
+                    status: 'completed',
+                    score: percentage
                 }
-            }, 2500);
+            }, '*');
+        } catch (e) {
+            console.error('Error sending completion message to parent:', e);
         }
+    }
 
-        // End quiz
-        function endQuiz() {
-            // Stop timer
-            clearInterval(timerInterval);
+    // Show review screen
+    function showReview() {
+        resultsScreen.classList.add('hidden');
+        reviewScreen.classList.remove('hidden');
 
-            // Hide quiz screen, show results screen
-            quizScreen.classList.add('hidden');
-            resultsScreen.classList.remove('hidden');
+        // Clear previous review
+        reviewContainer.innerHTML = '';
 
-            // Update results
-            correctCount.textContent = score;
-            totalQuestions.textContent = quizData.length;
-            timeTaken.textContent = formatTime(timer);
+        // Add each question and answer
+        quizData.forEach((question, index) => {
+            const userAnswerIndex = userAnswers[index];
+            const isCorrect = userAnswerIndex === question.correctIndex;
 
-            const percentage = Math.round((score / quizData.length) * 100);
-            finalScore.textContent = percentage;
+            const questionElement = document.createElement('div');
+            questionElement.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
 
-            // Set feedback message
-            if (percentage >= 90) {
-                feedbackMessage.innerHTML = '<p class="highlight">Excellent work! You have a strong understanding of the material.</p>';
-            } else if (percentage >= 80) {
-                feedbackMessage.innerHTML = '<p class="highlight">Good job! You have a solid grasp of the material.</p>';
-            } else if (percentage >= 70) {
-                feedbackMessage.innerHTML = '<p>Not bad! You understand most of the material but might want to review some concepts.</p>';
-            } else {
-                feedbackMessage.innerHTML = '<p>You might want to review the material and try again to improve your score.</p>';
-            }
-
-            // Special message for safety quiz
-            if ((quizType === 'safety' || quizType === 'lts-safety') && percentage < 80) {
-                feedbackMessage.innerHTML += '<p style="color: #dc3545; font-weight: bold;">The Safety Quiz requires a score of at least 80% before your first on-water session. Please review the safety materials and try again.</p>';
-            }
-
-            // Notify parent window of quiz completion
-            try {
-                window.parent.postMessage({
-                    quizStatus: {
-                        quizId: quizType,
-                        status: 'completed',
-                        score: percentage
-                    }
-                }, '*');
-            } catch (e) {
-                console.error('Error sending completion message to parent:', e);
-            }
-        }
-
-        // Show review screen
-        function showReview() {
-            resultsScreen.classList.add('hidden');
-            reviewScreen.classList.remove('hidden');
-
-            // Clear previous review
-            reviewContainer.innerHTML = '';
-
-            // Add each question and answer
-            quizData.forEach((question, index) => {
-                const userAnswerIndex = userAnswers[index];
-                const isCorrect = userAnswerIndex === question.correctIndex;
-
-                const questionElement = document.createElement('div');
-                questionElement.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
-
-                questionElement.innerHTML = `
+            questionElement.innerHTML = `
                     <h3>Question ${index + 1}</h3>
                     <p>${question.text}</p>
                     <p><strong>Your answer:</strong> ${userAnswerIndex !== null ? question.answers[userAnswerIndex] : 'No answer'}</p>
@@ -597,53 +625,53 @@ layout: null
                     <p><strong>Explanation:</strong> ${question.explanation}</p>
                 `;
 
-                reviewContainer.appendChild(questionElement);
-            });
-        }
-
-        // Timer functions
-        function startTimer() {
-            timerInterval = setInterval(() => {
-                timer++;
-                timerDisplay.textContent = `Time: ${formatTime(timer)}`;
-            }, 1000);
-        }
-
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const remainingSeconds = seconds % 60;
-            return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
-        }
-
-        // Event listeners
-        document.addEventListener('DOMContentLoaded', function () {
-            // Debug info
-            console.log('Quiz module loaded.');
-            console.log('URL parameters:', window.location.search);
-            console.log('Quiz type:', quizType);
-            console.log('CSV source:', csvSource);
-
-            if (csvSource) {
-                loadQuestionsFromCSV();
-            } else {
-                console.error('No CSV source specified in URL parameters');
-                errorMessage.textContent = 'No quiz source specified. Please select a quiz from the menu.';
-                errorMessage.classList.remove('hidden');
-            }
-
-            startButton.addEventListener('click', startQuiz);
-            restartButton.addEventListener('click', function () {
-                resultsScreen.classList.add('hidden');
-                startQuiz();
-            });
-
-            reviewButton.addEventListener('click', showReview);
-            reviewBackButton.addEventListener('click', function () {
-                reviewScreen.classList.add('hidden');
-                resultsScreen.classList.remove('hidden');
-            });
+            reviewContainer.appendChild(questionElement);
         });
-    </script>
+    }
+
+    // Timer functions
+    function startTimer() {
+        timerInterval = setInterval(() => {
+            timer++;
+            timerDisplay.textContent = `Time: ${formatTime(timer)}`;
+        }, 1000);
+    }
+
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    }
+
+    // Event listeners
+    document.addEventListener('DOMContentLoaded', function () {
+        // Debug info
+        console.log('Quiz module loaded.');
+        console.log('URL parameters:', window.location.search);
+        console.log('Quiz type:', quizType);
+        console.log('CSV source:', csvSource);
+
+        if (csvSource) {
+            loadQuestionsFromCSV();
+        } else {
+            console.error('No CSV source specified in URL parameters');
+            errorMessage.textContent = 'No quiz source specified. Please select a quiz from the menu.';
+            errorMessage.classList.remove('hidden');
+        }
+
+        startButton.addEventListener('click', startQuiz);
+        restartButton.addEventListener('click', function () {
+            resultsScreen.classList.add('hidden');
+            startQuiz();
+        });
+
+        reviewButton.addEventListener('click', showReview);
+        reviewBackButton.addEventListener('click', function () {
+            reviewScreen.classList.add('hidden');
+            resultsScreen.classList.remove('hidden');
+        });
+    });
+</script>
 </body>
 
 </html>
