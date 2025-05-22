@@ -3,15 +3,11 @@ layout: default
 title: Meet Our Team - AARC Learn to Scull
 ---
 
-<div class="about-header">
-  <h1>Meet Our Team</h1>
-</div>
+# Meet Our Team
+
+Our dedicated team is committed to providing an exceptional learning experience for all AARC Learn to Scull participants. Get to know the instructors who will guide you through the program and the other key figures in our sculling community you'll meet as you continue your rowing journey.
 
 <div class="team-section">
-  <div class="team-intro">
-    <p>Our dedicated team is committed to providing an exceptional learning experience for all AARC Learn to Scull participants. Get to know the instructors who will guide you through the program and the other key figures in our sculling community you'll meet as you continue your rowing journey.</p>
-  </div>
-
   <h2>Learn to Scull Instructors</h2>
   <p>These are the instructors who will be directly working with you during the Learn to Scull program:</p>
 

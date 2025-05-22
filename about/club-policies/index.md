@@ -6,14 +6,14 @@ parent: Resources
 has_children: true
 ---
 
+# Club Policies
+
+This section contains official AARC policies that govern club operations, member conduct, and safety practices.
+
 <div class="info-box tip">
     <h4>Important Information</h4>
     <p>These policies apply to all club members and participants in AARC programs. Familiarity with these rules is essential for maintaining a safe, respectful, and enjoyable environment for everyone at the club.</p>
 </div>
-
-# Club Policies
-
-This section contains official AARC policies that govern club operations, member conduct, and safety practices.
 
 <div class="tab-container">
     <div class="tab-nav">
