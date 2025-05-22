@@ -389,7 +389,23 @@ layout: null
                 throw new Error('No questions found in the CSV file');
             }
 
-            quizData = questions;
+            // Shuffle and select 15 questions if more than 15 are available
+            if (questions.length > 15) {
+                // Fisher-Yates (Knuth) Shuffle
+                let currentIndex = questions.length, randomIndex;
+                while (currentIndex !== 0) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex--;
+                    [questions[currentIndex], questions[randomIndex]] = [
+                        questions[randomIndex], questions[currentIndex]];
+                }
+                quizData = questions.slice(0, 15);
+                console.log('Randomly selected 15 questions.');
+            } else {
+                quizData = questions; // Use all questions if 15 or fewer
+                console.log(`Using all ${questions.length} available questions.`);
+            }
+
             startButton.disabled = false;
             loadingMessage.classList.add('hidden');
         } catch (error) {

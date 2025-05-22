@@ -596,29 +596,18 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
                 return;
             }
 
-            // Set questions to select to default 15
-            let questionsToSelect = numberOfQuestionsToSelect;
+            let questionsToSelect = numberOfQuestionsToSelect; // Defaults to 15
 
-            // If we have fewer questions than requested amount, use all of them
-            if (allQuestions.length <= questionsToSelect) {
-                currentQuestions = [...allQuestions];
-                return;
+            // Shuffle all available questions first
+            let shuffledAllQuestions = shuffleArray([...allQuestions]); // Use a copy to shuffle
+
+            if (shuffledAllQuestions.length > questionsToSelect) {
+                currentQuestions = shuffledAllQuestions.slice(0, questionsToSelect);
+                console.log(`Randomly selected ${questionsToSelect} questions.`);
+            } else {
+                currentQuestions = shuffledAllQuestions; // Use all available questions (already shuffled)
+                console.log(`Using all ${shuffledAllQuestions.length} available questions (shuffled).`);
             }
-
-            // Select random questions
-            currentQuestions = [];
-            const indices = new Set();
-
-            while (indices.size < questionsToSelect) {
-                const index = Math.floor(Math.random() * allQuestions.length);
-                if (!indices.has(index)) {
-                    indices.add(index);
-                    currentQuestions.push(allQuestions[index]);
-                }
-            }
-
-            // Shuffle the selected questions for random order
-            currentQuestions = shuffleArray(currentQuestions);
         }
 
         /** Displays a question by index */
