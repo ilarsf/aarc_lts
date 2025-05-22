@@ -2060,3 +2060,34 @@ details>summary {
     color: $aarc-light-gray;
   }
 }
+
+// Interactive Checklist Styles
+.interactive-checklist {
+    .checklist-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        label {
+            flex-grow: 1;
+        }
+    }
+}
+
+// Responsive adjustments for interactive-checklist
+@media (max-width: 768px) {
+    .interactive-checklist {
+        .checklist-item {
+            // Adjustments for smaller screens
+            // Example: ensure label text can wrap and align well
+            label {
+                // font-size: 0.9rem; // Example: uncomment and adjust if needed
+                word-break: break-word; // Allow long labels to wrap
+            }
+        }
+    }
+}

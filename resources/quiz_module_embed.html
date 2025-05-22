@@ -18,14 +18,16 @@ layout: null
             margin: 0;
             padding: 0;
             background: transparent;
-            overflow-x: hidden;
+            /* overflow-x: hidden; Remove to allow content to define width */
         }
 
         .quiz-container {
             width: 100%;
-            max-width: 100%;
+            /* Allow container to take full available width */
+            /* max-width: 100%; Remove or adjust as needed */
             margin: 0;
             padding: 10px;
+            /* Keep some padding */
             background: transparent;
             box-sizing: border-box;
         }
@@ -37,13 +39,15 @@ layout: null
         #quiz-title {
             color: #0066cc;
             margin-bottom: 10px;
-            display: none; /* Hide in embed version */
+            display: none;
+            /* Hide in embed version */
         }
 
         #quiz-description {
             font-size: 1.1rem;
             color: #666;
-            display: none; /* Hide in embed version */
+            display: none;
+            /* Hide in embed version */
         }
 
         .quiz-button {
@@ -56,14 +60,14 @@ layout: null
             cursor: pointer;
             transition: all 0.2s;
             font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             display: inline-block;
         }
 
         .quiz-button:hover {
             background-color: #004d99;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .quiz-button.secondary {
@@ -97,146 +101,58 @@ layout: null
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        #question-text {
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .answer-option {
-            display: block;
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .answer-option:hover {
-            background-color: #e9ecef;
-        }
-
-        .answer-option.selected {
-            background-color: #cce5ff;
-            border-color: #b8daff;
-        }
-
-        .answer-option.correct {
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-
-        .answer-option.incorrect {
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-
-        #feedback {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        #results-screen {
-            text-align: center;
-            padding: 20px;
-        }
-
-        #quiz-summary {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .result-heading {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #0066cc;
-        }
-
-        .button-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        #review-screen {
-            padding: 15px;
-        }
-
-        .review-question {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Progress bar */
-        #progress-container {
-            width: 100%;
-            background-color: #e9ecef;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            height: 8px;
-        }
-
-        #progress-bar {
-            height: 100%;
-            background-color: #0066cc;
-            border-radius: 4px;
-            width: 0;
-            transition: width 0.3s ease;
-        }
-
-        /* Remove scrollbar if embedded */
-        html {
-            scrollbar-width: none;
-        }
-        body::-webkit-scrollbar {
-            display: none;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            #quiz-info {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            #quiz-info span {
-                margin-bottom: 10px;
-            }
-
-            .button-group {
-                flex-direction: column;
-            }
+        /* Add styles for responsive iframe if needed, though most will be in parent */
+        html,
+        body {
+            overflow-y: hidden;
+            /* Hide scrollbar on the iframe body itself if parent handles scrolling */
         }
     </style>
+    <script>
+        function sendHeight() {
+            // Send the height of the content to the parent window
+            var body = document.body,
+                html = document.documentElement;
+
+            var height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+            if (window.parent && window.parent.postMessage) {
+                window.parent.postMessage({
+                    frameHeight: height,
+                    frameSrc: window.location.href // Send source to identify iframe if multiple exist
+                }, '*'); // Be more specific with target origin in production
+            }
+        }
+
+        // Send height on load and on window resize
+        window.onload = sendHeight;
+        window.onresize = sendHeight;
+
+        // Also send height after quiz content might change (e.g., after a question loads)
+        // This requires a more robust way to detect content changes.
+        // For now, we can use a MutationObserver or call sendHeight() from quiz logic.
+
+        // Example: If your quiz has a function that's called after a new question is displayed
+        // function onQuestionDisplayed() {
+        //     sendHeight();
+        // }
+
+        // If you can't modify the quiz's internal JS, a MutationObserver is a good fallback.
+        const observer = new MutationObserver(sendHeight);
+        observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+
+    </script>
 </head>
 
 <body>
     <div class="quiz-container">
         <div id="start-screen" class="quiz-section">
             <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
-            <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
+            <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...
+            </p>
             <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
         </div>
 
@@ -343,17 +259,17 @@ layout: null
                 if (csvSource && !csvSource.startsWith('http') && !csvSource.startsWith('/')) {
                     fetchUrl = '/' + csvSource;
                 }
-                
+
                 console.log('Fetching from URL:', fetchUrl);
                 const response = await fetch(fetchUrl);
-                
+
                 if (!response.ok) {
                     throw new Error(`Failed to load questions: ${response.status} ${response.statusText} - URL: ${fetchUrl}`);
                 }
 
                 const csvText = await response.text();
                 console.log('CSV data loaded:', csvText.substring(0, 100) + '...');
-                
+
                 const questions = parseCSV(csvText);
                 console.log('Parsed questions:', questions.length);
 
@@ -375,11 +291,11 @@ layout: null
         // Parse CSV data
         function parseCSV(csvText) {
             const lines = csvText.split('\n').filter(line => line.trim() && !line.startsWith('//'));
-            
+
             if (lines.length === 0) {
                 return [];
             }
-            
+
             const headers = lines[0].split(',').map(header => header.trim().replace(/^"(.*)"$/, '$1'));
             const questions = [];
 
