@@ -141,8 +141,8 @@ layout: null
         // }
 
         // If you can't modify the quiz's internal JS, a MutationObserver is a good fallback.
-        const observer = new MutationObserver(sendHeight);
-        observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+        // const observer = new MutationObserver(sendHeight);
+        // observer.observe(document.body, { childList: true, subtree: true, attributes: true });
 
     </script>
 </head>
@@ -280,11 +280,13 @@ layout: null
                 quizData = questions;
                 startButton.disabled = false;
                 loadingMessage.classList.add('hidden');
+                sendHeight(); // Call sendHeight after questions are loaded and UI is ready
             } catch (error) {
                 console.error('Error loading questions:', error);
                 loadingMessage.classList.add('hidden');
                 errorMessage.textContent = `Error loading quiz: ${error.message}`;
                 errorMessage.classList.remove('hidden');
+                sendHeight(); // Call sendHeight if an error message is shown
             }
         }
 
@@ -389,6 +391,7 @@ layout: null
 
             // Hide feedback
             feedback.classList.add('hidden');
+            sendHeight(); // Call sendHeight after a new question is loaded
         }
 
         // Select answer
@@ -423,6 +426,7 @@ layout: null
             // Show feedback
             feedbackText.innerHTML = `<strong>${isCorrect ? 'Correct!' : 'Incorrect.'}</strong> ${question.explanation}`;
             feedback.classList.remove('hidden');
+            sendHeight(); // Call sendHeight after feedback is shown
 
             // Disable answer selection
             const answerOptions = document.querySelectorAll('.answer-option');
@@ -487,6 +491,7 @@ layout: null
             } catch (e) {
                 console.error('Error sending completion message to parent:', e);
             }
+            sendHeight(); // Call sendHeight after results screen is shown
         }
 
         // Show review screen
@@ -515,6 +520,7 @@ layout: null
 
                 reviewContainer.appendChild(questionElement);
             });
+            sendHeight(); // Call sendHeight after review screen is populated
         }
 
         // Timer functions
@@ -545,6 +551,7 @@ layout: null
                 console.error('No CSV source specified in URL parameters');
                 errorMessage.textContent = 'No quiz source specified. Please select a quiz from the menu.';
                 errorMessage.classList.remove('hidden');
+                sendHeight(); // Call sendHeight if error is shown due to no source
             }
 
             startButton.addEventListener('click', startQuiz);
@@ -557,6 +564,7 @@ layout: null
             reviewBackButton.addEventListener('click', function () {
                 reviewScreen.classList.add('hidden');
                 resultsScreen.classList.remove('hidden');
+                sendHeight(); // Call sendHeight after switching back to results
             });
         });
     </script>
