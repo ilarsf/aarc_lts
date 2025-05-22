@@ -21,12 +21,12 @@ Welcome to the Learn to Scull program! This guide provides essential information
         <div class="accordion-content-inner">
             <p>Please bring the following items to each session:</p>
             <ul>
-                <li><strong>Water Bottle:</strong> Staying hydrated is crucial. A reusable water bottle is recommended.</li>
+                <li><strong>Water Bottle:</strong> Staying hydrated is crucial.</li>
                 <li><strong>Sunscreen:</strong> Protect your skin, even on cloudy days.</li>
                 <li><strong>Sunglasses:</strong> Polarized sunglasses are best for reducing glare off the water.</li>
                 <li><strong>Hat or Visor:</strong> For sun protection and to keep hair out of your eyes.</li>
                 <li><strong>Towel:</strong> For drying off after the session or if you get wet.</li>
-                <li><strong>Change of Clothes (optional):</strong> You might want dry clothes for after the session.</li>
+                <li><strong>Change of Clothes (optional):</strong> You might want dry clothes for after the flip test.</li>
             </ul>
         </div>
     </div>
