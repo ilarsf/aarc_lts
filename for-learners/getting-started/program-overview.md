@@ -41,8 +41,8 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                   <li><strong>Saturday:</strong> Session 3 (8:00-11:00am)</li>
                   <li><strong>Sunday:</strong> Session 4 (8:00-11:00am)</li>
                 </ul>
-                <p><em>Note: Each session includes a short break. Remember to bring your own water and snacks.</em></p>
               </div>
+            <p><em>Note: Each session includes a short break. Remember to bring your own water and snacks.</em></p>
             </div>
 
             <div class="info-box warning">
