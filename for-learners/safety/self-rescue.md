@@ -170,14 +170,13 @@ description: Flip test and recovery procedures for scullers
           </div>
           <div class="rescue-step-actions">
             <ol>
-              <li><strong>Position your oars</strong>: Extend both oars perpendicular to the boat</li>
               <li><strong>Set the Near-Side Oar</strong><br>
                 Float the near-side blade flat on the water, shaft perpendicular to the hull. This gives you a stable brace. Verify the oarlock is properly closed.
               </li>
               <li><strong>Retrieve the Far-Side Oar</strong><br>
                 Swim or lean over to grab the other oar. Ensure this oarlock is also properly closed.
               </li>
-              <li><strong>Extend both oars</strong><br>Push them out so they are fully extended and both blades lie flat on the water, with the handles overlapping.
+              <li><strong>Extend both oars perpendicular (t-position)</strong><br>Push them out so they are fully extended and both blades lie flat on the water, with the handles overlapping.
               </li>
               <li><strong>Position your hands</strong><br>
                 Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip between the tracks.
@@ -192,7 +191,7 @@ description: Flip test and recovery procedures for scullers
                   <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
                   <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
                   <li>Keep your weight low and centered over the boat</li>
-                  <li>Once stable in this position, sit up, and bring one leg across</li>
+                  <li>Once stable in this position, rotate your hip, sit up, and bring one leg across</li>
                   <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
                 </ul>
                 <strong>Option B: The Hip Rotation Method</strong>
