@@ -10,7 +10,7 @@ session_dates:
   - "June 1, 2025 (Sunday)"
   - "June 7, 2025 (Saturday)"
   - "June 8, 2025 (Sunday)"
-program_start_date: "May 1, 2025"
+program_start_date: "May 31, 2025"
 instructors:
   - first_name: "Michelle"
     name: "Michelle Nemshak"
