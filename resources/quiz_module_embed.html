@@ -313,379 +313,102 @@ layout: null
     </div>
 </div>
 
+<script src="../assets/js/quiz_logic.js"></script>
 <script>
-    // Get URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const quizType = urlParams.get('quiz');
-    const csvSource = urlParams.get('src');
-
-    // Elements
-    const startScreen = document.getElementById('start-screen');
-    const quizScreen = document.getElementById('quiz-screen');
-    const resultsScreen = document.getElementById('results-screen');
-    const reviewScreen = document.getElementById('review-screen');
-
-    const startButton = document.getElementById('start-button');
-    const loadingMessage = document.getElementById('loading-message');
-    const errorMessage = document.getElementById('error-message');
-
-    const questionCounter = document.getElementById('question-counter');
-    const timerDisplay = document.getElementById('timer');
-    const scoreDisplay = document.getElementById('score-display');
-    const questionText = document.getElementById('question-text');
-    const answersContainer = document.getElementById('answers-container');
-    const feedback = document.getElementById('feedback');
-    const feedbackText = document.getElementById('feedback-text');
-    const progressBar = document.getElementById('progress-bar');
-
-    const correctCount = document.getElementById('correct-count');
-    const totalQuestions = document.getElementById('total-questions');
-    const timeTaken = document.getElementById('time-taken');
-    const finalScore = document.getElementById('final-score');
-    const feedbackMessage = document.getElementById('feedback-message');
-
-    const restartButton = document.getElementById('restart-button');
-    const reviewButton = document.getElementById('review-button');
-    const reviewContainer = document.getElementById('review-container');
-    const reviewBackButton = document.getElementById('review-back-button');
-
-    // Quiz data
-    let quizData = [];
-    let currentQuestion = 0;
-    let score = 0;
-    let timer = 0;
-    let timerInterval = null;
-    let userAnswers = [];
-
-    // Load questions from CSV
-    async function loadQuestionsFromCSV() {
-        startButton.disabled = true;
-        loadingMessage.classList.remove('hidden');
-        errorMessage.classList.add('hidden');
-
-        console.log('Loading quiz from source:', csvSource);
-
-        try {
-            // Ensure the CSV path is properly formatted
-            let fetchUrl = csvSource;
-            if (csvSource && !csvSource.startsWith('http') && !csvSource.startsWith('/')) {
-                fetchUrl = '/' + csvSource;
-            }
-
-            console.log('Fetching from URL:', fetchUrl);
-            const response = await fetch(fetchUrl);
-
-            if (!response.ok) {
-                throw new Error(`Failed to load questions: ${response.status} ${response.statusText} - URL: ${fetchUrl}`);
-            }
-
-            const csvText = await response.text();
-            console.log('CSV data loaded:', csvText.substring(0, 100) + '...');
-
-            const questions = parseCSV(csvText);
-            console.log('Parsed questions:', questions.length);
-
-            if (questions.length === 0) {
-                throw new Error('No questions found in the CSV file');
-            }
-
-            // Shuffle and select 15 questions if more than 15 are available
-            if (questions.length > 15) {
-                // Fisher-Yates (Knuth) Shuffle
-                let currentIndex = questions.length, randomIndex;
-                while (currentIndex !== 0) {
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex--;
-                    [questions[currentIndex], questions[randomIndex]] = [
-                        questions[randomIndex], questions[currentIndex]];
-                }
-                quizData = questions.slice(0, 15);
-                console.log('Randomly selected 15 questions.');
-            } else {
-                quizData = questions; // Use all questions if 15 or fewer
-                console.log(`Using all ${questions.length} available questions.`);
-            }
-
-            startButton.disabled = false;
-            loadingMessage.classList.add('hidden');
-        } catch (error) {
-            console.error('Error loading questions:', error);
-            loadingMessage.classList.add('hidden');
-            errorMessage.textContent = `Error loading quiz: ${error.message}`;
-            errorMessage.classList.remove('hidden');
-        }
-    }
-
-    // Parse CSV data
-    function parseCSV(csvText) {
-        const lines = csvText.split('\n').filter(line => line.trim() && !line.startsWith('//'));
-
-        if (lines.length === 0) {
-            return [];
-        }
-
-        const headers = lines[0].split(',').map(header => header.trim().replace(/^"(.*)"$/, '$1'));
-        const questions = [];
-
-        for (let i = 1; i < lines.length; i++) {
-            const line = lines[i].trim();
-            if (!line) continue;
-
-            // Handle quoted fields with commas
-            const values = [];
-            let fieldStart = 0;
-            let inQuotes = false;
-
-            for (let j = 0; j < line.length; j++) {
-                if (line[j] === '"' && (j === 0 || line[j - 1] !== '\\')) {
-                    inQuotes = !inQuotes;
-                } else if (line[j] === ',' && !inQuotes) {
-                    values.push(line.substring(fieldStart, j).trim().replace(/^"(.*)"$/, '$1'));
-                    fieldStart = j + 1;
-                }
-            }
-
-            values.push(line.substring(fieldStart).trim().replace(/^"(.*)"$/, '$1'));
-
-            const question = {
-                id: values[0] || `Q${i}`,
-                text: values[1] || 'Question text missing',
-                answers: [
-                    values[2] || 'Answer A missing',
-                    values[3] || 'Answer B missing',
-                    values[4] || 'Answer C missing',
-                    values[5] || 'Answer D missing'
-                ],
-                correctIndex: parseInt(values[6]) - 1 || 0, // Convert from 1-indexed to 0-indexed
-                explanation: values[7] || 'No explanation provided'
-            };
-
-            // Filter out empty answers
-            question.answers = question.answers.filter(a => a && a !== 'null' && a !== 'undefined');
-
-            if (question.answers.length > 0) {
-                questions.push(question);
-            }
-        }
-
-        return questions;
-    }
-
-    // Start quiz
-    function startQuiz() {
-        // Reset quiz state
-        currentQuestion = 0;
-        score = 0;
-        timer = 0;
-        userAnswers = Array(quizData.length).fill(null);
-
-        // Hide start screen, show quiz screen
-        startScreen.classList.add('hidden');
-        quizScreen.classList.remove('hidden');
-
-        // Start timer
-        startTimer();
-
-        // Load first question
-        loadQuestion();
-    }
-
-    // Load question
-    function loadQuestion() {
-        const question = quizData[currentQuestion];
-
-        // Update progress
-        questionCounter.textContent = `Question ${currentQuestion + 1}/${quizData.length}`;
-        progressBar.style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
-        scoreDisplay.textContent = `Score: ${score}`;
-
-        // Set question text
-        questionText.textContent = question.text;
-
-        // Clear previous answers
-        answersContainer.innerHTML = '';
-
-        // Add answer options
-        question.answers.forEach((answer, index) => {
-            const answerElement = document.createElement('div');
-            answerElement.className = 'answer-option';
-            answerElement.textContent = answer;
-            answerElement.dataset.index = index;
-            answerElement.addEventListener('click', selectAnswer);
-            answersContainer.appendChild(answerElement);
-        });
-
-        // Hide feedback
-        feedback.classList.add('hidden');
-    }
-
-    // Select answer
-    function selectAnswer(event) {
-        // Prevent selecting multiple answers
-        const alreadySelected = document.querySelector('.answer-option.selected');
-        if (alreadySelected) return;
-
-        const selectedAnswer = event.target;
-        const selectedIndex = parseInt(selectedAnswer.dataset.index);
-        const question = quizData[currentQuestion];
-
-        // Mark selected answer
-        selectedAnswer.classList.add('selected');
-
-        // Store user's answer
-        userAnswers[currentQuestion] = selectedIndex;
-
-        // Check if answer is correct
-        const isCorrect = selectedIndex === question.correctIndex;
-        if (isCorrect) {
-            selectedAnswer.classList.add('correct');
-            score++;
-        } else {
-            selectedAnswer.classList.add('incorrect');
-
-            // Highlight correct answer
-            const correctAnswer = document.querySelector(`.answer-option[data-index="${question.correctIndex}"]`);
-            if (correctAnswer) correctAnswer.classList.add('correct');
-        }
-
-        // Show feedback
-        feedbackText.innerHTML = `<strong>${isCorrect ? 'Correct!' : 'Incorrect.'}</strong> ${question.explanation}`;
-        feedback.classList.remove('hidden');
-
-        // Disable answer selection
-        const answerOptions = document.querySelectorAll('.answer-option');
-        answerOptions.forEach(option => {
-            option.removeEventListener('click', selectAnswer);
-            option.style.cursor = 'default';
-        });
-
-        // Move to next question after delay
-        setTimeout(() => {
-            if (currentQuestion < quizData.length - 1) {
-                currentQuestion++;
-                loadQuestion();
-            } else {
-                endQuiz();
-            }
-        }, 2500);
-    }
-
-    // End quiz
-    function endQuiz() {
-        // Stop timer
-        clearInterval(timerInterval);
-
-        // Hide quiz screen, show results screen
-        quizScreen.classList.add('hidden');
-        resultsScreen.classList.remove('hidden');
-
-        // Update results
-        correctCount.textContent = score;
-        totalQuestions.textContent = quizData.length;
-        timeTaken.textContent = formatTime(timer);
-
-        const percentage = Math.round((score / quizData.length) * 100);
-        finalScore.textContent = percentage;
-
-        // Set feedback message
-        if (percentage >= 90) {
-            feedbackMessage.innerHTML = '<p class="highlight">Excellent work! You have a strong understanding of the material.</p>';
-        } else if (percentage >= 80) {
-            feedbackMessage.innerHTML = '<p class="highlight">Good job! You have a solid grasp of the material.</p>';
-        } else if (percentage >= 70) {
-            feedbackMessage.innerHTML = '<p>Not bad! You understand most of the material but might want to review some concepts.</p>';
-        } else {
-            feedbackMessage.innerHTML = '<p>You might want to review the material and try again to improve your score.</p>';
-        }
-
-        // Special message for safety quiz
-        if ((quizType === 'safety' || quizType === 'lts-safety') && percentage < 80) {
-            feedbackMessage.innerHTML += '<p style="color: #dc3545; font-weight: bold;">The Safety Quiz requires a score of at least 80% before your first on-water session. Please review the safety materials and try again.</p>';
-        }
-
-        // Notify parent window of quiz completion
-        try {
-            window.parent.postMessage({
-                quizStatus: {
-                    quizId: quizType,
-                    status: 'completed',
-                    score: percentage
-                }
-            }, '*');
-        } catch (e) {
-            console.error('Error sending completion message to parent:', e);
-        }
-    }
-
-    // Show review screen
-    function showReview() {
-        resultsScreen.classList.add('hidden');
-        reviewScreen.classList.remove('hidden');
-
-        // Clear previous review
-        reviewContainer.innerHTML = '';
-
-        // Add each question and answer
-        quizData.forEach((question, index) => {
-            const userAnswerIndex = userAnswers[index];
-            const isCorrect = userAnswerIndex === question.correctIndex;
-
-            const questionElement = document.createElement('div');
-            questionElement.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
-
-            questionElement.innerHTML = `
-                    <h3>Question ${index + 1}</h3>
-                    <p>${question.text}</p>
-                    <p><strong>Your answer:</strong> ${userAnswerIndex !== null ? question.answers[userAnswerIndex] : 'No answer'}</p>
-                    <p><strong>Correct answer:</strong> ${question.answers[question.correctIndex]}</p>
-                    <p><strong>Explanation:</strong> ${question.explanation}</p>
-                `;
-
-            reviewContainer.appendChild(questionElement);
-        });
-    }
-
-    // Timer functions
-    function startTimer() {
-        timerInterval = setInterval(() => {
-            timer++;
-            timerDisplay.textContent = `Time: ${formatTime(timer)}`;
-        }, 1000);
-    }
-
-    function formatTime(seconds) {
-        const minutes = Math.floor(seconds / 60);
-        const remainingSeconds = seconds % 60;
-        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
-    }
-
-    // Event listeners
     document.addEventListener('DOMContentLoaded', function () {
-        // Debug info
-        console.log('Quiz module loaded.');
-        console.log('URL parameters:', window.location.search);
-        console.log('Quiz type:', quizType);
-        console.log('CSV source:', csvSource);
+        const urlParams = new URLSearchParams(window.location.search);
+        const quizIdFromUrl = urlParams.get('quiz');
+        const csvSourceFromUrl = urlParams.get('src');
 
-        if (csvSource) {
-            loadQuestionsFromCSV();
+        const domElements = {
+            // Start Screen
+            startButton: document.getElementById('start-button'),
+            loadingMessage: document.getElementById('loading-message'),
+            errorMessage: document.getElementById('error-message'),
+            // Quiz Screen
+            quizScreen: document.getElementById('quiz-screen'),
+            questionCounter: document.getElementById('question-counter'),
+            timerDisplay: document.getElementById('timer'),
+            scoreDisplay: document.getElementById('score-display'), // Displays correctAnswersCount
+            questionText: document.getElementById('question-text'),
+            answersContainer: document.getElementById('answers-container'),
+            feedback: document.getElementById('feedback'),
+            feedbackText: document.getElementById('feedback-text'),
+            progressBar: document.getElementById('progress-bar'),
+            // Results Screen
+            resultsScreen: document.getElementById('results-screen'),
+            correctCountDisplay: document.getElementById('correct-count'),
+            totalQuestionsDisplay: document.getElementById('total-questions'),
+            timeTakenDisplay: document.getElementById('time-taken'),
+            finalScoreDisplay: document.getElementById('final-score'), // Displays percentage
+            feedbackMessageDisplay: document.getElementById('feedback-message'),
+            // Review Screen
+            reviewScreen: document.getElementById('review-screen'),
+            reviewContainer: document.getElementById('review-container'),
+            // Buttons
+            restartButton: document.getElementById('restart-button'),
+            reviewButton: document.getElementById('review-button'),
+            reviewBackButton: document.getElementById('review-back-button'),
+        };
+
+        const moduleConfig = {
+            quizId: quizIdFromUrl,
+            isEmbedded: true,
+            fetchCsvUrl: () => {
+                // Logic to determine CSV URL for embedded module
+                // It expects the 'src' parameter to be the direct filename or a path from root.
+                let fetchUrl = csvSourceFromUrl;
+                if (fetchUrl && !fetchUrl.startsWith('http') && !fetchUrl.startsWith('/')) {
+                    // Assuming CSVs are in a 'resources' directory relative to site root for embeds
+                    // Or, if the src is 'safety_questions.csv', it becomes '/resources/safety_questions.csv'
+                    // This matches the logic previously in loadAndProcessQuestions for embedded version
+                    if (!fetchUrl.includes('/')) { // Simple filename
+                        fetchUrl = '/resources/' + fetchUrl;
+                    } else if (!fetchUrl.startsWith('/')) { // Relative path like 'somefolder/file.csv'
+                        fetchUrl = '/' + fetchUrl; // Assume it's relative from root
+                    }
+                }
+                console.log("Embedded module determined fetchCsvUrl:", fetchUrl);
+                return fetchUrl;
+            },
+            onQuizEndCallbacks: [],
+            onQuestionsLoadedCallbacks: [
+                // Example: function() { console.log("Custom callback: Questions loaded for embed module!"); }
+            ],
+            moduleUsesProgressBar: true,
+            moduleUsesDetailedFeedbackMessage: true, // Embed version uses the detailed % messages
+            moduleHandlesHighScore: false, // No high score logic in embed
+            modulePostsToParent: true, // Embed version posts completion to parent
+        };
+
+        initializeQuizModule(domElements, moduleConfig);
+
+        // Initial action: try to load questions if source is provided
+        if (csvSourceFromUrl) {
+            // The startButton click will trigger loadAndProcessQuestions if allQuestions is empty
+            // Or, we can trigger it directly if we want loading to start immediately
+            // For now, let startButton handle it to show loading message correctly.
+            // Enable start button if CSV source is present, actual loading on click.
+            if (domElements.startButton) domElements.startButton.disabled = false;
+            if (domElements.loadingMessage && domElements.startButton.disabled) { // Show loading if start is still disabled (e.g. by default)
+                // This state is usually handled by attemptStartNewQuiz
+            }
         } else {
-            console.error('No CSV source specified in URL parameters');
-            errorMessage.textContent = 'No quiz source specified. Please select a quiz from the menu.';
-            errorMessage.classList.remove('hidden');
+            console.error('No CSV source specified in URL parameters for embedded quiz.');
+            if (domElements.errorMessage) {
+                domElements.errorMessage.textContent = 'No quiz source specified. Cannot load quiz.';
+                domElements.errorMessage.classList.remove('hidden');
+            }
+            if (domElements.startButton) domElements.startButton.disabled = true;
         }
 
-        startButton.addEventListener('click', startQuiz);
-        restartButton.addEventListener('click', function () {
-            resultsScreen.classList.add('hidden');
-            startQuiz();
-        });
-
-        reviewButton.addEventListener('click', showReview);
-        reviewBackButton.addEventListener('click', function () {
-            reviewScreen.classList.add('hidden');
-            resultsScreen.classList.remove('hidden');
-        });
+        // Specific event listener for reviewBackButton in embed module
+        if (domElements.reviewBackButton && domElements.resultsScreen && domElements.reviewScreen) {
+            domElements.reviewBackButton.addEventListener('click', function () {
+                domElements.reviewScreen.classList.add('hidden');
+                domElements.resultsScreen.classList.remove('hidden');
+            });
+        }
     });
 </script>
 </body>

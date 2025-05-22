@@ -41,3 +41,59 @@
   max-width: 300px; /* Max width for the button */
   /* Ensure button takes full width of its container if needed, but max-width restricts it */
 }
+
+/* Quiz Review Screen Styles */
+.review-question-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.review-item-correct {
+  background-color: #e6ffed; /* Light green background */
+  border-left: 5px solid #28a745; /* Green left border */
+}
+
+.review-item-incorrect {
+  background-color: #ffebee; /* Light red background */
+  border-left: 5px solid #dc3545; /* Red left border */
+}
+
+.review-question-item h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.review-question-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-answer-text strong,
+.correct-answer-text strong,
+.review-explanation strong {
+  font-weight: 600;
+}
+
+.user-answer-correct {
+  color: #28a745; /* Green text for correct user answer */
+}
+
+.user-answer-incorrect {
+  color: #dc3545; /* Red text for incorrect user answer */
+  text-decoration: line-through; /* Strikethrough for incorrect user answer */
+}
+
+.correct-answer-text {
+  color: #155724; /* Darker green for the actual correct answer text */
+}
+
+.review-explanation {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}

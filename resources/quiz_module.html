@@ -58,855 +58,168 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 
 </div>
 
-<style>
-    .quiz-container {
-        width: 100%;
-        /* ADDED */
-        box-sizing: border-box;
-        /* ADDED */
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 5px;
-        /* MODIFIED: Sync with embed version */
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #quiz-header {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .quiz-section {
-        margin-bottom: 30px;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    #quiz-info {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-
-    .input-group {
-        margin-bottom: 20px;
-    }
-
-    .input-group label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .input-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-
-    /* Updated .quiz-button styles to match quiz_module_embed.html */
-    .quiz-button {
-        background-color: #0066cc;
-        color: white;
-        border: 2px solid #004d99;
-        padding: 10px 20px;
-        font-size: 1.1rem;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.2s;
-        font-weight: bold;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        display: inline-block;
-        margin-bottom: 10px;
-        /* Retained from original quiz_module.html for spacing when buttons are stacked or used outside button-group */
-    }
-
-    .quiz-button:hover {
-        background-color: #004d99;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .quiz-button:disabled {
-        background-color: #cccccc;
-        cursor: not-allowed;
-        transform: none;
-        /* Ensure no transform on disabled state */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        /* Reset box-shadow or set to a specific disabled look */
-    }
-
-    .quiz-button.secondary {
-        background-color: #6c757d;
-        border-color: #5a6268;
-    }
-
-    .quiz-button.secondary:hover {
-        background-color: #5a6268;
-    }
-
-    /* End of updated .quiz-button styles */
-
-    .button-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .button-group .quiz-button {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    #answers-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .answer-button {
-        padding: 12px;
-        background-color: #f0f0f0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        text-align: left;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-
-    .answer-button:hover:not(:disabled) {
-        background-color: #e2e6ea;
-    }
-
-    .answer-button:disabled {
-        cursor: default;
-        opacity: 0.7;
-    }
-
-    .correct {
-        background-color: #d4edda !important;
-        border-color: #c3e6cb !important;
-        font-weight: bold;
-    }
-
-    .incorrect {
-        background-color: #f8d7da !important;
-        border-color: #f5c6cb !important;
-    }
-
-    #feedback {
-        margin: 20px 0;
-        padding: 15px;
-        border-radius: 5px;
-        background-color: #f8f9fa;
-        border-left: 4px solid #0077cc;
-    }
-
-    #feedback.correct-feedback {
-        border-left-color: #28a745;
-    }
-
-    #feedback.incorrect-feedback {
-        border-left-color: #dc3545;
-    }
-
-    #quiz-summary {
-        margin: 20px 0;
-        padding: 20px;
-        background-color: #e9ecef;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    #quiz-summary .result-heading {
-        font-size: 1.3em;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-
-    #quiz-summary .highlight {
-        color: #0077cc;
-        font-size: 1.5em;
-    }
-
-    #high-score-message {
-        margin: 20px 0;
-        padding: 15px;
-        border-radius: 5px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    #high-score-message p.success {
-        color: #155724;
-        background-color: #d4edda;
-        border: 1px solid #c3e6cb;
-        padding: 10px;
-        border-radius: 4px;
-    }
-
-    .review-item {
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        background-color: #fff;
-    }
-
-    .review-question {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .review-answers {
-        margin-left: 20px;
-    }
-
-    .review-correct {
-        color: #28a745;
-        font-weight: bold;
-    }
-
-    .review-correct::before {
-        content: '✔ ';
-        color: #28a745;
-    }
-
-    .review-incorrect {
-        color: #dc3545;
-        text-decoration: line-through;
-    }
-
-    .review-incorrect.user-answer::before {
-        content: '✘ ';
-        color: #dc3545;
-        text-decoration: none;
-        display: inline-block;
-        margin-right: 3px;
-    }
-
-    .review-incorrect.user-answer {
-        font-style: italic;
-    }
-
-    .review-explanation {
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #f8f9fa;
-        border-left: 4px solid #6c757d;
-        font-size: 0.9em;
-    }
-
-    #highscores-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-
-    /* ADDED: Scrollbar hiding from embed version */
-    html {
-        scrollbar-width: none;
-    }
-
-    body::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* ADDED: Responsive adjustments for smaller screens */
-    @media (max-width: 768px) {
-
-        #start-heading,
-        #question-text,
-        #results-screen h2,
-        #review-screen h2 {
-            font-size: 1rem;
-            /* MODIFIED: Sync with embed version */
-        }
-
-        .quiz-button {
-            font-size: 15px;
-            /* Slightly adjust button font if needed */
-        }
-
-        .button-group {
-            flex-direction: column;
-            /* Stack buttons in button groups */
-        }
-
-        .button-group .quiz-button {
-            min-width: 100%;
-            /* Make stacked buttons full width */
-        }
-
-        #quiz-info {
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-        }
-    }
-</style>
-
+<script src="../assets/js/quiz_logic.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-
-        // --- Configuration Store ---
+        // --- Configuration Store for the main quiz page ---
         const quizConfigurations = {
-            // Session Quizzes
-            '1': {
-                title: "Session 1: Learning the Motion and Getting Wet Quiz",
-                description: "Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test covered in Session 1.",
-                questionsUrl: 'session1_questions.csv',
-                quizId: 's1'
-            },
-            '2': {
-                title: "Session 2: Hitting the Water – Basic Stroke Sequencing Quiz",
-                description: "Test your knowledge on transferring erg skills, safe launching, basic boat control, and stroke sequencing from Session 2.",
-                questionsUrl: 'session2_questions.csv',
-                quizId: 's2'
-            },
-            '3': {
-                title: "Session 3: Learning How to Push Quiz",
-                description: "Test your knowledge on developing leg drive, power application, and basic navigation awareness covered in Session 3.",
-                questionsUrl: 'session3_questions.csv',
-                quizId: 's3'
-            },
-            '4': {
-                title: "Session 4: Navigation and Working Up River Quiz",
-                description: "Test your knowledge on skill integration, safe river navigation, group assessment, and independent sculling from Session 4.",
-                questionsUrl: 'session4_questions.csv',
-                quizId: 's4'
-            },
-            // Boathouse Quiz Integration
-            'bh': {
-                title: "AARC Boathouse Rules and Safety Quiz",
-                description: "Test your knowledge about boathouse rules, equipment care, and safety procedures. Each quiz consists of 10 randomly selected questions from our catalog.",
-                questionsUrl: 'boathouse_questions.csv',
-                quizId: 'bh'
-            },
-            // Safety Quiz
-            'safety': {
-                title: "Rowing Safety Quiz",
-                description: "Test your knowledge on rowing safety, including water safety rules, proper boat lighting, high-visibility clothing requirements, and AARC safety protocols.",
-                questionsUrl: 'safety_questions.csv',
-                quizId: 'safety'
-            },
-            // Terminology Quiz
-            'terminology': {
-                title: "Rowing Terminology Quiz",
-                description: "Demonstrate your understanding of rowing terminology, commands, and technical language.",
-                questionsUrl: 'terminology_questions.csv.csv',
-                quizId: 'terminology'
-            }
-
+            '1': { title: "Session 1: Learning the Motion and Getting Wet Quiz", description: "Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test covered in Session 1.", questionsUrl: 'session1_questions.csv', quizId: 's1' },
+            '2': { title: "Session 2: Hitting the Water – Basic Stroke Sequencing Quiz", description: "Test your knowledge on transferring erg skills, safe launching, basic boat control, and stroke sequencing from Session 2.", questionsUrl: 'session2_questions.csv', quizId: 's2' },
+            '3': { title: "Session 3: Learning How to Push Quiz", description: "Test your knowledge on developing leg drive, power application, and basic navigation awareness covered in Session 3.", questionsUrl: 'session3_questions.csv', quizId: 's3' },
+            '4': { title: "Session 4: Navigation and Working Up River Quiz", description: "Test your knowledge on skill integration, safe river navigation, group assessment, and independent sculling from Session 4.", questionsUrl: 'session4_questions.csv', quizId: 's4' },
+            'bh': { title: "AARC Boathouse Rules and Safety Quiz", description: "Test your knowledge about boathouse rules, equipment care, and safety procedures. Each quiz consists of 15 randomly selected questions from our catalog.", questionsUrl: 'boathouse_questions.csv', quizId: 'bh' },
+            'safety': { title: "Rowing Safety Quiz", description: "Test your knowledge on rowing safety, including water safety rules, proper boat lighting, high-visibility clothing requirements, and AARC safety protocols.", questionsUrl: 'safety_questions.csv', quizId: 'safety' },
+            'terminology': { title: "Rowing Terminology Quiz", description: "Demonstrate your understanding of rowing terminology, commands, and technical language.", questionsUrl: 'terminology_questions.csv', quizId: 'terminology' }
         };
 
-        // --- Dynamic Settings (will be set based on URL) ---
-        let currentConfig = null;
-        let questionsUrl = '';
-        let quizId = '';
-        const numberOfQuestionsToSelect = 15; // Select 15 questions for each quiz
+        let referrerUrl = document.referrer || '{{ site.baseurl }}/'; // Keep referrer for return button
 
-        // --- DOM Elements ---
-        const startScreen = document.getElementById('start-screen');
-        const quizScreen = document.getElementById('quiz-screen');
-        const resultsScreen = document.getElementById('results-screen');
-        const reviewScreen = document.getElementById('review-screen');
-        const startButton = document.getElementById('start-button');
-        const restartButton = document.getElementById('restart-button');
-        const reviewButton = document.getElementById('review-button');
-        const returnButton = document.getElementById('return-button');
-        const backToResultsButton = document.getElementById('back-to-results');
-        const questionCounter = document.getElementById('question-counter');
-        const timerElement = document.getElementById('timer');
-        const scoreDisplay = document.getElementById('score-display');
-        const questionText = document.getElementById('question-text');
-        const answersContainer = document.getElementById('answers-container');
-        const feedback = document.getElementById('feedback');
-        const feedbackText = document.getElementById('feedback-text');
-        const finalScore = document.getElementById('final-score');
-        const timeTaken = document.getElementById('time-taken');
-        const correctCount = document.getElementById('correct-count');
-        const feedbackMessage = document.getElementById('feedback-message');
-        const reviewContainer = document.getElementById('review-container');
-        const loadingMessage = document.getElementById('loading-message');
-        const errorMessage = document.getElementById('error-message');
-        const pageTitleElement = document.querySelector('title');
-        const quizTitleElement = document.getElementById('quiz-title');
-        const quizDescriptionElement = document.getElementById('quiz-description');
-        const startHeadingElement = document.getElementById('start-heading');
+        const domElements = {
+            // Start Screen
+            startButton: document.getElementById('start-button'),
+            loadingMessage: document.getElementById('loading-message'),
+            errorMessage: document.getElementById('error-message'),
+            startScreenTitle: document.getElementById('start-heading'), // Main page specific
+            // Quiz Screen
+            quizScreen: document.getElementById('quiz-screen'),
+            questionCounter: document.getElementById('question-counter'),
+            timerDisplay: document.getElementById('timer'),
+            scoreDisplay: document.getElementById('score-display'), // Displays correctAnswersCount
+            questionText: document.getElementById('question-text'),
+            answersContainer: document.getElementById('answers-container'),
+            feedback: document.getElementById('feedback'),
+            feedbackText: document.getElementById('feedback-text'),
+            // Results Screen
+            resultsScreen: document.getElementById('results-screen'),
+            correctCountDisplay: document.getElementById('correct-count'),
+            totalQuestionsDisplay: document.getElementById('total-questions'),
+            timeTakenDisplay: document.getElementById('time-taken'),
+            finalScoreDisplay: document.getElementById('final-score'), // Displays percentage
+            feedbackMessageDisplay: document.getElementById('feedback-message'),
+            // Review Screen
+            reviewScreen: document.getElementById('review-screen'),
+            reviewContainer: document.getElementById('review-container'),
+            // Buttons
+            restartButton: document.getElementById('restart-button'),
+            reviewButton: document.getElementById('review-button'),
+            returnToResultsButton: document.getElementById('back-to-results'), // Main page specific
+            returnToParentPageButton: document.getElementById('return-button'), // Main page specific
+            // Main module specific UI for quiz selection/display
+            quizTitleElement: document.getElementById('quiz-title'),
+            quizDescriptionElement: document.getElementById('quiz-description'),
+        };
 
-        // --- Quiz State ---
-        let allQuestions = [];
-        let currentQuestions = [];
-        let currentQuestionIndex = 0;
-        let score = 0;
-        let correctAnswers = 0;
-        let timerInterval;
-        let seconds = 0;
-        let selectedAnswers = [];
-        let quizComplete = false;
-        let referrerUrl = document.referrer || '{{ site.baseurl }}/';
+        let currentQuizConfig = null;
 
-        // --- Initialization ---
-        initializeQuiz();
-
-        // --- Event Listeners ---
-        startButton.addEventListener('click', attemptStartQuiz);
-        restartButton.addEventListener('click', resetQuiz);
-        reviewButton.addEventListener('click', showReview);
-        returnButton.addEventListener('click', () => { window.location.href = referrerUrl; });
-        backToResultsButton.addEventListener('click', () => { hideAllScreens(); resultsScreen.classList.remove('hidden'); });
-
-        // --- Core Functions ---
-
-        /** Validates that questions are loaded before starting the quiz */
-        function attemptStartQuiz() {
-            if (!allQuestions || allQuestions.length === 0) {
-                showInitializationError("Questions not loaded. Please try reloading the page.");
-                return;
-            }
-
-            startQuiz();
-        }
-
-        /** Begins the quiz by selecting questions and showing the first one */
-        function startQuiz() {
-            // Reset state for a fresh quiz
-            score = 0;
-            correctAnswers = 0;
-            seconds = 0;
-            currentQuestionIndex = 0;
-            selectedAnswers = [];
-            quizComplete = false;
-
-            // Mark as started in localStorage
-            if (quizId) {
-                try {
-                    const existingData = localStorage.getItem('aarc_quiz_' + quizId);
-                    const status = existingData ? JSON.parse(existingData) : {};
-                    status.started = true;
-                    status.lastAttempt = new Date().toISOString();
-                    localStorage.setItem('aarc_quiz_' + quizId, JSON.stringify(status));
-                } catch (e) {
-                    console.error('Error updating quiz started status:', e);
-                }
-            }
-
-            // Select random questions for this quiz attempt
-            selectRandomQuestions();
-
-            // Start timer
-            startTimer();
-
-            // Display first question
-            showQuestion(currentQuestionIndex);
-
-            // Update UI
-            scoreDisplay.textContent = `Score: ${score}%`;
-            questionCounter.textContent = `Question 1/${currentQuestions.length}`;
-
-            // Switch to the quiz screen
-            hideAllScreens();
-            quizScreen.classList.remove('hidden');
-        }
-
-        /** Loads questions from the selected CSV file */
-        function loadQuestions() {
-            loadingMessage.classList.remove('hidden');
-            startButton.disabled = true;
-
-            fetch(questionsUrl)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Failed to fetch questions: ${response.status} ${response.statusText}`);
+        const moduleConfig = {
+            quizId: null, // Will be set from currentQuizConfig
+            isEmbedded: false,
+            fetchCsvUrl: () => {
+                if (currentQuizConfig && currentQuizConfig.questionsUrl) {
+                    // In the main quiz page, CSVs are in the same directory as the HTML page
+                    // or a path relative to it. The shared logic expects a root-relative or full URL.
+                    // For simplicity, let's assume questionsUrl is just the filename.
+                    // The shared logic will prefix /resources/ if it's a simple filename and isEmbedded is true.
+                    // Since isEmbedded is false, it should handle it as-is or we ensure it's root relative.
+                    // The original main page logic just used fetch(questionsUrl) - implying relative to current page.
+                    // Let's ensure it becomes root-relative if it's just a filename.
+                    let url = currentQuizConfig.questionsUrl;
+                    if (url && !url.startsWith('http') && !url.startsWith('/')) {
+                        // Assuming quiz_module.html is in /resources/, and CSVs are also there.
+                        // So, 'session1_questions.csv' becomes '/resources/session1_questions.csv'
+                        url = '/resources/' + url;
                     }
-                    return response.text();
-                })
-                .then(csv => {
-                    // Parse CSV to array of question objects
-                    allQuestions = parseCSV(csv);
-                    loadingMessage.classList.add('hidden');
-                    startButton.disabled = false;
-                })
-                .catch(error => {
-                    console.error("Error loading questions:", error);
-                    showInitializationError(`Failed to load questions: ${error.message}`);
-                    loadingMessage.classList.add('hidden');
-                });
-        }
-
-        /** Parses CSV text to array of question objects */
-        function parseCSV(csv) {
-            // Split by rows and remove header
-            const rows = csv.split('\n');
-            if (rows.length <= 1) {
-                throw new Error("CSV file is empty or malformed");
-            }
-
-            const questions = [];
-            // Start at index 1 to skip the header row
-            for (let i = 1; i < rows.length; i++) {
-                if (!rows[i].trim()) continue; // Skip empty rows
-
-                // Process the row using a regex that handles quoted fields properly
-                const match = rows[i].match(/(?:^|,)(\"(?:[^\"]*(?:\"\"[^\"]*)*)\"|\d+|[^,]*)/g);
-                if (!match) continue;
-
-                // Clean up the fields
-                const fields = match.map(field => {
-                    if (field.startsWith(',')) field = field.substring(1); // Remove leading comma
-                    if (field.startsWith('"') && field.endsWith('"')) {
-                        // Remove quotes and handle escaped quotes
-                        return field.substring(1, field.length - 1).replace(/""/g, '"');
-                    }
-                    return field;
-                });
-
-                // Create question object
-                const question = {
-                    id: fields[0],
-                    text: fields[1],
-                    answers: [fields[2], fields[3], fields[4], fields[5]].filter(ans => ans !== undefined && ans !== ''),
-                    correctIndex: parseInt(fields[6]) - 1, // Convert to 0-based index
-                    explanation: fields[7] || "No explanation provided."
-                };
-
-                // Only add if it has text and at least 2 answers
-                if (question.text && question.answers.length >= 2) {
-                    questions.push(question);
+                    console.log("Main module determined fetchCsvUrl:", url);
+                    return url;
                 }
-            }
-
-            return questions;
-        }
-
-        /** Selects random questions for this quiz attempt */
-        function selectRandomQuestions() {
-            if (!allQuestions || allQuestions.length === 0) {
-                showInitializationError("No questions available");
-                return;
-            }
-
-            let questionsToSelect = numberOfQuestionsToSelect; // Defaults to 15
-
-            // Shuffle all available questions first
-            let shuffledAllQuestions = shuffleArray([...allQuestions]); // Use a copy to shuffle
-
-            if (shuffledAllQuestions.length > questionsToSelect) {
-                currentQuestions = shuffledAllQuestions.slice(0, questionsToSelect);
-                console.log(`Randomly selected ${questionsToSelect} questions.`);
-            } else {
-                currentQuestions = shuffledAllQuestions; // Use all available questions (already shuffled)
-                console.log(`Using all ${shuffledAllQuestions.length} available questions (shuffled).`);
-            }
-        }
-
-        /** Displays a question by index */
-        function showQuestion(index) {
-            if (index >= currentQuestions.length || index < 0) {
-                console.error("Invalid question index:", index);
-                return;
-            }
-
-            const question = currentQuestions[index];
-
-            // Update question display
-            questionText.textContent = question.text;
-            questionCounter.textContent = `Question ${index + 1}/${currentQuestions.length}`;
-
-            // Clear previous answers and feedback
-            answersContainer.innerHTML = '';
-            feedback.classList.add('hidden');
-
-            // Create answer buttons
-            question.answers.forEach((answerText, i) => {
-                const button = document.createElement('button');
-                button.className = 'answer-button';
-                button.textContent = answerText;
-                button.dataset.index = i;
-                button.addEventListener('click', () => checkAnswer(i));
-                answersContainer.appendChild(button);
-            });
-        }
-
-        /** Checks if selected answer is correct and handles result */
-        function checkAnswer(selectedIndex) {
-            const currentQuestion = currentQuestions[currentQuestionIndex];
-            const isCorrect = selectedIndex === currentQuestion.correctIndex;
-
-            // Disable all answer buttons
-            const buttons = answersContainer.querySelectorAll('.answer-button');
-            buttons.forEach(button => {
-                button.disabled = true;
-                if (parseInt(button.dataset.index) === currentQuestion.correctIndex) {
-                    button.classList.add('correct');
-                } else if (parseInt(button.dataset.index) === selectedIndex && !isCorrect) {
-                    button.classList.add('incorrect');
+                return null;
+            },
+            onQuizEndCallbacks: [
+                function (correctCount, totalCount, percentage) {
+                    console.log("Main Quiz Ended:", { correctCount, totalCount, percentage });
+                    // Potentially save high score or other main page specific actions
+                    saveQuizStatusToLocalStorage(percentage);
                 }
-            });
-
-            // Update score if correct
-            if (isCorrect) {
-                correctAnswers++;
-                // Calculate score as percentage of correct answers so far
-                score = Math.round((correctAnswers / (currentQuestionIndex + 1)) * 100);
-                scoreDisplay.textContent = `Score: ${score}%`;
-                feedback.classList.add('correct-feedback');
-                feedbackText.textContent = `Correct! ${currentQuestion.explanation}`;
-            } else {
-                // Recalculate score
-                score = Math.round((correctAnswers / (currentQuestionIndex + 1)) * 100);
-                scoreDisplay.textContent = `Score: ${score}%`;
-                feedback.classList.add('incorrect-feedback');
-                feedbackText.textContent = `Incorrect. The correct answer is: ${currentQuestion.answers[currentQuestion.correctIndex]}. ${currentQuestion.explanation}`;
-            }
-
-            // Show feedback
-            feedback.classList.remove('hidden');
-
-            // Record user's answer for review later
-            selectedAnswers[currentQuestionIndex] = selectedIndex;
-
-            // Set timeout to move to next question
-            setTimeout(() => {
-                // Clear styling
-                feedback.classList.remove('correct-feedback', 'incorrect-feedback');
-
-                // Move to next question or end quiz
-                currentQuestionIndex++;
-                if (currentQuestionIndex < currentQuestions.length) {
-                    showQuestion(currentQuestionIndex);
-                } else {
-                    endQuiz();
+            ],
+            onQuestionsLoadedCallbacks: [
+                function () {
+                    console.log("Questions loaded for main quiz module.");
+                    if (domElements.startButton) domElements.startButton.disabled = false;
                 }
-            }, 4000);
-        }
+            ],
+            moduleUsesProgressBar: false, // Main page does not use a progress bar element
+            moduleUsesDetailedFeedbackMessage: true, // Main page uses detailed feedback
+            moduleHandlesHighScore: true, // Main page might have high score logic (handled by saveQuizStatusToLocalStorage)
+            modulePostsToParent: false, // Main page doesn't post to parent, it is the parent.
+        };
 
-        /** Creates the review summary of all questions and answers */
-        function showReview() {
-            reviewContainer.innerHTML = '';
-
-            currentQuestions.forEach((question, index) => {
-                const reviewItem = document.createElement('div');
-                reviewItem.className = 'review-item';
-
-                // Question
-                const questionElement = document.createElement('div');
-                questionElement.className = 'review-question';
-                questionElement.textContent = `Question ${index + 1}: ${question.text}`;
-                reviewItem.appendChild(questionElement);
-
-                // Answers
-                const answersElement = document.createElement('div');
-                answersElement.className = 'review-answers';
-
-                question.answers.forEach((answer, i) => {
-                    const answerElement = document.createElement('div');
-
-                    if (i === question.correctIndex) {
-                        // Correct answer
-                        answerElement.className = 'review-correct';
-                        answerElement.textContent = answer;
-                    } else if (i === selectedAnswers[index]) {
-                        // User's incorrect answer
-                        answerElement.className = 'review-incorrect user-answer';
-                        answerElement.textContent = answer;
-                    } else {
-                        // Other incorrect answers
-                        answerElement.className = 'review-incorrect';
-                        answerElement.textContent = answer;
-                    }
-
-                    answersElement.appendChild(answerElement);
-                });
-
-                reviewItem.appendChild(answersElement);
-
-                // Explanation
-                const explanationElement = document.createElement('div');
-                explanationElement.className = 'review-explanation';
-                explanationElement.textContent = question.explanation;
-                reviewItem.appendChild(explanationElement);
-
-                reviewContainer.appendChild(reviewItem);
-            });
-
-            hideAllScreens();
-            reviewScreen.classList.remove('hidden');
-        }
-
-        /** Ends the quiz, calculates final results */
-        function endQuiz() {
-            quizComplete = true;
-            clearInterval(timerInterval); // Stop the timer
-
-            // Calculate final percentage score
-            const finalPercentageScore = currentQuestions.length > 0
-                ? Math.round((correctAnswers / currentQuestions.length) * 100)
-                : 0;
-
-            // Save quiz completion status to localStorage
-            saveQuizStatus(finalPercentageScore);
-
-            // Display final results
-            finalScore.textContent = finalPercentageScore;
-            timeTaken.textContent = formatTime(seconds);
-            correctCount.textContent = correctAnswers;
-            document.getElementById('total-questions').textContent = currentQuestions.length;
-
-            // Display completion message
-            const feedbackMessage = document.getElementById('feedback-message');
-            if (correctAnswers === currentQuestions.length) {
-                feedbackMessage.innerHTML = '<p class="success">Perfect score! Congratulations!</p>';
-            } else if (correctAnswers >= currentQuestions.length * 0.8) {
-                feedbackMessage.innerHTML = '<p class="success">Great job! You know this material well.</p>';
-            } else if (correctAnswers >= currentQuestions.length * 0.6) {
-                feedbackMessage.innerHTML = '<p>Good effort! Keep practicing to improve your score.</p>';
-            } else {
-                feedbackMessage.innerHTML = '<p>You might want to review this material again.</p>';
-            }
-
-            hideAllScreens();
-            resultsScreen.classList.remove('hidden');
-        }
-
-        /** Starts the quiz timer */
-        function startTimer() {
-            seconds = 0;
-            clearInterval(timerInterval);
-            timerInterval = setInterval(function () {
-                seconds++;
-                timerElement.textContent = `Time: ${formatTime(seconds)}`;
-            }, 1000);
-        }
-
-        /** Formats seconds to mm:ss */
-        function formatTime(totalSeconds) {
-            const minutes = Math.floor(totalSeconds / 60);
-            const seconds = totalSeconds % 60;
-            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-        }
-
-        // No session score functions needed
-
-        // --- Utility Functions ---
-        /** Fisher-Yates shuffle algorithm for arrays */
-        function shuffleArray(array) {
-            const shuffled = [...array];
-            for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-            }
-            return shuffled;
-        }
-
-        function hideAllScreens() {
-            startScreen.classList.add('hidden');
-            quizScreen.classList.add('hidden');
-            resultsScreen.classList.add('hidden');
-            reviewScreen.classList.add('hidden');
-        }
-
-        function resetQuiz() {
-            if (!currentConfig) {
-                showInitializationError("Cannot reset quiz: Configuration missing.");
-                return;
-            }
-            clearInterval(timerInterval); // Stop any running timer
-            quizComplete = false;
-
-            // Reset UI elements
-            scoreDisplay.textContent = `Score: 0%`;
-            timerElement.textContent = `Time: 0:00`;
-            feedback.classList.add('hidden');
-            feedback.classList.remove('correct-feedback', 'incorrect-feedback');
-            answersContainer.innerHTML = ''; // Clear any leftover answer buttons
-            errorMessage.classList.add('hidden'); // Hide any previous errors
-
-            // Start a fresh quiz with a new set of random questions
-            startQuiz();
-        }
-
-        function showInitializationError(message) {
-            errorMessage.textContent = message;
-            errorMessage.classList.remove('hidden');
-            loadingMessage.classList.add('hidden');
-            startButton.disabled = true;
-        }
-
-        /** Initialize session scores */
-
-        /** Save quiz completion status to localStorage */
-        function saveQuizStatus(score) {
-            if (!quizId) return;
-
-            try {
-                const status = {
-                    started: true,
-                    completed: score >= 60, // Consider it completed if they scored at least 60%
-                    lastScore: score,
-                    lastAttempt: new Date().toISOString()
-                };
-
-                localStorage.setItem('aarc_quiz_' + quizId, JSON.stringify(status));
-
-                // Try to notify parent page if any that quiz status changed
-                try {
-                    window.parent.postMessage({
-                        type: 'quizCompleted',
-                        quizId: quizId,
-                        status: status
-                    }, '*');
-                } catch (e) {
-                    console.log('Could not notify parent window of quiz completion');
-                }
-            } catch (e) {
-                console.error('Error saving quiz status:', e);
-            }
-        }
-
-        function initializeQuiz() {
+        function initializeMainQuizPage() {
             const urlParams = new URLSearchParams(window.location.search);
             const quizParam = urlParams.get('quiz');
 
             if (quizParam && quizConfigurations[quizParam]) {
-                currentConfig = quizConfigurations[quizParam];
-                questionsUrl = currentConfig.questionsUrl;
-                quizId = currentConfig.quizId;
+                currentQuizConfig = quizConfigurations[quizParam];
+                moduleConfig.quizId = currentQuizConfig.quizId; // Set quizId in shared config
 
                 // Update UI Text Dynamically
-                pageTitleElement.textContent = currentConfig.title;
-                quizTitleElement.textContent = currentConfig.title;
-                quizDescriptionElement.textContent = currentConfig.description;
+                if (document.title && currentQuizConfig.title) document.title = currentQuizConfig.title;
+                if (domElements.quizTitleElement) domElements.quizTitleElement.textContent = currentQuizConfig.title;
+                if (domElements.quizDescriptionElement) domElements.quizDescriptionElement.textContent = currentQuizConfig.description;
 
-                if (quizParam === 'bh') {
-                    startHeadingElement.textContent = `Ready to test your Boathouse knowledge?`;
-                } else if (quizParam === 'safety') {
-                    startHeadingElement.textContent = `Ready to test your Safety knowledge?`;
-                } else if (quizParam === 'lts-safety') {
-                    startHeadingElement.textContent = `Ready to test your Learn-to-Scull Safety Rules knowledge?`;
-                } else if (!isNaN(parseInt(quizParam))) {
-                    startHeadingElement.textContent = `Ready to test your Session ${quizParam} knowledge?`;
-                } else {
-                    startHeadingElement.textContent = `Ready to test your knowledge?`;
-                }
+                let startHeadingText = "Ready to test your knowledge?";
+                if (quizParam === 'bh') startHeadingText = "Ready to test your Boathouse knowledge?";
+                else if (quizParam === 'safety') startHeadingText = "Ready to test your Safety knowledge?";
+                else if (!isNaN(parseInt(quizParam))) startHeadingText = `Ready to test your Session ${quizParam} knowledge?`;
+                if (domElements.startScreenTitle) domElements.startScreenTitle.textContent = startHeadingText;
 
-                startButton.disabled = false;
-                errorMessage.classList.add('hidden');
-                loadQuestions(); // Load questions for the selected quiz
+                initializeQuizModule(domElements, moduleConfig);
+
+                // Enable start button, loading is handled by attemptStartNewQuiz
+                if (domElements.startButton) domElements.startButton.disabled = false;
+                if (domElements.errorMessage) domElements.errorMessage.classList.add('hidden');
 
             } else {
-                showInitializationError("Invalid or missing quiz specified in URL. Please use a valid link (e.g., ?quiz=1, ?quiz=bh, or ?quiz=safety).");
+                const errorMsg = "Invalid or missing quiz specified in URL. Please use a valid link (e.g., ?quiz=1, ?quiz=bh, or ?quiz=safety).";
+                if (domElements.errorMessage) {
+                    domElements.errorMessage.textContent = errorMsg;
+                    domElements.errorMessage.classList.remove('hidden');
+                }
+                if (domElements.loadingMessage) domElements.loadingMessage.classList.add('hidden');
+                if (domElements.startButton) domElements.startButton.disabled = true;
+                console.error(errorMsg);
             }
         }
+
+        // Specific event listeners for main quiz page buttons
+        if (domElements.returnToParentPageButton) {
+            domElements.returnToParentPageButton.addEventListener('click', () => {
+                window.location.href = referrerUrl;
+            });
+        }
+        if (domElements.returnToResultsButton && domElements.resultsScreen && domElements.reviewScreen) {
+            domElements.returnToResultsButton.addEventListener('click', () => {
+                if (domElements.reviewScreen) domElements.reviewScreen.classList.add('hidden');
+                if (domElements.resultsScreen) domElements.resultsScreen.classList.remove('hidden');
+            });
+        }
+
+        function saveQuizStatusToLocalStorage(score) {
+            if (!moduleConfig.quizId) return;
+            try {
+                const status = {
+                    started: true,
+                    completed: score >= 60, // Consider completed if score is 60%+
+                    lastScore: score,
+                    lastAttempt: new Date().toISOString()
+                };
+                localStorage.setItem('aarc_quiz_' + moduleConfig.quizId, JSON.stringify(status));
+                console.log("Quiz status saved for", moduleConfig.quizId, status);
+            } catch (e) {
+                console.error('Error saving quiz status to localStorage:', e);
+            }
+        }
+
+        // --- Initialize the main quiz page ---
+        initializeMainQuizPage();
     });
 </script>

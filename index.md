@@ -9,37 +9,45 @@ title: AARC Learn to Scull Program
   </div>
 
   <div class="highlights-grid">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-calendar-alt"></i>
+    <a href="{{ site.baseurl }}/for-learners/getting-started/program-overview.html" class="highlight-card-link">
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h3>Program Format</h3>
+        <p>Four 3-hour sessions over two weekends with small groups and personalized coaching.</p>
       </div>
-      <h3>Program Format</h3>
-      <p>Four 3-hour sessions over two weekends with small groups and personalized coaching.</p>
-    </div>
+    </a>
     
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-graduation-cap"></i>
+    <a href="{{ site.baseurl }}/for-learners/#learning-journey" class="highlight-card-link">
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3>Progressive Learning</h3>
+        <p>Structured approach from first strokes to independent rowing with confidence.</p>
       </div>
-      <h3>Progressive Learning</h3>
-      <p>Structured approach from first strokes to independent rowing with confidence.</p>
-    </div>
+    </a>
     
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-life-ring"></i>
+    <a href="{{ site.baseurl }}/for-learners/#safety" class="highlight-card-link">
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-life-ring"></i>
+        </div>
+        <h3>Safety First</h3>
+        <p>Comprehensive water safety training including practical self-rescue techniques.</p>
       </div>
-      <h3>Safety First</h3>
-      <p>Comprehensive water safety training including practical self-rescue techniques.</p>
-    </div>
+    </a>
     
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-users"></i>
+    <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="highlight-card-link">
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Join the Community</h3>
+        <p>Clear pathway to club membership and ongoing rowing opportunities.</p>
       </div>
-      <h3>Join the Community</h3>
-      <p>Clear pathway to club membership and ongoing rowing opportunities.</p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -198,6 +206,12 @@ title: AARC Learn to Scull Program
   margin-top: 2rem;
 }
 
+.highlight-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensures the link takes up the grid cell properly */
+}
+
 .highlight-card {
   background-color: white;
   border-radius: var(--border-radius);
@@ -306,6 +320,14 @@ title: AARC Learn to Scull Program
   text-decoration: none;
   color: white;
 }
+
+/* Added for footer_nav.html */
+.footer-navigation .footer-nav-button {
+  margin: 0.3rem 0.25rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9em;
+}
+/* End of added styles */
 
 .cta-button.secondary {
   background-color: transparent;
