@@ -219,6 +219,7 @@ title: AARC Learn to Scull Program
   text-align: center;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  height: 100%; /* Ensures the card fills the link wrapper */
 }
 
 .highlight-card:hover {

@@ -67,7 +67,7 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
                 </ul>
                 <p><strong>How to Apply:</strong></p>
                 <ul>
-                    <li>Please complete the [2025 Scholarship Application](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=153833).</li>
+                    <li>Please complete the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=153833">2025 Scholarship Application</a>.</li>
                     <li>AARC keeps financial information private. Applications will be reviewed by the Scholarship Committee which is comprised of the Scholarship Committee chair, the Treasurer and two Board members-at-large.</li>
                     <li>Requests for financial assistance must be made each season for which aid is needed and must be requested prior to the start of the class or program for which aid is needed. The personal contribution must also be paid prior to the start of the class or program unless special accommodation has been made with the Scholarship Committee.</li>
                     <li>AARC reserves the right to discontinue a scholarship at any time should the rower/sculler not adhere to the club's safety guidelines and/or follow the club's policies and procedures.</li>

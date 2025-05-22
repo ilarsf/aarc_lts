@@ -22,7 +22,8 @@ description: Guidance on continuing your rowing journey after completing the AAR
 </style>
 
 <div class="container my-5">
-    <div class="page-header">
+
+    <div class="section-header">
         <h1>Continue Your Rowing Journey</h1>
         <p class="lead">Congratulations on completing the Learn to Scull program! Here’s how you can continue to develop your skills and enjoy rowing with AARC.</p>
     </div>
@@ -66,7 +67,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <button class="accordion-toggle"><i class="fas fa-user-graduate"></i> Coached Programs</button>
         <div class="accordion-content">
             <div class="accordion-content-inner">
-                <p>If you're looking for more structured coaching after the trial period, AARC offers various coached programs. These programs focus on continued skill development, endurance building, and often introduce more advanced techniques or specific boat types (e.g., doubles, quads).</p>
+                <p>If you're looking for more structured coaching after the trial period, AARC offers various coached programs. These programs focus on continued skill development, endurance building, and often introduce more advanced techniques or specific boat types (e.g., doubles).</p>
             </div>
         </div>
     </div>

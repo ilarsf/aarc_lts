@@ -154,7 +154,7 @@ title: Frequently Asked Questions - AARC Learn to Scull
                             <li>Learning how to stay with the boat</li>
                             <li>Practicing self-rescue techniques</li>
                           </ul>
-                        Yes, the flip test is a required component of the program. It\'s conducted in shallow water with instructors nearby, and it\'s essential for building water confidence and safety knowledge.
+                        Yes, the flip test is a required component of the program. It's conducted in shallow water with instructors nearby, and it's essential for building water confidence and safety knowledge.
                         </p>
                     </div>
                 </div>
@@ -247,7 +247,7 @@ title: Frequently Asked Questions - AARC Learn to Scull
         <div class="accordion-content-inner">
 
             <div class="nested-section">
-                <button class="nested-toggle">What happens if there\'s bad weather?</button>
+                <button class="nested-toggle">What happens if there's bad weather?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
                         <p>In case of inclement weather:
@@ -310,5 +310,5 @@ title: Frequently Asked Questions - AARC Learn to Scull
 
 <div class="info-box tip mt-4">
   <h4>Still Have Questions?</h4>
-  <p>If your question isn\'t answered here, please <a href="{{ site.baseurl }}/about/contact.html">contact us</a>. We\'re happy to provide additional information about the Learn to Scull program.</p>
+  <p>If your question isn't answered here, please <a href="{{ site.baseurl }}/about/contact.html">contact us</a>. We're happy to provide additional information about the Learn to Scull program.</p>
 </div>
