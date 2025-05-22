@@ -162,8 +162,7 @@ parent: Knowledge Assessment
 
 <div id="quiz-container" class="hidden">
   <div class="quiz-header">
-    <h2 id="current-quiz-title">Quiz Title</h2>
-    <p id="quiz-description">Quiz description will appear here.</p>
+    <h3 id="current-quiz-title">Quiz Title</h3>
   </div>
   
   <div id="quiz-content">
