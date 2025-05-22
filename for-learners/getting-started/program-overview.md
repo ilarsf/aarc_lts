@@ -50,8 +50,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
               <p>This intensive format can be physically demanding, especially for those new to rowing. Participants should be prepared for:</p>
               <ul class="mb-0">
                 <li>Multiple sessions in a single day during the first weekend</li>
-                <li>Hand sensitivity and potential blister development</li>
-                <li>Possibility of bruising during the flip test, particularly on legs, torso, and arms</li>
+                <li>Possibility of bruising during the flip test</li>
                 <li>Cumulative fatigue across consecutive days of learning</li>
               </ul>
             </div>
@@ -110,8 +109,6 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
               <li><strong>Single scull</strong>: A narrow, lightweight boat propelled by two oars</li>
               <li><strong>Oars (sculls)</strong>: Two identical oars, one for each hand</li>
               <li><strong>Ergometer (Erg)</strong>: A land-based rowing machine used for technique development and warm-ups.</li>
-              <li><strong>PFD</strong>: Personal flotation device, required safety equipment</li>
-              <li><strong>Clothing</strong>: Athletic, moisture-wicking clothes that allow movement</li>
             </ul>
         </div>
     </div>
@@ -143,8 +140,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                   <li>Navigation and river traffic patterns</li>
                   <li>Independent sculling practice</li>
                   <li>Building endurance and confidence</li>
-                  <li>Understanding proper equipment care (rinsing and storage)</li>
-                  <li>Final assessment and skill verification</li>
+                  <li>Understanding proper equipment care (cleaning and storage)</li>
                   <li>Planning post-program continuation</li>
                 </ul>
               </div>
