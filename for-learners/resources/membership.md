@@ -6,12 +6,13 @@ description: Information about joining the Ann Arbor Rowing Club (AARC).
 
 {% include accordion.html %}
 
-<div class="container my-5">
-    <div class="page-header">
-        <h1>AARC Club Membership</h1>
-        <p class="lead">Welcome! Joining AARC opens up a world of rowing opportunities, from recreational sculling to competitive programs.</p>
-    </div>
+# AARC Club Membership
+    
+Welcome! Joining AARC opens up a world of rowing opportunities, from recreational sculling to competitive programs.
 
+
+<div class="container my-5">
+    
     <h2>Why Become an AARC Member?</h2>
     <p>Membership at AARC offers numerous benefits:</p>
     <ul>

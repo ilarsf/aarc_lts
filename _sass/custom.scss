@@ -97,3 +97,27 @@
   padding-top: 10px;
   border-top: 1px dashed #eee;
 }
+
+/* Fix for mobile menu overlap */
+@media (max-width: 768px) {
+  .page-header {
+    margin-bottom: 0; /* Remove bottom margin to prevent overlap */
+    position: relative; /* Ensure z-index and positioning context */
+    padding-bottom: 50px; /* Add padding to the bottom of the header to make space for the toggle */
+  }
+
+  .site-nav.active {
+    margin-top: 0; /* Adjust margin when menu is active */
+  }
+
+  .header-actions {
+    position: absolute;
+    bottom: 10px; /* Position it at the bottom of the .page-header */
+    right: 10px; /* Position it to the right */
+    z-index: 10; /* Ensure it's above other elements in the header */
+  }
+
+  .project-tagline {
+    margin-bottom: 20px; /* Add some margin below the tagline to ensure it doesn't get too close to the toggle */
+  }
+}
