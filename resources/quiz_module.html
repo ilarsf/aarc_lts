@@ -61,6 +61,8 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
 <script src="../assets/js/quiz_logic.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        const siteBaseUrl = '{{ site.baseurl }}'; // ADDED: Define siteBaseUrl from Jekyll
+
         // --- Configuration Store for the main quiz page ---
         const quizConfigurations = {
             '1': { title: "Session 1: Learning the Motion and Getting Wet Quiz", description: "Test your knowledge about basic rowing motion, equipment terminology, boat handling, and the flip test covered in Session 1.", questionsUrl: 'session1_questions.csv', quizId: 's1' },
@@ -72,7 +74,7 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             'terminology': { title: "Rowing Terminology Quiz", description: "Demonstrate your understanding of rowing terminology, commands, and technical language.", questionsUrl: 'terminology_questions.csv', quizId: 'terminology' }
         };
 
-        let referrerUrl = document.referrer || '{{ site.baseurl }}/'; // Keep referrer for return button
+        let referrerUrl = document.referrer || `${siteBaseUrl}/`; // UPDATED: Use siteBaseUrl for consistency
 
         const domElements = {
             // Start Screen
@@ -114,22 +116,16 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
         const moduleConfig = {
             quizId: null, // Will be set from currentQuizConfig
             isEmbedded: false,
-            fetchCsvUrl: () => {
+            fetchCsvUrl: () => { // UPDATED: fetchCsvUrl logic to correctly use site.baseurl
                 if (currentQuizConfig && currentQuizConfig.questionsUrl) {
-                    // In the main quiz page, CSVs are in the same directory as the HTML page
-                    // or a path relative to it. The shared logic expects a root-relative or full URL.
-                    // For simplicity, let's assume questionsUrl is just the filename.
-                    // The shared logic will prefix /resources/ if it's a simple filename and isEmbedded is true.
-                    // Since isEmbedded is false, it should handle it as-is or we ensure it's root relative.
-                    // The original main page logic just used fetch(questionsUrl) - implying relative to current page.
-                    // Let's ensure it becomes root-relative if it's just a filename.
-                    let url = currentQuizConfig.questionsUrl;
-                    if (url && !url.startsWith('http') && !url.startsWith('/')) {
-                        // Assuming quiz_module.html is in /resources/, and CSVs are also there.
-                        // So, 'session1_questions.csv' becomes '/resources/session1_questions.csv'
-                        url = '/resources/' + url;
-                    }
-                    console.log("Main module determined fetchCsvUrl:", url);
+                    const questionsFileName = currentQuizConfig.questionsUrl;
+                    // Construct path: siteBaseUrl + /resources/ + filename
+                    // siteBaseUrl is "" (for root deployment) or "/repository-name" (for GitHub Pages)
+                    // questionsFileName is like "safety_questions.csv"
+                    // This results in a correctly formed path like "/resources/file.csv" or "/repository-name/resources/file.csv"
+                    let url = `${siteBaseUrl}/resources/${questionsFileName}`;
+
+                    console.log("Main module determined fetchCsvUrl (corrected):", url);
                     return url;
                 }
                 return null;
