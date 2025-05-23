@@ -51,7 +51,7 @@ navigation:
     url: /about/
     subitems:
       - title: Meet the Team
-        url: /about/team/
+        url: /about/team.html
       - title: Club Policies
         url: /about/club-policies/
       - title: Contact

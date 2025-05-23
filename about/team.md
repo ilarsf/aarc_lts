@@ -12,16 +12,6 @@ Our dedicated team is committed to providing an exceptional learning experience 
   <p>These are the instructors who will be directly working with you during the Learn to Scull program:</p>
 
   <div class="team-grid">
-    <div class="team-member">
-      <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/Margaret_350_1346948715.jpg" alt="Margaret Hudson">
-      </div>
-      <div class="team-member-info">
-        <h3>Margaret Hudson</h3>
-        <h4>Instructor & Club President</h4>
-        <p>Margaret has been an AARC member since 2009 and currently serves as the Club President. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
-      </div>
-    </div>
     
     <div class="team-member">
       <div class="team-member-image">
@@ -36,23 +26,23 @@ Our dedicated team is committed to providing an exceptional learning experience 
 
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Sean Connors">
-      </div>
-      <div class="team-member-info">
-        <h3>Sean Connors</h3>
-        <h4>Instructor</h4>
-        <p>Sean became an AARC member in 2018 and quickly became involved with the Learn to Scull program. With his patient approach and technical knowledge, he helps new rowers feel comfortable and confident on the water.</p>
-      </div>
-    </div>
-
-    <div class="team-member">
-      <div class="team-member-image">
         <img src="https://images.clubexpress.com/757878/graphics/LarsFritsche_350px_1582283581.jpg" alt="Lars Fritsche">
       </div>
       <div class="team-member-info">
         <h3>Lars Fritsche</h3>
         <h4>Instructor & Club Secretary</h4>
         <p>Lars joined AARC in 2014 and serves as the Club Secretary. As an instructor for the Learn to Scull program, he focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/placeholder-coach.jpg" alt="Sean Connors">
+      </div>
+      <div class="team-member-info">
+        <h3>Sean Connors</h3>
+        <h4>Instructor</h4>
+        <p>Sean became an AARC member in 2018 and quickly became involved with the Learn to Scull program. With his patient approach and technical knowledge, he helps new rowers feel comfortable and confident on the water.</p>
       </div>
     </div>
     
@@ -66,6 +56,18 @@ Our dedicated team is committed to providing an exceptional learning experience 
         <p>Russ brings enthusiasm and technical expertise to the Learn to Scull program. He is dedicated to helping new rowers develop proper form and technique while building their confidence on the water.</p>
       </div>
     </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/Margaret_350_1346948715.jpg" alt="Margaret Hudson">
+      </div>
+      <div class="team-member-info">
+        <h3>Margaret Hudson</h3>
+        <h4>Instructor & Club President</h4>
+        <p>Margaret has been an AARC member since 2009 and currently serves as the Club President. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
+      </div>
+    </div>
+
   </div>
 
   <h2 class="mt-4">Sculling Community Leaders</h2>
