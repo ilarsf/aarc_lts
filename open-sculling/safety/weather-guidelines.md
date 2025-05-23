@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Weather Guidelines
 description: Weather-related safety protocols for rowers
 ---

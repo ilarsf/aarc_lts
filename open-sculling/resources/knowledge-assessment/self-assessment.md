@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: "Self-Assessment Tools - AARC Learn to Scull Program"
 ---
 

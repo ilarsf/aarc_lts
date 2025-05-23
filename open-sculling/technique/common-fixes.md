@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Common Technical Fixes
 description: Solutions to common beginner rowing problems and how to fix them
 ---

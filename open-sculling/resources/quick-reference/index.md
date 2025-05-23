@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Quick Reference
 nav_order: 2
 parent: Resources

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: River Traffic Guide
 description: Navigation patterns and rules for scullers
 ---

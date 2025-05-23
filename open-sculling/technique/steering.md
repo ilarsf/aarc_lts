@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Steering Your Sculling Boat
 description: Learn how to effectively steer and navigate a single scull.
 ---

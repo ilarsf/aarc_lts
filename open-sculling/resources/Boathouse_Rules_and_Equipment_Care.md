@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: "Boathouse Rules and Equipment Care"
 ---
 

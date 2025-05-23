@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: "Weather Guidelines for Rowing - AARC Learn to Scull Program"
 ---
 

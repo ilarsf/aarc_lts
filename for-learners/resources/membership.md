@@ -1,106 +1,69 @@
 ---
 layout: default
 title: AARC Membership
-description: Information about joining the Ann Arbor Rowing Club (AARC).
+description: Information on becoming a member of the Ann Arbor Rowing Club (AARC), including USRowing membership and Safe Sport training requirements.
+parent: Program Resources
+grand_parent: For Learners
+nav_order: 3 # Or an appropriate nav_order number
 ---
 
-{% include accordion.html %}
-
-# AARC Club Membership
-    
-Welcome! Joining AARC opens up a world of rowing opportunities, from recreational sculling to competitive programs.
-
-
 <div class="container my-5">
-    
-    <h2>Why Become an AARC Member?</h2>
-    <p>Membership at AARC offers numerous benefits:</p>
-    <ul>
-        <li><strong>Access to Equipment:</strong> Use of club-owned sculling boats (singles, doubles, quads), oars, and safety equipment.</li>
-        <li><strong>Facility Use:</strong> Access to the boathouse, including ergometers, weights, and changing rooms (subject to specific rules and hours).</li>
-        <li><strong>Coaching & Programs:</strong> Eligibility to participate in various coached programs, clinics, and workshops (program fees may apply).</li>
-        <li><strong>Community:</strong> Become part of a vibrant and supportive rowing community with social events and volunteer opportunities.</li>
-        <li><strong>USRowing Affiliation:</strong> AARC is an affiliated member of USRowing, ensuring adherence to national standards and providing insurance coverage for sanctioned activities.</li>
-    </ul>
 
-    <h2>Membership Types & Fees</h2>
-    <div class="accordion-section">
-        <button class="accordion-toggle">Membership Categories</button>
-        <div class="accordion-content">
-            <div class="accordion-content-inner">
-                <p>AARC has a two-part fee structure: <strong>Club Membership</strong> and <strong>Program Fees</strong>. Both are required to participate in on-water rowing activities.</p>
+    <div class="section-header text-center mb-5">
+        <h1>AARC Membership</h1>
+        <p class="lead">Your guide to becoming a full member of the Ann Arbor Rowing Club, including necessary affiliations and training.</p>
+    </div>
 
-                <p><strong>1. Club Membership:</strong></p>
-                <ul>
-                    <li>Covers your USRowing affiliation (including insurance) and access to club resources like our website and boathouse facilities (as per club rules).</li>
-                    <li>The primary category is <strong>Adult Individual Membership</strong> for individuals over 18.</li>
-                    <li>Specific membership fees are updated annually.</li>
-                </ul>
+    <div>
+        <div>
+            <p>To become a member, go to the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=558993" rel="noopener noreferrer">AARC Membership Page <i class="fas fa-external-link-alt"></i></a> and click on the <strong>Full Membership</strong> agreement (note that there is a $25 charge for membership).</p>
+            <p>Once you become a member, you can log in to the AARC website and you will find additional resources available, including the club’s system to request to be boated for practices and “For Members Only” links. As a member, you will also receive the weekly electronic publication, “The Weekly Catch,” which provides information about upcoming events and other items relevant to the club.</p>
+        </div>
 
-                <p><strong>2. Program Fees:</strong></p>
-                <ul>
-                    <li>Cover the costs associated with on-water activities, coaching, and equipment usage for specific rowing programs (e.g., Open Sculling, coached programs).</li>
-                    <li><strong>LTS Graduate Trial:</strong> Following successful completion of a Learn to Scull (LTS) program, new rowers are typically offered an introductory trial period for the Open Sculling program at a reduced program fee rate. This is designed to help you transition smoothly into regular club rowing.</li>
-                    <li>Program fees vary by program and are also updated annually.</li>
-                </ul>
-                <p><em>Prospective members are encouraged to check the official AARC website or contact the <a href="mailto:info@a2crew.org">Membership Coordinator</a> for the latest fee structure for both membership and programs, and any promotional offers.</em></p>
-            </div>
+        <div>
+            <h2>USRowing Membership & SafeSport Training</h2>
+            <p>USRowing membership is required to join AARC. A basic USRowing membership costs $25.00.</p>
+            <p>Please complete the following steps:</p>
+            <ol>
+                <li>Go to the <a href="https://membership.usrowing.org/" rel="noopener noreferrer">USRowing Membership Portal <i class="fas fa-external-link-alt"></i></a>.</li>
+                <li>Select "Individuals" and choose either “Join” or “Members”. (There is a $25.00 fee if you are joining for the first time, $20.00 for annual renewal).</li>
+                <li>Follow the prompts; the AARC club code is: <strong>CZGBS</strong>.</li>
+                <li>Ensure the following 3 documents are signed:
+                    <ul>
+                        <li>Membership agreement</li>
+                        <li>Waiver</li>
+                        <li>SafeSport attestation (see details below)</li>
+                    </ul>
+                </li>
+                <li>After you complete these steps, AARC will receive notice.</li>
+            </ol>
+
+            <h3 class="mt-4">SafeSport Training Details</h3>
+            <p>All team sports in the United States participate in the SafeSport program, designed to protect young athletes. While AARC is primarily a master's club, we do have minor members and employ minor coxswains. Every USRowing member must attest to whether they are in regular contact with minors. Those who are must complete SafeSport training (approx. 90 minutes initially, 30 minutes for annual renewal).</p>
+            <p>Access SafeSport training videos <a href="https://usrowing.org/sports/2022/12/20/accessing-safesport-training.aspx" rel="noopener noreferrer">here <i class="fas fa-external-link-alt"></i></a>.</p>
+        </div>
+
+        <div>
+            <h2>Member Duties and Stewardship</h2>
+            <p>Members are expected to contribute to keep the club running smoothly and cost-effectively. Opportunities are advertised in "The Weekly Catch" or via SignUp Genius (accessible on the homepage under “Stewardship”).</p>
+            <p><strong>Types of Duties:</strong></p>
+            <ul>
+                <li><strong>Weekly Tasks:</strong> Boathouse sweeping, laundering towels, etc.</li>
+                <li><strong>Ad Hoc Tasks:</strong> Single events like Clean-Up Days, Spring Open House, etc.</li>
+            </ul>
+            <p>All members are expected to attend boathouse workdays at the start and end of the season. If you have skills like accounting, web editing/design, etc., please volunteer!</p>
+        </div>
+
+        <div>
+            <h2>Winter Training</h2>
+            <p>Once the on-the-water season concludes, the Winter Training program (on ergometers) begins. This program is for all rowers (sweep and sculling) and helps develop power, fitness, and stroke mechanics under closer coach observation.</p>
+            <p>Coached practices typically run on weekday mornings/evenings and one weekend session from December through March. The location varies and will be announced in "The Catch". Sign-ups are also advertised there and available via the website.</p>
         </div>
     </div>
 
-    <div class="accordion-section">
-        <button class="accordion-toggle">Scholarship Program</button>
-        <div class="accordion-content">
-            <div class="accordion-content-inner">
-                <p>AARC endeavors to make rowing accessible to the broad community. To support participation in our rowing classes and programs, scholarships are available to those with financial need.</p>
-                <p><strong>Eligibility:</strong></p>
-                <ul>
-                    <li>Demonstrated need AND one of the following:
-                        <ul>
-                            <li>Current AARC member in good standing</li>
-                            <li>Participant in AARC “Learn to” Classes</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p><strong>Limitations:</strong></p>
-                <ul>
-                    <li>Financial assistance can cover a portion of class fees and/or monthly program fees but cannot be applied to any other fees associated with participating with AARC, such as boat rack rental fees, regatta fees, social events fees or purchase of club apparel and gear.</li>
-                </ul>
-                <p><strong>How to Apply:</strong></p>
-                <ul>
-                    <li>Please complete the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=153833">2025 Scholarship Application</a>.</li>
-                    <li>AARC keeps financial information private. Applications will be reviewed by the Scholarship Committee which is comprised of the Scholarship Committee chair, the Treasurer and two Board members-at-large.</li>
-                    <li>Requests for financial assistance must be made each season for which aid is needed and must be requested prior to the start of the class or program for which aid is needed. The personal contribution must also be paid prior to the start of the class or program unless special accommodation has been made with the Scholarship Committee.</li>
-                    <li>AARC reserves the right to discontinue a scholarship at any time should the rower/sculler not adhere to the club's safety guidelines and/or follow the club's policies and procedures.</li>
-                </ul>
-            </div>
-        </div>
+    <div class="text-center mt-5">
+        <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" rel="noopener noreferrer" class="btn btn-outline-secondary me-2"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
+        <a href="{{ site.baseurl }}/index.html" rel="noopener noreferrer" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
     </div>
 
-    <h2>How to Join AARC</h2>
-    <div class="accordion-section">
-        <button class="accordion-toggle">Joining Process</button>
-        <div class="accordion-content">
-            <div class="accordion-content-inner">
-                <p>The process for joining AARC typically involves these steps, especially after completing a Learn to Scull program:</p>
-                <ol>
-                    <li><strong>Complete Learn to Scull (or equivalent):</strong> For new rowers, successful completion of the LTS program and certification by coaches is usually the first step. Experienced rowers transferring from other clubs may have a different pathway – please contact us.</li>
-                    <li><strong>Open Sculling Program Trial (Recommended):</strong> Participate in the four-week trial to transition smoothly into club rowing.</li>
-                    <li><strong>Pay Annual Dues:</strong> Submit payment for the full membership.</li>
-                    <li><strong>Sign Waivers & Agreements:</strong> Complete and sign all required waivers, including the AARC Code of Conduct and safety acknowledgments.</li>
-                    <li><strong>USRowing Membership:</strong> Ensure you have an active USRowing membership. AARC will guide you on this.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
-    <div class="info-box tip">
-        <h4>Questions?</h4>
-        <p>For any questions about membership, please contact the AARC Membership Coordinator at <a href="mailto:info@a2crew.org">info@a2crew.org</a> or visit the main <a href="https://aarc.clubexpress.com/">AARC website</a>.</p>
-    </div>
-
-    <div class="mt-5">
-        <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
-        <a href="{{ site.baseurl }}/index.html" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
-    </div>
 </div>

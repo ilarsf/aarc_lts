@@ -1,94 +1,45 @@
 ---
 layout: default
-title: Contact Information - AARC Learn to Scull
+title: Contact AARC
+description: Contact information for the Ann Arbor Rowing Club (AARC) leadership and general inquiries.
 ---
 
-<div class="about-header">
-  <h1>Contact Information</h1>
-  <p class="lead">How to reach us for program questions, registration assistance, or other inquiries.</p>
-</div>
+<div class="container my-5">
 
-## Key Contacts
+    <div class="section-header">
+        <h1>Contact Us</h1>
+        <p class="lead">Get in touch with the Ann Arbor Rowing Club. We look forward to hearing from you!</p>
+    </div>
 
-<div class="contact-grid">
-  <div class="contact-card">
-    <h3>Learn-to-Scull & Program Questions</h3>
+    <h2>Key Contacts</h2>
+    <p>For additional questions you may have, you can contact your LTS coach or one of the people listed below if you have questions specific to a particular area.</p>
     <ul>
-      <li><strong>Email:</strong> <a href="mailto:info@a2crew.com">info@a2crew.com</a></li>
+        <li><strong>Tom Kraft</strong>, 2024 Head Sculling Coach: <a href="mailto:tom-kraft@sbcglobal.net">tom-kraft@sbcglobal.net</a></li>
+        <li><strong>Russell Giacobbe</strong>, 2024 Head Coach, Technical Sweep contact: <a href="mailto:russell.giacobbe@gmail.com">russell.giacobbe@gmail.com</a></li>
+        <li><strong>Margaret Hudson</strong>, Club President: <a href="mailto:admin@a2crew.com">admin@a2crew.com</a></li>
+        <li><strong>Marcia Leonard</strong>, Club Vice-President & Membership Chair: <a href="mailto:marcia@umich.edu">marcia@umich.edu</a></li>
     </ul>
-    <p>Contact for: Program questions, instructor communication, accessibility accommodations, or class-specific needs.</p>
-  </div>
-  
-  <div class="contact-card">
-    <h3>Safety Committee & Incident Reporting</h3>
-    <ul>
-      <li><strong>Safety Committee Email:</strong> <a href="mailto:safety@a2crew.org">safety@a2crew.org</a></li>
-      <li><strong>Conduct Review Board:</strong> <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=130907" target="_blank">Conduct Review Board page</a> (<a href="mailto:crb@a2crew.org">crb@a2crew.org</a>)</li>
-    </ul>
-    <p>Contact for: Reporting safety concerns, incidents, or conduct issues outside of class times.</p>
-  </div>
-  
-  <div class="contact-card">
-    <h3>General & Membership Questions</h3>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:info@a2crew.com">info@a2crew.com</a></li>
-      <li><strong>Phone (voicemail):</strong> 734-930-6462</li>
-    </ul>
-    <p>Contact for: Registration assistance, payment questions, rescheduling requests, or membership information.</p>
-    <p><strong>In case of life-threatening emergency, always call 911 first.</strong></p>
-  </div>
-</div>
 
-## Boathouse Location
+    <h2>General Inquiries</h2>
+    <p>For general questions, send a message to: <a href="mailto:info@a2crew.com">info@a2crew.com</a>. Someone can always help you reach the right person to answer any questions you might have.</p>
 
-<div class="location-info">
-  <div class="location-map">
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Bandemer+Park+Ann+Arbor+MI&zoom=14&size=400x300&maptype=roadmap&markers=color:red%7CBandemer+Park+Ann+Arbor+MI" alt="Map to AARC Boathouse" loading="lazy">
-  </div>
-  
-  <div class="location-details">
-    <h3>AARC Boathouse at Bandemer Park</h3>
-    <p>Ann Arbor Rowing Club<br>
-    Bandemer Park - Beal Boathouse<br>
-    1325 Lake Shore Drive<br>
-    Ann Arbor, MI 48104</p>
-    
-    <h4>Directions:</h4>
-    <ul>
-      <li>Located in Bandemer Park on the Huron River, north of downtown Ann Arbor</li>
-      <li>Enter Bandemer Park from North Main Street (near M-14 overpass)</li>
-      <li>Follow the park road to the end where you'll find the Beal Boathouse</li>
-    </ul>
-    
-    <h4>Parking:</h4>
-    <p>Free parking is available in the Bandemer Park lot. Please note that the lot can fill up during weekends and peak usage times, so allow extra time for parking during your first session.</p>
-  </div>
-</div>
+    <!-- You can add a contact form here if you have a service like Formspree or Netlify Forms -->
+    <!-- Example:
+    <form action="YOUR_FORM_ENDPOINT" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    -->
 
-## General Club Information
-
-<div class="club-info">
-  <div class="club-contact">
-    <h3>Ann Arbor Rowing Club</h3>
-    <ul>
-      <li><strong>Main Website:</strong> <a href="https://aarc.clubexpress.com" target="_blank">aarc.clubexpress.com</a></li>
-      <li><strong>General Inquiries:</strong> <a href="mailto:info@a2crew.com">info@a2crew.com</a></li>
-      <li><strong>Phone (voicemail):</strong> 734-930-6462</li>
-      <li><strong>Social Media:</strong> 
-        <a href="https://www.facebook.com/AnnArborRowingClub/" target="_blank">Facebook</a>, 
-        <a href="https://www.instagram.com/annarborrowing" target="_blank">Instagram</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-## Response Times & Communication Methods
-
-<div class="info-box note">
-  <h4>What to Expect</h4>
-  <ul>
-    <li><strong>Email:</strong> Our primary communication method. Responses typically within 1-2 business days.</li>
-    <li><strong>Phone:</strong> For routine matters, please leave a voicemail at 734-930-6462.</li>
-    <li><strong>Weather Updates:</strong> Sent via email by 5:00 PM the day before a scheduled session.</li>
-  </ul>
 </div>

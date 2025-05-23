@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Sculling Assessment Guide
 description: How your sculling skills will be evaluated during and after the program
 ---

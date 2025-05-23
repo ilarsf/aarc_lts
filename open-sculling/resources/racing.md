@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Competitive Rowing at AARC
 description: Information about racing opportunities and competitive rowing programs at AARC.
 ---

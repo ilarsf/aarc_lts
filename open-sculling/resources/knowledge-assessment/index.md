@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Knowledge Assessment
 nav_order: 3
 parent: Resources

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Equipment Care Guide - AARC Learn to Scull Program
 ---
 

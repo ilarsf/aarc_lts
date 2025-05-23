@@ -151,7 +151,26 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
                         <p>The most important safety protocols every rower must follow on the water.</p>
                     </div>
                 </a>
-            
+
+                <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>River Rules</h3>
+                        <p>Navigation guidelines, traffic patterns, and rules for rowing on the river.</p>
+                    </div>
+                </a>
+                
+                <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines-lts.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>LTS Weather Guidelines</h3>
+                        <p>Simplified weather rules for Learn-To-Scull participants.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

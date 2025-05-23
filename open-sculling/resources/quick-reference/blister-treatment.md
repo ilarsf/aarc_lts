@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: "Blister Treatment for Rowers - AARC Learn to Scull Program"
 ---
 

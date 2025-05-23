@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: open-sculling
 title: Advanced Coaching & Technique Sessions
 description: Information on further coaching opportunities at AARC to advance your sculling technique.
 ---
