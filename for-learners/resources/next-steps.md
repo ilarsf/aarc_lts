@@ -50,7 +50,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <li>A chance to become comfortable with club routines and equipment.</li>
     </ul>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
-    <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details/"  class="btn btn-primary">More on Open Sculling Program Trial & Continuation</a>
+    <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">More on Open Sculling Program Trial & Continuation</a>
 
     <h2>General Advice for Continued Development</h2>    
     <ul>
@@ -62,7 +62,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
     </ul>
 
     <div class="mt-5">
-        <a href="{{ site.baseurl }}/for-learners/learning-journey/" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Learning Journey</a>
+        <a href="{{ site.baseurl }}/for-learners/#resources" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Resources</a>
         <a href="{{ site.baseurl }}/index.html" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
     </div>
 </div>

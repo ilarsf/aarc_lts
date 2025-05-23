@@ -16,8 +16,8 @@ nav_order: 3 # Or an appropriate nav_order number
 
     <div>
         <div>
-            <p>To become a member, go to the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=558993" rel="noopener noreferrer">AARC Membership Page <i class="fas fa-external-link-alt"></i></a> and click on the <strong>Full Membership</strong> agreement (note that there is a $25 charge for membership).</p>
-            <p>Once you become a member, you can log in to the AARC website and you will find additional resources available, including the club’s system to request to be boated for practices and “For Members Only” links. As a member, you will also receive the weekly electronic publication, “The Weekly Catch,” which provides information about upcoming events and other items relevant to the club.</p>
+            <p>To become a member, go to the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=558993" rel="noopener noreferrer">AARC Membership Page <i class="fas fa-external-link-alt"></i></a> and click on the <strong>Full Membership</strong> agreement (note that there is a $25 annual fee for membership).</p>
+            <p>Once you become a member, you can log in to the AARC website and you will find additional resources available, including “For Members Only” links. As a member, you will also receive the weekly electronic publication, “The Weekly Catch,” which provides information about upcoming events and other items relevant to the club.</p>
         </div>
 
         <div>

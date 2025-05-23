@@ -19,7 +19,7 @@ This section provides additional resources to support your learning experience a
     <div class="card-body">
         <h5 class="card-title"><i class="fas fa-question-circle"></i> Quizzes</h5>
         <p class="card-text">Test your knowledge with our interactive quizzes.</p>
-        <a href="quizzes.md" class="btn btn-primary">Take a Quiz</a>
+        <a href="quizzes.html" class="btn btn-primary">Take a Quiz</a>
     </div>
 </div>
 

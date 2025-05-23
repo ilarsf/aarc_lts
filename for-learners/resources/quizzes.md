@@ -224,40 +224,53 @@ function loadQuizStatuses() {
   try {
     const quizzes = ['safety', 'bh', '1', '2', '3', '4', 'terminology'];
     
-    quizzes.forEach(quiz => {
-      const status = localStorage.getItem(`quiz_${quiz}_status`);
-      if (status) {
-        updateQuizStatus(quiz, status);
+    quizzes.forEach(quizId => { // Renamed 'quiz' to 'quizId' for clarity
+      const storedStatusJSON = localStorage.getItem(`aarc_quiz_${quizId}`); // MODIFIED: Correct localStorage key
+      let displayStatus = 'not-started'; // Default status
+
+      if (storedStatusJSON) {
+        try {
+          const statusObject = JSON.parse(storedStatusJSON);
+          if (statusObject.completed) {
+            displayStatus = 'completed';
+          } else if (statusObject.started) { // 'started' implies in-progress if not completed
+            displayStatus = 'in-progress';
+          }
+          // If neither 'completed' nor 'started' is true, it remains 'not-started'.
+        } catch (e) {
+          console.error(`Error parsing status for quiz ${quizId}:`, storedStatusJSON, e);
+          // Fallback to 'not-started' if parsing fails
+          displayStatus = 'not-started';
+        }
       }
+      updateQuizStatusDisplay(quizId, displayStatus); // MODIFIED: Call renamed function
     });
   } catch (error) {
-    console.log('Error loading quiz statuses:', error);
+    console.error('Error loading quiz statuses:', error); // MODIFIED: Changed to console.error
   }
 }
 
-// Function to update quiz status
-function updateQuizStatus(quizId, status) {
+// Function to update quiz status display (formerly updateQuizStatus)
+function updateQuizStatusDisplay(quizId, statusString) { // MODIFIED: Renamed and simplified
   try {
     // Update in progress grid
     const progressItem = document.querySelector(`.progress-item[data-quiz-id="${quizId}"] .progress-status`);
     if (progressItem) {
-      progressItem.className = `progress-status ${status}`;
+      progressItem.className = `progress-status ${statusString}`; // Use statusString directly for class
       
-      if (status === 'completed') {
+      if (statusString === 'completed') {
         progressItem.textContent = 'Completed';
-      } else if (status === 'in-progress') {
+      } else if (statusString === 'in-progress') {
         progressItem.textContent = 'In progress';
-      } else {
+      } else { // 'not-started'
         progressItem.textContent = 'Not started';
       }
     }
     
     // Removed logic for updating dashboard items as they no longer show status
-    
-    // Save status to local storage
-    localStorage.setItem(`quiz_${quizId}_status`, status);
+    // REMOVED: localStorage.setItem call - quizzes.md should only read status
   } catch (error) {
-    console.log('Error updating quiz status:', error);
+    console.error(`Error updating display for quiz ${quizId}:`, error); // MODIFIED: Changed to console.error
   }
 }
 

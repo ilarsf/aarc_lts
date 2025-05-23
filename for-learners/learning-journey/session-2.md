@@ -104,7 +104,8 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to prepare for this session.</li>
+                            <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2" target="_blank">Session 2 Videos</a> to prepare for this session.</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" target="_blank">River Rules and Safety guidelines</a></li>
                             <li>It's normal to feel nervous about getting into a boat - everyone does!</li>
                             <li>Remember the "arms-body-slide" recovery sequence from Session 1</li>
                             <li>Be prepared to get wet (wear appropriate clothing)</li>
@@ -163,7 +164,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <li>Learning "oars down first" procedure</li>
                             <li>Boat sign-out process</li>
                             <li>Safe carrying techniques to the dock (coach demonstration)</li>
-                            <li>Briefing on basic river traffic rules (e.g., stay to starboard side)</li>
+                            <li>Briefing on basic river traffic rules (e.g., stay to starboard side).</li>
                         </ul>
                     </div>
                 </div>

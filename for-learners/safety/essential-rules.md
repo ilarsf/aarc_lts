@@ -328,17 +328,9 @@ description: Must-know safety rules for all rowing participants
     <p>Following these essential rules not only protects you but ensures a safe environment for everyone on the water. Never hesitate to ask questions about safety procedures.</p>
 </div>
 
-<h3>Next Steps:</h3>
-<div class="card-grid">
-    <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
-        <div class="card-image">
-            <i class="fas fa-life-ring"></i>
-        </div>
-        <div class="card-content">
-            <h3>Self-Rescue Guide</h3>
-            <p>Detailed steps for capsize recovery and self-rescue techniques</p>
-        </div>
-    </a>
+<div class="text-center mt-5">
+    <a href="{{ site.baseurl }}/for-learners/#safety" class="btn btn-outline-secondary me-2"><i class="fas fa-arrow-left"></i> Back to Safety Overview</a>
+    <a href="{{ site.baseurl }}/index.html" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
 </div>
 
 <!-- Font Awesome for icons -->

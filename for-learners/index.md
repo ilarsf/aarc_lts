@@ -43,6 +43,17 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
                         <p>Everything you need to bring and prepare before your first rowing session.</p>
                     </div>
                 </a>
+
+                <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Answers to common questions about the program and learning to scull.</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
@@ -122,6 +133,16 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
                     </div>
                 </a>
                 
+                <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
+                    <div class="card-image">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Self-Rescue</h3>
+                        <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
@@ -181,15 +202,6 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             <p>Additional materials to support your learning and ongoing development as a sculler.</p>
             
             <div class="card-grid">
-                <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="card">
-                    <div class="card-image">
-                        <i class="fas fa-question-circle"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Frequently Asked Questions</h3>
-                        <p>Answers to common questions about the program and learning to scull.</p>
-                    </div>
-                </a>
 
                 <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html" class="card">
                     <div class="card-image">
