@@ -25,28 +25,28 @@ parent: Knowledge Assessment
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
-    <div class="progress-item" data-quiz-id="session1">
+    <div class="progress-item" data-quiz-id="1">
       <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" onclick="loadQuiz(\\'1\\'); return false;" class="progress-item-link">
         <div class="progress-icon">1️⃣</div>
         <div class="progress-label">Session 1</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
-    <div class="progress-item" data-quiz-id="session2">
+    <div class="progress-item" data-quiz-id="2">
       <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" onclick="loadQuiz(\\'2\\'); return false;" class="progress-item-link">
         <div class="progress-icon">2️⃣</div>
         <div class="progress-label">Session 2</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
-    <div class="progress-item" data-quiz-id="session3">
+    <div class="progress-item" data-quiz-id="3">
       <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" onclick="loadQuiz(\\'3\\'); return false;" class="progress-item-link">
         <div class="progress-icon">3️⃣</div>
         <div class="progress-label">Session 3</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
-    <div class="progress-item" data-quiz-id="session4">
+    <div class="progress-item" data-quiz-id="4">
       <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" onclick="loadQuiz(\\'4\\'); return false;" class="progress-item-link">
         <div class="progress-icon">4️⃣</div>
         <div class="progress-label">Session 4</div>
@@ -79,7 +79,7 @@ parent: Knowledge Assessment
   </div>
   
   <!-- Boathouse Quiz -->
-  <div class="quiz-list-item" data-quiz-id="boathouse">
+  <div class="quiz-list-item" data-quiz-id="bh">
     <div class="quiz-list-item-content">
       <h4>Boathouse Rules Quiz</h4>
       <p>Boathouse protocols, equipment handling, club rules.</p>
@@ -104,7 +104,7 @@ Test your knowledge from each training session
 
 <div class="quiz-list">
   <!-- Session 1 Quiz -->
-  <div class="quiz-list-item" data-quiz-id="session1">
+  <div class="quiz-list-item" data-quiz-id="1">
     <div class="quiz-list-item-content">
       <h4>Session 1 Quiz</h4>
       <p>Core concepts: basic terminology, equipment, safety rules.</p>
@@ -113,7 +113,7 @@ Test your knowledge from each training session
   </div>
   
   <!-- Session 2 Quiz -->
-  <div class="quiz-list-item" data-quiz-id="session2">
+  <div class="quiz-list-item" data-quiz-id="2">
     <div class="quiz-list-item-content">
       <h4>Session 2 Quiz</h4>
       <p>Rowing technique, water safety, equipment handling.</p>
@@ -122,7 +122,7 @@ Test your knowledge from each training session
   </div>
   
   <!-- Session 3 Quiz -->
-  <div class="quiz-list-item" data-quiz-id="session3">
+  <div class="quiz-list-item" data-quiz-id="3">
     <div class="quiz-list-item-content">
       <h4>Session 3 Quiz</h4>
       <p>Advanced technique, river traffic, common challenges.</p>
@@ -131,7 +131,7 @@ Test your knowledge from each training session
   </div>
   
   <!-- Session 4 Quiz -->
-  <div class="quiz-list-item" data-quiz-id="session4">
+  <div class="quiz-list-item" data-quiz-id="4">
     <div class="quiz-list-item-content">
       <h4>Session 4 Quiz</h4>
       <p>Comprehensive understanding for independent rowing.</p>
@@ -222,7 +222,7 @@ function loadQuiz(quizType) {
 // Function to load saved quiz statuses
 function loadQuizStatuses() {
   try {
-    const quizzes = ['safety', 'boathouse', 'session1', 'session2', 'session3', 'session4', 'terminology'];
+    const quizzes = ['safety', 'bh', '1', '2', '3', '4', 'terminology'];
     
     quizzes.forEach(quiz => {
       const status = localStorage.getItem(`quiz_${quiz}_status`);

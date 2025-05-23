@@ -267,25 +267,22 @@ function handleAnswerSelection(event) {
     const selectedOriginalIndex = parseInt(selectedAnswerElement.dataset.originalIndex);
     const question = currentQuestions[currentQuestionIndex];
 
-    // Clear existing selections/highlights from other buttons if any (though logic should prevent re-click)
-    // dom.answersContainer.querySelectorAll(\'.answer-button.selected\').forEach(btn => btn.classList.remove(\'selected\'));
-    // dom.answersContainer.querySelectorAll(\'.answer-button.correct\').forEach(btn => btn.classList.remove(\'correct\'));
-    // dom.answersContainer.querySelectorAll(\'.answer-button.incorrect\').forEach(btn => btn.classList.remove(\'incorrect\'));
-
-
     selectedAnswerElement.classList.add('selected');
     userAnswers[currentQuestionIndex] = selectedOriginalIndex;
 
     const isCorrect = selectedOriginalIndex === question.correctIndex;
+    let nextQuestionDelay = 2500; // Default delay
+
     if (isCorrect) {
         selectedAnswerElement.classList.add('correct');
         correctAnswersCount++;
-        // Update score display immediately if needed
         if (dom.scoreDisplay) dom.scoreDisplay.textContent = `Score: ${correctAnswersCount}`;
+        nextQuestionDelay = 1500; // Shorter delay for correct answers
     } else {
         selectedAnswerElement.classList.add('incorrect');
         const correctAnswerElement = dom.answersContainer.querySelector(`.answer-button[data-original-index="${question.correctIndex}"]`);
         if (correctAnswerElement) correctAnswerElement.classList.add('correct');
+        nextQuestionDelay = 3500; // Longer delay for incorrect answers
     }
 
     if (dom.feedbackText && dom.feedback) {
@@ -308,7 +305,7 @@ function handleAnswerSelection(event) {
         } else {
             endCurrentQuiz();
         }
-    }, 2500); // Delay for feedback viewing
+    }, nextQuestionDelay); // Use the adjusted delay
 }
 
 function endCurrentQuiz() {
