@@ -243,12 +243,12 @@ function updateQuizStatus(quizId, status) {
     if (progressItem) {
       progressItem.className = `progress-status ${status}`;
       
-      if (status === \\'completed\\') {
-        progressItem.textContent = \\'Completed\\';
-      } else if (status === \\'in-progress\\') {
-        progressItem.textContent = \\'In progress\\';
+      if (status === 'completed') {
+        progressItem.textContent = 'Completed';
+      } else if (status === 'in-progress') {
+        progressItem.textContent = 'In progress';
       } else {
-        progressItem.textContent = \\'Not started\\';
+        progressItem.textContent = 'Not started';
       }
     }
     
@@ -257,7 +257,7 @@ function updateQuizStatus(quizId, status) {
     // Save status to local storage
     localStorage.setItem(`quiz_${quizId}_status`, status);
   } catch (error) {
-    console.log(\'Error updating quiz status:\', error);
+    console.log('Error updating quiz status:', error);
   }
 }
 
