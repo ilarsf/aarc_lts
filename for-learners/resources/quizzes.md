@@ -18,7 +18,7 @@ parent: Knowledge Assessment
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
-    <div class="progress-item" data-quiz-id="boathouse">
+    <div class="progress-item" data-quiz-id="bh">
       <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" onclick="loadQuiz(\\'bh\\'); return false;" class="progress-item-link">
         <div class="progress-icon">🏠</div>
         <div class="progress-label">Boathouse</div>
