@@ -101,6 +101,5 @@ Welcome to the Learn to Scull program! This guide provides essential information
     </div>
 </div>
 
-**Next Steps:**
-- [Rowing Terminology]({{ site.baseurl }}/for-learners/getting-started/terminology.html)
-- [Frequently Asked Questions]({{ site.baseurl }}/for-learners/resources/faq.html)
+**Next Step:**
+- [Learning Journey]({{ site.baseurl }}/for-learners/learning-journey/)

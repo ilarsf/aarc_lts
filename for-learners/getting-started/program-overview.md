@@ -208,5 +208,4 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
 
 **Next Steps:**
 - [What to Bring and Wear](preparation.html)
-- [Basic Rowing Terminology](terminology.html)
 - [Learning Journey]({{ site.baseurl }}/for-learners/learning-journey/)
