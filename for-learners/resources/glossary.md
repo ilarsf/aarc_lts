@@ -163,6 +163,9 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Four</h3>
         <p class="az-glossary-definition">A sweep rowing boat for four rowers, with (4+) or without (4-) a coxswain.</p>
+
+        <h3 class="az-glossary-term">Frontstay</h3>
+        <p class="az-glossary-definition">A part of the rigger that provides support, typically extending forward from the main part of the rigger to the boat.</p>
     </div>
 
     <div class="az-tab-content" id="letter-G">
@@ -278,12 +281,15 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">PFD</h3>
         <p class="az-glossary-definition">Personal Flotation Device.</p>
+
+        <h3 class="az-glossary-term">Pin</h3>
+        <p class="az-glossary-definition">The vertical metal post on which the oarlock swivels.</p>
         
         <h3 class="az-glossary-term">Pitch</h3>
         <p class="az-glossary-definition">The angle of the oarlock relative to the boat.</p>
         
         <h3 class="az-glossary-term">Port</h3>
-        <p class="az-glossary-definition">Left side of the boat when facing the bow (rower's right side when seated).</p>
+        <p class="az-glossary-definition">Left side of the boat when facing the bow (rower\'s right side when seated).</p>
     </div>
 
     <div class="az-tab-content" id="letter-Q">
@@ -387,6 +393,12 @@ This comprehensive glossary includes all the rowing terms you'll encounter durin
         
         <h3 class="az-glossary-term">Tap Down</h3>
         <p class="az-glossary-definition">The slight downward pressure on the handles at the finish.</p>
+
+        <h3 class="az-glossary-term">Top Edge</h3>
+        <p class="az-glossary-definition">The upper edge of the oar blade when the blade is perpendicular to the water.</p>
+
+        <h3 class="az-glossary-term">Bottom Edge</h3>
+        <p class="az-glossary-definition">The lower edge of the oar blade when the blade is perpendicular to the water; this is the edge that enters the water first.</p>
 
         <h3 class="az-glossary-term">Tracks (or Slides)</h3>
         <p class="az-glossary-definition">Rails on which the seat moves.</p>

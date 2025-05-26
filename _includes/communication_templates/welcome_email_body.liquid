@@ -1,46 +1,35 @@
 Dear {{ page.lts_program_number }} Participants,<br><br>
 
-AARC is thrilled to welcome you to our Learn to Scull program ({{ page.lts_program_number }}) starting on {{ page.program_start_date }} at Bandemer Park boathouse.<br><br>
+AARC is welcomes you to our Learn to Scull program ({{ page.lts_program_number }}) starting on {{ page.program_start_date }} at Bandemer Park boathouse.<br><br>
 
 **ACTION REQUIRED**<br>
-1. USRowing membership: If you do not already have an active USRowing membership, please sign up for a Learn-to-Row membership ($10, 60-day coverage) at https://membership.usrowing.org/individual/join using code CZGBS.<br>
-2. AARC waiver: please complete and return the attached form before Day 1.<br><br>
+USRowing membership: If you do not already have an active USRowing membership, please sign up for a Learn-to-Row membership ($10, 60-day coverage) at https://membership.usrowing.org/individual/join using code CZGBS.<br><br>
 
 **CLASS DETAILS**<br>
 - Dates & times:<br>
 {% for date in page.session_dates %}
   - {{ date }} • 8:00 - 11:00 am (with break)<br>
 {% endfor %}
-- Group size: max 6 participants, 1 coach per 3 scullers<br>
-- Location: meet at the main entrance of the Bandemer Park boathouse; arrive 15 minutes early on Day 1<br><br>
+- Your coaches are: {% for instructor in page.instructors %}{{ instructor.name }}{% unless forloop.last %} & {% endunless %}{% endfor %}.<br>
+- Location: meet at the main entrance of the Bandemer Park boathouse. Please arrive by 7:50 am (10 minutes before the 8:00 am start) to ensure a prompt start. Arriving 15 minutes early on Day 1 is especially helpful.<br><br>
 
 **WHAT TO BRING**<br>
-- Athletic clothes that won't snag in the tracks (leggings/shorts + snug top)<br>
-- Water bottle (32 oz / 1 L)<br>
+- Athletic clothes that are snug enough to not get caught in the seat tracks (e.g., spandex shorts, bike shorts, leggings, snug top). Brightly colored clothing is recommended for visibility on the water. Rowing is an outdoor sport; please dress for the weather, including layers on cooler days, as we will be on the water even in light rain.<br>
+- Water bottle (32 oz / 1 L). Please note: there is no potable water in Bandemer Park, so make sure you bring enough hydration for the entire session.<br>
 - Sunscreen, hat & sunglasses<br>
-- Towel & change of clothes (for flip test)<br><br>
+- Towel & change of clothes. You will take a flip test, typically on the first Saturday, where you will exit the rowing shell into the water and demonstrate your ability to get back into the craft.<br><br>
 
 **PRE-COURSE MATERIALS**<br>
 To help you prepare for your first session, please review:<br>
-1. The Learn to Scull Learner Guide: https://ilarsf.github.io/aarc_lts/for-learners/index.html<br>
-2. These short Introduction to Rowing videos: https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=pre-course<br><br>
+1. <a href="https://s3.amazonaws.com/ClubExpressClubFiles/757878/documents/LTS_Intro_Packet.pdf?AWSAccessKeyId=AKIA6MYUE6DNNJ6ROIH3&Expires=1748266729&response-content-disposition=inline%3B%20filename%3DLTS_Intro_Packet.pdf&Signature=p69r%2FZc2eapBAGXzYks9ngUT9X0%3D">Primer for LTS</a><br>
+2. The Learn to Scull Learner Guide: https://ilarsf.github.io/aarc_lts/for-learners/index.html<br>
+3. These short Introduction to Rowing videos: https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=pre-course<br><br>
+
+These materials have been carefully compiled to provide a valuable introduction to our sport and can enhance your learning experience. The core concepts from these materials will be covered during your time in LTS, and there's no pressure to have studied them extensively before your first class. Reviewing them beforehand can help you feel more prepared and get the most out of our sessions. The linked webpages, in particular, offer comprehensive information and can be a great resource if you wish to delve deeper into specific topics, even if some content goes beyond what we cover in this introductory program. They are a great resource to have on hand throughout the program.<br><br>
 
 We're excited to get you out on the water! If you have any questions before our first session, please don't hesitate to reach out to us.<br><br>
 
+One final thing to remember: you are all entering a sport where you may have little experience. There’s no pressure or competition in the program. So remember to relax and enjoy yourself.<br><br>
+
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}<br>
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+AARC Learn to Scull Program Instructors

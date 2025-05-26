@@ -12,12 +12,12 @@ session_dates:
   - "June 8, 2025 (Sunday)"
 program_start_date: "May 31, 2025"
 instructors:
-  - first_name: "Michelle"
-    name: "Michelle Nemshak"
-    email: "mnrn67@comcast.net"
-  - first_name: "Lars"
-    name: "Lars Fritsche"
-    email: "fritsche.lars@gmail.com"
+  - first_name: "Coach1"
+    name: "Coach One"
+    email: "coach1@domain.org"
+  - first_name: "Coach2"
+    name: "Coach Two"
+    email: "coach2@domain.org"
 program_contact_email: "info@a2crew.com"
 
 ---
