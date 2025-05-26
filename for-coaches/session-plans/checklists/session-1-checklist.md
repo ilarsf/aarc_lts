@@ -10,6 +10,8 @@
     - *Coach Action: Clearly define roles and responsibilities for the session.*
 - [ ] First aid kit accessible
     - *Coach Action: Know its location and contents. Note any participant allergies or medical conditions.*
+- [ ] Photo/Video considerations:
+    - *Coach Action: Review club policy on photos/videos. If applicable, prepare consent forms or plan to discuss preferences with participants.*
 
 ## Session Objectives Checklist
 - [ ] Participants can name basic parts of the boat and oars.
@@ -29,6 +31,8 @@
     - [ ] Program overview and learning progression.
     - [ ] Introduction to coaches and fellow participants.
     - [ ] Essential safety protocols (on-land and on-water).
+    - [ ] Discuss photo/video policy and preferences.
+        - *Coach Instruction: "We may take photos or videos during sessions for learning purposes or for club promotion. Please let us know if you have any concerns, or if you'd specifically like any photos/videos taken for your own review." Confirm permissions as per club policy.*
 - **Ergometer Introduction & Drills:**
     - *Coach Instruction: "We'll start on the rowing machines, or ergometers, to learn the basic stroke."*
     - [ ] Basic rowing terminology (recap or introduce).

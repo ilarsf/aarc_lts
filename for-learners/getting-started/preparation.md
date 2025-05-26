@@ -102,4 +102,4 @@ Welcome to the Learn to Scull program! This guide provides essential information
 </div>
 
 **Next Step:**
-- [Learning Journey]({{ site.baseurl }}/for-learners/learning-journey/)
+- [Learning Journey]({{ site.baseurl }}/for-learners/#learning-journey)
