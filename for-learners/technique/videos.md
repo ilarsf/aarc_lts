@@ -492,6 +492,28 @@ This curated collection of high-quality instructional videos supports the Learn 
       </div>
     </div>
 
+    <!-- Legs Only, Legs and Back Drill -->
+    <div class="video-card" data-sessions="" data-skills="drills technique" data-topics="drive">
+      <div class="video-thumbnail" data-video-id="cBtPsSeglC8">
+        <iframe src="https://www.youtube.com/embed/cBtPsSeglC8" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Legs Only, Legs and Back</h3>
+        <div class="video-meta">
+          <span class="video-creator">USRowing</span>
+          <span class="video-duration">8:19</span>
+        </div>
+        <div class="video-description">
+          A focused drill for developing proper sequencing in the drive phase. This drill helps rowers isolate and perfect the legs-only motion before adding the back swing, reinforcing the critical power sequence for efficient rowing technique.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Drills</span>
+          <span class="video-tag">Technique</span>
+          <span class="video-tag">Drive</span>
+        </div>
+      </div>
+    </div>
+
   </div> <!-- End of video-grid -->
 </div> <!-- End of video-gallery -->
 
