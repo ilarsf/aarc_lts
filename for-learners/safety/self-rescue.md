@@ -57,6 +57,17 @@ description: Flip test and recovery procedures for scullers
 
 ## Self-Rescue Process
 
+<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 10px 0 20px; border-radius: 4px; display: flex; align-items: center;">
+  <div style="flex-shrink: 0; margin-right: 15px;">
+    {% include icon.html icon="fas fa-video" type="info" size="2rem" alt="Videos" %}
+  </div>
+  <div>
+    <strong>Video Demonstrations Available</strong>
+    <p style="margin: 5px 0 0;">Watching the self-rescue process before trying it can be extremely helpful. Check out our visual demonstrations: 
+    <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=self-rescue" class="cta-button" style="display: inline-block; margin-top: 5px; padding: 5px 15px; background-color: #2196f3; color: white; border-radius: 4px; text-decoration: none;">Watch Self-Rescue Videos</a></p>
+  </div>
+</div>
+
 {% include accordion.html %}
 
 <div class="accordion-controls">
@@ -166,7 +177,7 @@ description: Flip test and recovery procedures for scullers
       <div class="row">
         <div class="col-md-9">
           <div class="rescue-step-description">
-            <p><i class="fas fa-reply" style="color: #2196f3;"></i> The side re-entry is the most common technique for getting back into your shell from the water.</p>
+            <p>{% include icon.html icon="fas fa-reply" type="info" alt="Re-entry" color="#2196f3" %} The side re-entry is the most common technique for getting back into your shell from the water.</p>
           </div>
           <div class="rescue-step-actions">
             <ol>
@@ -176,7 +187,7 @@ description: Flip test and recovery procedures for scullers
               <li><strong>Retrieve the Far-Side Oar</strong><br>
                 Swim or lean over to grab the other oar. Ensure this oarlock is also properly closed.
               </li>
-              <li><strong>Extend both oars perpendicular (t-position)</strong><br>Push them out so they are fully extended and both blades lie flat on the water, with the handles overlapping.
+              <li><strong>Extend both oars perpendicular (t-position)</strong><br>Push them out so they are fully extended with handles overlapping. The near-side blade should rest flat on the water surface, while the far-side blade remains feathered in the air.
               </li>
               <li><strong>Position your hands</strong><br>
                 Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip between the tracks.
@@ -186,21 +197,25 @@ description: Flip test and recovery procedures for scullers
                   <li>First, bob down to utilize your natural buoyancy, then use a strong kick to gain upward momentum</li>
                   <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick, similar to getting out of a pool</li>
                 </ul>
-                <strong>Option A: The Belly Flop Method</strong>
-                <ul>
-                  <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
-                  <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
-                  <li>Keep your weight low and centered over the boat</li>
-                  <li>Once stable in this position, rotate your hip, sit up, and bring one leg across</li>
-                  <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
-                </ul>
-                <strong>Option B: The Hip Rotation Method</strong>
-                <ul>
-                  <li>Rotate your hip onto the tracks as you rise</li>
-                  <li>Keep your weight low and centered over the boat</li>
-                  <li>Once your hip is secured on the tracks, sit up, and bring one leg across</li>
-                  <li>Keep both blades flat on the water throughout for stability by lifting the hand holding the oars.</li>
-                </ul>
+                <div class="method-option" style="border-left: 3px solid #2196f3; padding-left: 15px; margin: 10px 0;">
+                  <strong>Option A: The Belly Flop Method</strong>
+                  <ul>
+                    <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
+                    <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
+                    <li>Keep your weight low and centered over the boat</li>
+                    <li>Lift the hand holding the oars to lower both blades flat onto the water surface, which stabilizes the boat and prevents it from rolling.</li>
+                    <li>Once stable in this position, rotate your hip, sit up, and bring one leg across</li>
+                  </ul>
+                </div>
+                <div class="method-option" style="border-left: 3px solid #43a047; padding-left: 15px; margin: 10px 0;">
+                  <strong>Option B: The Hip Rotation Method</strong>
+                  <ul>
+                    <li>Rotate your hip onto the tracks as you rise</li>
+                    <li>Keep your weight low and centered over the boat</li>
+                    <li>Lift the hand holding the oars to lower both blades flat onto the water surface, which stabilizes the boat and prevents it from rolling.</li>
+                    <li>Once your hip is secured on the tracks, sit up, and bring one leg across</li>
+                  </ul>
+                </div>
               </li>
               <li><strong>Re-seat Yourself</strong>
                 <ul>
@@ -209,7 +224,7 @@ description: Flip test and recovery procedures for scullers
               </li>
             </ol>
           </div>
-          <p><i class="fas fa-lightbulb" style="color: #4caf50;"></i> <strong>Technique Tip:</strong> This technique relies on leg power and body mechanics, not upper body strength. Using your natural buoancy and a strong scissors kick while pushing down on the oar handles will help lift your body horizontally onto the boat.</p>
+          <p>{% include icon.html icon="fas fa-lightbulb" type="info" alt="Tip" color="#4caf50" %} <strong>Technique Tip:</strong> This technique relies on leg power and body mechanics, not upper body strength. Using your natural buoyancy and a strong scissors kick while pushing down on the oar handles and the center strip will help lift your body horizontally onto the boat.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
@@ -230,7 +245,7 @@ description: Flip test and recovery procedures for scullers
       <div class="row">
         <div class="col-md-9">
           <div class="rescue-step-description">
-            <p><i class="fas fa-forward" style="color: #2196f3;"></i> Once back in your boat, follow these steps to resume rowing.</p>
+            <p>{% include icon.html icon="fas fa-forward" type="info" alt="Recovery" color="#2196f3" %} Once back in your boat, follow these steps to resume rowing.</p>
           </div>
           <div class="rescue-step-actions">
             <ol>
@@ -240,7 +255,7 @@ description: Flip test and recovery procedures for scullers
               <li>Consider heading to the dock to drain the boat</li>
             </ol>
           </div>
-          <p><i class="fas fa-hourglass-half" style="color: #43a047;"></i> <strong>Recovery Time:</strong> Take your time getting settled back in the boat. It's normal for the boat to feel unstable at first—gentle movements and patience will help you regain control.</p>
+          <p>{% include icon.html icon="fas fa-hourglass-half" type="info" alt="Recovery Time" color="#43a047" %} <strong>Recovery Time:</strong> Take your time getting settled back in the boat. It's normal for the boat to feel unstable at first—gentle movements and patience will help you regain control.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
@@ -254,14 +269,9 @@ description: Flip test and recovery procedures for scullers
   </div>
 </div>
 
-<div class="alert alert-info" style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 15px; margin: 10px 0; border-radius: 4px;">
-  <p>{% include icon.html icon="fas fa-video" type="info" alt="Videos" %} For visual demonstrations of the self-rescue techniques, please see our collection of self-rescue videos: 
-  <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=self-rescue" class="cta-button">Watch Self-Rescue Videos</a></p>
-</div>
-
 <div class="accordion-container" id="alternative-self-rescue-accordion">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self Rescue</div>
+    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self Rescue <span style="margin-left: auto; font-size: 0.8em;">Click to expand ↓</span></div>
     <div class="accordion-content" id="alternative-self-rescue-content">
       <div id="dock-content">
         {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock or shore:
