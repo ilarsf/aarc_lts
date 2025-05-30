@@ -206,6 +206,8 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                                         <li>Parts of the shell and oars</li>
                                         <li>Coach demonstration: Safe boat carrying techniques</li>
                                         <li>Coach demonstration: Getting in and out of the boat (dockside)</li>
+                                        <li>Coach demonstration: Basic maneuvering (e.g., stopping, gentle turning)</li>
+                                        <li>Coach demonstration: Self-rescue & Flip test</li>
                                     </ul>
                                 </div>
                             </div>
@@ -249,13 +251,12 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">First Water Experience & Drills</button>
+                            <button class="accordion-toggle">First Water Experience & Drills (if time permits)</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Guided assistance into a training shell</li>
                                         <li>Practice basic balance and boat feel</li>
-                                        <li>Coach demonstration: Basic maneuvering (e.g., stopping, gentle turning)</li>
                                         <li>Introduction to the "Pick Drill" (arms only, arms & body) with coach guidance</li>
                                         <li>Simple rowing technique exercises near the dock</li>
                                     </ul>
