@@ -179,6 +179,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                                         <li>Program overview and safety protocols</li>
                                         <li>Introduction to coaches and fellow participants</li>
                                         <li>Overview of the Learn to Scull progression</li>
+                                        <li>Boathouse orientation, rules and etiquette</li>
                                     </ul>
                                 </div>
                             </div>
@@ -233,18 +234,23 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                     </div>
                     <div class="timeline-content">
                         <h4>Water Introduction & Safety</h4>
-                        
                         <div class="accordion-section">
-                            <button class="accordion-toggle">The Flip Test (Capsize Drill)</button>
+                            <button class="accordion-toggle">Boat Feel & Flip Test (Capsize Drill)</button>
                             <div class="accordion-content">
-                                <div class="accordion-content-inner">
-                                    <p>This supervised drill teaches you what to do if your boat capsizes:</p>
+                                <div class="accordion-content-inner"> 
+                                    <ul>
+                                        <li>Guided assistance into a training shell</li>
+                                        <li>Practice basic balance and boat feel at the dock</li>
+                                        <li>The Flip Test / Capsize Drill</li>
+                                    </ul>
+                                    
+                                    <p>What to do if your boat capsizes:</p>
                                     <ol>
                                         <li><strong>Stay Calm & Stay With Your Boat:</strong> Your shell provides buoyancy</li>
                                         <li><strong>Manage Oars:</strong> Keep them nearby; they help stabilize for re-entry</li>
                                         <li><strong>Right the Shell:</strong> If upside down, gently flip it back over</li>
                                         <li><strong>Position Oars:</strong> Arrange oars perpendicular to the boat for stability</li>
-                                        <li><strong>Re-Enter:</strong> Use your legs to boost yourself back into the boat</li>
+                                        <li><strong>Re-Enter:</strong> Use a strong leg kick to boost yourself back into the boat</li>
                                     </ol>
                                 </div>
                             </div>
@@ -255,8 +261,6 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Guided assistance into a training shell</li>
-                                        <li>Practice basic balance and boat feel</li>
                                         <li>Introduction to the "Pick Drill" (arms only, arms & body) with coach guidance</li>
                                         <li>Simple rowing technique exercises near the dock</li>
                                     </ul>
