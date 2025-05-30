@@ -305,7 +305,6 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                             <li>To reinforce what you've learned, you can optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1">Session 1 Quiz</a>.</li>
                             <li>You can also optionally review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session1">Session 1 Videos</a> to reinforce what you've learned.</li>
                             <li>Practice the rowing sequence mentally to build muscle memory</li>
-                            <li>Take care of any developing blisters according to recommendations</li>
                             <li>Prepare questions for your next session</li>
                         </ul>
                     </div>
