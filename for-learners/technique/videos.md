@@ -340,7 +340,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
     
     <!-- The Finish -->
-    <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="finish">
+    <div class="video-card" data-sessions="session2 session3 session4" data-skills="technique" data-topics="finish">
       <div class="video-thumbnail" data-video-id="15RkCUVzqdA">
         <iframe src="https://www.youtube.com/embed/15RkCUVzqdA" frameborder="0" allowfullscreen=""></iframe>
       </div>
@@ -384,7 +384,7 @@ This curated collection of high-quality instructional videos supports the Learn 
     </div>
     
     <!-- Feathering and Squaring -->
-    <div class="video-card" data-sessions="session3" data-skills="technique" data-topics="feathering">
+    <div class="video-card" data-sessions="session2 session3" data-skills="technique" data-topics="feathering">
       <div class="video-thumbnail" data-video-id="UIDwzwSsXtI">
         <iframe src="https://www.youtube.com/embed/UIDwzwSsXtI" frameborder="0" allowfullscreen=""></iframe>
       </div>

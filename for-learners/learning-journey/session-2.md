@@ -143,11 +143,11 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <span class="time">Part 1</span>
                     </div>
                     <div class="timeline-content">
-                        <h4>Warm-up & Review</h4>
+                        <h4>Review & Optional Warm-up</h4>
                         <ul>
                             <li>Brief Q&A about Session 1</li>
-                            <li>Ergometer warm-up: Review Pick Drill progression (arms, arms & body, 1/4 slide, 1/2 slide, full slide)</li>
-                            <li>Ergometer: Practice Pause Drills (pause at hands away, pause at body prep)</li>
+                            <li>Optional Ergometer warm-up: Review Pick Drill progression (arms, arms & body, 1/4 slide, 1/2 slide, full slide)</li>
+                            <li>Optional Ergometer: Practice Pause Drills (pause at hands away, pause at body prep)</li>
                             <li>Focus on smooth transitions between stroke phases</li>
                             <li>Special emphasis on "arms-body-slide" recovery sequence</li>
                         </ul>
@@ -164,7 +164,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <li>Learning "oars down first" procedure</li>
                             <li>Boat sign-out process</li>
                             <li>Safe carrying techniques to the dock (coach demonstration)</li>
-                            <li>Briefing on basic river traffic rules (e.g., stay to starboard side).</li>
+                            <li>Briefing on basic river traffic rules (e.g., stay to starboard side, between the islands and the big tree / small dock).</li>
                         </ul>
                     </div>
                 </div>
@@ -195,7 +195,6 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration: Full stroke sequence on water</li>
                                         <li>Practice Pick Drill progression on water (arms only, arms & body, 1/4 slide, etc.)</li>
                                         <li>Practice Pause Drills (pause at hands away, pause at body prep) on water</li>
                                         <li>Applying recovery sequencing on water</li>
@@ -211,7 +210,6 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach demonstration: Feathering and squaring the blades</li>
                                         <li>Practice feathering drill (e.g., feather on recovery, square before catch)</li>
                                         <li>Practice basic sequencing: legs-body-arms for the drive</li>
                                         <li>Focus on control and awareness, linking strokes</li>
