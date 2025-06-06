@@ -143,7 +143,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <li>Brief Q&A about Session 2</li>
                             <li>Reinforcement of sequencing concepts</li>
                             <li>Introduction of Day 3 focus points</li>
-                            <li>Ergometer warm-up focusing on leg drive initiation, body swing, full slide strokes, and an introduction to ratio and rhythm.</li>
+                            <li>(Optional) Ergometer warm-up focusing on leg drive initiation, body swing, full slide strokes, and an introduction to ratio and rhythm.</li>
                         </ul>
                     </div>
                 </div>
@@ -189,7 +189,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Coach Demonstration: Full slide rowing with emphasis on leg drive and proper ratio.</li>
+                                        <li>Optional Coach Demonstration: Full slide rowing with emphasis on leg drive and proper ratio.</li>
                                         <li>Practice initiating drive with legs (refer to "Leg Drive Progression" drill)</li>
                                         <li>Connecting legs to handle movement</li>
                                         <li>Looking over shoulder while rowing</li>
@@ -204,12 +204,10 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Continuous rowing focusing on leg drive, maintaining ratio and rhythm</li>
-                                        <li>Practice pivot turn technique</li>
+                                        <li>Practice turning technique</li>
                                         <li>Applying varying stroke pressure for steering</li>
                                         <li>Regular navigation practice</li>
-                                        <li>Pause Drills (e.g., pause at arms away, pause at body prep) to refine sequencing and control.</li>
-                                        <li>Steering Drills: Practicing turns using outside arm only / inside arm only.</li>
-                                        <li>(Optional) Connection Drills: Wide grip and narrow grip rowing to feel the connection.</li>
+                                        <li>Optional Pause Drills (e.g., pause at arms away, pause at body prep) to refine sequencing and control.</li>
                                     </ul>
                                 </div>
                             </div>
