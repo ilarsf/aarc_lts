@@ -78,7 +78,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj3" name="checklist" value="obj3">
-                    <label for="obj3">Master boat control through turns and varying stroke pressure</label>
+                    <label for="obj3">Boat control through turns and varying stroke pressure</label>
                 </div>
                 
                 <div class="checklist-item">

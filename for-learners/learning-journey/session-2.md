@@ -88,7 +88,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj4" name="checklist" value="obj4">
-                    <label for="obj4">Master safe launching and landing procedures with coach demonstration and guidance.</label>
+                    <label for="obj4">Safe launching and landing procedures with coach demonstration and guidance.</label>
                 </div>
                 <div class="checklist-item">
                     <input type="checkbox" id="obj5" name="checklist" value="obj5">
