@@ -186,7 +186,7 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
                         
                         <div class="accordion-section">
-                            <button class="accordion-toggle">Ergometer Introduction & Drills</button>
+                            <button class="accordion-toggle">Ergometer Introduction & Stroke Sequence</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
@@ -257,11 +257,10 @@ Welcome to your first Learn to Scull session! This guide will help you understan
                         </div>
 
                         <div class="accordion-section">
-                            <button class="accordion-toggle">First Water Experience & Drills (if time permits)</button>
+                            <button class="accordion-toggle">First Water Experience (if time permits)</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Introduction to the "Pick Drill" (arms only, arms & body) with coach guidance</li>
                                         <li>Simple rowing technique exercises near the dock</li>
                                     </ul>
                                 </div>

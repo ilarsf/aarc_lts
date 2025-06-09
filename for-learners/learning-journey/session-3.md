@@ -190,7 +190,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                                 <div class="accordion-content-inner">
                                     <ul>
                                         <li>Optional Coach Demonstration: Full slide rowing with emphasis on leg drive and proper ratio.</li>
-                                        <li>Practice initiating drive with legs (refer to "Leg Drive Progression" drill)</li>
+                                        <li>Practice initiating drive with legs</li>
                                         <li>Connecting legs to handle movement</li>
                                         <li>Looking over shoulder while rowing</li>
                                     </ul>
@@ -207,7 +207,6 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                                         <li>Practice turning technique</li>
                                         <li>Applying varying stroke pressure for steering</li>
                                         <li>Regular navigation practice</li>
-                                        <li>Optional Pause Drills (e.g., pause at arms away, pause at body prep) to refine sequencing and control.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -243,21 +242,6 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <li><strong>Full strokes:</strong> Integrate the arm draw after the leg drive and body swing. (10 strokes)</li>
                         </ol>
                         <p>This teaches you to connect effectively at the catch, use your body weight, and maintain a strong connection through the stroke.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-section">
-                <button class="accordion-toggle">Pause Drills</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>Pause drills help improve balance, control, and body preparation. Common pauses include:</p>
-                        <ul>
-                            <li><strong>Pause at Arms Away:</strong> After the finish, extend arms fully before swinging the body. Ensures hands get out of the bow quickly.</li>
-                            <li><strong>Pause at Body Prep:</strong> After arms away, swing the body forward to the catch position, then pause before sliding. Ensures proper body angle before the slide.</li>
-                            <li><strong>Pause at Half Slide:</strong> Pause midway up the slide to check posture and oar handle height.</li>
-                        </ul>
-                        <p>Execute several strokes with the pause, then row normally, trying to replicate the feeling of the paused position.</p>
                     </div>
                 </div>
             </div>

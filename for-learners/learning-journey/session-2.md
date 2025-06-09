@@ -68,12 +68,17 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             <div class="interactive-checklist">
                 <div class="checklist-item">
                     <input type="checkbox" id="obj1" name="checklist" value="obj1">
-                    <label for="obj1">Transfer ergometer stroke sequence to on-water rowing, focusing on the Pick Drill progression.</label>
+                    <label for="obj1">Transfer ergometer stroke sequence to on-water rowing, focusing on the stroke sequence.</label>
                 </div>
-                
+
                 <div class="checklist-item">
                     <input type="checkbox" id="obj2" name="checklist" value="obj2">
-                    <label for="obj2">Establish proper recovery sequence (arms → body → slide) using Pause Drills.</label>
+                    <label for="obj2">Establish proper drive sequence (legs → body → arms).</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="obj2" name="checklist" value="obj2">
+                    <label for="obj2">Establish proper recovery sequence (arms → body → slide).</label>
                 </div>
                 
                 <div class="checklist-item">
@@ -191,15 +196,13 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <h4>On-Water Session (with break)</h4>
                         
                         <div class="accordion-section">
-                            <button class="accordion-toggle">First Skills Focus: Pick Drill & Pauses</button>
+                            <button class="accordion-toggle">First Skills Focus: Sequencing / Basic Steering</button>
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Practice Pick Drill progression on water (arms only, arms & body, 1/4 slide, etc.)</li>
-                                        <li>Practice Pause Drills (pause at hands away, pause at body prep) on water</li>
                                         <li>Applying recovery sequencing on water</li>
-                                        <li>Basic turning practice (as introduced in Session 1)</li>
                                         <li>Focus on "arms away, body over, then slide"</li>
+                                        <li>Basic turning practice</li>                                        
                                     </ul>
                                 </div>
                             </div>
@@ -210,8 +213,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <div class="accordion-content">
                                 <div class="accordion-content-inner">
                                     <ul>
-                                        <li>Practice feathering drill (e.g., feather on recovery, square before catch)</li>
-                                        <li>Practice basic sequencing: legs-body-arms for the drive</li>
+                                        <li>Practice basic sequencing: legs-body-arms for the drive, arms-body-legs for the recovering</li>
                                         <li>Focus on control and awareness, linking strokes</li>
                                         <li>Building comfort with the unstable boat</li>
                                         <li>Coach feedback on common errors and corrections</li>
@@ -239,51 +241,6 @@ Welcome to your second Learn to Scull session! This guide will help you understa
             </div>
             
             <h3>Key Technique Exercises You'll Learn</h3>
-
-            <div class="accordion-section">
-                <button class="accordion-toggle">Pick Drill Progression</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>A sequence of drills breaking down the stroke to focus on specific components, typically performed in this order:</p>
-                        <ul>
-                            <li><strong>Arms Only:</strong> From the finish position, extend arms, then draw them back. Body and legs remain still.</li>
-                            <li><strong>Arms & Body:</strong> Add body swing. From finish, extend arms, then pivot body forward from hips, then reverse. Legs remain still.</li>
-                            <li><strong>Quarter Slide:</strong> Add a small amount of leg movement.</li>
-                            <li><strong>Half Slide:</strong> Increase leg movement.</li>
-                            <li><strong>Full Slide:</strong> Perform the complete stroke.</li>
-                        </ul>
-                        <p>This drill helps isolate and correct technique at each part of the stroke and recovery.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">Pause Exercises (Arms Away, Body Over)</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>Execute your stroke normally but insert a distinct 2-second pause at specific points:</p>
-                        <ul>
-                            <li><strong>Arms Away Pause:</strong> Pause immediately after the arms have been extended, with the body remaining in the lean back (11 o'clock) position</li>
-                            <li><strong>Body Over Pause:</strong> Pause after the body has pivoted forward, before the knees bend</li>
-                        </ul>
-                        <p>These pauses enhance your body awareness and control during recovery, explicitly teaching the correct sequence and preventing common errors like early knee bend.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-section">
-                <button class="accordion-toggle">Feathering Drill</button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>This drill helps you learn to rotate the oar blades from a vertical (squared) position to a horizontal (feathered) position and back again smoothly.</p>
-                        <ul>
-                            <li><strong>Practice on Recovery:</strong> As you extend your arms away from the body on the recovery, gently roll the oar handle with your fingers to turn the blade flat (feathered).</li>
-                            <li><strong>Square Before Catch:</strong> As you approach the catch (the point where blades enter the water), roll the handle back to make the blade vertical (squared) again.</li>
-                        </ul>
-                        <p>Smooth feathering reduces wind resistance and helps with balance. Your coach will guide you on the timing and technique.</p>
-                    </div>
-                </div>
-            </div>
 
             <div class="accordion-section">
                 <button class="accordion-toggle">One-Armed Turn (Gradual Turns)</button>

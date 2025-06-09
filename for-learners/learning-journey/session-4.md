@@ -257,8 +257,8 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <p>A series of focused exercises to practice and demonstrate key boat handling skills:</p>
                         <ul>
-                            <li><strong>Backing Drill:</strong> Practice rowing backwards for control and maneuvering in tight spaces.</li>
-                            <li><strong>Turning Drills:</strong> Execute pivot turns and wider, sweeping turns.</li>
+                            <li><strong>Turning:</strong> Execute pivot turns and wider, sweeping turns.</li>
+                            <li><strong>Backing:</strong> Practice rowing backwards for control and maneuvering in tight spaces.</li>
                             <li><strong>Docking Practice:</strong> Approach and depart from the dock safely and efficiently.</li>
                             <li><strong>Ratio and Rhythm Rowing:</strong> Maintain consistent stroke rhythm and power application over a set distance.</li>
                         </ul>
@@ -271,7 +271,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                 <button class="accordion-toggle">Continuous Rowing with Navigation Focus</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <p>Not a specific 'drill' but the primary activity. You'll practice maintaining stroke rhythm, sequencing, and power application while actively steering, monitoring position, and looking over your shoulders frequently. This integrates all learned skills in a practical, dynamic setting and tests your ability to multitask – rowing effectively <em>and</em> navigating safely.</p>
+                        <p>You'll practice maintaining stroke rhythm, sequencing, and power application while actively steering, monitoring position, and looking over your shoulders frequently. This integrates all learned skills in a practical, dynamic setting and tests your ability to multitask – rowing effectively <em>and</em> navigating safely.</p>
                     </div>
                 </div>
             </div>
