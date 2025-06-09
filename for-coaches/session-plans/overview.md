@@ -18,12 +18,13 @@ search_exclude: true
       <span class="session-tag">Introduction</span>
     </div>
     <div class="card-content">
-      <p>The first session focuses on boat familiarization, basic safety, and establishing foundational rowing technique on land and water.</p>
+      <p>The first session focuses on boat familiarization, basic safety, establishing foundational rowing technique on ergometers, and the essential flip test.</p>
       <ul class="highlights">
         <li>Program overview and introductions</li>
         <li>Equipment overview and terminology</li>
-        <li>Land-based technique introduction</li>
-        <li>First water experience in stable singles</li>
+        <li>Ergometer technique introduction (stroke sequence concepts, *optional Pick Drill elements for understanding*)</li>
+        <li>Flip test (capsize drill) and self-rescue</li>
+        <li>First water experience: getting in/out, balance, initial strokes near dock</li>
       </ul>
       <a href="{{ site.baseurl }}/for-coaches/session-plans/session-1.html" class="cta-button">View Session 1 Plan</a>
     </div>
@@ -32,15 +33,16 @@ search_exclude: true
   <div class="session-card">
     <div class="card-header">
       <h3>Session 2</h3>
-      <span class="session-tag">Development</span>
+      <span class="session-tag">Building Skills</span>
     </div>
     <div class="card-content">
-      <p>Building on Session 1, participants refine basic technique and develop comfort with more advanced aspects of the rowing stroke.</p>
+      <p>Building on Session 1, participants transfer erg skills to water, focusing on stroke sequence (Pick/Pause Drills), feathering, and basic boat control.</p>
       <ul class="highlights">
-        <li>Stroke sequence refinement</li>
-        <li>Blade work improvement</li>
-        <li>Self-rescue demonstration</li>
-        <li>Introduction to steering</li>
+        <li>Transfer erg stroke sequence concepts to water (*gentle application of Pick/Pause concepts for comfort*)</li>
+        <li>Establish proper recovery sequence (*focus on feel with Pause concepts*)</li>
+        <li>Introduce feathering and squaring blades</li>
+        <li>Basic boat control and steering (one-armed turns)</li>
+        <li>Safe launching and landing procedures</li>
       </ul>
       <a href="{{ site.baseurl }}/for-coaches/session-plans/session-2.html" class="cta-button">View Session 2 Plan</a>
     </div>
@@ -49,15 +51,16 @@ search_exclude: true
   <div class="session-card">
     <div class="card-header">
       <h3>Session 3</h3>
-      <span class="session-tag">Progression</span>
+      <span class="session-tag">Refinement</span>
     </div>
     <div class="card-content">
-      <p>Participants progress to more advanced drills and begin developing independent rowing skills on the water.</p>
+      <p>Participants focus on developing effective leg drive, power application, and learn steering principles including river traffic patterns.</p>
       <ul class="highlights">
-        <li>More technical drills</li>
-        <li>Introduction to river traffic patterns</li>
-        <li>Individual flip tests</li>
-        <li>Advanced recovery techniques</li>
+        <li>Develop effective leg drive and power application</li>
+        <li>Understand ratio and rhythm</li>
+        <li>Learn steering principles (varying pressure, pivot turns)</li>
+        <li>Introduction to river traffic patterns and navigation</li>
+        <li>Continuous rowing with technique focus (*de-emphasizing formal drills*)</li>
       </ul>
       <a href="{{ site.baseurl }}/for-coaches/session-plans/session-3.html" class="cta-button">View Session 3 Plan</a>
     </div>
@@ -66,15 +69,16 @@ search_exclude: true
   <div class="session-card">
     <div class="card-header">
       <h3>Session 4</h3>
-      <span class="session-tag">Consolidation</span>
+      <span class="session-tag">Independence</span>
     </div>
     <div class="card-content">
-      <p>The final session consolidates learning through guided practice and prepares participants for independent rowing.</p>
+      <p>The final session consolidates learning, focusing on independent navigation (including bridge passage for some), and prepares participants for continued rowing.</p>
       <ul class="highlights">
-        <li>Technique refinement</li>
-        <li>Independent rowing practice</li>
-        <li>Skill assessment</li>
-        <li>Next steps guidance</li>
+        <li>Integrate all previously learned skills (ratio, rhythm)</li>
+        <li>River navigation and bridge passage practice</li>
+        <li>Backing and turning maneuvers</li>
+        <li>Independent sculling and introduction to different boat types</li>
+        <li>Skills assessment and next steps guidance</li>
       </ul>
       <a href="{{ site.baseurl }}/for-coaches/session-plans/session-4.html" class="cta-button">View Session 4 Plan</a>
     </div>

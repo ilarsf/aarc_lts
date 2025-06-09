@@ -4,22 +4,23 @@ title: "Session 4 Plan - AARC Learn to Scull Program"
 search_exclude: true
 ---
 
-# Session 4: Navigation and Working Up River
+# Session 4: Navigation, Integration & Assessment
 
 <div class="info-box tip">
   <h4>Session Overview</h4>
-  <p>This final session focuses on integrating all previously learned skills and developing confidence in river navigation, including bridge passage. Participants will be assessed on their progress and provided with information about continuing their rowing journey.</p>
+  <p>This final session focuses on consolidating all previously learned skills, practicing independent navigation including river traffic patterns and bridge passage, and building confidence for continued rowing. The session culminates in a skills assessment to provide feedback and guide participants on their next steps in rowing.</p>
   <div class="text-center mt-3">
     <a href="{{ site.baseurl }}/for-coaches/session-plans/overview.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
   </div>
 </div>
 
 ## Session Goals
-- Integrate all previously learned skills, including effective ratio and rhythm.
-- Develop confidence in river navigation, including bridge passage and docking.
-- Practice backing and turning maneuvers effectively.
-- Achieve independent sculling capability and introduce different boat types.
-- Complete rower assessment, discuss next steps, and introduce video review opportunities.
+- Review and refine all previously learned rowing techniques and boat handling skills.
+- Practice continuous rowing with a strong focus on effective navigation and steering in varied conditions.
+- Understand and safely navigate river traffic patterns, including executing bridge passage where appropriate.
+- Build participant confidence in independent boat handling and decision-making on the water.
+- Conduct a skills assessment to identify strengths, areas for improvement, and readiness for next steps.
+- Provide clear guidance on future rowing opportunities (e.g., novice programs, open sculling).
 
 ## Required Equipment
 - Single sculls
@@ -31,76 +32,61 @@ search_exclude: true
 - First aid kit and safety gear
 
 ## Pre-Session Preparation
-1. Prepare assessment checklists for each participant
-2. Organize post-program information packets
-3. Plan practice route including bridges and turning points
-4. Review participant notes from previous sessions
-5. Ensure all boats are properly maintained and set
-6. Check weather forecast and water conditions
-7. Confirm coach assignments for group supervision
+1. Review participant progress notes from Session 3, noting any specific areas for attention.
+2. Prepare boats and oars, ensuring they are appropriate for each participant's skill level.
+3. Check coach's launch is fully equipped (safety gear, communication tools, first aid).
+4. Review weather forecast and water conditions; plan navigation route including bridge passage if safe.
+5. Prepare a clear plan for the skills assessment, including specific tasks and observation points.
+6. Have information ready regarding next steps/programs for graduates.
+7. Organize any graduation gifts/merchandise to be distributed to participants.
 
 ## Detailed Session Timeline
 
-### 1. Welcome and Final Session Overview (20 minutes)
-- **0:00-0:10** - Welcome and participant check-in
-   - Collect any remaining forms
-   - Address any lingering questions
-   - Outline final session structure, including skills circuit.
-- **0:10-0:20** - Review of all key skills and concepts
-   - Brief summary of Sessions 1-3 learnings (stroke, drills, steering, ratio/rhythm, safety).
-   - What to focus on today: integration, independence, specific maneuvers (backing, docking).
-   - Assessment expectations.
-   - Brief introduction to different boat types (e.g., trainers, racers) and their characteristics.
+### 1. Warm-up & Review (20 minutes)
+- **0:00-0:10** - Welcome, Session 3 Review, and Session 4 Overview
+  - Briefly review key learnings from Session 3 (leg drive, steering, continuous rowing).
+  - Outline the goals for Session 4: skill integration, navigation, bridge passage, and skills assessment.
+- **0:10-0:20** - Land-Based Dynamic Warm-up & Q&A
+  - Lead dynamic stretches relevant to rowing (e.g., arm circles, leg swings, torso twists).
+  - Review key concepts from Sessions 1-3, addressing any participant questions. *Optional: If needed, briefly review stroke sequence on ergs, emphasizing it's for understanding the motion, not for on-water drill replication.*
+  - Discuss the planned on-water route and specific navigation points (e.g., bridge arches).
 
-### 2. Equipment Preparation and Launch (25 minutes)
-- **0:20-0:35** - Independent equipment preparation
-   - Coach-observed boat and oar selection
-   - Individual setting adjustments
-   - Safety check of all equipment
-- **0:35-0:45** - Organized group launch
-   - Demonstrated independence in launching
-   - Initial stability and technique check at dock
+### 2. Equipment & Launch (20 minutes)
+- **0:20-0:35** - Independent Equipment Check & Setup
+  - Participants independently check their assigned boats and oars (foot stretchers, oar collars, etc.).
+  - Coaches supervise and assist only as needed, encouraging self-reliance.
+- **0:35-0:40** - Supervised Launch
+  - Participants launch their boats under supervision, applying learned dock procedures.
 
-### 3. Skill Integration and Navigation Practice (120 minutes)
-- **0:45-1:30** - Technical review, integration, and Skills Circuit Warm-up
-   - Warm-up with technical focus drills (e.g., pause drills emphasizing ratio, feathering).
-   - Progressive building of stroke rate and pressure, maintaining ratio and rhythm.
-   - Coach feedback on individual technique issues.
-   - Introduction to Skills Circuit stations: backing, turning, docking, continuous rowing with ratio focus.
-- **1:30-2:15** - Navigation practice course / Skills Circuit Group A
-   - River traffic pattern adherence, bridge navigation techniques, group formation rowing.
-   - Group A: Guided upriver row with bridge passage, docking practice. Focus on navigation, traffic, ratio/rhythm.
-   - Group B: Skills Circuit - backing, turning, docking, ratio/rhythm rowing.
-- **2:15-2:45** - Independent rowing practice / Skills Circuit Group B
-   - Coaches observing from distance. Self-diagnosis and correction. Navigation decision-making. Safety awareness.
-   - Group B: Guided upriver row with bridge passage, docking practice.
-   - Group A: Skills Circuit - backing, turning, docking, ratio/rhythm rowing.
+### 3. On-Water Session - Navigation & Integration (70 minutes)
+- **0:40-1:50** - Continuous Rowing, Navigation, and Bridge Passage Practice
+  - Row to a designated upriver point, focusing on continuous, integrated rowing (legs, core, arms, blade work).
+  - Emphasize maintaining course, awareness of surroundings, and applying river traffic rules.
+  - Practice navigating through bridge arches (if applicable and safe), discussing strategy and potential hazards.
+  - Coaches provide targeted feedback on technique, navigation choices, and boat handling.
+  - Coaches focus on reinforcing smooth, integrated movements and building confidence, offering targeted feedback on technique, navigation choices, and boat handling to enhance comfort and skill consolidation.
 
-### 4. Assessment and Landing (30 minutes)
-- **2:45-3:00** - Return to dock with individual assessment
-   - Observed landing technique
-   - Boat handling efficiency
-   - Communication with other boats
-- **3:00-3:15** - Equipment storage and care
-   - Final demonstration of proper care
-   - Reporting of any equipment issues
-   - Boathouse cleaning participation
+### 4. Skills Assessment & Cool Down (40 minutes)
+- **1:50-2:20** - Skills Assessment
+  - Participants perform a series of pre-determined maneuvers and rowing tasks. Examples:
+    - Controlled stop from steady rowing.
+    - Pivot turn (360 degrees).
+    - Backing the boat for a short distance.
+    - Demonstrating steady-state rowing with good form and control for a set distance/time.
+    - Safe execution of a simulated emergency stop or obstacle avoidance.
+  - Coaches observe and note performance against key criteria.
+- **2:20-2:30** - Cool-Down Row
+  - Gentle rowing back to the dock, focusing on relaxation and smooth movements.
 
-### 5. Program Completion and Next Steps (45 minutes)
-- **3:15-3:30** - Individual skills assessment review
-   - One-on-one feedback with primary coach
-   - Completed assessment form review
-   - Personalized development suggestions
-- **3:30-3:45** - Post-program opportunities presentation
-   - Club membership options
-   - Additional training opportunities (including video review sessions)
-   - Equipment usage policies
-   - Safety certification requirements
-- **3:45-4:00** - Program conclusion
-   - Certificate distribution
-   - Group photo
-   - Final questions and answers
-   - Contact information for ongoing support
+### 5. Landing, Equipment Care & Debrief (30 minutes)
+- **2:30-2:45** - Supervised Landing & Equipment Care
+  - Participants land their boats under supervision.
+  - Proper cleaning and storage of boats and oars.
+- **2:45-3:00** - Session Debrief, Assessment Review & Next Steps
+  - Review the session's activities and achievements.
+  - Provide general feedback from the skills assessment, highlighting common strengths and areas for development. (Individual detailed feedback may be provided separately or noted for follow-up).
+  - Discuss next steps for participants (e.g., joining novice rowing, supervised open sculling, further practice).
+  - Answer any final questions.
 
 ## Key Coaching Points
 

@@ -15,7 +15,7 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>In the first four sessions of the Learn-to-Scull class (Phase 1), your coach(es) oriented you to the technique of rowing and some of the terms, rules, and etiquette of the sport. In Phase 2, you will join the Open Sculling Program to further improve technique, skill, and stamina in rowing. This document is designed to help you with the logistics that you will need to know for this phase.</p>
 
     <h3>A. How to sign-up to continue with Phase 2</h3>
-    <p>If you continue on with AARC after the LTS class, you will be able to continue with the Open Sculling Program for four weeks. The Open Sculling Program is also designed for all scullers, regardless of experience level, to master certain skills and for adults returning to the sport of rowing after a long hiatus.</p>
+    <p>If you wish to continue with AARC after the LTS class, you can join the Open Sculling Program for a four-week trial period. This trial phase requires payment of a program fee; please see the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828">AARC LTS webpage</a> for current fee details. Please note there is no flexibility on which 4 weeks are offered at this rate. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
 
     <h3>B. Weekly Sign-up</h3>

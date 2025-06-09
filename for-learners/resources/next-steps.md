@@ -41,7 +41,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
     <a href="{{ site.baseurl }}/for-learners/resources/membership.html"  class="btn btn-primary">Membership Info</a>
 
     <h3> Open Sculling Program Trial</h3>
-    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing.</p>
+    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing. This trial phase requires payment of a program fee; please see the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828">AARC LTS webpage</a> for current fee details. Please note there is no flexibility on which 4 weeks are offered at this rate. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
     <p>The <strong>multi-week discounted trial period</strong> in the Open Sculling Program is the most common and recommended next step. It provides:</p>
     <ul>
         <li>Regular, supervised water time.</li>

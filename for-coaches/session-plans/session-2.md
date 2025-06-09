@@ -8,18 +8,18 @@ search_exclude: true
 
 <div class="info-box tip">
   <h4>Session Overview</h4>
-  <p>This second session transitions participants from ergometer to on-water rowing, focusing on applying the stroke sequence they learned in Session 1 to the boat environment. The session emphasizes proper recovery sequence and basic boat control.</p>
+  <p>This second session transitions participants from ergometer to on-water rowing, applying the stroke sequence (Pick Drill, Pause Drills) learned in Session 1 to the boat environment. The session emphasizes proper recovery sequence (arms → body → slide), introduces feathering/squaring, and develops basic boat control and understanding of river traffic.</p>
   <div class="text-center mt-3">
     <a href="{{ site.baseurl }}/for-coaches/session-plans/overview.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
   </div>
 </div>
 
 ## Session Goals
-- Transfer ergometer stroke sequence to on-water rowing, including Pick Drill and Pause Drill elements.
-- Establish proper recovery sequence (arms → body → slide) and introduce feathering/squaring.
+- Transfer ergometer stroke sequence to on-water rowing, focusing on the Pick Drill progression.
+- Establish proper recovery sequence (arms → body → slide) using Pause Drills.
 - Develop basic boat control, balance, and understanding of river traffic basics.
-- Master safe launching and landing procedures.
-- Coach demonstration of full stroke, feathering/squaring.
+- Master safe launching and landing procedures with coach demonstration and guidance.
+- Learn and practice feathering and squaring the blades.
 
 ## Required Equipment
 - Single sculls
@@ -43,38 +43,43 @@ search_exclude: true
 
 ### 1. Review and Warm-up (30 minutes)
 - **0:00-0:10** - Welcome and Session 1 review
-   - Review key learnings from Session 1 (erg drills, boat handling, equipment care)
+   - Review key learnings from Session 1 (erg drills, flip test, boat handling, equipment care)
    - Address questions from homework
-   - Set expectations for today's session
-- **0:10-0:25** - Ergometer technique warm-up
-   - Review stroke sequence, including Pick Drill (arms, arms/body, legs, legs/body, full slide)
-   - Introduce Pause Drills (e.g., pause at arms away, pause at body prep)
-   - Focus on recovery sequence and connection
+   - Set expectations for today's session: transferring erg skills to water, recovery sequence, feathering.
+- **0:10-0:25** - Ergometer technique warm-up (Optional, based on group need)
+   - Review Pick Drill progression (arms, arms/body, 1/4 slide, 1/2 slide, full slide) - *Emphasize understanding the sequence rather than drill perfection.*
+   - Practice Pause Drills (e.g., pause at hands away, pause at body prep) - *Focus on body awareness and control.*
+   - Focus on smooth transitions and "arms-body-slide" recovery sequence.
 - **0:25-0:30** - Transition to boathouse floor & Safety Briefing on River Traffic
-   - Briefly review basic river traffic rules (e.g., keep right, awareness of others).
+   - Briefly review basic river traffic rules (e.g., stay to starboard side, between the islands and the big tree / small dock).
 
-### 2. Equipment and Launching Review (30 minutes)
+### 2. Equipment Preparation & Launching (30 minutes)
 - **0:30-0:45** - Equipment assignment and adjustment
    - Proper boat selection
    - Foot stretcher adjustment
    - Oar selection and adjustment
+   - Learning "oars down first" procedure (if applicable)
+   - Boat sign-out process (if applicable)
+   - Safe carrying techniques to the dock (coach demonstration)
 - **0:45-1:00** - Launching procedure demonstration and practice
-   - Safe carrying techniques
-   - Proper entry to water
-   - Initial stability management techniques
+   - Review of dock commands and procedures
+   - Step-by-step launching process
+   - Individual practice with coach supervision
 
-### 3. On-Water Skill Development (90 minutes)
-- **1:00-1:20** - Row from dock to practice area
-   - Basic boat control focus, light grip, simple stroke with emphasis on recovery.
+### 3. On-Water Skill Development (90 minutes, including a short break if needed)
+- **1:00-1:40** - First Skills Focus: Pick Drill & Pauses
+   - Row from dock to practice area, focusing on initial stability and light strokes.
    - Coach Demo: Full stroke on water, feathering and squaring blades.
-- **1:20-1:50** - Drill progression:
-   - Pick Drill Progression (arms-only, arms & body, legs only, legs & body, full slide strokes)
-   - Pause Drills (e.g., pause at arms away, pause at body prep) - focus on control and sequencing.
-   - Full stroke at low rate (16-18 spm) incorporating feathering/squaring.
-- **1:50-2:20** - Skill development:
-   - Practice feathering and squaring drills (e.g., feathering in place, continuous feathering).
-   - Basic maneuvering, stopping the boat, learning to back the boat.
-   - Simple turns (using one arm only).
+   - Gentle application of Pick Drill progression on water (arms only, arms & body, 1/4 slide, etc.) - *Focus on comfort and basic execution, not strict drill adherence.*
+   - Gentle application of Pause Drills (pause at hands away, pause at body prep) on water. - *Focus on boat stability and sequencing feel.*
+   - Applying recovery sequencing on water: "arms away, body over, then slide".
+   - Basic turning practice (as introduced in Session 1).
+- **1:40-2:20** - Second Skills Focus: Feathering & Continuous Rowing
+   - Introduction to feathering, focusing on gentle wrist movements and blade awareness. *Avoid complex feathering drills; aim for basic understanding and execution.*
+   - Practice basic sequencing: legs-body-arms for the drive.
+   - Focus on control and awareness, linking strokes.
+   - Building comfort with the unstable boat.
+   - Coach feedback on common errors and corrections.
 - **2:20-2:30** - Return to dock preparation
    - Review landing procedure
    - Practice approaching the dock
@@ -89,7 +94,7 @@ search_exclude: true
 ### 5. Conclusion and Next Steps (30 minutes)
 - **3:00-3:10** - Equipment storage and care
    - Proper boat handling
-   - Cleaning and storage
+   - Cleaning and storage (rinsing boats and oars)
    - Reporting any issues
 - **3:10-3:20** - Session debrief
    - Group discussion of challenges
@@ -108,7 +113,7 @@ search_exclude: true
 3. **Blade Control** - Square/feather timing, clean entry/exit. Introduction to feathering.
 4. **Balance** - Finding the balanced point, minimal touching of gunwales
 5. **Posture** - Maintaining proper back position through the sequence
-6. **Pick Drill & Pause Drills** - Reinforcing correct sequencing and control.
+6. **Sequencing and Control** - Reinforcing correct sequencing and boat control through guided practice, rather than intensive drills.
 
 ### Common Issues to Address
 - Rushing into the catch

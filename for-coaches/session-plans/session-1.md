@@ -4,32 +4,32 @@ title: "Session 1 Plan - AARC Learn to Scull Program"
 search_exclude: true
 ---
 
-# Session 1: Learning the Motion and Getting Wet
+# Session 1: Getting Started with Sculling
 
 <div class="info-box tip">
     <h4>Session Overview</h4>
-    <p>This first session introduces participants to basic rowing motion, equipment terminology, and water safety
-        through the flip test. It focuses on building confidence and fundamental understanding.</p>
+    <p>This first session introduces participants to basic rowing motion on ergometers, equipment terminology, boat handling basics, and water safety through the flip test. It focuses on building confidence and fundamental understanding before significant on-water rowing.</p>
     <div class="text-center mt-3">
         <a href="{{ site.baseurl }}/for-coaches/session-plans/overview.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
     </div>
 </div>
 
 ## Session Goals
-- Introduce basic rowing motion on stable ergometer (legs only, body swing, full stroke, pick drill elements)
-- Familiarize participants with equipment terminology and handling (including proper equipment care: rinsing and storage)
-- Successfully complete supervised flip test
-- Build comfort with water and boat interaction
-- Coach demonstration of key initial skills: boat carrying, getting in/out, basic maneuvering.
+- Learn the basic rowing motion using ergometers (stroke sequence: catch, drive, finish, recovery; Pick Drill elements).
+- Get familiar with equipment terminology and boat handling (carrying, dockside in/out).
+- Complete the essential "flip test" to practice water safety and self-rescue.
+- Build comfort and confidence around rowing equipment and water.
+- Coach demonstration of: safe boat carrying, getting in/out of the boat (dockside), basic maneuvering (stopping, gentle turning), self-rescue & flip test.
 
 ## Required Equipment
-- Ergometers
+- Ergometers (functional, clean, and in good working order)
 - Single sculls (in slings for demonstrations)
 - Oars
 - Boat stretchers/slings
 - Coach's launch and safety equipment
 - First aid kit and safety gear
 - Clean towels for flip test participants
+- Water and snacks for participants
 
 ## Pre-Session Preparation
 1. Arrange ergometers in semi-circle facing instructor position
@@ -39,6 +39,7 @@ search_exclude: true
 5. Verify weather conditions are suitable
 6. Prepare sign-in sheet and liability forms
 7. Set up flip test area with safety equipment
+8. Ensure all equipment is clean and in good condition
 
 ## Detailed Session Timeline
 
@@ -92,8 +93,8 @@ search_exclude: true
     
     <div class="timeline-block">
         <div class="timeline-block-header">
-            <span class="timeline-time">0:30-1:00</span>
-            <h3 class="timeline-title">Equipment Introduction</h3>
+            <span class="timeline-time">0:30-1:45</span>
+            <h3 class="timeline-title">Equipment and Technique Introduction</h3>
         </div>
         <div class="timeline-content">
             <div class="accordion-section">
@@ -134,52 +135,31 @@ search_exclude: true
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            
+            <div class="accordion-section">
+                <button class="accordion-toggle">Ergometer Introduction & Drills <span class="priority-tag essential">Essential</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li>Basic rowing terminology</li>
+                            <li>Learning the stroke sequence: catch, drive, finish, recovery</li>
+                            <li>Practicing components of the stroke (e.g., legs only, body swing, Pick Drill: arms only, arms & body) - *Note: Erg-based drills are optional depending on the group's needs and prior experience.*</li>
+                            <li>Hands-on practice with coach feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    <div class="timeline-block">
-        <div class="timeline-block-header">
-            <span class="timeline-time">1:00-1:45</span>
-            <h3 class="timeline-title">Ergometer Technique Introduction</h3>
-        </div>
-        <div class="timeline-content">
             <div class="accordion-section">
-                <button class="accordion-toggle">Basic Body Position <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">Equipment Orientation & Handling <span class="priority-tag essential">Essential</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Catch, drive, finish, recovery positions</li>
-                            <li>Hand positions and grip</li>
-                            <li>Basic posture cues</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">Breaking Down the Stroke (Pick Drill on Erg) <span class="priority-tag essential">Essential</span></button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Arms-only rowing</li>
-                            <li>Arms and back/body swing</li>
-                            <li>Legs-only rowing</li>
-                            <li>Legs and body swing</li>
-                            <li>Adding the slide (full stroke)</li>
-                            <li>Brief introduction to Pick Drill: arms only, then arms & body strokes.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-section">
-                <button class="accordion-toggle">Practice Time <span class="priority-tag important">Important</span></button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Individual attention to each participant</li>
-                            <li>Address common beginner issues</li>
-                            <li>Focus on sequencing rather than power</li>
+                            <li>Parts of the shell and oars</li>
+                            <li>Coach demonstration: Safe boat carrying techniques</li>
+                            <li>Coach demonstration: Getting in and out of the boat (dockside)</li>
+                            <li>Coach demonstration: Basic maneuvering (e.g., stopping, gentle turning)</li>
+                            <li>Coach demonstration: Self-rescue & Flip test</li>
                         </ul>
                     </div>
                 </div>
@@ -189,64 +169,54 @@ search_exclude: true
     
     <div class="timeline-block">
         <div class="timeline-block-header">
-            <span class="timeline-time">1:45-2:45</span>
-            <h3 class="timeline-title">Flip Test, Water Introduction & Basic Handling</h3>
+            <span class="timeline-time">1:45-2:00</span>
+            <h3 class="timeline-title">Break & Transition</h3>
         </div>
         <div class="timeline-content">
             <div class="accordion-section">
-                <button class="accordion-toggle">Flip Test Explanation <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">Rest and Hydrate <span class="priority-tag essential">Essential</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Safety procedures</li>
-                            <li>What to expect when a boat flips</li>
-                            <li>Self-recovery techniques</li>
+                            <li>Allow participants to rest, hydrate, and prepare for water activities (flip test).</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </div>
+
+    <div class="timeline-block">
+        <div class="timeline-block-header">
+            <span class="timeline-time">2:00-2:45</span>
+            <h3 class="timeline-title">Water Introduction & Safety (Flip Test & Boat Feel)</h3>
+        </div>
+        <div class="timeline-content">
             <div class="accordion-section">
-                <button class="accordion-toggle">Individual Flip Tests <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">Boat Feel & Flip Test (Capsize Drill) <span class="priority-tag essential">Essential</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Each participant performs supervised flip test</li>
-                            <li>Practice self-recovery technique</li>
-                            <li>Building water confidence</li>
+                            <li>Guided assistance into a training shell at the dock.</li>
+                            <li>Practice basic balance and boat feel at the dock. Focus on getting comfortable with the boat's instability.</li>
+                            <li>The Flip Test / Capsize Drill (explanation, demonstration, individual attempts).</li>
+                            <li>Reiterate: Stay Calm & Stay With Your Boat, Manage Oars, Right the Shell, Position Oars, Re-Enter.</li>
                         </ul>
-                        
                         <div class="info-box warning mt-3">
                             <h5>Flip Test Safety Note</h5>
-                            <p>Always maintain visual contact with participants in the water. Have PFDs and reaching devices readily available. Stop immediately if a participant shows signs of distress.</p>
+                            <p>Always maintain visual contact with participants in the water. Have PFDs and reaching devices readily available. Stop immediately if a participant shows signs of distress. Ensure water temperature is appropriate or thermal wear is used.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">On-Water: Coach Demonstrations & First Strokes <span class="priority-tag essential">Essential</span></button>
+                <button class="accordion-toggle">First Water Experience & Drills (if time permits) <span class="priority-tag optional">Optional</span></button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Coach Demo: Safe boat carrying (to and from water).</li>
-                            <li>Coach Demo: Getting in and out of the boat at the dock.</li>
-                            <li>Coach Demo: Basic maneuvering (e.g., sculling forward, stopping).</li>
-                            <li>Participants practice getting in/out, finding balance.</li>
-                            <li>Participants practice initial strokes (e.g., Pick Drill: arms only, arms & body) near the dock with close supervision.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-section">
-                <button class="accordion-toggle">Debrief <span class="priority-tag important">Important</span></button>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Share experiences</li>
-                            <li>Address concerns</li>
-                            <li>Prepare for dry clothes</li>
+                            <li>Introduction to the "Pick Drill" (arms only, arms & body) with coach guidance near the dock.</li>
+                            <li>Simple rowing technique exercises near the dock, focusing on balance and oar movement.</li>
                         </ul>
                     </div>
                 </div>
@@ -257,7 +227,7 @@ search_exclude: true
     <div class="timeline-block">
         <div class="timeline-block-header">
             <span class="timeline-time">2:45-3:00</span>
-            <h3 class="timeline-title">Conclusion, Equipment Care & Next Session Preview</h3>
+            <h3 class="timeline-title">Wrap-Up, Equipment Care & Next Session Preview</h3>
         </div>
         <div class="timeline-content">
             <div class="accordion-section">

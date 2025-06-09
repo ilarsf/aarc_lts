@@ -107,7 +107,6 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                             <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 4 Videos</a> to prepare for this session.</li>
                             <li>Reflect on your progress since Session 1</li>
                             <li>Think about questions you may have about continuing with rowing</li>
-                            <li>Prepare for assessment of your skills (with a growth mindset)</li>
                         </ul>
                     </div>
                 </div>
@@ -119,7 +118,6 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                     <div class="accordion-content-inner">
                         <ul>
                             <li>This session may be more physically demanding with longer continuous rowing</li>
-                            <li>Ensure proper hand care and protection for blisters</li>
                             <li>Stay well hydrated and bring extra water</li>
                         </ul>
                     </div>
@@ -216,7 +214,6 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                                     <ul>
                                         <li>Focused skill refinement stations (Skills Circuit):
                                             <ul>
-                                                <li>Backing drill</li>
                                                 <li>Turning (pivot turns, wide turns)</li>
                                                 <li>Docking practice</li>
                                                 <li>Continuous rowing with focus on ratio and rhythm</li>
