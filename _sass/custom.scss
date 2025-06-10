@@ -121,3 +121,107 @@
     margin-bottom: 20px; /* Add some margin below the tagline to ensure it doesn't get too close to the toggle */
   }
 }
+
+/* Weather Condition Styling */
+
+/* Grid container for condition cards (used for Wind, Heat, AQI) */
+.conditions-grid,
+.aqi-levels-grid,
+.temp-zones { /* Added .temp-zones here for consistency */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Base style for individual condition cards */
+.condition-card,
+.aqi-level-card,
+.temp-zone-card { /* Added .temp-zone-card here for consistency */
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Basic border */
+  h4 {
+    margin-top: 0;
+    font-size: 1.1em; // Default heading size for cards
+    margin-bottom: 0.75rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Specific styling for temp-zone-card if different from generic cards */
+.temp-zone-card {
+  h4 {
+    font-size: 1.2em; // Slightly larger for these primary zone cards
+  }
+  p:last-of-type { // To target the "Restrictions" paragraph if it's the last p
+    margin-top: 0.75rem;
+    font-weight: bold;
+  }
+}
+
+
+/* Color Variants for Condition Cards, AQI Cards, and Temp Zone Cards */
+
+/* Green Series */
+.condition-card.condition-green,
+.aqi-level-card.aqi-level-green,
+.temp-zone-card.zone-green {
+  background-color: #d4edda; /* Light green from weather table */
+  border-left: 5px solid #28a745; /* Darker green accent */
+  h4 { color: #155724; } /* Dark green text for heading */
+}
+
+/* Yellow Series */
+.condition-card.condition-yellow,
+.aqi-level-card.aqi-level-yellow,
+.temp-zone-card.zone-yellow {
+  background-color: #fff3cd; /* Light yellow from weather table */
+  border-left: 5px solid #ffc107; /* Darker yellow accent */
+  h4 { color: #856404; } /* Dark yellow text for heading */
+}
+
+/* Orange Series */
+.condition-card.condition-orange,
+.aqi-level-card.aqi-level-orange {
+  background-color: #ffe8cc; /* Light orange */
+  border-left: 5px solid #fd7e14; /* Darker orange accent */
+  h4 { color: #b35900; } /* Dark orange text for heading */
+}
+
+/* Red Series */
+.condition-card.condition-red,
+.aqi-level-card.aqi-level-red,
+.temp-zone-card.zone-red {
+  background-color: #f8d7da; /* Light red from weather table */
+  border-left: 5px solid #dc3545; /* Darker red accent */
+  h4 { color: #721c24; } /* Dark red text for heading */
+}
+
+/* Dark Red / Maroon Series */
+.condition-card.condition-dark-red,
+.aqi-level-card.aqi-level-maroon {
+  background-color: #ecc7cb; /* A slightly darker/more intense red/maroon base */
+  border-left: 5px solid #a21023; /* Dark maroon accent */
+  h4 { color: #670000; } /* Very dark red text for heading */
+}
+
+/* Purple Series (primarily for AQI) */
+.aqi-level-card.aqi-level-purple {
+  background-color: #e6dff6; /* Light purple */
+  border-left: 5px solid #6f42c1; /* Darker purple accent */
+  h4 { color: #492a78; } /* Dark purple text for heading */
+}
