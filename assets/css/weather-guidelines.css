@@ -182,7 +182,8 @@
 }
 
 .weather-accordion-content[aria-hidden="false"] {
-    max-height: 1000px;
+    max-height: 5000px;
+    /* Increased max-height to allow for taller content */
 }
 
 .weather-accordion-body {

@@ -312,8 +312,8 @@ Weather conditions directly impact rowing safety. This guide will help you under
               <li>If you can't see approaching boats from at least 100 yd (approx. 91 m) away</li>
               <li>If you can't see underwater obstacles</li>
               <li>If other rowers appear and disappear from view</li>
-              <li>→ Conditions are too foggy for safe rowing</li>
             </ul>
+            <p><strong>→ Conditions are too foggy for safe rowing</strong></p>
           </div>
         </div>
       </div>
@@ -458,7 +458,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <h4>Air Quality Index (AQI) Guidelines (via AirNow.gov):</h4>
+        <h4>Air Quality Index (AQI) Guidelines (via <a href="https://www.airnow.gov">AirNow.gov</a>):</h4>
         <div class="aqi-levels-grid">
           <div class="aqi-level-card aqi-level-green">
             <h4>Green (Good, 0-50)</h4>
@@ -489,7 +489,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <div class="recommendations-section" style="margin-top: 1.5rem;">
           <h4>Recommendations:</h4>
           <ul>
-            <li>Always check the current AQI on AirNow.gov before rowing.</li>
+            <li>Always check the current AQI on <a href="https://www.airnow.gov">AirNow.gov</a> before rowing.</li>
             <li>If AQI is ≥150, all rowing activities should be suspended.</li>
             <li>Individuals with respiratory sensitivities should exercise increased caution even at lower AQI levels.</li>
           </ul>
@@ -503,31 +503,31 @@ Weather conditions directly impact rowing safety. This guide will help you under
   
   <div class="weather-resources">
     <div class="resource-card">
-      <h3>Weather.gov</h3>
+      <h3><a href="https://www.weather.gov">Weather.gov</a></h3>
       <p>National Weather Service with official forecasts and warnings.</p>
       <a href="https://www.weather.gov" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
-      <h3>AirNow.gov</h3>
+      <h3><a href="https://www.airnow.gov">AirNow.gov</a></h3>
       <p>Check current Air Quality Index (AQI) for your location.</p>
       <a href="https://www.airnow.gov" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
-      <h3>Windfinder</h3>
+      <h3><a href="https://www.windfinder.com">Windfinder</a></h3>
       <p>Specialized wind forecasts ideal for water sports.</p>
       <a href="https://www.windfinder.com" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
       <h3>Real Time Lightning Map</h3>
-      <p>See lightning strikes in real time across the planet. Free access to maps of former thunderstorms. By Blitzortung.org and contributors.</p>
+      <p>See lightning strikes in real time across the planet. Free access to maps of former thunderstorms. By <a href="https://www.blitzortung.org">Blitzortung.org</a> and contributors.</p>
       <a href="https://www.lightningmaps.org" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
-      <h3>WeatherBug</h3>
+      <h3><a href="https://www.weatherbug.com">WeatherBug</a></h3>
       <p>Local and National Weather Forecasts, Radar & News.</p>
       <a href="https://www.weatherbug.com" class="resource-link" target="_blank">Visit Site</a>
     </div>
