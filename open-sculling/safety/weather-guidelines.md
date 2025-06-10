@@ -246,27 +246,32 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <div class="two-col-grid">
-          <div>
-            <h4>Wind Speed Guidelines:</h4>
-            <ul>
-              <li><strong>0-7 mph (0-11 km/h):</strong> Generally safe for all boats</li>
-              <li><strong>8-12 mph (12-19 km/h):</strong> Caution for beginners in singles</li>
-              <li><strong>12-15 mph (19-24 km/h):</strong> Experienced singles only, no beginner singles</li>
-              <li><strong>15-20 mph (24-32 km/h):</strong> No small boats (singles/doubles) recommended</li>
-              <li><strong>20+ mph (32+ km/h):</strong> No rowing recommended</li>
-            </ul>
+        <h4>Wind Speed Guidelines & Warning Signs:</h4>
+        <div class="conditions-grid">
+          <div class="condition-card condition-green">
+            <h4>0-7 mph (0-11 km/h) - Light Air/Light Breeze</h4>
+            <p><strong>Guidelines:</strong> Generally safe for all boats.</p>
+            <p><strong>Warning Signs:</strong> Ripples with the appearance of scales are formed, but without foam crests. Wind felt on face; leaves rustle; ordinary vanes moved by wind.</p>
           </div>
-          
-          <div>
-            <h4>Wind Warning Signs:</h4>
-            <ul>
-              <li>Whitecaps on the water surface</li>
-              <li>Flags extended and flapping</li>
-              <li>Tree branches moving noticeably</li>
-              <li>Difficulty maintaining boat set and direction</li>
-              <li>Waves forming that could swamp a shell</li>
-            </ul>
+          <div class="condition-card condition-yellow">
+            <h4>8-12 mph (12-19 km/h) - Gentle/Moderate Breeze</h4>
+            <p><strong>Guidelines:</strong> Caution for beginners in singles. Experienced rowers generally okay.</p>
+            <p><strong>Warning Signs:</strong> Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break. Leaves and small twigs in constant motion; wind extends light flag.</p>
+          </div>
+          <div class="condition-card condition-orange">
+            <h4>12-15 mph (19-24 km/h) - Moderate/Fresh Breeze</h4>
+            <p><strong>Guidelines:</strong> Experienced singles only, no beginner singles. Doubles and larger boats with caution.</p>
+            <p><strong>Warning Signs:</strong> Large wavelets. Crests begin to break. Foam of glassy appearance. Perhaps scattered white horses. Raises dust and loose paper; small branches are moved.</p>
+          </div>
+          <div class="condition-card condition-red">
+            <h4>15-20 mph (24-32 km/h) - Fresh/Strong Breeze</h4>
+            <p><strong>Guidelines:</strong> No small boats (singles/doubles) recommended. Larger boats for experienced crews only.</p>
+            <p><strong>Warning Signs:</strong> Small waves, becoming longer; fairly frequent white horses. Small trees in leaf begin to sway; crested wavelets form on inland waters.</p>
+          </div>
+          <div class="condition-card condition-dark-red">
+            <h4>20+ mph (32+ km/h) - Strong Breeze/Near Gale</h4>
+            <p><strong>Guidelines:</strong> No rowing recommended for any boats.</p>
+            <p><strong>Warning Signs:</strong> Moderate waves, taking a more pronounced long form; many white horses are formed. (Chance of some spray). Large branches in motion; whistling heard in telegraph wires; umbrellas used with difficulty.</p>
           </div>
         </div>
       </div>
@@ -386,38 +391,54 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <div class="two-col-grid">
+        <h4>Heat Index Guidelines & Actions:</h4>
+        <div class="conditions-grid">
+          <div class="condition-card condition-green">
+            <h4>&lt;80°F (&lt;27°C) - Comfortable</h4>
+            <p><strong>Action:</strong> Generally safe for full practice. Standard hydration protocols.</p>
+          </div>
+          <div class="condition-card condition-yellow">
+            <h4>80-90°F (27-32°C) - Caution</h4>
+            <p><strong>Action:</strong> Use caution. Monitor for signs of heat stress. Ensure ample hydration. Consider intensity/duration modification for sensitive individuals.</p>
+          </div>
+          <div class="condition-card condition-orange">
+            <h4>90-105°F (32-41°C) - High Risk</h4>
+            <p><strong>Action:</strong> Modified practice required. Reduce duration and/or intensity. Schedule for cooler parts of the day. Frequent water breaks mandatory.</p>
+          </div>
+          <div class="condition-card condition-red">
+            <h4>&gt;105°F (&gt;41°C) - Extreme Risk</h4>
+            <p><strong>Action:</strong> Outdoor practice likely suspended or moved indoors. If unavoidable, very short, low-intensity sessions with extreme caution and medical supervision if possible.</p>
+          </div>
+        </div>
+
+        <div class="two-col-grid" style="margin-top: 1.5rem;">
           <div>
-            <h4>Heat Index Guidelines:</h4>
+            <h4>Heat Protection:</h4>
             <ul>
-              <li><strong>&lt;80°F (&lt;27°C):</strong> Generally safe for full practice</li>
-              <li><strong>80-90°F (27-32°C):</strong> Use caution and monitor for signs of heat stress</li>
-              <li><strong>90-105°F (32-41°C):</strong> High risk – expect modified practice (reduced duration/intensity)</li>
-              <li><strong>&gt;105°F (&gt;41°C):</strong> Extreme risk – practice may be moved indoors</li>
+              <li>Hydrate well before, during, and after rowing (water and electrolytes)</li>
+              <li>Wear light-colored, loose-fitting, breathable clothing</li>
+              <li>Use sunscreen, hats, and sunglasses</li>
+              <li>Be aware of signs of heat illness: dizziness, nausea, headache, weakness, confusion</li>
+              <li>Take breaks in shade when possible</li>
+              <li>Acclimatize to heat gradually over several days</li>
             </ul>
           </div>
           
           <div>
-            <h4>Heat Protection:</h4>
-            <ul>
-              <li>Hydrate well before, during, and after rowing</li>
-              <li>Wear appropriate clothing and sun protection</li>
-              <li>Be aware of signs of heat illness: dizziness, nausea, headache</li>
-              <li>Take breaks in shade when possible</li>
-            </ul>
+            <div class="weather-warning-box" style="padding: 1rem;">
+              <h4>Heat Illness Warning Signs</h4>
+              <p style="margin-bottom: 0.5rem;">Stop exercise immediately, seek shade/cooling, and inform a coach or buddy if you experience:</p>
+              <ul style="padding-left: 1.2rem; margin-bottom: 0;">
+                <li>Dizziness or lightheadedness</li>
+                <li>Nausea or vomiting</li>
+                <li>Headache that intensifies</li>
+                <li>Confusion or disorientation</li>
+                <li>Cessation of sweating (heat stroke sign)</li>
+                <li>Muscle cramps</li>
+                <li>Weakness or fatigue beyond normal</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        
-        <div class="weather-info-box">
-          <h4>Heat Illness Warning Signs</h4>
-          <p>Stop exercise immediately and seek shade/cooling if you experience:</p>
-          <ul>
-            <li>Dizziness or lightheadedness</li>
-            <li>Nausea or vomiting</li>
-            <li>Headache that intensifies with continued activity</li>
-            <li>Confusion or disorientation</li>
-            <li>Cessation of sweating</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -437,26 +458,41 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </button>
     <div class="weather-accordion-content" aria-hidden="true">
       <div class="weather-accordion-body">
-        <div class="two-col-grid">
-          <div>
-            <h4>Air Quality Index (AQI) Guidelines (via AirNow.gov):</h4>
-            <ul>
-              <li><strong>0-50 (Good):</strong> Air quality is considered satisfactory, and air pollution poses little or no risk.</li>
-              <li><strong>51-100 (Moderate):</strong> Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</li>
-              <li><strong>101-150 (Unhealthy for Sensitive Groups):</strong> Members of sensitive groups may experience health effects. The general public is not likely to be affected.</li>
-              <li><strong>≥150 (Unhealthy):</strong> Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects. <strong>No rowing recommended.</strong></li>
-              <li><strong>201-300 (Very Unhealthy):</strong> Health alert: everyone may experience more serious health effects.</li>
-              <li><strong>301-500 (Hazardous):</strong> Health warnings of emergency conditions. The entire population is more likely to be affected.</li>
-            </ul>
+        <h4>Air Quality Index (AQI) Guidelines (via AirNow.gov):</h4>
+        <div class="aqi-levels-grid">
+          <div class="aqi-level-card aqi-level-green">
+            <h4>Green (Good, 0-50)</h4>
+            <p>Air quality is satisfactory, and air pollution poses little or no risk.</p>
           </div>
-          <div>
-            <h4>Recommendations:</h4>
-            <ul>
-              <li>Always check the current AQI on AirNow.gov before rowing.</li>
-              <li>If AQI is ≥150, all rowing activities should be suspended.</li>
-              <li>Individuals with respiratory sensitivities should exercise increased caution even at lower AQI levels.</li>
-            </ul>
+          <div class="aqi-level-card aqi-level-yellow">
+            <h4>Yellow (Moderate, 51-100)</h4>
+            <p>Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</p>
           </div>
+          <div class="aqi-level-card aqi-level-orange">
+            <h4>Orange (Unhealthy for Sensitive Groups, 101-150)</h4>
+            <p>Members of sensitive groups may experience health effects. The general public is less likely to be affected.</p>
+          </div>
+          <div class="aqi-level-card aqi-level-red">
+            <h4>Red (Unhealthy, 151-200)</h4>
+            <p>Some members of the general public may experience health effects; members of sensitive groups may experience more serious health effects. <strong>No rowing recommended.</strong></p>
+          </div>
+          <div class="aqi-level-card aqi-level-purple">
+            <h4>Purple (Very Unhealthy, 201-300)</h4>
+            <p>Health alert: The risk of health effects is increased for everyone. <strong>No rowing recommended.</strong></p>
+          </div>
+          <div class="aqi-level-card aqi-level-maroon">
+            <h4>Maroon (Hazardous, 301 and higher)</h4>
+            <p>Health warning of emergency conditions: everyone is more likely to be affected. <strong>No rowing recommended.</strong></p>
+          </div>
+        </div>
+        
+        <div class="recommendations-section" style="margin-top: 1.5rem;">
+          <h4>Recommendations:</h4>
+          <ul>
+            <li>Always check the current AQI on AirNow.gov before rowing.</li>
+            <li>If AQI is ≥150, all rowing activities should be suspended.</li>
+            <li>Individuals with respiratory sensitivities should exercise increased caution even at lower AQI levels.</li>
+          </ul>
         </div>
       </div>
     </div>

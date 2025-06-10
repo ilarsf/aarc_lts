@@ -98,6 +98,7 @@ Safety is the highest priority at the Ann Arbor Rowing Club. These rules are est
             <ul>
                 <li>No rowing when lightning is observed or thunder heard (30-minute waiting period after last occurrence)</li>
                 <li>No rowing in fog when visibility is less than 100 meters</li>
+                <li>No rowing if Air Quality Index (AQI) is 150 or greater. Check <a href="https://www.airnow.gov/" target="_blank">AirNow.gov</a>.</li>
                 <li>Observe wind and water conditions guidelines according to boat class</li>
                 <li>Check weather forecasts before rowing and plan accordingly</li>
             </ul>

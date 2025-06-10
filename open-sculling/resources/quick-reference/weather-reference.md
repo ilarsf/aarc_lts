@@ -74,6 +74,12 @@ Understanding and properly assessing weather conditions is essential for safe ro
       <td class="caution">100-120°F</td>
       <td class="danger">&lt;100°F</td>
     </tr>
+    <tr>
+      <td><strong>Air Quality Index (AQI)</strong></td>
+      <td class="safe">&lt;100 (Good to Moderate)</td>
+      <td class="caution">100-149 (Unhealthy for Sensitive Groups)</td>
+      <td class="danger">≥150 (Unhealthy or worse)</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -81,6 +87,7 @@ Understanding and properly assessing weather conditions is essential for safe ro
 <div class="info-box warning mb-3">
   <h4>Important Safety Rule</h4>
   <p>If lightning is seen or thunder heard, all boats must immediately return to the dock. No rowing is allowed for at least 30 minutes after the last observed lightning or thunder.</p>
+  <p>If Air Quality Index (AQI) is 150 or greater, no rowing is permitted. Check <a href="https://www.airnow.gov/" target="_blank">AirNow.gov</a> for current AQI.</p>
 </div>
 
 ## Temperature Safety Zones
@@ -252,6 +259,7 @@ AARC has specific rules about what boats can be used based on water and air temp
 - AccuWeather
 - WindFinder (especially good for wind forecasts)
 - Dark Sky (for hyperlocal precipitation forecasts)
+- AirNow (for Air Quality Index)
 
 ### How to Read Weather Forecasts for Rowing
 
@@ -259,6 +267,7 @@ AARC has specific rules about what boats can be used based on water and air temp
 - Pay special attention to wind speed and direction
 - Check precipitation probability and radar
 - Monitor temperature trends leading up to row day
+- Check the Air Quality Index (AQI) on AirNow.gov
 
 ## Emergency Weather Situations
 
