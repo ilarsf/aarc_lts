@@ -28,6 +28,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
       <button class="weather-filter-tab" data-condition="temp">Temperature</button>
       <button class="weather-filter-tab" data-condition="visibility">Visibility</button>
       <button class="weather-filter-tab" data-condition="storm">Storms/Lightning</button>
+      <button class="weather-filter-tab" data-condition="airquality">Air Quality</button>
     </div>
     
     <table class="weather-matrix">
@@ -152,6 +153,29 @@ Weather conditions directly impact rowing safety. This guide will help you under
           <td class="warning">Return to Dock</td>
           <td class="caution">Monitor & Prepare</td>
           <td>Check radar, prepare to exit water quickly</td>
+        </tr>
+
+        <!-- Air Quality Conditions -->
+        <tr data-conditions="airquality">
+          <td><strong>AQI < 100 (AirNow)</strong><br>Good to Moderate</td>
+          <td class="safe">Safe</td>
+          <td class="safe">Safe</td>
+          <td class="safe">Safe</td>
+          <td>Standard procedures</td>
+        </tr>
+        <tr data-conditions="airquality">
+          <td><strong>AQI 100-149 (AirNow)</strong><br>Unhealthy for Sensitive Groups</td>
+          <td class="caution">Caution</td>
+          <td class="caution">Caution</td>
+          <td class="caution">Caution</td>
+          <td>Sensitive individuals should limit exertion</td>
+        </tr>
+        <tr data-conditions="airquality">
+          <td><strong>AQI ≥ 150 (AirNow)</strong><br>Unhealthy</td>
+          <td class="no-go">No Rowing</td>
+          <td class="no-go">No Rowing</td>
+          <td class="no-go">No Rowing</td>
+          <td>All rowing activities suspended</td>
         </tr>
       </tbody>
     </table>
@@ -399,6 +423,45 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </div>
   </div>
 
+  <!-- Air Quality Section -->
+  <div class="weather-accordion">
+    <button class="weather-accordion-header" aria-expanded="false">
+      <div class="weather-accordion-toggle">
+        <div class="weather-accordion-title">
+          <div class="weather-icon"><i class="fas fa-wind"></i></div> <!-- Consider a more specific AQI icon if available -->
+          Air Quality (AQI)
+          <span class="status-indicator status-yellow">Health Risk</span>
+        </div>
+        <span class="toggle-icon">↓</span>
+      </div>
+    </button>
+    <div class="weather-accordion-content" aria-hidden="true">
+      <div class="weather-accordion-body">
+        <div class="two-col-grid">
+          <div>
+            <h4>Air Quality Index (AQI) Guidelines (via AirNow.gov):</h4>
+            <ul>
+              <li><strong>0-50 (Good):</strong> Air quality is considered satisfactory, and air pollution poses little or no risk.</li>
+              <li><strong>51-100 (Moderate):</strong> Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</li>
+              <li><strong>101-150 (Unhealthy for Sensitive Groups):</strong> Members of sensitive groups may experience health effects. The general public is not likely to be affected.</li>
+              <li><strong>≥150 (Unhealthy):</strong> Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects. <strong>No rowing recommended.</strong></li>
+              <li><strong>201-300 (Very Unhealthy):</strong> Health alert: everyone may experience more serious health effects.</li>
+              <li><strong>301-500 (Hazardous):</strong> Health warnings of emergency conditions. The entire population is more likely to be affected.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Recommendations:</h4>
+            <ul>
+              <li>Always check the current AQI on AirNow.gov before rowing.</li>
+              <li>If AQI is ≥150, all rowing activities should be suspended.</li>
+              <li>Individuals with respiratory sensitivities should exercise increased caution even at lower AQI levels.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Weather Resources Section -->
   <h2>Weather Resources</h2>
   
@@ -407,6 +470,12 @@ Weather conditions directly impact rowing safety. This guide will help you under
       <h3>Weather.gov</h3>
       <p>National Weather Service with official forecasts and warnings.</p>
       <a href="https://www.weather.gov" class="resource-link" target="_blank">Visit Site</a>
+    </div>
+    
+    <div class="resource-card">
+      <h3>AirNow.gov</h3>
+      <p>Check current Air Quality Index (AQI) for your location.</p>
+      <a href="https://www.airnow.gov" class="resource-link" target="_blank">Visit Site</a>
     </div>
     
     <div class="resource-card">
@@ -436,6 +505,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
       <li>Precipitation probability and timing</li>
       <li>Lightning/thunderstorm risk</li>
       <li>Temperature and humidity</li>
+      <li>Air Quality Index (AQI)</li>
     </ul>
   </div>
 
@@ -483,6 +553,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
               <li>Water and air temperature</li>
               <li>Wind speed and direction</li>
               <li>Visibility conditions</li>
+              <li>Air Quality Index (AQI)</li>
               <li>Presence of others on the water</li>
             </ul>
           </div>

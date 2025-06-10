@@ -60,6 +60,18 @@ nav_order: 4
                 </div>
             </div>
         </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-wind"></i> Air Quality (AQI)</h5>
+                     <ul class="list-unstyled">
+                        <li><i class="fas fa-exclamation-triangle text-danger"></i> AQI ≥150 (Unhealthy).</li>
+                        <li><i class="fas fa-lungs-virus text-info"></i> Check AirNow.gov.</li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">No rowing if AQI ≥150.</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <h2><i class="fas fa-info-circle"></i> Other Important Considerations</h2>
@@ -79,6 +91,15 @@ nav_order: 4
                     <h5 class="card-title"><i class="fas fa-water"></i> River Conditions</h5>
                     <p class="card-text">After heavy rain, currents can be stronger, and debris may be present. Your coach will assess these conditions.</p>
                     <p class="card-text"><small class="text-muted">Coach assesses conditions.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-head-side-cough"></i> Air Quality (AQI)</h5>
+                    <p class="card-text">Poor air quality can pose health risks, especially for those with sensitivities. LTS sessions may be cancelled or modified based on AQI levels from AirNow.gov.</p>
+                    <p class="card-text"><small class="text-muted">Coach monitors and decides. No rowing if AQI ≥150.</small></p>
                 </div>
             </div>
         </div>
