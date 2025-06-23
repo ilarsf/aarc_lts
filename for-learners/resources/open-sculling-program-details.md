@@ -42,7 +42,7 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
     <h2>Continuing with the Open Sculling Program After Phase 2</h2>
-    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. If you would like to register for sculling beyond your class, we have pro-rated the seasonal program fee for each LTS class. Please refer to the table on the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828">Learn-to-Scull page <i class="fas fa-external-link-alt"></i></a> (scroll to the bottom) and select the appropriate prorated session under “Phase 3.” You must sign up and pay the program fees to continue sculling after your 4-week Phase 2 period.</p>
+    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. If you would like to register for sculling beyond your class, we have prorated the seasonal program fees that apply. Please reach out to info@a2crew.org to obtain the appropriate prorated fee and payment information for “Phase 3.” You must sign up and pay the program fees to continue sculling after your 4-week Phase 2 period.</p>
 
     <div class="mt-4">
         <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
