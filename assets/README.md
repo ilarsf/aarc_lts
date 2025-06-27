@@ -4,7 +4,7 @@ This directory contains the styling assets for the Ann Arbor Rowing Club's Learn
 
 ## Color Scheme
 - Primary background: White (#ffffff)
-- Main accent color: Medium blue (#1E73BE)
+- Main accent color: Medium blue (#0073E6)
 - Secondary accents: Light gray for footer areas and dividing lines
 - Text color: Dark gray (#333333) for body text, light gray (#777777) for footer text
 
