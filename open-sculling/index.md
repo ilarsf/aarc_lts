@@ -26,7 +26,7 @@ search_exclude: true
     </div>
   </div>
 
-  <div id="open-sculling-content" class="coach-content" style="display: none;"> <!-- Re-used class for structure, can be renamed -->
+  <div id="open-sculling-content" class="coach-content" style="display: none;"> <!-- Reused class for structure, can be renamed -->
     <h1>Open Sculling Resources</h1>
 
     <div class="info-box tip">
