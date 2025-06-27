@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Debug flag for logging (set to true to diagnose redirect issues)
     const DEBUG = false;
 
+    // Single source of truth for the coach portal password
+    const PASSWORD = 'Coach2025';
+
     // Anti-redirect-loop protection
     // Check URL for redirect-count parameter to prevent infinite loops
     const urlParams = new URLSearchParams(window.location.search);
@@ -13,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Check if the password was provided in the URL (emergency access option)
     const urlPassword = urlParams.get('pw');
-    const correctPassword = 'Coach2025';
-    const hasPasswordInUrl = urlPassword === correctPassword;
+    const hasPasswordInUrl = urlPassword === PASSWORD;
 
     // If we've redirected too many times, show an error and stop
     if (redirectCount > 2) {
@@ -275,10 +277,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const password = passwordInput.value;
-        const correctPassword = 'Coach2025'; // This should match the password in index.md
         const passwordError = document.getElementById('password-error');
 
-        if (password === correctPassword) {
+        if (password === PASSWORD) {
             if (DEBUG) console.log('Password correct, granting access');
 
             // Store access token in all available storage methods
