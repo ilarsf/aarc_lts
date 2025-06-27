@@ -25,11 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
         sectionTops[id] = heading.getBoundingClientRect().top + window.scrollY - 100; // Offset for sticky header
     });
 
-    // Update active link on scroll
-    window.addEventListener('scroll', function () {
+    function updateActiveLink() {
         const scrollPosition = window.scrollY;
 
-        // Find the current section
+        // Determine which section is currently in view
         let currentSection = '';
         for (const id in sectionTops) {
             if (scrollPosition >= sectionTops[id]) {
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Update active link
+        // Apply active class to the matching link
         if (currentSection) {
             categoryLinks.forEach(link => {
                 const href = link.getAttribute('href').substring(1); // Remove # from href
@@ -48,5 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }
-    });
+    }
+
+    // Update on scroll and run once on load so the first category is highlighted
+    window.addEventListener('scroll', updateActiveLink);
+    updateActiveLink();
 });
