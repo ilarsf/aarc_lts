@@ -55,9 +55,9 @@ navigation:
       - title: Club Policies
         url: /about/club-policies/
       - title: Contact
-        url: /about/contact/
+        url: /about/contact.html
       - title: FAQ
-        url: /about/faq/
+        url: /about/faq.html
 
 # Site info
 organization: "Ann Arbor Rowing Club"
