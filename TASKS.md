@@ -6,7 +6,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
 
 ## Global high‑impact tasks
 
-* [ ] **Add descriptive `alt` text for every image**
+* [x] **Add descriptive `alt` text for every image**
   *Location*: all Markdown/HTML where images appear (`assets/img`, `index.md`, session pages).
   *Action*: Replace `![](hero.jpg)` with
 
