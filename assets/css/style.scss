@@ -344,19 +344,29 @@ a {
       }
 
       &.has-dropdown {
-        >a {
+        > details > summary {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          list-style: none;
+          cursor: pointer;
+
+          &::-webkit-details-marker {
+            display: none;
+          }
 
           &:after {
-            content: "▼";
+            content: "\25BC";
             font-size: 0.7rem;
             margin-left: 0.5rem;
           }
         }
 
-        &:hover .dropdown-menu {
+        > details[open] > summary:after {
+          content: "\25B2";
+        }
+
+        > details[open] > .dropdown-menu {
           display: block;
         }
       }
@@ -504,7 +514,7 @@ a {
           }
         }
 
-        &.has-dropdown>a {
+        &.has-dropdown details > summary {
           margin-bottom: 0.25rem;
         }
       }
