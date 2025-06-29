@@ -225,3 +225,7 @@
   border-left: 5px solid #6f42c1; /* Darker purple accent */
   h4 { color: #492a78; } /* Dark purple text for heading */
 }
+
+// before: #7c7c7c on #ffffff ≈ 2.8:1 (fails)
+$footer-text-color: #595959; // ≥ 4.5:1
+footer { color: $footer-text-color; }
