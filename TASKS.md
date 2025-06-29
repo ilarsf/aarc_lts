@@ -17,7 +17,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
   *Acceptance*: No **“Missing alt”** errors in Lighthouse or Pa11y; every image conveys equivalent information.
   *Why*: Meets **WCAG 2.1 SC 1.1.1 Text Alternatives**.([w3.org][1])
 
-* [ ] **Fix low‑contrast footer text**
+* [x] **Fix low‑contrast footer text**
   *Location*: `_sass/custom.scss`.
   *Action*:
 
