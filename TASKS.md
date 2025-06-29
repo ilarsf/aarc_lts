@@ -30,7 +30,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
   *Acceptance*: Colour contrast ≥ 4.5 : 1 for normal text as verified with the W3C contrast tool.
   *Why*: Satisfies **SC 1.4.3 Contrast (Minimum)**.([w3.org][2])
 
-* [ ] **Insert a keyboard “Skip to main content” link**
+* [x] **Insert a keyboard “Skip to main content” link**
   *Location*: immediately after `<body>` in `_layouts/default.html`.
   *Action*:
 
@@ -41,7 +41,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
   *Acceptance*: Pressing `Tab` once from the top focuses the link and sends focus to `#main`.
   *Why*: Required by **SC 2.4.1 Bypass Blocks**.([w3.org][3])
 
-* [ ] **Ensure always‑visible focus styling**
+* [x] **Ensure always‑visible focus styling**
   *Location*: `_sass/custom.scss`.
   *Action*:
 
@@ -56,7 +56,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
 
 ## Navigation & layout
 
-* [ ] **Make the dropdown navigation keyboard‑friendly**
+* [x] **Make the dropdown navigation keyboard‑friendly**
   *Location*: `_includes/header.html` or equivalent.
   *Action* (quick method): wrap each submenu in native `<details>`/`<summary>` so it opens with **Enter/Space** and closes with **Esc**.
 
@@ -70,7 +70,7 @@ Addressing the items below will bring the site substantially closer to WCAG 2.
   *Acceptance*: All items reachable via **Tab/Shift‑Tab**; visible focus ring; submenu collapses when focus leaves.
   *Why*: Ensures fly‑out menus remain operable without a mouse.([w3.org][5])
 
-* [ ] **Add main landmarks**
+* [x] **Add main landmarks**
   *Location*: wrap each page’s primary content in `<main id="main">`.
   *Acceptance*: Browser accessibility tree shows exactly one `<main>` per page.
   *Why*: Improves semantic structure per HTML accessibility guidance.([developer.mozilla.org][6])

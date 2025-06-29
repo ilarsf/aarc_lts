@@ -97,8 +97,6 @@ title: AARC Learn to Scull Program
   </div>
 </section>
 
-<!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
 <section class="program-section cta-section" style="text-align: center;">
   <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Learner’s Guide: Learn to Scull Program</a>

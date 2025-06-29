@@ -229,3 +229,33 @@
 // before: #7c7c7c on #ffffff ≈ 2.8:1 (fails)
 $footer-text-color: #595959; // ≥ 4.5:1
 footer { color: $footer-text-color; }
+
+// Accessible skip link helpers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+// Ensure focus indicators are always visible
+:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}

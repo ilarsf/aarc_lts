@@ -333,5 +333,3 @@ description: Must-know safety rules for all rowing participants
     <a href="{{ site.baseurl }}/index.html" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
 </div>
 
-<!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
