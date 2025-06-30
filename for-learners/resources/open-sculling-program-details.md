@@ -9,6 +9,16 @@ description: Details about the Open Sculling Program trial period, how to contin
     <div class="section-header">
         <h1>Open Sculling Program: Trial Period and Beyond</h1>
         <p class="lead">This guide provides information for LTS students entering Phase 2 (the Open Sculling Trial Period) and how to continue rowing with AARC.</p>
+
+        ```mermaid
+        flowchart TB
+            A[Join Open Sculling Trial] --> B[Weekly Sign-Up]
+            B --> C[Check Boatings]
+            C --> D[Arrive & Row]
+            D --> E{Continue After Trial?}
+            E -->|Yes| F[Purchase Remaining Season]
+            E -->|No| G[Finish Trial]
+        ```
     </div>
 
     <h2>Phase 2 of LTS: Open Sculling Trial Period</h2>
@@ -42,7 +52,7 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
     <h2>Continuing with the Open Sculling Program After the Trial Phase</h2>
-    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for the remainder of the season for a prorated fee. The exact amount will be calculated based on how much of the season is left; please reach out to <a href="mailto:info@a2crew.org">info@a2crew.org</a> for details. You must sign up and pay the program fees to continue sculling after your trial period.</p>
+    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for the remainder of the season by paying a prorated program fee and the club membership fee. The exact amount will be calculated based on how much of the season is left; please reach out to <a href="mailto:info@a2crew.org">info@a2crew.org</a> for details. You must sign up and pay the program fees to continue sculling after your trial period.</p>
 
     <div class="mt-4">
         <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
