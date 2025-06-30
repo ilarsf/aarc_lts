@@ -9,16 +9,6 @@ description: Details about the Open Sculling Program trial period, how to contin
     <div class="section-header">
         <h1>Open Sculling Program: Trial Period and Beyond</h1>
         <p class="lead">This guide provides information for LTS students entering Phase 2 (the Open Sculling Trial Period) and how to continue rowing with AARC.</p>
-
-        <div class="mermaid">
-        flowchart TB
-            A[Join Open Sculling Trial] --> B[Weekly Sign-Up]
-            B --> C[Check Boatings]
-            C --> D[Arrive & Row]
-            D --> E{Continue After Trial?}
-            E -->|Yes| F[Purchase Remaining Season]
-            E -->|No| G[Finish Trial]
-        </div>
     </div>
 
     <h2>Phase 2 of LTS: Open Sculling Trial Period</h2>

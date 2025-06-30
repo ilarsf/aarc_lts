@@ -10,15 +10,6 @@ description: What to expect in the AARC Learn to Scull Program
 
 Welcome to the Learn to Scull program! This guide will help you understand what to expect throughout your sculling journey, from your first day to your final assessment.
 
-<div class="mermaid">
-flowchart TD
-    A["Start Program"] --> B["Weekend 1\nSession 1"]
-    B --> C["Weekend 1\nSession 2"]
-    C --> D["Weekend 2\nSession 3"]
-    D --> E["Weekend 2\nSession 4"]
-    E --> F["Assessment & Next Steps"]
-</div>
-
 <div class="accordion-controls">
     <button id="expand-all">Expand All</button>
     <button id="collapse-all">Collapse All</button>

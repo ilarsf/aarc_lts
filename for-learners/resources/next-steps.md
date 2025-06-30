@@ -27,16 +27,6 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <h1>Continue Your Rowing Journey</h1>
         <p class="lead">Congratulations on completing the Learn to Scull program! Here’s how you can continue to develop your skills and enjoy rowing with AARC.</p>
 
-        <div class="mermaid">
-        flowchart TD
-            A[Complete LTS] --> B{Join Trial?}
-            B -->|Yes| C[Open Sculling Trial]
-            C --> D{Continue After Trial?}
-            D -->|Yes| E[Full Club Membership]
-            D -->|No| F[Finish Trial Only]
-            B -->|No| G[Other AARC Events]
-        </div>
-
         <div class="info-box note mt-3">
           <h4>Program Fees</h4>
           <p><strong>Trial:</strong> pay the discounted program fee.</p>
