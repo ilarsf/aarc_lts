@@ -16,6 +16,7 @@ description: Details about the Open Sculling Program trial period, how to contin
 
     <h3>A. How to sign-up to continue with Phase 2</h3>
     <p>If you wish to continue with AARC after the LTS class, you can join the Open Sculling Program for a four-week trial period. This trial phase requires payment of a program fee; please see the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828">AARC LTS webpage</a> for current fee details. Please note there is no flexibility on which 4 weeks are offered at this rate. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
+    <p><strong>Important:</strong> Immediately after successful completion of the LTS class, the sculler is invited to become a Full Member of AARC and participate in our coached Open Sculling Program. You will need to become a member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following the completion of your class are offered at a discounted rate as a trial period. This allows the new sculler to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a fit. Please note there is no flexibility on which 4 weeks are offered at a discount.</p>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
 
     <h3>B. Weekly Sign-up</h3>
@@ -28,10 +29,10 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p><strong>Note: If you are assigned a boat, please show up or let the coach know.</strong> Many people are looking to participate in our practices and we have limited equipment so please let the coach know if you are boated and cannot be there so that another rower may use the equipment.</p>
 
     <h3>E. Arrival Times</h3>
-    <p><strong>It is very important to show up to practices on time.</strong> “On time” means 15 minutes before practice begins in order to prepare the equipment. For most of the summer that means:</p>
+    <p><strong>It is very important to show up to practices on time.</strong> "On time" means 15 minutes before practice begins in order to prepare the equipment. For most of the summer that means:</p>
     <ul>
-        <li><strong>6:15 pm</strong> for Monday/Wednesday evening sessions</li>
-        <li><strong>6:45 am</strong> for Tuesday/Thursday/Sunday morning sessions</li>
+        <li><strong>6:00 pm</strong> for Monday/Wednesday evening sessions (launch at 6:15 pm)</li>
+        <li><strong>6:45 am</strong> for Tuesday/Thursday/Sunday morning sessions (launch at 7:00 am)</li>
     </ul>
     <p>When rowers are on time, we can be prepared for the water at practice time. Coaches can then launch rowers together for productive practices.</p>
 
