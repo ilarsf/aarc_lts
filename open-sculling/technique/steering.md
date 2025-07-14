@@ -172,6 +172,6 @@ Steering a single scull effectively is a crucial skill for safety, efficiency, a
 </div>
 
 <div class="navigation-links">
-    <a href="{{ site.baseurl }}/for-learners/technique/common-fixes.md" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Common Fixes</a>
+    <a href="{{ site.baseurl }}/open-sculling/technique/common-fixes.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Common Fixes</a>
     <a href="{{ site.baseurl }}/for-learners/technique/videos.html" class="btn btn-primary">Instructional Videos <i class="fas fa-arrow-right"></i></a>
 </div>
