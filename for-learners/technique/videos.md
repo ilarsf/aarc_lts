@@ -361,6 +361,29 @@ This curated collection of high-quality instructional videos supports the Learn 
       </div>
     </div>
     
+    <!-- Wrist Position at Finish -->
+    <div class="video-card" data-sessions="session2 session3 session4" data-skills="technique" data-topics="finish">
+      <div class="video-thumbnail" data-video-id="rzALhldMf64">
+        <iframe src="https://www.youtube.com/embed/rzALhldMf64" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Rowing Mistake: Don't Drop Your Wrists!</h3>
+        <div class="video-meta">
+          <span class="video-creator">Decent Rowing</span>
+          <span class="video-duration">1:27</span>
+        </div>
+        <div class="video-description">
+          A common technique error explained: dropping your wrists at the finish. Learn why keeping wrists flat and hands in line with forearms is crucial for maintaining boat balance, efficient power transfer, and setting up a clean catch.
+        </div>
+        <div class="video-tags">
+          <span class="video-tag">Technique</span>
+          <span class="video-tag">Finish</span>
+          <span class="video-tag">Common Mistakes</span>
+          <span class="video-tag">Session 2-4</span>
+        </div>
+      </div>
+    </div>
+    
     <!-- The Recovery -->
     <div class="video-card" data-sessions="session3 session4" data-skills="technique" data-topics="recovery">
       <div class="video-thumbnail" data-video-id="I4yWtnTFdoY">
