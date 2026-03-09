@@ -20,7 +20,7 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       <div class="header-actions">
-        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
           <i class="fas fa-bars"></i>
         </button>
       </div>
@@ -28,7 +28,7 @@
   </div>
 
   <div class="container-lg px-3 my-5 markdown-body main-container">
-    <nav class="site-nav">
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul class="fallback-nav">
         {% for item in site.navigation %}
         <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
@@ -80,6 +80,7 @@
         mobileNavToggle.addEventListener('click', function () {
           // Toggle active class
           siteNav.classList.toggle('active');
+          mobileNavToggle.setAttribute('aria-expanded', siteNav.classList.contains('active') ? 'true' : 'false');
 
           // Toggle icon
           const icon = mobileNavToggle.querySelector('i');
@@ -102,6 +103,7 @@
           siteNav.classList.contains('active') &&
           window.innerWidth <= 768) {
           siteNav.classList.remove('active');
+          mobileNavToggle.setAttribute('aria-expanded', 'false');
 
           // Reset icon
           const icon = mobileNavToggle.querySelector('i');
@@ -125,6 +127,9 @@
             // Create dropdown toggle for mobile
             const toggleBtn = document.createElement('button');
             toggleBtn.classList.add('dropdown-toggle');
+            toggleBtn.setAttribute('type', 'button');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.setAttribute('aria-label', `Toggle ${link.textContent.trim()} submenu`);
             toggleBtn.innerHTML = '+';
             link.after(toggleBtn);
 
@@ -134,17 +139,10 @@
             toggleBtn.addEventListener('click', function (e) {
               e.preventDefault();
               e.stopPropagation();
-              dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-              toggleBtn.innerHTML = dropdown.style.display === 'block' ? '-' : '+';
-            });
-
-            // Prevent parent link from navigating when toggle is available
-            link.addEventListener('click', function (e) {
-              if (window.innerWidth <= 768) {
-                e.preventDefault();
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-                toggleBtn.innerHTML = dropdown.style.display === 'block' ? '-' : '+';
-              }
+              const isOpen = dropdown.style.display === 'block';
+              dropdown.style.display = isOpen ? 'none' : 'block';
+              toggleBtn.innerHTML = isOpen ? '+' : '-';
+              toggleBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
             });
           }
         });
@@ -164,17 +162,18 @@
           if (Array.from(tabButtons).some(btn => btn.getAttribute('data-tab') === tabIdToActivate)) {
             foundInThisContainer = true;
             tabButtons.forEach(btn => {
-              if (btn.getAttribute('data-tab') === tabIdToActivate) {
-                btn.classList.add('active');
-              } else {
-                btn.classList.remove('active');
-              }
+              const isActive = btn.getAttribute('data-tab') === tabIdToActivate;
+              btn.classList.toggle('active', isActive);
+              btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+              btn.setAttribute('tabindex', isActive ? '0' : '-1');
             });
             tabContents.forEach(content => {
-              if (content.getAttribute('id') === tabIdToActivate) {
-                content.classList.add('active');
+              const isActive = content.getAttribute('id') === tabIdToActivate;
+              content.classList.toggle('active', isActive);
+              if (isActive) {
+                content.removeAttribute('hidden');
               } else {
-                content.classList.remove('active');
+                content.setAttribute('hidden', 'hidden');
               }
             });
             tabWasActivated = true;
@@ -189,22 +188,44 @@
         const tabButtons = container.querySelectorAll('.tab-nav .tab-link, .tab-nav .tab-button');
         const tabContents = container.querySelectorAll('.tab-content');
 
+        const tabNav = container.querySelector('.tab-nav');
+        if (tabNav) {
+          tabNav.setAttribute('role', 'tablist');
+        }
+
+        tabButtons.forEach((btn, index) => {
+          const tabId = btn.getAttribute('data-tab');
+          btn.setAttribute('role', 'tab');
+          btn.setAttribute('id', `tab-${tabId}`);
+          btn.setAttribute('aria-controls', tabId);
+          btn.setAttribute('tabindex', btn.classList.contains('active') ? '0' : '-1');
+
+          const panel = container.querySelector(`#${tabId}`);
+          if (panel) {
+            panel.setAttribute('role', 'tabpanel');
+            panel.setAttribute('aria-labelledby', `tab-${tabId}`);
+          }
+        });
+
         function activateTabInContainer(tabId) {
           tabButtons.forEach(btn => {
-            btn.classList.remove('active');
-            if (btn.getAttribute('data-tab') === tabId) {
-              btn.classList.add('active');
-            }
+            const isActive = btn.getAttribute('data-tab') === tabId;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            btn.setAttribute('tabindex', isActive ? '0' : '-1');
           });
           tabContents.forEach(content => {
-            content.classList.remove('active');
-            if (content.getAttribute('id') === tabId) {
-              content.classList.add('active');
+            const isActive = content.getAttribute('id') === tabId;
+            content.classList.toggle('active', isActive);
+            if (isActive) {
+              content.removeAttribute('hidden');
+            } else {
+              content.setAttribute('hidden', 'hidden');
             }
           });
         }
 
-        tabButtons.forEach(button => {
+        tabButtons.forEach((button, index) => {
           button.addEventListener('click', function (event) {
             event.preventDefault();
             const tabId = this.getAttribute('data-tab');
@@ -213,6 +234,26 @@
               history.pushState(null, null, '#' + tabId);
             } else {
               window.location.hash = '#' + tabId;
+            }
+          });
+
+          button.addEventListener('keydown', function (event) {
+            const currentIndex = index;
+            let nextIndex = null;
+            if (event.key === 'ArrowRight') {
+              nextIndex = (currentIndex + 1) % tabButtons.length;
+            } else if (event.key === 'ArrowLeft') {
+              nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+            } else if (event.key === 'Home') {
+              nextIndex = 0;
+            } else if (event.key === 'End') {
+              nextIndex = tabButtons.length - 1;
+            }
+
+            if (nextIndex !== null) {
+              event.preventDefault();
+              tabButtons[nextIndex].focus();
+              tabButtons[nextIndex].click();
             }
           });
         });

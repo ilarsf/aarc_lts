@@ -7,6 +7,8 @@ title: Meet Our Team - AARC Learn to Scull
 
 Our dedicated team is committed to providing an exceptional learning experience for all AARC Learn to Scull participants. Get to know the instructors who will guide you through the program and the other key figures in our sculling community you'll meet as you continue your rowing journey.
 
+{% include learner-next-step.html %}
+
 <div class="team-section">
   <h2>Learn to Scull Instructors</h2>
   <p>These are the instructors who will be directly working with you during the Learn to Scull program:</p>
@@ -109,7 +111,7 @@ Our dedicated team is committed to providing an exceptional learning experience 
   </div>
 
   <div class="info-box note mt-4">
-    <h4>Join Our Teaching Team</h4>
-    <p>AARC is always looking for experienced rowers who are passionate about teaching and sharing the joy of sculling. If you're interested in becoming an instructor for our Learn to Scull program, please contact <a href="mailto:info@a2crew.com">info@a2crew.com</a>.</p>
+    <h4>Questions before your first session?</h4>
+    <p>Use the learner guide for preparation, safety, and next steps, or email <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you are unsure where to start.</p>
   </div>
 </div>

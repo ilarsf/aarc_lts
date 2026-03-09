@@ -10,6 +10,8 @@ title: About the Learn to Scull Program - AARC Learn to Scull
   <p class="lead">A comprehensive introduction to the art and sport of sculling from Ann Arbor Rowing Club.</p>
 </div>
 
+{% include learner-next-step.html %}
+
 <div class="accordion-controls">
     <button id="expand-all">Expand All</button>
     <button id="collapse-all">Collapse All</button>

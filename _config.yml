@@ -24,7 +24,7 @@ footer_text_color: "#7c7c7c"     # Light gray for footer text
 
 # Coach Portal settings
 coach_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb
-open_sculling_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb # Added for open sculling
+open_sculling_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc65634a54078efb
 
 # Navigation
 navigation:
@@ -33,20 +33,16 @@ navigation:
   - title: For Learners
     url: /for-learners/
     subitems:
-      - title: Getting Started
+      - title: Before Your First Session
         url: /for-learners/#getting-started
-      - title: Learning Journey
+      - title: During the Course
         url: /for-learners/#learning-journey
       - title: Technique
         url: /for-learners/#technique
-      - title: Safety
+      - title: Safety & River Rules
         url: /for-learners/#safety
-      - title: Resources
+      - title: After the Course
         url: /for-learners/#resources
-  - title: 🔑 For Coaches
-    url: /for-coaches/
-  - title: 🔑 Open Sculling
-    url: /open-sculling/
   - title: About
     url: /about/
     subitems:
@@ -57,7 +53,11 @@ navigation:
       - title: Contact
         url: /about/contact.html
       - title: FAQ
-        url: /about/faq.html
+        url: /for-learners/resources/faq.html
+  - title: Coach Resources (members)
+    url: /for-coaches/
+  - title: Open Sculling (members)
+    url: /open-sculling/
 
 # Site info
 organization: "Ann Arbor Rowing Club"

@@ -9,18 +9,28 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
 
 # Learner's Guide: Learn to Scull Program
 
+<div class="info-box tip quick-start">
+    <h2>Recommended order</h2>
+    <p>If this is your first visit, use the guide in this order:</p>
+    <ol>
+        <li><strong>Before Your First Session</strong> for what to bring and what to expect.</li>
+        <li><strong>During the Course</strong> for session-by-session preparation.</li>
+        <li><strong>Safety &amp; River Rules</strong> before you launch.</li>
+        <li><strong>After the Course</strong> when you are ready for next steps.</li>
+    </ol>
+</div>
 <div class="tab-container">
     <div class="tab-nav">
-        <button class="tab-link active" data-tab="getting-started">Getting Started</button>
-        <button class="tab-link" data-tab="learning-journey">Learning Journey</button>
-        <button class="tab-link" data-tab="technique">Technique</button>
-        <button class="tab-link" data-tab="safety">Safety</button>
-        <button class="tab-link" data-tab="resources">Resources</button>
+        <button class="tab-link active" data-tab="getting-started">Before Your First Session</button>
+        <button class="tab-link" data-tab="learning-journey">During the Course</button>
+        <button class="tab-link" data-tab="technique">Technique &amp; Drills</button>
+        <button class="tab-link" data-tab="safety">Safety &amp; River Rules</button>
+        <button class="tab-link" data-tab="resources">After the Course</button>
     </div>
 
     <div class="tab-content active" id="getting-started">
         <div class="tab-content-inner">
-            <h3>Getting Started</h3>
+            <h3>Before Your First Session</h3>
             <p>Everything you need to know before your first session, from program overview to basic terminology.</p>
             
             <div class="card-grid">
@@ -60,7 +70,7 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
     
     <div class="tab-content" id="learning-journey">
         <div class="tab-content-inner">
-            <h3>Learning Journey</h3>
+            <h3>During the Course</h3>
             <p>Session-by-session guides to help you track your progress through the Learn to Scull program.</p>
             
             <div class="card-grid">
@@ -109,7 +119,7 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
     
     <div class="tab-content" id="technique">
         <div class="tab-content-inner">
-            <h3>Technique</h3>
+            <h3>Technique &amp; Drills</h3>
             <p>Resources to help you understand and refine your sculling technique.</p>
             
             <div class="card-grid">
@@ -149,7 +159,7 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
     
     <div class="tab-content" id="safety">
         <div class="tab-content-inner">
-            <h3>Safety</h3>
+            <h3>Safety &amp; River Rules</h3>
             <p>Critical safety information and practices for all scullers.</p>
             
             <div class="card-grid">
@@ -198,7 +208,7 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
     
     <div class="tab-content" id="resources">
         <div class="tab-content-inner">
-            <h3>Resources</h3>
+            <h3>After the Course</h3>
             <p>Additional materials to support your learning and ongoing development as a sculler.</p>
             
             <div class="card-grid">
@@ -236,6 +246,3 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
         </div>
     </div>
 </div>
-
-<!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
