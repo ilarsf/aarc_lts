@@ -30,7 +30,7 @@ open_sculling_password_hash: 8d783c540a393c2644022d357ef1ef107fb2aad448b991b6fc6
 navigation:
   - title: Home
     url: /
-  - title: For Learners
+  - title: Learner Guide
     url: /for-learners/
     subitems:
       - title: Before Your First Session
@@ -46,18 +46,21 @@ navigation:
   - title: About
     url: /about/
     subitems:
+      - title: Contact
+        url: /about/contact.html
       - title: Meet the Team
         url: /about/team.html
       - title: Club Policies
         url: /about/club-policies/
-      - title: Contact
-        url: /about/contact.html
       - title: FAQ
         url: /for-learners/resources/faq.html
-  - title: Coach Resources (members)
+  - title: Members (members)
     url: /for-coaches/
-  - title: Open Sculling (members)
-    url: /open-sculling/
+    subitems:
+      - title: Coach Resources
+        url: /for-coaches/
+      - title: Open Sculling
+        url: /open-sculling/
 
 # Site info
 organization: "Ann Arbor Rowing Club"

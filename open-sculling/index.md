@@ -9,7 +9,7 @@ search_exclude: true
 <div class="password-protected-content">
   <div id="password-gate" class="password-gate">
     <div class="info-box note">
-      <h2>Open Sculling Portal</h2>
+      <h1>Open Sculling Portal</h1>
       <p>This area contains resources and materials for authorized open scullers.</p>
 
       <div class="password-form">
@@ -24,7 +24,7 @@ search_exclude: true
   </div>
 
   <div id="open-sculling-content" class="coach-content" style="display: none;"> <!-- Reused class for structure, can be renamed -->
-    <h1>Open Sculling Resources</h1>
+    <h2>Open Sculling Resources</h2>
 
     <div class="info-box tip">
       <h3>Welcome, Open Scullers!</h3>

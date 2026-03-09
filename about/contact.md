@@ -20,8 +20,6 @@ description: Contact information for the Ann Arbor Rowing Club (AARC) leadership
         </div>
     </div>
 
-    {% include learner-next-step.html %}
-
     <h2>Role-specific contacts</h2>
     <p>If you already know the topic, these contacts can help directly:</p>
     <ul>
@@ -30,5 +28,7 @@ description: Contact information for the Ann Arbor Rowing Club (AARC) leadership
         <li><strong>Margaret Hudson</strong>, Club President: <a href="mailto:admin@a2crew.com">admin@a2crew.com</a></li>
         <li><strong>Marcia Leonard</strong>, Membership Chair: <a href="mailto:marcia@umich.edu">marcia@umich.edu</a></li>
     </ul>
+
+    {% include learner-next-step.html %}
 
 </div>

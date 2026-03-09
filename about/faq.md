@@ -13,5 +13,3 @@ title: Frequently Asked Questions - AARC Learn to Scull
         <a href="{{ site.baseurl }}/for-learners/" class="cta-button secondary">Start with the learner guide</a>
     </div>
 </div>
-
-{% include learner-next-step.html %}

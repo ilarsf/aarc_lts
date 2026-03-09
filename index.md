@@ -4,13 +4,14 @@ title: AARC Learn to Scull Program
 ---
 
 <section class="page-intro-card">
-  <h2>New to rowing?</h2>
-  <p>Learn to Scull is AARC’s beginner program for adults. Start with the learner guide, then review the 2026 dates and registration details.</p>
+  <h1>Learn to Scull at AARC</h1>
+  <p>New to rowing? Learn to Scull is AARC’s beginner program for adults. Start with the learner guide, then review the 2026 dates and registration details.</p>
   <div class="button-row">
-    <a href="https://aarc.clubexpress.com" class="cta-button" target="_blank" rel="noopener">Register / waitlist</a>
+    <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
     <a href="#program-dates" class="cta-button secondary">See 2026 dates</a>
-    <a href="{{ site.baseurl }}/for-learners/" class="cta-button secondary">Start with the learner guide</a>
+    <a href="https://aarc.clubexpress.com" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
   </div>
+  <p><strong>Recommended order:</strong> learner guide → dates and fees → registration or waitlist.</p>
 </section>
 
 <section class="program-section">
@@ -109,7 +110,7 @@ title: AARC Learn to Scull Program
 
   <div class="info-box tip schedule-explainer">
     <h3>How the pathway works</h3>
-    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>$110 or $85 student/vet</strong>. After that, you can continue for the rest of the summer if you want more supported practice.</p>
+    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>$110 or $85 student/vet</strong>. <strong>Full AARC membership is required before you can register for the trial or sign up for practices.</strong> After that, you can continue for the rest of the summer if you want more supported practice.</p>
   </div>
 
   <div class="schedule-table-wrapper">

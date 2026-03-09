@@ -49,7 +49,7 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
     <h2>Continuing with the Open Sculling Program After the Trial Phase</h2>
-    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for the remainder of the season by paying the prorated program fee for their Learn to Scull cohort and the club membership fee. Please reach out to <a href="mailto:info@a2crew.org">info@a2crew.org</a> if you need help confirming your fee tier. You must sign up and pay the program fees to continue sculling after your trial period.</p>
+    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for the remainder of the season by paying the prorated program fee for their Learn to Scull cohort and the club membership fee. Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier. You must sign up and pay the program fees to continue sculling after your trial period.</p>
 
     <div class="mt-4">
         <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>

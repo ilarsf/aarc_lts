@@ -94,15 +94,6 @@ nav_order: 4
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fas fa-head-side-cough"></i> Air Quality (AQI)</h5>
-                    <p class="card-text">Poor air quality can pose health risks, especially for those with sensitivities. LTS sessions may be cancelled or modified based on AQI levels from AirNow.gov.</p>
-                    <p class="card-text"><small class="text-muted">Coach monitors and decides. No rowing if AQI ≥150.</small></p>
-                </div>
-            </div>
-        </div>
     </div>
 
     <hr>

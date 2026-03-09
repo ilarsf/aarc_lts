@@ -9,7 +9,7 @@ search_exclude: true
 <div class="password-protected-content">
   <div id="password-gate" class="password-gate">
     <div class="info-box note">
-      <h2>Coach Portal</h2>
+      <h1>Coach Portal</h1>
       <p>This area contains coaching resources and materials that are only accessible to authorized coaches.</p>
 
       <div class="password-form">
@@ -24,7 +24,7 @@ search_exclude: true
   </div>
 
   <div id="coach-content" class="coach-content" style="display: none;">
-    <h1>Coach Portal</h1>
+    <h2>Coach Materials</h2>
 
     <div class="info-box tip">
       <h3>Welcome, Coaches!</h3>
