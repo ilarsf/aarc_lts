@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Exclude URLs with coach-specific paths
             if (item.path.includes('/coach_portal/')) return false;
             if (item.path.includes('/course_materials/coach/')) return false;
+            if (item.path.includes('/for-coaches/')) return false;
 
             // Exclude coach-specific sections from textbook
             if (item.path.includes('/textbook/') && (

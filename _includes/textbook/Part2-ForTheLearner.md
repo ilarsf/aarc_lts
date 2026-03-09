@@ -291,7 +291,7 @@ The single most effective way to minimize blisters is to use the correct grip:
 * **Light Pressure:** Especially on the recovery, keep pressure light.
 * **Let Oarlocks Work:** Allow the oarlocks to facilitate the feathering and squaring motion rather than forcing it with a tight wrist grip.
 
-**Correct Grip Tutorial:** Refer to the video library in Appendix C or the website's [Q&A Companion Video Library]({{ site.baseurl }}/course_materials/learner/QA_Companion.html#videos-tab) for a visual demonstration.
+**Correct Grip Tutorial:** Refer to the video library in Appendix C or the website's [Video Library]({{ site.baseurl }}/for-learners/technique/videos.html) for a visual demonstration.
 
 #### Blister Prevention and Treatment Summary
 
@@ -302,7 +302,7 @@ The single most effective way to minimize blisters is to use the correct grip:
 
 ⚠️ **Warning:** Watch for signs of infection (increasing pain, redness, warmth, swelling, pus) and seek medical attention if they appear.
 
-*For a comprehensive guide, refer to the [Rower's Hand Blister Treatment Guide]({{ site.baseurl }}/src/Rowers_Hand_Blister_Treatment.html) available on the website.*
+*For a comprehensive guide, refer to the [Rower's Hand Blister Treatment Guide]({{ site.baseurl }}/resources/Rowers_Hand_Blister_Treatment.html) available on the website.*
 
 ### Understanding River Traffic Patterns
 
@@ -316,7 +316,7 @@ Just like roads, rivers have rules for traffic flow to ensure everyone's safety.
 
 ![Placeholder: Diagram of the Argo Pond traffic pattern showing flow direction, turning points, and bridge arches](placeholder)
 
-💡 **Tip:** Always assume other water users may not know or follow the patterns. Defensive rowing and constant awareness are your best safety tools. *Refer to the [River Traffic Guide]({{ site.baseurl }}/course_materials/learner/safety/River_Traffic_Guide.html) for more details.*
+💡 **Tip:** Always assume other water users may not know or follow the patterns. Defensive rowing and constant awareness are your best safety tools. *Refer to the [River Rules Guide]({{ site.baseurl }}/for-learners/safety/river-rules.html) for more details.*
 
 ### Common Beginner Mistakes & How to Correct Them
 
@@ -333,7 +333,7 @@ Everyone makes mistakes while learning! Recognizing common errors can help you i
 | **Not Looking Around Enough** | Failing to check surroundings frequently                              | "Look every 3-5 strokes!" Make it part of your rhythm. Scan course and hazards.            | Continuous Rowing Practice  |
 | **Weaving / Over-Steering** | Making large, erratic steering corrections                             | "Small, gentle corrections." "Pick a point far ahead." Apply pressure difference subtly.  | Continuous Rowing Practice  |
 
-Don't get discouraged by mistakes! They are part of the learning process. Listen to your coach's feedback, focus on one correction at a time, and keep practicing. *See the [Common Rowing Fixes guide]({{ site.baseurl }}/course_materials/learner/technical/Common_Rowing_Fixes.html) for more tips.*
+Don't get discouraged by mistakes! They are part of the learning process. Listen to your coach's feedback, focus on one correction at a time, and keep practicing. *See the [Common Fixes guide]({{ site.baseurl }}/open-sculling/technique/common-fixes.html) for more tips.*
 
 ---
 

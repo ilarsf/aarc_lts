@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const DEBUG = false;
 
     // Single source of truth for the coach portal password
-    const PASSWORD = 'Coach2025';
+    const PASSWORD = 'Coach2026';
 
     // Anti-redirect-loop protection
     // Check URL for redirect-count parameter to prevent infinite loops

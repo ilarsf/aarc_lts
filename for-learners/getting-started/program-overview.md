@@ -153,7 +153,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
         <div class="accordion-content-inner">
             <div class="info-box">
               <h4>Schedule Adjustments</h4>
-              <p>Rowing is weather-dependent. If sessions need to be canceled due to unsafe conditions (lightning, excessive wind, or heavy rain), we will schedule make-up sessions as needed.</p>
+              <p>Rowing is weather-dependent. If on-water instruction is unsafe because of lightning, excessive wind, or heavy rain, coaches may delay the start, shift the session to land-based instruction, or cancel for safety. Make-up sessions are not typically available.</p>
             </div>
 
             <p>The following conditions may impact our ability to hold on-water sessions:</p>

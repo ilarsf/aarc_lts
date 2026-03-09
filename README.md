@@ -16,9 +16,10 @@ The site is organized into the following main sections:
 
 Content is stored in markdown files organized by audience:
 
-- `/course_materials/coach/` - Coach-facing resources
-- `/course_materials/learner/` - Participant-facing materials
-- `/course_materials/communication/` - Templates for program communications
+- `/for-coaches/` - Coach-facing resources
+- `/for-learners/` - Participant-facing materials
+- `/_includes/communication_templates/` - Templates for program communications
+- `/resources/` - PDF files, quizzes, and supporting reference materials
 
 ## Image Handling
 
@@ -29,7 +30,6 @@ The site includes a custom image handling system that:
 3. **Improves performance** - Reduces console errors and improves page loading
 
 For details on using this feature, see [Image Handling Documentation](/assets/README-image-handling.md)
-- `/src/` - Technical guides and reference materials
 
 ## Site Features
 

@@ -37,7 +37,7 @@ Our program uses a weekend intensive format (4 sessions over 2 consecutive weeke
 * **Hand Care:** Be proactive with blister prevention (See Part 2, Chapter 5).
 * **Recovery:** Stay hydrated, eat well, and rest between sessions.
 
-*See the [Online Program Schedule]({{ site.baseurl }}/course_materials/learner/Program_Schedule.html) for more details on the format.*
+*See the [Program Overview]({{ site.baseurl }}/for-learners/getting-started/program-overview.html) for more details on the format.*
 
 #### Learning Journey:
 

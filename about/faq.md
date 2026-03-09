@@ -253,10 +253,9 @@ title: Frequently Asked Questions - AARC Learn to Scull
                           <ul>
                             <li>Sessions are not typically canceled but may be modified for safety</li>
                             <li>Land-based instruction options are available (ergometers, technique workshops)</li>
-                            <li>Weather decisions are made by 5:00 PM the day before a session</li>
                             <li>Notifications are sent via email</li>
                           </ul>
-                        In rare cases of severe weather that prevents any instruction, make-up sessions will be scheduled.
+                        If severe weather prevents safe on-water instruction, coaches may delay the start, switch to land-based instruction, or cancel the session. Make-up sessions are not typically available.
                         </p>
                     </div>
                 </div>

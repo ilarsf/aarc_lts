@@ -2,7 +2,7 @@
 
 ## Chapter 8: Coaching Philosophy & Approach
 
-Welcome to Part 4, dedicated to the coaches who make the AARC Learn to Scull program possible! This chapter outlines the core philosophy, key teaching frameworks, and effective strategies to help you create a supportive, safe, and effective learning environment for new scullers. *Refer to the full [Coach's Manual]({{ site.baseurl }}/course_materials/coach/Coach_Manual.html) for more detail.*
+Welcome to Part 4, dedicated to the coaches who make the AARC Learn to Scull program possible! This chapter outlines the core philosophy, key teaching frameworks, and effective strategies to help you create a supportive, safe, and effective learning environment for new scullers. *Refer to the full [Coach Resources portal]({{ site.baseurl }}/for-coaches/index.html) for more detail.*
 
 ### Creating a Positive Learning Environment
 
@@ -26,7 +26,7 @@ Use these frameworks consistently for teaching and feedback:
 4.  **Drive:** Connected power (legs → back → arms).
 5.  **Steering:** Frequent looks, subtle corrections.
 
-💡 **Tip:** Refer learners to these frameworks. Use keywords consistently. *See the [Technical Frameworks Guide]({{ site.baseurl }}/course_materials/coach/technical/Technical_Frameworks.html) for details.*
+💡 **Tip:** Refer learners to these frameworks. Use keywords consistently. *See the [Technical Coaching section]({{ site.baseurl }}/for-coaches/technical-coaching/index.html) for details.*
 
 ### Class Management Strategies (Coaching Approach)
 
@@ -46,7 +46,7 @@ This chapter sets the stage. Following chapters detail session plans, drills, an
 
 ## Chapter 9: Session Plans & Drills
 
-This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans]({{ site.baseurl }}/course_materials/coach/session_plans/).*
+This chapter provides detailed plans for each of the four Learn to Scull sessions. Adapt timings based on group progress/conditions, but cover core objectives. **Continuously integrate the Black Bear Sequence (BBS) framework.** *Detailed plans are available online at [Session Plans]({{ site.baseurl }}/for-coaches/session-plans/overview.html).*
 
 💡 **Coach's Tip:** Before each session, review the plan below and the **Daily Coach Checklist** (Chapter 10). Familiarize yourself with drills and common errors.
 
@@ -56,7 +56,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Key Focus:** Safety, Equipment Familiarity, Erg Motion, Flip Test Confidence.
 * **Key Drills:** Erg Pick Drill, Erg Reverse Pick Drill, Ghost Strokes (Dockside).
 * **Common Errors:** Erg grip, early arm bend, slouching; boat handling bumps; rushing entry/exit; flip test panic/difficulty.
-* **Detailed Plan:** [Session 1 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_1_Plan.html)
+* **Detailed Plan:** [Session 1 Plan]({{ site.baseurl }}/for-coaches/session-plans/session-1.html)
 
 | Activity                          | Est. Duration | Key Focus/Objective                                                                       | Relevant BBS        | Coaching Cues                       | Safety Notes                                           |
 | :-------------------------------- | :------------ | :---------------------------------------------------------------------------------------- | :------------------------ | :------------------------------------------ | :----------------------------------------------------- |
@@ -75,7 +75,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Key Focus:** On-water Sequencing (Pick Drill, Pause Drills), Balance, Basic Turning.
 * **Key Drills:** Pick Drill (Water), Pause Drills (Arms Away, Body Over), Basic Turning (One Arm).
 * **Common Errors:** Sequencing (early knees, rushing slide), Balance (tension, uneven hands), Turning (jerky), Blade Work (crabs).
-* **Detailed Plan:** [Session 2 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_2_Plan.html)
+* **Detailed Plan:** [Session 2 Plan]({{ site.baseurl }}/for-coaches/session-plans/session-2.html)
 
 | Activity                          | Est. Duration | Key Focus/Objective                                                              | Relevant BBS        | Coaching Cues                                     | Safety Notes                                      |
 | :-------------------------------- | :------------ | :------------------------------------------------------------------------------- | :------------------------ | :------------------------------------------------ | :------------------------------------------------ |
@@ -95,7 +95,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Key Focus:** Leg Drive (Application of Pressure), Navigation, Steering Awareness, Pivot Turns.
 * **Key Drills:** Reverse Pick Drill (Water), Pivot Turns.
 * **Common Errors:** Drive (weak leg drive/arm pull, bum shoving, early back opening), Steering (not looking, oversteering), Traffic Pattern (wrong side, cutting corners).
-* **Detailed Plan:** [Session 3 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_3_Plan.html)
+* **Detailed Plan:** [Session 3 Plan]({{ site.baseurl }}/for-coaches/session-plans/session-3.html)
 
 | Activity                               | Est. Duration | Key Focus/Objective                                                              | Relevant BBS      | Coaching Cues                                      | Safety Notes                                             |
 | :------------------------------------- | :------------ | :------------------------------------------------------------------------------- | :---------------------- | :--------------------------------------------------------- | :------------------------------------------------------- |
@@ -114,7 +114,7 @@ This chapter provides detailed plans for each of the four Learn to Scull session
 * **Key Focus:** Skill Integration, Independent Sculling, Navigation Mastery, Assessment.
 * **Key Activities/Drills:** Continuous Rowing with Navigation Focus, Bridge Passage Practice (Group 1 Option).
 * **Common Errors:** Navigation (fixating, wrong side/cutting corners, stopping to look), Integration (technique decay, inconsistent effort), Bridge Passage (hesitation/erratic steering, too close to abutments).
-* **Detailed Plan:** [Session 4 Plan]({{ site.baseurl }}/course_materials/coach/session_plans/Session_4_Plan.html)
+* **Detailed Plan:** [Session 4 Plan]({{ site.baseurl }}/for-coaches/session-plans/session-4.html)
 
 | Activity                               | Est. Duration | Key Focus/Objective                                                                                      | Relevant BBS | Coaching Cues                                         | Safety Notes                                                               |
 | :------------------------------------- | :------------ | :------------------------------------------------------------------------------------------------------- | :----------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------- |
@@ -138,7 +138,7 @@ Effective coaching involves teaching technique *and* managing logistics and asse
 
 ### Daily Coach Checklist Integration
 
-Consistency and preparedness are vital. Using the **Daily Coach Checklist** consistently helps maintain program quality and safety({{ site.baseurl }}/course_materials/coach/Daily_Coach_Checklist.html) for specific action items.*
+Consistency and preparedness are vital. Using the session-specific coach checklists consistently helps maintain program quality and safety. *See the [Session Plans overview]({{ site.baseurl }}/for-coaches/session-plans/overview.html) for related checklists and action items.*
 
 #### Key Checklist Phases:
 
@@ -165,7 +165,7 @@ Consistency and preparedness are vital. Using the **Daily Coach Checklist** cons
 
 ### Participant Assessment
 
-At the end of the program (Session 4), assess each participant's readiness using the **Rower Assessment Checklist**. *The full checklist is available online: [Participant Assessment Checklist]({{ site.baseurl }}/course_materials/coach/Participant_Assessment_Checklist.html).*
+At the end of the program (Session 4), assess each participant's readiness using the **Rower Assessment Checklist**. *The full assessment tools are available online: [Participant Assessment Tools]({{ site.baseurl }}/for-coaches/program-management/assessment-tools.html).*
 
 Review these points individually with rowers, providing constructive feedback.
 
@@ -186,7 +186,7 @@ Consistent communication prepares participants and reinforces learning.
 
 #### Using Templates:
 
-1.  Refer to the **[Email Templates Guide]({{ site.baseurl }}/course_materials/communication/Email_Templates.html)**.
+1.  Refer to the **[Communication Templates Guide]({{ site.baseurl }}/for-coaches/program-management/communication.html)**.
 2.  Available templates cover Pre-Course, During Course, and Post-Course communications.
 3.  Copy relevant template, customize placeholders (Name, Date, Skill), and send following the recommended schedule.
 
