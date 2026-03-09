@@ -109,7 +109,7 @@ title: AARC Learn to Scull Program
 
   <div class="info-box tip schedule-explainer">
     <h3>How the pathway works</h3>
-    <p>Each Learn to Scull class is four sessions over two weekends. After your class, you can join a fixed four-week Open Sculling trial, then continue for the rest of the summer if you want more supported practice.</p>
+    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>$110 or $85 student/vet</strong>. After that, you can continue for the rest of the summer if you want more supported practice.</p>
   </div>
 
   <div class="schedule-table-wrapper">
@@ -129,28 +129,28 @@ title: AARC Learn to Scull Program
           <td data-label="Class">LTS1</td>
           <td data-label="Class dates">May 30/31 &amp; June 6/7</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 8 - July 5</td>
+          <td data-label="4-week trial after class">June 8 - July 5<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
           <td data-label="Continue for the rest of the summer">July 6 - Aug 30<br>($305 or $230 student/vet)</td>
         </tr>
         <tr>
           <td data-label="Class">LTS2</td>
           <td data-label="Class dates">June 13/14 &amp; 20/21</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 22 - July 19</td>
+          <td data-label="4-week trial after class">June 22 - July 19<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
           <td data-label="Continue for the rest of the summer">July 20 - Aug 30<br>($225 or $170 student/vet)</td>
         </tr>
         <tr>
           <td data-label="Class">LTS3</td>
           <td data-label="Class dates">July 11/12 &amp; 18/19</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">July 20 - Aug 16</td>
+          <td data-label="4-week trial after class">July 20 - Aug 16<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
           <td data-label="Continue for the rest of the summer">Aug 17 - Aug 30<br>($75 or $55 student/vet)</td>
         </tr>
         <tr>
           <td data-label="Class">LTS4</td>
           <td data-label="Class dates">July 25/26 &amp; Aug 1/2</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">Aug 3 - Aug 30</td>
+          <td data-label="4-week trial after class">Aug 3 - Aug 30<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
           <td data-label="Continue for the rest of the summer">Sign up for the fall season</td>
         </tr>
       </tbody>
@@ -381,6 +381,11 @@ title: AARC Learn to Scull Program
 
 .schedule-table th {
   background-color: #f8f9fa;
+  color: #0f3d69;
+  font-weight: 600;
+}
+
+.schedule-fee {
   color: #0f3d69;
   font-weight: 600;
 }
