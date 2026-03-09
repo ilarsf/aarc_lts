@@ -19,6 +19,16 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
         <p>River rules are essentially the same as road rules: <strong>Stay on the right side of the river and pass on the left.</strong> However, always be prepared to adapt based on conditions and coach instructions.</p>
     </div>
 
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading"><i class="fas fa-gamepad"></i> Practice It</h4>
+        <p>Want a faster way to rehearse these rules? Try the arcade-style <strong>River Rules Rally</strong> game and practice staying right, passing left, and handling river turns with the arrow keys.</p>
+        <p class="mb-0">
+            <a href="{{ site.baseurl }}/for-learners/safety/river-rules-rally.html" class="btn btn-primary">
+                Play River Rules Rally <i class="fas fa-arrow-right"></i>
+            </a>
+        </p>
+    </div>
+
     <div class="row">
         <div class="col-lg-8 mx-auto">
 
