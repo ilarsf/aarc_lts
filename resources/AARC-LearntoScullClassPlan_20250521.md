@@ -1,5 +1,5 @@
 AARC Learn to Scull Class Overview  
-Class runs 8-11am
+Class runs 8:30-11:30am
 
 Coaching Keys
 

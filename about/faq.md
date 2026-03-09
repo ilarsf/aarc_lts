@@ -32,7 +32,7 @@ title: Frequently Asked Questions - AARC Learn to Scull
                 <button class="nested-toggle">What is the format of the Learn to Scull program?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-                        <p>The program consists of four 3-hour sessions held over two consecutive weekends (Saturday and Sunday, typically 8:00 AM - 11:00 AM). This intensive format helps accelerate learning and skill retention while accommodating busy schedules.</p>
+                        <p>The program consists of four 3-hour sessions held over two consecutive weekends (Saturday and Sunday, 8:30 AM - 11:30 AM). Each class day includes a 30-minute break. This intensive format helps accelerate learning and skill retention while accommodating busy schedules.</p>
                     </div>
                 </div>
             </div>
@@ -56,31 +56,30 @@ title: Frequently Asked Questions - AARC Learn to Scull
                 <button class="nested-toggle">How much does the program cost?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-                        <p>The standard fee for the Learn to Scull program is $300, with discounted rates of $225 for students and veterans. This fee includes:
+                        <p>The standard fee for the Learn to Scull program is $365, with discounted rates of $275 for students and veterans. This fee includes:
                           <ul>
                             <li>All instruction (four 3-hour sessions)</li>
                             <li>Equipment use (boat, oars, safety gear)</li>
-                            <li>Basic USRowing membership for insurance purposes</li>
                             <li>Program materials and resources</li>
                           </ul>
-                        Scholarships are available for those with financial need. Please contact the program coordinator for more information.
+                        Participants also need a USRowing Learn-to-Row membership ($10) with a signed waiver. Scholarships are available for those with financial need. Please contact the program coordinator for more information.
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="nested-section">
-                <button class="nested-toggle">When are the 2025 sessions scheduled?</button>
+                <button class="nested-toggle">When are the 2026 sessions scheduled?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-                        <p>For 2025, we have four Learn to Scull sessions scheduled:
+                        <p>For 2026, we have four Learn to Scull sessions scheduled:
                           <ul>
-                            <li><strong>Session 1:</strong> May 2025 (early season)</li>
-                            <li><strong>Session 2:</strong> June 2025 (early summer)</li>
-                            <li><strong>Session 3:</strong> Late June/Mid-July 2025</li>
-                            <li><strong>Session 4:</strong> Late July/Early August 2025</li>
+                            <li><strong>LTS1:</strong> May 30/31 &amp; June 6/7</li>
+                            <li><strong>LTS2:</strong> June 13/14 &amp; 20/21</li>
+                            <li><strong>LTS3:</strong> July 11/12 &amp; 18/19</li>
+                            <li><strong>LTS4:</strong> July 25/26 &amp; Aug 1/2</li>
                           </ul>
-                        Specific dates are provided during registration. Each session follows the same curriculum but is offered at different times to accommodate various schedules.
+                        Registration opens May 1, 2026. Each class follows the same curriculum and runs Saturday/Sunday from 8:30 AM to 11:30 AM.
                         </p>
                     </div>
                 </div>

@@ -29,8 +29,9 @@ description: Guidance on continuing your rowing journey after completing the AAR
 
         <div class="info-box note mt-3">
           <h4>Program Fees</h4>
-          <p><strong>Trial:</strong> pay the discounted program fee.</p>
-          <p><strong>Continue after trial:</strong> purchase the remaining season with a prorated program fee and pay the club membership fee.</p>
+          <p><strong>Learn to Scull class:</strong> $365 or $275 for students/veterans.</p>
+          <p><strong>Phase 2 Open Sculling Trial:</strong> $110 or $85 student/vet for the fixed four-week trial immediately after your class.</p>
+          <p><strong>Continue after trial:</strong> purchase the remaining season with the prorated program fee shown for your session and pay the club membership fee.</p>
         </div>
     </div>
 
@@ -47,7 +48,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
     <a href="{{ site.baseurl }}/for-learners/resources/membership.html"  class="btn btn-primary">Membership Info</a>
 
     <h3> Open Sculling Program Trial</h3>
-    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing. This trial phase requires payment of a program fee; please see the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828">AARC LTS webpage</a> for current fee details. Please note there is no flexibility on which 4 weeks are offered at this rate. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
+    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing. The Phase 2 trial fee is $110 or $85 student/vet, and there is no flexibility on which 4 weeks are offered at this rate. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
     <p>The <strong>multi-week discounted trial period</strong> in the Open Sculling Program is the most common and recommended next step. It provides:</p>
     <ul>
         <li>Regular, supervised water time.</li>
@@ -55,6 +56,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <li>Continued informal coaching and guidance.</li>
         <li>A chance to become comfortable with club routines and equipment.</li>
     </ul>
+    <p>If you continue after the trial, the remaining summer-season fee depends on when your Learn to Scull session ends: LTS1 $305 or $230 student/vet, LTS2 $225 or $170 student/vet, LTS3 $75 or $55 student/vet, and LTS4 moves to fall-season signup.</p>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
     <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">More on Open Sculling Program Trial & Continuation</a>
 

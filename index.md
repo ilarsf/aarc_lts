@@ -57,20 +57,20 @@ title: AARC Learn to Scull Program
 
 <section class="program-section info-section">
   <div class="section-header">
-    <h2>2025 Program Information</h2>
+    <h2>2026 Program Information</h2>
   </div>
   
   <div class="info-container">
     <div class="info-panel">
       <div class="info-header">
         <i class="fas fa-calendar-check"></i>
-        <h3>Session Dates</h3>
+        <h3>Class Schedule</h3>
       </div>
       <ul>
-        <li><strong>Session 1:</strong> May/June</li>
-        <li><strong>Session 2:</strong> June</li>
-        <li><strong>Session 3:</strong> June/July</li>
-        <li><strong>Session 4:</strong> July/August</li>
+        <li><strong>Format:</strong> Four 3-hour sessions over two weekends</li>
+        <li><strong>Days:</strong> Saturday and Sunday</li>
+        <li><strong>Time:</strong> 8:30-11:30am</li>
+        <li><strong>Break:</strong> 30 minutes each day</li>
       </ul>
     </div>
     
@@ -80,9 +80,10 @@ title: AARC Learn to Scull Program
         <h3>Registration</h3>
       </div>
       <ul>
-        <li><strong>Opens:</strong> April 30th, 2025</li>
-        <li><strong>Cost:</strong> $300</li>
-        <li><strong>Discounted:</strong> $225 (students/veterans)</li>
+        <li><strong>Opens:</strong> May 1, 2026</li>
+        <li><strong>Cost:</strong> $365</li>
+        <li><strong>Discounted:</strong> $275 (students/veterans)</li>
+        <li><strong>USRowing:</strong> Learn-to-Row membership required ($10)</li>
         <li><a href="https://aarc.clubexpress.com" class="info-link" target="_blank">Register Online</a></li>
       </ul>
     </div>
@@ -94,6 +95,50 @@ title: AARC Learn to Scull Program
       </div>
       <p>Email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">AARC website</a> for more information.</p>
     </div>
+  </div>
+
+  <div class="schedule-table-wrapper">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Learn to Scull Class</th>
+          <th>Days / Time</th>
+          <th>Phase 2 Trial<br>($110 / $85 student/vet)</th>
+          <th>Phase 3 Open Sculling<br>(remaining summer season)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LTS1</td>
+          <td>May 30/31 &amp; June 6/7</td>
+          <td>Sat &amp; Sun<br>8:30-11:30am</td>
+          <td>June 8 - July 5</td>
+          <td>July 6 - Aug 30<br>($305 or $230 student/vet)</td>
+        </tr>
+        <tr>
+          <td>LTS2</td>
+          <td>June 13/14 &amp; 20/21</td>
+          <td>Sat &amp; Sun<br>8:30-11:30am</td>
+          <td>June 22 - July 19</td>
+          <td>July 20 - Aug 30<br>($225 or $170 student/vet)</td>
+        </tr>
+        <tr>
+          <td>LTS3</td>
+          <td>July 11/12 &amp; 18/19</td>
+          <td>Sat &amp; Sun<br>8:30-11:30am</td>
+          <td>July 20 - Aug 16</td>
+          <td>Aug 17 - Aug 30<br>($75 or $55 student/vet)</td>
+        </tr>
+        <tr>
+          <td>LTS4</td>
+          <td>July 25/26 &amp; Aug 1/2</td>
+          <td>Sat &amp; Sun<br>8:30-11:30am</td>
+          <td>Aug 3 - Aug 30</td>
+          <td>Sign up for the fall season</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -297,6 +342,32 @@ title: AARC Learn to Scull Program
   margin-top: 0.5rem;
 }
 
+.schedule-table-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
 /* Buttons */
 .cta-button {
   display: inline-flex;
@@ -415,6 +486,11 @@ title: AARC Learn to Scull Program
   
   .info-container {
     grid-template-columns: 1fr;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    min-width: 150px;
   }
   
   .resources-flex {

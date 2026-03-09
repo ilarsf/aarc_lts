@@ -30,19 +30,19 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
               <div>
                 <h3>Weekend 1</h3>
                 <ul>
-                  <li><strong>Saturday:</strong> Session 1 (8:00-11:00am)</li>
-                  <li><strong>Sunday:</strong> Session 2 (8:00-11:00am)</li>
+                  <li><strong>Saturday:</strong> Session 1 (8:30-11:30am)</li>
+                  <li><strong>Sunday:</strong> Session 2 (8:30-11:30am)</li>
                 </ul>
               </div>
               
               <div>
                 <h3>Weekend 2</h3>
                 <ul>
-                  <li><strong>Saturday:</strong> Session 3 (8:00-11:00am)</li>
-                  <li><strong>Sunday:</strong> Session 4 (8:00-11:00am)</li>
+                  <li><strong>Saturday:</strong> Session 3 (8:30-11:30am)</li>
+                  <li><strong>Sunday:</strong> Session 4 (8:30-11:30am)</li>
                 </ul>
               </div>
-            <p><em>Note: Each session includes a short break. Remember to bring your own water and snacks.</em></p>
+            <p><em>Note: Each session includes a 30-minute break. Remember to bring your own water and snacks.</em></p>
             </div>
 
             <div class="info-box warning">

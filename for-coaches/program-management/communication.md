@@ -4,13 +4,18 @@ title: "Communication Templates and Protocols - AARC Learn to Scull Program"
 search_exclude: true
 
 # Program-specific data
-lts_program_number: "LTS #1"
+lts_program_number: "LTS1"
 session_dates:
-  - "May 31, 2025 (Saturday)"
-  - "June 1, 2025 (Sunday)"
-  - "June 7, 2025 (Saturday)"
-  - "June 8, 2025 (Sunday)"
-program_start_date: "May 31, 2025"
+  - "May 30, 2026 (Saturday)"
+  - "May 31, 2026 (Sunday)"
+  - "June 6, 2026 (Saturday)"
+  - "June 7, 2026 (Sunday)"
+program_start_date: "May 30, 2026"
+session_time: "8:30 - 11:30 am"
+session_start_time: "8:30 AM"
+arrival_time: "8:20 AM"
+meeting_location: "Beal Community Boathouse at Bandemer Park"
+weather_summary: "Check the latest forecast and dress for the conditions; the program runs rain or shine unless conditions are unsafe."
 instructors:
   - first_name: "Coach1"
     name: "Coach One"

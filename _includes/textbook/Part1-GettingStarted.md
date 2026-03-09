@@ -32,7 +32,7 @@ The AARC Learn to Scull program is an introductory course designed to teach you 
 
 #### Weekend Intensive Format & Considerations:
 
-Our program uses a weekend intensive format (4 sessions over 2 consecutive weekends, 8am-11am Sat/Sun). This immersive format accelerates learning but can be physically demanding.
+Our program uses a weekend intensive format (4 sessions over 2 consecutive weekends, 8:30am-11:30am Sat/Sun, with a 30-minute break each day). This immersive format accelerates learning but can be physically demanding.
 * **Pacing:** Be prepared for multiple sessions per weekend.
 * **Hand Care:** Be proactive with blister prevention (See Part 2, Chapter 5).
 * **Recovery:** Stay hydrated, eat well, and rest between sessions.
