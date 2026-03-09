@@ -381,6 +381,7 @@ title: AARC Learn to Scull Program
 
 .schedule-table th {
   background-color: #f8f9fa;
+  color: #0f3d69;
   font-weight: 600;
 }
 
