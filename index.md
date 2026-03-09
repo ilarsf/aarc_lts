@@ -113,7 +113,7 @@ title: AARC Learn to Scull Program
   </div>
 
   <div class="schedule-table-wrapper">
-    <table class="schedule-table">
+    <table class="schedule-table responsive-table">
       <caption>2026 Learn to Scull sessions and the most common next step after each class</caption>
       <thead>
         <tr>
@@ -384,31 +384,6 @@ title: AARC Learn to Scull Program
   font-weight: 600;
 }
 
-/* Buttons */
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 140px;
-  text-align: center;
-}
-
-.cta-button:hover {
-  background-color: #004494;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  text-decoration: none;
-  color: white;
-}
-
 /* Added for footer_nav.html */
 .footer-navigation .footer-nav-button {
   margin: 0.3rem 0.25rem;
@@ -416,15 +391,6 @@ title: AARC Learn to Scull Program
   font-size: 0.9em;
 }
 /* End of added styles */
-
-.cta-button.secondary {
-  background-color: transparent;
-  border: 2px solid white;
-}
-
-.cta-button.secondary:hover {
-  background-color: rgba(255,255,255,0.2);
-}
 
 /* Hero Section */
 .hero-section {

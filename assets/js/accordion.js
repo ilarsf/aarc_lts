@@ -1,9 +1,7 @@
 // Script to manage accordion functionality
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('accordion.js loaded and running');
     // Initialize all accordion sections (top level)
     const accordionToggles = document.querySelectorAll('.accordion-toggle');
-    console.log('Found ' + accordionToggles.length + ' accordion toggles');
 
     // Initialize all nested accordion sections (second level)
     const nestedToggles = document.querySelectorAll('.nested-toggle');
@@ -11,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Handle top-level accordions
     accordionToggles.forEach(toggle => {
         toggle.addEventListener('click', function () {
-            console.log('Accordion toggle clicked:', this.textContent.trim());
-
             // Toggle the active class on the button
             this.classList.toggle('active');
 
@@ -24,31 +20,24 @@ document.addEventListener('DOMContentLoaded', function () {
             let content;
             if (this.hasAttribute('aria-controls')) {
                 const contentId = this.getAttribute('aria-controls');
-                console.log('Looking for content with ID:', contentId);
                 content = document.getElementById(contentId);
             }
 
             // Fallback to next sibling if no aria-controls or if content not found
             if (!content) {
-                console.log('No aria-controls found or content not found by ID, using next sibling');
                 content = this.nextElementSibling;
             }
 
             // Ensure content exists
             if (!content) {
-                console.error('No content found for accordion toggle:', this.textContent.trim());
                 return;
             }
 
-            console.log('Found content element:', content.className);
-
             // Toggle the content visibility
             if (content.style.maxHeight) {
-                console.log('Collapsing accordion');
                 content.style.maxHeight = null;
                 content.classList.remove('visible');
             } else {
-                console.log('Expanding accordion');
                 content.style.maxHeight = content.scrollHeight + 2000 + "px"; // Added extra height to ensure full content visibility
                 content.classList.add('visible');
             }
@@ -144,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Find the tab content this button belongs to
             let tabContent;
-            console.log(`Button ID: ${btnId}, Tab ID: ${tabId}`);
 
             if (tabId && tabId !== 'expand-all') {
                 // Use the parent tab content if this is in a tabbed interface
@@ -158,9 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (tabContent) {
-                console.log(`Found tab content: ${tabContent.id}`);
                 const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
-                console.log(`Found ${accordionToggles.length} accordion toggles in ${tabContent.id}`);
 
                 accordionToggles.forEach(toggle => {
                     if (!toggle.parentElement.classList.contains('filtered')) {
@@ -171,7 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             } else {
-                console.log('No tab content found, expanding all sections');
                 // If not in a tab, expand all
                 window.expandAllSections();
             }
@@ -184,7 +169,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Find the tab content this button belongs to
             let tabContent;
-            console.log(`Button ID: ${btnId}, Tab ID: ${tabId}`);
 
             if (tabId && tabId !== 'collapse-all') {
                 // Use the parent tab content if this is in a tabbed interface
@@ -198,9 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (tabContent) {
-                console.log(`Found tab content: ${tabContent.id}`);
                 const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
-                console.log(`Found ${accordionToggles.length} accordion toggles in ${tabContent.id}`);
 
                 accordionToggles.forEach(toggle => {
                     const content = toggle.nextElementSibling;
@@ -209,7 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     content.classList.remove('visible');
                 });
             } else {
-                console.log('No tab content found, collapsing all sections');
                 // If not in a tab, collapse all
                 window.collapseAllSections();
             }
@@ -219,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial setup - ensure accordion content is properly hidden
     accordionToggles.forEach(toggle => {
         const content = toggle.nextElementSibling;
+        toggle.setAttribute('aria-expanded', toggle.classList.contains('active') ? 'true' : 'false');
         if (!toggle.classList.contains('active')) {
             content.style.maxHeight = null;
         } else {

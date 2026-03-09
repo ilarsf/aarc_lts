@@ -163,7 +163,7 @@
 
 .video-creator::before,
 .video-duration::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 0.4rem;
 }

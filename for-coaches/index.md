@@ -266,9 +266,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 passwordGate.style.display = 'none';
                 coachContent.style.display = 'block';
                 passwordError.style.display = 'none';
-                if (typeof initializeTabs === 'function') {
-                    initializeTabs(); // Initialize tabs after content is shown
-                }
             } else {
                 passwordError.textContent = 'Incorrect password. Please try again.';
                 passwordError.style.display = 'block';
@@ -300,9 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem('aarc_coach_access') === 'granted') {
         passwordGate.style.display = 'none';
         coachContent.style.display = 'block';
-        if (typeof initializeTabs === 'function') {
-            initializeTabs();
-        }
     } else {
         // If not authenticated, ensure password gate is shown and content is hidden
         passwordGate.style.display = 'block';

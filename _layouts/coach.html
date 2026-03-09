@@ -20,7 +20,7 @@
             <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
             <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
             <div class="header-actions">
-                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="container-lg px-3 my-5 markdown-body main-container">
-        <nav class="site-nav">
+        <nav id="site-nav" class="site-nav">
             <ul class="fallback-nav">
                 {% for item in site.navigation %}
                 <li
@@ -71,40 +71,6 @@
     </div>
 
     <script>
-        // InitializeTabs function defined globally so it can be called by specific pages too
-        function initializeTabs() {
-            const tabLinks = document.querySelectorAll('.tab-link');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            if (tabLinks.length > 0) {
-                tabLinks.forEach(link => {
-                    link.addEventListener('click', function (e) {
-                        e.preventDefault();
-
-                        tabLinks.forEach(tab => tab.classList.remove('active'));
-                        tabContents.forEach(content => content.classList.remove('active'));
-
-                        this.classList.add('active');
-                        const tabId = this.getAttribute('data-tab');
-                        if (document.getElementById(tabId)) {
-                            document.getElementById(tabId).classList.add('active');
-                        }
-                    });
-                });
-
-                // If no tab is active, activate the first one, ensuring elements exist
-                const firstTabLink = document.querySelector('.tab-link');
-                if (firstTabLink && !document.querySelector('.tab-link.active')) {
-                    const firstTabId = firstTabLink.getAttribute('data-tab');
-                    firstTabLink.classList.add('active');
-                    const firstTabContent = document.getElementById(firstTabId);
-                    if (firstTabContent) {
-                        firstTabContent.classList.add('active');
-                    }
-                }
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const urlAuth = urlParams.has('auth_status') && urlParams.get('auth_status') === 'ok';
@@ -134,25 +100,6 @@
                 // the page content should ideally be hidden by its own structure or this indicates an issue.
             }
 
-            // Initialize tabs for authenticated users on non-login coach pages
-            if (storageAuth && !isDesignatedLoginPage) {
-                initializeTabs();
-            }
-            // Note: The designated login page (for-coaches/index.md) will call initializeTabs()
-            // from its own script after successful authentication and content display.
-
-            // Mobile nav toggle (general UI, always set up)
-            const navToggle = document.querySelector('.mobile-nav-toggle');
-            const siteNav = document.querySelector('.site-nav');
-
-            if (navToggle && siteNav) {
-                navToggle.addEventListener('click', function () {
-                    siteNav.classList.toggle('active');
-                    this.setAttribute('aria-expanded', siteNav.classList.contains('active'));
-                });
-            }
-
-            // Tab functionality previously here is now more selectively called by initializeTabs()
         });
     </script>
 

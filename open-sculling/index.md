@@ -71,9 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 passwordGate.style.display = 'none';
                 contentArea.style.display = 'block';
                 passwordError.style.display = 'none';
-                if (typeof initializeTabs === 'function') { // If you use tabs here
-                    initializeTabs(); 
-                }
             } else {
                 passwordError.textContent = 'Incorrect password. Please try again.';
                 passwordError.style.display = 'block';
@@ -102,9 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem('aarc_open_sculling_access') === 'granted') { // Changed localStorage key
         passwordGate.style.display = 'none';
         contentArea.style.display = 'block';
-        if (typeof initializeTabs === 'function') {
-            initializeTabs();
-        }
     } else {
         passwordGate.style.display = 'block';
         contentArea.style.display = 'none';

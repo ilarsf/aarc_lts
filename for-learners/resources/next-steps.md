@@ -4,8 +4,6 @@ title: Next Steps After Learn to Scull
 description: Guidance on continuing your rowing journey after completing the AARC Learn to Scull program.
 ---
 
-{% include accordion.html %}
-
 <style>
   .content-image {
     max-width: 500px; /* Adjust as needed */

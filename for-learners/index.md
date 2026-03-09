@@ -4,9 +4,6 @@ title: Learner's Guide
 description: A comprehensive guide for participants in the AARC Learn to Scull Program
 ---
 
-{% include tabs.html %}
-{% include cards.html %}
-
 # Learner's Guide: Learn to Scull Program
 
 <div class="info-box tip quick-start">

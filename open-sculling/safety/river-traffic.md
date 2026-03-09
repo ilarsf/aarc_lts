@@ -506,16 +506,3 @@ Understanding and following proper waterway navigation rules is essential for th
     </a>
   </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Add Font Awesome icons if not already loaded
-    if (!document.getElementById('font-awesome-css')) {
-      const link = document.createElement('link');
-      link.id = 'font-awesome-css';
-      link.rel = 'stylesheet';
-      link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-      document.head.appendChild(link);
-    }
-  });
-</script>

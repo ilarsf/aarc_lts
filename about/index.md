@@ -3,8 +3,6 @@ layout: default
 title: About the Learn to Scull Program - AARC Learn to Scull
 ---
 
-{% include accordion.html %}
-
 <div class="about-header">
   <h1>About the Learn to Scull Program</h1>
   <p class="lead">A comprehensive introduction to the art and sport of sculling from Ann Arbor Rowing Club.</p>
@@ -13,13 +11,13 @@ title: About the Learn to Scull Program - AARC Learn to Scull
 {% include learner-next-step.html %}
 
 <div class="accordion-controls">
-    <button id="expand-all">Expand All</button>
-    <button id="collapse-all">Collapse All</button>
+    <button type="button" id="expand-all">Expand All</button>
+    <button type="button" id="collapse-all">Collapse All</button>
 </div>
 
 <div class="accordion-section">
-    <button class="accordion-toggle">Program History</button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="about-history">Program History</button>
+    <div class="accordion-content" id="about-history">
         <div class="accordion-content-inner">
             Our Learn to Scull program has been introducing new scullers to the Huron River for over 15 years. Developed by experienced coaches and consistently refined through participant feedback, the program has evolved to use a weekend intensive format that maximizes learning and skill retention while accommodating busy schedules.
         </div>
@@ -27,8 +25,8 @@ title: About the Learn to Scull Program - AARC Learn to Scull
 </div>
 
 <div class="accordion-section">
-    <button class="accordion-toggle">Program Philosophy</button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="about-philosophy">Program Philosophy</button>
+    <div class="accordion-content" id="about-philosophy">
         <div class="accordion-content-inner">
             <p>The AARC Learn to Scull program is designed with these core principles:</p>
 
@@ -44,8 +42,8 @@ title: About the Learn to Scull Program - AARC Learn to Scull
 </div>
 
 <div class="accordion-section">
-    <button class="accordion-toggle">Equipment and Facilities</button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="about-equipment">Equipment and Facilities</button>
+    <div class="accordion-content" id="about-equipment">
         <div class="accordion-content-inner">
             <p>The program utilizes:</p>
 
@@ -61,8 +59,8 @@ title: About the Learn to Scull Program - AARC Learn to Scull
 </div>
 
 <div class="accordion-section">
-    <button class="accordion-toggle">Beyond the Program</button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="about-beyond">Beyond the Program</button>
+    <div class="accordion-content" id="about-beyond">
         <div class="accordion-content-inner">
             <p>After completing Learn to Scull, graduates can:</p>
 

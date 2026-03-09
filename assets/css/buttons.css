@@ -1,35 +1,95 @@
-/* Button styling - improved for accessibility */
-.cta-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #0073E6;
-    /* AARC blue */
-    color: #ffffff !important;
+/* Shared button system for public pages. */
+
+:root {
+    --theme-color: #0073e6;
+    --theme-color-dark: #005bb5;
+    --theme-color-soft: #e9f3ff;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.button-row > * {
+    margin: 0;
+}
+
+:is(.cta-button, .btn, .button-primary) {
+    --button-background: var(--theme-color);
+    --button-border: var(--theme-color);
+    --button-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 2.875rem;
+    padding: 0.72rem 1.1rem;
+    border: 2px solid var(--button-border);
+    border-radius: 8px;
+    background-color: var(--button-background);
+    color: var(--button-color) !important;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 4px;
-    border: 2px solid #0073E6;
-    transition: all 0.2s ease;
+    line-height: 1.2;
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button:hover,
-.cta-button:focus {
-    background-color: #005BB5;
-    /* Darker blue */
-    border-color: #005BB5;
+:is(.cta-button, .btn, .button-primary):hover,
+:is(.cta-button, .btn, .button-primary):focus-visible {
+    background-color: var(--theme-color-dark);
+    border-color: var(--theme-color-dark);
     color: #ffffff !important;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+    transform: translateY(-1px);
 }
 
-/* Fix for the buttons in resource cards */
+:is(.cta-button, .btn, .button-primary):focus-visible {
+    outline: 3px solid rgba(0, 115, 230, 0.18);
+    outline-offset: 2px;
+}
+
+:is(.cta-button, .btn, .button-primary).secondary,
+.btn-outline-secondary,
+.btn-outline {
+    --button-background: transparent;
+    --button-border: var(--theme-color);
+    --button-color: var(--theme-color);
+    box-shadow: none;
+}
+
+:is(.cta-button, .btn, .button-primary).secondary:hover,
+:is(.cta-button, .btn, .button-primary).secondary:focus-visible,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus-visible,
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    background-color: var(--theme-color-soft);
+    border-color: var(--theme-color-dark);
+    color: var(--theme-color-dark) !important;
+    box-shadow: none;
+}
+
+.btn-primary {
+    --button-background: var(--theme-color);
+    --button-border: var(--theme-color);
+    --button-color: #ffffff;
+}
+
 .resource-card .cta-button {
     margin-top: 1rem;
-    display: inline-block;
     min-width: 180px;
-    background-color: #0073E6 !important;
-    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .button-row {
+        gap: 0.6rem;
+    }
 }

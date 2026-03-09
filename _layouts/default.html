@@ -20,7 +20,7 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       <div class="header-actions">
-        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
           <i class="fas fa-bars"></i>
         </button>
       </div>
@@ -31,8 +31,11 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul class="fallback-nav">
         {% for item in site.navigation %}
-        <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}">
-          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}{% if item.title contains '(members)' %} member-area{% endif %}">
+          <a href="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title | replace: ' (members)', '' }}
+            {% if item.title contains '(members)' %}<span class="nav-badge">Members</span>{% endif %}
+          </a>
           {% if item.subitems %}
           <ul class="dropdown-menu">
             {% for subitem in item.subitems %}
@@ -55,242 +58,6 @@
       </div>
     </footer>
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      // Initialize navigation functionality
-      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-      const siteNav = document.querySelector('.site-nav');
-      const dropdownItems = document.querySelectorAll('.has-dropdown');
-
-      // Set active nav item based on current page URL
-      const currentPath = window.location.pathname;
-      const navLinks = document.querySelectorAll('.site-nav a');
-
-      navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath ||
-          (currentPath.includes(link.getAttribute('href')) && link.getAttribute('href') !== '/')) {
-          link.closest('li').classList.add('active-nav-item');
-        }
-      });
-
-      // Mobile navigation toggle
-      if (mobileNavToggle && siteNav) {
-        mobileNavToggle.addEventListener('click', function () {
-          // Toggle active class
-          siteNav.classList.toggle('active');
-          mobileNavToggle.setAttribute('aria-expanded', siteNav.classList.contains('active') ? 'true' : 'false');
-
-          // Toggle icon
-          const icon = mobileNavToggle.querySelector('i');
-          if (icon) {
-            if (icon.classList.contains('fa-bars')) {
-              icon.classList.remove('fa-bars');
-              icon.classList.add('fa-times');
-            } else {
-              icon.classList.remove('fa-times');
-              icon.classList.add('fa-bars');
-            }
-          }
-        });
-      }
-
-      // Close menu when clicking outside
-      document.addEventListener('click', function (event) {
-        if (!siteNav.contains(event.target) &&
-          !mobileNavToggle.contains(event.target) &&
-          siteNav.classList.contains('active') &&
-          window.innerWidth <= 768) {
-          siteNav.classList.remove('active');
-          mobileNavToggle.setAttribute('aria-expanded', 'false');
-
-          // Reset icon
-          const icon = mobileNavToggle.querySelector('i');
-          if (icon) {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-          }
-        }
-      });
-
-      // Mobile dropdown handling for all dropdown menus
-      if (window.innerWidth <= 768) {
-        // This applies to both dynamic and fallback navigation
-        const allDropdownItems = document.querySelectorAll('.has-dropdown');
-
-        allDropdownItems.forEach(item => {
-          const link = item.querySelector('a');
-          const dropdown = item.querySelector('.dropdown-menu');
-
-          if (link && dropdown) {
-            // Create dropdown toggle for mobile
-            const toggleBtn = document.createElement('button');
-            toggleBtn.classList.add('dropdown-toggle');
-            toggleBtn.setAttribute('type', 'button');
-            toggleBtn.setAttribute('aria-expanded', 'false');
-            toggleBtn.setAttribute('aria-label', `Toggle ${link.textContent.trim()} submenu`);
-            toggleBtn.innerHTML = '+';
-            link.after(toggleBtn);
-
-            // Initially hide dropdown on mobile
-            dropdown.style.display = 'none';
-
-            toggleBtn.addEventListener('click', function (e) {
-              e.preventDefault();
-              e.stopPropagation();
-              const isOpen = dropdown.style.display === 'block';
-              dropdown.style.display = isOpen ? 'none' : 'block';
-              toggleBtn.innerHTML = isOpen ? '+' : '-';
-              toggleBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-            });
-          }
-        });
-      }
-
-      // Replace the entire old "Tab System Logic" block with this new one:
-      // Function to activate a tab based on its ID within all tab containers globally
-      function activateTabGlobally(tabIdToActivate) {
-        const tabContainers = document.querySelectorAll('.tab-container');
-        let tabWasActivated = false;
-        tabContainers.forEach(container => {
-          const tabButtons = container.querySelectorAll('.tab-nav .tab-link, .tab-nav .tab-button');
-          const tabContents = container.querySelectorAll('.tab-content');
-          let foundInThisContainer = false;
-
-          // Check if the tabIdToActivate exists in this container
-          if (Array.from(tabButtons).some(btn => btn.getAttribute('data-tab') === tabIdToActivate)) {
-            foundInThisContainer = true;
-            tabButtons.forEach(btn => {
-              const isActive = btn.getAttribute('data-tab') === tabIdToActivate;
-              btn.classList.toggle('active', isActive);
-              btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
-              btn.setAttribute('tabindex', isActive ? '0' : '-1');
-            });
-            tabContents.forEach(content => {
-              const isActive = content.getAttribute('id') === tabIdToActivate;
-              content.classList.toggle('active', isActive);
-              if (isActive) {
-                content.removeAttribute('hidden');
-              } else {
-                content.setAttribute('hidden', 'hidden');
-              }
-            });
-            tabWasActivated = true;
-          }
-        });
-        return tabWasActivated;
-      }
-
-      // Setup tab listeners and initial state for each tab container
-      const tabContainers = document.querySelectorAll('.tab-container');
-      tabContainers.forEach(container => {
-        const tabButtons = container.querySelectorAll('.tab-nav .tab-link, .tab-nav .tab-button');
-        const tabContents = container.querySelectorAll('.tab-content');
-
-        const tabNav = container.querySelector('.tab-nav');
-        if (tabNav) {
-          tabNav.setAttribute('role', 'tablist');
-        }
-
-        tabButtons.forEach((btn, index) => {
-          const tabId = btn.getAttribute('data-tab');
-          btn.setAttribute('role', 'tab');
-          btn.setAttribute('id', `tab-${tabId}`);
-          btn.setAttribute('aria-controls', tabId);
-          btn.setAttribute('tabindex', btn.classList.contains('active') ? '0' : '-1');
-
-          const panel = container.querySelector(`#${tabId}`);
-          if (panel) {
-            panel.setAttribute('role', 'tabpanel');
-            panel.setAttribute('aria-labelledby', `tab-${tabId}`);
-          }
-        });
-
-        function activateTabInContainer(tabId) {
-          tabButtons.forEach(btn => {
-            const isActive = btn.getAttribute('data-tab') === tabId;
-            btn.classList.toggle('active', isActive);
-            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
-            btn.setAttribute('tabindex', isActive ? '0' : '-1');
-          });
-          tabContents.forEach(content => {
-            const isActive = content.getAttribute('id') === tabId;
-            content.classList.toggle('active', isActive);
-            if (isActive) {
-              content.removeAttribute('hidden');
-            } else {
-              content.setAttribute('hidden', 'hidden');
-            }
-          });
-        }
-
-        tabButtons.forEach((button, index) => {
-          button.addEventListener('click', function (event) {
-            event.preventDefault();
-            const tabId = this.getAttribute('data-tab');
-            activateTabInContainer(tabId); // Activate within its own container
-            if (history.pushState) {
-              history.pushState(null, null, '#' + tabId);
-            } else {
-              window.location.hash = '#' + tabId;
-            }
-          });
-
-          button.addEventListener('keydown', function (event) {
-            const currentIndex = index;
-            let nextIndex = null;
-            if (event.key === 'ArrowRight') {
-              nextIndex = (currentIndex + 1) % tabButtons.length;
-            } else if (event.key === 'ArrowLeft') {
-              nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
-            } else if (event.key === 'Home') {
-              nextIndex = 0;
-            } else if (event.key === 'End') {
-              nextIndex = tabButtons.length - 1;
-            }
-
-            if (nextIndex !== null) {
-              event.preventDefault();
-              tabButtons[nextIndex].focus();
-              tabButtons[nextIndex].click();
-            }
-          });
-        });
-
-        // Initial state for THIS container:
-        const isActiveButtonPresent = Array.from(tabButtons).some(btn => btn.classList.contains('active'));
-        if (!isActiveButtonPresent && tabButtons.length > 0) {
-          const firstTabId = tabButtons[0].getAttribute('data-tab');
-          activateTabInContainer(firstTabId);
-        } else if (isActiveButtonPresent) {
-          const activeButton = Array.from(tabButtons).find(btn => btn.classList.contains('active'));
-          if (activeButton) {
-            activateTabInContainer(activeButton.getAttribute('data-tab'));
-          }
-        }
-      });
-
-      // Handle initial hash on page load after all containers are set up
-      const initialHash = window.location.hash.substring(1);
-      if (initialHash) {
-        activateTabGlobally(initialHash);
-      }
-
-      // Listen for hash changes
-      window.addEventListener('hashchange', function () {
-        const newHash = window.location.hash.substring(1);
-        // Only attempt to activate if there's a hash. 
-        // If hash is empty (e.g. user cleared it), current active tabs remain.
-        if (newHash) {
-          activateTabGlobally(newHash);
-        }
-      });
-
-    });
-  </script>
-
-  <!-- Header search functionality is now integrated into the main document ready function -->
 </body>
 
 </html>
