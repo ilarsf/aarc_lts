@@ -1,0 +1,585 @@
+.river-trainer-page {
+  --river-ink: #0f2431;
+  --river-paper: #f6f3eb;
+  --river-card: #ffffff;
+  --river-mist: #d9edf1;
+  --river-water: #0f5d70;
+  --river-water-deep: #0a2f3f;
+  --river-water-bright: #54c9d4;
+  --river-grass: #7da86e;
+  --river-sand: #dbb77c;
+  --river-gold: #ffd17f;
+  --river-alert: #f28a44;
+  --river-danger: #d95a4e;
+  --river-success: #2ea36a;
+  --river-shadow: 0 26px 60px rgba(10, 30, 41, 0.14);
+  color: var(--river-ink);
+  display: grid;
+  gap: 2rem;
+}
+
+.river-trainer-eyebrow {
+  color: #8c4e24;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.river-trainer-hero,
+.river-trainer-app,
+.river-trainer-explainer {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(245, 248, 249, 0.92));
+  border: 1px solid rgba(15, 36, 49, 0.08);
+  border-radius: 28px;
+  box-shadow: var(--river-shadow);
+  overflow: hidden;
+}
+
+.river-trainer-hero {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.river-trainer-hero__copy h1 {
+  color: #103d53;
+  margin: 0 0 0.8rem;
+}
+
+.river-trainer-hero__copy .lead {
+  font-size: 1.15rem;
+  margin: 0;
+  max-width: 54rem;
+}
+
+.river-trainer-hero__grid,
+.river-trainer-explainer__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.river-trainer-hero__card,
+.river-trainer-explainer__card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 36, 49, 0.08);
+  border-radius: 22px;
+  padding: 1.2rem;
+}
+
+.river-trainer-hero__card h2,
+.river-trainer-explainer__card h3 {
+  color: #0f5d70;
+  font-size: 1.08rem;
+  margin: 0 0 0.45rem;
+}
+
+.river-trainer-app {
+  background: linear-gradient(180deg, #0d2633 0%, #123847 58%, #103340 100%);
+  color: #f7fbfc;
+  padding: 1.4rem;
+}
+
+.river-trainer-app__header {
+  align-items: end;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: 1rem;
+}
+
+.river-trainer-app__header h2 {
+  color: #fff8ec;
+  margin: 0 0 0.35rem;
+}
+
+.river-trainer-app__header p {
+  color: rgba(247, 251, 252, 0.82);
+  margin: 0;
+}
+
+.river-trainer-stats {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.river-trainer-stat {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 0.8rem 0.95rem;
+}
+
+.river-trainer-stat span {
+  color: rgba(247, 251, 252, 0.76);
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.river-trainer-stat strong {
+  color: #fff8ec;
+  display: block;
+  font-family: "Courier New", Menlo, monospace;
+  font-size: 1.22rem;
+  letter-spacing: 0.03em;
+}
+
+.river-trainer-progress {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  height: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.river-trainer-progress__fill {
+  background: linear-gradient(90deg, #ffd17f 0%, #6de2f1 100%);
+  border-radius: inherit;
+  height: 100%;
+  transition: width 0.2s ease;
+  width: 0%;
+}
+
+.river-trainer-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.river-trainer-screen-wrap {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(10, 22, 29, 0.34));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.river-trainer-canvas {
+  aspect-ratio: 1100 / 640;
+  display: block;
+  width: 100%;
+}
+
+.river-trainer-overlay {
+  align-items: center;
+  background: linear-gradient(180deg, rgba(8, 18, 25, 0.18), rgba(8, 18, 25, 0.84));
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1rem;
+  position: absolute;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.river-trainer-overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.river-trainer-overlay__card {
+  background: rgba(15, 35, 46, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.34);
+  color: #f7fbfc;
+  max-width: 58rem;
+  padding: 1.5rem;
+  width: min(58rem, 100%);
+}
+
+.river-trainer-overlay__card h3 {
+  color: #fff8ec;
+  margin: 0 0 0.75rem;
+}
+
+.river-trainer-overlay__card p {
+  color: rgba(247, 251, 252, 0.84);
+}
+
+.river-trainer-overlay__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 1.2rem 0;
+}
+
+.river-trainer-overlay__grid h4 {
+  color: #fff8ec;
+  font-size: 1rem;
+  margin: 0 0 0.6rem;
+}
+
+.river-trainer-choice-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.river-trainer-choice {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  color: #f7fbfc;
+  cursor: pointer;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.95rem 1rem;
+  text-align: left;
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+}
+
+.river-trainer-choice strong {
+  font-size: 1rem;
+}
+
+.river-trainer-choice span {
+  color: #ffd17f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.river-trainer-choice small {
+  color: rgba(247, 251, 252, 0.8);
+  font-size: 0.9rem;
+}
+
+.river-trainer-choice:hover,
+.river-trainer-choice:focus-visible,
+.river-trainer-choice.is-selected {
+  background: rgba(255, 209, 127, 0.14);
+  border-color: rgba(255, 209, 127, 0.86);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.river-trainer-overlay__actions,
+.river-trainer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.river-trainer-button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.8rem 1.15rem;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.river-trainer-button:hover,
+.river-trainer-button:focus-visible {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.26);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.river-trainer-button--primary {
+  background: linear-gradient(135deg, #ffd17f 0%, #73dfe7 100%);
+  color: #14313d;
+}
+
+.river-trainer-button--secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff8ec;
+}
+
+.river-trainer-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.river-trainer-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  color: #f7fbfc;
+  padding: 1rem;
+}
+
+.river-trainer-panel__label {
+  color: rgba(247, 251, 252, 0.72);
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.river-trainer-panel h3 {
+  color: #fff8ec;
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
+}
+
+.river-trainer-panel p,
+.river-trainer-panel li,
+.river-trainer-panel .river-trainer-meta {
+  color: rgba(247, 251, 252, 0.86);
+  margin: 0;
+}
+
+.river-trainer-meta {
+  align-items: center;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.river-trainer-minimap {
+  aspect-ratio: 320 / 220;
+  border-radius: 18px;
+  display: block;
+  width: 100%;
+}
+
+.river-trainer-briefing-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.river-trainer-briefing-list li {
+  line-height: 1.45;
+}
+
+.river-trainer-controls {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.river-trainer-controls__row {
+  align-items: center;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 5rem minmax(0, 1fr);
+}
+
+.river-trainer-controls__key {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #fff8ec;
+  display: inline-flex;
+  font-family: "Courier New", Menlo, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: center;
+  padding: 0.45rem 0.65rem;
+}
+
+.river-trainer-message {
+  border-left: 4px solid #6de2f1;
+  margin: 0;
+  min-height: 4rem;
+  padding-left: 0.85rem;
+}
+
+.river-trainer-message--calm {
+  border-left-color: #6de2f1;
+}
+
+.river-trainer-message--alert {
+  border-left-color: #ffd17f;
+}
+
+.river-trainer-message--danger {
+  border-left-color: #ff8d84;
+}
+
+.river-trainer-message--success {
+  border-left-color: #61d9a0;
+}
+
+.river-trainer-touchpad {
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-areas:
+    ". look ."
+    ". up ."
+    "left down right";
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.river-trainer-touchpad__button {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  color: #fff8ec;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-width: 5rem;
+  padding: 0.8rem 1rem;
+}
+
+.river-trainer-touchpad__button.is-pressed {
+  background: rgba(255, 209, 127, 0.18);
+  border-color: rgba(255, 209, 127, 0.8);
+}
+
+.river-trainer-touchpad__button--look { grid-area: look; }
+.river-trainer-touchpad__button--up { grid-area: up; }
+.river-trainer-touchpad__button--left { grid-area: left; }
+.river-trainer-touchpad__button--down { grid-area: down; }
+.river-trainer-touchpad__button--right { grid-area: right; }
+
+.river-trainer-debrief {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  color: #f7fbfc;
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.river-trainer-debrief__header {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.river-trainer-debrief__header strong {
+  color: #fff8ec;
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.river-trainer-debrief__scores {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.river-trainer-score-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 0.85rem 0.95rem;
+}
+
+.river-trainer-score-card span {
+  color: rgba(247, 251, 252, 0.74);
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.river-trainer-score-card strong {
+  color: #fff8ec;
+  display: block;
+  font-size: 1.15rem;
+}
+
+.river-trainer-debrief__list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.river-trainer-debrief__item {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+}
+
+.river-trainer-debrief__item h4 {
+  color: #fff8ec;
+  font-size: 0.98rem;
+  margin: 0 0 0.35rem;
+}
+
+.river-trainer-debrief__item p {
+  color: rgba(247, 251, 252, 0.86);
+  margin: 0;
+}
+
+.river-trainer-debrief__item--pass { border-left-color: #61d9a0; }
+.river-trainer-debrief__item--warn { border-left-color: #ffd17f; }
+.river-trainer-debrief__item--fail { border-left-color: #ff8d84; }
+.river-trainer-debrief__item--muted { border-left-color: rgba(255,255,255,0.18); }
+
+.river-trainer-explainer {
+  padding: 1.6rem;
+}
+
+.river-trainer-explainer__intro h2 {
+  color: #103d53;
+  margin: 0 0 0.8rem;
+}
+
+.river-trainer-explainer__intro p {
+  margin: 0 0 1rem;
+  max-width: 52rem;
+}
+
+@media (min-width: 960px) {
+  .river-trainer-app__header {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  }
+
+  .river-trainer-shell {
+    grid-template-columns: minmax(0, 2fr) minmax(320px, 0.95fr);
+    align-items: start;
+  }
+
+  .river-trainer-touchpad {
+    display: none;
+  }
+}
+
+@media (max-width: 959px) {
+  .river-trainer-screen-wrap,
+  .river-trainer-panel,
+  .river-trainer-hero,
+  .river-trainer-app,
+  .river-trainer-explainer {
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .river-trainer-hero,
+  .river-trainer-app,
+  .river-trainer-explainer {
+    padding: 1rem;
+  }
+
+  .river-trainer-controls__row {
+    grid-template-columns: 4.3rem minmax(0, 1fr);
+  }
+
+  .river-trainer-button,
+  .river-trainer-touchpad__button {
+    width: 100%;
+  }
+
+  .river-trainer-overlay__actions,
+  .river-trainer-actions {
+    display: grid;
+  }
+}

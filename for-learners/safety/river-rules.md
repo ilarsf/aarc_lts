@@ -10,7 +10,7 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
 <div class="container my-5">
 
     <div class="section-header text-center mb-5">
-        <h1><i class="fas fa-water"></i> River Rules & Safety</h1>
+        <h1><i class="fas fa-water"></i> River Rules &amp; Safety</h1>
         <p class="lead">Navigating the Huron River safely and courteously is essential for all AARC members.</p>
     </div>
 
@@ -21,10 +21,10 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
 
     <div class="alert alert-warning" role="alert">
         <h4 class="alert-heading"><i class="fas fa-gamepad"></i> Practice It</h4>
-        <p>Want a faster way to rehearse these rules? Try the arcade-style <strong>River Rules Rally</strong> game and practice staying right, passing left, and handling river turns with the arrow keys.</p>
+        <p>Want a faster way to rehearse these rules? The rebuilt <strong>River Rules Rally</strong> now uses route-based drills instead of random arcade hazards. Practice the Argo turn drill, the short M-14 turn drill, or the full bridge sequence toward Barton.</p>
         <p class="mb-0">
             <a href="{{ site.baseurl }}/for-learners/safety/river-rules-rally.html" class="btn btn-primary">
-                Play River Rules Rally <i class="fas fa-arrow-right"></i>
+                Launch River Rules Rally <i class="fas fa-arrow-right"></i>
             </a>
         </p>
     </div>
@@ -53,7 +53,7 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
             <hr class="my-4">
 
             <h2><i class="fas fa-ship"></i> Navigating Other River Users</h2>
-            <p>Kayaks, canoes, paddle-boards, and fishermen may not follow traffic rules and can be unpredictable. Be cautious and prioritize safety. Steer around them if possible, or stop if necessary. Always be courteous.</p>
+            <p>Kayaks, canoes, paddle-boarders, and fishermen may not follow traffic rules and can be unpredictable. Be cautious and prioritize safety. Steer around them if possible, or stop if necessary. Always be courteous.</p>
 
             <h3><i class="fas fa-swimmer"></i> Swimmers</h3>
             <p>Swimmers can be a hazard, especially in summer. They are hard to see and unpredictable. Be watchful past the dock. You may need to row further from shore or stop to ensure a safe path.</p>

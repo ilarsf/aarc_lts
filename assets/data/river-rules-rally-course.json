@@ -1,0 +1,366 @@
+{
+  "version": 2,
+  "name": "AARC River Rules Rally Route Trainer",
+  "note": "Distances and geometry are coaching-oriented approximations for training, not navigation authority.",
+  "packs": [
+    {
+      "id": "argo-turn",
+      "name": "Argo Turn Drill",
+      "badge": "Short route",
+      "summary": "Dock to Argo turn box and back. Mixed users, weeds, and a clean stop-cross-clear turn.",
+      "outboundLabel": "Downstream outbound",
+      "returnLabel": "Upstream return",
+      "route": [
+        { "x": 0, "y": 0, "width": 148 },
+        { "x": 18, "y": 118, "width": 148 },
+        { "x": 42, "y": 300, "width": 144 },
+        { "x": 88, "y": 520, "width": 136 },
+        { "x": 100, "y": 760, "width": 132 },
+        { "x": 72, "y": 980, "width": 128 },
+        { "x": 28, "y": 1185, "width": 126 }
+      ],
+      "briefing": [
+        "Depart from the AARC dock and settle immediately into the right side of traffic for your direction of travel.",
+        "Expect swimmers and mixed public traffic near the dock and around Argo recreation areas.",
+        "At the turn box upstream of Argo Dam: stop, cross the river, turn back, and clear the area before rowing home."
+      ],
+      "features": [
+        {
+          "id": "argo-start",
+          "position": 0,
+          "type": "marker",
+          "title": "AARC Dock",
+          "brief": "Launch cleanly and build the stay-right habit right away."
+        },
+        {
+          "id": "argo-users",
+          "position": 170,
+          "type": "zone",
+          "title": "Mixed-user zone",
+          "brief": "Swimmers and paddlers near the dock can be hard to predict. Look early and give room."
+        },
+        {
+          "id": "argo-bend",
+          "position": 610,
+          "type": "zone",
+          "title": "Big bend shoreline weeds",
+          "brief": "Stay right, but do not hug the bank where weeds collect."
+        },
+        {
+          "id": "argo-recreation",
+          "position": 910,
+          "type": "zone",
+          "title": "Argo recreation zone",
+          "brief": "Traffic gets denser here. Slow slightly, look more often, and stay predictable."
+        },
+        {
+          "id": "argo-turn",
+          "position": 1185,
+          "type": "turn",
+          "title": "Argo turn box",
+          "brief": "Approach on the right, stop, cross, then turn back upstream toward the dock.",
+          "lookDistance": 210,
+          "stopOffset": 24,
+          "crossTarget": -30,
+          "clearDistance": 120
+        }
+      ],
+      "hazards": [
+        {
+          "id": "argo-shore-swimmers",
+          "start": 70,
+          "end": 240,
+          "bankSign": 1,
+          "thresholdFromBank": 20,
+          "title": "Swimmers near the dock",
+          "brief": "Leave extra room on the dock-side shoreline."
+        },
+        {
+          "id": "argo-weeds",
+          "start": 500,
+          "end": 790,
+          "bankSign": 1,
+          "thresholdFromBank": 18,
+          "title": "Weeds on the big bend",
+          "brief": "Stay right, but keep off the bank where oars can snag."
+        }
+      ],
+      "actors": [
+        {
+          "id": "argo-swimmer",
+          "kind": "swimmer",
+          "appliesLeg": ["outbound"],
+          "position": 135,
+          "travelSign": 0,
+          "offset": 44,
+          "crossAmplitude": 16,
+          "crossSpeed": 0.8,
+          "radius": 16,
+          "label": "Swimmer",
+          "coach": "Swimmer near the dock. Ease off and give extra room."
+        },
+        {
+          "id": "argo-paddler",
+          "kind": "paddler",
+          "appliesLeg": ["outbound"],
+          "position": 900,
+          "travelSign": -1,
+          "offset": -14,
+          "speed": 3.8,
+          "crossAmplitude": 18,
+          "crossSpeed": 0.45,
+          "radius": 18,
+          "label": "Paddler",
+          "coach": "Public paddler ahead. Hold your line and avoid a late swerve."
+        },
+        {
+          "id": "argo-return-shell",
+          "kind": "shell",
+          "appliesLeg": ["return"],
+          "position": 720,
+          "travelSign": 1,
+          "offset": 22,
+          "speed": 6.2,
+          "radius": 15,
+          "label": "Oncoming shell",
+          "coach": "Oncoming shell. Both boats stay right for their direction of travel."
+        }
+      ]
+    },
+    {
+      "id": "m14-turn",
+      "name": "M-14 Turn Drill",
+      "badge": "Short route",
+      "summary": "Stop downstream of M-14, execute a composed river turn, and return to the dock.",
+      "outboundLabel": "Upstream outbound",
+      "returnLabel": "Downstream return",
+      "route": [
+        { "x": 0, "y": 0, "width": 150 },
+        { "x": 16, "y": -120, "width": 150 },
+        { "x": 32, "y": -270, "width": 152 },
+        { "x": 46, "y": -430, "width": 154 },
+        { "x": 54, "y": -520, "width": 156 }
+      ],
+      "briefing": [
+        "This is the short upstream drill north of the dock.",
+        "Do not drift under the M-14 bridge while setting up. Stop below it, then turn, cross, and clear.",
+        "Use it to rehearse the stop-cross-clear pattern before taking on the longer bridge sequence."
+      ],
+      "features": [
+        {
+          "id": "m14-dock",
+          "position": 0,
+          "type": "marker",
+          "title": "AARC Dock",
+          "brief": "Launch and hold the right side of the river as you head north."
+        },
+        {
+          "id": "m14-bridge-view",
+          "position": 520,
+          "type": "bridge-preview",
+          "title": "M-14 Bridge ahead",
+          "brief": "The main pillars are ahead, but this drill turns below the bridge instead of crossing it.",
+          "render": {
+            "style": "center-span",
+            "pillars": [-48, 48]
+          }
+        },
+        {
+          "id": "m14-turn",
+          "position": 470,
+          "type": "turn",
+          "title": "M-14 turn box",
+          "brief": "Stop below the bridge, cross the river, and turn back downstream to the dock.",
+          "lookDistance": 180,
+          "stopOffset": 24,
+          "crossTarget": -28,
+          "clearDistance": 110
+        }
+      ],
+      "hazards": [],
+      "actors": [
+        {
+          "id": "m14-oncoming-shell",
+          "kind": "shell",
+          "appliesLeg": ["outbound"],
+          "position": 280,
+          "travelSign": -1,
+          "offset": -20,
+          "speed": 6.4,
+          "radius": 15,
+          "label": "Oncoming shell",
+          "coach": "Oncoming shell. Stay right and keep the left side clear."
+        },
+        {
+          "id": "m14-return-shell",
+          "kind": "shell",
+          "appliesLeg": ["return"],
+          "position": 220,
+          "travelSign": 1,
+          "offset": 24,
+          "speed": 5.4,
+          "radius": 15,
+          "label": "Slow shell",
+          "coach": "Slow shell ahead on the return. Look, pass on the left, then come back right."
+        }
+      ]
+    },
+    {
+      "id": "barton-bridges",
+      "name": "Barton Bridge Run",
+      "badge": "Advanced course",
+      "summary": "Through the bridges to the high pedestrian bridge before Barton, then turn and come back through the same sequence.",
+      "outboundLabel": "Upstream outbound",
+      "returnLabel": "Downstream return",
+      "route": [
+        { "x": 0, "y": 0, "width": 150 },
+        { "x": 18, "y": -130, "width": 150 },
+        { "x": 40, "y": -310, "width": 152 },
+        { "x": 54, "y": -560, "width": 156 },
+        { "x": 24, "y": -780, "width": 146 },
+        { "x": -32, "y": -955, "width": 138 },
+        { "x": -84, "y": -1165, "width": 130 },
+        { "x": -126, "y": -1340, "width": 126 },
+        { "x": -156, "y": -1495, "width": 124 }
+      ],
+      "briefing": [
+        "This is the full technical drill: M-14, low park bridge, railroad bridge, and the high foot bridge before Barton.",
+        "Use the correct opening at each bridge and commit early. Late swerves are scored as mistakes even if you squeeze through.",
+        "Beyond the high bridge, stop, cross, turn back downstream, and thread the same sequence home."
+      ],
+      "features": [
+        {
+          "id": "barton-m14",
+          "position": 560,
+          "type": "bridge",
+          "alignment": "center",
+          "title": "M-14 Bridge",
+          "brief": "Stay strictly between the two main pillars.",
+          "lookDistance": 190,
+          "commitDistance": 110,
+          "render": {
+            "style": "center-span",
+            "pillars": [-48, 48]
+          }
+        },
+        {
+          "id": "barton-low",
+          "position": 955,
+          "type": "bridge",
+          "alignment": "centerRight",
+          "title": "Park bridge (low)",
+          "brief": "Maintain a composed center-right line and do not make a last-second correction under the bridge.",
+          "lookDistance": 180,
+          "commitDistance": 95,
+          "render": {
+            "style": "low-bridge",
+            "pillars": [-12, 32]
+          }
+        },
+        {
+          "id": "barton-railroad",
+          "position": 1165,
+          "type": "bridge",
+          "alignment": "rightOpening",
+          "title": "Railroad Bridge",
+          "brief": "Use the right opening relative to your direction of travel and choose it early.",
+          "lookDistance": 185,
+          "commitDistance": 110,
+          "render": {
+            "style": "right-opening",
+            "pillars": [-36, 6, 44]
+          }
+        },
+        {
+          "id": "barton-high",
+          "position": 1340,
+          "type": "bridge",
+          "alignment": "insidePillar",
+          "title": "High foot bridge",
+          "brief": "Take the inside of the pillar. The outer edge is shallow.",
+          "lookDistance": 175,
+          "commitDistance": 95,
+          "render": {
+            "style": "inside-pillar",
+            "pillars": [26],
+            "shallowSide": 1
+          }
+        },
+        {
+          "id": "barton-turn",
+          "position": 1495,
+          "type": "turn",
+          "title": "Barton turn box",
+          "brief": "Just beyond the high bridge, stop, cross, and come back downstream through the bridges.",
+          "lookDistance": 210,
+          "stopOffset": 22,
+          "crossTarget": -28,
+          "clearDistance": 120
+        }
+      ],
+      "hazards": [
+        {
+          "id": "barton-high-shallow",
+          "start": 1295,
+          "end": 1370,
+          "bankSign": 1,
+          "thresholdFromBank": 14,
+          "title": "Outer shallow at the high bridge",
+          "brief": "The outside edge of the high bridge is the shallow danger line."
+        }
+      ],
+      "actors": [
+        {
+          "id": "barton-oncoming-early",
+          "kind": "shell",
+          "appliesLeg": ["outbound"],
+          "position": 390,
+          "travelSign": -1,
+          "offset": -22,
+          "speed": 6.5,
+          "radius": 15,
+          "label": "Oncoming shell",
+          "coach": "Oncoming shell. Stay right and do not let the lane drift open."
+        },
+        {
+          "id": "barton-slow-shell",
+          "kind": "shell",
+          "appliesLeg": ["outbound"],
+          "position": 1040,
+          "travelSign": 1,
+          "offset": 24,
+          "speed": 4.8,
+          "radius": 15,
+          "label": "Slow shell",
+          "coach": "Slow shell ahead. Pass on the left only if you have looked and the lane is clear."
+        },
+        {
+          "id": "barton-oncoming-paddler",
+          "kind": "paddler",
+          "appliesLeg": ["return"],
+          "position": 1180,
+          "travelSign": 1,
+          "offset": 10,
+          "speed": 3.2,
+          "crossAmplitude": 20,
+          "crossSpeed": 0.5,
+          "radius": 17,
+          "label": "Paddler",
+          "coach": "Public paddler in the bridge corridor. Hold your line and avoid a late dart."
+        },
+        {
+          "id": "barton-oncoming-return",
+          "kind": "shell",
+          "appliesLeg": ["return"],
+          "position": 700,
+          "travelSign": 1,
+          "offset": 22,
+          "speed": 6.0,
+          "radius": 15,
+          "label": "Oncoming shell",
+          "coach": "Oncoming shell on the return. Keep your lane discipline all the way back to the dock."
+        }
+      ]
+    }
+  ]
+}

@@ -162,9 +162,10 @@
 .rescue-progress {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
     margin: 30px 0;
     position: relative;
-    max-width: 800px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -184,7 +185,8 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    width: 50px;
+    width: 110px;
+    flex: 1 1 0;
 }
 
 .rescue-progress-marker {
@@ -205,6 +207,7 @@
     font-size: 0.8rem;
     color: #757575;
     transition: all 0.3s ease;
+    line-height: 1.25;
 }
 
 .rescue-progress-step.active .rescue-progress-marker {
@@ -225,6 +228,21 @@
 
 .rescue-progress-step.completed .rescue-progress-label {
     color: #4caf50;
+}
+
+@media (max-width: 768px) {
+    .rescue-progress {
+        gap: 8px;
+        max-width: 100%;
+    }
+
+    .rescue-progress-step {
+        width: auto;
+    }
+
+    .rescue-progress-label {
+        font-size: 0.72rem;
+    }
 }
 
 /* Accordion Styles for Self-Rescue Guide */

@@ -1,14 +1,27 @@
 ---
 layout: default
-title: Self-Rescue Guide
-description: Flip test and recovery procedures for scullers
+title: Flip Test and Self-Rescue Guide
+description: Flip test, capsize response, and recovery procedures for scullers
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/self-rescue-timeline.css">
 
-# Sculling Self-Rescue Guide
+# Sculling Flip Test and Self-Rescue Guide
 
-<p>Every sculler must know how to perform a self-rescue after a capsize. This guide covers the mandatory flip test procedure and the step-by-step process for returning to your boat and resuming rowing.</p>
+<p>Every sculler must know what to do after a capsize.</p>
+
+<p>This page covers two related situations:</p>
+
+<ol>
+  <li><strong>The supervised flip test</strong>, where you intentionally capsize and recover under coach supervision.</li>
+  <li><strong>A real capsize</strong>, where your first priority is safety, flotation, visibility, and getting help if needed.</li>
+</ol>
+
+<p>In both situations, the core principle is the same:</p>
+
+<p><strong>Stay calm. Stay with the boat. Free your feet immediately.</strong></p>
+
+<p>Your boat is your main flotation device and is usually safer than trying to swim away from it.</p>
 
 ## Understanding Capsizing
 
@@ -35,23 +48,27 @@ description: Flip test and recovery procedures for scullers
 <div class="rescue-progress" id="rescue-progress-nav">
   <div class="rescue-progress-step active" data-step="0">
     <div class="rescue-progress-marker">1</div>
-    <div class="rescue-progress-label">Prepare</div>
+    <div class="rescue-progress-label">Pre-check</div>
   </div>
   <div class="rescue-progress-step" data-step="1">
     <div class="rescue-progress-marker">2</div>
-    <div class="rescue-progress-label">Capsize</div>
+    <div class="rescue-progress-label">Capsize and Exit</div>
   </div>
   <div class="rescue-progress-step" data-step="2">
     <div class="rescue-progress-marker">3</div>
-    <div class="rescue-progress-label">Right Boat</div>
+    <div class="rescue-progress-label">Stabilize</div>
   </div>
   <div class="rescue-progress-step" data-step="3">
     <div class="rescue-progress-marker">4</div>
-    <div class="rescue-progress-label">Re-enter</div>
+    <div class="rescue-progress-label">Right Boat</div>
   </div>
   <div class="rescue-progress-step" data-step="4">
     <div class="rescue-progress-marker">5</div>
-    <div class="rescue-progress-label">Resume</div>
+    <div class="rescue-progress-label">Re-enter</div>
+  </div>
+  <div class="rescue-progress-step" data-step="5">
+    <div class="rescue-progress-marker">6</div>
+    <div class="rescue-progress-label">Recover and Return</div>
   </div>
 </div>
 
@@ -77,21 +94,39 @@ description: Flip test and recovery procedures for scullers
 
 <div class="rescue-timeline" id="rescue-main-timeline">
   <div class="accordion-section rescue-step" id="step-1">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-1', 0)"><div class="rescue-step-number">1</div> <span class="rescue-step-title">Preparation</span></button>
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-1', 0)"><div class="rescue-step-number">1</div> <span class="rescue-step-title">Pre-Flip-Test Safety Check</span></button>
     <div class="accordion-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
         <div class="col-md-9">
           <div class="rescue-step-description">
-            <p>{% include icon.html icon="fas fa-check-circle" type="info" alt="Check" color="#4caf50" %} Before any rowing session, be prepared for the possibility of capsizing.</p>
+            <p>{% include icon.html icon="fas fa-check-circle" type="info" alt="Check" color="#4caf50" %} Before a flip test, confirm that the drill is being done in a safe, supervised setting.</p>
+            <p>For a real outing, these are also your key pre-launch checks.</p>
           </div>
           <div class="rescue-step-actions">
             <ol>
-              <li>Wear appropriate clothing suitable for water immersion</li>
+              <li>Wear clothing suitable for water immersion and cold conditions</li>
               <li>Remove loose items from pockets</li>
-              <li>Understand the self-rescue procedure</li>
+              <li>Confirm you understand the self-rescue sequence before launching</li>
+              <li>Check that both feet can come free immediately</li>
+              <li>Check heel restraints and shoe fit</li>
+              <li>Confirm oarlocks are closed</li>
+              <li>Confirm the seat will stay in place if the boat is inverted</li>
+              <li>Confirm a coach, launch, or designated safety support is present for the flip test</li>
             </ol>
+          </div>
+          <div class="rescue-step-note">
+            <p><strong>Flip test checklist</strong></p>
+            <ul>
+              <li>The area is clear of traffic and other hazards</li>
+              <li>There is a safe place to get in and out of the water</li>
+              <li>The water and weather are appropriate for the drill</li>
+              <li>Warm, dry layers are available immediately afterward</li>
+            </ul>
+          </div>
+          <div class="rescue-step-warning">
+            <p><strong>Critical foot-release rule:</strong> You must be able to pull your feet clear without delay. If there is any doubt about shoe fit, heel restraints, or foot release, do not proceed until it is fixed.</p>
           </div>
         </div>
         <div class="col-md-3 text-center">
@@ -106,7 +141,7 @@ description: Flip test and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-2">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-2', 1)"><div class="rescue-step-number">2</div> <span class="rescue-step-title">Initial Response to Capsize</span></button>
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-2', 1)"><div class="rescue-step-number">2</div> <span class="rescue-step-title">Capsize and Exit</span></button>
     <div class="accordion-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
@@ -117,14 +152,33 @@ description: Flip test and recovery procedures for scullers
           </div>
           <div class="rescue-step-actions">
             <ol>
-              <li><strong>Stay calm</strong> and get your bearings</li>
-              <li><strong>Exit the boat</strong> - avoid getting caught by the oar or rigger</li>
-              <li><strong>Stay with your boat</strong> - it's your primary flotation device</li>
-              <li><strong>Keep hold of both oars</strong> if possible</li>
-              <li><strong>Assess the situation</strong> - check for injury or dangerous conditions</li>
+              <li><strong>Release your feet immediately</strong></li>
+              <li>Clear the rigger and oars as you come out of the boat</li>
+              <li>Surface holding onto the boat if possible</li>
+              <li>Take one full breath and get your bearings</li>
+              <li>Keep hold of the oars if you can do so without losing control of the boat</li>
             </ol>
           </div>
-          <p><i class="fas fa-exclamation-triangle" style="color: #ff9800;"></i> <strong>Important:</strong> If you are injured or in dangerous waters (strong current, very cold water), prioritize signaling for help over attempting self-rescue.</p>
+          <div class="rescue-step-warning">
+            <p><strong>Do not swim away from the boat</strong> unless staying with it puts you in greater danger.</p>
+            <p>Examples where you may need a different decision:</p>
+            <ul>
+              <li>Immediate risk from another boat</li>
+              <li>Entrapment or injury</li>
+              <li>Being swept into a hazard</li>
+            </ul>
+            <p>In most situations, the safest move is to stay with the shell.</p>
+          </div>
+          <div class="rescue-step-note">
+            <p><strong>Cold-water / injury decision point</strong></p>
+            <ul>
+              <li>Prioritize flotation, visibility, and signaling for help</li>
+              <li>Stay with the boat</li>
+              <li>If possible, get as much of your body out of the water as you can</li>
+              <li>Treat re-entry as optional, not mandatory</li>
+            </ul>
+            <p>For a real capsize, getting safe matters more than getting back in quickly.</p>
+          </div>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
@@ -138,7 +192,38 @@ description: Flip test and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-3">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-3', 2)"><div class="rescue-step-number">3</div> <span class="rescue-step-title">Right Your Boat</span></button>
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-3', 2)"><div class="rescue-step-number">3</div> <span class="rescue-step-title">Stabilize and Assess</span></button>
+    <div class="accordion-content">
+      <div class="accordion-content-inner">
+        <div class="rescue-step-content">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="rescue-step-description">
+            <p><i class="fas fa-search" style="color: #2196f3;"></i> Before you try to right the boat or climb back in, pause for a quick check.</p>
+          </div>
+          <div class="rescue-step-actions">
+            <ol>
+              <li>Am I free of the shoes and uninjured?</li>
+              <li>Is the boat still my safest flotation?</li>
+              <li>Is there traffic, current, cold shock, or another hazard?</li>
+              <li>Can I continue with self-rescue, or should I signal for help?</li>
+            </ol>
+          </div>
+          <p><i class="fas fa-exclamation-triangle" style="color: #ff9800;"></i> <strong>If help is needed:</strong> Shout, wave, and stay with the boat.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="rescue-step-icon">
+            <i class="fas fa-search fa-3x" style="color: #2196f3;"></i>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-section rescue-step" id="step-4">
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-4', 3)"><div class="rescue-step-number">4</div> <span class="rescue-step-title">Right Your Boat</span></button>
     <div class="accordion-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
@@ -169,8 +254,8 @@ description: Flip test and recovery procedures for scullers
     </div>
   </div>
   
-  <div class="accordion-section rescue-step" id="step-4">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-4', 3)"><div class="rescue-step-number">4</div> <span class="rescue-step-title">Re-Entry Technique</span></button>
+  <div class="accordion-section rescue-step" id="step-5">
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-5', 4)"><div class="rescue-step-number">5</div> <span class="rescue-step-title">Re-Entry Technique</span></button>
     <div class="accordion-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
@@ -187,7 +272,10 @@ description: Flip test and recovery procedures for scullers
               <li><strong>Retrieve the Far-Side Oar</strong><br>
                 Swim or lean over to grab the other oar. Ensure this oarlock is also properly closed.
               </li>
-              <li><strong>Extend both oars perpendicular (t-position)</strong><br>Push them out so they are fully extended with handles overlapping. The near-side blade should rest flat on the water surface, while the far-side blade remains feathered in the air.
+              <li><strong>Extend both oars perpendicular (T-position)</strong><br>
+                Push them out so they are fully extended with handles overlapping.<br>
+                Keep the near-side blade flat on the water.<br>
+                Keep the far-side blade clear until your body is across the hull, then lower both blades flat to maximize stability.
               </li>
               <li><strong>Position your hands</strong><br>
                 Grasp the overlapping handles in one hand. Keep your elbow high over the shaft. The other hand is on the center strip between the tracks.
@@ -198,13 +286,11 @@ description: Flip test and recovery procedures for scullers
                   <li>Push down firmly on the oar handles and the center strip while executing a strong scissors kick, similar to getting out of a pool</li>
                 </ul>
                 <div class="method-option" style="border-left: 3px solid #2196f3; padding-left: 15px; margin: 10px 0;">
-                  <strong>Option A: The Belly Flop Method</strong>
+                  <strong>Option A: The Belly-Flop Method</strong>
                   <ul>
-                    <li>Propel yourself forward and across the boat in a "belly flop" motion</li>
-                    <li>Land with your torso flat across the hull, perpendicular to the boat's length</li>
+                    <li>Slide your stomach and chest across the hull</li>
                     <li>Keep your weight low and centered over the boat</li>
-                    <li>Lift the hand holding the oars to lower both blades flat onto the water surface, which stabilizes the boat and prevents it from rolling.</li>
-                    <li>Once stable in this position, rotate your hip, sit up, and bring one leg across</li>
+                    <li>Once balanced, bring one leg up and across, then the other</li>
                   </ul>
                 </div>
                 <div class="method-option" style="border-left: 3px solid #43a047; padding-left: 15px; margin: 10px 0;">
@@ -212,14 +298,17 @@ description: Flip test and recovery procedures for scullers
                   <ul>
                     <li>Rotate your hip onto the tracks as you rise</li>
                     <li>Keep your weight low and centered over the boat</li>
-                    <li>Lift the hand holding the oars to lower both blades flat onto the water surface, which stabilizes the boat and prevents it from rolling.</li>
+                    <li>Lift the hand holding the oars to lower both blades flat onto the water surface, which stabilizes the boat and prevents it from rolling</li>
                     <li>Once your hip is secured on the tracks, sit up, and bring one leg across</li>
                   </ul>
                 </div>
               </li>
               <li><strong>Re-seat Yourself</strong>
                 <ul>
-                  <li>Wait until the boat settles, then while both feet are outside, pull the seat below you and re-seat yourself. Insert your feet into the cockpit and foot stretchers.</li>
+                  <li>Wait until the boat settles</li>
+                  <li>With both feet still outside the shoes, pull the seat under you and re-seat yourself</li>
+                  <li>Re-enter the cockpit carefully</li>
+                  <li>Only place your feet back in the shoes once you are stable and in control</li>
                 </ul>
               </li>
             </ol>
@@ -237,25 +326,26 @@ description: Flip test and recovery procedures for scullers
     </div>
   </div>
   
-  <div class="accordion-section rescue-step" id="step-5">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-5', 4)"><div class="rescue-step-number">5</div> <span class="rescue-step-title">Recovery and Continuation</span></button>
+  <div class="accordion-section rescue-step" id="step-6">
+    <button class="accordion-toggle" onclick="toggleAccordionStep('step-6', 5)"><div class="rescue-step-number">6</div> <span class="rescue-step-title">Recovery and Return</span></button>
     <div class="accordion-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
         <div class="col-md-9">
           <div class="rescue-step-description">
-            <p>{% include icon.html icon="fas fa-forward" type="info" alt="Recovery" color="#2196f3" %} Once back in your boat, follow these steps to resume rowing.</p>
+            <p>{% include icon.html icon="fas fa-forward" type="info" alt="Recovery" color="#2196f3" %} Once back in your boat, your next goal is a safe recovery, not a fast restart.</p>
           </div>
           <div class="rescue-step-actions">
             <ol>
               <li>Perform a quick equipment check</li>
               <li>Signal to your coach or others that you are okay</li>
-              <li>Begin gentle rowing, when stable, resume normal rowing</li>
-              <li>Consider heading to the dock to drain the boat</li>
+              <li>Re-establish a stable position and controlled oar handle heights</li>
+              <li>Return to the dock or nearest safe landing unless your coach directs otherwise</li>
+              <li>Drain the boat and warm up as soon as practical</li>
             </ol>
           </div>
-          <p>{% include icon.html icon="fas fa-hourglass-half" type="info" alt="Recovery Time" color="#43a047" %} <strong>Recovery Time:</strong> Take your time getting settled back in the boat. It's normal for the boat to feel unstable at first—gentle movements and patience will help you regain control.</p>
+          <p>{% include icon.html icon="fas fa-hourglass-half" type="info" alt="Recovery Time" color="#43a047" %} <strong>Recovery Time:</strong> Take your time getting settled back in the boat. It is normal for the shell to feel unstable at first. Gentle movements and patience will help you regain control.</p>
         </div>
         <div class="col-md-3 text-center">
           <div class="rescue-step-icon">
@@ -271,13 +361,15 @@ description: Flip test and recovery procedures for scullers
 
 <div class="accordion-container" id="alternative-self-rescue-accordion">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self Rescue <span style="margin-left: auto; font-size: 0.8em;">Click to expand ↓</span></div>
+    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self-Rescue <span style="margin-left: auto; font-size: 0.8em;">Click to expand ↓</span></div>
     <div class="accordion-content" id="alternative-self-rescue-content">
       <div id="dock-content">
-        {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter your boat and need to get to the dock or shore:
+        {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter after a few controlled attempts:
         <ul>
-          <li>Position yourself flat on the stern deck, much like you would lie on a surfboard.</li>
-          <li>Use your hands to paddle towards the shore or dock.</li>
+          <li>Stay with the boat</li>
+          <li>Use the club-approved alternative recovery method taught by your coach</li>
+          <li>Move the shell toward the nearest safe landing only if that can be done without abandoning the boat</li>
+          <li>Keep signaling for help as needed</li>
         </ul>
         {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} Once you reach the dock with your boat:
         <ul>
@@ -296,6 +388,28 @@ description: Flip test and recovery procedures for scullers
   <p>{% include icon.html icon="fas fa-info-circle" type="info" %} <strong>A Note on Physical Sensations:</strong> During self-rescue practice, some individuals might experience minor bruising on areas like legs, hips, or torso as they learn to get back into the boat. This is a normal part of the learning process.</p>
   <p>{% include icon.html icon="fas fa-exclamation-triangle" type="safety" alt="Warning" color="#f44336" %} <strong>Safety First:</strong> If at any point during a real capsize you feel unsafe or unable to complete the self-rescue, signal for help immediately and stay with your boat while awaiting assistance.</p>
 </div>
+
+## Flip Test Pass Standard
+
+<p>For the Learn to Scull flip test, successful completion means the sculler can:</p>
+
+<ol>
+  <li>Exit cleanly and free both feet immediately</li>
+  <li>Stay calm and remain with the boat</li>
+  <li>Demonstrate safe decision-making</li>
+  <li>Right the shell</li>
+  <li>Re-enter the shell, or complete the coach-approved alternative recovery method</li>
+  <li>Signal that they are okay</li>
+  <li>Return safely to the dock or designated landing area</li>
+</ol>
+
+<p>The goal of the flip test is not speed. The goal is calm, safe, repeatable recovery.</p>
+
+## Quick Memory Cue
+
+<p>Use this short sequence:</p>
+
+<p><strong>Feet free -&gt; Stay with boat -&gt; Assess -&gt; Right boat -&gt; Re-enter -&gt; Return</strong></p>
 
 <section class="program-section cta-section" style="text-align: center;">
   <a href="{{ site.baseurl }}/for-learners/#safety" class="cta-button">{% include icon.html icon="fas fa-shield-alt" type="info" alt="Safety" %} Back to Safety</a>
