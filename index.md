@@ -9,7 +9,7 @@ title: AARC Learn to Scull Program
   <div class="button-row">
     <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
     <a href="#program-dates" class="cta-button secondary">See 2026 dates</a>
-    <a href="https://aarc.clubexpress.com" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
+    <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
   </div>
   <p><strong>Recommended order:</strong> learner guide → dates and fees → registration or waitlist.</p>
 </section>
@@ -95,7 +95,7 @@ title: AARC Learn to Scull Program
         <li><strong>Cost:</strong> $365</li>
         <li><strong>Discounted:</strong> $275 (students/veterans)</li>
         <li><strong>USRowing:</strong> Learn-to-Row membership required ($10)</li>
-        <li><a href="https://aarc.clubexpress.com" class="info-link" target="_blank">Register Online</a></li>
+        <li><a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" class="info-link" target="_blank">Register Online</a></li>
       </ul>
     </div>
     
