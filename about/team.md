@@ -8,8 +8,8 @@ title: Meet Our Team - AARC Learn to Scull
 Our dedicated team is committed to providing an exceptional learning experience for all AARC Learn to Scull participants. Get to know the instructors who will guide you through the program and the other key figures in our sculling community you'll meet as you continue your rowing journey.
 
 <div class="team-section">
-  <h2>Learn to Scull Instructors</h2>
-  <p>These are the instructors who will be directly working with you during the Learn to Scull program:</p>
+  <h2>2026 LTS Coaches</h2>
+  <p>These are the coaches who will be directly working with you during the 2026 Learn to Scull program:</p>
 
   <div class="team-grid">
     
@@ -19,7 +19,7 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Michelle Nemshak</h3>
-        <h4>Instructor</h4>
+        <h4>Coach</h4>
         <p>Michelle joined AARC in 2008 and has been a dedicated instructor for the Learn to Scull program. She specializes in breaking down complex rowing movements into approachable steps for beginners.</p>
       </div>
     </div>
@@ -30,7 +30,7 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Lars Fritsche</h3>
-        <h4>Instructor & Club Secretary</h4>
+        <h4>Coach & Club Secretary</h4>
         <p>Lars joined AARC in 2014 and serves as the Club Secretary. As an instructor for the Learn to Scull program, he focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
       </div>
     </div>
@@ -41,18 +41,18 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Sean Connors</h3>
-        <h4>Instructor</h4>
+        <h4>Coach</h4>
         <p>Sean became an AARC member in 2018 and quickly became involved with the Learn to Scull program. With his patient approach and technical knowledge, he helps new rowers feel comfortable and confident on the water.</p>
       </div>
     </div>
     
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/photos/screen/59976388.jpg?v=1746729220555" alt="Russell Miller">
+        <img src="https://images.clubexpress.com/757878/photos/screen/59976388.jpg?v=1746729220555" alt="Russ Miller">
       </div>
       <div class="team-member-info">
-        <h3>Russell Miller</h3>
-        <h4>Instructor</h4>
+        <h3>Russ Miller</h3>
+        <h4>Coach</h4>
         <p>Russ brings enthusiasm and technical expertise to the Learn to Scull program. He is dedicated to helping new rowers develop proper form and technique while building their confidence on the water.</p>
       </div>
     </div>
@@ -63,8 +63,30 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Margaret Hudson</h3>
-        <h4>Instructor & Club President</h4>
+        <h4>Coach & Club President</h4>
         <p>Margaret has been an AARC member since 2009 and currently serves as the Club President. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="{{ site.baseurl }}/assets/images/placeholder-coach.jpg" alt="James &quot;Jamie&quot; Riddell IV">
+      </div>
+      <div class="team-member-info">
+        <h3>James "Jamie" Riddell IV</h3>
+        <h4>Coach</h4>
+        <p>Jamie is part of the 2026 Learn to Scull coaching team, helping new scullers build confidence, safety awareness, and sound rowing fundamentals.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="{{ site.baseurl }}/assets/images/placeholder-coach.jpg" alt="Adam Zwolinski">
+      </div>
+      <div class="team-member-info">
+        <h3>Adam Zwolinski</h3>
+        <h4>Coach</h4>
+        <p>Adam is part of the 2026 Learn to Scull coaching team, supporting participants as they learn boat handling, sculling technique, and safe rowing habits.</p>
       </div>
     </div>
 
