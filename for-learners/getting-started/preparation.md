@@ -56,8 +56,9 @@ Welcome to the Learn to Scull program! This guide provides essential information
             <p>Safety is our top priority. Always remember:</p>
             <ul>
                 <li><strong>Listen to Your Coaches:</strong> Follow all instructions from your coaches immediately and without question, especially regarding safety.</li>
-                <li><strong>Inform Coaches of Concerns:</strong> If you have any medical conditions, are not a strong swimmer, or have any concerns, please inform your coach before getting on the water.</li>
-                <li><strong>PFDs (Personal Flotation Devices):</strong> Your coach will instruct you on PFD usage. If you are not a confident swimmer or feel uncomfortable, request a PFD.</li>
+                <li><strong>Swimming Requirement:</strong> Learn to Scull participants must be comfortable in the water and able to swim. Registration includes a swimming attestation that you can tread water or stay afloat for 10 minutes while wearing street clothes, then swim 50 yards using any stroke without touching the bottom or using other support.</li>
+                <li><strong>Inform Coaches of Concerns:</strong> If you have any medical conditions, mobility limitations, swimming concerns, or other safety concerns, contact the program before class and inform your coach before getting on the water.</li>
+                <li><strong>PFDs (Personal Flotation Devices):</strong> Your coach will instruct you on PFD usage when applicable.</li>
                 <li><strong>Buddy System:</strong> Stay with the group and be aware of your fellow rowers.</li>
                 <li><strong>Handling Equipment:</strong> Learn the proper techniques for handling boats and oars to prevent injury and equipment damage. Always ask for help if you are unsure.</li>
                 <li><strong>Flip Test:</strong> You will participate in a supervised capsize drill (flip test) to learn how to recover if your boat overturns. This is a crucial safety skill.</li>

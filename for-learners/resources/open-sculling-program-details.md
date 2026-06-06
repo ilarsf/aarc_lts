@@ -17,12 +17,12 @@ description: Details about the Open Sculling Program trial period, how to contin
     <h3>A. How to sign-up to continue with Phase 2</h3>
     <p>If you wish to continue with AARC after the LTS class, you can join the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=131640">Open Sculling Program</a> for a four-week trial period. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
     <p><strong>Important:</strong> You will need to become a Full Member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following completion of your LTS class are offered at a discounted fixed trial rate of <strong>$110 or $85 student/vet</strong>. Please note there is no flexibility on which 4 weeks are offered at this discount. This trial period allows new scullers to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a good fit.</p>
-    <p>Your LTS coaches will provide details on how to sign up for this trial during your final session. The current Learn to Scull schedule shows these follow-on fees after the trial period:</p>
+    <p>Your LTS coaches will provide details on how to sign up for this trial during your final session. The current Learn to Scull schedule shows these fixed trial periods and follow-on fees after the trial period:</p>
     <ul>
-        <li><strong>LTS1 graduates:</strong> July 6 - Aug 30, $305 or $230 student/vet</li>
-        <li><strong>LTS2 graduates:</strong> July 20 - Aug 30, $225 or $170 student/vet</li>
-        <li><strong>LTS3 graduates:</strong> Aug 17 - Aug 30, $75 or $55 student/vet</li>
-        <li><strong>LTS4 graduates:</strong> sign up for the fall season</li>
+        <li><strong>LTS1 graduates:</strong> trial June 8 - July 7; continue July 8 - Aug 30, $305 or $230 student/vet</li>
+        <li><strong>LTS2 graduates:</strong> trial June 22 - July 21; continue July 22 - Aug 30, $225 or $170 student/vet</li>
+        <li><strong>LTS3 graduates:</strong> trial July 20 - Aug 16; continue Aug 17 - Aug 30, $75 or $55 student/vet</li>
+        <li><strong>LTS4 graduates:</strong> trial Aug 3 - Aug 30; sign up for the fall season</li>
     </ul>
 
     <h3>B. Weekly Sign-up</h3>

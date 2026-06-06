@@ -26,7 +26,7 @@ title: AARC Learn to Scull Program
           <i class="fas fa-calendar-alt"></i>
         </div>
         <h3>Program Format</h3>
-        <p>Four 3-hour sessions over two weekends with small groups and personalized coaching.</p>
+        <p>Four 3-hour sessions over two weekends, with each class capped at six scullers and a 1:3 coach-to-student ratio.</p>
       </div>
     </a>
     
@@ -130,15 +130,15 @@ title: AARC Learn to Scull Program
           <td data-label="Class">LTS1</td>
           <td data-label="Class dates">May 30/31 &amp; June 6/7</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 8 - July 5<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">July 6 - Aug 30<br>($305 or $230 student/vet)</td>
+          <td data-label="4-week trial after class">June 8 - July 7<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
+          <td data-label="Continue for the rest of the summer">July 8 - Aug 30<br>($305 or $230 student/vet)</td>
         </tr>
         <tr>
           <td data-label="Class">LTS2</td>
           <td data-label="Class dates">June 13/14 &amp; 20/21</td>
           <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 22 - July 19<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">July 20 - Aug 30<br>($225 or $170 student/vet)</td>
+          <td data-label="4-week trial after class">June 22 - July 21<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
+          <td data-label="Continue for the rest of the summer">July 22 - Aug 30<br>($225 or $170 student/vet)</td>
         </tr>
         <tr>
           <td data-label="Class">LTS3</td>

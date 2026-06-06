@@ -52,6 +52,7 @@ Welcome to the Learn to Scull program! This guide will help you understand what 
                 <li>Possibility of bruising during the flip test</li>
                 <li>Cumulative fatigue across consecutive days of learning</li>
               </ul>
+              <p>Participants also need enough mobility to enter and exit the boat safely, turn their head to look over both shoulders, and complete the required flip test. AARC's self-check is whether you can get down to the floor in a sitting position using only one hand and then get back up again.</p>
             </div>
         </div>
     </div>

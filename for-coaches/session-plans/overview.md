@@ -11,6 +11,17 @@ search_exclude: true
   <p>These detailed session plans provide the structure, timing, and content for each of the four Learn to Scull sessions. Use them as your guide to ensure consistency and comprehensive coverage of all key learning objectives.</p>
 </div>
 
+<div class="info-box note">
+  <h3>2026 Class Logistics</h3>
+  <ul>
+    <li><strong>LTS1:</strong> Sean Connors and Margaret Hudson, May 30/31 and June 6/7</li>
+    <li><strong>LTS2:</strong> Michelle Nemshak and Lars Fritsche, June 13/14 and 20/21</li>
+    <li><strong>LTS3:</strong> Adam Zwolinski and coach TBD, July 11/12 and July 18/19</li>
+    <li><strong>LTS4:</strong> Russ Miller and James "Jamie" Riddell IV, July 25/26 and Aug 1/2; substitute needed for the first Saturday</li>
+  </ul>
+  <p>Use the designated LTS boats for class: H2, P1, P4, W1, W2, W3, and W4. P4 is the flip-test boat. Pontoons and the two wider Wintech recreational boats are available for rowers who need extra stability while learning the motion.</p>
+</div>
+
 <div class="session-cards">
   <div class="session-card">
     <div class="card-header">

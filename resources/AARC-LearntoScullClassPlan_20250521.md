@@ -1,6 +1,18 @@
 AARC Learn to Scull Class Overview  
 Class runs 8:30-11:30am
 
+2026 Class Assignments
+
+* **LTS1:** Sean Connors and Margaret Hudson  
+  * May 30/31 and June 6/7
+* **LTS2:** Michelle Nemshak and Lars Fritsche  
+  * June 13/14 and 20/21
+* **LTS3:** Adam Zwolinski and coach TBD  
+  * July 11/12 and July 18/19
+* **LTS4:** Russ Miller and James "Jamie" Riddell IV  
+  * July 25/26 and Aug 1/2
+  * Needs a substitute for the first Saturday
+
 Coaching Keys
 
 * One coach should **always get off the dock in the launch** prior to any hulls launching.  
@@ -39,10 +51,17 @@ Keys to Sculling:
 
 Hulls to use
 
-* P1, P2, P3, P4, W1, W3, W4  
-  * Make sure that the rowers use the oars that are assigned to the boat  
-  * W1, W3 and W4 can be rowed with pontoons  
-  * **Only use P3 for flip test. Drain the boat and oars after flip testing.**  
+* **H2 - Red Hudson:** HvyWt
+* **P1 - Periwinkle Peinert:** LW, pontoon
+* **P4 - Blue Peinert:** MdWt, flip boat, pontoon
+* **W1 - Frisco:** Md/HW, pontoon
+* **W2 - Rec. Wintech:** HvyWt, wide, pontoon
+* **W3 - Rec. Wintech:** HvyWt, wide, pontoon
+* **W4 - Wintech:** Mid/Hvy, pontoon
+  * Make sure that the rowers use the oars that are assigned to the boat.
+  * Boats listed as pontoon boats should have brackets installed.
+  * Use pontoons and/or the two wider Wintech recreational boats for rowers who are struggling with balance while learning the rowing motion.
+  * **Use P4 for flip testing. Drain the boat and oars after flip testing.**
 * **Do not use any other hull without permission from [Tom Kraft](mailto:tom-kraft@sbcglobal.net) or Russ**
 
 	  

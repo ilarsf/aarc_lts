@@ -58,6 +58,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <div class="nested-content">
                     <div class="nested-content-inner">
 <p>Rowing is accessible to people of varying fitness levels. The Learn to Scull program focuses on technique rather than endurance or power. Basic fitness that allows 1-2 hours of light to moderate activity is sufficient. If you have specific concerns about physical limitations, discuss them with your coach before the first session.</p>
+<p>Sculling does require enough mobility to enter and exit the boat safely, turn your head to look over both shoulders, and complete the required flip test. A useful self-check from AARC is whether you can get down to the floor in a sitting position using only one hand and then get back up again.</p>
                     </div>
                 </div>
             </div>
@@ -88,10 +89,11 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
             </div>
 
             <div class="nested-section">
-                <button class="nested-toggle">I'm not a strong swimmer. Can I still row?</button>
+                <button class="nested-toggle">What swimming ability is required?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>Yes, with some precautions. Inform your coach about your swimming ability. You'll be required to wear a PFD (personal flotation device) during on-water sessions. The boats stay in protected water areas, and coaches maintain close supervision.</p>
+<p>Learn to Scull participants must be comfortable in the water and able to swim. The required swimming attestation confirms that you can tread water or stay afloat for 10 minutes while wearing street clothes, then swim 50 yards using any stroke without touching the bottom or using other support.</p>
+<p>If you have swimming concerns or are unsure whether you meet this requirement, contact <a href="mailto:info@a2crew.com">info@a2crew.com</a> before registering or before your first session.</p>
                     </div>
                 </div>
             </div>
@@ -377,4 +379,3 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
         </div>
     </div>
 </div>
-
