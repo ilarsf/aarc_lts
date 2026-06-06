@@ -34,7 +34,7 @@ There is no ability to offer a make up class as we are fully booked into all wee
 
 Short of a tornado or storms so severe driving would be dangerous every effort should be made to bring folks down to the boathouse and use the time set aside for the class to learn and progress.
 
-If you feel the need to cancel please reach out to club Director Russ Giacobbe or Sculling Head Coach Tom Kraft prior to canceling to come up with a plan for the class.
+If you feel the need to cancel please reach out to club Director Russell Giacobbe ([russ@a2crew.org](mailto:russ@a2crew.org)) or Sculling Head Coach Tom Kraft prior to canceling to come up with a plan for the class.
 
 Notes to students
 

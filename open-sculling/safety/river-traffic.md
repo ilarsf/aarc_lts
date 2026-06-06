@@ -441,8 +441,8 @@ Understanding and following proper waterway navigation rules is essential for th
                 </tr>
                 <tr>
                   <td>Boathouse Manager</td>
-                  <td>Russ Giacobbe, Director &amp; Boatman — contact via
-                    <a href="mailto:info@a2crew.com">info@a2crew.com</a>
+                  <td>Russell Giacobbe, Director &amp; Boatman —
+                    <a href="mailto:russ@a2crew.org">russ@a2crew.org</a>
                   </td>
                   <td>For facility-related emergencies</td>
                 </tr>

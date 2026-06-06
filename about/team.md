@@ -30,8 +30,8 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Lars Fritsche</h3>
-        <h4>Coach & Club Secretary</h4>
-        <p>Lars joined AARC in 2014 and serves as the Club Secretary. As an instructor for the Learn to Scull program, he focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
+        <h4>Coach, Club Secretary & Membership Chair</h4>
+        <p>Lars joined AARC in 2014 and serves as the Club Secretary and Membership Chair. As a coach for the Learn to Scull program, he focuses on helping novice rowers master the fundamentals of sculling while ensuring a safe and enjoyable learning experience.</p>
       </div>
     </div>
 
@@ -63,8 +63,8 @@ Our dedicated team is committed to providing an exceptional learning experience 
       </div>
       <div class="team-member-info">
         <h3>Margaret Hudson</h3>
-        <h4>Coach & Club President</h4>
-        <p>Margaret has been an AARC member since 2009 and currently serves as the Club President. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
+        <h4>Coach</h4>
+        <p>Margaret has been an AARC member since 2009. She brings her leadership skills and rowing experience to the Learn to Scull program, helping new scullers develop confidence and proper technique on the water.</p>
       </div>
     </div>
 
@@ -98,10 +98,21 @@ Our dedicated team is committed to providing an exceptional learning experience 
   <div class="team-grid">
     <div class="team-member">
       <div class="team-member-image">
-        <img src="https://images.clubexpress.com/757878/graphics/Russ_Giacobbe_350px_399352445.jpg" alt="Russ Giacobbe">
+        <img src="{{ site.baseurl }}/assets/images/placeholder-coach.jpg" alt="Marcia Leonard">
       </div>
       <div class="team-member-info">
-        <h3>Russ Giacobbe</h3>
+        <h3>Marcia Leonard</h3>
+        <h4>Club President</h4>
+        <p>Marcia serves as AARC Club President and helps guide the club's programs, operations, and community engagement.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-member-image">
+        <img src="https://images.clubexpress.com/757878/graphics/Russ_Giacobbe_350px_399352445.jpg" alt="Russell Giacobbe">
+      </div>
+      <div class="team-member-info">
+        <h3>Russell Giacobbe</h3>
         <h4>Sculling Development Director</h4>
         <p>Russ leads the club's sculling development programs and is a key figure you'll meet after completing the Learn to Scull program. His experience and commitment to safety make him an invaluable resource for developing scullers.</p>
       </div>

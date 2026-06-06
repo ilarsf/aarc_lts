@@ -55,7 +55,7 @@ This guide outlines essential protocols for responding to emergency situations t
 | Emergency Services | 911 | For all medical emergencies, fires, police |
 | DNR Conservation Officers | RAP Hotline: 1-800-292-7800 | For water-related emergencies on Michigan inland waters |
 | Washtenaw County Sheriff's Marine Division | Non-emergency dispatch: (734) 994-2911 | For water-related emergencies on the Huron River |
-| Boathouse Manager | Russ Giacobbe, Director & Boatman — contact via [info@a2crew.com](mailto:info@a2crew.com) | For facility-related emergencies |
+| Boathouse Manager | Russell Giacobbe, Director & Boatman — [russ@a2crew.org](mailto:russ@a2crew.org) | For facility-related emergencies |
 
 ## Emergency Decision Trees
 

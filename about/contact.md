@@ -23,10 +23,10 @@ description: Contact information for the Ann Arbor Rowing Club (AARC) leadership
     <h2>Role-specific contacts</h2>
     <p>If you already know the topic, these contacts can help directly:</p>
     <ul>
+        <li><strong>Marcia Leonard</strong>, Club President: <a href="mailto:president@a2crew.org">president@a2crew.org</a></li>
+        <li><strong>Lars Fritsche</strong>, Club Secretary & Membership Chair: <a href="mailto:secretary@a2crew.org">secretary@a2crew.org</a></li>
+        <li><strong>Russell Giacobbe</strong>, Sweep & technical programs: <a href="mailto:russ@a2crew.org">russ@a2crew.org</a></li>
         <li><strong>Tom Kraft</strong>, Head Sculling Coach: <a href="mailto:tom-kraft@sbcglobal.net">tom-kraft@sbcglobal.net</a></li>
-        <li><strong>Russell Giacobbe</strong>, Sweep & technical programs: <a href="mailto:russell.giacobbe@gmail.com">russell.giacobbe@gmail.com</a></li>
-        <li><strong>Margaret Hudson</strong>, Club President: <a href="mailto:admin@a2crew.com">admin@a2crew.com</a></li>
-        <li><strong>Marcia Leonard</strong>, Membership Chair: <a href="mailto:marcia@umich.edu">marcia@umich.edu</a></li>
     </ul>
 
     {% include learner-next-step.html %}
