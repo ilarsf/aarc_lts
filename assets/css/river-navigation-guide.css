@@ -92,20 +92,32 @@
   font-size: 1.05rem;
 }
 
-.river-tour-tabs,
+.river-tour-map-selectors,
+.river-tour-marker-tools,
 .river-tour-filterbar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.river-tour-tabs {
+.river-tour-map-selectors {
   border-bottom: 1px solid rgba(16, 39, 52, 0.12);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
 }
 
-.river-tour-tab,
+.river-tour-marker-tools {
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.river-tour-filterbar {
+  flex: 1 1 18rem;
+}
+
+.river-tour-map-selector,
 .river-tour-filter,
 .river-tour-button,
 .river-tour-stop,
@@ -117,7 +129,7 @@
   font: inherit;
 }
 
-.river-tour-tab,
+.river-tour-map-selector,
 .river-tour-filter {
   background: #fff;
   color: var(--tour-ink);
@@ -125,11 +137,40 @@
   padding: 0.55rem 0.75rem;
 }
 
-.river-tour-tab.is-selected,
+.river-tour-map-selector {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 7.25rem;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.river-tour-map-selector strong {
+  color: #17465a;
+  font-size: 1rem;
+}
+
+.river-tour-map-selector span {
+  color: var(--tour-muted);
+  font-size: 0.84rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.river-tour-map-selector.is-selected,
 .river-tour-filter.is-selected {
   background: #17465a;
   border-color: #17465a;
   color: #fff;
+}
+
+.river-tour-map-selector.is-selected strong,
+.river-tour-map-selector.is-selected span {
+  color: #fff;
+}
+
+.river-tour-filter--toggle {
+  flex: 0 0 auto;
 }
 
 .river-tour-layout {
@@ -143,13 +184,12 @@
 }
 
 .river-tour-map-wrap {
-  background:
-    linear-gradient(90deg, rgba(215, 197, 150, 0.22), transparent 18%, transparent 82%, rgba(90, 133, 88, 0.16)),
-    #e9f2f1;
+  background: #dce6e4;
   border: 1px solid rgba(16, 39, 52, 0.12);
   border-radius: 8px;
   min-height: 26rem;
   overflow: hidden;
+  position: relative;
 }
 
 .river-tour-map {
@@ -159,73 +199,90 @@
   width: 100%;
 }
 
-.river-tour-map__route {
-  fill: none;
-  stroke: var(--tour-water);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 18;
+.river-tour-map-tools {
+  display: flex;
+  gap: 0.45rem;
+  left: 0.75rem;
+  position: absolute;
+  top: 0.75rem;
+  z-index: 1100;
 }
 
-.river-tour-map__limit {
-  fill: none;
-  stroke: var(--tour-red);
-  stroke-linecap: round;
-  stroke-width: 8;
+.river-tour-map-tool {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(16, 39, 52, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(16, 39, 52, 0.18);
+  color: var(--tour-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 0.45rem 0.6rem;
 }
 
-.river-tour-map__limit--limit {
-  stroke-dasharray: 18 12;
+.river-tour-map .leaflet-control-layers,
+.river-tour-map .leaflet-control-zoom {
+  margin-top: 3.5rem;
 }
 
-.river-tour-map__limit.is-selected {
-  stroke: #101820;
-  stroke-width: 12;
+.river-tour-leaflet-marker {
+  background: transparent;
+  border: 0;
 }
 
-.river-tour-map__limit.needs-review {
-  stroke-dasharray: 10 8;
+.river-tour-leaflet-marker span {
+  align-items: center;
+  background: #fff;
+  border: 3px solid #33424d;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.38);
+  color: #182a36;
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 900;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 54px;
+  padding: 0 0.4rem;
+  text-transform: uppercase;
 }
 
-.river-tour-map__marker {
-  outline: none;
+.river-tour-leaflet-marker--dock span { background: #e9f6ef; border-color: var(--tour-green); }
+.river-tour-leaflet-marker--direction span { background: #eaf0ff; border-color: var(--tour-blue); }
+.river-tour-leaflet-marker--turn span { background: #fff5d8; border-color: var(--tour-yellow); }
+.river-tour-leaflet-marker--limit span { background: #ffe8e8; border-color: var(--tour-red); }
+.river-tour-leaflet-marker--bridge span { background: #eaf0ff; border-color: var(--tour-blue); }
+.river-tour-leaflet-marker--hazard span { background: #fff0df; border-color: var(--tour-orange); }
+.river-tour-leaflet-marker--current span { background: #ddf7fb; border-color: var(--tour-water-dark); }
+.river-tour-leaflet-marker--corner span { background: #f0e9ff; border-color: #8067b7; }
+.river-tour-leaflet-marker--break span { background: #edf8e8; border-color: #6a9f3d; }
+
+.river-tour-leaflet-marker.is-selected span {
+  border-color: #101820;
+  border-width: 4px;
+  transform: scale(1.14);
 }
 
-.river-tour-map__marker-dot {
-  fill: #fff;
-  stroke: #33424d;
-  stroke-width: 3;
+.river-tour-leaflet-marker.is-additional-marker span {
+  opacity: 0.86;
+  transform: scale(0.9);
 }
 
-.river-tour-map__marker-symbol {
-  fill: #182a36;
-  font: 800 12px system-ui, sans-serif;
-  pointer-events: none;
+.river-tour-leaflet-marker.is-additional-marker.is-selected span {
+  opacity: 1;
+  transform: scale(1.08);
 }
 
-.river-tour-map__marker--dock .river-tour-map__marker-dot { fill: #e9f6ef; stroke: var(--tour-green); }
-.river-tour-map__marker--direction .river-tour-map__marker-dot { fill: #eaf0ff; stroke: var(--tour-blue); }
-.river-tour-map__marker--turn .river-tour-map__marker-dot { fill: #fff5d8; stroke: var(--tour-yellow); }
-.river-tour-map__marker--limit .river-tour-map__marker-dot { fill: #ffe8e8; stroke: var(--tour-red); }
-.river-tour-map__marker--bridge .river-tour-map__marker-dot { fill: #eaf0ff; stroke: var(--tour-blue); }
-.river-tour-map__marker--hazard .river-tour-map__marker-dot { fill: #fff0df; stroke: var(--tour-orange); }
-.river-tour-map__marker--current .river-tour-map__marker-dot { fill: #ddf7fb; stroke: var(--tour-water-dark); }
-.river-tour-map__marker--corner .river-tour-map__marker-dot { fill: #f0e9ff; stroke: #8067b7; }
-.river-tour-map__marker--break .river-tour-map__marker-dot { fill: #edf8e8; stroke: #6a9f3d; }
-
-.river-tour-map__marker.is-viewed .river-tour-map__marker-dot {
-  stroke-width: 2;
+.river-tour-leaflet-marker.ask-coach span {
+  outline: 3px dashed #101820;
+  outline-offset: 2px;
 }
 
-.river-tour-map__marker.needs-review .river-tour-map__marker-dot {
-  stroke: #101820;
-  stroke-dasharray: 4 3;
-}
-
-.river-tour-map__marker.is-selected .river-tour-map__marker-dot {
-  filter: drop-shadow(0 5px 8px rgba(16, 39, 52, 0.28));
-  stroke: #101820;
-  stroke-width: 5;
+.river-tour-leaflet-line {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
 }
 
 .river-tour-sidebar {
@@ -387,7 +444,7 @@
   color: #1c6d3b;
 }
 
-.river-tour-stop.needs-review {
+.river-tour-stop.ask-coach {
   background: #fff9e8;
 }
 
@@ -457,12 +514,12 @@
   margin: 0;
 }
 
-.river-tour-tab:focus-visible,
+.river-tour-map-selector:focus-visible,
 .river-tour-filter:focus-visible,
 .river-tour-button:focus-visible,
 .river-tour-stop:focus-visible,
 .river-tour-check__choice:focus-visible,
-.river-tour-map__marker:focus-visible {
+.river-tour-map-tool:focus-visible {
   outline: 3px solid rgba(47, 111, 190, 0.36);
   outline-offset: 2px;
 }

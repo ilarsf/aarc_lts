@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "name": "AARC River Rules Rally Guided Map Tour",
+  "version": 4,
+  "name": "AARC River Navigation Guide",
   "source": {
     "name": "Rowing Traffic on the Huron River",
     "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1TqDNEvBmUQ8M4lU-NvyYAd9pCoG6agY&usp=sharing",
@@ -1496,7 +1496,7 @@
     "dock": "Dock / launch",
     "direction": "Direction cue",
     "turn": "River turn",
-    "limit": "Route limit",
+    "limit": "Practice gate / limit",
     "bridge": "Bridge decision",
     "hazard": "Hazard",
     "current": "Current / drift",
@@ -1504,24 +1504,30 @@
     "break": "Regrouping point",
     "marker": "Map marker"
   },
-  "sections": [
+  "maps": [
     {
-      "id": "dock-basics",
-      "name": "Dock Basics",
-      "summary": "Launch, orient downstream, and rehearse a slow angled docking approach.",
-      "stopIds": [
+      "id": "first-weekend",
+      "name": "First Weekend Map",
+      "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river turns, the first-weekend gates, the no-row danger boundary, island/weeds, and docking.",
+      "keyPlaceIds": [
+        "launch",
+        "downstream",
+        "lts-first-weekend",
+        "river-turn-5",
+        "no-rowing-beyond-this-point",
+        "river-turn-3",
+        "river-turn-4",
+        "island-weeds",
+        "river-turn-6",
+        "lts-first-weekend-2",
+        "river-turn-7",
+        "river-turn-8",
+        "docking"
+      ],
+      "markerIds": [
         "launch",
         "downstream",
         "fallen-tree-3",
-        "docking"
-      ],
-      "lineIds": []
-    },
-    {
-      "id": "first-weekend",
-      "name": "First Weekend Limits",
-      "summary": "Use the first Learn-to-Scull boundaries and nearby turn markers before stretching the route.",
-      "stopIds": [
         "river-turn-5",
         "river-turn-3",
         "river-turn-4",
@@ -1532,36 +1538,47 @@
         "fallen-trees",
         "river-turn-7",
         "fallen-trees-2",
-        "weeds-2"
+        "weeds-8",
+        "river-turn-8",
+        "docking"
       ],
       "lineIds": [
         "lts-first-weekend",
         "no-rowing-beyond-this-point",
         "lts-first-weekend-2"
-      ]
-    },
-    {
-      "id": "argo-turn",
-      "name": "Argo Turn / No-Row Boundary",
-      "summary": "Practice the downstream turn area, island/weeds, and the no-rowing danger line.",
-      "stopIds": [
-        "river-turn-5",
-        "river-turn-3",
-        "river-turn-4",
-        "island-weeds",
-        "river-turn-6",
-        "weeds-9"
       ],
-      "lineIds": [
-        "lts-first-weekend",
-        "no-rowing-beyond-this-point"
+      "gateNotes": [
+        {
+          "lineId": "lts-first-weekend",
+          "note": "First-weekend gate on the downstream side of the dock. It affects the route near 265 m and again near 904 m."
+        },
+        {
+          "lineId": "no-rowing-beyond-this-point",
+          "note": "Permanent no-row danger boundary near Argo. It affects the route near 557 m and 641 m."
+        },
+        {
+          "lineId": "lts-first-weekend-2",
+          "note": "First-weekend gate on the upstream side. It affects the outbound route near 1391 m and the return route near 6262 m."
+        }
       ]
     },
     {
-      "id": "second-weekend",
-      "name": "Second Weekend Bridge Intro",
-      "summary": "Review the second-weekend boundary, bridge-pillar choices, current, weeds, and pass-here cue.",
-      "stopIds": [
+      "id": "saturday-second-weekend",
+      "name": "Saturday Second Weekend Map",
+      "summary": "Use this map for the Saturday bridge introduction: the second-weekend gate, current, bridge-pillar decisions, angle correction, nearby weeds, and the return-side effect of the same gate.",
+      "keyPlaceIds": [
+        "lts-saturday-second-weekend",
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "wrong-side-of-the-pillar",
+        "pass-here",
+        "current",
+        "bridge-pillar-3",
+        "river-turn-10"
+      ],
+      "markerIds": [
         "weeds-2",
         "river-turn-9",
         "bridge-pillar-2",
@@ -1576,19 +1593,69 @@
         "current",
         "weeds-5",
         "bridge-pillar-3",
+        "river-turn-10",
         "weeds-10",
         "weeds-6",
         "weeds-7"
       ],
       "lineIds": [
         "lts-saturday-second-weekend"
+      ],
+      "gateNotes": [
+        {
+          "lineId": "lts-saturday-second-weekend",
+          "note": "Second-weekend gate. It affects the outbound bridge approach near 2244 m and the return side near 5483 m."
+        }
       ]
     },
     {
-      "id": "full-technical",
-      "name": "Full Technical Route",
-      "summary": "Step through the sharper turns, fallen trees, end point, break area, and return-side hazards.",
-      "stopIds": [
+      "id": "sunday-full-route",
+      "name": "Sunday Full Route Map",
+      "summary": "Use this map for the unrestricted Sunday route rehearsal. LTS progression gates are hidden, while permanent safety boundaries and full-route decision points remain visible.",
+      "keyPlaceIds": [
+        "launch",
+        "downstream",
+        "river-turn-5",
+        "no-rowing-beyond-this-point",
+        "island-weeds",
+        "river-turn-7",
+        "river-turn-9",
+        "bridge-pillar-2",
+        "correct-your-angle",
+        "pass-here",
+        "sharp-turn",
+        "end-point",
+        "good-place-for-a-break",
+        "fallen-trees-corner",
+        "current",
+        "bridge-pillar-3",
+        "stay-on-your-side-of-the-corner",
+        "river-turn-8",
+        "docking"
+      ],
+      "markerIds": [
+        "launch",
+        "downstream",
+        "fallen-tree-3",
+        "river-turn-5",
+        "river-turn-3",
+        "river-turn-4",
+        "island-weeds",
+        "river-turn-6",
+        "weeds-9",
+        "fallen-tree-2",
+        "fallen-trees",
+        "river-turn-7",
+        "fallen-trees-2",
+        "weeds-2",
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "wrong-side-of-the-pillar",
+        "pass-here",
+        "bridge-pillar",
+        "weeds-3",
         "sharp-turn",
         "tree-branch",
         "river-turn",
@@ -1614,10 +1681,22 @@
         "stay-on-your-side-of-the-corner",
         "weeds",
         "weeds-8",
-        "river-turn-8"
+        "river-turn-8",
+        "docking"
       ],
       "lineIds": [
+        "no-rowing-beyond-this-point",
         "end-point"
+      ],
+      "gateNotes": [
+        {
+          "lineId": "no-rowing-beyond-this-point",
+          "note": "Permanent no-row danger boundary near Argo. It remains visible on every map where that area matters."
+        },
+        {
+          "lineId": "end-point",
+          "note": "Full-route turn point near Tail Bridge. It affects the route near 3824 m."
+        }
       ]
     }
   ],
@@ -1627,8 +1706,8 @@
       "title": "Launch",
       "category": "dock",
       "geometry": "Point",
-      "description": "",
-      "action": "Launch cleanly, orient yourself, and establish the correct traffic side before building pressure.",
+      "description": "Start of the route at the AARC dock.",
+      "action": "Launch cleanly, check traffic, and settle onto the correct side before adding pressure.",
       "distanceMeters": 0.0,
       "offsetMeters": 0.0,
       "coordinates": [
@@ -1644,8 +1723,8 @@
           "projectionErrorMeters": 0.0
         }
       ],
-      "sectionIds": [
-        "dock-basics"
+      "routePositions": [
+        0.0
       ]
     },
     {
@@ -1653,8 +1732,8 @@
       "title": "Downstream",
       "category": "direction",
       "geometry": "Point",
-      "description": "",
-      "action": "Use this as an orientation cue for the downstream direction from the dock.",
+      "description": "Orientation cue for the downstream direction from the dock.",
+      "action": "Use this cue to orient yourself before rowing away from the dock.",
       "distanceMeters": 94.7,
       "offsetMeters": -5.5,
       "coordinates": [
@@ -1670,8 +1749,8 @@
           "projectionErrorMeters": 5.5
         }
       ],
-      "sectionIds": [
-        "dock-basics"
+      "routePositions": [
+        94.7
       ]
     },
     {
@@ -1679,8 +1758,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazard near the rowing line.",
+      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
       "distanceMeters": 176.2,
       "offsetMeters": 7.3,
       "coordinates": [
@@ -1696,8 +1775,8 @@
           "projectionErrorMeters": 7.3
         }
       ],
-      "sectionIds": [
-        "dock-basics"
+      "routePositions": [
+        176.2
       ]
     },
     {
@@ -1705,8 +1784,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Cross",
-      "action": "Stop, Turn, Check, Cross.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 251.7,
       "offsetMeters": 11.0,
       "coordinates": [
@@ -1722,28 +1801,27 @@
           "projectionErrorMeters": 11.0
         }
       ],
+      "routePositions": [
+        251.7
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "river-turn-3",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Cross",
-      "action": "Stop, Turn, Check, Cross.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 557.4,
       "offsetMeters": 3.1,
       "coordinates": [
@@ -1759,28 +1837,27 @@
           "projectionErrorMeters": 3.1
         }
       ],
+      "routePositions": [
+        557.4
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "river-turn-4",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Continue Upstream",
-      "action": "Stop, Turn, Check, Continue Upstream.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 632.5,
       "offsetMeters": 2.2,
       "coordinates": [
@@ -1796,28 +1873,27 @@
           "projectionErrorMeters": 2.2
         }
       ],
+      "routePositions": [
+        632.5
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "island-weeds",
       "title": "Island + Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Island and weed area where oars can catch if you crowd the edge.",
+      "action": "Give the island and weed edge room while still staying in the traffic pattern.",
       "distanceMeters": 809.1,
       "offsetMeters": 4.8,
       "coordinates": [
@@ -1833,9 +1909,8 @@
           "projectionErrorMeters": 4.8
         }
       ],
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
+      "routePositions": [
+        809.1
       ]
     },
     {
@@ -1843,8 +1918,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Continue Upstream",
-      "action": "Stop, Turn, Check, Continue Upstream.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 915.6,
       "offsetMeters": 6.0,
       "coordinates": [
@@ -1860,28 +1935,27 @@
           "projectionErrorMeters": 6.0
         }
       ],
+      "routePositions": [
+        915.6
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "weeds-9",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 1020.3,
       "offsetMeters": 16.2,
       "coordinates": [
@@ -1897,18 +1971,27 @@
           "projectionErrorMeters": 16.2
         }
       ],
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+      "routePositions": [
+        1020.3
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "fallen-tree-2",
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazard near the rowing line.",
+      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
       "distanceMeters": 1265.3,
       "offsetMeters": 21.7,
       "coordinates": [
@@ -1924,8 +2007,8 @@
           "projectionErrorMeters": 21.7
         }
       ],
-      "sectionIds": [
-        "first-weekend"
+      "routePositions": [
+        1265.3
       ]
     },
     {
@@ -1933,8 +2016,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 1356.2,
       "offsetMeters": 15.7,
       "coordinates": [
@@ -1950,8 +2033,8 @@
           "projectionErrorMeters": 15.7
         }
       ],
-      "sectionIds": [
-        "first-weekend"
+      "routePositions": [
+        1356.2
       ]
     },
     {
@@ -1959,8 +2042,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Cross",
-      "action": "Stop, Turn, Check, Cross.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 1377.4,
       "offsetMeters": 6.8,
       "coordinates": [
@@ -1976,27 +2059,27 @@
           "projectionErrorMeters": 6.8
         }
       ],
+      "routePositions": [
+        1377.4
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "first-weekend"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "fallen-trees-2",
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 1437.5,
       "offsetMeters": 13.8,
       "coordinates": [
@@ -2012,8 +2095,8 @@
           "projectionErrorMeters": 13.8
         }
       ],
-      "sectionIds": [
-        "first-weekend"
+      "routePositions": [
+        1437.5
       ]
     },
     {
@@ -2021,8 +2104,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 1804.6,
       "offsetMeters": 11.6,
       "coordinates": [
@@ -2038,18 +2121,27 @@
           "projectionErrorMeters": 11.6
         }
       ],
-      "sectionIds": [
-        "first-weekend",
-        "second-weekend"
-      ]
+      "routePositions": [
+        1804.6
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "river-turn-9",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Cross",
-      "action": "Stop, Turn, Check, Cross.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 2240.9,
       "offsetMeters": 2.0,
       "coordinates": [
@@ -2065,27 +2157,27 @@
           "projectionErrorMeters": 2.0
         }
       ],
+      "routePositions": [
+        2240.9
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "second-weekend"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "bridge-pillar-2",
       "title": "Bridge Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "",
-      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "description": "Bridge-pillar decision point.",
+      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
       "distanceMeters": 2259.2,
       "offsetMeters": 8.5,
       "coordinates": [
@@ -2101,8 +2193,8 @@
           "projectionErrorMeters": 8.5
         }
       ],
-      "sectionIds": [
-        "second-weekend"
+      "routePositions": [
+        2259.2
       ]
     },
     {
@@ -2110,8 +2202,8 @@
       "title": "Tree branches",
       "category": "hazard",
       "geometry": "Point",
-      "description": "If you follow the symmetry of the bridge, be prepared for course correction otherwise you'll hit the branches",
-      "action": "If you follow the symmetry of the bridge, be prepared for course correction otherwise you'll hit the branches.",
+      "description": "Branch hazard near the bridge approach.",
+      "action": "Do not follow the bridge shape blindly; correct early so you avoid the branches.",
       "distanceMeters": 2297.1,
       "offsetMeters": -1.7,
       "coordinates": [
@@ -2127,8 +2219,8 @@
           "projectionErrorMeters": 1.7
         }
       ],
-      "sectionIds": [
-        "second-weekend"
+      "routePositions": [
+        2297.1
       ]
     },
     {
@@ -2136,8 +2228,8 @@
       "title": "Correct your angle",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Don't follow the symmetry of the bridge; look ahead and stay on your side. Easy to drift to the other side",
-      "action": "Don't follow the symmetry of the bridge; look ahead and stay on your side. Easy to drift to the other side.",
+      "description": "Angle-correction point before the bridge pulls you off line.",
+      "action": "Look ahead and correct your angle before bridge symmetry pulls you across your side.",
       "distanceMeters": 2519.5,
       "offsetMeters": 0.4,
       "coordinates": [
@@ -2153,27 +2245,27 @@
           "projectionErrorMeters": 0.4
         }
       ],
+      "routePositions": [
+        2519.5
+      ],
       "check": {
-        "question": "What should you do before this bridge/corner decision?",
+        "question": "What should you do before this bridge decision?",
         "choices": [
           "Look ahead and correct the angle before the bridge pulls you off your side.",
           "Let the bridge shape guide the boat.",
           "Move to the center and decide under the bridge."
         ],
         "answer": 0,
-        "feedback": "The map note warns not to follow bridge symmetry into the wrong side."
-      },
-      "sectionIds": [
-        "second-weekend"
-      ]
+        "feedback": "Do not let the bridge shape pull you off your side of the river."
+      }
     },
     {
       "id": "wrong-side-of-the-pillar",
       "title": "Wrong Side of the Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "",
-      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "description": "Wrong-side marker for the bridge-pillar decision.",
+      "action": "Do not use this side of the pillar. Choose the safe opening early.",
       "distanceMeters": 2595.8,
       "offsetMeters": 12.5,
       "coordinates": [
@@ -2189,27 +2281,27 @@
           "projectionErrorMeters": 12.5
         }
       ],
+      "routePositions": [
+        2595.8
+      ],
       "check": {
         "question": "What is the teaching point at this bridge marker?",
         "choices": [
-          "Do not choose the wrong side of the pillar; commit to the safe opening early.",
+          "Avoid the wrong side of the pillar and commit to the safe opening early.",
           "Follow the bridge symmetry even if it pulls you across.",
           "Wait until the last moment to decide."
         ],
         "answer": 0,
-        "feedback": "Bridge decisions need an early, settled line."
-      },
-      "sectionIds": [
-        "second-weekend"
-      ]
+        "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky."
+      }
     },
     {
       "id": "pass-here",
       "title": "Pass here",
       "category": "bridge",
       "geometry": "Point",
-      "description": "",
-      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "description": "Preferred bridge opening or passing side.",
+      "action": "Use this cue for the safe bridge opening or passing side, then settle back into the normal traffic pattern.",
       "distanceMeters": 2598.1,
       "offsetMeters": -2.8,
       "coordinates": [
@@ -2225,8 +2317,8 @@
           "projectionErrorMeters": 2.8
         }
       ],
-      "sectionIds": [
-        "second-weekend"
+      "routePositions": [
+        2598.1
       ]
     },
     {
@@ -2234,8 +2326,8 @@
       "title": "Bridge Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Stay inside",
-      "action": "Stay inside.",
+      "description": "Bridge-pillar decision point.",
+      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
       "distanceMeters": 2599.6,
       "offsetMeters": 3.9,
       "coordinates": [
@@ -2251,8 +2343,8 @@
           "projectionErrorMeters": 3.9
         }
       ],
-      "sectionIds": [
-        "second-weekend"
+      "routePositions": [
+        2599.6
       ]
     },
     {
@@ -2260,8 +2352,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 2750.0,
       "offsetMeters": 16.9,
       "coordinates": [
@@ -2277,17 +2369,27 @@
           "projectionErrorMeters": 16.9
         }
       ],
-      "sectionIds": [
-        "second-weekend"
-      ]
+      "routePositions": [
+        2750.0
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "sharp-turn",
       "title": "Sharp Turn",
       "category": "corner",
       "geometry": "Point",
-      "description": "This turn gets sharper, so focus on staying close to the shore. Don't drift to the other side!",
-      "action": "This turn gets sharper, so focus on staying close to the shore. Don't drift to the other side!.",
+      "description": "Sharper turn where it is easy to drift across the river.",
+      "action": "Set the turn early, stay on your side, and avoid drifting across the river.",
       "distanceMeters": 3542.8,
       "offsetMeters": -3.9,
       "coordinates": [
@@ -2303,6 +2405,9 @@
           "projectionErrorMeters": 3.9
         }
       ],
+      "routePositions": [
+        3542.8
+      ],
       "check": {
         "question": "What should you prioritize at this sharper turn?",
         "choices": [
@@ -2311,19 +2416,16 @@
           "Speed up so steering feels easier."
         ],
         "answer": 0,
-        "feedback": "The map note calls out the sharper turn and the need to avoid drifting across."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "This sharper turn requires early steering and a predictable line."
+      }
     },
     {
       "id": "tree-branch",
       "title": "Tree Branch",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Branch hazard near the rowing line.",
+      "action": "Correct early and leave room for the branch hazard.",
       "distanceMeters": 3620.5,
       "offsetMeters": 5.6,
       "coordinates": [
@@ -2339,8 +2441,8 @@
           "projectionErrorMeters": 5.6
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        3620.5
       ]
     },
     {
@@ -2348,8 +2450,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, turn, check, cross",
-      "action": "Stop, turn, check, cross.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 3824.0,
       "offsetMeters": 1.0,
       "coordinates": [
@@ -2365,27 +2467,27 @@
           "projectionErrorMeters": 1.0
         }
       ],
+      "routePositions": [
+        3824.0
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "river-turn-2",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Continue Downstream",
-      "action": "Stop, Turn, Check, Continue Downstream.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 3842.8,
       "offsetMeters": 0.8,
       "coordinates": [
@@ -2401,27 +2503,27 @@
           "projectionErrorMeters": 0.8
         }
       ],
+      "routePositions": [
+        3842.8
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "good-place-for-a-break",
       "title": "Good Place for a Break",
       "category": "break",
       "geometry": "Point",
-      "description": "",
-      "action": "Use this as a calm regrouping spot when directed by a coach.",
+      "description": "Good regrouping area when a coach directs the group to pause.",
+      "action": "Use this as a calm regrouping area only when directed by a coach.",
       "distanceMeters": 3872.8,
       "offsetMeters": 4.1,
       "coordinates": [
@@ -2437,8 +2539,8 @@
           "projectionErrorMeters": 4.1
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        3872.8
       ]
     },
     {
@@ -2446,8 +2548,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 3912.7,
       "offsetMeters": 7.8,
       "coordinates": [
@@ -2463,8 +2565,8 @@
           "projectionErrorMeters": 7.8
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        3912.7
       ]
     },
     {
@@ -2472,8 +2574,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 4016.5,
       "offsetMeters": 6.7,
       "coordinates": [
@@ -2489,8 +2591,8 @@
           "projectionErrorMeters": 6.7
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4016.5
       ]
     },
     {
@@ -2498,8 +2600,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 4066.5,
       "offsetMeters": 7.0,
       "coordinates": [
@@ -2515,8 +2617,8 @@
           "projectionErrorMeters": 7.0
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4066.5
       ]
     },
     {
@@ -2524,8 +2626,8 @@
       "title": "Fallen Trees / Corner",
       "category": "corner",
       "geometry": "Point",
-      "description": "",
-      "action": "Hold your side through the bend and avoid drifting across the traffic pattern.",
+      "description": "Fallen tree hazards at a corner where drift is easy.",
+      "action": "Set the corner early, hold your side, and leave room for the tree hazards.",
       "distanceMeters": 4123.0,
       "offsetMeters": 5.1,
       "coordinates": [
@@ -2541,8 +2643,8 @@
           "projectionErrorMeters": 5.1
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4123.0
       ]
     },
     {
@@ -2550,8 +2652,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazard near the rowing line.",
+      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
       "distanceMeters": 4187.4,
       "offsetMeters": 8.8,
       "coordinates": [
@@ -2567,8 +2669,8 @@
           "projectionErrorMeters": 8.8
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4187.4
       ]
     },
     {
@@ -2576,8 +2678,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazard near the rowing line.",
+      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
       "distanceMeters": 4389.6,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -2593,8 +2695,8 @@
           "projectionErrorMeters": 4.4
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4389.6
       ]
     },
     {
@@ -2602,8 +2704,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazard near the rowing line.",
+      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
       "distanceMeters": 4447.9,
       "offsetMeters": 7.9,
       "coordinates": [
@@ -2619,8 +2721,8 @@
           "projectionErrorMeters": 7.9
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4447.9
       ]
     },
     {
@@ -2628,8 +2730,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Fallen tree hazards near the rowing line.",
+      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
       "distanceMeters": 4604.3,
       "offsetMeters": 5.1,
       "coordinates": [
@@ -2645,8 +2747,8 @@
           "projectionErrorMeters": 5.1
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        4604.3
       ]
     },
     {
@@ -2654,8 +2756,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 5171.6,
       "offsetMeters": 10.1,
       "coordinates": [
@@ -2671,18 +2773,27 @@
           "projectionErrorMeters": 10.1
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5171.6
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "bridge-pillar-4",
       "title": "Bridge Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "",
-      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "description": "Bridge-pillar decision point.",
+      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
       "distanceMeters": 5248.2,
       "offsetMeters": -8.2,
       "coordinates": [
@@ -2698,9 +2809,8 @@
           "projectionErrorMeters": 8.2
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
+      "routePositions": [
+        5248.2
       ]
     },
     {
@@ -2708,8 +2818,8 @@
       "title": "Current",
       "category": "current",
       "geometry": "Point",
-      "description": "",
-      "action": "Expect drift and correct early while keeping your line predictable.",
+      "description": "Current can push the shell off line here.",
+      "action": "Expect drift here. Make small early corrections and keep your line predictable.",
       "distanceMeters": 5275.2,
       "offsetMeters": -1.6,
       "coordinates": [
@@ -2725,18 +2835,27 @@
           "projectionErrorMeters": 1.6
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5275.2
+      ],
+      "check": {
+        "question": "What changes when current pushes the shell?",
+        "choices": [
+          "Make small early corrections and keep your line predictable.",
+          "Wait until the boat has drifted, then make one large correction.",
+          "Move into the middle of the river until the current passes."
+        ],
+        "answer": 0,
+        "feedback": "Current is easier to manage with early, small steering corrections."
+      }
     },
     {
       "id": "weeds-5",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 5305.6,
       "offsetMeters": 13.9,
       "coordinates": [
@@ -2752,18 +2871,27 @@
           "projectionErrorMeters": 13.9
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5305.6
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "bridge-pillar-3",
       "title": "Bridge Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "",
-      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "description": "Bridge-pillar decision point.",
+      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
       "distanceMeters": 5464.5,
       "offsetMeters": 10.1,
       "coordinates": [
@@ -2779,9 +2907,8 @@
           "projectionErrorMeters": 10.1
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
+      "routePositions": [
+        5464.5
       ]
     },
     {
@@ -2789,8 +2916,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Continue Downstream",
-      "action": "Stop, Turn, Check, Continue Downstream.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 5485.4,
       "offsetMeters": 2.3,
       "coordinates": [
@@ -2806,27 +2933,27 @@
           "projectionErrorMeters": 2.3
         }
       ],
+      "routePositions": [
+        5485.4
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "weeds-10",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 5511.7,
       "offsetMeters": 15.7,
       "coordinates": [
@@ -2842,18 +2969,27 @@
           "projectionErrorMeters": 15.7
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5511.7
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "weeds-6",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 5572.6,
       "offsetMeters": 15.2,
       "coordinates": [
@@ -2869,18 +3005,27 @@
           "projectionErrorMeters": 15.2
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5572.6
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "weeds-7",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 5732.0,
       "offsetMeters": 22.6,
       "coordinates": [
@@ -2896,18 +3041,27 @@
           "projectionErrorMeters": 22.6
         }
       ],
-      "sectionIds": [
-        "second-weekend",
-        "full-technical"
-      ]
+      "routePositions": [
+        5732.0
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "stay-on-your-side-of-the-corner",
       "title": "Stay on your side of the corner",
       "category": "corner",
       "geometry": "Point",
-      "description": "Easy to drift to the other side",
-      "action": "Easy to drift to the other side.",
+      "description": "Corner where it is easy to drift to the other side.",
+      "action": "Hold your side through the corner; do not cut across the river.",
       "distanceMeters": 5978.8,
       "offsetMeters": -6.3,
       "coordinates": [
@@ -2923,6 +3077,9 @@
           "projectionErrorMeters": 6.3
         }
       ],
+      "routePositions": [
+        5978.8
+      ],
       "check": {
         "question": "What is the safe line through this corner?",
         "choices": [
@@ -2931,19 +3088,16 @@
           "Stop in the middle until the corner clears."
         ],
         "answer": 0,
-        "feedback": "Corners are where drift becomes easy; stay predictable."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "Corners are where drift becomes easy. Stay predictable and hold your side."
+      }
     },
     {
       "id": "weeds",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 6007.3,
       "offsetMeters": 19.5,
       "coordinates": [
@@ -2959,17 +3113,27 @@
           "projectionErrorMeters": 19.5
         }
       ],
-      "sectionIds": [
-        "full-technical"
-      ]
+      "routePositions": [
+        6007.3
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "weeds-8",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "",
-      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
+      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
       "distanceMeters": 6231.9,
       "offsetMeters": 26.5,
       "coordinates": [
@@ -2985,17 +3149,27 @@
           "projectionErrorMeters": 26.5
         }
       ],
-      "sectionIds": [
-        "full-technical"
-      ]
+      "routePositions": [
+        6231.9
+      ],
+      "check": {
+        "question": "What should you do near weeds?",
+        "choices": [
+          "Give the weeds room while staying in the traffic pattern.",
+          "Cut across the river to avoid every weed patch.",
+          "Row through them quickly so the boat does not slow down."
+        ],
+        "answer": 0,
+        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
+      }
     },
     {
       "id": "river-turn-8",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Stop, Turn, Check, Continue Downstream",
-      "action": "Stop, Turn, Check, Continue Downstream.",
+      "description": "River turns are controlled stop-turn-check maneuvers.",
+      "action": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
       "distanceMeters": 6277.7,
       "offsetMeters": 10.0,
       "coordinates": [
@@ -3011,27 +3185,27 @@
           "projectionErrorMeters": 10.0
         }
       ],
+      "routePositions": [
+        6277.7
+      ],
       "check": {
-        "question": "What is the river-turn sequence to rehearse?",
+        "question": "What is the river-turn sequence?",
         "choices": [
-          "Stop, turn, check, cross or continue as directed.",
+          "Stop, turn, check, then cross or continue as directed.",
           "Keep rowing through the turn and correct later.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
-      },
-      "sectionIds": [
-        "full-technical"
-      ]
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
+      }
     },
     {
       "id": "docking",
       "title": "Docking",
       "category": "dock",
       "geometry": "Point",
-      "description": "Slow approach at an angle, don't aim at the dock head-on.",
-      "action": "Slow approach at an angle, don't aim at the dock head-on.",
+      "description": "Docking works best as a slow angled approach, not a head-on approach.",
+      "action": "Approach slowly at an angle, make small corrections, and avoid pointing the bow straight at the dock.",
       "distanceMeters": 6491.4,
       "offsetMeters": -1.7,
       "coordinates": [
@@ -3047,19 +3221,19 @@
           "projectionErrorMeters": 1.7
         }
       ],
+      "routePositions": [
+        6491.4
+      ],
       "check": {
-        "question": "What is the safe docking idea here?",
+        "question": "What is the safest docking approach?",
         "choices": [
-          "Slow approach at an angle, then adjust gently.",
+          "Approach slowly at an angle, then make small corrections.",
           "Aim straight at the dock and stop at the last second.",
-          "Come in fast so the boat tracks straight."
+          "Come in fast so the boat keeps tracking straight."
         ],
         "answer": 0,
-        "feedback": "Docking should be slow and angled; do not aim the bow straight at the dock."
-      },
-      "sectionIds": [
-        "dock-basics"
-      ]
+        "feedback": "Docking should be slow and angled. Do not aim the bow straight at the dock."
+      }
     }
   ],
   "lines": [
@@ -3068,8 +3242,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Don't go beyond this line yet!",
-      "action": "Don't go beyond this line yet!.",
+      "description": "First-weekend practice-area gate for Learn-to-Scull.",
+      "action": "Treat this as a practice-area gate. Do not row beyond it during first-weekend practice unless a coach expands the route.",
       "distanceMeters": 265.2,
       "offsetMeters": 18.4,
       "coordinates": [
@@ -3094,6 +3268,10 @@
           "projectionErrorMeters": 18.4
         }
       ],
+      "routePositions": [
+        265.2,
+        903.9
+      ],
       "check": {
         "question": "How should a first-weekend learner use this line?",
         "choices": [
@@ -3102,20 +3280,16 @@
           "Cross it when traffic is light."
         ],
         "answer": 0,
-        "feedback": "Progression boundaries are part of the practice plan, not optional challenges."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+        "feedback": "Progression boundaries are part of the practice plan. They are not optional challenges."
+      }
     },
     {
       "id": "no-rowing-beyond-this-point",
       "title": "No rowing beyond this point",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Danger zone!",
-      "action": "Danger zone!.",
+      "description": "Hard no-row boundary. The map marks this area as dangerous.",
+      "action": "Do not row past this boundary. Turn before reaching the danger area.",
       "distanceMeters": 557.4,
       "offsetMeters": 32.9,
       "coordinates": [
@@ -3140,28 +3314,28 @@
           "projectionErrorMeters": 41.7
         }
       ],
+      "routePositions": [
+        557.4,
+        640.7
+      ],
       "check": {
         "question": "What should you do at this boundary?",
         "choices": [
-          "Treat it as a hard no-row line and turn before it.",
+          "Treat it as a hard no-row line and turn before reaching it.",
           "Continue if the water looks empty.",
           "Only stop if another shell is nearby."
         ],
         "answer": 0,
         "feedback": "The map labels this as a danger zone; turn before the line."
-      },
-      "sectionIds": [
-        "first-weekend",
-        "argo-turn"
-      ]
+      }
     },
     {
       "id": "lts-first-weekend-2",
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Don't go beyond this line yet!",
-      "action": "Don't go beyond this line yet!.",
+      "description": "First-weekend practice-area gate for Learn-to-Scull.",
+      "action": "Treat this as a practice-area gate. Do not row beyond it during first-weekend practice unless a coach expands the route.",
       "distanceMeters": 1390.8,
       "offsetMeters": 16.6,
       "coordinates": [
@@ -3186,6 +3360,10 @@
           "projectionErrorMeters": 19.6
         }
       ],
+      "routePositions": [
+        1390.8,
+        6261.9
+      ],
       "check": {
         "question": "How should a first-weekend learner use this line?",
         "choices": [
@@ -3194,19 +3372,16 @@
           "Cross it when traffic is light."
         ],
         "answer": 0,
-        "feedback": "Progression boundaries are part of the practice plan, not optional challenges."
-      },
-      "sectionIds": [
-        "first-weekend"
-      ]
+        "feedback": "Progression boundaries are part of the practice plan. They are not optional challenges."
+      }
     },
     {
       "id": "lts-saturday-second-weekend",
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Don't row beyond this line yet.",
-      "action": "Don't row beyond this line yet.",
+      "description": "Second-weekend practice-area gate for Learn-to-Scull.",
+      "action": "Treat this as the second-weekend route limit and turn before crossing the line.",
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -3231,6 +3406,10 @@
           "projectionErrorMeters": 5.3
         }
       ],
+      "routePositions": [
+        2243.9,
+        5482.6
+      ],
       "check": {
         "question": "What does this second-weekend line mean?",
         "choices": [
@@ -3239,19 +3418,16 @@
           "Stop on the line and wait for other shells."
         ],
         "answer": 0,
-        "feedback": "Use it as a route limit and keep the turn area clear."
-      },
-      "sectionIds": [
-        "second-weekend"
-      ]
+        "feedback": "Use it as a route limit, and keep the turn area clear for other boats."
+      }
     },
     {
       "id": "end-point",
       "title": "End Point",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Turn before the Tail Bridge",
-      "action": "Turn before the Tail Bridge.",
+      "description": "Full-route turn point before Tail Bridge.",
+      "action": "Turn before Tail Bridge and keep the turning area clear for the next boat.",
       "distanceMeters": 3824.2,
       "offsetMeters": 6.8,
       "coordinates": [
@@ -3276,8 +3452,9 @@
           "projectionErrorMeters": 9.0
         }
       ],
-      "sectionIds": [
-        "full-technical"
+      "routePositions": [
+        3824.2,
+        3842.2
       ]
     }
   ]
