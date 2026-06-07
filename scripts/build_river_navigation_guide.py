@@ -24,7 +24,7 @@ MAP_DEFS = [
     {
         "id": "first-weekend",
         "name": "First Weekend Map",
-        "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river turns, the first-weekend gates, the no-row danger boundary, island/weeds, and docking.",
+        "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river-turn cues, nearby weeds and trees, and docking. The LTS gates stay visible as coach boundary context.",
         "lineIds": [
             "lts-first-weekend",
             "no-rowing-beyond-this-point",
@@ -51,14 +51,11 @@ MAP_DEFS = [
         "keyPlaceIds": [
             "launch",
             "downstream",
-            "lts-first-weekend",
             "river-turn-5",
-            "no-rowing-beyond-this-point",
             "river-turn-3",
             "river-turn-4",
             "island-weeds",
             "river-turn-6",
-            "lts-first-weekend-2",
             "river-turn-7",
             "river-turn-8",
             "docking",
@@ -81,7 +78,7 @@ MAP_DEFS = [
     {
         "id": "saturday-second-weekend",
         "name": "Saturday Second Weekend Map",
-        "summary": "Use this map for the Saturday bridge introduction: the second-weekend gate, current, bridge-pillar decisions, angle correction, nearby weeds, and the return-side effect of the same gate.",
+        "summary": "Use this map for the Saturday bridge introduction: river turns near the bridge, current, bridge-pillar choices, angle correction, and nearby weeds. The LTS gate stays visible as coach boundary context.",
         "lineIds": [
             "lts-saturday-second-weekend",
         ],
@@ -106,7 +103,6 @@ MAP_DEFS = [
             "weeds-7",
         ],
         "keyPlaceIds": [
-            "lts-saturday-second-weekend",
             "river-turn-9",
             "bridge-pillar-2",
             "tree-branches",
@@ -127,7 +123,7 @@ MAP_DEFS = [
     {
         "id": "sunday-full-route",
         "name": "Sunday Full Route Map",
-        "summary": "Use this map for the unrestricted Sunday route rehearsal. LTS progression gates are hidden, while permanent safety boundaries and full-route decision points remain visible.",
+        "summary": "Use this map for the Sunday full-route rehearsal: river turns, bridge decisions, hazards, current, regrouping, and docking. LTS progression gates are hidden.",
         "lineIds": [
             "no-rowing-beyond-this-point",
             "end-point",
@@ -137,7 +133,6 @@ MAP_DEFS = [
             "launch",
             "downstream",
             "river-turn-5",
-            "no-rowing-beyond-this-point",
             "island-weeds",
             "river-turn-7",
             "river-turn-9",
@@ -145,7 +140,8 @@ MAP_DEFS = [
             "correct-your-angle",
             "pass-here",
             "sharp-turn",
-            "end-point",
+            "river-turn",
+            "river-turn-2",
             "good-place-for-a-break",
             "fallen-trees-corner",
             "current",
@@ -198,26 +194,6 @@ CHECKS = {
         ],
         "answer": 0,
         "feedback": "The map labels this as a danger zone; turn before the line.",
-    },
-    "LTS First Weekend": {
-        "question": "How should a first-weekend learner use this line?",
-        "choices": [
-            "Do not row beyond it until coaches expand the route.",
-            "Use it only as a suggestion if you feel comfortable.",
-            "Cross it when traffic is light.",
-        ],
-        "answer": 0,
-        "feedback": "Progression boundaries are part of the practice plan. They are not optional challenges.",
-    },
-    "LTS Saturday Second Weekend": {
-        "question": "What does this second-weekend line mean?",
-        "choices": [
-            "Do not row beyond it yet; turn before the line.",
-            "Sprint through it before traffic arrives.",
-            "Stop on the line and wait for other shells.",
-        ],
-        "answer": 0,
-        "feedback": "Use it as a route limit, and keep the turn area clear for other boats.",
     },
     "Wrong Side of the Pillar": {
         "question": "What is the teaching point at this bridge marker?",
@@ -287,8 +263,8 @@ DESCRIPTION_OVERRIDES = {
     "Downstream": "Orientation cue for the downstream direction from the dock.",
     "Docking": "Docking works best as a slow angled approach, not a head-on approach.",
     "River Turn": "River turns are controlled stop-turn-check maneuvers.",
-    "LTS First Weekend": "First-weekend practice-area gate for Learn-to-Scull.",
-    "LTS Saturday Second Weekend": "Second-weekend practice-area gate for Learn-to-Scull.",
+    "LTS First Weekend": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
+    "LTS Saturday Second Weekend": "Coach progression boundary for the Saturday bridge introduction. Use nearby river turns and bridge markers as practical cues.",
     "No rowing beyond this point": "Hard no-row boundary. The map marks this area as dangerous.",
     "End Point": "Full-route turn point before Tail Bridge.",
     "Island + Weeds": "Island and weed area where oars can catch if you crowd the edge.",
@@ -314,8 +290,8 @@ ACTION_OVERRIDES = {
     "Downstream": "Use this cue to orient yourself before rowing away from the dock.",
     "Docking": "Approach slowly at an angle, make small corrections, and avoid pointing the bow straight at the dock.",
     "River Turn": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
-    "LTS First Weekend": "Treat this as a practice-area gate. Do not row beyond it during first-weekend practice unless a coach expands the route.",
-    "LTS Saturday Second Weekend": "Treat this as the second-weekend route limit and turn before crossing the line.",
+    "LTS First Weekend": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
+    "LTS Saturday Second Weekend": "Use this as coach context only. Turn or continue based on coach direction and the nearby river-turn and bridge markers.",
     "No rowing beyond this point": "Do not row past this boundary. Turn before reaching the danger area.",
     "End Point": "Turn before Tail Bridge and keep the turning area clear for the next boat.",
     "Island + Weeds": "Give the island and weed edge room while still staying in the traffic pattern.",

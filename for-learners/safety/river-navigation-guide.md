@@ -17,7 +17,7 @@ nav_exclude: true
     <div>
       <p class="river-tour-eyebrow">AARC Learn-to-Scull</p>
       <h1><i class="fas fa-water"></i> AARC River Navigation Guide</h1>
-      <p class="lead">Review the real river route by training progression: first-weekend limits, the Saturday bridge introduction, and the Sunday full-route rehearsal.</p>
+      <p class="lead">Review the real river route by the places you need to recognize on the water: launch, river turns, bridge decisions, hazards, current, and docking.</p>
     </div>
   </section>
 
@@ -25,8 +25,8 @@ nav_exclude: true
     <div class="river-tour-app__header">
       <div>
         <p class="river-tour-eyebrow">Progressive river maps</p>
-        <h2>Match the map to the session</h2>
-        <p>Each map keeps the satellite view, actual route markers, and coach progression boundaries together so the local decisions stay grounded in the real river.</p>
+        <h2>Start with the turn cues</h2>
+        <p>Each map keeps the satellite view and actual route markers together. The walkthrough focuses on river turns and local decisions; LTS boundary lines stay visible as coach context.</p>
       </div>
       <div class="river-tour-progress" aria-live="polite">
         <span data-progress-count>Loading map...</span>
@@ -58,7 +58,7 @@ nav_exclude: true
             <span data-current-distance></span>
           </div>
           <h3 data-current-title>Select a place</h3>
-          <p data-current-description>Select a mapped place to review the local rule, gate, or hazard.</p>
+          <p data-current-description>Select a mapped place to review the local turn cue, rule, or hazard.</p>
 
           <div class="river-tour-action">
             <span>On-water action</span>
@@ -96,7 +96,7 @@ nav_exclude: true
   <section class="river-tour-notes">
     <article>
       <h2>LTS Progression</h2>
-      <p>First Weekend and Saturday Second Weekend maps show coach progression gates. The Sunday Full Route map hides those LTS gates but keeps permanent safety boundaries.</p>
+      <p>First Weekend and Saturday Second Weekend maps keep LTS gates visible as thin coach boundary lines. They are not part of the main walkthrough; use the nearby river-turn markers as the practical action cues.</p>
     </article>
     <article>
       <h2>Map source</h2>

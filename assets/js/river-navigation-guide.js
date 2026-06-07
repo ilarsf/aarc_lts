@@ -219,9 +219,9 @@
       const polyline = L.polyline(latLngs, {
         className: lineClass(line, state),
         color: line.id === state.selectedId ? '#101820' : lineColor(line),
-        weight: line.id === state.selectedId ? 7 : 5,
-        opacity: 0.96,
-        dashArray: line.id === 'end-point' ? '4 6' : '12 8'
+        weight: lineWeight(line, state),
+        opacity: lineOpacity(line, state),
+        dashArray: lineDash(line)
       }).addTo(state.itemLayer);
       polyline.bindTooltip(tooltipText(line, state), { sticky: true });
       polyline.on('click', function () {
@@ -289,7 +289,9 @@
     const item = getSelectedItem(state);
     if (!item) return;
     const isKey = isKeyPlace(state, item.id);
-    ui.category.textContent = isKey ? state.course.categories[item.category] || item.category : 'Additional map marker';
+    ui.category.textContent = isPracticeGate(item)
+      ? 'Coach boundary context'
+      : isKey ? state.course.categories[item.category] || item.category : 'Additional map marker';
     ui.distance.textContent = formatRoutePositions(item);
     ui.title.textContent = item.title;
     ui.description.textContent = item.description || 'Local marker from the AARC river traffic map.';
@@ -456,6 +458,7 @@
     return [
       'river-tour-leaflet-line',
       'river-tour-leaflet-line--' + item.category,
+      isPracticeGate(item) ? 'is-practice-gate' : '',
       item.id === state.selectedId ? 'is-selected' : '',
       state.viewed.has(item.id) ? 'is-viewed' : '',
       state.coachQuestions.has(item.id) ? 'ask-coach' : ''
@@ -481,11 +484,34 @@
   function lineColor(item) {
     if (item.id === 'no-rowing-beyond-this-point') return '#d0272f';
     if (item.id === 'end-point') return '#6a3db5';
+    if (isPracticeGate(item)) return '#f0c64b';
     return '#e0a51f';
   }
 
+  function lineWeight(item, state) {
+    if (item.id === state.selectedId) return isPracticeGate(item) ? 5 : 7;
+    return isPracticeGate(item) ? 3 : 5;
+  }
+
+  function lineOpacity(item, state) {
+    if (item.id === state.selectedId) return 0.95;
+    return isPracticeGate(item) ? 0.72 : 0.96;
+  }
+
+  function lineDash(item) {
+    if (isPracticeGate(item)) return '4 10';
+    if (item.id === 'end-point') return '4 6';
+    return '12 8';
+  }
+
+  function isPracticeGate(item) {
+    return item && item.id && item.id.indexOf('lts-') === 0;
+  }
+
   function tooltipText(item, state) {
-    const status = isKeyPlace(state, item.id) ? 'Key place' : 'Additional marker';
+    const status = isPracticeGate(item)
+      ? 'Coach boundary context'
+      : isKeyPlace(state, item.id) ? 'Key place' : 'Additional marker';
     return item.title + ' - ' + status;
   }
 

@@ -1508,18 +1508,15 @@
     {
       "id": "first-weekend",
       "name": "First Weekend Map",
-      "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river turns, the first-weekend gates, the no-row danger boundary, island/weeds, and docking.",
+      "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river-turn cues, nearby weeds and trees, and docking. The LTS gates stay visible as coach boundary context.",
       "keyPlaceIds": [
         "launch",
         "downstream",
-        "lts-first-weekend",
         "river-turn-5",
-        "no-rowing-beyond-this-point",
         "river-turn-3",
         "river-turn-4",
         "island-weeds",
         "river-turn-6",
-        "lts-first-weekend-2",
         "river-turn-7",
         "river-turn-8",
         "docking"
@@ -1565,9 +1562,8 @@
     {
       "id": "saturday-second-weekend",
       "name": "Saturday Second Weekend Map",
-      "summary": "Use this map for the Saturday bridge introduction: the second-weekend gate, current, bridge-pillar decisions, angle correction, nearby weeds, and the return-side effect of the same gate.",
+      "summary": "Use this map for the Saturday bridge introduction: river turns near the bridge, current, bridge-pillar choices, angle correction, and nearby weeds. The LTS gate stays visible as coach boundary context.",
       "keyPlaceIds": [
-        "lts-saturday-second-weekend",
         "river-turn-9",
         "bridge-pillar-2",
         "tree-branches",
@@ -1611,12 +1607,11 @@
     {
       "id": "sunday-full-route",
       "name": "Sunday Full Route Map",
-      "summary": "Use this map for the unrestricted Sunday route rehearsal. LTS progression gates are hidden, while permanent safety boundaries and full-route decision points remain visible.",
+      "summary": "Use this map for the Sunday full-route rehearsal: river turns, bridge decisions, hazards, current, regrouping, and docking. LTS progression gates are hidden.",
       "keyPlaceIds": [
         "launch",
         "downstream",
         "river-turn-5",
-        "no-rowing-beyond-this-point",
         "island-weeds",
         "river-turn-7",
         "river-turn-9",
@@ -1624,7 +1619,8 @@
         "correct-your-angle",
         "pass-here",
         "sharp-turn",
-        "end-point",
+        "river-turn",
+        "river-turn-2",
         "good-place-for-a-break",
         "fallen-trees-corner",
         "current",
@@ -3242,8 +3238,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "First-weekend practice-area gate for Learn-to-Scull.",
-      "action": "Treat this as a practice-area gate. Do not row beyond it during first-weekend practice unless a coach expands the route.",
+      "description": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
+      "action": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
       "distanceMeters": 265.2,
       "offsetMeters": 18.4,
       "coordinates": [
@@ -3271,17 +3267,7 @@
       "routePositions": [
         265.2,
         903.9
-      ],
-      "check": {
-        "question": "How should a first-weekend learner use this line?",
-        "choices": [
-          "Do not row beyond it until coaches expand the route.",
-          "Use it only as a suggestion if you feel comfortable.",
-          "Cross it when traffic is light."
-        ],
-        "answer": 0,
-        "feedback": "Progression boundaries are part of the practice plan. They are not optional challenges."
-      }
+      ]
     },
     {
       "id": "no-rowing-beyond-this-point",
@@ -3334,8 +3320,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "First-weekend practice-area gate for Learn-to-Scull.",
-      "action": "Treat this as a practice-area gate. Do not row beyond it during first-weekend practice unless a coach expands the route.",
+      "description": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
+      "action": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
       "distanceMeters": 1390.8,
       "offsetMeters": 16.6,
       "coordinates": [
@@ -3363,25 +3349,15 @@
       "routePositions": [
         1390.8,
         6261.9
-      ],
-      "check": {
-        "question": "How should a first-weekend learner use this line?",
-        "choices": [
-          "Do not row beyond it until coaches expand the route.",
-          "Use it only as a suggestion if you feel comfortable.",
-          "Cross it when traffic is light."
-        ],
-        "answer": 0,
-        "feedback": "Progression boundaries are part of the practice plan. They are not optional challenges."
-      }
+      ]
     },
     {
       "id": "lts-saturday-second-weekend",
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Second-weekend practice-area gate for Learn-to-Scull.",
-      "action": "Treat this as the second-weekend route limit and turn before crossing the line.",
+      "description": "Coach progression boundary for the Saturday bridge introduction. Use nearby river turns and bridge markers as practical cues.",
+      "action": "Use this as coach context only. Turn or continue based on coach direction and the nearby river-turn and bridge markers.",
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -3409,17 +3385,7 @@
       "routePositions": [
         2243.9,
         5482.6
-      ],
-      "check": {
-        "question": "What does this second-weekend line mean?",
-        "choices": [
-          "Do not row beyond it yet; turn before the line.",
-          "Sprint through it before traffic arrives.",
-          "Stop on the line and wait for other shells."
-        ],
-        "answer": 0,
-        "feedback": "Use it as a route limit, and keep the turn area clear for other boats."
-      }
+      ]
     },
     {
       "id": "end-point",
