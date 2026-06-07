@@ -1,365 +1,3283 @@
 {
-  "version": 2,
-  "name": "AARC River Rules Rally Route Trainer",
-  "note": "Distances and geometry are coaching-oriented approximations for training, not navigation authority.",
-  "packs": [
+  "version": 3,
+  "name": "AARC River Rules Rally Guided Map Tour",
+  "source": {
+    "name": "Rowing Traffic on the Huron River",
+    "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1TqDNEvBmUQ8M4lU-NvyYAd9pCoG6agY&usp=sharing",
+    "processedFrom": "aarc-river-map.kml",
+    "note": "Generated from Google My Maps KML. Distances are training approximations, not navigation authority."
+  },
+  "route": {
+    "name": "Full Round / 6.5 km",
+    "description": "Dock to Argo Dam to Barton Dam to Dock",
+    "lengthMeters": 6491.4,
+    "coordinates": [
+      {
+        "lon": -83.7440914,
+        "lat": 42.2958217
+      },
+      {
+        "lon": -83.74466,
+        "lat": 42.2951591
+      },
+      {
+        "lon": -83.7450355,
+        "lat": 42.2944567
+      },
+      {
+        "lon": -83.7454271,
+        "lat": 42.2934885
+      },
+      {
+        "lon": -83.7458133,
+        "lat": 42.2927425
+      },
+      {
+        "lon": -83.7460923,
+        "lat": 42.2920838
+      },
+      {
+        "lon": -83.7462425,
+        "lat": 42.2917227
+      },
+      {
+        "lon": -83.7462787,
+        "lat": 42.2914608
+      },
+      {
+        "lon": -83.7463028,
+        "lat": 42.2911037
+      },
+      {
+        "lon": -83.7453936,
+        "lat": 42.2911512
+      },
+      {
+        "lon": -83.7451146,
+        "lat": 42.2918973
+      },
+      {
+        "lon": -83.7450261,
+        "lat": 42.2923854
+      },
+      {
+        "lon": -83.7449135,
+        "lat": 42.2929488
+      },
+      {
+        "lon": -83.7446238,
+        "lat": 42.2935292
+      },
+      {
+        "lon": -83.7443368,
+        "lat": 42.2941621
+      },
+      {
+        "lon": -83.7439988,
+        "lat": 42.294799
+      },
+      {
+        "lon": -83.7437574,
+        "lat": 42.2951759
+      },
+      {
+        "lon": -83.7433095,
+        "lat": 42.2955529
+      },
+      {
+        "lon": -83.7429259,
+        "lat": 42.2958663
+      },
+      {
+        "lon": -83.7424163,
+        "lat": 42.2963485
+      },
+      {
+        "lon": -83.7418182,
+        "lat": 42.2968365
+      },
+      {
+        "lon": -83.7413166,
+        "lat": 42.2972829
+      },
+      {
+        "lon": -83.7409223,
+        "lat": 42.2976936
+      },
+      {
+        "lon": -83.7405119,
+        "lat": 42.2981241
+      },
+      {
+        "lon": -83.7404342,
+        "lat": 42.2982867
+      },
+      {
+        "lon": -83.7403805,
+        "lat": 42.2985248
+      },
+      {
+        "lon": -83.7402706,
+        "lat": 42.298999
+      },
+      {
+        "lon": -83.7401955,
+        "lat": 42.2993779
+      },
+      {
+        "lon": -83.7403698,
+        "lat": 42.2998361
+      },
+      {
+        "lon": -83.7406568,
+        "lat": 42.3002032
+      },
+      {
+        "lon": -83.741212,
+        "lat": 42.3009233
+      },
+      {
+        "lon": -83.7415661,
+        "lat": 42.3013895
+      },
+      {
+        "lon": -83.7420167,
+        "lat": 42.3017426
+      },
+      {
+        "lon": -83.7425692,
+        "lat": 42.3021513
+      },
+      {
+        "lon": -83.7432934,
+        "lat": 42.3025718
+      },
+      {
+        "lon": -83.7442107,
+        "lat": 42.3028654
+      },
+      {
+        "lon": -83.7447847,
+        "lat": 42.3029924
+      },
+      {
+        "lon": -83.7454311,
+        "lat": 42.303159
+      },
+      {
+        "lon": -83.7458254,
+        "lat": 42.3032463
+      },
+      {
+        "lon": -83.7462599,
+        "lat": 42.3032761
+      },
+      {
+        "lon": -83.7468795,
+        "lat": 42.3032939
+      },
+      {
+        "lon": -83.7472953,
+        "lat": 42.3032919
+      },
+      {
+        "lon": -83.7475045,
+        "lat": 42.3032602
+      },
+      {
+        "lon": -83.7480597,
+        "lat": 42.3030102
+      },
+      {
+        "lon": -83.7486685,
+        "lat": 42.3029249
+      },
+      {
+        "lon": -83.7489783,
+        "lat": 42.3028505
+      },
+      {
+        "lon": -83.7494209,
+        "lat": 42.3027643
+      },
+      {
+        "lon": -83.7499359,
+        "lat": 42.302674
+      },
+      {
+        "lon": -83.7506681,
+        "lat": 42.3024062
+      },
+      {
+        "lon": -83.7515238,
+        "lat": 42.3021265
+      },
+      {
+        "lon": -83.7524438,
+        "lat": 42.3019142
+      },
+      {
+        "lon": -83.7529668,
+        "lat": 42.3018279
+      },
+      {
+        "lon": -83.7536038,
+        "lat": 42.3018239
+      },
+      {
+        "lon": -83.7540772,
+        "lat": 42.3018587
+      },
+      {
+        "lon": -83.7544688,
+        "lat": 42.3019598
+      },
+      {
+        "lon": -83.7548054,
+        "lat": 42.3021394
+      },
+      {
+        "lon": -83.7550844,
+        "lat": 42.302306
+      },
+      {
+        "lon": -83.7553955,
+        "lat": 42.3025252
+      },
+      {
+        "lon": -83.755645,
+        "lat": 42.3027256
+      },
+      {
+        "lon": -83.7559575,
+        "lat": 42.3031154
+      },
+      {
+        "lon": -83.7561948,
+        "lat": 42.3034308
+      },
+      {
+        "lon": -83.7564402,
+        "lat": 42.3039178
+      },
+      {
+        "lon": -83.7566971,
+        "lat": 42.3044241
+      },
+      {
+        "lon": -83.7567789,
+        "lat": 42.3046334
+      },
+      {
+        "lon": -83.757035,
+        "lat": 42.3049429
+      },
+      {
+        "lon": -83.7572416,
+        "lat": 42.3051998
+      },
+      {
+        "lon": -83.7573877,
+        "lat": 42.3054358
+      },
+      {
+        "lon": -83.7574159,
+        "lat": 42.3055905
+      },
+      {
+        "lon": -83.7574079,
+        "lat": 42.3057125
+      },
+      {
+        "lon": -83.7573582,
+        "lat": 42.3058742
+      },
+      {
+        "lon": -83.7572939,
+        "lat": 42.3060359
+      },
+      {
+        "lon": -83.7572241,
+        "lat": 42.3061569
+      },
+      {
+        "lon": -83.7571007,
+        "lat": 42.3062908
+      },
+      {
+        "lon": -83.7569049,
+        "lat": 42.30651
+      },
+      {
+        "lon": -83.7566434,
+        "lat": 42.3067262
+      },
+      {
+        "lon": -83.7564356,
+        "lat": 42.306876
+      },
+      {
+        "lon": -83.7561459,
+        "lat": 42.3070713
+      },
+      {
+        "lon": -83.7559085,
+        "lat": 42.3072003
+      },
+      {
+        "lon": -83.755702,
+        "lat": 42.3072995
+      },
+      {
+        "lon": -83.7555303,
+        "lat": 42.3073887
+      },
+      {
+        "lon": -83.7554378,
+        "lat": 42.3074363
+      },
+      {
+        "lon": -83.7555558,
+        "lat": 42.3075732
+      },
+      {
+        "lon": -83.7558575,
+        "lat": 42.3075147
+      },
+      {
+        "lon": -83.7560185,
+        "lat": 42.3074393
+      },
+      {
+        "lon": -83.756288,
+        "lat": 42.3072796
+      },
+      {
+        "lon": -83.7566971,
+        "lat": 42.3070555
+      },
+      {
+        "lon": -83.7571758,
+        "lat": 42.3067242
+      },
+      {
+        "lon": -83.7573716,
+        "lat": 42.3064485
+      },
+      {
+        "lon": -83.757546,
+        "lat": 42.3061837
+      },
+      {
+        "lon": -83.7576412,
+        "lat": 42.3059655
+      },
+      {
+        "lon": -83.75766,
+        "lat": 42.3058345
+      },
+      {
+        "lon": -83.7576372,
+        "lat": 42.3056342
+      },
+      {
+        "lon": -83.7575996,
+        "lat": 42.3054051
+      },
+      {
+        "lon": -83.7574856,
+        "lat": 42.3051641
+      },
+      {
+        "lon": -83.7572107,
+        "lat": 42.3047822
+      },
+      {
+        "lon": -83.7570149,
+        "lat": 42.3044569
+      },
+      {
+        "lon": -83.7568231,
+        "lat": 42.3040611
+      },
+      {
+        "lon": -83.7566823,
+        "lat": 42.3037715
+      },
+      {
+        "lon": -83.7564892,
+        "lat": 42.3035146
+      },
+      {
+        "lon": -83.7563792,
+        "lat": 42.3033301
+      },
+      {
+        "lon": -83.7562344,
+        "lat": 42.3030226
+      },
+      {
+        "lon": -83.7561097,
+        "lat": 42.3027985
+      },
+      {
+        "lon": -83.7558441,
+        "lat": 42.3024959
+      },
+      {
+        "lon": -83.7554861,
+        "lat": 42.3021835
+      },
+      {
+        "lon": -83.7552058,
+        "lat": 42.301999
+      },
+      {
+        "lon": -83.7548772,
+        "lat": 42.3018532
+      },
+      {
+        "lon": -83.7544883,
+        "lat": 42.3017391
+      },
+      {
+        "lon": -83.7540417,
+        "lat": 42.3016618
+      },
+      {
+        "lon": -83.7535669,
+        "lat": 42.3016171
+      },
+      {
+        "lon": -83.7531874,
+        "lat": 42.3015933
+      },
+      {
+        "lon": -83.7528199,
+        "lat": 42.3016092
+      },
+      {
+        "lon": -83.7523465,
+        "lat": 42.3016687
+      },
+      {
+        "lon": -83.7519147,
+        "lat": 42.301752
+      },
+      {
+        "lon": -83.7515915,
+        "lat": 42.3018274
+      },
+      {
+        "lon": -83.7512146,
+        "lat": 42.3019385
+      },
+      {
+        "lon": -83.7508311,
+        "lat": 42.3020516
+      },
+      {
+        "lon": -83.7504381,
+        "lat": 42.3022053
+      },
+      {
+        "lon": -83.7499486,
+        "lat": 42.3023452
+      },
+      {
+        "lon": -83.7496643,
+        "lat": 42.3024255
+      },
+      {
+        "lon": -83.749329,
+        "lat": 42.3025356
+      },
+      {
+        "lon": -83.7491037,
+        "lat": 42.3026447
+      },
+      {
+        "lon": -83.7488208,
+        "lat": 42.3027499
+      },
+      {
+        "lon": -83.748629,
+        "lat": 42.3028044
+      },
+      {
+        "lon": -83.7483366,
+        "lat": 42.3028342
+      },
+      {
+        "lon": -83.7481395,
+        "lat": 42.3028629
+      },
+      {
+        "lon": -83.7479383,
+        "lat": 42.3029046
+      },
+      {
+        "lon": -83.7477734,
+        "lat": 42.3029641
+      },
+      {
+        "lon": -83.7475145,
+        "lat": 42.3030534
+      },
+      {
+        "lon": -83.7472865,
+        "lat": 42.303098
+      },
+      {
+        "lon": -83.7470492,
+        "lat": 42.3031377
+      },
+      {
+        "lon": -83.7468587,
+        "lat": 42.3031615
+      },
+      {
+        "lon": -83.7466549,
+        "lat": 42.3031585
+      },
+      {
+        "lon": -83.7462888,
+        "lat": 42.3031486
+      },
+      {
+        "lon": -83.7459937,
+        "lat": 42.303095
+      },
+      {
+        "lon": -83.7455887,
+        "lat": 42.3030078
+      },
+      {
+        "lon": -83.7450898,
+        "lat": 42.3028917
+      },
+      {
+        "lon": -83.7447706,
+        "lat": 42.3027558
+      },
+      {
+        "lon": -83.7442744,
+        "lat": 42.3025793
+      },
+      {
+        "lon": -83.7438225,
+        "lat": 42.3023938
+      },
+      {
+        "lon": -83.7432914,
+        "lat": 42.3022043
+      },
+      {
+        "lon": -83.7429212,
+        "lat": 42.3020476
+      },
+      {
+        "lon": -83.7426959,
+        "lat": 42.301875
+      },
+      {
+        "lon": -83.7423419,
+        "lat": 42.3016142
+      },
+      {
+        "lon": -83.7420857,
+        "lat": 42.30139
+      },
+      {
+        "lon": -83.7417263,
+        "lat": 42.3009526
+      },
+      {
+        "lon": -83.7414594,
+        "lat": 42.3006252
+      },
+      {
+        "lon": -83.741147,
+        "lat": 42.3000955
+      },
+      {
+        "lon": -83.7409833,
+        "lat": 42.2998158
+      },
+      {
+        "lon": -83.7408439,
+        "lat": 42.2995381
+      },
+      {
+        "lon": -83.7407889,
+        "lat": 42.2992455
+      },
+      {
+        "lon": -83.7408184,
+        "lat": 42.2989042
+      },
+      {
+        "lon": -83.7408989,
+        "lat": 42.2986761
+      },
+      {
+        "lon": -83.7410638,
+        "lat": 42.2984112
+      },
+      {
+        "lon": -83.7413334,
+        "lat": 42.2980908
+      },
+      {
+        "lon": -83.7415708,
+        "lat": 42.2978309
+      },
+      {
+        "lon": -83.7418215,
+        "lat": 42.2975701
+      },
+      {
+        "lon": -83.7421689,
+        "lat": 42.2972943
+      },
+      {
+        "lon": -83.7424612,
+        "lat": 42.2971296
+      },
+      {
+        "lon": -83.7426785,
+        "lat": 42.2969372
+      },
+      {
+        "lon": -83.7430259,
+        "lat": 42.2966495
+      },
+      {
+        "lon": -83.7434483,
+        "lat": 42.2963113
+      },
+      {
+        "lon": -83.7436253,
+        "lat": 42.2961545
+      },
+      {
+        "lon": -83.743793,
+        "lat": 42.2960484
+      },
+      {
+        "lon": -83.7439432,
+        "lat": 42.295972
+      }
+    ],
+    "points": [
+      {
+        "x": 1117.2,
+        "y": 1299.0,
+        "distanceMeters": 0.0
+      },
+      {
+        "x": 1070.3,
+        "y": 1372.3,
+        "distanceMeters": 86.9
+      },
+      {
+        "x": 1039.4,
+        "y": 1449.9,
+        "distanceMeters": 170.5
+      },
+      {
+        "x": 1007.2,
+        "y": 1556.9,
+        "distanceMeters": 282.3
+      },
+      {
+        "x": 975.4,
+        "y": 1639.4,
+        "distanceMeters": 370.7
+      },
+      {
+        "x": 952.4,
+        "y": 1712.2,
+        "distanceMeters": 447.0
+      },
+      {
+        "x": 940.0,
+        "y": 1752.1,
+        "distanceMeters": 488.8
+      },
+      {
+        "x": 937.1,
+        "y": 1781.1,
+        "distanceMeters": 517.9
+      },
+      {
+        "x": 935.1,
+        "y": 1820.5,
+        "distanceMeters": 557.4
+      },
+      {
+        "x": 1009.9,
+        "y": 1815.3,
+        "distanceMeters": 632.5
+      },
+      {
+        "x": 1032.9,
+        "y": 1732.8,
+        "distanceMeters": 718.1
+      },
+      {
+        "x": 1040.2,
+        "y": 1678.9,
+        "distanceMeters": 772.5
+      },
+      {
+        "x": 1049.5,
+        "y": 1616.6,
+        "distanceMeters": 835.5
+      },
+      {
+        "x": 1073.3,
+        "y": 1552.4,
+        "distanceMeters": 903.9
+      },
+      {
+        "x": 1097.0,
+        "y": 1482.5,
+        "distanceMeters": 977.8
+      },
+      {
+        "x": 1124.8,
+        "y": 1412.1,
+        "distanceMeters": 1053.5
+      },
+      {
+        "x": 1144.7,
+        "y": 1370.4,
+        "distanceMeters": 1099.6
+      },
+      {
+        "x": 1181.5,
+        "y": 1328.7,
+        "distanceMeters": 1155.3
+      },
+      {
+        "x": 1213.1,
+        "y": 1294.1,
+        "distanceMeters": 1202.2
+      },
+      {
+        "x": 1255.1,
+        "y": 1240.8,
+        "distanceMeters": 1270.0
+      },
+      {
+        "x": 1304.3,
+        "y": 1186.8,
+        "distanceMeters": 1343.0
+      },
+      {
+        "x": 1345.6,
+        "y": 1137.5,
+        "distanceMeters": 1407.4
+      },
+      {
+        "x": 1378.1,
+        "y": 1092.1,
+        "distanceMeters": 1463.2
+      },
+      {
+        "x": 1411.9,
+        "y": 1044.5,
+        "distanceMeters": 1521.6
+      },
+      {
+        "x": 1418.3,
+        "y": 1026.5,
+        "distanceMeters": 1540.6
+      },
+      {
+        "x": 1422.7,
+        "y": 1000.2,
+        "distanceMeters": 1567.3
+      },
+      {
+        "x": 1431.7,
+        "y": 947.8,
+        "distanceMeters": 1620.5
+      },
+      {
+        "x": 1437.9,
+        "y": 905.9,
+        "distanceMeters": 1662.9
+      },
+      {
+        "x": 1423.6,
+        "y": 855.3,
+        "distanceMeters": 1715.5
+      },
+      {
+        "x": 1399.9,
+        "y": 814.7,
+        "distanceMeters": 1762.5
+      },
+      {
+        "x": 1354.2,
+        "y": 735.1,
+        "distanceMeters": 1854.3
+      },
+      {
+        "x": 1325.1,
+        "y": 683.5,
+        "distanceMeters": 1913.5
+      },
+      {
+        "x": 1288.0,
+        "y": 644.5,
+        "distanceMeters": 1967.3
+      },
+      {
+        "x": 1242.5,
+        "y": 599.3,
+        "distanceMeters": 2031.4
+      },
+      {
+        "x": 1182.9,
+        "y": 552.9,
+        "distanceMeters": 2107.0
+      },
+      {
+        "x": 1107.3,
+        "y": 520.4,
+        "distanceMeters": 2189.2
+      },
+      {
+        "x": 1060.1,
+        "y": 506.4,
+        "distanceMeters": 2238.5
+      },
+      {
+        "x": 1006.9,
+        "y": 487.9,
+        "distanceMeters": 2294.8
+      },
+      {
+        "x": 974.4,
+        "y": 478.3,
+        "distanceMeters": 2328.7
+      },
+      {
+        "x": 938.6,
+        "y": 475.0,
+        "distanceMeters": 2364.6
+      },
+      {
+        "x": 887.6,
+        "y": 473.0,
+        "distanceMeters": 2415.7
+      },
+      {
+        "x": 853.4,
+        "y": 473.3,
+        "distanceMeters": 2449.9
+      },
+      {
+        "x": 836.1,
+        "y": 476.8,
+        "distanceMeters": 2467.5
+      },
+      {
+        "x": 790.4,
+        "y": 504.4,
+        "distanceMeters": 2520.9
+      },
+      {
+        "x": 740.3,
+        "y": 513.8,
+        "distanceMeters": 2571.9
+      },
+      {
+        "x": 714.8,
+        "y": 522.0,
+        "distanceMeters": 2598.7
+      },
+      {
+        "x": 678.4,
+        "y": 531.6,
+        "distanceMeters": 2636.4
+      },
+      {
+        "x": 636.0,
+        "y": 541.6,
+        "distanceMeters": 2680.0
+      },
+      {
+        "x": 575.7,
+        "y": 571.2,
+        "distanceMeters": 2747.1
+      },
+      {
+        "x": 505.2,
+        "y": 602.1,
+        "distanceMeters": 2824.1
+      },
+      {
+        "x": 429.5,
+        "y": 625.5,
+        "distanceMeters": 2903.4
+      },
+      {
+        "x": 386.4,
+        "y": 635.1,
+        "distanceMeters": 2947.5
+      },
+      {
+        "x": 334.0,
+        "y": 635.5,
+        "distanceMeters": 2999.9
+      },
+      {
+        "x": 295.0,
+        "y": 631.7,
+        "distanceMeters": 3039.1
+      },
+      {
+        "x": 262.7,
+        "y": 620.5,
+        "distanceMeters": 3073.2
+      },
+      {
+        "x": 235.0,
+        "y": 600.7,
+        "distanceMeters": 3107.3
+      },
+      {
+        "x": 212.1,
+        "y": 582.2,
+        "distanceMeters": 3136.7
+      },
+      {
+        "x": 186.4,
+        "y": 558.0,
+        "distanceMeters": 3172.0
+      },
+      {
+        "x": 165.9,
+        "y": 535.9,
+        "distanceMeters": 3202.2
+      },
+      {
+        "x": 140.2,
+        "y": 492.8,
+        "distanceMeters": 3252.4
+      },
+      {
+        "x": 120.6,
+        "y": 457.9,
+        "distanceMeters": 3292.4
+      },
+      {
+        "x": 100.4,
+        "y": 404.1,
+        "distanceMeters": 3349.9
+      },
+      {
+        "x": 79.3,
+        "y": 348.1,
+        "distanceMeters": 3409.7
+      },
+      {
+        "x": 72.5,
+        "y": 325.0,
+        "distanceMeters": 3433.8
+      },
+      {
+        "x": 51.5,
+        "y": 290.8,
+        "distanceMeters": 3474.0
+      },
+      {
+        "x": 34.4,
+        "y": 262.4,
+        "distanceMeters": 3507.1
+      },
+      {
+        "x": 22.4,
+        "y": 236.3,
+        "distanceMeters": 3535.8
+      },
+      {
+        "x": 20.1,
+        "y": 219.2,
+        "distanceMeters": 3553.1
+      },
+      {
+        "x": 20.8,
+        "y": 205.7,
+        "distanceMeters": 3566.6
+      },
+      {
+        "x": 24.8,
+        "y": 187.8,
+        "distanceMeters": 3584.9
+      },
+      {
+        "x": 30.1,
+        "y": 169.9,
+        "distanceMeters": 3603.5
+      },
+      {
+        "x": 35.9,
+        "y": 156.6,
+        "distanceMeters": 3618.1
+      },
+      {
+        "x": 46.0,
+        "y": 141.8,
+        "distanceMeters": 3636.0
+      },
+      {
+        "x": 62.2,
+        "y": 117.5,
+        "distanceMeters": 3665.1
+      },
+      {
+        "x": 83.7,
+        "y": 93.6,
+        "distanceMeters": 3697.3
+      },
+      {
+        "x": 100.8,
+        "y": 77.1,
+        "distanceMeters": 3721.1
+      },
+      {
+        "x": 124.7,
+        "y": 55.5,
+        "distanceMeters": 3753.3
+      },
+      {
+        "x": 144.2,
+        "y": 41.2,
+        "distanceMeters": 3777.5
+      },
+      {
+        "x": 161.2,
+        "y": 30.3,
+        "distanceMeters": 3797.7
+      },
+      {
+        "x": 175.3,
+        "y": 20.4,
+        "distanceMeters": 3815.0
+      },
+      {
+        "x": 183.0,
+        "y": 15.1,
+        "distanceMeters": 3824.2
+      },
+      {
+        "x": 173.2,
+        "y": 0.0,
+        "distanceMeters": 3842.2
+      },
+      {
+        "x": 148.4,
+        "y": 6.5,
+        "distanceMeters": 3867.9
+      },
+      {
+        "x": 135.2,
+        "y": 14.8,
+        "distanceMeters": 3883.5
+      },
+      {
+        "x": 113.0,
+        "y": 32.5,
+        "distanceMeters": 3911.9
+      },
+      {
+        "x": 79.3,
+        "y": 57.2,
+        "distanceMeters": 3953.7
+      },
+      {
+        "x": 39.9,
+        "y": 93.8,
+        "distanceMeters": 4007.5
+      },
+      {
+        "x": 23.7,
+        "y": 124.3,
+        "distanceMeters": 4042.0
+      },
+      {
+        "x": 9.4,
+        "y": 153.6,
+        "distanceMeters": 4074.6
+      },
+      {
+        "x": 1.5,
+        "y": 177.7,
+        "distanceMeters": 4099.9
+      },
+      {
+        "x": 0.0,
+        "y": 192.2,
+        "distanceMeters": 4114.5
+      },
+      {
+        "x": 1.9,
+        "y": 214.3,
+        "distanceMeters": 4136.7
+      },
+      {
+        "x": 5.0,
+        "y": 239.7,
+        "distanceMeters": 4162.2
+      },
+      {
+        "x": 14.4,
+        "y": 266.3,
+        "distanceMeters": 4190.5
+      },
+      {
+        "x": 37.0,
+        "y": 308.5,
+        "distanceMeters": 4238.4
+      },
+      {
+        "x": 53.1,
+        "y": 344.5,
+        "distanceMeters": 4277.8
+      },
+      {
+        "x": 68.9,
+        "y": 388.2,
+        "distanceMeters": 4324.3
+      },
+      {
+        "x": 80.5,
+        "y": 420.2,
+        "distanceMeters": 4358.3
+      },
+      {
+        "x": 96.4,
+        "y": 448.6,
+        "distanceMeters": 4390.9
+      },
+      {
+        "x": 105.5,
+        "y": 469.0,
+        "distanceMeters": 4413.2
+      },
+      {
+        "x": 117.4,
+        "y": 503.0,
+        "distanceMeters": 4449.2
+      },
+      {
+        "x": 127.6,
+        "y": 527.8,
+        "distanceMeters": 4476.0
+      },
+      {
+        "x": 149.5,
+        "y": 561.2,
+        "distanceMeters": 4516.0
+      },
+      {
+        "x": 179.0,
+        "y": 595.8,
+        "distanceMeters": 4561.4
+      },
+      {
+        "x": 202.1,
+        "y": 616.2,
+        "distanceMeters": 4592.2
+      },
+      {
+        "x": 229.1,
+        "y": 632.3,
+        "distanceMeters": 4623.7
+      },
+      {
+        "x": 261.1,
+        "y": 644.9,
+        "distanceMeters": 4658.1
+      },
+      {
+        "x": 297.9,
+        "y": 653.4,
+        "distanceMeters": 4695.9
+      },
+      {
+        "x": 337.0,
+        "y": 658.4,
+        "distanceMeters": 4735.3
+      },
+      {
+        "x": 368.2,
+        "y": 661.0,
+        "distanceMeters": 4766.6
+      },
+      {
+        "x": 398.5,
+        "y": 659.3,
+        "distanceMeters": 4796.9
+      },
+      {
+        "x": 437.5,
+        "y": 652.7,
+        "distanceMeters": 4836.5
+      },
+      {
+        "x": 473.0,
+        "y": 643.5,
+        "distanceMeters": 4873.2
+      },
+      {
+        "x": 499.6,
+        "y": 635.1,
+        "distanceMeters": 4901.1
+      },
+      {
+        "x": 530.7,
+        "y": 622.9,
+        "distanceMeters": 4934.4
+      },
+      {
+        "x": 562.2,
+        "y": 610.4,
+        "distanceMeters": 4968.4
+      },
+      {
+        "x": 594.6,
+        "y": 593.4,
+        "distanceMeters": 5004.9
+      },
+      {
+        "x": 634.9,
+        "y": 577.9,
+        "distanceMeters": 5048.1
+      },
+      {
+        "x": 658.3,
+        "y": 569.0,
+        "distanceMeters": 5073.1
+      },
+      {
+        "x": 685.9,
+        "y": 556.9,
+        "distanceMeters": 5103.3
+      },
+      {
+        "x": 704.5,
+        "y": 544.8,
+        "distanceMeters": 5125.4
+      },
+      {
+        "x": 727.8,
+        "y": 533.2,
+        "distanceMeters": 5151.5
+      },
+      {
+        "x": 743.6,
+        "y": 527.1,
+        "distanceMeters": 5168.4
+      },
+      {
+        "x": 767.6,
+        "y": 523.8,
+        "distanceMeters": 5192.7
+      },
+      {
+        "x": 783.9,
+        "y": 520.7,
+        "distanceMeters": 5209.2
+      },
+      {
+        "x": 800.4,
+        "y": 516.1,
+        "distanceMeters": 5226.4
+      },
+      {
+        "x": 814.0,
+        "y": 509.5,
+        "distanceMeters": 5241.5
+      },
+      {
+        "x": 835.3,
+        "y": 499.6,
+        "distanceMeters": 5265.0
+      },
+      {
+        "x": 854.1,
+        "y": 494.7,
+        "distanceMeters": 5284.4
+      },
+      {
+        "x": 873.6,
+        "y": 490.3,
+        "distanceMeters": 5304.4
+      },
+      {
+        "x": 889.3,
+        "y": 487.7,
+        "distanceMeters": 5320.3
+      },
+      {
+        "x": 906.1,
+        "y": 488.0,
+        "distanceMeters": 5337.1
+      },
+      {
+        "x": 936.2,
+        "y": 489.1,
+        "distanceMeters": 5367.3
+      },
+      {
+        "x": 960.5,
+        "y": 495.0,
+        "distanceMeters": 5392.3
+      },
+      {
+        "x": 993.9,
+        "y": 504.7,
+        "distanceMeters": 5427.0
+      },
+      {
+        "x": 1035.0,
+        "y": 517.5,
+        "distanceMeters": 5470.0
+      },
+      {
+        "x": 1061.2,
+        "y": 532.5,
+        "distanceMeters": 5500.3
+      },
+      {
+        "x": 1102.1,
+        "y": 552.0,
+        "distanceMeters": 5545.6
+      },
+      {
+        "x": 1139.3,
+        "y": 572.5,
+        "distanceMeters": 5588.0
+      },
+      {
+        "x": 1183.0,
+        "y": 593.5,
+        "distanceMeters": 5636.5
+      },
+      {
+        "x": 1213.5,
+        "y": 610.8,
+        "distanceMeters": 5671.6
+      },
+      {
+        "x": 1232.1,
+        "y": 629.9,
+        "distanceMeters": 5698.2
+      },
+      {
+        "x": 1261.2,
+        "y": 658.7,
+        "distanceMeters": 5739.2
+      },
+      {
+        "x": 1282.3,
+        "y": 683.5,
+        "distanceMeters": 5771.7
+      },
+      {
+        "x": 1311.9,
+        "y": 731.8,
+        "distanceMeters": 5828.4
+      },
+      {
+        "x": 1333.9,
+        "y": 768.0,
+        "distanceMeters": 5870.8
+      },
+      {
+        "x": 1359.6,
+        "y": 826.6,
+        "distanceMeters": 5934.7
+      },
+      {
+        "x": 1373.1,
+        "y": 857.5,
+        "distanceMeters": 5968.4
+      },
+      {
+        "x": 1384.5,
+        "y": 888.2,
+        "distanceMeters": 6001.2
+      },
+      {
+        "x": 1389.1,
+        "y": 920.5,
+        "distanceMeters": 6033.9
+      },
+      {
+        "x": 1386.6,
+        "y": 958.3,
+        "distanceMeters": 6071.7
+      },
+      {
+        "x": 1380.0,
+        "y": 983.5,
+        "distanceMeters": 6097.8
+      },
+      {
+        "x": 1366.4,
+        "y": 1012.8,
+        "distanceMeters": 6130.0
+      },
+      {
+        "x": 1344.2,
+        "y": 1048.2,
+        "distanceMeters": 6171.8
+      },
+      {
+        "x": 1324.7,
+        "y": 1076.9,
+        "distanceMeters": 6206.6
+      },
+      {
+        "x": 1304.0,
+        "y": 1105.7,
+        "distanceMeters": 6242.0
+      },
+      {
+        "x": 1275.4,
+        "y": 1136.2,
+        "distanceMeters": 6283.8
+      },
+      {
+        "x": 1251.4,
+        "y": 1154.4,
+        "distanceMeters": 6314.0
+      },
+      {
+        "x": 1233.5,
+        "y": 1175.7,
+        "distanceMeters": 6341.8
+      },
+      {
+        "x": 1204.9,
+        "y": 1207.5,
+        "distanceMeters": 6384.6
+      },
+      {
+        "x": 1170.1,
+        "y": 1244.9,
+        "distanceMeters": 6435.6
+      },
+      {
+        "x": 1155.5,
+        "y": 1262.2,
+        "distanceMeters": 6458.3
+      },
+      {
+        "x": 1141.7,
+        "y": 1274.0,
+        "distanceMeters": 6476.4
+      },
+      {
+        "x": 1129.4,
+        "y": 1282.4,
+        "distanceMeters": 6491.4
+      }
+    ]
+  },
+  "categories": {
+    "dock": "Dock / launch",
+    "direction": "Direction cue",
+    "turn": "River turn",
+    "limit": "Route limit",
+    "bridge": "Bridge decision",
+    "hazard": "Hazard",
+    "current": "Current / drift",
+    "corner": "Corner / angle",
+    "break": "Regrouping point",
+    "marker": "Map marker"
+  },
+  "sections": [
+    {
+      "id": "dock-basics",
+      "name": "Dock Basics",
+      "summary": "Launch, orient downstream, and rehearse a slow angled docking approach.",
+      "stopIds": [
+        "launch",
+        "downstream",
+        "fallen-tree-3",
+        "docking"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "first-weekend",
+      "name": "First Weekend Limits",
+      "summary": "Use the first Learn-to-Scull boundaries and nearby turn markers before stretching the route.",
+      "stopIds": [
+        "river-turn-5",
+        "river-turn-3",
+        "river-turn-4",
+        "island-weeds",
+        "river-turn-6",
+        "weeds-9",
+        "fallen-tree-2",
+        "fallen-trees",
+        "river-turn-7",
+        "fallen-trees-2",
+        "weeds-2"
+      ],
+      "lineIds": [
+        "lts-first-weekend",
+        "no-rowing-beyond-this-point",
+        "lts-first-weekend-2"
+      ]
+    },
     {
       "id": "argo-turn",
-      "name": "Argo Turn Drill",
-      "badge": "Short route",
-      "summary": "Dock to Argo turn box and back. Mixed users, weeds, and a clean stop-cross-clear turn.",
-      "outboundLabel": "Downstream outbound",
-      "returnLabel": "Upstream return",
-      "route": [
-        { "x": 0, "y": 0, "width": 148 },
-        { "x": 18, "y": 118, "width": 148 },
-        { "x": 42, "y": 300, "width": 144 },
-        { "x": 88, "y": 520, "width": 136 },
-        { "x": 100, "y": 760, "width": 132 },
-        { "x": 72, "y": 980, "width": 128 },
-        { "x": 28, "y": 1185, "width": 126 }
+      "name": "Argo Turn / No-Row Boundary",
+      "summary": "Practice the downstream turn area, island/weeds, and the no-rowing danger line.",
+      "stopIds": [
+        "river-turn-5",
+        "river-turn-3",
+        "river-turn-4",
+        "island-weeds",
+        "river-turn-6",
+        "weeds-9"
       ],
-      "briefing": [
-        "Depart from the AARC dock and settle immediately into the right side of traffic for your direction of travel.",
-        "Expect swimmers and mixed public traffic near the dock and around Argo recreation areas.",
-        "At the turn box upstream of Argo Dam: stop, cross the river, turn back, and clear the area before rowing home."
-      ],
-      "features": [
-        {
-          "id": "argo-start",
-          "position": 0,
-          "type": "marker",
-          "title": "AARC Dock",
-          "brief": "Launch cleanly and build the stay-right habit right away."
-        },
-        {
-          "id": "argo-users",
-          "position": 170,
-          "type": "zone",
-          "title": "Mixed-user zone",
-          "brief": "Swimmers and paddlers near the dock can be hard to predict. Look early and give room."
-        },
-        {
-          "id": "argo-bend",
-          "position": 610,
-          "type": "zone",
-          "title": "Big bend shoreline weeds",
-          "brief": "Stay right, but do not hug the bank where weeds collect."
-        },
-        {
-          "id": "argo-recreation",
-          "position": 910,
-          "type": "zone",
-          "title": "Argo recreation zone",
-          "brief": "Traffic gets denser here. Slow slightly, look more often, and stay predictable."
-        },
-        {
-          "id": "argo-turn",
-          "position": 1185,
-          "type": "turn",
-          "title": "Argo turn box",
-          "brief": "Approach on the right, stop, cross, then turn back upstream toward the dock.",
-          "lookDistance": 210,
-          "stopOffset": 24,
-          "crossTarget": -30,
-          "clearDistance": 120
-        }
-      ],
-      "hazards": [
-        {
-          "id": "argo-shore-swimmers",
-          "start": 70,
-          "end": 240,
-          "bankSign": 1,
-          "thresholdFromBank": 20,
-          "title": "Swimmers near the dock",
-          "brief": "Leave extra room on the dock-side shoreline."
-        },
-        {
-          "id": "argo-weeds",
-          "start": 500,
-          "end": 790,
-          "bankSign": 1,
-          "thresholdFromBank": 18,
-          "title": "Weeds on the big bend",
-          "brief": "Stay right, but keep off the bank where oars can snag."
-        }
-      ],
-      "actors": [
-        {
-          "id": "argo-swimmer",
-          "kind": "swimmer",
-          "appliesLeg": ["outbound"],
-          "position": 135,
-          "travelSign": 0,
-          "offset": 44,
-          "crossAmplitude": 16,
-          "crossSpeed": 0.8,
-          "radius": 16,
-          "label": "Swimmer",
-          "coach": "Swimmer near the dock. Ease off and give extra room."
-        },
-        {
-          "id": "argo-paddler",
-          "kind": "paddler",
-          "appliesLeg": ["outbound"],
-          "position": 900,
-          "travelSign": -1,
-          "offset": -14,
-          "speed": 3.8,
-          "crossAmplitude": 18,
-          "crossSpeed": 0.45,
-          "radius": 18,
-          "label": "Paddler",
-          "coach": "Public paddler ahead. Hold your line and avoid a late swerve."
-        },
-        {
-          "id": "argo-return-shell",
-          "kind": "shell",
-          "appliesLeg": ["return"],
-          "position": 720,
-          "travelSign": 1,
-          "offset": 22,
-          "speed": 6.2,
-          "radius": 15,
-          "label": "Oncoming shell",
-          "coach": "Oncoming shell. Both boats stay right for their direction of travel."
-        }
+      "lineIds": [
+        "lts-first-weekend",
+        "no-rowing-beyond-this-point"
       ]
     },
     {
-      "id": "m14-turn",
-      "name": "M-14 Turn Drill",
-      "badge": "Short route",
-      "summary": "Stop downstream of M-14, execute a composed river turn, and return to the dock.",
-      "outboundLabel": "Upstream outbound",
-      "returnLabel": "Downstream return",
-      "route": [
-        { "x": 0, "y": 0, "width": 150 },
-        { "x": 16, "y": -120, "width": 150 },
-        { "x": 32, "y": -270, "width": 152 },
-        { "x": 46, "y": -430, "width": 154 },
-        { "x": 54, "y": -520, "width": 156 }
+      "id": "second-weekend",
+      "name": "Second Weekend Bridge Intro",
+      "summary": "Review the second-weekend boundary, bridge-pillar choices, current, weeds, and pass-here cue.",
+      "stopIds": [
+        "weeds-2",
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "wrong-side-of-the-pillar",
+        "pass-here",
+        "bridge-pillar",
+        "weeds-3",
+        "weeds-4",
+        "bridge-pillar-4",
+        "current",
+        "weeds-5",
+        "bridge-pillar-3",
+        "weeds-10",
+        "weeds-6",
+        "weeds-7"
       ],
-      "briefing": [
-        "This is the short upstream drill north of the dock.",
-        "Do not drift under the M-14 bridge while setting up. Stop below it, then turn, cross, and clear.",
-        "Use it to rehearse the stop-cross-clear pattern before taking on the longer bridge sequence."
-      ],
-      "features": [
-        {
-          "id": "m14-dock",
-          "position": 0,
-          "type": "marker",
-          "title": "AARC Dock",
-          "brief": "Launch and hold the right side of the river as you head north."
-        },
-        {
-          "id": "m14-bridge-view",
-          "position": 520,
-          "type": "bridge-preview",
-          "title": "M-14 Bridge ahead",
-          "brief": "The main pillars are ahead, but this drill turns below the bridge instead of crossing it.",
-          "render": {
-            "style": "center-span",
-            "pillars": [-48, 48]
-          }
-        },
-        {
-          "id": "m14-turn",
-          "position": 470,
-          "type": "turn",
-          "title": "M-14 turn box",
-          "brief": "Stop below the bridge, cross the river, and turn back downstream to the dock.",
-          "lookDistance": 180,
-          "stopOffset": 24,
-          "crossTarget": -28,
-          "clearDistance": 110
-        }
-      ],
-      "hazards": [],
-      "actors": [
-        {
-          "id": "m14-oncoming-shell",
-          "kind": "shell",
-          "appliesLeg": ["outbound"],
-          "position": 280,
-          "travelSign": -1,
-          "offset": -20,
-          "speed": 6.4,
-          "radius": 15,
-          "label": "Oncoming shell",
-          "coach": "Oncoming shell. Stay right and keep the left side clear."
-        },
-        {
-          "id": "m14-return-shell",
-          "kind": "shell",
-          "appliesLeg": ["return"],
-          "position": 220,
-          "travelSign": 1,
-          "offset": 24,
-          "speed": 5.4,
-          "radius": 15,
-          "label": "Slow shell",
-          "coach": "Slow shell ahead on the return. Look, pass on the left, then come back right."
-        }
+      "lineIds": [
+        "lts-saturday-second-weekend"
       ]
     },
     {
-      "id": "barton-bridges",
-      "name": "Barton Bridge Run",
-      "badge": "Advanced course",
-      "summary": "Through the bridges to the high pedestrian bridge before Barton, then turn and come back through the same sequence.",
-      "outboundLabel": "Upstream outbound",
-      "returnLabel": "Downstream return",
-      "route": [
-        { "x": 0, "y": 0, "width": 150 },
-        { "x": 18, "y": -130, "width": 150 },
-        { "x": 40, "y": -310, "width": 152 },
-        { "x": 54, "y": -560, "width": 156 },
-        { "x": 24, "y": -780, "width": 146 },
-        { "x": -32, "y": -955, "width": 138 },
-        { "x": -84, "y": -1165, "width": 130 },
-        { "x": -126, "y": -1340, "width": 126 },
-        { "x": -156, "y": -1495, "width": 124 }
+      "id": "full-technical",
+      "name": "Full Technical Route",
+      "summary": "Step through the sharper turns, fallen trees, end point, break area, and return-side hazards.",
+      "stopIds": [
+        "sharp-turn",
+        "tree-branch",
+        "river-turn",
+        "river-turn-2",
+        "good-place-for-a-break",
+        "fallen-trees-6",
+        "fallen-trees-5",
+        "fallen-trees-4",
+        "fallen-trees-corner",
+        "fallen-tree-5",
+        "fallen-tree",
+        "fallen-tree-4",
+        "fallen-trees-3",
+        "weeds-4",
+        "bridge-pillar-4",
+        "current",
+        "weeds-5",
+        "bridge-pillar-3",
+        "river-turn-10",
+        "weeds-10",
+        "weeds-6",
+        "weeds-7",
+        "stay-on-your-side-of-the-corner",
+        "weeds",
+        "weeds-8",
+        "river-turn-8"
       ],
-      "briefing": [
-        "This is the full technical drill: M-14, low park bridge, railroad bridge, and the high foot bridge before Barton.",
-        "Use the correct opening at each bridge and commit early. Late swerves are scored as mistakes even if you squeeze through.",
-        "Beyond the high bridge, stop, cross, turn back downstream, and thread the same sequence home."
-      ],
-      "features": [
+      "lineIds": [
+        "end-point"
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "id": "launch",
+      "title": "Launch",
+      "category": "dock",
+      "geometry": "Point",
+      "description": "",
+      "action": "Launch cleanly, orient yourself, and establish the correct traffic side before building pressure.",
+      "distanceMeters": 0.0,
+      "offsetMeters": 0.0,
+      "coordinates": [
         {
-          "id": "barton-m14",
-          "position": 560,
-          "type": "bridge",
-          "alignment": "center",
-          "title": "M-14 Bridge",
-          "brief": "Stay strictly between the two main pillars.",
-          "lookDistance": 190,
-          "commitDistance": 110,
-          "render": {
-            "style": "center-span",
-            "pillars": [-48, 48]
-          }
-        },
-        {
-          "id": "barton-low",
-          "position": 955,
-          "type": "bridge",
-          "alignment": "centerRight",
-          "title": "Park bridge (low)",
-          "brief": "Maintain a composed center-right line and do not make a last-second correction under the bridge.",
-          "lookDistance": 180,
-          "commitDistance": 95,
-          "render": {
-            "style": "low-bridge",
-            "pillars": [-12, 32]
-          }
-        },
-        {
-          "id": "barton-railroad",
-          "position": 1165,
-          "type": "bridge",
-          "alignment": "rightOpening",
-          "title": "Railroad Bridge",
-          "brief": "Use the right opening relative to your direction of travel and choose it early.",
-          "lookDistance": 185,
-          "commitDistance": 110,
-          "render": {
-            "style": "right-opening",
-            "pillars": [-36, 6, 44]
-          }
-        },
-        {
-          "id": "barton-high",
-          "position": 1340,
-          "type": "bridge",
-          "alignment": "insidePillar",
-          "title": "High foot bridge",
-          "brief": "Take the inside of the pillar. The outer edge is shallow.",
-          "lookDistance": 175,
-          "commitDistance": 95,
-          "render": {
-            "style": "inside-pillar",
-            "pillars": [26],
-            "shallowSide": 1
-          }
-        },
-        {
-          "id": "barton-turn",
-          "position": 1495,
-          "type": "turn",
-          "title": "Barton turn box",
-          "brief": "Just beyond the high bridge, stop, cross, and come back downstream through the bridges.",
-          "lookDistance": 210,
-          "stopOffset": 22,
-          "crossTarget": -28,
-          "clearDistance": 120
+          "lon": -83.7440914,
+          "lat": 42.2958217
         }
       ],
-      "hazards": [
+      "projections": [
         {
-          "id": "barton-high-shallow",
-          "start": 1295,
-          "end": 1370,
-          "bankSign": 1,
-          "thresholdFromBank": 14,
-          "title": "Outer shallow at the high bridge",
-          "brief": "The outside edge of the high bridge is the shallow danger line."
+          "distanceMeters": 0.0,
+          "offsetMeters": 0.0,
+          "projectionErrorMeters": 0.0
         }
       ],
-      "actors": [
+      "sectionIds": [
+        "dock-basics"
+      ]
+    },
+    {
+      "id": "downstream",
+      "title": "Downstream",
+      "category": "direction",
+      "geometry": "Point",
+      "description": "",
+      "action": "Use this as an orientation cue for the downstream direction from the dock.",
+      "distanceMeters": 94.7,
+      "offsetMeters": -5.5,
+      "coordinates": [
         {
-          "id": "barton-oncoming-early",
-          "kind": "shell",
-          "appliesLeg": ["outbound"],
-          "position": 390,
-          "travelSign": -1,
-          "offset": -22,
-          "speed": 6.5,
-          "radius": 15,
-          "label": "Oncoming shell",
-          "coach": "Oncoming shell. Stay right and do not let the lane drift open."
-        },
-        {
-          "id": "barton-slow-shell",
-          "kind": "shell",
-          "appliesLeg": ["outbound"],
-          "position": 1040,
-          "travelSign": 1,
-          "offset": 24,
-          "speed": 4.8,
-          "radius": 15,
-          "label": "Slow shell",
-          "coach": "Slow shell ahead. Pass on the left only if you have looked and the lane is clear."
-        },
-        {
-          "id": "barton-oncoming-paddler",
-          "kind": "paddler",
-          "appliesLeg": ["return"],
-          "position": 1180,
-          "travelSign": 1,
-          "offset": 10,
-          "speed": 3.2,
-          "crossAmplitude": 20,
-          "crossSpeed": 0.5,
-          "radius": 17,
-          "label": "Paddler",
-          "coach": "Public paddler in the bridge corridor. Hold your line and avoid a late dart."
-        },
-        {
-          "id": "barton-oncoming-return",
-          "kind": "shell",
-          "appliesLeg": ["return"],
-          "position": 700,
-          "travelSign": 1,
-          "offset": 22,
-          "speed": 6.0,
-          "radius": 15,
-          "label": "Oncoming shell",
-          "coach": "Oncoming shell on the return. Keep your lane discipline all the way back to the dock."
+          "lon": -83.7446329,
+          "lat": 42.2950756
         }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 94.7,
+          "offsetMeters": -5.5,
+          "projectionErrorMeters": 5.5
+        }
+      ],
+      "sectionIds": [
+        "dock-basics"
+      ]
+    },
+    {
+      "id": "fallen-tree-3",
+      "title": "Fallen Tree",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 176.2,
+      "offsetMeters": 7.3,
+      "coordinates": [
+        {
+          "lon": -83.7451403,
+          "lat": 42.2944267
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 176.2,
+          "offsetMeters": 7.3,
+          "projectionErrorMeters": 7.3
+        }
+      ],
+      "sectionIds": [
+        "dock-basics"
+      ]
+    },
+    {
+      "id": "river-turn-5",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Cross",
+      "action": "Stop, Turn, Check, Cross.",
+      "distanceMeters": 251.7,
+      "offsetMeters": 11.0,
+      "coordinates": [
+        {
+          "lon": -83.7454482,
+          "lat": 42.293782
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 251.7,
+          "offsetMeters": 11.0,
+          "projectionErrorMeters": 11.0
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "river-turn-3",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Cross",
+      "action": "Stop, Turn, Check, Cross.",
+      "distanceMeters": 557.4,
+      "offsetMeters": 3.1,
+      "coordinates": [
+        {
+          "lon": -83.7463096,
+          "lat": 42.291076
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 557.4,
+          "offsetMeters": 3.1,
+          "projectionErrorMeters": 3.1
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "river-turn-4",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Continue Upstream",
+      "action": "Stop, Turn, Check, Continue Upstream.",
+      "distanceMeters": 632.5,
+      "offsetMeters": 2.2,
+      "coordinates": [
+        {
+          "lon": -83.7453802,
+          "lat": 42.2911336
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 632.5,
+          "offsetMeters": 2.2,
+          "projectionErrorMeters": 2.2
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "island-weeds",
+      "title": "Island + Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 809.1,
+      "offsetMeters": 4.8,
+      "coordinates": [
+        {
+          "lon": -83.7449035,
+          "lat": 42.2927068
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 809.1,
+          "offsetMeters": 4.8,
+          "projectionErrorMeters": 4.8
+        }
+      ],
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "river-turn-6",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Continue Upstream",
+      "action": "Stop, Turn, Check, Continue Upstream.",
+      "distanceMeters": 915.6,
+      "offsetMeters": 6.0,
+      "coordinates": [
+        {
+          "lon": -83.7445095,
+          "lat": 42.2936114
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 915.6,
+          "offsetMeters": 6.0,
+          "projectionErrorMeters": 6.0
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "weeds-9",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 1020.3,
+      "offsetMeters": 16.2,
+      "coordinates": [
+        {
+          "lon": -83.7439645,
+          "lat": 42.2944659
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1020.3,
+          "offsetMeters": 16.2,
+          "projectionErrorMeters": 16.2
+        }
+      ],
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "fallen-tree-2",
+      "title": "Fallen Tree",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 1265.3,
+      "offsetMeters": 21.7,
+      "coordinates": [
+        {
+          "lon": -83.7422447,
+          "lat": 42.2961937
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1265.3,
+          "offsetMeters": 21.7,
+          "projectionErrorMeters": 21.7
+        }
+      ],
+      "sectionIds": [
+        "first-weekend"
+      ]
+    },
+    {
+      "id": "fallen-trees",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 1356.2,
+      "offsetMeters": 15.7,
+      "coordinates": [
+        {
+          "lon": -83.7415688,
+          "lat": 42.2968365
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1356.2,
+          "offsetMeters": 15.7,
+          "projectionErrorMeters": 15.7
+        }
+      ],
+      "sectionIds": [
+        "first-weekend"
+      ]
+    },
+    {
+      "id": "river-turn-7",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Cross",
+      "action": "Stop, Turn, Check, Cross.",
+      "distanceMeters": 1377.4,
+      "offsetMeters": 6.8,
+      "coordinates": [
+        {
+          "lon": -83.741487,
+          "lat": 42.2970358
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1377.4,
+          "offsetMeters": 6.8,
+          "projectionErrorMeters": 6.8
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "first-weekend"
+      ]
+    },
+    {
+      "id": "fallen-trees-2",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 1437.5,
+      "offsetMeters": 13.8,
+      "coordinates": [
+        {
+          "lon": -83.740968,
+          "lat": 42.2974317
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1437.5,
+          "offsetMeters": 13.8,
+          "projectionErrorMeters": 13.8
+        }
+      ],
+      "sectionIds": [
+        "first-weekend"
+      ]
+    },
+    {
+      "id": "weeds-2",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 1804.6,
+      "offsetMeters": 11.6,
+      "coordinates": [
+        {
+          "lon": -83.7407895,
+          "lat": 42.3005861
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 1804.6,
+          "offsetMeters": 11.6,
+          "projectionErrorMeters": 11.6
+        }
+      ],
+      "sectionIds": [
+        "first-weekend",
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "river-turn-9",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Cross",
+      "action": "Stop, Turn, Check, Cross.",
+      "distanceMeters": 2240.9,
+      "offsetMeters": 2.0,
+      "coordinates": [
+        {
+          "lon": -83.7448039,
+          "lat": 42.3030167
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2240.9,
+          "offsetMeters": 2.0,
+          "projectionErrorMeters": 2.0
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "bridge-pillar-2",
+      "title": "Bridge Pillar",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "",
+      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "distanceMeters": 2259.2,
+      "offsetMeters": 8.5,
+      "coordinates": [
+        {
+          "lon": -83.7449878,
+          "lat": 42.3031261
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2259.2,
+          "offsetMeters": 8.5,
+          "projectionErrorMeters": 8.5
+        }
+      ],
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "tree-branches",
+      "title": "Tree branches",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "If you follow the symmetry of the bridge, be prepared for course correction otherwise you'll hit the branches",
+      "action": "If you follow the symmetry of the bridge, be prepared for course correction otherwise you'll hit the branches.",
+      "distanceMeters": 2297.1,
+      "offsetMeters": -1.7,
+      "coordinates": [
+        {
+          "lon": -83.7454633,
+          "lat": 42.3031498
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2297.1,
+          "offsetMeters": -1.7,
+          "projectionErrorMeters": 1.7
+        }
+      ],
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "correct-your-angle",
+      "title": "Correct your angle",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "Don't follow the symmetry of the bridge; look ahead and stay on your side. Easy to drift to the other side",
+      "action": "Don't follow the symmetry of the bridge; look ahead and stay on your side. Easy to drift to the other side.",
+      "distanceMeters": 2519.5,
+      "offsetMeters": 0.4,
+      "coordinates": [
+        {
+          "lon": -83.7480474,
+          "lat": 42.3030202
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2519.5,
+          "offsetMeters": 0.4,
+          "projectionErrorMeters": 0.4
+        }
+      ],
+      "check": {
+        "question": "What should you do before this bridge/corner decision?",
+        "choices": [
+          "Look ahead and correct the angle before the bridge pulls you off your side.",
+          "Let the bridge shape guide the boat.",
+          "Move to the center and decide under the bridge."
+        ],
+        "answer": 0,
+        "feedback": "The map note warns not to follow bridge symmetry into the wrong side."
+      },
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "wrong-side-of-the-pillar",
+      "title": "Wrong Side of the Pillar",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "",
+      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "distanceMeters": 2595.8,
+      "offsetMeters": 12.5,
+      "coordinates": [
+        {
+          "lon": -83.7489911,
+          "lat": 42.3029661
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2595.8,
+          "offsetMeters": 12.5,
+          "projectionErrorMeters": 12.5
+        }
+      ],
+      "check": {
+        "question": "What is the teaching point at this bridge marker?",
+        "choices": [
+          "Do not choose the wrong side of the pillar; commit to the safe opening early.",
+          "Follow the bridge symmetry even if it pulls you across.",
+          "Wait until the last moment to decide."
+        ],
+        "answer": 0,
+        "feedback": "Bridge decisions need an early, settled line."
+      },
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "pass-here",
+      "title": "Pass here",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "",
+      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "distanceMeters": 2598.1,
+      "offsetMeters": -2.8,
+      "coordinates": [
+        {
+          "lon": -83.7489601,
+          "lat": 42.3028282
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2598.1,
+          "offsetMeters": -2.8,
+          "projectionErrorMeters": 2.8
+        }
+      ],
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "bridge-pillar",
+      "title": "Bridge Pillar",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "Stay inside",
+      "action": "Stay inside.",
+      "distanceMeters": 2599.6,
+      "offsetMeters": 3.9,
+      "coordinates": [
+        {
+          "lon": -83.7490002,
+          "lat": 42.302883
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2599.6,
+          "offsetMeters": 3.9,
+          "projectionErrorMeters": 3.9
+        }
+      ],
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "weeds-3",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 2750.0,
+      "offsetMeters": 16.9,
+      "coordinates": [
+        {
+          "lon": -83.7507832,
+          "lat": 42.3025356
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2750.0,
+          "offsetMeters": 16.9,
+          "projectionErrorMeters": 16.9
+        }
+      ],
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "sharp-turn",
+      "title": "Sharp Turn",
+      "category": "corner",
+      "geometry": "Point",
+      "description": "This turn gets sharper, so focus on staying close to the shore. Don't drift to the other side!",
+      "action": "This turn gets sharper, so focus on staying close to the shore. Don't drift to the other side!.",
+      "distanceMeters": 3542.8,
+      "offsetMeters": -3.9,
+      "coordinates": [
+        {
+          "lon": -83.7574466,
+          "lat": 42.3054936
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3542.8,
+          "offsetMeters": -3.9,
+          "projectionErrorMeters": 3.9
+        }
+      ],
+      "check": {
+        "question": "What should you prioritize at this sharper turn?",
+        "choices": [
+          "Stay close enough to your side without drifting across.",
+          "Let the boat run wide to the other side.",
+          "Speed up so steering feels easier."
+        ],
+        "answer": 0,
+        "feedback": "The map note calls out the sharper turn and the need to avoid drifting across."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "tree-branch",
+      "title": "Tree Branch",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 3620.5,
+      "offsetMeters": 5.6,
+      "coordinates": [
+        {
+          "lon": -83.7571516,
+          "lat": 42.3061461
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3620.5,
+          "offsetMeters": 5.6,
+          "projectionErrorMeters": 5.6
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "river-turn",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, turn, check, cross",
+      "action": "Stop, turn, check, cross.",
+      "distanceMeters": 3824.0,
+      "offsetMeters": 1.0,
+      "coordinates": [
+        {
+          "lon": -83.7554333,
+          "lat": 42.3074279
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3824.0,
+          "offsetMeters": 1.0,
+          "projectionErrorMeters": 1.0
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "river-turn-2",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Continue Downstream",
+      "action": "Stop, Turn, Check, Continue Downstream.",
+      "distanceMeters": 3842.8,
+      "offsetMeters": 0.8,
+      "coordinates": [
+        {
+          "lon": -83.7555647,
+          "lat": 42.3075787
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3842.8,
+          "offsetMeters": 0.8,
+          "projectionErrorMeters": 0.8
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "good-place-for-a-break",
+      "title": "Good Place for a Break",
+      "category": "break",
+      "geometry": "Point",
+      "description": "",
+      "action": "Use this as a calm regrouping spot when directed by a coach.",
+      "distanceMeters": 3872.8,
+      "offsetMeters": 4.1,
+      "coordinates": [
+        {
+          "lon": -83.7559346,
+          "lat": 42.3075225
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3872.8,
+          "offsetMeters": 4.1,
+          "projectionErrorMeters": 4.1
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-trees-6",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 3912.7,
+      "offsetMeters": 7.8,
+      "coordinates": [
+        {
+          "lon": -83.7563526,
+          "lat": 42.3073319
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3912.7,
+          "offsetMeters": 7.8,
+          "projectionErrorMeters": 7.8
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-trees-5",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4016.5,
+      "offsetMeters": 6.7,
+      "coordinates": [
+        {
+          "lon": -83.7572987,
+          "lat": 42.30668
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4016.5,
+          "offsetMeters": 6.7,
+          "projectionErrorMeters": 6.7
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-trees-4",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4066.5,
+      "offsetMeters": 7.0,
+      "coordinates": [
+        {
+          "lon": -83.7575788,
+          "lat": 42.3062768
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4066.5,
+          "offsetMeters": 7.0,
+          "projectionErrorMeters": 7.0
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-trees-corner",
+      "title": "Fallen Trees / Corner",
+      "category": "corner",
+      "geometry": "Point",
+      "description": "",
+      "action": "Hold your side through the bend and avoid drifting across the traffic pattern.",
+      "distanceMeters": 4123.0,
+      "offsetMeters": 5.1,
+      "coordinates": [
+        {
+          "lon": -83.7577135,
+          "lat": 42.3057541
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4123.0,
+          "offsetMeters": 5.1,
+          "projectionErrorMeters": 5.1
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-tree-5",
+      "title": "Fallen Tree",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4187.4,
+      "offsetMeters": 8.8,
+      "coordinates": [
+        {
+          "lon": -83.7575989,
+          "lat": 42.3051643
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4187.4,
+          "offsetMeters": 8.8,
+          "projectionErrorMeters": 8.8
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-tree",
+      "title": "Fallen Tree",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4389.6,
+      "offsetMeters": 4.4,
+      "coordinates": [
+        {
+          "lon": -83.7565439,
+          "lat": 42.3035055
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4389.6,
+          "offsetMeters": 4.4,
+          "projectionErrorMeters": 4.4
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-tree-4",
+      "title": "Fallen Tree",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4447.9,
+      "offsetMeters": 7.9,
+      "coordinates": [
+        {
+          "lon": -83.7563298,
+          "lat": 42.3030106
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4447.9,
+          "offsetMeters": 7.9,
+          "projectionErrorMeters": 7.9
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "fallen-trees-3",
+      "title": "Fallen Trees",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 4604.3,
+      "offsetMeters": 5.1,
+      "coordinates": [
+        {
+          "lon": -83.7551117,
+          "lat": 42.3019031
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 4604.3,
+          "offsetMeters": 5.1,
+          "projectionErrorMeters": 5.1
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-4",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 5171.6,
+      "offsetMeters": 10.1,
+      "coordinates": [
+        {
+          "lon": -83.7485731,
+          "lat": 42.3027181
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5171.6,
+          "offsetMeters": 10.1,
+          "projectionErrorMeters": 10.1
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "bridge-pillar-4",
+      "title": "Bridge Pillar",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "",
+      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "distanceMeters": 5248.2,
+      "offsetMeters": -8.2,
+      "coordinates": [
+        {
+          "lon": -83.7477409,
+          "lat": 42.303057
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5248.2,
+          "offsetMeters": -8.2,
+          "projectionErrorMeters": 8.2
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "current",
+      "title": "Current",
+      "category": "current",
+      "geometry": "Point",
+      "description": "",
+      "action": "Expect drift and correct early while keeping your line predictable.",
+      "distanceMeters": 5275.2,
+      "offsetMeters": -1.6,
+      "coordinates": [
+        {
+          "lon": -83.7473992,
+          "lat": 42.3030913
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5275.2,
+          "offsetMeters": -1.6,
+          "projectionErrorMeters": 1.6
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-5",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 5305.6,
+      "offsetMeters": 13.9,
+      "coordinates": [
+        {
+          "lon": -83.7470067,
+          "lat": 42.3030156
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5305.6,
+          "offsetMeters": 13.9,
+          "projectionErrorMeters": 13.9
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "bridge-pillar-3",
+      "title": "Bridge Pillar",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "",
+      "action": "Look early, choose the correct side or opening, and avoid last-second steering under the structure.",
+      "distanceMeters": 5464.5,
+      "offsetMeters": 10.1,
+      "coordinates": [
+        {
+          "lon": -83.7451903,
+          "lat": 42.3028196
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5464.5,
+          "offsetMeters": 10.1,
+          "projectionErrorMeters": 10.1
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "river-turn-10",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Continue Downstream",
+      "action": "Stop, Turn, Check, Continue Downstream.",
+      "distanceMeters": 5485.4,
+      "offsetMeters": 2.3,
+      "coordinates": [
+        {
+          "lon": -83.744942,
+          "lat": 42.3028045
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5485.4,
+          "offsetMeters": 2.3,
+          "projectionErrorMeters": 2.3
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-10",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 5511.7,
+      "offsetMeters": 15.7,
+      "coordinates": [
+        {
+          "lon": -83.7447278,
+          "lat": 42.3025836
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5511.7,
+          "offsetMeters": 15.7,
+          "projectionErrorMeters": 15.7
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-6",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 5572.6,
+      "offsetMeters": 15.2,
+      "coordinates": [
+        {
+          "lon": -83.7440761,
+          "lat": 42.3023406
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5572.6,
+          "offsetMeters": 15.2,
+          "projectionErrorMeters": 15.2
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-7",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 5732.0,
+      "offsetMeters": 22.6,
+      "coordinates": [
+        {
+          "lon": -83.7425966,
+          "lat": 42.3015149
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5732.0,
+          "offsetMeters": 22.6,
+          "projectionErrorMeters": 22.6
+        }
+      ],
+      "sectionIds": [
+        "second-weekend",
+        "full-technical"
+      ]
+    },
+    {
+      "id": "stay-on-your-side-of-the-corner",
+      "title": "Stay on your side of the corner",
+      "category": "corner",
+      "geometry": "Point",
+      "description": "Easy to drift to the other side",
+      "action": "Easy to drift to the other side.",
+      "distanceMeters": 5978.8,
+      "offsetMeters": -6.3,
+      "coordinates": [
+        {
+          "lon": -83.7408669,
+          "lat": 42.2997478
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5978.8,
+          "offsetMeters": -6.3,
+          "projectionErrorMeters": 6.3
+        }
+      ],
+      "check": {
+        "question": "What is the safe line through this corner?",
+        "choices": [
+          "Stay on your side and avoid drifting across the river.",
+          "Cut across to make the corner shorter.",
+          "Stop in the middle until the corner clears."
+        ],
+        "answer": 0,
+        "feedback": "Corners are where drift becomes easy; stay predictable."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 6007.3,
+      "offsetMeters": 19.5,
+      "coordinates": [
+        {
+          "lon": -83.7410684,
+          "lat": 42.2994592
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 6007.3,
+          "offsetMeters": 19.5,
+          "projectionErrorMeters": 19.5
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "weeds-8",
+      "title": "Weeds",
+      "category": "hazard",
+      "geometry": "Point",
+      "description": "",
+      "action": "Give the hazard extra room without abandoning the traffic pattern.",
+      "distanceMeters": 6231.9,
+      "offsetMeters": 26.5,
+      "coordinates": [
+        {
+          "lon": -83.742012,
+          "lat": 42.2977841
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 6231.9,
+          "offsetMeters": 26.5,
+          "projectionErrorMeters": 26.5
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "river-turn-8",
+      "title": "River Turn",
+      "category": "turn",
+      "geometry": "Point",
+      "description": "Stop, Turn, Check, Continue Downstream",
+      "action": "Stop, Turn, Check, Continue Downstream.",
+      "distanceMeters": 6277.7,
+      "offsetMeters": 10.0,
+      "coordinates": [
+        {
+          "lon": -83.7422058,
+          "lat": 42.2973968
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 6277.7,
+          "offsetMeters": 10.0,
+          "projectionErrorMeters": 10.0
+        }
+      ],
+      "check": {
+        "question": "What is the river-turn sequence to rehearse?",
+        "choices": [
+          "Stop, turn, check, cross or continue as directed.",
+          "Keep rowing through the turn and correct later.",
+          "Move to the middle early and wait there."
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver, not a speed move."
+      },
+      "sectionIds": [
+        "full-technical"
+      ]
+    },
+    {
+      "id": "docking",
+      "title": "Docking",
+      "category": "dock",
+      "geometry": "Point",
+      "description": "Slow approach at an angle, don't aim at the dock head-on.",
+      "action": "Slow approach at an angle, don't aim at the dock head-on.",
+      "distanceMeters": 6491.4,
+      "offsetMeters": -1.7,
+      "coordinates": [
+        {
+          "lon": -83.7439601,
+          "lat": 42.2959624
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 6491.4,
+          "offsetMeters": -1.7,
+          "projectionErrorMeters": 1.7
+        }
+      ],
+      "check": {
+        "question": "What is the safe docking idea here?",
+        "choices": [
+          "Slow approach at an angle, then adjust gently.",
+          "Aim straight at the dock and stop at the last second.",
+          "Come in fast so the boat tracks straight."
+        ],
+        "answer": 0,
+        "feedback": "Docking should be slow and angled; do not aim the bow straight at the dock."
+      },
+      "sectionIds": [
+        "dock-basics"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "lts-first-weekend",
+      "title": "LTS First Weekend",
+      "category": "limit",
+      "geometry": "LineString",
+      "description": "Don't go beyond this line yet!",
+      "action": "Don't go beyond this line yet!.",
+      "distanceMeters": 265.2,
+      "offsetMeters": 18.4,
+      "coordinates": [
+        {
+          "lon": -83.7455802,
+          "lat": 42.2936844
+        },
+        {
+          "lon": -83.7444134,
+          "lat": 42.2934721
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 265.2,
+          "offsetMeters": 18.3,
+          "projectionErrorMeters": 18.3
+        },
+        {
+          "distanceMeters": 903.9,
+          "offsetMeters": 18.4,
+          "projectionErrorMeters": 18.4
+        }
+      ],
+      "check": {
+        "question": "How should a first-weekend learner use this line?",
+        "choices": [
+          "Do not row beyond it until coaches expand the route.",
+          "Use it only as a suggestion if you feel comfortable.",
+          "Cross it when traffic is light."
+        ],
+        "answer": 0,
+        "feedback": "Progression boundaries are part of the practice plan, not optional challenges."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "no-rowing-beyond-this-point",
+      "title": "No rowing beyond this point",
+      "category": "limit",
+      "geometry": "LineString",
+      "description": "Danger zone!",
+      "action": "Danger zone!.",
+      "distanceMeters": 557.4,
+      "offsetMeters": 32.9,
+      "coordinates": [
+        {
+          "lon": -83.7464127,
+          "lat": 42.2909013
+        },
+        {
+          "lon": -83.7448785,
+          "lat": 42.2911216
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 557.4,
+          "offsetMeters": 24.1,
+          "projectionErrorMeters": 24.1
+        },
+        {
+          "distanceMeters": 640.7,
+          "offsetMeters": 41.7,
+          "projectionErrorMeters": 41.7
+        }
+      ],
+      "check": {
+        "question": "What should you do at this boundary?",
+        "choices": [
+          "Treat it as a hard no-row line and turn before it.",
+          "Continue if the water looks empty.",
+          "Only stop if another shell is nearby."
+        ],
+        "answer": 0,
+        "feedback": "The map labels this as a danger zone; turn before the line."
+      },
+      "sectionIds": [
+        "first-weekend",
+        "argo-turn"
+      ]
+    },
+    {
+      "id": "lts-first-weekend-2",
+      "title": "LTS First Weekend",
+      "category": "limit",
+      "geometry": "LineString",
+      "description": "Don't go beyond this line yet!",
+      "action": "Don't go beyond this line yet!.",
+      "distanceMeters": 1390.8,
+      "offsetMeters": 16.6,
+      "coordinates": [
+        {
+          "lon": -83.7421059,
+          "lat": 42.2975225
+        },
+        {
+          "lon": -83.7412636,
+          "lat": 42.2970543
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 6261.9,
+          "offsetMeters": 13.5,
+          "projectionErrorMeters": 13.5
+        },
+        {
+          "distanceMeters": 1390.8,
+          "offsetMeters": 19.6,
+          "projectionErrorMeters": 19.6
+        }
+      ],
+      "check": {
+        "question": "How should a first-weekend learner use this line?",
+        "choices": [
+          "Do not row beyond it until coaches expand the route.",
+          "Use it only as a suggestion if you feel comfortable.",
+          "Cross it when traffic is light."
+        ],
+        "answer": 0,
+        "feedback": "Progression boundaries are part of the practice plan, not optional challenges."
+      },
+      "sectionIds": [
+        "first-weekend"
+      ]
+    },
+    {
+      "id": "lts-saturday-second-weekend",
+      "title": "LTS Saturday Second Weekend",
+      "category": "limit",
+      "geometry": "LineString",
+      "description": "Don't row beyond this line yet.",
+      "action": "Don't row beyond this line yet.",
+      "distanceMeters": 2243.9,
+      "offsetMeters": 4.4,
+      "coordinates": [
+        {
+          "lon": -83.744832,
+          "lat": 42.3030385
+        },
+        {
+          "lon": -83.744989,
+          "lat": 42.3027935
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 2243.9,
+          "offsetMeters": 3.5,
+          "projectionErrorMeters": 3.5
+        },
+        {
+          "distanceMeters": 5482.6,
+          "offsetMeters": 5.3,
+          "projectionErrorMeters": 5.3
+        }
+      ],
+      "check": {
+        "question": "What does this second-weekend line mean?",
+        "choices": [
+          "Do not row beyond it yet; turn before the line.",
+          "Sprint through it before traffic arrives.",
+          "Stop on the line and wait for other shells."
+        ],
+        "answer": 0,
+        "feedback": "Use it as a route limit and keep the turn area clear."
+      },
+      "sectionIds": [
+        "second-weekend"
+      ]
+    },
+    {
+      "id": "end-point",
+      "title": "End Point",
+      "category": "limit",
+      "geometry": "LineString",
+      "description": "Turn before the Tail Bridge",
+      "action": "Turn before the Tail Bridge.",
+      "distanceMeters": 3824.2,
+      "offsetMeters": 6.8,
+      "coordinates": [
+        {
+          "lon": -83.755553,
+          "lat": 42.307616
+        },
+        {
+          "lon": -83.7553558,
+          "lat": 42.307383
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 3842.2,
+          "offsetMeters": 4.7,
+          "projectionErrorMeters": 4.7
+        },
+        {
+          "distanceMeters": 3824.2,
+          "offsetMeters": 9.0,
+          "projectionErrorMeters": 9.0
+        }
+      ],
+      "sectionIds": [
+        "full-technical"
       ]
     }
   ]

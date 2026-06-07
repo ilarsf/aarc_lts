@@ -1,88 +1,61 @@
-.river-trainer-page {
-  --river-ink: #0f2431;
-  --river-paper: #f6f3eb;
-  --river-card: #ffffff;
-  --river-mist: #d9edf1;
-  --river-water: #0f5d70;
-  --river-water-deep: #0a2f3f;
-  --river-water-bright: #54c9d4;
-  --river-grass: #7da86e;
-  --river-sand: #dbb77c;
-  --river-gold: #ffd17f;
-  --river-alert: #f28a44;
-  --river-danger: #d95a4e;
-  --river-success: #2ea36a;
-  --river-shadow: 0 26px 60px rgba(10, 30, 41, 0.14);
-  color: var(--river-ink);
+.river-tour-page {
+  --tour-ink: #102734;
+  --tour-muted: #5f7180;
+  --tour-paper: #f6f8f7;
+  --tour-card: #ffffff;
+  --tour-water: #257c93;
+  --tour-water-dark: #155266;
+  --tour-bank: #d7c596;
+  --tour-green: #4f8c64;
+  --tour-yellow: #f6c453;
+  --tour-orange: #df7d3f;
+  --tour-red: #c94f4f;
+  --tour-blue: #2f6fbe;
+  --tour-shadow: 0 18px 42px rgba(24, 42, 54, 0.14);
+  color: var(--tour-ink);
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.river-trainer-eyebrow {
-  color: #8c4e24;
-  font-size: 0.82rem;
+.river-tour-eyebrow {
+  color: #7f4d20;
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.16em;
-  margin: 0 0 0.7rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.45rem;
   text-transform: uppercase;
 }
 
-.river-trainer-hero,
-.river-trainer-app,
-.river-trainer-explainer {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(245, 248, 249, 0.92));
-  border: 1px solid rgba(15, 36, 49, 0.08);
-  border-radius: 28px;
-  box-shadow: var(--river-shadow);
-  overflow: hidden;
+.river-tour-hero,
+.river-tour-app,
+.river-tour-notes article {
+  background: var(--tour-card);
+  border: 1px solid rgba(16, 39, 52, 0.1);
+  border-radius: 8px;
+  box-shadow: var(--tour-shadow);
 }
 
-.river-trainer-hero {
-  display: grid;
-  gap: 1.5rem;
-  padding: 2rem;
+.river-tour-hero {
+  padding: 1.5rem;
 }
 
-.river-trainer-hero__copy h1 {
-  color: #103d53;
-  margin: 0 0 0.8rem;
+.river-tour-hero h1 {
+  color: #17465a;
+  margin: 0 0 0.65rem;
 }
 
-.river-trainer-hero__copy .lead {
-  font-size: 1.15rem;
+.river-tour-hero .lead {
   margin: 0;
-  max-width: 54rem;
+  max-width: 64rem;
 }
 
-.river-trainer-hero__grid,
-.river-trainer-explainer__grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.river-tour-app {
+  background: linear-gradient(180deg, #f8fbfb 0%, #eef5f4 100%);
+  overflow: hidden;
+  padding: 1rem;
 }
 
-.river-trainer-hero__card,
-.river-trainer-explainer__card {
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(15, 36, 49, 0.08);
-  border-radius: 22px;
-  padding: 1.2rem;
-}
-
-.river-trainer-hero__card h2,
-.river-trainer-explainer__card h3 {
-  color: #0f5d70;
-  font-size: 1.08rem;
-  margin: 0 0 0.45rem;
-}
-
-.river-trainer-app {
-  background: linear-gradient(180deg, #0d2633 0%, #123847 58%, #103340 100%);
-  color: #f7fbfc;
-  padding: 1.4rem;
-}
-
-.river-trainer-app__header {
+.river-tour-app__header {
   align-items: end;
   display: grid;
   gap: 1rem;
@@ -90,496 +63,447 @@
   margin-bottom: 1rem;
 }
 
-.river-trainer-app__header h2 {
-  color: #fff8ec;
+.river-tour-app__header h2 {
+  color: #17465a;
   margin: 0 0 0.35rem;
 }
 
-.river-trainer-app__header p {
-  color: rgba(247, 251, 252, 0.82);
+.river-tour-app__header p {
+  color: var(--tour-muted);
   margin: 0;
 }
 
-.river-trainer-stats {
-  display: grid;
-  gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-}
-
-.river-trainer-stat {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 0.8rem 0.95rem;
-}
-
-.river-trainer-stat span {
-  color: rgba(247, 251, 252, 0.76);
-  display: block;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
-}
-
-.river-trainer-stat strong {
-  color: #fff8ec;
-  display: block;
-  font-family: "Courier New", Menlo, monospace;
-  font-size: 1.22rem;
-  letter-spacing: 0.03em;
-}
-
-.river-trainer-progress {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
-  height: 12px;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.river-trainer-progress__fill {
-  background: linear-gradient(90deg, #ffd17f 0%, #6de2f1 100%);
-  border-radius: inherit;
-  height: 100%;
-  transition: width 0.2s ease;
-  width: 0%;
-}
-
-.river-trainer-shell {
-  display: grid;
-  gap: 1rem;
-}
-
-.river-trainer-screen-wrap {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(10, 22, 29, 0.34));
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 24px;
-  overflow: hidden;
-  position: relative;
-}
-
-.river-trainer-canvas {
-  aspect-ratio: 1100 / 640;
-  display: block;
-  width: 100%;
-}
-
-.river-trainer-overlay {
-  align-items: center;
-  background: linear-gradient(180deg, rgba(8, 18, 25, 0.18), rgba(8, 18, 25, 0.84));
-  display: flex;
-  inset: 0;
-  justify-content: center;
-  padding: 1rem;
-  position: absolute;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-.river-trainer-overlay.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.river-trainer-overlay__card {
-  background: rgba(15, 35, 46, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.34);
-  color: #f7fbfc;
-  max-width: 58rem;
-  padding: 1.5rem;
-  width: min(58rem, 100%);
-}
-
-.river-trainer-overlay__card h3 {
-  color: #fff8ec;
-  margin: 0 0 0.75rem;
-}
-
-.river-trainer-overlay__card p {
-  color: rgba(247, 251, 252, 0.84);
-}
-
-.river-trainer-overlay__grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin: 1.2rem 0;
-}
-
-.river-trainer-overlay__grid h4 {
-  color: #fff8ec;
-  font-size: 1rem;
-  margin: 0 0 0.6rem;
-}
-
-.river-trainer-choice-grid {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.river-trainer-choice {
-  appearance: none;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 18px;
-  color: #f7fbfc;
-  cursor: pointer;
-  display: grid;
-  gap: 0.35rem;
-  padding: 0.95rem 1rem;
-  text-align: left;
-  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
-}
-
-.river-trainer-choice strong {
-  font-size: 1rem;
-}
-
-.river-trainer-choice span {
-  color: #ffd17f;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.river-trainer-choice small {
-  color: rgba(247, 251, 252, 0.8);
-  font-size: 0.9rem;
-}
-
-.river-trainer-choice:hover,
-.river-trainer-choice:focus-visible,
-.river-trainer-choice.is-selected {
-  background: rgba(255, 209, 127, 0.14);
-  border-color: rgba(255, 209, 127, 0.86);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
-  outline: none;
-  transform: translateY(-1px);
-}
-
-.river-trainer-overlay__actions,
-.river-trainer-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.river-trainer-button {
-  appearance: none;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 700;
-  padding: 0.8rem 1.15rem;
-  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
-}
-
-.river-trainer-button:hover,
-.river-trainer-button:focus-visible {
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.26);
-  outline: none;
-  transform: translateY(-1px);
-}
-
-.river-trainer-button--primary {
-  background: linear-gradient(135deg, #ffd17f 0%, #73dfe7 100%);
-  color: #14313d;
-}
-
-.river-trainer-button--secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff8ec;
-}
-
-.river-trainer-sidebar {
-  display: grid;
-  gap: 1rem;
-}
-
-.river-trainer-panel {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 22px;
-  color: #f7fbfc;
-  padding: 1rem;
-}
-
-.river-trainer-panel__label {
-  color: rgba(247, 251, 252, 0.72);
-  display: block;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-}
-
-.river-trainer-panel h3 {
-  color: #fff8ec;
-  font-size: 1rem;
-  margin: 0 0 0.45rem;
-}
-
-.river-trainer-panel p,
-.river-trainer-panel li,
-.river-trainer-panel .river-trainer-meta {
-  color: rgba(247, 251, 252, 0.86);
-  margin: 0;
-}
-
-.river-trainer-meta {
-  align-items: center;
-  display: flex;
-  gap: 0.7rem;
-  justify-content: space-between;
-  margin-bottom: 0.75rem;
-}
-
-.river-trainer-minimap {
-  aspect-ratio: 320 / 220;
-  border-radius: 18px;
-  display: block;
-  width: 100%;
-}
-
-.river-trainer-briefing-list {
-  display: grid;
-  gap: 0.65rem;
-  margin: 0;
-  padding-left: 1.1rem;
-}
-
-.river-trainer-briefing-list li {
-  line-height: 1.45;
-}
-
-.river-trainer-controls {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.river-trainer-controls__row {
-  align-items: center;
-  display: grid;
-  gap: 0.7rem;
-  grid-template-columns: 5rem minmax(0, 1fr);
-}
-
-.river-trainer-controls__key {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  color: #fff8ec;
-  display: inline-flex;
-  font-family: "Courier New", Menlo, monospace;
-  font-size: 0.9rem;
-  font-weight: 700;
-  justify-content: center;
-  padding: 0.45rem 0.65rem;
-}
-
-.river-trainer-message {
-  border-left: 4px solid #6de2f1;
-  margin: 0;
-  min-height: 4rem;
-  padding-left: 0.85rem;
-}
-
-.river-trainer-message--calm {
-  border-left-color: #6de2f1;
-}
-
-.river-trainer-message--alert {
-  border-left-color: #ffd17f;
-}
-
-.river-trainer-message--danger {
-  border-left-color: #ff8d84;
-}
-
-.river-trainer-message--success {
-  border-left-color: #61d9a0;
-}
-
-.river-trainer-touchpad {
-  align-items: center;
-  display: grid;
-  gap: 0.65rem;
-  grid-template-areas:
-    ". look ."
-    ". up ."
-    "left down right";
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.river-trainer-touchpad__button {
-  appearance: none;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 16px;
-  color: #fff8ec;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 700;
-  min-width: 5rem;
-  padding: 0.8rem 1rem;
-}
-
-.river-trainer-touchpad__button.is-pressed {
-  background: rgba(255, 209, 127, 0.18);
-  border-color: rgba(255, 209, 127, 0.8);
-}
-
-.river-trainer-touchpad__button--look { grid-area: look; }
-.river-trainer-touchpad__button--up { grid-area: up; }
-.river-trainer-touchpad__button--left { grid-area: left; }
-.river-trainer-touchpad__button--down { grid-area: down; }
-.river-trainer-touchpad__button--right { grid-area: right; }
-
-.river-trainer-debrief {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 22px;
+.river-tour-progress {
+  background: #102734;
+  border-radius: 8px;
   color: #f7fbfc;
   display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.river-trainer-debrief__header {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.river-trainer-debrief__header strong {
-  color: #fff8ec;
-  display: block;
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
-}
-
-.river-trainer-debrief__scores {
-  display: grid;
-  gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-}
-
-.river-trainer-score-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  padding: 0.85rem 0.95rem;
-}
-
-.river-trainer-score-card span {
-  color: rgba(247, 251, 252, 0.74);
-  display: block;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.2rem;
-  text-transform: uppercase;
-}
-
-.river-trainer-score-card strong {
-  color: #fff8ec;
-  display: block;
-  font-size: 1.15rem;
-}
-
-.river-trainer-debrief__list {
-  display: grid;
-  gap: 0.8rem;
-}
-
-.river-trainer-debrief__item {
-  background: rgba(255, 255, 255, 0.06);
-  border-left: 4px solid rgba(255, 255, 255, 0.18);
-  border-radius: 16px;
+  gap: 0.2rem;
   padding: 0.9rem 1rem;
 }
 
-.river-trainer-debrief__item h4 {
-  color: #fff8ec;
-  font-size: 0.98rem;
-  margin: 0 0 0.35rem;
+.river-tour-progress span {
+  color: rgba(247, 251, 252, 0.78);
+  font-size: 0.86rem;
 }
 
-.river-trainer-debrief__item p {
-  color: rgba(247, 251, 252, 0.86);
+.river-tour-progress strong {
+  color: #fff3cd;
+  font-size: 1.05rem;
+}
+
+.river-tour-tabs,
+.river-tour-filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.river-tour-tabs {
+  border-bottom: 1px solid rgba(16, 39, 52, 0.12);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.river-tour-tab,
+.river-tour-filter,
+.river-tour-button,
+.river-tour-stop,
+.river-tour-check__choice {
+  appearance: none;
+  border: 1px solid rgba(16, 39, 52, 0.14);
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.river-tour-tab,
+.river-tour-filter {
+  background: #fff;
+  color: var(--tour-ink);
+  font-weight: 700;
+  padding: 0.55rem 0.75rem;
+}
+
+.river-tour-tab.is-selected,
+.river-tour-filter.is-selected {
+  background: #17465a;
+  border-color: #17465a;
+  color: #fff;
+}
+
+.river-tour-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.river-tour-map-panel {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.river-tour-map-wrap {
+  background:
+    linear-gradient(90deg, rgba(215, 197, 150, 0.22), transparent 18%, transparent 82%, rgba(90, 133, 88, 0.16)),
+    #e9f2f1;
+  border: 1px solid rgba(16, 39, 52, 0.12);
+  border-radius: 8px;
+  min-height: 26rem;
+  overflow: hidden;
+}
+
+.river-tour-map {
+  display: block;
+  height: min(68vh, 44rem);
+  min-height: 26rem;
+  width: 100%;
+}
+
+.river-tour-map__route {
+  fill: none;
+  stroke: var(--tour-water);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 18;
+}
+
+.river-tour-map__limit {
+  fill: none;
+  stroke: var(--tour-red);
+  stroke-linecap: round;
+  stroke-width: 8;
+}
+
+.river-tour-map__limit--limit {
+  stroke-dasharray: 18 12;
+}
+
+.river-tour-map__limit.is-selected {
+  stroke: #101820;
+  stroke-width: 12;
+}
+
+.river-tour-map__limit.needs-review {
+  stroke-dasharray: 10 8;
+}
+
+.river-tour-map__marker {
+  outline: none;
+}
+
+.river-tour-map__marker-dot {
+  fill: #fff;
+  stroke: #33424d;
+  stroke-width: 3;
+}
+
+.river-tour-map__marker-symbol {
+  fill: #182a36;
+  font: 800 12px system-ui, sans-serif;
+  pointer-events: none;
+}
+
+.river-tour-map__marker--dock .river-tour-map__marker-dot { fill: #e9f6ef; stroke: var(--tour-green); }
+.river-tour-map__marker--direction .river-tour-map__marker-dot { fill: #eaf0ff; stroke: var(--tour-blue); }
+.river-tour-map__marker--turn .river-tour-map__marker-dot { fill: #fff5d8; stroke: var(--tour-yellow); }
+.river-tour-map__marker--limit .river-tour-map__marker-dot { fill: #ffe8e8; stroke: var(--tour-red); }
+.river-tour-map__marker--bridge .river-tour-map__marker-dot { fill: #eaf0ff; stroke: var(--tour-blue); }
+.river-tour-map__marker--hazard .river-tour-map__marker-dot { fill: #fff0df; stroke: var(--tour-orange); }
+.river-tour-map__marker--current .river-tour-map__marker-dot { fill: #ddf7fb; stroke: var(--tour-water-dark); }
+.river-tour-map__marker--corner .river-tour-map__marker-dot { fill: #f0e9ff; stroke: #8067b7; }
+.river-tour-map__marker--break .river-tour-map__marker-dot { fill: #edf8e8; stroke: #6a9f3d; }
+
+.river-tour-map__marker.is-viewed .river-tour-map__marker-dot {
+  stroke-width: 2;
+}
+
+.river-tour-map__marker.needs-review .river-tour-map__marker-dot {
+  stroke: #101820;
+  stroke-dasharray: 4 3;
+}
+
+.river-tour-map__marker.is-selected .river-tour-map__marker-dot {
+  filter: drop-shadow(0 5px 8px rgba(16, 39, 52, 0.28));
+  stroke: #101820;
+  stroke-width: 5;
+}
+
+.river-tour-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.river-tour-card {
+  background: #fff;
+  border: 1px solid rgba(16, 39, 52, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.river-tour-card--current {
+  border-top: 4px solid var(--tour-water);
+}
+
+.river-tour-card__topline {
+  align-items: center;
+  color: var(--tour-muted);
+  display: flex;
+  font-size: 0.86rem;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.river-tour-pill {
+  background: #eef5f4;
+  border-radius: 999px;
+  color: #17465a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.25rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.river-tour-card h3 {
+  color: #17465a;
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+
+.river-tour-card p {
+  color: var(--tour-muted);
+  margin: 0 0 0.9rem;
+}
+
+.river-tour-action {
+  background: #f3f7f7;
+  border-left: 4px solid var(--tour-water);
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 0.85rem;
+}
+
+.river-tour-action span {
+  color: #17465a;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.river-tour-action p {
+  color: var(--tour-ink);
   margin: 0;
 }
 
-.river-trainer-debrief__item--pass { border-left-color: #61d9a0; }
-.river-trainer-debrief__item--warn { border-left-color: #ffd17f; }
-.river-trainer-debrief__item--fail { border-left-color: #ff8d84; }
-.river-trainer-debrief__item--muted { border-left-color: rgba(255,255,255,0.18); }
-
-.river-trainer-explainer {
-  padding: 1.6rem;
+.river-tour-controls {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.river-trainer-explainer__intro h2 {
-  color: #103d53;
-  margin: 0 0 0.8rem;
+.river-tour-button {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.65rem 0.85rem;
 }
 
-.river-trainer-explainer__intro p {
-  margin: 0 0 1rem;
-  max-width: 52rem;
+.river-tour-button--primary {
+  background: #17465a;
+  border-color: #17465a;
+  color: #fff;
+  font-weight: 800;
 }
 
-@media (min-width: 960px) {
-  .river-trainer-app__header {
-    grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+.river-tour-button--secondary {
+  background: #fff;
+  color: var(--tour-ink);
+  font-weight: 700;
+}
+
+.river-tour-button.is-active {
+  background: #fff1d1;
+  border-color: #e0ad36;
+}
+
+.river-tour-stop-list {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0.8rem 0 0;
+  max-height: 28rem;
+  overflow: auto;
+  padding: 0;
+}
+
+.river-tour-stop {
+  align-items: center;
+  background: #fff;
+  color: var(--tour-ink);
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  width: 100%;
+}
+
+.river-tour-stop span {
+  align-items: center;
+  background: #eef5f4;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 800;
+  height: 1.6rem;
+  justify-content: center;
+  width: 1.6rem;
+}
+
+.river-tour-stop strong,
+.river-tour-stop small {
+  display: block;
+  min-width: 0;
+}
+
+.river-tour-stop small {
+  color: var(--tour-muted);
+  font-size: 0.8rem;
+  grid-column: 2;
+}
+
+.river-tour-stop.is-selected {
+  border-color: #17465a;
+  box-shadow: inset 4px 0 0 #17465a;
+}
+
+.river-tour-stop.is-viewed span {
+  background: #e8f5ec;
+  color: #1c6d3b;
+}
+
+.river-tour-stop.needs-review {
+  background: #fff9e8;
+}
+
+.river-tour-check {
+  background: #102734;
+  border-radius: 8px;
+  color: #f8fbfb;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.river-tour-check h4 {
+  color: #fff3cd;
+  margin: 0 0 0.45rem;
+}
+
+.river-tour-check p {
+  color: rgba(248, 251, 251, 0.86);
+}
+
+.river-tour-check__choices {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.river-tour-check__choice {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+}
+
+.river-tour-check__choice.is-correct {
+  background: rgba(87, 176, 113, 0.28);
+  border-color: #70cf8c;
+}
+
+.river-tour-check__choice.is-wrong {
+  background: rgba(201, 79, 79, 0.28);
+  border-color: #f18a8a;
+}
+
+.river-tour-check__feedback {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  margin: 0.8rem 0 0;
+  padding-top: 0.8rem;
+}
+
+.river-tour-notes {
+  display: grid;
+  gap: 1rem;
+}
+
+.river-tour-notes article {
+  padding: 1rem;
+}
+
+.river-tour-notes h2 {
+  color: #17465a;
+  font-size: 1.12rem;
+  margin: 0 0 0.45rem;
+}
+
+.river-tour-notes p {
+  color: var(--tour-muted);
+  margin: 0;
+}
+
+.river-tour-tab:focus-visible,
+.river-tour-filter:focus-visible,
+.river-tour-button:focus-visible,
+.river-tour-stop:focus-visible,
+.river-tour-check__choice:focus-visible,
+.river-tour-map__marker:focus-visible {
+  outline: 3px solid rgba(47, 111, 190, 0.36);
+  outline-offset: 2px;
+}
+
+@media (min-width: 980px) {
+  .river-tour-app {
+    padding: 1.25rem;
   }
 
-  .river-trainer-shell {
-    grid-template-columns: minmax(0, 2fr) minmax(320px, 0.95fr);
+  .river-tour-app__header {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  }
+
+  .river-tour-layout {
+    grid-template-columns: minmax(0, 1.45fr) minmax(340px, 0.75fr);
     align-items: start;
   }
 
-  .river-trainer-touchpad {
-    display: none;
-  }
-}
-
-@media (max-width: 959px) {
-  .river-trainer-screen-wrap,
-  .river-trainer-panel,
-  .river-trainer-hero,
-  .river-trainer-app,
-  .river-trainer-explainer {
-    border-radius: 22px;
+  .river-tour-notes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .river-trainer-hero,
-  .river-trainer-app,
-  .river-trainer-explainer {
-    padding: 1rem;
+  .river-tour-hero,
+  .river-tour-app,
+  .river-tour-card,
+  .river-tour-notes article {
+    padding: 0.85rem;
   }
 
-  .river-trainer-controls__row {
-    grid-template-columns: 4.3rem minmax(0, 1fr);
+  .river-tour-map,
+  .river-tour-map-wrap {
+    min-height: 22rem;
   }
 
-  .river-trainer-button,
-  .river-trainer-touchpad__button {
+  .river-tour-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .river-tour-button {
     width: 100%;
-  }
-
-  .river-trainer-overlay__actions,
-  .river-trainer-actions {
-    display: grid;
   }
 }
