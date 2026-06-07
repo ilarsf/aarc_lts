@@ -292,11 +292,11 @@
     if (!item) return;
     const isKey = isKeyPlace(state, item.id);
     ui.category.textContent = isPracticeGate(item)
-      ? 'Coach boundary context'
-      : isKey ? state.course.categories[item.category] || item.category : 'Additional map marker';
+      ? 'Coach route limit'
+      : isKey ? state.course.categories[item.category] || item.category : 'River marker';
     ui.distance.textContent = formatRoutePositions(item);
     ui.title.textContent = itemLabel(item);
-    ui.description.textContent = item.description || 'Local marker from the AARC river traffic map.';
+    ui.description.textContent = item.description || 'Review this location before rowing the route.';
     ui.action.textContent = item.action || 'Review this location before rowing the route.';
     ui.coachButton.classList.toggle('is-active', state.coachQuestions.has(item.id));
     ui.coachButton.innerHTML = state.coachQuestions.has(item.id)
@@ -496,10 +496,7 @@
   }
 
   function tooltipText(item, state) {
-    const status = isPracticeGate(item)
-      ? 'Coach boundary context'
-      : isKeyPlace(state, item.id) ? 'Key place' : 'Additional marker';
-    return itemLabel(item) + ' - ' + status;
+    return itemLabel(item);
   }
 
   function fitBridgePattern(state) {

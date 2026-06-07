@@ -25,8 +25,8 @@ nav_exclude: true
     <div class="river-tour-app__header">
       <div>
         <p class="river-tour-eyebrow">Progressive river maps</p>
-        <h2>Start with the turn cues</h2>
-        <p>Each map keeps the satellite view and actual route markers together. The walkthrough focuses on river turns and local decisions; LTS boundary lines stay visible as coach context.</p>
+        <h2>Choose your session</h2>
+        <p>Step through the places you need to recognize before rowing: turn cues, bridge openings, hazards, current, and docking.</p>
       </div>
       <div class="river-tour-progress" aria-live="polite">
         <span data-progress-count>Loading map...</span>
@@ -63,7 +63,7 @@ nav_exclude: true
       <aside class="river-tour-sidebar">
         <section class="river-tour-card river-tour-card--current">
           <div class="river-tour-card__topline">
-            <span class="river-tour-pill" data-current-category>Map marker</span>
+            <span class="river-tour-pill" data-current-category>Location</span>
             <span data-current-distance></span>
           </div>
           <h3 data-current-title>Select a place</h3>
@@ -94,12 +94,12 @@ nav_exclude: true
 
   <section class="river-tour-notes">
     <article>
-      <h2>LTS Progression</h2>
-      <p>First Weekend and Saturday Second Weekend maps keep LTS gates visible as thin coach boundary lines. They are not part of the main walkthrough; use the nearby river-turn markers as the practical action cues.</p>
+      <h2>Coach Route</h2>
+      <p>Your coach sets the route for the session. Stay inside the assigned area and turn where directed.</p>
     </article>
     <article>
-      <h2>Map source</h2>
-      <p>This guide is generated from the AARC Google My Maps river traffic map and stored as static site data. Satellite imagery keeps the route and markers grounded in the actual river.</p>
+      <h2>On The Water</h2>
+      <p>Keep scanning, stay on the correct side, and leave room near bridges, weeds, trees, current, and sharp bends.</p>
     </article>
   </section>
 

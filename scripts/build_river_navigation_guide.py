@@ -24,9 +24,9 @@ MAP_DEFS = [
     {
         "id": "first-weekend",
         "name": "First Weekend Map",
-        "summary": "Use this map for the first Learn-to-Scull weekend. The map shows the full first-weekend practice area, while Key Places focus on the turn cues learners actually use.",
-        "routeRanges": [[0, 1450], [6200, 6505]],
-        "markerRanges": [[0, 1450], [6200, 6505]],
+        "summary": "First-weekend practice from launch to the assigned turn cues and back to docking. Stay inside the route your coach gives you.",
+        "routeRanges": [[0, 280], [900, 1450], [6200, 6505]],
+        "markerRanges": [[0, 280], [900, 1450], [6200, 6505]],
         "lineIds": [
             "lts-first-weekend",
             "no-rowing-beyond-this-point",
@@ -36,6 +36,7 @@ MAP_DEFS = [
             "launch",
             "downstream",
             "river-turn-5",
+            "river-turn-6",
             "river-turn-7",
             "river-turn-8",
             "docking",
@@ -43,24 +44,32 @@ MAP_DEFS = [
         "gateNotes": [
             {
                 "lineId": "lts-first-weekend",
-                "note": "First-weekend gate on the downstream side of the dock. It affects the route near 265 m and again near 904 m.",
+                "note": "First-weekend route limit on the downstream side of the dock.",
             },
             {
                 "lineId": "no-rowing-beyond-this-point",
-                "note": "Permanent no-row danger boundary near Argo. It affects the route near 557 m and 641 m.",
+                "note": "Permanent no-row danger boundary near Argo.",
             },
             {
                 "lineId": "lts-first-weekend-2",
-                "note": "First-weekend gate on the upstream side. It affects the outbound route near 1391 m and the return route near 6262 m.",
+                "note": "First-weekend route limit on the upstream side.",
             },
         ],
     },
     {
         "id": "saturday-second-weekend",
         "name": "Saturday Second Weekend Map",
-        "summary": "Use this map for Saturday of the second weekend. The map shows the whole Saturday practice route; Key Places focus on the bridge pattern and the current turn point.",
+        "summary": "Saturday bridge session for the second weekend. Review the bridge approach, pillar choices, current, return, and docking.",
         "routeRanges": [[0, 2820], [5160, 6505]],
         "markerRanges": [[0, 2820], [5160, 6505]],
+        "excludeMarkerIds": [
+            "river-turn-5",
+            "river-turn-3",
+            "river-turn-4",
+            "river-turn-6",
+            "river-turn-7",
+            "river-turn-8",
+        ],
         "lineIds": [
             "lts-saturday-second-weekend",
         ],
@@ -83,8 +92,8 @@ MAP_DEFS = [
             "bridge-pillar-2",
             "tree-branches",
             "correct-your-angle",
-            "wrong-side-of-the-pillar",
             "pass-here",
+            "bridge-pillar-4",
             "current",
             "bridge-pillar-3",
             "river-turn-10",
@@ -93,16 +102,26 @@ MAP_DEFS = [
         "gateNotes": [
             {
                 "lineId": "lts-saturday-second-weekend",
-                "note": "Second-weekend gate. It affects the outbound bridge approach near 2244 m and the return side near 5483 m.",
+                "note": "Saturday second-weekend route limit.",
             },
         ],
     },
     {
         "id": "sunday-full-route",
         "name": "Sunday Full Route Map",
-        "summary": "Use this map for the Sunday full-route rehearsal. The map shows the full route; Key Places skip earlier practice-turn cues and focus on decisions that still matter on the full loop.",
+        "summary": "Full-route rehearsal toward Tail Bridge and back. Review bridge openings, hazards, current, regrouping, and docking.",
         "routeRanges": [[0, 6505]],
         "markerRanges": "__all_stops__",
+        "excludeMarkerIds": [
+            "river-turn-5",
+            "river-turn-3",
+            "river-turn-4",
+            "river-turn-6",
+            "river-turn-7",
+            "river-turn-8",
+            "river-turn-9",
+            "river-turn-10",
+        ],
         "lineIds": [
             "no-rowing-beyond-this-point",
             "end-point",
@@ -125,13 +144,16 @@ MAP_DEFS = [
             "downstream",
             "island-weeds",
             "bridge-pillar-2",
+            "tree-branches",
             "correct-your-angle",
             "pass-here",
             "sharp-turn",
+            "tree-branch",
             "river-turn",
             "river-turn-2",
             "good-place-for-a-break",
             "fallen-trees-corner",
+            "bridge-pillar-4",
             "current",
             "bridge-pillar-3",
             "stay-on-your-side-of-the-corner",
@@ -140,11 +162,11 @@ MAP_DEFS = [
         "gateNotes": [
             {
                 "lineId": "no-rowing-beyond-this-point",
-                "note": "Permanent no-row danger boundary near Argo. It remains visible on every map where that area matters.",
+                "note": "Permanent no-row danger boundary near Argo.",
             },
             {
                 "lineId": "end-point",
-                "note": "Full-route turn point near Tail Bridge. It affects the route near 3824 m.",
+                "note": "Turn point near Tail Bridge.",
             },
         ],
     },
@@ -252,7 +274,7 @@ ID_CHECKS = {
 ITEM_OVERRIDES = {
     "river-turn-5": {
         "displayTitle": "River turn: downstream first cue",
-        "description": "First downstream turn cue after leaving the dock. This is the practical marker to use near the first-weekend downstream boundary.",
+        "description": "First downstream turn cue after leaving the dock.",
         "action": "Come under control early, turn as coached, check traffic, and keep the turn compact.",
     },
     "river-turn-3": {
@@ -317,8 +339,8 @@ DESCRIPTION_OVERRIDES = {
     "Downstream": "Orientation cue for the downstream direction from the dock.",
     "Docking": "Docking works best as a slow angled approach, not a head-on approach.",
     "River Turn": "River turns are controlled stop-turn-check maneuvers.",
-    "LTS First Weekend": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
-    "LTS Saturday Second Weekend": "Coach progression boundary for the Saturday bridge introduction. Use nearby river turns and bridge markers as practical cues.",
+    "LTS First Weekend": "Route limit for first-weekend practice.",
+    "LTS Saturday Second Weekend": "Route limit for the Saturday bridge session.",
     "No rowing beyond this point": "Hard no-row boundary. The map marks this area as dangerous.",
     "End Point": "Full-route turn point before Tail Bridge.",
     "Island + Weeds": "Island and weed area where oars can catch if you crowd the edge.",
@@ -344,8 +366,8 @@ ACTION_OVERRIDES = {
     "Downstream": "Use this cue to orient yourself before rowing away from the dock.",
     "Docking": "Approach slowly at an angle, make small corrections, and avoid pointing the bow straight at the dock.",
     "River Turn": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
-    "LTS First Weekend": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
-    "LTS Saturday Second Weekend": "Use this as coach context only. Turn or continue based on coach direction and the nearby river-turn and bridge markers.",
+    "LTS First Weekend": "Stay inside the route your coach gives you and turn where directed.",
+    "LTS Saturday Second Weekend": "Stay inside the route your coach gives you and turn where directed.",
     "No rowing beyond this point": "Do not row past this boundary. Turn before reaching the danger area.",
     "End Point": "Turn before Tail Bridge and keep the turning area clear for the next boat.",
     "Island + Weeds": "Give the island and weed edge room while still staying in the traffic pattern.",
@@ -483,6 +505,10 @@ def marker_ids_for_map(map_def: dict, stops: list[dict]) -> list[str]:
     else:
         marker_ids = list(map_def.get("markerIds", []))
 
+    excluded = set(map_def.get("excludeMarkerIds", []))
+    if excluded:
+        marker_ids = [item_id for item_id in marker_ids if item_id not in excluded]
+
     seen = set(marker_ids)
     for item_id in map_def["keyPlaceIds"]:
         if item_id not in seen:
@@ -503,7 +529,8 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
         missing_lines = sorted(set(map_def["lineIds"]) - line_ids)
         missing_keys = sorted(set(map_def["keyPlaceIds"]) - all_ids)
         missing_bridge_focus = sorted(set(bridge_focus_ids) - all_ids)
-        if missing_markers or missing_lines or missing_keys or missing_bridge_focus:
+        missing_excluded = sorted(set(map_def.get("excludeMarkerIds", [])) - stop_ids)
+        if missing_markers or missing_lines or missing_keys or missing_bridge_focus or missing_excluded:
             details = []
             if missing_markers:
                 details.append(f"markers={missing_markers}")
@@ -513,6 +540,8 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
                 details.append(f"key places={missing_keys}")
             if missing_bridge_focus:
                 details.append(f"bridge focus={missing_bridge_focus}")
+            if missing_excluded:
+                details.append(f"excluded markers={missing_excluded}")
             raise SystemExit(f"Map {map_def['id']} references missing ids: {'; '.join(details)}")
         maps.append({
             "id": map_def["id"],
@@ -653,7 +682,7 @@ def main() -> int:
             "current": "Current / drift",
             "corner": "Corner / angle",
             "break": "Regrouping point",
-            "marker": "Map marker",
+            "marker": "River marker",
         },
         "maps": maps,
         "stops": stops,

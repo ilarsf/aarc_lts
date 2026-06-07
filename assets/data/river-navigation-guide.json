@@ -1502,16 +1502,20 @@
     "current": "Current / drift",
     "corner": "Corner / angle",
     "break": "Regrouping point",
-    "marker": "Map marker"
+    "marker": "River marker"
   },
   "maps": [
     {
       "id": "first-weekend",
       "name": "First Weekend Map",
-      "summary": "Use this map for the first Learn-to-Scull weekend. The map shows the full first-weekend practice area, while Key Places focus on the turn cues learners actually use.",
+      "summary": "First-weekend practice from launch to the assigned turn cues and back to docking. Stay inside the route your coach gives you.",
       "routeRanges": [
         [
           0,
+          280
+        ],
+        [
+          900,
           1450
         ],
         [
@@ -1523,6 +1527,7 @@
         "launch",
         "downstream",
         "river-turn-5",
+        "river-turn-6",
         "river-turn-7",
         "river-turn-8",
         "docking"
@@ -1532,9 +1537,6 @@
         "downstream",
         "fallen-tree-3",
         "river-turn-5",
-        "river-turn-3",
-        "river-turn-4",
-        "island-weeds",
         "river-turn-6",
         "weeds-9",
         "fallen-tree-2",
@@ -1554,22 +1556,22 @@
       "gateNotes": [
         {
           "lineId": "lts-first-weekend",
-          "note": "First-weekend gate on the downstream side of the dock. It affects the route near 265 m and again near 904 m."
+          "note": "First-weekend route limit on the downstream side of the dock."
         },
         {
           "lineId": "no-rowing-beyond-this-point",
-          "note": "Permanent no-row danger boundary near Argo. It affects the route near 557 m and 641 m."
+          "note": "Permanent no-row danger boundary near Argo."
         },
         {
           "lineId": "lts-first-weekend-2",
-          "note": "First-weekend gate on the upstream side. It affects the outbound route near 1391 m and the return route near 6262 m."
+          "note": "First-weekend route limit on the upstream side."
         }
       ]
     },
     {
       "id": "saturday-second-weekend",
       "name": "Saturday Second Weekend Map",
-      "summary": "Use this map for Saturday of the second weekend. The map shows the whole Saturday practice route; Key Places focus on the bridge pattern and the current turn point.",
+      "summary": "Saturday bridge session for the second weekend. Review the bridge approach, pillar choices, current, return, and docking.",
       "routeRanges": [
         [
           0,
@@ -1586,8 +1588,8 @@
         "bridge-pillar-2",
         "tree-branches",
         "correct-your-angle",
-        "wrong-side-of-the-pillar",
         "pass-here",
+        "bridge-pillar-4",
         "current",
         "bridge-pillar-3",
         "river-turn-10",
@@ -1597,15 +1599,10 @@
         "launch",
         "downstream",
         "fallen-tree-3",
-        "river-turn-5",
-        "river-turn-3",
-        "river-turn-4",
         "island-weeds",
-        "river-turn-6",
         "weeds-9",
         "fallen-tree-2",
         "fallen-trees",
-        "river-turn-7",
         "fallen-trees-2",
         "weeds-2",
         "river-turn-9",
@@ -1628,7 +1625,6 @@
         "stay-on-your-side-of-the-corner",
         "weeds",
         "weeds-8",
-        "river-turn-8",
         "docking"
       ],
       "lineIds": [
@@ -1650,14 +1646,14 @@
       "gateNotes": [
         {
           "lineId": "lts-saturday-second-weekend",
-          "note": "Second-weekend gate. It affects the outbound bridge approach near 2244 m and the return side near 5483 m."
+          "note": "Saturday second-weekend route limit."
         }
       ]
     },
     {
       "id": "sunday-full-route",
       "name": "Sunday Full Route Map",
-      "summary": "Use this map for the Sunday full-route rehearsal. The map shows the full route; Key Places skip earlier practice-turn cues and focus on decisions that still matter on the full loop.",
+      "summary": "Full-route rehearsal toward Tail Bridge and back. Review bridge openings, hazards, current, regrouping, and docking.",
       "routeRanges": [
         [
           0,
@@ -1669,13 +1665,16 @@
         "downstream",
         "island-weeds",
         "bridge-pillar-2",
+        "tree-branches",
         "correct-your-angle",
         "pass-here",
         "sharp-turn",
+        "tree-branch",
         "river-turn",
         "river-turn-2",
         "good-place-for-a-break",
         "fallen-trees-corner",
+        "bridge-pillar-4",
         "current",
         "bridge-pillar-3",
         "stay-on-your-side-of-the-corner",
@@ -1685,18 +1684,12 @@
         "launch",
         "downstream",
         "fallen-tree-3",
-        "river-turn-5",
-        "river-turn-3",
-        "river-turn-4",
         "island-weeds",
-        "river-turn-6",
         "weeds-9",
         "fallen-tree-2",
         "fallen-trees",
-        "river-turn-7",
         "fallen-trees-2",
         "weeds-2",
-        "river-turn-9",
         "bridge-pillar-2",
         "tree-branches",
         "correct-your-angle",
@@ -1722,14 +1715,12 @@
         "current",
         "weeds-5",
         "bridge-pillar-3",
-        "river-turn-10",
         "weeds-10",
         "weeds-6",
         "weeds-7",
         "stay-on-your-side-of-the-corner",
         "weeds",
         "weeds-8",
-        "river-turn-8",
         "docking"
       ],
       "lineIds": [
@@ -1752,11 +1743,11 @@
       "gateNotes": [
         {
           "lineId": "no-rowing-beyond-this-point",
-          "note": "Permanent no-row danger boundary near Argo. It remains visible on every map where that area matters."
+          "note": "Permanent no-row danger boundary near Argo."
         },
         {
           "lineId": "end-point",
-          "note": "Full-route turn point near Tail Bridge. It affects the route near 3824 m."
+          "note": "Turn point near Tail Bridge."
         }
       ]
     }
@@ -1845,7 +1836,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "First downstream turn cue after leaving the dock. This is the practical marker to use near the first-weekend downstream boundary.",
+      "description": "First downstream turn cue after leaving the dock.",
       "action": "Come under control early, turn as coached, check traffic, and keep the turn compact.",
       "distanceMeters": 251.7,
       "offsetMeters": 11.0,
@@ -3226,8 +3217,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
-      "action": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
+      "description": "Route limit for first-weekend practice.",
+      "action": "Stay inside the route your coach gives you and turn where directed.",
       "distanceMeters": 265.2,
       "offsetMeters": 18.4,
       "coordinates": [
@@ -3308,8 +3299,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Coach progression boundary for the first weekend. Use nearby river turns as the practical cue.",
-      "action": "Do not try to decode the line alone. Listen for the coach's route limit and use the nearby river-turn marker as the action cue.",
+      "description": "Route limit for first-weekend practice.",
+      "action": "Stay inside the route your coach gives you and turn where directed.",
       "distanceMeters": 1390.8,
       "offsetMeters": 16.6,
       "coordinates": [
@@ -3344,8 +3335,8 @@
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Coach progression boundary for the Saturday bridge introduction. Use nearby river turns and bridge markers as practical cues.",
-      "action": "Use this as coach context only. Turn or continue based on coach direction and the nearby river-turn and bridge markers.",
+      "description": "Route limit for the Saturday bridge session.",
+      "action": "Stay inside the route your coach gives you and turn where directed.",
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
       "coordinates": [
