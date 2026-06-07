@@ -38,16 +38,25 @@ nav_exclude: true
 
     <div class="river-tour-layout">
       <div class="river-tour-map-panel">
-        <div class="river-tour-marker-tools" aria-label="Marker display controls">
-          <button type="button" class="river-tour-filter river-tour-filter--toggle" data-action="toggle-all-markers">Show all markers</button>
-          <div class="river-tour-filterbar" data-filter-bar aria-label="Additional marker filters"></div>
-        </div>
-        <div class="river-tour-map-wrap">
-          <div class="river-tour-map-tools" aria-label="Map tools">
-            <button type="button" class="river-tour-map-tool" data-action="fit-map">Fit map</button>
-            <button type="button" class="river-tour-map-tool" data-action="center-current">Center selected place</button>
+        <div class="river-tour-map-grid">
+          <section class="river-tour-card river-tour-card--keyplaces">
+            <div class="river-tour-card__topline">
+              <span class="river-tour-pill">Key places</span>
+              <span data-key-place-count></span>
+            </div>
+            <h3 data-map-title>Loading map</h3>
+            <p data-map-summary></p>
+            <ol class="river-tour-stop-list" data-key-place-list></ol>
+          </section>
+
+          <div class="river-tour-map-wrap">
+            <div class="river-tour-map-tools" aria-label="Map tools">
+              <button type="button" class="river-tour-map-tool" data-action="fit-map">Fit map</button>
+              <button type="button" class="river-tour-map-tool" data-action="fit-bridge" hidden>Bridge pattern</button>
+              <button type="button" class="river-tour-map-tool" data-action="center-current">Center selected place</button>
+            </div>
+            <div class="river-tour-map" data-map role="application" aria-label="Satellite map of the AARC river route"></div>
           </div>
-          <div class="river-tour-map" data-map role="application" aria-label="Satellite map of the AARC river route"></div>
         </div>
       </div>
 
@@ -78,16 +87,6 @@ nav_exclude: true
               <i class="fas fa-bookmark"></i> Ask coach about this
             </button>
           </div>
-        </section>
-
-        <section class="river-tour-card">
-          <div class="river-tour-card__topline">
-            <span class="river-tour-pill">Key places</span>
-            <span data-key-place-count></span>
-          </div>
-          <h3 data-map-title>Loading map</h3>
-          <p data-map-summary></p>
-          <ol class="river-tour-stop-list" data-key-place-list></ol>
         </section>
       </aside>
     </div>

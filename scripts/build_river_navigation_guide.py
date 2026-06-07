@@ -24,38 +24,18 @@ MAP_DEFS = [
     {
         "id": "first-weekend",
         "name": "First Weekend Map",
-        "summary": "Use this map for the first Learn-to-Scull weekend: launching, the first river-turn cues, nearby weeds and trees, and docking. The LTS gates stay visible as coach boundary context.",
+        "summary": "Use this map for the first Learn-to-Scull weekend. The map shows the full first-weekend practice area, while Key Places focus on the turn cues learners actually use.",
+        "routeRanges": [[0, 1450], [6200, 6505]],
+        "markerRanges": [[0, 1450], [6200, 6505]],
         "lineIds": [
             "lts-first-weekend",
             "no-rowing-beyond-this-point",
             "lts-first-weekend-2",
         ],
-        "markerIds": [
-            "launch",
-            "downstream",
-            "fallen-tree-3",
-            "river-turn-5",
-            "river-turn-3",
-            "river-turn-4",
-            "island-weeds",
-            "river-turn-6",
-            "weeds-9",
-            "fallen-tree-2",
-            "fallen-trees",
-            "river-turn-7",
-            "fallen-trees-2",
-            "weeds-8",
-            "river-turn-8",
-            "docking",
-        ],
         "keyPlaceIds": [
             "launch",
             "downstream",
             "river-turn-5",
-            "river-turn-3",
-            "river-turn-4",
-            "island-weeds",
-            "river-turn-6",
             "river-turn-7",
             "river-turn-8",
             "docking",
@@ -78,12 +58,13 @@ MAP_DEFS = [
     {
         "id": "saturday-second-weekend",
         "name": "Saturday Second Weekend Map",
-        "summary": "Use this map for the Saturday bridge introduction: river turns near the bridge, current, bridge-pillar choices, angle correction, and nearby weeds. The LTS gate stays visible as coach boundary context.",
+        "summary": "Use this map for Saturday of the second weekend. The map shows the whole Saturday practice route; Key Places focus on the bridge pattern and the current turn point.",
+        "routeRanges": [[0, 2820], [5160, 6505]],
+        "markerRanges": [[0, 2820], [5160, 6505]],
         "lineIds": [
             "lts-saturday-second-weekend",
         ],
-        "markerIds": [
-            "weeds-2",
+        "bridgeFocusIds": [
             "river-turn-9",
             "bridge-pillar-2",
             "tree-branches",
@@ -91,18 +72,13 @@ MAP_DEFS = [
             "wrong-side-of-the-pillar",
             "pass-here",
             "bridge-pillar",
-            "weeds-3",
-            "weeds-4",
             "bridge-pillar-4",
             "current",
-            "weeds-5",
             "bridge-pillar-3",
             "river-turn-10",
-            "weeds-10",
-            "weeds-6",
-            "weeds-7",
         ],
         "keyPlaceIds": [
+            "launch",
             "river-turn-9",
             "bridge-pillar-2",
             "tree-branches",
@@ -112,6 +88,7 @@ MAP_DEFS = [
             "current",
             "bridge-pillar-3",
             "river-turn-10",
+            "docking",
         ],
         "gateNotes": [
             {
@@ -123,19 +100,30 @@ MAP_DEFS = [
     {
         "id": "sunday-full-route",
         "name": "Sunday Full Route Map",
-        "summary": "Use this map for the Sunday full-route rehearsal: river turns, bridge decisions, hazards, current, regrouping, and docking. LTS progression gates are hidden.",
+        "summary": "Use this map for the Sunday full-route rehearsal. The map shows the full route; Key Places skip earlier practice-turn cues and focus on decisions that still matter on the full loop.",
+        "routeRanges": [[0, 6505]],
+        "markerRanges": "__all_stops__",
         "lineIds": [
             "no-rowing-beyond-this-point",
             "end-point",
         ],
-        "markerIds": "__all_stops__",
+        "bridgeFocusIds": [
+            "river-turn-9",
+            "bridge-pillar-2",
+            "tree-branches",
+            "correct-your-angle",
+            "wrong-side-of-the-pillar",
+            "pass-here",
+            "bridge-pillar",
+            "bridge-pillar-4",
+            "current",
+            "bridge-pillar-3",
+            "river-turn-10",
+        ],
         "keyPlaceIds": [
             "launch",
             "downstream",
-            "river-turn-5",
             "island-weeds",
-            "river-turn-7",
-            "river-turn-9",
             "bridge-pillar-2",
             "correct-your-angle",
             "pass-here",
@@ -147,7 +135,6 @@ MAP_DEFS = [
             "current",
             "bridge-pillar-3",
             "stay-on-your-side-of-the-corner",
-            "river-turn-8",
             "docking",
         ],
         "gateNotes": [
@@ -174,16 +161,6 @@ CHECKS = {
         ],
         "answer": 0,
         "feedback": "Docking should be slow and angled. Do not aim the bow straight at the dock.",
-    },
-    "River Turn": {
-        "question": "What is the river-turn sequence?",
-        "choices": [
-            "Stop, turn, check, then cross or continue as directed.",
-            "Keep rowing through the turn and correct later.",
-            "Move to the middle early and wait there.",
-        ],
-        "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move.",
     },
     "No rowing beyond this point": {
         "question": "What should you do at this boundary?",
@@ -254,6 +231,83 @@ CHECKS = {
         ],
         "answer": 0,
         "feedback": "Current is easier to manage with early, small steering corrections.",
+    },
+}
+
+
+ID_CHECKS = {
+    "river-turn-5": {
+        "question": "What is the river-turn sequence?",
+        "choices": [
+            "Stop, turn, check, then cross or continue as directed.",
+            "Keep rowing through the turn and correct later.",
+            "Move to the middle early and wait there.",
+        ],
+        "answer": 0,
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move.",
+    },
+}
+
+
+ITEM_OVERRIDES = {
+    "river-turn-5": {
+        "displayTitle": "River turn: downstream first cue",
+        "description": "First downstream turn cue after leaving the dock. This is the practical marker to use near the first-weekend downstream boundary.",
+        "action": "Come under control early, turn as coached, check traffic, and keep the turn compact.",
+    },
+    "river-turn-3": {
+        "displayTitle": "River turn: Argo boundary approach",
+        "description": "Downstream turn cue near the hard no-row area. Treat this as a place to slow down and prepare before the danger boundary.",
+        "action": "Set up early and turn before the no-row boundary. Do not drift toward the danger area.",
+    },
+    "river-turn-4": {
+        "displayTitle": "River turn: Argo crossing cue",
+        "description": "Companion turn cue on the Argo side of the downstream turn pattern.",
+        "action": "Finish the turn sequence only after checking traffic and staying clear of the no-row area.",
+    },
+    "river-turn-6": {
+        "displayTitle": "River turn: return from Argo side",
+        "description": "Return-side turn cue near the downstream first-weekend practice area.",
+        "action": "Use the same stop-turn-check habit before settling back into the normal traffic side.",
+    },
+    "river-turn-7": {
+        "displayTitle": "River turn: upstream first-weekend cue",
+        "description": "Upstream first-weekend turn cue. This is easier to use on the water than trying to interpret the gate line itself.",
+        "action": "Turn where your coach directs, then confirm you are back on the correct side before adding pressure.",
+    },
+    "river-turn-8": {
+        "displayTitle": "River turn: return toward dock",
+        "description": "Return-side turn cue used when coming back toward the dock.",
+        "action": "Complete the turn under control and keep scanning as you approach the dock area.",
+    },
+    "river-turn-9": {
+        "displayTitle": "River turn: bridge approach cue",
+        "description": "Second-weekend turn cue near the first bridge introduction.",
+        "action": "Use this as the practical turn cue before the bridge sequence, then look early for the correct opening.",
+    },
+    "river-turn-10": {
+        "displayTitle": "River turn: bridge return cue",
+        "description": "Return-side turn cue for the second-weekend bridge area.",
+        "action": "Turn only after checking traffic and leave the bridge approach clear for other shells.",
+    },
+    "river-turn": {
+        "displayTitle": "River turn: Tail Bridge outbound",
+        "description": "Full-route turn cue near Tail Bridge on the outbound side.",
+        "action": "Turn before Tail Bridge and keep the turn predictable for following boats.",
+    },
+    "river-turn-2": {
+        "displayTitle": "River turn: Tail Bridge return",
+        "description": "Full-route return-side turn cue near Tail Bridge.",
+        "action": "Complete the return-side turn with room for the next boat and settle back onto the correct side.",
+    },
+    "bridge-pillar-2": {
+        "displayTitle": "Bridge pillar: outbound opening",
+    },
+    "bridge-pillar-3": {
+        "displayTitle": "Bridge pillar: return opening",
+    },
+    "bridge-pillar-4": {
+        "displayTitle": "Bridge pillar: return-side setup",
     },
 }
 
@@ -416,17 +470,40 @@ def add_projection_labels(item: dict) -> None:
     item["routePositions"] = positions
 
 
+def in_ranges(distance: float, ranges: list[list[float]]) -> bool:
+    return any(start <= distance <= end for start, end in ranges)
+
+
+def marker_ids_for_map(map_def: dict, stops: list[dict]) -> list[str]:
+    marker_ranges = map_def.get("markerRanges")
+    if marker_ranges == "__all_stops__":
+        marker_ids = [item["id"] for item in stops]
+    elif marker_ranges:
+        marker_ids = [item["id"] for item in stops if in_ranges(item["distanceMeters"], marker_ranges)]
+    else:
+        marker_ids = list(map_def.get("markerIds", []))
+
+    seen = set(marker_ids)
+    for item_id in map_def["keyPlaceIds"]:
+        if item_id not in seen:
+            marker_ids.append(item_id)
+            seen.add(item_id)
+    return marker_ids
+
+
 def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
     stop_ids = {item["id"] for item in stops}
     line_ids = {item["id"] for item in lines}
     all_ids = stop_ids | line_ids
     maps = []
     for map_def in MAP_DEFS:
-        marker_ids = [item["id"] for item in stops] if map_def["markerIds"] == "__all_stops__" else list(map_def["markerIds"])
+        marker_ids = marker_ids_for_map(map_def, stops)
+        bridge_focus_ids = list(map_def.get("bridgeFocusIds", []))
         missing_markers = sorted(set(marker_ids) - stop_ids)
         missing_lines = sorted(set(map_def["lineIds"]) - line_ids)
         missing_keys = sorted(set(map_def["keyPlaceIds"]) - all_ids)
-        if missing_markers or missing_lines or missing_keys:
+        missing_bridge_focus = sorted(set(bridge_focus_ids) - all_ids)
+        if missing_markers or missing_lines or missing_keys or missing_bridge_focus:
             details = []
             if missing_markers:
                 details.append(f"markers={missing_markers}")
@@ -434,14 +511,18 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
                 details.append(f"lines={missing_lines}")
             if missing_keys:
                 details.append(f"key places={missing_keys}")
+            if missing_bridge_focus:
+                details.append(f"bridge focus={missing_bridge_focus}")
             raise SystemExit(f"Map {map_def['id']} references missing ids: {'; '.join(details)}")
         maps.append({
             "id": map_def["id"],
             "name": map_def["name"],
             "summary": map_def["summary"],
+            "routeRanges": map_def["routeRanges"],
             "keyPlaceIds": map_def["keyPlaceIds"],
             "markerIds": marker_ids,
             "lineIds": map_def["lineIds"],
+            "bridgeFocusIds": bridge_focus_ids,
             "gateNotes": map_def["gateNotes"],
         })
     return maps
@@ -524,8 +605,10 @@ def main() -> int:
             "coordinates": coords,
             "projections": projections,
         }
+        if item["id"] in ITEM_OVERRIDES:
+            item.update(ITEM_OVERRIDES[item["id"]])
         add_projection_labels(item)
-        check = CHECKS.get(name)
+        check = ID_CHECKS.get(item["id"]) or CHECKS.get(name)
         if check:
             item["check"] = check
         if is_line:

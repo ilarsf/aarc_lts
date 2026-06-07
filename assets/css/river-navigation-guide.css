@@ -15,6 +15,8 @@
   color: var(--tour-ink);
   display: grid;
   gap: 1.5rem;
+  margin-left: calc(50% - 50vw + 1rem);
+  width: calc(100vw - 2rem);
 }
 
 .river-tour-eyebrow {
@@ -181,6 +183,13 @@
 .river-tour-map-panel {
   display: grid;
   gap: 0.75rem;
+  min-width: 0;
+}
+
+.river-tour-map-grid {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
 }
 
 .river-tour-map-wrap {
@@ -263,7 +272,11 @@
 .river-tour-leaflet-marker.is-selected span {
   border-color: #101820;
   border-width: 4px;
-  transform: scale(1.14);
+  box-shadow:
+    0 0 0 5px rgba(255, 255, 255, 0.95),
+    0 0 0 11px rgba(16, 24, 32, 0.46),
+    0 8px 18px rgba(0, 0, 0, 0.5);
+  transform: scale(1.18);
 }
 
 .river-tour-leaflet-marker.is-additional-marker span {
@@ -289,9 +302,36 @@
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.28));
 }
 
+.river-tour-selected-halo {
+  filter: drop-shadow(0 3px 7px rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+
+.river-tour-selected-line {
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+}
+
+.river-tour-map .river-tour-selected-tooltip {
+  background: #101820;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.36);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.35rem 0.55rem;
+  white-space: normal;
+}
+
+.river-tour-map .river-tour-selected-tooltip::before {
+  border-top-color: #101820;
+}
+
 .river-tour-sidebar {
   display: grid;
   gap: 1rem;
+  min-width: 0;
 }
 
 .river-tour-card {
@@ -303,6 +343,11 @@
 
 .river-tour-card--current {
   border-top: 4px solid var(--tour-water);
+}
+
+.river-tour-card--keyplaces {
+  align-self: start;
+  border-top: 4px solid var(--tour-yellow);
 }
 
 .river-tour-card__topline {
@@ -538,8 +583,23 @@
   }
 
   .river-tour-layout {
-    grid-template-columns: minmax(0, 1.45fr) minmax(340px, 0.75fr);
     align-items: start;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+  }
+
+  .river-tour-map-grid {
+    grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .river-tour-card--keyplaces,
+  .river-tour-card--current {
+    position: sticky;
+    top: 0.75rem;
+  }
+
+  .river-tour-card--keyplaces .river-tour-stop-list {
+    max-height: min(56vh, 34rem);
   }
 
   .river-tour-notes {
@@ -547,7 +607,22 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .river-tour-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 380px);
+  }
+
+  .river-tour-map-grid {
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 640px) {
+  .river-tour-page {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .river-tour-hero,
   .river-tour-app,
   .river-tour-card,

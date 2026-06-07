@@ -29,14 +29,12 @@
       course: course,
       guideMapId: saved.guideMapId || firstMap.id,
       selectedId: saved.selectedId || firstMap.keyPlaceIds[0],
-      filter: 'all',
-      showAllMarkers: false,
       viewed: new Set(saved.viewed || []),
       coachQuestions: new Set(saved.coachQuestions || []),
       answers: saved.answers || {},
       leafletMap: null,
       baseLayers: {},
-      routeLayers: [],
+      routeLayer: null,
       itemLayer: null,
       pendingFit: true,
       pendingCenter: false
@@ -52,8 +50,6 @@
       root: root,
       map: root.querySelector('[data-map]'),
       mapSelectors: root.querySelector('[data-map-selectors]'),
-      filterBar: root.querySelector('[data-filter-bar]'),
-      toggleAllMarkers: root.querySelector('[data-action="toggle-all-markers"]'),
       progressCount: root.querySelector('[data-progress-count]'),
       progressLabel: root.querySelector('[data-progress-label]'),
       mapTitle: root.querySelector('[data-map-title]'),
@@ -70,6 +66,7 @@
       next: root.querySelector('[data-action="next"]'),
       coachButton: root.querySelector('[data-action="coach-question"]'),
       fitMap: root.querySelector('[data-action="fit-map"]'),
+      fitBridge: root.querySelector('[data-action="fit-bridge"]'),
       centerCurrent: root.querySelector('[data-action="center-current"]')
     };
   }
@@ -96,19 +93,7 @@
     };
     L.control.layers(state.baseLayers, {}, { position: 'topleft' }).addTo(state.leafletMap);
 
-    state.routeLayers.push(L.polyline(routeLatLngs, {
-      color: '#ffffff',
-      weight: 8,
-      opacity: 0.86,
-      interactive: false
-    }).addTo(state.leafletMap));
-    state.routeLayers.push(L.polyline(routeLatLngs, {
-      color: '#167c96',
-      weight: 4,
-      opacity: 0.92,
-      interactive: false
-    }).addTo(state.leafletMap));
-
+    state.routeLayer = L.layerGroup().addTo(state.leafletMap);
     state.itemLayer = L.layerGroup().addTo(state.leafletMap);
     state.leafletMap.fitBounds(L.latLngBounds(routeLatLngs), { padding: [26, 26] });
     window.setTimeout(function () {
@@ -137,17 +122,12 @@
       state.pendingFit = true;
       renderMap(ui, state);
     });
+    ui.fitBridge.addEventListener('click', function () {
+      fitBridgePattern(state);
+    });
     ui.centerCurrent.addEventListener('click', function () {
       state.pendingCenter = true;
       renderMap(ui, state);
-    });
-    ui.toggleAllMarkers.addEventListener('click', function () {
-      state.showAllMarkers = !state.showAllMarkers;
-      if (!state.showAllMarkers && !isKeyPlace(state, state.selectedId) && !isMapLine(state, state.selectedId)) {
-        state.selectedId = getKeyPlaces(state)[0]?.id || null;
-      }
-      state.pendingFit = true;
-      renderAll(ui, state);
     });
   }
 
@@ -156,7 +136,7 @@
     if (state.selectedId) state.viewed.add(state.selectedId);
     saveState(state);
     renderMapSelectors(ui, state);
-    renderFilters(ui, state);
+    renderMapTools(ui, state);
     renderMap(ui, state);
     renderKeyPlaces(ui, state);
     renderCurrentPlace(ui, state);
@@ -173,8 +153,6 @@
       button.innerHTML = '<strong>' + escapeHtml(guideMap.name) + '</strong><span>' + escapeHtml(guideMap.summary) + '</span>';
       button.addEventListener('click', function () {
         state.guideMapId = guideMap.id;
-        state.filter = 'all';
-        state.showAllMarkers = false;
         state.selectedId = getKeyPlaces(state)[0]?.id || null;
         state.pendingFit = true;
         renderAll(ui, state);
@@ -183,35 +161,17 @@
     });
   }
 
-  function renderFilters(ui, state) {
-    const categories = unique(getMapItems(state).map(function (item) { return item.category; }));
-    const filters = ['all'].concat(categories);
-    ui.toggleAllMarkers.classList.toggle('is-selected', state.showAllMarkers);
-    ui.toggleAllMarkers.textContent = state.showAllMarkers ? 'Showing all markers' : 'Show all markers';
-    ui.filterBar.innerHTML = '';
-    filters.forEach(function (category) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'river-tour-filter';
-      button.classList.toggle('is-selected', state.filter === category);
-      button.textContent = category === 'all' ? 'All marker types' : state.course.categories[category] || category;
-      button.addEventListener('click', function () {
-        state.filter = category;
-        if (state.showAllMarkers && !isRenderedItem(state, state.selectedId)) {
-          state.selectedId = getKeyPlaces(state)[0]?.id || null;
-        }
-        state.pendingFit = true;
-        renderAll(ui, state);
-      });
-      ui.filterBar.appendChild(button);
-    });
+  function renderMapTools(ui, state) {
+    const guideMap = getGuideMap(state);
+    ui.fitBridge.hidden = !(guideMap.bridgeFocusIds && guideMap.bridgeFocusIds.length);
   }
 
   function renderMap(ui, state) {
+    state.routeLayer.clearLayers();
     state.itemLayer.clearLayers();
     const rendered = getRenderedItems(state);
     const selected = getSelectedItem(state);
-    const boundsPoints = [];
+    const boundsPoints = renderRoute(state);
 
     rendered.lines.forEach(function (line) {
       const latLngs = line.coordinates.map(toLatLng);
@@ -234,7 +194,7 @@
       boundsPoints.push(latLng);
       const marker = L.marker(latLng, {
         icon: markerIcon(stop, state),
-        title: stop.title,
+        title: itemLabel(stop),
         keyboard: true
       }).addTo(state.itemLayer);
       marker.bindTooltip(tooltipText(stop, state), { direction: 'top', offset: [0, -12] });
@@ -242,6 +202,8 @@
         selectItem(ui, state, stop.id, true);
       });
     });
+
+    renderSelectedFocus(state, selected);
 
     if (state.pendingFit) {
       fitToItems(state, boundsPoints);
@@ -251,6 +213,46 @@
       centerItem(state, selected);
       state.pendingCenter = false;
     }
+  }
+
+  function renderRoute(state) {
+    const segments = getRouteSegments(state);
+    const boundsPoints = [];
+    segments.forEach(function (segment) {
+      segment.forEach(function (latLng) { boundsPoints.push(latLng); });
+      L.polyline(segment, {
+        className: 'river-tour-route-underlay',
+        color: '#ffffff',
+        weight: 8,
+        opacity: 0.86,
+        interactive: false
+      }).addTo(state.routeLayer);
+      L.polyline(segment, {
+        className: 'river-tour-route-line',
+        color: '#167c96',
+        weight: 4,
+        opacity: 0.94,
+        interactive: false
+      }).addTo(state.routeLayer);
+    });
+    return boundsPoints;
+  }
+
+  function getRouteSegments(state) {
+    const guideMap = getGuideMap(state);
+    const ranges = guideMap.routeRanges || [[0, state.course.route.lengthMeters]];
+    return ranges.map(function (range) {
+      const segment = [];
+      state.course.route.coordinates.forEach(function (coord, index) {
+        const point = state.course.route.points[index];
+        if (point && point.distanceMeters >= range[0] && point.distanceMeters <= range[1]) {
+          segment.push(toLatLng(coord));
+        }
+      });
+      return segment;
+    }).filter(function (segment) {
+      return segment.length > 1;
+    });
   }
 
   function selectItem(ui, state, id, center) {
@@ -274,7 +276,7 @@
       button.classList.toggle('is-selected', item.id === state.selectedId);
       button.classList.toggle('is-viewed', state.viewed.has(item.id));
       button.classList.toggle('ask-coach', state.coachQuestions.has(item.id));
-      button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(item.title) + '</strong><small>' + escapeHtml(state.course.categories[item.category] || item.category) + '</small>';
+      button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(state.course.categories[item.category] || item.category) + '</small>';
       button.addEventListener('click', function () {
         state.selectedId = item.id;
         state.pendingCenter = true;
@@ -293,7 +295,7 @@
       ? 'Coach boundary context'
       : isKey ? state.course.categories[item.category] || item.category : 'Additional map marker';
     ui.distance.textContent = formatRoutePositions(item);
-    ui.title.textContent = item.title;
+    ui.title.textContent = itemLabel(item);
     ui.description.textContent = item.description || 'Local marker from the AARC river traffic map.';
     ui.action.textContent = item.action || 'Review this location before rowing the route.';
     ui.coachButton.classList.toggle('is-active', state.coachQuestions.has(item.id));
@@ -356,27 +358,16 @@
 
   function getRenderedItems(state) {
     const guideMap = getGuideMap(state);
-    const keyIds = new Set(guideMap.keyPlaceIds);
     const lines = guideMap.lineIds.map(function (id) { return getItemById(state, id); }).filter(Boolean);
-    const keyStops = guideMap.keyPlaceIds.map(function (id) { return getItemById(state, id); }).filter(function (item) {
-      return item && item.geometry !== 'LineString';
-    });
-    const additionalStops = state.showAllMarkers ? guideMap.markerIds.map(function (id) {
+    const stops = guideMap.markerIds.map(function (id) {
       return getItemById(state, id);
     }).filter(function (item) {
-      return item && item.geometry !== 'LineString' && !keyIds.has(item.id) && matchesFilter(state, item);
-    }) : [];
+      return item && item.geometry !== 'LineString';
+    });
     return {
-      stops: uniqueItems(keyStops.concat(additionalStops)),
+      stops: uniqueItems(stops),
       lines: uniqueItems(lines)
     };
-  }
-
-  function getMapItems(state) {
-    const guideMap = getGuideMap(state);
-    return uniqueItems(guideMap.markerIds.concat(guideMap.lineIds).map(function (id) {
-      return getItemById(state, id);
-    }).filter(Boolean));
   }
 
   function getKeyPlaces(state) {
@@ -423,17 +414,13 @@
     return getGuideMap(state).lineIds.indexOf(id) !== -1;
   }
 
-  function matchesFilter(state, item) {
-    return state.filter === 'all' || item.category === state.filter;
-  }
-
   function moveSelection(state, direction) {
     const keyPlaces = getKeyPlaces(state);
     if (!keyPlaces.length) return;
     const currentIndex = keyPlaces.findIndex(function (item) { return item.id === state.selectedId; });
-    const fallbackIndex = direction > 0 ? 0 : keyPlaces.length - 1;
-    const index = currentIndex === -1 ? fallbackIndex : currentIndex;
-    const nextIndex = clamp(index + direction, 0, keyPlaces.length - 1);
+    const nextIndex = currentIndex === -1
+      ? (direction > 0 ? 0 : keyPlaces.length - 1)
+      : clamp(currentIndex + direction, 0, keyPlaces.length - 1);
     state.selectedId = keyPlaces[nextIndex].id;
   }
 
@@ -512,7 +499,65 @@
     const status = isPracticeGate(item)
       ? 'Coach boundary context'
       : isKeyPlace(state, item.id) ? 'Key place' : 'Additional marker';
-    return item.title + ' - ' + status;
+    return itemLabel(item) + ' - ' + status;
+  }
+
+  function fitBridgePattern(state) {
+    const guideMap = getGuideMap(state);
+    const bridgeIds = guideMap.bridgeFocusIds || [];
+    if (!bridgeIds.length) return;
+    const latLngs = bridgeIds.map(function (id) {
+      return getItemById(state, id);
+    }).filter(Boolean).reduce(function (points, item) {
+      return points.concat(itemLatLngs(item));
+    }, []);
+    fitToItems(state, latLngs);
+  }
+
+  function renderSelectedFocus(state, item) {
+    if (!item) return;
+    if (item.geometry === 'LineString') {
+      const latLngs = item.coordinates.map(toLatLng);
+      const selectedLine = L.polyline(latLngs, {
+        className: 'river-tour-selected-line',
+        color: '#101820',
+        weight: 9,
+        opacity: 0.86,
+        interactive: false
+      }).addTo(state.itemLayer);
+      selectedLine.bindTooltip(itemLabel(item), {
+        permanent: true,
+        direction: 'center',
+        className: 'river-tour-selected-tooltip'
+      }).openTooltip();
+      return;
+    }
+
+    const latLng = toLatLng(item.coordinates[0]);
+    L.circleMarker(latLng, {
+      className: 'river-tour-selected-halo',
+      radius: 22,
+      color: '#101820',
+      weight: 4,
+      opacity: 0.96,
+      fillColor: '#ffffff',
+      fillOpacity: 0.18,
+      interactive: false
+    }).addTo(state.itemLayer);
+    L.tooltip({
+      permanent: true,
+      direction: 'top',
+      offset: [0, -26],
+      className: 'river-tour-selected-tooltip'
+    }).setLatLng(latLng).setContent(itemLabel(item)).addTo(state.itemLayer);
+  }
+
+  function itemLabel(item) {
+    return item.displayTitle || item.title;
+  }
+
+  function itemLatLngs(item) {
+    return item.coordinates.map(toLatLng);
   }
 
   function fitToItems(state, latLngs) {
