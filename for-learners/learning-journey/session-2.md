@@ -110,7 +110,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                     <div class="accordion-content-inner">
                         <ul>
                             <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2" target="_blank">Session 2 Videos</a> to prepare for this session.</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" target="_blank">River Rules and Safety guidelines</a></li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" target="_blank">River Rules and Safety guidelines</a>, including the river map.</li>
                             <li>It's normal to feel nervous about getting into a boat - everyone does!</li>
                             <li>Remember the "arms-body-slide" recovery sequence from Session 1</li>
                             <li>Be prepared to get wet (wear appropriate clothing)</li>
@@ -278,7 +278,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                             <li>Optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2">Session 2 Quiz</a>.</li>
                             <li>Practice your recovery sequence mentally</li>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session2">Session 2 Videos</a> to reinforce what you've learned.</li>
-                            <li>Review the river traffic pattern diagrams provided</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">river map and traffic pattern notes</a></li>
                             
                             <li>Consider watching the videos recommended for Session 3</li>
                         </ul>

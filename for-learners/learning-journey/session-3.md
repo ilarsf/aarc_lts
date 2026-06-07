@@ -102,7 +102,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <ul>
                             <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to prepare for this session.</li>
                             <li>Visualize the feeling of pushing with your legs during the drive</li>
-                            <li>Review the river traffic patterns you'll be following</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">river map and traffic patterns</a> you'll be following</li>
                             <li>Prepare to row longer distances in this session</li>
                         </ul>
                     </div>
@@ -155,7 +155,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                     <div class="timeline-content">
                         <h4>River Geography & Traffic</h4>
                         <ul>
-                            <li>Review of boathouse map and river layout</li>
+                            <li>Review of boathouse map and <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">river layout</a></li>
                             <li>Explanation of traffic pattern rules</li>
                             <li>Discussion of steering techniques</li>
                             <li>Bridge navigation basics</li>
@@ -308,7 +308,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                             <li>Optionally review the <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3">Session 3 Quiz</a>.</li>
                             <li>Practice mentally connecting your leg drive to boat movement</li>
                             <li>Review the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to reinforce what you've learned.</li>
-                            <li>Review river traffic patterns and navigation rules</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html">river traffic patterns and navigation rules</a></li>
                             <li>Consider watching videos recommended for Session 4</li>
                             <li>Take care of any developing blisters or hand issues</li>
                         </ul>

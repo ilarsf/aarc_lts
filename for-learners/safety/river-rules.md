@@ -19,6 +19,14 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
         <p>River rules are essentially the same as road rules: <strong>Stay on the right side of the river and pass on the left.</strong> However, always be prepared to adapt based on conditions and coach instructions.</p>
     </div>
 
+    <section id="river-map" class="river-map-section mb-4" aria-labelledby="river-map-heading">
+        <h2 id="river-map-heading"><i class="fas fa-map-marked-alt"></i> AARC River Map</h2>
+        <p>Use this map to identify the dock, turn areas, bridge sequence, and common caution zones before practicing navigation on the Huron River.</p>
+        <div class="river-map-embed">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TqDNEvBmUQ8M4lU-NvyYAd9pCoG6agY&amp;ehbc=2E312F" width="640" height="480" loading="lazy" title="AARC river traffic map"></iframe>
+        </div>
+    </section>
+
     <div class="alert alert-warning" role="alert">
         <h4 class="alert-heading"><i class="fas fa-gamepad"></i> Practice It</h4>
         <p>Want a faster way to rehearse these rules? The rebuilt <strong>River Rules Rally</strong> now uses route-based drills instead of random arcade hazards. Practice the Argo turn drill, the short M-14 turn drill, or the full bridge sequence toward Barton.</p>
@@ -73,3 +81,28 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
     </div>
 
 </div>
+
+<style>
+  .river-map-section {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    border-radius: 4px;
+    padding: 1.25rem;
+  }
+
+  .river-map-embed {
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    max-height: 70vh;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .river-map-embed iframe {
+    border: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+</style>
