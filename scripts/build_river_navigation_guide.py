@@ -41,6 +41,10 @@ MAP_DEFS = [
             "river-turn-8",
             "docking",
         ],
+        "checkPlaceIds": [
+            "river-turn-5",
+            "docking",
+        ],
         "gateNotes": [
             {
                 "lineId": "lts-first-weekend",
@@ -97,6 +101,11 @@ MAP_DEFS = [
             "current",
             "bridge-pillar-3",
             "river-turn-10",
+            "docking",
+        ],
+        "checkPlaceIds": [
+            "pass-here",
+            "current",
             "docking",
         ],
         "gateNotes": [
@@ -159,6 +168,13 @@ MAP_DEFS = [
             "stay-on-your-side-of-the-corner",
             "docking",
         ],
+        "checkPlaceIds": [
+            "pass-here",
+            "sharp-turn",
+            "current",
+            "stay-on-your-side-of-the-corner",
+            "docking",
+        ],
         "gateNotes": [
             {
                 "lineId": "no-rowing-beyond-this-point",
@@ -174,7 +190,7 @@ MAP_DEFS = [
 
 
 CHECKS = {
-    "Docking": {
+    "docking": {
         "question": "What is the safest docking approach?",
         "choices": [
             "Approach slowly at an angle, then make small corrections.",
@@ -184,37 +200,27 @@ CHECKS = {
         "answer": 0,
         "feedback": "Docking should be slow and angled. Do not aim the bow straight at the dock.",
     },
-    "No rowing beyond this point": {
-        "question": "What should you do at this boundary?",
+    "river-turn-5": {
+        "question": "What is the safe river-turn sequence?",
         "choices": [
-            "Treat it as a hard no-row line and turn before reaching it.",
-            "Continue if the water looks empty.",
-            "Only stop if another shell is nearby.",
+            "Stop, turn, check traffic, then cross or continue as directed.",
+            "Keep rowing through the turn and correct after you cross.",
+            "Move to the middle early and wait there.",
         ],
         "answer": 0,
-        "feedback": "The map labels this as a danger zone; turn before the line.",
+        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move.",
     },
-    "Wrong Side of the Pillar": {
-        "question": "What is the teaching point at this bridge marker?",
+    "pass-here": {
+        "question": "At the bridge, what should you do once you identify the safe opening?",
         "choices": [
-            "Avoid the wrong side of the pillar and commit to the safe opening early.",
-            "Follow the bridge symmetry even if it pulls you across.",
-            "Wait until the last moment to decide.",
+            "Commit early to the marked opening and keep the line predictable.",
+            "Stay undecided until the shell is under the bridge.",
+            "Move toward the center so either opening remains possible.",
         ],
         "answer": 0,
         "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky.",
     },
-    "Correct your angle": {
-        "question": "What should you do before this bridge decision?",
-        "choices": [
-            "Look ahead and correct the angle before the bridge pulls you off your side.",
-            "Let the bridge shape guide the boat.",
-            "Move to the center and decide under the bridge.",
-        ],
-        "answer": 0,
-        "feedback": "Do not let the bridge shape pull you off your side of the river.",
-    },
-    "Stay on your side of the corner": {
+    "stay-on-your-side-of-the-corner": {
         "question": "What is the safe line through this corner?",
         "choices": [
             "Stay on your side and avoid drifting across the river.",
@@ -224,7 +230,7 @@ CHECKS = {
         "answer": 0,
         "feedback": "Corners are where drift becomes easy. Stay predictable and hold your side.",
     },
-    "Sharp Turn": {
+    "sharp-turn": {
         "question": "What should you prioritize at this sharper turn?",
         "choices": [
             "Stay close enough to your side without drifting across.",
@@ -234,17 +240,7 @@ CHECKS = {
         "answer": 0,
         "feedback": "This sharper turn requires early steering and a predictable line.",
     },
-    "Weeds": {
-        "question": "What should you do near weeds?",
-        "choices": [
-            "Give the weeds room while staying in the traffic pattern.",
-            "Cut across the river to avoid every weed patch.",
-            "Row through them quickly so the boat does not slow down.",
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable.",
-    },
-    "Current": {
+    "current": {
         "question": "What changes when current pushes the shell?",
         "choices": [
             "Make small early corrections and keep your line predictable.",
@@ -253,20 +249,6 @@ CHECKS = {
         ],
         "answer": 0,
         "feedback": "Current is easier to manage with early, small steering corrections.",
-    },
-}
-
-
-ID_CHECKS = {
-    "river-turn-5": {
-        "question": "What is the river-turn sequence?",
-        "choices": [
-            "Stop, turn, check, then cross or continue as directed.",
-            "Keep rowing through the turn and correct later.",
-            "Move to the middle early and wait there.",
-        ],
-        "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move.",
     },
 }
 
@@ -540,12 +522,25 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
     for map_def in MAP_DEFS:
         marker_ids = marker_ids_for_map(map_def, stops)
         bridge_focus_ids = list(map_def.get("bridgeFocusIds", []))
+        check_place_ids = list(map_def.get("checkPlaceIds", []))
         missing_markers = sorted(set(marker_ids) - stop_ids)
         missing_lines = sorted(set(map_def["lineIds"]) - line_ids)
         missing_keys = sorted(set(map_def["keyPlaceIds"]) - all_ids)
         missing_bridge_focus = sorted(set(bridge_focus_ids) - all_ids)
         missing_excluded = sorted(set(map_def.get("excludeMarkerIds", [])) - stop_ids)
-        if missing_markers or missing_lines or missing_keys or missing_bridge_focus or missing_excluded:
+        missing_checks = sorted(set(check_place_ids) - stop_ids)
+        non_key_checks = sorted(set(check_place_ids) - set(map_def["keyPlaceIds"]))
+        checks_without_questions = sorted(item_id for item_id in check_place_ids if item_id not in CHECKS)
+        if (
+            missing_markers
+            or missing_lines
+            or missing_keys
+            or missing_bridge_focus
+            or missing_excluded
+            or missing_checks
+            or non_key_checks
+            or checks_without_questions
+        ):
             details = []
             if missing_markers:
                 details.append(f"markers={missing_markers}")
@@ -557,6 +552,12 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
                 details.append(f"bridge focus={missing_bridge_focus}")
             if missing_excluded:
                 details.append(f"excluded markers={missing_excluded}")
+            if missing_checks:
+                details.append(f"checks={missing_checks}")
+            if non_key_checks:
+                details.append(f"checks not in key places={non_key_checks}")
+            if checks_without_questions:
+                details.append(f"checks without questions={checks_without_questions}")
             raise SystemExit(f"Map {map_def['id']} references missing ids: {'; '.join(details)}")
         maps.append({
             "id": map_def["id"],
@@ -564,6 +565,7 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
             "summary": map_def["summary"],
             "routeRanges": map_def["routeRanges"],
             "keyPlaceIds": map_def["keyPlaceIds"],
+            "checkPlaceIds": check_place_ids,
             "markerIds": marker_ids,
             "lineIds": map_def["lineIds"],
             "bridgeFocusIds": bridge_focus_ids,
@@ -652,7 +654,7 @@ def main() -> int:
         if item["id"] in ITEM_OVERRIDES:
             item.update(ITEM_OVERRIDES[item["id"]])
         add_projection_labels(item)
-        check = ID_CHECKS.get(item["id"]) or CHECKS.get(name)
+        check = CHECKS.get(item["id"])
         if check:
             item["check"] = check
         if is_line:

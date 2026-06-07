@@ -269,6 +269,18 @@
 .river-tour-leaflet-marker--corner span { background: #f0e9ff; border-color: #8067b7; }
 .river-tour-leaflet-marker--break span { background: #edf8e8; border-color: #6a9f3d; }
 
+.river-tour-leaflet-marker.has-check span {
+  box-shadow: 0 0 0 3px rgba(246, 196, 83, 0.42), 0 4px 12px rgba(0, 0, 0, 0.38);
+}
+
+.river-tour-leaflet-marker.is-check-correct span {
+  border-color: #238447;
+}
+
+.river-tour-leaflet-marker.is-check-wrong span {
+  border-color: #c97a22;
+}
+
 .river-tour-leaflet-marker.is-selected span {
   border-color: #101820;
   border-width: 4px;
@@ -493,6 +505,33 @@
   color: #1c6d3b;
 }
 
+.river-tour-stop.has-check {
+  border-color: rgba(224, 165, 31, 0.48);
+}
+
+.river-tour-stop.has-check small {
+  color: #7f4d20;
+  font-weight: 700;
+}
+
+.river-tour-stop.is-check-correct {
+  border-color: rgba(35, 132, 71, 0.48);
+}
+
+.river-tour-stop.is-check-correct span {
+  background: #dff3e6;
+  color: #1c6d3b;
+}
+
+.river-tour-stop.is-check-wrong {
+  border-color: rgba(201, 122, 34, 0.58);
+}
+
+.river-tour-stop.is-check-wrong span {
+  background: #fff0d6;
+  color: #8a4a12;
+}
+
 .river-tour-stop.ask-coach {
   background: #fff9e8;
 }
@@ -527,6 +566,10 @@
   text-align: left;
 }
 
+.river-tour-check__choice.is-selected {
+  box-shadow: inset 4px 0 0 #fff3cd;
+}
+
 .river-tour-check__choice.is-correct {
   background: rgba(87, 176, 113, 0.28);
   border-color: #70cf8c;
@@ -541,6 +584,31 @@
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   margin: 0.8rem 0 0;
   padding-top: 0.8rem;
+}
+
+.river-tour-check__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.river-tour-check__action {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 0.5rem 0.7rem;
+}
+
+.river-tour-check__action--primary {
+  background: #fff3cd;
+  border-color: #fff3cd;
+  color: #102734;
 }
 
 .river-tour-notes {

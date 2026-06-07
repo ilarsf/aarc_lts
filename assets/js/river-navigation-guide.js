@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'aarc-river-navigation-guide-v2';
+  const STORAGE_KEY = 'aarc-river-navigation-guide-v3';
   const DEFAULT_ZOOM = 17;
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -276,7 +276,13 @@
       button.classList.toggle('is-selected', item.id === state.selectedId);
       button.classList.toggle('is-viewed', state.viewed.has(item.id));
       button.classList.toggle('ask-coach', state.coachQuestions.has(item.id));
-      button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(state.course.categories[item.category] || item.category) + '</small>';
+      button.classList.toggle('has-check', isCourseCheck(state, item.id));
+      button.classList.toggle('is-check-correct', isCorrectAnswer(state, item));
+      button.classList.toggle('is-check-wrong', isAnsweredCheck(state, item) && !isCorrectAnswer(state, item));
+      const detailParts = [state.course.categories[item.category] || item.category];
+      const checkStatus = checkStatusLabel(state, item);
+      if (checkStatus) detailParts.push(checkStatus);
+      button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(detailParts.join(' · ')) + '</small>';
       button.addEventListener('click', function () {
         state.selectedId = item.id;
         state.pendingCenter = true;
@@ -307,14 +313,18 @@
 
   function renderCheck(ui, state, item) {
     ui.check.innerHTML = '';
-    if (!item.check) {
+    if (!isCourseCheck(state, item.id)) {
       ui.check.hidden = true;
       return;
     }
     ui.check.hidden = false;
+    const courseChecks = getCourseChecks(state);
+    const checkIndex = courseChecks.findIndex(function (checkItem) { return checkItem.id === item.id; });
     const answer = state.answers[item.id];
+    const answered = answer !== undefined;
+    const correct = isCorrectAnswer(state, item);
     const heading = document.createElement('h4');
-    heading.textContent = 'Check yourself';
+    heading.textContent = 'Course check ' + (checkIndex + 1) + ' of ' + courseChecks.length;
     const question = document.createElement('p');
     question.textContent = item.check.question;
     const choices = document.createElement('div');
@@ -323,8 +333,10 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'river-tour-check__choice';
-      button.classList.toggle('is-correct', answer !== undefined && index === item.check.answer);
+      button.classList.toggle('is-selected', answer === index);
+      button.classList.toggle('is-correct', answered && index === item.check.answer);
       button.classList.toggle('is-wrong', answer === index && index !== item.check.answer);
+      button.setAttribute('aria-pressed', answer === index ? 'true' : 'false');
       button.textContent = choice;
       button.addEventListener('click', function () {
         state.answers[item.id] = index;
@@ -336,11 +348,41 @@
     ui.check.appendChild(heading);
     ui.check.appendChild(question);
     ui.check.appendChild(choices);
-    if (answer !== undefined) {
+    if (answered) {
       const feedback = document.createElement('p');
       feedback.className = 'river-tour-check__feedback';
-      feedback.textContent = answer === item.check.answer ? item.check.feedback : 'Review this point: ' + item.check.feedback;
+      feedback.textContent = correct ? 'Correct. ' + item.check.feedback : 'Review this point: ' + item.check.feedback;
       ui.check.appendChild(feedback);
+
+      const actions = document.createElement('div');
+      actions.className = 'river-tour-check__actions';
+      if (!correct) {
+        const retry = document.createElement('button');
+        retry.type = 'button';
+        retry.className = 'river-tour-check__action';
+        retry.textContent = 'Try again';
+        retry.addEventListener('click', function () {
+          delete state.answers[item.id];
+          saveState(state);
+          renderAll(ui, state);
+        });
+        actions.appendChild(retry);
+      } else {
+        const nextCheck = getNextCourseCheck(state, item.id);
+        if (nextCheck) {
+          const next = document.createElement('button');
+          next.type = 'button';
+          next.className = 'river-tour-check__action river-tour-check__action--primary';
+          next.textContent = 'Next check';
+          next.addEventListener('click', function () {
+            state.selectedId = nextCheck.id;
+            state.pendingCenter = true;
+            renderAll(ui, state);
+          });
+          actions.appendChild(next);
+        }
+      }
+      if (actions.childNodes.length) ui.check.appendChild(actions);
     }
   }
 
@@ -350,10 +392,21 @@
       return ids;
     }, new Set());
     const viewedCount = Array.from(allKeyIds).filter(function (id) { return state.viewed.has(id); }).length;
+    const allCheckIds = state.course.maps.reduce(function (ids, guideMap) {
+      (guideMap.checkPlaceIds || []).forEach(function (id) { ids.add(id); });
+      return ids;
+    }, new Set());
+    const correctCheckCount = Array.from(allCheckIds).filter(function (id) {
+      return isCorrectAnswer(state, getItemById(state, id));
+    }).length;
     const keyPlaces = getKeyPlaces(state);
     const mapViewed = keyPlaces.filter(function (item) { return state.viewed.has(item.id); }).length;
-    ui.progressCount.textContent = viewedCount + ' of ' + allKeyIds.size + ' key places viewed';
-    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this course';
+    const courseChecks = getCourseChecks(state);
+    const courseCorrect = courseChecks.filter(function (item) { return isCorrectAnswer(state, item); }).length;
+    ui.progressCount.textContent = viewedCount + ' of ' + allKeyIds.size + ' key places viewed'
+      + (allCheckIds.size ? ' · ' + correctCheckCount + ' of ' + allCheckIds.size + ' checks correct' : '');
+    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this course'
+      + (courseChecks.length ? ' · ' + courseCorrect + '/' + courseChecks.length + ' checks correct' : '');
   }
 
   function getRenderedItems(state) {
@@ -410,6 +463,41 @@
     return getGuideMap(state).keyPlaceIds.indexOf(id) !== -1;
   }
 
+  function isCourseCheck(state, id) {
+    const item = getItemById(state, id);
+    return !!(item && item.check && (getGuideMap(state).checkPlaceIds || []).indexOf(id) !== -1);
+  }
+
+  function getCourseChecks(state) {
+    const guideMap = getGuideMap(state);
+    return (guideMap.checkPlaceIds || []).map(function (id) {
+      return getItemById(state, id);
+    }).filter(function (item) {
+      return item && item.check;
+    });
+  }
+
+  function getNextCourseCheck(state, id) {
+    const checks = getCourseChecks(state);
+    const currentIndex = checks.findIndex(function (item) { return item.id === id; });
+    if (currentIndex === -1 || currentIndex >= checks.length - 1) return null;
+    return checks[currentIndex + 1];
+  }
+
+  function isAnsweredCheck(state, item) {
+    return !!(item && item.check && state.answers[item.id] !== undefined);
+  }
+
+  function isCorrectAnswer(state, item) {
+    return !!(item && item.check && state.answers[item.id] === item.check.answer);
+  }
+
+  function checkStatusLabel(state, item) {
+    if (!isCourseCheck(state, item.id)) return '';
+    if (!isAnsweredCheck(state, item)) return 'Course check';
+    return isCorrectAnswer(state, item) ? 'Check complete' : 'Review check';
+  }
+
   function isMapLine(state, id) {
     return getGuideMap(state).lineIds.indexOf(id) !== -1;
   }
@@ -431,7 +519,10 @@
       item.id === state.selectedId ? 'is-selected' : '',
       state.viewed.has(item.id) ? 'is-viewed' : '',
       state.coachQuestions.has(item.id) ? 'ask-coach' : '',
-      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker'
+      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker',
+      isCourseCheck(state, item.id) ? 'has-check' : '',
+      isCorrectAnswer(state, item) ? 'is-check-correct' : '',
+      isAnsweredCheck(state, item) && !isCorrectAnswer(state, item) ? 'is-check-wrong' : ''
     ].filter(Boolean).join(' ');
     return L.divIcon({
       className: classes,

@@ -1532,6 +1532,10 @@
         "river-turn-8",
         "docking"
       ],
+      "checkPlaceIds": [
+        "river-turn-5",
+        "docking"
+      ],
       "markerIds": [
         "launch",
         "downstream",
@@ -1593,6 +1597,11 @@
         "current",
         "bridge-pillar-3",
         "river-turn-10",
+        "docking"
+      ],
+      "checkPlaceIds": [
+        "pass-here",
+        "current",
         "docking"
       ],
       "markerIds": [
@@ -1677,6 +1686,13 @@
         "bridge-pillar-4",
         "current",
         "bridge-pillar-3",
+        "stay-on-your-side-of-the-corner",
+        "docking"
+      ],
+      "checkPlaceIds": [
+        "pass-here",
+        "sharp-turn",
+        "current",
         "stay-on-your-side-of-the-corner",
         "docking"
       ],
@@ -1858,10 +1874,10 @@
         251.7
       ],
       "check": {
-        "question": "What is the river-turn sequence?",
+        "question": "What is the safe river-turn sequence?",
         "choices": [
-          "Stop, turn, check, then cross or continue as directed.",
-          "Keep rowing through the turn and correct later.",
+          "Stop, turn, check traffic, then cross or continue as directed.",
+          "Keep rowing through the turn and correct after you cross.",
           "Move to the middle early and wait there."
         ],
         "answer": 0,
@@ -1999,17 +2015,7 @@
       ],
       "routePositions": [
         1020.3
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "fallen-tree-2",
@@ -2140,17 +2146,7 @@
       ],
       "routePositions": [
         1804.6
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "river-turn-9",
@@ -2256,17 +2252,7 @@
       ],
       "routePositions": [
         2519.5
-      ],
-      "check": {
-        "question": "What should you do before this bridge decision?",
-        "choices": [
-          "Look ahead and correct the angle before the bridge pulls you off your side.",
-          "Let the bridge shape guide the boat.",
-          "Move to the center and decide under the bridge."
-        ],
-        "answer": 0,
-        "feedback": "Do not let the bridge shape pull you off your side of the river."
-      }
+      ]
     },
     {
       "id": "wrong-side-of-the-pillar",
@@ -2292,17 +2278,7 @@
       ],
       "routePositions": [
         2595.8
-      ],
-      "check": {
-        "question": "What is the teaching point at this bridge marker?",
-        "choices": [
-          "Avoid the wrong side of the pillar and commit to the safe opening early.",
-          "Follow the bridge symmetry even if it pulls you across.",
-          "Wait until the last moment to decide."
-        ],
-        "answer": 0,
-        "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky."
-      }
+      ]
     },
     {
       "id": "pass-here",
@@ -2328,7 +2304,17 @@
       ],
       "routePositions": [
         2598.1
-      ]
+      ],
+      "check": {
+        "question": "At the bridge, what should you do once you identify the safe opening?",
+        "choices": [
+          "Commit early to the marked opening and keep the line predictable.",
+          "Stay undecided until the shell is under the bridge.",
+          "Move toward the center so either opening remains possible."
+        ],
+        "answer": 0,
+        "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky."
+      }
     },
     {
       "id": "bridge-pillar",
@@ -2380,17 +2366,7 @@
       ],
       "routePositions": [
         2750.0
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "sharp-turn",
@@ -2766,17 +2742,7 @@
       ],
       "routePositions": [
         5171.6
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "bridge-pillar-4",
@@ -2865,17 +2831,7 @@
       ],
       "routePositions": [
         5305.6
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "bridge-pillar-3",
@@ -2955,17 +2911,7 @@
       ],
       "routePositions": [
         5511.7
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "weeds-6",
@@ -2991,17 +2937,7 @@
       ],
       "routePositions": [
         5572.6
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "weeds-7",
@@ -3027,17 +2963,7 @@
       ],
       "routePositions": [
         5732.0
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "stay-on-your-side-of-the-corner",
@@ -3099,17 +3025,7 @@
       ],
       "routePositions": [
         6007.3
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "weeds-8",
@@ -3135,17 +3051,7 @@
       ],
       "routePositions": [
         6231.9
-      ],
-      "check": {
-        "question": "What should you do near weeds?",
-        "choices": [
-          "Give the weeds room while staying in the traffic pattern.",
-          "Cut across the river to avoid every weed patch.",
-          "Row through them quickly so the boat does not slow down."
-        ],
-        "answer": 0,
-        "feedback": "Give weeds enough room for oars and skeg, but stay predictable."
-      }
+      ]
     },
     {
       "id": "river-turn-8",
@@ -3283,17 +3189,7 @@
       "routePositions": [
         557.4,
         640.7
-      ],
-      "check": {
-        "question": "What should you do at this boundary?",
-        "choices": [
-          "Treat it as a hard no-row line and turn before reaching it.",
-          "Continue if the water looks empty.",
-          "Only stop if another shell is nearby."
-        ],
-        "answer": 0,
-        "feedback": "The map labels this as a danger zone; turn before the line."
-      }
+      ]
     },
     {
       "id": "lts-first-weekend-2",
