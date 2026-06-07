@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AARC River Navigation Guide
-description: Progressive Learn-to-Scull map guide for local Huron River navigation, safety gates, hazards, and bridge decisions.
+description: Learn-to-Scull conveyor-belt course guide for local Huron River navigation, hazards, bridge decisions, and docking.
 parent: Sculling Safety
 grand_parent: For Learners
 nav_exclude: true
@@ -17,24 +17,24 @@ nav_exclude: true
     <div>
       <p class="river-tour-eyebrow">AARC Learn-to-Scull</p>
       <h1><i class="fas fa-water"></i> AARC River Navigation Guide</h1>
-      <p class="lead">Review the real river route by the places you need to recognize on the water: launch, river turns, bridge decisions, hazards, current, and docking.</p>
+      <p class="lead">Review the three coached conveyor-belt courses by the places you need to recognize on the water: launch, turns, bridge decisions, hazards, current, and docking.</p>
     </div>
   </section>
 
   <section class="river-tour-app" data-river-navigation-guide data-course-url="{{ '/assets/data/river-navigation-guide.json' | relative_url }}">
     <div class="river-tour-app__header">
       <div>
-        <p class="river-tour-eyebrow">Progressive river maps</p>
-        <h2>Choose your session</h2>
-        <p>Step through the places you need to recognize before rowing: turn cues, bridge openings, hazards, current, and docking.</p>
+        <p class="river-tour-eyebrow">Conveyor-belt courses</p>
+        <h2>Choose your course</h2>
+        <p>Step through the course you are preparing to row: small round below the bridges, round below the bridges, or the full round.</p>
       </div>
       <div class="river-tour-progress" aria-live="polite">
         <span data-progress-count>Loading map...</span>
-        <strong data-progress-label>Navigation guide</strong>
+        <strong data-progress-label>Course guide</strong>
       </div>
     </div>
 
-    <nav class="river-tour-map-selectors" data-map-selectors aria-label="River navigation maps"></nav>
+    <nav class="river-tour-map-selectors" data-map-selectors aria-label="River navigation courses"></nav>
 
     <div class="river-tour-layout">
       <div class="river-tour-map-panel">
@@ -51,7 +51,7 @@ nav_exclude: true
 
           <div class="river-tour-map-wrap">
             <div class="river-tour-map-tools" aria-label="Map tools">
-              <button type="button" class="river-tour-map-tool" data-action="fit-map">Fit map</button>
+              <button type="button" class="river-tour-map-tool" data-action="fit-map">Fit course</button>
               <button type="button" class="river-tour-map-tool" data-action="fit-bridge" hidden>Bridge pattern</button>
               <button type="button" class="river-tour-map-tool" data-action="center-current">Center selected place</button>
             </div>
@@ -95,7 +95,7 @@ nav_exclude: true
   <section class="river-tour-notes">
     <article>
       <h2>Coach Route</h2>
-      <p>Your coach sets the route for the session. Stay inside the assigned area and turn where directed.</p>
+      <p>Your coach sets the course for the session. Stay inside the assigned area and turn where directed.</p>
     </article>
     <article>
       <h2>On The Water</h2>

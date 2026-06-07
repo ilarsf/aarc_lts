@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'aarc-river-navigation-guide-v1';
+  const STORAGE_KEY = 'aarc-river-navigation-guide-v2';
   const DEFAULT_ZOOM = 17;
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -19,7 +19,7 @@
   async function initRiverGuide(root) {
     const response = await fetch(root.getAttribute('data-course-url'), { cache: 'no-store' });
     if (!response.ok) throw new Error('Guide JSON failed: ' + response.status);
-    if (!window.L) throw new Error('Leaflet did not load, so the zoomable satellite map is unavailable.');
+    if (!window.L) throw new Error('Leaflet did not load, so the zoomable satellite course map is unavailable.');
 
     const course = await response.json();
     const ui = buildUi(root);
@@ -353,7 +353,7 @@
     const keyPlaces = getKeyPlaces(state);
     const mapViewed = keyPlaces.filter(function (item) { return state.viewed.has(item.id); }).length;
     ui.progressCount.textContent = viewedCount + ' of ' + allKeyIds.size + ' key places viewed';
-    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this map';
+    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this course';
   }
 
   function getRenderedItems(state) {

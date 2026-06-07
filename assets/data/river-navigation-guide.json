@@ -1506,9 +1506,9 @@
   },
   "maps": [
     {
-      "id": "first-weekend",
-      "name": "First Weekend Map",
-      "summary": "First-weekend practice from launch to the assigned turn cues and back to docking. Stay inside the route your coach gives you.",
+      "id": "small-round-first-sunday",
+      "name": "Small Round Below the Bridges - First Sunday",
+      "summary": "A short conveyor-belt course below the bridges. Use the coached turn cues, keep the loop moving, and return to docking.",
       "routeRanges": [
         [
           0,
@@ -1556,7 +1556,7 @@
       "gateNotes": [
         {
           "lineId": "lts-first-weekend",
-          "note": "First-weekend route limit on the downstream side of the dock."
+          "note": "Small-round downstream crossing line."
         },
         {
           "lineId": "no-rowing-beyond-this-point",
@@ -1564,14 +1564,14 @@
         },
         {
           "lineId": "lts-first-weekend-2",
-          "note": "First-weekend route limit on the upstream side."
+          "note": "Small-round upstream crossing line."
         }
       ]
     },
     {
-      "id": "saturday-second-weekend",
-      "name": "Saturday Second Weekend Map",
-      "summary": "Saturday bridge session for the second weekend. Review the bridge approach, pillar choices, current, return, and docking.",
+      "id": "round-below-bridges-second-saturday",
+      "name": "Round Below the Bridges - Second Saturday",
+      "summary": "The larger below-bridges conveyor-belt course. Add the bridge pattern, current, return opening, and docking sequence.",
       "routeRanges": [
         [
           0,
@@ -1646,14 +1646,14 @@
       "gateNotes": [
         {
           "lineId": "lts-saturday-second-weekend",
-          "note": "Saturday second-weekend route limit."
+          "note": "Second-Saturday below-bridges turn line."
         }
       ]
     },
     {
-      "id": "sunday-full-route",
-      "name": "Sunday Full Route Map",
-      "summary": "Full-route rehearsal toward Tail Bridge and back. Review bridge openings, hazards, current, regrouping, and docking.",
+      "id": "full-round-second-sunday",
+      "name": "Full Round - Second Sunday",
+      "summary": "The full conveyor-belt course to Tail Bridge and back. Review the complete route, major hazards, bridge openings, current, and docking.",
       "routeRanges": [
         [
           0,
@@ -1836,7 +1836,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "First downstream turn cue after leaving the dock.",
+      "description": "Downstream turn cue for the small round below the bridges.",
       "action": "Come under control early, turn as coached, check traffic, and keep the turn compact.",
       "distanceMeters": 251.7,
       "offsetMeters": 11.0,
@@ -1853,7 +1853,7 @@
           "projectionErrorMeters": 11.0
         }
       ],
-      "displayTitle": "River turn: downstream first cue",
+      "displayTitle": "River turn: small-round downstream cue",
       "routePositions": [
         251.7
       ],
@@ -1953,7 +1953,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Return-side turn cue near the downstream first-weekend practice area.",
+      "description": "Return-side turn cue for the small round below the bridges.",
       "action": "Use the same stop-turn-check habit before settling back into the normal traffic side.",
       "distanceMeters": 915.6,
       "offsetMeters": 6.0,
@@ -1970,7 +1970,7 @@
           "projectionErrorMeters": 6.0
         }
       ],
-      "displayTitle": "River turn: return from Argo side",
+      "displayTitle": "River turn: small-round return cue",
       "routePositions": [
         915.6
       ]
@@ -2068,7 +2068,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Upstream first-weekend turn cue. This is easier to use on the water than trying to interpret the gate line itself.",
+      "description": "Upstream turn cue for the small round below the bridges.",
       "action": "Turn where your coach directs, then confirm you are back on the correct side before adding pressure.",
       "distanceMeters": 1377.4,
       "offsetMeters": 6.8,
@@ -2085,7 +2085,7 @@
           "projectionErrorMeters": 6.8
         }
       ],
-      "displayTitle": "River turn: upstream first-weekend cue",
+      "displayTitle": "River turn: small-round upstream cue",
       "routePositions": [
         1377.4
       ]
@@ -3152,7 +3152,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Return-side turn cue used when coming back toward the dock.",
+      "description": "Return-side cue used when the small round comes back toward the dock.",
       "action": "Complete the turn under control and keep scanning as you approach the dock area.",
       "distanceMeters": 6277.7,
       "offsetMeters": 10.0,
@@ -3169,7 +3169,7 @@
           "projectionErrorMeters": 10.0
         }
       ],
-      "displayTitle": "River turn: return toward dock",
+      "displayTitle": "River turn: small-round dock return cue",
       "routePositions": [
         6277.7
       ]
@@ -3217,8 +3217,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Route limit for first-weekend practice.",
-      "action": "Stay inside the route your coach gives you and turn where directed.",
+      "description": "Cross-river line for the downstream end of the small round.",
+      "action": "Use the nearby river-turn cue and follow your coach's direction for the crossing.",
       "distanceMeters": 265.2,
       "offsetMeters": 18.4,
       "coordinates": [
@@ -3243,6 +3243,7 @@
           "projectionErrorMeters": 18.4
         }
       ],
+      "displayTitle": "Small round: downstream crossing",
       "routePositions": [
         265.2,
         903.9
@@ -3299,8 +3300,8 @@
       "title": "LTS First Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Route limit for first-weekend practice.",
-      "action": "Stay inside the route your coach gives you and turn where directed.",
+      "description": "Cross-river line for the upstream end of the small round.",
+      "action": "Use the nearby river-turn cue and follow your coach's direction for the crossing.",
       "distanceMeters": 1390.8,
       "offsetMeters": 16.6,
       "coordinates": [
@@ -3325,6 +3326,7 @@
           "projectionErrorMeters": 19.6
         }
       ],
+      "displayTitle": "Small round: upstream crossing",
       "routePositions": [
         1390.8,
         6261.9
@@ -3335,8 +3337,8 @@
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Route limit for the Saturday bridge session.",
-      "action": "Stay inside the route your coach gives you and turn where directed.",
+      "description": "Turn line for the round below the bridges.",
+      "action": "Use the nearby bridge and return cues, then follow your coach's direction for the turn.",
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -3361,6 +3363,7 @@
           "projectionErrorMeters": 5.3
         }
       ],
+      "displayTitle": "Second Saturday: below-bridges turn line",
       "routePositions": [
         2243.9,
         5482.6
