@@ -181,6 +181,16 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             </div>
         </a>
 
+        <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-route"></i>
+            </div>
+            <div class="card-content">
+                <h3>River Navigation Guide</h3>
+                <p>Route briefing cards, bridge decisions, coach prompts, and a printable dock quick card.</p>
+            </div>
+        </a>
+
         <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines-lts.html" class="card">
             <div class="card-image">
                 <i class="fas fa-cloud-sun-rain"></i>

@@ -102,7 +102,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <ul>
                             <li>Watch the <a href="{{ site.baseurl }}/for-learners/technique/videos.html?filter=session3">Session 3 Videos</a> to prepare for this session.</li>
                             <li>Visualize the feeling of pushing with your legs during the drive</li>
-                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">river map and traffic patterns</a> you'll be following</li>
+                            <li>Review the <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html">river route briefing</a> and the traffic pattern you'll be following</li>
                             <li>Prepare to row longer distances in this session</li>
                         </ul>
                     </div>
@@ -155,7 +155,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                     <div class="timeline-content">
                         <h4>River Geography & Traffic</h4>
                         <ul>
-                            <li>Review of boathouse map and <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">river layout</a></li>
+                            <li>Review of boathouse map and <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html">river route briefing</a></li>
                             <li>Explanation of traffic pattern rules</li>
                             <li>Discussion of steering techniques</li>
                             <li>Bridge navigation basics</li>

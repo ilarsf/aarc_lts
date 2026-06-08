@@ -1,238 +1,357 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'aarc-river-navigation-guide-v5';
+  const DEFAULT_MODE = 'learn';
   const DEFAULT_ZOOM = 17;
+  const MODE_MAPS = {
+    learn: 'small-round-first-sunday',
+    bridge: 'bridge-navigation-map',
+    coach: 'small-round-first-sunday',
+    print: 'small-round-first-sunday'
+  };
 
   document.addEventListener('DOMContentLoaded', function () {
-    const root = document.querySelector('[data-river-navigation-guide]');
-    if (!root) return;
-    initRiverGuide(root).catch(function (error) {
-      console.error('AARC River Navigation Guide failed to load.', error);
-      const title = root.querySelector('[data-current-title]');
-      const description = root.querySelector('[data-current-description]');
-      if (title) title.textContent = 'Map could not load';
-      if (description) description.textContent = error.message || 'Check the guide data path and map dependencies.';
+    document.querySelectorAll('[data-river-navigation-guide]').forEach(function (root) {
+      initRiverBriefing(root);
     });
   });
 
-  async function initRiverGuide(root) {
-    const response = await fetch(root.getAttribute('data-course-url'), { cache: 'no-store' });
-    if (!response.ok) throw new Error('Guide JSON failed: ' + response.status);
-    if (!window.L) throw new Error('Leaflet did not load, so the zoomable satellite map is unavailable.');
-
-    const course = await response.json();
-    const ui = buildUi(root);
-    const saved = loadSavedState();
-    const firstMap = course.maps[0];
+  async function initRiverBriefing(root) {
+    const ui = collectUi(root);
     const state = {
-      course: course,
-      guideMapId: saved.guideMapId || firstMap.id,
-      selectedId: saved.selectedId || firstMap.keyPlaceIds[0],
-      coachQuestions: new Set(saved.coachQuestions || []),
+      root: root,
+      ui: ui,
+      mode: modeFromHash(root) || DEFAULT_MODE,
+      activeCard: null,
+      showFullRoute: false,
+      course: null,
+      itemsById: new Map(),
       leafletMap: null,
-      baseLayers: {},
       routeLayer: null,
       itemLayer: null,
-      pendingFit: true,
-      pendingCenter: false
+      coachMapId: MODE_MAPS.coach
     };
 
-    initMap(ui, state);
-    bindEvents(ui, state);
-    renderAll(ui, state);
+    root.classList.add('is-enhanced');
+    bindStaticInteractions(state);
+    setMode(state, state.mode, false);
+    updateQuestionSummary(state);
+    updateCoachPrompt(state);
+
+    try {
+      const response = await fetch(root.getAttribute('data-course-url'), { cache: 'no-store' });
+      if (!response.ok) throw new Error('Guide data failed to load.');
+      if (!window.L) throw new Error('Leaflet did not load.');
+
+      state.course = await response.json();
+      indexCourseItems(state);
+      initLeafletMap(state);
+      renderMap(state);
+    } catch (error) {
+      setMapStatus(state, 'Map unavailable. Use the route cards and confirm the assigned course with your coach.');
+      console.error('AARC River Navigation Guide map failed.', error);
+    }
   }
 
-  function buildUi(root) {
+  function collectUi(root) {
     return {
-      root: root,
+      modeButtons: Array.from(root.querySelectorAll('[data-mode-button]')),
+      panels: Array.from(root.querySelectorAll('[data-mode-panel]')),
+      cards: Array.from(root.querySelectorAll('[data-route-card]')),
+      mapRegion: root.querySelector('#route-map'),
+      mapDetails: root.querySelector('.river-map-details'),
       map: root.querySelector('[data-map]'),
-      mapSelectors: root.querySelector('[data-map-selectors]'),
-      progressCount: root.querySelector('[data-progress-count]'),
-      progressLabel: root.querySelector('[data-progress-label]'),
       mapTitle: root.querySelector('[data-map-title]'),
       mapSummary: root.querySelector('[data-map-summary]'),
-      mapNew: root.querySelector('[data-map-new]'),
-      keyPlaceCount: root.querySelector('[data-key-place-count]'),
-      keyPlaceList: root.querySelector('[data-key-place-list]'),
-      category: root.querySelector('[data-current-category]'),
-      distance: root.querySelector('[data-current-distance]'),
-      title: root.querySelector('[data-current-title]'),
-      description: root.querySelector('[data-current-description]'),
-      action: root.querySelector('[data-current-action]'),
-      prev: root.querySelector('[data-action="prev"]'),
-      next: root.querySelector('[data-action="next"]'),
-      coachButton: root.querySelector('[data-action="coach-question"]'),
-      fitMap: root.querySelector('[data-action="fit-map"]'),
-      centerCurrent: root.querySelector('[data-action="center-current"]')
+      mapStatus: root.querySelector('[data-map-status]'),
+      showActiveButton: root.querySelector('[data-map-action="active"]'),
+      showFullButton: root.querySelector('[data-map-action="full"]'),
+      questionInputs: Array.from(root.querySelectorAll('[data-question-checkbox]')),
+      questionSummary: root.querySelector('[data-question-summary]'),
+      coachRouteMap: root.querySelector('[data-coach-route-map]'),
+      coachTurn: root.querySelector('[data-coach-turn]'),
+      coachLimit: root.querySelector('[data-coach-limit]'),
+      coachReminders: Array.from(root.querySelectorAll('[data-coach-reminder]')),
+      coachPrompt: root.querySelector('[data-coach-prompt]'),
+      printButton: root.querySelector('[data-print-guide]')
     };
   }
 
-  function initMap(ui, state) {
-    const routeLatLngs = state.course.route.coordinates.map(toLatLng);
+  function bindStaticInteractions(state) {
+    const ui = state.ui;
+
+    ui.modeButtons.forEach(function (button) {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        setMode(state, button.getAttribute('data-mode-button'), true);
+      });
+    });
+
+    ui.cards.forEach(function (card) {
+      const mapLink = card.querySelector('[data-map-focus]');
+      if (!mapLink) return;
+      mapLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        setMode(state, card.getAttribute('data-mode'), false);
+        setActiveCard(state, card);
+        state.showFullRoute = false;
+        renderMap(state);
+        if (ui.mapRegion) ui.mapRegion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    if (ui.showActiveButton) {
+      ui.showActiveButton.addEventListener('click', function () {
+        state.showFullRoute = false;
+        renderMap(state);
+      });
+    }
+
+    if (ui.showFullButton) {
+      ui.showFullButton.addEventListener('click', function () {
+        state.showFullRoute = true;
+        renderMap(state);
+      });
+    }
+
+    ui.questionInputs.forEach(function (input) {
+      input.addEventListener('change', function () {
+        updateQuestionSummary(state);
+      });
+    });
+
+    [ui.coachRouteMap, ui.coachTurn, ui.coachLimit].forEach(function (field) {
+      if (!field) return;
+      field.addEventListener('input', function () {
+        updateCoachPrompt(state);
+        if (field === ui.coachRouteMap) {
+          state.coachMapId = field.value;
+          renderMap(state);
+        }
+      });
+    });
+
+    ui.coachReminders.forEach(function (input) {
+      input.addEventListener('change', function () {
+        updateCoachPrompt(state);
+      });
+    });
+
+    if (ui.printButton) {
+      ui.printButton.addEventListener('click', function () {
+        window.print();
+      });
+    }
+
+    if (ui.mapDetails) {
+      ui.mapDetails.addEventListener('toggle', function () {
+        if (ui.mapDetails.open && state.leafletMap) {
+          window.setTimeout(function () {
+            state.leafletMap.invalidateSize();
+            renderMap(state);
+          }, 0);
+        }
+      });
+    }
+  }
+
+  function setMode(state, mode, updateHash) {
+    const nextMode = mode || DEFAULT_MODE;
+    state.mode = nextMode;
+    state.showFullRoute = nextMode === 'coach';
+
+    state.ui.modeButtons.forEach(function (button) {
+      const isActive = button.getAttribute('data-mode-button') === nextMode;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    state.ui.panels.forEach(function (panel) {
+      panel.hidden = panel.getAttribute('data-mode-panel') !== nextMode;
+    });
+
+    const firstCard = state.ui.cards.find(function (card) {
+      return card.getAttribute('data-mode') === nextMode;
+    });
+    setActiveCard(state, firstCard || null);
+
+    if (updateHash) {
+      const panel = state.ui.panels.find(function (item) {
+        return item.getAttribute('data-mode-panel') === nextMode;
+      });
+      if (panel && window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', '#' + panel.id);
+      }
+    }
+
+    renderMap(state);
+  }
+
+  function setActiveCard(state, card) {
+    state.activeCard = card;
+    state.ui.cards.forEach(function (item) {
+      item.classList.toggle('is-active', item === card);
+    });
+  }
+
+  function modeFromHash(root) {
+    if (!window.location.hash) return null;
+    let panel = null;
+    try {
+      panel = root.querySelector(window.location.hash);
+    } catch (error) {
+      return null;
+    }
+    return panel ? panel.getAttribute('data-mode-panel') : null;
+  }
+
+  function indexCourseItems(state) {
+    state.course.stops.concat(state.course.lines).forEach(function (item) {
+      state.itemsById.set(item.id, item);
+    });
+  }
+
+  function initLeafletMap(state) {
+    const ui = state.ui;
+    ui.map.innerHTML = '';
+
     state.leafletMap = L.map(ui.map, {
-      zoomControl: true,
-      scrollWheelZoom: true,
-      tap: true
+      keyboard: true,
+      scrollWheelZoom: false,
+      tap: true,
+      zoomControl: true
     });
 
     const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri',
       maxZoom: 19
-    }).addTo(state.leafletMap);
+    });
     const streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
       maxZoom: 19
     });
-    state.baseLayers = {
-      Satellite: satellite,
-      Streets: streets
-    };
-    L.control.layers(state.baseLayers, {}, { position: 'topleft' }).addTo(state.leafletMap);
+
+    satellite.addTo(state.leafletMap);
+    L.control.layers({ Satellite: satellite, Streets: streets }, {}, { position: 'topleft' }).addTo(state.leafletMap);
 
     state.routeLayer = L.layerGroup().addTo(state.leafletMap);
     state.itemLayer = L.layerGroup().addTo(state.leafletMap);
-    state.leafletMap.fitBounds(L.latLngBounds(routeLatLngs), { padding: [26, 26] });
+    state.root.classList.add('is-map-ready');
+
     window.setTimeout(function () {
       state.leafletMap.invalidateSize();
+      renderMap(state);
     }, 0);
   }
 
-  function bindEvents(ui, state) {
-    ui.prev.addEventListener('click', function () {
-      moveSelection(state, -1);
-      state.pendingCenter = true;
-      renderAll(ui, state);
-    });
-    ui.next.addEventListener('click', function () {
-      moveSelection(state, 1);
-      state.pendingCenter = true;
-      renderAll(ui, state);
-    });
-    ui.coachButton.addEventListener('click', function () {
-      if (state.coachQuestions.has(state.selectedId)) state.coachQuestions.delete(state.selectedId);
-      else state.coachQuestions.add(state.selectedId);
-      saveState(state);
-      renderAll(ui, state);
-    });
-    ui.fitMap.addEventListener('click', function () {
-      state.pendingFit = true;
-      renderMap(ui, state);
-    });
-    ui.centerCurrent.addEventListener('click', function () {
-      state.pendingCenter = true;
-      renderMap(ui, state);
-    });
-  }
+  function renderMap(state) {
+    if (!state.course || !state.leafletMap) return;
 
-  function renderAll(ui, state) {
-    ensureSelectedItem(state);
-    saveState(state);
-    renderMapSelectors(ui, state);
-    renderMap(ui, state);
-    renderKeyPlaces(ui, state);
-    renderCurrentPlace(ui, state);
-    renderProgress(ui, state);
-  }
-
-  function renderMapSelectors(ui, state) {
-    ui.mapSelectors.innerHTML = '';
-    state.course.maps.forEach(function (guideMap) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'river-tour-map-selector';
-      button.classList.toggle('is-selected', guideMap.id === state.guideMapId);
-      button.innerHTML = '<strong>' + escapeHtml(guideMap.name) + '</strong><span>' + escapeHtml(guideMap.summary) + '</span>';
-      button.addEventListener('click', function () {
-        state.guideMapId = guideMap.id;
-        state.selectedId = getKeyPlaces(state)[0]?.id || null;
-        state.pendingFit = true;
-        renderAll(ui, state);
-      });
-      ui.mapSelectors.appendChild(button);
-    });
-  }
-
-  function renderMap(ui, state) {
     state.routeLayer.clearLayers();
     state.itemLayer.clearLayers();
-    const rendered = getRenderedItems(state);
-    const selected = getSelectedItem(state);
-    const boundsPoints = renderRoute(state);
 
-    rendered.lines.forEach(function (line) {
-      const latLngs = line.coordinates.map(toLatLng);
-      latLngs.forEach(function (latLng) { boundsPoints.push(latLng); });
-      const polyline = L.polyline(latLngs, {
-        className: lineClass(line, state),
-        color: line.id === state.selectedId ? '#101820' : lineColor(line),
-        weight: lineWeight(line, state),
-        opacity: lineOpacity(line, state),
-        dashArray: lineDash(line)
-      }).addTo(state.itemLayer);
-      polyline.bindTooltip(tooltipText(line, state), { sticky: true });
-      polyline.on('click', function () {
-        selectItem(ui, state, line.id, true);
-      });
-    });
-
-    rendered.stops.forEach(function (stop) {
-      const latLng = toLatLng(stop.coordinates[0]);
-      boundsPoints.push(latLng);
-      const marker = L.marker(latLng, {
-        icon: markerIcon(stop, state),
-        title: itemLabel(stop),
-        keyboard: true
-      }).addTo(state.itemLayer);
-      marker.bindTooltip(tooltipText(stop, state), { direction: 'top', offset: [0, -12] });
-      marker.on('click', function () {
-        selectItem(ui, state, stop.id, true);
-      });
-    });
-
-    renderFlowCue(state);
-    renderSelectedFocus(state, selected);
-
-    if (state.pendingFit) {
-      fitToItems(state, boundsPoints);
-      state.pendingFit = false;
-    }
-    if (state.pendingCenter && selected) {
-      centerItem(state, selected);
-      state.pendingCenter = false;
-    }
-  }
-
-  function renderRoute(state) {
-    const segments = getRouteSegments(state);
+    const guideMap = getActiveGuideMap(state);
+    const activeIds = getActiveIds(state, 'data-place-ids');
+    const activeLineIds = getActiveIds(state, 'data-line-ids');
     const boundsPoints = [];
-    segments.forEach(function (segment) {
-      segment.forEach(function (latLng) { boundsPoints.push(latLng); });
-      L.polyline(segment, {
-        className: 'river-tour-route-underlay',
-        color: '#ffffff',
-        weight: 8,
-        opacity: 0.86,
-        interactive: false
-      }).addTo(state.routeLayer);
-      L.polyline(segment, {
-        className: 'river-tour-route-line',
-        color: '#167c96',
-        weight: 4,
-        opacity: 0.94,
-        interactive: false
-      }).addTo(state.routeLayer);
+
+    updateMapCopy(state, guideMap);
+    renderRoute(state, guideMap).forEach(function (latLng) {
+      boundsPoints.push(latLng);
     });
-    return boundsPoints;
+
+    const lineIds = state.showFullRoute ? guideMap.lineIds : activeLineIds;
+    lineIds.forEach(function (id) {
+      const line = state.itemsById.get(id);
+      if (!line) return;
+      renderLine(state, line, !state.showFullRoute);
+      line.coordinates.map(toLatLng).forEach(function (latLng) {
+        boundsPoints.push(latLng);
+      });
+    });
+
+    const markerIds = state.showFullRoute ? guideMap.keyPlaceIds : activeIds;
+    markerIds.forEach(function (id, index) {
+      const item = state.itemsById.get(id);
+      if (!item || item.geometry === 'LineString') return;
+      const isActive = !state.showFullRoute || activeIds.indexOf(id) !== -1;
+      renderMarker(state, item, index + 1, isActive);
+      boundsPoints.push(toLatLng(item.coordinates[0]));
+    });
+
+    fitMap(state, boundsPoints);
+    updateMapButtons(state);
   }
 
-  function getRouteSegments(state) {
-    const guideMap = getGuideMap(state);
-    const ranges = guideMap.routeRanges || [[0, state.course.route.lengthMeters]];
+  function renderRoute(state, guideMap) {
+    const segments = getRouteSegments(state.course, guideMap);
+    const bounds = [];
+    segments.forEach(function (segment) {
+      segment.forEach(function (latLng) {
+        bounds.push(latLng);
+      });
+      L.polyline(segment, {
+        color: '#ffffff',
+        interactive: false,
+        opacity: 0.9,
+        weight: 8
+      }).addTo(state.routeLayer);
+      L.polyline(segment, {
+        color: '#0f7891',
+        interactive: false,
+        opacity: 0.92,
+        weight: 4
+      }).addTo(state.routeLayer);
+    });
+    return bounds;
+  }
+
+  function renderLine(state, line, isActive) {
+    L.polyline(line.coordinates.map(toLatLng), {
+      color: isActive ? '#b42318' : '#b45309',
+      dashArray: line.id.indexOf('lts-') === 0 ? '5 8' : '10 8',
+      opacity: isActive ? 0.95 : 0.72,
+      weight: isActive ? 6 : 4
+    })
+      .bindTooltip(itemLabel(line), { sticky: true })
+      .addTo(state.itemLayer);
+  }
+
+  function renderMarker(state, item, number, isActive) {
+    const marker = L.marker(toLatLng(item.coordinates[0]), {
+      icon: markerIcon(item, number, isActive),
+      keyboard: true,
+      title: itemLabel(item)
+    });
+    marker
+      .bindTooltip(itemLabel(item), {
+        className: 'river-briefing-tooltip',
+        direction: 'top',
+        offset: [0, -14]
+      })
+      .addTo(state.itemLayer);
+  }
+
+  function markerIcon(item, number, isActive) {
+    const classes = [
+      'river-briefing-marker',
+      'river-briefing-marker--' + item.category,
+      isActive ? 'is-active' : 'is-muted'
+    ].join(' ');
+    return L.divIcon({
+      className: classes,
+      html: '<span>' + escapeHtml(String(number)) + '</span>',
+      iconAnchor: [18, 18],
+      iconSize: [36, 36]
+    });
+  }
+
+  function getRouteSegments(course, guideMap) {
+    const ranges = guideMap.routeRanges || [[0, course.route.lengthMeters]];
     return ranges.map(function (range) {
       const segment = [];
-      state.course.route.coordinates.forEach(function (coord, index) {
-        const point = state.course.route.points[index];
+      course.route.coordinates.forEach(function (coord, index) {
+        const point = course.route.points[index];
         if (point && point.distanceMeters >= range[0] && point.distanceMeters <= range[1]) {
           segment.push(toLatLng(coord));
         }
@@ -243,360 +362,99 @@
     });
   }
 
-  function selectItem(ui, state, id, center) {
-    state.selectedId = id;
-    state.pendingCenter = !!center;
-    renderAll(ui, state);
+  function getActiveGuideMap(state) {
+    const mapId = state.mode === 'coach'
+      ? state.coachMapId
+      : (state.activeCard && state.activeCard.getAttribute('data-guide-map')) || MODE_MAPS[state.mode] || MODE_MAPS.learn;
+    return state.course.maps.find(function (guideMap) {
+      return guideMap.id === mapId;
+    }) || state.course.maps[0];
   }
 
-  function renderKeyPlaces(ui, state) {
-    const guideMap = getGuideMap(state);
-    const keyPlaces = getKeyPlaces(state);
-    ui.mapTitle.textContent = guideMap.name;
-    ui.mapSummary.textContent = guideMap.summary;
-    if (ui.mapNew) {
-      ui.mapNew.hidden = !guideMap.newToday;
-      ui.mapNew.textContent = guideMap.newToday ? 'New on this view: ' + guideMap.newToday + '.' : '';
-    }
-    ui.keyPlaceCount.textContent = itemCountLabel(keyPlaces.length, guideMap.viewType);
-    ui.keyPlaceList.innerHTML = '';
-    keyPlaces.forEach(function (item, index) {
-      const detail = getKeyPlaceDetail(state, item.id);
-      const li = document.createElement('li');
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'river-tour-stop';
-      button.classList.toggle('is-selected', item.id === state.selectedId);
-      button.classList.toggle('ask-coach', state.coachQuestions.has(item.id));
-      button.classList.toggle('is-turn-point', !!detail?.isTurnPoint);
-      button.classList.toggle('is-new-cue', !!detail?.tags?.length);
-      const detailParts = [detail?.label || state.course.categories[item.category] || item.category].concat(detail?.tags || []);
-      button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(detailParts.join(' · ')) + '</small>';
-      button.addEventListener('click', function () {
-        state.selectedId = item.id;
-        state.pendingCenter = true;
-        renderAll(ui, state);
-      });
-      li.appendChild(button);
-      ui.keyPlaceList.appendChild(li);
-    });
+  function getActiveIds(state, attribute) {
+    if (!state.activeCard) return [];
+    return (state.activeCard.getAttribute(attribute) || '').split(/\s+/).filter(Boolean);
   }
 
-  function renderCurrentPlace(ui, state) {
-    const item = getSelectedItem(state);
-    if (!item) return;
-    const detail = getKeyPlaceDetail(state, item.id);
-    const categoryLabel = isPracticeGate(item)
-      ? 'Coach route note'
-      : detail?.label || state.course.categories[item.category] || item.category;
-    ui.category.textContent = [categoryLabel].concat(detail?.tags || []).join(' · ');
-    ui.distance.textContent = formatRoutePositions(item);
-    ui.title.textContent = itemLabel(item);
-    ui.description.textContent = item.description || 'Review this location before rowing the route.';
-    ui.action.textContent = item.action || 'Review this location before rowing the route.';
-    ui.coachButton.classList.toggle('is-active', state.coachQuestions.has(item.id));
-    ui.coachButton.innerHTML = state.coachQuestions.has(item.id)
-      ? '<i class="fas fa-bookmark"></i> Coach question noted'
-      : '<i class="fas fa-bookmark"></i> Ask coach about this';
-  }
-
-  function renderProgress(ui, state) {
-    const guideMap = getGuideMap(state);
-    const keyPlaces = getKeyPlaces(state);
-    ui.progressCount.textContent = itemCountLabel(keyPlaces.length, guideMap.viewType);
-    ui.progressLabel.textContent = guideMap.viewType === 'reference'
-      ? 'Bridge reference'
-      : 'Dock-to-dock course line';
-  }
-
-  function getRenderedItems(state) {
-    const guideMap = getGuideMap(state);
-    const lines = guideMap.lineIds.map(function (id) { return getItemById(state, id); }).filter(Boolean);
-    const stops = guideMap.markerIds.map(function (id) {
-      return getItemById(state, id);
-    }).filter(function (item) {
-      return item && item.geometry !== 'LineString';
-    });
-    return {
-      stops: uniqueItems(stops),
-      lines: uniqueItems(lines)
-    };
-  }
-
-  function getKeyPlaces(state) {
-    const guideMap = getGuideMap(state);
-    return guideMap.keyPlaceIds.map(function (id) {
-      return getItemById(state, id);
-    }).filter(Boolean);
-  }
-
-  function getGuideMap(state) {
-    return state.course.maps.find(function (guideMap) { return guideMap.id === state.guideMapId; }) || state.course.maps[0];
-  }
-
-  function getSelectedItem(state) {
-    return getItemById(state, state.selectedId) || getKeyPlaces(state)[0] || null;
-  }
-
-  function getItemById(state, id) {
-    if (!id) return null;
-    return state.course.stops.concat(state.course.lines).find(function (item) { return item.id === id; });
-  }
-
-  function ensureSelectedItem(state) {
-    const selected = getSelectedItem(state);
-    if (!selected) {
-      state.selectedId = null;
+  function fitMap(state, boundsPoints) {
+    if (!boundsPoints.length) return;
+    if (boundsPoints.length === 1) {
+      state.leafletMap.setView(boundsPoints[0], DEFAULT_ZOOM);
       return;
     }
-    if (!isRenderedItem(state, selected.id) && !isKeyPlace(state, selected.id)) {
-      state.selectedId = getKeyPlaces(state)[0]?.id || null;
-    }
-  }
-
-  function isRenderedItem(state, id) {
-    const rendered = getRenderedItems(state);
-    return rendered.stops.concat(rendered.lines).some(function (item) { return item.id === id; });
-  }
-
-  function isKeyPlace(state, id) {
-    return getGuideMap(state).keyPlaceIds.indexOf(id) !== -1;
-  }
-
-  function getKeyPlaceIndex(state, id) {
-    return getGuideMap(state).keyPlaceIds.indexOf(id);
-  }
-
-  function getKeyPlaceDetail(state, id) {
-    return getGuideMap(state).keyPlaceDetails?.[id] || null;
-  }
-
-  function moveSelection(state, direction) {
-    const keyPlaces = getKeyPlaces(state);
-    if (!keyPlaces.length) return;
-    const currentIndex = keyPlaces.findIndex(function (item) { return item.id === state.selectedId; });
-    const nextIndex = currentIndex === -1
-      ? (direction > 0 ? 0 : keyPlaces.length - 1)
-      : clamp(currentIndex + direction, 0, keyPlaces.length - 1);
-    state.selectedId = keyPlaces[nextIndex].id;
-  }
-
-  function markerIcon(item, state) {
-    const detail = getKeyPlaceDetail(state, item.id);
-    const classes = [
-      'river-tour-leaflet-marker',
-      'river-tour-leaflet-marker--' + item.category,
-      item.id === state.selectedId ? 'is-selected' : '',
-      state.coachQuestions.has(item.id) ? 'ask-coach' : '',
-      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker',
-      detail?.isTurnPoint ? 'is-turn-point' : '',
-      detail?.tags?.length ? 'is-new-cue' : ''
-    ].filter(Boolean).join(' ');
-    const keyPlaceIndex = getKeyPlaceIndex(state, item.id);
-    return L.divIcon({
-      className: classes,
-      html: '<span>' + (keyPlaceIndex >= 0 ? keyPlaceIndex + 1 : markerLabel(item.category)) + '</span>',
-      iconSize: [56, 30],
-      iconAnchor: [28, 15]
+    state.leafletMap.fitBounds(L.latLngBounds(boundsPoints), {
+      maxZoom: DEFAULT_ZOOM,
+      padding: [30, 30]
     });
   }
 
-  function lineClass(item, state) {
-    return [
-      'river-tour-leaflet-line',
-      'river-tour-leaflet-line--' + item.category,
-      isPracticeGate(item) ? 'is-practice-gate' : '',
-      item.id === state.selectedId ? 'is-selected' : '',
-      state.coachQuestions.has(item.id) ? 'ask-coach' : ''
-    ].filter(Boolean).join(' ');
+  function updateMapCopy(state, guideMap) {
+    const cardTitle = state.activeCard ? cardLabel(state.activeCard) : 'Route overview';
+    state.ui.mapTitle.textContent = guideMap.name;
+    state.ui.mapSummary.textContent = guideMap.summary;
+    setMapStatus(state, state.showFullRoute ? 'Showing the full route reference.' : 'Showing: ' + cardTitle + '.');
   }
 
-  function markerLabel(category) {
-    const labels = {
-      dock: 'Dock',
-      direction: 'Flow',
-      turn: 'Turn',
-      limit: 'Line',
-      bridge: 'Bridge',
-      hazard: 'Caution',
-      current: 'Drift',
-      corner: 'Bend',
-      break: 'Break',
-      marker: 'Info'
-    };
-    return labels[category] || 'Info';
+  function updateMapButtons(state) {
+    if (state.ui.showFullButton) state.ui.showFullButton.classList.toggle('is-active', state.showFullRoute);
+    if (state.ui.showActiveButton) state.ui.showActiveButton.classList.toggle('is-active', !state.showFullRoute);
   }
 
-  function lineColor(item) {
-    if (item.id === 'no-rowing-beyond-this-point') return '#d0272f';
-    if (item.id === 'end-point') return '#6a3db5';
-    if (isPracticeGate(item)) return '#f0c64b';
-    return '#e0a51f';
+  function updateQuestionSummary(state) {
+    if (!state.ui.questionSummary) return;
+    const selected = state.ui.questionInputs.filter(function (input) {
+      return input.checked;
+    }).map(function (input) {
+      return input.value;
+    });
+
+    state.ui.questionSummary.textContent = selected.length
+      ? selected.length + ' question' + (selected.length === 1 ? '' : 's') + ' to ask: ' + selected.join(' ')
+      : 'No questions selected yet.';
   }
 
-  function lineWeight(item, state) {
-    if (item.id === state.selectedId) return isPracticeGate(item) ? 5 : 7;
-    return isPracticeGate(item) ? 3 : 5;
+  function updateCoachPrompt(state) {
+    const ui = state.ui;
+    if (!ui.coachPrompt) return;
+
+    const routeName = ui.coachRouteMap && ui.coachRouteMap.selectedOptions.length
+      ? ui.coachRouteMap.selectedOptions[0].textContent.trim().toLowerCase()
+      : 'assigned route';
+    const turn = ui.coachTurn && ui.coachTurn.value.trim() ? ui.coachTurn.value.trim() : 'the coach-assigned turn cue';
+    const limit = ui.coachLimit && ui.coachLimit.value.trim() ? ui.coachLimit.value.trim() : 'the coach-assigned limit';
+    const reminders = ui.coachReminders.filter(function (input) {
+      return input.checked;
+    }).map(function (input) {
+      return input.value;
+    });
+
+    let prompt = 'Today we will row the ' + routeName + '. Turn at ' + turn + '. Do not go beyond ' + limit + '.';
+    if (reminders.length) prompt += ' Remember to ' + toSentence(reminders) + '.';
+    ui.coachPrompt.textContent = prompt;
   }
 
-  function lineOpacity(item, state) {
-    if (item.id === state.selectedId) return 0.95;
-    return isPracticeGate(item) ? 0.72 : 0.96;
+  function toSentence(items) {
+    if (items.length <= 1) return items.join('');
+    if (items.length === 2) return items.join(' and ');
+    return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1];
   }
 
-  function lineDash(item) {
-    if (isPracticeGate(item)) return '4 10';
-    if (item.id === 'end-point') return '4 6';
-    return '12 8';
-  }
-
-  function isPracticeGate(item) {
-    return item && item.id && item.id.indexOf('lts-') === 0;
-  }
-
-  function tooltipText(item, state) {
-    return itemLabel(item);
-  }
-
-  function renderFlowCue(state) {
-    if (getGuideMap(state).viewType === 'reference') return;
-    const launch = getItemById(state, 'launch');
-    const downstream = getItemById(state, 'downstream');
-    if (!launch || !downstream) return;
-    const from = L.latLng(toLatLng(launch.coordinates[0]));
-    const to = L.latLng(toLatLng(downstream.coordinates[0]));
-    const latLng = L.latLng(
-      (from.lat + to.lat) / 2,
-      (from.lng + to.lng) / 2
-    );
-    const angle = screenAngle(state, from, to);
-    L.marker(latLng, {
-      interactive: false,
-      keyboard: false,
-      icon: L.divIcon({
-        className: 'river-tour-flow-arrow',
-        html: '<span style="transform: rotate(' + angle.toFixed(1) + 'deg)"></span><strong>River flow</strong>',
-        iconSize: [126, 34],
-        iconAnchor: [63, 17]
-      })
-    }).addTo(state.itemLayer);
-  }
-
-  function screenAngle(state, from, to) {
-    const fromPoint = state.leafletMap.latLngToLayerPoint(from);
-    const toPoint = state.leafletMap.latLngToLayerPoint(to);
-    return Math.atan2(toPoint.y - fromPoint.y, toPoint.x - fromPoint.x) * 180 / Math.PI;
-  }
-
-  function renderSelectedFocus(state, item) {
-    if (!item) return;
-    if (item.geometry === 'LineString') {
-      const latLngs = item.coordinates.map(toLatLng);
-      const selectedLine = L.polyline(latLngs, {
-        className: 'river-tour-selected-line',
-        color: '#101820',
-        weight: 9,
-        opacity: 0.86,
-        interactive: false
-      }).addTo(state.itemLayer);
-      selectedLine.bindTooltip(itemLabel(item), {
-        permanent: true,
-        direction: 'center',
-        className: 'river-tour-selected-tooltip'
-      }).openTooltip();
-      return;
-    }
-
-    const latLng = toLatLng(item.coordinates[0]);
-    L.circleMarker(latLng, {
-      className: 'river-tour-selected-halo',
-      radius: 22,
-      color: '#101820',
-      weight: 4,
-      opacity: 0.96,
-      fillColor: '#ffffff',
-      fillOpacity: 0.18,
-      interactive: false
-    }).addTo(state.itemLayer);
-    L.tooltip({
-      permanent: true,
-      direction: 'top',
-      offset: [0, -26],
-      className: 'river-tour-selected-tooltip'
-    }).setLatLng(latLng).setContent(itemLabel(item)).addTo(state.itemLayer);
+  function cardLabel(card) {
+    const kicker = card.querySelector('.route-card-kicker')?.textContent.trim();
+    const title = card.querySelector('h3')?.textContent.trim();
+    return [kicker, title].filter(Boolean).join(': ');
   }
 
   function itemLabel(item) {
     return item.displayTitle || item.title;
   }
 
-  function fitToItems(state, latLngs) {
-    const points = latLngs.length ? latLngs : state.course.route.coordinates.map(toLatLng);
-    const bounds = L.latLngBounds(points);
-    state.leafletMap.fitBounds(bounds, {
-      padding: [34, 34],
-      maxZoom: DEFAULT_ZOOM
-    });
-  }
-
-  function centerItem(state, item) {
-    const latLng = item.geometry === 'LineString'
-      ? L.latLngBounds(item.coordinates.map(toLatLng)).getCenter()
-      : toLatLng(item.coordinates[0]);
-    state.leafletMap.setView(latLng, Math.max(state.leafletMap.getZoom(), DEFAULT_ZOOM), { animate: true });
-  }
-
-  function formatRoutePositions(item) {
-    const positions = item.routePositions || [item.distanceMeters];
-    const label = positions.length > 1 ? 'Route positions: ' : 'Route position: ';
-    return label + positions.map(formatDistance).join(', ');
-  }
-
-  function formatDistance(distanceMeters) {
-    return distanceMeters >= 1000 ? (distanceMeters / 1000).toFixed(1) + ' km' : Math.round(distanceMeters) + ' m';
-  }
-
-  function itemCountLabel(count, viewType) {
-    const noun = viewType === 'reference' ? 'reference point' : 'sequence point';
-    return count === 1 ? '1 ' + noun : count + ' ' + noun + 's';
+  function setMapStatus(state, message) {
+    if (state.ui.mapStatus) state.ui.mapStatus.textContent = message;
   }
 
   function toLatLng(coord) {
     return [coord.lat, coord.lon];
-  }
-
-  function saveState(state) {
-    const payload = {
-      guideMapId: state.guideMapId,
-      selectedId: state.selectedId,
-      coachQuestions: Array.from(state.coachQuestions)
-    };
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
-    } catch (error) {
-      // The guide remains usable without persistence.
-    }
-  }
-
-  function loadSavedState() {
-    try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    } catch (error) {
-      return {};
-    }
-  }
-
-  function uniqueItems(items) {
-    const ids = new Set();
-    return items.filter(function (item) {
-      if (ids.has(item.id)) return false;
-      ids.add(item.id);
-      return true;
-    });
-  }
-
-  function clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
   }
 
   function escapeHtml(value) {

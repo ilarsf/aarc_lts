@@ -32,7 +32,7 @@ search_exclude: true
 
 ## Pre-Session Preparation
 1. Set up ergometers for technique review
-2. Prepare visual aids for river traffic patterns, including the <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">AARC river map</a>
+2. Prepare visual aids for river traffic patterns, including the <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html">AARC River Navigation Guide</a>
 3. Prepare boats with proper settings for each participant
 4. Check oar collars and grips
 5. Review participant progress notes from Session 2
@@ -144,7 +144,7 @@ Coaches should note each participant's:
   <h4>Resources for This Session</h4>
   <ul>
     <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/video-analysis.html">Video Analysis Guide</a> - For coaches recording technique</li>
-    <li><a href="{{ site.baseurl }}/for-learners/safety/river-rules.html#river-map">AARC River Map</a> - Local landmarks, turn areas, bridge sequence, and caution zones</li>
+    <li><a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html">AARC River Navigation Guide</a> - Learner route cards, bridge reference, coach script, and caution zones</li>
     <li><a href="{{ site.baseurl }}/for-coaches/safety-leadership/safety-protocols.html">River Traffic Guide</a> - Detailed navigation patterns</li>
     <li><a href="{{ site.baseurl }}/for-coaches/program-management/assessment-tools.html">Assessment Checklist</a> - Progress tracking tool</li>
   </ul>

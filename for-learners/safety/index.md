@@ -15,6 +15,7 @@ Safety is the most important aspect of rowing. This section covers essential saf
 - [Essential Rules](essential-rules.md) - Core safety rules every sculler must follow
 - [Self-Rescue](self-rescue.md) - What to do if you flip your boat
 - [River Rules](river-rules.md) - Navigation patterns and rules on the water
+- [River Navigation Guide](river-navigation-guide.md) - Route briefing cards, bridge reference, coach script, and printable quick card
 - [LTS Weather Guidelines](weather-guidelines-lts.md) - How weather affects rowing safety
 
 Every rower is responsible for their own safety and contributes to the safety of others. Take time to thoroughly review and understand these materials. Safety knowledge is just as important as rowing technique when it comes to becoming an independent sculler.
