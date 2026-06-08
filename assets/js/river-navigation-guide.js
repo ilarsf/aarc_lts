@@ -276,10 +276,9 @@
   function renderCurrentPlace(ui, state) {
     const item = getSelectedItem(state);
     if (!item) return;
-    const isKey = isKeyPlace(state, item.id);
     ui.category.textContent = isPracticeGate(item)
       ? 'Coach route note'
-      : isKey ? state.course.categories[item.category] || item.category : 'River marker';
+      : state.course.categories[item.category] || item.category;
     ui.distance.textContent = formatRoutePositions(item);
     ui.title.textContent = itemLabel(item);
     ui.description.textContent = item.description || 'Review this location before rowing the route.';
