@@ -268,6 +268,28 @@
 .river-tour-leaflet-marker--corner span { background: #f0e9ff; border-color: #8067b7; }
 .river-tour-leaflet-marker--break span { background: #edf8e8; border-color: #6a9f3d; }
 
+.river-tour-leaflet-marker.is-additional-marker span {
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.river-tour-leaflet-marker.is-key-place span {
+  min-width: 34px;
+}
+
+.river-tour-leaflet-marker.is-key-place.is-turn-point span {
+  border-color: #c28d12;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.95),
+    0 0 0 7px rgba(246, 196, 83, 0.55),
+    0 4px 12px rgba(0, 0, 0, 0.38);
+}
+
+.river-tour-leaflet-marker.is-key-place.is-new-cue span {
+  outline: 2px solid rgba(47, 111, 190, 0.62);
+  outline-offset: 2px;
+}
+
 .river-tour-leaflet-marker.is-selected span {
   border-color: #101820;
   border-width: 4px;
@@ -276,11 +298,6 @@
     0 0 0 11px rgba(16, 24, 32, 0.46),
     0 8px 18px rgba(0, 0, 0, 0.5);
   transform: scale(1.18);
-}
-
-.river-tour-leaflet-marker.is-additional-marker span {
-  opacity: 0.86;
-  transform: scale(0.9);
 }
 
 .river-tour-leaflet-marker.is-additional-marker.river-tour-leaflet-marker--hazard span {
@@ -305,6 +322,50 @@
 
 .river-tour-leaflet-line.is-practice-gate {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.28));
+}
+
+.river-tour-flow-arrow {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  display: flex;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.river-tour-flow-arrow span {
+  background: #102734;
+  border-radius: 999px;
+  display: block;
+  height: 4px;
+  position: relative;
+  transform-origin: center;
+  width: 34px;
+}
+
+.river-tour-flow-arrow span::after {
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #102734;
+  border-top: 7px solid transparent;
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: -5px;
+}
+
+.river-tour-flow-arrow strong {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(16, 39, 52, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  color: #102734;
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 0.28rem 0.45rem;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .river-tour-selected-halo {
@@ -384,6 +445,15 @@
 .river-tour-card p {
   color: var(--tour-muted);
   margin: 0 0 0.9rem;
+}
+
+.river-tour-new {
+  background: #f3f7f7;
+  border-left: 4px solid var(--tour-blue);
+  border-radius: 6px;
+  color: var(--tour-ink) !important;
+  font-size: 0.9rem;
+  padding: 0.65rem 0.75rem;
 }
 
 .river-tour-action {
@@ -491,6 +561,20 @@
 .river-tour-stop.is-selected {
   border-color: #17465a;
   box-shadow: inset 4px 0 0 #17465a;
+}
+
+.river-tour-stop.is-turn-point {
+  border-color: rgba(194, 141, 18, 0.42);
+}
+
+.river-tour-stop.is-turn-point span {
+  background: #fff1c8;
+  color: #5d4307;
+}
+
+.river-tour-stop.is-new-cue small {
+  color: #17465a;
+  font-weight: 800;
 }
 
 .river-tour-stop.ask-coach {

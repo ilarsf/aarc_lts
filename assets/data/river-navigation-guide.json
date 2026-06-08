@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "name": "AARC River Navigation Guide",
   "source": {
     "name": "Rowing Traffic on the Huron River",
@@ -1502,14 +1502,15 @@
     "current": "Current / drift",
     "corner": "Corner / angle",
     "break": "Regrouping point",
-    "marker": "River marker"
+    "marker": "Map cue"
   },
   "maps": [
     {
       "id": "small-round-first-sunday",
       "viewType": "course",
       "name": "Small Round - First Sunday",
-      "summary": "A short dock-to-dock course line. Use the coached turn cues, keep the route organized, and return to docking.",
+      "summary": "A short dock-to-dock course line focused on river-flow orientation, coached turn points, and docking.",
+      "newToday": "river flow, the small-round turn sequence, and docking setup",
       "routeRanges": [
         [
           0,
@@ -1527,12 +1528,87 @@
       "keyPlaceIds": [
         "launch",
         "downstream",
+        "fallen-tree-3",
         "river-turn-5",
+        "island-weeds",
         "river-turn-6",
         "river-turn-7",
+        "weeds-8",
         "river-turn-8",
         "docking"
       ],
+      "keyPlaceDetails": {
+        "launch": {
+          "sequence": 1,
+          "label": "Start",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "downstream": {
+          "sequence": 2,
+          "label": "River flow",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "fallen-tree-3": {
+          "sequence": 3,
+          "label": "Course feature",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "river-turn-5": {
+          "sequence": 4,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "island-weeds": {
+          "sequence": 5,
+          "label": "Course feature",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "river-turn-6": {
+          "sequence": 6,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "river-turn-7": {
+          "sequence": 7,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "weeds-8": {
+          "sequence": 8,
+          "label": "Course feature",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "river-turn-8": {
+          "sequence": 9,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "docking": {
+          "sequence": 10,
+          "label": "Finish",
+          "tags": [],
+          "isTurnPoint": false
+        }
+      },
       "markerIds": [
         "launch",
         "downstream",
@@ -1546,7 +1622,8 @@
         "fallen-trees-2",
         "weeds-8",
         "river-turn-8",
-        "docking"
+        "docking",
+        "island-weeds"
       ],
       "lineIds": [
         "lts-first-weekend",
@@ -1572,7 +1649,8 @@
       "id": "bridge-round-second-saturday",
       "viewType": "course",
       "name": "Bridge Round - Second Saturday",
-      "summary": "A dock-to-dock course line that introduces the bridge approach, bridge openings, current, return cue, and docking.",
+      "summary": "A dock-to-dock course line focused on the bridge approach, bridge openings, current, return cue, and docking.",
+      "newToday": "the bridge approach, pillar choices, angle correction, current, and the bridge-round return cue",
       "routeRanges": [
         [
           0,
@@ -1585,6 +1663,7 @@
       ],
       "keyPlaceIds": [
         "launch",
+        "downstream",
         "river-turn-9",
         "bridge-pillar-2",
         "correct-your-angle",
@@ -1592,10 +1671,94 @@
         "current",
         "bridge-pillar-3",
         "river-turn-10",
+        "stay-on-your-side-of-the-corner",
         "docking"
       ],
+      "keyPlaceDetails": {
+        "launch": {
+          "sequence": 1,
+          "label": "Start",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "downstream": {
+          "sequence": 2,
+          "label": "River flow",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "river-turn-9": {
+          "sequence": 3,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "bridge-pillar-2": {
+          "sequence": 4,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "correct-your-angle": {
+          "sequence": 5,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "pass-here": {
+          "sequence": 6,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "current": {
+          "sequence": 7,
+          "label": "Current cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "bridge-pillar-3": {
+          "sequence": 8,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "river-turn-10": {
+          "sequence": 9,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "stay-on-your-side-of-the-corner": {
+          "sequence": 10,
+          "label": "Turn / corner cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "docking": {
+          "sequence": 11,
+          "label": "Finish",
+          "tags": [],
+          "isTurnPoint": false
+        }
+      },
       "markerIds": [
         "launch",
+        "downstream",
         "river-turn-9",
         "bridge-pillar-2",
         "tree-branches",
@@ -1610,6 +1773,7 @@
         "bridge-pillar-3",
         "river-turn-10",
         "weeds-10",
+        "stay-on-your-side-of-the-corner",
         "docking"
       ],
       "lineIds": [
@@ -1626,7 +1790,8 @@
       "id": "full-round-second-sunday",
       "viewType": "course",
       "name": "Full Round - Second Sunday",
-      "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, bridge openings, current, caution areas, and docking.",
+      "summary": "The full dock-to-dock course line to Tail Bridge and back, with the full-route turn points called out in order.",
+      "newToday": "the full-route turn near Tail Bridge, sharper bends, longer return, and full-route caution areas",
       "routeRanges": [
         [
           0,
@@ -1642,11 +1807,109 @@
         "sharp-turn",
         "river-turn",
         "river-turn-2",
+        "good-place-for-a-break",
+        "fallen-trees-corner",
         "current",
         "bridge-pillar-3",
         "stay-on-your-side-of-the-corner",
         "docking"
       ],
+      "keyPlaceDetails": {
+        "launch": {
+          "sequence": 1,
+          "label": "Start",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "downstream": {
+          "sequence": 2,
+          "label": "River flow",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "bridge-pillar-2": {
+          "sequence": 3,
+          "label": "Bridge cue",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "correct-your-angle": {
+          "sequence": 4,
+          "label": "Bridge cue",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "pass-here": {
+          "sequence": 5,
+          "label": "Bridge cue",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "sharp-turn": {
+          "sequence": 6,
+          "label": "Turn / corner cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "river-turn": {
+          "sequence": 7,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "river-turn-2": {
+          "sequence": 8,
+          "label": "Turn point",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "good-place-for-a-break": {
+          "sequence": 9,
+          "label": "Regroup cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "fallen-trees-corner": {
+          "sequence": 10,
+          "label": "Turn / corner cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "current": {
+          "sequence": 11,
+          "label": "Current cue",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "bridge-pillar-3": {
+          "sequence": 12,
+          "label": "Bridge cue",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "stay-on-your-side-of-the-corner": {
+          "sequence": 13,
+          "label": "Turn / corner cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "docking": {
+          "sequence": 14,
+          "label": "Finish",
+          "tags": [],
+          "isTurnPoint": false
+        }
+      },
       "markerIds": [
         "launch",
         "downstream",
@@ -1687,6 +1950,7 @@
       "viewType": "reference",
       "name": "Bridge Navigation Map",
       "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
+      "newToday": "bridge openings, pillar sides, branches, current, and angle correction",
       "routeRanges": [
         [
           2180,
@@ -1708,6 +1972,76 @@
         "bridge-pillar-3",
         "river-turn-10"
       ],
+      "keyPlaceDetails": {
+        "river-turn-9": {
+          "sequence": 1,
+          "label": "Turn point",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "bridge-pillar-2": {
+          "sequence": 2,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "tree-branches": {
+          "sequence": 3,
+          "label": "Course feature",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "correct-your-angle": {
+          "sequence": 4,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "pass-here": {
+          "sequence": 5,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "bridge-pillar-4": {
+          "sequence": 6,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "current": {
+          "sequence": 7,
+          "label": "Current cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "bridge-pillar-3": {
+          "sequence": 8,
+          "label": "Bridge cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "river-turn-10": {
+          "sequence": 9,
+          "label": "Turn point",
+          "tags": [],
+          "isTurnPoint": true
+        }
+      },
       "markerIds": [
         "river-turn-9",
         "bridge-pillar-2",
@@ -1761,8 +2095,8 @@
       "title": "Downstream",
       "category": "direction",
       "geometry": "Point",
-      "description": "Orientation cue for the downstream direction from the dock.",
-      "action": "Use this cue to orient yourself before rowing away from the dock.",
+      "description": "Orientation cue for the direction the river flows from the dock.",
+      "action": "Use this cue to keep downstream and upstream straight before the course gets busy.",
       "distanceMeters": 94.7,
       "offsetMeters": -5.5,
       "coordinates": [
@@ -1778,6 +2112,7 @@
           "projectionErrorMeters": 5.5
         }
       ],
+      "displayTitle": "River flow: downstream",
       "routePositions": [
         94.7
       ]

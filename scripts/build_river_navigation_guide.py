@@ -25,7 +25,8 @@ MAP_DEFS = [
         "id": "small-round-first-sunday",
         "viewType": "course",
         "name": "Small Round - First Sunday",
-        "summary": "A short dock-to-dock course line. Use the coached turn cues, keep the route organized, and return to docking.",
+        "summary": "A short dock-to-dock course line focused on river-flow orientation, coached turn points, and docking.",
+        "newToday": "river flow, the small-round turn sequence, and docking setup",
         "routeRanges": [[0, 280], [900, 1450], [6200, 6505]],
         "markerRanges": [[0, 280], [900, 1450], [6200, 6505]],
         "lineIds": [
@@ -36,11 +37,21 @@ MAP_DEFS = [
         "keyPlaceIds": [
             "launch",
             "downstream",
+            "fallen-tree-3",
+            "river-turn-5",
+            "island-weeds",
+            "river-turn-6",
+            "river-turn-7",
+            "weeds-8",
+            "river-turn-8",
+            "docking",
+        ],
+        "newPlaceIds": [
+            "downstream",
             "river-turn-5",
             "river-turn-6",
             "river-turn-7",
             "river-turn-8",
-            "docking",
         ],
         "gateNotes": [
             {
@@ -61,10 +72,12 @@ MAP_DEFS = [
         "id": "bridge-round-second-saturday",
         "viewType": "course",
         "name": "Bridge Round - Second Saturday",
-        "summary": "A dock-to-dock course line that introduces the bridge approach, bridge openings, current, return cue, and docking.",
+        "summary": "A dock-to-dock course line focused on the bridge approach, bridge openings, current, return cue, and docking.",
+        "newToday": "the bridge approach, pillar choices, angle correction, current, and the bridge-round return cue",
         "routeRanges": [[0, 2820], [5160, 6505]],
         "markerIds": [
             "launch",
+            "downstream",
             "river-turn-9",
             "bridge-pillar-2",
             "tree-branches",
@@ -79,6 +92,7 @@ MAP_DEFS = [
             "bridge-pillar-3",
             "river-turn-10",
             "weeds-10",
+            "stay-on-your-side-of-the-corner",
             "docking",
         ],
         "excludeMarkerIds": [
@@ -94,6 +108,7 @@ MAP_DEFS = [
         ],
         "keyPlaceIds": [
             "launch",
+            "downstream",
             "river-turn-9",
             "bridge-pillar-2",
             "correct-your-angle",
@@ -101,7 +116,17 @@ MAP_DEFS = [
             "current",
             "bridge-pillar-3",
             "river-turn-10",
+            "stay-on-your-side-of-the-corner",
             "docking",
+        ],
+        "newPlaceIds": [
+            "river-turn-9",
+            "bridge-pillar-2",
+            "correct-your-angle",
+            "pass-here",
+            "current",
+            "bridge-pillar-3",
+            "river-turn-10",
         ],
         "gateNotes": [
             {
@@ -114,7 +139,8 @@ MAP_DEFS = [
         "id": "full-round-second-sunday",
         "viewType": "course",
         "name": "Full Round - Second Sunday",
-        "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, bridge openings, current, caution areas, and docking.",
+        "summary": "The full dock-to-dock course line to Tail Bridge and back, with the full-route turn points called out in order.",
+        "newToday": "the full-route turn near Tail Bridge, sharper bends, longer return, and full-route caution areas",
         "routeRanges": [[0, 6505]],
         "markerIds": [
             "launch",
@@ -159,10 +185,19 @@ MAP_DEFS = [
             "sharp-turn",
             "river-turn",
             "river-turn-2",
+            "good-place-for-a-break",
+            "fallen-trees-corner",
             "current",
             "bridge-pillar-3",
             "stay-on-your-side-of-the-corner",
             "docking",
+        ],
+        "newPlaceIds": [
+            "sharp-turn",
+            "river-turn",
+            "river-turn-2",
+            "good-place-for-a-break",
+            "fallen-trees-corner",
         ],
         "gateNotes": [
             {
@@ -180,6 +215,7 @@ MAP_DEFS = [
         "viewType": "reference",
         "name": "Bridge Navigation Map",
         "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
+        "newToday": "bridge openings, pillar sides, branches, current, and angle correction",
         "routeRanges": [[2180, 2820], [5160, 5520]],
         "markerRanges": [[2180, 2820], [5160, 5520]],
         "lineIds": [],
@@ -194,12 +230,26 @@ MAP_DEFS = [
             "bridge-pillar-3",
             "river-turn-10",
         ],
+        "newPlaceIds": [
+            "bridge-pillar-2",
+            "tree-branches",
+            "correct-your-angle",
+            "pass-here",
+            "bridge-pillar-4",
+            "current",
+            "bridge-pillar-3",
+        ],
         "gateNotes": [],
     },
 ]
 
 
 ITEM_OVERRIDES = {
+    "downstream": {
+        "displayTitle": "River flow: downstream",
+        "description": "Orientation cue for the direction the river flows from the dock.",
+        "action": "Use this cue to keep downstream and upstream straight before the course gets busy.",
+    },
     "river-turn-5": {
         "displayTitle": "River turn: small-round downstream cue",
         "description": "Downstream turn cue for the small round.",
@@ -479,21 +529,65 @@ def marker_ids_for_map(map_def: dict, stops: list[dict]) -> list[str]:
     return marker_ids
 
 
+def key_place_label(item: dict) -> str:
+    if item["id"] == "launch":
+        return "Start"
+    if item["id"] == "docking":
+        return "Finish"
+    if item["id"] == "downstream":
+        return "River flow"
+    if item["category"] == "turn":
+        return "Turn point"
+    if item["category"] == "bridge":
+        return "Bridge cue"
+    if item["category"] == "current":
+        return "Current cue"
+    if item["category"] == "corner":
+        return "Turn / corner cue"
+    if item["category"] == "hazard":
+        return "Course feature"
+    if item["category"] == "break":
+        return "Regroup cue"
+    if item["category"] == "limit":
+        return "Coach route note"
+    return "Map cue"
+
+
+def key_place_details(map_def: dict, items_by_id: dict[str, dict]) -> dict[str, dict]:
+    new_place_ids = set(map_def.get("newPlaceIds", []))
+    details = {}
+    for index, item_id in enumerate(map_def["keyPlaceIds"], start=1):
+        item = items_by_id[item_id]
+        tags = []
+        if item_id in new_place_ids:
+            tags.append("New today")
+        details[item_id] = {
+            "sequence": index,
+            "label": key_place_label(item),
+            "tags": tags,
+            "isTurnPoint": item["category"] in {"turn", "corner"},
+        }
+    return details
+
+
 def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
     stop_ids = {item["id"] for item in stops}
     line_ids = {item["id"] for item in lines}
     all_ids = stop_ids | line_ids
+    items_by_id = {item["id"]: item for item in stops + lines}
     maps = []
     for map_def in MAP_DEFS:
         marker_ids = marker_ids_for_map(map_def, stops)
         missing_markers = sorted(set(marker_ids) - stop_ids)
         missing_lines = sorted(set(map_def["lineIds"]) - line_ids)
         missing_keys = sorted(set(map_def["keyPlaceIds"]) - all_ids)
+        missing_new = sorted(set(map_def.get("newPlaceIds", [])) - all_ids)
         missing_excluded = sorted(set(map_def.get("excludeMarkerIds", [])) - stop_ids)
         if (
             missing_markers
             or missing_lines
             or missing_keys
+            or missing_new
             or missing_excluded
         ):
             details = []
@@ -502,7 +596,9 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
             if missing_lines:
                 details.append(f"lines={missing_lines}")
             if missing_keys:
-                details.append(f"key places={missing_keys}")
+                details.append(f"sequence points={missing_keys}")
+            if missing_new:
+                details.append(f"new today={missing_new}")
             if missing_excluded:
                 details.append(f"excluded markers={missing_excluded}")
             raise SystemExit(f"Map {map_def['id']} references missing ids: {'; '.join(details)}")
@@ -511,8 +607,10 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
             "viewType": map_def["viewType"],
             "name": map_def["name"],
             "summary": map_def["summary"],
+            "newToday": map_def["newToday"],
             "routeRanges": map_def["routeRanges"],
             "keyPlaceIds": map_def["keyPlaceIds"],
+            "keyPlaceDetails": key_place_details(map_def, items_by_id),
             "markerIds": marker_ids,
             "lineIds": map_def["lineIds"],
             "gateNotes": map_def["gateNotes"],
@@ -610,7 +708,7 @@ def main() -> int:
     maps = build_maps(stops, lines)
 
     payload = {
-        "version": 4,
+        "version": 5,
         "name": "AARC River Navigation Guide",
         "source": {
             "name": "Rowing Traffic on the Huron River",
@@ -642,7 +740,7 @@ def main() -> int:
             "current": "Current / drift",
             "corner": "Corner / angle",
             "break": "Regrouping point",
-            "marker": "River marker",
+            "marker": "Map cue",
         },
         "maps": maps,
         "stops": stops,

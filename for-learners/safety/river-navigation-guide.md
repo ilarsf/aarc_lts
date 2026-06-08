@@ -17,7 +17,7 @@ nav_exclude: true
     <div>
       <p class="river-tour-eyebrow">AARC Learn-to-Scull</p>
       <h1><i class="fas fa-water"></i> AARC River Navigation Guide</h1>
-      <p class="lead">Review the coached course lines and bridge decisions by the places you need to recognize on the water: launch, turns, caution areas, current, and docking.</p>
+      <p class="lead">Review each coached course as a start-to-finish sequence: launch, river flow, key turn points, a few local features, and docking.</p>
     </div>
   </section>
 
@@ -26,7 +26,7 @@ nav_exclude: true
       <div>
         <p class="river-tour-eyebrow">Course lines and bridge map</p>
         <h2>Choose a view</h2>
-        <p>Step through the course line you are preparing to row, or use the bridge map to focus on openings, pillars, current, and angle correction.</p>
+        <p>Use Previous and Next to move through the numbered course points in order. The bridge map is a separate reference for openings, pillars, current, and angle correction.</p>
       </div>
       <div class="river-tour-progress" aria-live="polite">
         <span data-progress-count>Loading map...</span>
@@ -41,11 +41,12 @@ nav_exclude: true
         <div class="river-tour-map-grid">
           <section class="river-tour-card river-tour-card--keyplaces">
             <div class="river-tour-card__topline">
-              <span class="river-tour-pill">Key places</span>
+              <span class="river-tour-pill">Course sequence</span>
               <span data-key-place-count></span>
             </div>
             <h3 data-map-title>Loading map</h3>
             <p data-map-summary></p>
+            <p class="river-tour-new" data-map-new hidden></p>
             <ol class="river-tour-stop-list" data-key-place-list></ol>
           </section>
 

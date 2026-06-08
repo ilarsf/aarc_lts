@@ -52,6 +52,7 @@
       progressLabel: root.querySelector('[data-progress-label]'),
       mapTitle: root.querySelector('[data-map-title]'),
       mapSummary: root.querySelector('[data-map-summary]'),
+      mapNew: root.querySelector('[data-map-new]'),
       keyPlaceCount: root.querySelector('[data-key-place-count]'),
       keyPlaceList: root.querySelector('[data-key-place-list]'),
       category: root.querySelector('[data-current-category]'),
@@ -189,6 +190,7 @@
       });
     });
 
+    renderFlowCue(state);
     renderSelectedFocus(state, selected);
 
     if (state.pendingFit) {
@@ -252,16 +254,23 @@
     const keyPlaces = getKeyPlaces(state);
     ui.mapTitle.textContent = guideMap.name;
     ui.mapSummary.textContent = guideMap.summary;
-    ui.keyPlaceCount.textContent = itemCountLabel(keyPlaces.length);
+    if (ui.mapNew) {
+      ui.mapNew.hidden = !guideMap.newToday;
+      ui.mapNew.textContent = guideMap.newToday ? 'New on this view: ' + guideMap.newToday + '.' : '';
+    }
+    ui.keyPlaceCount.textContent = itemCountLabel(keyPlaces.length, guideMap.viewType);
     ui.keyPlaceList.innerHTML = '';
     keyPlaces.forEach(function (item, index) {
+      const detail = getKeyPlaceDetail(state, item.id);
       const li = document.createElement('li');
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'river-tour-stop';
       button.classList.toggle('is-selected', item.id === state.selectedId);
       button.classList.toggle('ask-coach', state.coachQuestions.has(item.id));
-      const detailParts = [state.course.categories[item.category] || item.category];
+      button.classList.toggle('is-turn-point', !!detail?.isTurnPoint);
+      button.classList.toggle('is-new-cue', !!detail?.tags?.length);
+      const detailParts = [detail?.label || state.course.categories[item.category] || item.category].concat(detail?.tags || []);
       button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(detailParts.join(' · ')) + '</small>';
       button.addEventListener('click', function () {
         state.selectedId = item.id;
@@ -276,9 +285,11 @@
   function renderCurrentPlace(ui, state) {
     const item = getSelectedItem(state);
     if (!item) return;
-    ui.category.textContent = isPracticeGate(item)
+    const detail = getKeyPlaceDetail(state, item.id);
+    const categoryLabel = isPracticeGate(item)
       ? 'Coach route note'
-      : state.course.categories[item.category] || item.category;
+      : detail?.label || state.course.categories[item.category] || item.category;
+    ui.category.textContent = [categoryLabel].concat(detail?.tags || []).join(' · ');
     ui.distance.textContent = formatRoutePositions(item);
     ui.title.textContent = itemLabel(item);
     ui.description.textContent = item.description || 'Review this location before rowing the route.';
@@ -292,7 +303,7 @@
   function renderProgress(ui, state) {
     const guideMap = getGuideMap(state);
     const keyPlaces = getKeyPlaces(state);
-    ui.progressCount.textContent = itemCountLabel(keyPlaces.length);
+    ui.progressCount.textContent = itemCountLabel(keyPlaces.length, guideMap.viewType);
     ui.progressLabel.textContent = guideMap.viewType === 'reference'
       ? 'Bridge reference'
       : 'Dock-to-dock course line';
@@ -352,6 +363,14 @@
     return getGuideMap(state).keyPlaceIds.indexOf(id) !== -1;
   }
 
+  function getKeyPlaceIndex(state, id) {
+    return getGuideMap(state).keyPlaceIds.indexOf(id);
+  }
+
+  function getKeyPlaceDetail(state, id) {
+    return getGuideMap(state).keyPlaceDetails?.[id] || null;
+  }
+
   function moveSelection(state, direction) {
     const keyPlaces = getKeyPlaces(state);
     if (!keyPlaces.length) return;
@@ -363,16 +382,20 @@
   }
 
   function markerIcon(item, state) {
+    const detail = getKeyPlaceDetail(state, item.id);
     const classes = [
       'river-tour-leaflet-marker',
       'river-tour-leaflet-marker--' + item.category,
       item.id === state.selectedId ? 'is-selected' : '',
       state.coachQuestions.has(item.id) ? 'ask-coach' : '',
-      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker'
+      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker',
+      detail?.isTurnPoint ? 'is-turn-point' : '',
+      detail?.tags?.length ? 'is-new-cue' : ''
     ].filter(Boolean).join(' ');
+    const keyPlaceIndex = getKeyPlaceIndex(state, item.id);
     return L.divIcon({
       className: classes,
-      html: '<span>' + markerLabel(item.category) + '</span>',
+      html: '<span>' + (keyPlaceIndex >= 0 ? keyPlaceIndex + 1 : markerLabel(item.category)) + '</span>',
       iconSize: [56, 30],
       iconAnchor: [28, 15]
     });
@@ -433,6 +456,36 @@
 
   function tooltipText(item, state) {
     return itemLabel(item);
+  }
+
+  function renderFlowCue(state) {
+    if (getGuideMap(state).viewType === 'reference') return;
+    const launch = getItemById(state, 'launch');
+    const downstream = getItemById(state, 'downstream');
+    if (!launch || !downstream) return;
+    const from = L.latLng(toLatLng(launch.coordinates[0]));
+    const to = L.latLng(toLatLng(downstream.coordinates[0]));
+    const latLng = L.latLng(
+      (from.lat + to.lat) / 2,
+      (from.lng + to.lng) / 2
+    );
+    const angle = screenAngle(state, from, to);
+    L.marker(latLng, {
+      interactive: false,
+      keyboard: false,
+      icon: L.divIcon({
+        className: 'river-tour-flow-arrow',
+        html: '<span style="transform: rotate(' + angle.toFixed(1) + 'deg)"></span><strong>River flow</strong>',
+        iconSize: [126, 34],
+        iconAnchor: [63, 17]
+      })
+    }).addTo(state.itemLayer);
+  }
+
+  function screenAngle(state, from, to) {
+    const fromPoint = state.leafletMap.latLngToLayerPoint(from);
+    const toPoint = state.leafletMap.latLngToLayerPoint(to);
+    return Math.atan2(toPoint.y - fromPoint.y, toPoint.x - fromPoint.x) * 180 / Math.PI;
   }
 
   function renderSelectedFocus(state, item) {
@@ -503,8 +556,9 @@
     return distanceMeters >= 1000 ? (distanceMeters / 1000).toFixed(1) + ' km' : Math.round(distanceMeters) + ' m';
   }
 
-  function itemCountLabel(count) {
-    return count === 1 ? '1 key place' : count + ' key places';
+  function itemCountLabel(count, viewType) {
+    const noun = viewType === 'reference' ? 'reference point' : 'sequence point';
+    return count === 1 ? '1 ' + noun : count + ' ' + noun + 's';
   }
 
   function toLatLng(coord) {
