@@ -3,6 +3,7 @@
 
   const DEFAULT_MODE = 'small-round';
   const DEFAULT_ZOOM = 17;
+  const ACTIVE_STEP_ZOOM = 18;
   const MODE_ROUTES = {
     'small-round': 'small-round',
     'below-m14-round': 'below-m14-round',
@@ -294,9 +295,14 @@
     const boundsPoints = [];
 
     updateMapCopy(state, activeRoute, activeStep);
-    renderRoute(state, activeRoute || getActiveGuideMap(state)).forEach(function (latLng) {
-      boundsPoints.push(latLng);
-    });
+    const routeBounds = renderRoute(state, activeRoute || getActiveGuideMap(state));
+    const shouldFitActiveStep = Boolean(activeStep && !state.showFullRoute);
+
+    if (!shouldFitActiveStep) {
+      routeBounds.forEach(function (latLng) {
+        boundsPoints.push(latLng);
+      });
+    }
 
     visibleSteps.forEach(function (step) {
       const isActiveStep = !state.showFullRoute || (activeStep && activeStep.id === step.id);
@@ -320,7 +326,7 @@
       });
     });
 
-    fitMap(state, boundsPoints);
+    fitMap(state, boundsPoints.length ? boundsPoints : routeBounds, shouldFitActiveStep);
     updateMapButtons(state);
   }
 
@@ -484,15 +490,16 @@
     return (element.getAttribute(attribute) || '').split(/\s+/).filter(Boolean);
   }
 
-  function fitMap(state, boundsPoints) {
+  function fitMap(state, boundsPoints, useActiveStepZoom) {
     if (!boundsPoints.length) return;
+    const maxZoom = useActiveStepZoom ? ACTIVE_STEP_ZOOM : DEFAULT_ZOOM;
     if (boundsPoints.length === 1) {
-      state.leafletMap.setView(boundsPoints[0], DEFAULT_ZOOM);
+      state.leafletMap.setView(boundsPoints[0], maxZoom);
       return;
     }
     state.leafletMap.fitBounds(L.latLngBounds(boundsPoints), {
-      maxZoom: DEFAULT_ZOOM,
-      padding: [30, 30]
+      maxZoom: maxZoom,
+      padding: useActiveStepZoom ? [18, 18] : [30, 30]
     });
   }
 
