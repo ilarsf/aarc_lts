@@ -82,6 +82,10 @@
   margin-bottom: 0;
 }
 
+.whole-route-brief > p {
+  grid-column: 1 / -1;
+}
+
 .whole-route-steps {
   counter-reset: route-step;
   display: grid;
@@ -261,6 +265,7 @@
 }
 
 .route-card,
+.bridge-name-key,
 .coach-briefing-tool,
 .coach-script,
 .quick-card-section,
@@ -275,6 +280,62 @@
   display: grid;
   gap: 0.9rem;
   padding: 1rem;
+}
+
+.bridge-name-key {
+  border-left: 5px solid var(--river-bridge);
+  margin: 0 0 1rem;
+  padding: 1rem;
+}
+
+.bridge-name-key h3 {
+  color: var(--river-water-dark);
+  margin: 0 0 0.8rem;
+}
+
+.bridge-name-key ol {
+  counter-reset: bridge-key;
+  display: grid;
+  gap: 0.65rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bridge-name-key li {
+  counter-increment: bridge-key;
+  display: grid;
+  gap: 0.15rem;
+  grid-template-columns: 2rem minmax(0, 1fr);
+}
+
+.bridge-name-key li::before {
+  align-items: center;
+  background: #eef2ff;
+  border: 2px solid var(--river-bridge);
+  border-radius: 999px;
+  color: var(--river-bridge);
+  content: counter(bridge-key);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  height: 1.55rem;
+  justify-content: center;
+  width: 1.55rem;
+}
+
+.bridge-name-key strong,
+.bridge-name-key span {
+  grid-column: 2;
+}
+
+.bridge-name-key strong {
+  color: var(--river-ink);
+}
+
+.bridge-name-key span {
+  color: var(--river-muted);
+  font-size: 0.9rem;
 }
 
 .route-card.is-active {
@@ -299,6 +360,7 @@
 .coach-script h3,
 .quick-card-section h3,
 .question-checklist h3,
+.question-checklist h2,
 .coach-briefing-tool h3 {
   color: var(--river-water-dark);
   margin: 0;
@@ -326,19 +388,84 @@
   margin: 0;
 }
 
-.route-check {
-  align-items: start;
-  background: #f4f8f2;
-  border-left: 4px solid var(--river-rule);
-  border-radius: 6px;
-  display: flex;
-  gap: 0.55rem;
-  padding: 0.7rem;
+.route-card-check {
+  background: #f8fafc;
+  border: 1px solid var(--river-line);
+  border-radius: 8px;
+  margin-top: 0.1rem;
+  padding: 0.85rem;
 }
 
-.route-check input {
-  flex: 0 0 auto;
-  margin-top: 0.25rem;
+.route-card-check__prompt {
+  color: var(--river-caution);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.route-card-check__question {
+  color: var(--river-ink);
+  display: block;
+  font-weight: 800;
+  margin-top: 0.2rem;
+}
+
+.route-card-check__answer {
+  border: 1px solid var(--river-line);
+  border-radius: 6px;
+  color: var(--river-ink);
+  display: block;
+  font: inherit;
+  margin-top: 0.65rem;
+  min-height: 2.55rem;
+  padding: 0.55rem 0.65rem;
+  width: 100%;
+}
+
+.route-card-check__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.route-card-check__button {
+  appearance: none;
+  background: var(--river-water-dark);
+  border: 1px solid var(--river-water-dark);
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.7rem;
+}
+
+.route-card-check__button--secondary {
+  background: #ffffff;
+  border-color: var(--river-line);
+  color: var(--river-ink);
+}
+
+.route-card-check__status {
+  color: var(--river-muted);
+  font-weight: 800;
+  margin: 0.65rem 0 0;
+}
+
+.route-card-check.is-answered {
+  background: #f0fff4;
+  border-color: var(--river-rule);
+}
+
+.route-card-check.is-answered .route-card-check__status {
+  color: var(--river-rule);
+}
+
+.route-card-check.is-answered .route-card-check__status::before {
+  content: "\2713 ";
 }
 
 .route-map-link,
@@ -374,6 +501,10 @@
   border-left: 5px solid var(--river-caution);
   margin-top: 1rem;
   padding: 1rem;
+}
+
+.route-self-check-summary {
+  margin-top: 0;
 }
 
 .question-summary p {
@@ -684,7 +815,8 @@
 
 .river-mode-button:focus-visible,
 .route-map-link:focus-visible,
-.route-check input:focus-visible,
+.route-card-check__answer:focus-visible,
+.route-card-check__button:focus-visible,
 .route-card:focus-visible,
 .coach-tool-grid input:focus-visible,
 .coach-tool-grid select:focus-visible,
@@ -733,6 +865,7 @@
 @media (max-width: 700px) {
   .river-briefing-hero,
   .route-card,
+  .bridge-name-key,
   .coach-briefing-tool,
   .coach-script,
   .quick-card-section,
@@ -781,6 +914,7 @@
   }
 
   .route-card,
+  .bridge-name-key,
   .coach-briefing-tool,
   .coach-script,
   .quick-card-section,
@@ -794,6 +928,9 @@
   body.printing-quick-card .river-mode-selector,
   body.printing-quick-card .river-map-reference,
   body.printing-quick-card .river-briefing-footer-actions,
+  body.printing-quick-card .coach-portal-banner,
+  body.printing-quick-card .coach-portal-footer,
+  body.printing-quick-card .site-footer,
   body.printing-quick-card .river-mode-panel:not(.printable-card) {
     display: none !important;
   }
@@ -805,7 +942,8 @@
   }
 
   body.printing-quick-card .coach-briefing-tool,
-  body.printing-quick-card .coach-script-list {
+  body.printing-quick-card .coach-script-list,
+  body.printing-quick-card .printable-card > .river-section-heading {
     display: none !important;
   }
 

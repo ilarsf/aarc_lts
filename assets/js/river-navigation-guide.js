@@ -5,15 +5,15 @@
   const DEFAULT_ZOOM = 17;
   const MODE_ROUTES = {
     'small-round': 'small-round',
+    'below-m14-round': 'below-m14-round',
     'bridge-round': 'bridge-round',
-    'full-round': 'full-round',
-    coach: 'small-round'
+    'full-round': 'full-round'
   };
   const LEGACY_MODE_MAPS = {
     'small-round': 'small-round-first-sunday',
+    'below-m14-round': 'below-m14-round',
     'bridge-round': 'bridge-navigation-map',
-    'full-round': 'full-round-second-sunday',
-    coach: 'small-round-first-sunday'
+    'full-round': 'full-round-second-sunday'
   };
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -23,11 +23,13 @@
   });
 
   async function initRiverBriefing(root) {
+    renderCardChecks(root);
     const ui = collectUi(root);
     const state = {
       root: root,
       ui: ui,
       mode: modeFromHash(root) || DEFAULT_MODE,
+      isCoachTools: root.hasAttribute('data-coach-route-tools'),
       activeCard: null,
       showFullRoute: false,
       course: null,
@@ -36,17 +38,20 @@
       leafletMap: null,
       routeLayer: null,
       itemLayer: null,
-      coachRouteId: MODE_ROUTES.coach
+      coachRouteId: DEFAULT_MODE
     };
 
     root.classList.add('is-enhanced');
     bindStaticInteractions(state);
     setMode(state, state.mode, false);
-    updateQuestionSummary(state);
+    updateRouteCheckSummary(state);
     updateCoachPrompt(state);
 
+    const courseUrl = root.getAttribute('data-course-url');
+    if (!ui.map || !courseUrl) return;
+
     try {
-      const response = await fetch(root.getAttribute('data-course-url'), { cache: 'no-store' });
+      const response = await fetch(courseUrl, { cache: 'no-store' });
       if (!response.ok) throw new Error('Guide data failed to load.');
       if (!window.L) throw new Error('Leaflet did not load.');
 
@@ -74,7 +79,8 @@
       showActiveButton: root.querySelector('[data-map-action="active"]'),
       showFullButton: root.querySelector('[data-map-action="full"]'),
       mapBackButton: root.querySelector('[data-map-back]'),
-      questionInputs: Array.from(root.querySelectorAll('[data-question-checkbox]')),
+      questionChecklist: root.querySelector('[data-question-checklist]'),
+      cardChecks: Array.from(root.querySelectorAll('[data-card-check]')),
       questionSummary: root.querySelector('[data-question-summary]'),
       coachRouteMap: root.querySelector('[data-coach-route-map]'),
       coachTurn: root.querySelector('[data-coach-turn]'),
@@ -136,11 +142,7 @@
       });
     }
 
-    ui.questionInputs.forEach(function (input) {
-      input.addEventListener('change', function () {
-        updateQuestionSummary(state);
-      });
-    });
+    bindCardChecks(state);
 
     [ui.coachRouteMap, ui.coachTurn, ui.coachLimit].forEach(function (field) {
       if (!field) return;
@@ -149,6 +151,7 @@
         if (field === ui.coachRouteMap) {
           state.coachRouteId = field.value;
           updateQuickCards(state);
+          updateRouteCheckSummary(state);
           renderMap(state);
         }
       };
@@ -188,7 +191,7 @@
   function setMode(state, mode, updateHash, moveFocus) {
     const nextMode = MODE_ROUTES[mode] ? mode : DEFAULT_MODE;
     state.mode = nextMode;
-    state.showFullRoute = nextMode === 'coach';
+    state.showFullRoute = false;
     updateQuickCards(state);
 
     state.ui.modeButtons.forEach(function (button) {
@@ -201,9 +204,11 @@
       }
     });
 
-    state.ui.panels.forEach(function (panel) {
-      panel.hidden = panel.getAttribute('data-mode-panel') !== nextMode;
-    });
+    if (!state.isCoachTools) {
+      state.ui.panels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-mode-panel') !== nextMode;
+      });
+    }
 
     const firstCard = state.ui.cards.find(function (card) {
       return card.getAttribute('data-mode') === nextMode;
@@ -220,6 +225,7 @@
     }
 
     renderMap(state);
+    updateRouteCheckSummary(state);
     if (moveFocus) focusActivePanelHeading(state);
   }
 
@@ -307,6 +313,7 @@
       (step.lineIds || []).forEach(function (id) {
         const line = state.itemsById.get(id);
         if (!line) return;
+        if (!itemIsRelevantToRoute(line, activeRoute)) return;
         renderLine(state, line, isActiveStep);
         line.coordinates.map(toLatLng).forEach(function (latLng) {
           boundsPoints.push(latLng);
@@ -316,6 +323,7 @@
       (step.placeIds || []).forEach(function (id) {
         const item = state.itemsById.get(id);
         if (!item || item.geometry === 'LineString') return;
+        if (!itemIsRelevantToRoute(item, activeRoute)) return;
         renderMarker(state, item, step.sequence, isActiveStep);
         boundsPoints.push(toLatLng(item.coordinates[0]));
       });
@@ -407,7 +415,7 @@
 
   function getActiveRoute(state) {
     if (!state.course || !state.course.routes) return null;
-    const routeId = state.mode === 'coach'
+    const routeId = state.isCoachTools
       ? state.coachRouteId
       : MODE_ROUTES[state.mode] || MODE_ROUTES[DEFAULT_MODE];
 
@@ -437,6 +445,12 @@
     return route.steps || [];
   }
 
+  function itemIsRelevantToRoute(item, route) {
+    if (!item || !route) return false;
+    if (!item.routeScopes || !item.routeScopes.length) return true;
+    return item.routeScopes.includes(route.id);
+  }
+
   function getActiveStep(state, route) {
     if (state.activeCard) {
       const stepId = state.activeCard.getAttribute('data-route-step-id');
@@ -445,7 +459,7 @@
     }
 
     const routeSteps = getRouteSteps(state, route);
-    return state.mode === 'coach' ? null : routeSteps[0] || null;
+    return state.isCoachTools ? null : routeSteps[0] || null;
   }
 
   function stepFromCard(card) {
@@ -467,8 +481,8 @@
   }
 
   function getActiveGuideMap(state) {
-    const mapId = state.mode === 'coach'
-      ? LEGACY_MODE_MAPS[state.coachRouteId] || LEGACY_MODE_MAPS.coach
+    const mapId = state.isCoachTools
+      ? LEGACY_MODE_MAPS[state.coachRouteId] || LEGACY_MODE_MAPS[DEFAULT_MODE]
       : (state.activeCard && state.activeCard.getAttribute('data-guide-map')) || LEGACY_MODE_MAPS[state.mode] || LEGACY_MODE_MAPS[DEFAULT_MODE];
     return state.course.maps.find(function (guideMap) {
       return guideMap.id === mapId;
@@ -514,29 +528,178 @@
     if (state.ui.showActiveButton) state.ui.showActiveButton.classList.toggle('is-active', !state.showFullRoute);
   }
 
-  function updateQuestionSummary(state) {
-    if (!state.ui.questionSummary) return;
-    const selected = state.ui.questionInputs.filter(function (input) {
-      return input.checked;
-    }).map(function (input) {
-      return input.value;
+  function renderCardChecks(root) {
+    root.querySelectorAll('[data-route-card][data-self-check-question]').forEach(function (card) {
+      if (card.querySelector('[data-card-check]')) return;
+
+      const stepId = card.getAttribute('data-route-step-id') || 'route-step';
+      const answerId = stepId + '-answer';
+      const questionText = card.getAttribute('data-self-check-question');
+      const placeholder = card.getAttribute('data-self-check-placeholder') || 'Write the answer or coach cue';
+
+      const check = document.createElement('div');
+      check.className = 'route-card-check';
+      check.setAttribute('data-card-check', '');
+      check.setAttribute('data-route-step-id', stepId);
+
+      const label = document.createElement('label');
+      label.className = 'route-card-check__label';
+      label.setAttribute('for', answerId);
+
+      const prompt = document.createElement('span');
+      prompt.className = 'route-card-check__prompt';
+      prompt.textContent = 'Self-check';
+
+      const question = document.createElement('span');
+      question.className = 'route-card-check__question';
+      question.textContent = questionText;
+
+      label.appendChild(prompt);
+      label.appendChild(question);
+
+      const input = document.createElement('input');
+      input.id = answerId;
+      input.className = 'route-card-check__answer';
+      input.type = 'text';
+      input.setAttribute('data-card-answer', '');
+      input.autocomplete = 'off';
+      input.placeholder = placeholder;
+
+      const actions = document.createElement('div');
+      actions.className = 'route-card-check__actions';
+
+      const save = document.createElement('button');
+      save.type = 'button';
+      save.className = 'route-card-check__button';
+      save.setAttribute('data-card-answer-save', '');
+      save.setAttribute('aria-pressed', 'false');
+      save.textContent = 'Mark answered';
+
+      const clear = document.createElement('button');
+      clear.type = 'button';
+      clear.className = 'route-card-check__button route-card-check__button--secondary';
+      clear.setAttribute('data-card-answer-clear', '');
+      clear.textContent = 'Clear';
+
+      actions.appendChild(save);
+      actions.appendChild(clear);
+
+      const status = document.createElement('p');
+      status.className = 'route-card-check__status';
+      status.setAttribute('data-card-answer-status', '');
+      status.setAttribute('role', 'status');
+      status.textContent = 'Unanswered';
+
+      check.appendChild(label);
+      check.appendChild(input);
+      check.appendChild(actions);
+      check.appendChild(status);
+
+      const mapLink = card.querySelector('[data-map-focus]');
+      if (mapLink) {
+        card.insertBefore(check, mapLink);
+      } else {
+        card.appendChild(check);
+      }
+    });
+  }
+
+  function bindCardChecks(state) {
+    state.ui.cardChecks.forEach(function (check) {
+      const input = check.querySelector('[data-card-answer]');
+      const save = check.querySelector('[data-card-answer-save]');
+      const clear = check.querySelector('[data-card-answer-clear]');
+
+      if (input) {
+        input.addEventListener('input', function () {
+          updateCardCheck(check, false);
+          updateRouteCheckSummary(state);
+        });
+      }
+
+      if (save) {
+        save.addEventListener('click', function () {
+          updateCardCheck(check, true);
+          updateRouteCheckSummary(state);
+        });
+      }
+
+      if (clear) {
+        clear.addEventListener('click', function () {
+          if (input) input.value = '';
+          updateCardCheck(check, false);
+          updateRouteCheckSummary(state);
+          if (input) input.focus();
+        });
+      }
+
+      updateCardCheck(check, false);
     });
 
-    if (!selected.length) {
+    updateRouteCheckSummary(state);
+  }
+
+  function updateCardCheck(check, forceAnswered) {
+    const input = check.querySelector('[data-card-answer]');
+    const button = check.querySelector('[data-card-answer-save]');
+    const status = check.querySelector('[data-card-answer-status]');
+    const hasAnswer = input && input.value.trim().length > 0;
+    const isAnswered = Boolean(forceAnswered || hasAnswer);
+
+    check.classList.toggle('is-answered', isAnswered);
+
+    if (button) {
+      button.setAttribute('aria-pressed', isAnswered ? 'true' : 'false');
+      button.textContent = isAnswered ? 'Answered' : 'Mark answered';
+    }
+
+    if (status) {
+      status.textContent = isAnswered ? 'Answered' : 'Unanswered';
+    }
+  }
+
+  function updateRouteCheckSummary(state) {
+    if (!state.ui.questionSummary) return;
+
+    const activeMode = state.isCoachTools ? state.coachRouteId : state.mode;
+    const activeChecks = state.ui.cardChecks.filter(function (check) {
+      const card = check.closest('[data-route-card]');
+      return card && card.getAttribute('data-mode') === activeMode;
+    });
+
+    if (!activeChecks.length) {
+      if (state.ui.questionChecklist) state.ui.questionChecklist.hidden = true;
+      state.ui.questionSummary.replaceChildren();
+      return;
+    }
+
+    if (state.ui.questionChecklist) state.ui.questionChecklist.hidden = false;
+
+    const unanswered = activeChecks.filter(function (check) {
+      return !check.classList.contains('is-answered');
+    });
+
+    if (!unanswered.length) {
       const message = document.createElement('p');
-      message.textContent = 'No questions selected yet.';
+      message.textContent = 'All self-checks for this route are answered.';
       state.ui.questionSummary.replaceChildren(message);
       return;
     }
 
     const heading = document.createElement('p');
-    heading.textContent = selected.length + ' question' + (selected.length === 1 ? '' : 's') + ' to ask:';
+    heading.textContent = unanswered.length + ' self-check' +
+      (unanswered.length === 1 ? '' : 's') +
+      ' still need an answer before launch:';
+
     const list = document.createElement('ul');
-    selected.forEach(function (question) {
+
+    unanswered.forEach(function (check) {
+      const question = check.querySelector('.route-card-check__question');
       const item = document.createElement('li');
-      item.textContent = question;
+      item.textContent = question ? question.textContent.trim() : 'Unanswered route question';
       list.appendChild(item);
     });
+
     state.ui.questionSummary.replaceChildren(heading, list);
   }
 
@@ -565,7 +728,9 @@
   }
 
   function updateQuickCards(state) {
-    const activeRouteId = state.coachRouteId || MODE_ROUTES.coach;
+    const activeRouteId = state.isCoachTools
+      ? state.coachRouteId
+      : MODE_ROUTES[state.mode] || MODE_ROUTES[DEFAULT_MODE];
     state.ui.quickCards.forEach(function (card) {
       card.hidden = card.getAttribute('data-quick-card') !== activeRouteId;
     });

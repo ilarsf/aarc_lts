@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "name": "AARC River Navigation Guide",
   "source": {
     "name": "Rowing Traffic on the Huron River",
@@ -1504,6 +1504,56 @@
     "break": "Regrouping point",
     "marker": "Map cue"
   },
+  "bridges": [
+    {
+      "id": "m14-bridge",
+      "displayName": "M-14 bridge",
+      "orderDownstreamToUpstream": 1,
+      "features": [
+        "pillar-in-river"
+      ],
+      "learnerNote": "First bridge in the bridge sequence; has a pillar in the river."
+    },
+    {
+      "id": "barton-shore-drive-bridge",
+      "displayName": "Barton Shore Drive bridge",
+      "orderDownstreamToUpstream": 2,
+      "features": [
+        "no-river-pillars",
+        "pedestrian-and-car-bridge"
+      ],
+      "learnerNote": "Pedestrian and car bridge; no pillars in the river."
+    },
+    {
+      "id": "railroad-bridge",
+      "displayName": "Railroad bridge",
+      "orderDownstreamToUpstream": 3,
+      "features": [
+        "two-openings"
+      ],
+      "openings": [
+        {
+          "id": "railroad-upstream-opening",
+          "displayName": "Railroad bridge: upstream opening"
+        },
+        {
+          "id": "railroad-downstream-opening",
+          "displayName": "Railroad bridge: downstream opening"
+        }
+      ],
+      "learnerNote": "Railroad bridge with separate upstream and downstream openings."
+    },
+    {
+      "id": "barton-nature-area-trail-bridge",
+      "displayName": "Barton Nature Area Trail bridge",
+      "orderDownstreamToUpstream": 4,
+      "features": [
+        "tall-bridge",
+        "middle-river-pillar"
+      ],
+      "learnerNote": "Tall bridge with a pillar in the middle of the river."
+    }
+  ],
   "routes": [
     {
       "id": "small-round",
@@ -1533,9 +1583,37 @@
       ]
     },
     {
+      "id": "below-m14-round",
+      "title": "Round below M-14",
+      "summary": "Intermediate round using the river turns below the M-14 bridge. This route does not go under M-14.",
+      "routeRanges": [
+        [
+          0,
+          280
+        ],
+        [
+          900,
+          2248
+        ],
+        [
+          5480,
+          6505
+        ]
+      ],
+      "stepIds": [
+        "bm14-01-launch",
+        "bm14-02-downstream-turn",
+        "bm14-03-upstream-leg",
+        "bm14-04-approach-m14-limit",
+        "bm14-05-below-m14-turn",
+        "bm14-06-return-leg",
+        "bm14-07-dock"
+      ]
+    },
+    {
       "id": "bridge-round",
       "title": "Bridge round",
-      "summary": "Bridge introduction route with separate upstream and downstream bridge sequences.",
+      "summary": "Named bridge sequence through M-14, Barton Shore Drive, Railroad, and Barton Nature Area Trail, then reverse downstream.",
       "routeRanges": [
         [
           2180,
@@ -1557,11 +1635,11 @@
             ]
           ],
           "stepIds": [
-            "bu-01-approach",
-            "bu-02-first-opening",
-            "bu-03-branches",
-            "bu-04-angle",
-            "bu-05-pass-opening"
+            "br-approach-below-m14",
+            "br-u1-m14",
+            "br-u2-barton-shore",
+            "br-u3-railroad-upstream",
+            "br-u4-trail-bridge"
           ]
         },
         {
@@ -1574,10 +1652,11 @@
             ]
           ],
           "stepIds": [
-            "bd-01-return-setup",
-            "bd-02-current",
-            "bd-03-return-opening",
-            "bd-04-clear-area"
+            "br-d1-trail-bridge",
+            "br-d2-railroad-downstream",
+            "br-d3-barton-shore",
+            "br-d4-m14",
+            "br-clear-below-m14"
           ]
         }
       ]
@@ -1585,7 +1664,7 @@
     {
       "id": "full-round",
       "title": "Full round",
-      "summary": "The full 6.5 km dock-to-Argo-to-Barton-to-dock route.",
+      "summary": "The full 6.5 km route with the below-M-14 extension, named bridge sequence, and Barton Nature Area Trail bridge / Barton turn area.",
       "routeRanges": [
         [
           0,
@@ -1597,7 +1676,7 @@
         "fr-02-argo-boundary",
         "fr-03-upstream-extension",
         "fr-04-bridges-upstream",
-        "fr-05-tail-bridge-turn",
+        "fr-05-trail-bridge-turn",
         "fr-06-return-leg",
         "fr-07-bridges-downstream",
         "fr-08-dock-return",
@@ -1681,11 +1760,93 @@
       "lineIds": []
     },
     {
-      "id": "bu-01-approach",
+      "id": "bm14-01-launch",
+      "routeId": "below-m14-round",
+      "sequence": "M1",
+      "title": "Launch from AARC dock",
+      "placeIds": [
+        "launch",
+        "downstream"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bm14-02-downstream-turn",
+      "routeId": "below-m14-round",
+      "sequence": "M2",
+      "title": "Downstream turn line",
+      "placeIds": [
+        "river-turn-5",
+        "river-turn-6"
+      ],
+      "lineIds": [
+        "lts-first-weekend"
+      ]
+    },
+    {
+      "id": "bm14-03-upstream-leg",
+      "routeId": "below-m14-round",
+      "sequence": "M3",
+      "title": "Upstream leg past the small-round turn",
+      "placeIds": [
+        "river-turn-7",
+        "fallen-trees-2",
+        "weeds-2"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bm14-04-approach-m14-limit",
+      "routeId": "below-m14-round",
+      "sequence": "M4",
+      "title": "Approach the M-14 limit",
+      "placeIds": [
+        "river-turn-9"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bm14-05-below-m14-turn",
+      "routeId": "below-m14-round",
+      "sequence": "M5",
+      "title": "Below-M-14 turn",
+      "placeIds": [
+        "river-turn-9",
+        "river-turn-10"
+      ],
+      "lineIds": [
+        "lts-saturday-second-weekend"
+      ]
+    },
+    {
+      "id": "bm14-06-return-leg",
+      "routeId": "below-m14-round",
+      "sequence": "M6",
+      "title": "Return leg toward the dock",
+      "placeIds": [
+        "river-turn-10",
+        "stay-on-your-side-of-the-corner",
+        "weeds-8",
+        "river-turn-8"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bm14-07-dock",
+      "routeId": "below-m14-round",
+      "sequence": "M7",
+      "title": "Return to dock",
+      "placeIds": [
+        "docking"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "br-approach-below-m14",
       "routeId": "bridge-round",
       "sectionId": "bridge-upstream",
-      "sequence": "U1",
-      "title": "Bridge approach cue",
+      "sequence": "Approach",
+      "title": "Set up below M-14",
       "placeIds": [
         "river-turn-9"
       ],
@@ -1694,90 +1855,100 @@
       ]
     },
     {
-      "id": "bu-02-first-opening",
+      "id": "br-u1-m14",
       "routeId": "bridge-round",
       "sectionId": "bridge-upstream",
-      "sequence": "U2",
-      "title": "First upstream opening",
+      "sequence": "U1",
+      "title": "M-14 bridge",
       "placeIds": [
         "bridge-pillar-2"
       ],
       "lineIds": []
     },
     {
-      "id": "bu-03-branches",
+      "id": "br-u2-barton-shore",
       "routeId": "bridge-round",
       "sectionId": "bridge-upstream",
-      "sequence": "U3",
-      "title": "Branches on the upstream line",
-      "placeIds": [
-        "tree-branches"
-      ],
-      "lineIds": []
-    },
-    {
-      "id": "bu-04-angle",
-      "routeId": "bridge-round",
-      "sectionId": "bridge-upstream",
-      "sequence": "U4",
-      "title": "Correct angle before the opening",
+      "sequence": "U2",
+      "title": "Barton Shore Drive bridge",
       "placeIds": [
         "correct-your-angle"
       ],
       "lineIds": []
     },
     {
-      "id": "bu-05-pass-opening",
+      "id": "br-u3-railroad-upstream",
       "routeId": "bridge-round",
       "sectionId": "bridge-upstream",
-      "sequence": "U5",
-      "title": "Pass through the assigned opening",
+      "sequence": "U3",
+      "title": "Railroad bridge: upstream opening",
       "placeIds": [
-        "pass-here",
+        "pass-here"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "br-u4-trail-bridge",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U4",
+      "title": "Barton Nature Area Trail bridge",
+      "placeIds": [
         "wrong-side-of-the-pillar",
         "bridge-pillar"
       ],
       "lineIds": []
     },
     {
-      "id": "bd-01-return-setup",
+      "id": "br-d1-trail-bridge",
       "routeId": "bridge-round",
       "sectionId": "bridge-downstream",
       "sequence": "D1",
-      "title": "Return-side setup",
+      "title": "Barton Nature Area Trail bridge",
       "placeIds": [
         "bridge-pillar-4"
       ],
       "lineIds": []
     },
     {
-      "id": "bd-02-current",
+      "id": "br-d2-railroad-downstream",
       "routeId": "bridge-round",
       "sectionId": "bridge-downstream",
       "sequence": "D2",
-      "title": "Current and drift",
-      "placeIds": [
-        "current"
-      ],
-      "lineIds": []
-    },
-    {
-      "id": "bd-03-return-opening",
-      "routeId": "bridge-round",
-      "sectionId": "bridge-downstream",
-      "sequence": "D3",
-      "title": "Return opening",
+      "title": "Railroad bridge: downstream opening",
       "placeIds": [
         "bridge-pillar-3"
       ],
       "lineIds": []
     },
     {
-      "id": "bd-04-clear-area",
+      "id": "br-d3-barton-shore",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "D3",
+      "title": "Barton Shore Drive bridge",
+      "placeIds": [
+        "barton-shore-drive-return"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "br-d4-m14",
       "routeId": "bridge-round",
       "sectionId": "bridge-downstream",
       "sequence": "D4",
-      "title": "Clear the bridge area",
+      "title": "M-14 bridge",
+      "placeIds": [
+        "current"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "br-clear-below-m14",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "Clear",
+      "title": "Clear below M-14",
       "placeIds": [
         "river-turn-10"
       ],
@@ -1813,7 +1984,7 @@
       "id": "fr-03-upstream-extension",
       "routeId": "full-round",
       "sequence": 3,
-      "title": "Upstream extension past small-round limit",
+      "title": "Upstream extension through the below-M-14 round",
       "placeIds": [
         "river-turn-7",
         "fallen-trees-2",
@@ -1831,19 +2002,19 @@
       "placeIds": [
         "river-turn-9",
         "bridge-pillar-2",
-        "tree-branches",
         "correct-your-angle",
-        "pass-here"
+        "pass-here",
+        "bridge-pillar"
       ],
       "lineIds": [
         "lts-saturday-second-weekend"
       ]
     },
     {
-      "id": "fr-05-tail-bridge-turn",
+      "id": "fr-05-trail-bridge-turn",
       "routeId": "full-round",
       "sequence": 5,
-      "title": "Full-route bend and Tail Bridge turn area",
+      "title": "Full-route bend and Barton Nature Area Trail bridge turn area",
       "placeIds": [
         "sharp-turn",
         "tree-branch",
@@ -1875,8 +2046,9 @@
       "title": "Bridges downstream",
       "placeIds": [
         "bridge-pillar-4",
-        "current",
         "bridge-pillar-3",
+        "barton-shore-drive-return",
+        "current",
         "river-turn-10"
       ],
       "lineIds": [
@@ -2045,6 +2217,139 @@
       ]
     },
     {
+      "id": "below-m14-round",
+      "viewType": "course",
+      "name": "Round below M-14",
+      "summary": "An intermediate dock-to-dock course using the lower-course turns and the turn cue below M-14 without entering bridge navigation.",
+      "newToday": "the below-M-14 turn cue and the rule that M-14 is the route limit",
+      "routeRanges": [
+        [
+          0,
+          280
+        ],
+        [
+          900,
+          2248
+        ],
+        [
+          5480,
+          6505
+        ]
+      ],
+      "keyPlaceIds": [
+        "launch",
+        "downstream",
+        "river-turn-5",
+        "river-turn-6",
+        "river-turn-7",
+        "river-turn-9",
+        "river-turn-10",
+        "stay-on-your-side-of-the-corner",
+        "river-turn-8",
+        "docking"
+      ],
+      "keyPlaceDetails": {
+        "launch": {
+          "sequence": 1,
+          "label": "Start",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "downstream": {
+          "sequence": 2,
+          "label": "River flow",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "river-turn-5": {
+          "sequence": 3,
+          "label": "Downstream turn cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "river-turn-6": {
+          "sequence": 4,
+          "label": "Downstream crossing cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "river-turn-7": {
+          "sequence": 5,
+          "label": "Small-round turn passed",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "river-turn-9": {
+          "sequence": 6,
+          "label": "Below-M-14 turn",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "river-turn-10": {
+          "sequence": 7,
+          "label": "Below-M-14 return cue",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": true
+        },
+        "stay-on-your-side-of-the-corner": {
+          "sequence": 8,
+          "label": "Return-side cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "river-turn-8": {
+          "sequence": 9,
+          "label": "Dock return cue",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "docking": {
+          "sequence": 10,
+          "label": "Finish",
+          "tags": [],
+          "isTurnPoint": false
+        }
+      },
+      "markerIds": [
+        "launch",
+        "downstream",
+        "river-turn-5",
+        "river-turn-6",
+        "river-turn-7",
+        "fallen-trees-2",
+        "weeds-2",
+        "river-turn-9",
+        "river-turn-10",
+        "stay-on-your-side-of-the-corner",
+        "weeds-8",
+        "river-turn-8",
+        "docking"
+      ],
+      "lineIds": [
+        "lts-first-weekend",
+        "lts-saturday-second-weekend",
+        "lts-first-weekend-2"
+      ],
+      "gateNotes": [
+        {
+          "lineId": "lts-first-weekend",
+          "note": "Downstream crossing line for the below-M-14 round."
+        },
+        {
+          "lineId": "lts-saturday-second-weekend",
+          "note": "Below-M-14 turn line and bridge-approach limit."
+        },
+        {
+          "lineId": "lts-first-weekend-2",
+          "note": "Small-round upstream crossing line, passed only when the coach assigns this route."
+        }
+      ]
+    },
+    {
       "id": "argo-boundary-reference",
       "viewType": "reference",
       "name": "Argo Boundary Reference",
@@ -2092,8 +2397,8 @@
       "id": "bridge-round-second-saturday",
       "viewType": "course",
       "name": "Bridge Round - Second Saturday",
-      "summary": "A dock-to-dock course line focused on the bridge approach, bridge openings, current, return cue, and docking.",
-      "newToday": "the bridge approach, pillar choices, angle correction, current, and the bridge-round return cue",
+      "summary": "A dock-to-dock course line focused on the named bridge sequence, below-M-14 setup, bridge openings, return cue, and docking.",
+      "newToday": "M-14, Barton Shore Drive, Railroad, Barton Nature Area Trail, and the clear-below-M-14 return cue",
       "routeRanges": [
         [
           0,
@@ -2111,8 +2416,9 @@
         "bridge-pillar-2",
         "correct-your-angle",
         "pass-here",
-        "current",
         "bridge-pillar-3",
+        "barton-shore-drive-return",
+        "current",
         "river-turn-10",
         "stay-on-your-side-of-the-corner",
         "docking"
@@ -2132,7 +2438,7 @@
         },
         "river-turn-9": {
           "sequence": 3,
-          "label": "Turn point",
+          "label": "Set up below M-14",
           "tags": [
             "New today"
           ],
@@ -2140,7 +2446,7 @@
         },
         "bridge-pillar-2": {
           "sequence": 4,
-          "label": "Bridge cue",
+          "label": "M-14 bridge",
           "tags": [
             "New today"
           ],
@@ -2148,7 +2454,7 @@
         },
         "correct-your-angle": {
           "sequence": 5,
-          "label": "Bridge cue",
+          "label": "Barton Shore Drive bridge",
           "tags": [
             "New today"
           ],
@@ -2156,7 +2462,7 @@
         },
         "pass-here": {
           "sequence": 6,
-          "label": "Bridge cue",
+          "label": "Railroad bridge upstream opening",
           "tags": [
             "New today"
           ],
@@ -2164,7 +2470,7 @@
         },
         "current": {
           "sequence": 7,
-          "label": "Current cue",
+          "label": "M-14 current / drift cue",
           "tags": [
             "New today"
           ],
@@ -2172,28 +2478,36 @@
         },
         "bridge-pillar-3": {
           "sequence": 8,
-          "label": "Bridge cue",
+          "label": "Railroad bridge downstream opening",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "barton-shore-drive-return": {
+          "sequence": 9,
+          "label": "Barton Shore Drive bridge downstream",
           "tags": [
             "New today"
           ],
           "isTurnPoint": false
         },
         "river-turn-10": {
-          "sequence": 9,
-          "label": "Turn point",
+          "sequence": 10,
+          "label": "Clear below M-14",
           "tags": [
             "New today"
           ],
           "isTurnPoint": true
         },
         "stay-on-your-side-of-the-corner": {
-          "sequence": 10,
+          "sequence": 11,
           "label": "Turn / corner cue",
           "tags": [],
           "isTurnPoint": true
         },
         "docking": {
-          "sequence": 11,
+          "sequence": 12,
           "label": "Finish",
           "tags": [],
           "isTurnPoint": false
@@ -2212,6 +2526,7 @@
         "weeds-3",
         "weeds-4",
         "bridge-pillar-4",
+        "barton-shore-drive-return",
         "current",
         "bridge-pillar-3",
         "river-turn-10",
@@ -2225,7 +2540,7 @@
       "gateNotes": [
         {
           "lineId": "lts-saturday-second-weekend",
-          "note": "Second-Saturday bridge-round turn line."
+          "note": "Below-M-14 turn line and bridge-round setup / return cue."
         }
       ]
     },
@@ -2233,8 +2548,8 @@
       "id": "full-round-second-sunday",
       "viewType": "course",
       "name": "Full Round - Second Sunday",
-      "summary": "The full dock-to-dock course line to Tail Bridge and back, with the full-route turn points called out in order.",
-      "newToday": "the full-route turn near Tail Bridge, sharper bends, longer return, and full-route caution areas",
+      "summary": "The full dock-to-dock course line to the Barton Nature Area Trail bridge / Barton turn area and back, with the full-route turn points called out in order.",
+      "newToday": "the full-route turn near the Barton Nature Area Trail bridge, sharper bends, longer return, and full-route caution areas",
       "routeRanges": [
         [
           0,
@@ -2272,19 +2587,19 @@
         },
         "bridge-pillar-2": {
           "sequence": 3,
-          "label": "Bridge cue",
+          "label": "M-14 bridge",
           "tags": [],
           "isTurnPoint": false
         },
         "correct-your-angle": {
           "sequence": 4,
-          "label": "Bridge cue",
+          "label": "Barton Shore Drive bridge",
           "tags": [],
           "isTurnPoint": false
         },
         "pass-here": {
           "sequence": 5,
-          "label": "Bridge cue",
+          "label": "Railroad bridge upstream opening",
           "tags": [],
           "isTurnPoint": false
         },
@@ -2330,24 +2645,30 @@
         },
         "current": {
           "sequence": 11,
-          "label": "Current cue",
+          "label": "M-14 current / drift cue",
           "tags": [],
           "isTurnPoint": false
         },
         "bridge-pillar-3": {
           "sequence": 12,
-          "label": "Bridge cue",
+          "label": "Railroad bridge downstream opening",
+          "tags": [],
+          "isTurnPoint": false
+        },
+        "barton-shore-drive-return": {
+          "sequence": 13,
+          "label": "Barton Shore Drive bridge downstream",
           "tags": [],
           "isTurnPoint": false
         },
         "stay-on-your-side-of-the-corner": {
-          "sequence": 13,
+          "sequence": 14,
           "label": "Turn / corner cue",
           "tags": [],
           "isTurnPoint": true
         },
         "docking": {
-          "sequence": 14,
+          "sequence": 15,
           "label": "Finish",
           "tags": [],
           "isTurnPoint": false
@@ -2368,6 +2689,7 @@
         "good-place-for-a-break",
         "fallen-trees-corner",
         "bridge-pillar-4",
+        "barton-shore-drive-return",
         "current",
         "bridge-pillar-3",
         "stay-on-your-side-of-the-corner",
@@ -2384,7 +2706,7 @@
         },
         {
           "lineId": "end-point",
-          "note": "Turn point near Tail Bridge."
+          "note": "Turn point near the Barton Nature Area Trail bridge / Barton turn area."
         }
       ]
     },
@@ -2392,8 +2714,8 @@
       "id": "bridge-navigation-map",
       "viewType": "reference",
       "name": "Bridge Navigation Map",
-      "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
-      "newToday": "bridge openings, pillar sides, branches, current, and angle correction",
+      "summary": "A zoomed bridge-decision map. Review the named M-14, Barton Shore Drive, Railroad, and Barton Nature Area Trail sequence without the full dock-to-dock course.",
+      "newToday": "named bridge order, pillar sides, Railroad openings, current, and the clear-below-M-14 cue",
       "routeRanges": [
         [
           2180,
@@ -2411,6 +2733,7 @@
         "correct-your-angle",
         "pass-here",
         "bridge-pillar-4",
+        "barton-shore-drive-return",
         "current",
         "bridge-pillar-3",
         "river-turn-10"
@@ -2418,13 +2741,13 @@
       "keyPlaceDetails": {
         "river-turn-9": {
           "sequence": 1,
-          "label": "Turn point",
+          "label": "Set up below M-14",
           "tags": [],
           "isTurnPoint": true
         },
         "bridge-pillar-2": {
           "sequence": 2,
-          "label": "Bridge cue",
+          "label": "M-14 bridge",
           "tags": [
             "New today"
           ],
@@ -2432,7 +2755,7 @@
         },
         "tree-branches": {
           "sequence": 3,
-          "label": "Course feature",
+          "label": "Bridge approach branch cue",
           "tags": [
             "New today"
           ],
@@ -2440,7 +2763,7 @@
         },
         "correct-your-angle": {
           "sequence": 4,
-          "label": "Bridge cue",
+          "label": "Barton Shore Drive bridge",
           "tags": [
             "New today"
           ],
@@ -2448,7 +2771,7 @@
         },
         "pass-here": {
           "sequence": 5,
-          "label": "Bridge cue",
+          "label": "Railroad bridge upstream opening",
           "tags": [
             "New today"
           ],
@@ -2456,31 +2779,39 @@
         },
         "bridge-pillar-4": {
           "sequence": 6,
-          "label": "Bridge cue",
+          "label": "Barton Nature Area Trail bridge",
+          "tags": [
+            "New today"
+          ],
+          "isTurnPoint": false
+        },
+        "barton-shore-drive-return": {
+          "sequence": 7,
+          "label": "Barton Shore Drive bridge downstream",
           "tags": [
             "New today"
           ],
           "isTurnPoint": false
         },
         "current": {
-          "sequence": 7,
-          "label": "Current cue",
+          "sequence": 8,
+          "label": "M-14 current / drift cue",
           "tags": [
             "New today"
           ],
           "isTurnPoint": false
         },
         "bridge-pillar-3": {
-          "sequence": 8,
-          "label": "Bridge cue",
+          "sequence": 9,
+          "label": "Railroad bridge downstream opening",
           "tags": [
             "New today"
           ],
           "isTurnPoint": false
         },
         "river-turn-10": {
-          "sequence": 9,
-          "label": "Turn point",
+          "sequence": 10,
+          "label": "Clear below M-14",
           "tags": [],
           "isTurnPoint": true
         }
@@ -2496,6 +2827,7 @@
         "weeds-3",
         "weeds-4",
         "bridge-pillar-4",
+        "barton-shore-drive-return",
         "current",
         "weeds-5",
         "bridge-pillar-3",
@@ -2882,8 +3214,18 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Second-weekend turn cue near the first bridge introduction.",
-      "action": "Use this as the practical turn cue before the bridge sequence, then look early for the correct opening.",
+      "description": "Shared cue below M-14. It is the upstream limit for the below-M-14 round and the setup cue for the bridge sequence.",
+      "action": "Use this as the below-M-14 turn when that route is assigned, or as the setup cue before the bridge sequence when the Bridge or Full round is assigned.",
+      "routeScopes": [
+        "below-m14-round",
+        "bridge-round",
+        "full-round"
+      ],
+      "routeLabels": {
+        "below-m14-round": "Below-M-14 turn",
+        "bridge-round": "Bridge approach below M-14",
+        "full-round": "M-14 approach"
+      },
       "distanceMeters": 2240.9,
       "offsetMeters": 2.0,
       "coordinates": [
@@ -2899,18 +3241,23 @@
           "projectionErrorMeters": 2.0
         }
       ],
-      "displayTitle": "River turn: bridge approach cue",
+      "displayTitle": "Below-M-14 turn / bridge approach limit",
       "routePositions": [
         2240.9
       ]
     },
     {
       "id": "bridge-pillar-2",
-      "title": "Bridge Pillar",
+      "title": "M-14 bridge pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Bridge-pillar decision point.",
-      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
+      "description": "M-14 bridge pillar decision point.",
+      "action": "Look early, identify the coach-assigned side of the M-14 pillar, and commit before you reach the bridge.",
+      "bridgeId": "m14-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2259.2,
       "offsetMeters": 8.5,
       "coordinates": [
@@ -2926,7 +3273,7 @@
           "projectionErrorMeters": 8.5
         }
       ],
-      "displayTitle": "Bridge pillar: outbound opening",
+      "displayTitle": "M-14 bridge: upstream pillar cue",
       "routePositions": [
         2259.2
       ]
@@ -2938,6 +3285,10 @@
       "geometry": "Point",
       "description": "Branches near the bridge approach.",
       "action": "Look early and leave room while staying on the expected bridge line.",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2297.1,
       "offsetMeters": -1.7,
       "coordinates": [
@@ -2960,11 +3311,16 @@
     },
     {
       "id": "correct-your-angle",
-      "title": "Correct your angle",
+      "title": "Barton Shore Drive bridge",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Angle-correction point before the bridge pulls you off line.",
-      "action": "Look ahead and correct your angle before bridge symmetry pulls you across your side.",
+      "description": "Barton Shore Drive bridge line cue.",
+      "action": "Hold the bridge line through Barton Shore Drive and correct early if the shell drifts off the assigned side.",
+      "bridgeId": "barton-shore-drive-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2519.5,
       "offsetMeters": 0.4,
       "coordinates": [
@@ -2982,15 +3338,21 @@
       ],
       "routePositions": [
         2519.5
-      ]
+      ],
+      "displayTitle": "Barton Shore Drive bridge"
     },
     {
       "id": "wrong-side-of-the-pillar",
-      "title": "Wrong Side of the Pillar",
+      "title": "Barton Nature Area Trail bridge side to avoid",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Reference marker for the side of the bridge opening to avoid.",
-      "action": "Use the marked passing cue and settle onto the bridge line early.",
+      "description": "Reference marker for the side of the Barton Nature Area Trail bridge pillar to avoid.",
+      "action": "Use the coach-assigned side of the trail bridge pillar and settle onto the bridge line early.",
+      "bridgeId": "barton-nature-area-trail-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2595.8,
       "offsetMeters": 12.5,
       "coordinates": [
@@ -3006,18 +3368,23 @@
           "projectionErrorMeters": 12.5
         }
       ],
-      "displayTitle": "Bridge side to avoid",
+      "displayTitle": "Barton Nature Area Trail bridge side to avoid",
       "routePositions": [
         2595.8
       ]
     },
     {
       "id": "pass-here",
-      "title": "Pass here",
+      "title": "Railroad bridge: assigned opening",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Preferred bridge opening or passing side.",
-      "action": "Use this cue for the preferred bridge opening, then settle back into the normal traffic pattern.",
+      "description": "Coach-assigned railroad bridge opening on the upstream leg.",
+      "action": "Name the Railroad bridge opening early, pass through predictably, then settle back into the normal traffic pattern.",
+      "bridgeId": "railroad-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2598.1,
       "offsetMeters": -2.8,
       "coordinates": [
@@ -3033,17 +3400,23 @@
           "projectionErrorMeters": 2.8
         }
       ],
+      "displayTitle": "Railroad bridge: upstream opening",
       "routePositions": [
         2598.1
       ]
     },
     {
       "id": "bridge-pillar",
-      "title": "Bridge Pillar",
+      "title": "Barton Nature Area Trail bridge pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Bridge-pillar decision point.",
-      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
+      "description": "Barton Nature Area Trail bridge pillar decision point.",
+      "action": "Look early, identify the coach-assigned side of the trail bridge pillar, and commit before you reach the bridge.",
+      "bridgeId": "barton-nature-area-trail-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2599.6,
       "offsetMeters": 3.9,
       "coordinates": [
@@ -3059,7 +3432,7 @@
           "projectionErrorMeters": 3.9
         }
       ],
-      "displayTitle": "Bridge pillar reference",
+      "displayTitle": "Barton Nature Area Trail bridge pillar",
       "routePositions": [
         2599.6
       ]
@@ -3148,8 +3521,8 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Full-route turn cue near Tail Bridge on the outbound side.",
-      "action": "Turn before Tail Bridge and keep the turn predictable for following boats.",
+      "description": "Full-route turn cue near the Barton Nature Area Trail bridge on the outbound side.",
+      "action": "Turn above the Barton Nature Area Trail bridge only when your coach assigns the full round, and keep the turn predictable for following boats.",
       "distanceMeters": 3824.0,
       "offsetMeters": 1.0,
       "coordinates": [
@@ -3165,7 +3538,7 @@
           "projectionErrorMeters": 1.0
         }
       ],
-      "displayTitle": "River turn: Tail Bridge outbound",
+      "displayTitle": "River turn: Barton Nature Area Trail bridge outbound",
       "routePositions": [
         3824.0
       ]
@@ -3175,7 +3548,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Full-route return-side turn cue near Tail Bridge.",
+      "description": "Full-route return-side turn cue near the Barton Nature Area Trail bridge.",
       "action": "Complete the return-side turn with room for the next boat and settle back onto the correct side.",
       "distanceMeters": 3842.8,
       "offsetMeters": 0.8,
@@ -3192,7 +3565,7 @@
           "projectionErrorMeters": 0.8
         }
       ],
-      "displayTitle": "River turn: Tail Bridge return",
+      "displayTitle": "River turn: Barton Nature Area Trail bridge return",
       "routePositions": [
         3842.8
       ]
@@ -3460,11 +3833,16 @@
     },
     {
       "id": "bridge-pillar-4",
-      "title": "Bridge Pillar",
+      "title": "Barton Nature Area Trail bridge pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Bridge-pillar decision point.",
-      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
+      "description": "Barton Nature Area Trail bridge pillar decision point on the downstream return.",
+      "action": "Set the return line early and use the coach-assigned side of the trail bridge pillar.",
+      "bridgeId": "barton-nature-area-trail-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 5248.2,
       "offsetMeters": -8.2,
       "coordinates": [
@@ -3480,18 +3858,23 @@
           "projectionErrorMeters": 8.2
         }
       ],
-      "displayTitle": "Bridge pillar: return-side setup",
+      "displayTitle": "Barton Nature Area Trail bridge: return-side pillar cue",
       "routePositions": [
         5248.2
       ]
     },
     {
       "id": "current",
-      "title": "Current",
+      "title": "M-14 current / drift cue",
       "category": "current",
       "geometry": "Point",
-      "description": "Current can push the shell off line here.",
-      "action": "Expect drift here. Make small early corrections and keep your line predictable.",
+      "description": "Current or drift cue near the M-14 bridge approach.",
+      "action": "Expect drift here. Make small early corrections and keep your line predictable through the return bridge sequence.",
+      "bridgeId": "m14-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 5275.2,
       "offsetMeters": -1.6,
       "coordinates": [
@@ -3509,6 +3892,39 @@
       ],
       "routePositions": [
         5275.2
+      ],
+      "displayTitle": "M-14 current / drift cue"
+    },
+    {
+      "id": "barton-shore-drive-return",
+      "title": "Barton Shore Drive bridge",
+      "category": "bridge",
+      "geometry": "Point",
+      "description": "Barton Shore Drive bridge cue on the downstream return.",
+      "action": "Hold the return side through Barton Shore Drive and keep the shell predictable before M-14.",
+      "bridgeId": "barton-shore-drive-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
+      "distanceMeters": 5365.0,
+      "offsetMeters": 0.0,
+      "coordinates": [
+        {
+          "lon": -83.74663,
+          "lat": 42.30302
+        }
+      ],
+      "projections": [
+        {
+          "distanceMeters": 5365.0,
+          "offsetMeters": 0.0,
+          "projectionErrorMeters": 0.0
+        }
+      ],
+      "displayTitle": "Barton Shore Drive bridge: downstream return",
+      "routePositions": [
+        5365.0
       ]
     },
     {
@@ -3539,11 +3955,16 @@
     },
     {
       "id": "bridge-pillar-3",
-      "title": "Bridge Pillar",
+      "title": "Railroad bridge: downstream opening",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Bridge-pillar decision point.",
-      "action": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
+      "description": "Coach-assigned railroad bridge opening on the downstream return.",
+      "action": "Name the Railroad bridge downstream opening early and pass through predictably.",
+      "bridgeId": "railroad-bridge",
+      "routeScopes": [
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 5464.5,
       "offsetMeters": 10.1,
       "coordinates": [
@@ -3559,7 +3980,7 @@
           "projectionErrorMeters": 10.1
         }
       ],
-      "displayTitle": "Bridge pillar: return opening",
+      "displayTitle": "Railroad bridge: downstream opening",
       "routePositions": [
         5464.5
       ]
@@ -3569,8 +3990,13 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Return-side turn cue for the second-weekend bridge area.",
-      "action": "Turn only after checking traffic and leave the bridge approach clear for other shells.",
+      "description": "Clear-below-M-14 cue after the downstream bridge sequence and return-side cue for below-M-14 routing.",
+      "action": "Clear the bridge area before regrouping, turning, or returning to the lower course.",
+      "routeScopes": [
+        "below-m14-round",
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 5485.4,
       "offsetMeters": 2.3,
       "coordinates": [
@@ -3586,7 +4012,7 @@
           "projectionErrorMeters": 2.3
         }
       ],
-      "displayTitle": "River turn: bridge return cue",
+      "displayTitle": "Clear below M-14 / bridge return cue",
       "routePositions": [
         5485.4
       ]
@@ -3809,6 +4235,10 @@
       "geometry": "LineString",
       "description": "Cross-river line for the downstream end of the small round.",
       "action": "Use the nearby river-turn cue and follow your coach's direction for the crossing.",
+      "routeScopes": [
+        "small-round",
+        "below-m14-round"
+      ],
       "distanceMeters": 265.2,
       "offsetMeters": 18.4,
       "coordinates": [
@@ -3882,6 +4312,11 @@
       "geometry": "LineString",
       "description": "Cross-river line for the upstream end of the small round.",
       "action": "Use the nearby river-turn cue and follow your coach's direction for the crossing.",
+      "routeScopes": [
+        "small-round",
+        "below-m14-round",
+        "full-round"
+      ],
       "distanceMeters": 1390.8,
       "offsetMeters": 16.6,
       "coordinates": [
@@ -3917,8 +4352,13 @@
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Turn line for the bridge round.",
-      "action": "Use the nearby bridge and return cues, then follow your coach's direction for the turn.",
+      "description": "Turn line below M-14 and setup / return line for the bridge round.",
+      "action": "Use the nearby below-M-14 and bridge cues, then follow your coach's direction for the turn.",
+      "routeScopes": [
+        "below-m14-round",
+        "bridge-round",
+        "full-round"
+      ],
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -3943,7 +4383,7 @@
           "projectionErrorMeters": 5.3
         }
       ],
-      "displayTitle": "Second Saturday: bridge-round turn line",
+      "displayTitle": "Below-M-14 turn line / bridge-round setup",
       "routePositions": [
         2243.9,
         5482.6
@@ -3954,8 +4394,11 @@
       "title": "End Point",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Full-route turn point before Tail Bridge.",
-      "action": "Turn before Tail Bridge and keep the turning area clear for the next boat.",
+      "description": "Full-route turn point near the Barton Nature Area Trail bridge / Barton turn area.",
+      "action": "Turn above the Barton Nature Area Trail bridge only when the coach assigns the full round, and keep the turning area clear for the next boat.",
+      "routeScopes": [
+        "full-round"
+      ],
       "distanceMeters": 3824.2,
       "offsetMeters": 6.8,
       "coordinates": [
