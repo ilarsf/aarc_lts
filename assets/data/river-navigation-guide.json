@@ -1496,9 +1496,9 @@
     "dock": "Dock / launch",
     "direction": "Direction cue",
     "turn": "River turn",
-    "limit": "Practice gate / limit",
+    "limit": "Coach route note",
     "bridge": "Bridge decision",
-    "hazard": "Hazard",
+    "hazard": "Caution area",
     "current": "Current / drift",
     "corner": "Corner / angle",
     "break": "Regrouping point",
@@ -1507,6 +1507,7 @@
   "maps": [
     {
       "id": "small-round-first-sunday",
+      "viewType": "course",
       "name": "Small Round - First Sunday",
       "summary": "A short dock-to-dock course line. Use the coached turn cues, keep the route organized, and return to docking.",
       "routeRanges": [
@@ -1532,10 +1533,6 @@
         "river-turn-8",
         "docking"
       ],
-      "checkPlaceIds": [
-        "river-turn-5",
-        "docking"
-      ],
       "markerIds": [
         "launch",
         "downstream",
@@ -1556,7 +1553,6 @@
         "no-rowing-beyond-this-point",
         "lts-first-weekend-2"
       ],
-      "bridgeFocusIds": [],
       "gateNotes": [
         {
           "lineId": "lts-first-weekend",
@@ -1564,7 +1560,7 @@
         },
         {
           "lineId": "no-rowing-beyond-this-point",
-          "note": "Permanent no-row danger boundary near Argo."
+          "note": "Permanent no-row line near Argo."
         },
         {
           "lineId": "lts-first-weekend-2",
@@ -1574,6 +1570,7 @@
     },
     {
       "id": "bridge-round-second-saturday",
+      "viewType": "course",
       "name": "Bridge Round - Second Saturday",
       "summary": "A dock-to-dock course line that introduces the bridge approach, bridge openings, current, return cue, and docking.",
       "routeRanges": [
@@ -1590,18 +1587,11 @@
         "launch",
         "river-turn-9",
         "bridge-pillar-2",
-        "tree-branches",
         "correct-your-angle",
         "pass-here",
-        "bridge-pillar-4",
         "current",
         "bridge-pillar-3",
         "river-turn-10",
-        "docking"
-      ],
-      "checkPlaceIds": [
-        "pass-here",
-        "current",
         "docking"
       ],
       "markerIds": [
@@ -1639,19 +1629,6 @@
       "lineIds": [
         "lts-saturday-second-weekend"
       ],
-      "bridgeFocusIds": [
-        "river-turn-9",
-        "bridge-pillar-2",
-        "tree-branches",
-        "correct-your-angle",
-        "wrong-side-of-the-pillar",
-        "pass-here",
-        "bridge-pillar",
-        "bridge-pillar-4",
-        "current",
-        "bridge-pillar-3",
-        "river-turn-10"
-      ],
       "gateNotes": [
         {
           "lineId": "lts-saturday-second-weekend",
@@ -1661,8 +1638,9 @@
     },
     {
       "id": "full-round-second-sunday",
+      "viewType": "course",
       "name": "Full Round - Second Sunday",
-      "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, major hazards, bridge openings, current, and docking.",
+      "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, bridge openings, current, caution areas, and docking.",
       "routeRanges": [
         [
           0,
@@ -1672,27 +1650,14 @@
       "keyPlaceIds": [
         "launch",
         "downstream",
-        "island-weeds",
         "bridge-pillar-2",
-        "tree-branches",
         "correct-your-angle",
         "pass-here",
         "sharp-turn",
-        "tree-branch",
         "river-turn",
         "river-turn-2",
-        "good-place-for-a-break",
-        "fallen-trees-corner",
-        "bridge-pillar-4",
         "current",
         "bridge-pillar-3",
-        "stay-on-your-side-of-the-corner",
-        "docking"
-      ],
-      "checkPlaceIds": [
-        "pass-here",
-        "sharp-turn",
-        "current",
         "stay-on-your-side-of-the-corner",
         "docking"
       ],
@@ -1743,23 +1708,10 @@
         "no-rowing-beyond-this-point",
         "end-point"
       ],
-      "bridgeFocusIds": [
-        "river-turn-9",
-        "bridge-pillar-2",
-        "tree-branches",
-        "correct-your-angle",
-        "wrong-side-of-the-pillar",
-        "pass-here",
-        "bridge-pillar",
-        "bridge-pillar-4",
-        "current",
-        "bridge-pillar-3",
-        "river-turn-10"
-      ],
       "gateNotes": [
         {
           "lineId": "no-rowing-beyond-this-point",
-          "note": "Permanent no-row danger boundary near Argo."
+          "note": "Permanent no-row line near Argo."
         },
         {
           "lineId": "end-point",
@@ -1769,6 +1721,7 @@
     },
     {
       "id": "bridge-navigation-map",
+      "viewType": "reference",
       "name": "Bridge Navigation Map",
       "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
       "routeRanges": [
@@ -1792,10 +1745,6 @@
         "bridge-pillar-3",
         "river-turn-10"
       ],
-      "checkPlaceIds": [
-        "pass-here",
-        "current"
-      ],
       "markerIds": [
         "river-turn-9",
         "bridge-pillar-2",
@@ -1814,7 +1763,6 @@
         "weeds-10"
       ],
       "lineIds": [],
-      "bridgeFocusIds": [],
       "gateNotes": []
     }
   ],
@@ -1876,8 +1824,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazard near the rowing line.",
-      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 176.2,
       "offsetMeters": 7.3,
       "coordinates": [
@@ -1922,25 +1870,15 @@
       "displayTitle": "River turn: small-round downstream cue",
       "routePositions": [
         251.7
-      ],
-      "check": {
-        "question": "What is the safe river-turn sequence?",
-        "choices": [
-          "Stop, turn, check traffic, then cross or continue as directed.",
-          "Keep rowing through the turn and correct after you cross.",
-          "Move to the middle early and wait there."
-        ],
-        "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move."
-      }
+      ]
     },
     {
       "id": "river-turn-3",
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Downstream turn cue near the hard no-row area. Treat this as a place to slow down and prepare before the danger boundary.",
-      "action": "Set up early and turn before the no-row boundary. Do not drift toward the danger area.",
+      "description": "Downstream turn cue near the permanent no-row line.",
+      "action": "Set up early and follow your coach's turn instruction before this area.",
       "distanceMeters": 557.4,
       "offsetMeters": 3.1,
       "coordinates": [
@@ -1993,8 +1931,8 @@
       "title": "Island + Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Island and weed area where oars can catch if you crowd the edge.",
-      "action": "Give the island and weed edge room while still staying in the traffic pattern.",
+      "description": "Island and weed area to recognize from the course line.",
+      "action": "Notice the island and weed edge, give it room, and keep your line predictable.",
       "distanceMeters": 809.1,
       "offsetMeters": 4.8,
       "coordinates": [
@@ -2046,8 +1984,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 1020.3,
       "offsetMeters": 16.2,
       "coordinates": [
@@ -2072,8 +2010,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazard near the rowing line.",
-      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 1265.3,
       "offsetMeters": 21.7,
       "coordinates": [
@@ -2098,8 +2036,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 1356.2,
       "offsetMeters": 15.7,
       "coordinates": [
@@ -2151,8 +2089,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 1437.5,
       "offsetMeters": 13.8,
       "coordinates": [
@@ -2177,8 +2115,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 1804.6,
       "offsetMeters": 11.6,
       "coordinates": [
@@ -2257,8 +2195,8 @@
       "title": "Tree branches",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Branch hazard near the bridge approach.",
-      "action": "Do not follow the bridge shape blindly; correct early so you avoid the branches.",
+      "description": "Branches near the bridge approach.",
+      "action": "Look early and leave room while staying on the expected bridge line.",
       "distanceMeters": 2297.1,
       "offsetMeters": -1.7,
       "coordinates": [
@@ -2274,6 +2212,7 @@
           "projectionErrorMeters": 1.7
         }
       ],
+      "displayTitle": "Bridge branches",
       "routePositions": [
         2297.1
       ]
@@ -2309,8 +2248,8 @@
       "title": "Wrong Side of the Pillar",
       "category": "bridge",
       "geometry": "Point",
-      "description": "Wrong-side marker for the bridge-pillar decision.",
-      "action": "Do not use this side of the pillar. Choose the safe opening early.",
+      "description": "Reference marker for the side of the bridge opening to avoid.",
+      "action": "Use the marked passing cue and settle onto the bridge line early.",
       "distanceMeters": 2595.8,
       "offsetMeters": 12.5,
       "coordinates": [
@@ -2326,6 +2265,7 @@
           "projectionErrorMeters": 12.5
         }
       ],
+      "displayTitle": "Bridge side to avoid",
       "routePositions": [
         2595.8
       ]
@@ -2336,7 +2276,7 @@
       "category": "bridge",
       "geometry": "Point",
       "description": "Preferred bridge opening or passing side.",
-      "action": "Use this cue for the safe bridge opening or passing side, then settle back into the normal traffic pattern.",
+      "action": "Use this cue for the preferred bridge opening, then settle back into the normal traffic pattern.",
       "distanceMeters": 2598.1,
       "offsetMeters": -2.8,
       "coordinates": [
@@ -2354,17 +2294,7 @@
       ],
       "routePositions": [
         2598.1
-      ],
-      "check": {
-        "question": "At the bridge, what should you do once you identify the safe opening?",
-        "choices": [
-          "Commit early to the marked opening and keep the line predictable.",
-          "Stay undecided until the shell is under the bridge.",
-          "Move toward the center so either opening remains possible."
-        ],
-        "answer": 0,
-        "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky."
-      }
+      ]
     },
     {
       "id": "bridge-pillar",
@@ -2388,6 +2318,7 @@
           "projectionErrorMeters": 3.9
         }
       ],
+      "displayTitle": "Bridge pillar reference",
       "routePositions": [
         2599.6
       ]
@@ -2397,8 +2328,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 2750.0,
       "offsetMeters": 16.9,
       "coordinates": [
@@ -2423,7 +2354,7 @@
       "title": "Sharp Turn",
       "category": "corner",
       "geometry": "Point",
-      "description": "Sharper turn where it is easy to drift across the river.",
+      "description": "Sharper bend where an early line helps.",
       "action": "Set the turn early, stay on your side, and avoid drifting across the river.",
       "distanceMeters": 3542.8,
       "offsetMeters": -3.9,
@@ -2442,25 +2373,15 @@
       ],
       "routePositions": [
         3542.8
-      ],
-      "check": {
-        "question": "What should you prioritize at this sharper turn?",
-        "choices": [
-          "Stay close enough to your side without drifting across.",
-          "Let the boat run wide to the other side.",
-          "Speed up so steering feels easier."
-        ],
-        "answer": 0,
-        "feedback": "This sharper turn requires early steering and a predictable line."
-      }
+      ]
     },
     {
       "id": "tree-branch",
       "title": "Tree Branch",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Branch hazard near the rowing line.",
-      "action": "Correct early and leave room for the branch hazard.",
+      "description": "Branch area near the rowing line.",
+      "action": "Look early and leave room while staying on the expected line.",
       "distanceMeters": 3620.5,
       "offsetMeters": 5.6,
       "coordinates": [
@@ -2476,6 +2397,7 @@
           "projectionErrorMeters": 5.6
         }
       ],
+      "displayTitle": "Branch near full-route bend",
       "routePositions": [
         3620.5
       ]
@@ -2565,8 +2487,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 3912.7,
       "offsetMeters": 7.8,
       "coordinates": [
@@ -2591,8 +2513,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4016.5,
       "offsetMeters": 6.7,
       "coordinates": [
@@ -2617,8 +2539,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4066.5,
       "offsetMeters": 7.0,
       "coordinates": [
@@ -2643,8 +2565,8 @@
       "title": "Fallen Trees / Corner",
       "category": "corner",
       "geometry": "Point",
-      "description": "Fallen tree hazards at a corner where drift is easy.",
-      "action": "Set the corner early, hold your side, and leave room for the tree hazards.",
+      "description": "Corner with tree cover where an early line helps.",
+      "action": "Set the corner early, hold your side, and leave room for the tree cover.",
       "distanceMeters": 4123.0,
       "offsetMeters": 5.1,
       "coordinates": [
@@ -2660,6 +2582,7 @@
           "projectionErrorMeters": 5.1
         }
       ],
+      "displayTitle": "Corner with tree cover",
       "routePositions": [
         4123.0
       ]
@@ -2669,8 +2592,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazard near the rowing line.",
-      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4187.4,
       "offsetMeters": 8.8,
       "coordinates": [
@@ -2695,8 +2618,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazard near the rowing line.",
-      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4389.6,
       "offsetMeters": 4.4,
       "coordinates": [
@@ -2721,8 +2644,8 @@
       "title": "Fallen Tree",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazard near the rowing line.",
-      "action": "Look early and give the tree room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4447.9,
       "offsetMeters": 7.9,
       "coordinates": [
@@ -2747,8 +2670,8 @@
       "title": "Fallen Trees",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Fallen tree hazards near the rowing line.",
-      "action": "Look early and give the trees room without crossing into the wrong traffic lane.",
+      "description": "Tree cover near the rowing line.",
+      "action": "Look early and give the tree cover room without changing sides suddenly.",
       "distanceMeters": 4604.3,
       "offsetMeters": 5.1,
       "coordinates": [
@@ -2773,8 +2696,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 5171.6,
       "offsetMeters": 10.1,
       "coordinates": [
@@ -2845,25 +2768,15 @@
       ],
       "routePositions": [
         5275.2
-      ],
-      "check": {
-        "question": "What changes when current pushes the shell?",
-        "choices": [
-          "Make small early corrections and keep your line predictable.",
-          "Wait until the boat has drifted, then make one large correction.",
-          "Move into the middle of the river until the current passes."
-        ],
-        "answer": 0,
-        "feedback": "Current is easier to manage with early, small steering corrections."
-      }
+      ]
     },
     {
       "id": "weeds-5",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 5305.6,
       "offsetMeters": 13.9,
       "coordinates": [
@@ -2942,8 +2855,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 5511.7,
       "offsetMeters": 15.7,
       "coordinates": [
@@ -2968,8 +2881,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 5572.6,
       "offsetMeters": 15.2,
       "coordinates": [
@@ -2994,8 +2907,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 5732.0,
       "offsetMeters": 22.6,
       "coordinates": [
@@ -3020,7 +2933,7 @@
       "title": "Stay on your side of the corner",
       "category": "corner",
       "geometry": "Point",
-      "description": "Corner where it is easy to drift to the other side.",
+      "description": "Corner where it is important to hold your side.",
       "action": "Hold your side through the corner; do not cut across the river.",
       "distanceMeters": 5978.8,
       "offsetMeters": -6.3,
@@ -3039,25 +2952,15 @@
       ],
       "routePositions": [
         5978.8
-      ],
-      "check": {
-        "question": "What is the safe line through this corner?",
-        "choices": [
-          "Stay on your side and avoid drifting across the river.",
-          "Cut across to make the corner shorter.",
-          "Stop in the middle until the corner clears."
-        ],
-        "answer": 0,
-        "feedback": "Corners are where drift becomes easy. Stay predictable and hold your side."
-      }
+      ]
     },
     {
       "id": "weeds",
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 6007.3,
       "offsetMeters": 19.5,
       "coordinates": [
@@ -3082,8 +2985,8 @@
       "title": "Weeds",
       "category": "hazard",
       "geometry": "Point",
-      "description": "Weed area. Stay clear enough that oars and skeg do not catch.",
-      "action": "Stay far enough off the weeds to keep oars and skeg clear.",
+      "description": "Weed area to give some room while staying predictable.",
+      "action": "Give the weeds room while staying in the traffic pattern.",
       "distanceMeters": 6231.9,
       "offsetMeters": 26.5,
       "coordinates": [
@@ -3154,17 +3057,7 @@
       ],
       "routePositions": [
         6491.4
-      ],
-      "check": {
-        "question": "What is the safest docking approach?",
-        "choices": [
-          "Approach slowly at an angle, then make small corrections.",
-          "Aim straight at the dock and stop at the last second.",
-          "Come in fast so the boat keeps tracking straight."
-        ],
-        "answer": 0,
-        "feedback": "Docking should be slow and angled. Do not aim the bow straight at the dock."
-      }
+      ]
     }
   ],
   "lines": [
@@ -3210,8 +3103,8 @@
       "title": "No rowing beyond this point",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Hard no-row boundary. The map marks this area as dangerous.",
-      "action": "Do not row past this boundary. Turn before reaching the danger area.",
+      "description": "Permanent no-row line. Your coach will keep the group clear of this area.",
+      "action": "Stay with the coached route and turn before this permanent no-row line.",
       "distanceMeters": 557.4,
       "offsetMeters": 32.9,
       "coordinates": [

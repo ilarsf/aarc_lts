@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'aarc-river-navigation-guide-v4';
+  const STORAGE_KEY = 'aarc-river-navigation-guide-v5';
   const DEFAULT_ZOOM = 17;
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -29,9 +29,7 @@
       course: course,
       guideMapId: saved.guideMapId || firstMap.id,
       selectedId: saved.selectedId || firstMap.keyPlaceIds[0],
-      viewed: new Set(saved.viewed || []),
       coachQuestions: new Set(saved.coachQuestions || []),
-      answers: saved.answers || {},
       leafletMap: null,
       baseLayers: {},
       routeLayer: null,
@@ -61,12 +59,10 @@
       title: root.querySelector('[data-current-title]'),
       description: root.querySelector('[data-current-description]'),
       action: root.querySelector('[data-current-action]'),
-      check: root.querySelector('[data-check]'),
       prev: root.querySelector('[data-action="prev"]'),
       next: root.querySelector('[data-action="next"]'),
       coachButton: root.querySelector('[data-action="coach-question"]'),
       fitMap: root.querySelector('[data-action="fit-map"]'),
-      fitBridge: root.querySelector('[data-action="fit-bridge"]'),
       centerCurrent: root.querySelector('[data-action="center-current"]')
     };
   }
@@ -122,9 +118,6 @@
       state.pendingFit = true;
       renderMap(ui, state);
     });
-    ui.fitBridge.addEventListener('click', function () {
-      fitBridgePattern(state);
-    });
     ui.centerCurrent.addEventListener('click', function () {
       state.pendingCenter = true;
       renderMap(ui, state);
@@ -133,10 +126,8 @@
 
   function renderAll(ui, state) {
     ensureSelectedItem(state);
-    if (state.selectedId) state.viewed.add(state.selectedId);
     saveState(state);
     renderMapSelectors(ui, state);
-    renderMapTools(ui, state);
     renderMap(ui, state);
     renderKeyPlaces(ui, state);
     renderCurrentPlace(ui, state);
@@ -159,11 +150,6 @@
       });
       ui.mapSelectors.appendChild(button);
     });
-  }
-
-  function renderMapTools(ui, state) {
-    const guideMap = getGuideMap(state);
-    ui.fitBridge.hidden = !(guideMap.bridgeFocusIds && guideMap.bridgeFocusIds.length);
   }
 
   function renderMap(ui, state) {
@@ -274,14 +260,8 @@
       button.type = 'button';
       button.className = 'river-tour-stop';
       button.classList.toggle('is-selected', item.id === state.selectedId);
-      button.classList.toggle('is-viewed', state.viewed.has(item.id));
       button.classList.toggle('ask-coach', state.coachQuestions.has(item.id));
-      button.classList.toggle('has-check', isCourseCheck(state, item.id));
-      button.classList.toggle('is-check-correct', isCorrectAnswer(state, item));
-      button.classList.toggle('is-check-wrong', isAnsweredCheck(state, item) && !isCorrectAnswer(state, item));
       const detailParts = [state.course.categories[item.category] || item.category];
-      const checkStatus = checkStatusLabel(state, item);
-      if (checkStatus) detailParts.push(checkStatus);
       button.innerHTML = '<span>' + (index + 1) + '</span><strong>' + escapeHtml(itemLabel(item)) + '</strong><small>' + escapeHtml(detailParts.join(' · ')) + '</small>';
       button.addEventListener('click', function () {
         state.selectedId = item.id;
@@ -298,7 +278,7 @@
     if (!item) return;
     const isKey = isKeyPlace(state, item.id);
     ui.category.textContent = isPracticeGate(item)
-      ? 'Coach route limit'
+      ? 'Coach route note'
       : isKey ? state.course.categories[item.category] || item.category : 'River marker';
     ui.distance.textContent = formatRoutePositions(item);
     ui.title.textContent = itemLabel(item);
@@ -308,105 +288,15 @@
     ui.coachButton.innerHTML = state.coachQuestions.has(item.id)
       ? '<i class="fas fa-bookmark"></i> Coach question noted'
       : '<i class="fas fa-bookmark"></i> Ask coach about this';
-    renderCheck(ui, state, item);
-  }
-
-  function renderCheck(ui, state, item) {
-    ui.check.innerHTML = '';
-    if (!isCourseCheck(state, item.id)) {
-      ui.check.hidden = true;
-      return;
-    }
-    ui.check.hidden = false;
-    const courseChecks = getCourseChecks(state);
-    const checkIndex = courseChecks.findIndex(function (checkItem) { return checkItem.id === item.id; });
-    const answer = state.answers[item.id];
-    const answered = answer !== undefined;
-    const correct = isCorrectAnswer(state, item);
-    const heading = document.createElement('h4');
-    heading.textContent = 'Quick check ' + (checkIndex + 1) + ' of ' + courseChecks.length;
-    const question = document.createElement('p');
-    question.textContent = item.check.question;
-    const choices = document.createElement('div');
-    choices.className = 'river-tour-check__choices';
-    item.check.choices.forEach(function (choice, index) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'river-tour-check__choice';
-      button.classList.toggle('is-selected', answer === index);
-      button.classList.toggle('is-correct', answered && index === item.check.answer);
-      button.classList.toggle('is-wrong', answer === index && index !== item.check.answer);
-      button.setAttribute('aria-pressed', answer === index ? 'true' : 'false');
-      button.textContent = choice;
-      button.addEventListener('click', function () {
-        state.answers[item.id] = index;
-        saveState(state);
-        renderAll(ui, state);
-      });
-      choices.appendChild(button);
-    });
-    ui.check.appendChild(heading);
-    ui.check.appendChild(question);
-    ui.check.appendChild(choices);
-    if (answered) {
-      const feedback = document.createElement('p');
-      feedback.className = 'river-tour-check__feedback';
-      feedback.textContent = correct ? 'Correct. ' + item.check.feedback : 'Review this point: ' + item.check.feedback;
-      ui.check.appendChild(feedback);
-
-      const actions = document.createElement('div');
-      actions.className = 'river-tour-check__actions';
-      if (!correct) {
-        const retry = document.createElement('button');
-        retry.type = 'button';
-        retry.className = 'river-tour-check__action';
-        retry.textContent = 'Try again';
-        retry.addEventListener('click', function () {
-          delete state.answers[item.id];
-          saveState(state);
-          renderAll(ui, state);
-        });
-        actions.appendChild(retry);
-      } else {
-        const nextCheck = getNextCourseCheck(state, item.id);
-        if (nextCheck) {
-          const next = document.createElement('button');
-          next.type = 'button';
-          next.className = 'river-tour-check__action river-tour-check__action--primary';
-          next.textContent = 'Next check';
-          next.addEventListener('click', function () {
-            state.selectedId = nextCheck.id;
-            state.pendingCenter = true;
-            renderAll(ui, state);
-          });
-          actions.appendChild(next);
-        }
-      }
-      if (actions.childNodes.length) ui.check.appendChild(actions);
-    }
   }
 
   function renderProgress(ui, state) {
-    const allKeyIds = state.course.maps.reduce(function (ids, guideMap) {
-      guideMap.keyPlaceIds.forEach(function (id) { ids.add(id); });
-      return ids;
-    }, new Set());
-    const viewedCount = Array.from(allKeyIds).filter(function (id) { return state.viewed.has(id); }).length;
-    const allCheckIds = state.course.maps.reduce(function (ids, guideMap) {
-      (guideMap.checkPlaceIds || []).forEach(function (id) { ids.add(id); });
-      return ids;
-    }, new Set());
-    const correctCheckCount = Array.from(allCheckIds).filter(function (id) {
-      return isCorrectAnswer(state, getItemById(state, id));
-    }).length;
+    const guideMap = getGuideMap(state);
     const keyPlaces = getKeyPlaces(state);
-    const mapViewed = keyPlaces.filter(function (item) { return state.viewed.has(item.id); }).length;
-    const courseChecks = getCourseChecks(state);
-    const courseCorrect = courseChecks.filter(function (item) { return isCorrectAnswer(state, item); }).length;
-    ui.progressCount.textContent = viewedCount + ' of ' + allKeyIds.size + ' key places viewed'
-      + (allCheckIds.size ? ' · ' + correctCheckCount + ' of ' + allCheckIds.size + ' checks correct' : '');
-    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this view'
-      + (courseChecks.length ? ' · ' + courseCorrect + '/' + courseChecks.length + ' checks correct' : '');
+    ui.progressCount.textContent = itemCountLabel(keyPlaces.length);
+    ui.progressLabel.textContent = guideMap.viewType === 'reference'
+      ? 'Bridge reference'
+      : 'Dock-to-dock course line';
   }
 
   function getRenderedItems(state) {
@@ -463,45 +353,6 @@
     return getGuideMap(state).keyPlaceIds.indexOf(id) !== -1;
   }
 
-  function isCourseCheck(state, id) {
-    const item = getItemById(state, id);
-    return !!(item && item.check && (getGuideMap(state).checkPlaceIds || []).indexOf(id) !== -1);
-  }
-
-  function getCourseChecks(state) {
-    const guideMap = getGuideMap(state);
-    return (guideMap.checkPlaceIds || []).map(function (id) {
-      return getItemById(state, id);
-    }).filter(function (item) {
-      return item && item.check;
-    });
-  }
-
-  function getNextCourseCheck(state, id) {
-    const checks = getCourseChecks(state);
-    const currentIndex = checks.findIndex(function (item) { return item.id === id; });
-    if (currentIndex === -1 || currentIndex >= checks.length - 1) return null;
-    return checks[currentIndex + 1];
-  }
-
-  function isAnsweredCheck(state, item) {
-    return !!(item && item.check && state.answers[item.id] !== undefined);
-  }
-
-  function isCorrectAnswer(state, item) {
-    return !!(item && item.check && state.answers[item.id] === item.check.answer);
-  }
-
-  function checkStatusLabel(state, item) {
-    if (!isCourseCheck(state, item.id)) return '';
-    if (!isAnsweredCheck(state, item)) return 'Quick check';
-    return isCorrectAnswer(state, item) ? 'Check complete' : 'Review check';
-  }
-
-  function isMapLine(state, id) {
-    return getGuideMap(state).lineIds.indexOf(id) !== -1;
-  }
-
   function moveSelection(state, direction) {
     const keyPlaces = getKeyPlaces(state);
     if (!keyPlaces.length) return;
@@ -517,12 +368,8 @@
       'river-tour-leaflet-marker',
       'river-tour-leaflet-marker--' + item.category,
       item.id === state.selectedId ? 'is-selected' : '',
-      state.viewed.has(item.id) ? 'is-viewed' : '',
       state.coachQuestions.has(item.id) ? 'ask-coach' : '',
-      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker',
-      isCourseCheck(state, item.id) ? 'has-check' : '',
-      isCorrectAnswer(state, item) ? 'is-check-correct' : '',
-      isAnsweredCheck(state, item) && !isCorrectAnswer(state, item) ? 'is-check-wrong' : ''
+      isKeyPlace(state, item.id) ? 'is-key-place' : 'is-additional-marker'
     ].filter(Boolean).join(' ');
     return L.divIcon({
       className: classes,
@@ -538,7 +385,6 @@
       'river-tour-leaflet-line--' + item.category,
       isPracticeGate(item) ? 'is-practice-gate' : '',
       item.id === state.selectedId ? 'is-selected' : '',
-      state.viewed.has(item.id) ? 'is-viewed' : '',
       state.coachQuestions.has(item.id) ? 'ask-coach' : ''
     ].filter(Boolean).join(' ');
   }
@@ -548,9 +394,9 @@
       dock: 'Dock',
       direction: 'Flow',
       turn: 'Turn',
-      limit: 'Gate',
+      limit: 'Line',
       bridge: 'Bridge',
-      hazard: 'Hazard',
+      hazard: 'Caution',
       current: 'Drift',
       corner: 'Bend',
       break: 'Break',
@@ -588,18 +434,6 @@
 
   function tooltipText(item, state) {
     return itemLabel(item);
-  }
-
-  function fitBridgePattern(state) {
-    const guideMap = getGuideMap(state);
-    const bridgeIds = guideMap.bridgeFocusIds || [];
-    if (!bridgeIds.length) return;
-    const latLngs = bridgeIds.map(function (id) {
-      return getItemById(state, id);
-    }).filter(Boolean).reduce(function (points, item) {
-      return points.concat(itemLatLngs(item));
-    }, []);
-    fitToItems(state, latLngs);
   }
 
   function renderSelectedFocus(state, item) {
@@ -644,10 +478,6 @@
     return item.displayTitle || item.title;
   }
 
-  function itemLatLngs(item) {
-    return item.coordinates.map(toLatLng);
-  }
-
   function fitToItems(state, latLngs) {
     const points = latLngs.length ? latLngs : state.course.route.coordinates.map(toLatLng);
     const bounds = L.latLngBounds(points);
@@ -686,9 +516,7 @@
     const payload = {
       guideMapId: state.guideMapId,
       selectedId: state.selectedId,
-      viewed: Array.from(state.viewed),
-      coachQuestions: Array.from(state.coachQuestions),
-      answers: state.answers
+      coachQuestions: Array.from(state.coachQuestions)
     };
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
@@ -703,10 +531,6 @@
     } catch (error) {
       return {};
     }
-  }
-
-  function unique(values) {
-    return Array.from(new Set(values));
   }
 
   function uniqueItems(items) {

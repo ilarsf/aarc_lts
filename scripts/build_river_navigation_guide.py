@@ -23,6 +23,7 @@ NS = {"k": "http://www.opengis.net/kml/2.2"}
 MAP_DEFS = [
     {
         "id": "small-round-first-sunday",
+        "viewType": "course",
         "name": "Small Round - First Sunday",
         "summary": "A short dock-to-dock course line. Use the coached turn cues, keep the route organized, and return to docking.",
         "routeRanges": [[0, 280], [900, 1450], [6200, 6505]],
@@ -41,10 +42,6 @@ MAP_DEFS = [
             "river-turn-8",
             "docking",
         ],
-        "checkPlaceIds": [
-            "river-turn-5",
-            "docking",
-        ],
         "gateNotes": [
             {
                 "lineId": "lts-first-weekend",
@@ -52,7 +49,7 @@ MAP_DEFS = [
             },
             {
                 "lineId": "no-rowing-beyond-this-point",
-                "note": "Permanent no-row danger boundary near Argo.",
+                "note": "Permanent no-row line near Argo.",
             },
             {
                 "lineId": "lts-first-weekend-2",
@@ -62,6 +59,7 @@ MAP_DEFS = [
     },
     {
         "id": "bridge-round-second-saturday",
+        "viewType": "course",
         "name": "Bridge Round - Second Saturday",
         "summary": "A dock-to-dock course line that introduces the bridge approach, bridge openings, current, return cue, and docking.",
         "routeRanges": [[0, 2820], [5160, 6505]],
@@ -77,35 +75,15 @@ MAP_DEFS = [
         "lineIds": [
             "lts-saturday-second-weekend",
         ],
-        "bridgeFocusIds": [
-            "river-turn-9",
-            "bridge-pillar-2",
-            "tree-branches",
-            "correct-your-angle",
-            "wrong-side-of-the-pillar",
-            "pass-here",
-            "bridge-pillar",
-            "bridge-pillar-4",
-            "current",
-            "bridge-pillar-3",
-            "river-turn-10",
-        ],
         "keyPlaceIds": [
             "launch",
             "river-turn-9",
             "bridge-pillar-2",
-            "tree-branches",
             "correct-your-angle",
             "pass-here",
-            "bridge-pillar-4",
             "current",
             "bridge-pillar-3",
             "river-turn-10",
-            "docking",
-        ],
-        "checkPlaceIds": [
-            "pass-here",
-            "current",
             "docking",
         ],
         "gateNotes": [
@@ -117,8 +95,9 @@ MAP_DEFS = [
     },
     {
         "id": "full-round-second-sunday",
+        "viewType": "course",
         "name": "Full Round - Second Sunday",
-        "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, major hazards, bridge openings, current, and docking.",
+        "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, bridge openings, current, caution areas, and docking.",
         "routeRanges": [[0, 6505]],
         "markerRanges": "__all_stops__",
         "excludeMarkerIds": [
@@ -135,50 +114,24 @@ MAP_DEFS = [
             "no-rowing-beyond-this-point",
             "end-point",
         ],
-        "bridgeFocusIds": [
-            "river-turn-9",
-            "bridge-pillar-2",
-            "tree-branches",
-            "correct-your-angle",
-            "wrong-side-of-the-pillar",
-            "pass-here",
-            "bridge-pillar",
-            "bridge-pillar-4",
-            "current",
-            "bridge-pillar-3",
-            "river-turn-10",
-        ],
         "keyPlaceIds": [
             "launch",
             "downstream",
-            "island-weeds",
             "bridge-pillar-2",
-            "tree-branches",
             "correct-your-angle",
             "pass-here",
             "sharp-turn",
-            "tree-branch",
             "river-turn",
             "river-turn-2",
-            "good-place-for-a-break",
-            "fallen-trees-corner",
-            "bridge-pillar-4",
             "current",
             "bridge-pillar-3",
-            "stay-on-your-side-of-the-corner",
-            "docking",
-        ],
-        "checkPlaceIds": [
-            "pass-here",
-            "sharp-turn",
-            "current",
             "stay-on-your-side-of-the-corner",
             "docking",
         ],
         "gateNotes": [
             {
                 "lineId": "no-rowing-beyond-this-point",
-                "note": "Permanent no-row danger boundary near Argo.",
+                "note": "Permanent no-row line near Argo.",
             },
             {
                 "lineId": "end-point",
@@ -188,12 +141,12 @@ MAP_DEFS = [
     },
     {
         "id": "bridge-navigation-map",
+        "viewType": "reference",
         "name": "Bridge Navigation Map",
         "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
         "routeRanges": [[2180, 2820], [5160, 5520]],
         "markerRanges": [[2180, 2820], [5160, 5520]],
         "lineIds": [],
-        "bridgeFocusIds": [],
         "keyPlaceIds": [
             "river-turn-9",
             "bridge-pillar-2",
@@ -205,77 +158,9 @@ MAP_DEFS = [
             "bridge-pillar-3",
             "river-turn-10",
         ],
-        "checkPlaceIds": [
-            "pass-here",
-            "current",
-        ],
         "gateNotes": [],
     },
 ]
-
-
-CHECKS = {
-    "docking": {
-        "question": "What is the safest docking approach?",
-        "choices": [
-            "Approach slowly at an angle, then make small corrections.",
-            "Aim straight at the dock and stop at the last second.",
-            "Come in fast so the boat keeps tracking straight.",
-        ],
-        "answer": 0,
-        "feedback": "Docking should be slow and angled. Do not aim the bow straight at the dock.",
-    },
-    "river-turn-5": {
-        "question": "What is the safe river-turn sequence?",
-        "choices": [
-            "Stop, turn, check traffic, then cross or continue as directed.",
-            "Keep rowing through the turn and correct after you cross.",
-            "Move to the middle early and wait there.",
-        ],
-        "answer": 0,
-        "feedback": "A river turn is a controlled stop-turn-check maneuver. It is not a speed move.",
-    },
-    "pass-here": {
-        "question": "At the bridge, what should you do once you identify the safe opening?",
-        "choices": [
-            "Commit early to the marked opening and keep the line predictable.",
-            "Stay undecided until the shell is under the bridge.",
-            "Move toward the center so either opening remains possible.",
-        ],
-        "answer": 0,
-        "feedback": "Bridge decisions need an early, settled line. Last-second corrections are risky.",
-    },
-    "stay-on-your-side-of-the-corner": {
-        "question": "What is the safe line through this corner?",
-        "choices": [
-            "Stay on your side and avoid drifting across the river.",
-            "Cut across to make the corner shorter.",
-            "Stop in the middle until the corner clears.",
-        ],
-        "answer": 0,
-        "feedback": "Corners are where drift becomes easy. Stay predictable and hold your side.",
-    },
-    "sharp-turn": {
-        "question": "What should you prioritize at this sharper turn?",
-        "choices": [
-            "Stay close enough to your side without drifting across.",
-            "Let the boat run wide to the other side.",
-            "Speed up so steering feels easier.",
-        ],
-        "answer": 0,
-        "feedback": "This sharper turn requires early steering and a predictable line.",
-    },
-    "current": {
-        "question": "What changes when current pushes the shell?",
-        "choices": [
-            "Make small early corrections and keep your line predictable.",
-            "Wait until the boat has drifted, then make one large correction.",
-            "Move into the middle of the river until the current passes.",
-        ],
-        "answer": 0,
-        "feedback": "Current is easier to manage with early, small steering corrections.",
-    },
-}
 
 
 ITEM_OVERRIDES = {
@@ -286,8 +171,8 @@ ITEM_OVERRIDES = {
     },
     "river-turn-3": {
         "displayTitle": "River turn: Argo boundary approach",
-        "description": "Downstream turn cue near the hard no-row area. Treat this as a place to slow down and prepare before the danger boundary.",
-        "action": "Set up early and turn before the no-row boundary. Do not drift toward the danger area.",
+        "description": "Downstream turn cue near the permanent no-row line.",
+        "action": "Set up early and follow your coach's turn instruction before this area.",
     },
     "river-turn-4": {
         "displayTitle": "River turn: Argo crossing cue",
@@ -353,6 +238,25 @@ ITEM_OVERRIDES = {
     "bridge-pillar-4": {
         "displayTitle": "Bridge pillar: return-side setup",
     },
+    "tree-branches": {
+        "displayTitle": "Bridge branches",
+        "description": "Branches near the bridge approach.",
+        "action": "Look early and leave room while staying on the expected bridge line.",
+    },
+    "wrong-side-of-the-pillar": {
+        "displayTitle": "Bridge side to avoid",
+        "description": "Reference marker for the side of the bridge opening to avoid.",
+        "action": "Use the marked passing cue and settle onto the bridge line early.",
+    },
+    "bridge-pillar": {
+        "displayTitle": "Bridge pillar reference",
+    },
+    "tree-branch": {
+        "displayTitle": "Branch near full-route bend",
+    },
+    "fallen-trees-corner": {
+        "displayTitle": "Corner with tree cover",
+    },
 }
 
 
@@ -363,22 +267,22 @@ DESCRIPTION_OVERRIDES = {
     "River Turn": "River turns are controlled stop-turn-check maneuvers.",
     "LTS First Weekend": "Course line for the small round.",
     "LTS Saturday Second Weekend": "Course line for the bridge round.",
-    "No rowing beyond this point": "Hard no-row boundary. The map marks this area as dangerous.",
+    "No rowing beyond this point": "Permanent no-row line. Your coach will keep the group clear of this area.",
     "End Point": "Full-route turn point before Tail Bridge.",
-    "Island + Weeds": "Island and weed area where oars can catch if you crowd the edge.",
-    "Weeds": "Weed area. Stay clear enough that oars and skeg do not catch.",
-    "Fallen Tree": "Fallen tree hazard near the rowing line.",
-    "Fallen Trees": "Fallen tree hazards near the rowing line.",
-    "Fallen Trees / Corner": "Fallen tree hazards at a corner where drift is easy.",
-    "Tree Branch": "Branch hazard near the rowing line.",
-    "Tree branches": "Branch hazard near the bridge approach.",
+    "Island + Weeds": "Island and weed area to recognize from the course line.",
+    "Weeds": "Weed area to give some room while staying predictable.",
+    "Fallen Tree": "Tree cover near the rowing line.",
+    "Fallen Trees": "Tree cover near the rowing line.",
+    "Fallen Trees / Corner": "Corner with tree cover where an early line helps.",
+    "Tree Branch": "Branch area near the rowing line.",
+    "Tree branches": "Branches near the bridge approach.",
     "Current": "Current can push the shell off line here.",
     "Bridge Pillar": "Bridge-pillar decision point.",
-    "Wrong Side of the Pillar": "Wrong-side marker for the bridge-pillar decision.",
+    "Wrong Side of the Pillar": "Bridge side to avoid.",
     "Pass here": "Preferred bridge opening or passing side.",
     "Correct your angle": "Angle-correction point before the bridge pulls you off line.",
-    "Sharp Turn": "Sharper turn where it is easy to drift across the river.",
-    "Stay on your side of the corner": "Corner where it is easy to drift to the other side.",
+    "Sharp Turn": "Sharper bend where an early line helps.",
+    "Stay on your side of the corner": "Corner where it is important to hold your side.",
     "Good Place for a Break": "Good regrouping area when a coach directs the group to pause.",
 }
 
@@ -390,19 +294,19 @@ ACTION_OVERRIDES = {
     "River Turn": "Come fully under control, turn, check traffic, then cross or continue in the direction your coach has assigned.",
     "LTS First Weekend": "Use the nearby river-turn cue and follow your coach's direction for the crossing.",
     "LTS Saturday Second Weekend": "Use the nearby bridge and return cues, then follow your coach's direction for the turn.",
-    "No rowing beyond this point": "Do not row past this boundary. Turn before reaching the danger area.",
+    "No rowing beyond this point": "Stay with the coached route and turn before this permanent no-row line.",
     "End Point": "Turn before Tail Bridge and keep the turning area clear for the next boat.",
-    "Island + Weeds": "Give the island and weed edge room while still staying in the traffic pattern.",
-    "Weeds": "Stay far enough off the weeds to keep oars and skeg clear.",
-    "Fallen Tree": "Look early and give the tree room without crossing into the wrong traffic lane.",
-    "Fallen Trees": "Look early and give the trees room without crossing into the wrong traffic lane.",
-    "Fallen Trees / Corner": "Set the corner early, hold your side, and leave room for the tree hazards.",
-    "Tree Branch": "Correct early and leave room for the branch hazard.",
-    "Tree branches": "Do not follow the bridge shape blindly; correct early so you avoid the branches.",
+    "Island + Weeds": "Notice the island and weed edge, give it room, and keep your line predictable.",
+    "Weeds": "Give the weeds room while staying in the traffic pattern.",
+    "Fallen Tree": "Look early and give the tree cover room without changing sides suddenly.",
+    "Fallen Trees": "Look early and give the tree cover room without changing sides suddenly.",
+    "Fallen Trees / Corner": "Set the corner early, hold your side, and leave room for the tree cover.",
+    "Tree Branch": "Look early and leave room while staying on the expected line.",
+    "Tree branches": "Look early and leave room while staying on the expected bridge line.",
     "Current": "Expect drift here. Make small early corrections and keep your line predictable.",
     "Bridge Pillar": "Look early, identify the correct side of the pillar, and commit before you reach the bridge.",
-    "Wrong Side of the Pillar": "Do not use this side of the pillar. Choose the safe opening early.",
-    "Pass here": "Use this cue for the safe bridge opening or passing side, then settle back into the normal traffic pattern.",
+    "Wrong Side of the Pillar": "Use the marked passing cue and settle onto the bridge line early.",
+    "Pass here": "Use this cue for the preferred bridge opening, then settle back into the normal traffic pattern.",
     "Correct your angle": "Look ahead and correct your angle before bridge symmetry pulls you across your side.",
     "Sharp Turn": "Set the turn early, stay on your side, and avoid drifting across the river.",
     "Stay on your side of the corner": "Hold your side through the corner; do not cut across the river.",
@@ -467,7 +371,7 @@ def action_for(name: str, category: str, description: str) -> str:
     if category == "turn":
         return "Stop under control, turn, check, then cross or continue in the direction noted by your coach."
     if category == "limit":
-        return "Treat this as a route boundary for the relevant practice progression and turn before crossing it."
+        return "Follow your coach's route and turn where directed."
     if category == "bridge":
         return "Look early, choose the correct side or opening, and avoid last-second steering under the structure."
     if category == "current":
@@ -477,7 +381,7 @@ def action_for(name: str, category: str, description: str) -> str:
     if category == "break":
         return "Use this as a calm regrouping spot when directed by a coach."
     if category == "hazard":
-        return "Give the hazard extra room without abandoning the traffic pattern."
+        return "Look early, leave room, and keep your line predictable."
     return "Review this local marker before rowing the route."
 
 
@@ -546,25 +450,15 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
     maps = []
     for map_def in MAP_DEFS:
         marker_ids = marker_ids_for_map(map_def, stops)
-        bridge_focus_ids = list(map_def.get("bridgeFocusIds", []))
-        check_place_ids = list(map_def.get("checkPlaceIds", []))
         missing_markers = sorted(set(marker_ids) - stop_ids)
         missing_lines = sorted(set(map_def["lineIds"]) - line_ids)
         missing_keys = sorted(set(map_def["keyPlaceIds"]) - all_ids)
-        missing_bridge_focus = sorted(set(bridge_focus_ids) - all_ids)
         missing_excluded = sorted(set(map_def.get("excludeMarkerIds", [])) - stop_ids)
-        missing_checks = sorted(set(check_place_ids) - stop_ids)
-        non_key_checks = sorted(set(check_place_ids) - set(map_def["keyPlaceIds"]))
-        checks_without_questions = sorted(item_id for item_id in check_place_ids if item_id not in CHECKS)
         if (
             missing_markers
             or missing_lines
             or missing_keys
-            or missing_bridge_focus
             or missing_excluded
-            or missing_checks
-            or non_key_checks
-            or checks_without_questions
         ):
             details = []
             if missing_markers:
@@ -573,27 +467,18 @@ def build_maps(stops: list[dict], lines: list[dict]) -> list[dict]:
                 details.append(f"lines={missing_lines}")
             if missing_keys:
                 details.append(f"key places={missing_keys}")
-            if missing_bridge_focus:
-                details.append(f"bridge focus={missing_bridge_focus}")
             if missing_excluded:
                 details.append(f"excluded markers={missing_excluded}")
-            if missing_checks:
-                details.append(f"checks={missing_checks}")
-            if non_key_checks:
-                details.append(f"checks not in key places={non_key_checks}")
-            if checks_without_questions:
-                details.append(f"checks without questions={checks_without_questions}")
             raise SystemExit(f"Map {map_def['id']} references missing ids: {'; '.join(details)}")
         maps.append({
             "id": map_def["id"],
+            "viewType": map_def["viewType"],
             "name": map_def["name"],
             "summary": map_def["summary"],
             "routeRanges": map_def["routeRanges"],
             "keyPlaceIds": map_def["keyPlaceIds"],
-            "checkPlaceIds": check_place_ids,
             "markerIds": marker_ids,
             "lineIds": map_def["lineIds"],
-            "bridgeFocusIds": bridge_focus_ids,
             "gateNotes": map_def["gateNotes"],
         })
     return maps
@@ -679,9 +564,6 @@ def main() -> int:
         if item["id"] in ITEM_OVERRIDES:
             item.update(ITEM_OVERRIDES[item["id"]])
         add_projection_labels(item)
-        check = CHECKS.get(item["id"])
-        if check:
-            item["check"] = check
         if is_line:
             lines.append(item)
         else:
@@ -718,9 +600,9 @@ def main() -> int:
             "dock": "Dock / launch",
             "direction": "Direction cue",
             "turn": "River turn",
-            "limit": "Practice gate / limit",
+            "limit": "Coach route note",
             "bridge": "Bridge decision",
-            "hazard": "Hazard",
+            "hazard": "Caution area",
             "current": "Current / drift",
             "corner": "Corner / angle",
             "break": "Regrouping point",

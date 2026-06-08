@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AARC River Navigation Guide
-description: Learn-to-Scull course-line guide for local Huron River navigation, hazards, bridge decisions, and docking.
+description: Learn-to-Scull course-line guide for local Huron River navigation, caution areas, bridge decisions, and docking.
 parent: Sculling Safety
 grand_parent: For Learners
 nav_exclude: true
@@ -17,7 +17,7 @@ nav_exclude: true
     <div>
       <p class="river-tour-eyebrow">AARC Learn-to-Scull</p>
       <h1><i class="fas fa-water"></i> AARC River Navigation Guide</h1>
-      <p class="lead">Review the coached course lines and bridge decisions by the places you need to recognize on the water: launch, turns, hazards, current, and docking.</p>
+      <p class="lead">Review the coached course lines and bridge decisions by the places you need to recognize on the water: launch, turns, caution areas, current, and docking.</p>
     </div>
   </section>
 
@@ -52,7 +52,6 @@ nav_exclude: true
           <div class="river-tour-map-wrap">
             <div class="river-tour-map-tools" aria-label="Map tools">
               <button type="button" class="river-tour-map-tool" data-action="fit-map">Fit map</button>
-              <button type="button" class="river-tour-map-tool" data-action="fit-bridge" hidden>Bridge pattern</button>
               <button type="button" class="river-tour-map-tool" data-action="center-current">Center selected place</button>
             </div>
             <div class="river-tour-map" data-map role="application" aria-label="Satellite map of the AARC river route"></div>
@@ -67,14 +66,12 @@ nav_exclude: true
             <span data-current-distance></span>
           </div>
           <h3 data-current-title>Select a place</h3>
-          <p data-current-description>Select a mapped place to review the local turn cue, rule, or hazard.</p>
+          <p data-current-description>Select a mapped place to review the local turn cue, route note, or caution area.</p>
 
           <div class="river-tour-action">
             <span>On-water action</span>
             <p data-current-action></p>
           </div>
-
-          <div class="river-tour-check" data-check hidden></div>
 
           <div class="river-tour-controls">
             <button type="button" class="river-tour-button river-tour-button--secondary" data-action="prev">
@@ -99,7 +96,7 @@ nav_exclude: true
     </article>
     <article>
       <h2>On The Water</h2>
-      <p>Keep scanning, stay on the correct side, and leave room near bridges, weeds, trees, current, and sharp bends.</p>
+      <p>Keep scanning, stay on the correct side, and leave room near bridges, weeds, tree cover, current, and sharp bends.</p>
     </article>
   </section>
 

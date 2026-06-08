@@ -122,8 +122,7 @@
 .river-tour-map-selector,
 .river-tour-filter,
 .river-tour-button,
-.river-tour-stop,
-.river-tour-check__choice {
+.river-tour-stop {
   appearance: none;
   border: 1px solid rgba(16, 39, 52, 0.14);
   border-radius: 6px;
@@ -269,18 +268,6 @@
 .river-tour-leaflet-marker--corner span { background: #f0e9ff; border-color: #8067b7; }
 .river-tour-leaflet-marker--break span { background: #edf8e8; border-color: #6a9f3d; }
 
-.river-tour-leaflet-marker.has-check span {
-  box-shadow: 0 0 0 3px rgba(246, 196, 83, 0.42), 0 4px 12px rgba(0, 0, 0, 0.38);
-}
-
-.river-tour-leaflet-marker.is-check-correct span {
-  border-color: #238447;
-}
-
-.river-tour-leaflet-marker.is-check-wrong span {
-  border-color: #c97a22;
-}
-
 .river-tour-leaflet-marker.is-selected span {
   border-color: #101820;
   border-width: 4px;
@@ -294,6 +281,12 @@
 .river-tour-leaflet-marker.is-additional-marker span {
   opacity: 0.86;
   transform: scale(0.9);
+}
+
+.river-tour-leaflet-marker.is-additional-marker.river-tour-leaflet-marker--hazard span {
+  background: #f7f1e8;
+  border-color: #b98c63;
+  opacity: 0.68;
 }
 
 .river-tour-leaflet-marker.is-additional-marker.is-selected span {
@@ -500,115 +493,8 @@
   box-shadow: inset 4px 0 0 #17465a;
 }
 
-.river-tour-stop.is-viewed span {
-  background: #e8f5ec;
-  color: #1c6d3b;
-}
-
-.river-tour-stop.has-check {
-  border-color: rgba(224, 165, 31, 0.48);
-}
-
-.river-tour-stop.has-check small {
-  color: #7f4d20;
-  font-weight: 700;
-}
-
-.river-tour-stop.is-check-correct {
-  border-color: rgba(35, 132, 71, 0.48);
-}
-
-.river-tour-stop.is-check-correct span {
-  background: #dff3e6;
-  color: #1c6d3b;
-}
-
-.river-tour-stop.is-check-wrong {
-  border-color: rgba(201, 122, 34, 0.58);
-}
-
-.river-tour-stop.is-check-wrong span {
-  background: #fff0d6;
-  color: #8a4a12;
-}
-
 .river-tour-stop.ask-coach {
   background: #fff9e8;
-}
-
-.river-tour-check {
-  background: #102734;
-  border-radius: 8px;
-  color: #f8fbfb;
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-.river-tour-check h4 {
-  color: #fff3cd;
-  margin: 0 0 0.45rem;
-}
-
-.river-tour-check p {
-  color: rgba(248, 251, 251, 0.86);
-}
-
-.river-tour-check__choices {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.river-tour-check__choice {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 0.65rem 0.75rem;
-  text-align: left;
-}
-
-.river-tour-check__choice.is-selected {
-  box-shadow: inset 4px 0 0 #fff3cd;
-}
-
-.river-tour-check__choice.is-correct {
-  background: rgba(87, 176, 113, 0.28);
-  border-color: #70cf8c;
-}
-
-.river-tour-check__choice.is-wrong {
-  background: rgba(201, 79, 79, 0.28);
-  border-color: #f18a8a;
-}
-
-.river-tour-check__feedback {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  margin: 0.8rem 0 0;
-  padding-top: 0.8rem;
-}
-
-.river-tour-check__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.8rem;
-}
-
-.river-tour-check__action {
-  appearance: none;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  border-radius: 6px;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 800;
-  padding: 0.5rem 0.7rem;
-}
-
-.river-tour-check__action--primary {
-  background: #fff3cd;
-  border-color: #fff3cd;
-  color: #102734;
 }
 
 .river-tour-notes {
@@ -635,7 +521,6 @@
 .river-tour-filter:focus-visible,
 .river-tour-button:focus-visible,
 .river-tour-stop:focus-visible,
-.river-tour-check__choice:focus-visible,
 .river-tour-map-tool:focus-visible {
   outline: 3px solid rgba(47, 111, 190, 0.36);
   outline-offset: 2px;
