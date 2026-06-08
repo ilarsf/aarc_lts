@@ -31,10 +31,11 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul class="fallback-nav">
         {% for item in site.navigation %}
+        {% assign item_title = item.title | replace: ' (members)', '' %}
         <li class="nav-item {% if item.subitems %}has-dropdown{% endif %}{% if item.title contains '(members)' %} member-area{% endif %}">
           <a href="{{ site.baseurl }}{{ item.url }}">
-            {{ item.title | replace: ' (members)', '' }}
-            {% if item.title contains '(members)' %}<span class="nav-badge">Members</span>{% endif %}
+            {{ item_title }}
+            {% if item.title contains '(members)' and item_title != 'Members' %}<span class="nav-badge">Members</span>{% endif %}
           </a>
           {% if item.subitems %}
           <ul class="dropdown-menu">

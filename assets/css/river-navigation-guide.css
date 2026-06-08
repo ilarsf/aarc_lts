@@ -139,21 +139,21 @@
 
 .river-mode-selector {
   display: grid;
-  gap: 0.6rem;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
 .river-mode-button {
-  align-items: center;
+  align-content: center;
   background: #ffffff;
-  border: 1px solid var(--river-line);
+  border: 2px solid var(--river-line);
   border-radius: 8px;
   color: var(--river-ink);
   display: grid;
-  gap: 0.2rem;
-  grid-template-columns: auto minmax(0, 1fr);
-  min-height: 4.25rem;
-  padding: 0.75rem;
+  gap: 0.25rem 0.8rem;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  min-height: 5.5rem;
+  padding: 0.95rem;
   text-decoration: none;
 }
 
@@ -165,22 +165,37 @@
 .river-mode-button.is-active {
   background: #e8f4f7;
   border-color: var(--river-water);
-  box-shadow: inset 4px 0 0 var(--river-water);
+  box-shadow:
+    inset 5px 0 0 var(--river-water),
+    0 6px 14px rgba(28, 43, 53, 0.08);
 }
 
 .river-mode-button i {
+  align-items: center;
+  background: #eef6f7;
+  border-radius: 999px;
   color: var(--river-water);
-  font-size: 1.1rem;
+  display: inline-flex;
+  font-size: 1rem;
   grid-row: span 2;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
 }
 
 .river-mode-button span {
+  align-self: end;
+  display: block;
   font-weight: 900;
+  line-height: 1.15;
 }
 
 .river-mode-button small {
+  align-self: start;
   color: var(--river-muted);
-  font-size: 0.78rem;
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.25;
 }
 
 .river-briefing-layout {
@@ -208,6 +223,36 @@
 .quick-card-grid {
   display: grid;
   gap: 1rem;
+}
+
+.route-schematic {
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(15, 120, 145, 0.12), rgba(15, 120, 145, 0.04)),
+    #ffffff;
+  border: 1px solid var(--river-line);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0.85rem;
+}
+
+.route-schematic span {
+  background: #ffffff;
+  border: 1px solid var(--river-line);
+  border-radius: 999px;
+  color: var(--river-ink);
+  font-size: 0.84rem;
+  font-weight: 900;
+  line-height: 1.15;
+  padding: 0.45rem 0.6rem;
+}
+
+.route-schematic i {
+  color: var(--river-water-dark);
+  font-size: 0.85rem;
 }
 
 .route-card,
@@ -326,9 +371,16 @@
   padding: 1rem;
 }
 
-.question-checklist p {
+.question-summary p {
   color: var(--river-muted);
   margin: 0.45rem 0 0;
+}
+
+.question-summary ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.45rem 0 0;
+  padding-left: 1.25rem;
 }
 
 .coach-briefing-tool,
@@ -395,6 +447,29 @@
 .quick-card-section ol {
   margin-bottom: 0;
   padding-left: 1.25rem;
+}
+
+.quick-checklist {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.quick-checklist li {
+  align-items: start;
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: 1rem minmax(0, 1fr);
+}
+
+.quick-checklist span {
+  border: 2px solid var(--river-ink);
+  border-radius: 3px;
+  display: inline-block;
+  height: 0.85rem;
+  margin-top: 0.2rem;
+  width: 0.85rem;
 }
 
 .print-guide-button {
@@ -477,6 +552,23 @@
 .river-map-tools button.is-active {
   background: #fff7ed;
   border-color: var(--river-caution);
+}
+
+.river-map-back {
+  align-items: center;
+  background: #ffffff;
+  border: 0;
+  border-top: 1px solid var(--river-line);
+  color: var(--river-water-dark);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-weight: 900;
+  gap: 0.45rem;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
 }
 
 .river-briefing-map {
@@ -578,11 +670,15 @@
 .river-mode-button:focus-visible,
 .route-map-link:focus-visible,
 .route-check input:focus-visible,
+.route-card:focus-visible,
 .coach-tool-grid input:focus-visible,
 .coach-tool-grid select:focus-visible,
 .coach-reminders input:focus-visible,
 .print-guide-button:focus-visible,
-.river-map-tools button:focus-visible {
+.river-map-tools button:focus-visible,
+.river-map-back:focus-visible,
+.river-map-status:focus-visible,
+.river-mode-panel h2:focus-visible {
   outline: 3px solid rgba(37, 99, 235, 0.38);
   outline-offset: 2px;
 }
@@ -637,6 +733,17 @@
     display: none;
   }
 
+  .route-schematic {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .route-schematic i {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
   .river-briefing-map {
     aspect-ratio: auto;
     min-height: 20rem;
@@ -665,5 +772,24 @@
   .question-checklist {
     break-inside: avoid;
     box-shadow: none;
+  }
+
+  body.printing-quick-card .river-briefing-hero,
+  body.printing-quick-card .whole-route-brief,
+  body.printing-quick-card .river-mode-selector,
+  body.printing-quick-card .river-map-reference,
+  body.printing-quick-card .river-briefing-footer-actions,
+  body.printing-quick-card .river-mode-panel:not(.printable-card) {
+    display: none !important;
+  }
+
+  body.printing-quick-card .river-briefing-layout,
+  body.printing-quick-card .river-briefing-content,
+  body.printing-quick-card .printable-card {
+    display: block !important;
+  }
+
+  body.printing-quick-card .quick-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

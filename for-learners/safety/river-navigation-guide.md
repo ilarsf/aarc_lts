@@ -14,7 +14,7 @@ nav_order: 4
 
 <div class="river-briefing-page" data-river-navigation-guide data-course-url="{{ '/assets/data/river-navigation-guide.json' | relative_url }}">
   <section class="river-briefing-hero" aria-labelledby="river-briefing-title">
-    <p class="river-briefing-eyebrow">AARC Learn-to-Scull</p>
+    <p class="river-briefing-eyebrow">Safety preparation</p>
     <h1 id="river-briefing-title"><i class="fas fa-water"></i> AARC River Navigation Guide</h1>
     <p class="lead">Use this before practice to understand the coached route. Your coach may shorten, extend, or change the route based on river conditions and session goals.</p>
 
@@ -43,22 +43,22 @@ nav_order: 4
   </section>
 
   <nav class="river-mode-selector" aria-label="Route briefing modes">
-    <a href="#learn-route" class="river-mode-button is-active" data-mode-button="learn" aria-selected="true">
+    <a href="#learn-route" class="river-mode-button is-active" data-mode-button="learn" aria-current="true">
       <i class="fas fa-route"></i>
       <span>Learn the route</span>
       <small>First-time sequence</small>
     </a>
-    <a href="#bridge-reference" class="river-mode-button" data-mode-button="bridge" aria-selected="false">
+    <a href="#bridge-reference" class="river-mode-button" data-mode-button="bridge">
       <i class="fas fa-archway"></i>
       <span>Bridge reference</span>
       <small>Openings and current</small>
     </a>
-    <a href="#coach-briefing" class="river-mode-button" data-mode-button="coach" aria-selected="false">
+    <a href="#coach-briefing" class="river-mode-button" data-mode-button="coach">
       <i class="fas fa-clipboard-list"></i>
       <span>Coach briefing</span>
       <small>Script and prompts</small>
     </a>
-    <a href="#printable-card" class="river-mode-button" data-mode-button="print" aria-selected="false">
+    <a href="#printable-card" class="river-mode-button" data-mode-button="print">
       <i class="fas fa-print"></i>
       <span>Quick card</span>
       <small>Printable review</small>
@@ -74,6 +74,20 @@ nav_order: 4
           <p>Read these six cards before launch. A learner should be able to explain the side of the river, the turn behavior, and the main hazards without touching the map.</p>
         </div>
 
+        <div class="route-schematic" role="img" aria-label="Simplified route: dock to outbound side, caution zone, turn, return side, and dock">
+          <span>Dock</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Outbound side</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Caution</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Turn</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Return side</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Dock</span>
+        </div>
+
         <div class="route-card-list">
           <article class="route-card is-active" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="launch downstream">
             <div class="route-card-header">
@@ -83,7 +97,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>At the AARC dock, before adding pressure.</dd>
+                <dd>At the AARC dock, before adding pressure or leaving the coached launch area.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -114,7 +128,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Just downriver from the dock, where learners begin building a predictable line.</dd>
+                <dd>Just downriver from the AARC dock, near the first tree-cover/fallen-tree caution marker. Your coach will confirm how far from shore to hold the line.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -145,7 +159,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Near common caution areas such as weeds, island edges, and shoreline traffic.</dd>
+                <dd>At the island-and-weeds stretch and nearby shoreline weed patches on the small-round line.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -176,7 +190,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>At the coach-assigned downstream turn cue.</dd>
+                <dd>At the small-round downstream turn cue, before the permanent no-row line and crossing area.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -184,7 +198,7 @@ nav_order: 4
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Other boats turning, shells approaching from behind, and the permanent no-row area.</dd>
+                <dd>Other boats turning, shells approaching from behind, and the permanent no-row area. The no-row area is the hard limit; do not drift into it while setting up the turn.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
@@ -207,7 +221,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Across the river-turn sequence for the assigned small-round route.</dd>
+                <dd>Between the downstream turn cue and the return-side cue on the assigned small-round crossing.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -238,7 +252,7 @@ nav_order: 4
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Back near the dock and coach launch traffic.</dd>
+                <dd>Back at the AARC dock approach, where returning shells, coach launches, and dock traffic mix.</dd>
               </div>
               <div>
                 <dt>Do</dt>
@@ -264,7 +278,9 @@ nav_order: 4
 
         <section class="question-checklist" aria-labelledby="question-checklist-heading">
           <h3 id="question-checklist-heading">Questions to ask before launch</h3>
-          <p data-question-summary>No questions selected yet.</p>
+          <div class="question-summary" data-question-summary aria-live="polite">
+            <p>No questions selected yet.</p>
+          </div>
         </section>
       </section>
 
@@ -278,7 +294,7 @@ nav_order: 4
         <div class="route-card-list route-card-list--compact">
           <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-9">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 1</span>
+              <span class="route-card-kicker">Bridge 1: first bridge approach</span>
               <h3>Set up before the structure</h3>
             </div>
             <dl class="route-card-facts">
@@ -300,7 +316,7 @@ nav_order: 4
 
           <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-2 tree-branches correct-your-angle pass-here">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 2</span>
+              <span class="route-card-kicker">Bridge 2: outbound opening</span>
               <h3>Outbound opening and angle</h3>
             </div>
             <dl class="route-card-facts">
@@ -322,7 +338,7 @@ nav_order: 4
 
           <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-4 current">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 3</span>
+              <span class="route-card-kicker">Bridge 3: current and drift</span>
               <h3>Current and drift</h3>
             </div>
             <dl class="route-card-facts">
@@ -344,7 +360,7 @@ nav_order: 4
 
           <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-3 river-turn-10">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 4</span>
+              <span class="route-card-kicker">Bridge 4: return opening</span>
               <h3>Return opening and turn cue</h3>
             </div>
             <dl class="route-card-facts">
@@ -399,7 +415,7 @@ nav_order: 4
             <label><input type="checkbox" data-coach-reminder value="hold the correct side" checked> Hold the correct side</label>
             <label><input type="checkbox" data-coach-reminder value="wait for coach instruction if uncertain" checked> Wait if uncertain</label>
           </div>
-          <output class="coach-generated-prompt" data-coach-prompt>Today we will row the small round. Turn at the coach-assigned turn cue. Do not go beyond the coach-assigned limit. Remember to stop before every turn, scan before crossing, hold the correct side, and wait for coach instruction if uncertain.</output>
+          <output class="coach-generated-prompt" data-coach-prompt aria-live="polite">Today we will row the small round. Turn at the coach-assigned turn cue. Do not go beyond the coach-assigned limit. Remember to stop before every turn, scan before crossing, hold the correct side, and wait for coach instruction if uncertain.</output>
         </form>
 
         <div class="coach-script-list">
@@ -444,12 +460,21 @@ nav_order: 4
 
         <div class="quick-card-grid">
           <section class="quick-card-section">
-            <h3>Rules</h3>
-            <ul>
-              <li>Stay right.</li>
-              <li>Pass left.</li>
-              <li>Stop before turning.</li>
-              <li>Coach sets the course.</li>
+            <h3>Before launch</h3>
+            <ul class="quick-checklist">
+              <li><span aria-hidden="true"></span>Route today?</li>
+              <li><span aria-hidden="true"></span>Turn cue?</li>
+              <li><span aria-hidden="true"></span>Do-not-go-beyond point?</li>
+              <li><span aria-hidden="true"></span>Bridge or caution area?</li>
+            </ul>
+          </section>
+          <section class="quick-card-section">
+            <h3>On the water</h3>
+            <ul class="quick-checklist">
+              <li><span aria-hidden="true"></span>Stay right.</li>
+              <li><span aria-hidden="true"></span>Pass left.</li>
+              <li><span aria-hidden="true"></span>Stop before turning.</li>
+              <li><span aria-hidden="true"></span>Coach sets the course.</li>
             </ul>
           </section>
           <section class="quick-card-section">
@@ -464,21 +489,12 @@ nav_order: 4
             </ol>
           </section>
           <section class="quick-card-section">
-            <h3>Ask before launch</h3>
-            <ul>
-              <li>What route are we using today?</li>
-              <li>Where is the turn cue?</li>
-              <li>What is the do-not-go-beyond point?</li>
-              <li>What bridge opening or caution area matters today?</li>
-            </ul>
-          </section>
-          <section class="quick-card-section">
             <h3>If uncertain</h3>
-            <ul>
-              <li>Stop.</li>
-              <li>Hold position if safe.</li>
-              <li>Scan traffic.</li>
-              <li>Look for coach instruction.</li>
+            <ul class="quick-checklist">
+              <li><span aria-hidden="true"></span>Stop.</li>
+              <li><span aria-hidden="true"></span>Hold position if safe.</li>
+              <li><span aria-hidden="true"></span>Scan traffic.</li>
+              <li><span aria-hidden="true"></span>Look for coach instruction.</li>
             </ul>
           </section>
         </div>
@@ -494,7 +510,7 @@ nav_order: 4
       <details class="river-map-details" open>
         <summary><i class="fas fa-map-location-dot"></i> Map reference</summary>
         <div class="river-map-reference-body">
-          <p class="river-map-status" data-map-status aria-live="polite">Loading the optional route map...</p>
+          <p class="river-map-status" data-map-status role="status" aria-live="polite">Loading the optional route map...</p>
           <div class="river-map-tools" aria-label="Map tools">
             <button type="button" data-map-action="active"><i class="fas fa-crosshairs"></i> Reset to active card</button>
             <button type="button" data-map-action="full"><i class="fas fa-map"></i> Show full route</button>
@@ -502,6 +518,7 @@ nav_order: 4
           <div class="river-briefing-map" data-map aria-label="Optional interactive map of the AARC river route">
             <p class="river-map-fallback">The route briefing above is usable without the map. Review the cards, confirm the assigned route with your coach, and stay inside the session limits.</p>
           </div>
+          <button type="button" class="river-map-back" data-map-back hidden><i class="fas fa-arrow-up"></i> Back to card</button>
         </div>
       </details>
     </aside>

@@ -66,6 +66,7 @@
       mapStatus: root.querySelector('[data-map-status]'),
       showActiveButton: root.querySelector('[data-map-action="active"]'),
       showFullButton: root.querySelector('[data-map-action="full"]'),
+      mapBackButton: root.querySelector('[data-map-back]'),
       questionInputs: Array.from(root.querySelectorAll('[data-question-checkbox]')),
       questionSummary: root.querySelector('[data-question-summary]'),
       coachRouteMap: root.querySelector('[data-coach-route-map]'),
@@ -83,7 +84,8 @@
     ui.modeButtons.forEach(function (button) {
       button.addEventListener('click', function (event) {
         event.preventDefault();
-        setMode(state, button.getAttribute('data-mode-button'), true);
+        setMode(state, button.getAttribute('data-mode-button'), true, true);
+        hideMapBackButton(state);
       });
     });
 
@@ -96,7 +98,10 @@
         setActiveCard(state, card);
         state.showFullRoute = false;
         renderMap(state);
+        openMapDetails(state);
+        showMapBackButton(state);
         if (ui.mapRegion) ui.mapRegion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        focusMapStatus(state);
       });
     });
 
@@ -114,6 +119,15 @@
       });
     }
 
+    if (ui.mapBackButton) {
+      ui.mapBackButton.addEventListener('click', function () {
+        if (!state.activeCard) return;
+        state.activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        state.activeCard.setAttribute('tabindex', '-1');
+        state.activeCard.focus({ preventScroll: true });
+      });
+    }
+
     ui.questionInputs.forEach(function (input) {
       input.addEventListener('change', function () {
         updateQuestionSummary(state);
@@ -122,13 +136,15 @@
 
     [ui.coachRouteMap, ui.coachTurn, ui.coachLimit].forEach(function (field) {
       if (!field) return;
-      field.addEventListener('input', function () {
+      const updateCoachField = function () {
         updateCoachPrompt(state);
         if (field === ui.coachRouteMap) {
           state.coachMapId = field.value;
           renderMap(state);
         }
-      });
+      };
+      field.addEventListener('input', updateCoachField);
+      if (field.tagName === 'SELECT') field.addEventListener('change', updateCoachField);
     });
 
     ui.coachReminders.forEach(function (input) {
@@ -139,9 +155,14 @@
 
     if (ui.printButton) {
       ui.printButton.addEventListener('click', function () {
+        document.body.classList.add('printing-quick-card');
         window.print();
       });
     }
+
+    window.addEventListener('afterprint', function () {
+      document.body.classList.remove('printing-quick-card');
+    });
 
     if (ui.mapDetails) {
       ui.mapDetails.addEventListener('toggle', function () {
@@ -155,7 +176,7 @@
     }
   }
 
-  function setMode(state, mode, updateHash) {
+  function setMode(state, mode, updateHash, moveFocus) {
     const nextMode = mode || DEFAULT_MODE;
     state.mode = nextMode;
     state.showFullRoute = nextMode === 'coach';
@@ -163,7 +184,11 @@
     state.ui.modeButtons.forEach(function (button) {
       const isActive = button.getAttribute('data-mode-button') === nextMode;
       button.classList.toggle('is-active', isActive);
-      button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) {
+        button.setAttribute('aria-current', 'true');
+      } else {
+        button.removeAttribute('aria-current');
+      }
     });
 
     state.ui.panels.forEach(function (panel) {
@@ -185,6 +210,7 @@
     }
 
     renderMap(state);
+    if (moveFocus) focusActivePanelHeading(state);
   }
 
   function setActiveCard(state, card) {
@@ -408,9 +434,22 @@
       return input.value;
     });
 
-    state.ui.questionSummary.textContent = selected.length
-      ? selected.length + ' question' + (selected.length === 1 ? '' : 's') + ' to ask: ' + selected.join(' ')
-      : 'No questions selected yet.';
+    if (!selected.length) {
+      const message = document.createElement('p');
+      message.textContent = 'No questions selected yet.';
+      state.ui.questionSummary.replaceChildren(message);
+      return;
+    }
+
+    const heading = document.createElement('p');
+    heading.textContent = selected.length + ' question' + (selected.length === 1 ? '' : 's') + ' to ask:';
+    const list = document.createElement('ul');
+    selected.forEach(function (question) {
+      const item = document.createElement('li');
+      item.textContent = question;
+      list.appendChild(item);
+    });
+    state.ui.questionSummary.replaceChildren(heading, list);
   }
 
   function updateCoachPrompt(state) {
@@ -442,6 +481,9 @@
   function cardLabel(card) {
     const kicker = card.querySelector('.route-card-kicker')?.textContent.trim();
     const title = card.querySelector('h3')?.textContent.trim();
+    if (kicker && /^\d+\s+of\s+\d+$/i.test(kicker)) {
+      return 'card ' + kicker + ': ' + title;
+    }
     return [kicker, title].filter(Boolean).join(': ');
   }
 
@@ -451,6 +493,38 @@
 
   function setMapStatus(state, message) {
     if (state.ui.mapStatus) state.ui.mapStatus.textContent = message;
+  }
+
+  function openMapDetails(state) {
+    if (!state.ui.mapDetails || state.ui.mapDetails.open) return;
+    state.ui.mapDetails.open = true;
+  }
+
+  function focusMapStatus(state) {
+    if (!state.ui.mapStatus) return;
+    state.ui.mapStatus.setAttribute('tabindex', '-1');
+    window.setTimeout(function () {
+      state.ui.mapStatus.focus({ preventScroll: true });
+    }, 250);
+  }
+
+  function showMapBackButton(state) {
+    if (state.ui.mapBackButton) state.ui.mapBackButton.hidden = false;
+  }
+
+  function hideMapBackButton(state) {
+    if (state.ui.mapBackButton) state.ui.mapBackButton.hidden = true;
+  }
+
+  function focusActivePanelHeading(state) {
+    const panel = state.ui.panels.find(function (item) {
+      return item.getAttribute('data-mode-panel') === state.mode;
+    });
+    if (!panel) return;
+    const heading = panel.querySelector('h2, h3');
+    if (!heading) return;
+    heading.setAttribute('tabindex', '-1');
+    heading.focus();
   }
 
   function toLatLng(coord) {
