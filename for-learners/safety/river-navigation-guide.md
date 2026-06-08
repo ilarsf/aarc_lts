@@ -64,13 +64,6 @@ nav_order: 4
     </a>
   </nav>
 
-  <section class="question-checklist route-self-check-summary" data-question-checklist aria-labelledby="route-self-check-heading">
-    <h2 id="route-self-check-heading">Self-checks before launch</h2>
-    <div class="question-summary" data-question-summary aria-live="polite">
-      <p>Answer the self-checks on the active route cards before launch.</p>
-    </div>
-  </section>
-
   <div class="river-briefing-layout">
     <div class="river-briefing-content">
       <section id="small-round-route" class="river-mode-panel" data-mode-panel="small-round" aria-labelledby="small-round-route-heading">
@@ -95,7 +88,7 @@ nav_order: 4
         </div>
 
         <div class="route-card-list">
-          <article class="route-card is-active" data-route-card data-mode="small-round" data-route-step-id="sr-01-launch" data-self-check-question="Which side should I settle onto after launch?" data-guide-map="small-round-first-sunday" data-place-ids="launch downstream">
+          <article class="route-card is-active" data-route-card data-mode="small-round" data-route-step-id="sr-01-launch" data-guide-map="small-round-first-sunday" data-place-ids="launch downstream">
             <div class="route-card-header">
               <span class="route-card-kicker">1 of 6</span>
               <h3>Launch from AARC dock</h3>
@@ -125,7 +118,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-02-downstream-leg" data-self-check-question="What shoreline cue marks the downstream leg today?" data-guide-map="small-round-first-sunday" data-place-ids="downstream fallen-tree-3 river-turn-5">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-02-downstream-leg" data-guide-map="small-round-first-sunday" data-place-ids="downstream fallen-tree-3 river-turn-5">
             <div class="route-card-header">
               <span class="route-card-kicker">2 of 6</span>
               <h3>Downstream leg: dock to first turn line</h3>
@@ -155,7 +148,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-03-downstream-turn" data-self-check-question="What exact downstream cue are we using today?" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-5 river-turn-6" data-line-ids="lts-first-weekend">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-03-downstream-turn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-5 river-turn-6" data-line-ids="lts-first-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">3 of 6</span>
               <h3>Downstream turn line</h3>
@@ -185,7 +178,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-04-upstream-leg" data-self-check-question="What should I do if a paddler or swimmer blocks the line?" data-guide-map="small-round-first-sunday" data-place-ids="island-weeds weeds-9 fallen-tree-2 fallen-trees river-turn-7">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-04-upstream-leg" data-guide-map="small-round-first-sunday" data-place-ids="island-weeds weeds-9 fallen-tree-2 fallen-trees river-turn-7">
             <div class="route-card-header">
               <span class="route-card-kicker">4 of 6</span>
               <h3>Upstream leg: downstream turn line to upstream turn line</h3>
@@ -215,7 +208,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-05-upstream-turn" data-self-check-question="What exact upstream turn cue are we using today?" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-7 river-turn-8" data-line-ids="lts-first-weekend-2">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-05-upstream-turn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-7 river-turn-8" data-line-ids="lts-first-weekend-2">
             <div class="route-card-header">
               <span class="route-card-kicker">5 of 6</span>
               <h3>Upstream turn line</h3>
@@ -245,7 +238,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-06-dock-return" data-self-check-question="Which dock approach does the coach want today?" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-8 docking">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-06-dock-return" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-8 docking">
             <div class="route-card-header">
               <span class="route-card-kicker">6 of 6</span>
               <h3>Return to dock</h3>
@@ -299,7 +292,7 @@ nav_order: 4
         </div>
 
         <div class="route-card-list">
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-01-launch" data-self-check-question="Which side should I settle onto after launch?" data-guide-map="below-m14-round" data-place-ids="launch downstream">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-01-launch" data-guide-map="below-m14-round" data-place-ids="launch downstream">
             <div class="route-card-header">
               <span class="route-card-kicker">1 of 7</span>
               <h3>Launch from AARC dock</h3>
@@ -325,7 +318,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-02-downstream-turn" data-self-check-question="What downstream turn line did the coach assign for this round?" data-guide-map="below-m14-round" data-place-ids="river-turn-5 river-turn-6" data-line-ids="lts-first-weekend">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-02-downstream-turn" data-guide-map="below-m14-round" data-place-ids="river-turn-5 river-turn-6" data-line-ids="lts-first-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">2 of 7</span>
               <h3>Downstream turn line</h3>
@@ -351,7 +344,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-03-upstream-leg" data-self-check-question="What tells me to continue past the small-round upstream turn today?" data-guide-map="below-m14-round" data-place-ids="river-turn-7 fallen-trees-2 weeds-2">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-03-upstream-leg" data-guide-map="below-m14-round" data-place-ids="river-turn-7 fallen-trees-2 weeds-2">
             <div class="route-card-header">
               <span class="route-card-kicker">3 of 7</span>
               <h3>Upstream leg past the small-round turn</h3>
@@ -377,7 +370,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-04-approach-m14-limit" data-self-check-question="How close to M-14 should we get before setting up the turn?" data-guide-map="below-m14-round" data-place-ids="river-turn-9">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-04-approach-m14-limit" data-guide-map="below-m14-round" data-place-ids="river-turn-9">
             <div class="route-card-header">
               <span class="route-card-kicker">4 of 7</span>
               <h3>Approach the M-14 limit</h3>
@@ -403,7 +396,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-05-below-m14-turn" data-self-check-question="What is the coach-assigned cue for the turn below M-14?" data-self-check-placeholder="Example: turn at the coach-assigned cue below M-14" data-guide-map="below-m14-round" data-place-ids="river-turn-9 river-turn-10" data-line-ids="lts-saturday-second-weekend">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-05-below-m14-turn" data-guide-map="below-m14-round" data-place-ids="river-turn-9 river-turn-10" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">5 of 7</span>
               <h3>Below-M-14 turn</h3>
@@ -429,7 +422,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-06-return-leg" data-self-check-question="How do I return without cutting across another course line?" data-guide-map="below-m14-round" data-place-ids="river-turn-10 stay-on-your-side-of-the-corner weeds-8 river-turn-8">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-06-return-leg" data-guide-map="below-m14-round" data-place-ids="river-turn-10 stay-on-your-side-of-the-corner weeds-8 river-turn-8">
             <div class="route-card-header">
               <span class="route-card-kicker">6 of 7</span>
               <h3>Return leg toward the dock</h3>
@@ -455,7 +448,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-07-dock" data-self-check-question="Which dock approach does the coach want after this route?" data-guide-map="below-m14-round" data-place-ids="docking">
+          <article class="route-card" data-route-card data-mode="below-m14-round" data-route-step-id="bm14-07-dock" data-guide-map="below-m14-round" data-place-ids="docking">
             <div class="route-card-header">
               <span class="route-card-kicker">7 of 7</span>
               <h3>Return to dock</h3>
@@ -526,7 +519,7 @@ nav_order: 4
 
         <h3 class="route-subheading">Bridges upstream</h3>
         <div class="route-card-list route-card-list--compact">
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-approach-below-m14" data-self-check-question="Did the coach assign the Bridge round and the named bridge sequence?" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-9" data-line-ids="lts-saturday-second-weekend">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-approach-below-m14" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-9" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">Approach</span>
               <h3>Set up below M-14</h3>
@@ -548,7 +541,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u1-m14" data-self-check-question="Which side of the M-14 pillar did the coach assign upstream?" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-2">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u1-m14" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-2">
             <div class="route-card-header">
               <span class="route-card-kicker">U1</span>
               <h3>M-14 bridge</h3>
@@ -574,7 +567,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u2-barton-shore" data-self-check-question="How do I keep the line through Barton Shore Drive after clearing M-14?" data-guide-map="bridge-navigation-map" data-place-ids="correct-your-angle">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u2-barton-shore" data-guide-map="bridge-navigation-map" data-place-ids="correct-your-angle">
             <div class="route-card-header">
               <span class="route-card-kicker">U2</span>
               <h3>Barton Shore Drive bridge</h3>
@@ -600,7 +593,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u3-railroad-upstream" data-self-check-question="What is the Railroad bridge upstream opening today?" data-guide-map="bridge-navigation-map" data-place-ids="pass-here">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u3-railroad-upstream" data-guide-map="bridge-navigation-map" data-place-ids="pass-here">
             <div class="route-card-header">
               <span class="route-card-kicker">U3</span>
               <h3>Railroad bridge: upstream opening</h3>
@@ -626,7 +619,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u4-trail-bridge" data-self-check-question="Which side of the Barton Nature Area Trail bridge pillar did the coach assign?" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar wrong-side-of-the-pillar">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-u4-trail-bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar wrong-side-of-the-pillar">
             <div class="route-card-header">
               <span class="route-card-kicker">U4</span>
               <h3>Barton Nature Area Trail bridge</h3>
@@ -655,7 +648,7 @@ nav_order: 4
 
         <h3 class="route-subheading">Bridges downstream</h3>
         <div class="route-card-list route-card-list--compact">
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d1-trail-bridge" data-self-check-question="What return line did the coach assign at the Barton Nature Area Trail bridge?" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-4">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d1-trail-bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-4">
             <div class="route-card-header">
               <span class="route-card-kicker">D1</span>
               <h3>Barton Nature Area Trail bridge</h3>
@@ -681,7 +674,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d2-railroad-downstream" data-self-check-question="What is the Railroad bridge downstream opening today?" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-3">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d2-railroad-downstream" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-3">
             <div class="route-card-header">
               <span class="route-card-kicker">D2</span>
               <h3>Railroad bridge: downstream opening</h3>
@@ -707,7 +700,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d3-barton-shore" data-self-check-question="How do I keep the return side through Barton Shore Drive?" data-guide-map="bridge-navigation-map" data-place-ids="barton-shore-drive-return">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d3-barton-shore" data-guide-map="bridge-navigation-map" data-place-ids="barton-shore-drive-return">
             <div class="route-card-header">
               <span class="route-card-kicker">D3</span>
               <h3>Barton Shore Drive bridge</h3>
@@ -729,7 +722,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d4-m14" data-self-check-question="Which side of the M-14 pillar did the coach assign downstream?" data-guide-map="bridge-navigation-map" data-place-ids="current">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-d4-m14" data-guide-map="bridge-navigation-map" data-place-ids="current">
             <div class="route-card-header">
               <span class="route-card-kicker">D4</span>
               <h3>M-14 bridge</h3>
@@ -755,7 +748,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-clear-below-m14" data-self-check-question="Where do I clear below M-14 before regrouping or returning to the lower course?" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-10" data-line-ids="lts-saturday-second-weekend">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="br-clear-below-m14" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-10" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">Clear</span>
               <h3>Clear below M-14</h3>
@@ -805,7 +798,7 @@ nav_order: 4
         </div>
 
         <div class="route-card-list route-card-list--compact">
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-01-launch-downstream" data-self-check-question="What full-round route limit did the coach assign before launch?" data-guide-map="full-round-second-sunday" data-place-ids="launch downstream">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-01-launch-downstream" data-guide-map="full-round-second-sunday" data-place-ids="launch downstream">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 1</span>
               <h3>Launch and downstream side</h3>
@@ -827,7 +820,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-02-argo-boundary" data-self-check-question="Where is the Argo-side no-row boundary if the coach uses it today?" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-3 river-turn-4" data-line-ids="no-rowing-beyond-this-point">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-02-argo-boundary" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-3 river-turn-4" data-line-ids="no-rowing-beyond-this-point">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 2</span>
               <h3>Argo-side turn / boundary if assigned</h3>
@@ -849,7 +842,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-03-upstream-extension" data-self-check-question="What tells me to continue through the below-M-14 extension today?" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-7 fallen-trees-2 weeds-2" data-line-ids="lts-first-weekend-2">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-03-upstream-extension" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-7 fallen-trees-2 weeds-2" data-line-ids="lts-first-weekend-2">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 3</span>
               <h3>Upstream extension through the below-M-14 round</h3>
@@ -871,7 +864,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-04-bridges-upstream" data-self-check-question="Can I name the upstream bridge sequence before reaching M-14?" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-9 bridge-pillar-2 correct-your-angle pass-here bridge-pillar" data-line-ids="lts-saturday-second-weekend">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-04-bridges-upstream" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-9 bridge-pillar-2 correct-your-angle pass-here bridge-pillar" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 4</span>
               <h3>Bridges upstream</h3>
@@ -893,7 +886,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-05-trail-bridge-turn" data-self-check-question="Where is the coach-assigned turn above the Barton Nature Area Trail bridge?" data-guide-map="full-round-second-sunday" data-place-ids="sharp-turn tree-branch river-turn river-turn-2 good-place-for-a-break" data-line-ids="end-point">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-05-trail-bridge-turn" data-guide-map="full-round-second-sunday" data-place-ids="sharp-turn tree-branch river-turn river-turn-2 good-place-for-a-break" data-line-ids="end-point">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 5</span>
               <h3>Full-route bend and Barton Nature Area Trail bridge turn area</h3>
@@ -915,7 +908,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-06-return-leg" data-self-check-question="What return-side line should I hold after the full-route turn?" data-guide-map="full-round-second-sunday" data-place-ids="fallen-trees-corner fallen-tree fallen-tree-4 fallen-trees-3">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-06-return-leg" data-guide-map="full-round-second-sunday" data-place-ids="fallen-trees-corner fallen-tree fallen-tree-4 fallen-trees-3">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 6</span>
               <h3>Return leg toward bridge section</h3>
@@ -937,7 +930,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-07-bridges-downstream" data-self-check-question="Can I name the downstream bridge sequence before returning below M-14?" data-guide-map="full-round-second-sunday" data-place-ids="bridge-pillar-4 bridge-pillar-3 barton-shore-drive-return current river-turn-10" data-line-ids="lts-saturday-second-weekend">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-07-bridges-downstream" data-guide-map="full-round-second-sunday" data-place-ids="bridge-pillar-4 bridge-pillar-3 barton-shore-drive-return current river-turn-10" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 7</span>
               <h3>Bridges downstream</h3>
@@ -959,7 +952,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-08-dock-return" data-self-check-question="What lower-course traffic should I expect on the return toward dock?" data-guide-map="full-round-second-sunday" data-place-ids="stay-on-your-side-of-the-corner weeds-8 river-turn-8" data-line-ids="lts-first-weekend-2">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-08-dock-return" data-guide-map="full-round-second-sunday" data-place-ids="stay-on-your-side-of-the-corner weeds-8 river-turn-8" data-line-ids="lts-first-weekend-2">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 8</span>
               <h3>Return toward dock</h3>
@@ -981,7 +974,7 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-09-docking" data-self-check-question="Which dock approach does the coach want after the full round?" data-guide-map="full-round-second-sunday" data-place-ids="docking">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-09-docking" data-guide-map="full-round-second-sunday" data-place-ids="docking">
             <div class="route-card-header">
               <span class="route-card-kicker">Full 9</span>
               <h3>Docking</h3>

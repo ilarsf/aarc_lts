@@ -269,7 +269,6 @@
 .coach-briefing-tool,
 .coach-script,
 .quick-card-section,
-.question-checklist,
 .river-map-reference {
   background: #ffffff;
   border: 1px solid var(--river-line);
@@ -359,8 +358,6 @@
 .route-card h3,
 .coach-script h3,
 .quick-card-section h3,
-.question-checklist h3,
-.question-checklist h2,
 .coach-briefing-tool h3 {
   color: var(--river-water-dark);
   margin: 0;
@@ -386,86 +383,6 @@
 
 .route-card-facts dd {
   margin: 0;
-}
-
-.route-card-check {
-  background: #f8fafc;
-  border: 1px solid var(--river-line);
-  border-radius: 8px;
-  margin-top: 0.1rem;
-  padding: 0.85rem;
-}
-
-.route-card-check__prompt {
-  color: var(--river-caution);
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.route-card-check__question {
-  color: var(--river-ink);
-  display: block;
-  font-weight: 800;
-  margin-top: 0.2rem;
-}
-
-.route-card-check__answer {
-  border: 1px solid var(--river-line);
-  border-radius: 6px;
-  color: var(--river-ink);
-  display: block;
-  font: inherit;
-  margin-top: 0.65rem;
-  min-height: 2.55rem;
-  padding: 0.55rem 0.65rem;
-  width: 100%;
-}
-
-.route-card-check__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.65rem;
-}
-
-.route-card-check__button {
-  appearance: none;
-  background: var(--river-water-dark);
-  border: 1px solid var(--river-water-dark);
-  border-radius: 6px;
-  color: #ffffff;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 800;
-  min-height: 2.25rem;
-  padding: 0.45rem 0.7rem;
-}
-
-.route-card-check__button--secondary {
-  background: #ffffff;
-  border-color: var(--river-line);
-  color: var(--river-ink);
-}
-
-.route-card-check__status {
-  color: var(--river-muted);
-  font-weight: 800;
-  margin: 0.65rem 0 0;
-}
-
-.route-card-check.is-answered {
-  background: #f0fff4;
-  border-color: var(--river-rule);
-}
-
-.route-card-check.is-answered .route-card-check__status {
-  color: var(--river-rule);
-}
-
-.route-card-check.is-answered .route-card-check__status::before {
-  content: "\2713 ";
 }
 
 .route-map-link,
@@ -495,28 +412,6 @@
 .route-map-link:hover {
   background: var(--river-water);
   color: #ffffff;
-}
-
-.question-checklist {
-  border-left: 5px solid var(--river-caution);
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.route-self-check-summary {
-  margin-top: 0;
-}
-
-.question-summary p {
-  color: var(--river-muted);
-  margin: 0.45rem 0 0;
-}
-
-.question-summary ul {
-  display: grid;
-  gap: 0.35rem;
-  margin: 0.45rem 0 0;
-  padding-left: 1.25rem;
 }
 
 .coach-briefing-tool,
@@ -815,8 +710,6 @@
 
 .river-mode-button:focus-visible,
 .route-map-link:focus-visible,
-.route-card-check__answer:focus-visible,
-.route-card-check__button:focus-visible,
 .route-card:focus-visible,
 .coach-tool-grid input:focus-visible,
 .coach-tool-grid select:focus-visible,
@@ -868,8 +761,7 @@
   .bridge-name-key,
   .coach-briefing-tool,
   .coach-script,
-  .quick-card-section,
-  .question-checklist {
+  .quick-card-section {
     padding: 0.85rem;
   }
 
@@ -917,8 +809,7 @@
   .bridge-name-key,
   .coach-briefing-tool,
   .coach-script,
-  .quick-card-section,
-  .question-checklist {
+  .quick-card-section {
     break-inside: avoid;
     box-shadow: none;
   }
