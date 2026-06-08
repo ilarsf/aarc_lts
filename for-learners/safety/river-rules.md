@@ -89,7 +89,7 @@ nav_order: 3
         <div>
             <p class="rules-eyebrow">Next step</p>
             <h2 id="route-briefing-heading">Open the route briefing</h2>
-            <p>The redesigned navigation guide turns the route into learner cards, bridge reference cards, a coach briefing script, and a printable quick card. The map is attached as a secondary reference.</p>
+            <p>The navigation guide turns the route into learner cards, bridge reference cards, a coach briefing script, and a printable quick card. The map is attached as a secondary reference.</p>
         </div>
         <a href="{{ '/for-learners/safety/river-navigation-guide.html' | relative_url }}" class="btn btn-primary">
             Start AARC River Navigation Guide <i class="fas fa-arrow-right"></i>

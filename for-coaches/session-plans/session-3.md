@@ -151,7 +151,6 @@ Coaches should note each participant's:
 </div>
 
 <style>
-  /* Session-specific styles can be added here */
   .drill-sequence {
     background-color: #f8f9fa;
     border-left: 3px solid var(--theme-color);
