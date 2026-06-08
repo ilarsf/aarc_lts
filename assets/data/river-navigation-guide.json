@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "name": "AARC River Navigation Guide",
   "source": {
     "name": "Rowing Traffic on the Huron River",
@@ -1504,6 +1504,410 @@
     "break": "Regrouping point",
     "marker": "Map cue"
   },
+  "routes": [
+    {
+      "id": "small-round",
+      "title": "Small round",
+      "summary": "Dock-to-dock beginner round between the small-round downstream and upstream turn lines.",
+      "routeRanges": [
+        [
+          0,
+          280
+        ],
+        [
+          900,
+          1450
+        ],
+        [
+          6200,
+          6505
+        ]
+      ],
+      "stepIds": [
+        "sr-01-launch",
+        "sr-02-downstream-leg",
+        "sr-03-downstream-turn",
+        "sr-04-upstream-leg",
+        "sr-05-upstream-turn",
+        "sr-06-dock-return"
+      ]
+    },
+    {
+      "id": "bridge-round",
+      "title": "Bridge round",
+      "summary": "Bridge introduction route with separate upstream and downstream bridge sequences.",
+      "routeRanges": [
+        [
+          2180,
+          2820
+        ],
+        [
+          5160,
+          5520
+        ]
+      ],
+      "sections": [
+        {
+          "id": "bridge-upstream",
+          "title": "Bridges upstream",
+          "routeRanges": [
+            [
+              2180,
+              2820
+            ]
+          ],
+          "stepIds": [
+            "bu-01-approach",
+            "bu-02-first-opening",
+            "bu-03-branches",
+            "bu-04-angle",
+            "bu-05-pass-opening"
+          ]
+        },
+        {
+          "id": "bridge-downstream",
+          "title": "Bridges downstream",
+          "routeRanges": [
+            [
+              5160,
+              5520
+            ]
+          ],
+          "stepIds": [
+            "bd-01-return-setup",
+            "bd-02-current",
+            "bd-03-return-opening",
+            "bd-04-clear-area"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "full-round",
+      "title": "Full round",
+      "summary": "The full 6.5 km dock-to-Argo-to-Barton-to-dock route.",
+      "routeRanges": [
+        [
+          0,
+          6505
+        ]
+      ],
+      "stepIds": [
+        "fr-01-launch-downstream",
+        "fr-02-argo-boundary",
+        "fr-03-upstream-extension",
+        "fr-04-bridges-upstream",
+        "fr-05-tail-bridge-turn",
+        "fr-06-return-leg",
+        "fr-07-bridges-downstream",
+        "fr-08-dock-return",
+        "fr-09-docking"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "sr-01-launch",
+      "routeId": "small-round",
+      "sequence": 1,
+      "title": "Launch from AARC dock",
+      "placeIds": [
+        "launch",
+        "downstream"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "sr-02-downstream-leg",
+      "routeId": "small-round",
+      "sequence": 2,
+      "title": "Downstream leg",
+      "placeIds": [
+        "downstream",
+        "fallen-tree-3",
+        "river-turn-5"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "sr-03-downstream-turn",
+      "routeId": "small-round",
+      "sequence": 3,
+      "title": "Downstream turn line",
+      "placeIds": [
+        "river-turn-5",
+        "river-turn-6"
+      ],
+      "lineIds": [
+        "lts-first-weekend"
+      ]
+    },
+    {
+      "id": "sr-04-upstream-leg",
+      "routeId": "small-round",
+      "sequence": 4,
+      "title": "Upstream leg",
+      "placeIds": [
+        "island-weeds",
+        "weeds-9",
+        "fallen-tree-2",
+        "fallen-trees",
+        "river-turn-7"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "sr-05-upstream-turn",
+      "routeId": "small-round",
+      "sequence": 5,
+      "title": "Upstream turn line",
+      "placeIds": [
+        "river-turn-7",
+        "river-turn-8"
+      ],
+      "lineIds": [
+        "lts-first-weekend-2"
+      ]
+    },
+    {
+      "id": "sr-06-dock-return",
+      "routeId": "small-round",
+      "sequence": 6,
+      "title": "Return to dock",
+      "placeIds": [
+        "river-turn-8",
+        "docking"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bu-01-approach",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U1",
+      "title": "Bridge approach cue",
+      "placeIds": [
+        "river-turn-9"
+      ],
+      "lineIds": [
+        "lts-saturday-second-weekend"
+      ]
+    },
+    {
+      "id": "bu-02-first-opening",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U2",
+      "title": "First upstream opening",
+      "placeIds": [
+        "bridge-pillar-2"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bu-03-branches",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U3",
+      "title": "Branches on the upstream line",
+      "placeIds": [
+        "tree-branches"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bu-04-angle",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U4",
+      "title": "Correct angle before the opening",
+      "placeIds": [
+        "correct-your-angle"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bu-05-pass-opening",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-upstream",
+      "sequence": "U5",
+      "title": "Pass through the assigned opening",
+      "placeIds": [
+        "pass-here",
+        "wrong-side-of-the-pillar",
+        "bridge-pillar"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bd-01-return-setup",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "D1",
+      "title": "Return-side setup",
+      "placeIds": [
+        "bridge-pillar-4"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bd-02-current",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "D2",
+      "title": "Current and drift",
+      "placeIds": [
+        "current"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bd-03-return-opening",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "D3",
+      "title": "Return opening",
+      "placeIds": [
+        "bridge-pillar-3"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "bd-04-clear-area",
+      "routeId": "bridge-round",
+      "sectionId": "bridge-downstream",
+      "sequence": "D4",
+      "title": "Clear the bridge area",
+      "placeIds": [
+        "river-turn-10"
+      ],
+      "lineIds": [
+        "lts-saturday-second-weekend"
+      ]
+    },
+    {
+      "id": "fr-01-launch-downstream",
+      "routeId": "full-round",
+      "sequence": 1,
+      "title": "Launch and downstream side",
+      "placeIds": [
+        "launch",
+        "downstream"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "fr-02-argo-boundary",
+      "routeId": "full-round",
+      "sequence": 2,
+      "title": "Argo-side turn / boundary if assigned",
+      "placeIds": [
+        "river-turn-3",
+        "river-turn-4"
+      ],
+      "lineIds": [
+        "no-rowing-beyond-this-point"
+      ]
+    },
+    {
+      "id": "fr-03-upstream-extension",
+      "routeId": "full-round",
+      "sequence": 3,
+      "title": "Upstream extension past small-round limit",
+      "placeIds": [
+        "river-turn-7",
+        "fallen-trees-2",
+        "weeds-2"
+      ],
+      "lineIds": [
+        "lts-first-weekend-2"
+      ]
+    },
+    {
+      "id": "fr-04-bridges-upstream",
+      "routeId": "full-round",
+      "sequence": 4,
+      "title": "Bridges upstream",
+      "placeIds": [
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "pass-here"
+      ],
+      "lineIds": [
+        "lts-saturday-second-weekend"
+      ]
+    },
+    {
+      "id": "fr-05-tail-bridge-turn",
+      "routeId": "full-round",
+      "sequence": 5,
+      "title": "Full-route bend and Tail Bridge turn area",
+      "placeIds": [
+        "sharp-turn",
+        "tree-branch",
+        "river-turn",
+        "river-turn-2",
+        "good-place-for-a-break"
+      ],
+      "lineIds": [
+        "end-point"
+      ]
+    },
+    {
+      "id": "fr-06-return-leg",
+      "routeId": "full-round",
+      "sequence": 6,
+      "title": "Return leg toward bridge section",
+      "placeIds": [
+        "fallen-trees-corner",
+        "fallen-tree",
+        "fallen-tree-4",
+        "fallen-trees-3"
+      ],
+      "lineIds": []
+    },
+    {
+      "id": "fr-07-bridges-downstream",
+      "routeId": "full-round",
+      "sequence": 7,
+      "title": "Bridges downstream",
+      "placeIds": [
+        "bridge-pillar-4",
+        "current",
+        "bridge-pillar-3",
+        "river-turn-10"
+      ],
+      "lineIds": [
+        "lts-saturday-second-weekend"
+      ]
+    },
+    {
+      "id": "fr-08-dock-return",
+      "routeId": "full-round",
+      "sequence": 8,
+      "title": "Return toward dock",
+      "placeIds": [
+        "stay-on-your-side-of-the-corner",
+        "weeds-8",
+        "river-turn-8"
+      ],
+      "lineIds": [
+        "lts-first-weekend-2"
+      ]
+    },
+    {
+      "id": "fr-09-docking",
+      "routeId": "full-round",
+      "sequence": 9,
+      "title": "Docking",
+      "placeIds": [
+        "docking"
+      ],
+      "lineIds": []
+    }
+  ],
   "maps": [
     {
       "id": "small-round-first-sunday",
@@ -1627,7 +2031,6 @@
       ],
       "lineIds": [
         "lts-first-weekend",
-        "no-rowing-beyond-this-point",
         "lts-first-weekend-2"
       ],
       "gateNotes": [
@@ -1636,12 +2039,52 @@
           "note": "Small-round downstream crossing line."
         },
         {
-          "lineId": "no-rowing-beyond-this-point",
-          "note": "Permanent no-row line near Argo."
-        },
-        {
           "lineId": "lts-first-weekend-2",
           "note": "Small-round upstream crossing line."
+        }
+      ]
+    },
+    {
+      "id": "argo-boundary-reference",
+      "viewType": "reference",
+      "name": "Argo Boundary Reference",
+      "summary": "Coach-only reference for the permanent no-row boundary near Argo. This is not the default small-round turn cue unless assigned.",
+      "newToday": "the permanent downstream no-row boundary if the coach assigns it",
+      "routeRanges": [
+        [
+          520,
+          650
+        ]
+      ],
+      "keyPlaceIds": [
+        "river-turn-3",
+        "river-turn-4"
+      ],
+      "keyPlaceDetails": {
+        "river-turn-3": {
+          "sequence": 1,
+          "label": "Boundary approach",
+          "tags": [],
+          "isTurnPoint": true
+        },
+        "river-turn-4": {
+          "sequence": 2,
+          "label": "Boundary crossing cue",
+          "tags": [],
+          "isTurnPoint": true
+        }
+      },
+      "markerIds": [
+        "river-turn-3",
+        "river-turn-4"
+      ],
+      "lineIds": [
+        "no-rowing-beyond-this-point"
+      ],
+      "gateNotes": [
+        {
+          "lineId": "no-rowing-beyond-this-point",
+          "note": "Permanent no-row line near Argo."
         }
       ]
     },

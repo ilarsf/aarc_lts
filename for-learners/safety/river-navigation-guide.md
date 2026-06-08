@@ -28,146 +28,175 @@ nav_order: 4
 
   <section class="whole-route-brief" aria-labelledby="whole-route-heading">
     <div>
-      <p class="river-briefing-eyebrow">Whole route first</p>
-      <h2 id="whole-route-heading">The route story</h2>
-      <p>Learn the pattern before using the map: leave the dock under control, settle onto the correct side, scan mixed river traffic, stop before the turn, complete the river turn, and return to dock slowly.</p>
+      <p class="river-briefing-eyebrow">Whole course first</p>
+      <h2 id="whole-route-heading">Choose the course your coach assigned</h2>
+      <p>Use the route below only for the course named by your coach. Each course has its own order of turns, caution points, and map markers.</p>
     </div>
     <ol class="whole-route-steps">
-      <li><span>Dock</span></li>
-      <li><span>Travel side</span></li>
-      <li><span>Caution zone</span></li>
-      <li><span>Turn area</span></li>
-      <li><span>Return side</span></li>
-      <li><span>Dock</span></li>
+      <li><span>Small round</span></li>
+      <li><span>Bridge round</span></li>
+      <li><span>Full round</span></li>
+      <li><span>Coach card</span></li>
     </ol>
   </section>
 
-  <nav class="river-mode-selector" aria-label="Route briefing modes">
-    <a href="#learn-route" class="river-mode-button is-active" data-mode-button="learn" aria-current="true">
+  <nav class="river-mode-selector" aria-label="River course selector">
+    <a href="#small-round-route" class="river-mode-button is-active" data-mode-button="small-round" aria-current="true">
       <i class="fas fa-route"></i>
-      <span>Learn the route</span>
-      <small>First-time sequence</small>
+      <span>Small round</span>
+      <small>First learner round</small>
     </a>
-    <a href="#bridge-reference" class="river-mode-button" data-mode-button="bridge">
+    <a href="#bridge-round-route" class="river-mode-button" data-mode-button="bridge-round">
       <i class="fas fa-archway"></i>
-      <span>Bridge reference</span>
-      <small>Openings and current</small>
+      <span>Bridge round</span>
+      <small>Bridges upstream and downstream</small>
     </a>
-    <a href="#coach-briefing" class="river-mode-button" data-mode-button="coach">
+    <a href="#full-round-route" class="river-mode-button" data-mode-button="full-round">
+      <i class="fas fa-location-dot"></i>
+      <span>Full round</span>
+      <small>Full 6.5 km route</small>
+    </a>
+    <a href="#coach-quick-card" class="river-mode-button" data-mode-button="coach">
       <i class="fas fa-clipboard-list"></i>
-      <span>Coach briefing</span>
-      <small>Script and prompts</small>
-    </a>
-    <a href="#printable-card" class="river-mode-button" data-mode-button="print">
-      <i class="fas fa-print"></i>
-      <span>Quick card</span>
-      <small>Printable review</small>
+      <span>Coach / quick card</span>
+      <small>Briefing and print</small>
     </a>
   </nav>
 
   <div class="river-briefing-layout">
     <div class="river-briefing-content">
-      <section id="learn-route" class="river-mode-panel" data-mode-panel="learn" aria-labelledby="learn-route-heading">
+      <section id="small-round-route" class="river-mode-panel" data-mode-panel="small-round" aria-labelledby="small-round-route-heading">
         <div class="river-section-heading">
           <p class="river-briefing-eyebrow">Learner route briefing</p>
-          <h2 id="learn-route-heading">Basic route</h2>
-          <p>Read these six cards before launch. A learner should be able to explain the side of the river, the turn behavior, and the main hazards without touching the map.</p>
+          <h2 id="small-round-route-heading">Route 1: Small round</h2>
+          <p>Use this route when your coach assigns the small round. Read the cards in order. A learner should be able to name the downstream turn cue, upstream turn cue, and dock approach before launch.</p>
         </div>
 
-        <div class="route-schematic" role="img" aria-label="Simplified route: dock to outbound side, caution zone, turn, return side, and dock">
+        <div class="route-schematic" role="img" aria-label="Small round route order: dock, downstream leg, downstream turn, upstream leg, upstream turn, dock">
           <span>Dock</span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
-          <span>Outbound side</span>
+          <span>Downstream leg</span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
-          <span>Caution</span>
+          <span>Downstream turn</span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
-          <span>Turn</span>
+          <span>Upstream leg</span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
-          <span>Return side</span>
+          <span>Upstream turn</span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
           <span>Dock</span>
         </div>
 
         <div class="route-card-list">
-          <article class="route-card is-active" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="launch downstream">
+          <article class="route-card is-active" data-route-card data-mode="small-round" data-route-step-id="sr-01-launch" data-guide-map="small-round-first-sunday" data-place-ids="launch downstream">
             <div class="route-card-header">
               <span class="route-card-kicker">1 of 6</span>
-              <h3>Launch and orient</h3>
+              <h3>Launch from AARC dock</h3>
             </div>
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>At the AARC dock, before adding pressure or leaving the coached launch area.</dd>
+                <dd>At the AARC dock.</dd>
               </div>
               <div>
                 <dt>Do</dt>
-                <dd>Push away, establish control, scan traffic, and identify the correct travel side.</dd>
+                <dd>Push away under control, scan, and settle onto the correct traffic side before adding pressure.</dd>
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Other shells, coach launches, paddlers, swimmers, and dock traffic.</dd>
+                <dd>Dock traffic, coach launches, returning shells, paddlers, and swimmers.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
-                <dd>Stay right unless passing or turning.</dd>
+                <dd>Stay right for your direction of travel.</dd>
               </div>
               <div>
                 <dt>Common mistake</dt>
-                <dd>Looking at the landmark but not scanning behind and ahead.</dd>
+                <dd>Looking at the dock or landmark but not scanning ahead and behind.</dd>
               </div>
             </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Confirm the correct travel side before leaving the dock."> Confirm the side I should be on before I start rowing.</label>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="Which side should I settle onto after launch?"> Which side should I settle onto after launch?</label>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="fallen-tree-3">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-02-downstream-leg" data-guide-map="small-round-first-sunday" data-place-ids="downstream fallen-tree-3 river-turn-5">
             <div class="route-card-header">
               <span class="route-card-kicker">2 of 6</span>
-              <h3>Settle onto the travel side</h3>
+              <h3>Downstream leg: dock to first turn line</h3>
             </div>
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Just downriver from the AARC dock, near the first tree-cover/fallen-tree caution marker. Your coach will confirm how far from shore to hold the line.</dd>
+                <dd>From the dock toward the small-round downstream turn cue.</dd>
               </div>
               <div>
                 <dt>Do</dt>
-                <dd>Hold your assigned side and make small early steering corrections.</dd>
+                <dd>Hold your line, make small early corrections, and keep enough room from the bank.</dd>
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Shoreline shallows, tree cover, and boats that are still launching or returning.</dd>
+                <dd>Fallen-tree or shoreline caution, shallows, boats launching or returning, and mixed river users.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
-                <dd>Give the bank room without drifting across the traffic pattern.</dd>
+                <dd>Small corrections early. Do not drift across the traffic pattern.</dd>
               </div>
               <div>
                 <dt>Common mistake</dt>
-                <dd>Correcting late, then steering too much at once.</dd>
+                <dd>Waiting too long to steer, then overcorrecting.</dd>
               </div>
             </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Ask how far from shore to hold the line today."> Ask how far from shore to hold the line today.</label>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="What shoreline cue marks the downstream leg today?"> What shoreline cue marks the downstream leg today?</label>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="island-weeds weeds-8">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-03-downstream-turn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-5 river-turn-6" data-line-ids="lts-first-weekend">
             <div class="route-card-header">
               <span class="route-card-kicker">3 of 6</span>
-              <h3>Scan the mixed-use stretch</h3>
+              <h3>Downstream turn line</h3>
             </div>
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>At the island-and-weeds stretch and nearby shoreline weed patches on the small-round line.</dd>
+                <dd>At the small-round downstream crossing line named by your coach.</dd>
               </div>
               <div>
                 <dt>Do</dt>
-                <dd>Keep your line predictable. Stop if a swimmer, paddler, or another shell makes the path unclear.</dd>
+                <dd>Stop first. Turn left. Check traffic. Cross only when clear. Turn left again.</dd>
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Weeds, shallows, paddlers, swimmers, and rowers who may not be holding the expected side.</dd>
+                <dd>Other shells using the same turn line, boats closest to shore, and traffic returning toward the dock.</dd>
+              </div>
+              <div>
+                <dt>Coach cue</dt>
+                <dd>Stop before the turn. Cross only when clear.</dd>
+              </div>
+              <div>
+                <dt>Common mistake</dt>
+                <dd>Starting the crossing while the shell is still moving too fast.</dd>
+              </div>
+            </dl>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="What exact downstream cue are we using today?"> What exact downstream cue are we using today?</label>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-04-upstream-leg" data-guide-map="small-round-first-sunday" data-place-ids="island-weeds weeds-9 fallen-tree-2 fallen-trees river-turn-7">
+            <div class="route-card-header">
+              <span class="route-card-kicker">4 of 6</span>
+              <h3>Upstream leg: downstream turn line to upstream turn line</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>From the downstream turn line back upstream, past the dock area, toward the small-round upstream turn cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Hold the correct side for your direction of travel and keep scanning through the mixed-use stretch.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Island or weed edge, shoreline weeds, fallen-tree cues, returning shells, paddlers, and swimmers.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
@@ -175,92 +204,61 @@ nav_order: 4
               </div>
               <div>
                 <dt>Common mistake</dt>
-                <dd>Watching the caution spot and forgetting to scan traffic.</dd>
+                <dd>Staring at the caution spot and forgetting to scan traffic.</dd>
               </div>
             </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Ask what to do if a paddler or swimmer blocks the line."> Ask what to do if a paddler or swimmer blocks the line.</label>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="What should I do if a paddler or swimmer blocks the line?"> What should I do if a paddler or swimmer blocks the line?</label>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-5" data-line-ids="no-rowing-beyond-this-point">
-            <div class="route-card-header">
-              <span class="route-card-kicker">4 of 6</span>
-              <h3>Approach the turn area</h3>
-            </div>
-            <dl class="route-card-facts">
-              <div>
-                <dt>Where</dt>
-                <dd>At the small-round downstream turn cue, before the permanent no-row line and crossing area.</dd>
-              </div>
-              <div>
-                <dt>Do</dt>
-                <dd>Come under control early and stop before beginning the river turn.</dd>
-              </div>
-              <div>
-                <dt>Watch for</dt>
-                <dd>Other boats turning, shells approaching from behind, and the permanent no-row area. The no-row area is the hard limit; do not drift into it while setting up the turn.</dd>
-              </div>
-              <div>
-                <dt>Coach cue</dt>
-                <dd>Turn before the limit. Do not drift into the crossing.</dd>
-              </div>
-              <div>
-                <dt>Common mistake</dt>
-                <dd>Starting the turn while still moving too fast.</dd>
-              </div>
-            </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Confirm today's downstream turn cue and no-row limit."> Confirm today's downstream turn cue and no-row limit.</label>
-            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
-          </article>
-
-          <article class="route-card" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-6 river-turn-7 river-turn-8" data-line-ids="lts-first-weekend lts-first-weekend-2">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-05-upstream-turn" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-7 river-turn-8" data-line-ids="lts-first-weekend-2">
             <div class="route-card-header">
               <span class="route-card-kicker">5 of 6</span>
-              <h3>Make the river turn</h3>
+              <h3>Upstream turn line</h3>
             </div>
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Between the downstream turn cue and the return-side cue on the assigned small-round crossing.</dd>
+                <dd>At the small-round upstream crossing line.</dd>
               </div>
               <div>
                 <dt>Do</dt>
-                <dd>Stop, turn left, check traffic, cross only when clear, turn left again, then clear the turn area.</dd>
+                <dd>Stop first. Turn left. Check traffic. Cross only when clear. Turn left again.</dd>
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Boats already turning and boats closest to shore that need extra room.</dd>
+                <dd>Boats approaching from behind, boats already turning, and shells returning toward the dock.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
-                <dd>Stop first. Make the turn compact and predictable.</dd>
+                <dd>Complete the turn before adding pressure.</dd>
               </div>
               <div>
                 <dt>Common mistake</dt>
-                <dd>Crossing before the boat is pointed and traffic is checked.</dd>
+                <dd>Treating the upstream turn as optional because the dock feels close.</dd>
               </div>
             </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Ask where to wait after completing the river turn."> Ask where to wait after completing the river turn.</label>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="What exact upstream turn cue are we using today?"> What exact upstream turn cue are we using today?</label>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="learn" data-guide-map="small-round-first-sunday" data-place-ids="docking">
+          <article class="route-card" data-route-card data-mode="small-round" data-route-step-id="sr-06-dock-return" data-guide-map="small-round-first-sunday" data-place-ids="river-turn-8 docking">
             <div class="route-card-header">
               <span class="route-card-kicker">6 of 6</span>
-              <h3>Return and prepare to dock</h3>
+              <h3>Return to dock</h3>
             </div>
             <dl class="route-card-facts">
               <div>
                 <dt>Where</dt>
-                <dd>Back at the AARC dock approach, where returning shells, coach launches, and dock traffic mix.</dd>
+                <dd>From the upstream turn line back to the AARC dock approach.</dd>
               </div>
               <div>
                 <dt>Do</dt>
-                <dd>Approach slowly at an angle, make small corrections, and wait for coach direction.</dd>
+                <dd>Approach slowly, use small corrections, and wait for coach direction before docking.</dd>
               </div>
               <div>
                 <dt>Watch for</dt>
-                <dd>Dock congestion, returning shells, paddlers, swimmers, and cross traffic.</dd>
+                <dd>Dock congestion, coach launches, returning shells, paddlers, swimmers, and cross traffic.</dd>
               </div>
               <div>
                 <dt>Coach cue</dt>
@@ -271,7 +269,7 @@ nav_order: 4
                 <dd>Relaxing the scan because the dock is close.</dd>
               </div>
             </dl>
-            <label class="route-check"><input type="checkbox" data-question-checkbox value="Ask which dock approach the coach wants today."> Ask which dock approach the coach wants today.</label>
+            <label class="route-check"><input type="checkbox" data-question-checkbox value="Which dock approach does the coach want today?"> Which dock approach does the coach want today?</label>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
         </div>
@@ -284,23 +282,74 @@ nav_order: 4
         </section>
       </section>
 
-      <section id="bridge-reference" class="river-mode-panel" data-mode-panel="bridge" aria-labelledby="bridge-reference-heading">
+      <section id="bridge-round-route" class="river-mode-panel" data-mode-panel="bridge-round" aria-labelledby="bridge-round-route-heading" hidden>
         <div class="river-section-heading">
-          <p class="river-briefing-eyebrow">Separate reference</p>
-          <h2 id="bridge-reference-heading">Bridge decisions</h2>
-          <p>Use this section only when your coach assigns the bridge route. The bridge reference is more detailed than the basic route because the learner must identify openings, pillars, current, and angle changes early.</p>
+          <p class="river-briefing-eyebrow">Separate route</p>
+          <h2 id="bridge-round-route-heading">Route 2: Bridge round</h2>
+          <p>Use this only when your coach assigns the bridge round. Read the bridge route in two parts: bridges upstream first, then bridges downstream after the coach has turned the group for return.</p>
         </div>
 
+        <div class="route-schematic" role="img" aria-label="Bridge round order: approach the bridge route, bridges upstream, turn for return, bridges downstream, clear the bridge area">
+          <span>Approach</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Bridges upstream</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Turn / transition</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Bridges downstream</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Clear</span>
+        </div>
+
+        <h3 class="route-subheading">Bridges upstream</h3>
         <div class="route-card-list route-card-list--compact">
-          <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-9">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bu-01-approach" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-9" data-line-ids="lts-saturday-second-weekend">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 1: first bridge approach</span>
-              <h3>Set up before the structure</h3>
+              <span class="route-card-kicker">U1</span>
+              <h3>Bridge approach cue</h3>
             </div>
             <dl class="route-card-facts">
               <div>
+                <dt>Where</dt>
+                <dd>At the coach-assigned bridge approach cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Regroup mentally before the bridge section. Look early for the first opening.</dd>
+              </div>
+              <div>
                 <dt>Decision</dt>
-                <dd>Which side and opening did the coach assign?</dd>
+                <dd>Am I committed to the correct side before the bridge approach begins?</dd>
+              </div>
+              <div>
+                <dt>Avoid</dt>
+                <dd>Entering the bridge area while still uncertain.</dd>
+              </div>
+              <div>
+                <dt>If uncertain</dt>
+                <dd>Stop before the approach and wait for coach instruction.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bu-02-first-opening" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-2">
+            <div class="route-card-header">
+              <span class="route-card-kicker">U2</span>
+              <h3>First upstream opening</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the outbound bridge opening or pillar cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Identify the assigned opening early and commit before the shell reaches the structure.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Which side of the pillar did the coach assign?</dd>
               </div>
               <div>
                 <dt>Avoid</dt>
@@ -308,43 +357,152 @@ nav_order: 4
               </div>
               <div>
                 <dt>If uncertain</dt>
-                <dd>Stop before the bridge approach and wait for coach instruction.</dd>
+                <dd>Stop before committing to the opening.</dd>
               </div>
             </dl>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-2 tree-branches correct-your-angle pass-here">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bu-03-branches" data-guide-map="bridge-navigation-map" data-place-ids="tree-branches">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 2: outbound opening</span>
-              <h3>Outbound opening and angle</h3>
+              <span class="route-card-kicker">U3</span>
+              <h3>Branches on the upstream line</h3>
             </div>
             <dl class="route-card-facts">
               <div>
+                <dt>Where</dt>
+                <dd>At the branch cue near the bridge approach.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Leave room for branches while staying on the expected bridge line.</dd>
+              </div>
+              <div>
                 <dt>Decision</dt>
-                <dd>Identify the correct opening and correct your angle before the bridge pulls you off line.</dd>
+                <dd>Can I clear the branches without crossing the traffic pattern?</dd>
               </div>
               <div>
                 <dt>Avoid</dt>
-                <dd>Watching the pillar so long that you stop scanning for traffic.</dd>
+                <dd>Moving away from branches so abruptly that you enter another shell's path.</dd>
               </div>
               <div>
                 <dt>If uncertain</dt>
-                <dd>Hold position before committing to the opening.</dd>
+                <dd>Hold position before the bridge area and ask the coach to reset the line.</dd>
               </div>
             </dl>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-4 current">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bu-04-angle" data-guide-map="bridge-navigation-map" data-place-ids="correct-your-angle">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 3: current and drift</span>
+              <span class="route-card-kicker">U4</span>
+              <h3>Correct angle before the opening</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the angle-correction cue before the bridge pulls the shell off line.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Make small corrections early.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Is my bow already pointed through the intended opening?</dd>
+              </div>
+              <div>
+                <dt>Avoid</dt>
+                <dd>Staring at the pillar and forgetting to scan.</dd>
+              </div>
+              <div>
+                <dt>If uncertain</dt>
+                <dd>Slow or stop before the opening.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bu-05-pass-opening" data-guide-map="bridge-navigation-map" data-place-ids="pass-here wrong-side-of-the-pillar bridge-pillar">
+            <div class="route-card-header">
+              <span class="route-card-kicker">U5</span>
+              <h3>Pass through the assigned opening</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the preferred bridge opening or passing cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Pass through the assigned opening, then settle back onto the expected line.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Am I passing where the coach expects?</dd>
+              </div>
+              <div>
+                <dt>Avoid</dt>
+                <dd>Drifting to the wrong side of the pillar.</dd>
+              </div>
+              <div>
+                <dt>If uncertain</dt>
+                <dd>Do not enter the bridge opening. Stop before committing.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+        </div>
+
+        <h3 class="route-subheading">Bridges downstream</h3>
+        <div class="route-card-list route-card-list--compact">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bd-01-return-setup" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-4">
+            <div class="route-card-header">
+              <span class="route-card-kicker">D1</span>
+              <h3>Return-side setup</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the return-side bridge setup cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Set the line early before entering the downstream bridge section.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Am I on the correct return side before the bridge area begins?</dd>
+              </div>
+              <div>
+                <dt>Avoid</dt>
+                <dd>Treating the return bridge line as the same as the upstream line.</dd>
+              </div>
+              <div>
+                <dt>If uncertain</dt>
+                <dd>Stop clear of the bridge area and wait for coach instruction.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bd-02-current" data-guide-map="bridge-navigation-map" data-place-ids="current">
+            <div class="route-card-header">
+              <span class="route-card-kicker">D2</span>
               <h3>Current and drift</h3>
             </div>
             <dl class="route-card-facts">
               <div>
+                <dt>Where</dt>
+                <dd>At the current cue on the downstream return.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Expect drift and correct early with small steering changes.</dd>
+              </div>
+              <div>
                 <dt>Decision</dt>
-                <dd>Make small corrections early so current does not push the shell across the expected line.</dd>
+                <dd>Is current pushing me across the expected line?</dd>
               </div>
               <div>
                 <dt>Avoid</dt>
@@ -358,19 +516,27 @@ nav_order: 4
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
 
-          <article class="route-card" data-route-card data-mode="bridge" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-3 river-turn-10">
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bd-03-return-opening" data-guide-map="bridge-navigation-map" data-place-ids="bridge-pillar-3">
             <div class="route-card-header">
-              <span class="route-card-kicker">Bridge 4: return opening</span>
-              <h3>Return opening and turn cue</h3>
+              <span class="route-card-kicker">D3</span>
+              <h3>Return opening</h3>
             </div>
             <dl class="route-card-facts">
               <div>
+                <dt>Where</dt>
+                <dd>At the downstream return opening or pillar cue.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Identify the assigned return opening and pass through it predictably.</dd>
+              </div>
+              <div>
                 <dt>Decision</dt>
-                <dd>Use the coach-assigned return opening, then turn only after traffic is checked.</dd>
+                <dd>Which opening did the coach assign for the return direction?</dd>
               </div>
               <div>
                 <dt>Avoid</dt>
-                <dd>Blocking the bridge approach for another boat while turning.</dd>
+                <dd>Blocking the bridge approach for another shell.</dd>
               </div>
               <div>
                 <dt>If uncertain</dt>
@@ -379,14 +545,271 @@ nav_order: 4
             </dl>
             <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
           </article>
+
+          <article class="route-card" data-route-card data-mode="bridge-round" data-route-step-id="bd-04-clear-area" data-guide-map="bridge-navigation-map" data-place-ids="river-turn-10" data-line-ids="lts-saturday-second-weekend">
+            <div class="route-card-header">
+              <span class="route-card-kicker">D4</span>
+              <h3>Clear the bridge area</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the bridge return cue after the downstream opening.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Clear the bridge area before turning, pausing, or waiting for the group.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Am I clear of the opening and out of the approach path?</dd>
+              </div>
+              <div>
+                <dt>Avoid</dt>
+                <dd>Turning while blocking the bridge route.</dd>
+              </div>
+              <div>
+                <dt>If uncertain</dt>
+                <dd>Move clear if safe, stop, scan, and look for coach instruction.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
         </div>
       </section>
 
-      <section id="coach-briefing" class="river-mode-panel" data-mode-panel="coach" aria-labelledby="coach-briefing-heading">
+      <section id="full-round-route" class="river-mode-panel" data-mode-panel="full-round" aria-labelledby="full-round-route-heading" hidden>
         <div class="river-section-heading">
-          <p class="river-briefing-eyebrow">Coach script</p>
-          <h2 id="coach-briefing-heading">Pre-launch briefing</h2>
-          <p>Use this as a consistent script and adjust the details for the session. The learner-facing rule remains simple: stay right, pass left, stop before turning, and follow the coach-assigned course.</p>
+          <p class="river-briefing-eyebrow">Advanced route</p>
+          <h2 id="full-round-route-heading">Route 3: Full round</h2>
+          <p>Use this only when your coach assigns the full round. This route adds the full upstream extension and the Tail Bridge / Barton turn area.</p>
+        </div>
+
+        <div class="route-schematic" role="img" aria-label="Full round order: launch, downstream side, upstream extension, bridges upstream, Tail Bridge turn, return leg, bridges downstream, dock return">
+          <span>Launch</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Argo side</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Upstream extension</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Bridges upstream</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Tail Bridge turn</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Return leg</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Bridges downstream</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span>Dock return</span>
+        </div>
+
+        <div class="route-card-list route-card-list--compact">
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-01-launch-downstream" data-guide-map="full-round-second-sunday" data-place-ids="launch downstream">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 1</span>
+              <h3>Launch and downstream side</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>From the AARC dock onto the downstream side assigned by the coach.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Launch under control, settle onto the traffic side, and confirm the full-round plan before pressure builds.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Dock traffic, returning shells, paddlers, swimmers, and the group's spacing.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-02-argo-boundary" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-3 river-turn-4" data-line-ids="no-rowing-beyond-this-point">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 2</span>
+              <h3>Argo-side turn / boundary if assigned</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>Near the Argo-side downstream boundary and coach-assigned turn cues.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Turn before the permanent no-row boundary if the coach uses this as today's downstream limit.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>The hard no-row line, boats setting up to turn, and shells returning toward the dock.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-03-upstream-extension" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-7 fallen-trees-2 weeds-2" data-line-ids="lts-first-weekend-2">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 3</span>
+              <h3>Upstream extension past small-round limit</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>Past the small-round upstream turn line toward the bridge section.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Continue only because the coach assigned the full route, and keep the line predictable through the extension.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Fallen-tree cues, weeds, group spacing, and boats still using the small round.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-04-bridges-upstream" data-guide-map="full-round-second-sunday" data-place-ids="river-turn-9 bridge-pillar-2 tree-branches correct-your-angle pass-here" data-line-ids="lts-saturday-second-weekend">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 4</span>
+              <h3>Bridges upstream</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>Through the upstream bridge sequence on the full route.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Use the coach-assigned openings, correct angle early, and pass through predictably.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Pillars, branches, other shells, and last-second steering.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-05-tail-bridge-turn" data-guide-map="full-round-second-sunday" data-place-ids="sharp-turn tree-branch river-turn river-turn-2 good-place-for-a-break" data-line-ids="end-point">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 5</span>
+              <h3>Full-route bend and Tail Bridge turn area</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the full-route bend and Tail Bridge / Barton turn area.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Set the bend early, turn at the coach-assigned point, and clear the area before regrouping.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Sharp bend geometry, branches, following shells, and boats already turning.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-06-return-leg" data-guide-map="full-round-second-sunday" data-place-ids="fallen-trees-corner fallen-tree fallen-tree-4 fallen-trees-3">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 6</span>
+              <h3>Return leg toward bridge section</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>On the return leg from the full-route turn area toward the bridges.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Hold the return side, make early corrections, and keep the group moving predictably.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Tree-covered corners, drift, fatigue, and spacing changes after the turn.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-07-bridges-downstream" data-guide-map="full-round-second-sunday" data-place-ids="bridge-pillar-4 current bridge-pillar-3 river-turn-10" data-line-ids="lts-saturday-second-weekend">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 7</span>
+              <h3>Bridges downstream</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>Through the downstream bridge sequence on the return.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Set the return-side line early, expect current, and clear the bridge area before turning or pausing.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Current, return openings, bridge approaches, and other shells entering the bridge area.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-08-dock-return" data-guide-map="full-round-second-sunday" data-place-ids="stay-on-your-side-of-the-corner weeds-8 river-turn-8" data-line-ids="lts-first-weekend-2">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 8</span>
+              <h3>Return toward dock</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>From the bridge return area toward the small-round return cue and dock approach.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Hold your side through the corner, scan mixed-use traffic, and prepare early for the dock return.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Corner traffic, weeds, small-round shells, paddlers, and swimmers.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+
+          <article class="route-card" data-route-card data-mode="full-round" data-route-step-id="fr-09-docking" data-guide-map="full-round-second-sunday" data-place-ids="docking">
+            <div class="route-card-header">
+              <span class="route-card-kicker">Full 9</span>
+              <h3>Docking</h3>
+            </div>
+            <dl class="route-card-facts">
+              <div>
+                <dt>Where</dt>
+                <dd>At the AARC dock approach after the full route.</dd>
+              </div>
+              <div>
+                <dt>Do</dt>
+                <dd>Slow down, use small corrections, and wait for coach direction before docking.</dd>
+              </div>
+              <div>
+                <dt>Watch for</dt>
+                <dd>Dock congestion, tired crews, coach launches, paddlers, swimmers, and cross traffic.</dd>
+              </div>
+            </dl>
+            <a href="#route-map" class="route-map-link" data-map-focus><i class="fas fa-location-dot"></i> Show on map</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="coach-quick-card" class="river-mode-panel printable-card" data-mode-panel="coach" aria-labelledby="coach-quick-card-heading" hidden>
+        <div class="river-section-heading">
+          <p class="river-briefing-eyebrow">Coach / quick card</p>
+          <h2 id="coach-quick-card-heading">Briefing and selected-course quick card</h2>
+          <p>Use this to confirm today's route, turn cues, limits, and reminders before launch.</p>
+          <button type="button" class="print-guide-button" data-print-guide><i class="fas fa-print"></i> Print selected quick card</button>
         </div>
 
         <form class="coach-briefing-tool" aria-labelledby="coach-tool-heading">
@@ -395,9 +818,9 @@ nav_order: 4
             <label>
               Session route
               <select data-coach-route-map>
-                <option value="small-round-first-sunday">Small round</option>
-                <option value="bridge-round-second-saturday">Bridge route</option>
-                <option value="full-round-second-sunday">Full route</option>
+                <option value="small-round">Small round</option>
+                <option value="bridge-round">Bridge round</option>
+                <option value="full-round">Full round</option>
               </select>
             </label>
             <label>
@@ -422,17 +845,22 @@ nav_order: 4
           <article class="coach-script">
             <h3>Before launch</h3>
             <ul>
-              <li>Today we are using the route segment named before launch.</li>
-              <li>Your default side is the right side of the river for your direction of travel.</li>
-              <li>You will turn at the coach-assigned cue and stay inside the assigned limit.</li>
+              <li>Name the assigned course: small round, bridge round, or full round.</li>
+              <li>Confirm the exact turn cues and any route limit that applies today.</li>
+              <li>Keep the learner-facing rule simple: stay right, pass left, stop before turning, and follow the coach-assigned course.</li>
               <li>If uncertain, stop, scan, and look for coach instruction.</li>
             </ul>
           </article>
           <article class="coach-script">
-            <h3>At the turn</h3>
+            <h3>Permanent no-row boundary</h3>
+            <p>This is a hard downstream limit. Do not row beyond it. Coaches may point it out as a safety boundary, but it is not the default small-round turn cue unless assigned.</p>
+          </article>
+          <article class="coach-script">
+            <h3>At any turn line</h3>
             <ol>
               <li>Stop first.</li>
               <li>Turn left.</li>
+              <li>Check traffic.</li>
               <li>Cross only when clear.</li>
               <li>Turn left again.</li>
               <li>Clear the turning area before resuming.</li>
@@ -444,58 +872,70 @@ nav_order: 4
               <li>Drifting toward shore or into the middle.</li>
               <li>Starting the turn without stopping.</li>
               <li>Watching a landmark but not scanning traffic.</li>
-              <li>Confusing the bridge reference with today's assigned route.</li>
+              <li>Confusing the bridge or full-round reference with today's assigned route.</li>
             </ul>
           </article>
         </div>
-      </section>
 
-      <section id="printable-card" class="river-mode-panel printable-card" data-mode-panel="print" aria-labelledby="printable-card-heading">
-        <div class="river-section-heading">
-          <p class="river-briefing-eyebrow">Printable review</p>
-          <h2 id="printable-card-heading">Dock quick card</h2>
-          <p>Use this as a phone-friendly or printed check before practice.</p>
-          <button type="button" class="print-guide-button" data-print-guide><i class="fas fa-print"></i> Print quick card</button>
-        </div>
-
-        <div class="quick-card-grid">
-          <section class="quick-card-section">
-            <h3>Before launch</h3>
+        <div class="quick-card-grid" aria-live="polite">
+          <section class="quick-card-section" data-quick-card="small-round">
+            <h3>Small round quick card</h3>
+            <h4>Before launch</h4>
             <ul class="quick-checklist">
-              <li><span aria-hidden="true"></span>Route today?</li>
-              <li><span aria-hidden="true"></span>Turn cue?</li>
-              <li><span aria-hidden="true"></span>Do-not-go-beyond point?</li>
-              <li><span aria-hidden="true"></span>Bridge or caution area?</li>
+              <li><span aria-hidden="true"></span>Downstream turn cue?</li>
+              <li><span aria-hidden="true"></span>Upstream turn cue?</li>
+              <li><span aria-hidden="true"></span>Dock approach?</li>
+              <li><span aria-hidden="true"></span>What should I do if traffic blocks the turn?</li>
             </ul>
-          </section>
-          <section class="quick-card-section">
-            <h3>On the water</h3>
-            <ul class="quick-checklist">
-              <li><span aria-hidden="true"></span>Stay right.</li>
-              <li><span aria-hidden="true"></span>Pass left.</li>
-              <li><span aria-hidden="true"></span>Stop before turning.</li>
-              <li><span aria-hidden="true"></span>Coach sets the course.</li>
-            </ul>
-          </section>
-          <section class="quick-card-section">
-            <h3>River turn</h3>
+            <h4>On the water</h4>
             <ol>
-              <li>Stop.</li>
-              <li>Turn left.</li>
-              <li>Check traffic.</li>
-              <li>Cross only when clear.</li>
-              <li>Turn left again.</li>
-              <li>Clear the area.</li>
+              <li>Leave dock under control.</li>
+              <li>Row to downstream turn line.</li>
+              <li>Stop, turn left, check, cross, turn left.</li>
+              <li>Row to upstream turn line.</li>
+              <li>Stop, turn left, check, cross, turn left.</li>
+              <li>Return to dock slowly.</li>
             </ol>
           </section>
-          <section class="quick-card-section">
-            <h3>If uncertain</h3>
+
+          <section class="quick-card-section" data-quick-card="bridge-round" hidden>
+            <h3>Bridge round quick card</h3>
+            <h4>Before launch</h4>
             <ul class="quick-checklist">
-              <li><span aria-hidden="true"></span>Stop.</li>
-              <li><span aria-hidden="true"></span>Hold position if safe.</li>
-              <li><span aria-hidden="true"></span>Scan traffic.</li>
-              <li><span aria-hidden="true"></span>Look for coach instruction.</li>
+              <li><span aria-hidden="true"></span>First upstream opening?</li>
+              <li><span aria-hidden="true"></span>Angle correction cue?</li>
+              <li><span aria-hidden="true"></span>Return-side opening?</li>
+              <li><span aria-hidden="true"></span>Current / drift cue?</li>
+              <li><span aria-hidden="true"></span>Where do we stop if uncertain?</li>
             </ul>
+            <h4>Bridges upstream</h4>
+            <ol>
+              <li>U1 Approach cue.</li>
+              <li>U2 First upstream opening.</li>
+              <li>U3 Branches.</li>
+              <li>U4 Correct angle.</li>
+              <li>U5 Assigned opening.</li>
+            </ol>
+            <h4>Bridges downstream</h4>
+            <ol>
+              <li>D1 Return-side setup.</li>
+              <li>D2 Current and drift.</li>
+              <li>D3 Return opening.</li>
+              <li>D4 Clear bridge area.</li>
+            </ol>
+          </section>
+
+          <section class="quick-card-section" data-quick-card="full-round" hidden>
+            <h3>Full round quick card</h3>
+            <h4>Before launch</h4>
+            <ul class="quick-checklist">
+              <li><span aria-hidden="true"></span>Full-route turn point?</li>
+              <li><span aria-hidden="true"></span>Tail Bridge / Barton limit?</li>
+              <li><span aria-hidden="true"></span>Bridge sequence?</li>
+              <li><span aria-hidden="true"></span>Return-side cues?</li>
+              <li><span aria-hidden="true"></span>Dock approach?</li>
+            </ul>
+            <p>Use only when assigned by coach.</p>
           </section>
         </div>
       </section>
@@ -505,14 +945,14 @@ nav_order: 4
       <div class="river-map-reference-header">
         <p class="river-briefing-eyebrow">Map attached</p>
         <h2 id="route-map-heading" data-map-title>Route map</h2>
-        <p data-map-summary>The cards are complete without the map. When the map loads, it highlights the active briefing card.</p>
+        <p data-map-summary>The cards are complete without the map. When the map loads, it highlights the active route step.</p>
       </div>
       <details class="river-map-details" open>
         <summary><i class="fas fa-map-location-dot"></i> Map reference</summary>
         <div class="river-map-reference-body">
           <p class="river-map-status" data-map-status role="status" aria-live="polite">Loading the optional route map...</p>
           <div class="river-map-tools" aria-label="Map tools">
-            <button type="button" data-map-action="active"><i class="fas fa-crosshairs"></i> Reset to active card</button>
+            <button type="button" data-map-action="active"><i class="fas fa-crosshairs"></i> Reset to active step</button>
             <button type="button" data-map-action="full"><i class="fas fa-map"></i> Show full route</button>
           </div>
           <div class="river-briefing-map" data-map aria-label="Optional interactive map of the AARC river route">

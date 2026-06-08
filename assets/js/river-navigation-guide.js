@@ -1,13 +1,19 @@
 (function () {
   'use strict';
 
-  const DEFAULT_MODE = 'learn';
+  const DEFAULT_MODE = 'small-round';
   const DEFAULT_ZOOM = 17;
-  const MODE_MAPS = {
-    learn: 'small-round-first-sunday',
-    bridge: 'bridge-navigation-map',
-    coach: 'small-round-first-sunday',
-    print: 'small-round-first-sunday'
+  const MODE_ROUTES = {
+    'small-round': 'small-round',
+    'bridge-round': 'bridge-round',
+    'full-round': 'full-round',
+    coach: 'small-round'
+  };
+  const LEGACY_MODE_MAPS = {
+    'small-round': 'small-round-first-sunday',
+    'bridge-round': 'bridge-navigation-map',
+    'full-round': 'full-round-second-sunday',
+    coach: 'small-round-first-sunday'
   };
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -26,10 +32,11 @@
       showFullRoute: false,
       course: null,
       itemsById: new Map(),
+      stepsById: new Map(),
       leafletMap: null,
       routeLayer: null,
       itemLayer: null,
-      coachMapId: MODE_MAPS.coach
+      coachRouteId: MODE_ROUTES.coach
     };
 
     root.classList.add('is-enhanced');
@@ -74,6 +81,7 @@
       coachLimit: root.querySelector('[data-coach-limit]'),
       coachReminders: Array.from(root.querySelectorAll('[data-coach-reminder]')),
       coachPrompt: root.querySelector('[data-coach-prompt]'),
+      quickCards: Array.from(root.querySelectorAll('[data-quick-card]')),
       printButton: root.querySelector('[data-print-guide]')
     };
   }
@@ -139,7 +147,8 @@
       const updateCoachField = function () {
         updateCoachPrompt(state);
         if (field === ui.coachRouteMap) {
-          state.coachMapId = field.value;
+          state.coachRouteId = field.value;
+          updateQuickCards(state);
           renderMap(state);
         }
       };
@@ -177,9 +186,10 @@
   }
 
   function setMode(state, mode, updateHash, moveFocus) {
-    const nextMode = mode || DEFAULT_MODE;
+    const nextMode = MODE_ROUTES[mode] ? mode : DEFAULT_MODE;
     state.mode = nextMode;
     state.showFullRoute = nextMode === 'coach';
+    updateQuickCards(state);
 
     state.ui.modeButtons.forEach(function (button) {
       const isActive = button.getAttribute('data-mode-button') === nextMode;
@@ -232,8 +242,11 @@
   }
 
   function indexCourseItems(state) {
-    state.course.stops.concat(state.course.lines).forEach(function (item) {
+    (state.course.stops || []).concat(state.course.lines || []).forEach(function (item) {
       state.itemsById.set(item.id, item);
+    });
+    (state.course.steps || []).forEach(function (step) {
+      state.stepsById.set(step.id, step);
     });
   }
 
@@ -276,33 +289,36 @@
     state.routeLayer.clearLayers();
     state.itemLayer.clearLayers();
 
-    const guideMap = getActiveGuideMap(state);
-    const activeIds = getActiveIds(state, 'data-place-ids');
-    const activeLineIds = getActiveIds(state, 'data-line-ids');
+    const activeRoute = getActiveRoute(state);
+    const activeStep = getActiveStep(state, activeRoute);
+    const visibleSteps = state.showFullRoute || !activeStep
+      ? getRouteSteps(state, activeRoute)
+      : [activeStep].filter(Boolean);
     const boundsPoints = [];
 
-    updateMapCopy(state, guideMap);
-    renderRoute(state, guideMap).forEach(function (latLng) {
+    updateMapCopy(state, activeRoute, activeStep);
+    renderRoute(state, activeRoute || getActiveGuideMap(state)).forEach(function (latLng) {
       boundsPoints.push(latLng);
     });
 
-    const lineIds = state.showFullRoute ? guideMap.lineIds : activeLineIds;
-    lineIds.forEach(function (id) {
-      const line = state.itemsById.get(id);
-      if (!line) return;
-      renderLine(state, line, !state.showFullRoute);
-      line.coordinates.map(toLatLng).forEach(function (latLng) {
-        boundsPoints.push(latLng);
-      });
-    });
+    visibleSteps.forEach(function (step) {
+      const isActiveStep = !state.showFullRoute || (activeStep && activeStep.id === step.id);
 
-    const markerIds = state.showFullRoute ? guideMap.keyPlaceIds : activeIds;
-    markerIds.forEach(function (id, index) {
-      const item = state.itemsById.get(id);
-      if (!item || item.geometry === 'LineString') return;
-      const isActive = !state.showFullRoute || activeIds.indexOf(id) !== -1;
-      renderMarker(state, item, index + 1, isActive);
-      boundsPoints.push(toLatLng(item.coordinates[0]));
+      (step.lineIds || []).forEach(function (id) {
+        const line = state.itemsById.get(id);
+        if (!line) return;
+        renderLine(state, line, isActiveStep);
+        line.coordinates.map(toLatLng).forEach(function (latLng) {
+          boundsPoints.push(latLng);
+        });
+      });
+
+      (step.placeIds || []).forEach(function (id) {
+        const item = state.itemsById.get(id);
+        if (!item || item.geometry === 'LineString') return;
+        renderMarker(state, item, step.sequence, isActiveStep);
+        boundsPoints.push(toLatLng(item.coordinates[0]));
+      });
     });
 
     fitMap(state, boundsPoints);
@@ -373,6 +389,7 @@
   }
 
   function getRouteSegments(course, guideMap) {
+    if (!guideMap) return [];
     const ranges = guideMap.routeRanges || [[0, course.route.lengthMeters]];
     return ranges.map(function (range) {
       const segment = [];
@@ -388,18 +405,78 @@
     });
   }
 
+  function getActiveRoute(state) {
+    if (!state.course || !state.course.routes) return null;
+    const routeId = state.mode === 'coach'
+      ? state.coachRouteId
+      : MODE_ROUTES[state.mode] || MODE_ROUTES[DEFAULT_MODE];
+
+    return state.course.routes.find(function (route) {
+      return route.id === routeId;
+    }) || state.course.routes[0];
+  }
+
+  function getRouteSteps(state, route) {
+    if (!route) return [];
+
+    if (route.stepIds) {
+      return route.stepIds.map(function (id) {
+        return state.stepsById.get(id);
+      }).filter(Boolean);
+    }
+
+    if (route.sections) {
+      return route.sections.reduce(function (steps, section) {
+        const sectionSteps = (section.stepIds || []).map(function (id) {
+          return state.stepsById.get(id);
+        }).filter(Boolean);
+        return steps.concat(sectionSteps);
+      }, []);
+    }
+
+    return route.steps || [];
+  }
+
+  function getActiveStep(state, route) {
+    if (state.activeCard) {
+      const stepId = state.activeCard.getAttribute('data-route-step-id');
+      if (stepId && state.stepsById.has(stepId)) return state.stepsById.get(stepId);
+      return stepFromCard(state.activeCard);
+    }
+
+    const routeSteps = getRouteSteps(state, route);
+    return state.mode === 'coach' ? null : routeSteps[0] || null;
+  }
+
+  function stepFromCard(card) {
+    const title = card.querySelector('h3')?.textContent.trim() || 'Route step';
+    return {
+      id: card.id || title,
+      sequence: cardSequence(card),
+      title: title,
+      placeIds: idsFromAttribute(card, 'data-place-ids'),
+      lineIds: idsFromAttribute(card, 'data-line-ids')
+    };
+  }
+
+  function cardSequence(card) {
+    const kicker = card.querySelector('.route-card-kicker')?.textContent.trim();
+    if (!kicker) return '';
+    const match = kicker.match(/^(\d+)\s+of\s+\d+$/i);
+    return match ? match[1] : kicker;
+  }
+
   function getActiveGuideMap(state) {
     const mapId = state.mode === 'coach'
-      ? state.coachMapId
-      : (state.activeCard && state.activeCard.getAttribute('data-guide-map')) || MODE_MAPS[state.mode] || MODE_MAPS.learn;
+      ? LEGACY_MODE_MAPS[state.coachRouteId] || LEGACY_MODE_MAPS.coach
+      : (state.activeCard && state.activeCard.getAttribute('data-guide-map')) || LEGACY_MODE_MAPS[state.mode] || LEGACY_MODE_MAPS[DEFAULT_MODE];
     return state.course.maps.find(function (guideMap) {
       return guideMap.id === mapId;
     }) || state.course.maps[0];
   }
 
-  function getActiveIds(state, attribute) {
-    if (!state.activeCard) return [];
-    return (state.activeCard.getAttribute(attribute) || '').split(/\s+/).filter(Boolean);
+  function idsFromAttribute(element, attribute) {
+    return (element.getAttribute(attribute) || '').split(/\s+/).filter(Boolean);
   }
 
   function fitMap(state, boundsPoints) {
@@ -414,11 +491,22 @@
     });
   }
 
-  function updateMapCopy(state, guideMap) {
-    const cardTitle = state.activeCard ? cardLabel(state.activeCard) : 'Route overview';
-    state.ui.mapTitle.textContent = guideMap.name;
-    state.ui.mapSummary.textContent = guideMap.summary;
-    setMapStatus(state, state.showFullRoute ? 'Showing the full route reference.' : 'Showing: ' + cardTitle + '.');
+  function updateMapCopy(state, route, step) {
+    const routeName = route ? route.title : 'Route overview';
+    state.ui.mapTitle.textContent = routeName;
+
+    if (state.showFullRoute || !step) {
+      const summary = route && route.summary
+        ? 'Showing the full ' + routeName.toLowerCase() + ': ' + route.summary
+        : 'Showing the full route reference.';
+      state.ui.mapSummary.textContent = summary;
+      setMapStatus(state, routeName + ', full route view.');
+      return;
+    }
+
+    const stepLabel = step.sequence + ': ' + step.title;
+    state.ui.mapSummary.textContent = 'Showing ' + stepLabel + '.';
+    setMapStatus(state, routeName + ', step ' + stepLabel + '.');
   }
 
   function updateMapButtons(state) {
@@ -456,6 +544,10 @@
     const ui = state.ui;
     if (!ui.coachPrompt) return;
 
+    if (ui.coachRouteMap && ui.coachRouteMap.value) {
+      state.coachRouteId = ui.coachRouteMap.value;
+    }
+
     const routeName = ui.coachRouteMap && ui.coachRouteMap.selectedOptions.length
       ? ui.coachRouteMap.selectedOptions[0].textContent.trim().toLowerCase()
       : 'assigned route';
@@ -472,19 +564,17 @@
     ui.coachPrompt.textContent = prompt;
   }
 
+  function updateQuickCards(state) {
+    const activeRouteId = state.coachRouteId || MODE_ROUTES.coach;
+    state.ui.quickCards.forEach(function (card) {
+      card.hidden = card.getAttribute('data-quick-card') !== activeRouteId;
+    });
+  }
+
   function toSentence(items) {
     if (items.length <= 1) return items.join('');
     if (items.length === 2) return items.join(' and ');
     return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1];
-  }
-
-  function cardLabel(card) {
-    const kicker = card.querySelector('.route-card-kicker')?.textContent.trim();
-    const title = card.querySelector('h3')?.textContent.trim();
-    if (kicker && /^\d+\s+of\s+\d+$/i.test(kicker)) {
-      return 'card ' + kicker + ': ' + title;
-    }
-    return [kicker, title].filter(Boolean).join(': ');
   }
 
   function itemLabel(item) {

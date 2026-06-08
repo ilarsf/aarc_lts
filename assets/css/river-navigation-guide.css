@@ -86,7 +86,7 @@
   counter-reset: route-step;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   list-style: none;
   margin: 0;
   padding: 0;
@@ -223,6 +223,11 @@
 .quick-card-grid {
   display: grid;
   gap: 1rem;
+}
+
+.route-subheading {
+  color: var(--river-water-dark);
+  margin: 1.25rem 0 0.75rem;
 }
 
 .route-schematic {
@@ -447,6 +452,16 @@
 .quick-card-section ol {
   margin-bottom: 0;
   padding-left: 1.25rem;
+}
+
+.quick-card-section h4 {
+  color: var(--river-ink);
+  font-size: 0.92rem;
+  margin: 1rem 0 0.35rem;
+}
+
+.quick-card-section h4:first-of-type {
+  margin-top: 0.75rem;
 }
 
 .quick-checklist {
@@ -789,7 +804,16 @@
     display: block !important;
   }
 
+  body.printing-quick-card .coach-briefing-tool,
+  body.printing-quick-card .coach-script-list {
+    display: none !important;
+  }
+
   body.printing-quick-card .quick-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: block !important;
+  }
+
+  body.printing-quick-card .quick-card-section[hidden] {
+    display: none !important;
   }
 }
