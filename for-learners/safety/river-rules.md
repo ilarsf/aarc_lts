@@ -29,7 +29,7 @@ nav_order: 3 # Adjusted nav_order if necessary, assuming it fits here
 
     <div class="alert alert-warning" role="alert">
         <h4 class="alert-heading"><i class="fas fa-map-marked-alt"></i> Practice It</h4>
-        <p>Want a clearer way to rehearse these rules? The <strong>AARC River Navigation Guide</strong> uses the real route map to walk through the three coached conveyor-belt courses, bridge decisions, and common hazard areas.</p>
+        <p>Want a clearer way to rehearse these rules? The <strong>AARC River Navigation Guide</strong> uses the real route map to walk through the coached course lines, bridge decisions, and common hazard areas.</p>
         <p class="mb-0">
             <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html" class="btn btn-primary">
                 Open AARC River Navigation Guide <i class="fas fa-arrow-right"></i>

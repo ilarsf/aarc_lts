@@ -1507,8 +1507,8 @@
   "maps": [
     {
       "id": "small-round-first-sunday",
-      "name": "Small Round Below the Bridges - First Sunday",
-      "summary": "A short conveyor-belt course below the bridges. Use the coached turn cues, keep the loop moving, and return to docking.",
+      "name": "Small Round - First Sunday",
+      "summary": "A short dock-to-dock course line. Use the coached turn cues, keep the route organized, and return to docking.",
       "routeRanges": [
         [
           0,
@@ -1573,9 +1573,9 @@
       ]
     },
     {
-      "id": "round-below-bridges-second-saturday",
-      "name": "Round Below the Bridges - Second Saturday",
-      "summary": "The larger below-bridges conveyor-belt course. Add the bridge pattern, current, return opening, and docking sequence.",
+      "id": "bridge-round-second-saturday",
+      "name": "Bridge Round - Second Saturday",
+      "summary": "A dock-to-dock course line that introduces the bridge approach, bridge openings, current, return cue, and docking.",
       "routeRanges": [
         [
           0,
@@ -1655,14 +1655,14 @@
       "gateNotes": [
         {
           "lineId": "lts-saturday-second-weekend",
-          "note": "Second-Saturday below-bridges turn line."
+          "note": "Second-Saturday bridge-round turn line."
         }
       ]
     },
     {
       "id": "full-round-second-sunday",
       "name": "Full Round - Second Sunday",
-      "summary": "The full conveyor-belt course to Tail Bridge and back. Review the complete route, major hazards, bridge openings, current, and docking.",
+      "summary": "The full dock-to-dock course line to Tail Bridge and back. Review the complete route, major hazards, bridge openings, current, and docking.",
       "routeRanges": [
         [
           0,
@@ -1766,6 +1766,56 @@
           "note": "Turn point near Tail Bridge."
         }
       ]
+    },
+    {
+      "id": "bridge-navigation-map",
+      "name": "Bridge Navigation Map",
+      "summary": "A zoomed bridge-decision map. Review openings, pillars, branches, current, and angle correction without the full dock-to-dock course.",
+      "routeRanges": [
+        [
+          2180,
+          2820
+        ],
+        [
+          5160,
+          5520
+        ]
+      ],
+      "keyPlaceIds": [
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "pass-here",
+        "bridge-pillar-4",
+        "current",
+        "bridge-pillar-3",
+        "river-turn-10"
+      ],
+      "checkPlaceIds": [
+        "pass-here",
+        "current"
+      ],
+      "markerIds": [
+        "river-turn-9",
+        "bridge-pillar-2",
+        "tree-branches",
+        "correct-your-angle",
+        "wrong-side-of-the-pillar",
+        "pass-here",
+        "bridge-pillar",
+        "weeds-3",
+        "weeds-4",
+        "bridge-pillar-4",
+        "current",
+        "weeds-5",
+        "bridge-pillar-3",
+        "river-turn-10",
+        "weeds-10"
+      ],
+      "lineIds": [],
+      "bridgeFocusIds": [],
+      "gateNotes": []
     }
   ],
   "stops": [
@@ -1852,7 +1902,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Downstream turn cue for the small round below the bridges.",
+      "description": "Downstream turn cue for the small round.",
       "action": "Come under control early, turn as coached, check traffic, and keep the turn compact.",
       "distanceMeters": 251.7,
       "offsetMeters": 11.0,
@@ -1969,7 +2019,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Return-side turn cue for the small round below the bridges.",
+      "description": "Return-side turn cue for the small round.",
       "action": "Use the same stop-turn-check habit before settling back into the normal traffic side.",
       "distanceMeters": 915.6,
       "offsetMeters": 6.0,
@@ -2074,7 +2124,7 @@
       "title": "River Turn",
       "category": "turn",
       "geometry": "Point",
-      "description": "Upstream turn cue for the small round below the bridges.",
+      "description": "Upstream turn cue for the small round.",
       "action": "Turn where your coach directs, then confirm you are back on the correct side before adding pressure.",
       "distanceMeters": 1377.4,
       "offsetMeters": 6.8,
@@ -3233,7 +3283,7 @@
       "title": "LTS Saturday Second Weekend",
       "category": "limit",
       "geometry": "LineString",
-      "description": "Turn line for the round below the bridges.",
+      "description": "Turn line for the bridge round.",
       "action": "Use the nearby bridge and return cues, then follow your coach's direction for the turn.",
       "distanceMeters": 2243.9,
       "offsetMeters": 4.4,
@@ -3259,7 +3309,7 @@
           "projectionErrorMeters": 5.3
         }
       ],
-      "displayTitle": "Second Saturday: below-bridges turn line",
+      "displayTitle": "Second Saturday: bridge-round turn line",
       "routePositions": [
         2243.9,
         5482.6

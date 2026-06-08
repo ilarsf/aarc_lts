@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'aarc-river-navigation-guide-v3';
+  const STORAGE_KEY = 'aarc-river-navigation-guide-v4';
   const DEFAULT_ZOOM = 17;
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -19,7 +19,7 @@
   async function initRiverGuide(root) {
     const response = await fetch(root.getAttribute('data-course-url'), { cache: 'no-store' });
     if (!response.ok) throw new Error('Guide JSON failed: ' + response.status);
-    if (!window.L) throw new Error('Leaflet did not load, so the zoomable satellite course map is unavailable.');
+    if (!window.L) throw new Error('Leaflet did not load, so the zoomable satellite map is unavailable.');
 
     const course = await response.json();
     const ui = buildUi(root);
@@ -324,7 +324,7 @@
     const answered = answer !== undefined;
     const correct = isCorrectAnswer(state, item);
     const heading = document.createElement('h4');
-    heading.textContent = 'Course check ' + (checkIndex + 1) + ' of ' + courseChecks.length;
+    heading.textContent = 'Quick check ' + (checkIndex + 1) + ' of ' + courseChecks.length;
     const question = document.createElement('p');
     question.textContent = item.check.question;
     const choices = document.createElement('div');
@@ -405,7 +405,7 @@
     const courseCorrect = courseChecks.filter(function (item) { return isCorrectAnswer(state, item); }).length;
     ui.progressCount.textContent = viewedCount + ' of ' + allKeyIds.size + ' key places viewed'
       + (allCheckIds.size ? ' · ' + correctCheckCount + ' of ' + allCheckIds.size + ' checks correct' : '');
-    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this course'
+    ui.progressLabel.textContent = mapViewed + '/' + keyPlaces.length + ' on this view'
       + (courseChecks.length ? ' · ' + courseCorrect + '/' + courseChecks.length + ' checks correct' : '');
   }
 
@@ -494,7 +494,7 @@
 
   function checkStatusLabel(state, item) {
     if (!isCourseCheck(state, item.id)) return '';
-    if (!isAnsweredCheck(state, item)) return 'Course check';
+    if (!isAnsweredCheck(state, item)) return 'Quick check';
     return isCorrectAnswer(state, item) ? 'Check complete' : 'Review check';
   }
 
