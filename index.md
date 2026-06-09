@@ -2,14 +2,15 @@
 layout: default
 title: AARC Learn to Scull Program
 ---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 <section class="page-intro-card">
   <h1>Learn to Scull at AARC</h1>
-  <p>New to rowing? Learn to Scull is AARC’s beginner program for adults. Start with the learner guide, then review the 2026 dates and registration details.</p>
+  <p>New to rowing? Learn to Scull is AARC’s beginner program for adults. Start with the learner guide, then review the {{ lts_schedule.year }} dates and registration details.</p>
   <div class="button-row">
     <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
-    <a href="#program-dates" class="cta-button secondary">See 2026 dates</a>
-    <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
+    <a href="#program-dates" class="cta-button secondary">See {{ lts_schedule.year }} dates</a>
+    <a href="{{ lts_schedule.registration_url }}" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
   </div>
   <p><strong>Recommended order:</strong> learner guide → dates and fees → registration or waitlist.</p>
 </section>
@@ -68,7 +69,7 @@ title: AARC Learn to Scull Program
 
 <section id="program-dates" class="program-section info-section">
   <div class="section-header">
-    <h2>2026 Program Information</h2>
+    <h2>{{ lts_schedule.year }} Program Information</h2>
   </div>
   
   <div class="info-container">
@@ -78,10 +79,10 @@ title: AARC Learn to Scull Program
         <h3>Class Schedule</h3>
       </div>
       <ul>
-        <li><strong>Format:</strong> Four 3-hour sessions over two weekends</li>
-        <li><strong>Days:</strong> Saturday and Sunday</li>
-        <li><strong>Time:</strong> 8:30-11:30am</li>
-        <li><strong>Break:</strong> 30 minutes each day</li>
+        <li><strong>Format:</strong> {{ lts_schedule.class_format }}</li>
+        <li><strong>Days:</strong> {{ lts_schedule.session_days }}</li>
+        <li><strong>Time:</strong> {{ lts_schedule.session_time }}</li>
+        <li><strong>Break:</strong> {{ lts_schedule.break }}</li>
       </ul>
     </div>
     
@@ -91,11 +92,11 @@ title: AARC Learn to Scull Program
         <h3>Registration</h3>
       </div>
       <ul>
-        <li><strong>Opens:</strong> May 1, 2026</li>
-        <li><strong>Cost:</strong> $365</li>
-        <li><strong>Discounted:</strong> $275 (students/veterans)</li>
-        <li><strong>USRowing:</strong> Learn-to-Row membership required ($10)</li>
-        <li><a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" class="info-link" target="_blank">Register Online</a></li>
+        <li><strong>Opens:</strong> {{ lts_schedule.registration_opens }}</li>
+        <li><strong>Cost:</strong> {{ lts_schedule.class_fee }}</li>
+        <li><strong>Discounted:</strong> {{ lts_schedule.discounted_class_fee }}</li>
+        <li><strong>USRowing:</strong> {{ lts_schedule.usrowing_requirement }}</li>
+        <li><a href="{{ lts_schedule.registration_url }}" class="info-link" target="_blank">Register Online</a></li>
       </ul>
     </div>
     
@@ -110,53 +111,10 @@ title: AARC Learn to Scull Program
 
   <div class="info-box tip schedule-explainer">
     <h3>How the pathway works</h3>
-    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>$110 or $85 student/vet</strong>. <strong>Full AARC membership is required before you can register for the trial or sign up for practices.</strong> After that, you can continue for the rest of the summer if you want more supported practice.</p>
+    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>{{ lts_schedule.trial_fee }}</strong>. <strong>Full AARC membership is required before you can register for the trial or sign up for practices.</strong> After that, you can continue for the rest of the summer if you want more supported practice.</p>
   </div>
 
-  <div class="schedule-table-wrapper">
-    <table class="schedule-table responsive-table">
-      <caption>2026 Learn to Scull sessions and the most common next step after each class</caption>
-      <thead>
-        <tr>
-          <th>Class</th>
-          <th>Class dates</th>
-          <th>Session time</th>
-          <th>4-week trial after class</th>
-          <th>Continue for the rest of the summer</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Class">LTS1</td>
-          <td data-label="Class dates">May 30/31 &amp; June 6/7</td>
-          <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 8 - July 7<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">July 8 - Aug 30<br>($305 or $230 student/vet)</td>
-        </tr>
-        <tr>
-          <td data-label="Class">LTS2</td>
-          <td data-label="Class dates">June 13/14 &amp; 20/21</td>
-          <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">June 22 - July 21<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">July 22 - Aug 30<br>($225 or $170 student/vet)</td>
-        </tr>
-        <tr>
-          <td data-label="Class">LTS3</td>
-          <td data-label="Class dates">July 11/12 &amp; 18/19</td>
-          <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">July 20 - Aug 16<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">Aug 17 - Aug 30<br>($75 or $55 student/vet)</td>
-        </tr>
-        <tr>
-          <td data-label="Class">LTS4</td>
-          <td data-label="Class dates">July 25/26 &amp; Aug 1/2</td>
-          <td data-label="Session time">Sat &amp; Sun<br>8:30-11:30am</td>
-          <td data-label="4-week trial after class">Aug 3 - Aug 30<br><span class="schedule-fee">($110 or $85 student/vet)</span></td>
-          <td data-label="Continue for the rest of the summer">Sign up for the fall season</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  {% include learn-to-scull-schedule-table.html %}
 </section>
 
 <section class="program-section cta-section" style="text-align: center;">

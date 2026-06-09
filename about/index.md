@@ -2,6 +2,7 @@
 layout: default
 title: About the Learn to Scull Program - AARC Learn to Scull
 ---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 # About the Learn to Scull Program
 
@@ -36,10 +37,10 @@ After completing Learn to Scull, graduates can:
 
 <div class="page-intro-card">
   <h2>Start here if you are deciding whether the program is a fit</h2>
-  <p>Use the learner guide for preparation and safety, then review the 2026 dates and FAQ.</p>
+  <p>Use the learner guide for preparation and safety, then review the {{ lts_schedule.year }} dates and FAQ.</p>
   <div class="button-row">
     <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
-    <a href="{{ site.baseurl }}/#program-dates" class="cta-button secondary">See 2026 dates</a>
+    <a href="{{ site.baseurl }}/#program-dates" class="cta-button secondary">See {{ lts_schedule.year }} dates</a>
     <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="cta-button secondary">Read the FAQ</a>
   </div>
 </div>

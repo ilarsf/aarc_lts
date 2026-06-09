@@ -267,6 +267,38 @@ footer { color: $footer-text-color; }
   margin-bottom: 0.75rem;
 }
 
+.schedule-table-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  background-color: #f8f9fa;
+  color: #0f3d69;
+  font-weight: 600;
+}
+
+.schedule-fee {
+  color: #0f3d69;
+  font-weight: 600;
+}
+
 .tab-content[hidden] {
   display: none !important;
 }

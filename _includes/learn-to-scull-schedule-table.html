@@ -1,0 +1,29 @@
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
+{% capture default_caption %}{{ lts_schedule.year }} Learn to Scull sessions and the most common next step after each class{% endcapture %}
+<div class="schedule-table-wrapper">
+  <table class="schedule-table responsive-table">
+    <caption>{{ include.caption | default: default_caption | escape }}</caption>
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Class dates</th>
+        <th>Session time</th>
+        <th>4-week trial after class</th>
+        <th>Continue for the rest of the summer</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in lts_schedule.sessions %}
+      <tr>
+        <td data-label="Class">{{ session.name | escape }}</td>
+        <td data-label="Class dates">{{ session.class_dates | escape }}</td>
+        <td data-label="Session time">{{ lts_schedule.session_day_short | escape }}<br>{{ lts_schedule.session_time | escape }}</td>
+        <td data-label="4-week trial after class">{{ session.trial_dates | escape }}<br><span class="schedule-fee">({{ lts_schedule.trial_fee | escape }})</span></td>
+        <td data-label="Continue for the rest of the summer">
+          {{ session.continuation_dates | escape }}{% if session.continuation_fee %}<br>({{ session.continuation_fee | escape }}){% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

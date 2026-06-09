@@ -3,6 +3,7 @@ layout: default
 title: Open Sculling Program - Trial and Continuation
 description: Details about the Open Sculling Program trial period, how to continue, and operational guidelines for participants.
 ---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 <div class="container my-5">
 
@@ -16,14 +17,10 @@ description: Details about the Open Sculling Program trial period, how to contin
 
     <h3>A. How to sign-up to continue with Phase 2</h3>
     <p>If you wish to continue with AARC after the LTS class, you can join the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=131640">Open Sculling Program</a> for a four-week trial period. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
-    <p><strong>Important:</strong> You will need to become a Full Member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following completion of your LTS class are offered at a discounted fixed trial rate of <strong>$110 or $85 student/vet</strong>. Please note there is no flexibility on which 4 weeks are offered at this discount. This trial period allows new scullers to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a good fit.</p>
-    <p>Your LTS coaches will provide details on how to sign up for this trial during your final session. The current Learn to Scull schedule shows these fixed trial periods and follow-on fees after the trial period:</p>
-    <ul>
-        <li><strong>LTS1 graduates:</strong> trial June 8 - July 7; continue July 8 - Aug 30, $305 or $230 student/vet</li>
-        <li><strong>LTS2 graduates:</strong> trial June 22 - July 21; continue July 22 - Aug 30, $225 or $170 student/vet</li>
-        <li><strong>LTS3 graduates:</strong> trial July 20 - Aug 16; continue Aug 17 - Aug 30, $75 or $55 student/vet</li>
-        <li><strong>LTS4 graduates:</strong> trial Aug 3 - Aug 30; sign up for the fall season</li>
-    </ul>
+    <p><strong>Important:</strong> You will need to become a Full Member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following completion of your LTS class are offered at a discounted fixed trial rate of <strong>{{ lts_schedule.trial_fee }}</strong>. Please note there is no flexibility on which 4 weeks are offered at this discount. This trial period allows new scullers to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a good fit.</p>
+    <p>Your LTS coaches will provide details on how to sign up for this trial during your final session. The {{ lts_schedule.year }} <a href="{{ site.baseurl }}/#program-dates">Learn to Scull schedule</a> shows the fixed trial periods and follow-on fees after the trial period:</p>
+
+    {% include learn-to-scull-schedule-table.html %}
 
     <h3>B. Weekly Sign-up</h3>
     <p>You need to sign up each week for the sculling practice sessions you want to row. <strong>Your request needs to be placed by Thursday at noon to row the following week.</strong> To do this, login to <a href="https://aarc.clubexpress.com/">https://aarc.clubexpress.com/ <i class="fas fa-external-link-alt"></i></a> and from the <strong>homepage</strong> (scroll down, left column), select “<strong>Sculling Weekly Request to Row Signup</strong>” and follow the link. Note that there is more than one week available; you may sign up for one week at a time or for all weeks listed (although we recommend only signing up for the following week, in case your schedule changes). Please note that even if you choose “row” for a particular session, you may be listed in the “available” section of the boatings if not enough boats are available. For visual instructions on where to find this information, click <a href="https://docs.google.com/presentation/d/1XFdRQoETMIfzRkMaXHX8E3MYlUcEORY_QQ6BTEuQNJI/edit?usp=sharingv_YvDnP6ZIe5nnOa0/edit?usp=sharing">here <i class="fas fa-external-link-alt"></i></a>.</p>
