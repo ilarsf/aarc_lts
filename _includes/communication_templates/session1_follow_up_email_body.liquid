@@ -1,4 +1,11 @@
-Dear {{ page.lts_program_number }} Participants,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign session_dates = cohort.session_dates | default: page.session_dates %}
+{% assign next_session = session_dates[1] | default: "[Day, Date, Time]" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Dear {{ program_number }} Participants,<br><br>
 
 Great job at our first Learn to Scull session!<br><br>
 
@@ -10,10 +17,10 @@ Great job at our first Learn to Scull session!<br><br>
 
 **Preparing for Session 2: Hitting the Water**<br>
 To build on what you've learned, you can prepare for our first on-water session by reviewing the following:<br>
-1.  **Video Resources for Session 2:** Watch the [Session 2 Videos](https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=session2) to see these concepts in action.<br>
-2.  Review the [Session 2 Learning Guide](https://ilarsf.github.io/aarc_lts/for-learners/learning-journey/session-2.html) for an overview of what we'll cover.<br><br>
+1.  **Video Resources for Session 2:** Watch the [Session 2 Videos]({{ public_site_url }}/for-learners/technique/videos.html?filter=session2) to see these concepts in action.<br>
+2.  Review the [Session 2 Learning Guide]({{ public_site_url }}/for-learners/learning-journey/session-2.html) for an overview of what we'll cover.<br><br>
 
-**Next Session: {{ page.session_dates[1] | default: "[Day, Date, Time]" }}**<br>
+**Next Session: {{ next_session }}**<br>
 We'll focus on:<br>
 *   Equipment Preparation and Transport<br>
 *   Transferring ergometer stroke sequence to on-water rowing.<br>
@@ -30,19 +37,4 @@ We'll focus on:<br>
 If you have any questions before our next session, please don't hesitate to contact us.<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

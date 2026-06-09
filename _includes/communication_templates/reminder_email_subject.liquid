@@ -1,1 +1,3 @@
-Learn to Scull Program ({{ page.lts_program_number }}) Starts Soon - Final Reminders
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+Learn to Scull Program ({{ program_number }}) Starts Soon - Final Reminders

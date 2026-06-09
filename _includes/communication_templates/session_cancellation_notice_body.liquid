@@ -1,4 +1,9 @@
-Dear LTS Participants,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Dear {{ program_number }} Participants,<br><br>
 
 Due to [specific weather condition/safety concern], we must cancel today's scheduled Learn to Scull session.<br><br>
 
@@ -9,25 +14,9 @@ If you cannot attend on the rescheduled date, please let us know as soon as poss
 
 **Alternative Learning**<br><br>
 In the meantime, to maintain continuity in your learning:<br>
-1. Please review the online materials for Session [Number]: [LINK_TO_LEARNING_PORTAL_SESSION_MATERIALS]<br><br>
+1. Please review the online materials for Session [Number]: {{ public_site_url }}/for-learners/learning-journey/session-[number].html<br><br>
 
 We apologize for any inconvenience and look forward to getting back on the water soon.<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
-
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

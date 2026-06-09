@@ -127,6 +127,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     expandAllBtns.forEach(btn => {
         btn.addEventListener('click', function () {
+            const accordion = this.closest('.accordion');
+            if (accordion) {
+                const accordionToggles = accordion.querySelectorAll('.accordion-toggle');
+
+                accordionToggles.forEach(toggle => {
+                    if (!toggle.parentElement.classList.contains('filtered')) {
+                        const content = toggle.nextElementSibling;
+                        toggle.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 2000 + "px";
+                        content.classList.add('visible');
+                    }
+                });
+                return;
+            }
+
             // Check if this button has a specific tab identifier (like "expand-all-intermediate")
             const btnId = this.id;
             const tabId = btnId.replace('expand-all-', '');
@@ -163,6 +178,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }); collapseAllBtns.forEach(btn => {
         btn.addEventListener('click', function () {
+            const accordion = this.closest('.accordion');
+            if (accordion) {
+                const accordionToggles = accordion.querySelectorAll('.accordion-toggle');
+
+                accordionToggles.forEach(toggle => {
+                    const content = toggle.nextElementSibling;
+                    toggle.classList.remove('active');
+                    content.style.maxHeight = null;
+                    content.classList.remove('visible');
+                });
+                return;
+            }
+
             // Check if this button has a specific tab identifier (like "collapse-all-intermediate")
             const btnId = this.id;
             const tabId = btnId.replace('collapse-all-', '');

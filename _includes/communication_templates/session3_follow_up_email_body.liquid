@@ -1,5 +1,11 @@
-{% assign lts_schedule = site.data.learn_to_scull_schedule %}
-Hi {{ page.lts_program_number }} Crew,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign session_dates = cohort.session_dates | default: page.session_dates %}
+{% assign next_session = session_dates[3] | default: "[Day, Date, Time]" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Hi {{ program_number }} Crew,<br><br>
 
 Fantastic job in Session 3! You're now applying power more effectively and getting comfortable with navigating the boat.<br><br>
 
@@ -11,10 +17,10 @@ Fantastic job in Session 3! You're now applying power more effectively and getti
 
 **Preparing for Session 4: Navigation and Working Up River**<br>
 For our final session, where we integrate all skills and focus on independent sculling, please review:<br><br>
-1.  **Video Resources for Session 4:** Watch the [Session 4 Videos](https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=session4).<br>
-2.  Review the [Session 4 Learning Guide](https://ilarsf.github.io/aarc_lts/for-learners/learning-journey/session-4.html).<br><br>
+1.  **Video Resources for Session 4:** Watch the [Session 4 Videos]({{ public_site_url }}/for-learners/technique/videos.html?filter=session4).<br>
+2.  Review the [Session 4 Learning Guide]({{ public_site_url }}/for-learners/learning-journey/session-4.html).<br><br>
 
-**Next Session: {{ page.session_dates[3] | default: "[Day, Date, Time]" }}**<br>
+**Next Session: {{ next_session }}**<br>
 Our final session will focus on:<br>
 *   Integrating all previously learned skills.<br>
 *   Developing confidence in river navigation, including bridges.<br>
@@ -22,13 +28,13 @@ Our final session will focus on:<br>
 *   Discussing next steps.<br><br>
 
 **Continue Your Rowing Journey**<br>
-Learn more about continuing with sculling: [Open Sculling Program Details]({{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html).<br>
-The four-week Open Sculling trial is priced at {{ lts_schedule.trial_fee }}.<br>
-*   If you wish to take advantage of the trial and are not already covered by the annual or summer program fee, please review the [current registration details](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828).<br>
+Learn more about continuing with sculling: [Open Sculling Program Details]({{ public_site_url }}/for-learners/resources/open-sculling-program-details.html).<br>
+The four-week Open Sculling trial for {{ program_number }} is {{ cohort.trial_dates | default: "[trial dates]" }} and is priced at {{ lts_schedule.trial_fee }}.<br>
+*   If you wish to take advantage of the trial and are not already covered by the annual or summer program fee, please review the [current registration details]({{ lts_schedule.registration_url }}).<br>
 *   The trial covers sculling only (no sweep) and begins immediately after your Learn to Scull class.<br><br>
 
 **If you missed the Thursday noon sign-up and still want to try to row next week:**<br>
-1.  Pay the applicable Open Sculling fee and follow [the website instructions]({{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html).<br>
+1.  Pay the applicable Open Sculling fee and follow [the website instructions]({{ public_site_url }}/for-learners/resources/open-sculling-program-details.html).<br>
 2.  Please email your instructors so we can ask Tom Kraft, our Sculling Head Coach, to consider your late request — there is no guarantee of getting boated.<br><br>
 
 **Reminders**<br>
@@ -39,19 +45,4 @@ The four-week Open Sculling trial is priced at {{ lts_schedule.trial_fee }}.<br>
 Keep up the great work! Let us know if you have any questions.<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}<br>
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

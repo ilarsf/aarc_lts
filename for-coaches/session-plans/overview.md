@@ -3,6 +3,7 @@ layout: coach
 title: "Session Plans Overview - AARC Learn to Scull Program"
 search_exclude: true
 ---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 # Session Plans Overview
 
@@ -12,14 +13,16 @@ search_exclude: true
 </div>
 
 <div class="info-box note">
-  <h3>2026 Class Logistics</h3>
+  <h3>{{ lts_schedule.year }} Class Logistics</h3>
   <ul>
-    <li><strong>LTS1:</strong> Sean Connors and Margaret Hudson, May 30/31 and June 6/7</li>
-    <li><strong>LTS2:</strong> Michelle Nemshak and Lars Fritsche, June 13/14 and 20/21</li>
-    <li><strong>LTS3:</strong> Adam Zwolinski and coach TBD, July 11/12 and July 18/19</li>
-    <li><strong>LTS4:</strong> Russ Miller and James "Jamie" Riddell IV, July 25/26 and Aug 1/2; substitute needed for the first Saturday</li>
+    {% for session in lts_schedule.sessions %}
+    <li><strong>{{ session.name }}:</strong>
+      {% for coach in session.coaches %}{{ coach.name }}{% unless forloop.last %} and {% endunless %}{% endfor %},
+      {{ session.class_dates }}{% if session.logistics_note %}; {{ session.logistics_note }}{% endif %}
+    </li>
+    {% endfor %}
   </ul>
-  <p>Use the designated LTS boats for class: H2, P1, P4, W1, W2, W3, and W4. P4 is the flip-test boat. Pontoons and the two wider Wintech recreational boats are available for rowers who need extra stability while learning the motion.</p>
+  <p>Use the designated LTS boats for class: {{ lts_schedule.class_boats }}. {{ lts_schedule.flip_test_boat }} is the flip-test boat. Pontoons and the two wider Wintech recreational boats are available for rowers who need extra stability while learning the motion.</p>
 </div>
 
 <div class="session-cards">

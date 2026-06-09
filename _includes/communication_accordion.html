@@ -1,8 +1,9 @@
-<div class="accordion" id="{{ include.id }}">
+{% assign accordion_id = include.id | default: "communication-accordion" %}
+<div class="accordion" id="{{ accordion_id }}">
     {% if include.expand_text and include.collapse_text %}
     <div class="accordion-controls">
-        <button id="expand-all">{{ include.expand_text }}</button>
-        <button id="collapse-all">{{ include.collapse_text }}</button>
+        <button id="expand-all-{{ accordion_id }}" type="button">{{ include.expand_text }}</button>
+        <button id="collapse-all-{{ accordion_id }}" type="button">{{ include.collapse_text }}</button>
     </div>
     {% endif %}
 
@@ -20,18 +21,19 @@
                         <h4>{{ item.title }}</h4>
 
                         {% if item.subject_template %}
-                        <p><strong>Subject:</strong> {% include {{ item.subject_template }} %}</p>
+                        {% capture processed_subject %}{% include {{ item.subject_template }} cohort=include.cohort lts_schedule=include.lts_schedule %}{% endcapture %}
+                        <p><strong>Subject:</strong> {{ processed_subject | strip }}</p>
                         {% elsif item.subject %}
                         <p><strong>Subject:</strong> {{ item.subject }}</p>
                         {% endif %}
 
                         <div class="template-content">
                             {% if item.body_template %}
-                            {% capture processed_body %}{% include {{ item.body_template }} %}{% endcapture %}
-                            {{ processed_body | markdownify }}
+                            {% capture processed_body %}{% include {{ item.body_template }} cohort=include.cohort lts_schedule=include.lts_schedule %}{% endcapture %}
+                            {{ processed_body | strip | markdownify }}
                             {% elsif item.body %}
                             {% capture processed_body %}{{ item.body }}{% endcapture %}
-                            {{ processed_body | markdownify }}
+                            {{ processed_body | strip | markdownify }}
                             {% endif %}
                         </div>
                     </div>

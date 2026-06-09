@@ -1,45 +1,41 @@
-Dear LTS Participants,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign session_dates = cohort.session_dates | default: page.session_dates %}
+{% assign program_start_date = session_dates[0] | split: "(" | first | strip | default: page.program_start_date | default: "[Start date]" %}
+{% assign session_time = lts_schedule.session_time_display | default: page.session_time | default: "8:30 - 11:30 am" %}
+{% assign session_start_time = lts_schedule.session_start_time | default: page.session_start_time | default: "8:30 AM" %}
+{% assign arrival_time = lts_schedule.arrival_time | default: page.arrival_time | default: "8:20 AM" %}
+{% assign meeting_location = lts_schedule.meeting_location_arrival | default: page.meeting_location | default: "the main entrance of Beal Community Boathouse at Bandemer Park" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Dear {{ program_number }} Participants,<br><br>
 
-We're looking forward to welcoming you to our Learn to Scull program ({{ page.lts_program_number }}) starting tomorrow, {{ page.session_dates[0] | split: '(' | first | strip }} at {{ page.session_start_time | default: "8:30 AM" }}. Please arrive by {{ page.arrival_time | default: "8:20 AM" }} at {{ page.meeting_location | default: "the main entrance of Beal Community Boathouse at Bandemer Park" }}.<br><br>
+We're looking forward to welcoming you to our Learn to Scull program ({{ program_number }}) starting on {{ program_start_date }} at {{ session_start_time }}. Please arrive by {{ arrival_time }} at {{ meeting_location }}.<br><br>
 
 **Final Checklist**<br><br>
-✓ USRowing Learn-to-Row membership ($10) - required for insurance<br>
-✓ AARC waiver completed online<br>
-✓ Weather: {{ page.weather_summary | default: "Check the latest forecast and dress for the conditions; the program runs rain or shine unless unsafe." }}<br><br>
+- USRowing Learn-to-Row membership ({{ lts_schedule.usrowing_learn_to_row_fee }}) - required for insurance<br>
+- AARC waiver completed online<br>
+- Weather: {{ lts_schedule.weather_summary | default: page.weather_summary | default: "Check the latest forecast and dress for the conditions; the program runs rain or shine unless unsafe." }}<br><br>
 
 **What to Bring**<br><br>
-- **Warm layers** - snug athletic clothes (no baggy items that catch in tracks). Dress for 55-60°F + wind!<br>
+- Snug athletic clothes (no baggy items that catch in tracks). Dress in layers appropriate for the forecast.<br>
 - Water bottle (32 oz recommended)<br>
 - Sunscreen, hat & sunglasses<br>
 - **Towel & full change of clothes** - you'll get wet during flip test, and cool + windy conditions make this essential<br><br>
 
 **Quick Reminders**<br><br>
-- Program runs {{ page.session_time | default: "8:30 - 11:30 AM" }} both days (tomorrow & Sunday)<br>
-- Review materials: [Session 1 prep](https://ilarsf.github.io/aarc_lts/for-learners/learning-journey/session-1.html)<br>
+- Program runs {{ session_time }} on {{ lts_schedule.session_days }} for both weekends.<br>
+- Review materials: [Session 1 prep]({{ public_site_url }}/for-learners/learning-journey/session-1.html)<br>
 - No pressure, no competition - relax and enjoy learning!<br><br>
 
 **Important Notes**<br><br>
 - Summer session = busy boathouse. Please be mindful when moving equipment<br>
-{% if page.special_logistics_note %}
-- {{ page.special_logistics_note }}<br>
+{% if cohort.logistics_note or page.special_logistics_note %}
+- {{ cohort.logistics_note | default: page.special_logistics_note }}<br>
 {% endif %}<br><br>
 
 See you on the water!<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

@@ -302,7 +302,7 @@ All members are expected to follow these safety rules and help enforce them. Vio
 Safety Committee members and coaches have the authority to prohibit any individual from rowing if, in their judgment, conditions are unsafe or the individual is not prepared for the existing conditions.
 
 <div class="text-center mt-4">
-    <a href="{{ site.baseurl }}/resources/club-policies/index.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to Club Policies</a>
+    <a href="{{ site.baseurl }}/about/club-policies/index.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to Club Policies</a>
 </div>
 
 <!-- accordion.js is already included in head-custom.html -->

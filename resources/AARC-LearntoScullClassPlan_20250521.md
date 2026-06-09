@@ -1,17 +1,21 @@
+---
+layout: coach
+title: "Learn to Scull Class Plan"
+search_exclude: true
+---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 AARC Learn to Scull Class Overview  
-Class runs 8:30-11:30am
+Class runs {{ lts_schedule.session_time }}
 
-2026 Class Assignments
+{{ lts_schedule.year }} Class Assignments
 
-* **LTS1:** Sean Connors and Margaret Hudson  
-  * May 30/31 and June 6/7
-* **LTS2:** Michelle Nemshak and Lars Fritsche  
-  * June 13/14 and 20/21
-* **LTS3:** Adam Zwolinski and coach TBD  
-  * July 11/12 and July 18/19
-* **LTS4:** Russ Miller and James "Jamie" Riddell IV  
-  * July 25/26 and Aug 1/2
-  * Needs a substitute for the first Saturday
+{% for session in lts_schedule.sessions %}
+* **{{ session.name }}:** {% for coach in session.coaches %}{{ coach.name }}{% unless forloop.last %} and {% endunless %}{% endfor %}
+  * {{ session.class_dates }}
+{% if session.logistics_note %}
+  * {{ session.logistics_note }}
+{% endif %}
+{% endfor %}
 
 Coaching Keys
 

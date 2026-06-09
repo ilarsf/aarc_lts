@@ -1,7 +1,11 @@
-{% assign lts_schedule = site.data.learn_to_scull_schedule %}
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
 Dear [Participant Name],<br><br>
 
-Congratulations on successfully completing AARC's Learn to Scull program! It has been a pleasure watching your progression from your first strokes on the ergometer to confidently navigating the Huron River.<br><br>
+Congratulations on successfully completing AARC's Learn to Scull program ({{ program_number }})! It has been a pleasure watching your progression from your first strokes on the ergometer to confidently navigating the Huron River.<br><br>
 
 **Your Achievements**<br><br>
 
@@ -19,12 +23,17 @@ We encourage you to continue your rowing journey with us! The most common and re
 1.  **Open Sculling Program Trial:**
     *   Highly recommended for all graduates! This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water.
     *   It's an excellent bridge from structured lessons to more independent rowing, providing regular water time, opportunities to row with other recent graduates and experienced members, continued informal coaching, and a chance to become comfortable with club routines and equipment.
-    *   The fixed four-week Phase 2 trial fee is {{ lts_schedule.trial_fee }}. After the trial, the remaining summer-season fee depends on your Learn to Scull cohort.
-    *   For more details, please see the [Open Sculling Program Trial & Continuation guide]({{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html).
+    *   The fixed four-week Phase 2 trial for {{ program_number }} runs {{ cohort.trial_dates | default: "[trial dates]" }} and costs {{ lts_schedule.trial_fee }}.
+{% if cohort.continuation_fee %}
+    *   Phase 3 continuation for {{ program_number }} is {{ cohort.continuation_dates }} and costs {{ cohort.continuation_fee }} plus the club membership fee.
+{% else %}
+    *   After the trial, {{ cohort.continuation_dates | default: "review the current continuation options" }}.
+{% endif %}
+    *   For more details, please see the [Open Sculling Program Trial & Continuation guide]({{ public_site_url }}/for-learners/resources/open-sculling-program-details.html).
 <br>
 2.  **Full Club Membership:**
     *   Becoming a full AARC member grants you access to facilities, and the broader rowing community. Membership is required for ongoing participation in most club activities and programs.
-    *   Visit the [AARC Membership Information page]({{ site.baseurl }}/for-learners/resources/membership.html) for details.
+    *   Visit the [AARC Membership Information page]({{ public_site_url }}/for-learners/resources/membership.html) for details.
 <br>
 3.  **Private Lessons:**
     *   For AARC Members: Get one-on-one coaching tailored to your specific goals.
@@ -35,7 +44,7 @@ We encourage you to continue your rowing journey with us! The most common and re
     *   See opportunities on the [Volunteer Page](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=203251).
 <br><br>
 
-For more details on these opportunities and other general advice for continued development, please see our [Next Steps Guide]({{ site.baseurl }}/for-learners/resources/next-steps.html). We also encourage you to:
+For more details on these opportunities and other general advice for continued development, please see our [Next Steps Guide]({{ public_site_url }}/for-learners/resources/next-steps.html). We also encourage you to:
 <ul>
     <li><strong>Be Consistent:</strong> Regular time on the water is key to reinforcing skills.</li>
     <li><strong>Ask Questions:</strong> Don't hesitate to ask coaches or experienced members for advice.</li>
@@ -48,19 +57,4 @@ For more details on these opportunities and other general advice for continued d
 It's been a pleasure having you in our program. We hope to see you on the water again soon!<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

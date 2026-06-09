@@ -1,17 +1,29 @@
-Dear {{ page.lts_program_number }} Participants,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign session_dates = cohort.session_dates | default: page.session_dates %}
+{% assign program_start_date = session_dates[0] | split: "(" | first | strip | default: page.program_start_date | default: "[Start date]" %}
+{% assign session_time = lts_schedule.session_time_display | default: page.session_time | default: "8:30 - 11:30 am" %}
+{% assign session_start_time = lts_schedule.session_start_time | default: page.session_start_time | default: "8:30 AM" %}
+{% assign arrival_time = lts_schedule.arrival_time | default: page.arrival_time | default: "8:20 AM" %}
+{% assign meeting_location = lts_schedule.meeting_location | default: page.meeting_location | default: "Beal Community Boathouse at Bandemer Park" %}
+{% assign meeting_location_arrival = lts_schedule.meeting_location_arrival | default: meeting_location %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Dear {{ program_number }} Participants,<br><br>
 
-AARC welcomes you to our Learn to Scull program ({{ page.lts_program_number }}) starting on {{ page.program_start_date }} at {{ page.meeting_location | default: "Beal Community Boathouse at Bandemer Park" }}.<br><br>
+AARC welcomes you to our Learn to Scull program ({{ program_number }}) starting on {{ program_start_date }} at {{ meeting_location }}.<br><br>
 
 **Action Required**<br>
-USRowing membership: If you do not already have an active USRowing membership, please sign up for a Learn-to-Row membership ($10, 60-day coverage) at https://membership.usrowing.org/individual/join using code CZGBS.<br><br>
+USRowing membership: If you do not already have an active USRowing membership, please sign up for a Learn-to-Row membership ({{ lts_schedule.usrowing_learn_to_row_fee }}, 60-day coverage) at {{ lts_schedule.usrowing_join_url }} using club code {{ lts_schedule.usrowing_club_code }}.<br><br>
 
 **Class Details**<br>
 - Dates & times:<br>
-{% for date in page.session_dates %}
-  - {{ date }} • {{ page.session_time | default: "8:30 - 11:30 am" }} (with break)<br>
+{% for date in session_dates %}
+  - {{ date }} • {{ session_time }} (includes {{ lts_schedule.session_break_note | default: "a break" }})<br>
 {% endfor %}
-- Your coaches are: {% for instructor in page.instructors %}{{ instructor.name }}{% unless forloop.last %} & {% endunless %}{% endfor %}.<br>
-- Location: meet at {{ page.meeting_location | default: "the main entrance of Beal Community Boathouse at Bandemer Park" }}. Please arrive by {{ page.arrival_time | default: "8:20 AM" }} (10 minutes before the {{ page.session_start_time | default: "8:30 AM" }} start) to ensure a prompt start. Arriving 15 minutes early on Day 1 is especially helpful.<br><br>
+- Your coaches are: {% for instructor in instructors %}{{ instructor.name }}{% unless forloop.last %} & {% endunless %}{% endfor %}.<br>
+- Location: meet at {{ meeting_location_arrival }}. Please arrive by {{ arrival_time }} (10 minutes before the {{ session_start_time }} start) to ensure a prompt start. Arriving 15 minutes early on Day 1 is especially helpful.<br><br>
 
 **What to Bring**<br>
 - Athletic clothes that are snug enough to not get caught in the seat tracks (e.g., spandex shorts, bike shorts, leggings, snug top). Brightly colored clothing is recommended for visibility on the water. Rowing is an outdoor sport; please dress for the weather, including layers on cooler days, as we will be on the water even in light rain.<br>
@@ -21,9 +33,9 @@ USRowing membership: If you do not already have an active USRowing membership, p
 
 **Pre-Course Materials**<br>
 To help you prepare for your first session, please review:<br>
-1. <a href="https://s3.amazonaws.com/ClubExpressClubFiles/757878/documents/LTS_Intro_Packet.pdf?AWSAccessKeyId=AKIA6MYUE6DNNJ6ROIH3&Expires=1748266729&response-content-disposition=inline%3B%20filename%3DLTS_Intro_Packet.pdf&Signature=p69r%2FZc2eapBAGXzYks9ngUT9X0%3D">Primer for LTS</a><br>
-2. The Learn to Scull Learner Guide: https://ilarsf.github.io/aarc_lts/for-learners/index.html<br>
-3. These short Introduction to Rowing videos: https://ilarsf.github.io/aarc_lts/for-learners/technique/videos.html?filter=pre-course<br><br>
+{% for material in lts_schedule.pre_course_materials %}
+{{ forloop.index }}. {% if material.url %}<a href="{{ material.url }}">{{ material.title }}</a>{% else %}<a href="{{ public_site_url }}{{ material.path }}">{{ material.title }}</a>{% endif %}<br>
+{% endfor %}<br>
 
 These materials have been carefully compiled to provide a valuable introduction to our sport and can enhance your learning experience. The core concepts from these materials will be covered during your time in LTS, and there's no pressure to have studied them extensively before your first class. Reviewing them beforehand can help you feel more prepared and get the most out of our sessions. The linked webpages, in particular, offer comprehensive information and can be a great resource if you wish to delve deeper into specific topics, even if some content goes beyond what we cover in this introductory program. They are a great resource to have on hand throughout the program.<br><br>
 
@@ -32,4 +44,4 @@ We're excited to get you out on the water! If you have any questions before our 
 One final thing to remember: you are all entering a sport where you may have little experience. There’s no pressure or competition in the program. So remember to relax and enjoy yourself.<br><br>
 
 Best regards,<br><br>
-AARC Learn to Scull Program Instructors
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}

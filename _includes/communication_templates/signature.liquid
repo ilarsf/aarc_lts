@@ -1,0 +1,37 @@
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign instructors = include.instructors | default: page.instructors %}
+{% assign contact_email = lts_schedule.program_contact_email | default: page.program_contact_email | default: "info@a2crew.com" %}
+{% assign instructor_first_names = "" %}
+{% assign instructor_emails = "" %}
+
+{% if instructors %}
+  {% for instructor in instructors %}
+    {% if instructor.first_name %}
+      {% assign first_name = instructor.first_name %}
+    {% elsif instructor.name contains "TBD" %}
+      {% assign first_name = instructor.name %}
+    {% else %}
+      {% assign first_name = instructor.name | split: " " | first %}
+    {% endif %}
+    {% assign instructor_first_names = instructor_first_names | append: first_name %}
+    {% if instructor.email %}
+      {% assign instructor_emails = instructor_emails | append: instructor.email %}
+    {% endif %}
+    {% unless forloop.last %}
+      {% assign instructor_first_names = instructor_first_names | append: " & " %}
+      {% if instructor.email %}
+        {% assign instructor_emails = instructor_emails | append: " & " %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% if instructor_first_names != "" %}
+{{ instructor_first_names }}<br>
+{% endif %}
+AARC Learn to Scull Program Instructors<br>
+{% if instructor_emails != "" %}
+({{ instructor_emails }})
+{% else %}
+({{ contact_email }})
+{% endif %}

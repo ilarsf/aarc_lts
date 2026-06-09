@@ -2,30 +2,8 @@
 layout: coach
 title: "Communication Templates and Protocols - AARC Learn to Scull Program"
 search_exclude: true
-
-# Program-specific data
-lts_program_number: "LTS1"
-session_dates:
-  - "May 30, 2026 (Saturday)"
-  - "May 31, 2026 (Sunday)"
-  - "June 6, 2026 (Saturday)"
-  - "June 7, 2026 (Sunday)"
-program_start_date: "May 30, 2026"
-session_time: "8:30 - 11:30 am"
-session_start_time: "8:30 AM"
-arrival_time: "8:20 AM"
-meeting_location: "Beal Community Boathouse at Bandemer Park"
-weather_summary: "Check the latest forecast and dress for the conditions; the program runs rain or shine unless conditions are unsafe."
-instructors:
-  - first_name: "Coach1"
-    name: "Coach One"
-    email: "coach1@domain.org"
-  - first_name: "Coach2"
-    name: "Coach Two"
-    email: "coach2@domain.org"
-program_contact_email: "info@a2crew.com"
-
 ---
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 # Communication Templates and Protocols
 
@@ -34,12 +12,36 @@ program_contact_email: "info@a2crew.com"
   <p>Consistent, clear communication is critical to program success. Use these templates and guidelines to maintain professional communication with participants throughout the program.</p>
 </div>
 
-{% include communication_accordion.html
-   id="learnToScullAccordion"
-   expand_text="Expand All"
-   collapse_text="Collapse All"
-   sections=site.data.learn_to_scull_templates
-%}
+<div class="info-box note">
+  <h3>{{ lts_schedule.year }} Template Data</h3>
+  <p>These templates are populated from <code>_data/learn_to_scull_schedule.yml</code>. Update that file when dates, fees, instructors, location, or registration details change.</p>
+</div>
+
+{% for lts_cohort in lts_schedule.sessions %}
+  {% capture accordion_id %}learn-to-scull-{{ lts_cohort.name | downcase }}-templates{% endcapture %}
+  <section class="cohort-template-section">
+    <h2>{{ lts_cohort.name }} Communication Templates</h2>
+    <div class="cohort-template-summary">
+      <p><strong>Class dates:</strong> {{ lts_cohort.class_dates }} | <strong>Time:</strong> {{ lts_schedule.session_time_display }}</p>
+      <p><strong>Coaches:</strong>
+        {% for coach in lts_cohort.coaches %}
+          {{ coach.name }}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+      {% if lts_cohort.logistics_note %}
+      <p><strong>Logistics note:</strong> {{ lts_cohort.logistics_note }}</p>
+      {% endif %}
+    </div>
+    {% include communication_accordion.html
+       id=accordion_id
+       expand_text="Expand All"
+       collapse_text="Collapse All"
+       sections=site.data.learn_to_scull_templates
+       cohort=lts_cohort
+       lts_schedule=lts_schedule
+    %}
+  </section>
+{% endfor %}
 
 <div class="resource-links mt-4">
   <h3>Related Resources</h3>
@@ -55,6 +57,27 @@ program_contact_email: "info@a2crew.com"
     border-radius: 8px;
     margin-bottom: 2rem;
     overflow: hidden;
+  }
+
+  .cohort-template-section {
+    margin: 2.5rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e1e4e8;
+  }
+
+  .cohort-template-section h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .cohort-template-summary {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--theme-color, #0066cc);
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .cohort-template-summary p {
+    margin: 0.25rem 0;
   }
   
   .template-container h4 {

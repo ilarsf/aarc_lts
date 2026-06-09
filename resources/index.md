@@ -12,32 +12,32 @@ Welcome to your centralized resource hub for the Learn to Scull program! Here yo
     <h3><i class="fas fa-landmark"></i> Club Policies</h3>
     <p>Official AARC policies, procedures, and guidelines that govern our rowing community.</p>
     <ul class="resource-links">
-      <li><a href="{{ site.baseurl }}/resources/club-policies/code-of-conduct.html">Code of Conduct</a> - Standards of behavior expected of all members</li>
-      <li><a href="{{ site.baseurl }}/resources/club-policies/safety-rules.html">Safety Rules</a> - Essential safety guidelines for all rowers</li>
-      <li><a href="{{ site.baseurl }}/resources/club-policies/boathouse-rules.html">Boathouse Rules</a> - Facility usage and equipment care</li>
+      <li><a href="{{ site.baseurl }}/about/club-policies/code-of-conduct.html">Code of Conduct</a> - Standards of behavior expected of all members</li>
+      <li><a href="{{ site.baseurl }}/about/club-policies/safety-rules.html">Safety Rules</a> - Essential safety guidelines for all rowers</li>
+      <li><a href="{{ site.baseurl }}/about/club-policies/boathouse-rules.html">Boathouse Rules</a> - Facility usage and equipment care</li>
     </ul>
-    <a href="{{ site.baseurl }}/resources/club-policies/" class="cta-button">Browse All Policies</a>
+    <a href="{{ site.baseurl }}/about/club-policies/" class="cta-button">Browse All Policies</a>
   </div>
 
   <div class="resource-category">
     <h3><i class="fas fa-file-alt"></i> Quick Reference</h3>
     <p>Handy guides and references for common rowing situations and needs.</p>
     <ul class="resource-links">
-      <li><a href="{{ site.baseurl }}/resources/quick-reference/equipment-care.html">Equipment Care</a> - How to properly handle and maintain boats and oars</li>
-      <li><a href="{{ site.baseurl }}/resources/quick-reference/blister-treatment.html">Blister Treatment</a> - Prevention and care for rower's hands</li>
-      <li><a href="{{ site.baseurl }}/resources/quick-reference/weather-reference.html">Weather Reference</a> - Guidelines for rowing in different conditions</li>
+      <li><a href="{{ site.baseurl }}/open-sculling/resources/quick-reference/equipment-care.html">Equipment Care</a> - How to properly handle and maintain boats and oars</li>
+      <li><a href="{{ site.baseurl }}/open-sculling/resources/quick-reference/blister-treatment.html">Blister Treatment</a> - Prevention and care for rower's hands</li>
+      <li><a href="{{ site.baseurl }}/open-sculling/resources/quick-reference/weather-reference.html">Weather Reference</a> - Guidelines for rowing in different conditions</li>
     </ul>
-    <a href="{{ site.baseurl }}/resources/quick-reference/" class="cta-button">Browse Quick Guides</a>
+    <a href="{{ site.baseurl }}/open-sculling/resources/quick-reference/" class="cta-button">Browse Quick Guides</a>
   </div>
 
   <div class="resource-category">
     <h3><i class="fas fa-graduation-cap"></i> Knowledge Assessment</h3>
     <p>Tools to test and reinforce your rowing knowledge.</p>
     <ul class="resource-links">
-      <li><a href="{{ site.baseurl }}/resources/knowledge-assessment/quizzes.html">Interactive Quizzes</a> - Test your understanding of key concepts</li>
-      <li><a href="{{ site.baseurl }}/resources/knowledge-assessment/self-assessment.html">Self-Assessment Checklists</a> - Track your skill progression</li>
+      <li><a href="{{ site.baseurl }}/for-learners/resources/quizzes.html">Interactive Quizzes</a> - Test your understanding of key concepts</li>
+      <li><a href="{{ site.baseurl }}/open-sculling/resources/knowledge-assessment/self-assessment.html">Self-Assessment Checklists</a> - Track your skill progression</li>
     </ul>
-    <a href="{{ site.baseurl }}/resources/knowledge-assessment/" class="cta-button">Access Assessment Tools</a>
+    <a href="{{ site.baseurl }}/open-sculling/resources/knowledge-assessment/" class="cta-button">Access Assessment Tools</a>
   </div>
 </div>
 
@@ -59,7 +59,7 @@ Welcome to your centralized resource hub for the Learn to Scull program! Here yo
 
 <div class="info-box tip">
   <h4>Need Help Finding Something?</h4>
-  <p>Use the site search function to quickly locate specific topics or resources. If you still can't find what you're looking for, please <a href="{{ site.baseurl }}/about/contact">contact us</a> for assistance.</p>
+  <p>Use the site search function to quickly locate specific topics or resources. If you still can't find what you're looking for, please <a href="{{ site.baseurl }}/about/contact.html">contact us</a> for assistance.</p>
 </div>
 
 <style>

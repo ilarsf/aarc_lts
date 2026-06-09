@@ -1,5 +1,9 @@
-{% assign lts_schedule = site.data.learn_to_scull_schedule %}
-Hi {{ page.lts_program_number }} Crew,<br><br>
+{% assign lts_schedule = include.lts_schedule | default: site.data.learn_to_scull_schedule %}
+{% assign cohort = include.cohort %}
+{% assign program_number = cohort.name | default: page.lts_program_number | default: "[LTS#]" %}
+{% assign instructors = cohort.coaches | default: page.instructors %}
+{% assign public_site_url = site.url | append: site.baseurl %}
+Hi {{ program_number }} Crew,<br><br>
 
 Congratulations on completing Session 4 and the Learn to Scull program! It was great to see you integrate all the skills and row with more independence today.<br><br>
 
@@ -12,10 +16,10 @@ Congratulations on completing Session 4 and the Learn to Scull program! It was g
 Think about how far you've come in just four sessions! From learning the basic stroke on the erg to sculling independently on the river, you've built a strong foundation.<br><br>
 
 **Continue Your Rowing Journey**<br>
-Learn more about continuing with sculling: [Open Sculling Program Details]({{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html).<br>
-The discounted four-week Open Sculling trial period immediately after your class is the recommended next step for eligible graduates and is priced at {{ lts_schedule.trial_fee }}.<br>
+Learn more about continuing with sculling: [Open Sculling Program Details]({{ public_site_url }}/for-learners/resources/open-sculling-program-details.html).<br>
+The discounted four-week Open Sculling trial period immediately after {{ program_number }} is the recommended next step for eligible graduates. It runs {{ cohort.trial_dates | default: "[trial dates]" }} and is priced at {{ lts_schedule.trial_fee }}.<br>
 *   The trial dates are fixed for each Learn to Scull session, so please register promptly if you want to continue.<br>
-*   Review the latest registration details on the [AARC Learn to Scull page](https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828).<br>
+*   Review the latest registration details on the [AARC Learn to Scull page]({{ lts_schedule.registration_url }}).<br>
 *   The trial covers sculling only (no sweep) and begins right after your Learn to Scull class ends.<br><br>
 
 We will be sending you a separate email shortly with information on next steps to continue your rowing journey with AARC.<br><br>
@@ -23,19 +27,4 @@ We will be sending you a separate email shortly with information on next steps t
 Thank you for being a fantastic participant! We hope to see you on the water again very soon.<br><br>
 
 Best regards,<br><br>
-
-{% assign instructor_first_names = "" %}
-{% assign instructor_emails = "" %}
-{% for instructor in page.instructors %}
-  {% assign first_name = instructor.name | split: " " | first %}
-  {% assign instructor_first_names = instructor_first_names | append: first_name %}
-  {% assign instructor_emails = instructor_emails | append: instructor.email %}
-  {% unless forloop.last %}
-    {% assign instructor_first_names = instructor_first_names | append: " & " %}
-    {% assign instructor_emails = instructor_emails | append: " & " %}
-  {% endunless %}
-{% endfor %}
-
-{{ instructor_first_names }}<br>
-AARC Learn to Scull Program Instructors<br>
-({{ instructor_emails }})
+{% include communication_templates/signature.liquid instructors=instructors lts_schedule=lts_schedule %}
