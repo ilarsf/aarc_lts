@@ -22,7 +22,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
     <h2>General Boathouse Rules</h2>
     
     <ul>
-      <li><strong>Sign Out/In:</strong> Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered during your row.</li>
+      <li><strong>Equipment Requests and Whiteboard:</strong> Coached sessions do not require boat sign-out or sign-in. Beginners and Learn-to-Scull participants may not take boats out by themselves. Once explicitly approved for independent rowing, place your equipment request in the online sheet before taking out a boat, then note your name, boat, and departure time on the whiteboard at the boathouse entrance.</li>
       <li><strong>Boat Assignment:</strong> Use only the boat and oars that you have been assigned.</li>
       <li><strong>Footwear:</strong> Wear appropriate footwear in the boathouse. Street shoes are allowed on the dock but not in the boats.</li>
       <li><strong>Quiet Hours:</strong> Respect neighbors by minimizing noise during early morning hours.</li>
@@ -54,10 +54,10 @@ Proper care and handling of equipment not only extends its lifespan but also ens
     <h2>General Equipment Maintenance</h2>
 
     <h3>Cleaning Boats</h3>
-    <p>Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove. This ensures the equipment is clean and ready for the next use.</p>
+    <p>Before putting the boat back on its rack, place it on the stretchers/slings. Use the spray bottles on the wall in the middle of the boathouse, then thoroughly wipe the boat down using a rag/towel provided by the club. The bottles contain a cleaning mix that helps remove stains from club boats; a larger refill bottle is usually on the floor next to the spray bottles. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove. This ensures the equipment is clean and ready for the next use.</p>
 
     <h3>Reporting Issues</h3>
-    <p>Please note any issues with the equipment in the logbook. If there is significant damage, also notify a coach or club officer immediately.</p>
+    <p>Please report any issues with the equipment to a coach or club officer immediately. Do not use equipment with significant damage.</p>
   </div>
   
   <div id="oars-tab" class="tab-content">
@@ -67,7 +67,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
     <p>After each use, rinse oars with fresh water if available, paying special attention to the collars and gates.</p>
 
     <h3>Oar Handles</h3>
-    <p>Routinely disinfect oar handles after each row. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.</p>
+    <p>Routinely disinfect oar handles after each row using the wipes from the box at the back of the boathouse near the oar storage. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.</p>
 
     <h3>Tape Residue Removal</h3>
     <p>If you\'ve used tape for blisters, remove residues completely after your row. Sticky residue makes handles uncomfortable for the next user.</p>

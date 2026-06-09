@@ -41,7 +41,7 @@ To graduate from the Learn to Scull program, participants must demonstrate satis
 5.  **Independence & Decision-Making:**
     *   Ability to understand and effectively apply coach instructions and feedback.
     *   Demonstrates developing self-assessment skills regarding their own technique and environmental conditions.
-    *   Follows club procedures for equipment use (e.g., sign-out/in, reporting damage).
+    *   Follows club procedures for equipment use, including coach-managed boat assignments during coached sessions, the restriction that beginners do not take boats out by themselves, the online equipment request sheet and entrance whiteboard for approved independent rowing, and prompt damage reporting.
     *   Shows good judgment and asks for help when needed.
 
 ## Assessment Process
@@ -53,11 +53,11 @@ To graduate from the Learn to Scull program, participants must demonstrate satis
 
 ## Competency Levels & Graduation Outcome
 
-While the program aims for all participants to achieve a "Proficient" (Level 3) standard for independent sculling, graduation from Learn to Scull primarily signifies that a rower has achieved at least a "Competent" (Level 2) standard. This means they:
+While the program aims to build the skills that may eventually support independent sculling approval, graduation from Learn to Scull does not by itself authorize a beginner to take out a boat alone. Graduation primarily signifies that a rower has achieved at least a "Competent" (Level 2) standard. This means they:
 *   Demonstrate consistent safety practices.
-*   Can handle a boat independently in calm conditions.
+*   Can handle a boat without hands-on assistance in calm conditions.
 *   Show solid fundamental technique.
-*   Can navigate familiar areas with minimal supervision.
+*   Can navigate familiar areas with coach oversight or minimal supervision.
 
 Participants will be informed of their assessed competency level (e.g., Developing, Competent, Proficient) as per the club's assessment guidelines.
 
@@ -65,7 +65,7 @@ Participants will be informed of their assessed competency level (e.g., Developi
 
 Upon successful completion of the Learn to Scull program and achieving at least a "Competent" (Level 2) standard across the core competencies, participants are certified by AARC as having met the foundational skills for sculling. This certification opens several pathways for continued development:
 
-*   **AARC Open Sculling Program Trial:** Graduates are encouraged to take advantage of a **four-week discounted trial period** in the Open Sculling Program. This program provides a supportive, supervised environment to further hone skills, build confidence, and experience rowing in a group setting. This is an excellent bridge to more independent rowing.
+*   **AARC Open Sculling Program Trial:** Graduates are encouraged to take advantage of a **four-week discounted trial period** in the Open Sculling Program. This program provides a supportive, supervised environment to further hone skills, build confidence, and experience rowing in a group setting. This is an excellent bridge toward possible future independent-rowing approval.
 *   **Full Club Membership:** Joining AARC as a full member provides access to club boats, facilities, and a vibrant rowing community.
 *   **Novice and Intermediate Programs:** Depending on skill progression and interest, graduates can join structured novice or intermediate programs that offer continued coaching and development.
 *   **Technique Clinics & Workshops:** AARC periodically offers specialized clinics focusing on specific aspects of sculling technique, boat handling, or safety.

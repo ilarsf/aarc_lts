@@ -80,12 +80,14 @@ Proper equipment care is essential for safety, performance, and longevity. This 
 
 ### Post-Row Care
 
+<p>Use the spray bottles on the wall in the middle of the boathouse for boat wipe-downs. The bottles contain a cleaning mix that helps remove stains from club boats; a larger refill bottle is usually on the floor next to the spray bottles.</p>
+
 <div class="two-col-grid">
   <div>
     <h4>Hull Cleaning:</h4>
     <ol>
       <li>Place boat on slings after use</li>
-      <li>Rinse entire hull with clean water</li>
+      <li>Spray the hull with the boathouse cleaning mix</li>
       <li>Use soft sponge to remove dirt and algae</li>
       <li>Pay special attention to areas around the fin and rudder</li>
       <li>Dry completely with clean towel</li>
@@ -95,7 +97,7 @@ Proper equipment care is essential for safety, performance, and longevity. This 
   <div>
     <h4>Interior Cleaning:</h4>
     <ol>
-      <li>Wipe down all tracks with a clean cloth</li>
+      <li>Wipe down all tracks with the boathouse cleaning mix and a clean cloth</li>
       <li>Remove debris from foot wells</li>
       <li>Clean and dry seat and seat deck</li>
       <li>Wipe down all interior surfaces</li>
@@ -107,7 +109,7 @@ Proper equipment care is essential for safety, performance, and longevity. This 
 ### Caring for Moving Parts
 
 - **Seats and Wheels**:
-  - Wipe tracks clean after each row
+  - Wipe tracks clean with the boathouse cleaning mix after each row
   - Remove hair and debris from wheels
   - Report any rough movement immediately
 
@@ -126,7 +128,7 @@ Proper equipment care is essential for safety, performance, and longevity. This 
 ### Basic Oar Care
 
 1. **After Each Use**:
-   - Wipe down handles with the provided desinfecting wipes and remove any debris or tape residue
+   - Wipe down handles with the disinfecting wipes from the box at the back of the boathouse near the oar storage, and remove any debris or tape residue
    - Check for chips or cracks in blades
    - Inspect collars and handles for damage
 

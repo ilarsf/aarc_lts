@@ -328,7 +328,7 @@ Understanding and following proper waterway navigation rules is essential for th
                 
                 <div class="checklist-item">
                   <input type="checkbox" id="check5" name="checklist">
-                  <label for="check5">Sign out in the logbook with your name, boat, and time</label>
+                  <label for="check5">Only after independent-rowing approval: place your equipment request in the online sheet and note your name, boat, and time on the entrance whiteboard</label>
                 </div>
                 
                 <div class="checklist-item">

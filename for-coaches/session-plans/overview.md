@@ -83,10 +83,10 @@ search_exclude: true
   <div class="session-card">
     <div class="card-header">
       <h3>Session 4</h3>
-      <span class="session-tag">Independence</span>
+      <span class="session-tag">Self-Reliance</span>
     </div>
     <div class="card-content">
-      <p>The final session consolidates learning, focusing on independent navigation (including bridge passage for some), and prepares participants for continued rowing.</p>
+      <p>The final session consolidates learning, focusing on navigation with coach oversight (including bridge passage for some), and prepares participants for continued rowing.</p>
       <ul class="highlights">
         <li>Integrate all previously learned skills (ratio, rhythm)</li>
         <li>River navigation and bridge passage practice</li>

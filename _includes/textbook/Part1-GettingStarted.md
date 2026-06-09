@@ -44,7 +44,7 @@ Our program uses a weekend intensive format (4 sessions over 2 consecutive weeke
 You'll progress through key stages:
 
 1.  **Sessions 1-2: Fundamentals:** Water safety, boat familiarity, basic rowing motion, boat handling, and the flip test.
-2.  **Sessions 3-4: Integration & Application:** Developing proper technique, applying power, navigation, refining the stroke, and building confidence for independent sculling.
+2.  **Sessions 3-4: Integration & Application:** Developing proper technique, applying power, navigation, refining the stroke, and building confidence for continued supervised rowing and possible future independent-rowing approval.
 
 ### Physical Requirements & Expectations
 

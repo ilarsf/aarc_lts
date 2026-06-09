@@ -39,7 +39,7 @@ This checklist supports coaches in delivering Session 2, focusing on transferrin
     - [ ] Review club-specific launching protocols (e.g., "oars down to the water," traffic patterns on the dock).
     - [ ] Demonstrate carrying boat to water (reinforce from Session 1).
     - [ ] Demonstrate safe entry into the boat (reinforce from Session 1).
-    - [ ] Explain importance of signing out/in (if applicable).
+    - [ ] Explain that coached sessions do not require sign-out/sign-in; beginners do not take boats out by themselves, and approved independent rowing later requires the online equipment request sheet and entrance whiteboard.
 - [ ] **Supervised Launching:**
     - [ ] Participants launch in small groups or individually, with coach guidance.
     - [ ] Ensure PFDs are correctly worn.

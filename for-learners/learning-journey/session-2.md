@@ -167,7 +167,7 @@ Welcome to your second Learn to Scull session! This guide will help you understa
                         <h4>Equipment Preparation & Safety Briefing</h4>
                         <ul>
                             <li>Learning "oars down first" procedure</li>
-                            <li>Boat sign-out process</li>
+                            <li>Coached-session boat assignment process</li>
                             <li>Safe carrying techniques to the dock (coach demonstration)</li>
                             <li>Briefing on basic river traffic rules (e.g., stay to starboard side, between the islands and the big tree / small dock).</li>
                         </ul>

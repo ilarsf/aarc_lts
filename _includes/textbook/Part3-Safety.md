@@ -65,7 +65,7 @@ Before every row, perform a quick safety inspection of your boat and oars. This 
 * **Collars/Buttons:** Verify they are securely fastened and correctly positioned.
 * **Blades/Shafts:** Check for any cracks or significant damage.
 
-**Reporting Issues:** If you find *any* problems with the equipment, **do not use it**. Report the issue immediately to your coach and make an entry in the boat logbook.
+**Reporting Issues:** If you find *any* problems with the equipment, **do not use it**. Report the issue immediately to your coach, program lead, or a club officer.
 
 ![Placeholder: Infographic showing key equipment safety check points on a boat and oar](placeholder)
 
@@ -102,7 +102,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ### General Boathouse Rules
 
-* **Sign Out/In:** Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered.
+* **Equipment Requests and Whiteboard:** Coached sessions do not require boat sign-out or sign-in. Beginners and Learn-to-Scull participants may not take boats out by themselves. Once explicitly approved for independent rowing, place your equipment request in the online sheet before taking out a boat, then note your name, boat, and departure time on the whiteboard at the boathouse entrance.
 * **Boat Assignment:** Use only the boat and oars that you have been assigned.
 * **Footwear:** Wear appropriate footwear. Street shoes are allowed on the dock but not in the boats.
 * **Quiet Hours:** Respect neighbors by minimizing noise during early morning hours.
@@ -119,14 +119,14 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 #### Boat Maintenance
 
-1.  **Cleaning the Boat:** Before racking, place on slings and thoroughly wipe down using provided rags/towels. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove.
+1.  **Cleaning the Boat:** Before racking, place on slings, use the spray bottles on the wall in the middle of the boathouse, and thoroughly wipe down using provided rags/towels. The bottles contain a cleaning mix that helps remove stains from club boats; a larger refill bottle is usually on the floor next to the spray bottles. Take the time necessary to CLEAN the boat, not just dry it. Once the river scum dries, it is very difficult to remove.
 2.  **Storing the Boat:** Return to original rack position. Note how and where your boat is stored and return it to the same place and position. All boats on the outside rack have bows pointed to the boathouse. Ensure riggers align with other boats. Strap outside boats snugly onto the rack (1Xs should not be tightened as much as a sweep boat).
-3.  **Reporting Issues:** Note issues in logbook. Notify coach/officer immediately for significant damage.
+3.  **Reporting Issues:** Report equipment issues to a coach or club officer immediately. Do not use equipment with significant damage.
 
 #### Oar Care and Storage
 
 * **Oar Storage:** Return oars to designated racks, blades facing correctly.
-* **Oar Handles:** Routinely disinfect after each row for hygiene.
+* **Oar Handles:** Routinely disinfect after each row using the wipes from the box at the back of the boathouse near the oar storage.
 * **Tape Removal:** Remove any tape residues on handles completely after your row.
 
 ### Considerate Use of Facilities

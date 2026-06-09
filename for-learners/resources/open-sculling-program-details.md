@@ -47,7 +47,10 @@ description: Details about the Open Sculling Program trial period, how to contin
     <h3>F. If you can’t make it to your scheduled practice</h3>
     <p>Of course, things come up unexpectedly and sometimes you just can’t make it. If you need to miss a practice last minute please also email the coach in charge of the practice and let them know so that equipment can be reassigned and other rowers accommodated; the coaches are also found in the membership directory.</p>
 
-    <h3>G. Inclement Weather</h3>
+    <h3>G. Independent Rowing After Approval</h3>
+    <p>Coached Open Sculling sessions do not require boat sign-out or sign-in; coaches manage the boat assignments for those practices. Beginners and recent Learn-to-Scull graduates may not take boats out by themselves unless they have been explicitly approved for independent rowing. Once approved, place your equipment request in the online sheet before taking out a boat. Before launching, also note your name, boat, and departure time on the whiteboard at the boathouse entrance.</p>
+
+    <h3>H. Inclement Weather</h3>
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
     <h2>Phase 3: Continuing with the Open Sculling Program After the Trial</h2>

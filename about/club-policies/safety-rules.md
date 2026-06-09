@@ -81,9 +81,10 @@ Safety is the highest priority at the Ann Arbor Rowing Club. These rules are est
         <div class="accordion-content-inner">
             <ul>
                 <li>Singles rowers must use the buddy system during early morning (before sunrise) or evening (after sunset) hours</li>
+                <li>Beginners and Learn-to-Scull participants may not take boats out by themselves; independent rowing requires explicit approval</li>
                 <li>Notify another rower or coach of your intended rowing route and expected return time</li>
                 <li>When possible, row within sight of other boats</li>
-                <li>Sign in and out in the log book, including expected return time</li>
+                <li>For approved independent rows, reserve equipment in the online equipment request sheet before launching and note your name, boat, and time on the whiteboard at the entrance</li>
             </ul>
         </div>
     </div>
@@ -182,13 +183,15 @@ Safety is the highest priority at the Ann Arbor Rowing Club. These rules are est
 ### Boathouse and Equipment
 
 <div class="accordion-section">
-    <button class="accordion-toggle">Log Requirements</button>
+    <button class="accordion-toggle">Equipment Use Records</button>
     <div class="accordion-content">
         <div class="accordion-content-inner">
             <ul>
-                <li>All boats must be signed out in the log book before launching</li>
-                <li>Record name(s), boat, time out, expected return time, and intended direction</li>
-                <li>Sign in upon return and note any equipment issues</li>
+                <li>Coached sessions do not require boat sign-out or sign-in; coaches manage boat assignments and participant accountability</li>
+                <li>Beginners and Learn-to-Scull participants may not take boats out by themselves; independent rowing requires explicit approval</li>
+                <li>Approved independent rowers must place an equipment request in the online sheet before taking out a boat</li>
+                <li>Approved independent rowers must also note their name, boat, and departure time on the whiteboard at the boathouse entrance before launching</li>
+                <li>Report any equipment issues promptly to the appropriate coach, program lead, or club officer</li>
                 <li>Report all safety incidents in the incident log</li>
             </ul>
         </div>

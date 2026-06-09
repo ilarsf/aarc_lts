@@ -9,7 +9,7 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 ## General Boathouse Rules
 
-- **Sign Out/In**: Always record your boat usage in the logbook before launching and sign back in upon return, including any issues encountered during your row.
+- **Equipment Requests and Whiteboard**: Coached sessions do not require boat sign-out or sign-in. Beginners and Learn-to-Scull participants may not take boats out by themselves. Once explicitly approved for independent rowing, place your equipment request in the online sheet before taking out a boat, then note your name, boat, and departure time on the whiteboard at the boathouse entrance.
 
 - **Boat Assignment**: Use only the boat and oars that you have been assigned or are appropriate for your skill level.
 
@@ -62,6 +62,8 @@ Proper care and handling of equipment not only extends its lifespan but also ens
 
 1. **Cleaning the Boat**:
    - Place boat on stretchers/slings after use
+   - Use the spray bottles on the wall in the middle of the boathouse for boat wipe-downs
+   - The bottles contain a cleaning mix that helps remove stains from club boats; a larger refill bottle is usually on the floor next to the spray bottles
    - Thoroughly wipe down the entire boat, including tracks, seats, and riggers
    - Pay special attention to removing river water/scum before it dries
    - Clean out foot wells and cockpit areas
@@ -73,13 +75,13 @@ Proper care and handling of equipment not only extends its lifespan but also ens
    - Ensure riggers are properly aligned with other boats
 
 3. **Oar Care**:
-   - Wipe down handles with provided desinfecting wipes
+   - Wipe down handles with the disinfecting wipes from the box at the back of the boathouse near the oar storage
    - Store oars in designated racks with blades facing the correct direction
    - Report any issues with grips, collars, or blade surfaces
 
 ## Reporting Damage and Maintenance
 
-- **Immediate Reporting**: Report any damage or equipment issues immediately in the logbook and to the boathouse manager.
+- **Immediate Reporting**: Report any damage or equipment issues immediately to the boathouse manager, a coach, or the relevant program lead.
 
 - **Damage Tags**: Use red tags to mark damaged equipment. Include your name, date, and description of the issue.
 

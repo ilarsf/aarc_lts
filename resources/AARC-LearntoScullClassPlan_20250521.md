@@ -113,18 +113,18 @@ What to do if a rower cannot get back in the boat on Day 1:
 Post Rowing Maintenance:
 
 * Cleaning the Boat  
-  Before putting the boat back on its rack, place it on the stretchers/slings and thoroughly wipe it down using a rag/towel provided by the club. This ensures the equipment is clean and ready for the next use.  
+  Before putting the boat back on its rack, place it on the stretchers/slings. Use the spray bottles on the wall in the middle of the boathouse, then thoroughly wipe it down using a rag/towel provided by the club. The bottles contain a cleaning mix that helps remove stains from club boats; a larger refill bottle is usually on the floor next to the spray bottles. This ensures the equipment is clean and ready for the next use.
 * Storing the Boat  
   After cleaning, place the boat back in its original rack position. Ensure the riggers align with those of other boats on the rack to maintain uniformity and balance. Outside racks \- bow balls point to the boathouse. Make sure it is properly supported to prevent damage.  
 * Strapping the Boat \- Straps are flat, buckles don’t touch the boat, snug the straps so it can’t be blown off the rack in a windstorm but not harder.   
 * Oar Handles  
-  Routinely disinfect oar handles after each row. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.  
+  Routinely disinfect oar handles after each row using the wipes from the box at the back of the boathouse near the oar storage. This is crucial for maintaining hygiene and preventing the spread of germs, especially given the likelihood of blisters and potential bleeding. Additionally, it removes residues from bandages or tapes some rowers might use.
 * Reporting Issues  
-  Please note any issues with the equipment in the logbook.
+  Please report any issues with the equipment to a coach, program lead, or club officer.
 
 **Day 2:  Hitting the Water–Basic Stroke Sequencing**
 
-* Start with a brush up of process as it relates to equipment and boat sign out.  
+* Start with a brush up of process as it relates to equipment assignment and launch order.
 * Do a 15’ erg warm up, reinforcing body position and sequencing from Day 1  
 * Remind folks of the motion and sequencing   
 * Have folks get oars down and then get boats down to the dock  
@@ -185,7 +185,7 @@ Focus for the day:  Teaching proper navigation and conditioning folks that where
       1. Oars down first and then hulls down.  
       2. Put your oars on the dock near where you will launch.    
          1. Space oars out on the dock and not on top of each other  
-   3. Make sure to sign yourself out and back in on the log book for each row  
+   3. Understand that coached sessions do not require sign-out/sign-in. Beginners may not take boats out by themselves. Once explicitly approved for independent rowing, place an equipment request in the online sheet before taking out a boat and note your name, boat, and time on the entrance whiteboard.
 2. Know and execute the traffic pattern  
 3. Water safety  
    1. Looking over your shoulder every 2-3 strokes.  

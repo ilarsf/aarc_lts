@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Session 4 - Navigation and Working Up River
-description: Guide for your final Learn to Scull session focusing on independent sculling and bridge passage
+description: Guide for your final Learn to Scull session focusing on navigation confidence, next steps, and bridge passage
 ---
 
 {% include tabs.html %}
@@ -83,7 +83,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                 
                 <div class="checklist-item">
                     <input type="checkbox" id="obj4" name="checklist" value="obj4">
-                    <label for="obj4">Achieve independent sculling capability and understand different boat types</label>
+                    <label for="obj4">Build readiness for continued supervised rowing and possible future independent-rowing approval</label>
                 </div>
                 <div class="checklist-item">
                     <input type="checkbox" id="obj5" name="checklist" value="obj5">
@@ -91,7 +91,7 @@ Welcome to your final Learn to Scull session! This guide will help you understan
                 </div>
             </div>
             
-            <p>By the end of this session, you should be comfortable independently sculling, navigating on the water, understand your next steps, and be aware of how video can aid your rowing journey.</p>
+            <p>By the end of this session, you should be more comfortable rowing with coach oversight, navigating on the water, understanding your next steps, and knowing what skills are required before any future independent-rowing approval.</p>
         </div>
     </div>
 

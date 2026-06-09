@@ -59,7 +59,7 @@ search_exclude: true
    - Foot stretcher adjustment
    - Oar selection and adjustment
    - Learning "oars down first" procedure (if applicable)
-   - Boat sign-out process (if applicable)
+   - Coached-session boat assignment process; explain that beginners do not take boats out by themselves and that independent rowing later requires explicit approval plus the online equipment request sheet and entrance whiteboard
    - Safe carrying techniques to the dock (coach demonstration)
 - **0:45-1:00** - Launching procedure demonstration and practice
    - Review of dock commands and procedures

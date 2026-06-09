@@ -24,9 +24,9 @@ This checklist is for the final session, Session 4, focusing on skill integratio
 - [ ] Q&A on any lingering questions from previous sessions.
 - [ ] Outline Session 4 objectives:
     - [ ] Consolidating all learned skills (stroke technique, boat handling, feathering).
-    - [ ] Practicing independent navigation and river traffic rules.
+    - [ ] Practicing navigation and river traffic rules with coach oversight.
     - [ ] Safely executing bridge passage (if applicable).
-    - [ ] Building confidence for independent rowing.
+    - [ ] Building confidence for continued supervised rowing and possible future independent-rowing approval.
     - [ ] Conducting a skills assessment.
     - [ ] Discussing next steps in rowing.
 - [ ] Land-Based Dynamic Warm-up & Q&A.
@@ -79,7 +79,7 @@ This checklist is for the final session, Session 4, focusing on skill integratio
 ## V. Landing, Equipment Care & Debrief (Approx. 30 mins)
 - [ ] **Supervised Landing & Equipment Care:**
     - [ ] Participants land boats safely.
-    - [ ] Thoroughly clean and properly store all boats and oars.
+    - [ ] Thoroughly clean boats with the boathouse spray bottles, disinfect oar handles with wipes from the box at the back of the boathouse near oar storage, then properly store all boats and oars.
     - [ ] Ensure boathouse/storage area is left tidy.
 - [ ] **Session Debrief, Assessment Review & Next Steps:**
     - [ ] Congratulate participants on completing the course.

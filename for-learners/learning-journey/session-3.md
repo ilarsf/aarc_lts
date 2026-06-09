@@ -171,7 +171,7 @@ Welcome to your third Learn to Scull session! This guide will help you understan
                         <h4>Equipment Prep & Launching</h4>
                         <ul>
                             <li>Standard boat preparation with proper checks</li>
-                            <li>Reinforcement of sign-out procedures</li>
+                            <li>Reinforcement that coached sessions do not require sign-out/sign-in; beginners do not take boats out by themselves, and approved independent rowing uses the online equipment request sheet and entrance whiteboard</li>
                             <li>Supervised launching with increasing independence</li>
                         </ul>
                     </div>

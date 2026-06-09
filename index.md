@@ -37,7 +37,7 @@ title: AARC Learn to Scull Program
           <i class="fas fa-graduation-cap"></i>
         </div>
         <h3>Progressive Learning</h3>
-        <p>Structured approach from first strokes to independent rowing with confidence.</p>
+        <p>Structured approach from first strokes to supervised practice and, when approved, independent rowing.</p>
       </div>
     </a>
     

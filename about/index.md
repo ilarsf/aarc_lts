@@ -17,7 +17,7 @@ Our Learn to Scull program has been introducing new scullers to the Huron River 
 The AARC Learn to Scull program is designed around five core principles:
 
 - **Safety first:** comprehensive water safety training, including self-rescue techniques.
-- **Progressive learning:** skills build from fundamentals to confident independent rowing.
+- **Progressive learning:** skills build from fundamentals to supervised practice and, when approved, independent rowing.
 - **Supportive instruction:** small class sizes with experienced coaches and a 1:3 coach-to-student ratio.
 - **Inclusive approach:** accessible to adults with a wide range of backgrounds, fitness levels, and learning styles.
 - **Pathway to membership:** clear next steps for continuing development after the course.

@@ -45,9 +45,10 @@ description: Must-know safety rules for all rowing participants
                     <h4>Always row with supervision</h4>
                     <ul class="rule-list">
                         <li class="warning">All Learn-to-Scull participants must row with coach supervision</li>
-                        <li class="warning">No independent sculling without coach approval and presence of a safety launch</li>
+                        <li class="warning">Beginners may not take boats out by themselves; independent sculling requires explicit approval</li>
+                        <li class="warning">No independent sculling during Learn-to-Scull sessions without coach approval and presence of a safety launch</li>
                         <li>Always remain within visual contact of your coach's launch</li>
-                        <li>Sign out in the logbook when taking a boat, and sign back in upon return</li>
+                        <li>Coached sessions do not require boat sign-out or sign-in; your coach manages boat assignments and accountability</li>
                     </ul>
                     <p><strong>Why it matters:</strong> Solo sculling creates significant risk for beginners who lack the experience to handle emergencies or changing conditions. Coach presence ensures immediate assistance is available if needed.</p>
                 </div>
@@ -101,7 +102,7 @@ description: Must-know safety rules for all rowing participants
                     </ul>
                     <p>Always follow these guidelines:</p>
                     <ul class="rule-list">
-                        <li>Report any equipment issues to your coach and in the logbook</li>
+                        <li>Report any equipment issues promptly to your coach, program lead, or a club officer</li>
                         <li>Never use damaged equipment</li>
                     </ul>
                     <p><strong>Why it matters:</strong> A missing bow ball or non-functioning heel restraints can turn a simple capsize into a dangerous situation. Equipment checks prevent accidents.</p>
@@ -125,11 +126,12 @@ description: Must-know safety rules for all rowing participants
                     <ul class="rule-list">
                         <li>Wear appropriate safety gear as required</li>
                         <li class="warning">Every rower must have a PFD accessible (either in coach's launch or boat)</li>
-                        <li>Always sign out the boat in the logbook before launching</li>
-                        <li>Sign in when you return and note any issues encountered</li>
+                        <li>For approved independent rowing, place an equipment request in the online sheet before taking out a boat</li>
+                        <li>For approved independent rowing, note your name, boat, and departure time on the whiteboard at the boathouse entrance before launching</li>
+                        <li>Report equipment issues promptly to your coach, program lead, or a club officer</li>
                         <li>Carry a whistle or cell phone (in waterproof case) when approved for independent rowing</li>
                     </ul>
-                    <p><strong>Why it matters:</strong> PFDs save lives in emergencies. The logbook system ensures someone knows when to expect your return.</p>
+                    <p><strong>Why it matters:</strong> PFDs save lives in emergencies. The online request and entrance whiteboard help the club manage equipment use and know who is on the water during independent rows.</p>
                 </div>
             </div>
             <div class="rules-info-box info">

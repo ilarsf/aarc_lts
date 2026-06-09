@@ -8,7 +8,7 @@ search_exclude: true
 
 <div class="info-box tip">
   <h3>Evaluation Resources</h3>
-  <p>These tools help coaches evaluate participant progress and provide structured feedback throughout the Learn to Scull program. Use them to track development, identify areas for improvement, and determine readiness for independent rowing.</p>
+  <p>These tools help coaches evaluate participant progress and provide structured feedback throughout the Learn to Scull program. Use them to track development, identify areas for improvement, and determine readiness for continued supervised rowing or possible future independent-rowing approval.</p>
 </div>
 
 {% include accordion.html %}
@@ -23,7 +23,7 @@ search_exclude: true
   <div class="accordion-content">
     <div class="accordion-content-inner">
       <h3>Assessment Instructions</h3>
-      <p>Complete this comprehensive assessment for each participant at the end of the program. The assessment evaluates technical skills, safety awareness, and readiness for independent sculling.</p>
+      <p>Complete this comprehensive assessment for each participant at the end of the program. The assessment evaluates technical skills, safety awareness, and readiness for continued supervised rowing or possible future independent-rowing approval. Graduation alone does not authorize a beginner to take a boat out alone.</p>
       
       {% for i in (1..6) %}
       <div class="assessment-checklist participant-assessment-{{ i }}">
@@ -265,7 +265,7 @@ search_exclude: true
           <div class="radio-options">
             <label>
               <input type="radio" name="completion-status-{{ i }}" value="ready" class="completion-status-ready">
-              Ready for independent sculling
+              Candidate for independent sculling approval review
             </label>
             <label>
               <input type="radio" name="completion-status-{{ i }}" value="additional" class="completion-status-additional">
@@ -273,7 +273,7 @@ search_exclude: true
             </label>
             <label>
               <input type="radio" name="completion-status-{{ i }}" value="not-ready" class="completion-status-not-ready">
-              Not ready for independent sculling
+              Not ready for independent sculling approval review
             </label>
           </div>
         </div>

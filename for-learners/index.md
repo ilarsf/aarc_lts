@@ -103,7 +103,7 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             </div>
             <div class="card-content">
                 <h3>Session 4</h3>
-                <p>Advanced skills, independent rowing, and preparation for continued practice.</p>
+                <p>Advanced skills, readiness for continued supervised practice, and the pathway toward independent rowing approval.</p>
             </div>
         </a>
     </div>

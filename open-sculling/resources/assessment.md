@@ -8,7 +8,7 @@ description: How your sculling skills will be evaluated during and after the pro
 
 # Sculling Assessment Guide
 
-As you progress through the Learn to Scull program, your coaches will be evaluating your developing skills to ensure you're ready for increasing independence on the water. This guide explains the assessment process, evaluation criteria, and what comes next after the program.
+As you progress through the Learn to Scull program, your coaches will be evaluating your developing skills to ensure you're ready for appropriate next steps on the water. Beginners and Learn-to-Scull participants are not allowed to take boats out by themselves; independent rowing requires explicit approval after you have demonstrated the required safety, handling, and navigation skills. This guide explains the assessment process, evaluation criteria, and what comes next after the program.
 
 ## Assessment Approach
 
@@ -125,7 +125,8 @@ Your sculling skills will be evaluated across five key areas:
   <ul>
     <li>Following traffic patterns</li>
     <li>Basic skills self-assessment</li>
-    <li>Proper sign-out procedures</li>
+    <li>Understanding that independent rowing is only allowed after explicit approval</li>
+    <li>Proper equipment request and whiteboard procedures for approved independent rowing</li>
     <li>Asking for help when needed</li>
   </ul>
   <h4>Advanced Skills:</h4>
@@ -159,7 +160,7 @@ After assessment, you'll be assigned a competency level that helps determine app
       <h4>Level 2: Competent</h4>
       <ul>
         <li>Demonstrates consistent safety practices</li>
-        <li>Can handle boat independently in calm conditions</li>
+        <li>Can handle the boat without hands-on assistance in calm conditions</li>
         <li>Shows solid fundamental technique</li>
         <li>Can navigate familiar areas with minimal supervision</li>
         <li><strong>Next step:</strong> Cleared for monitored rowing in designated areas</li>
@@ -171,10 +172,10 @@ After assessment, you'll be assigned a competency level that helps determine app
       <h4>Level 3: Proficient</h4>
       <ul>
         <li>Excellent safety awareness and practices</li>
-        <li>Confident, independent boat handling</li>
+        <li>Confident boat handling without hands-on assistance</li>
         <li>Good technical execution</li>
         <li>Can navigate all standard club rowing areas</li>
-        <li><strong>Next step:</strong> Cleared for independent sculling</li>
+        <li><strong>Next step:</strong> Eligible for explicit independent sculling approval</li>
       </ul>
     </div>
   </div>
@@ -347,7 +348,7 @@ Check off each skill as you become comfortable with it.
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="indep-signs" name="indep-checklist">
-                <label for="indep-signs">Follow sign-out procedures</label>
+                <label for="indep-signs">Understand that beginners do not take boats out by themselves; use the online equipment request sheet and entrance whiteboard only after independent-rowing approval</label>
             </div>
         </div>
     </div>

@@ -66,7 +66,7 @@ search_exclude: true
 - **0:45-1:00** - Equipment preparations
    - Standard boat preparation with proper checks.
    - Refinement of individual settings.
-   - Reinforcement of sign-out procedures.
+   - Reinforce that coached sessions do not require sign-out/sign-in; beginners do not take boats out by themselves, and independent rowing later requires explicit approval plus the online equipment request sheet and entrance whiteboard.
 - **1:00-1:15** - Supervised launching with increasing independence
    - Initial stability drill at dock.
 
@@ -89,7 +89,7 @@ search_exclude: true
 
 ### 5. Conclusion and Next Steps (30 minutes)
 - **3:00-3:15** - Equipment storage and care
-   - Thorough equipment cleaning (washing boats and oars).
+   - Thorough equipment cleaning, including use of the boathouse spray bottles for boat wipe-downs and the wipe box at the back of the boathouse near oar storage for oar handles.
    - Proper storage.
    - Reporting any equipment issues.
 - **3:15-3:25** - Session debrief and preview of Session 4

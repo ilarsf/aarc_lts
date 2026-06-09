@@ -261,7 +261,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
 <ul>
   <li>Observation of skill development during each session</li>
   <li>Completion of safety requirements (especially the flip test)</li>
-  <li>Demonstrating independent boat handling and basic technique</li>
+  <li>Demonstrating boat handling without hands-on assistance and basic technique</li>
   <li>Understanding of rowing terminology and commands</li>
   <li>Ability to navigate basic traffic patterns safely</li>
 </ul>
@@ -323,7 +323,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <button class="nested-toggle">What's the most important safety rule?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>The most important safety rule is to always follow your coach's instructions immediately, especially regarding water and weather conditions. Additionally, always sign out boats before launching and sign back in upon return, and never row alone as a beginner.</p>
+<p>The most important safety rule is to always follow your coach's instructions immediately, especially regarding water and weather conditions. Coached sessions do not require boat sign-out or sign-in. Beginners may not take boats out by themselves. Once explicitly approved for independent rowing, place your equipment request in the online sheet before taking out a boat, note your name, boat, and departure time on the whiteboard at the boathouse entrance, and never row alone as a beginner.</p>
                     </div>
                 </div>
             </div>

@@ -78,7 +78,7 @@ This checklist is for Session 3, focusing on developing leg drive, power applica
 - [ ] Supervised landing, reinforcing good dock procedures.
 
 ## VI. Equipment Care & Debrief (Approx. 15 mins)
-- [ ] Participants clean and store equipment properly.
+- [ ] Participants clean boats with the boathouse spray bottles, disinfect oar handles with wipes from the box at the back of the boathouse near oar storage, then store equipment properly.
 - [ ] **Session Review & Q&A:**
     - [ ] Recap skills: leg drive, ratio/rhythm, steering (pressure, turns, pivot turns), basic navigation.
     - [ ] Discuss challenges and successes.

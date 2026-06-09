@@ -78,8 +78,8 @@ title: "Learn-to-Scull Safety Rules"
       <i class="fas fa-clipboard"></i>
     </div>
     <div class="rule-content">
-      <h3>Boathouse Sign-Out</h3>
-      <p>All shells must be signed out in the boathouse logbook (noting boat name and departure time) before going on the water, and any equipment issues reported upon return.</p>
+      <h3>Equipment Requests</h3>
+      <p>Coached Learn-to-Scull sessions do not require boat sign-out or sign-in. Beginners and Learn-to-Scull participants may not take boats out by themselves. Once explicitly approved for independent rowing, place your equipment request in the online sheet before taking out a boat, then note your name, boat, and departure time on the whiteboard at the boathouse entrance. Report any equipment issues promptly to a coach, program lead, or club officer.</p>
     </div>
   </div>
   

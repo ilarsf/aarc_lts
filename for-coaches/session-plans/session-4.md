@@ -8,7 +8,7 @@ search_exclude: true
 
 <div class="info-box tip">
   <h4>Session Overview</h4>
-  <p>This final session focuses on consolidating all previously learned skills, practicing independent navigation including river traffic patterns and bridge passage, and building confidence for continued rowing. The session culminates in a skills assessment to provide feedback and guide participants on their next steps in rowing.</p>
+  <p>This final session focuses on consolidating all previously learned skills, practicing navigation with coach oversight, including river traffic patterns and bridge passage, and building confidence for continued rowing. The session culminates in a skills assessment to provide feedback and guide participants on their next steps in rowing.</p>
   <div class="text-center mt-3">
     <a href="{{ site.baseurl }}/for-coaches/session-plans/overview.html" class="cta-button"><i class="fas fa-arrow-left"></i> Back to All Sessions</a>
   </div>
@@ -18,7 +18,7 @@ search_exclude: true
 - Review and refine all previously learned rowing techniques and boat handling skills.
 - Practice continuous rowing with a strong focus on effective navigation and steering in varied conditions.
 - Understand and safely navigate river traffic patterns, including executing bridge passage where appropriate.
-- Build participant confidence in independent boat handling and decision-making on the water.
+- Build participant confidence in boat handling and decision-making on the water while reinforcing that beginners do not take boats out by themselves.
 - Conduct a skills assessment to identify strengths, areas for improvement, and readiness for next steps.
 - Provide clear guidance on future rowing opportunities (e.g., novice programs, open sculling).
 
@@ -81,7 +81,7 @@ search_exclude: true
 ### 5. Landing, Equipment Care & Debrief (30 minutes)
 - **2:30-2:45** - Supervised Landing & Equipment Care
   - Participants land their boats under supervision.
-  - Proper cleaning and storage of boats and oars.
+  - Proper cleaning and storage of boats and oars, including use of the boathouse spray bottles for boat wipe-downs and the wipe box at the back of the boathouse near oar storage for oar handles.
 - **2:45-3:00** - Session Debrief, Assessment Review & Next Steps
   - Review the session's activities and achievements.
   - Provide general feedback from the skills assessment, highlighting common strengths and areas for development. (Individual detailed feedback may be provided separately or noted for follow-up).
@@ -94,7 +94,7 @@ search_exclude: true
 1. **Integration** - All stroke elements working together, including ratio and rhythm.
 2. **Consistency** - Maintaining technique (especially ratio) under fatigue.
 3. **Adaptability** - Adjusting to changing conditions, boat types (if applicable).
-4. **Independence** - Self-diagnosis, correction, and decision-making for maneuvers (backing, turning, docking).
+4. **Supervised self-reliance** - Self-diagnosis, correction, and decision-making for maneuvers (backing, turning, docking) while under coach oversight.
 5. **Decision-making** - Good judgment in navigation, traffic, and safety.
 
 ### Common Issues to Address
@@ -106,7 +106,7 @@ search_exclude: true
 - Ineffective communication with other boats
 
 ### Safety Emphasis Points
-- Independent decision-making
+- Coach-supervised decision-making
 - Weather awareness and adaptation
 - Traffic pattern adherence
 - Bridge navigation protocol
@@ -115,7 +115,7 @@ search_exclude: true
 ## Assessment Considerations
 Coaches should evaluate each participant's:
 - Overall rowing competence, including ratio and rhythm.
-- Independent boat handling (steering, backing, turning, docking).
+- Boat handling without hands-on assistance (steering, backing, turning, docking).
 - Navigation confidence and bridge passage.
 - Safety awareness and decision-making.
 - Technical improvement over program.

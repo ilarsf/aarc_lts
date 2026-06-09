@@ -12,7 +12,7 @@ description: Information on further coaching opportunities at AARC to advance yo
         <p class="lead">Take your sculling to the next level with specialized coaching and technique-focused sessions at AARC.</p>
     </div>
 
-    <p>Once you have completed the Learn to Scull program and gained some experience through the Open Sculling Program or independent rowing, you may be looking for ways to further refine your technique, improve efficiency, or work towards specific goals. AARC offers several avenues for advanced coaching.</p>
+    <p>Once you have completed the Learn to Scull program and gained some experience through the Open Sculling Program or approved independent rowing, you may be looking for ways to further refine your technique, improve efficiency, or work towards specific goals. AARC offers several avenues for advanced coaching.</p>
 
     <h2>Types of Advanced Coaching</h2>
 

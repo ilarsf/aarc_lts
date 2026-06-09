@@ -134,7 +134,7 @@ Test your knowledge from each training session
   <div class="quiz-list-item" data-quiz-id="4">
     <div class="quiz-list-item-content">
       <h4>Session 4 Quiz</h4>
-      <p>Comprehensive understanding for independent rowing.</p>
+      <p>Comprehensive understanding for continued supervised rowing and possible future independent-rowing approval.</p>
     </div>
     <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" onclick="loadQuiz(\\'4\\'); return false;" class="quiz-list-link">Take Quiz</a>
   </div>
