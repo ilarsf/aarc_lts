@@ -17,7 +17,12 @@ description: Details about the Open Sculling Program trial period, how to contin
 
     <h3>A. How to sign-up to continue with Phase 2</h3>
     <p>If you wish to continue with AARC after the LTS class, you can join the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=131640">Open Sculling Program</a> for a four-week trial period. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
-    <p><strong>Important:</strong> You will need to become a Full Member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following completion of your LTS class are offered at a discounted fixed trial rate of <strong>{{ lts_schedule.trial_fee }}</strong>. Please note there is no flexibility on which 4 weeks are offered at this discount. This trial period allows new scullers to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a good fit.</p>
+    <p><strong>Important:</strong> You will need to become a Full Member of AARC before you can register for the trial or signup for practices. The first four weeks immediately following completion of your LTS class are offered at a discounted fixed trial rate. <strong class="phase-price-inline">Phase 2 price: {{ lts_schedule.trial_fee }}.</strong> Please note there is no flexibility on which 4 weeks are offered at this discount. This trial period allows new scullers to experience continued growth in skills, fitness and comfort on water and confirm that rowing and AARC are a good fit.</p>
+    <div class="info-box note phase-fee-summary">
+        <h4>Price Summary</h4>
+        <p><strong>Phase 2 price:</strong> <span class="phase-price-inline">{{ lts_schedule.trial_fee }}</span> for the fixed four-week trial immediately after your class.</p>
+        <p><strong>Phase 3 price:</strong> the cohort-specific continuation fee shown in the schedule table, plus the club membership fee.</p>
+    </div>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session. The {{ lts_schedule.year }} <a href="{{ site.baseurl }}/#program-dates">Learn to Scull schedule</a> shows the fixed trial periods and follow-on fees after the trial period:</p>
 
     {% include learn-to-scull-schedule-table.html %}
@@ -45,8 +50,8 @@ description: Details about the Open Sculling Program trial period, how to contin
     <h3>G. Inclement Weather</h3>
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
-    <h2>Continuing with the Open Sculling Program After the Trial Phase</h2>
-    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for the remainder of the season by paying the prorated program fee for their Learn to Scull cohort and the club membership fee. Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier. You must sign up and pay the program fees to continue sculling after your trial period.</p>
+    <h2>Phase 3: Continuing with the Open Sculling Program After the Trial</h2>
+    <p>Have you caught the rowing bug? We hope that you enjoyed your Learn-to-Scull experience and that you consider continuing on with AARC. After your four-week trial, new members can sign up for Phase 3, the remainder of the season, by paying the prorated program fee for their Learn to Scull cohort and the club membership fee. <strong class="phase-price-inline">Phase 3 price: use the cohort-specific continuation fee shown in the schedule table above.</strong> Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier. You must sign up and pay the program fees to continue sculling after your trial period.</p>
 
     <div class="mt-4">
         <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>

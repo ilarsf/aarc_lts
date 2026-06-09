@@ -8,8 +8,8 @@
         <th>Class</th>
         <th>Class dates</th>
         <th>Session time</th>
-        <th>4-week trial after class</th>
-        <th>Continue for the rest of the summer</th>
+        <th>Phase 2: 4-week trial after class</th>
+        <th>Phase 3: Continue for the rest of the summer</th>
       </tr>
     </thead>
     <tbody>
@@ -18,9 +18,13 @@
         <td data-label="Class">{{ session.name | escape }}</td>
         <td data-label="Class dates">{{ session.class_dates | escape }}</td>
         <td data-label="Session time">{{ lts_schedule.session_day_short | escape }}<br>{{ lts_schedule.session_time | escape }}</td>
-        <td data-label="4-week trial after class">{{ session.trial_dates | escape }}<br><span class="schedule-fee">({{ lts_schedule.trial_fee | escape }})</span></td>
-        <td data-label="Continue for the rest of the summer">
-          {{ session.continuation_dates | escape }}{% if session.continuation_fee %}<br>({{ session.continuation_fee | escape }}){% endif %}
+        <td data-label="Phase 2 trial">{{ session.trial_dates | escape }}<br><strong class="schedule-fee phase-price">Phase 2 price: {{ lts_schedule.trial_fee | escape }}</strong></td>
+        <td data-label="Phase 3 continuation">
+          {% if session.continuation_fee %}
+          {{ session.continuation_dates | escape }}<br><strong class="schedule-fee phase-price">Phase 3 price: {{ session.continuation_fee | escape }}</strong>
+          {% else %}
+          <strong class="schedule-fee phase-price">{{ session.continuation_dates | escape }}</strong>
+          {% endif %}
         </td>
       </tr>
       {% endfor %}

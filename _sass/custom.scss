@@ -299,6 +299,25 @@ footer { color: $footer-text-color; }
   font-weight: 600;
 }
 
+.phase-price,
+.phase-price-inline {
+  color: #0f3d69;
+  font-weight: 800;
+}
+
+.phase-price {
+  display: inline-block;
+  margin-top: 0.15rem;
+}
+
+.phase-fee-summary p {
+  margin-bottom: 0.5rem;
+}
+
+.phase-fee-list {
+  margin-top: 0.25rem;
+}
+
 .tab-content[hidden] {
   display: none !important;
 }

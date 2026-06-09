@@ -29,8 +29,8 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <div class="info-box note mt-3">
           <h4>Program Fees</h4>
           <p><strong>Learn to Scull class:</strong> {{ lts_schedule.class_fee }} or {{ lts_schedule.discounted_class_fee }}.</p>
-          <p><strong>Phase 2 Open Sculling Trial:</strong> {{ lts_schedule.trial_fee }} for the fixed four-week trial immediately after your class.</p>
-          <p><strong>Continue after trial:</strong> purchase the remaining season with the prorated program fee shown for your session and pay the club membership fee.</p>
+          <p><strong>Phase 2 price:</strong> <span class="phase-price-inline">{{ lts_schedule.trial_fee }}</span> for the fixed four-week Open Sculling trial immediately after your class.</p>
+          <p><strong>Phase 3 price:</strong> purchase the remaining season with the prorated program fee shown for your session and pay the club membership fee.</p>
         </div>
     </div>
 
@@ -47,7 +47,7 @@ description: Guidance on continuing your rowing journey after completing the AAR
     <a href="{{ site.baseurl }}/for-learners/resources/membership.html"  class="btn btn-primary">Membership Info</a>
 
     <h3> Open Sculling Program Trial</h3>
-    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing. The Phase 2 trial fee is {{ lts_schedule.trial_fee }}, there is no flexibility on which 4 weeks are offered at this rate, and full AARC membership is required before you can register. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
+    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons to more independent rowing. <strong class="phase-price-inline">Phase 2 price: {{ lts_schedule.trial_fee }}.</strong> There is no flexibility on which 4 weeks are offered at this rate, and full AARC membership is required before you can register. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
     <p>The <strong>multi-week discounted trial period</strong> in the Open Sculling Program is the most common and recommended next step. It provides:</p>
     <ul>
         <li>Regular, supervised water time.</li>
@@ -55,7 +55,12 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <li>Continued informal coaching and guidance.</li>
         <li>A chance to become comfortable with club routines and equipment.</li>
     </ul>
-    <p>If you continue after the trial, the remaining summer-season fee depends on when your Learn to Scull session ends: {% for session in lts_schedule.sessions %}{% if forloop.last %}and {% endif %}{{ session.name }} {% if session.continuation_fee %}{{ session.continuation_fee }}{% else %}moves to fall-season signup{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
+    <p><strong>Phase 3 price by cohort:</strong></p>
+    <ul class="phase-fee-list">
+      {% for session in lts_schedule.sessions %}
+        <li><strong>{{ session.name }}:</strong> {% if session.continuation_fee %}<span class="phase-price-inline">{{ session.continuation_fee }}</span>{% else %}<span class="phase-price-inline">{{ session.continuation_dates }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
     <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
     <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">More on Open Sculling Program Trial & Continuation</a>
 

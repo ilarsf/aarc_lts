@@ -111,7 +111,7 @@ title: AARC Learn to Scull Program
 
   <div class="info-box tip schedule-explainer">
     <h3>How the pathway works</h3>
-    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial for <strong>{{ lts_schedule.trial_fee }}</strong>. <strong>Full AARC membership is required before you can register for the trial or sign up for practices.</strong> After that, you can continue for the rest of the summer if you want more supported practice.</p>
+    <p>Each Learn to Scull class is four sessions over two weekends. After your class, the most common next step is Phase 2: the fixed four-week Open Sculling Program Trial. <strong>Phase 2 price: {{ lts_schedule.trial_fee }}.</strong> <strong>Full AARC membership is required before you can register for the trial or sign up for practices.</strong> After that, Phase 3 lets you continue for the rest of the summer; the Phase 3 price depends on your cohort and is shown in the table.</p>
   </div>
 
   {% include learn-to-scull-schedule-table.html %}
