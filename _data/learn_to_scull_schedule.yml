@@ -69,7 +69,7 @@ sessions:
     continuation_fee: "$75 or $55 student/vet"
     coaches:
       - name: "Adam Zwolinski"
-      - name: "coach TBD"
+      - name: "Russ Miller"
   - name: "LTS4"
     class_dates: "July 25/26 & Aug 1/2"
     session_dates:
@@ -81,5 +81,5 @@ sessions:
     continuation_dates: "Sign up for the fall season"
     coaches:
       - name: "Russ Miller"
-      - name: 'James "Jamie" Riddell IV'
+      - name: 'Jamie Riddell'
     logistics_note: "Substitute needed for the first Saturday."
