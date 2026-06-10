@@ -68,8 +68,8 @@ sessions:
     continuation_dates: "Aug 17 - Aug 30"
     continuation_fee: "$75 or $55 student/vet"
     coaches:
+      - name: "Michelle Nemshak"
       - name: "Adam Zwolinski"
-      - name: "Russ Miller"
   - name: "LTS4"
     class_dates: "July 25/26 & Aug 1/2"
     session_dates:
