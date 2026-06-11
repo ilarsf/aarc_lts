@@ -98,7 +98,7 @@ Our dedicated team is committed to providing an exceptional learning experience 
   <div class="team-grid">
     <div class="team-member">
       <div class="team-member-image">
-        <img src="{{ site.baseurl }}/assets/images/placeholder-coach.jpg" alt="Marcia Leonard">
+        <img src="https://images.clubexpress.com/757878/graphics/marcia_350px_1777300780.jpg" alt="Marcia Leonard">
       </div>
       <div class="team-member-info">
         <h3>Marcia Leonard</h3>
