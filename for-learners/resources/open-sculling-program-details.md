@@ -13,12 +13,12 @@ description: Details about the Open Sculling Program trial period, how to contin
     </div>
 
     <h2>Phase 2 of LTS: Open Sculling Trial Period</h2>
-    <p>After the four coached Learn to Scull sessions, the Phase 2 trial moves you into supervised Open Sculling practices so you can keep building technique, skill, and stamina. Use this page for registration and weekly practice logistics.</p>
+    <p>After the four coached Learn to Scull sessions, the Phase 2 trial moves you into supervised Open Sculling practices so you can keep building technique, skill, and stamina. Use the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a> for registration and this page for weekly practice logistics.</p>
 
     <h3>A. Register for the Phase 2 Trial</h3>
     <p>Before you register for the trial or sign up for practices, you must become a Full Member of AARC. You also need an active USRowing membership, at least Basic Membership, connected to AARC before participating in the trial or Open Sculling practices.</p>
     <p>In the <a href="https://membership.usrowing.org/" rel="noopener noreferrer">USRowing Membership Portal <i class="fas fa-external-link-alt"></i></a>, use AARC club code <strong>CZGBS</strong> and complete the required SafeSport attestation. If your attestation indicates regular contact with minors, complete the required SafeSport training before participating.</p>
-    <p>Then register for the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=131640">Open Sculling Program</a> trial assigned to your Learn to Scull cohort.</p>
+    <p>Then register for the trial assigned to your Learn to Scull cohort through the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>.</p>
     <p>The discounted Phase 2 trial is fixed to the four-week block immediately after your class and is priced at <strong class="phase-price-inline">{{ lts_schedule.trial_fee }}</strong> for rowers not already covered by the Open/Tech Summer Program or Full Season. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> The discount cannot be moved to a different four-week period. Your LTS coaches will provide final registration guidance during your last session.</p>
     <p>Use the {{ lts_schedule.year }} schedule below to confirm your trial dates and the Phase 3 continuation fee for your cohort, or to confirm that those fees are already covered by Open/Tech season fees:</p>
 
@@ -50,8 +50,8 @@ description: Details about the Open Sculling Program trial period, how to contin
     <h3>H. Inclement Weather</h3>
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
-    <h2>Phase 3: Continuing with the Open Sculling Program After the Trial</h2>
-    <p>After your four-week trial, you can continue sculling by signing up for Phase 3. If you are not already covered by the Open/Tech Summer Program or Full Season, pay the cohort-specific program fee shown in the schedule above, plus the club membership fee. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier.</p>
+    <h2>Phase 3: Continuing After the Trial</h2>
+    <p>After your four-week trial, you can continue sculling by signing up for Phase 3 through the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>. If you are not already covered by the Open/Tech Summer Program or Full Season, pay the cohort-specific program fee shown in the schedule above, plus the club membership fee. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier.</p>
 
     <div class="mt-4">
         <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>

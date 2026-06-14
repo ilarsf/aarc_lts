@@ -8,6 +8,8 @@ description: Common questions from Learn to Scull participants
 
 This comprehensive FAQ addresses common questions from Learn to Scull participants. If you don't see your question answered here, please ask your coach or contact the program coordinator.
 
+{% assign lts_schedule = site.data.learn_to_scull_schedule %}
+
 {% include accordion.html %}
 
 <div class="accordion-controls">
@@ -249,6 +251,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
   <li>Join recreational group rows or explore competitive opportunities</li>
   <li>Rent club equipment when you meet proficiency requirements</li>
 </ul>
+<p>Phase 2 trial and Phase 3 continuation registration are listed at the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>, not on the Open Sculling page.</p>
                     </div>
                 </div>
             </div>
@@ -257,7 +260,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <button class="nested-toggle">Do sweep rowers in Open/Tech need to pay Phase 2 or Phase 3 fees?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>No. Sweep rowers who already paid for the Open/Tech Summer Program or Full Season do not pay the Phase 2 Open Sculling trial fee or the Phase 3 remainder-of-season fee. Those program fees already include both sculling and sweep rowing. The separate Phase 2 and Phase 3 fees apply only to LTS graduates who are not already covered by Open/Tech season fees.</p>
+<p>No. Sweep rowers who already paid for the Open/Tech Summer Program or Full Season do not pay the Phase 2 Open Sculling trial fee or the Phase 3 remainder-of-season fee. Those program fees already include both sculling and sweep rowing. The separate Phase 2 and Phase 3 fees apply only to LTS graduates who are not already covered by Open/Tech season fees, and those LTS Phase 2 and Phase 3 registrations are listed on the Learn to Scull Class page.</p>
                     </div>
                 </div>
             </div>
