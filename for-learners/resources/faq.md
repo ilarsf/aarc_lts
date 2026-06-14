@@ -48,7 +48,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <button class="nested-toggle">Do I need special shoes?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>No, rowing shells have built-in foot stretchers with shoes or foot holders. You'll remove your regular shoes before getting in the boat. However, wear athletic shoes to the boathouse for warm-up activities.</p>
+<p>No special rowing shoes are required. Most rowing shells have built-in foot stretchers with shoes or foot holders, and you'll remove your regular shoes before getting in the boat. A few boats, including the Blue Peinert and the recreational Wintech boats, do not have built-in shoes, so wear or bring socks or water shoes for comfort. Wear athletic shoes to the boathouse for warm-up activities.</p>
                     </div>
                 </div>
             </div>
