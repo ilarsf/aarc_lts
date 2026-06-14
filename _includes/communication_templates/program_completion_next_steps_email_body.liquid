@@ -23,9 +23,10 @@ We encourage you to continue your rowing journey with us! The most common and re
 1.  **Open Sculling Program Trial:**
     *   Highly recommended for all graduates! This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water.
     *   It's an excellent bridge from structured lessons toward possible future independent-rowing approval, providing regular water time, opportunities to row with other recent graduates and experienced members, continued informal coaching, and a chance to become comfortable with club routines and equipment.
-    *   The fixed four-week Phase 2 trial for {{ program_number }} runs {{ cohort.trial_dates | default: "[trial dates]" }} and costs {{ lts_schedule.trial_fee }}.
+    *   The fixed four-week Phase 2 trial for {{ program_number }} runs {{ cohort.trial_dates | default: "[trial dates]" }} and costs {{ lts_schedule.trial_fee }} for rowers not already covered by the Open/Tech Summer Program or Full Season.
+    *   {{ lts_schedule.open_tech_fee_exemption_note }}
 {% if cohort.continuation_fee %}
-    *   Phase 3 continuation for {{ program_number }} is {{ cohort.continuation_dates }} and costs {{ cohort.continuation_fee }} plus the club membership fee.
+    *   Phase 3 continuation for {{ program_number }} is {{ cohort.continuation_dates }} and costs {{ cohort.continuation_fee }} plus the club membership fee for rowers not already covered by Open/Tech season fees.
 {% else %}
     *   After the trial, {{ cohort.continuation_dates | default: "review the current continuation options" }}.
 {% endif %}

@@ -66,7 +66,6 @@ search_exclude: true
 - **0:45-1:00** - Equipment preparations
    - Standard boat preparation with proper checks.
    - Refinement of individual settings.
-   - Reinforce that coached sessions do not require sign-out/sign-in; beginners do not take boats out by themselves, and independent rowing later requires explicit approval plus the online equipment request sheet and entrance whiteboard.
 - **1:00-1:15** - Supervised launching with increasing independence
    - Initial stability drill at dock.
 

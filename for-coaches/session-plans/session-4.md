@@ -18,7 +18,7 @@ search_exclude: true
 - Review and refine all previously learned rowing techniques and boat handling skills.
 - Practice continuous rowing with a strong focus on effective navigation and steering in varied conditions.
 - Understand and safely navigate river traffic patterns, including executing bridge passage where appropriate.
-- Build participant confidence in boat handling and decision-making on the water while reinforcing that beginners do not take boats out by themselves.
+- Build participant confidence in boat handling and decision-making on the water.
 - Conduct a skills assessment to identify strengths, areas for improvement, and readiness for next steps.
 - Provide clear guidance on future rowing opportunities (e.g., novice programs, open sculling).
 

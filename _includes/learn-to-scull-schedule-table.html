@@ -30,4 +30,7 @@
       {% endfor %}
     </tbody>
   </table>
+  {% if include.open_tech_note and lts_schedule.open_tech_fee_exemption_note %}
+  <p class="schedule-table-note"><strong>Covered Open/Tech rowers:</strong> {{ lts_schedule.open_tech_fee_exemption_note | escape }}</p>
+  {% endif %}
 </div>

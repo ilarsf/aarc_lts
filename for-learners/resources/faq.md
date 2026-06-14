@@ -254,6 +254,15 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
             </div>
 
             <div class="nested-section">
+                <button class="nested-toggle">Do sweep rowers in Open/Tech need to pay Phase 2 or Phase 3 fees?</button>
+                <div class="nested-content">
+                    <div class="nested-content-inner">
+<p>No. Sweep rowers who already paid for the Open/Tech Summer Program or Full Season do not pay the Phase 2 Open Sculling trial fee or the Phase 3 remainder-of-season fee. Those program fees already include both sculling and sweep rowing. The separate Phase 2 and Phase 3 fees apply only to LTS graduates who are not already covered by Open/Tech season fees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nested-section">
                 <button class="nested-toggle">How is my progress evaluated?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">

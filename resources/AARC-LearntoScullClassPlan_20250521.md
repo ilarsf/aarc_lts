@@ -185,7 +185,6 @@ Focus for the day:  Teaching proper navigation and conditioning folks that where
       1. Oars down first and then hulls down.  
       2. Put your oars on the dock near where you will launch.    
          1. Space oars out on the dock and not on top of each other  
-   3. Understand that coached sessions do not require sign-out/sign-in. Beginners may not take boats out by themselves. Once explicitly approved for independent rowing, place an equipment request in the online sheet before taking out a boat and note your name, boat, and time on the entrance whiteboard.
 2. Know and execute the traffic pattern  
 3. Water safety  
    1. Looking over your shoulder every 2-3 strokes.  

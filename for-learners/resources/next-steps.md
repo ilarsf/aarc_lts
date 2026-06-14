@@ -18,6 +18,93 @@ description: Guidance on continuing your rowing journey after completing the AAR
     margin-left: auto;
     margin-right: auto;
   }
+
+  .phase-journey {
+    margin: 2rem 0 2.5rem;
+  }
+
+  .phase-journey-header {
+    max-width: 760px;
+    margin: 0 auto 1.25rem;
+    text-align: center;
+  }
+
+  .phase-journey-header h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .phase-journey-header p {
+    margin: 0;
+    color: #5f6b76;
+  }
+
+  .phase-legend {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .phase-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px solid #d9e0e8;
+    border-left: 5px solid var(--phase-color);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(15, 35, 52, 0.08);
+  }
+
+  .phase-summary-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 2.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: var(--phase-tint);
+    color: var(--phase-color);
+  }
+
+  .phase-summary h3 {
+    margin: 0;
+  }
+
+  .phase-summary p {
+    margin: 0.25rem 0 0;
+    color: #4e5a64;
+  }
+
+  .phase-journey-note {
+    max-width: 760px;
+    margin: 1rem auto 0;
+    color: #4e5a64;
+    text-align: center;
+  }
+
+  .phase-one {
+    --phase-color: #0f766e;
+    --phase-tint: #e7f6f3;
+  }
+
+  .phase-two {
+    --phase-color: #0f4c81;
+    --phase-tint: #e9f2fa;
+  }
+
+  .phase-three {
+    --phase-color: #8f3151;
+    --phase-tint: #fbedf2;
+  }
+
+  @media (max-width: 820px) {
+    .phase-legend {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <div class="container my-5">
@@ -30,39 +117,56 @@ description: Guidance on continuing your rowing journey after completing the AAR
           <h4>Program Fees</h4>
           <p><strong>Learn to Scull class:</strong> {{ lts_schedule.class_fee }} or {{ lts_schedule.discounted_class_fee }}.</p>
           <p><strong>Phase 2 price:</strong> <span class="phase-price-inline">{{ lts_schedule.trial_fee }}</span> for the fixed four-week Open Sculling trial immediately after your class.</p>
-          <p><strong>Phase 3 price:</strong> purchase the remaining season with the prorated program fee shown for your session and pay the club membership fee.</p>
+          <p><strong>Covered Open/Tech rowers:</strong> {{ lts_schedule.open_tech_fee_exemption_note }}</p>
+          <p><strong>Phase 3 price:</strong> purchase the remaining season with the prorated program fee shown for your session and pay the club membership fee, unless you already paid for the Open/Tech Summer Program or Full Season.</p>
         </div>
     </div>
 
+    <section class="phase-journey" aria-labelledby="phase-journey-heading">
+        <div class="phase-journey-header">
+            <h2 id="phase-journey-heading">Three Phases After Registration</h2>
+            <p>Each Learn to Scull cohort follows the same three-phase path.</p>
+        </div>
+
+        <div class="phase-legend" aria-label="Program phase summary">
+            <div class="phase-summary phase-one">
+                <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+                <div>
+                    <h3>Phase 1: LTS</h3>
+                    <p>Four coached Learn to Scull sessions over two weekends.</p>
+                </div>
+            </div>
+            <div class="phase-summary phase-two">
+                <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-water"></i></span>
+                <div>
+                    <h3>Phase 2: LTS Trial</h3>
+                    <p>Fixed four-week Open Sculling trial immediately after your class.</p>
+                </div>
+            </div>
+            <div class="phase-summary phase-three">
+                <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
+                <div>
+                    <h3>Phase 3: Open Sculling</h3>
+                    <p>Join for the remainder of the season, or the new season for the final cohort.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="phase-journey-note">For exact cohort trial dates, continuation dates, fees, and weekly signup steps, use the Open Sculling Trial Guide below.</p>
+    </section>
+
     <img src="https://images.clubexpress.com/757878/graphics/clubsculling5in_549792197.jpg" alt="AARC single sculler on the water" class="content-image">
 
-    <h2>Understanding Your Progress</h2>
-    <p>During your Learn to Scull program, your coaches helped you develop core competencies. This provides a foundation for choosing your next steps. Remember, everyone progresses at their own pace, and the goal is to find the right pathway for your continued enjoyment and development in sculling.</p>
+    <h2>Choosing Your Next Step</h2>
+    <p>During Learn to Scull, your coaches helped you build the foundation for supervised club sculling. The usual path is to become a full AARC member, complete the fixed four-week Open Sculling trial for your cohort, and then decide whether to continue with the Open Sculling Program for the remainder of the season.</p>
 
-    <h2>Key Pathway Post-Program</h2>
-
-    <h3>Full Club Membership</h3>
-
-    <p>Becoming a full AARC member grants you access to facilities, and the broader rowing community. Membership is required for ongoing participation in most club activities and programs.</p>
+    <h3>1. Become a Full Club Member</h3>
+    <p>Membership is required before you can register for the Open Sculling trial or sign up for practices. It also gives you access to club communications, member resources, and the broader AARC rowing community.</p>
     <a href="{{ site.baseurl }}/for-learners/resources/membership.html"  class="btn btn-primary">Membership Info</a>
 
-    <h3> Open Sculling Program Trial</h3>
-    <p>Highly recommended for all graduates. This multi-week discounted trial period allows you to row in a supervised group setting, further honing your skills and building confidence on the water. It's an excellent bridge from structured lessons toward possible future independent-rowing approval. <strong class="phase-price-inline">Phase 2 price: {{ lts_schedule.trial_fee }}.</strong> There is no flexibility on which 4 weeks are offered at this rate, and full AARC membership is required before you can register. The Open Sculling Program is designed to help scullers further develop and master their skills, and is suitable for recent LTS graduates, experienced scullers aiming to refine their technique, and adults returning to the sport of rowing after a long hiatus.</p>
-    <p>The <strong>multi-week discounted trial period</strong> in the Open Sculling Program is the most common and recommended next step. It provides:</p>
-    <ul>
-        <li>Regular, supervised water time.</li>
-        <li>Opportunity to row with other recent graduates and experienced members.</li>
-        <li>Continued informal coaching and guidance.</li>
-        <li>A chance to become comfortable with club routines and equipment.</li>
-    </ul>
-    <p><strong>Phase 3 price by cohort:</strong></p>
-    <ul class="phase-fee-list">
-      {% for session in lts_schedule.sessions %}
-        <li><strong>{{ session.name }}:</strong> {% if session.continuation_fee %}<span class="phase-price-inline">{{ session.continuation_fee }}</span>{% else %}<span class="phase-price-inline">{{ session.continuation_dates }}</span>{% endif %}</li>
-      {% endfor %}
-    </ul>
-    <p>Your LTS coaches will provide details on how to sign up for this trial during your final session.</p>
-    <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">More on Open Sculling Program Trial & Continuation</a>
+    <h3>2. Use the Open Sculling Trial as Your Bridge</h3>
+    <p>The trial provides supervised water time, help with club routines and equipment, and a path toward possible future independent-rowing approval. Your LTS coaches will provide final registration guidance during your last session.</p>
+    <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">Open Sculling Trial Guide</a>
 
     <h2>General Advice for Continued Development</h2>    
     <ul>
