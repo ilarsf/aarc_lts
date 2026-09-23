@@ -15,9 +15,10 @@
 </head>
 
 <body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
   <div class="page-header">
     <div class="container-lg px-3 my-5">
-      <p class="project-name"><a href="{{ site.baseurl }}/">{{ site.title | default: site.github.repository_name }}</a></p>
+      <p class="project-name"><a class="brand-link" href="{{ site.baseurl }}/"><img class="site-mark" src="{{ site.baseurl }}/assets/images/aarc-white-logo.svg" alt="">{{ site.title | default: site.github.repository_name }}</a></p>
       <p class="project-tagline">{{ site.description | default: site.github.project_tagline }}</p>
       <div class="header-actions">
         <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
@@ -49,7 +50,7 @@
       </ul>
     </nav>
 
-    <main class="main-content">
+    <main id="main-content" class="main-content">
       {{ content }}
     </main>
 

@@ -10,7 +10,7 @@
 .tab-nav {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 2px solid #0073E6;
+    border-bottom: 2px solid #3B428C;
     margin-bottom: 0;
     background-color: #f9f9f9;
     border-radius: 4px 4px 0 0;
@@ -41,7 +41,7 @@
 
 .tab-button.active,
 .tab-link.active {
-    background-color: #0073E6;
+    background-color: #3B428C;
     color: white;
 }
 

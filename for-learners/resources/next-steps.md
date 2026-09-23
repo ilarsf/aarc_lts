@@ -114,11 +114,12 @@ description: Guidance on continuing your rowing journey after completing the AAR
         <p class="lead">Congratulations on completing the Learn to Scull program! Here’s how you can continue to develop your skills and enjoy rowing with AARC.</p>
 
         <div class="info-box note mt-3">
-          <h4>Program Fees</h4>
-          <p><strong>Learn to Scull class:</strong> {{ lts_schedule.class_fee }} or {{ lts_schedule.discounted_class_fee }}.</p>
-          <p><strong>Phase 2 price:</strong> <span class="phase-price-inline">{{ lts_schedule.trial_fee }}</span> for the fixed four-week Open Sculling trial immediately after your class.</p>
+          <h4>2026 example fees</h4>
+          <p>These are historical 2026 amounts for planning only. <strong>2027 fees and registration details are not yet announced and may differ.</strong></p>
+          <p><strong>2026 Learn to Scull class:</strong> {{ lts_schedule.class_fee }} or {{ lts_schedule.discounted_class_fee }}.</p>
+          <p><strong>2026 Phase 2 price:</strong> <span class="phase-price-inline">{{ lts_schedule.trial_fee }}</span> for the fixed four-week Open Sculling trial immediately after class.</p>
           <p><strong>Covered Open/Tech rowers:</strong> {{ lts_schedule.open_tech_fee_exemption_note }}</p>
-          <p><strong>Phase 3 price:</strong> purchase the remaining season through the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a> with the prorated program fee shown for your session and pay the club membership fee, unless you already paid for the Open/Tech Summer Program or Full Season.</p>
+          <p><strong>2026 Phase 3:</strong> the continuation fee varied by class. Check the <a href="https://aarc.clubexpress.com/" rel="noopener noreferrer">official AARC site</a> for future fees and registration instructions.</p>
         </div>
     </div>
 

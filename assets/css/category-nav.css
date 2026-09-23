@@ -32,7 +32,7 @@
 }
 
 .category-link.active {
-    background-color: #0073E6;
+    background-color: #3B428C;
     color: white;
 }
 
@@ -40,7 +40,7 @@
 .skill-tag {
     display: inline-block;
     background-color: #e1f0ff;
-    color: #0073E6;
+    color: #3B428C;
     padding: 0.25rem 0.5rem;
     border-radius: 50px;
     font-size: 0.8rem;
@@ -55,7 +55,7 @@
 
 /* Enhanced skill tags */
 .skill-tag.highlighted {
-    background-color: #0073E6;
+    background-color: #3B428C;
     color: white;
 }
 

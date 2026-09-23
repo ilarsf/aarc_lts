@@ -84,7 +84,7 @@ html {
     display: inline-block;
     margin-right: 15px;
     padding: 8px 16px;
-    background-color: #0066cc;
+    background-color: #3b428c;
     color: white !important;
     border-radius: 4px;
     text-decoration: none !important;
@@ -227,7 +227,7 @@ html {
 
     .site-nav a:hover {
         background-color: #f9f9f9 !important;
-        border-left: 3px solid #0066cc !important;
+        border-left: 3px solid #3b428c !important;
     }
 
     /* Fix dropdown menus on mobile */

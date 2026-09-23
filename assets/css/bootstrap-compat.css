@@ -1,8 +1,8 @@
 /* Narrow compatibility layer for public pages after removing Bootstrap. */
 
 :root {
-    --theme-color: #0073e6;
-    --theme-color-dark: #005bb5;
+    --theme-color: #3b428c;
+    --theme-color-dark: #292f68;
     --theme-color-soft: #e9f3ff;
 }
 

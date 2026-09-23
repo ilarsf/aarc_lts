@@ -143,7 +143,7 @@
 
 /* General Quiz Buttons (used by template) */
 .quiz-button {
-    background-color: #0066cc;
+    background-color: #3b428c;
     color: white;
     border: 2px solid #004d99;
     padding: 10px 20px;
@@ -225,7 +225,7 @@
 #review-screen h2 {
     font-size: 1.6rem;
     font-weight: 600;
-    color: #0056b3;
+    color: #3b428c;
     /* Darker blue for headings */
     margin-top: 0;
     /* Remove default top margin for h2 */
@@ -293,7 +293,7 @@
 
 #quiz-summary .highlight {
     font-weight: bold;
-    color: #0066cc;
+    color: #3b428c;
 }
 
 .result-heading {
@@ -397,7 +397,7 @@
 
 #progress-bar {
     height: 100%;
-    background-color: #0066cc;
+    background-color: #3b428c;
     border-radius: 4px;
     /* Match container */
     width: 0;

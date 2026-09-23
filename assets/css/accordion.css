@@ -16,7 +16,7 @@
     font-weight: 600;
     position: relative;
     border-radius: 4px;
-    border-left: 4px solid #0073E6;
+    border-left: 4px solid #3B428C;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +176,7 @@
 .skill-tag {
     display: inline-block;
     background-color: #e1f0ff;
-    color: #0073E6;
+    color: #3B428C;
     padding: 0.25rem 0.5rem;
     border-radius: 50px;
     font-size: 0.8rem;
@@ -191,7 +191,7 @@
 }
 
 .skill-tag.highlighted {
-    background-color: #0073E6;
+    background-color: #3B428C;
     color: white;
 }
 

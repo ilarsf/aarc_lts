@@ -12,6 +12,8 @@ description: Details about the Open Sculling Program trial period, how to contin
         <p class="lead">This guide provides information for LTS students entering Phase 2 (the Open Sculling Trial Period) and how to continue rowing with AARC.</p>
     </div>
 
+    <div class="info-box note"><strong>2026 example:</strong> the dates and prices below describe the completed 2026 season. The 2027 class, trial, and continuation schedule and fees have not been announced and may differ. Confirm current details with AARC before registering.</div>
+
     <h2>Phase 2 of LTS: Open Sculling Trial Period</h2>
     <p>After the four coached Learn to Scull sessions, the Phase 2 trial moves you into supervised Open Sculling practices so you can keep building technique, skill, and stamina. Use the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a> for registration and this page for weekly practice logistics.</p>
 
@@ -20,7 +22,7 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>In the <a href="https://membership.usrowing.org/" rel="noopener noreferrer">USRowing Membership Portal <i class="fas fa-external-link-alt"></i></a>, use AARC club code <strong>CZGBS</strong> and complete the required SafeSport attestation. If your attestation indicates regular contact with minors, complete the required SafeSport training before participating.</p>
     <p>Then register for the trial assigned to your Learn to Scull cohort through the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>.</p>
     <p>The discounted Phase 2 trial is fixed to the four-week block immediately after your class and is priced at <strong class="phase-price-inline">{{ lts_schedule.trial_fee }}</strong> for rowers not already covered by the Open/Tech Summer Program or Full Season. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> The discount cannot be moved to a different four-week period. Your LTS coaches will provide final registration guidance during your last session.</p>
-    <p>Use the {{ lts_schedule.year }} schedule below to confirm your trial dates and the Phase 3 continuation fee for your cohort, or to confirm that those fees are already covered by Open/Tech season fees:</p>
+    <p>Use the {{ lts_schedule.year }} schedule below as an example of how trial and continuation periods were timed. Its dates and fees do not confirm 2027 arrangements:</p>
 
     {% include learn-to-scull-schedule-table.html open_tech_note=true %}
 

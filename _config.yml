@@ -18,8 +18,8 @@ show_downloads: false
 google_analytics:
 
 # Custom theme settings
-theme_color: "#0066cc"         # Primary blue color
-theme_color_secondary: "#004c99" # Secondary blue color
+theme_color: "#3B428C"         # AARC brand guide web blue
+theme_color_secondary: "#292F68" # Darker interactive blue
 footer_text_color: "#7c7c7c"     # Light gray for footer text
 
 # Coach Portal settings

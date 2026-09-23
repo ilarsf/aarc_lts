@@ -2,11 +2,13 @@
 layout: default
 title: About the Learn to Scull Program - AARC Learn to Scull
 ---
-{% assign lts_schedule = site.data.learn_to_scull_schedule %}
-
 # About the Learn to Scull Program
 
+<p class="content-as-of">As of September 23, 2026</p>
+
 A comprehensive introduction to the art and sport of sculling from Ann Arbor Rowing Club.
+
+The program description below reflects the 2026 offering. The 2027 class format, dates, fees, and coach team have not yet been confirmed.
 
 ## Program History
 
@@ -37,10 +39,10 @@ After completing Learn to Scull, graduates can:
 
 <div class="page-intro-card">
   <h2>Start here if you are deciding whether the program is a fit</h2>
-  <p>Use the learner guide for preparation and safety, then review the {{ lts_schedule.year }} dates and FAQ.</p>
+  <p>Use the learner guide for preparation and safety, then review the 2027 class information as it becomes available.</p>
   <div class="button-row">
     <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
-    <a href="{{ site.baseurl }}/#program-dates" class="cta-button secondary">See {{ lts_schedule.year }} dates</a>
+    <a href="{{ site.baseurl }}/#program-details" class="cta-button secondary">See 2027 class information</a>
     <a href="{{ site.baseurl }}/for-learners/resources/faq.html" class="cta-button secondary">Read the FAQ</a>
   </div>
 </div>

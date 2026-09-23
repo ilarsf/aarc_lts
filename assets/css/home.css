@@ -1,0 +1,311 @@
+/* Homepage layout. Colors and type follow the AARC brand guide. */
+.home-hero,
+.home-facts,
+.home-details-grid {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.home-hero {
+  grid-template-columns: minmax(0, 1.7fr) minmax(16rem, 0.8fr);
+  align-items: center;
+  padding: clamp(2rem, 5vw, 4rem);
+  background: #eef0fa;
+  border: 1px solid #d8dbef;
+  border-radius: 12px;
+}
+
+.home-eyebrow,
+.notice-label,
+.home-path-title {
+  margin: 0 0 0.75rem;
+  color: #3b428c;
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.main-content .home-hero h1 {
+  max-width: 13ch;
+  margin: 0 0 1rem;
+  padding: 0;
+  color: #171b36;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.main-content .home-hero h1::after,
+.main-content .home-section h2::before,
+.main-content .home-contact h2::before {
+  content: none;
+}
+
+.home-lead {
+  max-width: 52ch;
+  margin: 0;
+  color: #333333;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.home-hero .button-row {
+  margin-top: 1.75rem;
+}
+
+.home-path {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-top: 4px solid #e0403b;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(32, 37, 75, 0.08);
+}
+
+.home-path ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.home-path li {
+  margin: 0.8rem 0;
+  padding-left: 0.3rem;
+  line-height: 1.45;
+}
+
+.home-path li:last-child {
+  margin-bottom: 0;
+}
+
+.home-path li::marker {
+  color: #3b428c;
+  font-weight: 700;
+}
+
+.season-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 1.5rem 0 3.5rem;
+  padding: 1.15rem 1.5rem;
+  border-left: 4px solid #3b428c;
+  background: #f7f8fc;
+}
+
+.season-notice p {
+  margin: 0;
+}
+
+.season-notice .notice-label {
+  margin-bottom: 0.3rem;
+}
+
+.season-notice a {
+  flex: none;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.home-section {
+  margin: 3.5rem 0;
+}
+
+.home-section-heading {
+  max-width: 48rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-content .home-section h2,
+.main-content .home-contact h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #171b36;
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.home-section-heading > p:last-child {
+  margin: 0.75rem 0 0;
+}
+
+.home-facts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-facts article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #d8dbef;
+  border-radius: 8px;
+}
+
+.home-facts .fact-number {
+  margin: 0;
+  color: #e0403b;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.home-facts h3 {
+  margin: 0.6rem 0;
+  color: #171b36;
+  font-size: 1.3rem;
+}
+
+.home-facts p {
+  margin: 0 0 1rem;
+}
+
+.home-facts a {
+  margin-top: auto;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.home-program {
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border-radius: 12px;
+  background: #f7f8fc;
+}
+
+.home-details-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-details-grid > div:last-child {
+  grid-column: 1 / -1;
+}
+
+.home-details-grid > div {
+  padding: 1.5rem;
+  border: 1px solid #d8dbef;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.home-details-grid h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.home-details-grid dl {
+  margin: 0;
+}
+
+.home-details-grid dl > div {
+  display: grid;
+  grid-template-columns: minmax(6rem, 0.65fr) 1fr;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid #e9eaf4;
+}
+
+.home-details-grid dt {
+  font-weight: 700;
+}
+
+.home-details-grid dd {
+  margin: 0;
+}
+
+.historical-price-note {
+  margin: 1rem 0 0;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.example-schedule {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d8dbef;
+}
+
+.example-schedule h3 {
+  margin: 0 0 0.5rem;
+  color: #171b36;
+}
+
+.example-schedule p {
+  margin: 0;
+}
+
+.example-schedule .historical-price-note {
+  margin-top: 0.75rem;
+}
+
+.example-schedule .schedule-table-wrapper {
+  margin-top: 1.25rem;
+}
+
+.example-schedule .schedule-table {
+  display: table;
+  width: 100%;
+  min-width: 850px;
+  box-shadow: none;
+}
+
+.example-schedule .schedule-table th {
+  color: #3b428c;
+}
+
+.home-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3.5rem 0 2rem;
+  padding: 2rem 0;
+  border-top: 2px solid #3b428c;
+}
+
+.home-contact p:last-child {
+  margin: 0.75rem 0 0;
+}
+
+.home-contact .cta-button {
+  flex: none;
+}
+
+@media (max-width: 760px) {
+  .home-hero,
+  .home-facts,
+  .home-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-details-grid > div:last-child {
+    grid-column: auto;
+  }
+
+  .season-notice,
+  .home-contact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .season-notice {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 1.5rem;
+  }
+
+  .home-hero .button-row > a {
+    width: 100%;
+  }
+
+  .home-details-grid dl > div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}

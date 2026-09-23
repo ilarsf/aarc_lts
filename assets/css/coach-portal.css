@@ -58,7 +58,7 @@
 }
 
 .resource-card .cta-button:hover {
-    background-color: var(--theme-color-dark, #0056b3);
+    background-color: var(--theme-color-dark, #3b428c);
 }
 
 /* Tab styles specific to coach portal */

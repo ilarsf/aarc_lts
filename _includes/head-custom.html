@@ -1,6 +1,7 @@
 <!-- Additional head content -->
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/images/favicon/aarc-favicon-96.png">
 <!-- Bootstrap compatibility utilities -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap-compat.css">
 <!-- Button Styles -->
@@ -25,6 +26,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/resource-sections.css">
 <!-- Textbook Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/textbook-styles.css">
+{% if page.homepage %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/home.css">{% endif %}
 <!-- Image Handler Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/image-handler.css">
 <!-- JavaScript, all with defer attribute to prevent blocking -->

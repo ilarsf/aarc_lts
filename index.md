@@ -1,447 +1,135 @@
 ---
 layout: default
 title: AARC Learn to Scull Program
+homepage: true
 ---
 {% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
-<section class="page-intro-card">
-  <h1>Learn to Scull at AARC</h1>
-  <p>New to rowing? Learn to Scull is AARC’s beginner program for adults. Start with the learner guide, then review the {{ lts_schedule.year }} dates and registration details.</p>
-  <div class="button-row">
-    <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the learner guide</a>
-    <a href="#program-dates" class="cta-button secondary">See {{ lts_schedule.year }} dates</a>
-    <a href="{{ lts_schedule.registration_url }}" class="cta-button secondary" target="_blank" rel="noopener">Register / waitlist</a>
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home-hero-copy">
+    <p class="home-eyebrow">Ann Arbor Rowing Club · Learn to Scull</p>
+    <h1 id="home-title">Learn to scull with AARC</h1>
+    <p class="home-lead">A beginner program for adults, with small classes, coached practice, and a clear path from your first strokes to continued rowing.</p>
+    <div class="button-row">
+      <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Explore the learner guide</a>
+      <a href="#program-details" class="cta-button secondary">Program details</a>
+    </div>
   </div>
-  <p><strong>Recommended order:</strong> learner guide → dates and fees → registration or waitlist.</p>
-</section>
-
-<section class="program-section">
-  <div class="section-header">
-    <h2>Program Highlights</h2>
-  </div>
-
-  <div class="highlights-grid">
-    <a href="{{ site.baseurl }}/for-learners/getting-started/program-overview.html" class="highlight-card-link">
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-calendar-alt"></i>
-        </div>
-        <h3>Program Format</h3>
-        <p>Four 3-hour sessions over two weekends, with each class capped at six scullers and a 1:3 coach-to-student ratio.</p>
-      </div>
-    </a>
-    
-    <a href="{{ site.baseurl }}/for-learners/#learning-journey" class="highlight-card-link">
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <h3>Progressive Learning</h3>
-        <p>Structured approach from first strokes to supervised practice and, when approved, independent rowing.</p>
-      </div>
-    </a>
-    
-    <a href="{{ site.baseurl }}/for-learners/#safety" class="highlight-card-link">
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-life-ring"></i>
-        </div>
-        <h3>Safety First</h3>
-        <p>Comprehensive water safety training including practical self-rescue techniques.</p>
-      </div>
-    </a>
-    
-    <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="highlight-card-link">
-      <div class="highlight-card">
-        <div class="highlight-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3>Join the Community</h3>
-        <p>Clear pathway to club membership and ongoing rowing opportunities.</p>
-      </div>
-    </a>
+  <div class="home-path" aria-label="How to get started">
+    <p class="home-path-title">Your next steps</p>
+    <ol>
+      <li>Explore the learner guide</li>
+      <li>Use the 2026 timeline as a planning example</li>
+      <li>Check AARC for registration updates</li>
+    </ol>
   </div>
 </section>
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  <img src="https://images.clubexpress.com/757878/graphics/LTS_1121118463.jpg" alt="Learn to Scull program participants" class="landing-page-image">
-</div>
-
-<section id="program-dates" class="program-section info-section">
-  <div class="section-header">
-    <h2>{{ lts_schedule.year }} Program Information</h2>
+<aside class="season-notice" aria-label="Season status">
+  <div>
+    <p class="notice-label">2027 class update</p>
+    <p><strong>Updates about 2027 classes will follow before the spring 2027 season starts.</strong> The 2026 dates and prices below are planning examples only; 2027 details are unannounced and may change.</p>
   </div>
-  
-  <div class="info-container">
-    <div class="info-panel">
-      <div class="info-header">
-        <i class="fas fa-calendar-check"></i>
-        <h3>Class Schedule</h3>
-      </div>
-      <ul>
-        <li><strong>Format:</strong> {{ lts_schedule.class_format }}</li>
-        <li><strong>Days:</strong> {{ lts_schedule.session_days }}</li>
-        <li><strong>Time:</strong> {{ lts_schedule.session_time }}</li>
-        <li><strong>Break:</strong> {{ lts_schedule.break }}</li>
-      </ul>
+  <a href="https://aarc.clubexpress.com/" target="_blank" rel="noopener noreferrer">Check AARC for updates</a>
+</aside>
+
+<section class="home-section" aria-labelledby="expect-title">
+  <div class="home-section-heading">
+    <p class="home-eyebrow">The experience</p>
+    <h2 id="expect-title">What to expect</h2>
+  </div>
+  <div class="home-facts">
+    <article>
+      <p class="fact-number">01</p>
+      <h3>Small group coaching</h3>
+      <p>Past classes have used four three-hour sessions over two weekends, with up to six scullers and one coach for every three students. The 2027 format is to be confirmed.</p>
+      <a href="{{ site.baseurl }}/for-learners/getting-started/program-overview.html">See the program format</a>
+    </article>
+    <article>
+      <p class="fact-number">02</p>
+      <h3>Skills and safety</h3>
+      <p>Build your rowing technique step by step and practice the safety skills needed on the water, including self-rescue.</p>
+      <a href="{{ site.baseurl }}/for-learners/#safety">Explore safety resources</a>
+    </article>
+    <article>
+      <p class="fact-number">03</p>
+      <h3>A path to keep rowing</h3>
+      <p>Continue with supervised practice after class and work toward independent rowing when approved.</p>
+      <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html">See what comes next</a>
+    </article>
+  </div>
+</section>
+
+<section id="program-details" class="home-section home-program" aria-labelledby="details-title">
+  <div class="home-section-heading">
+    <p class="home-eyebrow">Upcoming classes</p>
+    <h2 id="details-title">2027 class information</h2>
+    <p>Confirmed 2027 details will be posted before the spring season starts. The 2026 examples below show how classes, trial periods, continuation, and costs fit together; they are not the 2027 schedule or prices.</p>
+  </div>
+
+  <div class="home-details-grid">
+    <div>
+      <h3>Schedule</h3>
+      <dl>
+        <div><dt>2027 dates</dt><dd>To be announced</dd></div>
+        <div><dt>2026 example</dt><dd>Classes ran from May 30 to August 2, across four sessions per class.</dd></div>
+        <div><dt>2027 format</dt><dd>To be confirmed</dd></div>
+      </dl>
     </div>
-    
-    <div class="info-panel">
-      <div class="info-header">
-        <i class="fas fa-clipboard-list"></i>
-        <h3>Registration</h3>
-      </div>
-      <ul>
-        <li><strong>Opens:</strong> {{ lts_schedule.registration_opens }}</li>
-        <li><strong>Cost:</strong> {{ lts_schedule.class_fee }}</li>
-        <li><strong>Discounted:</strong> {{ lts_schedule.discounted_class_fee }}</li>
-        <li><strong>USRowing:</strong> {{ lts_schedule.usrowing_requirement }}</li>
-        <li><a href="{{ lts_schedule.registration_url }}" class="info-link" target="_blank">Register Online</a></li>
-      </ul>
+    <div>
+      <h3>Registration and fees</h3>
+      <dl>
+        <div><dt>Registration</dt><dd>To be announced</dd></div>
+        <div><dt>2027 fees</dt><dd>To be announced</dd></div>
+        <div><dt>2026 class fee</dt><dd>{{ lts_schedule.class_fee }}*</dd></div>
+        <div><dt>2026 reduced fee</dt><dd>{{ lts_schedule.discounted_class_fee }}*</dd></div>
+        <div><dt>2026 trial fee</dt><dd>{{ lts_schedule.trial_fee }}*</dd></div>
+      </dl>
+      <p class="historical-price-note">* 2026 prices only. 2027 prices may change.</p>
     </div>
-    
-    <div class="info-panel">
-      <div class="info-header">
-        <i class="fas fa-question-circle"></i>
-        <h3>Questions?</h3>
-      </div>
-      <p>Email <a href="mailto:info@a2crew.com">info@a2crew.com</a> or visit the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=201828" target="_blank">AARC website</a> for more information.</p>
+    <div>
+      <h3>Coach team</h3>
+      <p>2027 coaches: To be determined. The team will be announced with the class details.</p>
     </div>
   </div>
 
-  {% include learn-to-scull-schedule-table.html %}
-</section>
-
-<section class="program-section cta-section" style="text-align: center;">
-  <div class="button-row" style="justify-content: center;">
-    <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Start with the Learner’s Guide</a>
-    <a href="{{ site.baseurl }}/about/contact.html" class="cta-button secondary">Ask a question</a>
+  <div class="example-schedule">
+    <h3>2026 class, continuation, and price examples</h3>
+    <p><strong>For planning only:</strong> these dates and prices are from the completed 2026 season. The 2027 sequence, timing, and prices may change.</p>
+    <div class="schedule-table-wrapper">
+      <table class="schedule-table">
+        <caption>2026 Learn to Scull class dates, follow-on periods, and continuation fees</caption>
+        <thead>
+          <tr>
+            <th scope="col">Class</th>
+            <th scope="col">Class dates</th>
+            <th scope="col">Four-week trial example</th>
+            <th scope="col">Continuation example</th>
+            <th scope="col">2026 continuation fee*</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for session in lts_schedule.sessions %}
+          <tr>
+            <th scope="row">{{ session.name | escape }}</th>
+            <td>{{ session.class_dates | escape }}</td>
+            <td>{{ session.trial_dates | escape }}</td>
+            <td>{{ session.continuation_dates | escape }}</td>
+            <td>{% if session.continuation_fee %}{{ session.continuation_fee | escape }}*{% else %}Not listed{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="historical-price-note">* 2026 price only. The 2027 price may change.</p>
   </div>
 </section>
 
-<style>
-:root {
-  --primary-color: #0056b3;
-  --secondary-color: #f8f9fa;
-  --accent-color: #e63946;
-  --text-color: #333;
-  --light-text: #6c757d;
-  --border-radius: 8px;
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
-  --section-padding: 3rem 0;
-}
-
-/* Section Styling */
-.program-section {
-  padding: var(--section-padding);
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 0;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.section-header h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-  position: relative;
-  display: inline-block;
-}
-
-.section-header h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: var(--primary-color);
-  z-index: 0;
-}
-
-.section-header p {
-  font-size: 1.1rem;
-  color: var(--light-text);
-  max-width: 600px;
-  margin: 1rem auto 0;
-}
-
-/* Main Navigation Tiles */
-.main-navigation {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.nav-tile {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.nav-tile:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.tile-icon {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.nav-tile h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.nav-tile p {
-  color: var(--light-text);
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
-}
-
-/* Program Highlights */
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.highlight-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block; /* Ensures the link takes up the grid cell properly */
-}
-
-.highlight-card {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  height: 100%; /* Ensures the card fills the link wrapper */
-}
-
-.highlight-card:hover {
-  transform: translateY(-5px);
-}
-
-.highlight-icon {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 1rem;
-  background-color: rgba(0, 86, 179, 0.1);
-}
-
-.highlight-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.highlight-card p {
-  color: var(--light-text);
-  font-size: 0.95rem;
-}
-
-/* Info Section */
-.info-section {
-  background-color: #f8f9fa;
-  border-radius: var(--border-radius);
-  padding: 2rem 1rem;
-}
-
-.info-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.info-panel {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--box-shadow);
-}
-
-.info-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  gap: 0.75rem;
-}
-
-.info-header i {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-
-.info-header h3 {
-  margin: 0;
-  font-size: 1.3rem;
-}
-
-.info-panel ul {
-  padding-left: 1.5rem;
-  margin-bottom: 0;
-}
-
-.info-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  margin-top: 0.5rem;
-}
-
-.schedule-table-wrapper {
-  max-width: 1200px;
-  margin: 2rem auto 0;
-  overflow-x: auto;
-}
-
-.schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  box-shadow: var(--box-shadow);
-}
-
-.schedule-table th,
-.schedule-table td {
-  border: 1px solid #dee2e6;
-  padding: 0.85rem 0.9rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.schedule-table th {
-  background-color: #f8f9fa;
-  color: #0f3d69;
-  font-weight: 600;
-}
-
-.schedule-fee {
-  color: #0f3d69;
-  font-weight: 600;
-}
-
-/* Added for footer_nav.html */
-.footer-navigation .footer-nav-button {
-  margin: 0.3rem 0.25rem;
-  padding: 0.6rem 1rem;
-  font-size: 0.9em;
-}
-/* End of added styles */
-
-/* Hero Section */
-.hero-section {
-  background-color: var(--primary-color);
-  background-image: linear-gradient(rgba(0, 56, 130, 0.85), rgba(0, 56, 130, 0.9)), url("{{ site.baseurl }}/assets/images/rowing-header.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 3rem 2rem; /* Reduced top/bottom padding */
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-  border-radius: var(--border-radius);
-}
-
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem; /* Reduced font size */
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.subtitle {
-  font-size: 1.25rem; /* Reduced font size */
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.landing-page-image {
-  max-width: 600px; /* Adjusted from 700px */
-  width: 75%;
-  height: auto;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  margin-top: 1rem;
-  margin-bottom: 2rem; /* Added to ensure spacing before next section */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 4rem 1rem;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.25rem;
-  }
-  
-  .hero-description {
-    font-size: 1rem;
-  }
-  
-  .info-container {
-    grid-template-columns: 1fr;
-  }
-
-  .schedule-table th,
-  .schedule-table td {
-    min-width: 150px;
-  }
-  
-  .resources-flex {
-    gap: 1rem;
-  }
-  
-  .resource-item {
-    width: calc(50% - 0.5rem);
-    padding: 1.25rem;
-  }
-}
-</style>
+<section class="home-contact" aria-labelledby="help-title">
+  <div>
+    <p class="home-eyebrow">Questions?</p>
+    <h2 id="help-title">We can help you get started.</h2>
+    <p>Email <a href="mailto:{{ lts_schedule.program_contact_email }}">{{ lts_schedule.program_contact_email }}</a> or use the contact page.</p>
+  </div>
+  <a href="{{ site.baseurl }}/about/contact.html" class="cta-button secondary">Contact AARC</a>
+</section>

@@ -6,9 +6,9 @@
 
 // Ann Arbor Rowing Club styling
 // Color scheme - Updated to match AARC website
-$aarc-blue: #0073E6; // Primary blue
-$aarc-blue-hover: #005BB5; // Hover state for blue
-$aarc-red: #E11931; // Accent red
+$aarc-blue: #3B428C; // AARC brand guide web blue
+$aarc-blue-hover: #292F68; // Darker blue for interactive states
+$aarc-red: #E0403B; // AARC brand guide red
 $aarc-dark-gray: #333333; // Body text
 $aarc-light-gray: #555555; // Secondary text
 $aarc-white: #ffffff; // Background
@@ -17,11 +17,36 @@ $aarc-footer-bg: #F4F4F4; // Footer background
 
 // Typography - Updated to match AARC website
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   color: $aarc-dark-gray;
   background-color: $aarc-white;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.skip-nav {
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.65rem 1rem;
+  background: #ffffff;
+  color: $aarc-blue;
+  font-weight: 700;
+}
+
+.skip-nav:focus {
+  position: fixed;
+  top: 1rem;
+  outline: 3px solid $aarc-red;
+  outline-offset: 2px;
+}
+
+.content-as-of {
+  margin: 0.25rem 0 1.5rem;
+  color: #555555;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 // Textbook Styling
@@ -40,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: $aarc-dark-gray;
   margin-top: 1.5rem;
@@ -132,6 +157,33 @@ a {
     @media screen and (max-width: 768px) {
       font-size: 1.75rem;
       text-align: center;
+    }
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .site-mark {
+    display: block;
+    flex: none;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .brand-link {
+      max-width: calc(100% - 4rem);
+      gap: 0.65rem;
+      font-size: 1.25rem;
+    }
+
+    .site-mark {
+      width: 3rem;
+      height: 3rem;
     }
   }
 
@@ -348,7 +400,8 @@ a {
           }
         }
 
-        &:hover .dropdown-menu {
+        &:hover .dropdown-menu,
+        &:focus-within .dropdown-menu {
           display: block;
         }
       }
@@ -560,7 +613,8 @@ a {
     padding: 0 0.5rem;
 
     &:focus {
-      outline: none;
+      outline: 3px solid $aarc-blue;
+      outline-offset: 2px;
     }
   }
 }
@@ -1588,7 +1642,7 @@ table {
     line-height: 1.4 !important;
     background: white !important;
     color: black !important;
-    font-family: "Times New Roman", Times, serif !important;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif !important;
     width: 100% !important;
   }
 

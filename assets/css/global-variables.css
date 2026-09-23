@@ -1,9 +1,9 @@
 /* Global variables and common button styles */
 :root {
-    --theme-color: #0073E6;
-    --theme-color-dark: #005BB5;
-    --aarc-blue: #0073E6;
-    --aarc-blue-hover: #005BB5;
+    --theme-color: #3B428C;
+    --theme-color-dark: #292F68;
+    --aarc-blue: #3B428C;
+    --aarc-blue-hover: #292F68;
 }
 
 /* Global button styles to ensure consistency */

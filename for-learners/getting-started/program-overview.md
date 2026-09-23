@@ -10,6 +10,8 @@ description: What to expect in the AARC Learn to Scull Program
 
 Welcome to the Learn to Scull program! This guide will help you understand what to expect throughout your sculling journey, from your first day to your final assessment.
 
+<div class="info-box note"><strong>Planning note:</strong> the session format and times below describe the 2026 program. The 2027 class schedule and format have not been announced and may change.</div>
+
 <div class="accordion-controls">
     <button id="expand-all">Expand All</button>
     <button id="collapse-all">Collapse All</button>

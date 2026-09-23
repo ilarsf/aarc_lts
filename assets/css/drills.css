@@ -29,7 +29,7 @@
 .session-activity {
     position: relative;
     padding: 1rem 1rem 1rem 2rem;
-    border-left: 2px solid #0073E6;
+    border-left: 2px solid #3B428C;
     margin-bottom: 1.5rem;
 }
 
@@ -45,13 +45,13 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #0073E6;
+    background: #3B428C;
 }
 
 .session-activity h5 {
     margin-top: 0;
     margin-bottom: 0.75rem;
-    color: #0073E6;
+    color: #3B428C;
 }
 
 .session-activity ul {
@@ -73,7 +73,7 @@ ol.progression-steps li {
     position: relative;
     margin-bottom: 0.75rem;
     padding: 0.5rem 0.5rem 0.5rem 3rem;
-    border-left: 3px solid #0073E6;
+    border-left: 3px solid #3B428C;
     background: rgba(0, 115, 230, 0.05);
     border-radius: 0 5px 5px 0;
     transition: all 0.2s ease;
@@ -89,7 +89,7 @@ ol.progression-steps li:hover {
     height: 2.5rem;
     text-align: center;
     line-height: 2.5rem;
-    background: #0073E6;
+    background: #3B428C;
     color: white;
     border-radius: 50%;
     position: absolute;
@@ -102,7 +102,7 @@ ol.progression-steps li:hover {
 
 .drill-variation {
     background-color: #f0f7ff;
-    border-left: 3px solid #0073E6;
+    border-left: 3px solid #3B428C;
     padding: 1rem;
     margin-top: 1.5rem;
     border-radius: 0 5px 5px 0;
@@ -110,11 +110,11 @@ ol.progression-steps li:hover {
 
 .drill-variation h5 {
     margin: 0 0 0.5rem 0;
-    color: #0073E6;
+    color: #3B428C;
 }
 
 .tab-content h3 {
-    color: #0073E6;
+    color: #3B428C;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.5rem;
     margin: 2rem 0 1rem;
