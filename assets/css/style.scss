@@ -172,6 +172,9 @@ a {
     flex: none;
     width: 4rem;
     height: 4rem;
+    max-width: 4rem;
+    max-height: 4rem;
+    object-fit: contain;
   }
 
   @media screen and (max-width: 768px) {
@@ -184,6 +187,8 @@ a {
     .site-mark {
       width: 3rem;
       height: 3rem;
+      max-width: 3rem;
+      max-height: 3rem;
     }
   }
 
