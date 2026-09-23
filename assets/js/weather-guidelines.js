@@ -16,15 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
 function initWeatherAccordions() {
     const accordionHeaders = document.querySelectorAll('.weather-accordion-header');
 
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', function () {
-            // Toggle aria-expanded attribute
-            const expanded = header.getAttribute('aria-expanded') === 'true' || false;
-            header.setAttribute('aria-expanded', !expanded);
+    function setExpanded(header, expanded) {
+        const content = header.nextElementSibling;
+        if (!content) return;
+        header.setAttribute('aria-expanded', String(expanded));
+        content.setAttribute('aria-hidden', String(!expanded));
+        content.hidden = !expanded;
+    }
 
-            // Get the content panel
-            const content = this.nextElementSibling;
-            content.setAttribute('aria-hidden', expanded);
+    accordionHeaders.forEach((header, index) => {
+        const content = header.nextElementSibling;
+        if (content && !content.id) content.id = `weather-panel-${index + 1}`;
+        if (content) header.setAttribute('aria-controls', content.id);
+        setExpanded(header, header.getAttribute('aria-expanded') === 'true');
+        header.addEventListener('click', function () {
+            setExpanded(header, header.getAttribute('aria-expanded') !== 'true');
         });
     });
 
@@ -35,8 +41,7 @@ function initWeatherAccordions() {
     if (expandAllBtn) {
         expandAllBtn.addEventListener('click', function () {
             accordionHeaders.forEach(header => {
-                header.setAttribute('aria-expanded', true);
-                header.nextElementSibling.setAttribute('aria-hidden', false);
+                setExpanded(header, true);
             });
         });
     }
@@ -44,8 +49,7 @@ function initWeatherAccordions() {
     if (collapseAllBtn) {
         collapseAllBtn.addEventListener('click', function () {
             accordionHeaders.forEach(header => {
-                header.setAttribute('aria-expanded', false);
-                header.nextElementSibling.setAttribute('aria-hidden', true);
+                setExpanded(header, false);
             });
         });
     }
@@ -61,12 +65,20 @@ function initWeatherMatrixFilters() {
     if (!filterTabs.length || !matrixRows.length) return;
 
     filterTabs.forEach(tab => {
+        tab.setAttribute('aria-pressed', String(tab.classList.contains('active')));
+    });
+
+    filterTabs.forEach(tab => {
         tab.addEventListener('click', function () {
             const condition = this.getAttribute('data-condition');
 
             // Update active tab state
-            filterTabs.forEach(t => t.classList.remove('active'));
+            filterTabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-pressed', 'false');
+            });
             this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
 
             // Show specific rows based on condition filter
             if (condition === 'all') {

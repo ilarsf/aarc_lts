@@ -497,6 +497,6 @@ Based on your assessment, your coaches may recommend:
 </div>
 
 <div class="navigation-links">
-  <a href="../resources/glossary.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Glossary</a>
-  <a href="../resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
+  <a href="{{ site.baseurl }}/for-learners/resources/glossary.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Glossary</a>
+  <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="btn btn-primary">Next Steps <i class="fas fa-arrow-right"></i></a>
 </div>

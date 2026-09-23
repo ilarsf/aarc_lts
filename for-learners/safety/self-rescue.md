@@ -45,32 +45,32 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
 </div>
 
-<div class="rescue-progress" id="rescue-progress-nav">
-  <div class="rescue-progress-step active" data-step="0">
-    <div class="rescue-progress-marker">1</div>
-    <div class="rescue-progress-label">Pre-check</div>
-  </div>
-  <div class="rescue-progress-step" data-step="1">
-    <div class="rescue-progress-marker">2</div>
-    <div class="rescue-progress-label">Capsize and Exit</div>
-  </div>
-  <div class="rescue-progress-step" data-step="2">
-    <div class="rescue-progress-marker">3</div>
-    <div class="rescue-progress-label">Stabilize</div>
-  </div>
-  <div class="rescue-progress-step" data-step="3">
-    <div class="rescue-progress-marker">4</div>
-    <div class="rescue-progress-label">Right Boat</div>
-  </div>
-  <div class="rescue-progress-step" data-step="4">
-    <div class="rescue-progress-marker">5</div>
-    <div class="rescue-progress-label">Re-enter</div>
-  </div>
-  <div class="rescue-progress-step" data-step="5">
-    <div class="rescue-progress-marker">6</div>
-    <div class="rescue-progress-label">Recover and Return</div>
-  </div>
-</div>
+<nav class="rescue-progress" id="rescue-progress-nav" aria-label="Self-rescue steps">
+  <button type="button" class="rescue-progress-step active" data-step="0" aria-controls="step-1-content" aria-expanded="true">
+    <span class="rescue-progress-marker" aria-hidden="true">1</span>
+    <span class="rescue-progress-label">Pre-check</span>
+  </button>
+  <button type="button" class="rescue-progress-step" data-step="1" aria-controls="step-2-content" aria-expanded="false">
+    <span class="rescue-progress-marker" aria-hidden="true">2</span>
+    <span class="rescue-progress-label">Capsize and Exit</span>
+  </button>
+  <button type="button" class="rescue-progress-step" data-step="2" aria-controls="step-3-content" aria-expanded="false">
+    <span class="rescue-progress-marker" aria-hidden="true">3</span>
+    <span class="rescue-progress-label">Stabilize</span>
+  </button>
+  <button type="button" class="rescue-progress-step" data-step="3" aria-controls="step-4-content" aria-expanded="false">
+    <span class="rescue-progress-marker" aria-hidden="true">4</span>
+    <span class="rescue-progress-label">Right Boat</span>
+  </button>
+  <button type="button" class="rescue-progress-step" data-step="4" aria-controls="step-5-content" aria-expanded="false">
+    <span class="rescue-progress-marker" aria-hidden="true">5</span>
+    <span class="rescue-progress-label">Re-enter</span>
+  </button>
+  <button type="button" class="rescue-progress-step" data-step="5" aria-controls="step-6-content" aria-expanded="false">
+    <span class="rescue-progress-marker" aria-hidden="true">6</span>
+    <span class="rescue-progress-label">Recover and Return</span>
+  </button>
+</nav>
 
 ## Self-Rescue Process
 
@@ -85,17 +85,15 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
 </div>
 
-{% include accordion.html %}
-
 <div class="accordion-controls">
-    <button id="expand-all">Expand All</button>
-    <button id="collapse-all">Collapse All</button>
+    <button type="button" id="expand-all">Expand All</button>
+    <button type="button" id="collapse-all">Collapse All</button>
 </div>
 
 <div class="rescue-timeline" id="rescue-main-timeline">
   <div class="accordion-section rescue-step" id="step-1">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-1', 0)"><div class="rescue-step-number">1</div> <span class="rescue-step-title">Pre-Flip-Test Safety Check</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle active" aria-expanded="true" aria-controls="step-1-content"><span class="rescue-step-number" aria-hidden="true">1</span> <span class="rescue-step-title">Pre-Flip-Test Safety Check</span></button>
+    <div class="accordion-content visible" id="step-1-content">
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -141,8 +139,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-2">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-2', 1)"><div class="rescue-step-number">2</div> <span class="rescue-step-title">Capsize and Exit</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="step-2-content"><span class="rescue-step-number" aria-hidden="true">2</span> <span class="rescue-step-title">Capsize and Exit</span></button>
+    <div class="accordion-content" id="step-2-content" hidden>
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -192,8 +190,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-3">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-3', 2)"><div class="rescue-step-number">3</div> <span class="rescue-step-title">Stabilize and Assess</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="step-3-content"><span class="rescue-step-number" aria-hidden="true">3</span> <span class="rescue-step-title">Stabilize and Assess</span></button>
+    <div class="accordion-content" id="step-3-content" hidden>
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -223,8 +221,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
 
   <div class="accordion-section rescue-step" id="step-4">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-4', 3)"><div class="rescue-step-number">4</div> <span class="rescue-step-title">Right Your Boat</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="step-4-content"><span class="rescue-step-number" aria-hidden="true">4</span> <span class="rescue-step-title">Right Your Boat</span></button>
+    <div class="accordion-content" id="step-4-content" hidden>
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -255,8 +253,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-5">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-5', 4)"><div class="rescue-step-number">5</div> <span class="rescue-step-title">Re-Entry Technique</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="step-5-content"><span class="rescue-step-number" aria-hidden="true">5</span> <span class="rescue-step-title">Re-Entry Technique</span></button>
+    <div class="accordion-content" id="step-5-content" hidden>
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -327,8 +325,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   </div>
   
   <div class="accordion-section rescue-step" id="step-6">
-    <button class="accordion-toggle" onclick="toggleAccordionStep('step-6', 5)"><div class="rescue-step-number">6</div> <span class="rescue-step-title">Recovery and Return</span></button>
-    <div class="accordion-content">
+    <button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="step-6-content"><span class="rescue-step-number" aria-hidden="true">6</span> <span class="rescue-step-title">Recovery and Return</span></button>
+    <div class="accordion-content" id="step-6-content" hidden>
       <div class="accordion-content-inner">
         <div class="rescue-step-content">
       <div class="row">
@@ -361,8 +359,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
 
 <div class="accordion-container" id="alternative-self-rescue-accordion">
   <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion('alternative-self-rescue')">{% include icon.html icon="fas fa-home" type="info" alt="Dock" style="margin-right: 10px;" %} Alternative Self-Rescue <span style="margin-left: auto; font-size: 0.8em;">Click to expand ↓</span></div>
-    <div class="accordion-content" id="alternative-self-rescue-content">
+    <button type="button" class="accordion-header" aria-expanded="false" aria-controls="alternative-self-rescue-content">{% include icon.html icon="fas fa-home" type="info" alt="" style="margin-right: 10px;" %} Alternative Self-Rescue</button>
+    <div class="accordion-content" id="alternative-self-rescue-content" hidden>
       <div id="dock-content">
         {% include icon.html icon="fas fa-info-circle" type="info" alt="Information" %} If you cannot re-enter after a few controlled attempts:
         <ul>
@@ -416,334 +414,53 @@ description: Flip test, capsize response, and recovery procedures for scullers
 </section>
 
 <script>
-  // Simple manual accordion toggle function for challenge sections
-  function toggleAccordion(id) {
-    const contentId = id + '-content';
-    const content = document.getElementById(contentId);
-    const header = content.previousElementSibling;
-    
-    console.log('toggleAccordion called for', id);
-    
-    // Toggle active class
-    header.classList.toggle('active');
-    
-    // Toggle content visibility
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + 500 + 'px';
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const toggles = Array.from(document.querySelectorAll('#rescue-main-timeline .accordion-toggle'));
+  const progressButtons = Array.from(document.querySelectorAll('#rescue-progress-nav .rescue-progress-step'));
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function selectStep(index) {
+    progressButtons.forEach((button, buttonIndex) => {
+      button.classList.toggle('active', buttonIndex === index);
+    });
   }
-  
-  // Function to toggle steps in the main rescue timeline
-  function toggleAccordionStep(stepId, stepIndex) {
-    console.log('toggleAccordionStep called for', stepId, 'at index', stepIndex);
-    
-    // Get all timeline toggles
-    const allToggles = document.querySelectorAll('#rescue-main-timeline .accordion-toggle');
-    const toggle = document.querySelector(`#${stepId} .accordion-toggle`);
-    const content = document.querySelector(`#${stepId} .accordion-content`);
-    
-    if (!toggle || !content) {
-      console.error('Could not find toggle or content for step', stepId);
-      return;
-    }
-    
-    // Update progress indicator
-    const progressSteps = document.querySelectorAll('.rescue-progress-step');
-    progressSteps.forEach((step, index) => {
-      if (index === stepIndex) {
-        step.classList.add('active');
-        step.classList.remove('completed');
-      } else if (index < stepIndex) {
-        step.classList.add('completed');
-        step.classList.remove('active');
-      } else {
-        step.classList.remove('active', 'completed');
-      }
+
+  function syncProgress() {
+    progressButtons.forEach((button, index) => {
+      button.setAttribute('aria-expanded', toggles[index].getAttribute('aria-expanded'));
     });
-    
-    // Close all other accordions
-    allToggles.forEach((otherToggle) => {
-      if (otherToggle !== toggle && otherToggle.classList.contains('active')) {
-        otherToggle.classList.remove('active');
-        const otherContent = otherToggle.closest('.accordion-section').querySelector('.accordion-content');
-        if (otherContent) {
-          otherContent.style.maxHeight = null;
-          otherContent.classList.remove('visible');
-        }
-      }
-    });
-    
-    // Toggle this accordion
-    toggle.classList.toggle('active');
-    
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-      content.classList.remove('visible');
-    } else {
-      // Calculate the correct height
-      content.style.display = 'block';
-      const height = content.scrollHeight;
-      content.style.display = '';
-      
-      content.style.maxHeight = height + 3000 + 'px';
-      content.classList.add('visible');
-      
-      // Scroll the step into view
-      const stepElement = document.getElementById(stepId);
-      if (stepElement) {
-        stepElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center'
-        });
-      }
-    }
-    
-    // Prevent default button behavior
-    return false;
   }
-</script>
-<style>
-/* Local overrides for regular accordions on this page */
-.accordion-container .accordion-item .accordion-header {
-  font-weight: bold;
-  padding: 15px;
-}
 
-.accordion-container .accordion-item .accordion-content {
-  background-color: white;
-}
-
-.accordion-container .accordion-item .accordion-content p,
-.accordion-container .accordion-item .accordion-content ol,
-.accordion-container .accordion-item .accordion-content ul {
-  padding: 15px;
-}
-
-/* Fix for accordion item click on this page */
-.accordion-container .accordion-item .accordion-header.active + .accordion-content {
-  max-height: 1000px !important;
-}
-</style>
-
-<script>
-  // Immediate execution to ensure accordion headers are properly initialized
-  (function() {
-    document.addEventListener('DOMContentLoaded', function() {
-      // Direct event handlers for accordion headers
-      const allHeaders = document.querySelectorAll('.accordion-header');
-      
-      allHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-          console.log('Direct accordion header clicked');
-          this.classList.toggle('active');
-          const content = this.nextElementSibling;
-          
-          if (content && content.classList.contains('accordion-content')) {
-            if (content.style.maxHeight) {
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + 500 + 'px';
-            }
-          }
-        });
-      });
+  toggles.forEach((toggle, index) => {
+    toggle.addEventListener('click', () => {
+      selectStep(index);
+      syncProgress();
     });
-  })();
-</script>
+    new MutationObserver(syncProgress).observe(toggle, { attributes: true, attributeFilter: ['aria-expanded'] });
+  });
 
-<script>
-  // JavaScript for self-rescue progress tracking
-  document.addEventListener('DOMContentLoaded', function() {
-    const progressSteps = document.querySelectorAll('.rescue-progress-step');
-    const mainTimelineSteps = document.querySelectorAll('#rescue-main-timeline .rescue-step');
-    const accordionToggles = document.querySelectorAll('#rescue-main-timeline .accordion-toggle');
-    
-    // Function to update the progress indicator
-    function updateProgress(stepIndex) {
-      // Reset all steps
-      progressSteps.forEach((step, index) => {
-        if (index < stepIndex) {
-          step.classList.add('completed');
-          step.classList.remove('active');
-        } else if (index === stepIndex) {
-          step.classList.add('active');
-          step.classList.remove('completed');
-        } else {
-          step.classList.remove('active', 'completed');
-        }
-      });
-    }
-    
-    // Open accordion section programmatically
-    function openAccordionSection(index) {
-      // Close any open accordion sections
-      accordionToggles.forEach((toggle) => {
-        if (toggle.classList.contains('active')) {
-          toggle.classList.remove('active');
-          const content = toggle.nextElementSibling;
-          if (content) content.style.maxHeight = null;
-        }
-      });
-      
-      // Open the requested section
-      if (accordionToggles[index]) {
-        accordionToggles[index].classList.add('active');
-        const content = accordionToggles[index].nextElementSibling;
-        if (content) content.style.maxHeight = content.scrollHeight + 'px';
-      }
-    }
-    
-    // Add click event to accordion toggles
-    accordionToggles.forEach((toggle, index) => {
-      toggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('Accordion toggle clicked at index:', index);
-        updateProgress(index);
-        
-        // Toggle this accordion
-        this.classList.toggle('active');
-        const content = this.nextElementSibling;
-        
-        // Close other accordions
-        accordionToggles.forEach((otherToggle, otherIndex) => {
-          if (otherIndex !== index && otherToggle.classList.contains('active')) {
-            otherToggle.classList.remove('active');
-            const otherContent = otherToggle.nextElementSibling;
-            if (otherContent) {
-              otherContent.style.maxHeight = null;
-              otherContent.classList.remove('visible');
-            }
-          }
-        });
-        
-        // Toggle current accordion content
-        if (content) {
-          console.log('Content found, toggling visibility');
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            content.classList.remove('visible');
-          } else {
-            // Force layout reflow to get accurate scrollHeight
-            content.style.display = 'block'; 
-            const height = content.scrollHeight;
-            content.style.display = '';
-            content.style.maxHeight = height + 3000 + 'px'; // Add extra space for content
-            content.classList.add('visible');
-          }
-        } else {
-          console.error('No content element found for toggle', this);
-        }
-      });
-      
-      // Make sure the toggle is clickable
-      toggle.style.cursor = 'pointer';
-      toggle.setAttribute('tabindex', '0'); // Make it keyboard accessible
-    });
-    
-    // Add click event to progress markers
-    progressSteps.forEach((step, index) => {
-      step.addEventListener('click', function() {
-        updateProgress(index);
-        
-        // Open the corresponding accordion section
-        openAccordionSection(index);
-        
-        // Find the corresponding step in the main timeline
-        const targetStep = document.getElementById('step-' + (index + 1));
-        if (targetStep) {
-          targetStep.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'center' 
-          });
-        }
-      });
-    });
-    
-    // Add expand/collapse all functionality
-    const expandAllButton = document.getElementById('expand-all');
-    const collapseAllButton = document.getElementById('collapse-all');
-    
-    if (expandAllButton) {
-      expandAllButton.addEventListener('click', function() {
-        accordionToggles.forEach((toggle, index) => {
-          toggle.classList.add('active');
-          const content = toggle.nextElementSibling;
-          if (content) {
-            content.style.maxHeight = content.scrollHeight + 3000 + 'px';
-            content.classList.add('visible');
-          }
-        });
-        
-        // Update progress to first step to maintain UI consistency
-        updateProgress(0);
-      });
-    }
-    
-    if (collapseAllButton) {
-      collapseAllButton.addEventListener('click', function() {
-        accordionToggles.forEach((toggle) => {
-          toggle.classList.remove('active');
-          const content = toggle.nextElementSibling;
-          if (content) {
-            content.style.maxHeight = null;
-            content.classList.remove('visible');
-          }
-        });
-      });
-    }
-    
-    // Initialize all accordions to be closed by default, except the first one
-    accordionToggles.forEach((toggle, index) => {
-      const content = toggle.nextElementSibling;
-      if (index === 0) {
-        // Open the first accordion
-        toggle.classList.add('active');
-        console.log('Setting first accordion to active state');
-        if (content) {
-          // Ensure the content is visible before measuring
-          content.style.display = 'block';
-          const height = content.scrollHeight;
-          content.style.display = '';
-          
-          // Set the max height with extra padding
-          content.style.maxHeight = height + 3000 + 'px';
-          content.classList.add('visible');
-          console.log('Set first accordion content height to', height + 3000);
-        }
-      } else {
-        // Close all other accordions
-        toggle.classList.remove('active');
-        if (content) {
-          content.style.maxHeight = null;
-          content.classList.remove('visible');
-        }
-      }
-    });
-    
-    // Force a reflow to ensure accordions render correctly
-    document.body.offsetHeight;
-    
-    // Initialize non-timeline accordions (with accordion-header class)
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    console.log('Found regular accordion headers:', accordionHeaders.length);
-    
-    accordionHeaders.forEach(header => {
-      header.addEventListener('click', function() {
-        console.log('Regular accordion header clicked');
-        this.classList.toggle('active');
-        const content = this.nextElementSibling;
-        if (content) {
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + 500 + "px";
-          }
-        }
-      });
+  progressButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const toggle = toggles[index];
+      if (toggle.getAttribute('aria-expanded') !== 'true') toggle.click();
+      selectStep(index);
+      toggle.focus({ preventScroll: true });
+      toggle.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
     });
   });
+
+  const alternativeButton = document.querySelector('#alternative-self-rescue-accordion .accordion-header');
+  const alternativeContent = document.getElementById('alternative-self-rescue-content');
+  alternativeButton.addEventListener('click', () => {
+    const opening = alternativeButton.getAttribute('aria-expanded') !== 'true';
+    alternativeButton.setAttribute('aria-expanded', String(opening));
+    alternativeButton.classList.toggle('active', opening);
+    alternativeContent.hidden = !opening;
+    alternativeContent.style.maxHeight = opening ? alternativeContent.scrollHeight + 'px' : null;
+  });
+
+  syncProgress();
+});
 </script>
 
 <style>
@@ -784,19 +501,8 @@ description: Flip test, capsize response, and recovery procedures for scullers
   transition: transform 0.3s ease;
 }
 
-/* Fix any display issues with accordion content */
-.accordion-content {
-  overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
-}
-
-.accordion-content.visible {
-  max-height: 3000px !important; 
-}
-
 /* Ensure all toggles are visibly interactive */
 .accordion-toggle, .accordion-header {
-  outline: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }

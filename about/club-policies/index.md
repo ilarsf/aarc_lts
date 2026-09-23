@@ -8,7 +8,7 @@ has_children: true
 
 # Club Policies
 
-This section contains official AARC policies that govern club operations, member conduct, and safety practices.
+This section summarizes AARC club conduct, boathouse, and safety guidance as of September 2026. Confirm current rules with the club before relying on them.
 
 <div class="info-box tip">
     <h4>Important Information</h4>
@@ -63,7 +63,7 @@ This section contains official AARC policies that govern club operations, member
                         <p>How to report policy violations and the process for addressing concerns.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="code-of-conduct.html#reporting-procedures" class="card-button">Read More</a>
+                        <a href="code-of-conduct.html#reporting-concerns" class="card-button">Read More</a>
                     </div>
                 </div>
             </div>
@@ -96,6 +96,7 @@ This section contains official AARC policies that govern club operations, member
                     <div class="accordion-content-inner">
                         <ul>
                             <li><strong>Weather Restrictions</strong> - No rowing during thunderstorms or dense fog</li>
+                            <li><strong>Heat Index</strong> - No outdoor workouts when “feels like” is 98°F or above; <a href="{{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf">read the 2026 policy (PDF)</a></li>
                             <li><strong>Water Temperature</strong> - Special protocols for cold water conditions</li>
                             <li><strong>Visibility Requirements</strong> - Lights and high-visibility clothing for low-light conditions</li>
                         </ul>
@@ -138,35 +139,34 @@ This section contains official AARC policies that govern club operations, member
                             <li>Procedures for reporting damage</li>
                             <li>Cleaning requirements after use</li>
                         </ul>
-                        <a href="boathouse-rules.html#equipment-handling" class="button-link">Full Equipment Guidelines</a>
+                        <a href="boathouse-rules.html#equipment-handling-and-storage" class="button-link">Full Equipment Guidelines</a>
                     </div>
                 </div>
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Facility Access</button>
+                <button class="accordion-toggle">Boathouse Security</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>Hours of operation and access procedures</li>
                             <li>Security protocols and locking procedures</li>
-                            <li>Guest policies</li>
+                            <li>Keeping pathways and launch areas clear</li>
                         </ul>
-                        <a href="boathouse-rules.html#facility-access" class="button-link">Full Access Guidelines</a>
+                        <a href="boathouse-rules.html#general-boathouse-rules" class="button-link">Read Boathouse Rules</a>
                     </div>
                 </div>
             </div>
             
             <div class="accordion-section">
-                <button class="accordion-toggle">Reservation System</button>
+                <button class="accordion-toggle">Equipment Requests</button>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
                         <ul>
-                            <li>How to reserve boats and equipment</li>
-                            <li>Time limits and restrictions</li>
-                            <li>Managing conflicts and priority guidelines</li>
+                            <li>Coaches assign boats during coached sessions</li>
+                            <li>Approved independent rowers request equipment before launching</li>
+                            <li>Record departures on the boathouse whiteboard</li>
                         </ul>
-                        <a href="boathouse-rules.html#reservation-system" class="button-link">Full Reservation Guidelines</a>
+                        <a href="boathouse-rules.html#general-boathouse-rules" class="button-link">Read Equipment Request Guidance</a>
                     </div>
                 </div>
             </div>

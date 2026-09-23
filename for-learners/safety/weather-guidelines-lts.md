@@ -15,7 +15,7 @@ nav_order: 4
 
     <div class="alert alert-warning" role="alert">
         <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Coach's Authority is Final</h4>
-        <p>Always defer to your coach's judgment regarding weather conditions. They have the experience to assess the situation and make the safest decision for the group. If a coach cancels or postpones a session due to weather, it is for your safety.</p>
+        <p>Always defer to your coach's judgment regarding weather conditions. Coaches may cancel or modify a session sooner, and the AARC heat-index cutoff of 98°F or above means no outdoor workout.</p>
     </div>
 
     <h2><i class="fas fa-ban"></i> Critical "No-Go" Conditions</h2>
@@ -63,6 +63,14 @@ nav_order: 4
         <div class="col-md-4 mb-4">
             <div class="card h-100">
                 <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-temperature-high"></i> Heat index ≥98°F</h5>
+                    <p class="card-text">No outdoor workouts. Your coach will cancel the outdoor session or move it indoors.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
                     <h5 class="card-title"><i class="fas fa-wind"></i> Air Quality (AQI)</h5>
                      <ul class="list-unstyled">
                         <li><i class="fas fa-exclamation-triangle text-danger"></i> AQI ≥150 (Unhealthy).</li>
@@ -80,8 +88,8 @@ nav_order: 4
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title"><i class="fas fa-thermometer-half"></i> Temperature (Air & Water)</h5>
-                    <p class="card-text">Extreme cold (especially water) and extreme heat pose risks. LTS sessions may be cancelled or modified. Dress appropriately.</p>
-                    <p class="card-text"><small class="text-muted">Coach monitors and decides.</small></p>
+                    <p class="card-text">Check the “feels like” heat index at the start of the session and again if conditions change. Above 90°F, every rower must have a water bottle on hand; coaches should add hydration breaks and adjust intensity as needed. Above 95°F, the coach should consider moving indoors or reducing intensity or duration. At 98°F or above, there is no outdoor workout.</p>
+                    <p class="card-text"><small class="text-muted">These cutoffs also apply to individual use of AARC-owned boats. <a href="{{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf">Read the 2026 AARC heat-index policy (PDF)</a>.</small></p>
                 </div>
             </div>
         </div>
@@ -94,6 +102,11 @@ nav_order: 4
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="alert alert-info">
+        <h2>Heat and air-quality concerns</h2>
+        <p>You may opt out or ask for a change at any time because of heat or air quality, without repercussions. If you are at increased risk, tell your coach or captain privately; you do not need to share details. A reasonable alternative should be offered when feasible.</p>
     </div>
 
     <hr>

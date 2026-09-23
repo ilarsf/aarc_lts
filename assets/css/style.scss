@@ -405,9 +405,11 @@ a {
           }
         }
 
-        &:hover .dropdown-menu,
-        &:focus-within .dropdown-menu {
-          display: block;
+        @media screen and (min-width: 769px) {
+          &:hover .dropdown-menu,
+          &:focus-within .dropdown-menu {
+            display: block;
+          }
         }
       }
     }

@@ -157,6 +157,8 @@ layout: null
                 domElements.returnToResultsButton.addEventListener('click', function () {
                     domElements.reviewScreen.classList.add('hidden');
                     domElements.resultsScreen.classList.remove('hidden');
+                    const resultsHeading = domElements.resultsScreen.querySelector('h2');
+                    if (resultsHeading) resultsHeading.focus();
                 });
             }
         });

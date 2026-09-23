@@ -35,13 +35,13 @@ navigation:
     subitems:
       - title: Before Your First Session
         url: /for-learners/#getting-started
+      - title: Safety & River Rules
+        url: /for-learners/#safety
       - title: During the Course
         url: /for-learners/#learning-journey
       - title: Technique
         url: /for-learners/#technique
-      - title: Safety & River Rules
-        url: /for-learners/#safety
-      - title: After the Course
+      - title: Resources & Next Steps
         url: /for-learners/#resources
   - title: About
     url: /about/
@@ -55,7 +55,7 @@ navigation:
       - title: FAQ
         url: /for-learners/resources/faq.html
   - title: Members (members)
-    url: /for-coaches/
+    url: /members/
     subitems:
       - title: Coach Resources
         url: /for-coaches/

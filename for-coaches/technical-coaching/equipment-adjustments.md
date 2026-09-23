@@ -275,7 +275,7 @@ search_exclude: true
   <h3>Related Resources</h3>
   <ul>
     <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/common-issues.html">Common Technical Issues and Corrections</a></li>
-    <li><a href="{{ site.baseurl }}/assets/pdf/equipment_settings_chart.html">Printable Settings Chart</a></li>
+    <li>Use your browser’s Print command to keep a copy of the settings guidance on this page.</li>
   </ul>
 </div>
 

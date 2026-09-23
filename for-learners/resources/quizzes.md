@@ -12,49 +12,49 @@ parent: Knowledge Assessment
 <div class="quiz-progress">
   <div class="progress-grid">
     <div class="progress-item" data-quiz-id="safety">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" onclick="loadQuiz(\\'safety\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="progress-item-link">
         <div class="progress-icon">🦺</div>
         <div class="progress-label">Safety</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="bh">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" onclick="loadQuiz(\\'bh\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" class="progress-item-link">
         <div class="progress-icon">🏠</div>
         <div class="progress-label">Boathouse</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="1">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" onclick="loadQuiz(\\'1\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" class="progress-item-link">
         <div class="progress-icon">1️⃣</div>
         <div class="progress-label">Session 1</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="2">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" onclick="loadQuiz(\\'2\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" class="progress-item-link">
         <div class="progress-icon">2️⃣</div>
         <div class="progress-label">Session 2</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="3">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" onclick="loadQuiz(\\'3\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" class="progress-item-link">
         <div class="progress-icon">3️⃣</div>
         <div class="progress-label">Session 3</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="4">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" onclick="loadQuiz(\\'4\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" class="progress-item-link">
         <div class="progress-icon">4️⃣</div>
         <div class="progress-label">Session 4</div>
         <div class="progress-status not-started">Not started</div>
       </a>
     </div>
     <div class="progress-item" data-quiz-id="terminology">
-      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=terminology" onclick="loadQuiz(\\'terminology\\'); return false;" class="progress-item-link">
+      <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=terminology" class="progress-item-link">
         <div class="progress-icon">📚</div>
         <div class="progress-label">Terminology</div>
         <div class="progress-status not-started">Not started</div>
@@ -75,7 +75,7 @@ parent: Knowledge Assessment
       <p>Essential safety knowledge: emergency procedures, traffic patterns, weather.</p>
       <p class="quiz-requirement">Recommended before first on-water session.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" onclick="loadQuiz(\\'safety\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=safety" class="quiz-list-link">Take Quiz</a>
   </div>
   
   <!-- Boathouse Quiz -->
@@ -84,7 +84,7 @@ parent: Knowledge Assessment
       <h4>Boathouse Rules Quiz</h4>
       <p>Boathouse protocols, equipment handling, club rules.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" onclick="loadQuiz(\\'bh\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=bh" class="quiz-list-link">Take Quiz</a>
   </div>
 
   <!-- Terminology Quiz -->
@@ -93,7 +93,7 @@ parent: Knowledge Assessment
       <h4>Rowing Terminology Quiz</h4>
       <p>Rowing terminology, commands, technical language.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=terminology" onclick="loadQuiz(\\'terminology\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=terminology" class="quiz-list-link">Take Quiz</a>
   </div>
 </div>
 
@@ -109,7 +109,7 @@ Test your knowledge from each training session
       <h4>Session 1 Quiz</h4>
       <p>Core concepts: basic terminology, equipment, safety rules.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" onclick="loadQuiz(\\'1\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=1" class="quiz-list-link">Take Quiz</a>
   </div>
   
   <!-- Session 2 Quiz -->
@@ -118,7 +118,7 @@ Test your knowledge from each training session
       <h4>Session 2 Quiz</h4>
       <p>Rowing technique, water safety, equipment handling.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" onclick="loadQuiz(\\'2\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=2" class="quiz-list-link">Take Quiz</a>
   </div>
   
   <!-- Session 3 Quiz -->
@@ -127,7 +127,7 @@ Test your knowledge from each training session
       <h4>Session 3 Quiz</h4>
       <p>Advanced technique, river traffic, common challenges.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" onclick="loadQuiz(\\'3\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=3" class="quiz-list-link">Take Quiz</a>
   </div>
   
   <!-- Session 4 Quiz -->
@@ -136,7 +136,7 @@ Test your knowledge from each training session
       <h4>Session 4 Quiz</h4>
       <p>Comprehensive understanding for continued supervised rowing and possible future independent-rowing approval.</p>
     </div>
-    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" onclick="loadQuiz(\\'4\\'); return false;" class="quiz-list-link">Take Quiz</a>
+    <a href="{{ site.baseurl }}/resources/quiz_module.html?quiz=4" class="quiz-list-link">Take Quiz</a>
   </div>
 </div>
 
@@ -196,29 +196,6 @@ Find answers to common questions about our knowledge assessment quizzes and lear
 </div>
 
 <script>
-function loadQuiz(quizType) {
-  try {
-    if (!quizType) {
-      console.error('loadQuiz function called without a quizType.');
-      return;
-    }
-
-    // Construct the quiz page URL
-    // Jekyll will replace {{ site.baseurl }} with the value from _config.yml
-    const quizPageUrl = `{{ site.baseurl }}/resources/quiz_module.html?quiz=${quizType}`;
-    
-    console.log('Attempting to navigate to quiz page:', quizPageUrl);
-
-    if (typeof window !== 'undefined' && window.location && window.location.href) {
-      window.location.href = quizPageUrl;
-    } else {
-      console.error('window.location.href is not available. Cannot navigate.');
-    }
-  } catch (error) {
-    console.error('Error in loadQuiz function:', error);
-  }
-}
-
 // Function to load saved quiz statuses
 function loadQuizStatuses() {
   try {

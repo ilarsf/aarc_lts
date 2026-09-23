@@ -538,10 +538,7 @@ All emergency incidents must be documented immediately after resolution using th
 
 <div class="info-box tip">
     <h4>Emergency Incident Report Form</h4>
-    <p>The Emergency Incident Report form is available in the coach's binder and online in the coach portal. Submit completed forms to the Safety Committee within 24 hours of any incident.</p>
-    <div class="text-center mt-3">
-        <a href="{{ site.baseurl }}/for-coaches/safety-leadership/incident-report-form.html" class="cta-button">Access Incident Report Form</a>
-    </div>
+    <p>Use the Emergency Incident Report form in the coach's binder. Submit completed forms to the Safety Committee within 24 hours of any incident.</p>
 </div>
 
 ## Annual Training and Review

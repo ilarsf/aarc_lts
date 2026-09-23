@@ -187,6 +187,11 @@
     text-align: center;
     width: 110px;
     flex: 1 1 0;
+    padding: 0 2px 4px;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
 }
 
 .rescue-progress-marker {
@@ -198,26 +203,26 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 10px;
-    color: #757575;
+    color: #595959;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .rescue-progress-label {
     font-size: 0.8rem;
-    color: #757575;
+    color: #595959;
     transition: all 0.3s ease;
     line-height: 1.25;
 }
 
 .rescue-progress-step.active .rescue-progress-marker {
-    background: #2196f3;
+    background: #3B428C;
     color: white;
     box-shadow: 0 2px 5px rgba(33, 150, 243, 0.3);
 }
 
 .rescue-progress-step.active .rescue-progress-label {
-    color: #2196f3;
+    color: #3B428C;
     font-weight: bold;
 }
 
@@ -414,6 +419,8 @@
     display: block;
     width: 100%;
     text-align: left;
+    font: inherit;
+    font-weight: bold;
 }
 
 .accordion-container .accordion-header::after {
@@ -479,4 +486,17 @@
 
 #collapse-all {
     border-left: 3px solid #f44336;
+}
+
+#rescue-main-timeline .accordion-content[hidden],
+#alternative-self-rescue-accordion .accordion-content[hidden] {
+    display: none !important;
+}
+
+#rescue-progress-nav .rescue-progress-step:focus-visible,
+#rescue-main-timeline .accordion-toggle:focus-visible,
+#alternative-self-rescue-accordion .accordion-header:focus-visible,
+.accordion-controls button:focus-visible {
+    outline: 3px solid #3B428C;
+    outline-offset: 3px;
 }

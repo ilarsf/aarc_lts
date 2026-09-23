@@ -100,9 +100,12 @@ Safety is the highest priority at the Ann Arbor Rowing Club. These rules are est
                 <li>No rowing when lightning is observed or thunder heard (30-minute waiting period after last occurrence)</li>
                 <li>No rowing in fog when visibility is less than 100 meters</li>
                 <li>No rowing if Air Quality Index (AQI) is 150 or greater. Check <a href="https://www.airnow.gov/" target="_blank">AirNow.gov</a>.</li>
+                <li>When the “feels like” heat index is 98°F or above, no outdoor workouts are allowed. This includes club-organized sessions and individual use of AARC-owned boats.</li>
+                <li>Above 90°F heat index, each rower must have a water bottle. Above 95°F, consider moving the session indoors or reducing intensity or duration.</li>
                 <li>Observe wind and water conditions guidelines according to boat class</li>
                 <li>Check weather forecasts before rowing and plan accordingly</li>
             </ul>
+            <p>Check the heat index at session start and again if conditions change materially. Anyone may opt out or ask for a change because of heat or air quality at any time without repercussions. <a href="{{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf">Read the 2026 AARC heat-index policy (PDF)</a>.</p>
             
             <div class="info-box warning">
                 <h5>Lightning Protocol:</h5>

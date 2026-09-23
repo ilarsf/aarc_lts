@@ -146,7 +146,12 @@ function initSiteNavigation() {
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
+            const focusWasInNav = siteNav.contains(document.activeElement);
+            const mobileMenuWasOpen = mobileQuery.matches && siteNav.classList.contains('active');
             closeNavigation(siteNav, navToggle, dropdownItems);
+            if (mobileMenuWasOpen && focusWasInNav) {
+                navToggle.focus();
+            }
         }
     });
 

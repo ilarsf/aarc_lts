@@ -14,19 +14,21 @@ nav_order: 3 # Or an appropriate nav_order number
         <p class="lead">Your guide to becoming a full member of the Ann Arbor Rowing Club, including necessary affiliations and training.</p>
     </div>
 
+    <div class="info-box note"><strong>As of September 2026:</strong> Membership steps and fees can change. Confirm current requirements and prices with AARC and USRowing before joining.</div>
+
     <div>
         <div>
-            <p>To become a member, go to the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=558993" rel="noopener noreferrer">AARC Membership Page <i class="fas fa-external-link-alt"></i></a> and click on the <strong>Full Membership</strong> agreement (note that there is a $26 annual fee for membership).</p>
+            <p>To become a member, go to the <a href="https://aarc.clubexpress.com/content.aspx?page_id=22&club_id=757878&module_id=558993" rel="noopener noreferrer">AARC Membership Page <i class="fas fa-external-link-alt"></i></a> and select the <strong>Full Membership</strong> agreement. The listed AARC membership fee was $26 in 2026; confirm the current fee on the registration page.</p>
             <p>Once you become a member, you can log in to the AARC website and you will find additional resources available, including “For Members Only” links. As a member, you will also receive the weekly electronic publication, “The Weekly Catch,” which provides information about upcoming events and other items relevant to the club.</p>
         </div>
 
         <div>
             <h2>USRowing Membership & SafeSport Training</h2>
-            <p>USRowing membership is required to join AARC. A basic USRowing membership costs $25.00.</p>
+            <p>USRowing membership is required to join AARC. Confirm the current Basic Membership fee in the USRowing portal.</p>
             <p>Please complete the following steps:</p>
             <ol>
                 <li>Go to the <a href="https://membership.usrowing.org/" rel="noopener noreferrer">USRowing Membership Portal <i class="fas fa-external-link-alt"></i></a>.</li>
-                <li>Select "Individuals" and choose either “Join” or “Members”. (There is a $25.00 fee if you are joining for the first time, $20.00 for annual renewal).</li>
+                <li>Select “Individuals” and choose “Join” or “Members”. In 2026, the listed fees were $25 to join and $20 to renew; current fees may differ.</li>
                 <li>Follow the prompts; the AARC club code is: <strong>CZGBS</strong>.</li>
                 <li>Ensure the following 3 documents are signed:
                     <ul>
@@ -62,7 +64,7 @@ nav_order: 3 # Or an appropriate nav_order number
     </div>
 
     <div class="text-center mt-5">
-        <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" rel="noopener noreferrer" class="btn btn-outline-secondary me-2"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
+        <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="btn btn-outline-secondary me-2"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
         <a href="{{ site.baseurl }}/index.html" rel="noopener noreferrer" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
     </div>
 

@@ -233,7 +233,7 @@ search_exclude: true
   <ul>
     <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/common-issues.html">Common Technical Issues and Corrections</a></li>
     <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/drills-library.html">Key Drills Repertoire</a></li>
-    <li><a href="{{ site.baseurl }}/assets/pdf/video_permission_form.html">Video Recording Permission Form</a></li>
+    <li>Obtain the current video recording permission form from the program coordinator before recording.</li>
   </ul>
 </div>
 

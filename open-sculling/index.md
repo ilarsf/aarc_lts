@@ -12,31 +12,54 @@ search_exclude: true
       <h1>Open Sculling Portal</h1>
       <p>This area contains resources and materials for authorized open scullers.</p>
 
-      <div class="password-form">
+      <form id="open-sculling-access-form" class="password-form">
         <div class="form-group">
           <label for="open-sculling-password">Enter Access Password:</label>
-          <input type="password" id="open-sculling-password" class="form-control" placeholder="Enter password">
+          <input type="password" id="open-sculling-password" class="form-control" autocomplete="current-password" aria-describedby="password-error">
         </div>
-        <button id="submit-password" class="cta-button">Access Open Sculling Materials</button>
-        <p id="password-error" class="error-message" style="display: none;"></p>
-      </div>
+        <button id="submit-password" type="submit" class="cta-button">Access Open Sculling Materials</button>
+        <p id="password-error" class="error-message" role="alert" hidden></p>
+      </form>
+      <p>Need Open Sculling access? <a href="{{ site.baseurl }}/about/contact.html">Contact AARC</a> for help.</p>
     </div>
   </div>
 
-  <div id="open-sculling-content" class="coach-content" style="display: none;"> <!-- Reused class for structure, can be renamed -->
-    <h2>Open Sculling Resources</h2>
+  <div id="open-sculling-content" class="coach-content" style="display: none;">
+    <h1 tabindex="-1">Open Sculling Resources</h1>
+    <p>Choose what you need for your next row. Check the AARC member site for current practice details; use the guides here for safety and technique reference.</p>
 
-    <div class="info-box tip">
-      <h3>Welcome, Open Scullers!</h3>
-      <p>This section provides resources relevant to open sculling activities.</p>
+    <div class="card-grid">
+      <a class="card" href="https://aarc.clubexpress.com/">
+        <div class="card-content">
+          <h2>AARC member site</h2>
+          <p>Log in for current club schedules, rowing requests, and announcements.</p>
+        </div>
+      </a>
+      <a class="card" href="{{ site.baseurl }}/open-sculling/safety/weather-guidelines.html">
+        <div class="card-content">
+          <h2>Check the weather</h2>
+          <p>Review the weather decision guide before planning a row.</p>
+        </div>
+      </a>
+      <a class="card" href="{{ site.baseurl }}/open-sculling/safety/river-traffic.html">
+        <div class="card-content">
+          <h2>Review river traffic</h2>
+          <p>Refresh traffic patterns, right of way, and river navigation.</p>
+        </div>
+      </a>
+      <a class="card" href="{{ site.baseurl }}/open-sculling/technique/steering.html">
+        <div class="card-content">
+          <h2>Improve steering</h2>
+          <p>Practice boat control and a safer approach to turns.</p>
+        </div>
+      </a>
     </div>
 
-    <!-- Content for open scullers will go here. This could include specific guidelines, sign-up links, etc. -->
-    <p>Please find below links to resources, safety guidelines, and technique information:</p>
+    <h2>Browse all guides</h2>
     <ul>
-      <li><a href="{{ '/open-sculling/resources/' | relative_url }}">Resources</a></li>
-      <li><a href="{{ '/open-sculling/safety/' | relative_url }}">Safety Guidelines</a></li>
-      <li><a href="{{ '/open-sculling/technique/' | relative_url }}">Technique</a></li>
+      <li><a href="{{ '/open-sculling/resources/' | relative_url }}">Equipment, assessment, and other resources</a></li>
+      <li><a href="{{ '/open-sculling/safety/' | relative_url }}">Safety guides</a></li>
+      <li><a href="{{ '/open-sculling/technique/' | relative_url }}">Technique guides</a></li>
     </ul>
     
   </div>
@@ -47,15 +70,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const passwordGate = document.getElementById('password-gate');
     const contentArea = document.getElementById('open-sculling-content'); // Changed ID
     const passwordInput = document.getElementById('open-sculling-password'); // Changed ID
-    const submitButton = document.getElementById('submit-password');
+    const accessForm = document.getElementById('open-sculling-access-form');
     const passwordError = document.getElementById('password-error');
     const correctPasswordHash = "{{ site.open_sculling_password_hash }}"; // New config variable
+
+    function showError(message) {
+        passwordError.textContent = message;
+        passwordError.hidden = false;
+        passwordInput.setAttribute('aria-invalid', 'true');
+        passwordInput.focus();
+    }
+
+    function clearError() {
+        passwordError.textContent = '';
+        passwordError.hidden = true;
+        passwordInput.removeAttribute('aria-invalid');
+    }
 
     async function checkPassword() {
         const enteredPassword = passwordInput.value;
         if (!enteredPassword) {
-            passwordError.textContent = 'Please enter a password.';
-            passwordError.style.display = 'block';
+            showError('Please enter a password.');
             return;
         }
 
@@ -70,31 +105,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('aarc_open_sculling_access', 'granted'); // Changed localStorage key
                 passwordGate.style.display = 'none';
                 contentArea.style.display = 'block';
-                passwordError.style.display = 'none';
+                clearError();
+                contentArea.querySelector('h1').focus();
             } else {
-                passwordError.textContent = 'Incorrect password. Please try again.';
-                passwordError.style.display = 'block';
+                showError('Incorrect password. Please try again.');
                 localStorage.removeItem('aarc_open_sculling_access'); // Changed localStorage key
             }
         } catch (error) {
             console.error("Password hashing error:", error);
-            passwordError.textContent = 'Error verifying password. Please try again.';
-            passwordError.style.display = 'block';
+            showError('Error verifying password. Please try again.');
         }
     }
 
-    if (submitButton) {
-        submitButton.addEventListener('click', checkPassword);
-    }
-
-    if (passwordInput) {
-        passwordInput.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault(); 
-                checkPassword();
-            }
-        });
-    }
+    accessForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        checkPassword();
+    });
+    passwordInput.addEventListener('input', clearError);
 
     if (localStorage.getItem('aarc_open_sculling_access') === 'granted') { // Changed localStorage key
         passwordGate.style.display = 'none';

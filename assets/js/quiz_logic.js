@@ -30,6 +30,7 @@ let dom = {
     answersContainer: null,
     feedback: null,
     feedbackText: null,
+    nextQuestionButton: null,
     progressBarContainer: null, // Added: Reference to the progress bar's container
     progressBar: null,        // Embed only
     changeQuizButton: null, // RE-ADD: Button to go back to quiz selection
@@ -256,6 +257,8 @@ function displayCurrentQuestion() {
     }
 
     if (dom.feedback) dom.feedback.classList.add('hidden');
+    if (dom.nextQuestionButton) dom.nextQuestionButton.classList.add('hidden');
+    if (dom.questionText) dom.questionText.focus();
 }
 
 function handleAnswerSelection(event) {
@@ -271,18 +274,14 @@ function handleAnswerSelection(event) {
     userAnswers[currentQuestionIndex] = selectedOriginalIndex;
 
     const isCorrect = selectedOriginalIndex === question.correctIndex;
-    let nextQuestionDelay = 2500; // Default delay
-
     if (isCorrect) {
         selectedAnswerElement.classList.add('correct');
         correctAnswersCount++;
         if (dom.scoreDisplay) dom.scoreDisplay.textContent = `Score: ${correctAnswersCount}`;
-        nextQuestionDelay = 1500; // Shorter delay for correct answers
     } else {
         selectedAnswerElement.classList.add('incorrect');
         const correctAnswerElement = dom.answersContainer.querySelector(`.answer-button[data-original-index="${question.correctIndex}"]`);
         if (correctAnswerElement) correctAnswerElement.classList.add('correct');
-        nextQuestionDelay = 3500; // Longer delay for incorrect answers
     }
 
     if (dom.feedbackText && dom.feedback) {
@@ -295,17 +294,23 @@ function handleAnswerSelection(event) {
     answerOptions.forEach(option => {
         option.removeEventListener('click', handleAnswerSelection);
         option.style.cursor = 'default';
+        option.disabled = true;
     });
 
-    // Move to next question or end quiz
-    setTimeout(() => {
-        if (currentQuestionIndex < currentQuestions.length - 1) {
-            currentQuestionIndex++;
-            displayCurrentQuestion();
-        } else {
-            endCurrentQuiz();
-        }
-    }, nextQuestionDelay); // Use the adjusted delay
+    if (dom.nextQuestionButton) {
+        dom.nextQuestionButton.textContent = currentQuestionIndex < currentQuestions.length - 1 ? 'Next Question' : 'See Results';
+        dom.nextQuestionButton.classList.remove('hidden');
+    }
+    if (dom.feedbackText) dom.feedbackText.focus();
+}
+
+function advanceQuiz() {
+    if (currentQuestionIndex < currentQuestions.length - 1) {
+        currentQuestionIndex++;
+        displayCurrentQuestion();
+    } else {
+        endCurrentQuiz();
+    }
 }
 
 function endCurrentQuiz() {
@@ -316,6 +321,8 @@ function endCurrentQuiz() {
 
     if (dom.quizScreen) dom.quizScreen.classList.add('hidden');
     if (dom.resultsScreen) dom.resultsScreen.classList.remove('hidden');
+    const resultsHeading = dom.resultsScreen && dom.resultsScreen.querySelector('h2');
+    if (resultsHeading) resultsHeading.focus();
 
     // Hide "Change Quiz" button on results screen
     if (dom.changeQuizButton && !config.isEmbedded) {
@@ -386,6 +393,8 @@ function endCurrentQuiz() {
 function showReviewScreen() {
     if (dom.resultsScreen) dom.resultsScreen.classList.add('hidden');
     if (dom.reviewScreen) dom.reviewScreen.classList.remove('hidden');
+    const reviewHeading = dom.reviewScreen && dom.reviewScreen.querySelector('h2');
+    if (reviewHeading) reviewHeading.focus();
 
     // Hide "Change Quiz" button on review screen
     if (dom.changeQuizButton && !config.isEmbedded) {
@@ -455,6 +464,7 @@ function populateReviewContent() {
 function initializeQuizModule(moduleDomElements, moduleConfig) {
     // Merge provided DOM elements and config with defaults/shared structures
     dom = { ...dom, ...moduleDomElements };
+    dom.nextQuestionButton = document.getElementById('next-question-button');
     config = { ...config, ...moduleConfig };
 
     console.log("Quiz Module Initialized with config:", config);
@@ -469,6 +479,9 @@ function initializeQuizModule(moduleDomElements, moduleConfig) {
     }
     if (dom.reviewButton) {
         dom.reviewButton.addEventListener('click', showReviewScreen);
+    }
+    if (dom.nextQuestionButton) {
+        dom.nextQuestionButton.addEventListener('click', advanceQuiz);
     }
 
     // RE-ADD: Event listener for the "Change Quiz" button
@@ -592,4 +605,3 @@ async function loadAndProcessQuestions(csvUrl) {
 // Ensure this script doesn't run and break if included in <head> without defer
 // Actual initialization should be triggered by the HTML module itself.
 console.log("quiz_logic.js loaded");
-

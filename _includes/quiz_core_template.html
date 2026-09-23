@@ -8,7 +8,7 @@
         <h2 id="start-heading">Ready to test your knowledge?</h2>
         <button id="start-button" class="quiz-button" disabled>Start Quiz</button>
         <p id="loading-message" class="hidden" style="text-align: center; margin-top: 10px;">Loading questions...</p>
-        <p id="error-message" class="hidden" style="color: red; text-align: center; margin-top: 10px;"></p>
+        <p id="error-message" class="hidden" role="alert" style="color: red; text-align: center; margin-top: 10px;"></p>
     </div>
 
     <div id="quiz-screen" class="quiz-section hidden">
@@ -23,20 +23,21 @@
             <span id="score-display">Score: 0</span>
         </div>
         <div id="question-container">
-            <h2 id="question-text">Question text goes here</h2>
+            <h2 id="question-text" tabindex="-1">Question text goes here</h2>
             <div id="answers-container">
             </div>
         </div>
         <div id="feedback" class="hidden">
-            <p id="feedback-text"></p>
+            <p id="feedback-text" tabindex="-1" role="status" aria-live="polite"></p>
         </div>
+        <button id="next-question-button" type="button" class="quiz-button hidden">Next Question</button>
         <div id="quiz-screen-actions" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
             <button id="change-quiz-button" class="quiz-button secondary hidden">Change Quiz</button>
         </div>
     </div>
 
     <div id="results-screen" class="quiz-section hidden">
-        <h2>Quiz Complete!</h2>
+        <h2 tabindex="-1">Quiz Complete!</h2>
         <div id="quiz-summary">
             <p class="result-heading">You answered <span id="correct-count" class="highlight">0</span> out of <span
                     id="total-questions" class="highlight">15</span> questions correctly</p>
@@ -51,7 +52,7 @@
     </div>
 
     <div id="review-screen" class="quiz-section hidden">
-        <h2>Review Your Answers</h2>
+        <h2 tabindex="-1">Review Your Answers</h2>
         <div id="review-container">
         </div>
         <!-- Button text/ID might differ or be controlled by JS based on context -->

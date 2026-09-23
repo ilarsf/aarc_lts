@@ -11,16 +11,16 @@ homepage: true
     <h1 id="home-title">Learn to scull with AARC</h1>
     <p class="home-lead">A beginner program for adults, with small classes, coached practice, and a clear path from your first strokes to continued rowing.</p>
     <div class="button-row">
-      <a href="{{ site.baseurl }}/for-learners/" class="cta-button">Explore the learner guide</a>
-      <a href="#program-details" class="cta-button secondary">Program details</a>
+      <a href="#program-details" class="cta-button">See 2027 class status</a>
+      <a href="{{ site.baseurl }}/for-learners/" class="cta-button secondary">Explore the learner guide</a>
     </div>
   </div>
   <div class="home-path" aria-label="How to get started">
     <p class="home-path-title">Your next steps</p>
     <ol>
+      <li>Check the 2027 class status and 2026 planning examples</li>
       <li>Explore the learner guide</li>
-      <li>Use the 2026 timeline as a planning example</li>
-      <li>Check AARC for registration updates</li>
+      <li>Contact AARC or check for registration updates</li>
     </ol>
   </div>
 </section>
@@ -30,7 +30,7 @@ homepage: true
     <p class="notice-label">2027 class update</p>
     <p><strong>Updates about 2027 classes will follow before the spring 2027 season starts.</strong> The 2026 dates and prices below are planning examples only; 2027 details are unannounced and may change.</p>
   </div>
-  <a href="https://aarc.clubexpress.com/" target="_blank" rel="noopener noreferrer">Check AARC for updates</a>
+  <a href="{{ site.baseurl }}/about/contact.html">Ask about 2027 classes</a>
 </aside>
 
 <section class="home-section" aria-labelledby="expect-title">

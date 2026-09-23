@@ -268,7 +268,7 @@ This guide covers common technical issues you might experience as a new rower an
             
             <div class="video-reference">
                 <h4>Video Reference</h4>
-                <p>Watch our <a href="{{ site.baseurl }}/for-learners/technique/videos.html#balance">Balance Drills video</a> to see these techniques demonstrated.</p>
+                <p>Browse the <a href="{{ site.baseurl }}/for-learners/technique/videos.html">sculling instructional video library</a> for technique demonstrations.</p>
             </div>
         </div>
     </div>
@@ -352,7 +352,7 @@ This guide covers common technical issues you might experience as a new rower an
                         </div>
                         <h4 class="card-title">River Navigation</h4>
                         <p class="card-text">Detailed guide to waterway traffic patterns</p>
-                        <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html" class="card-button">View Guide</a>
+                        <a href="{{ site.baseurl }}/open-sculling/safety/river-traffic.html" class="card-button">View Guide</a>
                     </div>
                     
                     <div class="card">
@@ -361,7 +361,7 @@ This guide covers common technical issues you might experience as a new rower an
                         </div>
                         <h4 class="card-title">Steering Techniques</h4>
                         <p class="card-text">Learn how to steer effectively</p>
-                        <a href="{{ site.baseurl }}/for-learners/technique/steering.html" class="card-button">View Guide</a>
+                        <a href="{{ site.baseurl }}/open-sculling/technique/steering.html" class="card-button">View Guide</a>
                     </div>
                 </div>
             </div>

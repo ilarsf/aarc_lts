@@ -8,6 +8,8 @@ description: Common questions from Learn to Scull participants
 
 This comprehensive FAQ addresses common questions from Learn to Scull participants. If you don't see your question answered here, please ask your coach or contact the program coordinator.
 
+**2027 season:** Class, trial, continuation, and fee details have not been announced. Any 2026 program examples below are historical and may change.
+
 {% assign lts_schedule = site.data.learn_to_scull_schedule %}
 
 {% include accordion.html %}
@@ -243,7 +245,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <button class="nested-toggle">What happens after the Learn to Scull program ends?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>After successfully completing the program, you have several options to continue rowing:</p>
+<p>After successfully completing the program, possible ways to continue rowing have included the following. Confirm current availability with AARC:</p>
 <ul>
   <li>Join the Open Sculling Program (requires club membership)</li>
   <li>Participate in coached novice sessions to further develop skills</li>
@@ -251,7 +253,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
   <li>Join recreational group rows or explore competitive opportunities</li>
   <li>Rent club equipment when you meet proficiency requirements</li>
 </ul>
-<p>Phase 2 trial and Phase 3 continuation registration are listed at the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>, not on the Open Sculling page.</p>
+<p>In 2026, Phase 2 trial and Phase 3 continuation registration appeared on the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>. Check with AARC for future registration steps.</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +262,7 @@ This comprehensive FAQ addresses common questions from Learn to Scull participan
                 <button class="nested-toggle">Do sweep rowers in Open/Tech need to pay Phase 2 or Phase 3 fees?</button>
                 <div class="nested-content">
                     <div class="nested-content-inner">
-<p>No. Sweep rowers who already paid for the Open/Tech Summer Program or Full Season do not pay the Phase 2 Open Sculling trial fee or the Phase 3 remainder-of-season fee. Those program fees already include both sculling and sweep rowing. The separate Phase 2 and Phase 3 fees apply only to LTS graduates who are not already covered by Open/Tech season fees, and those LTS Phase 2 and Phase 3 registrations are listed on the Learn to Scull Class page.</p>
+<p>In 2026, sweep rowers who had already paid for the Open/Tech Summer Program or Full Season did not pay separate Phase 2 or Phase 3 fees; their program fees covered both sculling and sweep rowing. That arrangement and the 2027 fees have not been confirmed. Ask AARC which fee applies before registering.</p>
                     </div>
                 </div>
             </div>

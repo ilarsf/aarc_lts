@@ -602,8 +602,7 @@ search_exclude: true
 <div class="resource-links mt-4">
   <h3>Assessment Resources</h3>
   <ul>
-    <li><a href="{{ site.baseurl }}/assets/pdf/assessment_checklist_printable.pdf" download>Printable Assessment Form</a></li>
-    <li><a href="{{ site.baseurl }}/assets/pdf/progress_tracker_printable.pdf" download>Printable Progress Tracker</a></li>
+    <li>To print the assessment criteria and progress tracker on this page, use your browser’s Print command.</li>
     <li><a href="{{ site.baseurl }}/for-coaches/technical-coaching/video-analysis.html">Video Analysis Guide</a></li>
   </ul>
 </div>

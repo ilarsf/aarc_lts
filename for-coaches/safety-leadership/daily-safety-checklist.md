@@ -13,6 +13,11 @@ search_exclude: true
   <p>This checklist should be completed before each Learn to Scull session to ensure all safety measures are in place and equipment is ready.</p>
 </div>
 
+<div class="info-box warning">
+  <h3>2026 heat-index cutoff</h3>
+  <p>Check the “feels like” heat index at session start and again if conditions change materially. Above 90°F, every rower must have a water bottle; coaches should provide extra hydration breaks and adjust intensity as needed. Above 95°F, consider moving indoors or reducing intensity or duration. At 98°F or above, cancel the outdoor workout or move it indoors. These limits also apply to individual use of AARC-owned boats. <a href="{{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf">Read the AARC policy (PDF)</a>.</p>
+</div>
+
 ## Weather Assessment
 
 <div class="interactive-checklist">
@@ -20,7 +25,7 @@ search_exclude: true
         <h4>Weather Assessment</h4>
         <div class="category-progress">
             <div class="progress-indicator" style="width: 0%;"></div>
-            <span class="progress-value">0/7</span>
+            <span class="progress-value">0/8</span>
         </div>
         <div class="checklist-items">
             <div class="checklist-item">
@@ -34,6 +39,10 @@ search_exclude: true
             <div class="checklist-item">
                 <input type="checkbox" id="weather-temperature" name="weather-checklist">
                 <label for="weather-temperature">Temperature (air/water) noted</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="weather-heat-index" name="weather-checklist">
+                <label for="weather-heat-index">Heat index checked; heat policy applied and re-check planned if conditions change</label>
             </div>
             <div class="checklist-item">
                 <input type="checkbox" id="weather-precipitation" name="weather-checklist">
@@ -310,7 +319,7 @@ search_exclude: true
     <li>Heavy fog limiting visibility to less than 100m</li>
     <li>Heavy rainfall affecting visibility</li>
   </ul>
-  <p>See the <a href="{{ site.baseurl }}/for-coaches/safety-leadership/risk-management">Risk Management Guide</a> for complete guidelines.</p>
+  <p>See the <a href="{{ site.baseurl }}/for-coaches/safety-leadership/risk-management.html">Risk Management Guide</a> for complete guidelines.</p>
 </div>
 
 ## Pre-Session Briefing Topics

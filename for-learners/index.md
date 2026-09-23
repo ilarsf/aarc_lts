@@ -6,23 +6,29 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
 
 # Learner’s Guide
 
+<aside class="info-box note" aria-label="2027 class status">
+    <h2>Planning for 2027?</h2>
+    <p>Class dates, fees, and coaches will be announced before the spring 2027 season. The dates and prices on this site are from 2026 and are planning examples only.</p>
+    <p><a href="{{ site.baseurl }}/#program-details">See the 2026 examples and 2027 status</a> · <a href="{{ site.baseurl }}/about/contact.html">Contact AARC</a></p>
+</aside>
+
 <div class="info-box tip quick-start">
     <h2>Recommended order</h2>
     <p>If this is your first visit, use the guide in this order:</p>
     <ol>
         <li><strong>Before Your First Session</strong> for what to bring and what to expect.</li>
-        <li><strong>During the Course</strong> for session-by-session preparation.</li>
         <li><strong>Safety &amp; River Rules</strong> before you launch.</li>
-        <li><strong>After the Course</strong> when you are ready for next steps.</li>
+        <li><strong>During the Course</strong> for session-by-session preparation.</li>
+        <li><strong>Resources &amp; Next Steps</strong> for terminology, quizzes, and options after class.</li>
     </ol>
 </div>
 
 <div class="button-row">
     <a href="#getting-started" class="cta-button secondary">Before Your First Session</a>
+    <a href="#safety" class="cta-button secondary">Safety &amp; River Rules</a>
     <a href="#learning-journey" class="cta-button secondary">During the Course</a>
     <a href="#technique" class="cta-button secondary">Technique &amp; Drills</a>
-    <a href="#safety" class="cta-button secondary">Safety &amp; River Rules</a>
-    <a href="#resources" class="cta-button secondary">After the Course</a>
+    <a href="#resources" class="cta-button secondary">Resources &amp; Next Steps</a>
 </div>
 
 <section id="getting-started" class="program-section">
@@ -57,6 +63,63 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             <div class="card-content">
                 <h3>Frequently Asked Questions</h3>
                 <p>Answers to common questions about the program and learning to scull.</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="safety" class="program-section">
+    <h2>Safety &amp; River Rules</h2>
+    <p>Critical safety information and practices for all scullers.</p>
+
+    <div class="card-grid">
+        <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-life-ring"></i>
+            </div>
+            <div class="card-content">
+                <h3>Self-Rescue</h3>
+                <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
+            </div>
+        </a>
+
+        <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="card-content">
+                <h3>Essential Rules</h3>
+                <p>The most important safety protocols every rower must follow on the water.</p>
+            </div>
+        </a>
+
+        <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-water"></i>
+            </div>
+            <div class="card-content">
+                <h3>River Rules</h3>
+                <p>Learn the default traffic rule, how to make a river turn, and the hazards to watch for.</p>
+            </div>
+        </a>
+
+        <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-route"></i>
+            </div>
+            <div class="card-content">
+                <h3>River Navigation Guide</h3>
+                <p>Review the specific Huron River course your coach assigns, with route cards, bridge decisions, and a dock quick card.</p>
+            </div>
+        </a>
+
+        <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines-lts.html" class="card">
+            <div class="card-image">
+                <i class="fas fa-cloud-sun-rain"></i>
+            </div>
+            <div class="card-content">
+                <h3>LTS Weather Guidelines</h3>
+                <p>Simplified weather rules for Learn-To-Scull participants.</p>
             </div>
         </a>
     </div>
@@ -134,78 +197,13 @@ description: A comprehensive guide for participants in the AARC Learn to Scull P
             </div>
         </a>
 
-        <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-life-ring"></i>
-            </div>
-            <div class="card-content">
-                <h3>Self-Rescue</h3>
-                <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
-            </div>
-        </a>
     </div>
 </section>
 
-<section id="safety" class="program-section">
-    <h2>Safety &amp; River Rules</h2>
-    <p>Critical safety information and practices for all scullers.</p>
-
-    <div class="card-grid">
-        <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-life-ring"></i>
-            </div>
-            <div class="card-content">
-                <h3>Self-Rescue</h3>
-                <p>Step-by-step guide to handling capsizes and self-rescue procedures.</p>
-            </div>
-        </a>
-
-        <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="card-content">
-                <h3>Essential Rules</h3>
-                <p>The most important safety protocols every rower must follow on the water.</p>
-            </div>
-        </a>
-
-        <a href="{{ site.baseurl }}/for-learners/safety/river-rules.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-water"></i>
-            </div>
-            <div class="card-content">
-                <h3>River Rules</h3>
-                <p>Navigation guidelines, traffic patterns, and rules for rowing on the river.</p>
-            </div>
-        </a>
-
-        <a href="{{ site.baseurl }}/for-learners/safety/river-navigation-guide.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-route"></i>
-            </div>
-            <div class="card-content">
-                <h3>River Navigation Guide</h3>
-                <p>Route briefing cards, bridge decisions, coach prompts, and a printable dock quick card.</p>
-            </div>
-        </a>
-
-        <a href="{{ site.baseurl }}/for-learners/safety/weather-guidelines-lts.html" class="card">
-            <div class="card-image">
-                <i class="fas fa-cloud-sun-rain"></i>
-            </div>
-            <div class="card-content">
-                <h3>LTS Weather Guidelines</h3>
-                <p>Simplified weather rules for Learn-To-Scull participants.</p>
-            </div>
-        </a>
-    </div>
-</section>
 
 <section id="resources" class="program-section">
-    <h2>After the Course</h2>
-    <p>Additional materials to support your learning and ongoing development as a sculler.</p>
+    <h2>Resources &amp; Next Steps</h2>
+    <p>Use terminology and quizzes whenever they help your learning; explore continuing options after class.</p>
 
     <div class="card-grid">
         <a href="{{ site.baseurl }}/for-learners/getting-started/terminology.html" class="card">

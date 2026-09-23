@@ -1,305 +1,128 @@
-/**
- * Video Gallery Functionality
- * Handles video filtering, modal interactions, and responsive behavior
- */
+// Video library: filter the collection and create one player on demand.
+document.addEventListener('DOMContentLoaded', () => {
+    const gallery = document.querySelector('.video-gallery');
+    if (!gallery) return;
 
-document.addEventListener('DOMContentLoaded', function () {
-    initVideoGallery();
-});
+    const cards = Array.from(gallery.querySelectorAll('.video-card'));
+    const filters = Array.from(gallery.querySelectorAll('.filter-button'));
+    const showAll = gallery.querySelector('#show-all-videos');
+    const search = gallery.querySelector('#video-search');
+    const status = gallery.querySelector('#video-results-status');
+    const noResults = gallery.querySelector('#no-video-results');
 
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-}
-
-function initVideoGallery() {
-    setupFilterButtons(); // Sets up event listeners
-    setupVideoModal();
-    if (document.getElementById('video-search')) {
-        setupVideoSearch(); // Sets up event listeners
+    function selected(type) {
+        return filters
+            .filter(button => button.dataset.filterType === type && button.classList.contains('active'))
+            .map(button => button.dataset.filter);
     }
 
-    const initialUrlFilter = getQueryParam('filter');
-    const showAllButton = document.getElementById('show-all-videos');
-
-    // Clear all active states from filter buttons to ensure a clean start
-    document.querySelectorAll('.filter-button.active').forEach(btn => {
-        btn.classList.remove('active');
-    });
-
-    if (initialUrlFilter) {
-        const targetButton = document.querySelector(`.filter-button[data-filter='${initialUrlFilter}']`);
-        if (targetButton) {
-            targetButton.classList.add('active');
-            // If a specific filter is from URL, "Show All" button should not be active.
-            // This is handled by clearing all active states first and only activating the target.
-        } else {
-            // Invalid filter in URL, or filter not found, default to "Show All"
-            if (showAllButton) {
-                showAllButton.classList.add('active');
-            }
-        }
-    } else {
-        // No URL filter, default to "Show All"
-        if (showAllButton) {
-            showAllButton.classList.add('active');
-        }
+    function updateButtons() {
+        filters.forEach(button => {
+            button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+        });
     }
 
-    filterVideos(); // Apply filters based on the determined active buttons
-}
+    function filterVideos() {
+        const sessions = selected('session');
+        const skills = selected('skill');
+        const topics = selected('topic');
+        const query = search.value.trim().toLocaleLowerCase();
+        let visible = 0;
 
-function setupFilterButtons() {
-    const allFilterButtons = document.querySelectorAll('.filter-button');
-    const showAllButton = document.getElementById('show-all-videos');
+        cards.forEach(card => {
+            const hasAny = (values, attribute) => !values.length ||
+                values.some(value => (card.dataset[attribute] || '').split(/\s+/).includes(value));
+            const matches = hasAny(sessions, 'sessions') &&
+                hasAny(skills, 'skills') &&
+                hasAny(topics, 'topics') &&
+                (!query || card.textContent.toLocaleLowerCase().includes(query));
+            card.classList.toggle('filtered-out', !matches);
+            card.classList.toggle('filtered-in', matches);
+            card.hidden = !matches;
+            if (matches) visible += 1;
+        });
 
-    allFilterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const clickedButton = this;
+        noResults.hidden = visible !== 0;
+        status.textContent = `Showing ${visible} of ${cards.length} videos`;
+        updateButtons();
+    }
 
-            if (clickedButton.id === 'show-all-videos') {
-                // Clicked "Show All"
-                allFilterButtons.forEach(btn => {
-                    if (btn !== clickedButton) {
-                        btn.classList.remove('active');
-                    }
-                });
-                clickedButton.classList.add('active');
+    filters.forEach(button => {
+        button.addEventListener('click', () => {
+            if (button === showAll) {
+                filters.forEach(filter => filter.classList.toggle('active', filter === showAll));
+                search.value = '';
             } else {
-                // Clicked a specific filter button (not "Show All")
-                const categoryType = clickedButton.getAttribute('data-filter-type');
-                if (categoryType) {
-                    // Deactivate other buttons of the same type if they are not the clicked one
-                    document.querySelectorAll(`.filter-button[data-filter-type="${categoryType}"]`).forEach(btn => {
-                        if (btn !== clickedButton) {
-                            btn.classList.remove('active');
-                        }
-                    });
-                    // Toggle the clicked button's active state (or simply set to active)
-                    // If a button in a category is clicked, it should become active.
-                    clickedButton.classList.add('active');
-
-                    // Deactivate "Show All" button if a specific filter is now active
-                    if (showAllButton) {
-                        showAllButton.classList.remove('active');
-                    }
-                } else {
-                    // Fallback for buttons without categoryType that are not "Show All" (should not occur with current HTML)
-                    clickedButton.classList.toggle('active');
-                    if (clickedButton.classList.contains('active') && showAllButton) {
-                        showAllButton.classList.remove('active');
-                    }
-                }
+                filters.filter(filter => filter.dataset.filterType === button.dataset.filterType)
+                    .forEach(filter => filter.classList.remove('active'));
+                button.classList.add('active');
+                showAll.classList.remove('active');
             }
-            filterVideos(); // Apply filters after updating active states
-        });
-    });
-
-    // "Show All" button functionality
-    if (showAllButton) {
-        showAllButton.addEventListener('click', function () {
-            // Remove active class from all filter buttons
-            document.querySelectorAll('.filter-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Show all videos
-            document.querySelectorAll('.video-card').forEach(card => {
-                card.classList.remove('filtered-out');
-                card.classList.add('filtered-in');
-            });
-
-            // Activate the "Show All" button
-            this.classList.add('active');
-            filterVideos(); // Ensure filtering is called
-        });
-    }
-}
-
-function filterVideos() {
-    const activeSessionFilters = Array.from(document.querySelectorAll('.filter-button[data-filter-type="session"].active'))
-        .map(button => button.getAttribute('data-filter'));
-
-    const activeSkillFilters = Array.from(document.querySelectorAll('.filter-button[data-filter-type="skill"].active'))
-        .map(button => button.getAttribute('data-filter'));
-
-    const activeTopicFilters = Array.from(document.querySelectorAll('.filter-button[data-filter-type="topic"].active'))
-        .map(button => button.getAttribute('data-filter'));
-
-    const videoCards = document.querySelectorAll('.video-card');
-
-    videoCards.forEach(card => {
-        const cardSessions = card.getAttribute('data-sessions')?.split(' ') || [];
-        const cardSkills = card.getAttribute('data-skills')?.split(' ') || [];
-        const cardTopics = card.getAttribute('data-topics')?.split(' ') || [];
-
-        // If no filters are active in a category, consider it a match
-        const sessionMatch = activeSessionFilters.length === 0 || activeSessionFilters.some(filter => cardSessions.includes(filter));
-        const skillMatch = activeSkillFilters.length === 0 || activeSkillFilters.some(filter => cardSkills.includes(filter));
-        const topicMatch = activeTopicFilters.length === 0 || activeTopicFilters.some(filter => cardTopics.includes(filter));
-
-        // Show or hide based on all filter matches
-        if (sessionMatch && skillMatch && topicMatch) {
-            card.classList.remove('filtered-out');
-            card.classList.add('filtered-in');
-        } else {
-            card.classList.remove('filtered-in');
-            card.classList.add('filtered-out');
-        }
-    });
-
-    // Check if we should show the "no results" message
-    const visibleCards = document.querySelectorAll('.video-card:not(.filtered-out)').length;
-    const noResultsElement = document.getElementById('no-video-results');
-
-    if (noResultsElement) {
-        if (visibleCards === 0) {
-            noResultsElement.style.display = 'block';
-        } else {
-            noResultsElement.style.display = 'none';
-        }
-    }
-}
-
-function setupVideoSearch() {
-    const searchInput = document.getElementById('video-search');
-
-    searchInput.addEventListener('input', function () {
-        const searchTerm = this.value.toLowerCase().trim();
-
-        if (searchTerm.length < 2) {
-            // If search term is too short, just use the existing filters
             filterVideos();
-            return;
-        }
-
-        const videoCards = document.querySelectorAll('.video-card');
-
-        videoCards.forEach(card => {
-            const title = card.querySelector('.video-title')?.textContent.toLowerCase() || '';
-            const description = card.querySelector('.video-description')?.textContent.toLowerCase() || '';
-            const creator = card.querySelector('.video-creator')?.textContent.toLowerCase() || '';
-
-            // Apply existing filters first
-            const isFilteredOut = card.classList.contains('filtered-out');
-
-            // Only search among cards that pass the current filters
-            if (!isFilteredOut) {
-                if (title.includes(searchTerm) || description.includes(searchTerm) || creator.includes(searchTerm)) {
-                    card.classList.remove('filtered-out');
-                    card.classList.add('filtered-in');
-                } else {
-                    card.classList.remove('filtered-in');
-                    card.classList.add('filtered-out');
-                }
-            }
-        });
-
-        // Check if we should show the "no results" message
-        const visibleCards = document.querySelectorAll('.video-card:not(.filtered-out)').length;
-        const noResultsElement = document.getElementById('no-video-results');
-
-        if (noResultsElement) {
-            if (visibleCards === 0) {
-                noResultsElement.style.display = 'block';
-            } else {
-                noResultsElement.style.display = 'none';
-            }
-        }
-    });
-}
-
-function setupVideoModal() {
-    // Create modal element if it doesn't exist
-    if (!document.querySelector('.video-modal')) {
-        const modal = document.createElement('div');
-        modal.className = 'video-modal';
-        modal.innerHTML = `
-      <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <div class="modal-video-container">
-          <iframe allowfullscreen></iframe>
-        </div>
-        <div class="modal-video-info">
-          <h3 class="modal-video-title"></h3>
-          <div class="modal-video-meta"></div>
-          <p class="modal-video-description"></p>
-        </div>
-      </div>
-    `;
-        document.body.appendChild(modal);
-
-        // Close modal when clicking the X button
-        modal.querySelector('.modal-close').addEventListener('click', function () {
-            closeVideoModal();
-        });
-
-        // Close modal when clicking outside the content
-        modal.addEventListener('click', function (event) {
-            if (event.target === modal) {
-                closeVideoModal();
-            }
-        });
-
-        // Close modal with ESC key
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                closeVideoModal();
-            }
-        });
-    }
-
-    // Set up click events for all video thumbnails
-    document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
-        thumbnail.addEventListener('click', function () {
-            const videoCard = this.closest('.video-card');
-            const videoId = this.getAttribute('data-video-id');
-            const videoTitle = videoCard.querySelector('.video-title').textContent;
-            const videoMeta = videoCard.querySelector('.video-meta').innerHTML;
-            const videoDescription = videoCard.querySelector('.video-description').innerHTML;
-
-            openVideoModal(videoId, videoTitle, videoMeta, videoDescription);
         });
     });
-}
+    search.addEventListener('input', filterVideos);
 
-function openVideoModal(videoId, title, meta, description) {
-    const modal = document.querySelector('.video-modal');
-    const iframe = modal.querySelector('iframe');
-    const videoTitle = modal.querySelector('.modal-video-title');
-    const videoMeta = modal.querySelector('.modal-video-meta');
-    const videoDescription = modal.querySelector('.modal-video-description');
-
-    // Set video source
-    if (videoId.includes('youtube')) {
-        iframe.src = videoId + '?autoplay=1';
+    const requestedFilter = new URLSearchParams(window.location.search).get('filter');
+    const requestedButton = filters.find(button => button.dataset.filter === requestedFilter);
+    if (requestedButton) {
+        filters.forEach(button => button.classList.remove('active'));
+        requestedButton.classList.add('active');
     } else {
-        // Assuming YouTube videos, adjust as needed
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        showAll.classList.add('active');
     }
+    filterVideos();
 
-    // Set video info
-    videoTitle.textContent = title;
-    videoMeta.innerHTML = meta;
-    videoDescription.innerHTML = description;
+    const dialog = document.createElement('dialog');
+    dialog.className = 'video-modal';
+    dialog.setAttribute('aria-labelledby', 'video-dialog-title');
+    dialog.innerHTML = `
+        <div class="modal-content">
+            <button type="button" class="modal-close" aria-label="Close video">&times;</button>
+            <div class="modal-video-container">
+                <iframe title="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="modal-video-info">
+                <h2 id="video-dialog-title" class="modal-video-title"></h2>
+                <p class="modal-video-meta"></p>
+                <p class="modal-video-description"></p>
+                <a class="modal-video-link" target="_blank" rel="noopener noreferrer">Open video on YouTube</a>
+            </div>
+        </div>`;
+    document.body.appendChild(dialog);
 
-    // Show modal
-    modal.style.display = 'block';
+    let opener = null;
+    const frame = dialog.querySelector('iframe');
+    function finishClose() {
+        frame.removeAttribute('src'); // Stops playback and removes the remote frame.
+        if (opener && opener.isConnected) opener.focus();
+        opener = null;
+    }
+    function closeDialog() {
+        dialog.close();
+        finishClose();
+    }
+    dialog.querySelector('.modal-close').addEventListener('click', closeDialog);
+    dialog.addEventListener('cancel', event => {
+        event.preventDefault();
+        closeDialog();
+    });
+    dialog.addEventListener('close', finishClose);
 
-    // Prevent body scrolling
-    document.body.style.overflow = 'hidden';
-}
-
-function closeVideoModal() {
-    const modal = document.querySelector('.video-modal');
-    const iframe = modal.querySelector('iframe');
-
-    // Stop the video
-    iframe.src = '';
-
-    // Hide modal
-    modal.style.display = 'none';
-
-    // Allow body scrolling
-    document.body.style.overflow = '';
-}
+    gallery.querySelectorAll('.video-thumbnail').forEach(button => {
+        button.addEventListener('click', () => {
+            const card = button.closest('.video-card');
+            const title = card.querySelector('.video-title').textContent.trim();
+            const videoId = button.dataset.videoId;
+            opener = button;
+            dialog.querySelector('.modal-video-title').textContent = title;
+            dialog.querySelector('.modal-video-meta').textContent = card.querySelector('.video-meta').textContent.trim();
+            dialog.querySelector('.modal-video-description').textContent = card.querySelector('.video-description').textContent.trim();
+            dialog.querySelector('.modal-video-link').href = `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+            frame.title = title;
+            frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`;
+            dialog.showModal();
+            dialog.querySelector('.modal-close').focus();
+        });
+    });
+});

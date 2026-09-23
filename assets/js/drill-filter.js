@@ -80,10 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // If this section was expanded, collapse it
                     const content = section.querySelector('.accordion-content');
-                    if (content && content.style.maxHeight) {
-                        toggleButton.classList.remove('active');
-                        content.style.maxHeight = null;
-                        content.classList.remove('visible');
+                    if (content && toggleButton.getAttribute('aria-expanded') === 'true') {
+                        window.setAccordionExpanded(toggleButton, false);
                     }
                 }
             });
@@ -97,14 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     drillCounter.textContent = visibleSections;
                 }
             }
-
-            // Fix accordion max-height issues after filtering
-            setTimeout(() => {
-                const visibleAccordions = document.querySelectorAll('.accordion-content.visible');
-                visibleAccordions.forEach(content => {
-                    content.style.maxHeight = content.scrollHeight + 2000 + 'px';
-                });
-            }, 100);
 
             // Show message if no matching drills
             const noResultsMessage = document.getElementById('no-results-message');

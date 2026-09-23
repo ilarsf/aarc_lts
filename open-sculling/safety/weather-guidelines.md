@@ -4,7 +4,6 @@ title: Weather Guidelines
 description: Weather-related safety protocols for rowers
 ---
 
-{% include head-custom.html %}
 <link rel="stylesheet" href="{{ '/assets/css/weather-guidelines.css' | relative_url }}">
 <script src="{{ '/assets/js/weather-guidelines.js' | relative_url }}" defer></script>
 
@@ -15,7 +14,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
 <div class="weather-guidelines-container">
   <div class="weather-warning-box">
     <h4>Safety First</h4>
-    <p>Always prioritize safety over training goals. When in doubt about conditions, err on the side of caution. During the Learn to Scull program, your coaches make all weather-related decisions.</p>
+    <p>Always prioritize safety over training goals. When in doubt about conditions, err on the side of caution. Coaches may cancel or modify a session sooner, but the AARC heat-index cutoff below applies to every club-organized outdoor session and individual use of AARC-owned boats.</p>
   </div>
 
   <!-- Weather Decision Matrix Table -->
@@ -32,150 +31,165 @@ Weather conditions directly impact rowing safety. This guide will help you under
     </div>
     
     <table class="weather-matrix">
+      <caption>Weather guidance by condition and sculling experience</caption>
       <thead>
         <tr>
-          <th>Condition</th>
-          <th>Novice Scullers</th>
-          <th>Intermediate</th>
-          <th>Advanced</th>
-          <th>Required Actions</th>
+          <th scope="col">Condition</th>
+          <th scope="col">Novice Scullers</th>
+          <th scope="col">Intermediate</th>
+          <th scope="col">Advanced</th>
+          <th scope="col">Required Actions</th>
         </tr>
       </thead>
       <tbody>
         <!-- Wind Conditions -->
         <tr data-conditions="wind">
-          <td><strong>Wind 0-7 mph (0-11 km/h)</strong><br>Calm or light breeze</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td>Standard procedures</td>
+          <th scope="row"><strong>Wind 0-7 mph (0-11 km/h)</strong><br>Calm or light breeze</th>
+          <td class="safe" data-label="Novice Scullers">Safe</td>
+          <td class="safe" data-label="Intermediate">Safe</td>
+          <td class="safe" data-label="Advanced">Safe</td>
+          <td data-label="Required Actions">Standard procedures</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 8-12 mph (12-19 km/h)</strong><br>Moderate breeze</td>
-          <td class="caution">Caution</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td>Stay in sheltered water areas if possible</td>
+          <th scope="row"><strong>Wind 8-12 mph (12-19 km/h)</strong><br>Moderate breeze</th>
+          <td class="caution" data-label="Novice Scullers">Caution</td>
+          <td class="safe" data-label="Intermediate">Safe</td>
+          <td class="safe" data-label="Advanced">Safe</td>
+          <td data-label="Required Actions">Stay in sheltered water areas if possible</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 12-15 mph (19-24 km/h)</strong><br>Fresh breeze, whitecaps</td>
-          <td class="warning">Not Advised</td>
-          <td class="caution">Caution</td>
-          <td class="safe">Safe</td>
-          <td>No novice singles, stay near shore</td>
+          <th scope="row"><strong>Wind 12-15 mph (19-24 km/h)</strong><br>Fresh breeze, whitecaps</th>
+          <td class="warning" data-label="Novice Scullers">Not Advised</td>
+          <td class="caution" data-label="Intermediate">Caution</td>
+          <td class="safe" data-label="Advanced">Safe</td>
+          <td data-label="Required Actions">No novice singles, stay near shore</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 15-20 mph (24-32 km/h)</strong><br>Strong breeze, moderate waves</td>
-          <td class="no-go">No Rowing</td>
-          <td class="warning">Not Advised</td>
-          <td class="caution">Larger Boats Only</td>
-          <td>No singles/doubles for any rower</td>
+          <th scope="row"><strong>Wind 15-20 mph (24-32 km/h)</strong><br>Strong breeze, moderate waves</th>
+          <td class="no-go" data-label="Novice Scullers">No Rowing</td>
+          <td class="warning" data-label="Intermediate">Not Advised</td>
+          <td class="caution" data-label="Advanced">Larger Boats Only</td>
+          <td data-label="Required Actions">No singles/doubles for any rower</td>
         </tr>
         <tr data-conditions="wind">
-          <td><strong>Wind 20+ mph (32+ km/h)</strong><br>Near gale, rough water</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td>All rowing activities suspended</td>
+          <th scope="row"><strong>Wind 20+ mph (32+ km/h)</strong><br>Near gale, rough water</th>
+          <td class="no-go" data-label="Novice Scullers">No Rowing</td>
+          <td class="no-go" data-label="Intermediate">No Rowing</td>
+          <td class="no-go" data-label="Advanced">No Rowing</td>
+          <td data-label="Required Actions">All rowing activities suspended</td>
         </tr>
         
         <!-- Temperature Conditions -->
         <tr data-conditions="temp">
-          <td><strong>Water < 40°F (< 4°C)</strong><br>Red Zone</td>
-          <td class="no-go">No Singles/Doubles</td>
-          <td class="warning">Multi-Person Only</td>
-          <td class="warning">Multi-Person Only</td>
-          <td>Coach accompaniment required, cold gear needed</td>
+          <th scope="row"><strong>Water < 40°F (< 4°C)</strong><br>Red Zone</th>
+          <td class="no-go" data-label="Novice Scullers">No Singles/Doubles</td>
+          <td class="warning" data-label="Intermediate">Multi-Person Only</td>
+          <td class="warning" data-label="Advanced">Multi-Person Only</td>
+          <td data-label="Required Actions">Coach accompaniment required, cold gear needed</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Water 40-50°F (4-10°C)</strong><br>Yellow Zone</td>
-          <td class="warning">No Singles</td>
-          <td class="caution">No Singles</td>
-          <td class="caution">Experienced Only</td>
-          <td>Four-oar rule, cold gear required</td>
+          <th scope="row"><strong>Water 40-50°F (4-10°C)</strong><br>Yellow Zone</th>
+          <td class="warning" data-label="Novice Scullers">No Singles</td>
+          <td class="caution" data-label="Intermediate">No Singles</td>
+          <td class="caution" data-label="Advanced">Experienced Only</td>
+          <td data-label="Required Actions">Four-oar rule, cold gear required</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Water > 50°F (> 10°C)</strong><br>Green Zone</td>
-          <td class="caution">Standard</td>
-          <td class="safe">Standard</td>
-          <td class="safe">Standard</td>
-          <td>Normal operations when other conditions permit</td>
+          <th scope="row"><strong>Water > 50°F (> 10°C)</strong><br>Green Zone</th>
+          <td class="caution" data-label="Novice Scullers">Standard</td>
+          <td class="safe" data-label="Intermediate">Standard</td>
+          <td class="safe" data-label="Advanced">Standard</td>
+          <td data-label="Required Actions">Normal operations when other conditions permit</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Heat Index 80-90°F (27-32°C)</strong></td>
-          <td class="caution">Caution</td>
-          <td class="caution">Caution</td>
-          <td class="caution">Caution</td>
-          <td>Hydration essential, monitor for heat stress</td>
+          <th scope="row"><strong>Heat index ≤90°F</strong></th>
+          <td class="safe" data-label="Novice Scullers">No added heat restriction</td>
+          <td class="safe" data-label="Intermediate">No added heat restriction</td>
+          <td class="safe" data-label="Advanced">No added heat restriction</td>
+          <td data-label="Required Actions">Other weather rules still apply; monitor conditions and use normal hydration precautions</td>
         </tr>
         <tr data-conditions="temp">
-          <td><strong>Heat Index > 90°F (> 32°C)</strong></td>
-          <td class="warning">Modified Practice</td>
-          <td class="warning">Modified Practice</td>
-          <td class="caution">Modified Practice</td>
-          <td>Reduce duration, early/late rowing only</td>
+          <th scope="row"><strong>Heat index &gt;90°F to 95°F</strong></th>
+          <td class="warning" data-label="Novice Scullers">Heat precautions</td>
+          <td class="warning" data-label="Intermediate">Heat precautions</td>
+          <td class="warning" data-label="Advanced">Heat precautions</td>
+          <td data-label="Required Actions">Each rower must have a water bottle; coaches should add hydration breaks and adjust intensity as needed</td>
+        </tr>
+        <tr data-conditions="temp">
+          <th scope="row"><strong>Heat index &gt;95°F to &lt;98°F</strong></th>
+          <td class="warning" data-label="Novice Scullers">Consider indoors</td>
+          <td class="warning" data-label="Intermediate">Consider indoors</td>
+          <td class="warning" data-label="Advanced">Consider indoors</td>
+          <td data-label="Required Actions">Water bottle required; coaches should add breaks and consider moving indoors and/or reducing intensity or duration</td>
+        </tr>
+        <tr data-conditions="temp">
+          <th scope="row"><strong>Heat index ≥98°F</strong></th>
+          <td class="no-go" data-label="Novice Scullers">No outdoor workout</td>
+          <td class="no-go" data-label="Intermediate">No outdoor workout</td>
+          <td class="no-go" data-label="Advanced">No outdoor workout</td>
+          <td data-label="Required Actions">Cancel the outdoor session or move it indoors; no individual use of AARC-owned boats</td>
         </tr>
         
         <!-- Visibility Conditions -->
         <tr data-conditions="visibility">
-          <td><strong>Visibility > 500 yd (approx. > 457 m)</strong><br>Clear conditions</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td>Standard procedures</td>
+          <th scope="row"><strong>Visibility > 500 yd (approx. > 457 m)</strong><br>Clear conditions</th>
+          <td class="safe" data-label="Novice Scullers">Safe</td>
+          <td class="safe" data-label="Intermediate">Safe</td>
+          <td class="safe" data-label="Advanced">Safe</td>
+          <td data-label="Required Actions">Standard procedures</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility 100-500 yd (approx. 91-457 m)</strong><br>Light fog</td>
-          <td class="warning">Not Advised</td>
-          <td class="caution">Caution</td>
-          <td class="caution">Caution</td>
-          <td>Stay near shore, use lights, reduce speed</td>
+          <th scope="row"><strong>Visibility 100-500 yd (approx. 91-457 m)</strong><br>Light fog</th>
+          <td class="warning" data-label="Novice Scullers">Not Advised</td>
+          <td class="caution" data-label="Intermediate">Caution</td>
+          <td class="caution" data-label="Advanced">Caution</td>
+          <td data-label="Required Actions">Stay near shore, use lights, reduce speed</td>
         </tr>
         <tr data-conditions="visibility">
-          <td><strong>Visibility < 100 yd (approx. < 91 m)</strong><br>Heavy fog</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td>All rowing activities suspended</td>
+          <th scope="row"><strong>Visibility < 100 yd (approx. < 91 m)</strong><br>Heavy fog</th>
+          <td class="no-go" data-label="Novice Scullers">No Rowing</td>
+          <td class="no-go" data-label="Intermediate">No Rowing</td>
+          <td class="no-go" data-label="Advanced">No Rowing</td>
+          <td data-label="Required Actions">All rowing activities suspended</td>
         </tr>
         
         <!-- Storm Conditions -->
         <tr data-conditions="storm">
-          <td><strong>Lightning/Thunder</strong><br>Any distance</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td>Exit water immediately, wait 30min after last strike</td>
+          <th scope="row"><strong>Lightning/Thunder</strong><br>Any distance</th>
+          <td class="no-go" data-label="Novice Scullers">No Rowing</td>
+          <td class="no-go" data-label="Intermediate">No Rowing</td>
+          <td class="no-go" data-label="Advanced">No Rowing</td>
+          <td data-label="Required Actions">Exit water immediately, wait 30min after last strike</td>
         </tr>
         <tr data-conditions="storm">
-          <td><strong>Approaching Storm</strong><br>Dark clouds, increasing winds</td>
-          <td class="warning">Return to Dock</td>
-          <td class="warning">Return to Dock</td>
-          <td class="caution">Monitor & Prepare</td>
-          <td>Check radar, prepare to exit water quickly</td>
+          <th scope="row"><strong>Approaching Storm</strong><br>Dark clouds, increasing winds</th>
+          <td class="warning" data-label="Novice Scullers">Return to Dock</td>
+          <td class="warning" data-label="Intermediate">Return to Dock</td>
+          <td class="caution" data-label="Advanced">Monitor & Prepare</td>
+          <td data-label="Required Actions">Check radar, prepare to exit water quickly</td>
         </tr>
 
         <!-- Air Quality Conditions -->
         <tr data-conditions="airquality">
-          <td><strong>AQI < 100 (AirNow)</strong><br>Good to Moderate</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td class="safe">Safe</td>
-          <td>Standard procedures</td>
+          <th scope="row"><strong>AQI < 100 (AirNow)</strong><br>Good to Moderate</th>
+          <td class="safe" data-label="Novice Scullers">Safe</td>
+          <td class="safe" data-label="Intermediate">Safe</td>
+          <td class="safe" data-label="Advanced">Safe</td>
+          <td data-label="Required Actions">Standard procedures</td>
         </tr>
         <tr data-conditions="airquality">
-          <td><strong>AQI 100-149 (AirNow)</strong><br>Unhealthy for Sensitive Groups</td>
-          <td class="caution">Caution</td>
-          <td class="caution">Caution</td>
-          <td class="caution">Caution</td>
-          <td>Sensitive individuals should limit exertion</td>
+          <th scope="row"><strong>AQI 100-149 (AirNow)</strong><br>Unhealthy for Sensitive Groups</th>
+          <td class="caution" data-label="Novice Scullers">Caution</td>
+          <td class="caution" data-label="Intermediate">Caution</td>
+          <td class="caution" data-label="Advanced">Caution</td>
+          <td data-label="Required Actions">Sensitive individuals should limit exertion</td>
         </tr>
         <tr data-conditions="airquality">
-          <td><strong>AQI ≥ 150 (AirNow)</strong><br>Unhealthy</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td class="no-go">No Rowing</td>
-          <td>All rowing activities suspended</td>
+          <th scope="row"><strong>AQI ≥ 150 (AirNow)</strong><br>Unhealthy</th>
+          <td class="no-go" data-label="Novice Scullers">No Rowing</td>
+          <td class="no-go" data-label="Intermediate">No Rowing</td>
+          <td class="no-go" data-label="Advanced">No Rowing</td>
+          <td data-label="Required Actions">All rowing activities suspended</td>
         </tr>
       </tbody>
     </table>
@@ -200,7 +214,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <div class="two-col-grid">
           <div>
@@ -244,7 +258,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <h4>Wind Speed Guidelines & Warning Signs:</h4>
         <div class="conditions-grid">
@@ -290,7 +304,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <p class="minimum-requirement">Minimum visibility requirement: <strong>100 yd (approx. 91 m) in all directions</strong></p>
         
@@ -332,7 +346,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <div class="temp-zones">
           <div class="temp-zone-card zone-red">
@@ -389,26 +403,33 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
-        <h4>Heat Index Guidelines & Actions:</h4>
+        <h4>AARC hot-weather policy: “feels like” heat index</h4>
+        <p>Use the heat index from a reputable weather source, such as the National Weather Service or a major forecast app. Check it at session start and again if conditions change materially. These rules cover all AARC-organized outdoor sessions and individual use of AARC-owned boats.</p>
+        <p><a href="{{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf">Read the AARC Hot-Weather Rowing (Heat Index) Cutoff Policy (2026 PDF)</a>.</p>
         <div class="conditions-grid">
           <div class="condition-card condition-green">
-            <h4>&lt;80°F (&lt;27°C) - Comfortable</h4>
-            <p><strong>Action:</strong> Generally safe for full practice. Standard hydration protocols.</p>
+            <h4>90°F or below</h4>
+            <p><strong>Action:</strong> Monitor conditions and use normal hydration precautions. Other weather rules and individual needs still apply.</p>
           </div>
           <div class="condition-card condition-yellow">
-            <h4>80-90°F (27-32°C) - Caution</h4>
-            <p><strong>Action:</strong> Use caution. Monitor for signs of heat stress. Ensure ample hydration. Consider intensity/duration modification for sensitive individuals.</p>
+            <h4>Above 90°F through 95°F</h4>
+            <p><strong>Action:</strong> Every rower must have a water bottle on hand. Coaches should provide additional hydration breaks and adjust intensity as needed.</p>
           </div>
           <div class="condition-card condition-orange">
-            <h4>90-105°F (32-41°C) - High Risk</h4>
-            <p><strong>Action:</strong> Modified practice required. Reduce duration and/or intensity. Schedule for cooler parts of the day. Frequent water breaks mandatory.</p>
+            <h4>Above 95°F, below 98°F</h4>
+            <p><strong>Action:</strong> Continue the above precautions. Consider moving the session indoors (erg or strength) and/or reducing intensity or duration.</p>
           </div>
           <div class="condition-card condition-red">
-            <h4>&gt;105°F (&gt;41°C) - Extreme Risk</h4>
-            <p><strong>Action:</strong> Outdoor practice likely suspended or moved indoors. If unavoidable, very short, low-intensity sessions with extreme caution and medical supervision if possible.</p>
+            <h4>98°F or above - no outdoor workouts</h4>
+            <p><strong>Action:</strong> Cancel the outdoor session or move it indoors. This cutoff also applies to individual use of AARC-owned boats.</p>
           </div>
+        </div>
+
+        <div class="weather-warning-box" style="margin-top: 1.5rem;">
+          <h4>Opt out or ask for a change</h4>
+          <p>Anyone may opt out or request a modification because of heat or air-quality concerns at any time, without repercussions. If you are at increased risk, you may tell the coach or captain privately; no personal details are required. Leaders should keep disclosures confidential and offer a reasonable alternative when feasible.</p>
         </div>
 
         <div class="two-col-grid" style="margin-top: 1.5rem;">
@@ -456,7 +477,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <h4>Air Quality Index (AQI) Guidelines (via <a href="https://www.airnow.gov">AirNow.gov</a>):</h4>
         <div class="aqi-levels-grid">
@@ -620,7 +641,7 @@ Weather conditions directly impact rowing safety. This guide will help you under
         <span class="toggle-icon">↓</span>
       </div>
     </button>
-    <div class="weather-accordion-content" aria-hidden="true">
+    <div class="weather-accordion-content" aria-hidden="true" hidden>
       <div class="weather-accordion-body">
         <p>If weather conditions deteriorate while you're on the water:</p>
         
@@ -644,9 +665,9 @@ Weather conditions directly impact rowing safety. This guide will help you under
   <div class="next-steps">
     <h3>Next Steps:</h3>
     <div class="next-steps-buttons">
-      <a href="essential-rules.html" class="next-step-button">Essential Safety Rules</a>
+      <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="next-step-button">Essential Safety Rules</a>
       <a href="river-traffic.html" class="next-step-button">River Traffic Guide</a>
-      <a href="self-rescue.html" class="next-step-button">Self-Rescue Procedures</a>
+      <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="next-step-button">Self-Rescue Procedures</a>
     </div>
   </div>
 </div>

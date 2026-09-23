@@ -12,19 +12,20 @@ search_exclude: true
       <h1>Coach Portal</h1>
       <p>This area contains coaching resources and materials that are only accessible to authorized coaches.</p>
 
-      <div class="password-form">
+      <form id="coach-access-form" class="password-form">
         <div class="form-group">
           <label for="coach-password">Enter Coach Password:</label>
-          <input type="password" id="coach-password" class="form-control" placeholder="Enter password">
+          <input type="password" id="coach-password" class="form-control" autocomplete="current-password" aria-describedby="password-error">
         </div>
-        <button id="submit-password" class="cta-button">Access Coach Materials</button>
-        <p id="password-error" class="error-message" style="display: none;"></p>
-      </div>
+        <button id="submit-password" type="submit" class="cta-button">Access Coach Materials</button>
+        <p id="password-error" class="error-message" role="alert" hidden></p>
+      </form>
+      <p>Need coach access? <a href="{{ site.baseurl }}/about/contact.html">Contact AARC</a> for help.</p>
     </div>
   </div>
 
   <div id="coach-content" class="coach-content" style="display: none;">
-    <h2>Coach Materials</h2>
+    <h1 tabindex="-1">Coach Materials</h1>
 
     <div class="info-box tip">
       <h3>Welcome, Coaches!</h3>
@@ -199,7 +200,7 @@ search_exclude: true
                 </div>
                 <h3>Emergency Protocols</h3>
                 <p>Step-by-step procedures for handling on-water emergencies.</p>
-                <a href="{{ site.baseurl }}/for-coaches/safety-leadership/emergency-protocols.html" class="cta-button">View Protocols</a>
+                <a href="{{ site.baseurl }}/for-coaches/safety-leadership/emergency-procedures.html" class="cta-button">View Procedures</a>
               </div>
               
               <div class="resource-card">
@@ -208,7 +209,7 @@ search_exclude: true
                 </div>
                 <h3>Weather Guidelines</h3>
                 <p>Decision matrices for weather-related rowing conditions.</p>
-                <a href="{{ site.baseurl }}/for-coaches/safety-leadership/weather-guidelines.html" class="cta-button">View Guidelines</a>
+                <a href="{{ site.baseurl }}/open-sculling/safety/weather-guidelines.html" class="cta-button">View Guidelines</a>
               </div>
               
               <div class="resource-card">
@@ -224,9 +225,9 @@ search_exclude: true
                 <div class="card-icon">
                   <i class="fas fa-first-aid"></i>
                 </div>
-                <h3>First Aid</h3>
-                <p>Basic first aid guidelines for common rowing-related injuries.</p>
-                <a href="{{ site.baseurl }}/for-coaches/safety-leadership/first-aid.html" class="cta-button">View Guide</a>
+                <h3>Daily Safety Checklist</h3>
+                <p>Check weather, equipment, and emergency readiness before each session.</p>
+                <a href="{{ site.baseurl }}/for-coaches/safety-leadership/daily-safety-checklist.html" class="cta-button">View Checklist</a>
               </div>
             </div>
           </div>
@@ -241,16 +242,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const passwordGate = document.getElementById('password-gate');
     const coachContent = document.getElementById('coach-content');
     const passwordInput = document.getElementById('coach-password');
-    const submitButton = document.getElementById('submit-password');
+    const accessForm = document.getElementById('coach-access-form');
     const passwordError = document.getElementById('password-error');
     const correctPasswordHash = "{{ site.coach_password_hash }}"; // Ensure this is set in _config.yml
+
+    function showError(message) {
+        passwordError.textContent = message;
+        passwordError.hidden = false;
+        passwordInput.setAttribute('aria-invalid', 'true');
+        passwordInput.focus();
+    }
+
+    function clearError() {
+        passwordError.textContent = '';
+        passwordError.hidden = true;
+        passwordInput.removeAttribute('aria-invalid');
+    }
 
     // Function to check password
     async function checkPassword() {
         const enteredPassword = passwordInput.value;
         if (!enteredPassword) {
-            passwordError.textContent = 'Please enter a password.';
-            passwordError.style.display = 'block';
+            showError('Please enter a password.');
             return;
         }
 
@@ -265,33 +278,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('aarc_coach_access', 'granted');
                 passwordGate.style.display = 'none';
                 coachContent.style.display = 'block';
-                passwordError.style.display = 'none';
+                clearError();
+                coachContent.querySelector('h1').focus();
             } else {
-                passwordError.textContent = 'Incorrect password. Please try again.';
-                passwordError.style.display = 'block';
+                showError('Incorrect password. Please try again.');
                 localStorage.removeItem('aarc_coach_access');
             }
         } catch (error) {
             console.error("Password hashing error:", error);
-            passwordError.textContent = 'Error verifying password. Please try again.';
-            passwordError.style.display = 'block';
+            showError('Error verifying password. Please try again.');
         }
     }
 
-    // Event listener for submit button
-    if (submitButton) {
-        submitButton.addEventListener('click', checkPassword);
-    }
-
-    // Event listener for Enter key in password field
-    if (passwordInput) {
-        passwordInput.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault(); // Prevent form submission if it were a real form
-                checkPassword();
-            }
-        });
-    }
+    accessForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        checkPassword();
+    });
+    passwordInput.addEventListener('input', clearError);
 
     // Check if already authenticated from a previous session (via coach.html logic)
     if (localStorage.getItem('aarc_coach_access') === 'granted') {

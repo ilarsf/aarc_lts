@@ -13,7 +13,7 @@ This guide outlines essential safety protocols specific to coaches in the Learn 
 Coaches in the Learn to Scull Program have specific safety responsibilities that extend beyond general participant safety rules:
 
 1. **Pre-Session Safety Assessment**
-   - Complete the [Daily Safety Checklist]({{ site.baseurl }}/for-coaches/safety-leadership/daily-safety-checklist) before each session
+   - Complete the [Daily Safety Checklist]({{ site.baseurl }}/for-coaches/safety-leadership/daily-safety-checklist.html) before each session
    - Conduct equipment safety checks for all boats and safety gear
    - Assess weather conditions and make go/no-go decisions
    - Brief assistant coaches on safety roles and responsibilities
@@ -26,12 +26,14 @@ Coaches in the Learn to Scull Program have specific safety responsibilities that
 
 3. **Environment Monitoring**
    - Continuously assess weather and water conditions during sessions
+   - Check the “feels like” heat index at the start and when conditions change materially. Follow the [2026 AARC heat-index policy]({{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf): water bottle for every rower above 90°F; extra hydration breaks and intensity adjustments; consider indoors or reduced intensity/duration above 95°F; no outdoor workouts at 98°F or above. The cutoff also covers individual use of AARC-owned boats.
+   - Allow anyone to opt out or request modification for heat or air-quality concerns without repercussions. Invite private disclosure from people at increased risk without asking for details; keep disclosures confidential and offer a reasonable alternative when feasible.
    - Monitor boat traffic and potential hazards on the water
    - Track participant locations and maintain appropriate supervision ratios
    - Maintain awareness of all participants' positions at all times
 
 4. **Emergency Readiness**
-   - Be prepared to execute [emergency procedures]({{ site.baseurl }}/for-coaches/safety-leadership/emergency-procedures) when needed
+   - Be prepared to execute [emergency procedures]({{ site.baseurl }}/for-coaches/safety-leadership/emergency-procedures.html) when needed
    - Ensure all emergency equipment is readily accessible
    - Maintain CPR and First Aid certification
    - Know emergency contact procedures and communication protocols

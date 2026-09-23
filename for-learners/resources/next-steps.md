@@ -125,8 +125,8 @@ description: Guidance on continuing your rowing journey after completing the AAR
 
     <section class="phase-journey" aria-labelledby="phase-journey-heading">
         <div class="phase-journey-header">
-            <h2 id="phase-journey-heading">Three Phases After Registration</h2>
-            <p>Each Learn to Scull cohort follows the same three-phase path.</p>
+            <h2 id="phase-journey-heading">How the 2026 continuation worked</h2>
+            <p>The 2026 cohorts followed this three-phase path. AARC has not confirmed the 2027 continuation plan.</p>
         </div>
 
         <div class="phase-legend" aria-label="Program phase summary">
@@ -134,39 +134,39 @@ description: Guidance on continuing your rowing journey after completing the AAR
                 <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
                 <div>
                     <h3>Phase 1: LTS</h3>
-                    <p>Four coached Learn to Scull sessions over two weekends.</p>
+                    <p>Four coached Learn to Scull sessions over two weekends in 2026.</p>
                 </div>
             </div>
             <div class="phase-summary phase-two">
                 <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-water"></i></span>
                 <div>
                     <h3>Phase 2: LTS Trial</h3>
-                    <p>Fixed four-week Open Sculling trial immediately after your class.</p>
+                    <p>In 2026, a fixed four-week Open Sculling trial followed each class.</p>
                 </div>
             </div>
             <div class="phase-summary phase-three">
                 <span class="phase-summary-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
                 <div>
                     <h3>Phase 3: LTS Continuation</h3>
-                    <p>Register through the Learn to Scull Class page for the remainder of the season, or the new season for the final cohort.</p>
+                    <p>In 2026, graduates could register for the rest of the season, or the next season for the final cohort.</p>
                 </div>
             </div>
         </div>
 
-        <p class="phase-journey-note">For exact cohort trial dates, continuation dates, fees, and weekly signup steps, use the trial and continuation guide below.</p>
+        <p class="phase-journey-note">The trial and continuation guide below shows 2026 cohort dates and fees. Confirm any future registration and weekly signup steps with AARC.</p>
     </section>
 
     <img src="https://images.clubexpress.com/757878/graphics/clubsculling5in_549792197.jpg" alt="AARC single sculler on the water" class="content-image">
 
     <h2>Choosing Your Next Step</h2>
-    <p>During Learn to Scull, your coaches helped you build the foundation for supervised club sculling. The usual path is to become a full AARC member, complete the fixed four-week Open Sculling trial for your cohort, and then decide whether to continue through Phase 3 for the remainder of the season.</p>
+    <p>During Learn to Scull, your coaches help you build the foundation for supervised club sculling. In 2026, graduates could become full AARC members, complete a fixed four-week Open Sculling trial, and then decide whether to continue through Phase 3. Ask your coach which options will be available for your cohort.</p>
 
     <h3>1. Become a Full Club Member</h3>
     <p>Membership is required before you can register for the Open Sculling trial or sign up for practices. It also gives you access to club communications, member resources, and the broader AARC rowing community.</p>
     <a href="{{ site.baseurl }}/for-learners/resources/membership.html"  class="btn btn-primary">Membership Info</a>
 
     <h3>2. Use the Open Sculling Trial as Your Bridge</h3>
-    <p>The trial provides supervised water time, help with club routines and equipment, and a path toward possible future independent-rowing approval. Your LTS coaches will provide final registration guidance during your last session; Phase 2 and Phase 3 registration are listed at the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>.</p>
+    <p>The 2026 trial provided supervised water time, help with club routines and equipment, and a path toward possible future independent-rowing approval. Your coaches can confirm the options and registration steps for your class. In 2026, Phase 2 and Phase 3 registration appeared on the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>.</p>
     <a href="{{ site.baseurl }}/for-learners/resources/open-sculling-program-details.html"  class="btn btn-primary">Trial and Continuation Guide</a>
 
     <h2>General Advice for Continued Development</h2>    

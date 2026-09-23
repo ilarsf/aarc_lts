@@ -3,19 +3,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all accordions
     const accordions = document.querySelectorAll('.rules-accordion-toggle');
-    const allContentElements = document.querySelectorAll('.rules-accordion-content');
+    function setRuleExpanded(accordion, expanded) {
+        const content = accordion.nextElementSibling;
+        if (!content) return;
+        accordion.classList.toggle('active', expanded);
+        accordion.setAttribute('aria-expanded', String(expanded));
+        content.classList.toggle('active', expanded);
+        content.hidden = !expanded;
+    }
 
     // Set up accordion click handlers
     accordions.forEach(accordion => {
+        const content = accordion.nextElementSibling;
+        if (content && !content.id) content.id = `rule-panel-${Array.from(accordions).indexOf(accordion) + 1}`;
+        if (content) accordion.setAttribute('aria-controls', content.id);
+        setRuleExpanded(accordion, accordion.classList.contains('active'));
         accordion.addEventListener('click', function () {
-            // Toggle active class on the clicked accordion
-            this.classList.toggle('active');
-
-            // Get the content associated with this accordion
-            const content = this.nextElementSibling;
-
-            // Toggle active class on the content
-            content.classList.toggle('active');
+            setRuleExpanded(this, this.getAttribute('aria-expanded') !== 'true');
         });
     });
 
@@ -26,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (expandAllBtn) {
         expandAllBtn.addEventListener('click', function () {
             accordions.forEach(accordion => {
-                accordion.classList.add('active');
-                accordion.nextElementSibling.classList.add('active');
+                setRuleExpanded(accordion, true);
             });
         });
     }
@@ -35,8 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (collapseAllBtn) {
         collapseAllBtn.addEventListener('click', function () {
             accordions.forEach(accordion => {
-                accordion.classList.remove('active');
-                accordion.nextElementSibling.classList.remove('active');
+                setRuleExpanded(accordion, false);
             });
         });
     }

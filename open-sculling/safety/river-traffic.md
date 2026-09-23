@@ -5,7 +5,6 @@ description: Navigation patterns and rules for scullers
 ---
 
 
-{% include head-custom.html %}
 <link rel="stylesheet" href="{{ '/assets/css/river-traffic.css' | relative_url }}">
 <script src="{{ '/assets/js/river-traffic.js' | relative_url }}" defer></script>
 
@@ -475,7 +474,7 @@ Understanding and following proper waterway navigation rules is essential for th
 <div class="resource-section">
   <h3>Next Steps:</h3>
   <div class="card-grid">
-    <a href="essential-rules.html" class="card">
+    <a href="{{ site.baseurl }}/for-learners/safety/essential-rules.html" class="card">
       <div class="card-icon">
         <i class="fas fa-list-ol"></i>
       </div>
@@ -485,7 +484,7 @@ Understanding and following proper waterway navigation rules is essential for th
       </div>
     </a>
     
-    <a href="self-rescue.html" class="card">
+    <a href="{{ site.baseurl }}/for-learners/safety/self-rescue.html" class="card">
       <div class="card-icon">
         <i class="fas fa-life-ring"></i>
       </div>

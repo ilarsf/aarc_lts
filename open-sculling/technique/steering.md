@@ -158,7 +158,7 @@ Steering a single scull effectively is a crucial skill for safety, efficiency, a
                         <li><strong>Follow experienced rowers:</strong> Observe and follow the paths of more experienced club members.</li>
                         <li><strong>Use landmarks:</strong> Identify landmarks to help you remember the correct traffic patterns.</li>
                         <li><strong>When in doubt, move further right:</strong> It's generally safer to give more space.</li>
-                        <li>Refer to the <a href="{{ site.baseurl }}/for-learners/safety/river-traffic.html">River Traffic Guide</a>.</li>
+                        <li>Refer to the <a href="{{ site.baseurl }}/open-sculling/safety/river-traffic.html">River Traffic Guide</a>.</li>
                     </ul>
                 </div>
             </div>

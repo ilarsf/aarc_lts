@@ -22,6 +22,18 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.weather-matrix caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .weather-matrix th {
     background-color: #0d47a1;
     color: white;
@@ -41,10 +53,12 @@
     border-top-right-radius: 6px;
 }
 
-.weather-matrix td {
+.weather-matrix td,
+.weather-matrix tbody th[scope="row"] {
     padding: 10px 15px;
     border-bottom: 1px solid #e0e0e0;
     font-size: 0.95rem;
+    text-align: left;
 }
 
 .weather-matrix tr:nth-child(even) {
@@ -61,6 +75,10 @@
 
 .weather-matrix tr:hover {
     background-color: #e3f2fd;
+}
+
+.weather-matrix tbody th[scope="row"] {
+    font-weight: 600;
 }
 
 /* Decision cells */
@@ -114,6 +132,13 @@
 .weather-filter-tab.active {
     background-color: #1976d2;
     color: white;
+}
+
+.weather-filter-tab:focus-visible,
+.weather-accordion-header:focus-visible,
+.weather-accordion-controls button:focus-visible {
+    outline: 3px solid #3B428C;
+    outline-offset: 3px;
 }
 
 /* Weather Accordions */
@@ -175,15 +200,11 @@
 }
 
 .weather-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
     background-color: #ffffff;
 }
 
-.weather-accordion-content[aria-hidden="false"] {
-    max-height: 5000px;
-    /* Increased max-height to allow for taller content */
+.weather-accordion-content[hidden] {
+    display: none !important;
 }
 
 .weather-accordion-body {
@@ -374,10 +395,17 @@
         flex-direction: column;
     }
 
-    /* Make table responsive */
+    /* Keep the column headers in the accessibility tree while presenting rows as cards. */
     .weather-matrix thead {
-        display: none;
-        /* Hide table headers on mobile */
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 
     .weather-matrix tr {
@@ -388,13 +416,17 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
 
+    .weather-matrix tbody th[scope="row"] {
+        display: block;
+        padding: 10px;
+        background: #0d47a1;
+        color: #fff;
+    }
+
     .weather-matrix td {
         display: block;
-        text-align: right;
-        /* Align cell content to the right */
-        padding-left: 50%;
-        /* Make space for the pseudo-element */
-        position: relative;
+        text-align: left;
+        padding: 8px 10px;
         border-bottom: 1px solid #eee;
     }
 
@@ -404,24 +436,19 @@
 
     .weather-matrix td::before {
         content: attr(data-label);
-        /* Use data-label for cell header */
-        position: absolute;
-        left: 10px;
-        width: calc(50% - 20px);
-        /* Adjust width considering padding */
-        padding-right: 10px;
-        white-space: nowrap;
+        display: block;
+        margin-bottom: 0.15rem;
         text-align: left;
         font-weight: bold;
+        color: #333;
+    }
+
+    .weather-matrix .no-go::before {
+        color: #fff;
     }
 }
 
 @media (max-width: 576px) {
-    .weather-matrix {
-        display: block;
-        overflow-x: auto;
-    }
-
     .weather-accordion-toggle {
         padding: 12px;
     }

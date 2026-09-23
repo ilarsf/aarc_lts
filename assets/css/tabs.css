@@ -24,7 +24,6 @@
     background-color: #f5f5f5;
     color: #333;
     border: none;
-    outline: none;
     cursor: pointer;
     padding: 12px 20px;
     font-weight: 600;
@@ -43,6 +42,12 @@
 .tab-link.active {
     background-color: #3B428C;
     color: white;
+}
+
+.tab-button:focus-visible,
+.tab-link:focus-visible {
+    outline: 3px solid #3B428C;
+    outline-offset: 2px;
 }
 
 .tab-content {

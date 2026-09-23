@@ -154,6 +154,8 @@ title: "AARC Learn-to-Scull Quiz" # Generic Title - JS will update it
             domElements.returnToResultsButton.addEventListener('click', () => {
                 if (domElements.reviewScreen) domElements.reviewScreen.classList.add('hidden');
                 if (domElements.resultsScreen) domElements.resultsScreen.classList.remove('hidden');
+                const resultsHeading = domElements.resultsScreen && domElements.resultsScreen.querySelector('h2');
+                if (resultsHeading) resultsHeading.focus();
             });
         }
 

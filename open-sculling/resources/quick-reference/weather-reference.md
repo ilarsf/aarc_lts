@@ -7,6 +7,18 @@ title: "Weather Guidelines for Rowing - AARC Learn to Scull Program"
 
 Understanding and properly assessing weather conditions is essential for safe rowing. This guide provides comprehensive information about weather-related safety guidelines, decision-making frameworks, and important thresholds for different conditions.
 
+## AARC heat-index cutoff
+
+The 2026 [AARC Hot-Weather Rowing Policy]({{ site.baseurl }}/assets/policies/AARC_Hot-Weather_Rowing_Heat_Index_Cutoff_Policy_2026.pdf) applies to club-organized outdoor sessions and individual use of AARC-owned boats. Check the “feels like” heat index from a reputable weather source at session start and again if conditions change materially.
+
+| Heat index | Required response |
+| --- | --- |
+| Above 90°F through 95°F | Each rower must have a water bottle on hand. Coaches should add hydration breaks and adjust intensity as needed. |
+| Above 95°F, below 98°F | Continue the above precautions. Consider moving indoors and/or reducing intensity or duration. |
+| 98°F or above | **No outdoor workouts. Cancel the outdoor session or move it indoors; no individual use of AARC-owned boats.** |
+
+Any participant may opt out or request a change for heat or air-quality concerns at any time without repercussions. Participants at increased risk may tell the coach or captain privately without giving details; leaders should protect confidentiality and offer an alternative when feasible.
+
 ## Quick Reference Weather Guidelines
 
 <div class="weather-table-container">

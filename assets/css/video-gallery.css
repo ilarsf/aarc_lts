@@ -84,18 +84,28 @@
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
     height: 0;
+    width: 100%;
+    display: block;
+    border: 0;
     overflow: hidden;
     background-color: #f1f1f1;
     cursor: pointer;
 }
 
-.video-thumbnail iframe {
+.video-thumbnail img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover;
+}
+
+.video-thumbnail:focus-visible,
+.filter-button:focus-visible,
+.modal-close:focus-visible {
+    outline: 3px solid #3B428C;
+    outline-offset: 3px;
 }
 
 .video-thumbnail .play-button {
@@ -118,6 +128,11 @@
     background-color: var(--theme-color);
 }
 
+.video-thumbnail:hover .play-button,
+.video-thumbnail:focus-visible .play-button {
+    background-color: #3B428C;
+}
+
 .video-thumbnail .play-button::after {
     content: '';
     display: block;
@@ -127,6 +142,24 @@
     border-width: 10px 0 10px 16px;
     border-color: transparent transparent transparent white;
     margin-left: 4px;
+}
+
+.video-play-label {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.82);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+#video-results-status {
+    margin: 0 0 0.75rem;
+    color: #495057;
+    font-weight: 600;
 }
 
 .video-info {
@@ -246,22 +279,23 @@
 
 /* Modal for enlarged videos */
 .video-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-    overflow: auto;
+    width: min(960px, calc(100% - 2rem));
+    max-height: calc(100vh - 2rem);
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.video-modal::backdrop {
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .modal-content {
     position: relative;
-    width: 90%;
-    max-width: 960px;
-    margin: 5% auto;
+    width: 100%;
     animation: modalFadeIn 0.3s;
 }
 
@@ -284,9 +318,16 @@
 
 .modal-close {
     position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    color: #333;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -297,6 +338,23 @@
     padding: 1.5rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.modal-video-title {
+    margin-top: 0;
+}
+
+.modal-video-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-card.filtered-in,
+    .modal-content {
+        animation: none;
+    }
 }
 
 @keyframes modalFadeIn {

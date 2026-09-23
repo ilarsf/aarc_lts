@@ -1,239 +1,58 @@
-// Script to manage accordion functionality
-document.addEventListener('DOMContentLoaded', function () {
-    // Initialize all accordion sections (top level)
-    const accordionToggles = document.querySelectorAll('.accordion-toggle');
+// Shared disclosures used by the learner, member, and coach guides.
+document.addEventListener('DOMContentLoaded', () => {
+    const toggles = Array.from(document.querySelectorAll('.accordion-toggle, .nested-toggle'));
 
-    // Initialize all nested accordion sections (second level)
-    const nestedToggles = document.querySelectorAll('.nested-toggle');
+    function panelFor(toggle) {
+        const controlledId = toggle.getAttribute('aria-controls');
+        return (controlledId && document.getElementById(controlledId)) || toggle.nextElementSibling;
+    }
 
-    // Handle top-level accordions
-    accordionToggles.forEach(toggle => {
-        toggle.addEventListener('click', function () {
-            // Toggle the active class on the button
-            this.classList.toggle('active');
+    function setExpanded(toggle, expanded) {
+        const panel = panelFor(toggle);
+        if (!panel) return;
 
-            // Update aria-expanded attribute
-            const isExpanded = this.classList.contains('active');
-            this.setAttribute('aria-expanded', isExpanded);
+        toggle.classList.toggle('active', expanded);
+        toggle.setAttribute('aria-expanded', String(expanded));
+        panel.classList.toggle('visible', expanded);
+        panel.hidden = !expanded;
+        // Other page scripts may inspect maxHeight; keep its state in sync.
+        panel.style.maxHeight = expanded ? 'none' : '';
+    }
 
-            // Get the target content - either by aria-controls or next sibling
-            let content;
-            if (this.hasAttribute('aria-controls')) {
-                const contentId = this.getAttribute('aria-controls');
-                content = document.getElementById(contentId);
-            }
+    window.setAccordionExpanded = setExpanded;
 
-            // Fallback to next sibling if no aria-controls or if content not found
-            if (!content) {
-                content = this.nextElementSibling;
-            }
+    toggles.forEach((toggle, index) => {
+        const panel = panelFor(toggle);
+        if (!panel) return;
 
-            // Ensure content exists
-            if (!content) {
-                return;
-            }
+        if (!panel.id) panel.id = `accordion-panel-${index + 1}`;
+        toggle.setAttribute('aria-controls', panel.id);
+        setExpanded(toggle, toggle.classList.contains('active') || toggle.getAttribute('aria-expanded') === 'true');
 
-            // Toggle the content visibility
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.classList.remove('visible');
-            } else {
-                content.style.maxHeight = content.scrollHeight + 2000 + "px"; // Added extra height to ensure full content visibility
-                content.classList.add('visible');
-            }
+        toggle.addEventListener('click', () => {
+            setExpanded(toggle, toggle.getAttribute('aria-expanded') !== 'true');
         });
     });
 
-    // Handle nested accordions
-    nestedToggles.forEach(toggle => {
-        toggle.addEventListener('click', function (event) {
-            // Prevent event from bubbling to parent accordion
-            event.stopPropagation();
-
-            // Toggle the active class on the button
-            this.classList.toggle('active');
-
-            // Get the target content
-            const content = this.nextElementSibling;
-
-            // Toggle the content visibility
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.classList.remove('visible');
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px"; // Add extra height for nested content
-                content.classList.add('visible');
-
-                // Update parent accordion's height if needed
-                const parentContent = this.closest('.accordion-content');
-                if (parentContent && parentContent.classList.contains('visible')) {
-                    parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + 2000 + "px";
-                }
-            }
-        });
-    });
-
-    // Function to expand all visible sections
-    window.expandAllSections = function () {
-        // Expand top-level sections first
-        accordionToggles.forEach(toggle => {
-            // Only expand sections that are not filtered out
-            if (!toggle.parentElement.classList.contains('filtered')) {
-                const content = toggle.nextElementSibling;
-                toggle.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + 2000 + "px";
-                content.classList.add('visible');
-            }
-        });
-
-        // Then expand all nested sections
-        nestedToggles.forEach(toggle => {
-            // Only expand if parent is visible
-            if (!toggle.closest('.accordion-section').classList.contains('filtered')) {
-                const content = toggle.nextElementSibling;
-                toggle.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.classList.add('visible');
-
-                // Update parent's height
-                const parentContent = toggle.closest('.accordion-content');
-                if (parentContent && parentContent.classList.contains('visible')) {
-                    parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + 2000 + "px";
-                }
+    function setAll(expanded, scope = document) {
+        const scopedToggles = scope.querySelectorAll('.accordion-toggle, .nested-toggle');
+        scopedToggles.forEach((toggle) => {
+            if (!expanded || !toggle.closest('.accordion-section.filtered')) {
+                setExpanded(toggle, expanded);
             }
         });
     }
 
-    // Function to collapse all sections
-    window.collapseAllSections = function () {
-        // Collapse nested sections first
-        nestedToggles.forEach(toggle => {
-            const content = toggle.nextElementSibling;
-            toggle.classList.remove('active');
-            content.style.maxHeight = null;
-            content.classList.remove('visible');
+    window.expandAllSections = () => setAll(true);
+    window.collapseAllSections = () => setAll(false);
+
+    document.querySelectorAll('[id^="expand-all"], [id^="collapse-all"]').forEach((button) => {
+        // Rules, weather, and river traffic use their own controls and handlers.
+        if (button.id.endsWith('-rules') || button.id.endsWith('-weather') || button.id.endsWith('-traffic')) return;
+
+        button.addEventListener('click', () => {
+            const scope = button.closest('.accordion') || button.closest('.tab-content') || document;
+            setAll(button.id.startsWith('expand-all'), scope);
         });
-
-        // Then collapse top-level sections
-        accordionToggles.forEach(toggle => {
-            const content = toggle.nextElementSibling;
-            toggle.classList.remove('active');
-            content.style.maxHeight = null;
-            content.classList.remove('visible');
-        });
-    }    // Add event listeners for expand/collapse all buttons
-    const expandAllBtns = document.querySelectorAll('[id^="expand-all"]');
-    const collapseAllBtns = document.querySelectorAll('[id^="collapse-all"]');
-
-    expandAllBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-            const accordion = this.closest('.accordion');
-            if (accordion) {
-                const accordionToggles = accordion.querySelectorAll('.accordion-toggle');
-
-                accordionToggles.forEach(toggle => {
-                    if (!toggle.parentElement.classList.contains('filtered')) {
-                        const content = toggle.nextElementSibling;
-                        toggle.classList.add('active');
-                        content.style.maxHeight = content.scrollHeight + 2000 + "px";
-                        content.classList.add('visible');
-                    }
-                });
-                return;
-            }
-
-            // Check if this button has a specific tab identifier (like "expand-all-intermediate")
-            const btnId = this.id;
-            const tabId = btnId.replace('expand-all-', '');
-
-            // Find the tab content this button belongs to
-            let tabContent;
-
-            if (tabId && tabId !== 'expand-all') {
-                // Use the parent tab content if this is in a tabbed interface
-                tabContent = document.getElementById(tabId);
-                if (!tabContent) {
-                    // If not found by ID, the button is probably within the tab already
-                    tabContent = this.closest('.tab-content');
-                }
-            } else {
-                tabContent = this.closest('.tab-content');
-            }
-
-            if (tabContent) {
-                const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
-
-                accordionToggles.forEach(toggle => {
-                    if (!toggle.parentElement.classList.contains('filtered')) {
-                        const content = toggle.nextElementSibling;
-                        toggle.classList.add('active');
-                        content.style.maxHeight = content.scrollHeight + 2000 + "px";
-                        content.classList.add('visible');
-                    }
-                });
-            } else {
-                // If not in a tab, expand all
-                window.expandAllSections();
-            }
-        });
-    }); collapseAllBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-            const accordion = this.closest('.accordion');
-            if (accordion) {
-                const accordionToggles = accordion.querySelectorAll('.accordion-toggle');
-
-                accordionToggles.forEach(toggle => {
-                    const content = toggle.nextElementSibling;
-                    toggle.classList.remove('active');
-                    content.style.maxHeight = null;
-                    content.classList.remove('visible');
-                });
-                return;
-            }
-
-            // Check if this button has a specific tab identifier (like "collapse-all-intermediate")
-            const btnId = this.id;
-            const tabId = btnId.replace('collapse-all-', '');
-
-            // Find the tab content this button belongs to
-            let tabContent;
-
-            if (tabId && tabId !== 'collapse-all') {
-                // Use the parent tab content if this is in a tabbed interface
-                tabContent = document.getElementById(tabId);
-                if (!tabContent) {
-                    // If not found by ID, the button is probably within the tab already
-                    tabContent = this.closest('.tab-content');
-                }
-            } else {
-                tabContent = this.closest('.tab-content');
-            }
-
-            if (tabContent) {
-                const accordionToggles = tabContent.querySelectorAll('.accordion-toggle');
-
-                accordionToggles.forEach(toggle => {
-                    const content = toggle.nextElementSibling;
-                    toggle.classList.remove('active');
-                    content.style.maxHeight = null;
-                    content.classList.remove('visible');
-                });
-            } else {
-                // If not in a tab, collapse all
-                window.collapseAllSections();
-            }
-        });
-    });
-
-    // Initial setup - ensure accordion content is properly hidden
-    accordionToggles.forEach(toggle => {
-        const content = toggle.nextElementSibling;
-        toggle.setAttribute('aria-expanded', toggle.classList.contains('active') ? 'true' : 'false');
-        if (!toggle.classList.contains('active')) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.classList.add('visible');
-        }
     });
 });

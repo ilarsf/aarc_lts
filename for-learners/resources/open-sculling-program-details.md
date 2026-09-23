@@ -12,16 +12,16 @@ description: Details about the Open Sculling Program trial period, how to contin
         <p class="lead">This guide provides information for LTS students entering Phase 2 (the Open Sculling Trial Period) and how to continue rowing with AARC.</p>
     </div>
 
-    <div class="info-box note"><strong>2026 example:</strong> the dates and prices below describe the completed 2026 season. The 2027 class, trial, and continuation schedule and fees have not been announced and may differ. Confirm current details with AARC before registering.</div>
+    <div class="info-box note"><strong>2026 example:</strong> the dates, prices, registration route, and practice logistics below describe the completed 2026 season. The 2027 class, trial, and continuation arrangements have not been announced and may differ. Confirm current details with AARC before registering or attending practice.</div>
 
     <h2>Phase 2 of LTS: Open Sculling Trial Period</h2>
-    <p>After the four coached Learn to Scull sessions, the Phase 2 trial moves you into supervised Open Sculling practices so you can keep building technique, skill, and stamina. Use the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a> for registration and this page for weekly practice logistics.</p>
+    <p>In 2026, the Phase 2 trial followed four coached Learn to Scull sessions and provided supervised Open Sculling practice. The <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a> was the registration route. Ask AARC to confirm the current route and practice arrangements.</p>
 
     <h3>A. Register for the Phase 2 Trial</h3>
     <p>Before you register for the trial or sign up for practices, you must become a Full Member of AARC. You also need an active USRowing membership, at least Basic Membership, connected to AARC before participating in the trial or Open Sculling practices.</p>
     <p>In the <a href="https://membership.usrowing.org/" rel="noopener noreferrer">USRowing Membership Portal <i class="fas fa-external-link-alt"></i></a>, use AARC club code <strong>CZGBS</strong> and complete the required SafeSport attestation. If your attestation indicates regular contact with minors, complete the required SafeSport training before participating.</p>
-    <p>Then register for the trial assigned to your Learn to Scull cohort through the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>.</p>
-    <p>The discounted Phase 2 trial is fixed to the four-week block immediately after your class and is priced at <strong class="phase-price-inline">{{ lts_schedule.trial_fee }}</strong> for rowers not already covered by the Open/Tech Summer Program or Full Season. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> The discount cannot be moved to a different four-week period. Your LTS coaches will provide final registration guidance during your last session.</p>
+    <p>For 2026 cohorts, the assigned trial was listed at the bottom of the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>. Confirm the current registration route with AARC.</p>
+    <p>In 2026, the discounted Phase 2 trial was a fixed four-week block immediately after class and cost <strong class="phase-price-inline">{{ lts_schedule.trial_fee }}</strong> for rowers not already covered by the Open/Tech Summer Program or Full Season. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> The 2026 discount could not be moved to another period. Ask your coach for current registration guidance.</p>
     <p>Use the {{ lts_schedule.year }} schedule below as an example of how trial and continuation periods were timed. Its dates and fees do not confirm 2027 arrangements:</p>
 
     {% include learn-to-scull-schedule-table.html open_tech_note=true %}
@@ -53,10 +53,10 @@ description: Details about the Open Sculling Program trial period, how to contin
     <p>If practice needs to be canceled due to inclement weather, the coaches will send out an email 30 minutes before practice, if at all possible. In most cases, practice will be shifted to an indoor erg workout at the boathouse.</p>
 
     <h2>Phase 3: Continuing After the Trial</h2>
-    <p>After your four-week trial, you can continue sculling by signing up for Phase 3 through the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>. If you are not already covered by the Open/Tech Summer Program or Full Season, pay the cohort-specific program fee shown in the schedule above, plus the club membership fee. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> Please reach out to <a href="mailto:info@a2crew.com">info@a2crew.com</a> if you need help confirming your fee tier.</p>
+    <p>In 2026, rowers could continue after the four-week trial by registering for Phase 3 through the <a href="{{ lts_schedule.registration_url }}" rel="noopener noreferrer">Learn to Scull Class page <i class="fas fa-external-link-alt"></i></a>. The cohort-specific fees in the table above applied to rowers not covered by Open/Tech Summer or Full Season fees. <strong>{{ lts_schedule.open_tech_fee_exemption_note }}</strong> Ask <a href="mailto:info@a2crew.com">info@a2crew.com</a> what continuation options and fees apply now.</p>
 
     <div class="mt-4">
-        <a href="{{ site.baseurl }}/for-learners/resources/next-steps/" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
+        <a href="{{ site.baseurl }}/for-learners/resources/next-steps.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to Next Steps</a>
         <a href="{{ site.baseurl }}/index.html" class="btn btn-primary">Return to Homepage <i class="fas fa-home"></i></a>
     </div>
 </div>

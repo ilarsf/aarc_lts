@@ -91,7 +91,7 @@ Use the risk matrix below to categorize risks:
 - Prepare and stock emergency equipment
 
 #### Daily Implementation
-- Use the [Daily Safety Checklist]({{ site.baseurl }}/for-coaches/safety-leadership/daily-safety-checklist)
+- Use the [Daily Safety Checklist]({{ site.baseurl }}/for-coaches/safety-leadership/daily-safety-checklist.html)
 - Conduct pre-session risk assessment
 - Brief participants on specific daily risks
 - Assign specific risk monitoring duties to coaching team

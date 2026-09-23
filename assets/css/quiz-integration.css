@@ -167,7 +167,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
     /* Ensure text color remains on hover */
-    outline: none;
+}
+
+.quiz-button:focus-visible,
+#answers-container .answer-button:focus-visible,
+#question-text:focus,
+#feedback-text:focus,
+#results-screen h2:focus,
+#review-screen h2:focus {
+    outline: 3px solid #3B428C;
+    outline-offset: 3px;
 }
 
 .quiz-button.secondary {
@@ -479,8 +488,10 @@
     /* Darker on hover/focus */
     border-color: #0077cc;
     /* Highlight border on hover/focus */
-    outline: none;
-    /* Remove default focus outline if custom is applied */
+}
+
+#answers-container .answer-button:disabled {
+    cursor: default;
 }
 
 #answers-container .answer-button.selected {

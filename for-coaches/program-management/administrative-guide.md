@@ -53,7 +53,7 @@ This guide provides comprehensive information on the administrative aspects of r
 
 - Take attendance at each session
 - Document any incidents or safety concerns
-- Track participant progress using the [Assessment Tools]({{ site.baseurl }}/for-coaches/program-management/assessment-tools)
+- Track participant progress using the [Assessment Tools]({{ site.baseurl }}/for-coaches/program-management/assessment-tools.html)
 - Note equipment issues for maintenance follow-up
 
 ### Coach Coordination
@@ -104,8 +104,8 @@ This guide provides comprehensive information on the administrative aspects of r
 ## Documentation and Templates
 
 For standardized program communications and documentation, refer to:
-- [Communication Templates]({{ site.baseurl }}/for-coaches/program-management/communication)
-- [Assessment Tools]({{ site.baseurl }}/for-coaches/program-management/assessment-tools)
+- [Communication Templates]({{ site.baseurl }}/for-coaches/program-management/communication.html)
+- [Assessment Tools]({{ site.baseurl }}/for-coaches/program-management/assessment-tools.html)
 
 ## Calendar Planning
 

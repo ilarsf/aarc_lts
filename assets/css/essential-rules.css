@@ -15,7 +15,6 @@
     text-align: left;
     background-color: #f8f8f8;
     border: none;
-    outline: none;
     transition: background-color 0.3s ease;
     position: relative;
     font-size: 1.05rem;
@@ -37,13 +36,20 @@
 .rules-accordion-content {
     padding: 0;
     background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
 }
 
 .rules-accordion-content.active {
-    max-height: 1000px;
+    display: block;
+}
+
+.rules-accordion-content[hidden] {
+    display: none !important;
+}
+
+.rules-accordion-toggle:focus-visible,
+.rules-filter-btn:focus-visible {
+    outline: 3px solid #3B428C;
+    outline-offset: 3px;
 }
 
 .rules-accordion-inner {
@@ -64,7 +70,7 @@
 
 .rules-priority-tag.critical {
     background-color: #f44336;
-    color: white;
+    color: #171717;
 }
 
 .rules-priority-tag.critical::before {
@@ -74,7 +80,7 @@
 
 .rules-priority-tag.important {
     background-color: #ff9800;
-    color: white;
+    color: #171717;
 }
 
 .rules-priority-tag.important::before {
@@ -84,7 +90,7 @@
 
 .rules-priority-tag.standard {
     background-color: #4caf50;
-    color: white;
+    color: #171717;
 }
 
 /* Rules content styling */
@@ -160,9 +166,9 @@
 }
 
 .rules-filter-btn.active {
-    background: #2196f3;
+    background: #3B428C;
     color: white;
-    border-color: #2196f3;
+    border-color: #3B428C;
 }
 
 .rules-filter-container {
